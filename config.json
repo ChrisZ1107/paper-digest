@@ -1,0 +1,10 @@
+{
+  "timezone": "Asia/Shanghai",
+  "max_age_days": 30,
+  "top_n": 10,
+  "robotics_slots": 3,
+  "reinforcement_learning_slots": 3,
+  "keep_days": 90,
+  "proxy": null,
+  "public_base_url": ""
+}
