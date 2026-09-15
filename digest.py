@@ -5,6 +5,7 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 from email.utils import format_datetime
 import fcntl
+import hashlib
 import html
 import json
 import logging
@@ -203,7 +204,9 @@ def render_feed(records, config):
     for record in records:
         item = ET.SubElement(channel, "item")
         ET.SubElement(item, "title").text = record["title"]
-        ET.SubElement(item, "guid", isPermaLink="false").text = "urn:personal-paper-digest:" + record["date"]
+        # RSS readers use GUID as article identity and often ignore body changes.
+        revision = hashlib.sha256(record["html"].encode("utf-8")).hexdigest()[:12]
+        ET.SubElement(item, "guid", isPermaLink="false").text = "urn:personal-paper-digest:" + record["date"] + ":" + revision
         if base:
             ET.SubElement(item, "link").text = base + "/" + record["date"] + ".html"
         ET.SubElement(item, "pubDate").text = format_datetime(iso_date(record["timestamp"]))
@@ -274,7 +277,7 @@ def run(root, force=False, fixtures=None, refresh_summaries=False):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", type=Path, default=ROOT)
-    parser.add_argument("--force", action="store_true", help="Regenerate today's entry with the same stable GUID")
+    parser.add_argument("--force", action="store_true", help="Regenerate today's entry; changed content gets a new RSS revision GUID")
     parser.add_argument("--fixtures", type=Path, help="Read latest.json and trending.json instead of using the network")
     parser.add_argument("--refresh-summaries", action="store_true", help="Enrich today without reranking")
     args = parser.parse_args()

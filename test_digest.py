@@ -71,6 +71,15 @@ class DigestTests(unittest.TestCase):
                     digest.run(root, force=True)
             self.assertEqual(original, (root / "public/feed.xml").read_bytes())
 
+    def test_content_revision_changes_rss_guid(self):
+        record = {"date": "2026-09-15", "timestamp": self.now.isoformat(),
+                  "title": "Digest", "html": "<p>old</p>"}
+        first = ET.fromstring(digest.render_feed([record], self.config)).findtext("channel/item/guid")
+        record["html"] = "<p>new Gemini summary</p>"
+        second = ET.fromstring(digest.render_feed([record], self.config)).findtext("channel/item/guid")
+        self.assertNotEqual(first, second)
+        self.assertTrue(first.startswith("urn:personal-paper-digest:2026-09-15:"))
+
 
 if __name__ == "__main__":
     unittest.main()
