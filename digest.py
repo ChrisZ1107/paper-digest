@@ -26,6 +26,15 @@ ROBOTICS = re.compile(r"\b(robot\w*|humanoid\w*|locomotion|legged|quadruped\w*|e
 RL = re.compile(r"\b(reinforcement learning|reinforcement fine[- ]?tuning|rlhf|rlvr|grpo|ppo|policy gradient|actor[- ]critic|reward model\w*|markov decision|offline rl|online rl|q[- ]learning)\b", re.I)
 
 
+def classify(text, categories=()):
+    topics = []
+    if "cs.RO" in categories or ROBOTICS.search(text):
+        topics.append("机器人")
+    if RL.search(text):
+        topics.append("强化学习")
+    return topics or ["通用 AI"]
+
+
 def atomic_write(path, text):
     path.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8", dir=path.parent, delete=False) as f:
@@ -79,11 +88,7 @@ def normalize(latest, trending, now, config):
         if not title or not 0 <= age <= config["max_age_days"]:
             continue
         text = title + " " + summary + " " + " ".join(paper.get("ai_keywords") or [])
-        topics = []
-        if ROBOTICS.search(text):
-            topics.append("机器人")
-        if RL.search(text):
-            topics.append("强化学习")
+        topics = classify(text)
         repo = paper.get("githubRepo") or ""
         if urllib.parse.urlsplit(repo).hostname != "github.com":
             repo = ""
@@ -95,6 +100,7 @@ def normalize(latest, trending, now, config):
             "comments": max(0, int(entry.get("numComments") or 0)),
             "stars": int(paper["githubStars"]) if paper.get("githubStars") is not None else None,
             "repo": repo, "trending_rank": ranks.get(identifier),
+            "sources": ["Hugging Face"], "date_label": "发表",
         }
     return list(papers.values())
 
@@ -118,6 +124,10 @@ def rank_and_select(papers, previous, now, config):
         trend_score = 4 / math.log2(paper["trending_rank"] + 1) if paper["trending_rank"] else 0
         popularity = math.log1p(paper["upvotes"]) + 0.6 * math.log1p(paper["comments"])
         paper["score"] = round((trend_score + popularity + growth_score) / (1 + paper["age_days"] / 14), 3)
+        if paper.get("relevance") is not None:
+            heat = paper["score"] / (paper["score"] + 3)
+            relevance = max(0, min(1, paper["relevance"]))
+            paper["score"] = round(10 * (0.65 * relevance + 0.35 * heat), 3)
     ordered = sorted(papers, key=lambda p: (-p["score"], p["id"]))
     selected = []
     ids = set()
@@ -135,23 +145,29 @@ def rank_and_select(papers, previous, now, config):
     return sorted(selected[:config["top_n"]], key=lambda p: (-p["score"], p["id"]))
 
 
-def digest_html(selected, now, count):
+def digest_html(selected, now, count, personalization_note=""):
     e = html.escape
     parts = [f"<h1>{now.date()} 热门论文 Top {len(selected)}</h1>",
              "<p>机器人 · 强化学习 · 通用 AI</p>",
              f"<p>生成时间：{now:%Y-%m-%d %H:%M %Z}。从 {count} 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>",
-             '<p>数据来源：<a href="https://huggingface.co/papers">Hugging Face Papers</a>。分数结合热榜位置、点赞、讨论、发表时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>']
+             '<p>候选来源：<a href="https://huggingface.co/papers">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>']
+    if personalization_note:
+        parts.append(f"<p>{e(personalization_note)}</p>")
     if len(selected) < 10:
         parts.append(f"<p>本次合格候选不足 10 篇，实际收录 {len(selected)} 篇。</p>")
     for n, paper in enumerate(selected, 1):
         identifier = paper["id"]
         parts.extend([f'<h2>{n}. {e(paper["title"])}</h2>',
-                      f'<p><strong>{" / ".join(paper["topics"])}</strong> · 发表 {paper["published"]} · 综合分 {paper["score"]:.2f}</p>'])
+                      f'<p><strong>{" / ".join(paper["topics"])}</strong> · {paper.get("date_label", "发表")} {paper["published"]} · 综合分 {paper["score"]:.2f}</p>'])
+        if paper.get("relevance") is not None:
+            parts.append(f'<p>Zotero 摘要相关性：{paper["relevance"]:.3f}（相似度分数，不是概率）。</p>')
         evidence = f'HF 点赞 {paper["upvotes"]} · 讨论 {paper["comments"]}'
         if paper["trending_rank"]:
             evidence += f' · 本次 HF 热榜第 {paper["trending_rank"]} 位'
         if paper["stars"] is not None:
             evidence += f' · 仓库累计 Star {paper["stars"]}（仓库可能包含多篇论文）'
+        if paper.get("sources") == ["arXiv"]:
+            evidence = "arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。"
         parts.append(f"<p>{e(evidence)}</p>")
         growth = paper["growth"]
         if growth:
@@ -164,8 +180,9 @@ def digest_html(selected, now, count):
             excerpt = excerpt.rsplit(" ", 1)[0] + "…"
         parts.append(f'<p><strong>原文摘要节选：</strong>{e(excerpt)}</p>')
         links = [f'<a href="https://arxiv.org/abs/{identifier}">论文原文</a>',
-                 f'<a href="https://arxiv.org/pdf/{identifier}">PDF</a>',
-                 f'<a href="https://huggingface.co/papers/{identifier}">讨论与热度</a>']
+                 f'<a href="https://arxiv.org/pdf/{identifier}">PDF</a>']
+        if "Hugging Face" in paper.get("sources", ["Hugging Face"]):
+            links.append(f'<a href="https://huggingface.co/papers/{identifier}">讨论与热度</a>')
         if paper["repo"]:
             links.append(f'<a href="{e(paper["repo"], quote=True)}">代码</a>')
         parts.append("<p>" + " · ".join(links) + "</p><hr>")
@@ -216,6 +233,8 @@ def run(root, force=False, fixtures=None):
             candidates = normalize(latest, trending, now, config)
             if not candidates:
                 raise RuntimeError("No recent eligible papers; retaining the previous feed unchanged")
+            from personalization import enrich
+            candidates, personalization_note = enrich(candidates, config, now, classify)
             snapshots = sorted((state / "snapshots").glob("*.json"))
             eligible = [p for p in snapshots if p.stem < str(now.date())]
             previous = read_json(eligible[-1], {}) if eligible else {}
@@ -223,7 +242,8 @@ def run(root, force=False, fixtures=None):
             record = {"date": str(now.date()), "timestamp": now.isoformat(),
                       "title": f"{now.date()} 热门论文 Top {len(selected)}｜机器人·强化学习·AI",
                       "papers": selected, "candidate_count": len(candidates),
-                      "html": digest_html(selected, now, len(candidates))}
+                      "personalization_note": personalization_note,
+                      "html": digest_html(selected, now, len(candidates), personalization_note)}
             atomic_write(archive, json.dumps(record, ensure_ascii=False, indent=2))
             snapshot = {"timestamp": now.isoformat(), "papers": {p["id"]: {key: p[key] for key in ("upvotes", "comments", "stars")} for p in candidates}}
             atomic_write(state / "snapshots" / (str(now.date()) + ".json"), json.dumps(snapshot))

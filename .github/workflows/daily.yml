@@ -5,11 +5,19 @@ on:
     # 01:00 UTC = 09:00 Asia/Shanghai. GitHub may delay scheduled runs.
     - cron: '0 1 * * *'
   workflow_dispatch:
+    inputs:
+      regenerate:
+        description: Regenerate today's digest with the same RSS GUID
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths:
       - 'digest.py'
       - 'test_digest.py'
+      - 'personalization.py'
+      - 'test_personalization.py'
+      - 'requirements-personalization.txt'
       - 'config.json'
       - '.github/workflows/daily.yml'
 
@@ -23,7 +31,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 25
     permissions:
       contents: write
       pages: read
@@ -33,6 +41,29 @@ jobs:
           ref: main
       - name: Validate generator
         run: python3 -m unittest -v
+      - name: Check personalization configuration
+        id: zotero
+        env:
+          ZOTERO_KEY: ${{ secrets.ZOTERO_KEY }}
+        run: |
+          if [ -n "$ZOTERO_KEY" ]; then
+            echo 'enabled=true' >> "$GITHUB_OUTPUT"
+          else
+            echo 'enabled=false' >> "$GITHUB_OUTPUT"
+          fi
+      - name: Install CPU similarity model dependencies
+        continue-on-error: true
+        if: steps.zotero.outputs.enabled == 'true'
+        run: |
+          python3 -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+          python3 -m pip install -r requirements-personalization.txt
+      - name: Verify Zotero library
+        if: steps.zotero.outputs.enabled == 'true' && github.event_name == 'workflow_dispatch'
+        env:
+          ZOTERO_KEY: ${{ secrets.ZOTERO_KEY }}
+          ZOTERO_ID: ${{ secrets.ZOTERO_ID }}
+          ZOTERO_COLLECTIONS: ${{ secrets.ZOTERO_COLLECTIONS }}
+        run: python3 personalization.py --check
       - name: Configure Pages
         id: pages
         uses: actions/configure-pages@v5
@@ -49,7 +80,19 @@ jobs:
           path.write_text(json.dumps(config, ensure_ascii=False, indent=2))
           PY
       - name: Generate today's digest
-        run: python3 digest.py
+        env:
+          ZOTERO_KEY: ${{ secrets.ZOTERO_KEY }}
+          ZOTERO_ID: ${{ secrets.ZOTERO_ID }}
+          ZOTERO_COLLECTIONS: ${{ secrets.ZOTERO_COLLECTIONS }}
+          REGENERATE: ${{ inputs.regenerate }}
+          HF_HUB_DISABLE_TELEMETRY: '1'
+          TOKENIZERS_PARALLELISM: 'false'
+        run: |
+          if [ "$REGENERATE" = 'true' ]; then
+            python3 digest.py --force
+          else
+            python3 digest.py
+          fi
       - name: Validate RSS
         run: |
           python3 - <<'PY'

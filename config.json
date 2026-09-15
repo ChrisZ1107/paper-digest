@@ -6,5 +6,16 @@
   "reinforcement_learning_slots": 3,
   "keep_days": 90,
   "proxy": null,
-  "public_base_url": ""
+  "public_base_url": "",
+  "personalization": {
+    "enabled": true,
+    "max_corpus": 500,
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "arxiv_categories": [
+      "cs.RO",
+      "cs.LG",
+      "cs.AI",
+      "cs.CV"
+    ]
+  }
 }
