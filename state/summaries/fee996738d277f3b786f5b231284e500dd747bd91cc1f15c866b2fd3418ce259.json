@@ -1,0 +1,18 @@
+{
+  "overview": "针对长程终端任务，作者提出了T1模型。该模型是一个拥有122B参数的混合专家模型（MoE），通过强化学习在云沙箱环境中训练，支持单任务超过300次的工具调用。研究人员引入了一套包含预热训练、TITO优化结构（包含轨迹漂移修复与专家选择重放）及离群训练语料的方法，旨在提升模型在复杂长程任务中的实际表现与泛化能力。",
+  "highlights": [
+    {
+      "text": "提出TITO与R3技术，显著降低了训练与推理间的对数概率差异，实现了损失区域内零令牌漂移。",
+      "evidence": "Together, TITO and R3 cut the training-to-inference log-probability difference from 0.021 to 0.013, with exactly aligned zero token drift in the loss region."
+    },
+    {
+      "text": "T1模型在Terminal-Bench 2.1基准测试上将基础模型任务解决率从43.8%提升至64.0%。",
+      "evidence": "On Terminal-Bench 2.1, our post-train pipeline raises initial base model from 43.8% to T1 with 64.0% resolved."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "大模型后训练",
+    "推理"
+  ]
+}

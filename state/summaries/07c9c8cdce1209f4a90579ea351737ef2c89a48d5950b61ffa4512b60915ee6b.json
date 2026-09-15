@@ -1,0 +1,17 @@
+{
+  "overview": "针对机器人基础模型在面对视觉分布偏移时因依赖任务无关特征而泛化能力下降的问题，作者提出了Latent Interface Training (LIT)框架。该方法通过两阶段训练策略，先训练无视觉依赖的动作先验，再通过位姿监督的潜在接口约束视觉条件信息，旨在确保模型仅利用任务相关的空间信息生成动作。实验表明，该方法在多种架构上提升了模拟及真实场景下的泛化成功率。",
+  "highlights": [
+    {
+      "text": "提出了一种两阶段训练框架LIT，通过位姿监督的潜在接口有效缓解视觉-动作捷径问题，提升模型对视觉分布变化的泛化能力。",
+      "evidence": "We propose Latent Interface Training (LIT), a framework-agnostic two-stage strategy that first establishes a spatial-goal-conditioned action prior without images, then constrains visual conditioning through a pose-supervised latent interface."
+    },
+    {
+      "text": "在四个视觉-语言-动作与世界模型架构上进行了验证，结果显示LIT显著提升了LIBERO-Plus的成功率，并增强了真实场景对环境变化的鲁棒性。",
+      "evidence": "Across four vision-language-action and world-action architectures (Pi0.5, MolmoAct2, FAST-WAM, and ImageWAM), LIT improves overall LIBERO-Plus success by 3.87-10.70 percentage points while preserving or improving average LIBERO success."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "Sim-to-Real"
+  ]
+}

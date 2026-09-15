@@ -1,0 +1,17 @@
+{
+  "overview": "针对视觉语言模型（VLM）难以直接转化为机器人控制的问题，本文提出了Show-Harness框架。该框架构建了一个紧凑的语义接口，将意图与动作连接，通过离散语义动作单元使VLM能够进行推理，并由特定解释器将其转化为局部机器人动作。作者声称该方法能直接实现闭源模型的零样本机器人控制，并通过少量微调适配开源模型，同时支持基于图形界面的演示收集。实验表明，该方法在多任务、多实体及多环境场景下表现出良好的泛化能力。",
+  "highlights": [
+    {
+      "text": "Show-Harness通过引入语义动作接口，使VLM无需额外模型容量或特定具身预训练，即可直接执行机器人控制任务。",
+      "evidence": "These results suggest that the right interface can unlock substantial embodied capability from foundation VLMs, without requiring additional model capacity or costly embodiment-specific pretraining."
+    },
+    {
+      "text": "该框架支持利用GUMI界面进行无需专业遥控硬件的演示收集，并实现了闭源VLM的零样本控制及开源VLM的轻量级微调。",
+      "evidence": "Show-Harness demonstrates the feasibility of (1) directly unlocking closed-source frontier VLMs for zero-shot robot control, and (2) adapting small-scale open-source VLMs for low-cost deployment with just a few GPU-hours of fine-tuning."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "视觉语言动作"
+  ]
+}

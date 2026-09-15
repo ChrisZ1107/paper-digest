@@ -1,0 +1,17 @@
+{
+  "overview": "PhysBrain 1.5是一个旨在理解物理环境、生成动作并预测未来状态的统一模型。该研究通过将语言响应、末端执行器运动和视觉目标编码为离散序列，利用自回归预测进行联合优化。模型在人类交互视频上进行预训练，并结合人类演示、机器人轨迹及模拟数据进行微调。作者声称该8B模型在28项具身理解基准测试中表现优异，并在14项基准上达到开源最优水平。",
+  "highlights": [
+    {
+      "text": "PhysBrain 1.5通过统一框架整合了环境理解、动作生成和未来状态预测能力，在多项基准测试中展现出竞争力。",
+      "evidence": "Across 28 embodied understanding benchmarks, our 8B model achieves an average score of 72.5, setting a new open-source state of the art and performing on par with leading proprietary models such as GPT-6-Astra and Gemini 3.6 Flash."
+    },
+    {
+      "text": "该模型通过人类交互视频进行预训练，并利用多源数据（人类演示、机器人轨迹及模拟经验）进行监督微调。",
+      "evidence": "We then adapt the model through supervised fine-tuning on a mixture of human demonstrations, robot trajectories, and simulated experience."
+    }
+  ],
+  "tags": [
+    "视觉语言动作",
+    "机器人操作"
+  ]
+}

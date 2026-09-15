@@ -1,0 +1,21 @@
+{
+  "overview": "本文提出了一种名为“Agent as Policy”（AGP）的方法，旨在使通用智能体能够无需特定任务或环境的针对性训练，直接驱动物理机器人执行操作任务。该方法通过让智能体负责任务规划与执行，使其能够处理视觉信息、编写可执行程序、发布运动指令，并根据物理反馈实时修正行为。实验验证了AGP在精密操作、动态运动及变形物体处理等多种现实世界任务中的有效性。",
+  "highlights": [
+    {
+      "text": "提出AGP方法，使通用智能体能够通过运行时推理、编程和交互直接控制机器人执行任务，无需针对性的专门训练。",
+      "evidence": "We demonstrate that a general-purpose agent can directly drive a physical robot throughout task execution without any task-specific or environment-specific training."
+    },
+    {
+      "text": "AGP通过视觉反馈生成并执行程序，并在与物理环境的持续交互中根据结果动态调整操作行为。",
+      "evidence": "Given a task and a robot interface, the agent interprets visual evidence, writes executable programs, issues motion commands, and revises its actions in response to physical outcomes."
+    },
+    {
+      "text": "通过在多种真实世界操作任务（如块构建、物品重定向和双臂折叠）中的验证，展示了该方法在复杂场景下的应用潜力。",
+      "evidence": "We study AGP across multiple real-world manipulation tasks spanning precision manipulation, dynamic motions, and deformable objects."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "推理"
+  ]
+}

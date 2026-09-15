@@ -1,6 +1,6 @@
 <!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>2026-09-15 热门论文 Top 10｜机器人·强化学习·AI</title><body><h1>2026-09-15 热门论文 Top 10</h1>
 <p>机器人 · 强化学习 · 通用 AI</p>
-<p>生成时间：2026-09-15 20:48 CST。从 1011 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>
+<p>生成时间：2026-09-15 21:06 CST。从 1011 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>
 <p>候选来源：<a href="https://huggingface.co/papers">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>
 <p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>
 <h2>1. Show-Harness: Just a VLM Agent Can Play Robots</h2>
@@ -9,7 +9,12 @@
 <p>HF 点赞 158 · 讨论 4 · 本次 HF 热榜第 15 位 · 仓库累计 Star 358（仓库可能包含多篇论文）</p>
 <p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
 <p><strong>规则标签：</strong>视觉语言动作</p>
-<p>未配置 Gemini，显示规则标签与原文摘要。</p>
+<p><strong>中文概述：</strong>针对视觉语言模型（VLM）难以直接转化为机器人控制的问题，本文提出了Show-Harness框架。该框架构建了一个紧凑的语义接口，将意图与动作连接，通过离散语义动作单元使VLM能够进行推理，并由特定解释器将其转化为局部机器人动作。作者声称该方法能直接实现闭源模型的零样本机器人控制，并通过少量微调适配开源模型，同时支持基于图形界面的演示收集。实验表明，该方法在多任务、多实体及多环境场景下表现出良好的泛化能力。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>Show-Harness通过引入语义动作接口，使VLM无需额外模型容量或特定具身预训练，即可直接执行机器人控制任务。<br><small>摘要依据：These results suggest that the right interface can unlock substantial embodied capability from foundation VLMs, without requiring additional model capacity or costly embodiment-specific pretraining.</small></li>
+<li>该框架支持利用GUMI界面进行无需专业遥控硬件的演示收集，并实现了闭源VLM的零样本控制及开源VLM的轻量级微调。<br><small>摘要依据：Show-Harness demonstrates the feasibility of (1) directly unlocking closed-source frontier VLMs for zero-shot robot control, and (2) adapting small-scale open-source VLMs for low-cost deployment with just a few GPU-hours of fine-tuning.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 视觉语言动作</p>
 <p><strong>原文摘要节选：</strong>Foundation vision-language models (VLMs) exhibit broad intelligence about the world, yet translating this intelligence into robot control remains challenging. We present Show-Harness, an Embodied Harness that enables VLMs to &quot;play&quot; robots through a compact semantic interface linking intent to action. Show-Harness exposes discrete semantic action units that VLMs can naturally reason over, while embodiment-specific interpreters deterministically ground them into local robot actions, keeping the VLM directly responsible for fine-grained physical decisions. Through the same interface, Show-Harness demonstrates the feasibility of (1) directly unlocking closed-source frontier VLMs for zero-shot robot control, and (2) adapting small-scale open-source VLMs for low-cost deployment with just a few…</p>
 <p><a href="https://arxiv.org/abs/2609.10522">论文原文</a> · <a href="https://arxiv.org/pdf/2609.10522">PDF</a> · <a href="https://huggingface.co/papers/2609.10522">讨论与热度</a> · <a href="https://github.com/showlab/Show-Harness">代码</a></p><hr>
 <h2>2. PhysBrain 1.5: From Vision-Language Models to Physical Foundation Models</h2>
@@ -17,7 +22,12 @@
 <p>Zotero 摘要相关性：0.444（相似度分数，不是概率）。</p>
 <p>HF 点赞 59 · 讨论 2 · 仓库累计 Star 14（仓库可能包含多篇论文）</p>
 <p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
-<p>未配置 Gemini，显示规则标签与原文摘要。</p>
+<p><strong>中文概述：</strong>PhysBrain 1.5是一个旨在理解物理环境、生成动作并预测未来状态的统一模型。该研究通过将语言响应、末端执行器运动和视觉目标编码为离散序列，利用自回归预测进行联合优化。模型在人类交互视频上进行预训练，并结合人类演示、机器人轨迹及模拟数据进行微调。作者声称该8B模型在28项具身理解基准测试中表现优异，并在14项基准上达到开源最优水平。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>PhysBrain 1.5通过统一框架整合了环境理解、动作生成和未来状态预测能力，在多项基准测试中展现出竞争力。<br><small>摘要依据：Across 28 embodied understanding benchmarks, our 8B model achieves an average score of 72.5, setting a new open-source state of the art and performing on par with leading proprietary models such as GPT-6-Astra and Gemini 3.6 Flash.</small></li>
+<li>该模型通过人类交互视频进行预训练，并利用多源数据（人类演示、机器人轨迹及模拟经验）进行监督微调。<br><small>摘要依据：We then adapt the model through supervised fine-tuning on a mixture of human demonstrations, robot trajectories, and simulated experience.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>视觉语言动作 · 机器人操作</p>
 <p><strong>原文摘要节选：</strong>We present PhysBrain 1.5, a unified model for understanding physical environments, generating actions, and predicting future states. Motivated by the physical loop of observation, interaction, and environmental change, we bring these capabilities into a common learning framework. Starting from a general vision--language model, we encode language responses, end-effector motion, and dense visual targets as discrete sequences and jointly optimize them with autoregressive next-token prediction. Pre-training draws its embodied supervision entirely from human interaction videos, using task-centered episodes to pair semantic and spatial context with recovered motion and subsequent observations. We then adapt the model through supervised fine-tuning on a mixture of human demonstrations, robot…</p>
 <p><a href="https://arxiv.org/abs/2609.14973">论文原文</a> · <a href="https://arxiv.org/pdf/2609.14973">PDF</a> · <a href="https://huggingface.co/papers/2609.14973">讨论与热度</a> · <a href="https://github.com/DeepCybo-PhysAI/PhysBrain-1.5">代码</a></p><hr>
 <h2>3. NeoHorse-1: Towards Recursive Self-Improvement via Agentic Post-Training with Routing Harness</h2>
@@ -26,7 +36,12 @@
 <p>HF 点赞 414 · 讨论 8 · 本次 HF 热榜第 19 位 · 仓库累计 Star 377（仓库可能包含多篇论文）</p>
 <p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
 <p><strong>规则标签：</strong>大模型后训练 · 推理</p>
-<p>未配置 Gemini，显示规则标签与原文摘要。</p>
+<p><strong>中文概述：</strong>针对递归自我改进的需求，本文提出了NeoHorse-1模型系列，探索了一种通过代理后训练实现自我进化的机制。该系统通过异构模型池和智能路由，记录用户交互并将其转化为包含推理与工具调用的训练样本，随后经过结构化验证和多维度评估。通过建立由路由信号引导的监督微调与策略蒸馏课程，结合能力引导的分配策略，作者构建了一个评价-选择-更新闭环，旨在使模型根据学习成果自动优化后续训练过程。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出了一种基于路由引导的代理后训练流程，通过构建评价-选择-更新闭环实现递归自我改进的原型。<br><small>摘要依据：Capability-guided allocation then converts evaluation feedback into the next training mixture, closing an evaluation-selection-update loop in which what the system learns to do shapes what it learns from next.</small></li>
+<li>实验结果显示，通过该方法进行后训练后，4B和9B规模模型的宏观平均基准得分分别从58.94提升至64.87，从65.60提升至69.04。<br><small>摘要依据：Across eleven benchmarks covering harness-based agents, tool use, coding, and instruction following, post-training raises the macro-average from 58.94 to 64.87 at 4B and from 65.60 to 69.04 at 9B</small></li>
+</ul>
+<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>
 <p><strong>原文摘要节选：</strong>Recursive self-improvement (RSI) requires a concrete mechanism through which an AI system observes its capabilities and converts that evidence into the next round of learning. We present NeoHorse-1, a family of agent-native models developed to explore this path through agentic post-training. Our system combines a heterogeneous model pool with intelligent routing, recording the predicted capability demand, selected service tier, and subsequent interaction for each user turn. These records are converted into training examples that preserve interleaved reasoning, tool calls, and harness context, and are admitted through structural validation, six-dimensional semantic evaluation, and subscene-level labeling. Routing signals organize supervised fine-tuning into a three-stage curriculum and…</p>
 <p><a href="https://arxiv.org/abs/2609.08183">论文原文</a> · <a href="https://arxiv.org/pdf/2609.08183">PDF</a> · <a href="https://huggingface.co/papers/2609.08183">讨论与热度</a> · <a href="https://github.com/TokenRhythm/NeoHorse">代码</a></p><hr>
 <h2>4. Dream-RSI: Recursive Self-Improvement through Evolving Worlds</h2>
@@ -34,7 +49,12 @@
 <p>Zotero 摘要相关性：0.385（相似度分数，不是概率）。</p>
 <p>HF 点赞 161 · 讨论 1 · 仓库累计 Star 4（仓库可能包含多篇论文）</p>
 <p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
-<p>未配置 Gemini，显示规则标签与原文摘要。</p>
+<p><strong>中文概述：</strong>针对自主AI智能体在复杂领域中进行递归自我改进时面临的探索策略瓶颈，Dream-RSI框架提出了一种基于演化世界模型的方案。该框架通过轻量级编排层，利用积累的发现历史构建重放模拟器，使智能体能够在模拟器中进行“梦境”训练以获取低成本离线反馈，从而优化探索策略。作者声称该方法在算法工程、数学优化及GPU内核工程任务中，在显著降低发现成本的同时，实现了具有竞争力的发现质量。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>Dream-RSI通过利用历史发现记录构建重放模拟器，实现了低成本的离线策略评估与改进，避免了高昂的重复在线调用。<br><small>摘要依据：By performing dreaming in the replay simulator constructed from historical discovery trees, Dream-RSI secures immediate, low-cost off-policy feedback to evaluate and refine exploration policies without invoking repetitive, expensive online evaluations.</small></li>
+<li>在算法工程、数学优化及GPU内核工程等多个任务中，Dream-RSI在保持竞争性探索成果的同时，有效降低了计算成本。<br><small>摘要依据：Across algorithm engineering, mathematical optimization, and GPU kernel engineering, Dream-RSI achieves competitive or improved discovery quality while substantially reducing discovery cost in several settings.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>
 <p><strong>原文摘要节选：</strong>Recursive self-improvement is becoming increasingly vital for autonomous AI agents, where progress hinges on discovering high-value solutions across complex domains. The driver of this process is effective exploration, however, managing and improving exploration strategies remains a major bottleneck. Current systems face a fundamental dilemma: fixed strategies fail to adapt as search spaces scale, while online policy optimization requires navigating vast meta-search spaces under delayed and expensive feedback over long-horizon rollouts. We introduce Dream-RSI, a framework for scalable and recursively self-improving exploration. A lightweight orchestration layer makes exploration explicit and programmable while leaving the underlying coding agent unchanged. Our key insight is that…</p>
 <p><a href="https://arxiv.org/abs/2609.14858">论文原文</a> · <a href="https://arxiv.org/pdf/2609.14858">PDF</a> · <a href="https://huggingface.co/papers/2609.14858">讨论与热度</a> · <a href="https://github.com/zhengkid/Dream-RSI">代码</a></p><hr>
 <h2>5. T1: Terminal Agent Reinforcement Learning for Long-Horizon Tasks</h2>
@@ -43,7 +63,12 @@
 <p>HF 点赞 57 · 讨论 3</p>
 <p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
 <p><strong>规则标签：</strong>强化学习</p>
-<p>未配置 Gemini，显示规则标签与原文摘要。</p>
+<p><strong>中文概述：</strong>针对长程终端任务，作者提出了T1模型。该模型是一个拥有122B参数的混合专家模型（MoE），通过强化学习在云沙箱环境中训练，支持单任务超过300次的工具调用。研究人员引入了一套包含预热训练、TITO优化结构（包含轨迹漂移修复与专家选择重放）及离群训练语料的方法，旨在提升模型在复杂长程任务中的实际表现与泛化能力。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出TITO与R3技术，显著降低了训练与推理间的对数概率差异，实现了损失区域内零令牌漂移。<br><small>摘要依据：Together, TITO and R3 cut the training-to-inference log-probability difference from 0.021 to 0.013, with exactly aligned zero token drift in the loss region.</small></li>
+<li>T1模型在Terminal-Bench 2.1基准测试上将基础模型任务解决率从43.8%提升至64.0%。<br><small>摘要依据：On Terminal-Bench 2.1, our post-train pipeline raises initial base model from 43.8% to T1 with 64.0% resolved.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习 · 大模型后训练 · 推理</p>
 <p><strong>原文摘要节选：</strong>Agent usage is shifting toward long-horizon tasks such as coding and scientific discovery, among which terminal tasks are especially important. We introduce T1, a Mixture-of-Experts model of 122B total trained with reinforcement learning, operating a real shell in a cloud sandbox for up to 300+ tool-call turns per task, rewarded by executing each task&#x27;s own verifier. We provide a comprehensive recipe: First, an aggressively warm-started to stabilize actor-critic training, with a dense process reward scoring trajectories by the absolute number of passing verifiers. Second, stable optimization through TITO construction, training on the exact sampled token identifiers with drift repair at turn boundaries, and rollout routing replay, recording the sampler&#x27;s per-token expert choices at every…</p>
 <p><a href="https://arxiv.org/abs/2609.11042">论文原文</a> · <a href="https://arxiv.org/pdf/2609.11042">PDF</a> · <a href="https://huggingface.co/papers/2609.11042">讨论与热度</a></p><hr>
 <h2>6. OpenWAM: An Open, Modular Exploration Towards Systematic World-Action Model Pretraining</h2>
@@ -52,7 +77,13 @@
 <p>HF 点赞 76 · 讨论 2 · 本次 HF 热榜第 21 位 · 仓库累计 Star 690（仓库可能包含多篇论文）</p>
 <p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
 <p><strong>规则标签：</strong>机器人操作</p>
-<p>未配置 Gemini，显示规则标签与原文摘要。</p>
+<p><strong>中文概述：</strong>针对现有世界-动作模型（WAM）系统设计高度耦合的问题，本文提出了OpenWAM。该研究将WAM设计解构为模块化组件，并通过OpenWAM-Infra框架进行系统性实验，以探讨知识继承、世界与动作学习交互及扩展性。作者基于研究原则构建了OpenWAM-α模型，使用约6400小时的以自我为中心的人类及机器人数据进行预训练。实验结果表明，该模型在涵盖操作与灵巧手的多项仿真及真实世界任务中均表现出优秀性能。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出模块化研究框架OpenWAM，将世界-动作模型的设计空间拆分为可组合的模块，实现了训练、推理与评估的统一。<br><small>摘要依据：OpenWAM-Infra factorizes the WAM design space into composable modules with unified training, inference, deployment, and evaluation.</small></li>
+<li>确立了WAM训练的关键原则，认为通过专用动作容量、显式的世界-动作信息流及联合去噪，可有效提升模型的性能与扩展性。<br><small>摘要依据：world-action synergy requires dedicated action capacity, explicit world-to-action information flow, and synchronized joint denoising;</small></li>
+<li>构建并开源了OpenWAM-α模型，在多种操作平台及真实世界基准测试中表现出色，验证了具身预训练对跨域泛化的提升。<br><small>摘要依据：Across the eight simulation benchmarks and the real-robot experiments, which together span embodiments from single-arm and bimanual manipulation to dexterous hands, OpenWAM-α delivers consistently excellent performance, sustaining its top-tier standing from simulation to the physical world.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 世界模型 · Sim-to-Real</p>
 <p><strong>原文摘要节选：</strong>World-Action Models inherit world knowledge from video-generative priors, and channel it into executable control signals through embodied experience. Existing systems, however, are monolithic: the generative backbone, visual representation, architecture, information flow, inference procedure, and training data are tightly coupled, obscuring which design choices matter and why. We introduce OpenWAM, an open research stack that turns world-action pretraining into a controlled experimental program. OpenWAM-Infra factorizes the WAM design space into composable modules with unified training, inference, deployment, and evaluation. On this substrate, OpenWAM-Study examines three questions through controlled experiments: what to inherit, how world and action learning interact, and how their…</p>
 <p><a href="https://arxiv.org/abs/2609.07398">论文原文</a> · <a href="https://arxiv.org/pdf/2609.07398">PDF</a> · <a href="https://huggingface.co/papers/2609.07398">讨论与热度</a> · <a href="https://github.com/OpenWAM-Official/OpenWAM">代码</a></p><hr>
 <h2>7. Agent as Policy for Robotic Manipulation</h2>
@@ -61,7 +92,13 @@
 <p>HF 点赞 5 · 讨论 3</p>
 <p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
 <p><strong>规则标签：</strong>机器人操作 · 推理</p>
-<p>未配置 Gemini，显示规则标签与原文摘要。</p>
+<p><strong>中文概述：</strong>本文提出了一种名为“Agent as Policy”（AGP）的方法，旨在使通用智能体能够无需特定任务或环境的针对性训练，直接驱动物理机器人执行操作任务。该方法通过让智能体负责任务规划与执行，使其能够处理视觉信息、编写可执行程序、发布运动指令，并根据物理反馈实时修正行为。实验验证了AGP在精密操作、动态运动及变形物体处理等多种现实世界任务中的有效性。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出AGP方法，使通用智能体能够通过运行时推理、编程和交互直接控制机器人执行任务，无需针对性的专门训练。<br><small>摘要依据：We demonstrate that a general-purpose agent can directly drive a physical robot throughout task execution without any task-specific or environment-specific training.</small></li>
+<li>AGP通过视觉反馈生成并执行程序，并在与物理环境的持续交互中根据结果动态调整操作行为。<br><small>摘要依据：Given a task and a robot interface, the agent interprets visual evidence, writes executable programs, issues motion commands, and revises its actions in response to physical outcomes.</small></li>
+<li>通过在多种真实世界操作任务（如块构建、物品重定向和双臂折叠）中的验证，展示了该方法在复杂场景下的应用潜力。<br><small>摘要依据：We study AGP across multiple real-world manipulation tasks spanning precision manipulation, dynamic motions, and deformable objects.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 推理</p>
 <p><strong>原文摘要节选：</strong>We demonstrate that a general-purpose agent can directly drive a physical robot throughout task execution without any task-specific or environment-specific training. We introduce Agent as Policy (AGP), which places task planning and execution under the agent&#x27;s control. Given a task and a robot interface, the agent interprets visual evidence, writes executable programs, issues motion commands, and revises its actions in response to physical outcomes. This brings the agent&#x27;s reasoning and programming capabilities into continuous interaction with the physical world. We study AGP across multiple real-world manipulation tasks spanning precision manipulation, dynamic motions, and deformable objects. These include assembly from human videos, block construction from goal images, die…</p>
 <p><a href="https://arxiv.org/abs/2609.12541">论文原文</a> · <a href="https://arxiv.org/pdf/2609.12541">PDF</a> · <a href="https://huggingface.co/papers/2609.12541">讨论与热度</a></p><hr>
 <h2>8. Breaking the Vision-Action Shortcut: Latent Interface Training for Generalizable Robotics Foundation Models</h2>
@@ -70,7 +107,12 @@
 <p>HF 点赞 66 · 讨论 2 · 仓库累计 Star 29（仓库可能包含多篇论文）</p>
 <p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
 <p><strong>规则标签：</strong>视觉语言动作</p>
-<p>未配置 Gemini，显示规则标签与原文摘要。</p>
+<p><strong>中文概述：</strong>针对机器人基础模型在面对视觉分布偏移时因依赖任务无关特征而泛化能力下降的问题，作者提出了Latent Interface Training (LIT)框架。该方法通过两阶段训练策略，先训练无视觉依赖的动作先验，再通过位姿监督的潜在接口约束视觉条件信息，旨在确保模型仅利用任务相关的空间信息生成动作。实验表明，该方法在多种架构上提升了模拟及真实场景下的泛化成功率。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出了一种两阶段训练框架LIT，通过位姿监督的潜在接口有效缓解视觉-动作捷径问题，提升模型对视觉分布变化的泛化能力。<br><small>摘要依据：We propose Latent Interface Training (LIT), a framework-agnostic two-stage strategy that first establishes a spatial-goal-conditioned action prior without images, then constrains visual conditioning through a pose-supervised latent interface.</small></li>
+<li>在四个视觉-语言-动作与世界模型架构上进行了验证，结果显示LIT显著提升了LIBERO-Plus的成功率，并增强了真实场景对环境变化的鲁棒性。<br><small>摘要依据：Across four vision-language-action and world-action architectures (Pi0.5, MolmoAct2, FAST-WAM, and ImageWAM), LIT improves overall LIBERO-Plus success by 3.87-10.70 percentage points while preserving or improving average LIBERO success.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · Sim-to-Real</p>
 <p><strong>原文摘要节选：</strong>Robot foundation models achieve strong in-distribution performance but often degrade under visual distribution shifts. When learning to generate actions from pretrained visual representations, models may exploit task-irrelevant visual cues that correlate with demonstrated actions within the training distribution. Such vision-action shortcuts can undermine generalization when these correlations change under distribution shifts. Mitigating these shortcuts requires constraining how visual information is used for action generation while preserving task-relevant spatial information. We propose Latent Interface Training (LIT), a framework-agnostic two-stage strategy that first establishes a spatial-goal-conditioned action prior without images, then constrains visual conditioning through a…</p>
 <p><a href="https://arxiv.org/abs/2609.12641">论文原文</a> · <a href="https://arxiv.org/pdf/2609.12641">PDF</a> · <a href="https://huggingface.co/papers/2609.12641">讨论与热度</a> · <a href="https://github.com/MAGICLAB-NUS/LIT">代码</a></p><hr>
 <h2>9. LightNav-0: Eliciting VLM Spatial Intelligence for Generalist Embodied Navigation</h2>
@@ -79,7 +121,12 @@
 <p>HF 点赞 32 · 讨论 2 · 本次 HF 热榜第 82 位 · 仓库累计 Star 575（仓库可能包含多篇论文）</p>
 <p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
 <p><strong>规则标签：</strong>强化学习 · 导航 · 推理</p>
-<p>未配置 Gemini，显示规则标签与原文摘要。</p>
+<p><strong>中文概述：</strong>针对具身导航中感知、推理与动作模块割裂及泛化能力有限的问题，本文提出了LightNav-0模型。该模型通过统一的Token接口激发预训练视觉语言模型（VLM）的空间智能，将双通道指引（pointing）与残差矢量量化动作标记结合，实现了无需特定任务头的通用导航。作者声称，该方法支持指令跟随、开放词汇对象导航及视觉跟踪，并在多个模拟基准测试及真实世界部署中展现出跨机器人和场景的泛化能力。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出了一种将预训练VLM空间智能与导航任务对齐的通用模型，能够处理指令跟随、开放词汇目标导航等多种任务。<br><small>摘要依据：LightNav-0, a compact generalist embodied navigation model that elicits the spatial intelligence of a pretrained VLM and aligns it with navigation, without task-specific prediction heads.</small></li>
+<li>在10个公共导航模拟环境中实现了最优的单目导航成功率，并在真实环境中验证了零样本泛化能力。<br><small>摘要依据：LightNav-0 achieves state-of-the-art monocular success rates across all 10 public navigation simulation settings. Real-world evaluations further demonstrate zero-shot generalization across robot embodiments, diverse scenes, and static and dynamic targets.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>导航 · 视觉语言动作 · Sim-to-Real</p>
 <p><strong>原文摘要节选：</strong>Embodied navigation requires agents to translate heterogeneous goals and visual observations into actions across tasks, environments, and robot embodiments. Modern vision-language models (VLMs) already encode spatial priors for visual grounding, spatial reasoning, and pointing, but these capabilities are rarely elicited directly for robot control. Existing navigation systems instead rely on task- or embodiment-specific components, fragmenting perception, reasoning, and action while offering limited generalization. Here we present LightNav-0, a compact generalist embodied navigation model that elicits the spatial intelligence of a pretrained VLM and aligns it with navigation, without task-specific prediction heads. LightNav-0 represents diverse navigation tasks through a unified token…</p>
 <p><a href="https://arxiv.org/abs/2608.30935">论文原文</a> · <a href="https://arxiv.org/pdf/2608.30935">PDF</a> · <a href="https://huggingface.co/papers/2608.30935">讨论与热度</a> · <a href="https://github.com/lightorigins/LightNav-0">代码</a></p><hr>
 <h2>10. ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search</h2>
@@ -88,6 +135,11 @@
 <p>HF 点赞 151 · 讨论 4 · 仓库累计 Star 75（仓库可能包含多篇论文）</p>
 <p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
 <p><strong>规则标签：</strong>大模型后训练 · 推理</p>
-<p>未配置 Gemini，显示规则标签与原文摘要。</p>
+<p><strong>中文概述：</strong>ZGCM-1 是一款完全开源的 7B 参数密集型基础模型，旨在通过结合内部思维与外部工具使用来突破模型参数限制。该研究提出了软硬件协同设计的训练方案，包括交错门控滑动窗口与全注意力机制、FP8 Muon 优化器以及基于马尔可夫决策过程的课程学习。作者声称该模型在数学推理和智能体搜索任务中表现出与超大规模模型竞争的潜力，并提升了预训练效率。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>ZGCM-1 引入了软硬件协同设计及改进的课程学习策略，实现了预训练效率的显著提升。<br><small>摘要依据：We also show that our pre-training design offers a ~4.2x efficiency improvement in 16K pre-training time-to-loss.</small></li>
+<li>该模型通过结合内部思维与外部工具调用，在数学推理和智能体搜索任务中展现了与超大规模模型相当的竞争力。<br><small>摘要依据：On several challenging mathematical reasoning and agentic search suites, it remains competitive with frontier models orders of magnitude larger, such as Qwen3-235B-A22B and GLM-5.1.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>
 <p><strong>原文摘要节选：</strong>In this work, we present ZGCM-1, a fully open 7B dense foundation model trained from scratch with extreme data, system, and algorithmic efficiency. ZGCM-1 is founded on a core premise: compact models cannot passively memorize the open web, but can overcome parametric capacity limits by coupling deliberate internal thinking with active external tool use. To support this paradigm across a 256K context, we develop an end-to-end, high-efficiency open training recipe: Architecture &amp; System Co-design: interleaved gated sliding-window and full attention, and a stable FP8 Muon optimizer; Progressive Curriculum &amp; MDP Mid-Training: context scaling across 16K, 64K, and 256K, and the reformulation of interaction traces into Markov Decision Processes. Furthermore, we establish an AI-native R&amp;D…</p>
 <p><a href="https://arxiv.org/abs/2609.13356">论文原文</a> · <a href="https://arxiv.org/pdf/2609.13356">PDF</a> · <a href="https://huggingface.co/papers/2609.13356">讨论与热度</a> · <a href="https://github.com/zgcagi/ZGCM-1">代码</a></p><hr></body></html>

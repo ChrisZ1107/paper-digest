@@ -1,0 +1,22 @@
+{
+  "overview": "针对现有世界-动作模型（WAM）系统设计高度耦合的问题，本文提出了OpenWAM。该研究将WAM设计解构为模块化组件，并通过OpenWAM-Infra框架进行系统性实验，以探讨知识继承、世界与动作学习交互及扩展性。作者基于研究原则构建了OpenWAM-α模型，使用约6400小时的以自我为中心的人类及机器人数据进行预训练。实验结果表明，该模型在涵盖操作与灵巧手的多项仿真及真实世界任务中均表现出优秀性能。",
+  "highlights": [
+    {
+      "text": "提出模块化研究框架OpenWAM，将世界-动作模型的设计空间拆分为可组合的模块，实现了训练、推理与评估的统一。",
+      "evidence": "OpenWAM-Infra factorizes the WAM design space into composable modules with unified training, inference, deployment, and evaluation."
+    },
+    {
+      "text": "确立了WAM训练的关键原则，认为通过专用动作容量、显式的世界-动作信息流及联合去噪，可有效提升模型的性能与扩展性。",
+      "evidence": "world-action synergy requires dedicated action capacity, explicit world-to-action information flow, and synchronized joint denoising;"
+    },
+    {
+      "text": "构建并开源了OpenWAM-α模型，在多种操作平台及真实世界基准测试中表现出色，验证了具身预训练对跨域泛化的提升。",
+      "evidence": "Across the eight simulation benchmarks and the real-robot experiments, which together span embodiments from single-arm and bimanual manipulation to dexterous hands, OpenWAM-α delivers consistently excellent performance, sustaining its top-tier standing from simulation to the physical world."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "世界模型",
+    "Sim-to-Real"
+  ]
+}

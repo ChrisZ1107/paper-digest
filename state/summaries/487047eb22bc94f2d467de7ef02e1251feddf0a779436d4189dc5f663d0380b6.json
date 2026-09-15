@@ -1,0 +1,17 @@
+{
+  "overview": "ZGCM-1 是一款完全开源的 7B 参数密集型基础模型，旨在通过结合内部思维与外部工具使用来突破模型参数限制。该研究提出了软硬件协同设计的训练方案，包括交错门控滑动窗口与全注意力机制、FP8 Muon 优化器以及基于马尔可夫决策过程的课程学习。作者声称该模型在数学推理和智能体搜索任务中表现出与超大规模模型竞争的潜力，并提升了预训练效率。",
+  "highlights": [
+    {
+      "text": "ZGCM-1 引入了软硬件协同设计及改进的课程学习策略，实现了预训练效率的显著提升。",
+      "evidence": "We also show that our pre-training design offers a ~4.2x efficiency improvement in 16K pre-training time-to-loss."
+    },
+    {
+      "text": "该模型通过结合内部思维与外部工具调用，在数学推理和智能体搜索任务中展现了与超大规模模型相当的竞争力。",
+      "evidence": "On several challenging mathematical reasoning and agentic search suites, it remains competitive with frontier models orders of magnitude larger, such as Qwen3-235B-A22B and GLM-5.1."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "推理"
+  ]
+}

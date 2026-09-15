@@ -1,0 +1,18 @@
+{
+  "overview": "针对具身导航中感知、推理与动作模块割裂及泛化能力有限的问题，本文提出了LightNav-0模型。该模型通过统一的Token接口激发预训练视觉语言模型（VLM）的空间智能，将双通道指引（pointing）与残差矢量量化动作标记结合，实现了无需特定任务头的通用导航。作者声称，该方法支持指令跟随、开放词汇对象导航及视觉跟踪，并在多个模拟基准测试及真实世界部署中展现出跨机器人和场景的泛化能力。",
+  "highlights": [
+    {
+      "text": "提出了一种将预训练VLM空间智能与导航任务对齐的通用模型，能够处理指令跟随、开放词汇目标导航等多种任务。",
+      "evidence": "LightNav-0, a compact generalist embodied navigation model that elicits the spatial intelligence of a pretrained VLM and aligns it with navigation, without task-specific prediction heads."
+    },
+    {
+      "text": "在10个公共导航模拟环境中实现了最优的单目导航成功率，并在真实环境中验证了零样本泛化能力。",
+      "evidence": "LightNav-0 achieves state-of-the-art monocular success rates across all 10 public navigation simulation settings. Real-world evaluations further demonstrate zero-shot generalization across robot embodiments, diverse scenes, and static and dynamic targets."
+    }
+  ],
+  "tags": [
+    "导航",
+    "视觉语言动作",
+    "Sim-to-Real"
+  ]
+}

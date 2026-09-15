@@ -1,0 +1,17 @@
+{
+  "overview": "针对递归自我改进的需求，本文提出了NeoHorse-1模型系列，探索了一种通过代理后训练实现自我进化的机制。该系统通过异构模型池和智能路由，记录用户交互并将其转化为包含推理与工具调用的训练样本，随后经过结构化验证和多维度评估。通过建立由路由信号引导的监督微调与策略蒸馏课程，结合能力引导的分配策略，作者构建了一个评价-选择-更新闭环，旨在使模型根据学习成果自动优化后续训练过程。",
+  "highlights": [
+    {
+      "text": "提出了一种基于路由引导的代理后训练流程，通过构建评价-选择-更新闭环实现递归自我改进的原型。",
+      "evidence": "Capability-guided allocation then converts evaluation feedback into the next training mixture, closing an evaluation-selection-update loop in which what the system learns to do shapes what it learns from next."
+    },
+    {
+      "text": "实验结果显示，通过该方法进行后训练后，4B和9B规模模型的宏观平均基准得分分别从58.94提升至64.87，从65.60提升至69.04。",
+      "evidence": "Across eleven benchmarks covering harness-based agents, tool use, coding, and instruction following, post-training raises the macro-average from 58.94 to 64.87 at 4B and from 65.60 to 69.04 at 9B"
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "推理"
+  ]
+}

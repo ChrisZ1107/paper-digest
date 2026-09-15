@@ -1,0 +1,17 @@
+{
+  "overview": "针对自主AI智能体在复杂领域中进行递归自我改进时面临的探索策略瓶颈，Dream-RSI框架提出了一种基于演化世界模型的方案。该框架通过轻量级编排层，利用积累的发现历史构建重放模拟器，使智能体能够在模拟器中进行“梦境”训练以获取低成本离线反馈，从而优化探索策略。作者声称该方法在算法工程、数学优化及GPU内核工程任务中，在显著降低发现成本的同时，实现了具有竞争力的发现质量。",
+  "highlights": [
+    {
+      "text": "Dream-RSI通过利用历史发现记录构建重放模拟器，实现了低成本的离线策略评估与改进，避免了高昂的重复在线调用。",
+      "evidence": "By performing dreaming in the replay simulator constructed from historical discovery trees, Dream-RSI secures immediate, low-cost off-policy feedback to evaluate and refine exploration policies without invoking repetitive, expensive online evaluations."
+    },
+    {
+      "text": "在算法工程、数学优化及GPU内核工程等多个任务中，Dream-RSI在保持竞争性探索成果的同时，有效降低了计算成本。",
+      "evidence": "Across algorithm engineering, mathematical optimization, and GPU kernel engineering, Dream-RSI achieves competitive or improved discovery quality while substantially reducing discovery cost in several settings."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "推理"
+  ]
+}
