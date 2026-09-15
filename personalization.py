@@ -95,11 +95,13 @@ def fetch_corpus(key, settings):
                 break
             allowed.update(descendants)
     corpus = []
+    examined = 0
     max_corpus = settings.get("max_corpus", 500)
     for start in range(0, 50000, 100):
         batch = zotero_json(f"/users/{user_id}/items/top", key, format="json", limit=100,
                             start=start, sort="dateAdded", direction="desc",
                             itemType="conferencePaper || journalArticle || preprint || thesis")
+        examined += len(batch)
         for item in batch:
             data = item["data"]
             abstract = plain_text(data.get("abstractNote"))
@@ -113,7 +115,10 @@ def fetch_corpus(key, settings):
         if len(corpus) >= max_corpus or len(batch) < 100:
             break
     if not corpus:
-        raise IntegrationError("No synced Zotero papers with abstracts in the selected library")
+        total = zotero_json(f"/users/{user_id}/items/top", key, format="json", limit=1)
+        if not total:
+            raise IntegrationError("Zotero cloud library is empty; sync the desktop library first")
+        raise IntegrationError(f"No synced Zotero papers with abstracts in the selected library ({examined} paper records checked)")
     return sorted(corpus, key=lambda item: item["added"], reverse=True)
 
 

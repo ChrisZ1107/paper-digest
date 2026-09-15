@@ -77,7 +77,7 @@ class PersonalizationTests(unittest.TestCase):
                 return {'userID': 123, 'access': {'user': {'library': True}}}
             return []
         with patch.dict(os.environ, {}, clear=True), patch.object(p, 'zotero_json', side_effect=api):
-            with self.assertRaisesRegex(p.IntegrationError, 'No synced'):
+            with self.assertRaisesRegex(p.IntegrationError, 'cloud library is empty'):
                 p.fetch_corpus('dummy', {})
         with patch.dict(os.environ, {'ZOTERO_ID': '456'}, clear=True), patch.object(p, 'zotero_json', side_effect=api):
             with self.assertRaisesRegex(p.IntegrationError, 'does not match'):
