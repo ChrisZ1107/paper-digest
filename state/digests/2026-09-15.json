@@ -1,0 +1,179 @@
+{
+  "date": "2026-09-15",
+  "timestamp": "2026-09-15T15:32:51.730972+08:00",
+  "title": "2026-09-15 热门论文 Top 10｜机器人·强化学习·AI",
+  "papers": [
+    {
+      "id": "2609.08183",
+      "title": "NeoHorse-1: Towards Recursive Self-Improvement via Agentic Post-Training with Routing Harness",
+      "abstract": "Recursive self-improvement (RSI) requires a concrete mechanism through which an AI system observes its capabilities and converts that evidence into the next round of learning. We present NeoHorse-1, a family of agent-native models developed to explore this path through agentic post-training. Our system combines a heterogeneous model pool with intelligent routing, recording the predicted capability demand, selected service tier, and subsequent interaction for each user turn. These records are converted into training examples that preserve interleaved reasoning, tool calls, and harness context, and are admitted through structural validation, six-dimensional semantic evaluation, and subscene-level labeling. Routing signals organize supervised fine-tuning into a three-stage curriculum and extend to routing-guided on-policy distillation, where a teacher supervises student-generated responses under the same progression. Capability-guided allocation then converts evaluation feedback into the next training mixture, closing an evaluation-selection-update loop in which what the system learns to do shapes what it learns from next. Across eleven benchmarks covering harness-based agents, tool use, coding, and instruction following, post-training raises the macro-average from 58.94 to 64.87 at 4B and from 65.60 to 69.04 at 9B, substantially narrowing the aggregate gap between the post-trained 4B model and the 9B base model. NeoHorse-1 provides an initial prototype of this feedback-driven process and a path toward harness-mediated RSI across successive iterations.",
+      "topics": [
+        "通用 AI"
+      ],
+      "published": "2026-09-08",
+      "age_days": 7.314487626990742,
+      "upvotes": 414,
+      "comments": 8,
+      "stars": 334,
+      "repo": "https://github.com/TokenRhythm/NeoHorse",
+      "trending_rank": 21,
+      "growth": null,
+      "score": 5.415
+    },
+    {
+      "id": "2609.08936",
+      "title": "AuK Technical Report: An Open-Source Foundational Model for Speech Generation and Editing",
+      "abstract": "We introduce AuK, an open-source foundational model that unifies speech generation and editing through a common interface of natural-language instructions and audio context. To support this broad capability set, we construct approximately 3.03 billion instruction--audio instances and 1.95 million hours of effective supervision across five task families: speech generation, content editing, enhancement and separation, paralinguistic editing, and acoustic editing. AuK combines a multimodal large language model for semantic conditioning, an VAE jointly trained on speech, general audio, and music for acoustic conditioning, and a hybrid rectified-flow Transformer that performs dual-stream MMDiT blocks followed by unified single-stream DiT blocks for generation. Training begins with generation-only warm-up and proceeds to joint generation--editing pre-training. We then apply complementary post-training strategies: human-feedback preference optimization for open-ended editing and reward-based reinforcement learning for speech generation. To reduce inference cost, we further distill the model with consistency initialization and task-routed Decoupled DMD. The resulting AuK-Flash performs 4-step inference without classifier-free guidance and achieves a 4.5 wall-clock speedup over the full model under matched conditions. Experiments demonstrate leading performance on zero-shot and instruction-controlled speech generation and general instruction-guided editing, while remaining competitive on signal-level restoration tasks. We release both the source code and model weights to support reproducibility and further research.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-09-08",
+      "age_days": 7.314487626990742,
+      "upvotes": 218,
+      "comments": 3,
+      "stars": 877,
+      "repo": "https://github.com/Tencent-Hunyuan/AuK",
+      "trending_rank": 6,
+      "growth": null,
+      "score": 5.022
+    },
+    {
+      "id": "2609.14858",
+      "title": "Dream-RSI: Recursive Self-Improvement through Evolving Worlds",
+      "abstract": "Recursive self-improvement is becoming increasingly vital for autonomous AI agents, where progress hinges on discovering high-value solutions across complex domains. The driver of this process is effective exploration, however, managing and improving exploration strategies remains a major bottleneck. Current systems face a fundamental dilemma: fixed strategies fail to adapt as search spaces scale, while online policy optimization requires navigating vast meta-search spaces under delayed and expensive feedback over long-horizon rollouts. We introduce Dream-RSI, a framework for scalable and recursively self-improving exploration. A lightweight orchestration layer makes exploration explicit and programmable while leaving the underlying coding agent unchanged. Our key insight is that accumulated discovery history can serve as a replay simulator over the realized search space. By performing dreaming in the replay simulator constructed from historical discovery trees, Dream-RSI secures immediate, low-cost off-policy feedback to evaluate and refine exploration policies without invoking repetitive, expensive online evaluations. The improved policy is subsequently redeployed online to drive further discovery, continuously expanding the simulator pool in a self-improving loop. Across algorithm engineering, mathematical optimization, and GPU kernel engineering, Dream-RSI achieves competitive or improved discovery quality while substantially reducing discovery cost in several settings.",
+      "topics": [
+        "通用 AI"
+      ],
+      "published": "2026-09-14",
+      "age_days": 1.3144876269907408,
+      "upvotes": 155,
+      "comments": 1,
+      "stars": 4,
+      "repo": "https://github.com/zhengkid/Dream-RSI",
+      "trending_rank": null,
+      "growth": null,
+      "score": 4.997
+    },
+    {
+      "id": "2609.15818",
+      "title": "Atria Dawn: The Dawn of Agentic Superintelligence",
+      "abstract": "As AI agents become participants in the development of their successors, they reshape both the production of intelligence and the role of human researchers. We introduce Atria Dawn Preview, a foundation agentic language model designed for scientific research and engineering workflows, with the goal of expanding the frontier of agent productivity in the real world. This model is trained via a Verifiable Experience Pipeline that connects tool-mediated interactions to executable environments and externally verified outcomes. Across 16 benchmarks spanning real-world research, engineering, and digital work, Atria Dawn Preview is competitive with frontier agents and achieves the highest reported score on five of them. Beyond standalone performance, we examine the real research-and-development process behind this model as a case study of human--AI collaboration, analyzing 769 task records from 56 participants together with agent logs. When asked to evaluate completed tasks under comparable conditions, participants rated about one-third of completed AI-assisted tasks as infeasible without AI. More strikingly, agents frequently propose methods and implement revisions, while humans retain most final decisions and guide exploration through judgment and feedback. These observations indicate a shift from task-level execution to project-level partnership, with human effort concentrating on what is worth pursuing and how evidence should guide research. Progress toward more autonomous AI research must therefore advance both the capacity for discovery and the capacity for meaningful human oversight, preserving accountable human authority over the risks and direction of continued development.",
+      "topics": [
+        "通用 AI"
+      ],
+      "published": "2026-09-14",
+      "age_days": 1.3144876269907408,
+      "upvotes": 143,
+      "comments": 1,
+      "stars": 121,
+      "repo": "https://github.com/atria-asi/Atria-Dawn-Preview",
+      "trending_rank": null,
+      "growth": null,
+      "score": 4.923
+    },
+    {
+      "id": "2609.10522",
+      "title": "Show-Harness: Just a VLM Agent Can Play Robots",
+      "abstract": "Foundation vision-language models (VLMs) exhibit broad intelligence about the world, yet translating this intelligence into robot control remains challenging. We present Show-Harness, an Embodied Harness that enables VLMs to \"play\" robots through a compact semantic interface linking intent to action. Show-Harness exposes discrete semantic action units that VLMs can naturally reason over, while embodiment-specific interpreters deterministically ground them into local robot actions, keeping the VLM directly responsible for fine-grained physical decisions. Through the same interface, Show-Harness demonstrates the feasibility of (1) directly unlocking closed-source frontier VLMs for zero-shot robot control, and (2) adapting small-scale open-source VLMs for low-cost deployment with just a few GPU-hours of fine-tuning. We further develop GUMI (GUI Manipulation Interface), which extends the same semantic action space to GUI-based demonstration collection, allowing humans and agents to \"play\" robots across embodiments without specialized teleoperation hardware. Extensive experiments show that Show-Harness-equipped VLM agents generalize robustly across tasks, embodiments, and environments, outperforming representative agentic and VLA paradigms. These results suggest that the right interface can unlock substantial embodied capability from foundation VLMs, without requiring additional model capacity or costly embodiment-specific pretraining.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-09-09",
+      "age_days": 6.314487626990742,
+      "upvotes": 157,
+      "comments": 4,
+      "stars": 345,
+      "repo": "https://github.com/showlab/Show-Harness",
+      "trending_rank": 12,
+      "growth": null,
+      "score": 4.899
+    },
+    {
+      "id": "2609.11115",
+      "title": "Benchmark Radar: A Living Database and Search Engine for AI Benchmarks and Evaluation",
+      "abstract": "Benchmark researchers and developers of large language models (LLMs) and other AI systems need to find relevant evaluations, locate their benchmark datasets and code, and understand the settings behind reported scores. We present Benchmark Radar, a living database and search engine for retrieval and discovery of AI benchmarks, covering LLM evaluation, agentic and tool-use benchmarks, coding, reasoning, safety, and domain-specific evaluations. The system combines daily discovery of benchmark papers, repositories, datasets, and releases with a searchable benchmark catalog, mentions in model cards and technical reports, and score histories. It retains source identities and citations so readers can inspect candidate benchmarks and their evaluation evidence. Daily discovery draws on 37 sources: 13 direct connectors and 24 first-party research and engineering feeds. The catalog contains 1,283 source records drawn from 4 benchmark catalogs and 12,916 numeric observations on 790 records. We describe collection and retrieval, audit the full catalog, and examine benchmark saturation, adoption trends, and the limits of score comparisons. A worked example walks through a complete prior-art search, showing how to query the catalog and inspect benchmark evidence when designing a new evaluation. We release the web dashboard with a benchmark leaderboard, a Pareto frontier view of score against measured use, saturation and trend views, daily feeds, downloadable evidence, a command-line interface (CLI) for offline queries, and reproducible analysis.",
+      "topics": [
+        "通用 AI"
+      ],
+      "published": "2026-09-10",
+      "age_days": 5.314487626990741,
+      "upvotes": 152,
+      "comments": 9,
+      "stars": 204,
+      "repo": "https://github.com/ktwu01/benchmark-radar",
+      "trending_rank": null,
+      "growth": null,
+      "score": 4.648
+    },
+    {
+      "id": "2609.11929",
+      "title": "SenseNova-U1.5: Towards Native Unified Visual Intelligence",
+      "abstract": "We launch SenseNova-U1.5, an 8B-MoT native unified multimodal model that understands, reasons about, and generates visual content within an encoder-free and VAE-free architecture. We strengthen its visual interface through spatially coherent patch reconstruction and scale its training with carefully curated generation and editing data, improved task formulation, structural prompt enhancement, and native resolutions of up to 4K. For post-training, we optimize specialized experts for visual aesthetics, bilingual text rendering, infographic generation, and image editing, and consolidate their capabilities through multi-expert on-policy distillation. Across extensive evaluations, SenseNova-U1.5 largely advances image fidelity, text rendering, complex composition, multi-reference editing, and interleaved generation, while improving instruction following and preserving subject identity, geometry, and unmodified regions. Despite limited exposure to structured formats in its generation data, SenseNova-U1.5 generalizes effectively to long, complex, and structured visual instructions, further proving that multimodal understanding can transfer to visual planning and creation. Together, these findings position native unified modelling as a promising path towards systems that perceive, reason and create within a fully end-to-end framework. We will open-source training code, including supervised fine-tuning, reinforcement learning, and on-policy distillation.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-09-10",
+      "age_days": 5.314487626990741,
+      "upvotes": 250,
+      "comments": 3,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "growth": null,
+      "score": 4.608
+    },
+    {
+      "id": "2609.13356",
+      "title": "ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search",
+      "abstract": "In this work, we present ZGCM-1, a fully open 7B dense foundation model trained from scratch with extreme data, system, and algorithmic efficiency. ZGCM-1 is founded on a core premise: compact models cannot passively memorize the open web, but can overcome parametric capacity limits by coupling deliberate internal thinking with active external tool use. To support this paradigm across a 256K context, we develop an end-to-end, high-efficiency open training recipe: Architecture & System Co-design: interleaved gated sliding-window and full attention, and a stable FP8 Muon optimizer; Progressive Curriculum & MDP Mid-Training: context scaling across 16K, 64K, and 256K, and the reformulation of interaction traces into Markov Decision Processes. Furthermore, we establish an AI-native R&D workflow where agent swarms autonomously manage cluster operations, data curation, and rapid diagnostic evaluation. Extensive evaluations show that ZGCM-1-7B is competitive across 7B model family on general benchmarks. On several challenging mathematical reasoning and agentic search suites, it remains competitive with frontier models orders of magnitude larger, such as Qwen3-235B-A22B and GLM-5.1. We also show that our pre-training design offers a ~4.2x efficiency improvement in 16K pre-training time-to-loss. Across the full development lifecycle, we distill eight actionable empirical findings-spanning architectural scaling, SFT quality pruning, long-context generalization, and agentic co-training dynamics. To facilitate community research, we open-source model weights from the pre-training, mid-training, and post-training stages, intermediate checkpoints, training code, per-stage data and data recipes, and W&B logs.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-09-11",
+      "age_days": 4.314487626990741,
+      "upvotes": 109,
+      "comments": 4,
+      "stars": 75,
+      "repo": "https://github.com/zgcagi/ZGCM-1",
+      "trending_rank": null,
+      "growth": null,
+      "score": 4.331
+    },
+    {
+      "id": "2609.14973",
+      "title": "PhysBrain 1.5: From Vision-Language Models to Physical Foundation Models",
+      "abstract": "We present PhysBrain 1.5, a unified model for understanding physical environments, generating actions, and predicting future states. Motivated by the physical loop of observation, interaction, and environmental change, we bring these capabilities into a common learning framework. Starting from a general vision--language model, we encode language responses, end-effector motion, and dense visual targets as discrete sequences and jointly optimize them with autoregressive next-token prediction. Pre-training draws its embodied supervision entirely from human interaction videos, using task-centered episodes to pair semantic and spatial context with recovered motion and subsequent observations. We then adapt the model through supervised fine-tuning on a mixture of human demonstrations, robot trajectories, and simulated experience. Across 28 embodied understanding benchmarks, our 8B model achieves an average score of 72.5, setting a new open-source state of the art and performing on par with leading proprietary models such as GPT-6-Astra and Gemini 3.6 Flash. It achieves the best open-source results on 14 benchmarks while retaining general multimodal capabilities. Beyond these understanding evaluations, qualitative examples show the model's ability to produce end-effector trajectories and predict future scenes through spatially aligned RGB, depth, and robot-mask outputs.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-09-14",
+      "age_days": 1.3144876269907408,
+      "upvotes": 57,
+      "comments": 1,
+      "stars": 14,
+      "repo": "https://github.com/DeepCybo-PhysAI/PhysBrain-1.5",
+      "trending_rank": null,
+      "growth": null,
+      "score": 4.092
+    },
+    {
+      "id": "2609.08084",
+      "title": "Marigold V2: Revisiting Diffusion Transformers for Monocular Depth Estimation",
+      "abstract": "Monocular depth estimation is a ubiquitous yet highly ill-posed computer vision task, with downstream applications in scene reconstruction, computational photography, and robotics, among others. Despite the field's maturity, recent models still struggle to generalize to out-of-distribution inputs and to produce sharp and detailed depth maps. In this paper, we revisit Marigold, a set of techniques for repurposing modern image generation and editing models, powered by the diffusion transformer (DiT) architecture, into state-of-the-art monocular depth estimators. Our recipes target single-step inference from pretrained multi-step flow-matching models, with quantization where needed, preserving model capacity while remaining cheap to run. We analyze the artifacts of naive training and identify two effective remedies: aligning the model's internal representations with semantic features extracted from ground-truth, and adopting a 2-stage fine-tuning protocol built around a novel Sinkhorn-based loss. The results are crisper, cleaner depth maps that generalize well out-of-distribution, with 16-26% improvement in AbsRel over the previous best on KITTI and ETH3D. Qualitatively, our model resolves fur, foliage, and hair-thin edges that have eluded prior models. Furthermore, Marigold V2 achieves state-of-the-art results when applied to other dense regression tasks, such as surface normals estimation and intrinsic image decomposition. Project website: https://hf.co/spaces/huawei-bayerlab/marigold-v2-web",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-09-08",
+      "age_days": 7.314487626990742,
+      "upvotes": 68,
+      "comments": 3,
+      "stars": 657,
+      "repo": "https://github.com/huawei-bayerlab/marigold-v2",
+      "trending_rank": 13,
+      "growth": null,
+      "score": 4.017
+    }
+  ],
+  "candidate_count": 125,
+  "html": "<h1>2026-09-15 热门论文 Top 10</h1>\n<p>机器人 · 强化学习 · 通用 AI</p>\n<p>生成时间：2026-09-15 15:32 CST。从 125 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>\n<p>数据来源：<a href=\"https://huggingface.co/papers\">Hugging Face Papers</a>。分数结合热榜位置、点赞、讨论、发表时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>\n<h2>1. NeoHorse-1: Towards Recursive Self-Improvement via Agentic Post-Training with Routing Harness</h2>\n<p><strong>通用 AI</strong> · 发表 2026-09-08 · 综合分 5.42</p>\n<p>HF 点赞 414 · 讨论 8 · 本次 HF 热榜第 21 位 · 仓库累计 Star 334（仓库可能包含多篇论文）</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>原文摘要节选：</strong>Recursive self-improvement (RSI) requires a concrete mechanism through which an AI system observes its capabilities and converts that evidence into the next round of learning. We present NeoHorse-1, a family of agent-native models developed to explore this path through agentic post-training. Our system combines a heterogeneous model pool with intelligent routing, recording the predicted capability demand, selected service tier, and subsequent interaction for each user turn. These records are converted into training examples that preserve interleaved reasoning, tool calls, and harness context, and are admitted through structural validation, six-dimensional semantic evaluation, and subscene-level labeling. Routing signals organize supervised fine-tuning into a three-stage curriculum and…</p>\n<p><a href=\"https://arxiv.org/abs/2609.08183\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.08183\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.08183\">讨论与热度</a> · <a href=\"https://github.com/TokenRhythm/NeoHorse\">代码</a></p><hr>\n<h2>2. AuK Technical Report: An Open-Source Foundational Model for Speech Generation and Editing</h2>\n<p><strong>强化学习</strong> · 发表 2026-09-08 · 综合分 5.02</p>\n<p>HF 点赞 218 · 讨论 3 · 本次 HF 热榜第 6 位 · 仓库累计 Star 877（仓库可能包含多篇论文）</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>原文摘要节选：</strong>We introduce AuK, an open-source foundational model that unifies speech generation and editing through a common interface of natural-language instructions and audio context. To support this broad capability set, we construct approximately 3.03 billion instruction--audio instances and 1.95 million hours of effective supervision across five task families: speech generation, content editing, enhancement and separation, paralinguistic editing, and acoustic editing. AuK combines a multimodal large language model for semantic conditioning, an VAE jointly trained on speech, general audio, and music for acoustic conditioning, and a hybrid rectified-flow Transformer that performs dual-stream MMDiT blocks followed by unified single-stream DiT blocks for generation. Training begins with…</p>\n<p><a href=\"https://arxiv.org/abs/2609.08936\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.08936\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.08936\">讨论与热度</a> · <a href=\"https://github.com/Tencent-Hunyuan/AuK\">代码</a></p><hr>\n<h2>3. Dream-RSI: Recursive Self-Improvement through Evolving Worlds</h2>\n<p><strong>通用 AI</strong> · 发表 2026-09-14 · 综合分 5.00</p>\n<p>HF 点赞 155 · 讨论 1 · 仓库累计 Star 4（仓库可能包含多篇论文）</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>原文摘要节选：</strong>Recursive self-improvement is becoming increasingly vital for autonomous AI agents, where progress hinges on discovering high-value solutions across complex domains. The driver of this process is effective exploration, however, managing and improving exploration strategies remains a major bottleneck. Current systems face a fundamental dilemma: fixed strategies fail to adapt as search spaces scale, while online policy optimization requires navigating vast meta-search spaces under delayed and expensive feedback over long-horizon rollouts. We introduce Dream-RSI, a framework for scalable and recursively self-improving exploration. A lightweight orchestration layer makes exploration explicit and programmable while leaving the underlying coding agent unchanged. Our key insight is that…</p>\n<p><a href=\"https://arxiv.org/abs/2609.14858\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.14858\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.14858\">讨论与热度</a> · <a href=\"https://github.com/zhengkid/Dream-RSI\">代码</a></p><hr>\n<h2>4. Atria Dawn: The Dawn of Agentic Superintelligence</h2>\n<p><strong>通用 AI</strong> · 发表 2026-09-14 · 综合分 4.92</p>\n<p>HF 点赞 143 · 讨论 1 · 仓库累计 Star 121（仓库可能包含多篇论文）</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>原文摘要节选：</strong>As AI agents become participants in the development of their successors, they reshape both the production of intelligence and the role of human researchers. We introduce Atria Dawn Preview, a foundation agentic language model designed for scientific research and engineering workflows, with the goal of expanding the frontier of agent productivity in the real world. This model is trained via a Verifiable Experience Pipeline that connects tool-mediated interactions to executable environments and externally verified outcomes. Across 16 benchmarks spanning real-world research, engineering, and digital work, Atria Dawn Preview is competitive with frontier agents and achieves the highest reported score on five of them. Beyond standalone performance, we examine the real research-and-development…</p>\n<p><a href=\"https://arxiv.org/abs/2609.15818\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.15818\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.15818\">讨论与热度</a> · <a href=\"https://github.com/atria-asi/Atria-Dawn-Preview\">代码</a></p><hr>\n<h2>5. Show-Harness: Just a VLM Agent Can Play Robots</h2>\n<p><strong>机器人</strong> · 发表 2026-09-09 · 综合分 4.90</p>\n<p>HF 点赞 157 · 讨论 4 · 本次 HF 热榜第 12 位 · 仓库累计 Star 345（仓库可能包含多篇论文）</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>原文摘要节选：</strong>Foundation vision-language models (VLMs) exhibit broad intelligence about the world, yet translating this intelligence into robot control remains challenging. We present Show-Harness, an Embodied Harness that enables VLMs to &quot;play&quot; robots through a compact semantic interface linking intent to action. Show-Harness exposes discrete semantic action units that VLMs can naturally reason over, while embodiment-specific interpreters deterministically ground them into local robot actions, keeping the VLM directly responsible for fine-grained physical decisions. Through the same interface, Show-Harness demonstrates the feasibility of (1) directly unlocking closed-source frontier VLMs for zero-shot robot control, and (2) adapting small-scale open-source VLMs for low-cost deployment with just a few…</p>\n<p><a href=\"https://arxiv.org/abs/2609.10522\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.10522\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.10522\">讨论与热度</a> · <a href=\"https://github.com/showlab/Show-Harness\">代码</a></p><hr>\n<h2>6. Benchmark Radar: A Living Database and Search Engine for AI Benchmarks and Evaluation</h2>\n<p><strong>通用 AI</strong> · 发表 2026-09-10 · 综合分 4.65</p>\n<p>HF 点赞 152 · 讨论 9 · 仓库累计 Star 204（仓库可能包含多篇论文）</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>原文摘要节选：</strong>Benchmark researchers and developers of large language models (LLMs) and other AI systems need to find relevant evaluations, locate their benchmark datasets and code, and understand the settings behind reported scores. We present Benchmark Radar, a living database and search engine for retrieval and discovery of AI benchmarks, covering LLM evaluation, agentic and tool-use benchmarks, coding, reasoning, safety, and domain-specific evaluations. The system combines daily discovery of benchmark papers, repositories, datasets, and releases with a searchable benchmark catalog, mentions in model cards and technical reports, and score histories. It retains source identities and citations so readers can inspect candidate benchmarks and their evaluation evidence. Daily discovery draws on 37…</p>\n<p><a href=\"https://arxiv.org/abs/2609.11115\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.11115\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.11115\">讨论与热度</a> · <a href=\"https://github.com/ktwu01/benchmark-radar\">代码</a></p><hr>\n<h2>7. SenseNova-U1.5: Towards Native Unified Visual Intelligence</h2>\n<p><strong>强化学习</strong> · 发表 2026-09-10 · 综合分 4.61</p>\n<p>HF 点赞 250 · 讨论 3</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>原文摘要节选：</strong>We launch SenseNova-U1.5, an 8B-MoT native unified multimodal model that understands, reasons about, and generates visual content within an encoder-free and VAE-free architecture. We strengthen its visual interface through spatially coherent patch reconstruction and scale its training with carefully curated generation and editing data, improved task formulation, structural prompt enhancement, and native resolutions of up to 4K. For post-training, we optimize specialized experts for visual aesthetics, bilingual text rendering, infographic generation, and image editing, and consolidate their capabilities through multi-expert on-policy distillation. Across extensive evaluations, SenseNova-U1.5 largely advances image fidelity, text rendering, complex composition, multi-reference editing, and…</p>\n<p><a href=\"https://arxiv.org/abs/2609.11929\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.11929\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.11929\">讨论与热度</a></p><hr>\n<h2>8. ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search</h2>\n<p><strong>强化学习</strong> · 发表 2026-09-11 · 综合分 4.33</p>\n<p>HF 点赞 109 · 讨论 4 · 仓库累计 Star 75（仓库可能包含多篇论文）</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>原文摘要节选：</strong>In this work, we present ZGCM-1, a fully open 7B dense foundation model trained from scratch with extreme data, system, and algorithmic efficiency. ZGCM-1 is founded on a core premise: compact models cannot passively memorize the open web, but can overcome parametric capacity limits by coupling deliberate internal thinking with active external tool use. To support this paradigm across a 256K context, we develop an end-to-end, high-efficiency open training recipe: Architecture &amp; System Co-design: interleaved gated sliding-window and full attention, and a stable FP8 Muon optimizer; Progressive Curriculum &amp; MDP Mid-Training: context scaling across 16K, 64K, and 256K, and the reformulation of interaction traces into Markov Decision Processes. Furthermore, we establish an AI-native R&amp;D…</p>\n<p><a href=\"https://arxiv.org/abs/2609.13356\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.13356\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.13356\">讨论与热度</a> · <a href=\"https://github.com/zgcagi/ZGCM-1\">代码</a></p><hr>\n<h2>9. PhysBrain 1.5: From Vision-Language Models to Physical Foundation Models</h2>\n<p><strong>机器人</strong> · 发表 2026-09-14 · 综合分 4.09</p>\n<p>HF 点赞 57 · 讨论 1 · 仓库累计 Star 14（仓库可能包含多篇论文）</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>原文摘要节选：</strong>We present PhysBrain 1.5, a unified model for understanding physical environments, generating actions, and predicting future states. Motivated by the physical loop of observation, interaction, and environmental change, we bring these capabilities into a common learning framework. Starting from a general vision--language model, we encode language responses, end-effector motion, and dense visual targets as discrete sequences and jointly optimize them with autoregressive next-token prediction. Pre-training draws its embodied supervision entirely from human interaction videos, using task-centered episodes to pair semantic and spatial context with recovered motion and subsequent observations. We then adapt the model through supervised fine-tuning on a mixture of human demonstrations, robot…</p>\n<p><a href=\"https://arxiv.org/abs/2609.14973\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.14973\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.14973\">讨论与热度</a> · <a href=\"https://github.com/DeepCybo-PhysAI/PhysBrain-1.5\">代码</a></p><hr>\n<h2>10. Marigold V2: Revisiting Diffusion Transformers for Monocular Depth Estimation</h2>\n<p><strong>机器人</strong> · 发表 2026-09-08 · 综合分 4.02</p>\n<p>HF 点赞 68 · 讨论 3 · 本次 HF 热榜第 13 位 · 仓库累计 Star 657（仓库可能包含多篇论文）</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>原文摘要节选：</strong>Monocular depth estimation is a ubiquitous yet highly ill-posed computer vision task, with downstream applications in scene reconstruction, computational photography, and robotics, among others. Despite the field&#x27;s maturity, recent models still struggle to generalize to out-of-distribution inputs and to produce sharp and detailed depth maps. In this paper, we revisit Marigold, a set of techniques for repurposing modern image generation and editing models, powered by the diffusion transformer (DiT) architecture, into state-of-the-art monocular depth estimators. Our recipes target single-step inference from pretrained multi-step flow-matching models, with quantization where needed, preserving model capacity while remaining cheap to run. We analyze the artifacts of naive training and…</p>\n<p><a href=\"https://arxiv.org/abs/2609.08084\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.08084\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.08084\">讨论与热度</a> · <a href=\"https://github.com/huawei-bayerlab/marigold-v2\">代码</a></p><hr>"
+}
