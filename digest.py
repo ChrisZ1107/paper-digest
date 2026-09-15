@@ -175,6 +175,8 @@ def digest_html(selected, now, count, personalization_note=""):
             parts.append(f'<p>较上次观测（{growth["days"]} 天前）：{changes}。</p>')
         else:
             parts.append("<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>")
+        from summarization import render
+        parts.append(render(paper))
         excerpt = paper["abstract"][:800]
         if len(paper["abstract"]) > 800:
             excerpt = excerpt.rsplit(" ", 1)[0] + "…"
@@ -212,7 +214,7 @@ def render_feed(records, config):
     return ET.tostring(rss, encoding="unicode", xml_declaration=True)
 
 
-def run(root, force=False, fixtures=None):
+def run(root, force=False, fixtures=None, refresh_summaries=False):
     config = read_json(root / "config.json", {})
     now = datetime.now(ZoneInfo(config["timezone"]))
     state = root / "state"
@@ -223,6 +225,13 @@ def run(root, force=False, fixtures=None):
         existing = archive.exists()
         if existing and not force:
             logging.info("Today's digest already exists; rebuilding RSS without creating another item.")
+            if refresh_summaries:
+                from summarization import enrich as summarize
+                record = read_json(archive, {})
+                summarize(record["papers"], config, state)
+                record["timestamp"] = now.isoformat()
+                record["html"] = digest_html(record["papers"], now, record["candidate_count"], record.get("personalization_note", ""))
+                atomic_write(archive, json.dumps(record, ensure_ascii=False, indent=2))
         else:
             if fixtures:
                 latest = read_json(fixtures / "latest.json", [])
@@ -239,6 +248,8 @@ def run(root, force=False, fixtures=None):
             eligible = [p for p in snapshots if p.stem < str(now.date())]
             previous = read_json(eligible[-1], {}) if eligible else {}
             selected = rank_and_select(candidates, previous, now, config)
+            from summarization import enrich as summarize
+            summarize(selected, config, state)
             record = {"date": str(now.date()), "timestamp": now.isoformat(),
                       "title": f"{now.date()} 热门论文 Top {len(selected)}｜机器人·强化学习·AI",
                       "papers": selected, "candidate_count": len(candidates),
@@ -265,6 +276,7 @@ if __name__ == "__main__":
     parser.add_argument("--root", type=Path, default=ROOT)
     parser.add_argument("--force", action="store_true", help="Regenerate today's entry with the same stable GUID")
     parser.add_argument("--fixtures", type=Path, help="Read latest.json and trending.json instead of using the network")
+    parser.add_argument("--refresh-summaries", action="store_true", help="Enrich today without reranking")
     args = parser.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
-    run(args.root, args.force, args.fixtures)
+    run(args.root, args.force, args.fixtures, args.refresh_summaries)

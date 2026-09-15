@@ -17,5 +17,9 @@
       "cs.AI",
       "cs.CV"
     ]
+  },
+  "summarization": {
+    "enabled": true,
+    "model": "gemini-3.1-flash-lite"
   }
 }

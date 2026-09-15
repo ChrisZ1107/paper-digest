@@ -42,3 +42,24 @@
 ## License
 
 AGPL-3.0，见 LICENSE 与 THIRD_PARTY_NOTICES.md。
+
+
+## Gemini 中文解读
+
+在仓库 Settings → Secrets and variables → Actions 中添加 `GEMINI_API_KEY`。
+默认模型为 `gemini-3.1-flash-lite`，可在 `config.json` 的 `summarization.model` 修改。
+每次只处理入选的最多 10 篇公开论文标题和摘要，不发送 Zotero 收藏库、笔记或密钥到模型输入。
+通过 Google Interactions API 请求结构化中文概述、1–3 条亮点和主题标签，设置 `store=false`。
+每条亮点附摘要原句，程序验证原句确实存在；这不能保证中文解读无误，也不代表已读全文。
+规则标签和 AI 主题分开显示在每天一条 RSS 的正文中，不写回 Zotero。
+
+缓存位于 `state/summaries/`，按模型、提示版本和论文内容散列；只有成功且通过校验的公开解读会持久化。
+每天最多 10 次请求，不自动重试。API 错误会停止当天剩余请求，保留规则标签和原文摘要。
+没有密钥时仍可正常生成日报；API 费用和配额以 Google 项目为准。
+
+保存密钥后，可在 Actions 手动运行，勾选 `summaries_only`，为今天已有的 10 篇补充解读。
+本地等价命令为 `python3 digest.py --refresh-summaries`，密钥仅通过环境变量传入。
+`regenerate` 会重新筛选当天论文；日期 GUID 保持不变，阅读器可能需要等待订阅服务刷新。
+
+参考：[Google 结构化输出](https://ai.google.dev/gemini-api/docs/structured-output)、
+[Interactions API](https://ai.google.dev/api/interactions-api)。

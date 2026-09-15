@@ -10,6 +10,10 @@ on:
         description: Regenerate today's digest with the same RSS GUID
         type: boolean
         default: false
+      summaries_only:
+        description: Refresh summaries for today's existing selection
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths:
@@ -17,6 +21,8 @@ on:
       - 'test_digest.py'
       - 'personalization.py'
       - 'test_personalization.py'
+      - 'summarization.py'
+      - 'test_summarization.py'
       - 'requirements-personalization.txt'
       - 'config.json'
       - '.github/workflows/daily.yml'
@@ -53,12 +59,12 @@ jobs:
           fi
       - name: Install CPU similarity model dependencies
         continue-on-error: true
-        if: steps.zotero.outputs.enabled == 'true'
+        if: steps.zotero.outputs.enabled == 'true' && inputs.summaries_only != true
         run: |
           python3 -m pip install torch --index-url https://download.pytorch.org/whl/cpu
           python3 -m pip install -r requirements-personalization.txt
       - name: Verify Zotero library
-        if: steps.zotero.outputs.enabled == 'true' && github.event_name == 'workflow_dispatch'
+        if: steps.zotero.outputs.enabled == 'true' && github.event_name == 'workflow_dispatch' && inputs.summaries_only != true
         env:
           ZOTERO_KEY: ${{ secrets.ZOTERO_KEY }}
           ZOTERO_ID: ${{ secrets.ZOTERO_ID }}
@@ -81,6 +87,8 @@ jobs:
           PY
       - name: Generate today's digest
         env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SUMMARIES_ONLY: ${{ inputs.summaries_only }}
           ZOTERO_KEY: ${{ secrets.ZOTERO_KEY }}
           ZOTERO_ID: ${{ secrets.ZOTERO_ID }}
           ZOTERO_COLLECTIONS: ${{ secrets.ZOTERO_COLLECTIONS }}
@@ -88,7 +96,9 @@ jobs:
           HF_HUB_DISABLE_TELEMETRY: '1'
           TOKENIZERS_PARALLELISM: 'false'
         run: |
-          if [ "$REGENERATE" = 'true' ]; then
+          if [ "$SUMMARIES_ONLY" = 'true' ]; then
+            python3 digest.py --refresh-summaries
+          elif [ "$REGENERATE" = 'true' ]; then
             python3 digest.py --force
           else
             python3 digest.py
@@ -110,6 +120,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add public state/digests state/snapshots
+          if [ -d state/summaries ]; then git add state/summaries; fi
           if ! git diff --cached --quiet; then
             git commit -m 'Update daily paper digest'
             git push origin HEAD:main
