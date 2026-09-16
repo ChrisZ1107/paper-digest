@@ -201,11 +201,11 @@ def select_new_papers(candidates, prior_ids, exclude_ids, config):
     return eligible[:config.get("new_papers_n", 5)]
 
 
-def render_feed(records, config):
+def render_feed(records, config, feed_title="每日热门论文 Top 10｜机器人·强化学习·AI"):
     rss = ET.Element("rss", version="2.0")
     channel = ET.SubElement(rss, "channel")
     base = config.get("public_base_url", "").rstrip("/")
-    for tag, value in (("title", "每日热门论文 Top 10｜机器人·强化学习·AI"),
+    for tag, value in (("title", feed_title),
                        ("link", base + "/" if base else "https://huggingface.co/papers"),
                        ("description", "每天一篇论文热度榜，优先机器人与强化学习，兼顾通用 AI。"),
                        ("language", "zh-CN"), ("ttl", "60")):
@@ -299,6 +299,8 @@ def run(root, force=False, fixtures=None, refresh_summaries=False):
             page = '<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>' + html.escape(record["title"]) + '</title><body>' + record["html"] + '</body></html>'
             atomic_write(output / (record.get("slug", record["date"]) + ".html"), page)
         atomic_write(output / "feed.xml", render_feed(records, config))
+        new_records = [r for r in records if "每日新论文" in r.get("title", "")]
+        atomic_write(output / "new-feed.xml", render_feed(new_records, config, "每日新论文｜机器人·强化学习·AI"))
         index = '<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>每日热门论文</title><body><h1>每日热门论文</h1><p><a href="feed.xml">RSS 订阅</a></p><ul>'
         index += "".join(f'<li><a href="{r.get("slug", r["date"])}.html">{html.escape(r["title"])}</a></li>' for r in records)
         atomic_write(output / "index.html", index + '</ul></body></html>')
