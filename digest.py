@@ -146,12 +146,13 @@ def rank_and_select(papers, previous, now, config):
     return sorted(selected[:config["top_n"]], key=lambda p: (-p["score"], p["id"]))
 
 
-def digest_html(selected, now, count, personalization_note=""):
+def digest_html(selected, now, count, personalization_note="", kind="hot"):
     e = html.escape
-    parts = [f"<h1>{now.date()} 热门论文 Top {len(selected)}</h1>",
+    heading = f"{now.date()} {"热门论文 Top" if kind == "hot" else "每日新论文"} {len(selected)}"
+    parts = [f"<h1>{heading}</h1>",
              "<p>机器人 · 强化学习 · 通用 AI</p>",
              f"<p>生成时间：{now:%Y-%m-%d %H:%M %Z}。从 {count} 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>",
-             '<p>候选来源：<a href="https://huggingface.co/papers">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>']
+             ('<p>候选来源：<a href="https://huggingface.co/papers">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>' if kind == "hot" else '<p>本栏优先收录最近发布且未出现在近期日报的 arXiv 论文，不按热度排序；相关性分用于结合你的 Zotero 收藏偏好。</p>')]
     if personalization_note:
         parts.append(f"<p>{e(personalization_note)}</p>")
     if len(selected) < 10:
@@ -192,6 +193,14 @@ def digest_html(selected, now, count, personalization_note=""):
     return "\n".join(parts)
 
 
+def select_new_papers(candidates, prior_ids, exclude_ids, config):
+    """Pick fresh arXiv-only candidates, avoiding recent recommendations."""
+    eligible = [p for p in candidates if p.get("sources") == ["arXiv"]
+                and p["id"] not in prior_ids and p["id"] not in exclude_ids]
+    eligible.sort(key=lambda p: (-p.get("relevance", 0), p["published"], -p.get("score", 0), p["id"]))
+    return eligible[:config.get("new_papers_n", 5)]
+
+
 def render_feed(records, config):
     rss = ET.Element("rss", version="2.0")
     channel = ET.SubElement(rss, "channel")
@@ -208,11 +217,14 @@ def render_feed(records, config):
         revision = hashlib.sha256(record["html"].encode("utf-8")).hexdigest()[:12]
         ET.SubElement(item, "guid", isPermaLink="false").text = "urn:personal-paper-digest:" + record["date"] + ":" + revision
         if base:
-            ET.SubElement(item, "link").text = base + "/" + record["date"] + ".html"
+            ET.SubElement(item, "link").text = base + "/" + record.get("slug", record["date"]) + ".html"
         ET.SubElement(item, "pubDate").text = format_datetime(iso_date(record["timestamp"]))
         ET.SubElement(item, "description").text = record["html"]
         ET.SubElement(item, f"{{{CONTENT}}}encoded").text = record["html"]
-        for category in ("机器人", "强化学习", "通用 AI"):
+        categories = ("机器人", "强化学习", "通用 AI")
+        if "新论文" in record.get("title", ""):
+            categories = ("最新论文",) + categories
+        for category in categories:
             ET.SubElement(item, "category").text = category
     return ET.tostring(rss, encoding="unicode", xml_declaration=True)
 
@@ -255,21 +267,40 @@ def run(root, force=False, fixtures=None, refresh_summaries=False):
             summarize(selected, config, state)
             record = {"date": str(now.date()), "timestamp": now.isoformat(),
                       "title": f"{now.date()} 热门论文 Top {len(selected)}｜机器人·强化学习·AI",
+                      "slug": str(now.date()),
                       "papers": selected, "candidate_count": len(candidates),
                       "personalization_note": personalization_note,
                       "html": digest_html(selected, now, len(candidates), personalization_note)}
             atomic_write(archive, json.dumps(record, ensure_ascii=False, indent=2))
+            prior_ids = set()
+            for old_path in sorted((state / "digests").glob("*.json")):
+                old_record = read_json(old_path, {})
+                prior_ids.update(p["id"] for p in old_record.get("papers", []))
+            for old_path in sorted((state / "new-digests").glob("*.json")):
+                old_record = read_json(old_path, {})
+                prior_ids.update(p["id"] for p in old_record.get("papers", []))
+            new_selected = select_new_papers(candidates, prior_ids, {p["id"] for p in selected}, config)
+            summarize(new_selected, config, state)
+            new_record = {"date": str(now.date()), "timestamp": now.isoformat(),
+                          "title": f"{now.date()} 每日新论文 {len(new_selected)}",
+                          "slug": str(now.date()) + "-new",
+                          "papers": new_selected, "candidate_count": len(candidates),
+                          "personalization_note": personalization_note,
+                          "html": digest_html(new_selected, now, len(candidates), personalization_note, "new")}
+            atomic_write(state / "new-digests" / (str(now.date()) + ".json"), json.dumps(new_record, ensure_ascii=False, indent=2))
             snapshot = {"timestamp": now.isoformat(), "papers": {p["id"]: {key: p[key] for key in ("upvotes", "comments", "stars")} for p in candidates}}
             atomic_write(state / "snapshots" / (str(now.date()) + ".json"), json.dumps(snapshot))
             logging.info("Generated %s with %s papers from %s candidates", now.date(), len(selected), len(candidates))
         records = [read_json(p, {}) for p in sorted((state / "digests").glob("*.json"), reverse=True)[:config["keep_days"]]]
+        records += [read_json(p, {}) for p in sorted((state / "new-digests").glob("*.json"), reverse=True)[:config["keep_days"]]]
+        records.sort(key=lambda r: r.get("timestamp", ""), reverse=True)
         output = root / "public"
         for record in records:
             page = '<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>' + html.escape(record["title"]) + '</title><body>' + record["html"] + '</body></html>'
-            atomic_write(output / (record["date"] + ".html"), page)
+            atomic_write(output / (record.get("slug", record["date"]) + ".html"), page)
         atomic_write(output / "feed.xml", render_feed(records, config))
         index = '<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>每日热门论文</title><body><h1>每日热门论文</h1><p><a href="feed.xml">RSS 订阅</a></p><ul>'
-        index += "".join(f'<li><a href="{r["date"]}.html">{html.escape(r["title"])}</a></li>' for r in records)
+        index += "".join(f'<li><a href="{r.get("slug", r["date"])}.html">{html.escape(r["title"])}</a></li>' for r in records)
         atomic_write(output / "index.html", index + '</ul></body></html>')
         logging.info("RSS ready: %s", output / "feed.xml")
 

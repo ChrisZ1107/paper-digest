@@ -63,7 +63,7 @@ class DigestTests(unittest.TestCase):
                 digest.run(root)
             original = (root / "public/feed.xml").read_bytes()
             tree = ET.fromstring(original)
-            self.assertEqual(len(tree.findall("channel/item")), 1)
+            self.assertEqual(len(tree.findall("channel/item")), 2)
             self.assertIn("&lt;script&gt;", tree.findtext("channel/item/description"))
             with patch.object(digest, "fetch", side_effect=RuntimeError("network down")):
                 digest.run(root)

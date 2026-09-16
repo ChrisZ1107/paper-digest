@@ -63,3 +63,8 @@ AGPL-3.0，见 LICENSE 与 THIRD_PARTY_NOTICES.md。
 
 参考：[Google 结构化输出](https://ai.google.dev/gemini-api/docs/structured-output)、
 [Interactions API](https://ai.google.dev/api/interactions-api)。
+
+
+## 两条每日推送
+
+RSS 现在每天发布两条文章：保留原有的“热门论文 Top 10”，另增“每日新论文”栏，默认 5 篇最近发布且没有出现在近期日报中的 arXiv 论文。新论文栏不按热度排序，优先使用 Zotero 摘要相关性和发布时间。两条文章会使用不同页面和 GUID，NewsFlash 可分别接收。历史推荐会进入去重集合，避免重复推送。

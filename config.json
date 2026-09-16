@@ -21,5 +21,6 @@
   "summarization": {
     "enabled": true,
     "model": "gemini-3.1-flash-lite"
-  }
+  },
+  "new_papers_n": 5
 }
