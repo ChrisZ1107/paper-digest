@@ -1,0 +1,18 @@
+{
+  "overview": "针对多模态大模型（MLLM）在强化学习后训练中提示词信息量不均衡的问题，作者提出了一种探索引导的提示词脚手架框架。该方法引入探索潜力分数（EPS）评估提示词效用，并利用教师模型对低效提示词进行重写以优化训练数据分布。实验表明，该方法在Geo3K和MMK12任务中能提升模型在域内及域外基准测试上的性能。",
+  "highlights": [
+    {
+      "text": "提出了基于探索潜力分数（EPS）的动态提示词分布调整策略，通过在线统计信息评估提示词的训练价值，避免了额外开销。",
+      "evidence": "Central to our approach is the Exploration Potential Score (EPS), a lightweight rollout-based proxy for prompt utility derived from KL-regularized policy improvement theory, computable directly from on-policy rollout statistics without additional overhead."
+    },
+    {
+      "text": "提出将教师监督转化为训练数据精炼而非输出模仿，通过重写提示词引导模型学习，显著提升了在多个基准测试上的表现。",
+      "evidence": "Rather than discarding low-utility prompts, we use a teacher model to generate scaffolded rewrites that preserve the original task intent while making subsequent training more informative, reframing teacher supervision as training-data refinement rather than output imitation."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "强化学习",
+    "推理"
+  ]
+}

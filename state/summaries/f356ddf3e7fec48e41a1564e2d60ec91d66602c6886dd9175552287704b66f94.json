@@ -1,0 +1,17 @@
+{
+  "overview": "针对在线强化学习探索受限与离线方法分布偏移的矛盾，本文提出了最小干预强化学习（MInTRL）。该方法在在线采样过程中引入周期性的局部修正，通过评估策略替换错误后缀并迅速交还控制权。同时，利用序列级优势回归目标，免去了重要性采样。实验表明，该方法在保持在线策略特性的同时，能有效扩展探索边界，在数学和代码任务中均优于常规基线。",
+  "highlights": [
+    {
+      "text": "MInTRL通过在在线回滚中引入稀疏且局部的干预措施，在无需重要性采样的情况下扩展了探索边界。",
+      "evidence": "In this work, we introduce Minimal Intervention Reinforcement Learning (MInTRL), which expands the exploration frontier through sparse, local interventions in otherwise on-policy rollouts."
+    },
+    {
+      "text": "在数学与代码基准测试中，该方法相比标准的在线和离线强化学习基线表现出性能优势。",
+      "evidence": "Across math and code benchmarks, MInTRL consistently outperforms standard on-policy and off-policy baselines."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "离线强化学习"
+  ]
+}

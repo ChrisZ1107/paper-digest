@@ -1,0 +1,18 @@
+{
+  "overview": "针对具身多模态大语言模型（MLLMs）在应对突发物理危险时缺乏实时决策评估的问题，作者提出了ReactHuman基准测试。该基准在模拟人形机器人环境中设置了17类、超过1000个场景，利用240Hz刚体物理模拟提供无需人工标注的真值，旨在衡量模型在家庭场景下的安全、合理且符合物理规律的反应能力。评估结果表明，当前主流MLLMs在应对突发危险时表现出明显的可靠性不足，且性能未随模型规模增加而提升。",
+  "highlights": [
+    {
+      "text": "ReactHuman是首个基于物理模拟的具身智能评估基准，包含17种事件类别及超过1000个可重复的物理交互场景。",
+      "evidence": "We introduce ReactHuman, the first physics-grounded benchmark for human-like reactive decision-making, in which the evaluated MLLM acts as the brain of a simulated humanoid facing sudden household hazards; it spans 17 event families and over 1,000 bit-for-bit reproducible scenes with exact, annotation-free ground truth derived from 240 Hz rigid-body simulation"
+    },
+    {
+      "text": "通过对七种代表性多模态大语言模型的测试发现，模型在处理突发危险时存在较高的失误率，且容易受到物体外观误导。",
+      "evidence": "Results show that reactive safety is far from solved: models mishandle roughly one hazard in three, act from fixed dispositions rather than the observed scene, trust appearance over motion, and miss interception points at meter scale even when the chosen action is correct"
+    }
+  ],
+  "tags": [
+    "人形机器人",
+    "机器人操作",
+    "视觉语言动作"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "overview": "针对数字智能体难以适应复杂新环境的问题，本文提出了RSIAgent框架。该方法通过构建课程、执行和验证智能体，利用递归自我改进机制自主探索环境并构建记忆。系统采用由广度到深度的探索策略，提取动作、条件与后果间的因果关系并将其冻结为记忆，实现无需参数更新的任务适应。实验显示该框架能提升开源模型在OSWorld-v2等基准测试中的表现。",
+  "highlights": [
+    {
+      "text": "RSIAgent通过多智能体协作进行递归自我改进，构建并保存特定环境的知识库，无需更新模型参数即可在下游任务中实现知识复用。",
+      "evidence": "We introduce RSIAgent, a training-free multi-agent framework for recursive self-improvement through autonomous memory construction. RSIAgent coordinates curriculum, actor, and verifier agents to continually explore the environment, validate outcomes, and retain environment-specific knowledge, including reusable causal relationships between actions, conditions, and consequences."
+    },
+    {
+      "text": "该框架采用由广度到深度的递归探索策略，以发掘环境结构、边界条件及隐藏的因果依赖关系。",
+      "evidence": "It further adopts a broad-then-deep exploration strategy, combining parallel broad recursive self-exploration for discovering diverse environment structures with focused deep self-exploration for uncovering hard cases, hidden constraints, boundary conditions, and previously unknown causal dependencies."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "推理"
+  ]
+}
