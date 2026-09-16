@@ -1,0 +1,18 @@
+{
+  "overview": "针对无线传感器网络（WSN）中无人机路径规划面临的设计偏见与真实环境适应性差的问题，本文提出了Landscape-Aware Meta Differential Evolution（LAMDE）框架。该方法采用双层学习优化架构，元层学习算法配置策略以增强适应性，低层利用差分进化算法配合变长编码策略进行路径优化。同时，作者引入了景观感知自动增强方案以应对数据稀缺。实验表明，该方法在测试的复杂任务中达到了前沿性能。",
+  "highlights": [
+    {
+      "text": "提出了一种双层学习优化架构，通过元层策略动态配置低层规划算法，实现了对复杂约束环境的有效导航。",
+      "evidence": "we propose a bi-level learning to optimize approach, where the meta-level is a trainable algorithm configuration policy that meta-learns an adaptable planning strategy for low-level planning algorithm."
+    },
+    {
+      "text": "设计了景观感知自动增强方案，有效缓解了真实部署场景中训练数据稀缺和分布偏移带来的挑战。",
+      "evidence": "To address the potential training data scarcity and distribution shift in real-world environments, we introduce a landscape-aware automatic augmentation scheme that enriches training data."
+    },
+    {
+      "text": "引入了变长编码策略，在统一搜索空间内同时优化飞行参数并精简冗余的悬停点，提升了路径规划的灵活性。",
+      "evidence": "we further design a variable-length encoding strategy that dynamically prunes redundant hover points and optimizes continuous flight parameters concurrently within a unified search space."
+    }
+  ],
+  "tags": []
+}

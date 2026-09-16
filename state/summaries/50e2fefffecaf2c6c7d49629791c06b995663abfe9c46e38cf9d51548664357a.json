@@ -1,0 +1,16 @@
+{
+  "overview": "针对非结构化环境中地形通行性预测适应性差及灾难性遗忘问题，该研究提出了一种基于生成式经验回顾模型的持续学习框架。该方法无需存储历史数据，通过结合生成样本的不确定性来实现对新地形的自适应，并有效保留先验经验。在滑移转向机器人上的实地实验表明，该框架能适应多种环境并减轻灾难性遗忘。",
+  "highlights": [
+    {
+      "text": "提出了一种基于生成式经验回顾的持续学习框架，在无需存储历史数据的情况下保留了先前环境的经验。",
+      "evidence": "A key virtue of the proposed framework is two folds: i) retain prior experience without storing past data;"
+    },
+    {
+      "text": "通过引入生成样本的不确定性估计，实现了具有不确定性意识的地形适应能力。",
+      "evidence": "ii) incorporate the uncertainty of the generated samples from the recall model, enabling uncertainty-aware adaptation."
+    }
+  ],
+  "tags": [
+    "导航"
+  ]
+}

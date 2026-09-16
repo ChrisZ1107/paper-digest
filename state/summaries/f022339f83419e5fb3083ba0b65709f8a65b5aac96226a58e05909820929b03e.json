@@ -1,0 +1,19 @@
+{
+  "overview": "本文综述了机器人学习与控制中的“世界-动作模型”（WAMs）。WAMs将未来的世界状态预测与可执行的动作生成相结合，旨在解决机器人由于部分可观测性、物理约束和动态任务环境带来的挑战。文章梳理了WAMs与传统世界模型、基于模型的强化学习、视觉语言动作（VLA）策略等领域的关系，提出了统一的分类体系，并讨论了其在操作、导航和自动驾驶中的应用及面临的关键技术挑战。",
+  "highlights": [
+    {
+      "text": "提出了一种将未来世界状态预测与动作生成相结合的WAMs技术分类体系，明确了其与传统世界模型和VLA策略的区别。",
+      "evidence": "This survey provides a robotics-oriented review of WAMs. We clarify their scope relative to conventional world models, model-based reinforcement learning, action-conditioned video generation, and reactive VLA policies, and organize existing methods through a unified taxonomy covering representations, transition modeling, action interfaces, architectures, training pipelines, data modalities, and scaling strategies."
+    },
+    {
+      "text": "总结了WAMs在机器人操作、导航及自动驾驶等领域的应用，并探讨了动作对齐、长时记忆与推理效率等关键挑战。",
+      "evidence": "We further review applications of WAMs in manipulation, navigation, and autonomous driving, and we summarize the datasets, benchmarks, metrics, and protocols used to evaluate WAM systems. Finally, we discuss key challenges in action alignment, world-action factorization, spatial and multi-view consistency, long-horizon memory, neural simulation for closed-loop policy learning, and efficient inference."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "导航",
+    "视觉语言动作",
+    "推理"
+  ]
+}

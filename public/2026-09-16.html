@@ -1,13 +1,13 @@
 <!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>2026-09-16 热门论文 Top 10｜机器人·强化学习·AI</title><body><h1>2026-09-16 热门论文 Top 10</h1>
 <p>机器人 · 强化学习 · 通用 AI</p>
-<p>生成时间：2026-09-16 13:52 CST。从 569 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>
+<p>生成时间：2026-09-16 19:44 CST。从 568 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>
 <p>候选来源：<a href="https://huggingface.co/papers">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>
 <p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>
 <h2>1. PhysBrain 1.5: From Vision-Language Models to Physical Foundation Models</h2>
-<p><strong>机器人</strong> · 发表 2026-09-14 · 综合分 5.84</p>
+<p><strong>机器人</strong> · 发表 2026-09-14 · 综合分 5.81</p>
 <p>Zotero 摘要相关性：0.444（相似度分数，不是概率）。</p>
-<p>HF 点赞 170 · 讨论 3 · 本次 HF 热榜第 40 位 · 仓库累计 Star 36（仓库可能包含多篇论文）</p>
-<p>较上次观测（0.88 天前）：点赞 +111 · 讨论 +1 · Star +22。</p>
+<p>HF 点赞 171 · 讨论 3 · 本次 HF 热榜第 39 位 · 仓库累计 Star 36（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.12 天前）：点赞 +112 · 讨论 +1 · Star +22。</p>
 <p><strong>中文概述：</strong>PhysBrain 1.5是一个旨在理解物理环境、生成动作并预测未来状态的统一模型。该研究通过将语言响应、末端执行器运动和视觉目标编码为离散序列，利用自回归预测进行联合优化。模型在人类交互视频上进行预训练，并结合人类演示、机器人轨迹及模拟数据进行微调。作者声称该8B模型在28项具身理解基准测试中表现优异，并在14项基准上达到开源最优水平。</p>
 <p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
 <li>PhysBrain 1.5通过统一框架整合了环境理解、动作生成和未来状态预测能力，在多项基准测试中展现出竞争力。<br><small>摘要依据：Across 28 embodied understanding benchmarks, our 8B model achieves an average score of 72.5, setting a new open-source state of the art and performing on par with leading proprietary models such as GPT-6-Astra and Gemini 3.6 Flash.</small></li>
@@ -17,10 +17,10 @@
 <p><strong>原文摘要节选：</strong>We present PhysBrain 1.5, a unified model for understanding physical environments, generating actions, and predicting future states. Motivated by the physical loop of observation, interaction, and environmental change, we bring these capabilities into a common learning framework. Starting from a general vision--language model, we encode language responses, end-effector motion, and dense visual targets as discrete sequences and jointly optimize them with autoregressive next-token prediction. Pre-training draws its embodied supervision entirely from human interaction videos, using task-centered episodes to pair semantic and spatial context with recovered motion and subsequent observations. We then adapt the model through supervised fine-tuning on a mixture of human demonstrations, robot…</p>
 <p><a href="https://arxiv.org/abs/2609.14973">论文原文</a> · <a href="https://arxiv.org/pdf/2609.14973">PDF</a> · <a href="https://huggingface.co/papers/2609.14973">讨论与热度</a> · <a href="https://github.com/DeepCybo-PhysAI/PhysBrain-1.5">代码</a></p><hr>
 <h2>2. RSIAgent: Autonomous Exploration for Recursive Self-improvement in New Environments</h2>
-<p><strong>通用 AI</strong> · 发表 2026-09-14 · 综合分 5.67</p>
+<p><strong>通用 AI</strong> · 发表 2026-09-14 · 综合分 5.64</p>
 <p>Zotero 摘要相关性：0.421（相似度分数，不是概率）。</p>
-<p>HF 点赞 67 · 讨论 2 · 本次 HF 热榜第 7 位 · 仓库累计 Star 215（仓库可能包含多篇论文）</p>
-<p>较上次观测（0.88 天前）：点赞 +52 · 讨论 +1 · Star +165。</p>
+<p>HF 点赞 68 · 讨论 2 · 本次 HF 热榜第 7 位 · 仓库累计 Star 215（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.12 天前）：点赞 +53 · 讨论 +1 · Star +165。</p>
 <p><strong>规则标签：</strong>多智能体</p>
 <p><strong>中文概述：</strong>针对数字智能体难以适应复杂新环境的问题，本文提出了RSIAgent框架。该方法通过构建课程、执行和验证智能体，利用递归自我改进机制自主探索环境并构建记忆。系统采用由广度到深度的探索策略，提取动作、条件与后果间的因果关系并将其冻结为记忆，实现无需参数更新的任务适应。实验显示该框架能提升开源模型在OSWorld-v2等基准测试中的表现。</p>
 <p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
@@ -31,10 +31,10 @@
 <p><strong>原文摘要节选：</strong>Digital agents must often adapt to new environments whose interfaces, tools, and failure modes are not fully captured by pretrained models. We introduce RSIAgent, a training-free multi-agent framework for recursive self-improvement through autonomous memory construction. RSIAgent coordinates curriculum, actor, and verifier agents to continually explore the environment, validate outcomes, and retain environment-specific knowledge, including reusable causal relationships between actions, conditions, and consequences. It further adopts a broad-then-deep exploration strategy, combining parallel broad recursive self-exploration for discovering diverse environment structures with focused deep self-exploration for uncovering hard cases, hidden constraints, boundary conditions, and previously…</p>
 <p><a href="https://arxiv.org/abs/2609.15364">论文原文</a> · <a href="https://arxiv.org/pdf/2609.15364">PDF</a> · <a href="https://huggingface.co/papers/2609.15364">讨论与热度</a> · <a href="https://github.com/AetherLabsAI/RSIAgent">代码</a></p><hr>
 <h2>3. Agent as Policy for Robotic Manipulation</h2>
-<p><strong>机器人</strong> · 发表 2026-09-11 · 综合分 5.56</p>
+<p><strong>机器人</strong> · 发表 2026-09-11 · 综合分 5.50</p>
 <p>Zotero 摘要相关性：0.491（相似度分数，不是概率）。</p>
 <p>HF 点赞 12 · 讨论 4</p>
-<p>较上次观测（0.88 天前）：点赞 +7 · 讨论 +1。</p>
+<p>较上次观测（1.12 天前）：点赞 +7 · 讨论 +1。</p>
 <p><strong>规则标签：</strong>机器人操作 · 推理</p>
 <p><strong>中文概述：</strong>本文提出了一种名为“Agent as Policy”（AGP）的方法，旨在使通用智能体能够无需特定任务或环境的针对性训练，直接驱动物理机器人执行操作任务。该方法通过让智能体负责任务规划与执行，使其能够处理视觉信息、编写可执行程序、发布运动指令，并根据物理反馈实时修正行为。实验验证了AGP在精密操作、动态运动及变形物体处理等多种现实世界任务中的有效性。</p>
 <p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
@@ -46,10 +46,10 @@
 <p><strong>原文摘要节选：</strong>We demonstrate that a general-purpose agent can directly drive a physical robot throughout task execution without any task-specific or environment-specific training. We introduce Agent as Policy (AGP), which places task planning and execution under the agent&#x27;s control. Given a task and a robot interface, the agent interprets visual evidence, writes executable programs, issues motion commands, and revises its actions in response to physical outcomes. This brings the agent&#x27;s reasoning and programming capabilities into continuous interaction with the physical world. We study AGP across multiple real-world manipulation tasks spanning precision manipulation, dynamic motions, and deformable objects. These include assembly from human videos, block construction from goal images, die…</p>
 <p><a href="https://arxiv.org/abs/2609.12541">论文原文</a> · <a href="https://arxiv.org/pdf/2609.12541">PDF</a> · <a href="https://huggingface.co/papers/2609.12541">讨论与热度</a></p><hr>
 <h2>4. Dream-RSI: Recursive Self-Improvement through Evolving Worlds</h2>
-<p><strong>通用 AI</strong> · 发表 2026-09-14 · 综合分 5.48</p>
+<p><strong>通用 AI</strong> · 发表 2026-09-14 · 综合分 5.46</p>
 <p>Zotero 摘要相关性：0.385（相似度分数，不是概率）。</p>
-<p>HF 点赞 266 · 讨论 3 · 本次 HF 热榜第 25 位 · 仓库累计 Star 52（仓库可能包含多篇论文）</p>
-<p>较上次观测（0.88 天前）：点赞 +105 · 讨论 +2 · Star +48。</p>
+<p>HF 点赞 269 · 讨论 3 · 本次 HF 热榜第 25 位 · 仓库累计 Star 52（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.12 天前）：点赞 +108 · 讨论 +2 · Star +48。</p>
 <p><strong>中文概述：</strong>针对自主AI智能体在复杂领域中进行递归自我改进时面临的探索策略瓶颈，Dream-RSI框架提出了一种基于演化世界模型的方案。该框架通过轻量级编排层，利用积累的发现历史构建重放模拟器，使智能体能够在模拟器中进行“梦境”训练以获取低成本离线反馈，从而优化探索策略。作者声称该方法在算法工程、数学优化及GPU内核工程任务中，在显著降低发现成本的同时，实现了具有竞争力的发现质量。</p>
 <p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
 <li>Dream-RSI通过利用历史发现记录构建重放模拟器，实现了低成本的离线策略评估与改进，避免了高昂的重复在线调用。<br><small>摘要依据：By performing dreaming in the replay simulator constructed from historical discovery trees, Dream-RSI secures immediate, low-cost off-policy feedback to evaluate and refine exploration policies without invoking repetitive, expensive online evaluations.</small></li>
@@ -58,11 +58,26 @@
 <p><strong>AI 主题：</strong>大模型后训练 · 推理</p>
 <p><strong>原文摘要节选：</strong>Recursive self-improvement is becoming increasingly vital for autonomous AI agents, where progress hinges on discovering high-value solutions across complex domains. The driver of this process is effective exploration, however, managing and improving exploration strategies remains a major bottleneck. Current systems face a fundamental dilemma: fixed strategies fail to adapt as search spaces scale, while online policy optimization requires navigating vast meta-search spaces under delayed and expensive feedback over long-horizon rollouts. We introduce Dream-RSI, a framework for scalable and recursively self-improving exploration. A lightweight orchestration layer makes exploration explicit and programmable while leaving the underlying coding agent unchanged. Our key insight is that…</p>
 <p><a href="https://arxiv.org/abs/2609.14858">论文原文</a> · <a href="https://arxiv.org/pdf/2609.14858">PDF</a> · <a href="https://huggingface.co/papers/2609.14858">讨论与热度</a> · <a href="https://github.com/zhengkid/Dream-RSI">代码</a></p><hr>
-<h2>5. Show-Harness: Just a VLM Agent Can Play Robots</h2>
-<p><strong>机器人</strong> · 发表 2026-09-09 · 综合分 5.42</p>
+<h2>5. HarnessVLN: Unifying Training-Free Embodied Navigation through an Agent Harness</h2>
+<p><strong>机器人</strong> · 发表 2026-09-14 · 综合分 5.41</p>
+<p>Zotero 摘要相关性：0.458（相似度分数，不是概率）。</p>
+<p>HF 点赞 10 · 讨论 1</p>
+<p>较上次观测（1.12 天前）：点赞 +10 · 讨论 +1。</p>
+<p><strong>规则标签：</strong>人形机器人 · 导航</p>
+<p><strong>中文概述：</strong>HarnessVLN 提出了一种无需训练的具身导航框架，通过 Agent Harness 统一协调感知、检索、定位、导航及故障恢复。该方法利用多模态大模型进行决策，通过时空图维持空间证据与任务进度，并对规划建议进行几何可行性与目标一致性验证。作者声称该方法在多个导航基准测试中超越了现有的无训练方法，并已验证其在人形机器人现实环境中的应用潜力。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出了 HarnessVLN 框架，通过统一的工具接口集成感知、规划验证及故障恢复机制，有效解决了无训练导航中缺乏行动协调的问题。<br><small>摘要依据：We present HarnessVLN, a zero-shot, training-free framework whose Agent Harness coordinates perception, retrieval, grounding, navigation, recovery, and termination through a unified tool interface.</small></li>
+<li>引入分层事件记忆与时空图，支持导航过程中的空间证据维护及执行失败记录，从而提升任务的鲁棒性。<br><small>摘要依据：Hierarchical event memory tracks task progress and execution history, while a persistent Spatiotemporal Graph maintains reusable spatial evidence and failure annotations for verification and recovery.</small></li>
+<li>实验结果显示该框架在 R2R、RxR 及 HM3D 等多个基准测试中表现优于此前的同类最优方法。<br><small>摘要依据：HarnessVLN achieves success rates of 60.8%, 53.9%, 76.0%, and 59.3% on R2R, RxR, HM3D-v2, and HM3D-OVON, respectively, surpassing prior training-free SOTA results.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>导航 · 人形机器人</p>
+<p><strong>原文摘要节选：</strong>Embodied navigation requires agents to interpret visual observations, accumulate spatial knowledge, and execute actions to follow instructions or locate objects. Training-based methods face generalization challenges, while training-free methods exploit multimodal large language models (MLLMs) but often lack mechanisms to reconcile proposed actions with spatial evidence, task progress, and execution failures. We present HarnessVLN, a zero-shot, training-free framework whose Agent Harness coordinates perception, retrieval, grounding, navigation, recovery, and termination through a unified tool interface. The Harness validates planner proposals against spatial evidence, geometric feasibility, and subgoal consistency, incorporating structured tool feedback into subsequent decisions.…</p>
+<p><a href="https://arxiv.org/abs/2609.15195">论文原文</a> · <a href="https://arxiv.org/pdf/2609.15195">PDF</a> · <a href="https://huggingface.co/papers/2609.15195">讨论与热度</a></p><hr>
+<h2>6. Show-Harness: Just a VLM Agent Can Play Robots</h2>
+<p><strong>机器人</strong> · 发表 2026-09-09 · 综合分 5.38</p>
 <p>Zotero 摘要相关性：0.467（相似度分数，不是概率）。</p>
 <p>HF 点赞 159 · 讨论 4 · 本次 HF 热榜第 20 位 · 仓库累计 Star 367（仓库可能包含多篇论文）</p>
-<p>较上次观测（0.88 天前）：点赞 +1 · 讨论 +0 · Star +9。</p>
+<p>较上次观测（1.12 天前）：点赞 +1 · 讨论 +0 · Star +9。</p>
 <p><strong>规则标签：</strong>视觉语言动作</p>
 <p><strong>中文概述：</strong>针对视觉语言模型（VLM）难以直接转化为机器人控制的问题，本文提出了Show-Harness框架。该框架构建了一个紧凑的语义接口，将意图与动作连接，通过离散语义动作单元使VLM能够进行推理，并由特定解释器将其转化为局部机器人动作。作者声称该方法能直接实现闭源模型的零样本机器人控制，并通过少量微调适配开源模型，同时支持基于图形界面的演示收集。实验表明，该方法在多任务、多实体及多环境场景下表现出良好的泛化能力。</p>
 <p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
@@ -72,11 +87,11 @@
 <p><strong>AI 主题：</strong>机器人操作 · 视觉语言动作</p>
 <p><strong>原文摘要节选：</strong>Foundation vision-language models (VLMs) exhibit broad intelligence about the world, yet translating this intelligence into robot control remains challenging. We present Show-Harness, an Embodied Harness that enables VLMs to &quot;play&quot; robots through a compact semantic interface linking intent to action. Show-Harness exposes discrete semantic action units that VLMs can naturally reason over, while embodiment-specific interpreters deterministically ground them into local robot actions, keeping the VLM directly responsible for fine-grained physical decisions. Through the same interface, Show-Harness demonstrates the feasibility of (1) directly unlocking closed-source frontier VLMs for zero-shot robot control, and (2) adapting small-scale open-source VLMs for low-cost deployment with just a few…</p>
 <p><a href="https://arxiv.org/abs/2609.10522">论文原文</a> · <a href="https://arxiv.org/pdf/2609.10522">PDF</a> · <a href="https://huggingface.co/papers/2609.10522">讨论与热度</a> · <a href="https://github.com/showlab/Show-Harness">代码</a></p><hr>
-<h2>6. ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search</h2>
-<p><strong>强化学习</strong> · 发表 2026-09-11 · 综合分 5.23</p>
+<h2>7. ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search</h2>
+<p><strong>强化学习</strong> · 发表 2026-09-11 · 综合分 5.21</p>
 <p>Zotero 摘要相关性：0.348（相似度分数，不是概率）。</p>
-<p>HF 点赞 295 · 讨论 7 · 本次 HF 热榜第 4 位 · 仓库累计 Star 302（仓库可能包含多篇论文）</p>
-<p>较上次观测（0.88 天前）：点赞 +144 · 讨论 +3 · Star +227。</p>
+<p>HF 点赞 302 · 讨论 7 · 本次 HF 热榜第 4 位 · 仓库累计 Star 302（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.12 天前）：点赞 +151 · 讨论 +3 · Star +227。</p>
 <p><strong>规则标签：</strong>大模型后训练 · 推理</p>
 <p><strong>中文概述：</strong>ZGCM-1 是一款完全开源的 7B 参数密集型基础模型，旨在通过结合内部思维与外部工具使用来突破模型参数限制。该研究提出了软硬件协同设计的训练方案，包括交错门控滑动窗口与全注意力机制、FP8 Muon 优化器以及基于马尔可夫决策过程的课程学习。作者声称该模型在数学推理和智能体搜索任务中表现出与超大规模模型竞争的潜力，并提升了预训练效率。</p>
 <p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
@@ -86,11 +101,11 @@
 <p><strong>AI 主题：</strong>大模型后训练 · 推理</p>
 <p><strong>原文摘要节选：</strong>In this work, we present ZGCM-1, a fully open 7B dense foundation model trained from scratch with extreme data, system, and algorithmic efficiency. ZGCM-1 is founded on a core premise: compact models cannot passively memorize the open web, but can overcome parametric capacity limits by coupling deliberate internal thinking with active external tool use. To support this paradigm across a 256K context, we develop an end-to-end, high-efficiency open training recipe: Architecture &amp; System Co-design: interleaved gated sliding-window and full attention, and a stable FP8 Muon optimizer; Progressive Curriculum &amp; MDP Mid-Training: context scaling across 16K, 64K, and 256K, and the reformulation of interaction traces into Markov Decision Processes. Furthermore, we establish an AI-native R&amp;D…</p>
 <p><a href="https://arxiv.org/abs/2609.13356">论文原文</a> · <a href="https://arxiv.org/pdf/2609.13356">PDF</a> · <a href="https://huggingface.co/papers/2609.13356">讨论与热度</a> · <a href="https://github.com/zgcagi/ZGCM-1">代码</a></p><hr>
-<h2>7. ReactHuman: A Physics-Grounded Benchmark for Human-Like Reactive Decision-Making in Embodied Multimodal LLMs</h2>
-<p><strong>机器人</strong> · 发表 2026-09-09 · 综合分 5.17</p>
+<h2>8. ReactHuman: A Physics-Grounded Benchmark for Human-Like Reactive Decision-Making in Embodied Multimodal LLMs</h2>
+<p><strong>机器人</strong> · 发表 2026-09-09 · 综合分 5.12</p>
 <p>Zotero 摘要相关性：0.428（相似度分数，不是概率）。</p>
 <p>HF 点赞 43 · 讨论 3</p>
-<p>较上次观测（0.88 天前）：点赞 +7 · 讨论 +1。</p>
+<p>较上次观测（1.12 天前）：点赞 +7 · 讨论 +1。</p>
 <p><strong>规则标签：</strong>人形机器人 · 导航</p>
 <p><strong>中文概述：</strong>针对具身多模态大语言模型（MLLMs）在应对突发物理危险时缺乏实时决策评估的问题，作者提出了ReactHuman基准测试。该基准在模拟人形机器人环境中设置了17类、超过1000个场景，利用240Hz刚体物理模拟提供无需人工标注的真值，旨在衡量模型在家庭场景下的安全、合理且符合物理规律的反应能力。评估结果表明，当前主流MLLMs在应对突发危险时表现出明显的可靠性不足，且性能未随模型规模增加而提升。</p>
 <p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
@@ -100,11 +115,11 @@
 <p><strong>AI 主题：</strong>人形机器人 · 机器人操作 · 视觉语言动作</p>
 <p><strong>原文摘要节选：</strong>Reacting to sudden physical hazards (catching a slipping plate, dodging a falling knife) is both a meaningful test of embodied intelligence and a hard requirement for deploying multimodal large language models (MLLMs) as the decision coreof household robots. Existing evaluations, however, probe intuitive physics passively through question answering over videos, or target deliberate, long-horizon tasks such as navigation and rearrangement; none measure whether a model can turn physical understanding into immediate, safety-critical action. We introduce ReactHuman, the first physics-grounded benchmark for human-like reactive decision-making, in which the evaluated MLLM acts as the brain of a simulated humanoid facing sudden household hazards; it spans 17 event families and over 1,000…</p>
 <p><a href="https://arxiv.org/abs/2609.10895">论文原文</a> · <a href="https://arxiv.org/pdf/2609.10895">PDF</a> · <a href="https://huggingface.co/papers/2609.10895">讨论与热度</a></p><hr>
-<h2>8. MInTRL: Off-policy Intervention can boost On-policy RL</h2>
-<p><strong>强化学习</strong> · 发表 2026-09-11 · 综合分 5.12</p>
+<h2>9. MInTRL: Off-policy Intervention can boost On-policy RL</h2>
+<p><strong>强化学习</strong> · 发表 2026-09-11 · 综合分 5.04</p>
 <p>Zotero 摘要相关性：0.453（相似度分数，不是概率）。</p>
 <p>HF 点赞 6 · 讨论 2</p>
-<p>较上次观测（0.88 天前）：点赞 +4 · 讨论 +1。</p>
+<p>较上次观测（1.12 天前）：点赞 +4 · 讨论 +1。</p>
 <p><strong>规则标签：</strong>强化学习</p>
 <p><strong>中文概述：</strong>针对在线强化学习探索受限与离线方法分布偏移的矛盾，本文提出了最小干预强化学习（MInTRL）。该方法在在线采样过程中引入周期性的局部修正，通过评估策略替换错误后缀并迅速交还控制权。同时，利用序列级优势回归目标，免去了重要性采样。实验表明，该方法在保持在线策略特性的同时，能有效扩展探索边界，在数学和代码任务中均优于常规基线。</p>
 <p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
@@ -114,25 +129,11 @@
 <p><strong>AI 主题：</strong>强化学习 · 离线强化学习</p>
 <p><strong>原文摘要节选：</strong>Reinforcement learning with verifiable rewards is typically performed on-policy, keeping training data close to the current policy but limiting learning to trajectories that the policy can discover itself. Off-policy methods such as supervised fine-tuning, on the other hand, can leverage external knowledge beyond the base model&#x27;s capabilities, but may suffer from large distribution shift. The key challenge is thus to expand exploration without sacrificing learnability. In this work, we introduce Minimal Intervention Reinforcement Learning (MInTRL), which expands the exploration frontier through sparse, local interventions in otherwise on-policy rollouts. During generation, a judge-intervention policy periodically reviews the current policy&#x27;s output, replaces erroneous suffixes with short…</p>
 <p><a href="https://arxiv.org/abs/2609.12419">论文原文</a> · <a href="https://arxiv.org/pdf/2609.12419">PDF</a> · <a href="https://huggingface.co/papers/2609.12419">讨论与热度</a></p><hr>
-<h2>9. Breaking the Vision-Action Shortcut: Latent Interface Training for Generalizable Robotics Foundation Models</h2>
-<p><strong>机器人</strong> · 发表 2026-09-11 · 综合分 5.05</p>
-<p>Zotero 摘要相关性：0.401（相似度分数，不是概率）。</p>
-<p>HF 点赞 74 · 讨论 2 · 仓库累计 Star 29（仓库可能包含多篇论文）</p>
-<p>较上次观测（0.88 天前）：点赞 +8 · 讨论 +0 · Star +0。</p>
-<p><strong>规则标签：</strong>视觉语言动作</p>
-<p><strong>中文概述：</strong>针对机器人基础模型在面对视觉分布偏移时因依赖任务无关特征而泛化能力下降的问题，作者提出了Latent Interface Training (LIT)框架。该方法通过两阶段训练策略，先训练无视觉依赖的动作先验，再通过位姿监督的潜在接口约束视觉条件信息，旨在确保模型仅利用任务相关的空间信息生成动作。实验表明，该方法在多种架构上提升了模拟及真实场景下的泛化成功率。</p>
-<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
-<li>提出了一种两阶段训练框架LIT，通过位姿监督的潜在接口有效缓解视觉-动作捷径问题，提升模型对视觉分布变化的泛化能力。<br><small>摘要依据：We propose Latent Interface Training (LIT), a framework-agnostic two-stage strategy that first establishes a spatial-goal-conditioned action prior without images, then constrains visual conditioning through a pose-supervised latent interface.</small></li>
-<li>在四个视觉-语言-动作与世界模型架构上进行了验证，结果显示LIT显著提升了LIBERO-Plus的成功率，并增强了真实场景对环境变化的鲁棒性。<br><small>摘要依据：Across four vision-language-action and world-action architectures (Pi0.5, MolmoAct2, FAST-WAM, and ImageWAM), LIT improves overall LIBERO-Plus success by 3.87-10.70 percentage points while preserving or improving average LIBERO success.</small></li>
-</ul>
-<p><strong>AI 主题：</strong>机器人操作 · Sim-to-Real</p>
-<p><strong>原文摘要节选：</strong>Robot foundation models achieve strong in-distribution performance but often degrade under visual distribution shifts. When learning to generate actions from pretrained visual representations, models may exploit task-irrelevant visual cues that correlate with demonstrated actions within the training distribution. Such vision-action shortcuts can undermine generalization when these correlations change under distribution shifts. Mitigating these shortcuts requires constraining how visual information is used for action generation while preserving task-relevant spatial information. We propose Latent Interface Training (LIT), a framework-agnostic two-stage strategy that first establishes a spatial-goal-conditioned action prior without images, then constrains visual conditioning through a…</p>
-<p><a href="https://arxiv.org/abs/2609.12641">论文原文</a> · <a href="https://arxiv.org/pdf/2609.12641">PDF</a> · <a href="https://huggingface.co/papers/2609.12641">讨论与热度</a> · <a href="https://github.com/MAGICLAB-NUS/LIT">代码</a></p><hr>
 <h2>10. Not All Prompts Are Equal: Exploration-Guided Prompt Scaffolding for Multimodal Reinforcement Post-Training</h2>
-<p><strong>强化学习</strong> · 发表 2026-09-14 · 综合分 5.01</p>
+<p><strong>强化学习</strong> · 发表 2026-09-14 · 综合分 4.94</p>
 <p>Zotero 摘要相关性：0.409（相似度分数，不是概率）。</p>
 <p>HF 点赞 9 · 讨论 2</p>
-<p>较上次观测（0.88 天前）：点赞 +4 · 讨论 +1。</p>
+<p>较上次观测（1.12 天前）：点赞 +4 · 讨论 +1。</p>
 <p><strong>规则标签：</strong>强化学习 · 大模型后训练</p>
 <p><strong>中文概述：</strong>针对多模态大模型（MLLM）在强化学习后训练中提示词信息量不均衡的问题，作者提出了一种探索引导的提示词脚手架框架。该方法引入探索潜力分数（EPS）评估提示词效用，并利用教师模型对低效提示词进行重写以优化训练数据分布。实验表明，该方法在Geo3K和MMK12任务中能提升模型在域内及域外基准测试上的性能。</p>
 <p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>

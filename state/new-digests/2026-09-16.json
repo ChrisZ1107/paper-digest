@@ -1,0 +1,226 @@
+{
+  "date": "2026-09-16",
+  "timestamp": "2026-09-16T19:44:04.320822+08:00",
+  "title": "2026-09-16 每日新论文 5",
+  "slug": "2026-09-16-new",
+  "papers": [
+    {
+      "id": "2609.17210",
+      "title": "FluxVLA Engine: A One-Stop VLA Engineering Platform for Embodied Intelligence",
+      "abstract": "Vision-language-action (VLA) models, world-action models (WAMs), and offline reinforcement learning methods are rapidly expanding the design space of embodied policies, yet turning these algorithms into reliable robot systems remains constrained by fragmented data formats, training stacks, evaluation protocols, inference runtimes, and embodiment-specific interfaces. We present $\\mathrm{FluxVLA}$ Engine, an open, configuration-driven platform that turns heterogeneous embodied-policy components into a reproducible data-to-deployment workflow. Rather than introducing another policy model, $\\mathrm{FluxVLA}$ standardizes interfaces for datasets, visual-language and world models, action heads, reward- or advantage-weighted learning, distributed training, simulation evaluation, optimized inference, and robot operators. The engine further integrates compositional dual-arm simulation, scalable automatic data generation, and model-decoupled human-in-the-loop rollout, takeover, correction collection, and reward annotation. For responsive physical execution, it combines Real-Time Chunking (RTC) with accelerated inference backends, lightweight remote GPU serving, and configurable trajectory post-processing. Together, these capabilities connect offline learning, simulation validation, online correction, and real-robot execution through shared and auditable contracts. $\\mathrm{FluxVLA}$ therefore targets the engineering bottlenecks separating promising embodied-learning algorithms from reproducible evaluation and dependable deployment. Code is available at https://github.com/FluxVLA/FluxVLA",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-09-16",
+      "date_label": "公告",
+      "age_days": 0.32227223173611114,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.53665,
+      "growth": null,
+      "score": 3.488,
+      "rule_tags": [
+        "强化学习",
+        "世界模型",
+        "视觉语言动作",
+        "离线强化学习"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "FluxVLA Engine 旨在解决具身智能领域中算法设计与可靠机器人系统部署之间的工程化断层。该平台通过提供一套配置驱动的标准化框架，整合了数据集管理、视觉语言模型、强化学习训练、仿真评估及实时推理等组件，旨在将异构的具身策略转化为可复现的“数据到部署”工作流。作者声称该平台通过统一接口和集成化工具链，能够有效降低具身学习算法在实际机器人系统中的落地难度。",
+        "highlights": [
+          {
+            "text": "FluxVLA Engine 建立了一套配置驱动的标准化平台，实现了从数据处理、模型训练到机器人部署的全流程闭环。",
+            "evidence": "We present $\\mathrm{FluxVLA}$ Engine, an open, configuration-driven platform that turns heterogeneous embodied-policy components into a reproducible data-to-deployment workflow."
+          },
+          {
+            "text": "该平台集成了多种工程化工具，包括实时分块技术（RTC）、加速推理后端和远程GPU服务，以支持具身机器人的实时物理执行。",
+            "evidence": "For responsive physical execution, it combines Real-Time Chunking (RTC) with accelerated inference backends, lightweight remote GPU serving, and configurable trajectory post-processing."
+          }
+        ],
+        "tags": [
+          "视觉语言动作",
+          "离线强化学习",
+          "机器人操作",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.17141",
+      "title": "Continual Learning for Traversability Prediction with Uncertainty-Aware Adaptation",
+      "abstract": "Traversability prediction is a critical component of autonomous navigation in unstructured environments, where complex and uncertain robot-terrain interactions pose significant challenges such as traction loss and dynamic instability. Despite recent progress in learning-based traversability prediction, these methods often fail to adapt to novel terrains. Even when adaptation is achieved, retaining experience from previously trained environments remains a challenge, a problem known as catastrophic forgetting. To address this challenge, we propose a continual learning framework for traversability prediction that incrementally adapts to new terrains using a generative experience recall model. A key virtue of the proposed framework is two folds: i) retain prior experience without storing past data; and ii) incorporate the uncertainty of the generated samples from the recall model, enabling uncertainty-aware adaptation. Real-world experiments with a skid-steering robot validate the effectiveness of the proposed framework, demonstrating its ability to adapt across a series of diverse environments while mitigating catastrophic forgetting.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-09-16",
+      "date_label": "公告",
+      "age_days": 0.32227223173611114,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.50771,
+      "growth": null,
+      "score": 3.3,
+      "rule_tags": [
+        "导航"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对非结构化环境中地形通行性预测适应性差及灾难性遗忘问题，该研究提出了一种基于生成式经验回顾模型的持续学习框架。该方法无需存储历史数据，通过结合生成样本的不确定性来实现对新地形的自适应，并有效保留先验经验。在滑移转向机器人上的实地实验表明，该框架能适应多种环境并减轻灾难性遗忘。",
+        "highlights": [
+          {
+            "text": "提出了一种基于生成式经验回顾的持续学习框架，在无需存储历史数据的情况下保留了先前环境的经验。",
+            "evidence": "A key virtue of the proposed framework is two folds: i) retain prior experience without storing past data;"
+          },
+          {
+            "text": "通过引入生成样本的不确定性估计，实现了具有不确定性意识的地形适应能力。",
+            "evidence": "ii) incorporate the uncertainty of the generated samples from the recall model, enabling uncertainty-aware adaptation."
+          }
+        ],
+        "tags": [
+          "导航"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.17172",
+      "title": "Fingers as Legs: Learning Self-Supported Locomotion and Manipulation with an Anthropomorphic Hand",
+      "abstract": "A walking robotic hand must use the same fingers to move its body, support its weight, and interact with the environment. We show how an anthropomorphic hand can learn these skills while retaining its finger design and position controller. Onboard power and computation make the platform self-contained. Our reinforcement learning approach accounts for the hand's unequal fingers, with training in a simulator calibrated from hardware measurements. In simulation, the hand moves faster with our reward formulation than with tuned rewards originally designed for quadrupeds. On hardware, task-specific policies enable untethered crawling, steering, and fall recovery. While supporting its own weight, the hand also executes successive keyboard commands without vision and pushes an object to targets using overhead visual feedback. These results demonstrate a compact mobile manipulator that reuses its fingers for locomotion and interaction, without a separate locomotion mechanism.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-09-16",
+      "date_label": "公告",
+      "age_days": 0.32227223173611114,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.50514,
+      "growth": null,
+      "score": 3.283,
+      "rule_tags": [
+        "强化学习",
+        "四足机器人",
+        "足式运动"
+      ],
+      "summary_status": "Gemini 暂不可用，显示规则标签与原文摘要。"
+    },
+    {
+      "id": "2609.16629",
+      "title": "Learning to Optimize UAV Path Planning for Data Sensing in Wireless Sensor Networks",
+      "abstract": "UAVs have emerged as highly flexible platforms for data sensing in Wireless Sensor Networks (WSNs). Path planning for UAVs in such tasks plays a key role to assure remote sensing effectiveness and friendly energy consumption. However, existing approaches show two key limitations: i) they are primarily hand-crafted with certain design biases that harm adaptation on unseen tasks. ii) they predominantly assume idealized spatial complexities of actual environments through simplified simulation, causing them to underperform during real-world deployment. In this paper, we propose a novel learning-assisted planning framework, termed Landscape-Aware Meta Differential Evolution (LAMDE), to tackle the mentioned limitations. The major contributions come from the following aspects. We first re-formulate such UAV path planning problem to embrace challenging constraints. To efficiently navigate this highly constrained space, we propose a bi-level learning to optimize approach, where the meta-level is a trainable algorithm configuration policy that meta-learns an adaptable planning strategy for low-level planning algorithm. To address the potential training data scarcity and distribution shift in real-world environments, we introduce a landscape-aware automatic augmentation scheme that enriches training data. At the low-level, a Differential Evolution algorithm is deployed for solving the path planning tasks. To enhance the solving flexibility, we further design a variable-length encoding strategy that dynamically prunes redundant hover points and optimizes continuous flight parameters concurrently within a unified search space. Based on all proposed designs, we meta-train LAMDE and compare it with representative baselines. Comprehensive experiments demonstrate that LAMDE achieves state-of-the-art performance on the tested complex UAV path planning tasks in WSN data collection scenarios.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-09-16",
+      "date_label": "公告",
+      "age_days": 0.32227223173611114,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.50302,
+      "growth": null,
+      "score": 3.27,
+      "rule_tags": [],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对无线传感器网络（WSN）中无人机路径规划面临的设计偏见与真实环境适应性差的问题，本文提出了Landscape-Aware Meta Differential Evolution（LAMDE）框架。该方法采用双层学习优化架构，元层学习算法配置策略以增强适应性，低层利用差分进化算法配合变长编码策略进行路径优化。同时，作者引入了景观感知自动增强方案以应对数据稀缺。实验表明，该方法在测试的复杂任务中达到了前沿性能。",
+        "highlights": [
+          {
+            "text": "提出了一种双层学习优化架构，通过元层策略动态配置低层规划算法，实现了对复杂约束环境的有效导航。",
+            "evidence": "we propose a bi-level learning to optimize approach, where the meta-level is a trainable algorithm configuration policy that meta-learns an adaptable planning strategy for low-level planning algorithm."
+          },
+          {
+            "text": "设计了景观感知自动增强方案，有效缓解了真实部署场景中训练数据稀缺和分布偏移带来的挑战。",
+            "evidence": "To address the potential training data scarcity and distribution shift in real-world environments, we introduce a landscape-aware automatic augmentation scheme that enriches training data."
+          },
+          {
+            "text": "引入了变长编码策略，在统一搜索空间内同时优化飞行参数并精简冗余的悬停点，提升了路径规划的灵活性。",
+            "evidence": "we further design a variable-length encoding strategy that dynamically prunes redundant hover points and optimizes continuous flight parameters concurrently within a unified search space."
+          }
+        ],
+        "tags": [],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.16074",
+      "title": "World-Action Models for Robot Learning and Control: A Survey",
+      "abstract": "Robots operating in open environments act under partial observability, physical constraints, and dynamic task contexts. Beyond mapping observations and language instructions to actions, they must anticipate how candidate actions may affect future states and task-relevant outcomes. Recent advances in world models, video generation, and Vision-Language-Action (VLA) policies have motivated the development of World-Action Models (WAMs), which couple future world prediction with executable action generation. This survey provides a robotics-oriented review of WAMs. We clarify their scope relative to conventional world models, model-based reinforcement learning, action-conditioned video generation, and reactive VLA policies, and organize existing methods through a unified taxonomy covering representations, transition modeling, action interfaces, architectures, training pipelines, data modalities, and scaling strategies. We further review applications of WAMs in manipulation, navigation, and autonomous driving, and we summarize the datasets, benchmarks, metrics, and protocols used to evaluate WAM systems. Finally, we discuss key challenges in action alignment, world-action factorization, spatial and multi-view consistency, long-horizon memory, neural simulation for closed-loop policy learning, and efficient inference. Taken together, this survey aims to provide a concise technical foundation for integrating predictive world modeling with action generation, toward more reliable embodied robot intelligence. Project page: https://rcl-robotics.github.io/Awesome-World-Action-Models.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-09-16",
+      "date_label": "公告",
+      "age_days": 0.32227223173611114,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.49764,
+      "growth": null,
+      "score": 3.235,
+      "rule_tags": [
+        "强化学习",
+        "导航",
+        "世界模型",
+        "视觉语言动作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文综述了机器人学习与控制中的“世界-动作模型”（WAMs）。WAMs将未来的世界状态预测与可执行的动作生成相结合，旨在解决机器人由于部分可观测性、物理约束和动态任务环境带来的挑战。文章梳理了WAMs与传统世界模型、基于模型的强化学习、视觉语言动作（VLA）策略等领域的关系，提出了统一的分类体系，并讨论了其在操作、导航和自动驾驶中的应用及面临的关键技术挑战。",
+        "highlights": [
+          {
+            "text": "提出了一种将未来世界状态预测与动作生成相结合的WAMs技术分类体系，明确了其与传统世界模型和VLA策略的区别。",
+            "evidence": "This survey provides a robotics-oriented review of WAMs. We clarify their scope relative to conventional world models, model-based reinforcement learning, action-conditioned video generation, and reactive VLA policies, and organize existing methods through a unified taxonomy covering representations, transition modeling, action interfaces, architectures, training pipelines, data modalities, and scaling strategies."
+          },
+          {
+            "text": "总结了WAMs在机器人操作、导航及自动驾驶等领域的应用，并探讨了动作对齐、长时记忆与推理效率等关键挑战。",
+            "evidence": "We further review applications of WAMs in manipulation, navigation, and autonomous driving, and we summarize the datasets, benchmarks, metrics, and protocols used to evaluate WAM systems. Finally, we discuss key challenges in action alignment, world-action factorization, spatial and multi-view consistency, long-horizon memory, neural simulation for closed-loop policy learning, and efficient inference."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "导航",
+          "视觉语言动作",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    }
+  ],
+  "candidate_count": 568,
+  "personalization_note": "已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。",
+  "html": "<h1>2026-09-16 每日新论文 5</h1>\n<p>机器人 · 强化学习 · 通用 AI</p>\n<p>生成时间：2026-09-16 19:44 CST。从 568 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>\n<p>本栏优先收录最近发布且未出现在近期日报的 arXiv 论文，不按热度排序；相关性分用于结合你的 Zotero 收藏偏好。</p>\n<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>\n<p>本次合格候选不足 10 篇，实际收录 5 篇。</p>\n<h2>1. FluxVLA Engine: A One-Stop VLA Engineering Platform for Embodied Intelligence</h2>\n<p><strong>机器人 / 强化学习</strong> · 公告 2026-09-16 · 综合分 3.49</p>\n<p>Zotero 摘要相关性：0.537（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习 · 世界模型 · 视觉语言动作 · 离线强化学习</p>\n<p><strong>中文概述：</strong>FluxVLA Engine 旨在解决具身智能领域中算法设计与可靠机器人系统部署之间的工程化断层。该平台通过提供一套配置驱动的标准化框架，整合了数据集管理、视觉语言模型、强化学习训练、仿真评估及实时推理等组件，旨在将异构的具身策略转化为可复现的“数据到部署”工作流。作者声称该平台通过统一接口和集成化工具链，能够有效降低具身学习算法在实际机器人系统中的落地难度。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>FluxVLA Engine 建立了一套配置驱动的标准化平台，实现了从数据处理、模型训练到机器人部署的全流程闭环。<br><small>摘要依据：We present $\\mathrm{FluxVLA}$ Engine, an open, configuration-driven platform that turns heterogeneous embodied-policy components into a reproducible data-to-deployment workflow.</small></li>\n<li>该平台集成了多种工程化工具，包括实时分块技术（RTC）、加速推理后端和远程GPU服务，以支持具身机器人的实时物理执行。<br><small>摘要依据：For responsive physical execution, it combines Real-Time Chunking (RTC) with accelerated inference backends, lightweight remote GPU serving, and configurable trajectory post-processing.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>视觉语言动作 · 离线强化学习 · 机器人操作 · 推理</p>\n<p><strong>原文摘要节选：</strong>Vision-language-action (VLA) models, world-action models (WAMs), and offline reinforcement learning methods are rapidly expanding the design space of embodied policies, yet turning these algorithms into reliable robot systems remains constrained by fragmented data formats, training stacks, evaluation protocols, inference runtimes, and embodiment-specific interfaces. We present $\\mathrm{FluxVLA}$ Engine, an open, configuration-driven platform that turns heterogeneous embodied-policy components into a reproducible data-to-deployment workflow. Rather than introducing another policy model, $\\mathrm{FluxVLA}$ standardizes interfaces for datasets, visual-language and world models, action heads, reward- or advantage-weighted learning, distributed training, simulation evaluation, optimized…</p>\n<p><a href=\"https://arxiv.org/abs/2609.17210\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.17210\">PDF</a></p><hr>\n<h2>2. Continual Learning for Traversability Prediction with Uncertainty-Aware Adaptation</h2>\n<p><strong>机器人</strong> · 公告 2026-09-16 · 综合分 3.30</p>\n<p>Zotero 摘要相关性：0.508（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>导航</p>\n<p><strong>中文概述：</strong>针对非结构化环境中地形通行性预测适应性差及灾难性遗忘问题，该研究提出了一种基于生成式经验回顾模型的持续学习框架。该方法无需存储历史数据，通过结合生成样本的不确定性来实现对新地形的自适应，并有效保留先验经验。在滑移转向机器人上的实地实验表明，该框架能适应多种环境并减轻灾难性遗忘。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出了一种基于生成式经验回顾的持续学习框架，在无需存储历史数据的情况下保留了先前环境的经验。<br><small>摘要依据：A key virtue of the proposed framework is two folds: i) retain prior experience without storing past data;</small></li>\n<li>通过引入生成样本的不确定性估计，实现了具有不确定性意识的地形适应能力。<br><small>摘要依据：ii) incorporate the uncertainty of the generated samples from the recall model, enabling uncertainty-aware adaptation.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>导航</p>\n<p><strong>原文摘要节选：</strong>Traversability prediction is a critical component of autonomous navigation in unstructured environments, where complex and uncertain robot-terrain interactions pose significant challenges such as traction loss and dynamic instability. Despite recent progress in learning-based traversability prediction, these methods often fail to adapt to novel terrains. Even when adaptation is achieved, retaining experience from previously trained environments remains a challenge, a problem known as catastrophic forgetting. To address this challenge, we propose a continual learning framework for traversability prediction that incrementally adapts to new terrains using a generative experience recall model. A key virtue of the proposed framework is two folds: i) retain prior experience without storing past…</p>\n<p><a href=\"https://arxiv.org/abs/2609.17141\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.17141\">PDF</a></p><hr>\n<h2>3. Fingers as Legs: Learning Self-Supported Locomotion and Manipulation with an Anthropomorphic Hand</h2>\n<p><strong>机器人 / 强化学习</strong> · 公告 2026-09-16 · 综合分 3.28</p>\n<p>Zotero 摘要相关性：0.505（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习 · 四足机器人 · 足式运动</p>\n<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>\n<p><strong>原文摘要节选：</strong>A walking robotic hand must use the same fingers to move its body, support its weight, and interact with the environment. We show how an anthropomorphic hand can learn these skills while retaining its finger design and position controller. Onboard power and computation make the platform self-contained. Our reinforcement learning approach accounts for the hand&#x27;s unequal fingers, with training in a simulator calibrated from hardware measurements. In simulation, the hand moves faster with our reward formulation than with tuned rewards originally designed for quadrupeds. On hardware, task-specific policies enable untethered crawling, steering, and fall recovery. While supporting its own weight, the hand also executes successive keyboard commands without vision and pushes an object to targets…</p>\n<p><a href=\"https://arxiv.org/abs/2609.17172\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.17172\">PDF</a></p><hr>\n<h2>4. Learning to Optimize UAV Path Planning for Data Sensing in Wireless Sensor Networks</h2>\n<p><strong>机器人</strong> · 公告 2026-09-16 · 综合分 3.27</p>\n<p>Zotero 摘要相关性：0.503（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>中文概述：</strong>针对无线传感器网络（WSN）中无人机路径规划面临的设计偏见与真实环境适应性差的问题，本文提出了Landscape-Aware Meta Differential Evolution（LAMDE）框架。该方法采用双层学习优化架构，元层学习算法配置策略以增强适应性，低层利用差分进化算法配合变长编码策略进行路径优化。同时，作者引入了景观感知自动增强方案以应对数据稀缺。实验表明，该方法在测试的复杂任务中达到了前沿性能。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出了一种双层学习优化架构，通过元层策略动态配置低层规划算法，实现了对复杂约束环境的有效导航。<br><small>摘要依据：we propose a bi-level learning to optimize approach, where the meta-level is a trainable algorithm configuration policy that meta-learns an adaptable planning strategy for low-level planning algorithm.</small></li>\n<li>设计了景观感知自动增强方案，有效缓解了真实部署场景中训练数据稀缺和分布偏移带来的挑战。<br><small>摘要依据：To address the potential training data scarcity and distribution shift in real-world environments, we introduce a landscape-aware automatic augmentation scheme that enriches training data.</small></li>\n<li>引入了变长编码策略，在统一搜索空间内同时优化飞行参数并精简冗余的悬停点，提升了路径规划的灵活性。<br><small>摘要依据：we further design a variable-length encoding strategy that dynamically prunes redundant hover points and optimizes continuous flight parameters concurrently within a unified search space.</small></li>\n</ul>\n<p><strong>原文摘要节选：</strong>UAVs have emerged as highly flexible platforms for data sensing in Wireless Sensor Networks (WSNs). Path planning for UAVs in such tasks plays a key role to assure remote sensing effectiveness and friendly energy consumption. However, existing approaches show two key limitations: i) they are primarily hand-crafted with certain design biases that harm adaptation on unseen tasks. ii) they predominantly assume idealized spatial complexities of actual environments through simplified simulation, causing them to underperform during real-world deployment. In this paper, we propose a novel learning-assisted planning framework, termed Landscape-Aware Meta Differential Evolution (LAMDE), to tackle the mentioned limitations. The major contributions come from the following aspects. We first…</p>\n<p><a href=\"https://arxiv.org/abs/2609.16629\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.16629\">PDF</a></p><hr>\n<h2>5. World-Action Models for Robot Learning and Control: A Survey</h2>\n<p><strong>机器人 / 强化学习</strong> · 公告 2026-09-16 · 综合分 3.23</p>\n<p>Zotero 摘要相关性：0.498（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习 · 导航 · 世界模型 · 视觉语言动作</p>\n<p><strong>中文概述：</strong>本文综述了机器人学习与控制中的“世界-动作模型”（WAMs）。WAMs将未来的世界状态预测与可执行的动作生成相结合，旨在解决机器人由于部分可观测性、物理约束和动态任务环境带来的挑战。文章梳理了WAMs与传统世界模型、基于模型的强化学习、视觉语言动作（VLA）策略等领域的关系，提出了统一的分类体系，并讨论了其在操作、导航和自动驾驶中的应用及面临的关键技术挑战。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出了一种将未来世界状态预测与动作生成相结合的WAMs技术分类体系，明确了其与传统世界模型和VLA策略的区别。<br><small>摘要依据：This survey provides a robotics-oriented review of WAMs. We clarify their scope relative to conventional world models, model-based reinforcement learning, action-conditioned video generation, and reactive VLA policies, and organize existing methods through a unified taxonomy covering representations, transition modeling, action interfaces, architectures, training pipelines, data modalities, and scaling strategies.</small></li>\n<li>总结了WAMs在机器人操作、导航及自动驾驶等领域的应用，并探讨了动作对齐、长时记忆与推理效率等关键挑战。<br><small>摘要依据：We further review applications of WAMs in manipulation, navigation, and autonomous driving, and we summarize the datasets, benchmarks, metrics, and protocols used to evaluate WAM systems. Finally, we discuss key challenges in action alignment, world-action factorization, spatial and multi-view consistency, long-horizon memory, neural simulation for closed-loop policy learning, and efficient inference.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 导航 · 视觉语言动作 · 推理</p>\n<p><strong>原文摘要节选：</strong>Robots operating in open environments act under partial observability, physical constraints, and dynamic task contexts. Beyond mapping observations and language instructions to actions, they must anticipate how candidate actions may affect future states and task-relevant outcomes. Recent advances in world models, video generation, and Vision-Language-Action (VLA) policies have motivated the development of World-Action Models (WAMs), which couple future world prediction with executable action generation. This survey provides a robotics-oriented review of WAMs. We clarify their scope relative to conventional world models, model-based reinforcement learning, action-conditioned video generation, and reactive VLA policies, and organize existing methods through a unified taxonomy covering…</p>\n<p><a href=\"https://arxiv.org/abs/2609.16074\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.16074\">PDF</a></p><hr>"
+}

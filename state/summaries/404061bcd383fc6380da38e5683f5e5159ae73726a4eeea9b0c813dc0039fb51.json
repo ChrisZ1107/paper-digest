@@ -1,0 +1,21 @@
+{
+  "overview": "HarnessVLN 提出了一种无需训练的具身导航框架，通过 Agent Harness 统一协调感知、检索、定位、导航及故障恢复。该方法利用多模态大模型进行决策，通过时空图维持空间证据与任务进度，并对规划建议进行几何可行性与目标一致性验证。作者声称该方法在多个导航基准测试中超越了现有的无训练方法，并已验证其在人形机器人现实环境中的应用潜力。",
+  "highlights": [
+    {
+      "text": "提出了 HarnessVLN 框架，通过统一的工具接口集成感知、规划验证及故障恢复机制，有效解决了无训练导航中缺乏行动协调的问题。",
+      "evidence": "We present HarnessVLN, a zero-shot, training-free framework whose Agent Harness coordinates perception, retrieval, grounding, navigation, recovery, and termination through a unified tool interface."
+    },
+    {
+      "text": "引入分层事件记忆与时空图，支持导航过程中的空间证据维护及执行失败记录，从而提升任务的鲁棒性。",
+      "evidence": "Hierarchical event memory tracks task progress and execution history, while a persistent Spatiotemporal Graph maintains reusable spatial evidence and failure annotations for verification and recovery."
+    },
+    {
+      "text": "实验结果显示该框架在 R2R、RxR 及 HM3D 等多个基准测试中表现优于此前的同类最优方法。",
+      "evidence": "HarnessVLN achieves success rates of 60.8%, 53.9%, 76.0%, and 59.3% on R2R, RxR, HM3D-v2, and HM3D-OVON, respectively, surpassing prior training-free SOTA results."
+    }
+  ],
+  "tags": [
+    "导航",
+    "人形机器人"
+  ]
+}
