@@ -4,6 +4,8 @@ on:
   schedule:
     # 01:00 UTC = 09:00 Asia/Shanghai. GitHub may delay scheduled runs.
     - cron: '0 1 * * *'
+    # Fallback retry if the first scheduled run is delayed or fails.
+    - cron: '30 1 * * *'
   workflow_dispatch:
     inputs:
       regenerate:
