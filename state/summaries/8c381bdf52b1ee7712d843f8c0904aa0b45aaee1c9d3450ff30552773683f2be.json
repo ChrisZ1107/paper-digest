@@ -1,0 +1,20 @@
+{
+  "overview": "针对人形机器人全身移动操作任务探索不足的问题，研究提出了WholeBodyWAM模型。该方法通过联合预测未来的视觉动力学、操作动作及全身控制意图，在保留预训练世界-动作先验的同时，引入全身控制器（WBC）语义接地与行为协调。实验结果表明，该模型在模拟环境和真实世界中均提升了任务成功率及泛化能力，为通过结构化接地实现可扩展的人形机器人智能提供了方案。",
+  "highlights": [
+    {
+      "text": "WholeBodyWAM 通过集成全身控制器（WBC）语义接地与协调机制，将预训练的世界-动作先验扩展至人形机器人的移动操作任务中。",
+      "evidence": "It preserves pre-trained world-action priors while grounding heterogeneous whole-body controller (WBC) semantics and coordinating whole-body behavior."
+    },
+    {
+      "text": "实验表明该方法在模拟任务中实现了91.9%的成功率，并能有效减少不同WBC实现之间的成功率差异。",
+      "evidence": "Extensive experiments show that WholeBodyWAM achieves an overall simulation task success rate of 91.9%, with a 0.23 improvement in real-world out-of-distribution task progress and a 70% reduction in success-rate variance across WBCs relative to the respective baselines."
+    }
+  ],
+  "tags": [
+    "人形机器人",
+    "世界模型",
+    "足式运动",
+    "机器人操作",
+    "Sim-to-Real"
+  ]
+}

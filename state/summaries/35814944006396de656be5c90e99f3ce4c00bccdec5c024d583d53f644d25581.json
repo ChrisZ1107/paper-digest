@@ -1,0 +1,16 @@
+{
+  "overview": "本文探讨了基础模型及游戏世界模型在游戏全生命周期中的应用。作者将AI在游戏领域的角色归纳为六类：游戏玩法、玩家与游戏建模、游戏设计、开发维护、运行时生成与适配、以及测试评估。论文分析了这些角色间的内在联系与技术迁移潜力，并指出尽管部分AI输出具有可迁移性，但由于控制方案、引擎接口及玩家背景的局限，针对特定游戏环境的有效性验证仍是目前面临的核心挑战。",
+  "highlights": [
+    {
+      "text": "作者将AI在游戏中的作用划分为六大类，涵盖了从游戏开发到运行时体验适配的全过程。",
+      "evidence": "We organize the literature into six roles according to the immediate use of AI output: playing and acting; modeling players and games; designing games; building and maintaining games; generating and adapting at runtime; and testing and evaluating games."
+    },
+    {
+      "text": "尽管AI能力在各角色间存在联系，但由于环境特异性限制，跨场景的应用仍需进行有效性验证。",
+      "evidence": "However, control schemes, rules, engine interfaces, state representations, and player contexts often remain setting-specific, so downstream claims require validation in the target setting."
+    }
+  ],
+  "tags": [
+    "世界模型"
+  ]
+}

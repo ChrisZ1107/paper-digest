@@ -1,0 +1,20 @@
+{
+  "overview": "针对移动机器人视觉语言动作（VLA）模型在高层语义推理与低层控制之间存在脱节的问题，本文提出了MobileVLA-R1 2.0框架。该方法结合监督思维链（CoT）对齐与强化学习，显式耦合结构化具身推理与机器人动作控制。通过引入推理条件化动作解码器，实现了高层动作生成与具体机器人控制的分离，在导航及移动操纵任务中实现了更一致的长程决策与执行。",
+  "highlights": [
+    {
+      "text": "提出了一种结合监督思维链与强化学习的推理框架，通过显式耦合具身推理与机器人控制，提升了推理与动作的一致性。",
+      "evidence": "The framework learns multi-granularity reasoning over embodied trajectories through supervised Chain-of-Thought (CoT) alignment and reinforcement learning, improving reasoning-to-action consistency beyond purely behavioral supervision."
+    },
+    {
+      "text": "MobileVLA-R1 2.0在导航及真实世界移动操纵任务中表现优于基线，实现了更强的长程指令遵循能力。",
+      "evidence": "MobileVLA-R1 2.0 consistently outperforms strong VLA baselines, achieving an average 1.6 point improvement in SR on VLN-CE and a 10.0 point improvement in full-task success on real-world G1 mobile manipulation tasks over MobileVLA-R1, while demonstrating robust long-horizon instruction following and closed-loop execution across different robotic platforms."
+    }
+  ],
+  "tags": [
+    "视觉语言动作",
+    "强化学习",
+    "四足机器人",
+    "人形机器人",
+    "导航"
+  ]
+}

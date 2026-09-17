@@ -1,0 +1,18 @@
+{
+  "overview": "本文提出了内在机器人奖励（IRR）方法，旨在复用视觉-语言-动作（VLA）系统的视觉表征与演示数据，实现机器人自主评估任务结果并提供策略改进反馈。该方法通过在现有流水线中加入参考库与评分机制，无需额外的评估器或感知骨干网络，旨在降低集成难度、提高奖励计算效率并减少人工评估需求。作者通过COMAU Racer 3实验平台验证了该方法的可行性。",
+  "highlights": [
+    {
+      "text": "IRR方法通过复用预训练的视觉编码器和演示数据，实现了无需额外学习评估器的自主任务结果评估。",
+      "evidence": "The core reward mechanism adds a reference bank and a scoring operation to the existing pipeline, without requiring a separate learned evaluator or an additional perception backbone."
+    },
+    {
+      "text": "该方法通过简化感知与评价流程，旨在降低工业机器人系统的集成难度并提升从已有数据中学习的效率。",
+      "evidence": "Our position is that this reuse offers a promising route to lower integration effort, efficient reward computation, and reduced recurring human outcome scoring."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "视觉语言动作",
+    "Sim-to-Real"
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "date": "2026-09-17",
+  "timestamp": "2026-09-17T10:13:59.504847+08:00",
+  "title": "2026-09-17 每日新论文 5",
+  "slug": "2026-09-17-new",
+  "papers": [
+    {
+      "id": "2609.16705",
+      "title": "The Robot Data Factory",
+      "abstract": "Physical AI requires more than increasingly large robot datasets: intelligent robots acquire knowledge through continuous interaction with the physical world. We argue that the defining scientific resource of Physical AI is therefore not raw robot data alone, but robot experience - physically grounded interaction whose observations, actions, embodiment, context, and outcomes preserve the perception-action-consequence loop. We introduce the Robot Data Factory (RDF), a mission-driven infrastructure and methodology for continuously generating, validating, benchmarking, and reusing such experience. RDF organizes heterogeneous robots and environment-specific training grounds through reproducible missions, skill curricula, synchronized multimodal sensing, external ground truth, an agentic robot network, data pipelines, and living benchmarks. Rather than treating datasets as static end products, RDF implements a closed Deploy-Measure-Learn-Repeat cycle in which validated physical experience supports world models, vision-language-action models, embodied policies, digital twins, and subsequent robot deployment. We further formalize robot experience and its quality, introduce a mission-task-skill-episode-dataset-benchmark-capability hierarchy, and derive quantitative scaling laws and an algorithmic synthesis procedure connecting robot fleet size, sensor rates, storage, learning representations, tokenization, training compute, inference, and latency to Embodied-AI cluster requirements. The framework is instantiated in three complementary physical training grounds for domestic, environmental, and energy applications. RDF thus reframes robot data generation as a continuous scientific production process and provides a pathway toward reproducible, scalable, and eventually federated infrastructure for Physical AI.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-09-16",
+      "date_label": "公告",
+      "age_days": 0.9263831579513889,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.49586,
+      "growth": {
+        "days": 0.6,
+        "upvotes": 0,
+        "comments": 0
+      },
+      "score": 3.223,
+      "rule_tags": [
+        "世界模型",
+        "视觉语言动作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对物理人工智能领域，作者提出了“机器人数据工厂”（RDF）这一基础设施与方法论。RDF不再将静态数据集作为最终目标，而是通过组织异构机器人与环境，构建包括任务、技能、感知与结果在内的“机器人经验”。该系统通过“部署-测量-学习-循环”的闭环流程，支持世界模型、视觉语言动作模型及具身智能策略的开发，旨在将机器人数据生成转变为可重复、可扩展的科学生产过程。",
+        "highlights": [
+          {
+            "text": "提出RDF架构，通过“部署-测量-学习”闭环替代静态数据集，以持续生成、验证并复用包含完整感知-动作-结果链条的机器人经验。",
+            "evidence": "Rather than treating datasets as static end products, RDF implements a closed Deploy-Measure-Learn-Repeat cycle in which validated physical experience supports world models, vision-language-action models, embodied policies, digital twins, and subsequent robot deployment."
+          },
+          {
+            "text": "作者形式化了机器人经验及质量标准，推导出了关联机器人规模、计算资源与感知能力的量化缩放定律。",
+            "evidence": "We further formalize robot experience and its quality, introduce a mission-task-skill-episode-dataset-benchmark-capability hierarchy, and derive quantitative scaling laws and an algorithmic synthesis procedure connecting robot fleet size, sensor rates, storage, learning representations, tokenization, training compute, inference, and latency to Embodied-AI cluster requirements."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "Sim-to-Real",
+          "世界模型",
+          "视觉语言动作"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.17372",
+      "title": "XPACE: Joint World and Action Modeling from Heterogeneous Experience",
+      "abstract": "A general-purpose robot needs to draw on diverse experience, choose actions, and anticipate how those actions will change the world. We introduce XPACE, a unified embodied world model that serves as both a world action model, jointly predicting executable robot actions and future video, and a world simulator, predicting the visual consequences of prescribed actions. Our key insight is that video prediction can both connect heterogeneous experience to action learning and generate new experience for policy improvement. With a shared video backbone between the policy and simulator, we use action-unlabeled video to learn visual dynamics and action-labeled human and robot demonstrations to jointly learn video and action prediction. Building on this architecture, a coarse-to-fine training curriculum progressively emphasizes robot control while retaining human experience, allowing the policy to learn behaviors beyond those covered by robot demonstrations. Beyond learning from recorded experience, XPACE uses its simulator to create additional recovery supervision for the policy. Specifically, we adapt the simulator to its own generated context, synthesize deviation-recovery trajectories around expert demonstrations, and fine-tune the policy on filtered recovery examples. Experiments on XPENG's IRON humanoid robot show that heterogeneous training improves robustness and enables transfer of human-observed skills to tasks absent from robot demonstrations, while recovery data generated by the model's own simulator further improves real-world task completion. Together, these results demonstrate how joint world and action modeling connects learning from heterogeneous experience with simulation-driven policy self-improvement.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-09-16",
+      "date_label": "公告",
+      "age_days": 0.9263831579513889,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.49339,
+      "growth": {
+        "days": 0.6,
+        "upvotes": 0,
+        "comments": 0
+      },
+      "score": 3.207,
+      "rule_tags": [
+        "人形机器人",
+        "世界模型"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对通用机器人需利用多样化数据进行决策与环境预测的问题，作者提出了XPACE模型。该模型将世界模型与动作预测整合，通过共享视频主干网络，同时利用无动作标签的视频数据学习视觉动态，并结合人工与机器人演示数据进行联合训练。此外，该方法通过由粗到细的训练策略和利用模型生成的恢复轨迹进行策略微调，在人形机器人上实现了对未见任务的技能迁移与任务完成率提升。",
+        "highlights": [
+          {
+            "text": "XPACE通过共享视频主干网络联合学习视觉动态与动作预测，能够从异构数据中有效获取信息。",
+            "evidence": "With a shared video backbone between the policy and simulator, we use action-unlabeled video to learn visual dynamics and action-labeled human and robot demonstrations to jointly learn video and action prediction."
+          },
+          {
+            "text": "该模型利用内置模拟器生成偏差恢复轨迹，并通过过滤后的恢复样本对策略进行微调，从而增强了任务完成能力。",
+            "evidence": "Specifically, we adapt the simulator to its own generated context, synthesize deviation-recovery trajectories around expert demonstrations, and fine-tune the policy on filtered recovery examples."
+          }
+        ],
+        "tags": [
+          "人形机器人",
+          "世界模型",
+          "模仿学习",
+          "机器人操作"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.16443",
+      "title": "The Neverwhere Visual Parkour Benchmark Suite",
+      "abstract": "State-of-the-art visual locomotion controllers are increasingly capable at handling complex visual environments, making evaluating their real-world performance before deployment increasingly difficult. This work intends to narrow this train/evaluation gap by developing a collection of hyper-photo-realistic, closed-loop evaluation environments - The Neverwhere Benchmark Suite - comprised of over sixty 3D Gaussian Splatting reconstructions of urban indoor and outdoor scenes. Our goal is to encourage large-scale and reproducible robot evaluation by making it easier to create and integrate Gaussian splats-based reconstructions into simulated continuous testing setups. We also underscore the potential pitfalls of relying exclusively on 3D Gaussian-generated data for training, by providing policy checkpoints trained over multiple Neverwhere scenes and their performance when evaluated in novel scenes. Our analysis illustrates the necessity of sourcing diverse data to ensure performance. Code and data are available on the project page: https://ziyc.github.io/neverwhere-bench/.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-09-16",
+      "date_label": "公告",
+      "age_days": 0.9263831579513889,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.48824,
+      "growth": {
+        "days": 0.6,
+        "upvotes": 0,
+        "comments": 0
+      },
+      "score": 3.174,
+      "rule_tags": [
+        "足式运动"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对视觉运动控制评估中存在的训练与实际部署差距问题，该研究提出了“Neverwhere基准测试套件”。该套件包含60多个基于3D高斯溅射技术重建的室内外场景，旨在实现大规模、可重现的机器人仿真测试。作者通过在多个场景下训练策略并评估其在未知场景中的表现，强调了数据多样性对于确保机器人泛化性能的重要性。",
+        "highlights": [
+          {
+            "text": "Neverwhere基准测试套件通过集成60多个基于3D高斯溅射重建的真实场景，为机器人评估提供了一个高逼真的封闭循环环境。",
+            "evidence": "This work intends to narrow this train/evaluation gap by developing a collection of hyper-photo-realistic, closed-loop evaluation environments - The Neverwhere Benchmark Suite - comprised of over sixty 3D Gaussian Splatting reconstructions of urban indoor and outdoor scenes."
+          },
+          {
+            "text": "研究通过实验分析指出，仅依赖3D高斯生成的训练数据存在局限性，并强调了引入多样化数据对于提升策略泛化能力至关重要。",
+            "evidence": "We also underscore the potential pitfalls of relying exclusively on 3D Gaussian-generated data for training, by providing policy checkpoints trained over multiple Neverwhere scenes and their performance when evaluated in novel scenes. Our analysis illustrates the necessity of sourcing diverse data to ensure performance."
+          }
+        ],
+        "tags": [
+          "足式运动",
+          "Sim-to-Real"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.17115",
+      "title": "Intrinsic Robot Rewarding: Reusing VLA Representations for Autonomous Evaluation and Policy Improvement",
+      "abstract": "Vision-language-action (VLA) systems already bring together two valuable resources for robot learning: rich visual representations and demonstrations of successful task execution. Intrinsic Robot Rewarding (IRR) proposes to use these resources for a second, complementary purpose: evaluating the robot's own outcomes and providing feedback for policy improvement. Successful demonstration endpoints define task-specific references, and the policy's frozen visual encoder provides the feature space in which new outcomes are assessed. The core reward mechanism adds a reference bank and a scoring operation to the existing pipeline, without requiring a separate learned evaluator or an additional perception backbone. Our position is that this reuse offers a promising route to lower integration effort, efficient reward computation, and reduced recurring human outcome scoring. Building on established research in visual rewards and learning from experience, IRR brings these ideas into the robot's existing perception and demonstration pipeline. An operational COMAU Racer 3 demonstrator is available at technology readiness level 4 (TRL 4). This laboratory foundation supports the next research step: connecting internal outcome evaluation to physical policy improvement. We present the reward formulation, central research questions, and an evaluation methodology linking reward reliability to task success and supervision effort. The intended contribution is a reusable approach to learn and improve from the data and experience already available in industrial robot systems.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-09-16",
+      "date_label": "公告",
+      "age_days": 0.9263831579513889,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.47127,
+      "growth": {
+        "days": 0.6,
+        "upvotes": 0,
+        "comments": 0
+      },
+      "score": 3.063,
+      "rule_tags": [
+        "视觉语言动作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文提出了内在机器人奖励（IRR）方法，旨在复用视觉-语言-动作（VLA）系统的视觉表征与演示数据，实现机器人自主评估任务结果并提供策略改进反馈。该方法通过在现有流水线中加入参考库与评分机制，无需额外的评估器或感知骨干网络，旨在降低集成难度、提高奖励计算效率并减少人工评估需求。作者通过COMAU Racer 3实验平台验证了该方法的可行性。",
+        "highlights": [
+          {
+            "text": "IRR方法通过复用预训练的视觉编码器和演示数据，实现了无需额外学习评估器的自主任务结果评估。",
+            "evidence": "The core reward mechanism adds a reference bank and a scoring operation to the existing pipeline, without requiring a separate learned evaluator or an additional perception backbone."
+          },
+          {
+            "text": "该方法通过简化感知与评价流程，旨在降低工业机器人系统的集成难度并提升从已有数据中学习的效率。",
+            "evidence": "Our position is that this reuse offers a promising route to lower integration effort, efficient reward computation, and reduced recurring human outcome scoring."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "视觉语言动作",
+          "Sim-to-Real"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.16644",
+      "title": "WholeBodyWAM: Generalizing Pre-trained World-Action Priors to Humanoid Loco-Manipulation via WBC-Grounded Coordination",
+      "abstract": "World Action Models (WAMs) offer a promising approach to general-purpose robot manipulation by jointly modeling visual dynamics and actions. However, most WAM studies focus on tabletop or arm-centric manipulation, while humanoid loco-manipulation remains less explored. To address this gap, we introduce WholeBodyWAM, which jointly predicts future visual dynamics, manipulation actions, and whole-body control intents for generalizable humanoid loco-manipulation. It preserves pre-trained world-action priors while grounding heterogeneous whole-body controller (WBC) semantics and coordinating whole-body behavior. Extensive experiments show that WholeBodyWAM achieves an overall simulation task success rate of 91.9%, with a 0.23 improvement in real-world out-of-distribution task progress and a 70% reduction in success-rate variance across WBCs relative to the respective baselines. These results suggest a path toward scalable humanoid whole-body intelligence by extending pre-trained world-action priors through structured WBC grounding and coordination, rather than relearning whole-body behavior from scratch. Project page: https://wholebodywam.github.io/.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-09-16",
+      "date_label": "公告",
+      "age_days": 0.9263831579513889,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.46694,
+      "growth": {
+        "days": 0.6,
+        "upvotes": 0,
+        "comments": 0
+      },
+      "score": 3.035,
+      "rule_tags": [
+        "人形机器人"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对人形机器人全身移动操作任务探索不足的问题，研究提出了WholeBodyWAM模型。该方法通过联合预测未来的视觉动力学、操作动作及全身控制意图，在保留预训练世界-动作先验的同时，引入全身控制器（WBC）语义接地与行为协调。实验结果表明，该模型在模拟环境和真实世界中均提升了任务成功率及泛化能力，为通过结构化接地实现可扩展的人形机器人智能提供了方案。",
+        "highlights": [
+          {
+            "text": "WholeBodyWAM 通过集成全身控制器（WBC）语义接地与协调机制，将预训练的世界-动作先验扩展至人形机器人的移动操作任务中。",
+            "evidence": "It preserves pre-trained world-action priors while grounding heterogeneous whole-body controller (WBC) semantics and coordinating whole-body behavior."
+          },
+          {
+            "text": "实验表明该方法在模拟任务中实现了91.9%的成功率，并能有效减少不同WBC实现之间的成功率差异。",
+            "evidence": "Extensive experiments show that WholeBodyWAM achieves an overall simulation task success rate of 91.9%, with a 0.23 improvement in real-world out-of-distribution task progress and a 70% reduction in success-rate variance across WBCs relative to the respective baselines."
+          }
+        ],
+        "tags": [
+          "人形机器人",
+          "世界模型",
+          "足式运动",
+          "机器人操作",
+          "Sim-to-Real"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    }
+  ],
+  "candidate_count": 563,
+  "personalization_note": "已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。",
+  "html": "<h1>2026-09-17 每日新论文 5</h1>\n<p>机器人 · 强化学习 · 通用 AI</p>\n<p>生成时间：2026-09-17 10:13 CST。从 563 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>\n<p>本栏优先收录最近发布且未出现在近期日报的 arXiv 论文，不按热度排序；相关性分用于结合你的 Zotero 收藏偏好。</p>\n<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>\n<p>本次合格候选不足 10 篇，实际收录 5 篇。</p>\n<h2>1. The Robot Data Factory</h2>\n<p><strong>机器人</strong> · 公告 2026-09-16 · 综合分 3.22</p>\n<p>Zotero 摘要相关性：0.496（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>较上次观测（0.6 天前）：点赞 +0 · 讨论 +0。</p>\n<p><strong>规则标签：</strong>世界模型 · 视觉语言动作</p>\n<p><strong>中文概述：</strong>针对物理人工智能领域，作者提出了“机器人数据工厂”（RDF）这一基础设施与方法论。RDF不再将静态数据集作为最终目标，而是通过组织异构机器人与环境，构建包括任务、技能、感知与结果在内的“机器人经验”。该系统通过“部署-测量-学习-循环”的闭环流程，支持世界模型、视觉语言动作模型及具身智能策略的开发，旨在将机器人数据生成转变为可重复、可扩展的科学生产过程。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出RDF架构，通过“部署-测量-学习”闭环替代静态数据集，以持续生成、验证并复用包含完整感知-动作-结果链条的机器人经验。<br><small>摘要依据：Rather than treating datasets as static end products, RDF implements a closed Deploy-Measure-Learn-Repeat cycle in which validated physical experience supports world models, vision-language-action models, embodied policies, digital twins, and subsequent robot deployment.</small></li>\n<li>作者形式化了机器人经验及质量标准，推导出了关联机器人规模、计算资源与感知能力的量化缩放定律。<br><small>摘要依据：We further formalize robot experience and its quality, introduce a mission-task-skill-episode-dataset-benchmark-capability hierarchy, and derive quantitative scaling laws and an algorithmic synthesis procedure connecting robot fleet size, sensor rates, storage, learning representations, tokenization, training compute, inference, and latency to Embodied-AI cluster requirements.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · Sim-to-Real · 世界模型 · 视觉语言动作</p>\n<p><strong>原文摘要节选：</strong>Physical AI requires more than increasingly large robot datasets: intelligent robots acquire knowledge through continuous interaction with the physical world. We argue that the defining scientific resource of Physical AI is therefore not raw robot data alone, but robot experience - physically grounded interaction whose observations, actions, embodiment, context, and outcomes preserve the perception-action-consequence loop. We introduce the Robot Data Factory (RDF), a mission-driven infrastructure and methodology for continuously generating, validating, benchmarking, and reusing such experience. RDF organizes heterogeneous robots and environment-specific training grounds through reproducible missions, skill curricula, synchronized multimodal sensing, external ground truth, an agentic robot…</p>\n<p><a href=\"https://arxiv.org/abs/2609.16705\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.16705\">PDF</a></p><hr>\n<h2>2. XPACE: Joint World and Action Modeling from Heterogeneous Experience</h2>\n<p><strong>机器人</strong> · 公告 2026-09-16 · 综合分 3.21</p>\n<p>Zotero 摘要相关性：0.493（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>较上次观测（0.6 天前）：点赞 +0 · 讨论 +0。</p>\n<p><strong>规则标签：</strong>人形机器人 · 世界模型</p>\n<p><strong>中文概述：</strong>针对通用机器人需利用多样化数据进行决策与环境预测的问题，作者提出了XPACE模型。该模型将世界模型与动作预测整合，通过共享视频主干网络，同时利用无动作标签的视频数据学习视觉动态，并结合人工与机器人演示数据进行联合训练。此外，该方法通过由粗到细的训练策略和利用模型生成的恢复轨迹进行策略微调，在人形机器人上实现了对未见任务的技能迁移与任务完成率提升。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>XPACE通过共享视频主干网络联合学习视觉动态与动作预测，能够从异构数据中有效获取信息。<br><small>摘要依据：With a shared video backbone between the policy and simulator, we use action-unlabeled video to learn visual dynamics and action-labeled human and robot demonstrations to jointly learn video and action prediction.</small></li>\n<li>该模型利用内置模拟器生成偏差恢复轨迹，并通过过滤后的恢复样本对策略进行微调，从而增强了任务完成能力。<br><small>摘要依据：Specifically, we adapt the simulator to its own generated context, synthesize deviation-recovery trajectories around expert demonstrations, and fine-tune the policy on filtered recovery examples.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>人形机器人 · 世界模型 · 模仿学习 · 机器人操作</p>\n<p><strong>原文摘要节选：</strong>A general-purpose robot needs to draw on diverse experience, choose actions, and anticipate how those actions will change the world. We introduce XPACE, a unified embodied world model that serves as both a world action model, jointly predicting executable robot actions and future video, and a world simulator, predicting the visual consequences of prescribed actions. Our key insight is that video prediction can both connect heterogeneous experience to action learning and generate new experience for policy improvement. With a shared video backbone between the policy and simulator, we use action-unlabeled video to learn visual dynamics and action-labeled human and robot demonstrations to jointly learn video and action prediction. Building on this architecture, a coarse-to-fine training…</p>\n<p><a href=\"https://arxiv.org/abs/2609.17372\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.17372\">PDF</a></p><hr>\n<h2>3. The Neverwhere Visual Parkour Benchmark Suite</h2>\n<p><strong>机器人</strong> · 公告 2026-09-16 · 综合分 3.17</p>\n<p>Zotero 摘要相关性：0.488（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>较上次观测（0.6 天前）：点赞 +0 · 讨论 +0。</p>\n<p><strong>规则标签：</strong>足式运动</p>\n<p><strong>中文概述：</strong>针对视觉运动控制评估中存在的训练与实际部署差距问题，该研究提出了“Neverwhere基准测试套件”。该套件包含60多个基于3D高斯溅射技术重建的室内外场景，旨在实现大规模、可重现的机器人仿真测试。作者通过在多个场景下训练策略并评估其在未知场景中的表现，强调了数据多样性对于确保机器人泛化性能的重要性。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>Neverwhere基准测试套件通过集成60多个基于3D高斯溅射重建的真实场景，为机器人评估提供了一个高逼真的封闭循环环境。<br><small>摘要依据：This work intends to narrow this train/evaluation gap by developing a collection of hyper-photo-realistic, closed-loop evaluation environments - The Neverwhere Benchmark Suite - comprised of over sixty 3D Gaussian Splatting reconstructions of urban indoor and outdoor scenes.</small></li>\n<li>研究通过实验分析指出，仅依赖3D高斯生成的训练数据存在局限性，并强调了引入多样化数据对于提升策略泛化能力至关重要。<br><small>摘要依据：We also underscore the potential pitfalls of relying exclusively on 3D Gaussian-generated data for training, by providing policy checkpoints trained over multiple Neverwhere scenes and their performance when evaluated in novel scenes. Our analysis illustrates the necessity of sourcing diverse data to ensure performance.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>足式运动 · Sim-to-Real</p>\n<p><strong>原文摘要节选：</strong>State-of-the-art visual locomotion controllers are increasingly capable at handling complex visual environments, making evaluating their real-world performance before deployment increasingly difficult. This work intends to narrow this train/evaluation gap by developing a collection of hyper-photo-realistic, closed-loop evaluation environments - The Neverwhere Benchmark Suite - comprised of over sixty 3D Gaussian Splatting reconstructions of urban indoor and outdoor scenes. Our goal is to encourage large-scale and reproducible robot evaluation by making it easier to create and integrate Gaussian splats-based reconstructions into simulated continuous testing setups. We also underscore the potential pitfalls of relying exclusively on 3D Gaussian-generated data for training, by providing…</p>\n<p><a href=\"https://arxiv.org/abs/2609.16443\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.16443\">PDF</a></p><hr>\n<h2>4. Intrinsic Robot Rewarding: Reusing VLA Representations for Autonomous Evaluation and Policy Improvement</h2>\n<p><strong>机器人</strong> · 公告 2026-09-16 · 综合分 3.06</p>\n<p>Zotero 摘要相关性：0.471（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>较上次观测（0.6 天前）：点赞 +0 · 讨论 +0。</p>\n<p><strong>规则标签：</strong>视觉语言动作</p>\n<p><strong>中文概述：</strong>本文提出了内在机器人奖励（IRR）方法，旨在复用视觉-语言-动作（VLA）系统的视觉表征与演示数据，实现机器人自主评估任务结果并提供策略改进反馈。该方法通过在现有流水线中加入参考库与评分机制，无需额外的评估器或感知骨干网络，旨在降低集成难度、提高奖励计算效率并减少人工评估需求。作者通过COMAU Racer 3实验平台验证了该方法的可行性。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>IRR方法通过复用预训练的视觉编码器和演示数据，实现了无需额外学习评估器的自主任务结果评估。<br><small>摘要依据：The core reward mechanism adds a reference bank and a scoring operation to the existing pipeline, without requiring a separate learned evaluator or an additional perception backbone.</small></li>\n<li>该方法通过简化感知与评价流程，旨在降低工业机器人系统的集成难度并提升从已有数据中学习的效率。<br><small>摘要依据：Our position is that this reuse offers a promising route to lower integration effort, efficient reward computation, and reduced recurring human outcome scoring.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 视觉语言动作 · Sim-to-Real</p>\n<p><strong>原文摘要节选：</strong>Vision-language-action (VLA) systems already bring together two valuable resources for robot learning: rich visual representations and demonstrations of successful task execution. Intrinsic Robot Rewarding (IRR) proposes to use these resources for a second, complementary purpose: evaluating the robot&#x27;s own outcomes and providing feedback for policy improvement. Successful demonstration endpoints define task-specific references, and the policy&#x27;s frozen visual encoder provides the feature space in which new outcomes are assessed. The core reward mechanism adds a reference bank and a scoring operation to the existing pipeline, without requiring a separate learned evaluator or an additional perception backbone. Our position is that this reuse offers a promising route to lower integration…</p>\n<p><a href=\"https://arxiv.org/abs/2609.17115\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.17115\">PDF</a></p><hr>\n<h2>5. WholeBodyWAM: Generalizing Pre-trained World-Action Priors to Humanoid Loco-Manipulation via WBC-Grounded Coordination</h2>\n<p><strong>机器人</strong> · 公告 2026-09-16 · 综合分 3.04</p>\n<p>Zotero 摘要相关性：0.467（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>较上次观测（0.6 天前）：点赞 +0 · 讨论 +0。</p>\n<p><strong>规则标签：</strong>人形机器人</p>\n<p><strong>中文概述：</strong>针对人形机器人全身移动操作任务探索不足的问题，研究提出了WholeBodyWAM模型。该方法通过联合预测未来的视觉动力学、操作动作及全身控制意图，在保留预训练世界-动作先验的同时，引入全身控制器（WBC）语义接地与行为协调。实验结果表明，该模型在模拟环境和真实世界中均提升了任务成功率及泛化能力，为通过结构化接地实现可扩展的人形机器人智能提供了方案。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>WholeBodyWAM 通过集成全身控制器（WBC）语义接地与协调机制，将预训练的世界-动作先验扩展至人形机器人的移动操作任务中。<br><small>摘要依据：It preserves pre-trained world-action priors while grounding heterogeneous whole-body controller (WBC) semantics and coordinating whole-body behavior.</small></li>\n<li>实验表明该方法在模拟任务中实现了91.9%的成功率，并能有效减少不同WBC实现之间的成功率差异。<br><small>摘要依据：Extensive experiments show that WholeBodyWAM achieves an overall simulation task success rate of 91.9%, with a 0.23 improvement in real-world out-of-distribution task progress and a 70% reduction in success-rate variance across WBCs relative to the respective baselines.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>人形机器人 · 世界模型 · 足式运动 · 机器人操作 · Sim-to-Real</p>\n<p><strong>原文摘要节选：</strong>World Action Models (WAMs) offer a promising approach to general-purpose robot manipulation by jointly modeling visual dynamics and actions. However, most WAM studies focus on tabletop or arm-centric manipulation, while humanoid loco-manipulation remains less explored. To address this gap, we introduce WholeBodyWAM, which jointly predicts future visual dynamics, manipulation actions, and whole-body control intents for generalizable humanoid loco-manipulation. It preserves pre-trained world-action priors while grounding heterogeneous whole-body controller (WBC) semantics and coordinating whole-body behavior. Extensive experiments show that WholeBodyWAM achieves an overall simulation task success rate of 91.9%, with a 0.23 improvement in real-world out-of-distribution task progress and a…</p>\n<p><a href=\"https://arxiv.org/abs/2609.16644\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.16644\">PDF</a></p><hr>"
+}

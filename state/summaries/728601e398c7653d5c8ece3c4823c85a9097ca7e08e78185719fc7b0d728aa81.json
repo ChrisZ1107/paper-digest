@@ -1,0 +1,19 @@
+{
+  "overview": "针对物理人工智能领域，作者提出了“机器人数据工厂”（RDF）这一基础设施与方法论。RDF不再将静态数据集作为最终目标，而是通过组织异构机器人与环境，构建包括任务、技能、感知与结果在内的“机器人经验”。该系统通过“部署-测量-学习-循环”的闭环流程，支持世界模型、视觉语言动作模型及具身智能策略的开发，旨在将机器人数据生成转变为可重复、可扩展的科学生产过程。",
+  "highlights": [
+    {
+      "text": "提出RDF架构，通过“部署-测量-学习”闭环替代静态数据集，以持续生成、验证并复用包含完整感知-动作-结果链条的机器人经验。",
+      "evidence": "Rather than treating datasets as static end products, RDF implements a closed Deploy-Measure-Learn-Repeat cycle in which validated physical experience supports world models, vision-language-action models, embodied policies, digital twins, and subsequent robot deployment."
+    },
+    {
+      "text": "作者形式化了机器人经验及质量标准，推导出了关联机器人规模、计算资源与感知能力的量化缩放定律。",
+      "evidence": "We further formalize robot experience and its quality, introduce a mission-task-skill-episode-dataset-benchmark-capability hierarchy, and derive quantitative scaling laws and an algorithmic synthesis procedure connecting robot fleet size, sensor rates, storage, learning representations, tokenization, training compute, inference, and latency to Embodied-AI cluster requirements."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "Sim-to-Real",
+    "世界模型",
+    "视觉语言动作"
+  ]
+}

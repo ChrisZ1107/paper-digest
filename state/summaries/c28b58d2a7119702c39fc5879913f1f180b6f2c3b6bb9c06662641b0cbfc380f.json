@@ -1,0 +1,19 @@
+{
+  "overview": "针对通用机器人需利用多样化数据进行决策与环境预测的问题，作者提出了XPACE模型。该模型将世界模型与动作预测整合，通过共享视频主干网络，同时利用无动作标签的视频数据学习视觉动态，并结合人工与机器人演示数据进行联合训练。此外，该方法通过由粗到细的训练策略和利用模型生成的恢复轨迹进行策略微调，在人形机器人上实现了对未见任务的技能迁移与任务完成率提升。",
+  "highlights": [
+    {
+      "text": "XPACE通过共享视频主干网络联合学习视觉动态与动作预测，能够从异构数据中有效获取信息。",
+      "evidence": "With a shared video backbone between the policy and simulator, we use action-unlabeled video to learn visual dynamics and action-labeled human and robot demonstrations to jointly learn video and action prediction."
+    },
+    {
+      "text": "该模型利用内置模拟器生成偏差恢复轨迹，并通过过滤后的恢复样本对策略进行微调，从而增强了任务完成能力。",
+      "evidence": "Specifically, we adapt the simulator to its own generated context, synthesize deviation-recovery trajectories around expert demonstrations, and fine-tune the policy on filtered recovery examples."
+    }
+  ],
+  "tags": [
+    "人形机器人",
+    "世界模型",
+    "模仿学习",
+    "机器人操作"
+  ]
+}

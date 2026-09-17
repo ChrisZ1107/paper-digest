@@ -1,0 +1,17 @@
+{
+  "overview": "针对视觉运动控制评估中存在的训练与实际部署差距问题，该研究提出了“Neverwhere基准测试套件”。该套件包含60多个基于3D高斯溅射技术重建的室内外场景，旨在实现大规模、可重现的机器人仿真测试。作者通过在多个场景下训练策略并评估其在未知场景中的表现，强调了数据多样性对于确保机器人泛化性能的重要性。",
+  "highlights": [
+    {
+      "text": "Neverwhere基准测试套件通过集成60多个基于3D高斯溅射重建的真实场景，为机器人评估提供了一个高逼真的封闭循环环境。",
+      "evidence": "This work intends to narrow this train/evaluation gap by developing a collection of hyper-photo-realistic, closed-loop evaluation environments - The Neverwhere Benchmark Suite - comprised of over sixty 3D Gaussian Splatting reconstructions of urban indoor and outdoor scenes."
+    },
+    {
+      "text": "研究通过实验分析指出，仅依赖3D高斯生成的训练数据存在局限性，并强调了引入多样化数据对于提升策略泛化能力至关重要。",
+      "evidence": "We also underscore the potential pitfalls of relying exclusively on 3D Gaussian-generated data for training, by providing policy checkpoints trained over multiple Neverwhere scenes and their performance when evaluated in novel scenes. Our analysis illustrates the necessity of sourcing diverse data to ensure performance."
+    }
+  ],
+  "tags": [
+    "足式运动",
+    "Sim-to-Real"
+  ]
+}

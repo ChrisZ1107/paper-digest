@@ -1,0 +1,17 @@
+{
+  "overview": "DataFlex-RL是一个用于评估可验证奖励强化学习（RLVR）中数据策略的平台，旨在考察不同回放筛选、加权方法及领域混合对模型训练的影响。作者利用Qwen2.5-7B-Base和Llama-3.1-8B-Base模型，在数学、逻辑和科学基准测试上进行了对照实验。研究表明，虽然数据策略的选择会改变训练过程，但均未在性能上实现对均匀采样训练的可复现超越。",
+  "highlights": [
+    {
+      "text": "数据策略虽能显著影响训练过程，但在研究范围内均未能实现比均匀采样更优的性能。",
+      "evidence": "Across the controlled settings studied here, changing the data policy measurably changes the training process but does not produce a reproducible improvement over uniform training."
+    },
+    {
+      "text": "评估指标的选取对结果排名具有高度敏感性，不同基准组合下的模型排名甚至出现负相关。",
+      "evidence": "The resulting rankings are negatively correlated, with a correlation coefficient of -0.33, whereas summaries that retain all 12 benchmarks largely agree."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "推理"
+  ]
+}
