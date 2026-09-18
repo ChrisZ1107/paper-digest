@@ -1,0 +1,20 @@
+{
+  "overview": "针对连续机器人控制中演员-评论家（Actor-Critic）架构存在的计算开销及价值估计误差问题，作者提出了GR2PO（群组相对回报策略优化）框架。该方法移除评论家网络，通过并行收集的轨迹估计折现回报，并在执行滚动时间索引处进行群组归一化，利用相对优势函数和裁剪目标更新策略。实验结果表明，该方法在仿真及边缘设备部署中表现出优于现有无评论家基线且具有竞争力的训练效率。",
+  "highlights": [
+    {
+      "text": "GR2PO通过移除评论家网络并利用并行轨迹的回报估计，实现了一种更简化的无评论家强化学习训练方案。",
+      "evidence": "GR2PO estimates the discounted returns from the parallelly collected trajectories, performs group normalization at each rollout time index, and uses relative advantages and clipped targets to update the policy."
+    },
+    {
+      "text": "实验验证显示，GR2PO在多种机器人控制任务中性能优于基于即时奖励的基线方法，并与主流演员-评论家方法相当。",
+      "evidence": "The results show that GR2PO significantly outperforms critic-free baselines that use immediate rewards and performs competitively against state-of-the-art actor-critic methods."
+    },
+    {
+      "text": "通过在NVIDIA Jetson TX2边缘设备上的推理测试，作者验证了该方法策略部署的可行性。",
+      "evidence": "Inference tests on NVIDIA Jetson TX2 demonstrate the feasibility of deploying the learned policies on edge platforms."
+    }
+  ],
+  "tags": [
+    "强化学习"
+  ]
+}

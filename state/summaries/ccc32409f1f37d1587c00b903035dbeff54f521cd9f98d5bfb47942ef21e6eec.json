@@ -1,0 +1,18 @@
+{
+  "overview": "针对四足机器人运动演示数据方向覆盖不足的问题，OmniMimic提出了一种多步态全向运动训练框架。该方法通过时间反转、动力学补全和矢状面反射，将有限的动物演示数据扩展至目标全向速度范围。通过引入软门控残差专家架构，系统在保持步态特性的同时，实现了全向速度指令的有效跟踪。实验表明，该方法在仿真环境中显著降低了足部位置误差及速度跟踪误差。",
+  "highlights": [
+    {
+      "text": "OmniMimic通过动力学补全和几何变换扩展了演示数据的覆盖范围，从而支持全向运动控制。",
+      "evidence": "OmniMimic first combines temporal reversal, constrained dynamics completion, and sagittal reflection to construct robot-specific kinematic and physical supervision beyond the observed directions."
+    },
+    {
+      "text": "该方法在仿真环境下显著提升了运动跟踪精度，相比基准方案在多项指标上表现更优。",
+      "evidence": "Across four gaits in simulation, OmniMimic reduces mean foot-position RMSE at forward and backward reference velocities by 12.9% and velocity-tracking RMSE on a uniform Cartesian command grid by 63.1%, compared with the matched APEX baseline."
+    }
+  ],
+  "tags": [
+    "四足机器人",
+    "足式运动",
+    "模仿学习"
+  ]
+}

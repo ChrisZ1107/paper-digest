@@ -1,0 +1,17 @@
+{
+  "overview": "针对空中机器人运行视觉语言导航时计算资源受限且难以调试的问题，本文提出了“VLN on the Fly”导航栈。该方案保持了定位、规划与控制的模块化架构，利用量化视觉语言模型将指令映射至3D目标点，通过B样条规划器生成轨迹，并由预训练强化学习策略执行底层控制。实验表明，该系统在受控室内环境下具备较高的目标抵达率及良好的计算效率。",
+  "highlights": [
+    {
+      "text": "该方案采用模块化设计，将视觉定位、路径规划与底层控制解耦，提升了系统的可观测性与安全性。",
+      "evidence": "We propose VLN on the Fly, an onboard stack that keeps grounding, planning, and control as separate, inspectable stages."
+    },
+    {
+      "text": "在室内测试中，该导航栈实现了较高的成功率与较低的目标偏差，且GPU资源占用率维持在合理水平。",
+      "evidence": "Across 15 onboard flights over three everyday referents in a controlled indoor volume, the stack reaches the target in 13 of 15 trials with 5.72 cm mean goal error and 39.3% average GPU utilization."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "导航"
+  ]
+}

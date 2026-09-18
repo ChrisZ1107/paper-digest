@@ -1,0 +1,22 @@
+{
+  "overview": "针对非结构化环境下的机器人定制化需求，作者提出了GLAMDRING框架，旨在协同设计四足机器人的形态结构与中央模式发生器（CPG）步态策略。该框架基于前向速度、功率预算和负载需求等规格，通过强化学习在候选形态空间中联合优化机器人硬件参数与控制器。实验结果表明，形态与步态的协同设计对于满足运动约束至关重要，且该方法能够自然涌现出典型动物步态，并在真实物理环境中验证了有效性。",
+  "highlights": [
+    {
+      "text": "提出了一种协同优化机器人形态与步态策略的框架，通过预先定义的约束条件自动生成匹配的物理结构与控制逻辑。",
+      "evidence": "We present GLAMDRING, a framework that synthesizes the optimal robot for a locomotion task and, jointly, learns the controller that drives it."
+    },
+    {
+      "text": "该方法通过强化学习联合优化硬件与策略，并通过解析运行包络线还原形态参数，显著降低了多形态设计的计算成本。",
+      "evidence": "Link lengths and actuators are then resolved post-hoc from the policy's logged operating envelope, reducing synthesis cost to a small, fixed number of reinforcement-learning runs instead of one per candidate."
+    },
+    {
+      "text": "研究发现协同设计能有效满足运动约束，且机器人在无额外监督的情况下可自然演化出与动物相似的步态。",
+      "evidence": "Our experiments show three key findings: co-designing body and gait is necessary to satisfy locomotion constraints; actuator-envelope feasibility, rather than locomotion success alone, determines realizable payload capacity; and canonical animal gaits emerge naturally in most designs from morphology and constraints alone."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "四足机器人",
+    "足式运动"
+  ]
+}

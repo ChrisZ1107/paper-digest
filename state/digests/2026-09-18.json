@@ -1,0 +1,496 @@
+{
+  "date": "2026-09-18",
+  "timestamp": "2026-09-18T13:45:22.651570+08:00",
+  "title": "2026-09-18 热门论文 Top 10｜机器人·强化学习·AI",
+  "slug": "2026-09-18",
+  "papers": [
+    {
+      "id": "2609.14973",
+      "title": "PhysBrain 1.5: From Vision-Language Models to Physical Foundation Models",
+      "abstract": "We present PhysBrain 1.5, a unified model for understanding physical environments, generating actions, and predicting future states. Motivated by the physical loop of observation, interaction, and environmental change, we bring these capabilities into a common learning framework. Starting from a general vision--language model, we encode language responses, end-effector motion, and dense visual targets as discrete sequences and jointly optimize them with autoregressive next-token prediction. Pre-training draws its embodied supervision entirely from human interaction videos, using task-centered episodes to pair semantic and spatial context with recovered motion and subsequent observations. We then adapt the model through supervised fine-tuning on a mixture of human demonstrations, robot trajectories, and simulated experience. Across 28 embodied understanding benchmarks, our 8B model achieves an average score of 72.5, setting a new open-source state of the art and performing on par with leading proprietary models such as GPT-6-Astra and Gemini 3.6 Flash. It achieves the best open-source results on 14 benchmarks while retaining general multimodal capabilities. Beyond these understanding evaluations, qualitative examples show the model's ability to produce end-effector trajectories and predict future scenes through spatially aligned RGB, depth, and robot-mask outputs.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-09-14",
+      "age_days": 4.239845504282408,
+      "upvotes": 177,
+      "comments": 3,
+      "stars": 42,
+      "repo": "https://github.com/DeepCybo-PhysAI/PhysBrain-1.5",
+      "trending_rank": 69,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.44366,
+      "growth": {
+        "days": 1.15,
+        "upvotes": 5,
+        "comments": 0,
+        "stars": 2
+      },
+      "score": 5.436,
+      "rule_tags": [],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "PhysBrain 1.5是一个旨在理解物理环境、生成动作并预测未来状态的统一模型。该研究通过将语言响应、末端执行器运动和视觉目标编码为离散序列，利用自回归预测进行联合优化。模型在人类交互视频上进行预训练，并结合人类演示、机器人轨迹及模拟数据进行微调。作者声称该8B模型在28项具身理解基准测试中表现优异，并在14项基准上达到开源最优水平。",
+        "highlights": [
+          {
+            "text": "PhysBrain 1.5通过统一框架整合了环境理解、动作生成和未来状态预测能力，在多项基准测试中展现出竞争力。",
+            "evidence": "Across 28 embodied understanding benchmarks, our 8B model achieves an average score of 72.5, setting a new open-source state of the art and performing on par with leading proprietary models such as GPT-6-Astra and Gemini 3.6 Flash."
+          },
+          {
+            "text": "该模型通过人类交互视频进行预训练，并利用多源数据（人类演示、机器人轨迹及模拟经验）进行监督微调。",
+            "evidence": "We then adapt the model through supervised fine-tuning on a mixture of human demonstrations, robot trajectories, and simulated experience."
+          }
+        ],
+        "tags": [
+          "视觉语言动作",
+          "机器人操作"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.14858",
+      "title": "Dream-RSI: Recursive Self-Improvement through Evolving Worlds",
+      "abstract": "Recursive self-improvement is becoming increasingly vital for autonomous AI agents, where progress hinges on discovering high-value solutions across complex domains. The driver of this process is effective exploration, however, managing and improving exploration strategies remains a major bottleneck. Current systems face a fundamental dilemma: fixed strategies fail to adapt as search spaces scale, while online policy optimization requires navigating vast meta-search spaces under delayed and expensive feedback over long-horizon rollouts. We introduce Dream-RSI, a framework for scalable and recursively self-improving exploration. A lightweight orchestration layer makes exploration explicit and programmable while leaving the underlying coding agent unchanged. Our key insight is that accumulated discovery history can serve as a replay simulator over the realized search space. By performing dreaming in the replay simulator constructed from historical discovery trees, Dream-RSI secures immediate, low-cost off-policy feedback to evaluate and refine exploration policies without invoking repetitive, expensive online evaluations. The improved policy is subsequently redeployed online to drive further discovery, continuously expanding the simulator pool in a self-improving loop. Across algorithm engineering, mathematical optimization, and GPU kernel engineering, Dream-RSI achieves competitive or improved discovery quality while substantially reducing discovery cost in several settings.",
+      "topics": [
+        "通用 AI"
+      ],
+      "published": "2026-09-14",
+      "age_days": 4.239845504282408,
+      "upvotes": 295,
+      "comments": 3,
+      "stars": 553,
+      "repo": "https://github.com/zhengkid/Dream-RSI",
+      "trending_rank": 7,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.38475,
+      "growth": {
+        "days": 1.15,
+        "upvotes": 16,
+        "comments": 0,
+        "stars": 421
+      },
+      "score": 5.321,
+      "rule_tags": [],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对自主AI智能体在复杂领域中进行递归自我改进时面临的探索策略瓶颈，Dream-RSI框架提出了一种基于演化世界模型的方案。该框架通过轻量级编排层，利用积累的发现历史构建重放模拟器，使智能体能够在模拟器中进行“梦境”训练以获取低成本离线反馈，从而优化探索策略。作者声称该方法在算法工程、数学优化及GPU内核工程任务中，在显著降低发现成本的同时，实现了具有竞争力的发现质量。",
+        "highlights": [
+          {
+            "text": "Dream-RSI通过利用历史发现记录构建重放模拟器，实现了低成本的离线策略评估与改进，避免了高昂的重复在线调用。",
+            "evidence": "By performing dreaming in the replay simulator constructed from historical discovery trees, Dream-RSI secures immediate, low-cost off-policy feedback to evaluate and refine exploration policies without invoking repetitive, expensive online evaluations."
+          },
+          {
+            "text": "在算法工程、数学优化及GPU内核工程等多个任务中，Dream-RSI在保持竞争性探索成果的同时，有效降低了计算成本。",
+            "evidence": "Across algorithm engineering, mathematical optimization, and GPU kernel engineering, Dream-RSI achieves competitive or improved discovery quality while substantially reducing discovery cost in several settings."
+          }
+        ],
+        "tags": [
+          "大模型后训练",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.15364",
+      "title": "RSIAgent: Autonomous Exploration for Recursive Self-improvement in New Environments",
+      "abstract": "Digital agents must often adapt to new environments whose interfaces, tools, and failure modes are not fully captured by pretrained models. We introduce RSIAgent, a training-free multi-agent framework for recursive self-improvement through autonomous memory construction. RSIAgent coordinates curriculum, actor, and verifier agents to continually explore the environment, validate outcomes, and retain environment-specific knowledge, including reusable causal relationships between actions, conditions, and consequences. It further adopts a broad-then-deep exploration strategy, combining parallel broad recursive self-exploration for discovering diverse environment structures with focused deep self-exploration for uncovering hard cases, hidden constraints, boundary conditions, and previously unknown causal dependencies. The resulting memory is frozen and can be directly reused for downstream tasks without updating model parameters. Experiments on OSWorld-v2 and Agent's Last Exam show that RSIAgent substantially improves strong open-source models, enabling Kimi-K3 and GLM-5.3 to outperform frontier closed-source models including GPT-6.",
+      "topics": [
+        "通用 AI"
+      ],
+      "published": "2026-09-14",
+      "age_days": 4.239845504282408,
+      "upvotes": 71,
+      "comments": 2,
+      "stars": 317,
+      "repo": "https://github.com/AetherLabsAI/RSIAgent",
+      "trending_rank": 12,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.42145,
+      "growth": {
+        "days": 1.15,
+        "upvotes": 1,
+        "comments": 0,
+        "stars": 74
+      },
+      "score": 5.209,
+      "rule_tags": [
+        "多智能体"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对数字智能体难以适应复杂新环境的问题，本文提出了RSIAgent框架。该方法通过构建课程、执行和验证智能体，利用递归自我改进机制自主探索环境并构建记忆。系统采用由广度到深度的探索策略，提取动作、条件与后果间的因果关系并将其冻结为记忆，实现无需参数更新的任务适应。实验显示该框架能提升开源模型在OSWorld-v2等基准测试中的表现。",
+        "highlights": [
+          {
+            "text": "RSIAgent通过多智能体协作进行递归自我改进，构建并保存特定环境的知识库，无需更新模型参数即可在下游任务中实现知识复用。",
+            "evidence": "We introduce RSIAgent, a training-free multi-agent framework for recursive self-improvement through autonomous memory construction. RSIAgent coordinates curriculum, actor, and verifier agents to continually explore the environment, validate outcomes, and retain environment-specific knowledge, including reusable causal relationships between actions, conditions, and consequences."
+          },
+          {
+            "text": "该框架采用由广度到深度的递归探索策略，以发掘环境结构、边界条件及隐藏的因果依赖关系。",
+            "evidence": "It further adopts a broad-then-deep exploration strategy, combining parallel broad recursive self-exploration for discovering diverse environment structures with focused deep self-exploration for uncovering hard cases, hidden constraints, boundary conditions, and previously unknown causal dependencies."
+          }
+        ],
+        "tags": [
+          "大模型后训练",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.10522",
+      "title": "Show-Harness: Just a VLM Agent Can Play Robots",
+      "abstract": "Foundation vision-language models (VLMs) exhibit broad intelligence about the world, yet translating this intelligence into robot control remains challenging. We present Show-Harness, an Embodied Harness that enables VLMs to \"play\" robots through a compact semantic interface linking intent to action. Show-Harness exposes discrete semantic action units that VLMs can naturally reason over, while embodiment-specific interpreters deterministically ground them into local robot actions, keeping the VLM directly responsible for fine-grained physical decisions. Through the same interface, Show-Harness demonstrates the feasibility of (1) directly unlocking closed-source frontier VLMs for zero-shot robot control, and (2) adapting small-scale open-source VLMs for low-cost deployment with just a few GPU-hours of fine-tuning. We further develop GUMI (GUI Manipulation Interface), which extends the same semantic action space to GUI-based demonstration collection, allowing humans and agents to \"play\" robots across embodiments without specialized teleoperation hardware. Extensive experiments show that Show-Harness-equipped VLM agents generalize robustly across tasks, embodiments, and environments, outperforming representative agentic and VLA paradigms. These results suggest that the right interface can unlock substantial embodied capability from foundation VLMs, without requiring additional model capacity or costly embodiment-specific pretraining.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-09-09",
+      "age_days": 9.239845504282407,
+      "upvotes": 160,
+      "comments": 4,
+      "stars": 399,
+      "repo": "https://github.com/showlab/Show-Harness",
+      "trending_rank": 30,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.4669,
+      "growth": {
+        "days": 1.15,
+        "upvotes": 0,
+        "comments": 0,
+        "stars": 11
+      },
+      "score": 5.196,
+      "rule_tags": [
+        "视觉语言动作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对视觉语言模型（VLM）难以直接转化为机器人控制的问题，本文提出了Show-Harness框架。该框架构建了一个紧凑的语义接口，将意图与动作连接，通过离散语义动作单元使VLM能够进行推理，并由特定解释器将其转化为局部机器人动作。作者声称该方法能直接实现闭源模型的零样本机器人控制，并通过少量微调适配开源模型，同时支持基于图形界面的演示收集。实验表明，该方法在多任务、多实体及多环境场景下表现出良好的泛化能力。",
+        "highlights": [
+          {
+            "text": "Show-Harness通过引入语义动作接口，使VLM无需额外模型容量或特定具身预训练，即可直接执行机器人控制任务。",
+            "evidence": "These results suggest that the right interface can unlock substantial embodied capability from foundation VLMs, without requiring additional model capacity or costly embodiment-specific pretraining."
+          },
+          {
+            "text": "该框架支持利用GUMI界面进行无需专业遥控硬件的演示收集，并实现了闭源VLM的零样本控制及开源VLM的轻量级微调。",
+            "evidence": "Show-Harness demonstrates the feasibility of (1) directly unlocking closed-source frontier VLMs for zero-shot robot control, and (2) adapting small-scale open-source VLMs for low-cost deployment with just a few GPU-hours of fine-tuning."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "视觉语言动作"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.19138",
+      "title": "In-Context Robot Learning with VLM Agents",
+      "abstract": "Enabling robots to adapt to unfamiliar environments as readily as humans remains a moonshot goal of embodied AI. No finite collection of demonstrations can cover every task and situation a robot will encounter, making the ability to learn from context at deployment essential for generalization. Such in-context learning (ICL), however, remains largely beyond the reach of existing robotic policies. The broad agentic capabilities of commercial vision-language models (VLMs), such as GPT-6 Astra, raise a compelling question: can these models learn from demonstrations, examples, and interaction feedback, then translate that information into executable and verifiable robot behavior from a new initial state without gradient updates or persistent changes to task-specific parameters? We introduce GPT-Policy, a general-agent framework for in-context robot learning. GPT-Policy integrates a context compiler that preserves task-relevant visual transitions, a VLM that proposes robot-tool actions, and a constrained controller that verifies and executes each action and reports its outcome. We evaluate its reliability and limitations through task success and efficiency metrics, matched comparisons across models, and controlled context ablations. In real-robot trials, human video demonstrations improve task completion even without robot action labels, while aligned action references yield further gains on contact-sensitive tasks. These findings position GPT-Policy as a step toward robot adaptation through in-context learning, providing an empirical foundation for translating the general-purpose capabilities of VLMs into physical behavior and clarifying the challenges that must be overcome for reliable deployment.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-09-16",
+      "age_days": 2.2398455042824073,
+      "upvotes": 15,
+      "comments": 2,
+      "stars": 188,
+      "repo": "https://github.com/cheng-haha/GPT-Policy",
+      "trending_rank": 67,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.50621,
+      "growth": null,
+      "score": 5.181,
+      "rule_tags": [],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "为了实现机器人在未知环境中的适应性，本文提出了一种名为GPT-Policy的通用智能体框架，旨在通过上下文学习（ICL）使机器人无需梯度更新即可从演示、示例和交互反馈中学习任务。该框架整合了上下文编译器、视觉语言模型（VLM）及约束控制器，能将信息转换为可验证的机器人行为。实验表明，该方法在真实机器人任务中能够通过人类视频演示和动作参考提升任务完成率，为VLM在实体机器人上的应用提供了实证基础。",
+        "highlights": [
+          {
+            "text": "GPT-Policy框架通过上下文编译器、VLM动作规划和约束控制器，实现了无需梯度更新的上下文机器人学习。",
+            "evidence": "GPT-Policy integrates a context compiler that preserves task-relevant visual transitions, a VLM that proposes robot-tool actions, and a constrained controller that verifies and executes each action and reports its outcome."
+          },
+          {
+            "text": "在真实机器人实验中，即使没有机器人动作标签，引入人类视频演示也能有效提升任务完成效果。",
+            "evidence": "In real-robot trials, human video demonstrations improve task completion even without robot action labels, while aligned action references yield further gains on contact-sensitive tasks."
+          }
+        ],
+        "tags": [
+          "视觉语言动作"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.12541",
+      "title": "Agent as Policy for Robotic Manipulation",
+      "abstract": "We demonstrate that a general-purpose agent can directly drive a physical robot throughout task execution without any task-specific or environment-specific training. We introduce Agent as Policy (AGP), which places task planning and execution under the agent's control. Given a task and a robot interface, the agent interprets visual evidence, writes executable programs, issues motion commands, and revises its actions in response to physical outcomes. This brings the agent's reasoning and programming capabilities into continuous interaction with the physical world. We study AGP across multiple real-world manipulation tasks spanning precision manipulation, dynamic motions, and deformable objects. These include assembly from human videos, block construction from goal images, die reorientation, targeted throwing, and bimanual towel folding. AGP achieves success rates of 100%, 100%, and 80% on three block construction configurations. These findings establish a path for general-purpose agents to act as robotic policies, extending their autonomy to physical manipulation through runtime reasoning, programming, and interaction.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-09-11",
+      "age_days": 7.239845504282408,
+      "upvotes": 13,
+      "comments": 4,
+      "stars": 7,
+      "repo": "https://github.com/agent-as-policy-2026/agent-as-policy",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.49105,
+      "growth": {
+        "days": 1.15,
+        "upvotes": 1,
+        "comments": 0,
+        "stars": 3
+      },
+      "score": 5.107,
+      "rule_tags": [
+        "机器人操作",
+        "推理"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文提出了一种名为“Agent as Policy”（AGP）的方法，旨在使通用智能体能够无需特定任务或环境的针对性训练，直接驱动物理机器人执行操作任务。该方法通过让智能体负责任务规划与执行，使其能够处理视觉信息、编写可执行程序、发布运动指令，并根据物理反馈实时修正行为。实验验证了AGP在精密操作、动态运动及变形物体处理等多种现实世界任务中的有效性。",
+        "highlights": [
+          {
+            "text": "提出AGP方法，使通用智能体能够通过运行时推理、编程和交互直接控制机器人执行任务，无需针对性的专门训练。",
+            "evidence": "We demonstrate that a general-purpose agent can directly drive a physical robot throughout task execution without any task-specific or environment-specific training."
+          },
+          {
+            "text": "AGP通过视觉反馈生成并执行程序，并在与物理环境的持续交互中根据结果动态调整操作行为。",
+            "evidence": "Given a task and a robot interface, the agent interprets visual evidence, writes executable programs, issues motion commands, and revises its actions in response to physical outcomes."
+          },
+          {
+            "text": "通过在多种真实世界操作任务（如块构建、物品重定向和双臂折叠）中的验证，展示了该方法在复杂场景下的应用潜力。",
+            "evidence": "We study AGP across multiple real-world manipulation tasks spanning precision manipulation, dynamic motions, and deformable objects."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.17172",
+      "title": "Fingers as Legs: Learning Self-Supported Locomotion and Manipulation with an Anthropomorphic Hand",
+      "abstract": "A walking robotic hand must use the same fingers to move its body, support its weight, and interact with the environment. We show how an anthropomorphic hand can learn these skills while retaining its finger design and position controller. Onboard power and computation make the platform self-contained. Our reinforcement learning approach accounts for the hand's unequal fingers, with training in a simulator calibrated from hardware measurements. In simulation, the hand moves faster with our reward formulation than with tuned rewards originally designed for quadrupeds. On hardware, task-specific policies enable untethered crawling, steering, and fall recovery. While supporting its own weight, the hand also executes successive keyboard commands without vision and pushes an object to targets using overhead visual feedback. These results demonstrate a compact mobile manipulator that reuses its fingers for locomotion and interaction, without a separate locomotion mechanism.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-09-15",
+      "age_days": 3.2398455042824073,
+      "upvotes": 1,
+      "comments": 2,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.50514,
+      "growth": {
+        "days": 1.15,
+        "upvotes": 1,
+        "comments": 2
+      },
+      "score": 5.015,
+      "rule_tags": [
+        "强化学习",
+        "四足机器人",
+        "足式运动"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文研究了一种拟人化机械手在保留原有手指设计和位置控制器的前提下，通过强化学习实现自主支撑运动与操作任务的能力。作者开发了一种适用于机械手非对称手指特征的奖励函数，并结合硬件测量校准的仿真环境进行训练。实验结果表明，该平台能实现无缆爬行、转向、跌倒恢复以及在支撑自身重量的同时执行键盘指令和物体推移操作，展示了机械手复用手指进行移动与交互的可行性。",
+        "highlights": [
+          {
+            "text": "提出了一种针对拟人手非对称手指特征的强化学习奖励方案，在仿真中表现出优于四足机器人惯用奖励函数的移动速度。",
+            "evidence": "Our reinforcement learning approach accounts for the hand's unequal fingers, with training in a simulator calibrated from hardware measurements. In simulation, the hand moves faster with our reward formulation than with tuned rewards originally designed for quadrupeds."
+          },
+          {
+            "text": "通过特定任务策略，实现了机械手在无缆状态下的爬行、转向与跌倒恢复，并能在支撑自身重量的同时完成操作任务。",
+            "evidence": "On hardware, task-specific policies enable untethered crawling, steering, and fall recovery. While supporting its own weight, the hand also executes successive keyboard commands without vision and pushes an object to targets using overhead visual feedback."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "机器人操作",
+          "Sim-to-Real"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.12419",
+      "title": "MInTRL: Off-policy Intervention can boost On-policy RL",
+      "abstract": "Reinforcement learning with verifiable rewards is typically performed on-policy, keeping training data close to the current policy but limiting learning to trajectories that the policy can discover itself. Off-policy methods such as supervised fine-tuning, on the other hand, can leverage external knowledge beyond the base model's capabilities, but may suffer from large distribution shift. The key challenge is thus to expand exploration without sacrificing learnability. In this work, we introduce Minimal Intervention Reinforcement Learning (MInTRL), which expands the exploration frontier through sparse, local interventions in otherwise on-policy rollouts. During generation, a judge-intervention policy periodically reviews the current policy's output, replaces erroneous suffixes with short corrections, and immediately returns control to the policy. During training, MInTRL adopts a sequence-level advantage-regression objective that eliminates the need for importance sampling. We show that sparse, local interventions can substantially improve coverage beyond finite-budget on-policy sampling while preserving the overall on-policy nature of the resulting trajectories. Across math and code benchmarks, MInTRL consistently outperforms standard on-policy and off-policy baselines. Ablations show that MInTRL remains effective with self-intervention and across different judge policies, while performance peaks at moderate intervention intensity, highlighting the importance of intervening minimally. These results establish minimal intervention as an effective paradigm for enhancing on-policy RL.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-09-11",
+      "age_days": 7.239845504282408,
+      "upvotes": 11,
+      "comments": 2,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.45253,
+      "growth": {
+        "days": 1.15,
+        "upvotes": 5,
+        "comments": 0
+      },
+      "score": 5.0,
+      "rule_tags": [
+        "强化学习"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对在线强化学习探索受限与离线方法分布偏移的矛盾，本文提出了最小干预强化学习（MInTRL）。该方法在在线采样过程中引入周期性的局部修正，通过评估策略替换错误后缀并迅速交还控制权。同时，利用序列级优势回归目标，免去了重要性采样。实验表明，该方法在保持在线策略特性的同时，能有效扩展探索边界，在数学和代码任务中均优于常规基线。",
+        "highlights": [
+          {
+            "text": "MInTRL通过在在线回滚中引入稀疏且局部的干预措施，在无需重要性采样的情况下扩展了探索边界。",
+            "evidence": "In this work, we introduce Minimal Intervention Reinforcement Learning (MInTRL), which expands the exploration frontier through sparse, local interventions in otherwise on-policy rollouts."
+          },
+          {
+            "text": "在数学与代码基准测试中，该方法相比标准的在线和离线强化学习基线表现出性能优势。",
+            "evidence": "Across math and code benchmarks, MInTRL consistently outperforms standard on-policy and off-policy baselines."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "离线强化学习"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.13356",
+      "title": "ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search",
+      "abstract": "In this work, we present ZGCM-1, a fully open 7B dense foundation model trained from scratch with extreme data, system, and algorithmic efficiency. ZGCM-1 is founded on a core premise: compact models cannot passively memorize the open web, but can overcome parametric capacity limits by coupling deliberate internal thinking with active external tool use. To support this paradigm across a 256K context, we develop an end-to-end, high-efficiency open training recipe: Architecture & System Co-design: interleaved gated sliding-window and full attention, and a stable FP8 Muon optimizer; Progressive Curriculum & MDP Mid-Training: context scaling across 16K, 64K, and 256K, and the reformulation of interaction traces into Markov Decision Processes. Furthermore, we establish an AI-native R&D workflow where agent swarms autonomously manage cluster operations, data curation, and rapid diagnostic evaluation. Extensive evaluations show that ZGCM-1-7B is competitive across 7B model family on general benchmarks. On several challenging mathematical reasoning and agentic search suites, it remains competitive with frontier models orders of magnitude larger, such as Qwen3-235B-A22B and GLM-5.1. We also show that our pre-training design offers a ~4.2x efficiency improvement in 16K pre-training time-to-loss. Across the full development lifecycle, we distill eight actionable empirical findings-spanning architectural scaling, SFT quality pruning, long-context generalization, and agentic co-training dynamics. To facilitate community research, we open-source model weights from the pre-training, mid-training, and post-training stages, intermediate checkpoints, training code, per-stage data and data recipes, and W&B logs.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-09-11",
+      "age_days": 7.239845504282408,
+      "upvotes": 311,
+      "comments": 7,
+      "stars": 431,
+      "repo": "https://github.com/zgcagi/ZGCM-1",
+      "trending_rank": 5,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.34788,
+      "growth": {
+        "days": 1.15,
+        "upvotes": 9,
+        "comments": 0,
+        "stars": 52
+      },
+      "score": 4.939,
+      "rule_tags": [
+        "大模型后训练",
+        "推理"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "ZGCM-1 是一款完全开源的 7B 参数密集型基础模型，旨在通过结合内部思维与外部工具使用来突破模型参数限制。该研究提出了软硬件协同设计的训练方案，包括交错门控滑动窗口与全注意力机制、FP8 Muon 优化器以及基于马尔可夫决策过程的课程学习。作者声称该模型在数学推理和智能体搜索任务中表现出与超大规模模型竞争的潜力，并提升了预训练效率。",
+        "highlights": [
+          {
+            "text": "ZGCM-1 引入了软硬件协同设计及改进的课程学习策略，实现了预训练效率的显著提升。",
+            "evidence": "We also show that our pre-training design offers a ~4.2x efficiency improvement in 16K pre-training time-to-loss."
+          },
+          {
+            "text": "该模型通过结合内部思维与外部工具调用，在数学推理和智能体搜索任务中展现了与超大规模模型相当的竞争力。",
+            "evidence": "On several challenging mathematical reasoning and agentic search suites, it remains competitive with frontier models orders of magnitude larger, such as Qwen3-235B-A22B and GLM-5.1."
+          }
+        ],
+        "tags": [
+          "大模型后训练",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.16679",
+      "title": "AI for Games in the Foundation Model Era",
+      "abstract": "Foundation models, alongside advances in learned game-world models, are reshaping AI across the game lifecycle. Beyond playing games, recent systems model players and game dynamics, support design and development, adapt player-facing experiences at runtime, and evaluate resulting artifacts. Yet these directions have evolved largely separately, obscuring which capabilities transfer across settings and which remain tied to particular games, engines, interfaces, or player populations. We organize the literature into six roles according to the immediate use of AI output: playing and acting; modeling players and games; designing games; building and maintaining games; generating and adapting at runtime; and testing and evaluating games. For each role, we examine what structure is supplied by the game or workflow, what AI learns or produces, which capabilities and artifacts transfer across settings and roles, and what evidence supports the claims. We identify cross-role connections: trajectories train world models, learned environments provide experience for agents, design specifications drive executable implementations, and play or testing feedback guides revision. However, control schemes, rules, engine interfaces, state representations, and player contexts often remain setting-specific, so downstream claims require validation in the target setting. Evaluation is most standardized for bounded game playing and selected learned environments, while persistent state in learned worlds, repeated software revision, validated player modeling, sustained runtime adaptation, and representative automated testing remain less established. The central challenge is to reuse or transfer outputs and capabilities across roles while re-establishing evidence for effectiveness in the game-specific contexts where they are used.",
+      "topics": [
+        "通用 AI"
+      ],
+      "published": "2026-09-15",
+      "age_days": 3.2398455042824073,
+      "upvotes": 117,
+      "comments": 2,
+      "stars": 182,
+      "repo": "https://github.com/Eurekaleo/awesome-ai-for-games",
+      "trending_rank": 8,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.34116,
+      "growth": {
+        "days": 1.15,
+        "upvotes": 8,
+        "comments": 0,
+        "stars": 36
+      },
+      "score": 4.923,
+      "rule_tags": [
+        "世界模型"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文探讨了基础模型及游戏世界模型在游戏全生命周期中的应用。作者将AI在游戏领域的角色归纳为六类：游戏玩法、玩家与游戏建模、游戏设计、开发维护、运行时生成与适配、以及测试评估。论文分析了这些角色间的内在联系与技术迁移潜力，并指出尽管部分AI输出具有可迁移性，但由于控制方案、引擎接口及玩家背景的局限，针对特定游戏环境的有效性验证仍是目前面临的核心挑战。",
+        "highlights": [
+          {
+            "text": "作者将AI在游戏中的作用划分为六大类，涵盖了从游戏开发到运行时体验适配的全过程。",
+            "evidence": "We organize the literature into six roles according to the immediate use of AI output: playing and acting; modeling players and games; designing games; building and maintaining games; generating and adapting at runtime; and testing and evaluating games."
+          },
+          {
+            "text": "尽管AI能力在各角色间存在联系，但由于环境特异性限制，跨场景的应用仍需进行有效性验证。",
+            "evidence": "However, control schemes, rules, engine interfaces, state representations, and player contexts often remain setting-specific, so downstream claims require validation in the target setting."
+          }
+        ],
+        "tags": [
+          "世界模型"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    }
+  ],
+  "candidate_count": 654,
+  "personalization_note": "已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。",
+  "html": "<h1>2026-09-18 热门论文 Top 10</h1>\n<p>机器人 · 强化学习 · 通用 AI</p>\n<p>生成时间：2026-09-18 13:45 CST。从 654 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>\n<p>候选来源：<a href=\"https://huggingface.co/papers\">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>\n<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>\n<h2>1. PhysBrain 1.5: From Vision-Language Models to Physical Foundation Models</h2>\n<p><strong>机器人</strong> · 发表 2026-09-14 · 综合分 5.44</p>\n<p>Zotero 摘要相关性：0.444（相似度分数，不是概率）。</p>\n<p>HF 点赞 177 · 讨论 3 · 本次 HF 热榜第 69 位 · 仓库累计 Star 42（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.15 天前）：点赞 +5 · 讨论 +0 · Star +2。</p>\n<p><strong>中文概述：</strong>PhysBrain 1.5是一个旨在理解物理环境、生成动作并预测未来状态的统一模型。该研究通过将语言响应、末端执行器运动和视觉目标编码为离散序列，利用自回归预测进行联合优化。模型在人类交互视频上进行预训练，并结合人类演示、机器人轨迹及模拟数据进行微调。作者声称该8B模型在28项具身理解基准测试中表现优异，并在14项基准上达到开源最优水平。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>PhysBrain 1.5通过统一框架整合了环境理解、动作生成和未来状态预测能力，在多项基准测试中展现出竞争力。<br><small>摘要依据：Across 28 embodied understanding benchmarks, our 8B model achieves an average score of 72.5, setting a new open-source state of the art and performing on par with leading proprietary models such as GPT-6-Astra and Gemini 3.6 Flash.</small></li>\n<li>该模型通过人类交互视频进行预训练，并利用多源数据（人类演示、机器人轨迹及模拟经验）进行监督微调。<br><small>摘要依据：We then adapt the model through supervised fine-tuning on a mixture of human demonstrations, robot trajectories, and simulated experience.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>视觉语言动作 · 机器人操作</p>\n<p><strong>原文摘要节选：</strong>We present PhysBrain 1.5, a unified model for understanding physical environments, generating actions, and predicting future states. Motivated by the physical loop of observation, interaction, and environmental change, we bring these capabilities into a common learning framework. Starting from a general vision--language model, we encode language responses, end-effector motion, and dense visual targets as discrete sequences and jointly optimize them with autoregressive next-token prediction. Pre-training draws its embodied supervision entirely from human interaction videos, using task-centered episodes to pair semantic and spatial context with recovered motion and subsequent observations. We then adapt the model through supervised fine-tuning on a mixture of human demonstrations, robot…</p>\n<p><a href=\"https://arxiv.org/abs/2609.14973\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.14973\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.14973\">讨论与热度</a> · <a href=\"https://github.com/DeepCybo-PhysAI/PhysBrain-1.5\">代码</a></p><hr>\n<h2>2. Dream-RSI: Recursive Self-Improvement through Evolving Worlds</h2>\n<p><strong>通用 AI</strong> · 发表 2026-09-14 · 综合分 5.32</p>\n<p>Zotero 摘要相关性：0.385（相似度分数，不是概率）。</p>\n<p>HF 点赞 295 · 讨论 3 · 本次 HF 热榜第 7 位 · 仓库累计 Star 553（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.15 天前）：点赞 +16 · 讨论 +0 · Star +421。</p>\n<p><strong>中文概述：</strong>针对自主AI智能体在复杂领域中进行递归自我改进时面临的探索策略瓶颈，Dream-RSI框架提出了一种基于演化世界模型的方案。该框架通过轻量级编排层，利用积累的发现历史构建重放模拟器，使智能体能够在模拟器中进行“梦境”训练以获取低成本离线反馈，从而优化探索策略。作者声称该方法在算法工程、数学优化及GPU内核工程任务中，在显著降低发现成本的同时，实现了具有竞争力的发现质量。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>Dream-RSI通过利用历史发现记录构建重放模拟器，实现了低成本的离线策略评估与改进，避免了高昂的重复在线调用。<br><small>摘要依据：By performing dreaming in the replay simulator constructed from historical discovery trees, Dream-RSI secures immediate, low-cost off-policy feedback to evaluate and refine exploration policies without invoking repetitive, expensive online evaluations.</small></li>\n<li>在算法工程、数学优化及GPU内核工程等多个任务中，Dream-RSI在保持竞争性探索成果的同时，有效降低了计算成本。<br><small>摘要依据：Across algorithm engineering, mathematical optimization, and GPU kernel engineering, Dream-RSI achieves competitive or improved discovery quality while substantially reducing discovery cost in several settings.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>\n<p><strong>原文摘要节选：</strong>Recursive self-improvement is becoming increasingly vital for autonomous AI agents, where progress hinges on discovering high-value solutions across complex domains. The driver of this process is effective exploration, however, managing and improving exploration strategies remains a major bottleneck. Current systems face a fundamental dilemma: fixed strategies fail to adapt as search spaces scale, while online policy optimization requires navigating vast meta-search spaces under delayed and expensive feedback over long-horizon rollouts. We introduce Dream-RSI, a framework for scalable and recursively self-improving exploration. A lightweight orchestration layer makes exploration explicit and programmable while leaving the underlying coding agent unchanged. Our key insight is that…</p>\n<p><a href=\"https://arxiv.org/abs/2609.14858\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.14858\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.14858\">讨论与热度</a> · <a href=\"https://github.com/zhengkid/Dream-RSI\">代码</a></p><hr>\n<h2>3. RSIAgent: Autonomous Exploration for Recursive Self-improvement in New Environments</h2>\n<p><strong>通用 AI</strong> · 发表 2026-09-14 · 综合分 5.21</p>\n<p>Zotero 摘要相关性：0.421（相似度分数，不是概率）。</p>\n<p>HF 点赞 71 · 讨论 2 · 本次 HF 热榜第 12 位 · 仓库累计 Star 317（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.15 天前）：点赞 +1 · 讨论 +0 · Star +74。</p>\n<p><strong>规则标签：</strong>多智能体</p>\n<p><strong>中文概述：</strong>针对数字智能体难以适应复杂新环境的问题，本文提出了RSIAgent框架。该方法通过构建课程、执行和验证智能体，利用递归自我改进机制自主探索环境并构建记忆。系统采用由广度到深度的探索策略，提取动作、条件与后果间的因果关系并将其冻结为记忆，实现无需参数更新的任务适应。实验显示该框架能提升开源模型在OSWorld-v2等基准测试中的表现。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>RSIAgent通过多智能体协作进行递归自我改进，构建并保存特定环境的知识库，无需更新模型参数即可在下游任务中实现知识复用。<br><small>摘要依据：We introduce RSIAgent, a training-free multi-agent framework for recursive self-improvement through autonomous memory construction. RSIAgent coordinates curriculum, actor, and verifier agents to continually explore the environment, validate outcomes, and retain environment-specific knowledge, including reusable causal relationships between actions, conditions, and consequences.</small></li>\n<li>该框架采用由广度到深度的递归探索策略，以发掘环境结构、边界条件及隐藏的因果依赖关系。<br><small>摘要依据：It further adopts a broad-then-deep exploration strategy, combining parallel broad recursive self-exploration for discovering diverse environment structures with focused deep self-exploration for uncovering hard cases, hidden constraints, boundary conditions, and previously unknown causal dependencies.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>\n<p><strong>原文摘要节选：</strong>Digital agents must often adapt to new environments whose interfaces, tools, and failure modes are not fully captured by pretrained models. We introduce RSIAgent, a training-free multi-agent framework for recursive self-improvement through autonomous memory construction. RSIAgent coordinates curriculum, actor, and verifier agents to continually explore the environment, validate outcomes, and retain environment-specific knowledge, including reusable causal relationships between actions, conditions, and consequences. It further adopts a broad-then-deep exploration strategy, combining parallel broad recursive self-exploration for discovering diverse environment structures with focused deep self-exploration for uncovering hard cases, hidden constraints, boundary conditions, and previously…</p>\n<p><a href=\"https://arxiv.org/abs/2609.15364\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.15364\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.15364\">讨论与热度</a> · <a href=\"https://github.com/AetherLabsAI/RSIAgent\">代码</a></p><hr>\n<h2>4. Show-Harness: Just a VLM Agent Can Play Robots</h2>\n<p><strong>机器人</strong> · 发表 2026-09-09 · 综合分 5.20</p>\n<p>Zotero 摘要相关性：0.467（相似度分数，不是概率）。</p>\n<p>HF 点赞 160 · 讨论 4 · 本次 HF 热榜第 30 位 · 仓库累计 Star 399（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.15 天前）：点赞 +0 · 讨论 +0 · Star +11。</p>\n<p><strong>规则标签：</strong>视觉语言动作</p>\n<p><strong>中文概述：</strong>针对视觉语言模型（VLM）难以直接转化为机器人控制的问题，本文提出了Show-Harness框架。该框架构建了一个紧凑的语义接口，将意图与动作连接，通过离散语义动作单元使VLM能够进行推理，并由特定解释器将其转化为局部机器人动作。作者声称该方法能直接实现闭源模型的零样本机器人控制，并通过少量微调适配开源模型，同时支持基于图形界面的演示收集。实验表明，该方法在多任务、多实体及多环境场景下表现出良好的泛化能力。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>Show-Harness通过引入语义动作接口，使VLM无需额外模型容量或特定具身预训练，即可直接执行机器人控制任务。<br><small>摘要依据：These results suggest that the right interface can unlock substantial embodied capability from foundation VLMs, without requiring additional model capacity or costly embodiment-specific pretraining.</small></li>\n<li>该框架支持利用GUMI界面进行无需专业遥控硬件的演示收集，并实现了闭源VLM的零样本控制及开源VLM的轻量级微调。<br><small>摘要依据：Show-Harness demonstrates the feasibility of (1) directly unlocking closed-source frontier VLMs for zero-shot robot control, and (2) adapting small-scale open-source VLMs for low-cost deployment with just a few GPU-hours of fine-tuning.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 视觉语言动作</p>\n<p><strong>原文摘要节选：</strong>Foundation vision-language models (VLMs) exhibit broad intelligence about the world, yet translating this intelligence into robot control remains challenging. We present Show-Harness, an Embodied Harness that enables VLMs to &quot;play&quot; robots through a compact semantic interface linking intent to action. Show-Harness exposes discrete semantic action units that VLMs can naturally reason over, while embodiment-specific interpreters deterministically ground them into local robot actions, keeping the VLM directly responsible for fine-grained physical decisions. Through the same interface, Show-Harness demonstrates the feasibility of (1) directly unlocking closed-source frontier VLMs for zero-shot robot control, and (2) adapting small-scale open-source VLMs for low-cost deployment with just a few…</p>\n<p><a href=\"https://arxiv.org/abs/2609.10522\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.10522\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.10522\">讨论与热度</a> · <a href=\"https://github.com/showlab/Show-Harness\">代码</a></p><hr>\n<h2>5. In-Context Robot Learning with VLM Agents</h2>\n<p><strong>机器人</strong> · 发表 2026-09-16 · 综合分 5.18</p>\n<p>Zotero 摘要相关性：0.506（相似度分数，不是概率）。</p>\n<p>HF 点赞 15 · 讨论 2 · 本次 HF 热榜第 67 位 · 仓库累计 Star 188（仓库可能包含多篇论文）</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>中文概述：</strong>为了实现机器人在未知环境中的适应性，本文提出了一种名为GPT-Policy的通用智能体框架，旨在通过上下文学习（ICL）使机器人无需梯度更新即可从演示、示例和交互反馈中学习任务。该框架整合了上下文编译器、视觉语言模型（VLM）及约束控制器，能将信息转换为可验证的机器人行为。实验表明，该方法在真实机器人任务中能够通过人类视频演示和动作参考提升任务完成率，为VLM在实体机器人上的应用提供了实证基础。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>GPT-Policy框架通过上下文编译器、VLM动作规划和约束控制器，实现了无需梯度更新的上下文机器人学习。<br><small>摘要依据：GPT-Policy integrates a context compiler that preserves task-relevant visual transitions, a VLM that proposes robot-tool actions, and a constrained controller that verifies and executes each action and reports its outcome.</small></li>\n<li>在真实机器人实验中，即使没有机器人动作标签，引入人类视频演示也能有效提升任务完成效果。<br><small>摘要依据：In real-robot trials, human video demonstrations improve task completion even without robot action labels, while aligned action references yield further gains on contact-sensitive tasks.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>视觉语言动作</p>\n<p><strong>原文摘要节选：</strong>Enabling robots to adapt to unfamiliar environments as readily as humans remains a moonshot goal of embodied AI. No finite collection of demonstrations can cover every task and situation a robot will encounter, making the ability to learn from context at deployment essential for generalization. Such in-context learning (ICL), however, remains largely beyond the reach of existing robotic policies. The broad agentic capabilities of commercial vision-language models (VLMs), such as GPT-6 Astra, raise a compelling question: can these models learn from demonstrations, examples, and interaction feedback, then translate that information into executable and verifiable robot behavior from a new initial state without gradient updates or persistent changes to task-specific parameters? We introduce…</p>\n<p><a href=\"https://arxiv.org/abs/2609.19138\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.19138\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.19138\">讨论与热度</a> · <a href=\"https://github.com/cheng-haha/GPT-Policy\">代码</a></p><hr>\n<h2>6. Agent as Policy for Robotic Manipulation</h2>\n<p><strong>机器人</strong> · 发表 2026-09-11 · 综合分 5.11</p>\n<p>Zotero 摘要相关性：0.491（相似度分数，不是概率）。</p>\n<p>HF 点赞 13 · 讨论 4 · 仓库累计 Star 7（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.15 天前）：点赞 +1 · 讨论 +0 · Star +3。</p>\n<p><strong>规则标签：</strong>机器人操作 · 推理</p>\n<p><strong>中文概述：</strong>本文提出了一种名为“Agent as Policy”（AGP）的方法，旨在使通用智能体能够无需特定任务或环境的针对性训练，直接驱动物理机器人执行操作任务。该方法通过让智能体负责任务规划与执行，使其能够处理视觉信息、编写可执行程序、发布运动指令，并根据物理反馈实时修正行为。实验验证了AGP在精密操作、动态运动及变形物体处理等多种现实世界任务中的有效性。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出AGP方法，使通用智能体能够通过运行时推理、编程和交互直接控制机器人执行任务，无需针对性的专门训练。<br><small>摘要依据：We demonstrate that a general-purpose agent can directly drive a physical robot throughout task execution without any task-specific or environment-specific training.</small></li>\n<li>AGP通过视觉反馈生成并执行程序，并在与物理环境的持续交互中根据结果动态调整操作行为。<br><small>摘要依据：Given a task and a robot interface, the agent interprets visual evidence, writes executable programs, issues motion commands, and revises its actions in response to physical outcomes.</small></li>\n<li>通过在多种真实世界操作任务（如块构建、物品重定向和双臂折叠）中的验证，展示了该方法在复杂场景下的应用潜力。<br><small>摘要依据：We study AGP across multiple real-world manipulation tasks spanning precision manipulation, dynamic motions, and deformable objects.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 推理</p>\n<p><strong>原文摘要节选：</strong>We demonstrate that a general-purpose agent can directly drive a physical robot throughout task execution without any task-specific or environment-specific training. We introduce Agent as Policy (AGP), which places task planning and execution under the agent&#x27;s control. Given a task and a robot interface, the agent interprets visual evidence, writes executable programs, issues motion commands, and revises its actions in response to physical outcomes. This brings the agent&#x27;s reasoning and programming capabilities into continuous interaction with the physical world. We study AGP across multiple real-world manipulation tasks spanning precision manipulation, dynamic motions, and deformable objects. These include assembly from human videos, block construction from goal images, die…</p>\n<p><a href=\"https://arxiv.org/abs/2609.12541\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.12541\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.12541\">讨论与热度</a> · <a href=\"https://github.com/agent-as-policy-2026/agent-as-policy\">代码</a></p><hr>\n<h2>7. Fingers as Legs: Learning Self-Supported Locomotion and Manipulation with an Anthropomorphic Hand</h2>\n<p><strong>机器人 / 强化学习</strong> · 发表 2026-09-15 · 综合分 5.01</p>\n<p>Zotero 摘要相关性：0.505（相似度分数，不是概率）。</p>\n<p>HF 点赞 1 · 讨论 2</p>\n<p>较上次观测（1.15 天前）：点赞 +1 · 讨论 +2。</p>\n<p><strong>规则标签：</strong>强化学习 · 四足机器人 · 足式运动</p>\n<p><strong>中文概述：</strong>本文研究了一种拟人化机械手在保留原有手指设计和位置控制器的前提下，通过强化学习实现自主支撑运动与操作任务的能力。作者开发了一种适用于机械手非对称手指特征的奖励函数，并结合硬件测量校准的仿真环境进行训练。实验结果表明，该平台能实现无缆爬行、转向、跌倒恢复以及在支撑自身重量的同时执行键盘指令和物体推移操作，展示了机械手复用手指进行移动与交互的可行性。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出了一种针对拟人手非对称手指特征的强化学习奖励方案，在仿真中表现出优于四足机器人惯用奖励函数的移动速度。<br><small>摘要依据：Our reinforcement learning approach accounts for the hand&#x27;s unequal fingers, with training in a simulator calibrated from hardware measurements. In simulation, the hand moves faster with our reward formulation than with tuned rewards originally designed for quadrupeds.</small></li>\n<li>通过特定任务策略，实现了机械手在无缆状态下的爬行、转向与跌倒恢复，并能在支撑自身重量的同时完成操作任务。<br><small>摘要依据：On hardware, task-specific policies enable untethered crawling, steering, and fall recovery. While supporting its own weight, the hand also executes successive keyboard commands without vision and pushes an object to targets using overhead visual feedback.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · 机器人操作 · Sim-to-Real</p>\n<p><strong>原文摘要节选：</strong>A walking robotic hand must use the same fingers to move its body, support its weight, and interact with the environment. We show how an anthropomorphic hand can learn these skills while retaining its finger design and position controller. Onboard power and computation make the platform self-contained. Our reinforcement learning approach accounts for the hand&#x27;s unequal fingers, with training in a simulator calibrated from hardware measurements. In simulation, the hand moves faster with our reward formulation than with tuned rewards originally designed for quadrupeds. On hardware, task-specific policies enable untethered crawling, steering, and fall recovery. While supporting its own weight, the hand also executes successive keyboard commands without vision and pushes an object to targets…</p>\n<p><a href=\"https://arxiv.org/abs/2609.17172\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.17172\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.17172\">讨论与热度</a></p><hr>\n<h2>8. MInTRL: Off-policy Intervention can boost On-policy RL</h2>\n<p><strong>强化学习</strong> · 发表 2026-09-11 · 综合分 5.00</p>\n<p>Zotero 摘要相关性：0.453（相似度分数，不是概率）。</p>\n<p>HF 点赞 11 · 讨论 2</p>\n<p>较上次观测（1.15 天前）：点赞 +5 · 讨论 +0。</p>\n<p><strong>规则标签：</strong>强化学习</p>\n<p><strong>中文概述：</strong>针对在线强化学习探索受限与离线方法分布偏移的矛盾，本文提出了最小干预强化学习（MInTRL）。该方法在在线采样过程中引入周期性的局部修正，通过评估策略替换错误后缀并迅速交还控制权。同时，利用序列级优势回归目标，免去了重要性采样。实验表明，该方法在保持在线策略特性的同时，能有效扩展探索边界，在数学和代码任务中均优于常规基线。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>MInTRL通过在在线回滚中引入稀疏且局部的干预措施，在无需重要性采样的情况下扩展了探索边界。<br><small>摘要依据：In this work, we introduce Minimal Intervention Reinforcement Learning (MInTRL), which expands the exploration frontier through sparse, local interventions in otherwise on-policy rollouts.</small></li>\n<li>在数学与代码基准测试中，该方法相比标准的在线和离线强化学习基线表现出性能优势。<br><small>摘要依据：Across math and code benchmarks, MInTRL consistently outperforms standard on-policy and off-policy baselines.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · 离线强化学习</p>\n<p><strong>原文摘要节选：</strong>Reinforcement learning with verifiable rewards is typically performed on-policy, keeping training data close to the current policy but limiting learning to trajectories that the policy can discover itself. Off-policy methods such as supervised fine-tuning, on the other hand, can leverage external knowledge beyond the base model&#x27;s capabilities, but may suffer from large distribution shift. The key challenge is thus to expand exploration without sacrificing learnability. In this work, we introduce Minimal Intervention Reinforcement Learning (MInTRL), which expands the exploration frontier through sparse, local interventions in otherwise on-policy rollouts. During generation, a judge-intervention policy periodically reviews the current policy&#x27;s output, replaces erroneous suffixes with short…</p>\n<p><a href=\"https://arxiv.org/abs/2609.12419\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.12419\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.12419\">讨论与热度</a></p><hr>\n<h2>9. ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search</h2>\n<p><strong>强化学习</strong> · 发表 2026-09-11 · 综合分 4.94</p>\n<p>Zotero 摘要相关性：0.348（相似度分数，不是概率）。</p>\n<p>HF 点赞 311 · 讨论 7 · 本次 HF 热榜第 5 位 · 仓库累计 Star 431（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.15 天前）：点赞 +9 · 讨论 +0 · Star +52。</p>\n<p><strong>规则标签：</strong>大模型后训练 · 推理</p>\n<p><strong>中文概述：</strong>ZGCM-1 是一款完全开源的 7B 参数密集型基础模型，旨在通过结合内部思维与外部工具使用来突破模型参数限制。该研究提出了软硬件协同设计的训练方案，包括交错门控滑动窗口与全注意力机制、FP8 Muon 优化器以及基于马尔可夫决策过程的课程学习。作者声称该模型在数学推理和智能体搜索任务中表现出与超大规模模型竞争的潜力，并提升了预训练效率。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>ZGCM-1 引入了软硬件协同设计及改进的课程学习策略，实现了预训练效率的显著提升。<br><small>摘要依据：We also show that our pre-training design offers a ~4.2x efficiency improvement in 16K pre-training time-to-loss.</small></li>\n<li>该模型通过结合内部思维与外部工具调用，在数学推理和智能体搜索任务中展现了与超大规模模型相当的竞争力。<br><small>摘要依据：On several challenging mathematical reasoning and agentic search suites, it remains competitive with frontier models orders of magnitude larger, such as Qwen3-235B-A22B and GLM-5.1.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>\n<p><strong>原文摘要节选：</strong>In this work, we present ZGCM-1, a fully open 7B dense foundation model trained from scratch with extreme data, system, and algorithmic efficiency. ZGCM-1 is founded on a core premise: compact models cannot passively memorize the open web, but can overcome parametric capacity limits by coupling deliberate internal thinking with active external tool use. To support this paradigm across a 256K context, we develop an end-to-end, high-efficiency open training recipe: Architecture &amp; System Co-design: interleaved gated sliding-window and full attention, and a stable FP8 Muon optimizer; Progressive Curriculum &amp; MDP Mid-Training: context scaling across 16K, 64K, and 256K, and the reformulation of interaction traces into Markov Decision Processes. Furthermore, we establish an AI-native R&amp;D…</p>\n<p><a href=\"https://arxiv.org/abs/2609.13356\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.13356\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.13356\">讨论与热度</a> · <a href=\"https://github.com/zgcagi/ZGCM-1\">代码</a></p><hr>\n<h2>10. AI for Games in the Foundation Model Era</h2>\n<p><strong>通用 AI</strong> · 发表 2026-09-15 · 综合分 4.92</p>\n<p>Zotero 摘要相关性：0.341（相似度分数，不是概率）。</p>\n<p>HF 点赞 117 · 讨论 2 · 本次 HF 热榜第 8 位 · 仓库累计 Star 182（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.15 天前）：点赞 +8 · 讨论 +0 · Star +36。</p>\n<p><strong>规则标签：</strong>世界模型</p>\n<p><strong>中文概述：</strong>本文探讨了基础模型及游戏世界模型在游戏全生命周期中的应用。作者将AI在游戏领域的角色归纳为六类：游戏玩法、玩家与游戏建模、游戏设计、开发维护、运行时生成与适配、以及测试评估。论文分析了这些角色间的内在联系与技术迁移潜力，并指出尽管部分AI输出具有可迁移性，但由于控制方案、引擎接口及玩家背景的局限，针对特定游戏环境的有效性验证仍是目前面临的核心挑战。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>作者将AI在游戏中的作用划分为六大类，涵盖了从游戏开发到运行时体验适配的全过程。<br><small>摘要依据：We organize the literature into six roles according to the immediate use of AI output: playing and acting; modeling players and games; designing games; building and maintaining games; generating and adapting at runtime; and testing and evaluating games.</small></li>\n<li>尽管AI能力在各角色间存在联系，但由于环境特异性限制，跨场景的应用仍需进行有效性验证。<br><small>摘要依据：However, control schemes, rules, engine interfaces, state representations, and player contexts often remain setting-specific, so downstream claims require validation in the target setting.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>世界模型</p>\n<p><strong>原文摘要节选：</strong>Foundation models, alongside advances in learned game-world models, are reshaping AI across the game lifecycle. Beyond playing games, recent systems model players and game dynamics, support design and development, adapt player-facing experiences at runtime, and evaluate resulting artifacts. Yet these directions have evolved largely separately, obscuring which capabilities transfer across settings and which remain tied to particular games, engines, interfaces, or player populations. We organize the literature into six roles according to the immediate use of AI output: playing and acting; modeling players and games; designing games; building and maintaining games; generating and adapting at runtime; and testing and evaluating games. For each role, we examine what structure is supplied by…</p>\n<p><a href=\"https://arxiv.org/abs/2609.16679\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.16679\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.16679\">讨论与热度</a> · <a href=\"https://github.com/Eurekaleo/awesome-ai-for-games\">代码</a></p><hr>"
+}

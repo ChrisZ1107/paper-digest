@@ -1,0 +1,254 @@
+{
+  "date": "2026-09-18",
+  "timestamp": "2026-09-18T13:45:22.651570+08:00",
+  "title": "2026-09-18 每日新论文 5",
+  "slug": "2026-09-18-new",
+  "papers": [
+    {
+      "id": "2609.20575",
+      "title": "Accelerating Visual Policy Learning with Sampling-Based Model Predictive Control",
+      "abstract": "Learning visual policies for locomotion and manipulation requires coordinating contact with the environment and can incur substantial computation and GPU memory costs. First-order policy gradients (FoPG) reduce training cost through differentiable simulation, but local optimization can converge to unintended contact patterns. To address this shortfall, we propose Sampling-Guided Policy Search (SGPS), which couples recurring action-target refinement by sampling-based model-predictive control with first-order policy optimization. Behavior cloning initializes the policy from sampled actions; training then alternates sampling-based refinement with short-horizon FoPG updates under perturbed initial states and randomized dynamics. For visual policy training, we use a decoupled FoPG formulation that excludes rendering from the computation graph, enabling direct learning from depth observations without a state-policy teacher. On a single GPU, SGPS learns policies for locomotion, obstacle traversal, crate pushing, and bimanual carrying on simulated Unitree Go2 and G1 robots. Our experiments further show that refinement improves policy learning beyond initialization and tracking alone. For hardware deployment, the distilled policy transfers zero-shot to a real Go2 and uses onboard depth to autonomously trot, crawl, clear hurdles, and switch between these behaviors.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-09-18",
+      "date_label": "公告",
+      "age_days": 0.07317883761574075,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.55777,
+      "growth": null,
+      "score": 3.626,
+      "rule_tags": [
+        "足式运动",
+        "模仿学习"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对视觉策略学习在接触协调中的计算开销及局部最优问题，本文提出了一种采样引导策略搜索（SGPS）方法。该方法结合了基于采样的模型预测控制与一阶策略梯度优化，通过模仿学习初始化策略，并交替进行采样细化与短时程梯度更新。作者声称该方法能有效利用深度观测进行学习，在机器人运动与操作任务中表现出良好的训练效率，并支持在真机上进行零样本迁移。",
+        "highlights": [
+          {
+            "text": "提出SGPS算法，结合基于采样的模型预测控制与一阶策略梯度优化，解决了传统梯度方法在接触模式优化中的局部收敛问题。",
+            "evidence": "To address this shortfall, we propose Sampling-Guided Policy Search (SGPS), which couples recurring action-target refinement by sampling-based model-predictive control with first-order policy optimization."
+          },
+          {
+            "text": "采用解耦的一阶策略梯度公式，实现了直接从深度观测中学习，无需依赖状态策略教师。",
+            "evidence": "For visual policy training, we use a decoupled FoPG formulation that excludes rendering from the computation graph, enabling direct learning from depth observations without a state-policy teacher."
+          },
+          {
+            "text": "验证了算法在多项模拟任务中的有效性，并实现了视觉策略向实体四足机器人的零样本迁移。",
+            "evidence": "For hardware deployment, the distilled policy transfers zero-shot to a real Go2 and uses onboard depth to autonomously trot, crawl, clear hurdles, and switch between these behaviors."
+          }
+        ],
+        "tags": [
+          "四足机器人",
+          "人形机器人",
+          "Sim-to-Real",
+          "机器人操作"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.20566",
+      "title": "OmniMimic: Dynamics-completed Motion Augmentation for Multi-style Omnidirectional Quadruped Locomotion",
+      "abstract": "Animal demonstrations provide quadruped robots with natural and distinctive gait styles that are difficult to specify through hand-crafted rewards. However, their narrow directional coverage leaves little style-consistent supervision for backward, lateral, and turning commands. We present OmniMimic, a training framework that turns directionally limited animal demonstrations into a single multi-gait policy over target per-axis velocity ranges. OmniMimic first combines temporal reversal, constrained dynamics completion, and sagittal reflection to construct robot-specific kinematic and physical supervision beyond the observed directions. It then expands commands progressively from the demonstrated velocity distribution toward the target per-axis bounds, and uses a shared actor with soft-gated, gait-specialized residual experts to balance reusable locomotion skills with gait-specific corrections. Across four gaits in simulation, OmniMimic reduces mean foot-position RMSE at forward and backward reference velocities by 12.9% and velocity-tracking RMSE on a uniform Cartesian command grid by 63.1%, compared with the matched APEX baseline. The project page is at https://OmniMimic.github.io.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-09-18",
+      "date_label": "公告",
+      "age_days": 0.07317883761574075,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.55019,
+      "growth": null,
+      "score": 3.576,
+      "rule_tags": [
+        "四足机器人",
+        "足式运动"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对四足机器人运动演示数据方向覆盖不足的问题，OmniMimic提出了一种多步态全向运动训练框架。该方法通过时间反转、动力学补全和矢状面反射，将有限的动物演示数据扩展至目标全向速度范围。通过引入软门控残差专家架构，系统在保持步态特性的同时，实现了全向速度指令的有效跟踪。实验表明，该方法在仿真环境中显著降低了足部位置误差及速度跟踪误差。",
+        "highlights": [
+          {
+            "text": "OmniMimic通过动力学补全和几何变换扩展了演示数据的覆盖范围，从而支持全向运动控制。",
+            "evidence": "OmniMimic first combines temporal reversal, constrained dynamics completion, and sagittal reflection to construct robot-specific kinematic and physical supervision beyond the observed directions."
+          },
+          {
+            "text": "该方法在仿真环境下显著提升了运动跟踪精度，相比基准方案在多项指标上表现更优。",
+            "evidence": "Across four gaits in simulation, OmniMimic reduces mean foot-position RMSE at forward and backward reference velocities by 12.9% and velocity-tracking RMSE on a uniform Cartesian command grid by 63.1%, compared with the matched APEX baseline."
+          }
+        ],
+        "tags": [
+          "四足机器人",
+          "足式运动",
+          "模仿学习"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.19850",
+      "title": "GR2PO: Group Relative Return Policy Optimization for Continuous Robot Control",
+      "abstract": "Actor-critic architecture has been widely used in continuous robot control. However, they rely on learning a value network, introducing additional computational overhead during training. Moreover, policy learning may also be affected by the approximation error of value estimation. Critic-free group relative policy optimization methods provide a simpler training approach by removing the need for a critic. However, they fail to learn long-term action outcomes when directly applying immediate rewards to policy optimization in dense-reward environments. To address these problems, we propose Group Relative Return Policy Optimization (GR2PO), a critic-free reinforcement learning framework for continuous robot control. GR2PO estimates the discounted returns from the parallelly collected trajectories, performs group normalization at each rollout time index, and uses relative advantages and clipped targets to update the policy. To evaluate the effectiveness of the proposed framework, we instantiate it on robot control simulation environments and deploy the model to a real-world edge device. The results show that GR2PO significantly outperforms critic-free baselines that use immediate rewards and performs competitively against state-of-the-art actor-critic methods. Furthermore, GR2PO demonstrates competitive training efficiency. Inference tests on NVIDIA Jetson TX2 demonstrate the feasibility of deploying the learned policies on edge platforms. Further ablation experiments analyze the effects of parallel group size, return estimation methods, and target clipping ratio on learning performance. To support follow-up research, we will make the complete code publicly available after the paper is accepted, including the framework implementation, experimental configuration, and training and evaluation scripts.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-09-18",
+      "date_label": "公告",
+      "age_days": 0.07317883761574075,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.54269,
+      "growth": null,
+      "score": 3.527,
+      "rule_tags": [
+        "强化学习"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对连续机器人控制中演员-评论家（Actor-Critic）架构存在的计算开销及价值估计误差问题，作者提出了GR2PO（群组相对回报策略优化）框架。该方法移除评论家网络，通过并行收集的轨迹估计折现回报，并在执行滚动时间索引处进行群组归一化，利用相对优势函数和裁剪目标更新策略。实验结果表明，该方法在仿真及边缘设备部署中表现出优于现有无评论家基线且具有竞争力的训练效率。",
+        "highlights": [
+          {
+            "text": "GR2PO通过移除评论家网络并利用并行轨迹的回报估计，实现了一种更简化的无评论家强化学习训练方案。",
+            "evidence": "GR2PO estimates the discounted returns from the parallelly collected trajectories, performs group normalization at each rollout time index, and uses relative advantages and clipped targets to update the policy."
+          },
+          {
+            "text": "实验验证显示，GR2PO在多种机器人控制任务中性能优于基于即时奖励的基线方法，并与主流演员-评论家方法相当。",
+            "evidence": "The results show that GR2PO significantly outperforms critic-free baselines that use immediate rewards and performs competitively against state-of-the-art actor-critic methods."
+          },
+          {
+            "text": "通过在NVIDIA Jetson TX2边缘设备上的推理测试，作者验证了该方法策略部署的可行性。",
+            "evidence": "Inference tests on NVIDIA Jetson TX2 demonstrate the feasibility of deploying the learned policies on edge platforms."
+          }
+        ],
+        "tags": [
+          "强化学习"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.20191",
+      "title": "VLN on the Fly: An Onboard Vision-Language Navigation Stack for Aerial Robots",
+      "abstract": "Running vision-language navigation fully onboard an aerial robot is hard, since grounding, planning, and control must share limited compute and a single-stage error is difficult to isolate in flight. End-to-end aerial policies fuse these stages into one network, giving up the observability and safety checks a modular stack keeps available. We propose VLN on the Fly, an onboard stack that keeps grounding, planning, and control as separate, inspectable stages. A quantized VLM grounds an instruction to a coarse image cell, depth lifts it to a 3D goal, a fast B-spline planner returns a feasible trajectory, and a pretrained reinforcement learning policy tracks it to motor commands across quadrotors. Across 15 onboard flights over three everyday referents in a controlled indoor volume, the stack reaches the target in 13 of 15 trials with 5.72 cm mean goal error and 39.3% average GPU utilization. In 6 additional cluttered-environment trials, the stack tracks collision-free trajectories under onboard perception gating.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-09-18",
+      "date_label": "公告",
+      "age_days": 0.07317883761574075,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.52976,
+      "growth": null,
+      "score": 3.443,
+      "rule_tags": [
+        "强化学习",
+        "导航"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对空中机器人运行视觉语言导航时计算资源受限且难以调试的问题，本文提出了“VLN on the Fly”导航栈。该方案保持了定位、规划与控制的模块化架构，利用量化视觉语言模型将指令映射至3D目标点，通过B样条规划器生成轨迹，并由预训练强化学习策略执行底层控制。实验表明，该系统在受控室内环境下具备较高的目标抵达率及良好的计算效率。",
+        "highlights": [
+          {
+            "text": "该方案采用模块化设计，将视觉定位、路径规划与底层控制解耦，提升了系统的可观测性与安全性。",
+            "evidence": "We propose VLN on the Fly, an onboard stack that keeps grounding, planning, and control as separate, inspectable stages."
+          },
+          {
+            "text": "在室内测试中，该导航栈实现了较高的成功率与较低的目标偏差，且GPU资源占用率维持在合理水平。",
+            "evidence": "Across 15 onboard flights over three everyday referents in a controlled indoor volume, the stack reaches the target in 13 of 15 trials with 5.72 cm mean goal error and 39.3% average GPU utilization."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "导航"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.19452",
+      "title": "GLAMDRING: Gait Learning And Morphology co-Design via Reinforcement LearnING of CPGs",
+      "abstract": "Robots are moving out of the structured factory floor and into unstructured environments such as disaster sites, planetary surfaces, and agricultural fields, for which the right robot often does not yet exist. We present GLAMDRING, a framework that synthesizes the optimal robot for a locomotion task and, jointly, learns the controller that drives it. For the given specifications of forward-velocity bounds, a per-actuator power budget, an actuator library, and a payload requirement, GLAMDRING returns a matched quadruped morphology (link geometry and per-joint actuators) and a Hopf-oscillator Central Pattern Generator (CPG) gait policy. We rank feasible designs against a target design objective, viz., maximum speed, minimum Cost of Transport (CoT), or max Payload Margin. Because body and locomotion are coupled, the optimal morphology dictates how a robot is driven, while optimal gait depends on the physical body. We train a small number of CPG policies by reinforcement learning across the space of candidate morphologies, co-learning the gait with the underlying robot hardware. Link lengths and actuators are then resolved post-hoc from the policy's logged operating envelope, reducing synthesis cost to a small, fixed number of reinforcement-learning runs instead of one per candidate. Our experiments show three key findings: co-designing body and gait is necessary to satisfy locomotion constraints; actuator-envelope feasibility, rather than locomotion success alone, determines realizable payload capacity; and canonical animal gaits emerge naturally in most designs from morphology and constraints alone. A real-world demonstration further highlights the efficacy of our work.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-09-18",
+      "date_label": "公告",
+      "age_days": 0.07317883761574075,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.52426,
+      "growth": null,
+      "score": 3.408,
+      "rule_tags": [
+        "强化学习",
+        "四足机器人",
+        "足式运动"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对非结构化环境下的机器人定制化需求，作者提出了GLAMDRING框架，旨在协同设计四足机器人的形态结构与中央模式发生器（CPG）步态策略。该框架基于前向速度、功率预算和负载需求等规格，通过强化学习在候选形态空间中联合优化机器人硬件参数与控制器。实验结果表明，形态与步态的协同设计对于满足运动约束至关重要，且该方法能够自然涌现出典型动物步态，并在真实物理环境中验证了有效性。",
+        "highlights": [
+          {
+            "text": "提出了一种协同优化机器人形态与步态策略的框架，通过预先定义的约束条件自动生成匹配的物理结构与控制逻辑。",
+            "evidence": "We present GLAMDRING, a framework that synthesizes the optimal robot for a locomotion task and, jointly, learns the controller that drives it."
+          },
+          {
+            "text": "该方法通过强化学习联合优化硬件与策略，并通过解析运行包络线还原形态参数，显著降低了多形态设计的计算成本。",
+            "evidence": "Link lengths and actuators are then resolved post-hoc from the policy's logged operating envelope, reducing synthesis cost to a small, fixed number of reinforcement-learning runs instead of one per candidate."
+          },
+          {
+            "text": "研究发现协同设计能有效满足运动约束，且机器人在无额外监督的情况下可自然演化出与动物相似的步态。",
+            "evidence": "Our experiments show three key findings: co-designing body and gait is necessary to satisfy locomotion constraints; actuator-envelope feasibility, rather than locomotion success alone, determines realizable payload capacity; and canonical animal gaits emerge naturally in most designs from morphology and constraints alone."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "四足机器人",
+          "足式运动"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    }
+  ],
+  "candidate_count": 654,
+  "personalization_note": "已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。",
+  "html": "<h1>2026-09-18 每日新论文 5</h1>\n<p>机器人 · 强化学习 · 通用 AI</p>\n<p>生成时间：2026-09-18 13:45 CST。从 654 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>\n<p>本栏优先收录最近发布且未出现在近期日报的 arXiv 论文，不按热度排序；相关性分用于结合你的 Zotero 收藏偏好。</p>\n<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>\n<p>本次合格候选不足 10 篇，实际收录 5 篇。</p>\n<h2>1. Accelerating Visual Policy Learning with Sampling-Based Model Predictive Control</h2>\n<p><strong>机器人</strong> · 公告 2026-09-18 · 综合分 3.63</p>\n<p>Zotero 摘要相关性：0.558（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>足式运动 · 模仿学习</p>\n<p><strong>中文概述：</strong>针对视觉策略学习在接触协调中的计算开销及局部最优问题，本文提出了一种采样引导策略搜索（SGPS）方法。该方法结合了基于采样的模型预测控制与一阶策略梯度优化，通过模仿学习初始化策略，并交替进行采样细化与短时程梯度更新。作者声称该方法能有效利用深度观测进行学习，在机器人运动与操作任务中表现出良好的训练效率，并支持在真机上进行零样本迁移。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出SGPS算法，结合基于采样的模型预测控制与一阶策略梯度优化，解决了传统梯度方法在接触模式优化中的局部收敛问题。<br><small>摘要依据：To address this shortfall, we propose Sampling-Guided Policy Search (SGPS), which couples recurring action-target refinement by sampling-based model-predictive control with first-order policy optimization.</small></li>\n<li>采用解耦的一阶策略梯度公式，实现了直接从深度观测中学习，无需依赖状态策略教师。<br><small>摘要依据：For visual policy training, we use a decoupled FoPG formulation that excludes rendering from the computation graph, enabling direct learning from depth observations without a state-policy teacher.</small></li>\n<li>验证了算法在多项模拟任务中的有效性，并实现了视觉策略向实体四足机器人的零样本迁移。<br><small>摘要依据：For hardware deployment, the distilled policy transfers zero-shot to a real Go2 and uses onboard depth to autonomously trot, crawl, clear hurdles, and switch between these behaviors.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>四足机器人 · 人形机器人 · Sim-to-Real · 机器人操作</p>\n<p><strong>原文摘要节选：</strong>Learning visual policies for locomotion and manipulation requires coordinating contact with the environment and can incur substantial computation and GPU memory costs. First-order policy gradients (FoPG) reduce training cost through differentiable simulation, but local optimization can converge to unintended contact patterns. To address this shortfall, we propose Sampling-Guided Policy Search (SGPS), which couples recurring action-target refinement by sampling-based model-predictive control with first-order policy optimization. Behavior cloning initializes the policy from sampled actions; training then alternates sampling-based refinement with short-horizon FoPG updates under perturbed initial states and randomized dynamics. For visual policy training, we use a decoupled FoPG formulation…</p>\n<p><a href=\"https://arxiv.org/abs/2609.20575\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.20575\">PDF</a></p><hr>\n<h2>2. OmniMimic: Dynamics-completed Motion Augmentation for Multi-style Omnidirectional Quadruped Locomotion</h2>\n<p><strong>机器人</strong> · 公告 2026-09-18 · 综合分 3.58</p>\n<p>Zotero 摘要相关性：0.550（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>四足机器人 · 足式运动</p>\n<p><strong>中文概述：</strong>针对四足机器人运动演示数据方向覆盖不足的问题，OmniMimic提出了一种多步态全向运动训练框架。该方法通过时间反转、动力学补全和矢状面反射，将有限的动物演示数据扩展至目标全向速度范围。通过引入软门控残差专家架构，系统在保持步态特性的同时，实现了全向速度指令的有效跟踪。实验表明，该方法在仿真环境中显著降低了足部位置误差及速度跟踪误差。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>OmniMimic通过动力学补全和几何变换扩展了演示数据的覆盖范围，从而支持全向运动控制。<br><small>摘要依据：OmniMimic first combines temporal reversal, constrained dynamics completion, and sagittal reflection to construct robot-specific kinematic and physical supervision beyond the observed directions.</small></li>\n<li>该方法在仿真环境下显著提升了运动跟踪精度，相比基准方案在多项指标上表现更优。<br><small>摘要依据：Across four gaits in simulation, OmniMimic reduces mean foot-position RMSE at forward and backward reference velocities by 12.9% and velocity-tracking RMSE on a uniform Cartesian command grid by 63.1%, compared with the matched APEX baseline.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>四足机器人 · 足式运动 · 模仿学习</p>\n<p><strong>原文摘要节选：</strong>Animal demonstrations provide quadruped robots with natural and distinctive gait styles that are difficult to specify through hand-crafted rewards. However, their narrow directional coverage leaves little style-consistent supervision for backward, lateral, and turning commands. We present OmniMimic, a training framework that turns directionally limited animal demonstrations into a single multi-gait policy over target per-axis velocity ranges. OmniMimic first combines temporal reversal, constrained dynamics completion, and sagittal reflection to construct robot-specific kinematic and physical supervision beyond the observed directions. It then expands commands progressively from the demonstrated velocity distribution toward the target per-axis bounds, and uses a shared actor with…</p>\n<p><a href=\"https://arxiv.org/abs/2609.20566\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.20566\">PDF</a></p><hr>\n<h2>3. GR2PO: Group Relative Return Policy Optimization for Continuous Robot Control</h2>\n<p><strong>机器人 / 强化学习</strong> · 公告 2026-09-18 · 综合分 3.53</p>\n<p>Zotero 摘要相关性：0.543（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习</p>\n<p><strong>中文概述：</strong>针对连续机器人控制中演员-评论家（Actor-Critic）架构存在的计算开销及价值估计误差问题，作者提出了GR2PO（群组相对回报策略优化）框架。该方法移除评论家网络，通过并行收集的轨迹估计折现回报，并在执行滚动时间索引处进行群组归一化，利用相对优势函数和裁剪目标更新策略。实验结果表明，该方法在仿真及边缘设备部署中表现出优于现有无评论家基线且具有竞争力的训练效率。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>GR2PO通过移除评论家网络并利用并行轨迹的回报估计，实现了一种更简化的无评论家强化学习训练方案。<br><small>摘要依据：GR2PO estimates the discounted returns from the parallelly collected trajectories, performs group normalization at each rollout time index, and uses relative advantages and clipped targets to update the policy.</small></li>\n<li>实验验证显示，GR2PO在多种机器人控制任务中性能优于基于即时奖励的基线方法，并与主流演员-评论家方法相当。<br><small>摘要依据：The results show that GR2PO significantly outperforms critic-free baselines that use immediate rewards and performs competitively against state-of-the-art actor-critic methods.</small></li>\n<li>通过在NVIDIA Jetson TX2边缘设备上的推理测试，作者验证了该方法策略部署的可行性。<br><small>摘要依据：Inference tests on NVIDIA Jetson TX2 demonstrate the feasibility of deploying the learned policies on edge platforms.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习</p>\n<p><strong>原文摘要节选：</strong>Actor-critic architecture has been widely used in continuous robot control. However, they rely on learning a value network, introducing additional computational overhead during training. Moreover, policy learning may also be affected by the approximation error of value estimation. Critic-free group relative policy optimization methods provide a simpler training approach by removing the need for a critic. However, they fail to learn long-term action outcomes when directly applying immediate rewards to policy optimization in dense-reward environments. To address these problems, we propose Group Relative Return Policy Optimization (GR2PO), a critic-free reinforcement learning framework for continuous robot control. GR2PO estimates the discounted returns from the parallelly collected…</p>\n<p><a href=\"https://arxiv.org/abs/2609.19850\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.19850\">PDF</a></p><hr>\n<h2>4. VLN on the Fly: An Onboard Vision-Language Navigation Stack for Aerial Robots</h2>\n<p><strong>机器人 / 强化学习</strong> · 公告 2026-09-18 · 综合分 3.44</p>\n<p>Zotero 摘要相关性：0.530（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习 · 导航</p>\n<p><strong>中文概述：</strong>针对空中机器人运行视觉语言导航时计算资源受限且难以调试的问题，本文提出了“VLN on the Fly”导航栈。该方案保持了定位、规划与控制的模块化架构，利用量化视觉语言模型将指令映射至3D目标点，通过B样条规划器生成轨迹，并由预训练强化学习策略执行底层控制。实验表明，该系统在受控室内环境下具备较高的目标抵达率及良好的计算效率。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>该方案采用模块化设计，将视觉定位、路径规划与底层控制解耦，提升了系统的可观测性与安全性。<br><small>摘要依据：We propose VLN on the Fly, an onboard stack that keeps grounding, planning, and control as separate, inspectable stages.</small></li>\n<li>在室内测试中，该导航栈实现了较高的成功率与较低的目标偏差，且GPU资源占用率维持在合理水平。<br><small>摘要依据：Across 15 onboard flights over three everyday referents in a controlled indoor volume, the stack reaches the target in 13 of 15 trials with 5.72 cm mean goal error and 39.3% average GPU utilization.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · 导航</p>\n<p><strong>原文摘要节选：</strong>Running vision-language navigation fully onboard an aerial robot is hard, since grounding, planning, and control must share limited compute and a single-stage error is difficult to isolate in flight. End-to-end aerial policies fuse these stages into one network, giving up the observability and safety checks a modular stack keeps available. We propose VLN on the Fly, an onboard stack that keeps grounding, planning, and control as separate, inspectable stages. A quantized VLM grounds an instruction to a coarse image cell, depth lifts it to a 3D goal, a fast B-spline planner returns a feasible trajectory, and a pretrained reinforcement learning policy tracks it to motor commands across quadrotors. Across 15 onboard flights over three everyday referents in a controlled indoor volume, the…</p>\n<p><a href=\"https://arxiv.org/abs/2609.20191\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.20191\">PDF</a></p><hr>\n<h2>5. GLAMDRING: Gait Learning And Morphology co-Design via Reinforcement LearnING of CPGs</h2>\n<p><strong>机器人 / 强化学习</strong> · 公告 2026-09-18 · 综合分 3.41</p>\n<p>Zotero 摘要相关性：0.524（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习 · 四足机器人 · 足式运动</p>\n<p><strong>中文概述：</strong>针对非结构化环境下的机器人定制化需求，作者提出了GLAMDRING框架，旨在协同设计四足机器人的形态结构与中央模式发生器（CPG）步态策略。该框架基于前向速度、功率预算和负载需求等规格，通过强化学习在候选形态空间中联合优化机器人硬件参数与控制器。实验结果表明，形态与步态的协同设计对于满足运动约束至关重要，且该方法能够自然涌现出典型动物步态，并在真实物理环境中验证了有效性。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出了一种协同优化机器人形态与步态策略的框架，通过预先定义的约束条件自动生成匹配的物理结构与控制逻辑。<br><small>摘要依据：We present GLAMDRING, a framework that synthesizes the optimal robot for a locomotion task and, jointly, learns the controller that drives it.</small></li>\n<li>该方法通过强化学习联合优化硬件与策略，并通过解析运行包络线还原形态参数，显著降低了多形态设计的计算成本。<br><small>摘要依据：Link lengths and actuators are then resolved post-hoc from the policy&#x27;s logged operating envelope, reducing synthesis cost to a small, fixed number of reinforcement-learning runs instead of one per candidate.</small></li>\n<li>研究发现协同设计能有效满足运动约束，且机器人在无额外监督的情况下可自然演化出与动物相似的步态。<br><small>摘要依据：Our experiments show three key findings: co-designing body and gait is necessary to satisfy locomotion constraints; actuator-envelope feasibility, rather than locomotion success alone, determines realizable payload capacity; and canonical animal gaits emerge naturally in most designs from morphology and constraints alone.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · 四足机器人 · 足式运动</p>\n<p><strong>原文摘要节选：</strong>Robots are moving out of the structured factory floor and into unstructured environments such as disaster sites, planetary surfaces, and agricultural fields, for which the right robot often does not yet exist. We present GLAMDRING, a framework that synthesizes the optimal robot for a locomotion task and, jointly, learns the controller that drives it. For the given specifications of forward-velocity bounds, a per-actuator power budget, an actuator library, and a payload requirement, GLAMDRING returns a matched quadruped morphology (link geometry and per-joint actuators) and a Hopf-oscillator Central Pattern Generator (CPG) gait policy. We rank feasible designs against a target design objective, viz., maximum speed, minimum Cost of Transport (CoT), or max Payload Margin. Because body and…</p>\n<p><a href=\"https://arxiv.org/abs/2609.19452\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.19452\">PDF</a></p><hr>"
+}

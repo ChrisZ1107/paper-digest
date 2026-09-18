@@ -1,0 +1,16 @@
+{
+  "overview": "为了实现机器人在未知环境中的适应性，本文提出了一种名为GPT-Policy的通用智能体框架，旨在通过上下文学习（ICL）使机器人无需梯度更新即可从演示、示例和交互反馈中学习任务。该框架整合了上下文编译器、视觉语言模型（VLM）及约束控制器，能将信息转换为可验证的机器人行为。实验表明，该方法在真实机器人任务中能够通过人类视频演示和动作参考提升任务完成率，为VLM在实体机器人上的应用提供了实证基础。",
+  "highlights": [
+    {
+      "text": "GPT-Policy框架通过上下文编译器、VLM动作规划和约束控制器，实现了无需梯度更新的上下文机器人学习。",
+      "evidence": "GPT-Policy integrates a context compiler that preserves task-relevant visual transitions, a VLM that proposes robot-tool actions, and a constrained controller that verifies and executes each action and reports its outcome."
+    },
+    {
+      "text": "在真实机器人实验中，即使没有机器人动作标签，引入人类视频演示也能有效提升任务完成效果。",
+      "evidence": "In real-robot trials, human video demonstrations improve task completion even without robot action labels, while aligned action references yield further gains on contact-sensitive tasks."
+    }
+  ],
+  "tags": [
+    "视觉语言动作"
+  ]
+}
