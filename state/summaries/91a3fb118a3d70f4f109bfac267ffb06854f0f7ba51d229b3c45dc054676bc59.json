@@ -1,0 +1,21 @@
+{
+  "overview": "针对现有递归自我改进（RSI）框架在通用性、任务过拟合及模块化评估方面的挑战，本文提出了ModularRSI框架。该方法通过对比成功与失败轨迹，并跨任务聚合证据以识别行为缺陷。它将代理框架分解为五个功能模块进行独立演化与整合，并利用独立的训练任务集确保框架演化与下游评估基准的解耦，旨在提升代理代码执行机制的泛化性能。",
+  "highlights": [
+    {
+      "text": "提出了一种模块化演化框架，通过将代理框架拆分为五个独立功能模块并限制修改范围，降低了优化过程中的纠缠与验证难度。",
+      "evidence": "It decomposes the evolvable harness into five functional modules: Agent Loop, Tool Use, Observation Management, Context Management, and Task Completion Detection. Each module evolves independently within a restricted modification scope"
+    },
+    {
+      "text": "采用基准解耦策略，利用外部策划的任务集进行框架演化，有效缓解了在特定评估基准上的过拟合问题。",
+      "evidence": "To support benchmark-disjoint evolution, we curate 2,000 executable evolution tasks from external sources that are disjoint from downstream evaluation benchmarks."
+    },
+    {
+      "text": "实验证明该方法在未见过的任务中表现出稳定的性能提升，且具备跨基础模型的能力迁移特性。",
+      "evidence": "Experiments on TB2.0 and SWE-Bench Verified show consistent improvements on unseen in-domain and cross-domain tasks, with the evolved harness also transferring across different foundation models."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "推理"
+  ]
+}

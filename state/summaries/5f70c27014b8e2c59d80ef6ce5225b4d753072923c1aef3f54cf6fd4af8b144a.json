@@ -1,0 +1,23 @@
+{
+  "overview": "本文针对人形机器人在多层复杂地形下的导航难题，提出了一种基于降阶模型（Reduced Order Models）的导航框架。研究者将导航问题拆分为两部分：首先利用降阶动力学学习导航策略，随后将其迁移至全阶人形动力学中，并结合冻结的运动策略执行。此外，通过引入泊松安全滤波器（Poisson safety filter），该方法在处理分布外障碍物时有效提升了安全性。实验结果表明，该方法在Unitree G1机器人上实现了超过10米垂直位移及100米路径长度的无地图多楼层导航。",
+  "highlights": [
+    {
+      "text": "提出一种将导航问题分解为降阶动力学学习与全阶动力学迁移的两阶段方法，有效解决了复杂多层地形下的导航挑战。",
+      "evidence": "To overcome this challenge, we decompose the navigation problem into two pieces. First, we train a policy operating on the reduced order dynamics but with full 3D LiDAR observations to navigate complex, multi-story terrain. We then utilize this navigation knowledge to kickstart a policy operating on the full-order humanoid dynamics, with a frozen locomotion policy in the loop."
+    },
+    {
+      "text": "引入泊松安全滤波器，在不降低导航成功率的前提下，增强了机器人面对分布外障碍物时的安全性。",
+      "evidence": "Additionally, we demonstrate that applying a Poisson safety filter to the navigation policy output recovers safety in the presence of out-of-distribution obstacles, without dropping navigation success rate."
+    },
+    {
+      "text": "在Unitree G1人形机器人上验证了该方法，成功完成超过10米垂直位移和100米路径长度的无地图导航任务。",
+      "evidence": "We demonstrate the resulting RoM-Nav policy on a Unitree G1, accomplishing mapless multi-floor navigation covering trials with over 10m of vertical displacement and over 100m of path length."
+    }
+  ],
+  "tags": [
+    "人形机器人",
+    "导航",
+    "强化学习",
+    "Sim-to-Real"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "overview": "本文提出了ViLoMan框架，旨在解决人形机器人同时进行运动控制与物理交互的复杂任务。该方法通过将人类交互的运动演示转化为机器人的物理可行轨迹，结合教师-学生蒸馏机制，训练统一的全身控制策略。该策略直接利用机载深度视觉和本体感受数据生成关节级动作。实验结果显示，该方法在仿真和真实世界环境下均能有效执行关门任务，并展现出良好的泛化能力与Sim-to-Real迁移效果。",
+  "highlights": [
+    {
+      "text": "提出了一种能够直接将机载深度观测与本体感受测量映射为关节级全身动作的统一控制策略，无需参考运动或中间指令。",
+      "evidence": "It then leverages these trajectories within a teacher-student distillation framework to learn a unified policy that maps egocentric depth observations and proprioceptive measurements directly to joint-level whole-body actions. During deployment, the policy requires neither reference motions nor intermediate commands."
+    },
+    {
+      "text": "ViLoMan框架通过将部分人类交互演示转化为完整的机器人可行轨迹，有效解决了训练数据稀缺的问题。",
+      "evidence": "ViLoMan first transforms partial kinematic demonstrations of human-object interactions into complete, physically executable robot trajectories."
+    },
+    {
+      "text": "实验证明Unitree G1人形机器人可在仅依赖机载传感器的条件下，在多种门配置和初始条件下稳健完成关门任务。",
+      "evidence": "Experimental results demonstrate that a single policy enables a Unitree G1 humanoid to complete the full task using only onboard depth sensing and proprioception, while generalizing robustly across task variations and transferring effectively from simulation to reality."
+    }
+  ],
+  "tags": [
+    "人形机器人",
+    "机器人操作",
+    "Sim-to-Real",
+    "模仿学习"
+  ]
+}

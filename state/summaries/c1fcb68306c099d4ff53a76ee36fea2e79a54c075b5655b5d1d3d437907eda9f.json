@@ -1,0 +1,18 @@
+{
+  "overview": "针对视觉语言动作（VLA）模型在特定机器人操作任务中适应性不足的问题，作者提出HIL-UMI框架，实现无需机器人本体的交互式训练。该方法结合通用操作接口（UMI），在手持演示过程中实时对比人类行为与策略预测，利用能量得分识别分布外区域，并结合优势加权的行为克隆进行后训练。实验表明，该方法在多个现实任务中优于传统的监督微调及HG-DAgger方法。",
+  "highlights": [
+    {
+      "text": "HIL-UMI通过对比人类行为轨迹与策略推理，识别分布外数据并引导针对性收集，同时利用优势估计优化模型训练。",
+      "evidence": "The Energy Score compares the human action trajectory with policy inference and triggers collection when their discrepancy indicates an out-of-distribution region. In a separate feedback loop, low online advantage predictions identify essential segments for refining a progress-based advantage estimator."
+    },
+    {
+      "text": "该方法实现了人机协同循环学习与机器人部署的解耦，在四个现实操作任务中展现了优于监督微调的性能。",
+      "evidence": "This design preserves the iterative and policy-aware nature of human-in-the-loop learning while decoupling data collection from robot deployment. Experiments on four real-world tasks spanning long-horizon and precise manipulation show that HIL-UMI achieves consistent improvement over SFT"
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "视觉语言动作",
+    "模仿学习"
+  ]
+}

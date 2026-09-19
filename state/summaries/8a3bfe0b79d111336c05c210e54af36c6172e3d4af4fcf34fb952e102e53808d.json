@@ -1,0 +1,22 @@
+{
+  "overview": "针对强化学习中代理轨迹监督微调（SFT）仅预测动作的局限性，本文提出ActObs方法，通过在SFT阶段增加对环境观测值的预测监督，引导策略建模动作后果。实验表明，在Qwen系列模型上使用GRPO进行强化学习后，ActObs相比仅预测动作的方法在Terminal-Bench 2.0等任务上展现出更好的性能，并能保留更多探索潜力，同时使最终策略更接近其SFT初始化状态。",
+  "highlights": [
+    {
+      "text": "ActObs通过对轨迹中的观测值进行监督，使策略在不增加额外数据或计算负担的前提下，能够更好地建模动作后果。",
+      "evidence": "Although deployed agents never generate observations, learning to predict them encourages the policy to model action consequences without adding data, parameters, sequence tokens, or forward passes."
+    },
+    {
+      "text": "在Qwen3-4B模型上应用GRPO后，ActObs在Terminal-Bench 2.0的所有采样预算下均实现了更高的pass@k。",
+      "evidence": "On Qwen3-4B, GRPO from ActObs achieves higher pass@k at every evaluated sampling budget than its action-only counterpart on Terminal-Bench 2.0."
+    },
+    {
+      "text": "联合监督防止了动作与观测梯度间的单向专业化，有助于保持策略在强化学习过程中的熵，并减少策略偏移。",
+      "evidence": "Joint supervision prevents this one-sided specialization, preserving consequence prediction and preparing the policy for downstream exploration."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "大模型后训练",
+    "推理"
+  ]
+}

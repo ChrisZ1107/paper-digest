@@ -1,0 +1,22 @@
+{
+  "overview": "该论文提出了 VA-Bench 基准测试，旨在评估具身智能模型在不完整观测下，通过视觉演示、主动感知和度量控制完成任务的能力。VA-Bench 涵盖 14 个任务族及多种长程组合任务，要求模型执行观察、推理、行动和修正的完整闭环。实验结果表明，尽管模型在目标定位方面表现优异，但在复杂长程任务及几何变体上的整体成功率仍较低，且主动视角控制能显著提升执行表现。",
+  "highlights": [
+    {
+      "text": "VA-Bench 通过评估模型在不完整观测下进行主动视角选择、输出度量指令并根据反馈修正行为的能力，考核具身智能的完整闭环。",
+      "evidence": "We introduce VA-Bench to evaluate the complete observe-reason-act-revise loop."
+    },
+    {
+      "text": "研究发现主动相机控制对任务成功率有显著正面影响，对比被动多视角观察时成功率可从 27.86% 提升至 57.50%。",
+      "evidence": "Second, active camera control significantly improves task success over passive multi-view observation. In one matched comparison, success rises from 27.86% to 57.50%."
+    },
+    {
+      "text": "尽管表现出一定的任务进展，但现有通用多模态大模型在严格的长程任务中仍面临挑战，且在几何分布偏移的情况下性能出现明显下降。",
+      "evidence": "Third, held-out geometric transfer can reduce task success by over 30 percentage points. No model completes a strict long-horizon episode, despite substantial partial progress."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "视觉语言动作",
+    "推理"
+  ]
+}

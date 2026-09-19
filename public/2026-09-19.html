@@ -1,0 +1,144 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>2026-09-19 热门论文 Top 10｜机器人·强化学习·AI</title><body><h1>2026-09-19 热门论文 Top 10</h1>
+<p>机器人 · 强化学习 · 通用 AI</p>
+<p>生成时间：2026-09-19 09:01 CST。从 649 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>
+<p>候选来源：<a href="https://huggingface.co/papers">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>
+<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>
+<h2>1. In-Context Robot Learning with VLM Agents</h2>
+<p><strong>机器人</strong> · 发表 2026-09-16 · 综合分 5.63</p>
+<p>Zotero 摘要相关性：0.506（相似度分数，不是概率）。</p>
+<p>HF 点赞 16 · 讨论 2 · 本次 HF 热榜第 69 位 · 仓库累计 Star 207（仓库可能包含多篇论文）</p>
+<p>较上次观测（0.8 天前）：点赞 +1 · 讨论 +0 · Star +19。</p>
+<p><strong>中文概述：</strong>为了实现机器人在未知环境中的适应性，本文提出了一种名为GPT-Policy的通用智能体框架，旨在通过上下文学习（ICL）使机器人无需梯度更新即可从演示、示例和交互反馈中学习任务。该框架整合了上下文编译器、视觉语言模型（VLM）及约束控制器，能将信息转换为可验证的机器人行为。实验表明，该方法在真实机器人任务中能够通过人类视频演示和动作参考提升任务完成率，为VLM在实体机器人上的应用提供了实证基础。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>GPT-Policy框架通过上下文编译器、VLM动作规划和约束控制器，实现了无需梯度更新的上下文机器人学习。<br><small>摘要依据：GPT-Policy integrates a context compiler that preserves task-relevant visual transitions, a VLM that proposes robot-tool actions, and a constrained controller that verifies and executes each action and reports its outcome.</small></li>
+<li>在真实机器人实验中，即使没有机器人动作标签，引入人类视频演示也能有效提升任务完成效果。<br><small>摘要依据：In real-robot trials, human video demonstrations improve task completion even without robot action labels, while aligned action references yield further gains on contact-sensitive tasks.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>视觉语言动作</p>
+<p><strong>原文摘要节选：</strong>Enabling robots to adapt to unfamiliar environments as readily as humans remains a moonshot goal of embodied AI. No finite collection of demonstrations can cover every task and situation a robot will encounter, making the ability to learn from context at deployment essential for generalization. Such in-context learning (ICL), however, remains largely beyond the reach of existing robotic policies. The broad agentic capabilities of commercial vision-language models (VLMs), such as GPT-6 Astra, raise a compelling question: can these models learn from demonstrations, examples, and interaction feedback, then translate that information into executable and verifiable robot behavior from a new initial state without gradient updates or persistent changes to task-specific parameters? We introduce…</p>
+<p><a href="https://arxiv.org/abs/2609.19138">论文原文</a> · <a href="https://arxiv.org/pdf/2609.19138">PDF</a> · <a href="https://huggingface.co/papers/2609.19138">讨论与热度</a> · <a href="https://github.com/cheng-haha/GPT-Policy">代码</a></p><hr>
+<h2>2. RSIAgent: Autonomous Exploration for Recursive Self-improvement in New Environments</h2>
+<p><strong>通用 AI</strong> · 发表 2026-09-14 · 综合分 5.27</p>
+<p>Zotero 摘要相关性：0.421（相似度分数，不是概率）。</p>
+<p>HF 点赞 74 · 讨论 2 · 本次 HF 热榜第 12 位 · 仓库累计 Star 334（仓库可能包含多篇论文）</p>
+<p>较上次观测（0.8 天前）：点赞 +3 · 讨论 +0 · Star +17。</p>
+<p><strong>规则标签：</strong>多智能体</p>
+<p><strong>中文概述：</strong>针对数字智能体难以适应复杂新环境的问题，本文提出了RSIAgent框架。该方法通过构建课程、执行和验证智能体，利用递归自我改进机制自主探索环境并构建记忆。系统采用由广度到深度的探索策略，提取动作、条件与后果间的因果关系并将其冻结为记忆，实现无需参数更新的任务适应。实验显示该框架能提升开源模型在OSWorld-v2等基准测试中的表现。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>RSIAgent通过多智能体协作进行递归自我改进，构建并保存特定环境的知识库，无需更新模型参数即可在下游任务中实现知识复用。<br><small>摘要依据：We introduce RSIAgent, a training-free multi-agent framework for recursive self-improvement through autonomous memory construction. RSIAgent coordinates curriculum, actor, and verifier agents to continually explore the environment, validate outcomes, and retain environment-specific knowledge, including reusable causal relationships between actions, conditions, and consequences.</small></li>
+<li>该框架采用由广度到深度的递归探索策略，以发掘环境结构、边界条件及隐藏的因果依赖关系。<br><small>摘要依据：It further adopts a broad-then-deep exploration strategy, combining parallel broad recursive self-exploration for discovering diverse environment structures with focused deep self-exploration for uncovering hard cases, hidden constraints, boundary conditions, and previously unknown causal dependencies.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>
+<p><strong>原文摘要节选：</strong>Digital agents must often adapt to new environments whose interfaces, tools, and failure modes are not fully captured by pretrained models. We introduce RSIAgent, a training-free multi-agent framework for recursive self-improvement through autonomous memory construction. RSIAgent coordinates curriculum, actor, and verifier agents to continually explore the environment, validate outcomes, and retain environment-specific knowledge, including reusable causal relationships between actions, conditions, and consequences. It further adopts a broad-then-deep exploration strategy, combining parallel broad recursive self-exploration for discovering diverse environment structures with focused deep self-exploration for uncovering hard cases, hidden constraints, boundary conditions, and previously…</p>
+<p><a href="https://arxiv.org/abs/2609.15364">论文原文</a> · <a href="https://arxiv.org/pdf/2609.15364">PDF</a> · <a href="https://huggingface.co/papers/2609.15364">讨论与热度</a> · <a href="https://github.com/AetherLabsAI/RSIAgent">代码</a></p><hr>
+<h2>3. Show-Harness: Just a VLM Agent Can Play Robots</h2>
+<p><strong>机器人</strong> · 发表 2026-09-09 · 综合分 5.19</p>
+<p>Zotero 摘要相关性：0.467（相似度分数，不是概率）。</p>
+<p>HF 点赞 157 · 讨论 4 · 本次 HF 热榜第 37 位 · 仓库累计 Star 412（仓库可能包含多篇论文）</p>
+<p>较上次观测（0.8 天前）：点赞 -3 · 讨论 +0 · Star +13。</p>
+<p><strong>规则标签：</strong>视觉语言动作</p>
+<p><strong>中文概述：</strong>针对视觉语言模型（VLM）难以直接转化为机器人控制的问题，本文提出了Show-Harness框架。该框架构建了一个紧凑的语义接口，将意图与动作连接，通过离散语义动作单元使VLM能够进行推理，并由特定解释器将其转化为局部机器人动作。作者声称该方法能直接实现闭源模型的零样本机器人控制，并通过少量微调适配开源模型，同时支持基于图形界面的演示收集。实验表明，该方法在多任务、多实体及多环境场景下表现出良好的泛化能力。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>Show-Harness通过引入语义动作接口，使VLM无需额外模型容量或特定具身预训练，即可直接执行机器人控制任务。<br><small>摘要依据：These results suggest that the right interface can unlock substantial embodied capability from foundation VLMs, without requiring additional model capacity or costly embodiment-specific pretraining.</small></li>
+<li>该框架支持利用GUMI界面进行无需专业遥控硬件的演示收集，并实现了闭源VLM的零样本控制及开源VLM的轻量级微调。<br><small>摘要依据：Show-Harness demonstrates the feasibility of (1) directly unlocking closed-source frontier VLMs for zero-shot robot control, and (2) adapting small-scale open-source VLMs for low-cost deployment with just a few GPU-hours of fine-tuning.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 视觉语言动作</p>
+<p><strong>原文摘要节选：</strong>Foundation vision-language models (VLMs) exhibit broad intelligence about the world, yet translating this intelligence into robot control remains challenging. We present Show-Harness, an Embodied Harness that enables VLMs to &quot;play&quot; robots through a compact semantic interface linking intent to action. Show-Harness exposes discrete semantic action units that VLMs can naturally reason over, while embodiment-specific interpreters deterministically ground them into local robot actions, keeping the VLM directly responsible for fine-grained physical decisions. Through the same interface, Show-Harness demonstrates the feasibility of (1) directly unlocking closed-source frontier VLMs for zero-shot robot control, and (2) adapting small-scale open-source VLMs for low-cost deployment with just a few…</p>
+<p><a href="https://arxiv.org/abs/2609.10522">论文原文</a> · <a href="https://arxiv.org/pdf/2609.10522">PDF</a> · <a href="https://huggingface.co/papers/2609.10522">讨论与热度</a> · <a href="https://github.com/showlab/Show-Harness">代码</a></p><hr>
+<h2>4. ModularRSI: Modular and Generalizable Recursive Harness Self-Improvement</h2>
+<p><strong>通用 AI</strong> · 发表 2026-09-14 · 综合分 5.10</p>
+<p>Zotero 摘要相关性：0.346（相似度分数，不是概率）。</p>
+<p>HF 点赞 157 · 讨论 3 · 仓库累计 Star 20（仓库可能包含多篇论文）</p>
+<p>较上次观测（0.8 天前）：点赞 +147 · 讨论 +1 · Star +3。</p>
+<p><strong>规则标签：</strong>推理</p>
+<p><strong>中文概述：</strong>针对现有递归自我改进（RSI）框架在通用性、任务过拟合及模块化评估方面的挑战，本文提出了ModularRSI框架。该方法通过对比成功与失败轨迹，并跨任务聚合证据以识别行为缺陷。它将代理框架分解为五个功能模块进行独立演化与整合，并利用独立的训练任务集确保框架演化与下游评估基准的解耦，旨在提升代理代码执行机制的泛化性能。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出了一种模块化演化框架，通过将代理框架拆分为五个独立功能模块并限制修改范围，降低了优化过程中的纠缠与验证难度。<br><small>摘要依据：It decomposes the evolvable harness into five functional modules: Agent Loop, Tool Use, Observation Management, Context Management, and Task Completion Detection. Each module evolves independently within a restricted modification scope</small></li>
+<li>采用基准解耦策略，利用外部策划的任务集进行框架演化，有效缓解了在特定评估基准上的过拟合问题。<br><small>摘要依据：To support benchmark-disjoint evolution, we curate 2,000 executable evolution tasks from external sources that are disjoint from downstream evaluation benchmarks.</small></li>
+<li>实验证明该方法在未见过的任务中表现出稳定的性能提升，且具备跨基础模型的能力迁移特性。<br><small>摘要依据：Experiments on TB2.0 and SWE-Bench Verified show consistent improvements on unseen in-domain and cross-domain tasks, with the evolved harness also transferring across different foundation models.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>
+<p><strong>原文摘要节选：</strong>Recent work extends recursive self-improvement (RSI) to agent harnesses for long-horizon coding and terminal tasks, enabling agents to improve execution mechanisms from experience. However, generalizable harness RSI remains challenging. First, evolving harnesses on evaluation benchmarks or their subsets makes it difficult to distinguish reusable improvements from benchmark-specific adaptation. Second, single-trajectory updates can conflate systematic harness deficiencies with instance-specific reasoning and solution details, producing modifications that transfer poorly to unseen tasks. Third, localizing recurring behavioral deficiencies within monolithic harnesses is difficult, while whole-harness optimization can entangle unrelated mechanisms and complicate attribution and validation. We…</p>
+<p><a href="https://arxiv.org/abs/2609.14857">论文原文</a> · <a href="https://arxiv.org/pdf/2609.14857">PDF</a> · <a href="https://huggingface.co/papers/2609.14857">讨论与热度</a> · <a href="https://github.com/IQuestLab/ModularRSI">代码</a></p><hr>
+<h2>5. PhysBrain 1.5: From Vision-Language Models to Physical Foundation Models</h2>
+<p><strong>机器人</strong> · 发表 2026-09-14 · 综合分 5.09</p>
+<p>Zotero 摘要相关性：0.444（相似度分数，不是概率）。</p>
+<p>HF 点赞 166 · 讨论 3 · 本次 HF 热榜第 78 位 · 仓库累计 Star 43（仓库可能包含多篇论文）</p>
+<p>较上次观测（0.8 天前）：点赞 -11 · 讨论 +0 · Star +1。</p>
+<p><strong>中文概述：</strong>PhysBrain 1.5是一个旨在理解物理环境、生成动作并预测未来状态的统一模型。该研究通过将语言响应、末端执行器运动和视觉目标编码为离散序列，利用自回归预测进行联合优化。模型在人类交互视频上进行预训练，并结合人类演示、机器人轨迹及模拟数据进行微调。作者声称该8B模型在28项具身理解基准测试中表现优异，并在14项基准上达到开源最优水平。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>PhysBrain 1.5通过统一框架整合了环境理解、动作生成和未来状态预测能力，在多项基准测试中展现出竞争力。<br><small>摘要依据：Across 28 embodied understanding benchmarks, our 8B model achieves an average score of 72.5, setting a new open-source state of the art and performing on par with leading proprietary models such as GPT-6-Astra and Gemini 3.6 Flash.</small></li>
+<li>该模型通过人类交互视频进行预训练，并利用多源数据（人类演示、机器人轨迹及模拟经验）进行监督微调。<br><small>摘要依据：We then adapt the model through supervised fine-tuning on a mixture of human demonstrations, robot trajectories, and simulated experience.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>视觉语言动作 · 机器人操作</p>
+<p><strong>原文摘要节选：</strong>We present PhysBrain 1.5, a unified model for understanding physical environments, generating actions, and predicting future states. Motivated by the physical loop of observation, interaction, and environmental change, we bring these capabilities into a common learning framework. Starting from a general vision--language model, we encode language responses, end-effector motion, and dense visual targets as discrete sequences and jointly optimize them with autoregressive next-token prediction. Pre-training draws its embodied supervision entirely from human interaction videos, using task-centered episodes to pair semantic and spatial context with recovered motion and subsequent observations. We then adapt the model through supervised fine-tuning on a mixture of human demonstrations, robot…</p>
+<p><a href="https://arxiv.org/abs/2609.14973">论文原文</a> · <a href="https://arxiv.org/pdf/2609.14973">PDF</a> · <a href="https://huggingface.co/papers/2609.14973">讨论与热度</a> · <a href="https://github.com/DeepCybo-PhysAI/PhysBrain-1.5">代码</a></p><hr>
+<h2>6. Don&#x27;t Mask the Environment: Observation Supervision Changes How Agents Explore Under RL</h2>
+<p><strong>强化学习</strong> · 发表 2026-09-17 · 综合分 5.05</p>
+<p>Zotero 摘要相关性：0.440（相似度分数，不是概率）。</p>
+<p>HF 点赞 3 · 讨论 1</p>
+<p>较上次观测（0.8 天前）：点赞 +3 · 讨论 +1。</p>
+<p><strong>规则标签：</strong>强化学习 · 大模型后训练</p>
+<p><strong>中文概述：</strong>针对强化学习中代理轨迹监督微调（SFT）仅预测动作的局限性，本文提出ActObs方法，通过在SFT阶段增加对环境观测值的预测监督，引导策略建模动作后果。实验表明，在Qwen系列模型上使用GRPO进行强化学习后，ActObs相比仅预测动作的方法在Terminal-Bench 2.0等任务上展现出更好的性能，并能保留更多探索潜力，同时使最终策略更接近其SFT初始化状态。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>ActObs通过对轨迹中的观测值进行监督，使策略在不增加额外数据或计算负担的前提下，能够更好地建模动作后果。<br><small>摘要依据：Although deployed agents never generate observations, learning to predict them encourages the policy to model action consequences without adding data, parameters, sequence tokens, or forward passes.</small></li>
+<li>在Qwen3-4B模型上应用GRPO后，ActObs在Terminal-Bench 2.0的所有采样预算下均实现了更高的pass@k。<br><small>摘要依据：On Qwen3-4B, GRPO from ActObs achieves higher pass@k at every evaluated sampling budget than its action-only counterpart on Terminal-Bench 2.0.</small></li>
+<li>联合监督防止了动作与观测梯度间的单向专业化，有助于保持策略在强化学习过程中的熵，并减少策略偏移。<br><small>摘要依据：Joint supervision prevents this one-sided specialization, preserving consequence prediction and preparing the policy for downstream exploration.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习 · 大模型后训练 · 推理</p>
+<p><strong>原文摘要节选：</strong>Agent trajectories record what an agent does and what happens next. Yet standard supervised fine-tuning (SFT) applies loss only to agent-authored action tokens, using environment observations as context but not as prediction targets. We ask whether this convention provides the best initialization for subsequent reinforcement learning. We introduce ActObs, which also supervises the observation tokens already present in each trajectory. Although deployed agents never generate observations, learning to predict them encourages the policy to model action consequences without adding data, parameters, sequence tokens, or forward passes. The methods perform similarly after SFT but diverge after GRPO. On Qwen3-4B, GRPO from ActObs achieves higher pass@k at every evaluated sampling budget than its…</p>
+<p><a href="https://arxiv.org/abs/2609.20715">论文原文</a> · <a href="https://arxiv.org/pdf/2609.20715">PDF</a> · <a href="https://huggingface.co/papers/2609.20715">讨论与热度</a></p><hr>
+<h2>7. Dream-RSI: Recursive Self-Improvement through Evolving Worlds</h2>
+<p><strong>通用 AI</strong> · 发表 2026-09-14 · 综合分 5.04</p>
+<p>Zotero 摘要相关性：0.385（相似度分数，不是概率）。</p>
+<p>HF 点赞 226 · 讨论 3 · 本次 HF 热榜第 4 位 · 仓库累计 Star 757（仓库可能包含多篇论文）</p>
+<p>较上次观测（0.8 天前）：点赞 -69 · 讨论 +0 · Star +204。</p>
+<p><strong>中文概述：</strong>针对自主AI智能体在复杂领域中进行递归自我改进时面临的探索策略瓶颈，Dream-RSI框架提出了一种基于演化世界模型的方案。该框架通过轻量级编排层，利用积累的发现历史构建重放模拟器，使智能体能够在模拟器中进行“梦境”训练以获取低成本离线反馈，从而优化探索策略。作者声称该方法在算法工程、数学优化及GPU内核工程任务中，在显著降低发现成本的同时，实现了具有竞争力的发现质量。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>Dream-RSI通过利用历史发现记录构建重放模拟器，实现了低成本的离线策略评估与改进，避免了高昂的重复在线调用。<br><small>摘要依据：By performing dreaming in the replay simulator constructed from historical discovery trees, Dream-RSI secures immediate, low-cost off-policy feedback to evaluate and refine exploration policies without invoking repetitive, expensive online evaluations.</small></li>
+<li>在算法工程、数学优化及GPU内核工程等多个任务中，Dream-RSI在保持竞争性探索成果的同时，有效降低了计算成本。<br><small>摘要依据：Across algorithm engineering, mathematical optimization, and GPU kernel engineering, Dream-RSI achieves competitive or improved discovery quality while substantially reducing discovery cost in several settings.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>
+<p><strong>原文摘要节选：</strong>Recursive self-improvement is becoming increasingly vital for autonomous AI agents, where progress hinges on discovering high-value solutions across complex domains. The driver of this process is effective exploration, however, managing and improving exploration strategies remains a major bottleneck. Current systems face a fundamental dilemma: fixed strategies fail to adapt as search spaces scale, while online policy optimization requires navigating vast meta-search spaces under delayed and expensive feedback over long-horizon rollouts. We introduce Dream-RSI, a framework for scalable and recursively self-improving exploration. A lightweight orchestration layer makes exploration explicit and programmable while leaving the underlying coding agent unchanged. Our key insight is that…</p>
+<p><a href="https://arxiv.org/abs/2609.14858">论文原文</a> · <a href="https://arxiv.org/pdf/2609.14858">PDF</a> · <a href="https://huggingface.co/papers/2609.14858">讨论与热度</a> · <a href="https://github.com/zhengkid/Dream-RSI">代码</a></p><hr>
+<h2>8. VABench: Measuring Embodied Spatial Intelligence through Visual Demonstrations, Active Perception, and Metric Control</h2>
+<p><strong>机器人</strong> · 发表 2026-09-17 · 综合分 4.85</p>
+<p>Zotero 摘要相关性：0.378（相似度分数，不是概率）。</p>
+<p>HF 点赞 7 · 讨论 1 · 本次 HF 热榜第 82 位 · 仓库累计 Star 11（仓库可能包含多篇论文）</p>
+<p>较上次观测（0.8 天前）：点赞 +3 · 讨论 +0 · Star +8。</p>
+<p><strong>中文概述：</strong>该论文提出了 VA-Bench 基准测试，旨在评估具身智能模型在不完整观测下，通过视觉演示、主动感知和度量控制完成任务的能力。VA-Bench 涵盖 14 个任务族及多种长程组合任务，要求模型执行观察、推理、行动和修正的完整闭环。实验结果表明，尽管模型在目标定位方面表现优异，但在复杂长程任务及几何变体上的整体成功率仍较低，且主动视角控制能显著提升执行表现。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>VA-Bench 通过评估模型在不完整观测下进行主动视角选择、输出度量指令并根据反馈修正行为的能力，考核具身智能的完整闭环。<br><small>摘要依据：We introduce VA-Bench to evaluate the complete observe-reason-act-revise loop.</small></li>
+<li>研究发现主动相机控制对任务成功率有显著正面影响，对比被动多视角观察时成功率可从 27.86% 提升至 57.50%。<br><small>摘要依据：Second, active camera control significantly improves task success over passive multi-view observation. In one matched comparison, success rises from 27.86% to 57.50%.</small></li>
+<li>尽管表现出一定的任务进展，但现有通用多模态大模型在严格的长程任务中仍面临挑战，且在几何分布偏移的情况下性能出现明显下降。<br><small>摘要依据：Third, held-out geometric transfer can reduce task success by over 30 percentage points. No model completes a strict long-horizon episode, despite substantial partial progress.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 视觉语言动作 · 推理</p>
+<p><strong>原文摘要节选：</strong>Spatial intelligence requires more than describing object locations. Under incomplete observation, models must identify and acquire missing evidence, interpret it in a common spatial frame, and act on it. We introduce VA-Bench to evaluate the complete observe-reason-act-revise loop. General-purpose MLLMs learn procedural context from RGB-only demonstrations, actively select camera viewpoints, issue metric Cartesian commands, and revise them from execution feedback. Models receive no privileged object poses, oracle trajectories, or learned action heads. A fixed model-agnostic controller executes only model-specified targets. VA-Bench contains 14 base task families (11 single-arm and three dual-arm), seven held-out geometry/layout variants, and a long-horizon five-object composition track.…</p>
+<p><a href="https://arxiv.org/abs/2609.19554">论文原文</a> · <a href="https://arxiv.org/pdf/2609.19554">PDF</a> · <a href="https://huggingface.co/papers/2609.19554">讨论与热度</a> · <a href="https://github.com/zhangzhongbo2213/VABench">代码</a></p><hr>
+<h2>9. Rethinking Critic Learning in PPO: Understanding and Mitigating Value Flattening</h2>
+<p><strong>强化学习</strong> · 发表 2026-09-16 · 综合分 4.82</p>
+<p>Zotero 摘要相关性：0.374（相似度分数，不是概率）。</p>
+<p>HF 点赞 62 · 讨论 2 · 本次 HF 热榜第 68 位 · 仓库累计 Star 18（仓库可能包含多篇论文）</p>
+<p>较上次观测（0.8 天前）：点赞 +1 · 讨论 +0 · Star +3。</p>
+<p><strong>规则标签：</strong>强化学习 · PPO</p>
+<p><strong>中文概述：</strong>本文针对大语言模型强化学习中PPO算法存在的“价值平坦化”（Value Flattening）失效模式进行了研究。作者分析认为，该现象源于批评家（critic）损失中的隐含方差惩罚及时间相关状态导致的冗余更新。为解决此问题，作者提出了稀疏近端策略优化（SP^3O）算法，通过仅在每条回复中对少量具有代表性的状态进行价值监督来缓解平坦化现象。实验表明，该方法在Qwen3-Base模型上能有效改善策略学习效果。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出了一种名为“价值平坦化”的失效模式，即在多重蒙特卡洛轨迹下，实际状态值在中间状态变化剧烈，而批评家预测值却表现平缓。<br><small>摘要依据：state values, estimated from multiple Monte Carlo continuations, change sharply across intermediate states while critic predictions remain comparatively flat.</small></li>
+<li>开发了SP^3O算法，通过仅对每条响应中少量分布稀疏的状态应用价值损失，有效缓解了批评家学习中的偏差与冗余更新问题。<br><small>摘要依据：we introduce SParse Proximal Policy Optimization (SP^3O), which applies the value loss to only a few well-separated states in each response to mitigate both effects.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>PPO · 大模型后训练 · 强化学习</p>
+<p><strong>原文摘要节选：</strong>In reinforcement learning for large language models, Proximal Policy Optimization (PPO) commonly uses a critic to estimate state values and reduce the variance of policy updates. However, we uncover a systematic failure mode in PPO critics, which we call Value Flattening: state values, estimated from multiple Monte Carlo continuations, change sharply across intermediate states while critic predictions remain comparatively flat. We further observe this phenomenon in a controlled FrozenLake environment and find that it becomes more pronounced as the state space grows. Our theoretical and empirical analyses relate Value Flattening to an implicit variance penalty in the critic loss and redundant updates from temporally correlated states with similar gradients. Motivated by these findings, we…</p>
+<p><a href="https://arxiv.org/abs/2609.18708">论文原文</a> · <a href="https://arxiv.org/pdf/2609.18708">PDF</a> · <a href="https://huggingface.co/papers/2609.18708">讨论与热度</a> · <a href="https://github.com/Dodojordi/SP3O">代码</a></p><hr>
+<h2>10. RetireOPD: Self-Retiring On-Policy Distillation for Agentic Reinforcement Learning</h2>
+<p><strong>强化学习</strong> · 发表 2026-09-17 · 综合分 4.64</p>
+<p>Zotero 摘要相关性：0.334（相似度分数，不是概率）。</p>
+<p>HF 点赞 15 · 讨论 2</p>
+<p>较上次观测（0.8 天前）：点赞 +8 · 讨论 +0。</p>
+<p><strong>规则标签：</strong>强化学习</p>
+<p><strong>中文概述：</strong>针对多轮代理在强化学习中仅获标量奖励的问题，现有同策略蒸馏（OPD）方法受限于教师可靠性及监督时效性。本文提出RetireOPD方法，首先训练解耦的技能条件教师，随后通过强化学习与OPD共同训练无技能学生，并引入自适应退役机制，允许学生在性能达标后自动停止接收教师监督，转而仅依靠强化学习继续优化。实验显示该方法在ALFWorld和WebShop任务中均显著提升了模型表现。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>RetireOPD通过自适应退役机制，允许学生在达到成功率目标且与教师差异不再缩小时，自动停止依赖教师指导。<br><small>摘要依据：the student drops the teacher on its own once their discrepancy stops shrinking and it reaches a target fraction of the teacher&#x27;s success rate, after which training proceeds with RL alone.</small></li>
+<li>在Qwen2.5（1.5B至7B）模型上的测试显示，RetireOPD相比基准强化学习显著提升了ALFWorld成功率及WebShop准确率。<br><small>摘要依据：Across Qwen2.5 models from 1.5B to 7B, RetireOPD improves ALFWorld success rate over RL baseline by 14.1% to 18.8% and WebShop accuracy by 11.8% to 19.0%, and surpasses its own skill-conditioned teacher in every setting.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习 · 大模型后训练</p>
+<p><strong>原文摘要节选：</strong>Multi-turn agents trained with reinforcement learning (RL) receive a single scalar reward per trajectory, which motivates self on-policy distillation (OPD) to supply dense token-level supervision from a self-teacher with privileged task skills, letting a skill-free student internalize them. This recipe, however, is undermined by two findings in agentic tasks: privileged information alone does not always make a teacher reliable, and the benefit of teacher supervision is stage-dependent. We therefore propose RetireOPD (Self-Retiring On-Policy Distillation), which first optimizes a decoupled, skill-conditioned teacher with environment rewards and then trains a skill-free student jointly with RL and OPD. Rather than following a predefined distillation schedule, RetireOPD adopts Adaptive…</p>
+<p><a href="https://arxiv.org/abs/2609.20784">论文原文</a> · <a href="https://arxiv.org/pdf/2609.20784">PDF</a> · <a href="https://huggingface.co/papers/2609.20784">讨论与热度</a></p><hr></body></html>

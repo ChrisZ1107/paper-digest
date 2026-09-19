@@ -1,0 +1,17 @@
+{
+  "overview": "针对多轮代理在强化学习中仅获标量奖励的问题，现有同策略蒸馏（OPD）方法受限于教师可靠性及监督时效性。本文提出RetireOPD方法，首先训练解耦的技能条件教师，随后通过强化学习与OPD共同训练无技能学生，并引入自适应退役机制，允许学生在性能达标后自动停止接收教师监督，转而仅依靠强化学习继续优化。实验显示该方法在ALFWorld和WebShop任务中均显著提升了模型表现。",
+  "highlights": [
+    {
+      "text": "RetireOPD通过自适应退役机制，允许学生在达到成功率目标且与教师差异不再缩小时，自动停止依赖教师指导。",
+      "evidence": "the student drops the teacher on its own once their discrepancy stops shrinking and it reaches a target fraction of the teacher's success rate, after which training proceeds with RL alone."
+    },
+    {
+      "text": "在Qwen2.5（1.5B至7B）模型上的测试显示，RetireOPD相比基准强化学习显著提升了ALFWorld成功率及WebShop准确率。",
+      "evidence": "Across Qwen2.5 models from 1.5B to 7B, RetireOPD improves ALFWorld success rate over RL baseline by 14.1% to 18.8% and WebShop accuracy by 11.8% to 19.0%, and surpasses its own skill-conditioned teacher in every setting."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "大模型后训练"
+  ]
+}

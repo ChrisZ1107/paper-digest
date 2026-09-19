@@ -1,0 +1,18 @@
+{
+  "overview": "本文针对大语言模型强化学习中PPO算法存在的“价值平坦化”（Value Flattening）失效模式进行了研究。作者分析认为，该现象源于批评家（critic）损失中的隐含方差惩罚及时间相关状态导致的冗余更新。为解决此问题，作者提出了稀疏近端策略优化（SP^3O）算法，通过仅在每条回复中对少量具有代表性的状态进行价值监督来缓解平坦化现象。实验表明，该方法在Qwen3-Base模型上能有效改善策略学习效果。",
+  "highlights": [
+    {
+      "text": "提出了一种名为“价值平坦化”的失效模式，即在多重蒙特卡洛轨迹下，实际状态值在中间状态变化剧烈，而批评家预测值却表现平缓。",
+      "evidence": "state values, estimated from multiple Monte Carlo continuations, change sharply across intermediate states while critic predictions remain comparatively flat."
+    },
+    {
+      "text": "开发了SP^3O算法，通过仅对每条响应中少量分布稀疏的状态应用价值损失，有效缓解了批评家学习中的偏差与冗余更新问题。",
+      "evidence": "we introduce SParse Proximal Policy Optimization (SP^3O), which applies the value loss to only a few well-separated states in each response to mitigate both effects."
+    }
+  ],
+  "tags": [
+    "PPO",
+    "大模型后训练",
+    "强化学习"
+  ]
+}
