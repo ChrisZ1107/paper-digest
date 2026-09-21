@@ -1,5 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
-<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>每日新论文｜机器人·强化学习·AI</title><link>https://chrisz1107.github.io/paper-digest/</link><description>每天一篇论文热度榜，优先机器人与强化学习，兼顾通用 AI。</description><language>zh-CN</language><ttl>60</ttl><item><title>2026-09-20 每日新论文 0</title><guid isPermaLink="false">urn:personal-paper-digest:2026-09-20:9d7210fafe9e</guid><link>https://chrisz1107.github.io/paper-digest/2026-09-20-new.html</link><pubDate>Sun, 20 Sep 2026 09:01:43 +0800</pubDate><description>&lt;h1&gt;2026-09-20 每日新论文 0&lt;/h1&gt;
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>每日新论文｜机器人·强化学习·AI</title><link>https://chrisz1107.github.io/paper-digest/</link><description>每天一篇论文热度榜，优先机器人与强化学习，兼顾通用 AI。</description><language>zh-CN</language><ttl>60</ttl><item><title>2026-09-21 每日新论文 0</title><guid isPermaLink="false">urn:personal-paper-digest:2026-09-21:10aa099d5a71</guid><link>https://chrisz1107.github.io/paper-digest/2026-09-21-new.html</link><pubDate>Mon, 21 Sep 2026 09:01:32 +0800</pubDate><description>&lt;h1&gt;2026-09-21 每日新论文 0&lt;/h1&gt;
+&lt;p&gt;机器人 · 强化学习 · 通用 AI&lt;/p&gt;
+&lt;p&gt;生成时间：2026-09-21 09:01 CST。从 116 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。&lt;/p&gt;
+&lt;p&gt;本栏优先收录最近发布且未出现在近期日报的 arXiv 论文，不按热度排序；相关性分用于结合你的 Zotero 收藏偏好。&lt;/p&gt;
+&lt;p&gt;已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。&lt;/p&gt;
+&lt;p&gt;本次合格候选不足 10 篇，实际收录 0 篇。&lt;/p&gt;</description><content:encoded>&lt;h1&gt;2026-09-21 每日新论文 0&lt;/h1&gt;
+&lt;p&gt;机器人 · 强化学习 · 通用 AI&lt;/p&gt;
+&lt;p&gt;生成时间：2026-09-21 09:01 CST。从 116 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。&lt;/p&gt;
+&lt;p&gt;本栏优先收录最近发布且未出现在近期日报的 arXiv 论文，不按热度排序；相关性分用于结合你的 Zotero 收藏偏好。&lt;/p&gt;
+&lt;p&gt;已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。&lt;/p&gt;
+&lt;p&gt;本次合格候选不足 10 篇，实际收录 0 篇。&lt;/p&gt;</content:encoded><category>最新论文</category><category>机器人</category><category>强化学习</category><category>通用 AI</category></item><item><title>2026-09-20 每日新论文 0</title><guid isPermaLink="false">urn:personal-paper-digest:2026-09-20:9d7210fafe9e</guid><link>https://chrisz1107.github.io/paper-digest/2026-09-20-new.html</link><pubDate>Sun, 20 Sep 2026 09:01:43 +0800</pubDate><description>&lt;h1&gt;2026-09-20 每日新论文 0&lt;/h1&gt;
 &lt;p&gt;机器人 · 强化学习 · 通用 AI&lt;/p&gt;
 &lt;p&gt;生成时间：2026-09-20 09:01 CST。从 114 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。&lt;/p&gt;
 &lt;p&gt;本栏优先收录最近发布且未出现在近期日报的 arXiv 论文，不按热度排序；相关性分用于结合你的 Zotero 收藏偏好。&lt;/p&gt;
