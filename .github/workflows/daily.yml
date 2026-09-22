@@ -93,6 +93,8 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python3 youtube_translate.py
+      - name: Publish translated YouTube feed
+        run: cp public/youtube-feed.xml public/youtube-feed-translated.xml
       - name: Generate today's digest
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}

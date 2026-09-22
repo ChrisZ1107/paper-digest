@@ -75,4 +75,4 @@ RSS 现在每天发布两条文章：保留原有的“热门论文 Top 10”，
 
 ## AIPaperSlop 视频论文
 
-`youtube_monitor.py` 检查 YouTube 的 AIPaperSlop 频道，读取新视频的公开描述，提取其中的 arXiv 链接，生成独立 RSS：`https://chrisz1107.github.io/paper-digest/youtube-feed.xml`。本机 systemd 定时器在日报前检查频道并提交更新；即使 YouTube 暂时不可访问，也不会阻断日报派发。首次运行会建立已见视频状态，后续只新增视频。论文链接来自视频描述；日报工作流会用 Gemini 翻译 arXiv 摘要并写入 RSS，建议打开原文核对。
+`youtube_monitor.py` 检查 YouTube 的 AIPaperSlop 频道，读取新视频的公开描述，提取其中的 arXiv 链接，生成独立 RSS：`https://chrisz1107.github.io/paper-digest/youtube-feed-translated.xml`。本机 systemd 定时器在日报前检查频道并提交更新；即使 YouTube 暂时不可访问，也不会阻断日报派发。首次运行会建立已见视频状态，后续只新增视频。论文链接来自视频描述；日报工作流会用 Gemini 翻译 arXiv 摘要并写入 RSS，建议打开原文核对。
