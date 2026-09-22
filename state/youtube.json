@@ -2,123 +2,393 @@
   "videos": {
     "5EzWrJbaLGQ": {
       "video_id": "5EzWrJbaLGQ",
-      "papers": []
+      "video_title": "Rethinking Critic Learning in PPO: Understanding and Mitigating Value Flattening (Sep 2026)",
+      "published": "2026-09-22",
+      "video_url": "https://www.youtube.com/watch?v=5EzWrJbaLGQ",
+      "papers": [
+        {
+          "id": "2609.18708",
+          "title": "Rethinking Critic Learning in PPO: Understanding and Mitigating Value Flattening (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.18708"
+        }
+      ]
     },
     "iiozS7N3bBo": {
       "video_id": "iiozS7N3bBo",
-      "papers": []
+      "video_title": "ScienceBuddy: Recursive-in-Recursive Self-Improvement for Interactive Scientific Agents (Sep 2026)",
+      "published": "2026-09-22",
+      "video_url": "https://www.youtube.com/watch?v=iiozS7N3bBo",
+      "papers": [
+        {
+          "id": "2609.17523",
+          "title": "ScienceBuddy: Recursive-in-Recursive Self-Improvement for Interactive Scientific Agents (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.17523"
+        }
+      ]
     },
     "4iyvpHWfPiA": {
       "video_id": "4iyvpHWfPiA",
-      "papers": []
+      "video_title": "LimiX-2: A Contextual Mechanism Network Towards General Structured-Data Intelligence (Sep 2026)",
+      "published": "2026-09-22",
+      "video_url": "https://www.youtube.com/watch?v=4iyvpHWfPiA",
+      "papers": [
+        {
+          "id": "2609.17488",
+          "title": "LimiX-2: A Contextual Mechanism Network Towards General Structured-Data Intelligence (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.17488"
+        }
+      ]
     },
     "ji5AmSVOsTA": {
       "video_id": "ji5AmSVOsTA",
-      "papers": []
+      "video_title": "PaperDoctor: Evidence-Grounded and Actionable Feedback for Scientific Papers in Progress (Sep 2026)",
+      "published": "2026-09-22",
+      "video_url": "https://www.youtube.com/watch?v=ji5AmSVOsTA",
+      "papers": [
+        {
+          "id": "2609.16995",
+          "title": "PaperDoctor: Evidence-Grounded and Actionable Feedback for Scientific Papers in Progress (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.16995"
+        }
+      ]
     },
     "1Nv5IdYBQMI": {
       "video_id": "1Nv5IdYBQMI",
-      "papers": []
+      "video_title": "TabPFN-3.5: Technical Report (Sep 2026)",
+      "published": "2026-09-22",
+      "video_url": "https://www.youtube.com/watch?v=1Nv5IdYBQMI",
+      "papers": [
+        {
+          "id": "2609.17895",
+          "title": "TabPFN-3.5: Technical Report (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.17895"
+        }
+      ]
     },
     "xYqcESBreEA": {
       "video_id": "xYqcESBreEA",
-      "papers": []
+      "video_title": "ScienceIDE: Turning World's Scientific Codebase into Agent Learnable Environments (Sep 2026)",
+      "published": "2026-09-22",
+      "video_url": "https://www.youtube.com/watch?v=xYqcESBreEA",
+      "papers": [
+        {
+          "id": "2609.19134",
+          "title": "ScienceIDE: Turning World's Scientific Codebase into Agent Learnable Environments (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.19134"
+        }
+      ]
     },
     "U5zEovw2aDw": {
       "video_id": "U5zEovw2aDw",
-      "papers": []
+      "video_title": "On Repulsive and Attractive Teachers: Separating Correctness from Behavior in Self-Distillation",
+      "published": "2026-09-22",
+      "video_url": "https://www.youtube.com/watch?v=U5zEovw2aDw",
+      "papers": [
+        {
+          "id": "2609.21561",
+          "title": "On Repulsive and Attractive Teachers: Separating Correctness from Behavior in Self-Distillation (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.21561"
+        }
+      ]
     },
     "dGbF-j6vsY0": {
       "video_id": "dGbF-j6vsY0",
-      "papers": []
+      "video_title": "RetireOPD: Self-Retiring On-Policy Distillation for Agentic Reinforcement Learning (Sep 2026)",
+      "published": "2026-09-22",
+      "video_url": "https://www.youtube.com/watch?v=dGbF-j6vsY0",
+      "papers": [
+        {
+          "id": "2609.20784",
+          "title": "RetireOPD: Self-Retiring On-Policy Distillation for Agentic Reinforcement Learning (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.20784"
+        }
+      ]
     },
     "b7XeoamDe7A": {
       "video_id": "b7XeoamDe7A",
-      "papers": []
+      "video_title": "What Does Privileged Information Add to On-Policy Self-Distillation? (Sep 2026)",
+      "published": "2026-09-22",
+      "video_url": "https://www.youtube.com/watch?v=b7XeoamDe7A",
+      "papers": [
+        {
+          "id": "2609.20612",
+          "title": "What Does Privileged Information Add to On-Policy Self-Distillation? (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.20612"
+        }
+      ]
     },
     "wAyaTZmgVTU": {
       "video_id": "wAyaTZmgVTU",
-      "papers": []
+      "video_title": "Discovery Foundation Models: Toward Open-Ended Discovery Intelligence (Sep 2026)",
+      "published": "2026-09-22",
+      "video_url": "https://www.youtube.com/watch?v=wAyaTZmgVTU",
+      "papers": [
+        {
+          "id": "2609.15973",
+          "title": "Discovery Foundation Models: Toward Open-Ended Discovery Intelligence (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.15973"
+        }
+      ]
     },
     "sNju_3z_wrU": {
       "video_id": "sNju_3z_wrU",
-      "papers": []
+      "video_title": "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents (Sep 2026)",
+      "published": "2026-09-22",
+      "video_url": "https://www.youtube.com/watch?v=sNju_3z_wrU",
+      "papers": [
+        {
+          "id": "2609.19107",
+          "title": "How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.19107"
+        }
+      ]
     },
     "TjjEM5qZeaw": {
       "video_id": "TjjEM5qZeaw",
-      "papers": []
+      "video_title": "SoL-Pi: Recursively Scaling Auto-Research Loops for Efficient Agent Harness (Sep 2026)",
+      "published": "2026-09-22",
+      "video_url": "https://www.youtube.com/watch?v=TjjEM5qZeaw",
+      "papers": [
+        {
+          "id": "2609.20519",
+          "title": "SoL-Pi: Recursively Scaling Auto-Research Loops for Efficient Agent Harness (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.20519"
+        }
+      ]
     },
     "hMMpCCJDvU8": {
       "video_id": "hMMpCCJDvU8",
-      "papers": []
+      "video_title": "Proxy Policy Steering (Sep 2026)",
+      "published": "2026-09-22",
+      "video_url": "https://www.youtube.com/watch?v=hMMpCCJDvU8",
+      "papers": [
+        {
+          "id": "2609.09148",
+          "title": "Proxy Policy Steering (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.09148"
+        }
+      ]
     },
     "gT_eQQV0OZ0": {
       "video_id": "gT_eQQV0OZ0",
-      "papers": []
+      "video_title": "PhysBrain 1.5: From Vision-Language Models to Physical Foundation Models (Sep 2026)",
+      "published": "2026-09-22",
+      "video_url": "https://www.youtube.com/watch?v=gT_eQQV0OZ0",
+      "papers": [
+        {
+          "id": "2609.14973",
+          "title": "PhysBrain 1.5: From Vision-Language Models to Physical Foundation Models (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.14973"
+        }
+      ]
     },
     "7ZU76RqtgNY": {
       "video_id": "7ZU76RqtgNY",
-      "papers": []
+      "video_title": "JEPA-Anything: Learning Predictive Models across Different Worlds (Sep 2026)",
+      "published": "2026-09-22",
+      "video_url": "https://www.youtube.com/watch?v=7ZU76RqtgNY",
+      "papers": [
+        {
+          "id": "2609.20800",
+          "title": "JEPA-Anything: Learning Predictive Models across Different Worlds (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.20800"
+        }
+      ]
     },
     "DRf_O0KFVbM": {
       "video_id": "DRf_O0KFVbM",
-      "papers": []
+      "video_title": "Modality-Autoregressive World-Action Models (Sep 2026)",
+      "published": "2026-09-22",
+      "video_url": "https://www.youtube.com/watch?v=DRf_O0KFVbM",
+      "papers": [
+        {
+          "id": "2609.17524",
+          "title": "Modality-Autoregressive World-Action Models (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.17524"
+        }
+      ]
     },
     "w0jvHICBnQ4": {
       "video_id": "w0jvHICBnQ4",
-      "papers": []
+      "video_title": "LLMs as Oracles: Reliance on LLMs for Subjective Personal Questions (Sep 2026)",
+      "published": "2026-09-22",
+      "video_url": "https://www.youtube.com/watch?v=w0jvHICBnQ4",
+      "papers": [
+        {
+          "id": "2609.14849",
+          "title": "LLMs as Oracles: Reliance on LLMs for Subjective Personal Questions (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.14849"
+        }
+      ]
     },
     "cCqPyOJ-ncg": {
       "video_id": "cCqPyOJ-ncg",
-      "papers": []
+      "video_title": "Score Centering Stabilizes Off-policy Reinforcement Learning (Sep 2026)",
+      "published": "2026-09-22",
+      "video_url": "https://www.youtube.com/watch?v=cCqPyOJ-ncg",
+      "papers": [
+        {
+          "id": "2609.20807",
+          "title": "Score Centering Stabilizes Off-policy Reinforcement Learning (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.20807"
+        }
+      ]
     },
     "8tL_M1apz9k": {
       "video_id": "8tL_M1apz9k",
-      "papers": []
+      "video_title": "Stellar Colosseum: A Many-Agent Harness for Long-Horizon Research in Mathematics and Theoretical…",
+      "published": "2026-09-22",
+      "video_url": "https://www.youtube.com/watch?v=8tL_M1apz9k",
+      "papers": [
+        {
+          "id": "2609.15983",
+          "title": "Stellar Colosseum: A Many-Agent Harness for Long-Horizon Research in Mathematics and Theoretical Computer Science (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.15983"
+        }
+      ]
     },
     "6ToPJrQUCJ8": {
       "video_id": "6ToPJrQUCJ8",
-      "papers": []
+      "video_title": "Verbalizing Subliminal Learning Effects Using Text Optimization (Sep 2026)",
+      "published": "2026-09-22",
+      "video_url": "https://www.youtube.com/watch?v=6ToPJrQUCJ8",
+      "papers": [
+        {
+          "id": "2609.16927",
+          "title": "Verbalizing Subliminal Learning Effects Using Text Optimization (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.16927"
+        }
+      ]
     },
     "5IP4TVYaUvI": {
       "video_id": "5IP4TVYaUvI",
-      "papers": []
+      "video_title": "In-Context Robot Learning with VLM Agents (Sep 2026)",
+      "published": "2026-09-22",
+      "video_url": "https://www.youtube.com/watch?v=5IP4TVYaUvI",
+      "papers": [
+        {
+          "id": "2609.19138",
+          "title": "In-Context Robot Learning with VLM Agents (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.19138"
+        }
+      ]
     },
     "XI5lxoDsAl4": {
       "video_id": "XI5lxoDsAl4",
-      "papers": []
+      "video_title": "Discrete Beckmann Transport Models for One-Step Language Modeling and Reasoning (Sep 2026)",
+      "published": "2026-09-22",
+      "video_url": "https://www.youtube.com/watch?v=XI5lxoDsAl4",
+      "papers": [
+        {
+          "id": "2609.15903",
+          "title": "Discrete Beckmann Transport Models for One-Step Language Modeling and Reasoning (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.15903"
+        }
+      ]
     },
     "TG70FEu1ZEQ": {
       "video_id": "TG70FEu1ZEQ",
-      "papers": []
+      "video_title": "An Empirical Study of Harness Design for Coding Agents (Sep 2026)",
+      "published": "2026-09-22",
+      "video_url": "https://www.youtube.com/watch?v=TG70FEu1ZEQ",
+      "papers": [
+        {
+          "id": "2609.20804",
+          "title": "An Empirical Study of Harness Design for Coding Agents (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.20804"
+        }
+      ]
     },
     "tDfAYFNR32Y": {
       "video_id": "tDfAYFNR32Y",
-      "papers": []
+      "video_title": "Cache-to-Cache: Direct Semantic Communication Between Large Language Models (Oct 2025)",
+      "published": "2026-09-22",
+      "video_url": "https://www.youtube.com/watch?v=tDfAYFNR32Y",
+      "papers": [
+        {
+          "id": "2510.03215",
+          "title": "Cache-to-Cache: Direct Semantic Communication Between Large Language Models (Oct 2025)",
+          "url": "https://arxiv.org/abs/2510.03215"
+        }
+      ]
     },
     "vNakF0ZhFlA": {
       "video_id": "vNakF0ZhFlA",
-      "papers": []
+      "video_title": "Reinforcement Learning for Real-Time Vision-Language-Action Policies (Sep 2026)",
+      "published": "2026-09-22",
+      "video_url": "https://www.youtube.com/watch?v=vNakF0ZhFlA",
+      "papers": [
+        {
+          "id": "2609.18207",
+          "title": "Reinforcement Learning for Real-Time Vision-Language-Action Policies (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.18207"
+        }
+      ]
     },
     "LbIkY_DjlNs": {
       "video_id": "LbIkY_DjlNs",
-      "papers": []
+      "video_title": "The Implications of Linguistic Illegibility for LLM Security (Sep 2026)",
+      "published": "2026-09-22",
+      "video_url": "https://www.youtube.com/watch?v=LbIkY_DjlNs",
+      "papers": [
+        {
+          "id": "2609.02852",
+          "title": "The Implications of Linguistic Illegibility for LLM Security (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.02852"
+        }
+      ]
     },
     "UzBbF2_ocrs": {
       "video_id": "UzBbF2_ocrs",
-      "papers": []
+      "video_title": "Atria Dawn: The Dawn of Agentic Superintelligence (Sep 2026)",
+      "published": "2026-09-22",
+      "video_url": "https://www.youtube.com/watch?v=UzBbF2_ocrs",
+      "papers": [
+        {
+          "id": "2609.15818",
+          "title": "Atria Dawn: The Dawn of Agentic Superintelligence (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.15818"
+        }
+      ]
     },
     "6rKSQmMckvM": {
       "video_id": "6rKSQmMckvM",
-      "papers": []
+      "video_title": "RSIAgent: Autonomous Exploration for Recursive Self-improvement in New Environments (Sep 2026)",
+      "published": "2026-09-22",
+      "video_url": "https://www.youtube.com/watch?v=6rKSQmMckvM",
+      "papers": [
+        {
+          "id": "2609.15364",
+          "title": "RSIAgent: Autonomous Exploration for Recursive Self-improvement in New Environments (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.15364"
+        }
+      ]
     },
     "fYCrK_Sh8xI": {
       "video_id": "fYCrK_Sh8xI",
-      "papers": []
+      "video_title": "Breaking the 1.58-bit Barrier for Ternary LLMs (Sep 2026)",
+      "published": "2026-09-22",
+      "video_url": "https://www.youtube.com/watch?v=fYCrK_Sh8xI",
+      "papers": [
+        {
+          "id": "2609.16338",
+          "title": "Breaking the 1.58-bit Barrier for Ternary LLMs (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.16338"
+        }
+      ]
     },
     "ZusgY6Hf2zs": {
       "video_id": "ZusgY6Hf2zs",
-      "papers": []
+      "video_title": "Dream-RSI: Recursive Self-Improvement through Evolving Worlds (Sep 2026)",
+      "published": "2026-09-22",
+      "video_url": "https://www.youtube.com/watch?v=ZusgY6Hf2zs",
+      "papers": [
+        {
+          "id": "2609.14858",
+          "title": "Dream-RSI: Recursive Self-Improvement through Evolving Worlds (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.14858"
+        }
+      ]
     }
   }
 }

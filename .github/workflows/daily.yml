@@ -24,7 +24,6 @@ on:
       - 'personalization.py'
       - 'test_personalization.py'
       - 'summarization.py'
-      - 'youtube_monitor.py'
       - 'test_summarization.py'
       - 'requirements-personalization.txt'
       - 'config.json'
@@ -106,9 +105,6 @@ jobs:
           else
             python3 digest.py
           fi
-      - name: Monitor AIPaperSlop videos
-        continue-on-error: true
-        run: python3 youtube_monitor.py
       - name: Validate RSS
         run: |
           python3 - <<'PY'
@@ -126,7 +122,6 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add public state/digests state/snapshots
-          if [ -f state/youtube.json ]; then git add state/youtube.json; fi
           if [ -d state/new-digests ]; then git add state/new-digests; fi
           if [ -d state/summaries ]; then git add state/summaries; fi
           if ! git diff --cached --quiet; then
