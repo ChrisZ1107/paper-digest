@@ -1,0 +1,22 @@
+{
+  "overview": "针对自回归视觉-语言-动作（VLA）模型中动作标记化（Action Tokenization）的问题，本文指出传统的均方误差度量难以反映动作调整在上下文中的保真度。为此，作者提出了物理秩一致性（PRC）指标，并设计了ActionPiece方法。该方法通过联合监督表征学习与量化过程，在保持动作物理关系的同时生成离散动作标记。实验结果显示，该方法在多个基准测试中提升了策略任务的执行成功率。",
+  "highlights": [
+    {
+      "text": "提出了物理秩一致性（PRC）指标，用于衡量动作标记化在重构后对局部物理距离排序的保持能力，弥补了点对点重构指标的不足。",
+      "evidence": "We introduce physical rank consistency (PRC) to measure how well tokenization preserves local physical distance rankings after reconstruction."
+    },
+    {
+      "text": "研发了ActionPiece方法，通过在表示学习和量化阶段引入物理关系监督，增强了动作标记的语义表达能力。",
+      "evidence": "We further present ActionPiece, which preserves physical action relationships through joint supervision of representation learning and quantization."
+    },
+    {
+      "text": "在Qwen3-VL-4B策略框架下，ActionPiece在LIBERO和SimplerEnv等多个基准测试中展现了优异的执行性能。",
+      "evidence": "Under the same Qwen3-VL-4B policy training setup, ActionPiece achieves 94.8% on LIBERO and 68.8% on unseen LIBERO-Plus, with additional evaluations reaching 71.9% on SimplerEnv and 51.5% across VLA-Arena L0-L2."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "视觉语言动作",
+    "推理"
+  ]
+}

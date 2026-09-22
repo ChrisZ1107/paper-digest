@@ -1,0 +1,23 @@
+{
+  "overview": "针对机器人在有人群的动态环境下进行视觉语言导航（VLN）的需求，作者提出了DPed-VLN基准测试。该基准结合了Habitat 3.0模拟器、动态行人交互及社会安全约束。为评估该基准，作者还开发了DPet策略网络，并应用LoRA微调调整了NaVILA和StreamVLN等模型。实验结果显示，微调策略提升了导航成功率与安全性，其中DPet-RL在多项关键指标上表现最优。",
+  "highlights": [
+    {
+      "text": "提出了包含3万余条导航序列的DPed-VLN基准，用于评估机器人在动态行人环境下的导航效率与社会安全性。",
+      "evidence": "We present DPed-VLN, a Habitat 3.0 benchmark for dynamic-pedestrian VLN that couples 33,093 navigation episodes with paired global and prior-augmented instructions, ORCA-controlled humanoid pedestrians, socially constrained expert paths, and metrics that jointly assess navigation efficiency and social safety."
+    },
+    {
+      "text": "通过LoRA微调使现有视觉语言导航模型适配该动态场景，有效降低了模型的碰撞率并提升了多项评估指标。",
+      "evidence": "Experiments show that LoRA adaptation improves zero-shot VLM baselines in several success and safety metrics, especially reducing StreamVLN's collision rate."
+    },
+    {
+      "text": "提出的DPet策略网络在DPed-VLN基准测试的各项核心性能指标（SR、SPL和STL）中均取得了最高分。",
+      "evidence": "Among the evaluated methods, DPet-RL achieves the highest SR, SPL, and STL."
+    }
+  ],
+  "tags": [
+    "视觉语言动作",
+    "导航",
+    "模仿学习",
+    "强化学习"
+  ]
+}

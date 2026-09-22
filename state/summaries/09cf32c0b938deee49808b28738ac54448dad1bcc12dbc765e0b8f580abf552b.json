@@ -1,0 +1,22 @@
+{
+  "overview": "本文提出了名为FootQuery的感知运动框架，旨在解决人形机器人在复杂地形中因视野受限和自遮挡导致足部落点信息缺失的问题。该方法利用本体感觉预测未来的触地位置及不确定性，并以此查询历史深度帧以获取相关地形特征。通过将提取的特征与全局视觉记忆融合，实现了对控制动作的生成。实验表明，该框架在模拟仿真和Unitree G1实机部署中均能有效应对多种复杂地形。",
+  "highlights": [
+    {
+      "text": "FootQuery通过预测落点并以此查询历史深度信息，有效解决了因视野覆盖有限导致的感知缺失问题。",
+      "evidence": "Limited camera coverage and self-occlusion make it necessary to retrieve relevant terrain information from earlier observations. We present FootQuery, a perceptive locomotion framework that queries depth history using each foot's predicted next touchdown."
+    },
+    {
+      "text": "通过引入触地监督机制，利用历史图像中已实现的接触点对特征提取进行监督，增强了策略的鲁棒性。",
+      "evidence": "During training, realized contacts are projected into historical images to supervise retrieval at the regions where those contacts were visible."
+    },
+    {
+      "text": "实机部署验证了仅依靠本体感觉和机载深度图像即可在多样化复杂地形中实现连续行走。",
+      "evidence": "Real-world experiments on a Unitree G1 demonstrate continuous traversal with a single policy across outdoor stairs and indoor routes combining stair ascent and descent, platforms, and gaps."
+    }
+  ],
+  "tags": [
+    "人形机器人",
+    "足式运动",
+    "Sim-to-Real"
+  ]
+}

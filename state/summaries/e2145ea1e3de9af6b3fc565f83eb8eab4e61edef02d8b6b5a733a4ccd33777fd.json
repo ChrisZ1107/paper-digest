@@ -1,0 +1,22 @@
+{
+  "overview": "针对通用机器人策略在长跨度复杂任务中表现脆弱的问题，本文提出了SeeQ方法。该方法通过引入子任务诱导的Q函数，将价值预测范围缩短至当前子任务，从而简化了时序差分学习。作者在训练中利用离线数据中的子任务标注进行分解，并通过视觉语言架构实现子任务的自回归预测，消除了测试时对人工标注的需求。实验表明，该方法在多个真实环境操作任务中显著提升了策略的执行效果。",
+  "highlights": [
+    {
+      "text": "SeeQ通过将学习范围聚焦于当前活跃子任务，缩短了价值预测的时间跨度，从而实现了在稀疏奖励下的有效时序差分学习。",
+      "evidence": "We introduce SeeQ (Subtask-elicited Q-functions), which instead learns Q-values for the currently active subtask. This shortens the value-prediction horizon and enables effective learning with temporal-difference (TD) objectives."
+    },
+    {
+      "text": "该架构能够自回归地预测自然语言形式的子任务，无需在测试阶段依赖人工标注或额外的模块化子任务预测系统。",
+      "evidence": "To eliminate the need for human annotations or modular subtask prediction systems at test time, our Q-function architecture is trained to autoregressively predict the active subtask in natural language before estimating its value."
+    },
+    {
+      "text": "在四个真实世界的机器人操作任务中，SeeQ价值函数能够显著提升“最佳N次选择”（Best-of-N）策略的引导能力。",
+      "evidence": "Across four real-world manipulation tasks on two bimanual robot platforms, the SeeQ value function substantially improves best-of-N policy steering."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "离线强化学习",
+    "视觉语言动作"
+  ]
+}

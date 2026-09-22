@@ -1,0 +1,18 @@
+{
+  "overview": "针对机器人长序列操作任务中预训练策略在关键子任务上的失败问题，本文提出了PARTS框架。该方法通过引入子任务选择器和成功验证器，专注于瓶颈环节的强化学习微调。在保持预训练策略作为基础动作输出的同时，利用局部奖励信号指导残差策略学习，减少了对完整任务演示和人工干预的依赖。实验表明，该方法在双臂及单臂任务中显著提升了整体任务的成功率。",
+  "highlights": [
+    {
+      "text": "PARTS框架通过在瓶颈环节集中练习，并利用局部奖励进行残差修正，有效解决了长序列任务中稀疏奖励的学习困难。",
+      "evidence": "We present PARTS (Policy Adaptation with RL on Targeted Subtasks), a real-world subtask RL framework that concentrates practice at these bottlenecks while allowing training rollouts to proceed with minimal human intervention."
+    },
+    {
+      "text": "在相同机器人部署预算下，PARTS相较于现有微调方法，将完整任务成功率提升了超过25%，且降低了人工操作需求。",
+      "evidence": "Compared with existing real-world RL fine-tuning methods, PARTS raises full-task success by more than 25% under the same robot-rollout budget while requiring less human involvement."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "强化学习",
+    "Sim-to-Real"
+  ]
+}

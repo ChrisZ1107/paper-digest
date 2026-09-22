@@ -1,0 +1,17 @@
+{
+  "overview": "针对足式机器人在工业环境中因缺乏语义理解而导致接触非预期区域的问题，本文提出了SABER算法。该方法采用无规划器的强化学习策略，通过构建统一的地形语义地图，利用带有语义偏差的交叉注意力机制对地形几何信息与语义接触代价进行联合建模。作者声称该方法能有效规避脆弱或禁止区域，并在实机实验中验证了其在复杂场景下选择可行落脚点的能力。",
+  "highlights": [
+    {
+      "text": "提出了一种基于语义偏差的交叉注意力机制，根据接触代价动态重加权地形单元，从而在运动中规避危险区域。",
+      "evidence": "We augment cross-attention with a learned, signed semantic bias: an additive term on the attention logits, gated by the contact cost, that reweights flagged cells by their distance from the nearest foot."
+    },
+    {
+      "text": "实验证明该方法有效减少了对不可接触区域的触碰，消融实验显示移除语义偏差会导致禁止区域接触增加55%。",
+      "evidence": "We perform a systematic ablation that isolates the contribution of each architectural component; removing the semantic bias alone increases forbidden contacts by 55% while velocity tracking is unchanged."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "足式运动"
+  ]
+}

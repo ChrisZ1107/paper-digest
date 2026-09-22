@@ -1,0 +1,21 @@
+{
+  "overview": "该研究探讨了四足机器人运动参数与鲁棒性之间的关系。作者通过全身轨迹优化、学习型控制器以及质心模型预测控制三种方法，对比分析了步态类型与占空比（duty factor）在预测运动性能方面的作用。研究声称，相比于传统的步态类型分类，占空比能够更有效地作为一种低维参数，用于理解和选择跨不同控制架构的鲁棒性运动，并在受限地形的实验中得到了验证。",
+  "highlights": [
+    {
+      "text": "占空比比标称步态类型更能准确预测四足机器人局部误差的收敛性。",
+      "evidence": "using whole body trajectory optimization with LQR feedback, we show that duty factor is a stronger predictor of local error convergence than nominal gait type."
+    },
+    {
+      "text": "占空比可作为调节窄地形下四足机器人运动鲁棒性的有效低维参数。",
+      "evidence": "we investigate duty factor selection with a learned locomotion controller, suggesting how duty factor may serve as a low-dimensional parameter for adapting locomotion robustness in narrow-terrain environments."
+    },
+    {
+      "text": "占空比在多种控制框架中均表现出一致性，并已通过窄地形下的物理实验得到验证。",
+      "evidence": "Finally, we show that these trends persist under a centroidal model predictive control framework and validate them through narrow-terrain experiments on a physical quadruped."
+    }
+  ],
+  "tags": [
+    "四足机器人",
+    "足式运动"
+  ]
+}
