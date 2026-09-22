@@ -76,7 +76,7 @@ def render(items):
                  f'<p>来源：<a href="{html.escape(item["video_url"], quote=True)}">AIPaperSlop YouTube 视频</a></p>',
                  "<p>从视频公开描述中提取的论文：</p><ul>"]
         for paper in item["papers"]:
-            parts.append(f'<li><a href="{paper["url"]}">{html.escape(paper["title"])}</a>（arXiv {paper["id"]}）</li>')
+            parts.append(f'<li><a href="{paper["url"]}">{html.escape(paper["title"])}</a>（arXiv {paper["id"]}）' + (f'<br><strong>摘要翻译：</strong>{html.escape(paper["abstract_zh"])}' if paper.get("abstract_zh") else "") + "</li>")
         parts.append("</ul><p>论文链接来自视频描述，建议打开原文核对。</p>")
         body = "\n".join(parts)
         ET.SubElement(entry, "description").text = body

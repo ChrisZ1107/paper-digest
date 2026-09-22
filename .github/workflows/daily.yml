@@ -27,6 +27,8 @@ on:
       - 'test_summarization.py'
       - 'requirements-personalization.txt'
       - 'config.json'
+      - 'youtube_monitor.py'
+      - 'youtube_translate.py'
       - '.github/workflows/daily.yml'
 
 concurrency:
@@ -87,6 +89,10 @@ jobs:
           config['public_base_url'] = os.environ['PAGES_BASE_URL']
           path.write_text(json.dumps(config, ensure_ascii=False, indent=2))
           PY
+      - name: Translate AIPaperSlop abstracts
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python3 youtube_translate.py
       - name: Generate today's digest
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -122,6 +128,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add public state/digests state/snapshots
+          if [ -f state/youtube.json ]; then git add state/youtube.json; fi
           if [ -d state/new-digests ]; then git add state/new-digests; fi
           if [ -d state/summaries ]; then git add state/summaries; fi
           if ! git diff --cached --quiet; then
