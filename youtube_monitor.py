@@ -2,6 +2,7 @@
 """Monitor AIPaperSlop videos and publish papers found in public descriptions."""
 import argparse
 from datetime import datetime, timezone
+import hashlib
 import html
 import json
 from pathlib import Path
@@ -66,7 +67,8 @@ def render(items):
         entry = ET.SubElement(channel, "item")
         ET.SubElement(entry, "title").text = "AIPaperSlop：" + item["video_title"]
         ET.SubElement(entry, "link").text = item["video_url"]
-        ET.SubElement(entry, "guid", isPermaLink="false").text = "urn:aipaperslop:" + item["video_id"]
+        revision = hashlib.sha256(json.dumps(item["papers"], ensure_ascii=False, sort_keys=True).encode()).hexdigest()[:12]
+        ET.SubElement(entry, "guid", isPermaLink="false").text = "urn:aipaperslop:" + item["video_id"] + ":" + revision
         try:
             stamp = datetime.fromisoformat(item["published"].replace("Z", "+00:00"))
         except ValueError:
