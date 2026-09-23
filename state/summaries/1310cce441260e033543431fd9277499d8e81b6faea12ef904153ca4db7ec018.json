@@ -1,0 +1,21 @@
+{
+  "overview": "针对现有计算机使用智能体（CUA）在图形界面交互与软件开发能力分离的问题，本文提出了RecreationWorld框架。该框架要求智能体通过观测参考程序行为，自主决策并实现软件复现。RecreationWorld支持多平台环境及统一的GUI控制与编程工具，并通过参考程序提供执行验证奖励。实验表明，基于此框架生成的轨迹能提升模型在跨分布任务中的表现，并能更频繁地进行输出验证。",
+  "highlights": [
+    {
+      "text": "RecreationWorld框架支持Ubuntu、macOS、Windows、Android及Web五种平台，并提供统一的GUI控制与编程工具进行交互与开发。",
+      "evidence": "RecreationWorld provides reproducible environments on Ubuntu, macOS, Windows, Android, and Web, plus a unified harness with native GUI control and coding tools."
+    },
+    {
+      "text": "基于该框架训练的模型在五个分布外（OOD）编码与混合计算机使用基准测试中表现出性能提升，且具备更强的输出验证能力。",
+      "evidence": "Models trained on these trajectories improve across five out-of-distribution coding and hybrid computer-use benchmarks and more frequently verify their rendered outputs, providing evidence of transfer beyond recreation."
+    },
+    {
+      "text": "研究构建了包含250个跨领域任务的RecreationBench基准，支持基于程序化与视觉断言的自动化打分。",
+      "evidence": "For held-out evaluation, we introduce RecreationBench, comprising 250 diverse tasks across domains and platforms. Reference-grounded programmatic and visual assertions cover action-conditioned outcomes at multiple interaction depths"
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "推理"
+  ]
+}

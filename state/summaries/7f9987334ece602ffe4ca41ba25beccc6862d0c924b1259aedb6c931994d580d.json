@@ -1,0 +1,16 @@
+{
+  "overview": "本文提出CodeMidas，旨在解决编码代理在强化学习（RL）训练中任务规模受限的问题。该方法以现有代码库的源代码为唯一输入，通过代理自动化流水线自动提取功能性任务，包括制定行为规范、构建测试及验证筛选。实验结果表明，在这些任务上训练的MiMo-V2.5模型在多个基准测试（如DeepSWE、ProgramBench、Terminal-Bench）中均表现出性能提升，证明了利用源代码扩展RL环境的有效性。",
+  "highlights": [
+    {
+      "text": "CodeMidas通过自动化流水线将源代码转化为可执行的RL任务，无需依赖issue或commit等开发记录，从而实现大规模环境构建。",
+      "evidence": "CodeMidas, an agentic pipeline that turns implemented functionality in existing codebases into executable RL environments using source code as its only task-specific input."
+    },
+    {
+      "text": "在CodeMidas生成的5,545个任务上训练MiMo-V2.5模型，显著提升了代理在代码修复、程序构建及终端操作任务上的性能。",
+      "evidence": "Training MiMo-V2.5 on these tasks with GRPO improves performance on all five diverse benchmarks, covering issue repair (DeepSWE + 11.7%), whole-program construction (ProgramBench +17%), and terminal work (Terminal-Bench v2.1 +8.5%)."
+    }
+  ],
+  "tags": [
+    "强化学习"
+  ]
+}

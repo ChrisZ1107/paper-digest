@@ -1,0 +1,18 @@
+{
+  "overview": "针对视觉语言动作（VLA）模型在强化学习微调中面临的机器人交互成本高及世界模型计算开销大的问题，本文提出了一种名为U-GROW的采样方法。通过利用策略不确定性识别对任务结果影响关键的状态，该方法将更多世界模型滚动生成引导至高信息量状态，从而在无需改变优化目标的前提下，提升了策略训练的效率。",
+  "highlights": [
+    {
+      "text": "提出U-GROW采样层，通过策略不确定性引导模型滚动生成，提升了数据采集的针对性。",
+      "evidence": "Building on these findings, we introduce U-GROW, a lightweight, plug-and-play sampling layer that directs more model rollouts to these informative states."
+    },
+    {
+      "text": "U-GROW具有高度兼容性，可直接集成于现有基于模型的强化学习（MBRL）框架中。",
+      "evidence": "By modifying only the branched-start distribution, U-GROW can be integrated into existing MBRL pipelines without changing the policy optimization objective."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "世界模型",
+    "视觉语言动作"
+  ]
+}

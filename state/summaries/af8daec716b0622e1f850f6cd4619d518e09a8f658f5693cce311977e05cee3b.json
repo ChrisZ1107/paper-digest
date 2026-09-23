@@ -1,0 +1,17 @@
+{
+  "overview": "针对视觉语言动作（VLA）模型在不同机器人平台间的适应性问题，该研究探讨了联邦微调策略的应用。作者在LIBERO仿真基准测试及真实机器人场景下，系统分析了多种参数范围和聚合算法的效果。研究发现，联邦学习策略的参数设置对性能的影响大于聚合算法的选择，并指出在物理机器人上实现与集中式微调相当的效果面临跨站点异构性的挑战。研究还开源了名为DecentVLA的通用测试平台，以促进联邦VLA学习的公平评估与研究。",
+  "highlights": [
+    {
+      "text": "研究通过系统性实验指出，联邦学习中的参数范围选择对模型性能的影响显著超过了聚合算法的选择。",
+      "evidence": "Our study analyzes the key choices in this setting, spanning multiple federated parameter scopes, three aggregation algorithms, and evaluation under distribution shift. Based on the study, we derive a series of lessons, including the dominance of the federated scope over the choice of aggregation algorithm"
+    },
+    {
+      "text": "作者开发并开源了DecentVLA测试平台，该平台与模型和运行时环境无关，旨在支持联邦VLA学习的公平比较与后续研究。",
+      "evidence": "We open-source \\decentvla{}, the model- and runtime-agnostic testbed behind the study, to facilitate future research and fair comparisons in federated VLA learning."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "视觉语言动作"
+  ]
+}

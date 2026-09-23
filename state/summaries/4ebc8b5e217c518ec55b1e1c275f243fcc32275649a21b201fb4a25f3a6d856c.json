@@ -1,0 +1,23 @@
+{
+  "overview": "针对越野导航中车辆-地形交互数据采集成本高的问题，作者提出了Verti-WM，这是一种物理辅助的外感知世界模型。该模型通过融合预训练Transformer（处理刚性地形）和神经符号地面力学模型（处理可变形地形），并结合地图提供的海拔和语义信息，实现了无需高保真仿真器即可进行六自由度策略优化的滚动预测。作者声称该方法降低了预测误差，在保持任务成功率的同时显著缩短了训练耗时，并验证了其在现实世界中的应用表现。",
+  "highlights": [
+    {
+      "text": "Verti-WM通过融合Transformer和神经符号地面力学模型，相较于纯数据驱动或纯物理基线，有效降低了预测误差。",
+      "evidence": "Verti-WM reduces prediction error by 34.6% and 21.7% over data-driven and physics-based baselines, respectively."
+    },
+    {
+      "text": "该世界模型支持在离线状态下进行策略训练，大幅减少了对高保真仿真器的依赖，并显著提升了计算效率。",
+      "evidence": "Policies trained entirely within Verti-WM achieve comparable task success rates while reducing computation time by 23.6X relative to direct training in the high-fidelity simulator."
+    },
+    {
+      "text": "在现实场景中，基于Verti-WM优化的策略显著提升了四轮车平台的任务成功率。",
+      "evidence": "We further validate Verti-WM using real-world data, enabling policy optimization within learned real-world kinodynamics and achieving a 80% success rate on the Verti-4-Wheeler platform, compared with 40% for direct sim-to-real transfer."
+    }
+  ],
+  "tags": [
+    "世界模型",
+    "导航",
+    "Sim-to-Real",
+    "强化学习"
+  ]
+}

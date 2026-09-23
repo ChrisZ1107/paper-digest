@@ -1,0 +1,18 @@
+{
+  "overview": "针对四足机器人技能学习中奖励函数设计困难的问题，作者提出了MimicAgent框架。该方法利用大语言模型将用户给定的技能描述自动转化为参考运动轨迹，随后利用这些生成的轨迹指导强化学习策略训练。作者声称该框架能有效生成符合语义要求的参考轨迹，并实现仿真及真实世界环境下的策略部署。",
+  "highlights": [
+    {
+      "text": "提出MimicAgent框架，通过代理自动生成参考轨迹，简化了四足机器人技能学习的流程。",
+      "evidence": "Towards this end, we propose MimicAgent, an agentic harness that, given a skill prompt, generates quadruped reference trajectories with coding agents."
+    },
+    {
+      "text": "实验表明，利用Claude Fable 5.1模型，该框架生成的轨迹在语义对齐方面表现出色。",
+      "evidence": "Notably, we find that when prompting Claude Fable 5.1 within our agentic harness, 87% of prompts yield semantically aligned reference trajectories."
+    }
+  ],
+  "tags": [
+    "四足机器人",
+    "足式运动",
+    "Sim-to-Real"
+  ]
+}

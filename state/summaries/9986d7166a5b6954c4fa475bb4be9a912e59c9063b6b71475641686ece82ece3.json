@@ -1,0 +1,22 @@
+{
+  "overview": "本文探讨了视觉语言模型（VLM）在数字世界到物理世界任务中的泛化潜力。作者提出了RoboDawn接口，通过离散化控制指令使VLM能够闭环控制机器人。结合上下文学习（ICL）方案，该模型无需任务特定的机器人训练即可执行操作。实验结果显示，RoboDawn在多个机器人基准测试中优于现有的基准策略，并能在真实世界的Franka机器人上实现物体堆叠等操作，展示了其跨环境的迁移能力。",
+  "highlights": [
+    {
+      "text": "提出RoboDawn接口，利用离散控制指令实现VLM对机器人的闭环控制，且无需进行任务特定的机器人训练。",
+      "evidence": "We investigate this question through RoboDawn, a human-intuitive interface that exposes robotic control to an agentic VLM through a compact set of discrete translation, rotation, and gripper commands. Using this interface, the VLM controls a robot in a closed loop: it observes the current visual state, reasons about the next action, executes it, and adapts subsequent decisions to the resulting state."
+    },
+    {
+      "text": "引入上下文学习方案，通过少量演示示例显著提升了模型在任务执行中的成功率。",
+      "evidence": "Furthermore, we introduce an in-context learning (ICL) scheme that uses a few demonstrations to ground the VLM in both interface usage and task-solving strategies."
+    },
+    {
+      "text": "实验证明RoboDawn在零样本和单样本设置下均表现出色，并在RoboTwin 2.0 C2R和RoboDojo等基准测试中超越了现有基准策略。",
+      "evidence": "In the zero-shot setting, RoboDawn outperforms several strong policies trained on benchmarkspecific robot data, while a single in-context demonstration further yields substantial performance gains and establishes state-of-the-art (SOTA) results."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "Sim-to-Real",
+    "视觉语言动作"
+  ]
+}

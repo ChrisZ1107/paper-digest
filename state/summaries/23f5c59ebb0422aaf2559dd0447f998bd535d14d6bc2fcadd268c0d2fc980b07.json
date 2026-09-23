@@ -1,0 +1,18 @@
+{
+  "overview": "针对视觉语言动作（VLA）模型在线后训练中的效率与可靠性问题，本文提出了异步回放锚定策略改进框架（RAPolicy）。该方法通过同步执行交互与学习，并基于回放数据约束评论家与执行者更新。评论家通过记录的行为构建贝尔曼目标，而执行者利用重用噪声进行加权似然学习。实验表明，该方法在真实世界机器人任务中能显著提升在线训练效率与任务成功率。",
+  "highlights": [
+    {
+      "text": "RAPolicy通过异步处理交互与学习，利用回放的行为数据锚定评论家与执行者更新，实现了在线训练的高效率与稳定性。",
+      "evidence": "We propose asynchronous Replay-Anchored Policy improvement (RAPolicy), a framework that performs rollout and learning concurrently while grounding both critic and actor updates in replayed behavior."
+    },
+    {
+      "text": "该方法在多任务设置下表现优异，在仅需1至2小时的在线训练预算内，成功率从52%提升至88%。",
+      "evidence": "In the joint multi-task setting, RAPolicy improves overall success rate from 52% to 88% while preserving performance on already reliable tasks and improving weaker capabilities."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "视觉语言动作",
+    "大模型后训练"
+  ]
+}

@@ -1,0 +1,145 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>2026-09-23 热门论文 Top 10｜机器人·强化学习·AI</title><body><h1>2026-09-23 热门论文 Top 10</h1>
+<p>机器人 · 强化学习 · 通用 AI</p>
+<p>生成时间：2026-09-23 09:01 CST。从 1119 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>
+<p>候选来源：<a href="https://huggingface.co/papers">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>
+<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>
+<h2>1. In-Context Robot Learning with VLM Agents</h2>
+<p><strong>机器人</strong> · 发表 2026-09-16 · 综合分 5.47</p>
+<p>Zotero 摘要相关性：0.506（相似度分数，不是概率）。</p>
+<p>HF 点赞 22 · 讨论 3 · 本次 HF 热榜第 89 位 · 仓库累计 Star 261（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +0 · Star +17。</p>
+<p><strong>中文概述：</strong>为了实现机器人在未知环境中的适应性，本文提出了一种名为GPT-Policy的通用智能体框架，旨在通过上下文学习（ICL）使机器人无需梯度更新即可从演示、示例和交互反馈中学习任务。该框架整合了上下文编译器、视觉语言模型（VLM）及约束控制器，能将信息转换为可验证的机器人行为。实验表明，该方法在真实机器人任务中能够通过人类视频演示和动作参考提升任务完成率，为VLM在实体机器人上的应用提供了实证基础。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>GPT-Policy框架通过上下文编译器、VLM动作规划和约束控制器，实现了无需梯度更新的上下文机器人学习。<br><small>摘要依据：GPT-Policy integrates a context compiler that preserves task-relevant visual transitions, a VLM that proposes robot-tool actions, and a constrained controller that verifies and executes each action and reports its outcome.</small></li>
+<li>在真实机器人实验中，即使没有机器人动作标签，引入人类视频演示也能有效提升任务完成效果。<br><small>摘要依据：In real-robot trials, human video demonstrations improve task completion even without robot action labels, while aligned action references yield further gains on contact-sensitive tasks.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>视觉语言动作</p>
+<p><strong>原文摘要节选：</strong>Enabling robots to adapt to unfamiliar environments as readily as humans remains a moonshot goal of embodied AI. No finite collection of demonstrations can cover every task and situation a robot will encounter, making the ability to learn from context at deployment essential for generalization. Such in-context learning (ICL), however, remains largely beyond the reach of existing robotic policies. The broad agentic capabilities of commercial vision-language models (VLMs), such as GPT-6 Astra, raise a compelling question: can these models learn from demonstrations, examples, and interaction feedback, then translate that information into executable and verifiable robot behavior from a new initial state without gradient updates or persistent changes to task-specific parameters? We introduce…</p>
+<p><a href="https://arxiv.org/abs/2609.19138">论文原文</a> · <a href="https://arxiv.org/pdf/2609.19138">PDF</a> · <a href="https://huggingface.co/papers/2609.19138">讨论与热度</a> · <a href="https://github.com/cheng-haha/GPT-Policy">代码</a></p><hr>
+<h2>2. From Pretraining to Proficiency: Real-World Subtask RL for Long-Horizon Manipulation with Minimal Human Intervention</h2>
+<p><strong>机器人 / 强化学习</strong> · 发表 2026-09-18 · 综合分 5.35</p>
+<p>Zotero 摘要相关性：0.539（相似度分数，不是概率）。</p>
+<p>HF 点赞 5 · 讨论 2</p>
+<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +1。</p>
+<p><strong>规则标签：</strong>强化学习</p>
+<p><strong>中文概述：</strong>针对机器人长序列操作任务中预训练策略在关键子任务上的失败问题，本文提出了PARTS框架。该方法通过引入子任务选择器和成功验证器，专注于瓶颈环节的强化学习微调。在保持预训练策略作为基础动作输出的同时，利用局部奖励信号指导残差策略学习，减少了对完整任务演示和人工干预的依赖。实验表明，该方法在双臂及单臂任务中显著提升了整体任务的成功率。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>PARTS框架通过在瓶颈环节集中练习，并利用局部奖励进行残差修正，有效解决了长序列任务中稀疏奖励的学习困难。<br><small>摘要依据：We present PARTS (Policy Adaptation with RL on Targeted Subtasks), a real-world subtask RL framework that concentrates practice at these bottlenecks while allowing training rollouts to proceed with minimal human intervention.</small></li>
+<li>在相同机器人部署预算下，PARTS相较于现有微调方法，将完整任务成功率提升了超过25%，且降低了人工操作需求。<br><small>摘要依据：Compared with existing real-world RL fine-tuning methods, PARTS raises full-task success by more than 25% under the same robot-rollout budget while requiring less human involvement.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 强化学习 · Sim-to-Real</p>
+<p><strong>原文摘要节选：</strong>A pretrained robot foundation policy may execute most of a long-horizon task yet repeatedly fail at a few critical subtasks. Collecting additional full-task demonstrations for supervised fine-tuning (SFT) requires operators to repeat behaviors the policy already performs well. Reinforcement learning (RL) fine-tuning offers a promising path to bridge this gap, but existing approaches struggle to solve long-horizon tasks using only sparse rewards. We present PARTS (Policy Adaptation with RL on Targeted Subtasks), a real-world subtask RL framework that concentrates practice at these bottlenecks while allowing training rollouts to proceed with minimal human intervention. The frozen pretrained policy supplies nominal actions throughout execution, while agent-generated selectors and success…</p>
+<p><a href="https://arxiv.org/abs/2609.21788">论文原文</a> · <a href="https://arxiv.org/pdf/2609.21788">PDF</a> · <a href="https://huggingface.co/papers/2609.21788">讨论与热度</a></p><hr>
+<h2>3. Don&#x27;t Mask the Environment: Observation Supervision Changes How Agents Explore Under RL</h2>
+<p><strong>强化学习</strong> · 发表 2026-09-17 · 综合分 5.27</p>
+<p>Zotero 摘要相关性：0.440（相似度分数，不是概率）。</p>
+<p>HF 点赞 40 · 讨论 3</p>
+<p>较上次观测（1.0 天前）：点赞 +11 · 讨论 +0。</p>
+<p><strong>规则标签：</strong>强化学习 · 大模型后训练</p>
+<p><strong>中文概述：</strong>针对强化学习中代理轨迹监督微调（SFT）仅预测动作的局限性，本文提出ActObs方法，通过在SFT阶段增加对环境观测值的预测监督，引导策略建模动作后果。实验表明，在Qwen系列模型上使用GRPO进行强化学习后，ActObs相比仅预测动作的方法在Terminal-Bench 2.0等任务上展现出更好的性能，并能保留更多探索潜力，同时使最终策略更接近其SFT初始化状态。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>ActObs通过对轨迹中的观测值进行监督，使策略在不增加额外数据或计算负担的前提下，能够更好地建模动作后果。<br><small>摘要依据：Although deployed agents never generate observations, learning to predict them encourages the policy to model action consequences without adding data, parameters, sequence tokens, or forward passes.</small></li>
+<li>在Qwen3-4B模型上应用GRPO后，ActObs在Terminal-Bench 2.0的所有采样预算下均实现了更高的pass@k。<br><small>摘要依据：On Qwen3-4B, GRPO from ActObs achieves higher pass@k at every evaluated sampling budget than its action-only counterpart on Terminal-Bench 2.0.</small></li>
+<li>联合监督防止了动作与观测梯度间的单向专业化，有助于保持策略在强化学习过程中的熵，并减少策略偏移。<br><small>摘要依据：Joint supervision prevents this one-sided specialization, preserving consequence prediction and preparing the policy for downstream exploration.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习 · 大模型后训练 · 推理</p>
+<p><strong>原文摘要节选：</strong>Agent trajectories record what an agent does and what happens next. Yet standard supervised fine-tuning (SFT) applies loss only to agent-authored action tokens, using environment observations as context but not as prediction targets. We ask whether this convention provides the best initialization for subsequent reinforcement learning. We introduce ActObs, which also supervises the observation tokens already present in each trajectory. Although deployed agents never generate observations, learning to predict them encourages the policy to model action consequences without adding data, parameters, sequence tokens, or forward passes. The methods perform similarly after SFT but diverge after GRPO. On Qwen3-4B, GRPO from ActObs achieves higher pass@k at every evaluated sampling budget than its…</p>
+<p><a href="https://arxiv.org/abs/2609.20715">论文原文</a> · <a href="https://arxiv.org/pdf/2609.20715">PDF</a> · <a href="https://huggingface.co/papers/2609.20715">讨论与热度</a></p><hr>
+<h2>4. Transferring the Intelligence of VLMs to Robotic Control</h2>
+<p><strong>机器人</strong> · 发表 2026-09-19 · 综合分 5.12</p>
+<p>Zotero 摘要相关性：0.477（相似度分数，不是概率）。</p>
+<p>HF 点赞 101 · 讨论 2</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>中文概述：</strong>本文探讨了视觉语言模型（VLM）在数字世界到物理世界任务中的泛化潜力。作者提出了RoboDawn接口，通过离散化控制指令使VLM能够闭环控制机器人。结合上下文学习（ICL）方案，该模型无需任务特定的机器人训练即可执行操作。实验结果显示，RoboDawn在多个机器人基准测试中优于现有的基准策略，并能在真实世界的Franka机器人上实现物体堆叠等操作，展示了其跨环境的迁移能力。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出RoboDawn接口，利用离散控制指令实现VLM对机器人的闭环控制，且无需进行任务特定的机器人训练。<br><small>摘要依据：We investigate this question through RoboDawn, a human-intuitive interface that exposes robotic control to an agentic VLM through a compact set of discrete translation, rotation, and gripper commands. Using this interface, the VLM controls a robot in a closed loop: it observes the current visual state, reasons about the next action, executes it, and adapts subsequent decisions to the resulting state.</small></li>
+<li>引入上下文学习方案，通过少量演示示例显著提升了模型在任务执行中的成功率。<br><small>摘要依据：Furthermore, we introduce an in-context learning (ICL) scheme that uses a few demonstrations to ground the VLM in both interface usage and task-solving strategies.</small></li>
+<li>实验证明RoboDawn在零样本和单样本设置下均表现出色，并在RoboTwin 2.0 C2R和RoboDojo等基准测试中超越了现有基准策略。<br><small>摘要依据：In the zero-shot setting, RoboDawn outperforms several strong policies trained on benchmarkspecific robot data, while a single in-context demonstration further yields substantial performance gains and establishes state-of-the-art (SOTA) results.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · Sim-to-Real · 视觉语言动作</p>
+<p><strong>原文摘要节选：</strong>Humans can seamlessly adapt to both physical and digital worlds, suggesting that while a digital-to-real gap exists in embodiment, environment and task, human intelligence itself may transfer across this gap. This naturally raises a fundamental question: can the intelligence of vision-language models (VLMs) similarly generalize from the digital world to the physical world for robotic control? We investigate this question through RoboDawn, a human-intuitive interface that exposes robotic control to an agentic VLM through a compact set of discrete translation, rotation, and gripper commands. Using this interface, the VLM controls a robot in a closed loop: it observes the current visual state, reasons about the next action, executes it, and adapts subsequent decisions to the resulting state.…</p>
+<p><a href="https://arxiv.org/abs/2609.22966">论文原文</a> · <a href="https://arxiv.org/pdf/2609.22966">PDF</a> · <a href="https://huggingface.co/papers/2609.22966">讨论与热度</a></p><hr>
+<h2>5. MintAct: A Unified Visual Agent for Digital Environments</h2>
+<p><strong>强化学习</strong> · 发表 2026-09-18 · 综合分 5.11</p>
+<p>Zotero 摘要相关性：0.465（相似度分数，不是概率）。</p>
+<p>HF 点赞 14 · 讨论 1</p>
+<p>较上次观测（1.0 天前）：点赞 +2 · 讨论 +1。</p>
+<p><strong>规则标签：</strong>强化学习 · 导航</p>
+<p><strong>中文概述：</strong>本文提出了MintAct，这是一个包含2B、4B和8B参数规模的视觉语言模型系列，旨在统一数字环境中的UI定位、跨平台多步导航以及视觉工具使用。作者通过构建可扩展的环境与异步强化学习基础设施，优化了跨域训练分布。实验结果表明，该模型在多个基准测试中达到了与领域专用模型相当的性能，并在OSWorld-Verified测试中取得了48.9分的成绩。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>MintAct通过统一的设计实现了单一模型在UI定位、跨平台导航及视觉工具使用任务上与领域专用模型相当的性能。<br><small>摘要依据：Through careful design of our environments, data, and training recipes, MintAct models match the performance of per-domain specialists across all of these capabilities.</small></li>
+<li>该研究开发了一种异步强化学习框架，能有效处理跨域训练分布，并在噪声环境反馈和离线策略漂移下保持稳定。<br><small>摘要依据：To enable efficient and scalable RL training, an asynchronous framework keeps explicit control over the cross-domain training distribution and remains stable under noisy environment feedback and off-policy drift.</small></li>
+<li>MintAct模型在OSWorld-Verified基准测试上取得了48.9分，在同等模型规模下展现了最先进的性能。<br><small>摘要依据：Experimental results show that MintAct achieves state-of-the-art performance (48.9 on OSWorld-Verified) across a wide range of benchmarks at comparable model sizes.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习 · 推理</p>
+<p><strong>原文摘要节选：</strong>We present MintAct, a family of vision-language models that unifies UI grounding, multi-step navigation across mobile, desktop, and web, and visual tool use, trained at 2B, 4B, and 8B scales. Through careful design of our environments, data, and training recipes, MintAct models match the performance of per-domain specialists across all of these capabilities. To enable this, we develop a scalable environment and reinforcement learning (RL) infrastructure. On the environment side, we host hundreds of concurrent instances across heterogeneous per-domain backends, serving both trajectory data collection and online RL. To enable efficient and scalable RL training, an asynchronous framework keeps explicit control over the cross-domain training distribution and remains stable under noisy…</p>
+<p><a href="https://arxiv.org/abs/2609.22083">论文原文</a> · <a href="https://arxiv.org/pdf/2609.22083">PDF</a> · <a href="https://huggingface.co/papers/2609.22083">讨论与热度</a></p><hr>
+<h2>6. RSIAgent: Autonomous Exploration for Recursive Self-improvement in New Environments</h2>
+<p><strong>通用 AI</strong> · 发表 2026-09-14 · 综合分 5.09</p>
+<p>Zotero 摘要相关性：0.421（相似度分数，不是概率）。</p>
+<p>HF 点赞 81 · 讨论 2 · 本次 HF 热榜第 40 位 · 仓库累计 Star 399（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +3 · 讨论 +0 · Star +19。</p>
+<p><strong>规则标签：</strong>多智能体</p>
+<p><strong>中文概述：</strong>针对数字智能体难以适应复杂新环境的问题，本文提出了RSIAgent框架。该方法通过构建课程、执行和验证智能体，利用递归自我改进机制自主探索环境并构建记忆。系统采用由广度到深度的探索策略，提取动作、条件与后果间的因果关系并将其冻结为记忆，实现无需参数更新的任务适应。实验显示该框架能提升开源模型在OSWorld-v2等基准测试中的表现。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>RSIAgent通过多智能体协作进行递归自我改进，构建并保存特定环境的知识库，无需更新模型参数即可在下游任务中实现知识复用。<br><small>摘要依据：We introduce RSIAgent, a training-free multi-agent framework for recursive self-improvement through autonomous memory construction. RSIAgent coordinates curriculum, actor, and verifier agents to continually explore the environment, validate outcomes, and retain environment-specific knowledge, including reusable causal relationships between actions, conditions, and consequences.</small></li>
+<li>该框架采用由广度到深度的递归探索策略，以发掘环境结构、边界条件及隐藏的因果依赖关系。<br><small>摘要依据：It further adopts a broad-then-deep exploration strategy, combining parallel broad recursive self-exploration for discovering diverse environment structures with focused deep self-exploration for uncovering hard cases, hidden constraints, boundary conditions, and previously unknown causal dependencies.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>
+<p><strong>原文摘要节选：</strong>Digital agents must often adapt to new environments whose interfaces, tools, and failure modes are not fully captured by pretrained models. We introduce RSIAgent, a training-free multi-agent framework for recursive self-improvement through autonomous memory construction. RSIAgent coordinates curriculum, actor, and verifier agents to continually explore the environment, validate outcomes, and retain environment-specific knowledge, including reusable causal relationships between actions, conditions, and consequences. It further adopts a broad-then-deep exploration strategy, combining parallel broad recursive self-exploration for discovering diverse environment structures with focused deep self-exploration for uncovering hard cases, hidden constraints, boundary conditions, and previously…</p>
+<p><a href="https://arxiv.org/abs/2609.15364">论文原文</a> · <a href="https://arxiv.org/pdf/2609.15364">PDF</a> · <a href="https://huggingface.co/papers/2609.15364">讨论与热度</a> · <a href="https://github.com/AetherLabsAI/RSIAgent">代码</a></p><hr>
+<h2>7. CodeMidas: Scaling Agentic Coding RL Environments from Code Itself</h2>
+<p><strong>强化学习</strong> · 发表 2026-09-18 · 综合分 5.07</p>
+<p>Zotero 摘要相关性：0.376（相似度分数，不是概率）。</p>
+<p>HF 点赞 107 · 讨论 3</p>
+<p>较上次观测（1.0 天前）：点赞 +19 · 讨论 +1。</p>
+<p><strong>规则标签：</strong>强化学习 · 大模型后训练</p>
+<p><strong>中文概述：</strong>本文提出CodeMidas，旨在解决编码代理在强化学习（RL）训练中任务规模受限的问题。该方法以现有代码库的源代码为唯一输入，通过代理自动化流水线自动提取功能性任务，包括制定行为规范、构建测试及验证筛选。实验结果表明，在这些任务上训练的MiMo-V2.5模型在多个基准测试（如DeepSWE、ProgramBench、Terminal-Bench）中均表现出性能提升，证明了利用源代码扩展RL环境的有效性。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>CodeMidas通过自动化流水线将源代码转化为可执行的RL任务，无需依赖issue或commit等开发记录，从而实现大规模环境构建。<br><small>摘要依据：CodeMidas, an agentic pipeline that turns implemented functionality in existing codebases into executable RL environments using source code as its only task-specific input.</small></li>
+<li>在CodeMidas生成的5,545个任务上训练MiMo-V2.5模型，显著提升了代理在代码修复、程序构建及终端操作任务上的性能。<br><small>摘要依据：Training MiMo-V2.5 on these tasks with GRPO improves performance on all five diverse benchmarks, covering issue repair (DeepSWE + 11.7%), whole-program construction (ProgramBench +17%), and terminal work (Terminal-Bench v2.1 +8.5%).</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习</p>
+<p><strong>原文摘要节选：</strong>Training capable coding agents via reinforcement learning (RL) requires diverse tasks with reliable verifiers. Open-source codebases offer a rich source of such tasks, while existing methods typically rely on development artifacts such as issues and commits, limiting the range of tasks that can be extracted. To better scale RL environments, we present CodeMidas, an agentic pipeline that turns implemented functionality in existing codebases into executable RL environments using source code as its only task-specific input. CodeMidas allocates agentic compute to every stage of environment construction: agents explore implemented functionality to formulate behavioral specifications, construct tests grounded in execution of the original code, and validate and filter candidate tasks through…</p>
+<p><a href="https://arxiv.org/abs/2609.22068">论文原文</a> · <a href="https://arxiv.org/pdf/2609.22068">PDF</a> · <a href="https://huggingface.co/papers/2609.22068">讨论与热度</a></p><hr>
+<h2>8. RecreationWorld: Scalable and Verifiable Environments for Hybrid Computer-Use Agents</h2>
+<p><strong>通用 AI</strong> · 发表 2026-09-18 · 综合分 5.05</p>
+<p>Zotero 摘要相关性：0.380（相似度分数，不是概率）。</p>
+<p>HF 点赞 64 · 讨论 3 · 本次 HF 热榜第 30 位 · 仓库累计 Star 64（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +4 · 讨论 +1 · Star +32。</p>
+<p><strong>中文概述：</strong>针对现有计算机使用智能体（CUA）在图形界面交互与软件开发能力分离的问题，本文提出了RecreationWorld框架。该框架要求智能体通过观测参考程序行为，自主决策并实现软件复现。RecreationWorld支持多平台环境及统一的GUI控制与编程工具，并通过参考程序提供执行验证奖励。实验表明，基于此框架生成的轨迹能提升模型在跨分布任务中的表现，并能更频繁地进行输出验证。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>RecreationWorld框架支持Ubuntu、macOS、Windows、Android及Web五种平台，并提供统一的GUI控制与编程工具进行交互与开发。<br><small>摘要依据：RecreationWorld provides reproducible environments on Ubuntu, macOS, Windows, Android, and Web, plus a unified harness with native GUI control and coding tools.</small></li>
+<li>基于该框架训练的模型在五个分布外（OOD）编码与混合计算机使用基准测试中表现出性能提升，且具备更强的输出验证能力。<br><small>摘要依据：Models trained on these trajectories improve across five out-of-distribution coding and hybrid computer-use benchmarks and more frequently verify their rendered outputs, providing evidence of transfer beyond recreation.</small></li>
+<li>研究构建了包含250个跨领域任务的RecreationBench基准，支持基于程序化与视觉断言的自动化打分。<br><small>摘要依据：For held-out evaluation, we introduce RecreationBench, comprising 250 diverse tasks across domains and platforms. Reference-grounded programmatic and visual assertions cover action-conditioned outcomes at multiple interaction depths</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 推理</p>
+<p><strong>原文摘要节选：</strong>Computer-use agents (CUAs) have advanced along two separate lines: graphical interaction and software development through code and the command line. Real digital work requires both, interleaved rather than stacked end to end. We study hybrid CUAs that autonomously decide when to explore an interface, implement software, and run and visually verify their artifacts. We introduce RecreationWorld, a five-platform framework built around recreation: given a running reference, an agent must discover its behavior and build a faithful implementation with no prescribed workflow. RecreationWorld provides reproducible environments on Ubuntu, macOS, Windows, Android, and Web, plus a unified harness with native GUI control and coding tools. The running reference serves as an oracle for hidden…</p>
+<p><a href="https://arxiv.org/abs/2609.22000">论文原文</a> · <a href="https://arxiv.org/pdf/2609.22000">PDF</a> · <a href="https://huggingface.co/papers/2609.22000">讨论与热度</a> · <a href="https://github.com/QwenLM/RecreationWorld">代码</a></p><hr>
+<h2>9. Show-Harness: Just a VLM Agent Can Play Robots</h2>
+<p><strong>机器人</strong> · 发表 2026-09-09 · 综合分 5.00</p>
+<p>Zotero 摘要相关性：0.467（相似度分数，不是概率）。</p>
+<p>HF 点赞 160 · 讨论 4 · 本次 HF 热榜第 84 位 · 仓库累计 Star 443（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +0 · 讨论 +0 · Star +7。</p>
+<p><strong>规则标签：</strong>视觉语言动作</p>
+<p><strong>中文概述：</strong>针对视觉语言模型（VLM）难以直接转化为机器人控制的问题，本文提出了Show-Harness框架。该框架构建了一个紧凑的语义接口，将意图与动作连接，通过离散语义动作单元使VLM能够进行推理，并由特定解释器将其转化为局部机器人动作。作者声称该方法能直接实现闭源模型的零样本机器人控制，并通过少量微调适配开源模型，同时支持基于图形界面的演示收集。实验表明，该方法在多任务、多实体及多环境场景下表现出良好的泛化能力。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>Show-Harness通过引入语义动作接口，使VLM无需额外模型容量或特定具身预训练，即可直接执行机器人控制任务。<br><small>摘要依据：These results suggest that the right interface can unlock substantial embodied capability from foundation VLMs, without requiring additional model capacity or costly embodiment-specific pretraining.</small></li>
+<li>该框架支持利用GUMI界面进行无需专业遥控硬件的演示收集，并实现了闭源VLM的零样本控制及开源VLM的轻量级微调。<br><small>摘要依据：Show-Harness demonstrates the feasibility of (1) directly unlocking closed-source frontier VLMs for zero-shot robot control, and (2) adapting small-scale open-source VLMs for low-cost deployment with just a few GPU-hours of fine-tuning.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 视觉语言动作</p>
+<p><strong>原文摘要节选：</strong>Foundation vision-language models (VLMs) exhibit broad intelligence about the world, yet translating this intelligence into robot control remains challenging. We present Show-Harness, an Embodied Harness that enables VLMs to &quot;play&quot; robots through a compact semantic interface linking intent to action. Show-Harness exposes discrete semantic action units that VLMs can naturally reason over, while embodiment-specific interpreters deterministically ground them into local robot actions, keeping the VLM directly responsible for fine-grained physical decisions. Through the same interface, Show-Harness demonstrates the feasibility of (1) directly unlocking closed-source frontier VLMs for zero-shot robot control, and (2) adapting small-scale open-source VLMs for low-cost deployment with just a few…</p>
+<p><a href="https://arxiv.org/abs/2609.10522">论文原文</a> · <a href="https://arxiv.org/pdf/2609.10522">PDF</a> · <a href="https://huggingface.co/papers/2609.10522">讨论与热度</a> · <a href="https://github.com/showlab/Show-Harness">代码</a></p><hr>
+<h2>10. Dream-RSI: Recursive Self-Improvement through Evolving Worlds</h2>
+<p><strong>通用 AI</strong> · 发表 2026-09-14 · 综合分 4.96</p>
+<p>Zotero 摘要相关性：0.385（相似度分数，不是概率）。</p>
+<p>HF 点赞 242 · 讨论 3 · 本次 HF 热榜第 11 位 · 仓库累计 Star 1090（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +2 · 讨论 +0 · Star +58。</p>
+<p><strong>中文概述：</strong>针对自主AI智能体在复杂领域中进行递归自我改进时面临的探索策略瓶颈，Dream-RSI框架提出了一种基于演化世界模型的方案。该框架通过轻量级编排层，利用积累的发现历史构建重放模拟器，使智能体能够在模拟器中进行“梦境”训练以获取低成本离线反馈，从而优化探索策略。作者声称该方法在算法工程、数学优化及GPU内核工程任务中，在显著降低发现成本的同时，实现了具有竞争力的发现质量。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>Dream-RSI通过利用历史发现记录构建重放模拟器，实现了低成本的离线策略评估与改进，避免了高昂的重复在线调用。<br><small>摘要依据：By performing dreaming in the replay simulator constructed from historical discovery trees, Dream-RSI secures immediate, low-cost off-policy feedback to evaluate and refine exploration policies without invoking repetitive, expensive online evaluations.</small></li>
+<li>在算法工程、数学优化及GPU内核工程等多个任务中，Dream-RSI在保持竞争性探索成果的同时，有效降低了计算成本。<br><small>摘要依据：Across algorithm engineering, mathematical optimization, and GPU kernel engineering, Dream-RSI achieves competitive or improved discovery quality while substantially reducing discovery cost in several settings.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>
+<p><strong>原文摘要节选：</strong>Recursive self-improvement is becoming increasingly vital for autonomous AI agents, where progress hinges on discovering high-value solutions across complex domains. The driver of this process is effective exploration, however, managing and improving exploration strategies remains a major bottleneck. Current systems face a fundamental dilemma: fixed strategies fail to adapt as search spaces scale, while online policy optimization requires navigating vast meta-search spaces under delayed and expensive feedback over long-horizon rollouts. We introduce Dream-RSI, a framework for scalable and recursively self-improving exploration. A lightweight orchestration layer makes exploration explicit and programmable while leaving the underlying coding agent unchanged. Our key insight is that…</p>
+<p><a href="https://arxiv.org/abs/2609.14858">论文原文</a> · <a href="https://arxiv.org/pdf/2609.14858">PDF</a> · <a href="https://huggingface.co/papers/2609.14858">讨论与热度</a> · <a href="https://github.com/zhengkid/Dream-RSI">代码</a></p><hr></body></html>
