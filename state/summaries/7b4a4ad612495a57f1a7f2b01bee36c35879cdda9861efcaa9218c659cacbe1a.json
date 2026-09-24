@@ -1,0 +1,17 @@
+{
+  "overview": "针对现有视频游戏AI基准测试范围狭窄、缺乏语言指令及在线测试方差大等问题，本文提出了GameHorizon套件。该套件包含自动化标注流水线、包含5000小时AAA游戏数据的多时间尺度数据集，以及支持离线与分步在线评估的基准测试。作者通过对47种模型进行测试，旨在提供一个标准化工具，用以评估模型在视觉理解、指令分解及长周期目标规划方面的游戏表现。",
+  "highlights": [
+    {
+      "text": "构建了首个包含视频、玩家动作及多时间尺度指令的AAA级游戏大型数据集，涵盖21款游戏共5000小时的专家录制数据。",
+      "evidence": "utilizing the pipeline, we construct GameHorizon-Data, the first large-scale AAA gameplay dataset with temporally aligned videos, player actions, and multi-horizon instructions. It comprises 5,000 hours of recordings from 21 games, collected by 100 human expert players."
+    },
+    {
+      "text": "开发了GameHorizon-Bench，通过离线与在线双轨评估，支持对游戏能力进行跨时间尺度的标准化测试与故障定位。",
+      "evidence": "Third, we build GameHorizon-Bench with reproducible offline and stepwise online testing. The offline track enables reproducible evaluation using thousands of standardized questions organized into three primary tasks and a series of diagnostic variants, while the online track tests whether offline scores reflect actual gameplay capabilities and localizes failures to specific steps within long-horizon gameplay."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "推理"
+  ]
+}

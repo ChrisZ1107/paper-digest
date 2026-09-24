@@ -1,0 +1,17 @@
+{
+  "overview": "针对软件工程（SWE）智能体在多任务学习中表现不均衡的问题，作者提出了一种类别感知的专家训练与策略整合框架。该框架通过SWE Labeler系统进行任务分类，结合长周期Agentic-miniRL与“刷新-修复-扩展”（RRE）机制迭代训练类别专家，并利用标签路由的多教师在线策略蒸馏（MOPD）将专家模型整合为单一学生模型。实验结果显示，该方法在Pro-618和SWE-bench Multilingual基准测试上均提升了任务解决率。",
+  "highlights": [
+    {
+      "text": "提出一种名为MOPD的多教师在线策略蒸馏方法，通过ReLU门控奖励外推技术，将多个类别专家的优势整合至单一模型中。",
+      "evidence": "Label-routed multi-teacher on-policy distillation (MOPD) consolidates the experts into one deployable student, with ReLU-gated reward extrapolation keeping only each teacher's improving direction over the reference."
+    },
+    {
+      "text": "该框架无需外部模型提供动作目标或解法轨迹，即可实现专家训练与策略整合。",
+      "evidence": "Expert training and policy integration require no external model to provide solution trajectories or action targets."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "推理"
+  ]
+}

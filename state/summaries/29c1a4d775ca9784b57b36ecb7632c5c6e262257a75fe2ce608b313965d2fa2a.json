@@ -1,0 +1,17 @@
+{
+  "overview": "针对大语言模型智能体框架（harness）递归自我改进过程中出现的过拟合现象，本文提出了一种正则化递归自我改进方法（RRSI）。该方法通过在候选建议阶段引入时间退火预算与轨迹探索机制，并在选择阶段配备评估器与修剪器，旨在限制针对特定任务的过度优化，从而提升框架的泛化能力和效率。实验结果表明，该方法在多个任务基准上实现了性能提升，并降低了策略词元开销。",
+  "highlights": [
+    {
+      "text": "RRSI通过正则化约束候选建议与选择过程，有效缓解了递归进化中因记忆训练任务导致的过拟合问题，增强了智能体机制的泛化性。",
+      "evidence": "We introduce Regularized Recursive Self-Improvement of Agent Harnesses (RRSI), which incorporates the principles of regularizations into harness self-improvement by constraining the evolution candidate proposal and selection."
+    },
+    {
+      "text": "在八个任务基准测试中，RRSI不仅在训练分布上获得性能提升，在分布外基准上最高提升了4.7个点，且大幅降低了推理成本。",
+      "evidence": "Across eight benchmarks spanning coding, agentic workspace and engineering design tasks, RRSI gains up to 14.1 points on the split it evolves against and up to 4.7 points on the five out-of-distribution benchmarks, while producing a harness that runs on 30% fewer policy tokens than the unregularized evolution."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "推理"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "overview": "针对被动轮式空地两用车辆（TABV）的运动控制问题，作者提出了一种基于学习的空地运动控制框架。该框架包含一个基于历史距离测量与机器人状态的自动模式切换器，以及一个结合本体感受与未来轨迹参考的强化学习轨迹跟踪策略。实验表明，该方法在受限感知条件下实现了可靠的空地模式切换，并在多地形环境下保持了鲁棒的地面跟踪性能。",
+  "highlights": [
+    {
+      "text": "提出了一种基于强化学习的轨迹跟踪控制策略，通过多地形训练和动力学随机化，提升了在不同地面环境下的跟踪鲁棒性。",
+      "evidence": "For ground locomotion, multi-terrain training and dynamics randomization enable robust tracking across different terrains."
+    },
+    {
+      "text": "开发的自动模式切换器利用历史飞行时间传感器数据和未来参考信息，在复杂空地转换场景中表现优于基于规则的切换方法。",
+      "evidence": "The learned selector outperforms a rule-based mode selector in challenging transitions"
+    },
+    {
+      "text": "集成系统在包含多次自主模式切换的101米空地轨迹测试中，实现了0.08米的定位均方根误差（RMSE）。",
+      "evidence": "With these capabilities integrated, the system tracks a 101m air-ground trajectory through multiple autonomous mode transitions with a position RMSE of 0.08m."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "Sim-to-Real"
+  ]
+}

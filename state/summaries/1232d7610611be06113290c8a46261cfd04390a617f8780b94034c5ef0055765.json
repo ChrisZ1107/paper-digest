@@ -1,0 +1,18 @@
+{
+  "overview": "针对动态物体操作的高质量演示生成难题，本文提出了DynaForge框架。该方法结合了低频全局规划与高频物体中心逆运动学，并引入基于残差强化学习的动作修正机制。通过隐式课程学习聚焦于技能提升前沿，作者声称该框架在九项模拟任务中显著提高了演示生成成功率，并在真实世界动态任务中表现出优于DOMINO基线方法的Sim-to-Real迁移能力。",
+  "highlights": [
+    {
+      "text": "DynaForge引入了规划引导的残差学习框架，在模拟任务中显著提升了演示生成的成功率。",
+      "evidence": "Across nine simulation tasks, DynaForge increases mean demonstration-generation success from 41.30% of the planning prior to 78.37%."
+    },
+    {
+      "text": "基于DynaForge生成的演示数据训练出的策略，在真实世界动态任务中展现出更好的迁移效果。",
+      "evidence": "On three real-world dynamic tasks, DynaForge-trained policies achieve 30-60% success, compared with 0-10% for DOMINO-trained policies, showing the ability of DynaForge for sim-to-real transfer."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "Sim-to-Real",
+    "强化学习"
+  ]
+}

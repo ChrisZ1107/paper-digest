@@ -1,0 +1,16 @@
+{
+  "overview": "针对视频世界模型在长序列与多视角下难以保持一致性的问题，作者提出了WorldCrafter。该模型通过引入可查询的隐式3D感知记忆机制，利用记忆编码器和姿态条件读取模块，将多视角历史观测压缩至固定数量的视角相关Token中，结合时间上下文与蒸馏技术，实现了从单张图片或文本提示出发的场景流式探索。实验表明，该方法在长序列一致性与相机控制准确性方面具有显著提升。",
+  "highlights": [
+    {
+      "text": "提出了一种隐式3D感知记忆机制，通过视角引导将多视角历史观测压缩至有限的Token预算中，从而增强了视频生成的一致性。",
+      "evidence": "The key insight is to let the requested viewpoint shape how multi-view evidence is compressed into the video generator's limited token budget."
+    },
+    {
+      "text": "WorldCrafter能够支持长达分钟级的场景探索，并在保持视觉质量的同时，显著提高了长序列的一致性和相机控制精度。",
+      "evidence": "Experiments across static and dynamic scenes show substantial gains in long-horizon consistency and camera-control accuracy while preserving visual quality during minute-scale exploration."
+    }
+  ],
+  "tags": [
+    "世界模型"
+  ]
+}

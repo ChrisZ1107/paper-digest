@@ -1,0 +1,17 @@
+{
+  "overview": "针对四足机器人在稀疏航点引导下避障困难的问题，作者提出了LOOP（潜变量循环占用滚动策略）。该策略通过循环预测器根据历史占用和自身速度数据，预测未来1秒的占用情况，并结合地图特征与几何风险估计进行速度选择。实验结果表明，该方法在模拟环境中的避障成功率优于对比基线，且在实机测试中实现了无碰撞运行，具有良好的部署可行性。",
+  "highlights": [
+    {
+      "text": "LOOP通过引入循环占用预测机制，能够在稀疏的导航引导下实现对动态障碍物的有效避让。",
+      "evidence": "From occupancy and ego-velocity histories, a recurrent predictor forecasts future occupancy over a 1 s horizon by warping the current map with learned flow and visibility gates."
+    },
+    {
+      "text": "在Isaac Lab仿真测试中，LOOP的避障表现优于重训练的反应式基线，并在实机部署中表现稳定。",
+      "evidence": "In encounter-synchronised Isaac Lab evaluations, LOOP achieves 57.1% head-on success at obstacle speeds of 2.5-3.2 m/s, exceeding a retrained reactive baseline by 8.2 percentage points."
+    }
+  ],
+  "tags": [
+    "足式运动",
+    "导航"
+  ]
+}

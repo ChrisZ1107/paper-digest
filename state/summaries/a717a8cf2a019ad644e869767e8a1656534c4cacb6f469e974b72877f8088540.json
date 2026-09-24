@@ -1,0 +1,14 @@
+{
+  "overview": "本文针对轮式装载机在土方作业中的V型循环自动化问题，提出了一种结合长周期几何规划与数据驱动预测控制的分层框架。作者利用简化的铰接运动学模型进行轨迹规划，并采用两个深度双线性Koopman模型来捕获复杂车辆动力学。在高性能仿真环境下验证表明，该方法能够实现实时轨迹跟踪，为铰接式重型机械的自主化提供了一种高效的控制策略。",
+  "highlights": [
+    {
+      "text": "提出了一种基于深度双线性Koopman模型的分层框架，能够有效建模装载机在V型循环中的非线性动力学特征。",
+      "evidence": "To capture the vehicle dynamics, two data-driven deep bilinear Koopman models are learned for the forward and reverse motions using data generated from high-fidelity simulations in Algoryx Dynamics."
+    },
+    {
+      "text": "该框架具有计算高效的优势，控制循环执行周期达到50毫秒，满足实时性要求。",
+      "evidence": "The resulting controller operates in real time within a 50-ms execution loop."
+    }
+  ],
+  "tags": []
+}

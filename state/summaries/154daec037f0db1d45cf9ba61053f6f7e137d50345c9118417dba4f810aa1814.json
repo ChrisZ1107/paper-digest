@@ -1,0 +1,17 @@
+{
+  "overview": "针对当前机器人策略在动态操作场景下评估不足的问题，本文提出了MotionForge，这是一个专门用于评估领域迁移和长跨度交互的仿真基准及数据生成流水线。该基准包含40项动态交互任务，支持系统化评估策略在单因素及联合领域迁移下的鲁棒性，并引入了延迟敏感的执行协议。研究显示，现有的通用机器人策略在应对联合领域迁移时的表现存在显著局限性。",
+  "highlights": [
+    {
+      "text": "MotionForge基准通过引入延迟敏感的执行协议和系统化的领域迁移评估，解决了现有动态操作任务中评估维度单一和长跨度交互支持不足的问题。",
+      "evidence": "To bridge these gaps, we introduce MotionForge, the first large- scale simulation benchmark and data-generation pipeline tailored to jointly evaluate domain shifts and long-horizon interaction in dynamic manipulation."
+    },
+    {
+      "text": "该基准支持对单因素及包含背景、光照、物体和速度变化的联合领域迁移进行系统性鲁棒性评估。",
+      "evidence": "Our benchmark introduces two key novelties: (1) a systematic evaluation protocol for assessing policy robustness under both single-factor (e.g., only backgrounds shift) and joint domain shifts (e.g., simultaneous shifts of objects, backgrounds, lighting, and speed)"
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "Sim-to-Real"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "overview": "针对当前视频生成模型在处理复杂指令（如物理一致性、特定身份保持等）时的局限，本文提出了一种名为VideoGen-Agent的多模态智能体。该智能体通过多任务智能强化学习进行训练，利用监督微调和强化学习策略来协调辅助工具、视频生成与验证。实验表明，该智能体能够通过工具调用提升生成质量，并在专门设计的VABench基准测试中优于基础生成模型。",
+  "highlights": [
+    {
+      "text": "提出VideoGen-Agent多模态智能体，通过多任务强化学习与工具调用优化视频生成过程。",
+      "evidence": "In this paper, we present VideoGen-Agent, a multimodal agent trained through multitask agentic reinforcement learning to use external tools for video generation."
+    },
+    {
+      "text": "建立VABench基准测试，实验显示该智能体相较于基础生成模型有显著性能提升。",
+      "evidence": "On VABench, VideoGen-Agent improves over its base text-to-video generator by 19.1 points, from 56.5 to 75.6."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "推理"
+  ]
+}
