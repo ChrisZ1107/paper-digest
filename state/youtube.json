@@ -449,6 +449,123 @@
     "l_VXYUC9L9g": {
       "video_id": "l_VXYUC9L9g",
       "papers": []
+    },
+    "k3h3Md_1wDo": {
+      "video_id": "k3h3Md_1wDo",
+      "video_title": "Self-Organizing Agent Teams Learn to Reason Together (Sep 2026)",
+      "published": "2026-09-24",
+      "video_url": "https://www.youtube.com/watch?v=k3h3Md_1wDo",
+      "papers": [
+        {
+          "id": "2609.22682",
+          "title": "Self-Organizing Agent Teams Learn to Reason Together (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.22682"
+        }
+      ]
+    },
+    "bbkEfCji5q8": {
+      "video_id": "bbkEfCji5q8",
+      "video_title": "WorldCrafter: Consistent Video World Model with Implicit 3D-aware Memory (Sep 2026)",
+      "published": "2026-09-24",
+      "video_url": "https://www.youtube.com/watch?v=bbkEfCji5q8",
+      "papers": [
+        {
+          "id": "2609.24984",
+          "title": "WorldCrafter: Consistent Video World Model with Implicit 3D-aware Memory (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.24984"
+        }
+      ]
+    },
+    "eDdYQ2wgdus": {
+      "video_id": "eDdYQ2wgdus",
+      "video_title": "ScientistTwo: Pioneering the Human Knowledge Frontier with Autonomous AI (Sep 2026)",
+      "published": "2026-09-24",
+      "video_url": "https://www.youtube.com/watch?v=eDdYQ2wgdus",
+      "papers": [
+        {
+          "id": "2609.19644",
+          "title": "ScientistTwo: Pioneering the Human Knowledge Frontier with Autonomous AI (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.19644"
+        }
+      ]
+    },
+    "cqhpbHQhRoU": {
+      "video_id": "cqhpbHQhRoU",
+      "video_title": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses (Sep 2026)",
+      "published": "2026-09-24",
+      "video_url": "https://www.youtube.com/watch?v=cqhpbHQhRoU",
+      "papers": [
+        {
+          "id": "2609.24972",
+          "title": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.24972"
+        }
+      ]
+    },
+    "rj2q2VxSgMQ": {
+      "video_id": "rj2q2VxSgMQ",
+      "video_title": "DexTouch-WM: Learning Action-Conditioned Tactile World Models from Human Touch for Dexterous Robot…",
+      "published": "2026-09-24",
+      "video_url": "https://www.youtube.com/watch?v=rj2q2VxSgMQ",
+      "papers": [
+        {
+          "id": "2609.20649",
+          "title": "DexTouch-WM: Learning Action-Conditioned Tactile World Models from Human Touch for Dexterous Robot Manipulation (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.20649"
+        }
+      ]
+    },
+    "yJFdCCYmZSY": {
+      "video_id": "yJFdCCYmZSY",
+      "video_title": "Lens Modeling and Cosmological Inference from an Impure Sample of Galaxy-Galaxy Strong Lenses",
+      "published": "2026-09-24",
+      "video_url": "https://www.youtube.com/watch?v=yJFdCCYmZSY",
+      "papers": [
+        {
+          "id": "2609.21699",
+          "title": "Lens Modeling and Cosmological Inference from an Impure Sample of Galaxy-Galaxy Strong Lenses (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.21699"
+        }
+      ]
+    },
+    "tfZLxUz-GbA": {
+      "video_id": "tfZLxUz-GbA",
+      "video_title": "PosteriorBench: From Point Estimates to Posterior Matching in Evaluating Generative Inverse Solvers",
+      "published": "2026-09-24",
+      "video_url": "https://www.youtube.com/watch?v=tfZLxUz-GbA",
+      "papers": [
+        {
+          "id": "2609.20794",
+          "title": "PosteriorBench: From Point Estimates to Posterior Matching in Evaluating Generative Inverse Solvers (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.20794"
+        }
+      ]
+    },
+    "JCJErEBdM_0": {
+      "video_id": "JCJErEBdM_0",
+      "video_title": "CodeMidas: Scaling Agentic Coding RL Environments from Code Itself (Sep 2026)",
+      "published": "2026-09-24",
+      "video_url": "https://www.youtube.com/watch?v=JCJErEBdM_0",
+      "papers": [
+        {
+          "id": "2609.22068",
+          "title": "CodeMidas: Scaling Agentic Coding RL Environments from Code Itself (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.22068"
+        }
+      ]
+    },
+    "DvxfsD8mh1w": {
+      "video_id": "DvxfsD8mh1w",
+      "video_title": "Agora: Git as Shared Memory for Collective AutoResearch (Sep 2026)",
+      "published": "2026-09-24",
+      "video_url": "https://www.youtube.com/watch?v=DvxfsD8mh1w",
+      "papers": [
+        {
+          "id": "2609.18094",
+          "title": "Agora: Git as Shared Memory for Collective AutoResearch (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.18094"
+        }
+      ]
     }
   }
 }
