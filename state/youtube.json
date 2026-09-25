@@ -582,6 +582,110 @@
           "abstract_zh": "在不同会话中工作的研究智能体需要了解其他智能体已经尝试过的内容，以及可以基于哪些成果开展后续工作。Agora 将它们的贡献存储为 Git 中一个只可追加的有向无环图（DAG）。每个提交都记录了一个结果、见解、假设、验证或报告，并将其与之前的工作联系起来。可搜索的视图展示了领先的结果、被忽视的分支以及验证状态；具有多样性意识的推荐系统则建议实验超越当前的领先方案。我们报告了一次持续近 12 天的运行过程，其中 13 个语言模型智能体在没有指定任务或中央规划者的情况下，利用 Agora 解决了一个权重迁移问题。在给定 141 个预训练供体模型和一个参数量为 119.6M、维度与任何供体都不匹配的冻结注意力-SSM 混合模型的情况下，智能体必须在没有训练数据或梯度更新的情况下初始化目标模型。它们发布了 1,703 项贡献，将开发评估指标从每字节 3.39 位降低到 1.899 位，缩小了与训练后的 GPT-2 124M 之间 62% 的差距。表现最好的方法将供体的下文预测统计信息压缩到目标的嵌入层和输出头中，然后通过对注意力、前馈和状态空间块进行稀疏编辑来增加短距离上下文。其 145 次提交的谱系跨越了 15 个账户。参与者还在 95 个目标上发布了 165 次独立的复现，未报告任何失败案例。在经过五天集中的搜索后，我们引入了多样性视图；智能体在一天内就开始探索状态空间编辑。此次运行记录了智能体如何复用和验证共享工作。衡量对单位计算量发现效率的影响需要进行匹配比较。"
         }
       ]
+    },
+    "5X-XKWt3pbU": {
+      "video_id": "5X-XKWt3pbU",
+      "video_title": "Memory Attention (Sep 2026)",
+      "published": "2026-09-25",
+      "video_url": "https://www.youtube.com/watch?v=5X-XKWt3pbU",
+      "papers": [
+        {
+          "id": "2609.28399",
+          "title": "Memory Attention (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.28399"
+        }
+      ]
+    },
+    "itrqcBz3kyo": {
+      "video_id": "itrqcBz3kyo",
+      "video_title": "Few-Shot Demonstrations Elicit the Use of In-Context World Representations in LLMs (Sep 2026)",
+      "published": "2026-09-25",
+      "video_url": "https://www.youtube.com/watch?v=itrqcBz3kyo",
+      "papers": [
+        {
+          "id": "2609.24352",
+          "title": "Few-Shot Demonstrations Elicit the Use of In-Context World Representations in LLMs (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.24352"
+        }
+      ]
+    },
+    "6SMghG5Hlks": {
+      "video_id": "6SMghG5Hlks",
+      "video_title": "HySparse2: Hybrid Sparse Attention with Two-Level KV Sharing (Sep 2026)",
+      "published": "2026-09-25",
+      "video_url": "https://www.youtube.com/watch?v=6SMghG5Hlks",
+      "papers": [
+        {
+          "id": "2609.26368",
+          "title": "HySparse2: Hybrid Sparse Attention with Two-Level KV Sharing (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.26368"
+        }
+      ]
+    },
+    "HBEnOWdIwmg": {
+      "video_id": "HBEnOWdIwmg",
+      "video_title": "MotionJEPA: Preventing Temporal Feature Collapse by Capturing Visual Changes in Latent Space",
+      "published": "2026-09-25",
+      "video_url": "https://www.youtube.com/watch?v=HBEnOWdIwmg",
+      "papers": [
+        {
+          "id": "2609.23881",
+          "title": "MotionJEPA: Preventing Temporal Feature Collapse by Capturing Visual Changes in Latent Space (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.23881"
+        }
+      ]
+    },
+    "rIrLl2g9zR8": {
+      "video_id": "rIrLl2g9zR8",
+      "video_title": "Harness-Zero: Harness Distillation via Agent-as-Harness (Sep 2026)",
+      "published": "2026-09-25",
+      "video_url": "https://www.youtube.com/watch?v=rIrLl2g9zR8",
+      "papers": [
+        {
+          "id": "2609.24974",
+          "title": "Harness-Zero: Harness Distillation via Agent-as-Harness (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.24974"
+        }
+      ]
+    },
+    "8ezddc8JJ6M": {
+      "video_id": "8ezddc8JJ6M",
+      "video_title": "GAE: Learning a Geometry-Native Latent Space for 3D-Consistent World Generation (Sep 2026)",
+      "published": "2026-09-25",
+      "video_url": "https://www.youtube.com/watch?v=8ezddc8JJ6M",
+      "papers": [
+        {
+          "id": "2609.24981",
+          "title": "GAE: Learning a Geometry-Native Latent Space for 3D-Consistent World Generation (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.24981"
+        }
+      ]
+    },
+    "Skfez3qvOgc": {
+      "video_id": "Skfez3qvOgc",
+      "video_title": "DeepSeek Elastic Compute (DSec): A Sandbox Infrastructure for Effective Agentic Training at Scale",
+      "published": "2026-09-25",
+      "video_url": "https://www.youtube.com/watch?v=Skfez3qvOgc",
+      "papers": [
+        {
+          "id": "2609.22978",
+          "title": "DeepSeek Elastic Compute (DSec): A Sandbox Infrastructure for Effective Agentic Training at Scale (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.22978"
+        }
+      ]
+    },
+    "BE1qrffnWXE": {
+      "video_id": "BE1qrffnWXE",
+      "video_title": "Jev-Mem: System-One-Controlled Agentic Memory for Efficient AI Agents (Sep 2026)",
+      "published": "2026-09-25",
+      "video_url": "https://www.youtube.com/watch?v=BE1qrffnWXE",
+      "papers": [
+        {
+          "id": "2609.23986",
+          "title": "Jev-Mem: System-One-Controlled Agentic Memory for Efficient AI Agents (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.23986"
+        }
+      ]
     }
   }
 }
