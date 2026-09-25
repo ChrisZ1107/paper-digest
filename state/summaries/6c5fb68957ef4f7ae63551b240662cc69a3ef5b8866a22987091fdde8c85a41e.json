@@ -1,0 +1,23 @@
+{
+  "overview": "该论文探讨了大型语言模型强化学习训练中token级信用分配的数学定义问题。作者提出了完备性、前缀一致性和中立性三个正则性条件，并据此推导出一套统一的信用分配理论。基于该理论，作者分析了现有算法（如OPD、RLOO、GAE）的特性，并提出了一种新的训练方法——策略对齐评论员训练（PACT）。通过改变更新顺序并引入重要性采样校正，PACT在数学推理任务及SWE-bench代码生成任务中表现出优于PPO和GRPO的性能。",
+  "highlights": [
+    {
+      "text": "作者建立了token级信用分配的数学定义，并证明了三个正则性条件能够唯一确定该信用值，为解释强化学习算法提供了统一基础。",
+      "evidence": "We formulate three regularity conditions, namely Completeness, Prefix Consistency, and Neutrality, and prove that they uniquely determine token-level credit."
+    },
+    {
+      "text": "提出了PACT训练方法，通过采用“先演员后评论员”的更新顺序并进行重要性采样校正，实现了评论员与更新后策略的更好对齐。",
+      "evidence": "These motivate Policy Aligned Critic Training (PACT), which adopts an Actor-then-Critic update order to apply importance sampling correction to critic training and better align the critic with the updated policy."
+    },
+    {
+      "text": "在智能体数学推理和SWE-bench Verified基准测试中，PACT在准确率和通过率上均超过了对比基线算法（如PPO和GRPO）。",
+      "evidence": "In agentic mathematical reasoning, PACT achieves 72.87% average accuracy across four benchmarks, outperforming GRPO and PPO by 8.80 and 13.16 percentage points, respectively."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "强化学习",
+    "PPO",
+    "推理"
+  ]
+}

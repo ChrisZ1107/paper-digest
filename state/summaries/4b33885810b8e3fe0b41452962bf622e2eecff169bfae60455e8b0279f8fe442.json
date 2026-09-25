@@ -1,0 +1,18 @@
+{
+  "overview": "本文提出了BEE框架，旨在通过视觉语言动作（VLA）模型提升真实世界机器人操作任务的性能。针对在线强化学习中盲目探索成本高及人工纠错利用不足的问题，BEE将人类纠错视为维度相关的约束条件。通过预测纠错的一致性来动态调整策略优化限制，使机器人在纠错一致性高的维度贴近人类行为，并在不确定维度适当放宽约束。实验表明，BEE在多个真实机器人操作任务中表现出更高的成功率和更低的人工干预率。",
+  "highlights": [
+    {
+      "text": "BEE引入了一种干预自适应框架，通过评估人类纠错在不同动作维度上的一致性，动态调整对VLA模型策略的优化约束。",
+      "evidence": "a Correction Model predicts how a human would correct a given VLA proposal and how consistent the correction is along each action dimension. This predicted consistency sets the per-dimension tightness of a constraint on policy optimization."
+    },
+    {
+      "text": "在真实世界操作任务中，BEE在相同的在线数据预算下实现了比对比方法（RLT和DSRL）更高的任务成功率。",
+      "evidence": "BEE attains the highest success rate on every task, 91.2% on average against 57.5% for RLT and 42.1% for DSRL, and the lowest human intervention rate on all real-world tasks."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "视觉语言动作",
+    "强化学习"
+  ]
+}

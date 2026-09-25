@@ -1,0 +1,247 @@
+{
+  "date": "2026-09-25",
+  "timestamp": "2026-09-25T09:02:15.133728+08:00",
+  "title": "2026-09-25 每日新论文 5",
+  "slug": "2026-09-25-new",
+  "papers": [
+    {
+      "id": "2609.27269",
+      "title": "Banana Kick: Response-Informed Skill Evolution for Humanoid Soccer",
+      "abstract": "Humanoid kicking requires coordinated whole-body motion and precise contact, while a banana kick demands contact mechanics that generate ball spin and aerodynamic curvature. Motion imitation provides a reliable ordinary-kick prior, but reinforcement learning may improve shot speed and placement accuracy without changing the underlying kicking technique. Adapting this prior to a qualitatively different contact-rich skill can fail even when the reward is dense and optimization remains stable. The failure occurs when the task objective is locally flat over the current policy's responses. We term this condition first-order learning starvation. To address it, we propose response-informed skill evolution (RISE), a closed-loop objective-continuation method for policy adaptation. RISE ranks bounded objective changes using response sensitivity estimated from cached rollouts and accepts updates only when they produce verified response progress while preserving kicking reliability. Our analysis shows that rescaling a saturated spin reward cannot recover first-order sensitivity at zero spin, whereas adapting coupled contact responses can provide a learnable path to spin generation. We integrate RISE into a humanoid kicking pipeline under calibrated contact and Magnus-force aerodynamics, and sim-to-real transfer. Experiments show that RISE evolves the ordinary kick into a high-spin curved kick with 11.55 rad/s mean ball spin, improves the mean evaluation score by 19.8% over a learning-progress curriculum, and raises joint target attainment from 15.2% to 50.9%. Ablations and response diagnostics support the mechanism, while 30 motion-capture-recorded physical trials demonstrate consistent hardware transfer of the learned curved kick. Project website: https://haozhang-thu.github.io/bananakick/",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-09-24",
+      "date_label": "公告",
+      "age_days": 0.8765640477777777,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.50632,
+      "growth": null,
+      "score": 3.291,
+      "rule_tags": [
+        "强化学习",
+        "人形机器人",
+        "Sim-to-Real"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对人形机器人香蕉球踢球动作中存在的学习停滞问题，作者提出了响应感知技能进化（RISE）方法。该方法通过引入闭环目标延续机制，利用缓存轨迹估算的响应灵敏度来筛选更新，从而在保持动作可靠性的同时实现从基础踢球到高旋转弧线球的技能演化。实验证明该方法在仿真中提升了球体旋转速度与动作成功率，并成功实现了硬件平台的Sim-to-Real迁移。",
+        "highlights": [
+          {
+            "text": "RISE方法通过基于响应灵敏度排序的目标延续机制，解决了复杂接触任务中的一阶学习停滞问题，成功引导模型从普通踢球向高旋转弧线球演进。",
+            "evidence": "RISE ranks bounded objective changes using response sensitivity estimated from cached rollouts and accepts updates only when they produce verified response progress while preserving kicking reliability."
+          },
+          {
+            "text": "在人形机器人仿真与物理实验中，RISE显著提升了动作指标，并实现了11.55 rad/s的平均球体旋转速度与稳定的实机迁移效果。",
+            "evidence": "Experiments show that RISE evolves the ordinary kick into a high-spin curved kick with 11.55 rad/s mean ball spin, improves the mean evaluation score by 19.8% over a learning-progress curriculum, and raises joint target attainment from 15.2% to 50.9%."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "人形机器人",
+          "Sim-to-Real"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.27068",
+      "title": "HiRE: Hindsight Reward Editing for Policy Finetuning",
+      "abstract": "Pre-trained robot policies always require finetuning to adapt to specific environments. Reinforcement Learning (RL) offers high performance potential because it improves action optimality rather than simply mimicking data. However, such potential depends heavily on reward quality. Sparse rewards lack process feedback, human-designed rewards are costly and biased, and semantic rewards from foundation representations are often not control-centric. We propose Hindsight Reward Editing (HiRE), a training-free framework to break this reward bottleneck. HiRE bridges the broad knowledge of foundation representation models with physical control awareness, by contrasting successful and failed trajectories in hindsight. It calibrates foundation representation models by identifying \"trap states\" that are predicted as high-rewarding states yet eventually result in failure, and vice versa. HiRE explicitly penalizes these traps while boosting rewards for critical successful states. This approach can be flexibly compatible with any foundation representations and RL algorithms. Experiments show that HiRE consistently outperforms other reward recipes by delivering dense, control-aware feedback that prevents value function collapse and reward hacking, thereby achieving superior sample efficiency, stable policy updates, and higher performance ceilings, e.g., at least 3x performance of the base policies. Qualitative results are at https://hire-project.github.io .",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-09-24",
+      "date_label": "公告",
+      "age_days": 0.8765640477777777,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.50397,
+      "growth": null,
+      "score": 3.276,
+      "rule_tags": [
+        "强化学习"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对机器人策略微调中奖励函数设计困难的问题，作者提出了HiRE（事后奖励编辑）框架。该方法无需训练，通过对比事后成功与失败的轨迹，识别并纠正基础表示模型中的“陷阱状态”。HiRE旨在将基础模型的多样知识与物理控制需求相结合，在惩罚误导性高奖励状态的同时增强关键成功状态的权重，从而提升强化学习策略的样本效率、训练稳定性和最终性能。",
+        "highlights": [
+          {
+            "text": "HiRE通过事后对比成功与失败轨迹，识别基础模型中误导性的“陷阱状态”并进行奖励校准，以获取更具控制导向的密集反馈。",
+            "evidence": "HiRE bridges the broad knowledge of foundation representation models with physical control awareness, by contrasting successful and failed trajectories in hindsight. It calibrates foundation representation models by identifying \"trap states\" that are predicted as high-rewarding states yet eventually result in failure, and vice versa."
+          },
+          {
+            "text": "该方法具有高度通用性，可与各类基础模型及强化学习算法兼容，在避免价值函数坍塌和奖励欺骗的同时，显著提升了策略性能。",
+            "evidence": "Experiments show that HiRE consistently outperforms other reward recipes by delivering dense, control-aware feedback that prevents value function collapse and reward hacking, thereby achieving superior sample efficiency, stable policy updates, and higher performance ceilings, e.g., at least 3x performance of the base policies."
+          }
+        ],
+        "tags": [
+          "强化学习"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.27338",
+      "title": "DUGM-R: Uncertainty-Aware Dynamic Grid Mapping and Risk-Triggered Recovery for Learned Local Navigation",
+      "abstract": "Learned local navigation in crowded indoor environments is sensitive to how dynamic obstacle motion is represented, while collision-prone behaviour may persist after nominal policy training. We present a risk-aware reinforcement-learning framework that addresses these two issues through an uncertainty-aware Dynamic Uncertainty Grid Map (DUGM) and a modular post-training recovery mechanism. DUGM combines local occupancy, estimated obstacle motion, and motion-estimation uncertainty in a robot-centric representation. After the nominal policy is frozen, a finite-horizon Risk Value Function (RVF) is trained from nominal rollouts and used to trigger a dedicated recovery policy when continued nominal execution is predicted to be collision-prone. Experiments in a held-out NVIDIA Isaac Sim clinical-logistics benchmark show that uncertainty-aware dynamic representation improves nominal navigation over static and deterministic alternatives, while the recovery mechanism further mitigates residual collision-prone behaviour. The complete framework is also deployed directly on a TurtleBot3 without policy fine-tuning, retraining, or site-specific adaptation, retaining the performance trend observed in simulation. These results indicate that uncertainty-aware dynamic representation and post-training recovery provide complementary mechanisms for improving learned local navigation.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-09-24",
+      "date_label": "公告",
+      "age_days": 0.8765640477777777,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.50006,
+      "growth": null,
+      "score": 3.25,
+      "rule_tags": [
+        "导航",
+        "大模型后训练"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对室内拥挤环境下的机器人局部导航问题，本文提出了一种基于风险感知的强化学习框架。该框架结合了考虑运动估计不确定性的动态网格地图（DUGM），以及在标称策略基础上训练的风险价值函数（RVF），用于识别高碰撞风险并触发恢复策略。实验结果表明，该方法在仿真环境及真实机器人平台上均能有效改善导航性能，降低碰撞概率。",
+        "highlights": [
+          {
+            "text": "提出了一种融合局部占用信息、运动估计及其不确定性的动态网格地图（DUGM），增强了机器人对动态障碍物的感知能力。",
+            "evidence": "DUGM combines local occupancy, estimated obstacle motion, and motion-estimation uncertainty in a robot-centric representation."
+          },
+          {
+            "text": "设计了一个基于风险价值函数的后训练恢复机制，可在预测到潜在碰撞风险时及时接管并执行恢复策略。",
+            "evidence": "After the nominal policy is frozen, a finite-horizon Risk Value Function (RVF) is trained from nominal rollouts and used to trigger a dedicated recovery policy when continued nominal execution is predicted to be collision-prone."
+          },
+          {
+            "text": "该框架无需针对特定场景进行微调或重训练，即可直接部署至真实机器人，并保持了仿真环境中的性能优势。",
+            "evidence": "The complete framework is also deployed directly on a TurtleBot3 without policy fine-tuning, retraining, or site-specific adaptation, retaining the performance trend observed in simulation."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "导航"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.28364",
+      "title": "LEAP-CBF: A Safety Filter for Uncertain Systems with Least-Effort Adversarial Potentials",
+      "abstract": "Control barrier functions (CBF) are a popular safety filter to ensure safety for nonlinear dynamical systems. However, when the system is subject to uncertainties and disturbances, this requires the use of robust variants of CBFs, which can be difficult to construct and can be overly conservative, especially for high-dimensional systems under input constraints. In this work, we propose a new approach to solve these challenges by introducing Least-Effort Adversarial Potentials (LEAP), a certificate that quantifies the robustness of a given state against disturbances in terms of the effort required by the disturbance to cause failure. We show that LEAP is a CBF for the undisturbed system, but can also be used to construct a safety filter that is robust to disturbances whose cumulative effort is bounded. We propose a method for constructing LEAPs with on-policy deep reinforcement learning. Next, we demonstrate LEAPs in simulation on a variety of multi-agent systems with disturbances and uncertainties. Finally, hardware experiments on a quadruped and quadrotors validate that LEAPs are well suited to tackle the disturbances and uncertainties from real-world robotic systems.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-09-24",
+      "date_label": "公告",
+      "age_days": 0.8765640477777777,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.49296,
+      "growth": null,
+      "score": 3.204,
+      "rule_tags": [
+        "强化学习",
+        "四足机器人",
+        "多智能体"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对非线性动态系统在不确定性和干扰下的安全性保障问题，作者提出了“最小努力对抗势能”（LEAP）方法。该方法将状态的鲁棒性量化为干扰导致系统失效所需付出的努力，以此构建一种安全滤波器。作者利用在线深度强化学习构建LEAP，并声称其在处理输入受限的高维系统时能有效降低保守性，实验证明了该方法在多智能体系统仿真以及四足机器人和四旋翼无人机硬件实验中的鲁棒性。",
+        "highlights": [
+          {
+            "text": "提出LEAP方法，通过量化干扰破坏系统的难度，构建了一种能够应对不确定性和扰动的鲁棒性安全滤波器。",
+            "evidence": "a certificate that quantifies the robustness of a given state against disturbances in terms of the effort required by the disturbance to cause failure. We show that LEAP is a CBF for the undisturbed system, but can also be used to construct a safety filter that is robust to disturbances whose cumulative effort is bounded."
+          },
+          {
+            "text": "通过在多智能体仿真及四足机器人与四旋翼无人机真实硬件实验，验证了该方法在应对真实世界机器人干扰方面的有效性。",
+            "evidence": "Finally, hardware experiments on a quadruped and quadrotors validate that LEAPs are well suited to tackle the disturbances and uncertainties from real-world robotic systems."
+          }
+        ],
+        "tags": [
+          "四足机器人",
+          "多智能体",
+          "强化学习"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.27450",
+      "title": "BEE: Intervention-Adaptive Real-World Reinforcement Learning with Vision-Language-Action Models",
+      "abstract": "Vision-language-action (VLA) models handle long-horizon manipulation, yet success hinges on a few precision-critical phases where millimeter-scale errors undo all prior progress. Online reinforcement learning (RL) can optimize exactly these actions, but free exploration is far too costly on real robots, which makes human corrections indispensable. However, existing online RL methods for VLAs either cannot incorporate such corrections or fold them into undifferentiated supervision. Yet human corrections are not uniformly noisy but reliable along some action dimensions and variable along others. Building on this, we introduce BEE, an intervention-adaptive framework for real-world RL on a frozen VLA that lets the policy go BEyond Expert imitation. We formulate human corrections not as actions to reproduce but as evidence about a constraint: a Correction Model predicts how a human would correct a given VLA proposal and how consistent the correction is along each action dimension. This predicted consistency sets the per-dimension tightness of a constraint on policy optimization. Where corrections are consistent the policy stays close to the human, and where they vary, the constraint relaxes. We evaluate BEE on three real-world manipulation tasks and one LIBERO-Pro simulation task at a matched online-data budget. BEE attains the highest success rate on every task, 91.2% on average against 57.5% for RLT and 42.1% for DSRL, and the lowest human intervention rate on all real-world tasks.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-09-24",
+      "date_label": "公告",
+      "age_days": 0.8765640477777777,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.48001,
+      "growth": null,
+      "score": 3.12,
+      "rule_tags": [
+        "强化学习",
+        "视觉语言动作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文提出了BEE框架，旨在通过视觉语言动作（VLA）模型提升真实世界机器人操作任务的性能。针对在线强化学习中盲目探索成本高及人工纠错利用不足的问题，BEE将人类纠错视为维度相关的约束条件。通过预测纠错的一致性来动态调整策略优化限制，使机器人在纠错一致性高的维度贴近人类行为，并在不确定维度适当放宽约束。实验表明，BEE在多个真实机器人操作任务中表现出更高的成功率和更低的人工干预率。",
+        "highlights": [
+          {
+            "text": "BEE引入了一种干预自适应框架，通过评估人类纠错在不同动作维度上的一致性，动态调整对VLA模型策略的优化约束。",
+            "evidence": "a Correction Model predicts how a human would correct a given VLA proposal and how consistent the correction is along each action dimension. This predicted consistency sets the per-dimension tightness of a constraint on policy optimization."
+          },
+          {
+            "text": "在真实世界操作任务中，BEE在相同的在线数据预算下实现了比对比方法（RLT和DSRL）更高的任务成功率。",
+            "evidence": "BEE attains the highest success rate on every task, 91.2% on average against 57.5% for RLT and 42.1% for DSRL, and the lowest human intervention rate on all real-world tasks."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "视觉语言动作",
+          "强化学习"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    }
+  ],
+  "candidate_count": 608,
+  "personalization_note": "已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。",
+  "html": "<h1>2026-09-25 每日新论文 5</h1>\n<p>机器人 · 强化学习 · 通用 AI</p>\n<p>生成时间：2026-09-25 09:02 CST。从 608 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>\n<p>本栏优先收录最近发布且未出现在近期日报的 arXiv 论文，不按热度排序；相关性分用于结合你的 Zotero 收藏偏好。</p>\n<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>\n<p>本次合格候选不足 10 篇，实际收录 5 篇。</p>\n<h2>1. Banana Kick: Response-Informed Skill Evolution for Humanoid Soccer</h2>\n<p><strong>机器人 / 强化学习</strong> · 公告 2026-09-24 · 综合分 3.29</p>\n<p>Zotero 摘要相关性：0.506（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习 · 人形机器人 · Sim-to-Real</p>\n<p><strong>中文概述：</strong>针对人形机器人香蕉球踢球动作中存在的学习停滞问题，作者提出了响应感知技能进化（RISE）方法。该方法通过引入闭环目标延续机制，利用缓存轨迹估算的响应灵敏度来筛选更新，从而在保持动作可靠性的同时实现从基础踢球到高旋转弧线球的技能演化。实验证明该方法在仿真中提升了球体旋转速度与动作成功率，并成功实现了硬件平台的Sim-to-Real迁移。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>RISE方法通过基于响应灵敏度排序的目标延续机制，解决了复杂接触任务中的一阶学习停滞问题，成功引导模型从普通踢球向高旋转弧线球演进。<br><small>摘要依据：RISE ranks bounded objective changes using response sensitivity estimated from cached rollouts and accepts updates only when they produce verified response progress while preserving kicking reliability.</small></li>\n<li>在人形机器人仿真与物理实验中，RISE显著提升了动作指标，并实现了11.55 rad/s的平均球体旋转速度与稳定的实机迁移效果。<br><small>摘要依据：Experiments show that RISE evolves the ordinary kick into a high-spin curved kick with 11.55 rad/s mean ball spin, improves the mean evaluation score by 19.8% over a learning-progress curriculum, and raises joint target attainment from 15.2% to 50.9%.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · 人形机器人 · Sim-to-Real</p>\n<p><strong>原文摘要节选：</strong>Humanoid kicking requires coordinated whole-body motion and precise contact, while a banana kick demands contact mechanics that generate ball spin and aerodynamic curvature. Motion imitation provides a reliable ordinary-kick prior, but reinforcement learning may improve shot speed and placement accuracy without changing the underlying kicking technique. Adapting this prior to a qualitatively different contact-rich skill can fail even when the reward is dense and optimization remains stable. The failure occurs when the task objective is locally flat over the current policy&#x27;s responses. We term this condition first-order learning starvation. To address it, we propose response-informed skill evolution (RISE), a closed-loop objective-continuation method for policy adaptation. RISE ranks…</p>\n<p><a href=\"https://arxiv.org/abs/2609.27269\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.27269\">PDF</a></p><hr>\n<h2>2. HiRE: Hindsight Reward Editing for Policy Finetuning</h2>\n<p><strong>机器人 / 强化学习</strong> · 公告 2026-09-24 · 综合分 3.28</p>\n<p>Zotero 摘要相关性：0.504（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习</p>\n<p><strong>中文概述：</strong>针对机器人策略微调中奖励函数设计困难的问题，作者提出了HiRE（事后奖励编辑）框架。该方法无需训练，通过对比事后成功与失败的轨迹，识别并纠正基础表示模型中的“陷阱状态”。HiRE旨在将基础模型的多样知识与物理控制需求相结合，在惩罚误导性高奖励状态的同时增强关键成功状态的权重，从而提升强化学习策略的样本效率、训练稳定性和最终性能。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>HiRE通过事后对比成功与失败轨迹，识别基础模型中误导性的“陷阱状态”并进行奖励校准，以获取更具控制导向的密集反馈。<br><small>摘要依据：HiRE bridges the broad knowledge of foundation representation models with physical control awareness, by contrasting successful and failed trajectories in hindsight. It calibrates foundation representation models by identifying &quot;trap states&quot; that are predicted as high-rewarding states yet eventually result in failure, and vice versa.</small></li>\n<li>该方法具有高度通用性，可与各类基础模型及强化学习算法兼容，在避免价值函数坍塌和奖励欺骗的同时，显著提升了策略性能。<br><small>摘要依据：Experiments show that HiRE consistently outperforms other reward recipes by delivering dense, control-aware feedback that prevents value function collapse and reward hacking, thereby achieving superior sample efficiency, stable policy updates, and higher performance ceilings, e.g., at least 3x performance of the base policies.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习</p>\n<p><strong>原文摘要节选：</strong>Pre-trained robot policies always require finetuning to adapt to specific environments. Reinforcement Learning (RL) offers high performance potential because it improves action optimality rather than simply mimicking data. However, such potential depends heavily on reward quality. Sparse rewards lack process feedback, human-designed rewards are costly and biased, and semantic rewards from foundation representations are often not control-centric. We propose Hindsight Reward Editing (HiRE), a training-free framework to break this reward bottleneck. HiRE bridges the broad knowledge of foundation representation models with physical control awareness, by contrasting successful and failed trajectories in hindsight. It calibrates foundation representation models by identifying &quot;trap states&quot; that…</p>\n<p><a href=\"https://arxiv.org/abs/2609.27068\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.27068\">PDF</a></p><hr>\n<h2>3. DUGM-R: Uncertainty-Aware Dynamic Grid Mapping and Risk-Triggered Recovery for Learned Local Navigation</h2>\n<p><strong>机器人</strong> · 公告 2026-09-24 · 综合分 3.25</p>\n<p>Zotero 摘要相关性：0.500（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>导航 · 大模型后训练</p>\n<p><strong>中文概述：</strong>针对室内拥挤环境下的机器人局部导航问题，本文提出了一种基于风险感知的强化学习框架。该框架结合了考虑运动估计不确定性的动态网格地图（DUGM），以及在标称策略基础上训练的风险价值函数（RVF），用于识别高碰撞风险并触发恢复策略。实验结果表明，该方法在仿真环境及真实机器人平台上均能有效改善导航性能，降低碰撞概率。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出了一种融合局部占用信息、运动估计及其不确定性的动态网格地图（DUGM），增强了机器人对动态障碍物的感知能力。<br><small>摘要依据：DUGM combines local occupancy, estimated obstacle motion, and motion-estimation uncertainty in a robot-centric representation.</small></li>\n<li>设计了一个基于风险价值函数的后训练恢复机制，可在预测到潜在碰撞风险时及时接管并执行恢复策略。<br><small>摘要依据：After the nominal policy is frozen, a finite-horizon Risk Value Function (RVF) is trained from nominal rollouts and used to trigger a dedicated recovery policy when continued nominal execution is predicted to be collision-prone.</small></li>\n<li>该框架无需针对特定场景进行微调或重训练，即可直接部署至真实机器人，并保持了仿真环境中的性能优势。<br><small>摘要依据：The complete framework is also deployed directly on a TurtleBot3 without policy fine-tuning, retraining, or site-specific adaptation, retaining the performance trend observed in simulation.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · 导航</p>\n<p><strong>原文摘要节选：</strong>Learned local navigation in crowded indoor environments is sensitive to how dynamic obstacle motion is represented, while collision-prone behaviour may persist after nominal policy training. We present a risk-aware reinforcement-learning framework that addresses these two issues through an uncertainty-aware Dynamic Uncertainty Grid Map (DUGM) and a modular post-training recovery mechanism. DUGM combines local occupancy, estimated obstacle motion, and motion-estimation uncertainty in a robot-centric representation. After the nominal policy is frozen, a finite-horizon Risk Value Function (RVF) is trained from nominal rollouts and used to trigger a dedicated recovery policy when continued nominal execution is predicted to be collision-prone. Experiments in a held-out NVIDIA Isaac Sim…</p>\n<p><a href=\"https://arxiv.org/abs/2609.27338\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.27338\">PDF</a></p><hr>\n<h2>4. LEAP-CBF: A Safety Filter for Uncertain Systems with Least-Effort Adversarial Potentials</h2>\n<p><strong>机器人 / 强化学习</strong> · 公告 2026-09-24 · 综合分 3.20</p>\n<p>Zotero 摘要相关性：0.493（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习 · 四足机器人 · 多智能体</p>\n<p><strong>中文概述：</strong>针对非线性动态系统在不确定性和干扰下的安全性保障问题，作者提出了“最小努力对抗势能”（LEAP）方法。该方法将状态的鲁棒性量化为干扰导致系统失效所需付出的努力，以此构建一种安全滤波器。作者利用在线深度强化学习构建LEAP，并声称其在处理输入受限的高维系统时能有效降低保守性，实验证明了该方法在多智能体系统仿真以及四足机器人和四旋翼无人机硬件实验中的鲁棒性。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出LEAP方法，通过量化干扰破坏系统的难度，构建了一种能够应对不确定性和扰动的鲁棒性安全滤波器。<br><small>摘要依据：a certificate that quantifies the robustness of a given state against disturbances in terms of the effort required by the disturbance to cause failure. We show that LEAP is a CBF for the undisturbed system, but can also be used to construct a safety filter that is robust to disturbances whose cumulative effort is bounded.</small></li>\n<li>通过在多智能体仿真及四足机器人与四旋翼无人机真实硬件实验，验证了该方法在应对真实世界机器人干扰方面的有效性。<br><small>摘要依据：Finally, hardware experiments on a quadruped and quadrotors validate that LEAPs are well suited to tackle the disturbances and uncertainties from real-world robotic systems.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>四足机器人 · 多智能体 · 强化学习</p>\n<p><strong>原文摘要节选：</strong>Control barrier functions (CBF) are a popular safety filter to ensure safety for nonlinear dynamical systems. However, when the system is subject to uncertainties and disturbances, this requires the use of robust variants of CBFs, which can be difficult to construct and can be overly conservative, especially for high-dimensional systems under input constraints. In this work, we propose a new approach to solve these challenges by introducing Least-Effort Adversarial Potentials (LEAP), a certificate that quantifies the robustness of a given state against disturbances in terms of the effort required by the disturbance to cause failure. We show that LEAP is a CBF for the undisturbed system, but can also be used to construct a safety filter that is robust to disturbances whose cumulative…</p>\n<p><a href=\"https://arxiv.org/abs/2609.28364\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.28364\">PDF</a></p><hr>\n<h2>5. BEE: Intervention-Adaptive Real-World Reinforcement Learning with Vision-Language-Action Models</h2>\n<p><strong>机器人 / 强化学习</strong> · 公告 2026-09-24 · 综合分 3.12</p>\n<p>Zotero 摘要相关性：0.480（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习 · 视觉语言动作</p>\n<p><strong>中文概述：</strong>本文提出了BEE框架，旨在通过视觉语言动作（VLA）模型提升真实世界机器人操作任务的性能。针对在线强化学习中盲目探索成本高及人工纠错利用不足的问题，BEE将人类纠错视为维度相关的约束条件。通过预测纠错的一致性来动态调整策略优化限制，使机器人在纠错一致性高的维度贴近人类行为，并在不确定维度适当放宽约束。实验表明，BEE在多个真实机器人操作任务中表现出更高的成功率和更低的人工干预率。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>BEE引入了一种干预自适应框架，通过评估人类纠错在不同动作维度上的一致性，动态调整对VLA模型策略的优化约束。<br><small>摘要依据：a Correction Model predicts how a human would correct a given VLA proposal and how consistent the correction is along each action dimension. This predicted consistency sets the per-dimension tightness of a constraint on policy optimization.</small></li>\n<li>在真实世界操作任务中，BEE在相同的在线数据预算下实现了比对比方法（RLT和DSRL）更高的任务成功率。<br><small>摘要依据：BEE attains the highest success rate on every task, 91.2% on average against 57.5% for RLT and 42.1% for DSRL, and the lowest human intervention rate on all real-world tasks.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 视觉语言动作 · 强化学习</p>\n<p><strong>原文摘要节选：</strong>Vision-language-action (VLA) models handle long-horizon manipulation, yet success hinges on a few precision-critical phases where millimeter-scale errors undo all prior progress. Online reinforcement learning (RL) can optimize exactly these actions, but free exploration is far too costly on real robots, which makes human corrections indispensable. However, existing online RL methods for VLAs either cannot incorporate such corrections or fold them into undifferentiated supervision. Yet human corrections are not uniformly noisy but reliable along some action dimensions and variable along others. Building on this, we introduce BEE, an intervention-adaptive framework for real-world RL on a frozen VLA that lets the policy go BEyond Expert imitation. We formulate human corrections not as…</p>\n<p><a href=\"https://arxiv.org/abs/2609.27450\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.27450\">PDF</a></p><hr>"
+}

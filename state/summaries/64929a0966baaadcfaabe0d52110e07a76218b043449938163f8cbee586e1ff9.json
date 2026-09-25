@@ -1,0 +1,16 @@
+{
+  "overview": "针对机器人策略微调中奖励函数设计困难的问题，作者提出了HiRE（事后奖励编辑）框架。该方法无需训练，通过对比事后成功与失败的轨迹，识别并纠正基础表示模型中的“陷阱状态”。HiRE旨在将基础模型的多样知识与物理控制需求相结合，在惩罚误导性高奖励状态的同时增强关键成功状态的权重，从而提升强化学习策略的样本效率、训练稳定性和最终性能。",
+  "highlights": [
+    {
+      "text": "HiRE通过事后对比成功与失败轨迹，识别基础模型中误导性的“陷阱状态”并进行奖励校准，以获取更具控制导向的密集反馈。",
+      "evidence": "HiRE bridges the broad knowledge of foundation representation models with physical control awareness, by contrasting successful and failed trajectories in hindsight. It calibrates foundation representation models by identifying \"trap states\" that are predicted as high-rewarding states yet eventually result in failure, and vice versa."
+    },
+    {
+      "text": "该方法具有高度通用性，可与各类基础模型及强化学习算法兼容，在避免价值函数坍塌和奖励欺骗的同时，显著提升了策略性能。",
+      "evidence": "Experiments show that HiRE consistently outperforms other reward recipes by delivering dense, control-aware feedback that prevents value function collapse and reward hacking, thereby achieving superior sample efficiency, stable policy updates, and higher performance ceilings, e.g., at least 3x performance of the base policies."
+    }
+  ],
+  "tags": [
+    "强化学习"
+  ]
+}

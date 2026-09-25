@@ -1,0 +1,18 @@
+{
+  "overview": "针对非线性动态系统在不确定性和干扰下的安全性保障问题，作者提出了“最小努力对抗势能”（LEAP）方法。该方法将状态的鲁棒性量化为干扰导致系统失效所需付出的努力，以此构建一种安全滤波器。作者利用在线深度强化学习构建LEAP，并声称其在处理输入受限的高维系统时能有效降低保守性，实验证明了该方法在多智能体系统仿真以及四足机器人和四旋翼无人机硬件实验中的鲁棒性。",
+  "highlights": [
+    {
+      "text": "提出LEAP方法，通过量化干扰破坏系统的难度，构建了一种能够应对不确定性和扰动的鲁棒性安全滤波器。",
+      "evidence": "a certificate that quantifies the robustness of a given state against disturbances in terms of the effort required by the disturbance to cause failure. We show that LEAP is a CBF for the undisturbed system, but can also be used to construct a safety filter that is robust to disturbances whose cumulative effort is bounded."
+    },
+    {
+      "text": "通过在多智能体仿真及四足机器人与四旋翼无人机真实硬件实验，验证了该方法在应对真实世界机器人干扰方面的有效性。",
+      "evidence": "Finally, hardware experiments on a quadruped and quadrotors validate that LEAPs are well suited to tackle the disturbances and uncertainties from real-world robotic systems."
+    }
+  ],
+  "tags": [
+    "四足机器人",
+    "多智能体",
+    "强化学习"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "overview": "针对人形机器人香蕉球踢球动作中存在的学习停滞问题，作者提出了响应感知技能进化（RISE）方法。该方法通过引入闭环目标延续机制，利用缓存轨迹估算的响应灵敏度来筛选更新，从而在保持动作可靠性的同时实现从基础踢球到高旋转弧线球的技能演化。实验证明该方法在仿真中提升了球体旋转速度与动作成功率，并成功实现了硬件平台的Sim-to-Real迁移。",
+  "highlights": [
+    {
+      "text": "RISE方法通过基于响应灵敏度排序的目标延续机制，解决了复杂接触任务中的一阶学习停滞问题，成功引导模型从普通踢球向高旋转弧线球演进。",
+      "evidence": "RISE ranks bounded objective changes using response sensitivity estimated from cached rollouts and accepts updates only when they produce verified response progress while preserving kicking reliability."
+    },
+    {
+      "text": "在人形机器人仿真与物理实验中，RISE显著提升了动作指标，并实现了11.55 rad/s的平均球体旋转速度与稳定的实机迁移效果。",
+      "evidence": "Experiments show that RISE evolves the ordinary kick into a high-spin curved kick with 11.55 rad/s mean ball spin, improves the mean evaluation score by 19.8% over a learning-progress curriculum, and raises joint target attainment from 15.2% to 50.9%."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "人形机器人",
+    "Sim-to-Real"
+  ]
+}

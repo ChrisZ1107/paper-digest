@@ -1,0 +1,21 @@
+{
+  "overview": "针对室内拥挤环境下的机器人局部导航问题，本文提出了一种基于风险感知的强化学习框架。该框架结合了考虑运动估计不确定性的动态网格地图（DUGM），以及在标称策略基础上训练的风险价值函数（RVF），用于识别高碰撞风险并触发恢复策略。实验结果表明，该方法在仿真环境及真实机器人平台上均能有效改善导航性能，降低碰撞概率。",
+  "highlights": [
+    {
+      "text": "提出了一种融合局部占用信息、运动估计及其不确定性的动态网格地图（DUGM），增强了机器人对动态障碍物的感知能力。",
+      "evidence": "DUGM combines local occupancy, estimated obstacle motion, and motion-estimation uncertainty in a robot-centric representation."
+    },
+    {
+      "text": "设计了一个基于风险价值函数的后训练恢复机制，可在预测到潜在碰撞风险时及时接管并执行恢复策略。",
+      "evidence": "After the nominal policy is frozen, a finite-horizon Risk Value Function (RVF) is trained from nominal rollouts and used to trigger a dedicated recovery policy when continued nominal execution is predicted to be collision-prone."
+    },
+    {
+      "text": "该框架无需针对特定场景进行微调或重训练，即可直接部署至真实机器人，并保持了仿真环境中的性能优势。",
+      "evidence": "The complete framework is also deployed directly on a TurtleBot3 without policy fine-tuning, retraining, or site-specific adaptation, retaining the performance trend observed in simulation."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "导航"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "overview": "针对现有机器人基础模型在物体几何与空间定位理解上的局限，作者提出了Grounded Action Models (GAM)。该模型通过3D基础化技术，将语言、点或框提示转化为以物体为中心的共享表示，结合多流Transformer预测动作块。实验表明，GAM在RoboTwin 2.0及LIBERO-PRO数据集及真实机器人任务中，在场景随机化与视觉干扰环境下表现出较强的鲁棒性和长程操作能力。",
+  "highlights": [
+    {
+      "text": "GAM通过3D基础化将提示转化为物体中心化表示，从而显式捕获目标视觉特征与度量几何信息。",
+      "evidence": "GAM can be conditioned using language, points, or box prompts, which are first transformed into a shared object-centric representation of the selected objects. This representation captures target-focused visual features and metric object geometry"
+    },
+    {
+      "text": "在RoboTwin 2.0基准上，GAM在场景随机化任务中展现了对比基线的性能优势。",
+      "evidence": "including 47.6% under scene randomization (vs. 30.4% for Abot-M0), with its action policy trained only on clean-scene demonstrations."
+    },
+    {
+      "text": "GAM作为低级控制器与高层规划器结合，在长程与依赖记忆的机器人操作任务中取得了显著效果。",
+      "evidence": "its composition with a Molmo2 planner on a Franka achieves 64.7% ID and 49.8% OOD step completion on long-horizon and memory-dependent tasks."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "Sim-to-Real"
+  ]
+}

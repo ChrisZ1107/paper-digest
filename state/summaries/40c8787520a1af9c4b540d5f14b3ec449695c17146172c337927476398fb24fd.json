@@ -1,0 +1,21 @@
+{
+  "overview": "针对视觉语言动作（VLA）策略在机器人操作中难以应对执行偏差的问题，本文提出了CARE（Experience-Guided Atomic Corrective Execution）框架。该方法通过收集失败轨迹并建模阶段性的故障偏差，合成具有代表性的失败状态及对应的纠正示范。在推理阶段，通过结合阶段规划与3D监控实现原子级的调整或重操作。实验表明，该方法在多个模拟基准及真实世界双臂任务中显著提升了任务成功率。",
+  "highlights": [
+    {
+      "text": "CARE框架通过学习失败经验来优化机器人策略的鲁棒性，利用失败轨迹分布合成纠正示范，而非依赖手动或随机扰动。",
+      "evidence": "Instead of generating corrective data from manually designed or random perturbations, CARE collects failed rollouts, models stage-conditioned post-failure deviations, and uses the resulting empirical distributions to synthesize representative failure states and corrective demonstrations."
+    },
+    {
+      "text": "该方法引入了Failure State Recovery Benchmark（FSR-Bench）用于评估在局部偏差与结构异常下的故障恢复能力。",
+      "evidence": "We further introduce the Failure State Recovery Benchmark (FSR-Bench), which evaluates recovery from intermediate failure states under local deviations and structural anomalies."
+    },
+    {
+      "text": "在多种VLA主干网络与真实双臂任务实验中，CARE实现了任务成功率的显著提升，平均增幅在模拟环境中为14.5点，在现实世界中为15.9点。",
+      "evidence": "Experiments across multiple VLA backbones, simulation benchmarks, and real-world dual-arm tasks show consistent improvements, with average task-success gains of 14.5 points in simulation and 15.9 points in the real world."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "视觉语言动作"
+  ]
+}
