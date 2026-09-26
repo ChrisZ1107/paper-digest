@@ -1,0 +1,17 @@
+{
+  "overview": "本文针对从自然语言指令生成SVG代码缺乏有效评估与奖励信号的问题，提出了RULER（实例感知准则奖励）方法。该方法通过视觉语言模型（VLM）依据多维度准则对生成的SVG进行细粒度评分，并将加权分数作为奖励信号，结合组相对策略优化（GRPO）进行训练。作者声称，该方法无需成对SVG地面真值或人类偏好标签，即可在多个数据集上提升生成质量，并超越专门的SVG生成模型。",
+  "highlights": [
+    {
+      "text": "RULER利用VLM对SVG生成结果进行多维度准则评分，将细粒度分数转化为强化学习的奖励信号，有效避免了传统标量度量的奖励操纵问题。",
+      "evidence": "RULER (Instance-aware Rubric Rewards for Reinforcement Learning), which converts each instruction into an instance-aware rubric of six items spanning semantic, visual, and stylistic axes; a judge VLM scores rendered rollouts item-by-item, and the weighted satisfactions form a fine-grained reward optimized via Group Relative Policy Optimization."
+    },
+    {
+      "text": "该方法无需成对的SVG真值数据或人工偏好标注，通过纯文本导出的评估准则即可实现端到端的优化。",
+      "evidence": "Because the rubric is derived from text alone, RULER requires neither paired SVG ground truth nor human preference labels."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "推理"
+  ]
+}

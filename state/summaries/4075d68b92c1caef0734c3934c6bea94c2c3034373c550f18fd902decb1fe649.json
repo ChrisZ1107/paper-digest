@@ -1,0 +1,17 @@
+{
+  "overview": "针对人形机器人在非连续地形中进行敏捷跑酷的挑战，本文提出了一种基于门控记忆的感知跑酷框架。该框架利用显著性引导的时间感知模块处理板载深度信息，通过门控记忆机制跨帧保留深度特征，并引入交替损失来强化步态对称性与稳定性。作者声称，该方法在仿真和真实世界测试中均显著提升了机器人在复杂地形下的跨越成功率和落足点精度。",
+  "highlights": [
+    {
+      "text": "提出了一种结合显著性先验与门控记忆的感知模块，能够从局部观测中提取并保留关键深度特征，从而实现可靠的落足点选择。",
+      "evidence": "The framework features a saliency-guided temporal perception module that combines a saliency prior with gated memory. It retains informative depth features across frames, enabling reliable foot placement from partial observations."
+    },
+    {
+      "text": "通过引入交替损失函数，优化了机器人的步态模式，增强了在非连续地形上跨越运动的稳健性。",
+      "evidence": "By introducing an alternation loss, our symmetry regularization encourages alternating gait patterns and improves traversal robustness."
+    }
+  ],
+  "tags": [
+    "人形机器人",
+    "足式运动"
+  ]
+}

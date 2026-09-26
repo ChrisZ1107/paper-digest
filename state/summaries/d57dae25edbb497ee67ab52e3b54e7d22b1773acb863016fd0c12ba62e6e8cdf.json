@@ -1,0 +1,18 @@
+{
+  "overview": "本文提出了贝尔曼策略优化（BPO），这是一种用于提升大语言模型推理能力的免评判器强化学习方法。BPO通过贝尔曼方程将策略镜像下降法重构为轨迹级目标，从而避免了对中间状态价值的估计。作者证明了该方法与原始目标具有相同的最优解，并推导出了基于补集标记概率平滑比的实用损失函数。实验结果显示，BPO在数学推理基准测试中具有一定效力。",
+  "highlights": [
+    {
+      "text": "BPO通过将策略镜像下降法重构为轨迹级目标，实现了无需估计中间状态价值即可进行训练。",
+      "evidence": "For autoregressive generation with terminal rewards, BPO uses the Bellman equations to reformulate PMD as a trajectory-level objective. The reformulation avoids estimating state values at intermediate states."
+    },
+    {
+      "text": "理论证明表明，重构后的BPO目标与原始策略镜像下降法具有唯一且相同的最优解。",
+      "evidence": "We prove that it has the same unique optimal solution as the original PMD objective."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "大模型后训练",
+    "推理"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "overview": "本文针对重复挖掘导致的堆料几何形状持续变化问题，提出了一种基于学习的连续自动挖掘框架。该框架结合了地形感知目标选择、强化学习（RL）路径规划及模仿学习（IL）挖掘控制。通过将任务导向的RL策略与视觉驱动的IL策略相结合，系统能够动态规划挖掘路径并协调卸载。在比例模型液压挖掘机上的实验表明，该方法在挖掘一致性、任务执行效率及载荷量方面优于对比基线。",
+  "highlights": [
+    {
+      "text": "该框架通过集成地形感知目标选择与强化学习及模仿学习策略，实现了从目标确定到连续挖掘的自主化。",
+      "evidence": "We present a learning-based framework for continuous autonomous excavation that integrates terrain-aware target selection with reinforcement- and imitation-learning controllers."
+    },
+    {
+      "text": "实验结果显示，所学挖掘策略在平均单次循环载荷上表现优于固定挖掘基线。",
+      "evidence": "The learned digging policy achieves a mean payload of 6.52 kg per completed cycle, compared with 2.68 kg for Fixed Dig."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "模仿学习"
+  ]
+}

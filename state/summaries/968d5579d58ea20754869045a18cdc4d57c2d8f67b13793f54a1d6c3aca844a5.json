@@ -1,0 +1,20 @@
+{
+  "overview": "针对机器人数据生成与策略训练对高性能模拟的需求，本文提出了数据驱动的模拟器Uranus。该系统基于关节轨迹条件下的自回归扩散模型，能够实现流式、开放式的长序列仿真，支持多种机器人形态与多视角配置。作者声称该系统具备低延迟生成能力，并通过实验评估了其在分布内及分布外数据上的表现，旨在为具身智能研究提供可扩展的模拟基础设施。",
+  "highlights": [
+    {
+      "text": "Uranus支持流式、开放式的长序列模拟，能够根据输入的未来关节轨迹实时生成视觉帧，且无固定时间范围限制。",
+      "evidence": "streaming, open-ended rollout, which receives future joint-position trajectories online and autoregressively generates one latent frame per step, corresponding to four RGB frames, without a fixed horizon;"
+    },
+    {
+      "text": "通过推理优化，Uranus能够实现低延迟的视觉帧生成，达到每秒24帧（24 FPS）的运行速度。",
+      "evidence": "low-latency generation, achieving 24 FPS after inference optimization;"
+    },
+    {
+      "text": "该模拟器提供了统一的接口，能够支持不同机器人形态及相机配置下的同步多视角生成，具备良好的可扩展性。",
+      "evidence": "scalable, extensible robot control, providing a unified interface for synchronized multi-view generation across diverse robot embodiments and camera configurations."
+    }
+  ],
+  "tags": [
+    "Sim-to-Real"
+  ]
+}

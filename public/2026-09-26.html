@@ -1,0 +1,141 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>2026-09-26 热门论文 Top 10｜机器人·强化学习·AI</title><body><h1>2026-09-26 热门论文 Top 10</h1>
+<p>机器人 · 强化学习 · 通用 AI</p>
+<p>生成时间：2026-09-26 09:01 CST。从 684 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>
+<p>候选来源：<a href="https://huggingface.co/papers">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>
+<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>
+<h2>1. Grounded Action Model: 3D Grounding as a Foundation for Robotics</h2>
+<p><strong>机器人</strong> · 发表 2026-09-20 · 综合分 5.34</p>
+<p>Zotero 摘要相关性：0.487（相似度分数，不是概率）。</p>
+<p>HF 点赞 86 · 讨论 3 · 仓库累计 Star 24（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +0 · Star +1。</p>
+<p><strong>规则标签：</strong>视觉语言动作</p>
+<p><strong>中文概述：</strong>针对现有机器人基础模型在物体几何与空间定位理解上的局限，作者提出了Grounded Action Models (GAM)。该模型通过3D基础化技术，将语言、点或框提示转化为以物体为中心的共享表示，结合多流Transformer预测动作块。实验表明，GAM在RoboTwin 2.0及LIBERO-PRO数据集及真实机器人任务中，在场景随机化与视觉干扰环境下表现出较强的鲁棒性和长程操作能力。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>GAM通过3D基础化将提示转化为物体中心化表示，从而显式捕获目标视觉特征与度量几何信息。<br><small>摘要依据：GAM can be conditioned using language, points, or box prompts, which are first transformed into a shared object-centric representation of the selected objects. This representation captures target-focused visual features and metric object geometry</small></li>
+<li>在RoboTwin 2.0基准上，GAM在场景随机化任务中展现了对比基线的性能优势。<br><small>摘要依据：including 47.6% under scene randomization (vs. 30.4% for Abot-M0), with its action policy trained only on clean-scene demonstrations.</small></li>
+<li>GAM作为低级控制器与高层规划器结合，在长程与依赖记忆的机器人操作任务中取得了显著效果。<br><small>摘要依据：its composition with a Molmo2 planner on a Franka achieves 64.7% ID and 49.8% OOD step completion on long-horizon and memory-dependent tasks.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · Sim-to-Real</p>
+<p><strong>原文摘要节选：</strong>Manipulation policies must know which objects matter and where they are, yet the pretrained backbones that current robot foundation models build on, from language in vision-language-action models (VLAs) to video generation in world-action models (WAMs), do not directly require this metric grounding, leaving it to be learned implicitly from robot demonstrations. We propose Grounded Action Models (GAMs), a new paradigm of robot foundation models built with 3D grounding. GAM can be conditioned using language, points, or box prompts, which are first transformed into a shared object-centric representation of the selected objects. This representation captures target-focused visual features and metric object geometry, which is mixed with robot state history through a multi-stream transformer to…</p>
+<p><a href="https://arxiv.org/abs/2609.23863">论文原文</a> · <a href="https://arxiv.org/pdf/2609.23863">PDF</a> · <a href="https://huggingface.co/papers/2609.23863">讨论与热度</a> · <a href="https://github.com/GehaoZhang6/Grounded-Action-Model">代码</a></p><hr>
+<h2>2. EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics</h2>
+<p><strong>机器人</strong> · 发表 2026-09-23 · 综合分 5.11</p>
+<p>Zotero 摘要相关性：0.484（相似度分数，不是概率）。</p>
+<p>HF 点赞 2 · 讨论 2 · 本次 HF 热榜第 37 位 · 仓库累计 Star 54（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +0 · 讨论 +1 · Star +18。</p>
+<p><strong>规则标签：</strong>机器人操作 · 视觉语言动作</p>
+<p><strong>中文概述：</strong>本文研究了编码智能体在长序列灵巧机器人任务中的应用，并探讨了其作为通用机器人策略监督来源的可行性。作者提出了EMBODIEDSWE-BENCH基准测试平台，涵盖多种复杂操纵任务，并开发了EMBODIEDSWE-GEN框架，通过扩展编码智能体的解决方案生成多样化轨迹，用于微调视觉语言动作（VLA）模型。实验表明，该方法能够实现从模拟环境到真实机器人的策略迁移，为复杂机器人任务提供可扩展的监督。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出一种将编码智能体生成的模拟演示转化为通用机器人策略训练监督信号的框架。<br><small>摘要依据：Together, our framework uses coding agents to solve complex robotics tasks and turn verified solutions into scalable supervision for robot policies.</small></li>
+<li>利用编码智能体生成的模拟演示对VLA模型进行微调，实现了真实机器人长序列任务的执行。<br><small>摘要依据：We also show that a VLA finetuned solely on coding-agent-generated simulation demonstrations completes a long-horizon task on real robot.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 视觉语言动作 · Sim-to-Real</p>
+<p><strong>原文摘要节选：</strong>We study coding agents for long-horizon, dexterous robotics and ask whether their solutions can provide scalable supervision for learning general robot policies. To test this, we develop EMBODIEDSWE-BENCH, a simulation benchmark for coding agents spanning contact-rich manipulation, deformable objects, and long-horizon tasks requiring up to half an hour of continuous interaction. We find that frontier coding agents can solve complex long-horizon tasks and transfer prior solutions across both tasks and embodiments. We also design supporting tools that help agents more effectively solve these tasks. However, the resulting solutions require substantial iterative interaction and are typically specialized to individual task instances. We therefore introduce EMBODIEDSWE-GEN, which expands a…</p>
+<p><a href="https://arxiv.org/abs/2609.27308">论文原文</a> · <a href="https://arxiv.org/pdf/2609.27308">PDF</a> · <a href="https://huggingface.co/papers/2609.27308">讨论与热度</a> · <a href="https://github.com/EmbodiedSWE/EmbodiedSWE">代码</a></p><hr>
+<h2>3. RRSI: Regularized Recursive Self-Improvement of Agent Harnesses</h2>
+<p><strong>通用 AI</strong> · 发表 2026-09-21 · 综合分 4.95</p>
+<p>Zotero 摘要相关性：0.364（相似度分数，不是概率）。</p>
+<p>HF 点赞 203 · 讨论 2 · 本次 HF 热榜第 11 位 · 仓库累计 Star 344（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +3 · 讨论 +0 · Star +24。</p>
+<p><strong>中文概述：</strong>针对大语言模型智能体框架（harness）递归自我改进过程中出现的过拟合现象，本文提出了一种正则化递归自我改进方法（RRSI）。该方法通过在候选建议阶段引入时间退火预算与轨迹探索机制，并在选择阶段配备评估器与修剪器，旨在限制针对特定任务的过度优化，从而提升框架的泛化能力和效率。实验结果表明，该方法在多个任务基准上实现了性能提升，并降低了策略词元开销。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>RRSI通过正则化约束候选建议与选择过程，有效缓解了递归进化中因记忆训练任务导致的过拟合问题，增强了智能体机制的泛化性。<br><small>摘要依据：We introduce Regularized Recursive Self-Improvement of Agent Harnesses (RRSI), which incorporates the principles of regularizations into harness self-improvement by constraining the evolution candidate proposal and selection.</small></li>
+<li>在八个任务基准测试中，RRSI不仅在训练分布上获得性能提升，在分布外基准上最高提升了4.7个点，且大幅降低了推理成本。<br><small>摘要依据：Across eight benchmarks spanning coding, agentic workspace and engineering design tasks, RRSI gains up to 14.1 points on the split it evolves against and up to 4.7 points on the five out-of-distribution benchmarks, while producing a harness that runs on 30% fewer policy tokens than the unregularized evolution.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>
+<p><strong>原文摘要节选：</strong>An LLM agent&#x27;s capability is largely magnified by its harness, namely the prompts, control flow, tooling, memory, and context management surrounding the frozen backbone model. Recent methods increasingly automate this process by iteratively proposing and selecting component-wise edits of an agent harness, practically establishing a form of recursive self-improvement (RSI) at the agent-system level. However, such recursive evolution may overfit by memorizing the training tasks, showing large in-distribution gains that shrink or even vanish on out-of-distribution benchmarks. We introduce Regularized Recursive Self-Improvement of Agent Harnesses (RRSI), which incorporates the principles of regularizations into harness self-improvement by constraining the evolution candidate proposal and…</p>
+<p><a href="https://arxiv.org/abs/2609.24972">论文原文</a> · <a href="https://arxiv.org/pdf/2609.24972">PDF</a> · <a href="https://huggingface.co/papers/2609.24972">讨论与热度</a> · <a href="https://github.com/google-research/rrsi">代码</a></p><hr>
+<h2>4. WorldCrafter: Consistent Video World Model with Implicit 3D-aware Memory</h2>
+<p><strong>通用 AI</strong> · 发表 2026-09-21 · 综合分 4.92</p>
+<p>Zotero 摘要相关性：0.355（相似度分数，不是概率）。</p>
+<p>HF 点赞 149 · 讨论 4 · 本次 HF 热榜第 2 位 · 仓库累计 Star 350（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +3 · 讨论 +0 · Star +4。</p>
+<p><strong>规则标签：</strong>世界模型</p>
+<p><strong>中文概述：</strong>针对视频世界模型在长序列与多视角下难以保持一致性的问题，作者提出了WorldCrafter。该模型通过引入可查询的隐式3D感知记忆机制，利用记忆编码器和姿态条件读取模块，将多视角历史观测压缩至固定数量的视角相关Token中，结合时间上下文与蒸馏技术，实现了从单张图片或文本提示出发的场景流式探索。实验表明，该方法在长序列一致性与相机控制准确性方面具有显著提升。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出了一种隐式3D感知记忆机制，通过视角引导将多视角历史观测压缩至有限的Token预算中，从而增强了视频生成的一致性。<br><small>摘要依据：The key insight is to let the requested viewpoint shape how multi-view evidence is compressed into the video generator&#x27;s limited token budget.</small></li>
+<li>WorldCrafter能够支持长达分钟级的场景探索，并在保持视觉质量的同时，显著提高了长序列的一致性和相机控制精度。<br><small>摘要依据：Experiments across static and dynamic scenes show substantial gains in long-horizon consistency and camera-control accuracy while preserving visual quality during minute-scale exploration.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>世界模型</p>
+<p><strong>原文摘要节选：</strong>Video world models enable interactive exploration of dynamic environments, yet struggle to respect prior observations over long horizons and across viewpoints. We present WorldCrafter, a video world model that learns a camera-queryable implicit 3D-aware memory for this purpose. The key insight is to let the requested viewpoint shape how multi-view evidence is compressed into the video generator&#x27;s limited token budget. Trained jointly with the video generator, a memory encoder and pose-conditioned readout module integrate historical observations into a fixed set of target view-specific tokens before denoising, without explicit depth-based correspondences. By combining this memory with recent temporal context and few-step distillation, WorldCrafter enables streaming scene exploration from a…</p>
+<p><a href="https://arxiv.org/abs/2609.24984">论文原文</a> · <a href="https://arxiv.org/pdf/2609.24984">PDF</a> · <a href="https://huggingface.co/papers/2609.24984">讨论与热度</a> · <a href="https://github.com/TencentARC/WorldCrafter">代码</a></p><hr>
+<h2>5. Uranus: Building the Next-Generation Simulation Infrastructure for Embodied AI</h2>
+<p><strong>机器人</strong> · 发表 2026-09-23 · 综合分 4.90</p>
+<p>Zotero 摘要相关性：0.466（相似度分数，不是概率）。</p>
+<p>HF 点赞 2 · 讨论 2 · 仓库累计 Star 5（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +1 · Star +1。</p>
+<p><strong>中文概述：</strong>针对机器人数据生成与策略训练对高性能模拟的需求，本文提出了数据驱动的模拟器Uranus。该系统基于关节轨迹条件下的自回归扩散模型，能够实现流式、开放式的长序列仿真，支持多种机器人形态与多视角配置。作者声称该系统具备低延迟生成能力，并通过实验评估了其在分布内及分布外数据上的表现，旨在为具身智能研究提供可扩展的模拟基础设施。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>Uranus支持流式、开放式的长序列模拟，能够根据输入的未来关节轨迹实时生成视觉帧，且无固定时间范围限制。<br><small>摘要依据：streaming, open-ended rollout, which receives future joint-position trajectories online and autoregressively generates one latent frame per step, corresponding to four RGB frames, without a fixed horizon;</small></li>
+<li>通过推理优化，Uranus能够实现低延迟的视觉帧生成，达到每秒24帧（24 FPS）的运行速度。<br><small>摘要依据：low-latency generation, achieving 24 FPS after inference optimization;</small></li>
+<li>该模拟器提供了统一的接口，能够支持不同机器人形态及相机配置下的同步多视角生成，具备良好的可扩展性。<br><small>摘要依据：scalable, extensible robot control, providing a unified interface for synchronized multi-view generation across diverse robot embodiments and camera configurations.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>Sim-to-Real</p>
+<p><strong>原文摘要节选：</strong>Scalable simulation is essential for robot data generation, policy training, evaluation, and safe iteration, yet real-world interaction is costly and conventional simulators require labor-intensive construction. We present Uranus, a data-driven robot simulator built around a joint-trajectory-conditioned autoregressive diffusion model. Uranus offers three key capabilities: (1) streaming, open-ended rollout, which receives future joint-position trajectories online and autoregressively generates one latent frame per step, corresponding to four RGB frames, without a fixed horizon; (2) low-latency generation, achieving 24 FPS after inference optimization; and (3) scalable, extensible robot control, providing a unified interface for synchronized multi-view generation across diverse robot…</p>
+<p><a href="https://arxiv.org/abs/2609.24815">论文原文</a> · <a href="https://arxiv.org/pdf/2609.24815">PDF</a> · <a href="https://huggingface.co/papers/2609.24815">讨论与热度</a> · <a href="https://github.com/D-Robotics-AI-Lab/Uranus-OSS">代码</a></p><hr>
+<h2>6. Agent-Editing World Model: Rethinking World Modeling for LLM Agents</h2>
+<p><strong>通用 AI</strong> · 发表 2026-09-23 · 综合分 4.88</p>
+<p>Zotero 摘要相关性：0.367（相似度分数，不是概率）。</p>
+<p>HF 点赞 13 · 讨论 1 · 仓库累计 Star 3（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +13 · 讨论 +1。</p>
+<p><strong>规则标签：</strong>世界模型 · 推理</p>
+<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>
+<p><strong>原文摘要节选：</strong>Recent advances in large language models (LLMs) have enabled agents to tackle long-horizon tasks across diverse environments. To further improve agent performance, existing language world models typically predict environment observations, yet reconstructing high-entropy, execution-dependent tool responses offers limited value when real feedback is available. Meanwhile, agents suffer from task-state contamination, where unsupported assumptions and outdated plans persist in history and distort subsequent decisions. We propose the Agent-Editing World Model (AEWM), which models how reasoning and actions shape future task progress rather than simulating tool responses. AEWM combines Action Judge to distinguish Critical, Exploratory, and Noisy decisions with State Revision to edit noisy…</p>
+<p><a href="https://arxiv.org/abs/2609.28416">论文原文</a> · <a href="https://arxiv.org/pdf/2609.28416">PDF</a> · <a href="https://huggingface.co/papers/2609.28416">讨论与热度</a> · <a href="https://github.com/RUCAIBox/Agent-Editing-World-Model">代码</a></p><hr>
+<h2>7. The Tasteful Agent: Measuring and Improving Taste in Long-Horizon Tasks</h2>
+<p><strong>通用 AI</strong> · 发表 2026-09-22 · 综合分 4.81</p>
+<p>Zotero 摘要相关性：0.326（相似度分数，不是概率）。</p>
+<p>HF 点赞 137 · 讨论 6 · 仓库累计 Star 6（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +18 · 讨论 +0 · Star +4。</p>
+<p><strong>规则标签：</strong>推理</p>
+<p><strong>中文概述：</strong>本文针对LLM智能体在长时任务中决策能力缺失的问题，提出了“品味（taste）”的概念，指代智能体在长时任务中做出优良选择的能力。作者构建了Taste-Bench基准测试，通过从智能体轨迹中自动挖掘决策分支并要求模型在未知后续的情况下进行选择。评估显示当前顶尖模型表现受限。此外，作者提出通过蒸馏已观测结果的教师模型来训练学生模型，从而提升其在长时任务中的决策准确性与端到端成功率。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>作者提出了Taste-Bench基准测试，旨在从工程与研究任务的自动轨迹中提取决策分支，评估智能体在长时任务中的决策能力。<br><small>摘要依据：To address this problem, we build Taste-Bench, a benchmark of taste questions constructed automatically from trajectories that agents produced in engineering and research tasks.</small></li>
+<li>评估表明当前主流模型在Taste-Bench上的表现有限，且增加推理预算并未能提升决策准确率。<br><small>摘要依据：We evaluate frontier models on Taste-Bench and find that the best model answers only 59.7% of the questions correctly. We further find that forks whose deciding evidence appears later in the trajectory are much harder for every model, and that a larger reasoning budget does not improve the accuracy.</small></li>
+<li>研究证明“品味”可通过知识蒸馏进行训练，利用已知任务结果的教师模型引导，可有效提升学生模型在未知任务中的决策质量与端到端成功率。<br><small>摘要依据：Finally, we show that taste can be trained. We distill the judgment of a teacher that has seen the outcome into a student model, and the student makes better decisions on unseen tasks and improves end-to-end success on held-out SWE-bench Pro tasks.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>推理 · 大模型后训练</p>
+<p><strong>原文摘要节选：</strong>LLM agents increasingly work on long-horizon tasks, and the decisions they make along the way, such as which hypothesis to test or which implementation to build on, determine the outcome of the whole run. Making these decisions well is becoming a key capability for both engineering and research agents. We refer to the ability to make good long-horizon decisions as the taste of an agent. While existing benchmarks measure the end-to-end success of agents on long-horizon tasks, none of them measures the taste of an agent. To address this problem, we build Taste-Bench, a benchmark of taste questions constructed automatically from trajectories that agents produced in engineering and research tasks. Each question presents a decision fork, a point in a trajectory where multiple directions are…</p>
+<p><a href="https://arxiv.org/abs/2609.25804">论文原文</a> · <a href="https://arxiv.org/pdf/2609.25804">PDF</a> · <a href="https://huggingface.co/papers/2609.25804">讨论与热度</a> · <a href="https://github.com/wbopan/tastebench">代码</a></p><hr>
+<h2>8. RULER: Instance-aware Rubric Rewards for SVG Generation</h2>
+<p><strong>强化学习</strong> · 发表 2026-09-21 · 综合分 4.70</p>
+<p>Zotero 摘要相关性：0.329（相似度分数，不是概率）。</p>
+<p>HF 点赞 83 · 讨论 4</p>
+<p>较上次观测（1.0 天前）：点赞 +17 · 讨论 +0。</p>
+<p><strong>规则标签：</strong>强化学习</p>
+<p><strong>中文概述：</strong>本文针对从自然语言指令生成SVG代码缺乏有效评估与奖励信号的问题，提出了RULER（实例感知准则奖励）方法。该方法通过视觉语言模型（VLM）依据多维度准则对生成的SVG进行细粒度评分，并将加权分数作为奖励信号，结合组相对策略优化（GRPO）进行训练。作者声称，该方法无需成对SVG地面真值或人类偏好标签，即可在多个数据集上提升生成质量，并超越专门的SVG生成模型。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>RULER利用VLM对SVG生成结果进行多维度准则评分，将细粒度分数转化为强化学习的奖励信号，有效避免了传统标量度量的奖励操纵问题。<br><small>摘要依据：RULER (Instance-aware Rubric Rewards for Reinforcement Learning), which converts each instruction into an instance-aware rubric of six items spanning semantic, visual, and stylistic axes; a judge VLM scores rendered rollouts item-by-item, and the weighted satisfactions form a fine-grained reward optimized via Group Relative Policy Optimization.</small></li>
+<li>该方法无需成对的SVG真值数据或人工偏好标注，通过纯文本导出的评估准则即可实现端到端的优化。<br><small>摘要依据：Because the rubric is derived from text alone, RULER requires neither paired SVG ground truth nor human preference labels.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习 · 推理</p>
+<p><strong>原文摘要节选：</strong>Generating Scalable Vector Graphics (SVG) code from natural-language instructions is an open-ended task without absolute visual ground truth, leaving both evaluation and policy optimization without a faithful signal. Scalar metrics (CLIP, Aesthetic) calibrated on natural images transfer poorly to stylized vector content, and reusing them as RL rewards triggers reward hacking. We address both limitations with rubric-based scoring. We first establish empirically that prompting a vision-language judge with a multi-axis rubric correlates with human judgments far better than scalar metrics, both across samples and within instructions. Building on this finding, we introduce RULER (Instance-aware Rubric Rewards for Reinforcement Learning), which converts each instruction into an instance-aware…</p>
+<p><a href="https://arxiv.org/abs/2609.25270">论文原文</a> · <a href="https://arxiv.org/pdf/2609.25270">PDF</a> · <a href="https://huggingface.co/papers/2609.25270">讨论与热度</a></p><hr>
+<h2>9. Bellman Policy Optimization</h2>
+<p><strong>强化学习</strong> · 发表 2026-09-14 · 综合分 4.51</p>
+<p>Zotero 摘要相关性：0.356（相似度分数，不是概率）。</p>
+<p>HF 点赞 38 · 讨论 3</p>
+<p>较上次观测（1.0 天前）：点赞 +11 · 讨论 +0。</p>
+<p><strong>规则标签：</strong>强化学习 · 大模型后训练 · 推理</p>
+<p><strong>中文概述：</strong>本文提出了贝尔曼策略优化（BPO），这是一种用于提升大语言模型推理能力的免评判器强化学习方法。BPO通过贝尔曼方程将策略镜像下降法重构为轨迹级目标，从而避免了对中间状态价值的估计。作者证明了该方法与原始目标具有相同的最优解，并推导出了基于补集标记概率平滑比的实用损失函数。实验结果显示，BPO在数学推理基准测试中具有一定效力。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>BPO通过将策略镜像下降法重构为轨迹级目标，实现了无需估计中间状态价值即可进行训练。<br><small>摘要依据：For autoregressive generation with terminal rewards, BPO uses the Bellman equations to reformulate PMD as a trajectory-level objective. The reformulation avoids estimating state values at intermediate states.</small></li>
+<li>理论证明表明，重构后的BPO目标与原始策略镜像下降法具有唯一且相同的最优解。<br><small>摘要依据：We prove that it has the same unique optimal solution as the original PMD objective.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习 · 大模型后训练 · 推理</p>
+<p><strong>原文摘要节选：</strong>Reinforcement learning with verifiable rewards (RLVR) improves the reasoning capabilities of large language models (LLMs). We introduce Bellman Policy Optimization (BPO), a critic-free method derived from Policy Mirror Descent (PMD). For autoregressive generation with terminal rewards, BPO uses the Bellman equations to reformulate PMD as a trajectory-level objective. The reformulation avoids estimating state values at intermediate states. We prove that it has the same unique optimal solution as the original PMD objective. We derive the practical BPO loss by approximating this objective. Its mismatch-correction weight is a smoothed ratio of complementary token probabilities. Experiments on mathematical reasoning benchmarks demonstrate the effectiveness of BPO.</p>
+<p><a href="https://arxiv.org/abs/2609.15987">论文原文</a> · <a href="https://arxiv.org/pdf/2609.15987">PDF</a> · <a href="https://huggingface.co/papers/2609.15987">讨论与热度</a></p><hr>
+<h2>10. ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search</h2>
+<p><strong>强化学习</strong> · 发表 2026-09-11 · 综合分 4.50</p>
+<p>Zotero 摘要相关性：0.348（相似度分数，不是概率）。</p>
+<p>HF 点赞 261 · 讨论 8 · 本次 HF 热榜第 49 位 · 仓库累计 Star 553（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +2 · 讨论 +0 · Star +10。</p>
+<p><strong>规则标签：</strong>大模型后训练 · 推理</p>
+<p><strong>中文概述：</strong>ZGCM-1 是一款完全开源的 7B 参数密集型基础模型，旨在通过结合内部思维与外部工具使用来突破模型参数限制。该研究提出了软硬件协同设计的训练方案，包括交错门控滑动窗口与全注意力机制、FP8 Muon 优化器以及基于马尔可夫决策过程的课程学习。作者声称该模型在数学推理和智能体搜索任务中表现出与超大规模模型竞争的潜力，并提升了预训练效率。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>ZGCM-1 引入了软硬件协同设计及改进的课程学习策略，实现了预训练效率的显著提升。<br><small>摘要依据：We also show that our pre-training design offers a ~4.2x efficiency improvement in 16K pre-training time-to-loss.</small></li>
+<li>该模型通过结合内部思维与外部工具调用，在数学推理和智能体搜索任务中展现了与超大规模模型相当的竞争力。<br><small>摘要依据：On several challenging mathematical reasoning and agentic search suites, it remains competitive with frontier models orders of magnitude larger, such as Qwen3-235B-A22B and GLM-5.1.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>
+<p><strong>原文摘要节选：</strong>In this work, we present ZGCM-1, a fully open 7B dense foundation model trained from scratch with extreme data, system, and algorithmic efficiency. ZGCM-1 is founded on a core premise: compact models cannot passively memorize the open web, but can overcome parametric capacity limits by coupling deliberate internal thinking with active external tool use. To support this paradigm across a 256K context, we develop an end-to-end, high-efficiency open training recipe: Architecture &amp; System Co-design: interleaved gated sliding-window and full attention, and a stable FP8 Muon optimizer; Progressive Curriculum &amp; MDP Mid-Training: context scaling across 16K, 64K, and 256K, and the reformulation of interaction traces into Markov Decision Processes. Furthermore, we establish an AI-native R&amp;D…</p>
+<p><a href="https://arxiv.org/abs/2609.13356">论文原文</a> · <a href="https://arxiv.org/pdf/2609.13356">PDF</a> · <a href="https://huggingface.co/papers/2609.13356">讨论与热度</a> · <a href="https://github.com/zgcagi/ZGCM-1">代码</a></p><hr></body></html>

@@ -1,0 +1,18 @@
+{
+  "overview": "针对机器人在线适应环境变化的需求，本文研究了流式深度强化学习（Streaming Deep RL）在持续学习中的应用。作者提出一种基于流式更新的方法，即在初始预训练后，利用实时经验流进行策略更新，以适应自身、环境或目标的变化。实验表明，该方法在四足机器人运动任务中优于传统的批量在线策略方法，在机械臂操作任务中则表现出一定的局限性。",
+  "highlights": [
+    {
+      "text": "作者证明了流式深度强化学习能够支持机器人在预训练后，针对自身、环境或任务目标的不确定性变化进行实时适应。",
+      "evidence": "In particular, we show that, following an initial pretraining phase, streaming deep RL can enable a robot to successfully adapt to unforeseen changes to itself, its environment, or goals."
+    },
+    {
+      "text": "在四足机器人实验中，该方法通过结合特定的优化器与可塑性损失缓解技术，实现了比传统批量策略方法更优的在线适应效果。",
+      "evidence": "Our primary experiments within quadruped locomotion demonstrate that a deep neural network robotic policy with certain optimizers and plasticity loss mitigation techniques can successfully leverage domain task knowledge from its pretraining to quickly adapt online to diverse changes via stream learning, outperforming batch-based on-policy methods and improving task success rates by up to 90% over the pretrained policy."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "四足机器人",
+    "机器人操作"
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "date": "2026-09-26",
+  "timestamp": "2026-09-26T09:01:51.898416+08:00",
+  "title": "2026-09-26 每日新论文 5",
+  "slug": "2026-09-26-new",
+  "papers": [
+    {
+      "id": "2609.28807",
+      "title": "An Analysis of Streaming Deep Reinforcement Learning for Adaptive Continual Learning in Robotics",
+      "abstract": "Over the course of a lifetime, robots may encounter novel scenarios unaccounted for in its original training that result in performance degradation. One common approach to mitigating this issue is to further grow the offline training dataset in hopes of producing a policy robust to these changes. In contrast, biological learning occurs moment-to-moment via a stream of experience, unlike the predominantly batch-based and offline nature of deep learning. Although recent works show the feasibility of stream-based deep reinforcement learning, where updates use only the latest experience, none have shown it to be a viable continual learning framework for adapting robotic policies to unseen changes. In this paper, we present the first analysis of streaming deep reinforcement learning for adaptive continual learning in robotics. In particular, we show that, following an initial pretraining phase, streaming deep RL can enable a robot to successfully adapt to unforeseen changes to itself, its environment, or goals. Our primary experiments within quadruped locomotion demonstrate that a deep neural network robotic policy with certain optimizers and plasticity loss mitigation techniques can successfully leverage domain task knowledge from its pretraining to quickly adapt online to diverse changes via stream learning, outperforming batch-based on-policy methods and improving task success rates by up to 90% over the pretrained policy. Furthermore, we perform additional evaluations on robotic manipulation tasks to determine if our previous observations extend to different robotic morphologies and scenarios. Our results show that the successes observed in quadruped locomotion can be partially realized in manipulation with stability and performance limitations. We conclude with a discussion on the limitations of our work and its implications for the future of continual robot learning.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-09-25",
+      "date_label": "公告",
+      "age_days": 0.8762951205555555,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.55088,
+      "growth": null,
+      "score": 3.581,
+      "rule_tags": [
+        "强化学习",
+        "四足机器人",
+        "足式运动",
+        "机器人操作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对机器人在线适应环境变化的需求，本文研究了流式深度强化学习（Streaming Deep RL）在持续学习中的应用。作者提出一种基于流式更新的方法，即在初始预训练后，利用实时经验流进行策略更新，以适应自身、环境或目标的变化。实验表明，该方法在四足机器人运动任务中优于传统的批量在线策略方法，在机械臂操作任务中则表现出一定的局限性。",
+        "highlights": [
+          {
+            "text": "作者证明了流式深度强化学习能够支持机器人在预训练后，针对自身、环境或任务目标的不确定性变化进行实时适应。",
+            "evidence": "In particular, we show that, following an initial pretraining phase, streaming deep RL can enable a robot to successfully adapt to unforeseen changes to itself, its environment, or goals."
+          },
+          {
+            "text": "在四足机器人实验中，该方法通过结合特定的优化器与可塑性损失缓解技术，实现了比传统批量策略方法更优的在线适应效果。",
+            "evidence": "Our primary experiments within quadruped locomotion demonstrate that a deep neural network robotic policy with certain optimizers and plasticity loss mitigation techniques can successfully leverage domain task knowledge from its pretraining to quickly adapt online to diverse changes via stream learning, outperforming batch-based on-policy methods and improving task success rates by up to 90% over the pretrained policy."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "四足机器人",
+          "机器人操作"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.29750",
+      "title": "From Target Selection to Digging: A Learning-Based Framework for Continuous Autonomous Excavation",
+      "abstract": "Repeated excavation continuously reshapes pile geometry, requiring an autonomous excavator to adapt its digging targets and coordinate motion across successive excavation cycles. We present a learning-based framework for continuous autonomous excavation that integrates terrain-aware target selection with reinforcement- and imitation-learning controllers. The framework separates target-conditioned motion from local digging: a shared task-conditioned RL policy controls waypoint-guided approach and loaded transport, while an IL policy learns vision-based digging and lifting from expert demonstrations. Digging targets are selected from LiDAR elevation maps and converted into bucket-tip waypoints for motion control. The control architecture coordinates the learned policies and deterministic unloading through a shared motion interface. The complete system is deployed on a scaled hydraulic excavator with multimodal sensing and closed-loop actuator control. Offline replay and physical experiments demonstrate more consistent target selection, shorter local motion time, and increased payload compared with the respective baselines. The learned digging policy achieves a mean payload of 6.52 kg per completed cycle, compared with 2.68 kg for Fixed Dig. Three five-scoop runs further demonstrate consecutive autonomous excavation under continuously changing pile geometry.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-09-25",
+      "date_label": "公告",
+      "age_days": 0.8762951205555555,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.53932,
+      "growth": null,
+      "score": 3.506,
+      "rule_tags": [],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文针对重复挖掘导致的堆料几何形状持续变化问题，提出了一种基于学习的连续自动挖掘框架。该框架结合了地形感知目标选择、强化学习（RL）路径规划及模仿学习（IL）挖掘控制。通过将任务导向的RL策略与视觉驱动的IL策略相结合，系统能够动态规划挖掘路径并协调卸载。在比例模型液压挖掘机上的实验表明，该方法在挖掘一致性、任务执行效率及载荷量方面优于对比基线。",
+        "highlights": [
+          {
+            "text": "该框架通过集成地形感知目标选择与强化学习及模仿学习策略，实现了从目标确定到连续挖掘的自主化。",
+            "evidence": "We present a learning-based framework for continuous autonomous excavation that integrates terrain-aware target selection with reinforcement- and imitation-learning controllers."
+          },
+          {
+            "text": "实验结果显示，所学挖掘策略在平均单次循环载荷上表现优于固定挖掘基线。",
+            "evidence": "The learned digging policy achieves a mean payload of 6.52 kg per completed cycle, compared with 2.68 kg for Fixed Dig."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "模仿学习"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.30134",
+      "title": "Training-free Behavior Cloning",
+      "abstract": "Neural behavior cloning compresses demonstrations into large models, making individual actions difficult to trace and policy updates costly. Retrieval policies retain access to demonstrations but struggle with mismatch between recorded and live behavior. We introduce Behavior Predictive Control (BPC), which synthesizes policies without end-to-end policy training by combining an action-aware retrieval metric, a Hankel-based action-continuation prior, and a closed-form one-step residual correction. Inspired by behavioral systems theory, BPC predicts future actions by blending stored observation-action data that best reconstructs the recent runtime observation--action history. Across simulated benchmarks and real-robot deployments, BPC is competitive with learned policies such as $\\pi_{0.5}$ (surpassing it in some cases), while reducing policy fitting from hours to seconds on consumer GPUs and supporting closed-loop control upwards of 75 Hz on a Jetson Orin Nano. The retrieved demonstration windows and their coefficients also provide an intrinsic estimate of task progress. Retaining demonstrations within the deployed policy makes its predictions traceable to supporting trajectories and enables behavior revision through the demonstration bank.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-09-25",
+      "date_label": "公告",
+      "age_days": 0.8762951205555555,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.50161,
+      "growth": null,
+      "score": 3.26,
+      "rule_tags": [
+        "模仿学习"
+      ],
+      "summary_status": "Gemini 暂不可用，显示规则标签与原文摘要。"
+    },
+    {
+      "id": "2609.28960",
+      "title": "Echo in the Steps: Learning Perceptive Humanoid Parkour with Gated Memory",
+      "abstract": "While recent advances in perceptive locomotion have enabled humanoid robots to traverse structured terrains, agile parkour in highly discontinuous environments remains an open challenge. In particular, crossing sparse footholds and narrow support regions requires precise foothold selection, effective use of visual observations, and consistent alternating foot placement during fast transitions. In this paper, we present a perceptive humanoid parkour framework that enables stable traversal across terrains with limited foothold availability using only onboard depth observations. The framework features a saliency-guided temporal perception module that combines a saliency prior with gated memory. It retains informative depth features across frames, enabling reliable foot placement from partial observations. By introducing an alternation loss, our symmetry regularization encourages alternating gait patterns and improves traversal robustness. Extensive experiments show that our method significantly improves success rate and foothold accuracy on challenging terrains in both simulation and the real world.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-09-25",
+      "date_label": "公告",
+      "age_days": 0.8762951205555555,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.50101,
+      "growth": null,
+      "score": 3.257,
+      "rule_tags": [
+        "人形机器人",
+        "足式运动"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对人形机器人在非连续地形中进行敏捷跑酷的挑战，本文提出了一种基于门控记忆的感知跑酷框架。该框架利用显著性引导的时间感知模块处理板载深度信息，通过门控记忆机制跨帧保留深度特征，并引入交替损失来强化步态对称性与稳定性。作者声称，该方法在仿真和真实世界测试中均显著提升了机器人在复杂地形下的跨越成功率和落足点精度。",
+        "highlights": [
+          {
+            "text": "提出了一种结合显著性先验与门控记忆的感知模块，能够从局部观测中提取并保留关键深度特征，从而实现可靠的落足点选择。",
+            "evidence": "The framework features a saliency-guided temporal perception module that combines a saliency prior with gated memory. It retains informative depth features across frames, enabling reliable foot placement from partial observations."
+          },
+          {
+            "text": "通过引入交替损失函数，优化了机器人的步态模式，增强了在非连续地形上跨越运动的稳健性。",
+            "evidence": "By introducing an alternation loss, our symmetry regularization encourages alternating gait patterns and improves traversal robustness."
+          }
+        ],
+        "tags": [
+          "人形机器人",
+          "足式运动"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.29166",
+      "title": "HarnessPAI: An Evolving Harness for Physical AI",
+      "abstract": "Physical AI aims to build embodied agents that perceive the world, understand and reason about it, and decide how to act. Yet the field has focused primarily on the last component: the action model that maps observations to low-level controls. The prevailing training recipe can erode the perceptual and reasoning capabilities needed for robust behavior, leaving even strong action models vulnerable to scene perturbations and long-horizon tasks. We introduce HarnessPAI, a model- and embodiment-agnostic Harness framework for Physical AI that treats code as the executable and evolvable interface that organizes the underlying action primitive. The framework separates two timescales: within a rollout, it executes open-loop at the program level, with a fixed program guiding and checking execution; across rollouts, it evolves closed-loop, using execution feedback to revise the program and distill failures into reusable skills. Across desktop robot arms, household robots, a robot vacuum, and a legged walking agent, HarnessPAI improves on both pure action models and code-as-policy baselines without retraining the underlying model: a 61.6-point gain over $\\pi_{0.5}$ on LIBERO-PRO and a 27.2-point gain over WorldDreamer on RoboCasa atomic tasks. Once a program is selected, rollout execution requires no online high-level LLM deliberation. Beyond execution, the converged program is also a cheap and reliable expert-data collector, and fine-tuning $\\pi_{0.5}$ on collected expert data lifts success rate on LIBERO-PRO by 38.8 points. Our results suggest that the frontier of Physical AI depends not only on stronger action models, but also on executable harnesses that integrate perception, task understanding and reasoning, and action execution into a unified, verifiable, and feedback-driven system. Website: https://darwin-agent.github.io/HarnessPAI",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-09-25",
+      "date_label": "公告",
+      "age_days": 0.8762951205555555,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.49634,
+      "growth": null,
+      "score": 3.226,
+      "rule_tags": [
+        "足式运动",
+        "推理"
+      ],
+      "summary_status": "Gemini 暂不可用，显示规则标签与原文摘要。"
+    }
+  ],
+  "candidate_count": 684,
+  "personalization_note": "已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。",
+  "html": "<h1>2026-09-26 每日新论文 5</h1>\n<p>机器人 · 强化学习 · 通用 AI</p>\n<p>生成时间：2026-09-26 09:01 CST。从 684 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>\n<p>本栏优先收录最近发布且未出现在近期日报的 arXiv 论文，不按热度排序；相关性分用于结合你的 Zotero 收藏偏好。</p>\n<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>\n<p>本次合格候选不足 10 篇，实际收录 5 篇。</p>\n<h2>1. An Analysis of Streaming Deep Reinforcement Learning for Adaptive Continual Learning in Robotics</h2>\n<p><strong>机器人 / 强化学习</strong> · 公告 2026-09-25 · 综合分 3.58</p>\n<p>Zotero 摘要相关性：0.551（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习 · 四足机器人 · 足式运动 · 机器人操作</p>\n<p><strong>中文概述：</strong>针对机器人在线适应环境变化的需求，本文研究了流式深度强化学习（Streaming Deep RL）在持续学习中的应用。作者提出一种基于流式更新的方法，即在初始预训练后，利用实时经验流进行策略更新，以适应自身、环境或目标的变化。实验表明，该方法在四足机器人运动任务中优于传统的批量在线策略方法，在机械臂操作任务中则表现出一定的局限性。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>作者证明了流式深度强化学习能够支持机器人在预训练后，针对自身、环境或任务目标的不确定性变化进行实时适应。<br><small>摘要依据：In particular, we show that, following an initial pretraining phase, streaming deep RL can enable a robot to successfully adapt to unforeseen changes to itself, its environment, or goals.</small></li>\n<li>在四足机器人实验中，该方法通过结合特定的优化器与可塑性损失缓解技术，实现了比传统批量策略方法更优的在线适应效果。<br><small>摘要依据：Our primary experiments within quadruped locomotion demonstrate that a deep neural network robotic policy with certain optimizers and plasticity loss mitigation techniques can successfully leverage domain task knowledge from its pretraining to quickly adapt online to diverse changes via stream learning, outperforming batch-based on-policy methods and improving task success rates by up to 90% over the pretrained policy.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · 四足机器人 · 机器人操作</p>\n<p><strong>原文摘要节选：</strong>Over the course of a lifetime, robots may encounter novel scenarios unaccounted for in its original training that result in performance degradation. One common approach to mitigating this issue is to further grow the offline training dataset in hopes of producing a policy robust to these changes. In contrast, biological learning occurs moment-to-moment via a stream of experience, unlike the predominantly batch-based and offline nature of deep learning. Although recent works show the feasibility of stream-based deep reinforcement learning, where updates use only the latest experience, none have shown it to be a viable continual learning framework for adapting robotic policies to unseen changes. In this paper, we present the first analysis of streaming deep reinforcement learning for…</p>\n<p><a href=\"https://arxiv.org/abs/2609.28807\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.28807\">PDF</a></p><hr>\n<h2>2. From Target Selection to Digging: A Learning-Based Framework for Continuous Autonomous Excavation</h2>\n<p><strong>机器人</strong> · 公告 2026-09-25 · 综合分 3.51</p>\n<p>Zotero 摘要相关性：0.539（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>中文概述：</strong>本文针对重复挖掘导致的堆料几何形状持续变化问题，提出了一种基于学习的连续自动挖掘框架。该框架结合了地形感知目标选择、强化学习（RL）路径规划及模仿学习（IL）挖掘控制。通过将任务导向的RL策略与视觉驱动的IL策略相结合，系统能够动态规划挖掘路径并协调卸载。在比例模型液压挖掘机上的实验表明，该方法在挖掘一致性、任务执行效率及载荷量方面优于对比基线。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>该框架通过集成地形感知目标选择与强化学习及模仿学习策略，实现了从目标确定到连续挖掘的自主化。<br><small>摘要依据：We present a learning-based framework for continuous autonomous excavation that integrates terrain-aware target selection with reinforcement- and imitation-learning controllers.</small></li>\n<li>实验结果显示，所学挖掘策略在平均单次循环载荷上表现优于固定挖掘基线。<br><small>摘要依据：The learned digging policy achieves a mean payload of 6.52 kg per completed cycle, compared with 2.68 kg for Fixed Dig.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · 模仿学习</p>\n<p><strong>原文摘要节选：</strong>Repeated excavation continuously reshapes pile geometry, requiring an autonomous excavator to adapt its digging targets and coordinate motion across successive excavation cycles. We present a learning-based framework for continuous autonomous excavation that integrates terrain-aware target selection with reinforcement- and imitation-learning controllers. The framework separates target-conditioned motion from local digging: a shared task-conditioned RL policy controls waypoint-guided approach and loaded transport, while an IL policy learns vision-based digging and lifting from expert demonstrations. Digging targets are selected from LiDAR elevation maps and converted into bucket-tip waypoints for motion control. The control architecture coordinates the learned policies and deterministic…</p>\n<p><a href=\"https://arxiv.org/abs/2609.29750\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.29750\">PDF</a></p><hr>\n<h2>3. Training-free Behavior Cloning</h2>\n<p><strong>机器人</strong> · 公告 2026-09-25 · 综合分 3.26</p>\n<p>Zotero 摘要相关性：0.502（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>模仿学习</p>\n<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>\n<p><strong>原文摘要节选：</strong>Neural behavior cloning compresses demonstrations into large models, making individual actions difficult to trace and policy updates costly. Retrieval policies retain access to demonstrations but struggle with mismatch between recorded and live behavior. We introduce Behavior Predictive Control (BPC), which synthesizes policies without end-to-end policy training by combining an action-aware retrieval metric, a Hankel-based action-continuation prior, and a closed-form one-step residual correction. Inspired by behavioral systems theory, BPC predicts future actions by blending stored observation-action data that best reconstructs the recent runtime observation--action history. Across simulated benchmarks and real-robot deployments, BPC is competitive with learned policies such as $\\pi_{0.5}$…</p>\n<p><a href=\"https://arxiv.org/abs/2609.30134\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.30134\">PDF</a></p><hr>\n<h2>4. Echo in the Steps: Learning Perceptive Humanoid Parkour with Gated Memory</h2>\n<p><strong>机器人</strong> · 公告 2026-09-25 · 综合分 3.26</p>\n<p>Zotero 摘要相关性：0.501（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>人形机器人 · 足式运动</p>\n<p><strong>中文概述：</strong>针对人形机器人在非连续地形中进行敏捷跑酷的挑战，本文提出了一种基于门控记忆的感知跑酷框架。该框架利用显著性引导的时间感知模块处理板载深度信息，通过门控记忆机制跨帧保留深度特征，并引入交替损失来强化步态对称性与稳定性。作者声称，该方法在仿真和真实世界测试中均显著提升了机器人在复杂地形下的跨越成功率和落足点精度。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出了一种结合显著性先验与门控记忆的感知模块，能够从局部观测中提取并保留关键深度特征，从而实现可靠的落足点选择。<br><small>摘要依据：The framework features a saliency-guided temporal perception module that combines a saliency prior with gated memory. It retains informative depth features across frames, enabling reliable foot placement from partial observations.</small></li>\n<li>通过引入交替损失函数，优化了机器人的步态模式，增强了在非连续地形上跨越运动的稳健性。<br><small>摘要依据：By introducing an alternation loss, our symmetry regularization encourages alternating gait patterns and improves traversal robustness.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>人形机器人 · 足式运动</p>\n<p><strong>原文摘要节选：</strong>While recent advances in perceptive locomotion have enabled humanoid robots to traverse structured terrains, agile parkour in highly discontinuous environments remains an open challenge. In particular, crossing sparse footholds and narrow support regions requires precise foothold selection, effective use of visual observations, and consistent alternating foot placement during fast transitions. In this paper, we present a perceptive humanoid parkour framework that enables stable traversal across terrains with limited foothold availability using only onboard depth observations. The framework features a saliency-guided temporal perception module that combines a saliency prior with gated memory. It retains informative depth features across frames, enabling reliable foot placement from partial…</p>\n<p><a href=\"https://arxiv.org/abs/2609.28960\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.28960\">PDF</a></p><hr>\n<h2>5. HarnessPAI: An Evolving Harness for Physical AI</h2>\n<p><strong>机器人</strong> · 公告 2026-09-25 · 综合分 3.23</p>\n<p>Zotero 摘要相关性：0.496（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>足式运动 · 推理</p>\n<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>\n<p><strong>原文摘要节选：</strong>Physical AI aims to build embodied agents that perceive the world, understand and reason about it, and decide how to act. Yet the field has focused primarily on the last component: the action model that maps observations to low-level controls. The prevailing training recipe can erode the perceptual and reasoning capabilities needed for robust behavior, leaving even strong action models vulnerable to scene perturbations and long-horizon tasks. We introduce HarnessPAI, a model- and embodiment-agnostic Harness framework for Physical AI that treats code as the executable and evolvable interface that organizes the underlying action primitive. The framework separates two timescales: within a rollout, it executes open-loop at the program level, with a fixed program guiding and checking…</p>\n<p><a href=\"https://arxiv.org/abs/2609.29166\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.29166\">PDF</a></p><hr>"
+}
