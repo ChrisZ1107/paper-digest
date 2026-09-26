@@ -700,6 +700,32 @@
           "abstract_zh": "智能体记忆对于长程AI智能体正变得至关重要，然而许多现有系统依赖自回归大语言模型（LLM）来控制记忆的组织、检索和使用，这使得高昂的生成成本处于记忆操作的关键路径上。我们引入了Jev-Mem，这是一种受“系统一/系统二”认知理论启发的新型智能体记忆架构。系统一捕捉快速、轻量级的决策，而系统二执行较慢、深思熟虑的推理。Jev-Mem通过专用的系统一控制平面、结构化的多关系记忆平面和系统二推理平面，将这种分工引入到智能体记忆中。系统一控制器在构建过程中管理记忆类型和关系组织，并在检索过程中动态执行查询路由、检索预算分配、图遍历、候选评分和自适应停止。系统二仅在进行复杂推理和答案合成时被调用。该设计同时提升了记忆有效性和系统效率：在LoCoMo测试中，Jev-Mem的LLM-as-a-Judge总分为0.777，较最强的基线模型相对提升了11.0%；同时将记忆构建时间缩短至158秒，比最快的竞品记忆系统提速6.6倍，并将平均查询延迟降低至0.93秒，减少了36.7%。"
         }
       ]
+    },
+    "cr-9XkIys7g": {
+      "video_id": "cr-9XkIys7g",
+      "video_title": "Recursive self-improvement of AI research agents (Sep 2026)",
+      "published": "2026-09-26",
+      "video_url": "https://www.youtube.com/watch?v=cr-9XkIys7g",
+      "papers": [
+        {
+          "id": "2609.26457",
+          "title": "Recursive self-improvement of AI research agents (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.26457"
+        }
+      ]
+    },
+    "6gwbLX1JhoU": {
+      "video_id": "6gwbLX1JhoU",
+      "video_title": "JEV-as-a-Judge: Accept When Confident, Escalate When Unsure (Sep 2026)",
+      "published": "2026-09-26",
+      "video_url": "https://www.youtube.com/watch?v=6gwbLX1JhoU",
+      "papers": [
+        {
+          "id": "2609.26550",
+          "title": "JEV-as-a-Judge: Accept When Confident, Escalate When Unsure (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.26550"
+        }
+      ]
     }
   }
 }
