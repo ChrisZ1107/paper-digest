@@ -1,0 +1,14 @@
+{
+  "overview": "该综述探讨了物理先验在机器人学习中的应用，针对纯数据驱动方法在数据有限和复杂交互环境下的局限性，分析了如何将物理定律与约束融入学习算法。作者提出了一套统一的分类法，按物理嵌入方式（输入/数据/表征、模型架构、训练损失函数）对现有研究进行归纳。综述涵盖了从感知到控制的多种机器人任务，旨在论证物理先验作为归纳偏置，能提升机器人系统的通用性、数据效率及可靠性。",
+  "highlights": [
+    {
+      "text": "提出了一种统一的分类法，根据物理嵌入方式将现有机器人学习方法分为物理引导的输入、模型架构及训练损失函数三类。",
+      "evidence": "We adopt a unified taxonomy that classifies existing approaches according to their physics embedding: physics-guided inputs, data, and representations; physics-encoded model architectures; and physics-informed training loss functions."
+    },
+    {
+      "text": "物理先验可作为机器人特有的归纳偏置，在补充有限数据的基础上，有望提升机器人系统的泛化能力、可解释性及样本效率。",
+      "evidence": "By encoding the underlying physical laws and constraints, physics priors can complement limited data with robotics-specific inductive biases, potentially improving generalization, interpretability, and sample efficiency."
+    }
+  ],
+  "tags": []
+}

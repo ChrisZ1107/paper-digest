@@ -1,0 +1,21 @@
+{
+  "overview": "针对移动规划任务中复杂长程任务与真实设备交互成本高的问题，作者提出了Qwen-Planner-Agent。该框架采用闭环AI-for-AI范式，集成数据生产、模型训练与部署。通过引入Competence-Aware Reward-and-Advantage Engineering (CARE)及执行证据驱动的反馈机制，实现任务协同与系统迭代。作者声称该方法在MobilePA-Bench基准测试中优于其他评估模型，并在保持通用能力的同时提升了代理性能。",
+  "highlights": [
+    {
+      "text": "提出一种基于人类门控的代理数据飞轮，通过专业代理构建任务、收集轨迹并自动筛选训练数据，实现数据的自我迭代与平衡。",
+      "evidence": "AI for Data builds a human-gated agentic data flywheel in which specialized agents construct tasks, collect interaction trajectories, curate and balance training data, and use training feedback to guide subsequent data generation."
+    },
+    {
+      "text": "引入Competence-Aware Reward-and-Advantage Engineering (CARE)技术，在保持任务性能的前提下降低模型推理与工具使用的成本。",
+      "evidence": "we introduce Competence-Aware Reward-and-Advantage Engineering (CARE) to reduce reasoning and tool-use costs while preserving task performance."
+    },
+    {
+      "text": "构建了基于执行证据驱动的闭环系统，通过将运行时反馈与失败轨迹反馈至模型，实现了模型与执行环境的协同进化。",
+      "evidence": "AI drives model--harness co-evolution through an execution-evidence-driven loop that orchestrates memory, skills, and tools at runtime and feeds structured action feedback and preserved failure traces back into coordinated model and harness adaptation."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "推理"
+  ]
+}

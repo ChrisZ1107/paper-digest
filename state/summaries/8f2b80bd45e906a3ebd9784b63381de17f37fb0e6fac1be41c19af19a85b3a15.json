@@ -1,0 +1,16 @@
+{
+  "overview": "针对机器人装箱任务中长程序列决策的挑战，本文提出了PackLab框架。该框架包含用于生成训练轨迹和评估物理结果的仿真平台PackLab-Suite，专注于理解物体与容器状态以实现闭环决策的专用多模态大模型PackLab-VLM，以及用于系统性评测的基准测试集PackLab-Bench。实验结果显示，PackLab-VLM在多种配置下表现优于传统启发式算法、强化学习方法及通用多模态模型。",
+  "highlights": [
+    {
+      "text": "PackLab-VLM通过理解演变的物体与容器状态，实现了联合物体选择与放置位置预测的闭环决策。",
+      "evidence": "PackLab-VLM is a packing-specialized MLLM that understands the evolving object and container states to jointly select objects and predict placements in a closed-loop manner."
+    },
+    {
+      "text": "PackLab-VLM在装箱任务中展现出优于现有启发式算法、传统强化学习及通用大模型的性能。",
+      "evidence": "Extensive experiments demonstrate that, on average, PackLab-VLM outperforms conventional packing heuristics, traditional reinforcement learning methods, and general-purpose MLLMs across object sets and container configurations, highlighting the potential of MLLMs for long-horizon robotic packing."
+    }
+  ],
+  "tags": [
+    "机器人操作"
+  ]
+}
