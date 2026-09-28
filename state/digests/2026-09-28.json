@@ -1,0 +1,508 @@
+{
+  "date": "2026-09-28",
+  "timestamp": "2026-09-28T09:01:51.793851+08:00",
+  "title": "2026-09-28 热门论文 Top 10｜机器人·强化学习·AI",
+  "slug": "2026-09-28",
+  "papers": [
+    {
+      "id": "2609.23863",
+      "title": "Grounded Action Model: 3D Grounding as a Foundation for Robotics",
+      "abstract": "Manipulation policies must know which objects matter and where they are, yet the pretrained backbones that current robot foundation models build on, from language in vision-language-action models (VLAs) to video generation in world-action models (WAMs), do not directly require this metric grounding, leaving it to be learned implicitly from robot demonstrations. We propose Grounded Action Models (GAMs), a new paradigm of robot foundation models built with 3D grounding. GAM can be conditioned using language, points, or box prompts, which are first transformed into a shared object-centric representation of the selected objects. This representation captures target-focused visual features and metric object geometry, which is mixed with robot state history through a multi-stream transformer to predict action chunks. Although GAMs can be run autonomously, they can also serve as a low-level controller that a high-level planner controls using its various input modalities, allowing for long-horizon and memory-dependent manipulation. On RoboTwin 2.0, GAM achieves an average success rate of 55.3% across 50 tasks (vs. 52.0% for Spatial Forcing), including 47.6% under scene randomization (vs. 30.4% for Abot-M0), with its action policy trained only on clean-scene demonstrations. On LIBERO-PRO, it achieves a state-of-the-art average success rate of 61% (vs. 53% for π_{0.5}) across 16 perturbation settings, with the largest gains when targets are relocated or newly designated. On two real robots, GAM retains 17/20 successes under visual shift on a bimanual YAM versus 4/20 for π_{0.5}, while its composition with a Molmo2 planner on a Franka achieves 64.7% ID and 49.8% OOD step completion on long-horizon and memory-dependent tasks.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-09-20",
+      "age_days": 8.042960576979167,
+      "upvotes": 87,
+      "comments": 3,
+      "stars": 26,
+      "repo": "https://github.com/GehaoZhang6/Grounded-Action-Model",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.48722,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 0,
+        "comments": 0,
+        "stars": 1
+      },
+      "score": 5.074,
+      "rule_tags": [
+        "视觉语言动作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对现有机器人基础模型在物体几何与空间定位理解上的局限，作者提出了Grounded Action Models (GAM)。该模型通过3D基础化技术，将语言、点或框提示转化为以物体为中心的共享表示，结合多流Transformer预测动作块。实验表明，GAM在RoboTwin 2.0及LIBERO-PRO数据集及真实机器人任务中，在场景随机化与视觉干扰环境下表现出较强的鲁棒性和长程操作能力。",
+        "highlights": [
+          {
+            "text": "GAM通过3D基础化将提示转化为物体中心化表示，从而显式捕获目标视觉特征与度量几何信息。",
+            "evidence": "GAM can be conditioned using language, points, or box prompts, which are first transformed into a shared object-centric representation of the selected objects. This representation captures target-focused visual features and metric object geometry"
+          },
+          {
+            "text": "在RoboTwin 2.0基准上，GAM在场景随机化任务中展现了对比基线的性能优势。",
+            "evidence": "including 47.6% under scene randomization (vs. 30.4% for Abot-M0), with its action policy trained only on clean-scene demonstrations."
+          },
+          {
+            "text": "GAM作为低级控制器与高层规划器结合，在长程与依赖记忆的机器人操作任务中取得了显著效果。",
+            "evidence": "its composition with a Molmo2 planner on a Franka achieves 64.7% ID and 49.8% OOD step completion on long-horizon and memory-dependent tasks."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "Sim-to-Real"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.22319",
+      "title": "Embedding Physics Priors in Robot Learning: A Survey",
+      "abstract": "The rapid progress of artificial intelligence is reshaping robotics and accelerating the adoption of learning-based approaches. While purely data-driven methods have achieved remarkable success in computer vision and natural language processing, robotics remains constrained by limited data, complex real-world interactions, and the need for reliable operation. These challenges have motivated the exploration of physics-embedded robot learning, which embeds physics priors into learning algorithms. By encoding the underlying physical laws and constraints, physics priors can complement limited data with robotics-specific inductive biases, potentially improving generalization, interpretability, and sample efficiency. However, the literature on physics-embedded robot learning remains fragmented across terminology, methodologies, and application domains, making it difficult to assess this growing body of work. This survey reviews physics-embedded robot learning across a broad range of physics priors, robotics applications, and machine learning models, from single-layer perceptrons to generative foundation models. We adopt a unified taxonomy that classifies existing approaches according to their physics embedding: physics-guided inputs, data, and representations; physics-encoded model architectures; and physics-informed training loss functions. Building on this taxonomy, we review methods for robot dynamics learning, trajectory planning, prediction, control, and estimation, together with the corresponding open-source software ecosystem. We identify key open challenges, and outline promising future research directions. Overall, we argue that physics priors provide a particularly relevant robotics-specific inductive bias, complementing rather than replacing data-driven learning, and paving the way toward more generalizable, data-efficient, and trustworthy robotic systems.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-09-15",
+      "age_days": 13.042960576979167,
+      "upvotes": 17,
+      "comments": 2,
+      "stars": 7,
+      "repo": "https://github.com/TUM-AVS/survey-physics-embedded-robot-learning",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.45426,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 6,
+        "comments": 0,
+        "stars": 1
+      },
+      "score": 4.96,
+      "rule_tags": [],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "该综述探讨了物理先验在机器人学习中的应用，针对纯数据驱动方法在数据有限和复杂交互环境下的局限性，分析了如何将物理定律与约束融入学习算法。作者提出了一套统一的分类法，按物理嵌入方式（输入/数据/表征、模型架构、训练损失函数）对现有研究进行归纳。综述涵盖了从感知到控制的多种机器人任务，旨在论证物理先验作为归纳偏置，能提升机器人系统的通用性、数据效率及可靠性。",
+        "highlights": [
+          {
+            "text": "提出了一种统一的分类法，根据物理嵌入方式将现有机器人学习方法分为物理引导的输入、模型架构及训练损失函数三类。",
+            "evidence": "We adopt a unified taxonomy that classifies existing approaches according to their physics embedding: physics-guided inputs, data, and representations; physics-encoded model architectures; and physics-informed training loss functions."
+          },
+          {
+            "text": "物理先验可作为机器人特有的归纳偏置，在补充有限数据的基础上，有望提升机器人系统的泛化能力、可解释性及样本效率。",
+            "evidence": "By encoding the underlying physical laws and constraints, physics priors can complement limited data with robotics-specific inductive biases, potentially improving generalization, interpretability, and sample efficiency."
+          }
+        ],
+        "tags": [],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.24984",
+      "title": "WorldCrafter: Consistent Video World Model with Implicit 3D-aware Memory",
+      "abstract": "Video world models enable interactive exploration of dynamic environments, yet struggle to respect prior observations over long horizons and across viewpoints. We present WorldCrafter, a video world model that learns a camera-queryable implicit 3D-aware memory for this purpose. The key insight is to let the requested viewpoint shape how multi-view evidence is compressed into the video generator's limited token budget. Trained jointly with the video generator, a memory encoder and pose-conditioned readout module integrate historical observations into a fixed set of target view-specific tokens before denoising, without explicit depth-based correspondences. By combining this memory with recent temporal context and few-step distillation, WorldCrafter enables streaming scene exploration from a single input image or text prompt. Experiments across static and dynamic scenes show substantial gains in long-horizon consistency and camera-control accuracy while preserving visual quality during minute-scale exploration.",
+      "topics": [
+        "通用 AI"
+      ],
+      "published": "2026-09-21",
+      "age_days": 7.0429605769791666,
+      "upvotes": 155,
+      "comments": 4,
+      "stars": 390,
+      "repo": "https://github.com/TencentARC/WorldCrafter",
+      "trending_rank": 4,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.35512,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 3,
+        "comments": 0,
+        "stars": 33
+      },
+      "score": 4.868,
+      "rule_tags": [
+        "世界模型"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对视频世界模型在长序列与多视角下难以保持一致性的问题，作者提出了WorldCrafter。该模型通过引入可查询的隐式3D感知记忆机制，利用记忆编码器和姿态条件读取模块，将多视角历史观测压缩至固定数量的视角相关Token中，结合时间上下文与蒸馏技术，实现了从单张图片或文本提示出发的场景流式探索。实验表明，该方法在长序列一致性与相机控制准确性方面具有显著提升。",
+        "highlights": [
+          {
+            "text": "提出了一种隐式3D感知记忆机制，通过视角引导将多视角历史观测压缩至有限的Token预算中，从而增强了视频生成的一致性。",
+            "evidence": "The key insight is to let the requested viewpoint shape how multi-view evidence is compressed into the video generator's limited token budget."
+          },
+          {
+            "text": "WorldCrafter能够支持长达分钟级的场景探索，并在保持视觉质量的同时，显著提高了长序列的一致性和相机控制精度。",
+            "evidence": "Experiments across static and dynamic scenes show substantial gains in long-horizon consistency and camera-control accuracy while preserving visual quality during minute-scale exploration."
+          }
+        ],
+        "tags": [
+          "世界模型"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.24972",
+      "title": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
+      "abstract": "An LLM agent's capability is largely magnified by its harness, namely the prompts, control flow, tooling, memory, and context management surrounding the frozen backbone model. Recent methods increasingly automate this process by iteratively proposing and selecting component-wise edits of an agent harness, practically establishing a form of recursive self-improvement (RSI) at the agent-system level. However, such recursive evolution may overfit by memorizing the training tasks, showing large in-distribution gains that shrink or even vanish on out-of-distribution benchmarks. We introduce Regularized Recursive Self-Improvement of Agent Harnesses (RRSI), which incorporates the principles of regularizations into harness self-improvement by constraining the evolution candidate proposal and selection. The proposer operates with a temporally annealed budget, limiting how many edits a candidate can bundle, and it encourages unexplored trajectories based on evolution history. The selector is equipped with a critic and a pruner: the critic screens benchmark-specific proposals, while the pruner, removes changes that are too small, too expensive, or no longer useful. Together these constraints favor reusable agent mechanisms over benchmark-specific ones or even noises. Across eight benchmarks spanning coding, agentic workspace and engineering design tasks, RRSI gains up to 14.1 points on the split it evolves against and up to 4.7 points on the five out-of-distribution benchmarks, while producing a harness that runs on 30% fewer policy tokens than the unregularized evolution. Code is available at https://github.com/google-research/rrsi and project page is https://regularized-rsi.com/.",
+      "topics": [
+        "通用 AI"
+      ],
+      "published": "2026-09-21",
+      "age_days": 7.0429605769791666,
+      "upvotes": 209,
+      "comments": 2,
+      "stars": 375,
+      "repo": "https://github.com/google-research/rrsi",
+      "trending_rank": 21,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.36429,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 3,
+        "comments": 0,
+        "stars": 22
+      },
+      "score": 4.866,
+      "rule_tags": [],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对大语言模型智能体框架（harness）递归自我改进过程中出现的过拟合现象，本文提出了一种正则化递归自我改进方法（RRSI）。该方法通过在候选建议阶段引入时间退火预算与轨迹探索机制，并在选择阶段配备评估器与修剪器，旨在限制针对特定任务的过度优化，从而提升框架的泛化能力和效率。实验结果表明，该方法在多个任务基准上实现了性能提升，并降低了策略词元开销。",
+        "highlights": [
+          {
+            "text": "RRSI通过正则化约束候选建议与选择过程，有效缓解了递归进化中因记忆训练任务导致的过拟合问题，增强了智能体机制的泛化性。",
+            "evidence": "We introduce Regularized Recursive Self-Improvement of Agent Harnesses (RRSI), which incorporates the principles of regularizations into harness self-improvement by constraining the evolution candidate proposal and selection."
+          },
+          {
+            "text": "在八个任务基准测试中，RRSI不仅在训练分布上获得性能提升，在分布外基准上最高提升了4.7个点，且大幅降低了推理成本。",
+            "evidence": "Across eight benchmarks spanning coding, agentic workspace and engineering design tasks, RRSI gains up to 14.1 points on the split it evolves against and up to 4.7 points on the five out-of-distribution benchmarks, while producing a harness that runs on 30% fewer policy tokens than the unregularized evolution."
+          }
+        ],
+        "tags": [
+          "大模型后训练",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.27308",
+      "title": "EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics",
+      "abstract": "We study coding agents for long-horizon, dexterous robotics and ask whether their solutions can provide scalable supervision for learning general robot policies. To test this, we develop EMBODIEDSWE-BENCH, a simulation benchmark for coding agents spanning contact-rich manipulation, deformable objects, and long-horizon tasks requiring up to half an hour of continuous interaction. We find that frontier coding agents can solve complex long-horizon tasks and transfer prior solutions across both tasks and embodiments. We also design supporting tools that help agents more effectively solve these tasks. However, the resulting solutions require substantial iterative interaction and are typically specialized to individual task instances. We therefore introduce EMBODIEDSWE-GEN, which expands a single solution from coding agent into large diverse trajectories for training a VLA. VLA performance improves with more generated demonstrations, and agent-aided diversification improves generalization to held-out task variations. We also show that a VLA finetuned solely on coding-agent-generated simulation demonstrations completes a long-horizon task on real robot. Together, our framework uses coding agents to solve complex robotics tasks and turn verified solutions into scalable supervision for robot policies.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-09-23",
+      "age_days": 5.0429605769791666,
+      "upvotes": 3,
+      "comments": 2,
+      "stars": 80,
+      "repo": "https://github.com/EmbodiedSWE/EmbodiedSWE",
+      "trending_rank": 42,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.48369,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 0,
+        "comments": 0,
+        "stars": 8
+      },
+      "score": 4.85,
+      "rule_tags": [
+        "机器人操作",
+        "视觉语言动作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文研究了编码智能体在长序列灵巧机器人任务中的应用，并探讨了其作为通用机器人策略监督来源的可行性。作者提出了EMBODIEDSWE-BENCH基准测试平台，涵盖多种复杂操纵任务，并开发了EMBODIEDSWE-GEN框架，通过扩展编码智能体的解决方案生成多样化轨迹，用于微调视觉语言动作（VLA）模型。实验表明，该方法能够实现从模拟环境到真实机器人的策略迁移，为复杂机器人任务提供可扩展的监督。",
+        "highlights": [
+          {
+            "text": "提出一种将编码智能体生成的模拟演示转化为通用机器人策略训练监督信号的框架。",
+            "evidence": "Together, our framework uses coding agents to solve complex robotics tasks and turn verified solutions into scalable supervision for robot policies."
+          },
+          {
+            "text": "利用编码智能体生成的模拟演示对VLA模型进行微调，实现了真实机器人长序列任务的执行。",
+            "evidence": "We also show that a VLA finetuned solely on coding-agent-generated simulation demonstrations completes a long-horizon task on real robot."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "视觉语言动作",
+          "Sim-to-Real"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.26457",
+      "title": "Recursive self-improvement of AI research agents",
+      "abstract": "AI agents are beginning to automate research and development across the AI stack, from improving training efficiency to optimizing inference. A natural next step is to improve the research efficiency of the agents themselves. When an AI research agent's own code is the object of optimization, each accepted rewrite becomes the agent that the next round edits. We refer to this loop as recursive self-improvement. Its significance lies in a long-standing trend, in which increased cumulative spending on R&D yields diminishing returns. Sustained self-improvement offers a way to counter this trend. We present AIDE^2, a system that implements this loop for a frontier AI research agent. It proposes changes to its own code, benchmarks modified versions of itself on a suite of AI R&D tasks, and keeps the changes that perform best on hidden evaluations. In an autonomous 8-day run, AIDE^2 discovered seven successive improvements, ranging from a new search policy to memory mechanisms that compress and manage the agent's growing context. These gains generalize to four held-out benchmarks spanning machine learning engineering, heuristic algorithm engineering, and physics-based weather forecasting, the last of which is out of distribution from the selection tasks. On all four, the strongest discovered agent matches or exceeds a human-engineered production research agent that ranks among the strongest on FML-Bench. On a separate held-out task family, the discovered agents also exhibit reduced reward hacking, a property the loop never explicitly optimized for: the rate falls from 55% to 32% during the run, 7 percentage points below the human-engineered agent. Together, these results show that an AI research agent can improve its own research efficiency through recursive self-improvement, and that these gains transfer to tasks and domains the loop never encountered.",
+      "topics": [
+        "通用 AI"
+      ],
+      "published": "2026-09-22",
+      "age_days": 6.0429605769791666,
+      "upvotes": 27,
+      "comments": 1,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.37646,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 7,
+        "comments": 0
+      },
+      "score": 4.715,
+      "rule_tags": [],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文提出了一个名为AIDE^2的AI研究智能体系统，旨在通过递归自我改进循环提升科研效率。该系统能够对其自身的源代码进行修改、基准测试及筛选，从而实现自我优化。作者声称，在为期8天的自主运行中，该智能体实现了七次连续改进，涵盖搜索策略和记忆机制，且改进后的智能体在多个未见任务及领域表现出优于人工设计的生产级研究智能体的性能，并展现了较低的奖励作弊率。",
+        "highlights": [
+          {
+            "text": "AIDE^2系统通过递归自我改进机制，在为期8天的自主运行中实现了七项连续的算法与架构优化。",
+            "evidence": "In an autonomous 8-day run, AIDE^2 discovered seven successive improvements, ranging from a new search policy to memory mechanisms that compress and manage the agent's growing context."
+          },
+          {
+            "text": "自我改进后的智能体在多个领域表现出泛化能力，其性能达到或超越了人工设计的强力研究智能体。",
+            "evidence": "On all four, the strongest discovered agent matches or exceeds a human-engineered production research agent that ranks among the strongest on FML-Bench."
+          },
+          {
+            "text": "该研究观察到递归改进过程能降低智能体的奖励作弊行为，尽管该指标并未在训练中被显式优化。",
+            "evidence": "On a separate held-out task family, the discovered agents also exhibit reduced reward hacking, a property the loop never explicitly optimized for: the rate falls from 55% to 32% during the run, 7 percentage points below the human-engineered agent."
+          }
+        ],
+        "tags": [
+          "推理",
+          "大模型后训练"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.29892",
+      "title": "Qwen-Planner-Agent: A Closed-Loop AI-for-AI Framework for Real-World Mobile Planner Agents",
+      "abstract": "The rapid progression of large language models is extending AI from passive content generation into the active workflows of engineering and scientific discovery. This shift raises a compelling question: can AI be both the object of development and an active participant in building next-generation AI systems? We explore this question by building Qwen-Planner-Agent within a closed-loop AI-for-AI framework for scalable development and iterative improvement. Mobile planning offers a demanding test of this approach: complex, long-horizon tasks challenge agent reliability, while costly real-device interaction limits development scalability. The framework connects data production, model training, and deployment through a shared action-feedback-verification contract. (i) AI for Data builds a human-gated agentic data flywheel in which specialized agents construct tasks, collect interaction trajectories, curate and balance training data, and use training feedback to guide subsequent data generation. (ii) AI for Training combines a supervised planning cold start with hybrid-environment online agentic reinforcement learning, where we introduce Competence-Aware Reward-and-Advantage Engineering (CARE) to reduce reasoning and tool-use costs while preserving task performance. (iii) AI drives model--harness co-evolution through an execution-evidence-driven loop that orchestrates memory, skills, and tools at runtime and feeds structured action feedback and preserved failure traces back into coordinated model and harness adaptation. Qwen-Planner-Agent achieves the best overall performance among all evaluated models and systems on MobilePA-Bench, improving over its base model across tool use, memory, skills, and sub-agent coordination. Further evaluations of our model show improvements across non-mobile agentic benchmarks while largely preserving general capabilities.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-09-24",
+      "age_days": 4.0429605769791666,
+      "upvotes": 11,
+      "comments": 2,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.43426,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 1,
+        "comments": 0
+      },
+      "score": 4.711,
+      "rule_tags": [
+        "强化学习",
+        "推理"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对移动规划任务中复杂长程任务与真实设备交互成本高的问题，作者提出了Qwen-Planner-Agent。该框架采用闭环AI-for-AI范式，集成数据生产、模型训练与部署。通过引入Competence-Aware Reward-and-Advantage Engineering (CARE)及执行证据驱动的反馈机制，实现任务协同与系统迭代。作者声称该方法在MobilePA-Bench基准测试中优于其他评估模型，并在保持通用能力的同时提升了代理性能。",
+        "highlights": [
+          {
+            "text": "提出一种基于人类门控的代理数据飞轮，通过专业代理构建任务、收集轨迹并自动筛选训练数据，实现数据的自我迭代与平衡。",
+            "evidence": "AI for Data builds a human-gated agentic data flywheel in which specialized agents construct tasks, collect interaction trajectories, curate and balance training data, and use training feedback to guide subsequent data generation."
+          },
+          {
+            "text": "引入Competence-Aware Reward-and-Advantage Engineering (CARE)技术，在保持任务性能的前提下降低模型推理与工具使用的成本。",
+            "evidence": "we introduce Competence-Aware Reward-and-Advantage Engineering (CARE) to reduce reasoning and tool-use costs while preserving task performance."
+          },
+          {
+            "text": "构建了基于执行证据驱动的闭环系统，通过将运行时反馈与失败轨迹反馈至模型，实现了模型与执行环境的协同进化。",
+            "evidence": "AI drives model--harness co-evolution through an execution-evidence-driven loop that orchestrates memory, skills, and tools at runtime and feeds structured action feedback and preserved failure traces back into coordinated model and harness adaptation."
+          }
+        ],
+        "tags": [
+          "大模型后训练",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.24118",
+      "title": "CARE: Experience-Guided Atomic Corrective Execution for Vision-Language-Action Policies",
+      "abstract": "Vision-Language-Action (VLA) policies achieve strong performance in robotic manipulation but remain brittle once execution deviates from nominal trajectories. We propose CARE (Corrective Atomic Robotic Execution), a framework that improves recovery by learning from failures encountered during execution. Instead of generating corrective data from manually designed or random perturbations, CARE collects failed rollouts, models stage-conditioned post-failure deviations, and uses the resulting empirical distributions to synthesize representative failure states and corrective demonstrations. At inference time, CARE combines stage-wise planning with physically grounded 3D monitoring to trigger atomic adjustments or re-operations while preserving task progress. We further introduce the Failure State Recovery Benchmark (FSR-Bench), which evaluates recovery from intermediate failure states under local deviations and structural anomalies. Experiments across multiple VLA backbones, simulation benchmarks, and real-world dual-arm tasks show consistent improvements, with average task-success gains of 14.5 points in simulation and 15.9 points in the real world. Code, models, and data are available at https://github.com/xiaojunlan/care",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-09-21",
+      "age_days": 7.0429605769791666,
+      "upvotes": 27,
+      "comments": 3,
+      "stars": 44,
+      "repo": "https://github.com/xiaojunlan/care",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.41898,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 1,
+        "comments": 0,
+        "stars": 1
+      },
+      "score": 4.707,
+      "rule_tags": [
+        "机器人操作",
+        "视觉语言动作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对视觉语言动作（VLA）策略在机器人操作中难以应对执行偏差的问题，本文提出了CARE（Experience-Guided Atomic Corrective Execution）框架。该方法通过收集失败轨迹并建模阶段性的故障偏差，合成具有代表性的失败状态及对应的纠正示范。在推理阶段，通过结合阶段规划与3D监控实现原子级的调整或重操作。实验表明，该方法在多个模拟基准及真实世界双臂任务中显著提升了任务成功率。",
+        "highlights": [
+          {
+            "text": "CARE框架通过学习失败经验来优化机器人策略的鲁棒性，利用失败轨迹分布合成纠正示范，而非依赖手动或随机扰动。",
+            "evidence": "Instead of generating corrective data from manually designed or random perturbations, CARE collects failed rollouts, models stage-conditioned post-failure deviations, and uses the resulting empirical distributions to synthesize representative failure states and corrective demonstrations."
+          },
+          {
+            "text": "该方法引入了Failure State Recovery Benchmark（FSR-Bench）用于评估在局部偏差与结构异常下的故障恢复能力。",
+            "evidence": "We further introduce the Failure State Recovery Benchmark (FSR-Bench), which evaluates recovery from intermediate failure states under local deviations and structural anomalies."
+          },
+          {
+            "text": "在多种VLA主干网络与真实双臂任务实验中，CARE实现了任务成功率的显著提升，平均增幅在模拟环境中为14.5点，在现实世界中为15.9点。",
+            "evidence": "Experiments across multiple VLA backbones, simulation benchmarks, and real-world dual-arm tasks show consistent improvements, with average task-success gains of 14.5 points in simulation and 15.9 points in the real world."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "视觉语言动作"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.25270",
+      "title": "RULER: Instance-aware Rubric Rewards for SVG Generation",
+      "abstract": "Generating Scalable Vector Graphics (SVG) code from natural-language instructions is an open-ended task without absolute visual ground truth, leaving both evaluation and policy optimization without a faithful signal. Scalar metrics (CLIP, Aesthetic) calibrated on natural images transfer poorly to stylized vector content, and reusing them as RL rewards triggers reward hacking. We address both limitations with rubric-based scoring. We first establish empirically that prompting a vision-language judge with a multi-axis rubric correlates with human judgments far better than scalar metrics, both across samples and within instructions. Building on this finding, we introduce RULER (Instance-aware Rubric Rewards for Reinforcement Learning), which converts each instruction into an instance-aware rubric of six items spanning semantic, visual, and stylistic axes; a judge VLM scores rendered rollouts item-by-item, and the weighted satisfactions form a fine-grained reward optimized via Group Relative Policy Optimization. Because the rubric is derived from text alone, RULER requires neither paired SVG ground truth nor human preference labels. On MMSVG-Illustration and MMSVG-Icon, RULER lifts the rubric score from 0.432/0.395 to 0.693/0.683, surpassing dedicated SVG specialists and matching the substantially larger DeepSeek-V3, with ablations identifying rubric design as the active lever for RL on open-ended SVG generation. The project page is available at https://hangyuran.github.io/RULER/.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-09-21",
+      "age_days": 7.0429605769791666,
+      "upvotes": 101,
+      "comments": 4,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.32885,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 13,
+        "comments": 0
+      },
+      "score": 4.611,
+      "rule_tags": [
+        "强化学习"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文针对从自然语言指令生成SVG代码缺乏有效评估与奖励信号的问题，提出了RULER（实例感知准则奖励）方法。该方法通过视觉语言模型（VLM）依据多维度准则对生成的SVG进行细粒度评分，并将加权分数作为奖励信号，结合组相对策略优化（GRPO）进行训练。作者声称，该方法无需成对SVG地面真值或人类偏好标签，即可在多个数据集上提升生成质量，并超越专门的SVG生成模型。",
+        "highlights": [
+          {
+            "text": "RULER利用VLM对SVG生成结果进行多维度准则评分，将细粒度分数转化为强化学习的奖励信号，有效避免了传统标量度量的奖励操纵问题。",
+            "evidence": "RULER (Instance-aware Rubric Rewards for Reinforcement Learning), which converts each instruction into an instance-aware rubric of six items spanning semantic, visual, and stylistic axes; a judge VLM scores rendered rollouts item-by-item, and the weighted satisfactions form a fine-grained reward optimized via Group Relative Policy Optimization."
+          },
+          {
+            "text": "该方法无需成对的SVG真值数据或人工偏好标注，通过纯文本导出的评估准则即可实现端到端的优化。",
+            "evidence": "Because the rubric is derived from text alone, RULER requires neither paired SVG ground truth nor human preference labels."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.23377",
+      "title": "One to More, More to One: Category-Aware Iterative Expert Training for Software Engineering Agents",
+      "abstract": "Repository-level software engineering (SWE) comprises heterogeneous task categories, whose progress under pooled agentic reinforcement learning can be uneven: gains in some categories coincide with regressions in others, while aggregate resolution obscures these changes. Motivated by this category see-saw, we develop a category-aware expert-training and policy-integration framework. Executable task construction and SWE Labeler, an evidence-grounded multi-axis labeling system, organize the training pools. Initial category-specific RL improves average training success while leaving uneven instance-level progress, motivating explicit consolidation of successful behavior and policy-adaptive task selection. Same-origin category experts alternate long-horizon Agentic-miniRL with Refresh-Repair-Expand (RRE): the updated policy refreshes instance mastery, reuses its own verified successful trajectories for Repair SFT, and reselects tasks for further RL. Label-routed multi-teacher on-policy distillation (MOPD) consolidates the experts into one deployable student, with ReLU-gated reward extrapolation keeping only each teacher's improving direction over the reference. Expert training and policy integration require no external model to provide solution trajectories or action targets. We evaluate Pooled RL and Balanced RL, expert development, and single-model integration through aggregate and per-category resolution, the minimum category lift over each joint-RL baseline, and expert-gain recovery. The final MOPD policy achieves mean resolution of 58.04% on Pro-618 and 59.00% on SWE-bench Multilingual, improving over the base model by 5.39 and 2.78 percentage points, respectively.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-09-20",
+      "age_days": 8.042960576979167,
+      "upvotes": 50,
+      "comments": 4,
+      "stars": 40,
+      "repo": "https://github.com/alibaba/AgenticBigBang",
+      "trending_rank": 58,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.36829,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 2,
+        "comments": 0,
+        "stars": 0
+      },
+      "score": 4.571,
+      "rule_tags": [
+        "强化学习"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对软件工程（SWE）智能体在多任务学习中表现不均衡的问题，作者提出了一种类别感知的专家训练与策略整合框架。该框架通过SWE Labeler系统进行任务分类，结合长周期Agentic-miniRL与“刷新-修复-扩展”（RRE）机制迭代训练类别专家，并利用标签路由的多教师在线策略蒸馏（MOPD）将专家模型整合为单一学生模型。实验结果显示，该方法在Pro-618和SWE-bench Multilingual基准测试上均提升了任务解决率。",
+        "highlights": [
+          {
+            "text": "提出一种名为MOPD的多教师在线策略蒸馏方法，通过ReLU门控奖励外推技术，将多个类别专家的优势整合至单一模型中。",
+            "evidence": "Label-routed multi-teacher on-policy distillation (MOPD) consolidates the experts into one deployable student, with ReLU-gated reward extrapolation keeping only each teacher's improving direction over the reference."
+          },
+          {
+            "text": "该框架无需外部模型提供动作目标或解法轨迹，即可实现专家训练与策略整合。",
+            "evidence": "Expert training and policy integration require no external model to provide solution trajectories or action targets."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    }
+  ],
+  "candidate_count": 123,
+  "personalization_note": "已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。",
+  "html": "<h1>2026-09-28 热门论文 Top 10</h1>\n<p>机器人 · 强化学习 · 通用 AI</p>\n<p>生成时间：2026-09-28 09:01 CST。从 123 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>\n<p>候选来源：<a href=\"https://huggingface.co/papers\">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>\n<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>\n<h2>1. Grounded Action Model: 3D Grounding as a Foundation for Robotics</h2>\n<p><strong>机器人</strong> · 发表 2026-09-20 · 综合分 5.07</p>\n<p>Zotero 摘要相关性：0.487（相似度分数，不是概率）。</p>\n<p>HF 点赞 87 · 讨论 3 · 仓库累计 Star 26（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +0 · 讨论 +0 · Star +1。</p>\n<p><strong>规则标签：</strong>视觉语言动作</p>\n<p><strong>中文概述：</strong>针对现有机器人基础模型在物体几何与空间定位理解上的局限，作者提出了Grounded Action Models (GAM)。该模型通过3D基础化技术，将语言、点或框提示转化为以物体为中心的共享表示，结合多流Transformer预测动作块。实验表明，GAM在RoboTwin 2.0及LIBERO-PRO数据集及真实机器人任务中，在场景随机化与视觉干扰环境下表现出较强的鲁棒性和长程操作能力。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>GAM通过3D基础化将提示转化为物体中心化表示，从而显式捕获目标视觉特征与度量几何信息。<br><small>摘要依据：GAM can be conditioned using language, points, or box prompts, which are first transformed into a shared object-centric representation of the selected objects. This representation captures target-focused visual features and metric object geometry</small></li>\n<li>在RoboTwin 2.0基准上，GAM在场景随机化任务中展现了对比基线的性能优势。<br><small>摘要依据：including 47.6% under scene randomization (vs. 30.4% for Abot-M0), with its action policy trained only on clean-scene demonstrations.</small></li>\n<li>GAM作为低级控制器与高层规划器结合，在长程与依赖记忆的机器人操作任务中取得了显著效果。<br><small>摘要依据：its composition with a Molmo2 planner on a Franka achieves 64.7% ID and 49.8% OOD step completion on long-horizon and memory-dependent tasks.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · Sim-to-Real</p>\n<p><strong>原文摘要节选：</strong>Manipulation policies must know which objects matter and where they are, yet the pretrained backbones that current robot foundation models build on, from language in vision-language-action models (VLAs) to video generation in world-action models (WAMs), do not directly require this metric grounding, leaving it to be learned implicitly from robot demonstrations. We propose Grounded Action Models (GAMs), a new paradigm of robot foundation models built with 3D grounding. GAM can be conditioned using language, points, or box prompts, which are first transformed into a shared object-centric representation of the selected objects. This representation captures target-focused visual features and metric object geometry, which is mixed with robot state history through a multi-stream transformer to…</p>\n<p><a href=\"https://arxiv.org/abs/2609.23863\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.23863\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.23863\">讨论与热度</a> · <a href=\"https://github.com/GehaoZhang6/Grounded-Action-Model\">代码</a></p><hr>\n<h2>2. Embedding Physics Priors in Robot Learning: A Survey</h2>\n<p><strong>机器人</strong> · 发表 2026-09-15 · 综合分 4.96</p>\n<p>Zotero 摘要相关性：0.454（相似度分数，不是概率）。</p>\n<p>HF 点赞 17 · 讨论 2 · 仓库累计 Star 7（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +6 · 讨论 +0 · Star +1。</p>\n<p><strong>中文概述：</strong>该综述探讨了物理先验在机器人学习中的应用，针对纯数据驱动方法在数据有限和复杂交互环境下的局限性，分析了如何将物理定律与约束融入学习算法。作者提出了一套统一的分类法，按物理嵌入方式（输入/数据/表征、模型架构、训练损失函数）对现有研究进行归纳。综述涵盖了从感知到控制的多种机器人任务，旨在论证物理先验作为归纳偏置，能提升机器人系统的通用性、数据效率及可靠性。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出了一种统一的分类法，根据物理嵌入方式将现有机器人学习方法分为物理引导的输入、模型架构及训练损失函数三类。<br><small>摘要依据：We adopt a unified taxonomy that classifies existing approaches according to their physics embedding: physics-guided inputs, data, and representations; physics-encoded model architectures; and physics-informed training loss functions.</small></li>\n<li>物理先验可作为机器人特有的归纳偏置，在补充有限数据的基础上，有望提升机器人系统的泛化能力、可解释性及样本效率。<br><small>摘要依据：By encoding the underlying physical laws and constraints, physics priors can complement limited data with robotics-specific inductive biases, potentially improving generalization, interpretability, and sample efficiency.</small></li>\n</ul>\n<p><strong>原文摘要节选：</strong>The rapid progress of artificial intelligence is reshaping robotics and accelerating the adoption of learning-based approaches. While purely data-driven methods have achieved remarkable success in computer vision and natural language processing, robotics remains constrained by limited data, complex real-world interactions, and the need for reliable operation. These challenges have motivated the exploration of physics-embedded robot learning, which embeds physics priors into learning algorithms. By encoding the underlying physical laws and constraints, physics priors can complement limited data with robotics-specific inductive biases, potentially improving generalization, interpretability, and sample efficiency. However, the literature on physics-embedded robot learning remains fragmented…</p>\n<p><a href=\"https://arxiv.org/abs/2609.22319\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.22319\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.22319\">讨论与热度</a> · <a href=\"https://github.com/TUM-AVS/survey-physics-embedded-robot-learning\">代码</a></p><hr>\n<h2>3. WorldCrafter: Consistent Video World Model with Implicit 3D-aware Memory</h2>\n<p><strong>通用 AI</strong> · 发表 2026-09-21 · 综合分 4.87</p>\n<p>Zotero 摘要相关性：0.355（相似度分数，不是概率）。</p>\n<p>HF 点赞 155 · 讨论 4 · 本次 HF 热榜第 4 位 · 仓库累计 Star 390（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +3 · 讨论 +0 · Star +33。</p>\n<p><strong>规则标签：</strong>世界模型</p>\n<p><strong>中文概述：</strong>针对视频世界模型在长序列与多视角下难以保持一致性的问题，作者提出了WorldCrafter。该模型通过引入可查询的隐式3D感知记忆机制，利用记忆编码器和姿态条件读取模块，将多视角历史观测压缩至固定数量的视角相关Token中，结合时间上下文与蒸馏技术，实现了从单张图片或文本提示出发的场景流式探索。实验表明，该方法在长序列一致性与相机控制准确性方面具有显著提升。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出了一种隐式3D感知记忆机制，通过视角引导将多视角历史观测压缩至有限的Token预算中，从而增强了视频生成的一致性。<br><small>摘要依据：The key insight is to let the requested viewpoint shape how multi-view evidence is compressed into the video generator&#x27;s limited token budget.</small></li>\n<li>WorldCrafter能够支持长达分钟级的场景探索，并在保持视觉质量的同时，显著提高了长序列的一致性和相机控制精度。<br><small>摘要依据：Experiments across static and dynamic scenes show substantial gains in long-horizon consistency and camera-control accuracy while preserving visual quality during minute-scale exploration.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>世界模型</p>\n<p><strong>原文摘要节选：</strong>Video world models enable interactive exploration of dynamic environments, yet struggle to respect prior observations over long horizons and across viewpoints. We present WorldCrafter, a video world model that learns a camera-queryable implicit 3D-aware memory for this purpose. The key insight is to let the requested viewpoint shape how multi-view evidence is compressed into the video generator&#x27;s limited token budget. Trained jointly with the video generator, a memory encoder and pose-conditioned readout module integrate historical observations into a fixed set of target view-specific tokens before denoising, without explicit depth-based correspondences. By combining this memory with recent temporal context and few-step distillation, WorldCrafter enables streaming scene exploration from a…</p>\n<p><a href=\"https://arxiv.org/abs/2609.24984\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.24984\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.24984\">讨论与热度</a> · <a href=\"https://github.com/TencentARC/WorldCrafter\">代码</a></p><hr>\n<h2>4. RRSI: Regularized Recursive Self-Improvement of Agent Harnesses</h2>\n<p><strong>通用 AI</strong> · 发表 2026-09-21 · 综合分 4.87</p>\n<p>Zotero 摘要相关性：0.364（相似度分数，不是概率）。</p>\n<p>HF 点赞 209 · 讨论 2 · 本次 HF 热榜第 21 位 · 仓库累计 Star 375（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +3 · 讨论 +0 · Star +22。</p>\n<p><strong>中文概述：</strong>针对大语言模型智能体框架（harness）递归自我改进过程中出现的过拟合现象，本文提出了一种正则化递归自我改进方法（RRSI）。该方法通过在候选建议阶段引入时间退火预算与轨迹探索机制，并在选择阶段配备评估器与修剪器，旨在限制针对特定任务的过度优化，从而提升框架的泛化能力和效率。实验结果表明，该方法在多个任务基准上实现了性能提升，并降低了策略词元开销。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>RRSI通过正则化约束候选建议与选择过程，有效缓解了递归进化中因记忆训练任务导致的过拟合问题，增强了智能体机制的泛化性。<br><small>摘要依据：We introduce Regularized Recursive Self-Improvement of Agent Harnesses (RRSI), which incorporates the principles of regularizations into harness self-improvement by constraining the evolution candidate proposal and selection.</small></li>\n<li>在八个任务基准测试中，RRSI不仅在训练分布上获得性能提升，在分布外基准上最高提升了4.7个点，且大幅降低了推理成本。<br><small>摘要依据：Across eight benchmarks spanning coding, agentic workspace and engineering design tasks, RRSI gains up to 14.1 points on the split it evolves against and up to 4.7 points on the five out-of-distribution benchmarks, while producing a harness that runs on 30% fewer policy tokens than the unregularized evolution.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>\n<p><strong>原文摘要节选：</strong>An LLM agent&#x27;s capability is largely magnified by its harness, namely the prompts, control flow, tooling, memory, and context management surrounding the frozen backbone model. Recent methods increasingly automate this process by iteratively proposing and selecting component-wise edits of an agent harness, practically establishing a form of recursive self-improvement (RSI) at the agent-system level. However, such recursive evolution may overfit by memorizing the training tasks, showing large in-distribution gains that shrink or even vanish on out-of-distribution benchmarks. We introduce Regularized Recursive Self-Improvement of Agent Harnesses (RRSI), which incorporates the principles of regularizations into harness self-improvement by constraining the evolution candidate proposal and…</p>\n<p><a href=\"https://arxiv.org/abs/2609.24972\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.24972\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.24972\">讨论与热度</a> · <a href=\"https://github.com/google-research/rrsi\">代码</a></p><hr>\n<h2>5. EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics</h2>\n<p><strong>机器人</strong> · 发表 2026-09-23 · 综合分 4.85</p>\n<p>Zotero 摘要相关性：0.484（相似度分数，不是概率）。</p>\n<p>HF 点赞 3 · 讨论 2 · 本次 HF 热榜第 42 位 · 仓库累计 Star 80（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +0 · 讨论 +0 · Star +8。</p>\n<p><strong>规则标签：</strong>机器人操作 · 视觉语言动作</p>\n<p><strong>中文概述：</strong>本文研究了编码智能体在长序列灵巧机器人任务中的应用，并探讨了其作为通用机器人策略监督来源的可行性。作者提出了EMBODIEDSWE-BENCH基准测试平台，涵盖多种复杂操纵任务，并开发了EMBODIEDSWE-GEN框架，通过扩展编码智能体的解决方案生成多样化轨迹，用于微调视觉语言动作（VLA）模型。实验表明，该方法能够实现从模拟环境到真实机器人的策略迁移，为复杂机器人任务提供可扩展的监督。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出一种将编码智能体生成的模拟演示转化为通用机器人策略训练监督信号的框架。<br><small>摘要依据：Together, our framework uses coding agents to solve complex robotics tasks and turn verified solutions into scalable supervision for robot policies.</small></li>\n<li>利用编码智能体生成的模拟演示对VLA模型进行微调，实现了真实机器人长序列任务的执行。<br><small>摘要依据：We also show that a VLA finetuned solely on coding-agent-generated simulation demonstrations completes a long-horizon task on real robot.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 视觉语言动作 · Sim-to-Real</p>\n<p><strong>原文摘要节选：</strong>We study coding agents for long-horizon, dexterous robotics and ask whether their solutions can provide scalable supervision for learning general robot policies. To test this, we develop EMBODIEDSWE-BENCH, a simulation benchmark for coding agents spanning contact-rich manipulation, deformable objects, and long-horizon tasks requiring up to half an hour of continuous interaction. We find that frontier coding agents can solve complex long-horizon tasks and transfer prior solutions across both tasks and embodiments. We also design supporting tools that help agents more effectively solve these tasks. However, the resulting solutions require substantial iterative interaction and are typically specialized to individual task instances. We therefore introduce EMBODIEDSWE-GEN, which expands a…</p>\n<p><a href=\"https://arxiv.org/abs/2609.27308\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.27308\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.27308\">讨论与热度</a> · <a href=\"https://github.com/EmbodiedSWE/EmbodiedSWE\">代码</a></p><hr>\n<h2>6. Recursive self-improvement of AI research agents</h2>\n<p><strong>通用 AI</strong> · 发表 2026-09-22 · 综合分 4.71</p>\n<p>Zotero 摘要相关性：0.376（相似度分数，不是概率）。</p>\n<p>HF 点赞 27 · 讨论 1</p>\n<p>较上次观测（1.0 天前）：点赞 +7 · 讨论 +0。</p>\n<p><strong>中文概述：</strong>本文提出了一个名为AIDE^2的AI研究智能体系统，旨在通过递归自我改进循环提升科研效率。该系统能够对其自身的源代码进行修改、基准测试及筛选，从而实现自我优化。作者声称，在为期8天的自主运行中，该智能体实现了七次连续改进，涵盖搜索策略和记忆机制，且改进后的智能体在多个未见任务及领域表现出优于人工设计的生产级研究智能体的性能，并展现了较低的奖励作弊率。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>AIDE^2系统通过递归自我改进机制，在为期8天的自主运行中实现了七项连续的算法与架构优化。<br><small>摘要依据：In an autonomous 8-day run, AIDE^2 discovered seven successive improvements, ranging from a new search policy to memory mechanisms that compress and manage the agent&#x27;s growing context.</small></li>\n<li>自我改进后的智能体在多个领域表现出泛化能力，其性能达到或超越了人工设计的强力研究智能体。<br><small>摘要依据：On all four, the strongest discovered agent matches or exceeds a human-engineered production research agent that ranks among the strongest on FML-Bench.</small></li>\n<li>该研究观察到递归改进过程能降低智能体的奖励作弊行为，尽管该指标并未在训练中被显式优化。<br><small>摘要依据：On a separate held-out task family, the discovered agents also exhibit reduced reward hacking, a property the loop never explicitly optimized for: the rate falls from 55% to 32% during the run, 7 percentage points below the human-engineered agent.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>推理 · 大模型后训练</p>\n<p><strong>原文摘要节选：</strong>AI agents are beginning to automate research and development across the AI stack, from improving training efficiency to optimizing inference. A natural next step is to improve the research efficiency of the agents themselves. When an AI research agent&#x27;s own code is the object of optimization, each accepted rewrite becomes the agent that the next round edits. We refer to this loop as recursive self-improvement. Its significance lies in a long-standing trend, in which increased cumulative spending on R&amp;D yields diminishing returns. Sustained self-improvement offers a way to counter this trend. We present AIDE^2, a system that implements this loop for a frontier AI research agent. It proposes changes to its own code, benchmarks modified versions of itself on a suite of AI R&amp;D tasks, and…</p>\n<p><a href=\"https://arxiv.org/abs/2609.26457\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.26457\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.26457\">讨论与热度</a></p><hr>\n<h2>7. Qwen-Planner-Agent: A Closed-Loop AI-for-AI Framework for Real-World Mobile Planner Agents</h2>\n<p><strong>强化学习</strong> · 发表 2026-09-24 · 综合分 4.71</p>\n<p>Zotero 摘要相关性：0.434（相似度分数，不是概率）。</p>\n<p>HF 点赞 11 · 讨论 2</p>\n<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +0。</p>\n<p><strong>规则标签：</strong>强化学习 · 推理</p>\n<p><strong>中文概述：</strong>针对移动规划任务中复杂长程任务与真实设备交互成本高的问题，作者提出了Qwen-Planner-Agent。该框架采用闭环AI-for-AI范式，集成数据生产、模型训练与部署。通过引入Competence-Aware Reward-and-Advantage Engineering (CARE)及执行证据驱动的反馈机制，实现任务协同与系统迭代。作者声称该方法在MobilePA-Bench基准测试中优于其他评估模型，并在保持通用能力的同时提升了代理性能。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出一种基于人类门控的代理数据飞轮，通过专业代理构建任务、收集轨迹并自动筛选训练数据，实现数据的自我迭代与平衡。<br><small>摘要依据：AI for Data builds a human-gated agentic data flywheel in which specialized agents construct tasks, collect interaction trajectories, curate and balance training data, and use training feedback to guide subsequent data generation.</small></li>\n<li>引入Competence-Aware Reward-and-Advantage Engineering (CARE)技术，在保持任务性能的前提下降低模型推理与工具使用的成本。<br><small>摘要依据：we introduce Competence-Aware Reward-and-Advantage Engineering (CARE) to reduce reasoning and tool-use costs while preserving task performance.</small></li>\n<li>构建了基于执行证据驱动的闭环系统，通过将运行时反馈与失败轨迹反馈至模型，实现了模型与执行环境的协同进化。<br><small>摘要依据：AI drives model--harness co-evolution through an execution-evidence-driven loop that orchestrates memory, skills, and tools at runtime and feeds structured action feedback and preserved failure traces back into coordinated model and harness adaptation.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>\n<p><strong>原文摘要节选：</strong>The rapid progression of large language models is extending AI from passive content generation into the active workflows of engineering and scientific discovery. This shift raises a compelling question: can AI be both the object of development and an active participant in building next-generation AI systems? We explore this question by building Qwen-Planner-Agent within a closed-loop AI-for-AI framework for scalable development and iterative improvement. Mobile planning offers a demanding test of this approach: complex, long-horizon tasks challenge agent reliability, while costly real-device interaction limits development scalability. The framework connects data production, model training, and deployment through a shared action-feedback-verification contract. (i) AI for Data builds a…</p>\n<p><a href=\"https://arxiv.org/abs/2609.29892\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.29892\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.29892\">讨论与热度</a></p><hr>\n<h2>8. CARE: Experience-Guided Atomic Corrective Execution for Vision-Language-Action Policies</h2>\n<p><strong>机器人</strong> · 发表 2026-09-21 · 综合分 4.71</p>\n<p>Zotero 摘要相关性：0.419（相似度分数，不是概率）。</p>\n<p>HF 点赞 27 · 讨论 3 · 仓库累计 Star 44（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +0 · Star +1。</p>\n<p><strong>规则标签：</strong>机器人操作 · 视觉语言动作</p>\n<p><strong>中文概述：</strong>针对视觉语言动作（VLA）策略在机器人操作中难以应对执行偏差的问题，本文提出了CARE（Experience-Guided Atomic Corrective Execution）框架。该方法通过收集失败轨迹并建模阶段性的故障偏差，合成具有代表性的失败状态及对应的纠正示范。在推理阶段，通过结合阶段规划与3D监控实现原子级的调整或重操作。实验表明，该方法在多个模拟基准及真实世界双臂任务中显著提升了任务成功率。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>CARE框架通过学习失败经验来优化机器人策略的鲁棒性，利用失败轨迹分布合成纠正示范，而非依赖手动或随机扰动。<br><small>摘要依据：Instead of generating corrective data from manually designed or random perturbations, CARE collects failed rollouts, models stage-conditioned post-failure deviations, and uses the resulting empirical distributions to synthesize representative failure states and corrective demonstrations.</small></li>\n<li>该方法引入了Failure State Recovery Benchmark（FSR-Bench）用于评估在局部偏差与结构异常下的故障恢复能力。<br><small>摘要依据：We further introduce the Failure State Recovery Benchmark (FSR-Bench), which evaluates recovery from intermediate failure states under local deviations and structural anomalies.</small></li>\n<li>在多种VLA主干网络与真实双臂任务实验中，CARE实现了任务成功率的显著提升，平均增幅在模拟环境中为14.5点，在现实世界中为15.9点。<br><small>摘要依据：Experiments across multiple VLA backbones, simulation benchmarks, and real-world dual-arm tasks show consistent improvements, with average task-success gains of 14.5 points in simulation and 15.9 points in the real world.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 视觉语言动作</p>\n<p><strong>原文摘要节选：</strong>Vision-Language-Action (VLA) policies achieve strong performance in robotic manipulation but remain brittle once execution deviates from nominal trajectories. We propose CARE (Corrective Atomic Robotic Execution), a framework that improves recovery by learning from failures encountered during execution. Instead of generating corrective data from manually designed or random perturbations, CARE collects failed rollouts, models stage-conditioned post-failure deviations, and uses the resulting empirical distributions to synthesize representative failure states and corrective demonstrations. At inference time, CARE combines stage-wise planning with physically grounded 3D monitoring to trigger atomic adjustments or re-operations while preserving task progress. We further introduce the Failure…</p>\n<p><a href=\"https://arxiv.org/abs/2609.24118\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.24118\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.24118\">讨论与热度</a> · <a href=\"https://github.com/xiaojunlan/care\">代码</a></p><hr>\n<h2>9. RULER: Instance-aware Rubric Rewards for SVG Generation</h2>\n<p><strong>强化学习</strong> · 发表 2026-09-21 · 综合分 4.61</p>\n<p>Zotero 摘要相关性：0.329（相似度分数，不是概率）。</p>\n<p>HF 点赞 101 · 讨论 4</p>\n<p>较上次观测（1.0 天前）：点赞 +13 · 讨论 +0。</p>\n<p><strong>规则标签：</strong>强化学习</p>\n<p><strong>中文概述：</strong>本文针对从自然语言指令生成SVG代码缺乏有效评估与奖励信号的问题，提出了RULER（实例感知准则奖励）方法。该方法通过视觉语言模型（VLM）依据多维度准则对生成的SVG进行细粒度评分，并将加权分数作为奖励信号，结合组相对策略优化（GRPO）进行训练。作者声称，该方法无需成对SVG地面真值或人类偏好标签，即可在多个数据集上提升生成质量，并超越专门的SVG生成模型。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>RULER利用VLM对SVG生成结果进行多维度准则评分，将细粒度分数转化为强化学习的奖励信号，有效避免了传统标量度量的奖励操纵问题。<br><small>摘要依据：RULER (Instance-aware Rubric Rewards for Reinforcement Learning), which converts each instruction into an instance-aware rubric of six items spanning semantic, visual, and stylistic axes; a judge VLM scores rendered rollouts item-by-item, and the weighted satisfactions form a fine-grained reward optimized via Group Relative Policy Optimization.</small></li>\n<li>该方法无需成对的SVG真值数据或人工偏好标注，通过纯文本导出的评估准则即可实现端到端的优化。<br><small>摘要依据：Because the rubric is derived from text alone, RULER requires neither paired SVG ground truth nor human preference labels.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · 推理</p>\n<p><strong>原文摘要节选：</strong>Generating Scalable Vector Graphics (SVG) code from natural-language instructions is an open-ended task without absolute visual ground truth, leaving both evaluation and policy optimization without a faithful signal. Scalar metrics (CLIP, Aesthetic) calibrated on natural images transfer poorly to stylized vector content, and reusing them as RL rewards triggers reward hacking. We address both limitations with rubric-based scoring. We first establish empirically that prompting a vision-language judge with a multi-axis rubric correlates with human judgments far better than scalar metrics, both across samples and within instructions. Building on this finding, we introduce RULER (Instance-aware Rubric Rewards for Reinforcement Learning), which converts each instruction into an instance-aware…</p>\n<p><a href=\"https://arxiv.org/abs/2609.25270\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.25270\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.25270\">讨论与热度</a></p><hr>\n<h2>10. One to More, More to One: Category-Aware Iterative Expert Training for Software Engineering Agents</h2>\n<p><strong>强化学习</strong> · 发表 2026-09-20 · 综合分 4.57</p>\n<p>Zotero 摘要相关性：0.368（相似度分数，不是概率）。</p>\n<p>HF 点赞 50 · 讨论 4 · 本次 HF 热榜第 58 位 · 仓库累计 Star 40（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +2 · 讨论 +0 · Star +0。</p>\n<p><strong>规则标签：</strong>强化学习</p>\n<p><strong>中文概述：</strong>针对软件工程（SWE）智能体在多任务学习中表现不均衡的问题，作者提出了一种类别感知的专家训练与策略整合框架。该框架通过SWE Labeler系统进行任务分类，结合长周期Agentic-miniRL与“刷新-修复-扩展”（RRE）机制迭代训练类别专家，并利用标签路由的多教师在线策略蒸馏（MOPD）将专家模型整合为单一学生模型。实验结果显示，该方法在Pro-618和SWE-bench Multilingual基准测试上均提升了任务解决率。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出一种名为MOPD的多教师在线策略蒸馏方法，通过ReLU门控奖励外推技术，将多个类别专家的优势整合至单一模型中。<br><small>摘要依据：Label-routed multi-teacher on-policy distillation (MOPD) consolidates the experts into one deployable student, with ReLU-gated reward extrapolation keeping only each teacher&#x27;s improving direction over the reference.</small></li>\n<li>该框架无需外部模型提供动作目标或解法轨迹，即可实现专家训练与策略整合。<br><small>摘要依据：Expert training and policy integration require no external model to provide solution trajectories or action targets.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · 推理</p>\n<p><strong>原文摘要节选：</strong>Repository-level software engineering (SWE) comprises heterogeneous task categories, whose progress under pooled agentic reinforcement learning can be uneven: gains in some categories coincide with regressions in others, while aggregate resolution obscures these changes. Motivated by this category see-saw, we develop a category-aware expert-training and policy-integration framework. Executable task construction and SWE Labeler, an evidence-grounded multi-axis labeling system, organize the training pools. Initial category-specific RL improves average training success while leaving uneven instance-level progress, motivating explicit consolidation of successful behavior and policy-adaptive task selection. Same-origin category experts alternate long-horizon Agentic-miniRL with…</p>\n<p><a href=\"https://arxiv.org/abs/2609.23377\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.23377\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.23377\">讨论与热度</a> · <a href=\"https://github.com/alibaba/AgenticBigBang\">代码</a></p><hr>"
+}

@@ -1,0 +1,21 @@
+{
+  "overview": "本文提出了一个名为AIDE^2的AI研究智能体系统，旨在通过递归自我改进循环提升科研效率。该系统能够对其自身的源代码进行修改、基准测试及筛选，从而实现自我优化。作者声称，在为期8天的自主运行中，该智能体实现了七次连续改进，涵盖搜索策略和记忆机制，且改进后的智能体在多个未见任务及领域表现出优于人工设计的生产级研究智能体的性能，并展现了较低的奖励作弊率。",
+  "highlights": [
+    {
+      "text": "AIDE^2系统通过递归自我改进机制，在为期8天的自主运行中实现了七项连续的算法与架构优化。",
+      "evidence": "In an autonomous 8-day run, AIDE^2 discovered seven successive improvements, ranging from a new search policy to memory mechanisms that compress and manage the agent's growing context."
+    },
+    {
+      "text": "自我改进后的智能体在多个领域表现出泛化能力，其性能达到或超越了人工设计的强力研究智能体。",
+      "evidence": "On all four, the strongest discovered agent matches or exceeds a human-engineered production research agent that ranks among the strongest on FML-Bench."
+    },
+    {
+      "text": "该研究观察到递归改进过程能降低智能体的奖励作弊行为，尽管该指标并未在训练中被显式优化。",
+      "evidence": "On a separate held-out task family, the discovered agents also exhibit reduced reward hacking, a property the loop never explicitly optimized for: the rate falls from 55% to 32% during the run, 7 percentage points below the human-engineered agent."
+    }
+  ],
+  "tags": [
+    "推理",
+    "大模型后训练"
+  ]
+}
