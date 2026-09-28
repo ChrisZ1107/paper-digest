@@ -740,7 +740,9 @@
         {
           "id": "2609.24919",
           "title": "PixelDiT2: Representation-Grounded Pixel Diffusion Transformers (Sep 2026)",
-          "url": "https://arxiv.org/abs/2609.24919"
+          "url": "https://arxiv.org/abs/2609.24919",
+          "abstract": "Recent advances in pixel-space diffusion models have narrowed the image quality gap with latent-space diffusion, but still converge more slowly and lag behind in final image quality. We argue that a key reason is the lack of an explicit representation prior: unlike latent diffusion, which usually denoises in a compact and structured latent space, pixel diffusion needs to learn denoising-friendly representations and pixel generation simultaneously from raw RGB space. To address this problem, we propose PixelDiT2, an end-to-end pixel-space diffusion model designed to decouple representation learning from pixel generation without introducing an autoencoder or latent reconstruction bottleneck. We propose representation grounding that uses a frozen pretrained vision foundation model to provide explicit per-patch representation guidance throughout denoising, allowing the pixel diffusion transformer to focus more on pixel generation. On ImageNet-256x256, PixelDiT2 achieves an FID of 1.46 after 600 epochs; at 512x512 resolution, PixelDiT2 achieves an FID of 1.48 after 680 epochs.",
+          "abstract_zh": "像素空间扩散模型的最新进展缩小了其与潜在空间扩散模型在图像质量上的差距，但仍存在收敛速度较慢且最终图像质量落后的问题。我们认为，一个关键原因是缺乏显式的表示先验：与通常在紧凑且结构化的潜在空间中进行去噪的潜在扩散不同，像素扩散需要从原始RGB空间同时学习适合去噪的表示和像素生成。为了解决这个问题，我们提出了PixelDiT2，这是一种端到端的像素空间扩散模型，旨在实现表示学习与像素生成的解耦，且无需引入自动编码器或潜在重建瓶颈。我们提出了表示基础（representation grounding）方法，利用冻结的预训练视觉基础模型在整个去噪过程中提供显式的逐块（per-patch）表示引导，从而使像素扩散Transformer能够更专注于像素生成。在ImageNet-256x256数据集上，PixelDiT2在600个epoch后达到了1.46的FID；在512x512分辨率下，PixelDiT2在680个epoch后达到了1.48的FID。"
         }
       ]
     }
