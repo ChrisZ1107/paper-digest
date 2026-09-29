@@ -824,6 +824,19 @@
           "abstract_zh": "语言模型的进步一直受到在更多数据上扩展预训练的推动。然而，训练数据在很大程度上仍是代表模型进行策划的。一种更通用的预训练方法是让模型学会生成对其自身改进最有用的数据。这将提供一种实际上不受限制的训练数据来源，其限制因素是计算能力而非人类知识。我们引入了“零数据自我博弈预训练”（Self-Play Pretraining with Zero Data），这是实现这一愿景的初步概念验证。我们的程序受所罗门诺夫归纳法（Solomonoff induction）的启发，将合成数据生成视为对所有可计算结构空间的搜索。从随机初始化开始，两个模型同步学习：一个生成器提出由通用图灵机解释的程序，以生成字节序列；而一个学习器则自回归地预测这些字节序列。学习器使用标准的交叉熵进行训练，而生成器则通过强化学习进行训练，以生成处于学习器能力前沿的序列，从而形成一个自适应课程。通用图灵机为我们提供了涵盖所有可计算数据生成过程的搜索空间，几乎没有施加任何特定领域的结构，而自我博弈则在这个空间中搜索有用的训练数据。我们测试了在自然数据上的零样本（zero-shot）性能是否会随着自我博弈计算量的增加而可预测地提高；由于生成器和学习器都没有在自然数据上进行训练，这是一个清晰的迁移测试。在多个自然数据集上，零样本损失在计算量上表现出可预测的缩放规律。这些模型还表现出了语境学习（in-context learning）能力，并在训练过程中发现了可识别的数学序列。"
         }
       ]
+    },
+    "sssezldZhGA": {
+      "video_id": "sssezldZhGA",
+      "video_title": "Matryoshka attribution: Learning to attribute language model outputs to representations and weights",
+      "published": "2026-09-29",
+      "video_url": "https://www.youtube.com/watch?v=sssezldZhGA",
+      "papers": [
+        {
+          "id": "2609.25518",
+          "title": "Matryoshka attribution: Learning to attribute language model outputs to representations and weights (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.25518"
+        }
+      ]
     }
   }
 }
