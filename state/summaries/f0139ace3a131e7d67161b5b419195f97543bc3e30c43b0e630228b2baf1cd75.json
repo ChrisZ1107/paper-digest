@@ -1,0 +1,20 @@
+{
+  "overview": "该论文提出了一种用于人形机器人感知运动的双层架构，包含一个基于流匹配的全身轨迹生成器和一个基于强化学习的跟踪策略。作者通过离线强化学习微调环路，利用优势加权回归优化生成器，从而提升了机器人对地形的适应性和技能组合能力。该方法通过直接处理原始深度图像，无需测距或高度图，支持在室外复杂环境（如楼梯、箱体等）中实现多种运动技能。",
+  "highlights": [
+    {
+      "text": "提出了一种基于离线强化学习的微调机制，相比策略梯度残差微调，在样本效率上表现更优，并提升了对未知地形和技能组合的适应性。",
+      "evidence": "Our central contribution is a simple yet effective off-policy RL fine tuning loop that improves the motion generator. A structured search method is used with the generator to gather data for advantage weighted regression. This off-policy loop is much more sample efficient than on-policy residual fine tuning and improves terrain consistency on unseen geometries and skill compositions."
+    },
+    {
+      "text": "该架构通过直接处理原始深度图像实现环境感知，无需依赖测距或高度图，增强了室外环境下的部署能力与地形适应性。",
+      "evidence": "By using raw depth images to perceive the environment no odometry or height maps are needed, and outdoor deployment is easy. With two cameras, the policy can see terrain coming from further away and adjust its velocity regardless of the commanded speed so it can traverse the terrain."
+    }
+  ],
+  "tags": [
+    "人形机器人",
+    "足式运动",
+    "强化学习",
+    "离线强化学习",
+    "Sim-to-Real"
+  ]
+}

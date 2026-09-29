@@ -1,0 +1,141 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>2026-09-29 热门论文 Top 10｜机器人·强化学习·AI</title><body><h1>2026-09-29 热门论文 Top 10</h1>
+<p>机器人 · 强化学习 · 通用 AI</p>
+<p>生成时间：2026-09-29 09:03 CST。从 616 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>
+<p>候选来源：<a href="https://huggingface.co/papers">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>
+<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>
+<h2>1. EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics</h2>
+<p><strong>机器人</strong> · 发表 2026-09-23 · 综合分 5.16</p>
+<p>Zotero 摘要相关性：0.484（相似度分数，不是概率）。</p>
+<p>HF 点赞 4 · 讨论 2 · 本次 HF 热榜第 50 位 · 仓库累计 Star 97（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +0 · Star +17。</p>
+<p><strong>规则标签：</strong>机器人操作 · 视觉语言动作</p>
+<p><strong>中文概述：</strong>本文研究了编码智能体在长序列灵巧机器人任务中的应用，并探讨了其作为通用机器人策略监督来源的可行性。作者提出了EMBODIEDSWE-BENCH基准测试平台，涵盖多种复杂操纵任务，并开发了EMBODIEDSWE-GEN框架，通过扩展编码智能体的解决方案生成多样化轨迹，用于微调视觉语言动作（VLA）模型。实验表明，该方法能够实现从模拟环境到真实机器人的策略迁移，为复杂机器人任务提供可扩展的监督。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出一种将编码智能体生成的模拟演示转化为通用机器人策略训练监督信号的框架。<br><small>摘要依据：Together, our framework uses coding agents to solve complex robotics tasks and turn verified solutions into scalable supervision for robot policies.</small></li>
+<li>利用编码智能体生成的模拟演示对VLA模型进行微调，实现了真实机器人长序列任务的执行。<br><small>摘要依据：We also show that a VLA finetuned solely on coding-agent-generated simulation demonstrations completes a long-horizon task on real robot.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 视觉语言动作 · Sim-to-Real</p>
+<p><strong>原文摘要节选：</strong>We study coding agents for long-horizon, dexterous robotics and ask whether their solutions can provide scalable supervision for learning general robot policies. To test this, we develop EMBODIEDSWE-BENCH, a simulation benchmark for coding agents spanning contact-rich manipulation, deformable objects, and long-horizon tasks requiring up to half an hour of continuous interaction. We find that frontier coding agents can solve complex long-horizon tasks and transfer prior solutions across both tasks and embodiments. We also design supporting tools that help agents more effectively solve these tasks. However, the resulting solutions require substantial iterative interaction and are typically specialized to individual task instances. We therefore introduce EMBODIEDSWE-GEN, which expands a…</p>
+<p><a href="https://arxiv.org/abs/2609.27308">论文原文</a> · <a href="https://arxiv.org/pdf/2609.27308">PDF</a> · <a href="https://huggingface.co/papers/2609.27308">讨论与热度</a> · <a href="https://github.com/EmbodiedSWE/EmbodiedSWE">代码</a></p><hr>
+<h2>2. Uranus: Building the Next-Generation Simulation Infrastructure for Embodied AI</h2>
+<p><strong>机器人</strong> · 发表 2026-09-23 · 综合分 5.11</p>
+<p>Zotero 摘要相关性：0.466（相似度分数，不是概率）。</p>
+<p>HF 点赞 7 · 讨论 2 · 仓库累计 Star 7（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +4 · 讨论 +0 · Star +1。</p>
+<p><strong>中文概述：</strong>针对机器人数据生成与策略训练对高性能模拟的需求，本文提出了数据驱动的模拟器Uranus。该系统基于关节轨迹条件下的自回归扩散模型，能够实现流式、开放式的长序列仿真，支持多种机器人形态与多视角配置。作者声称该系统具备低延迟生成能力，并通过实验评估了其在分布内及分布外数据上的表现，旨在为具身智能研究提供可扩展的模拟基础设施。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>Uranus支持流式、开放式的长序列模拟，能够根据输入的未来关节轨迹实时生成视觉帧，且无固定时间范围限制。<br><small>摘要依据：streaming, open-ended rollout, which receives future joint-position trajectories online and autoregressively generates one latent frame per step, corresponding to four RGB frames, without a fixed horizon;</small></li>
+<li>通过推理优化，Uranus能够实现低延迟的视觉帧生成，达到每秒24帧（24 FPS）的运行速度。<br><small>摘要依据：low-latency generation, achieving 24 FPS after inference optimization;</small></li>
+<li>该模拟器提供了统一的接口，能够支持不同机器人形态及相机配置下的同步多视角生成，具备良好的可扩展性。<br><small>摘要依据：scalable, extensible robot control, providing a unified interface for synchronized multi-view generation across diverse robot embodiments and camera configurations.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>Sim-to-Real</p>
+<p><strong>原文摘要节选：</strong>Scalable simulation is essential for robot data generation, policy training, evaluation, and safe iteration, yet real-world interaction is costly and conventional simulators require labor-intensive construction. We present Uranus, a data-driven robot simulator built around a joint-trajectory-conditioned autoregressive diffusion model. Uranus offers three key capabilities: (1) streaming, open-ended rollout, which receives future joint-position trajectories online and autoregressively generates one latent frame per step, corresponding to four RGB frames, without a fixed horizon; (2) low-latency generation, achieving 24 FPS after inference optimization; and (3) scalable, extensible robot control, providing a unified interface for synchronized multi-view generation across diverse robot…</p>
+<p><a href="https://arxiv.org/abs/2609.24815">论文原文</a> · <a href="https://arxiv.org/pdf/2609.24815">PDF</a> · <a href="https://huggingface.co/papers/2609.24815">讨论与热度</a> · <a href="https://github.com/D-Robotics-AI-Lab/Uranus-OSS">代码</a></p><hr>
+<h2>3. NeoHorse-1: Towards Recursive Self-Improvement via Agentic Post-Training with Routing Harness</h2>
+<p><strong>通用 AI</strong> · 发表 2026-09-08 · 综合分 5.01</p>
+<p>Zotero 摘要相关性：0.377（相似度分数，不是概率）。</p>
+<p>HF 点赞 325 · 讨论 8 · 本次 HF 热榜第 12 位 · 仓库累计 Star 1213（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +152 · 讨论 +0 · Star +77。</p>
+<p><strong>规则标签：</strong>大模型后训练 · 推理</p>
+<p><strong>中文概述：</strong>针对递归自我改进的需求，本文提出了NeoHorse-1模型系列，探索了一种通过代理后训练实现自我进化的机制。该系统通过异构模型池和智能路由，记录用户交互并将其转化为包含推理与工具调用的训练样本，随后经过结构化验证和多维度评估。通过建立由路由信号引导的监督微调与策略蒸馏课程，结合能力引导的分配策略，作者构建了一个评价-选择-更新闭环，旨在使模型根据学习成果自动优化后续训练过程。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出了一种基于路由引导的代理后训练流程，通过构建评价-选择-更新闭环实现递归自我改进的原型。<br><small>摘要依据：Capability-guided allocation then converts evaluation feedback into the next training mixture, closing an evaluation-selection-update loop in which what the system learns to do shapes what it learns from next.</small></li>
+<li>实验结果显示，通过该方法进行后训练后，4B和9B规模模型的宏观平均基准得分分别从58.94提升至64.87，从65.60提升至69.04。<br><small>摘要依据：Across eleven benchmarks covering harness-based agents, tool use, coding, and instruction following, post-training raises the macro-average from 58.94 to 64.87 at 4B and from 65.60 to 69.04 at 9B</small></li>
+</ul>
+<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>
+<p><strong>原文摘要节选：</strong>Recursive self-improvement (RSI) requires a concrete mechanism through which an AI system observes its capabilities and converts that evidence into the next round of learning. We present NeoHorse-1, a family of agent-native models developed to explore this path through agentic post-training. Our system combines a heterogeneous model pool with intelligent routing, recording the predicted capability demand, selected service tier, and subsequent interaction for each user turn. These records are converted into training examples that preserve interleaved reasoning, tool calls, and harness context, and are admitted through structural validation, six-dimensional semantic evaluation, and subscene-level labeling. Routing signals organize supervised fine-tuning into a three-stage curriculum and…</p>
+<p><a href="https://arxiv.org/abs/2609.08183">论文原文</a> · <a href="https://arxiv.org/pdf/2609.08183">PDF</a> · <a href="https://huggingface.co/papers/2609.08183">讨论与热度</a> · <a href="https://github.com/TokenRhythm/NeoHorse">代码</a></p><hr>
+<h2>4. InternW0: A Foundational Physical World Model for Efficient Real-World Interactions</h2>
+<p><strong>机器人</strong> · 发表 2026-09-23 · 综合分 5.00</p>
+<p>Zotero 摘要相关性：0.431（相似度分数，不是概率）。</p>
+<p>HF 点赞 13 · 讨论 1</p>
+<p>较上次观测（1.0 天前）：点赞 +7 · 讨论 +0。</p>
+<p><strong>规则标签：</strong>机器人操作 · 世界模型 · 大模型后训练</p>
+<p><strong>中文概述：</strong>InternW0 是一款旨在实现高效现实世界交互的物理世界模型。该模型采用异步多频率处理架构，通过非对称视频-动作架构联合学习未来视觉动力学与机器人控制。它利用高容量视频专家提供长视界预测上下文，并结合轻量级动作专家实现快速决策。作者声称该模型通过观测条件下的上下文路由技术，支持多形态具身智能，并在复杂操作任务及科学实验流程中展现了有效性。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>InternW0 采用非对称的视频-动作架构，通过异步多频率处理实现高效的物理预测与实时控制。<br><small>摘要依据：InternW0 jointly learns future visual dynamics and continuous robot control through an asymmetric video--action architecture with flow matching. A high-capacity video expert provides longer-horizon predictive context, while a lightweight action expert operates at a faster timescale.</small></li>
+<li>该模型通过观测条件下的上下文路由技术，无需为每次动作更新重新生成预测，从而提升了计算效率。<br><small>摘要依据：Instead of regenerating the future for every action update, InternW0 reuses layerwise K/V and adapts it to newly observed states through observation-conditioned context routing.</small></li>
+<li>InternW0 在包含金属有机框架合成及精细移液操作等复杂科学任务中验证了其通用交互能力。<br><small>摘要依据：Evaluation spans simulation benchmarks and real-world scientific tasks, including a 15-stage metal--organic framework synthesis workflow and 5-stage contact- and force-aware dexterous manipulation for general-purpose quantitative pipetting.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>世界模型 · 机器人操作 · Sim-to-Real</p>
+<p><strong>原文摘要节选：</strong>Physical intelligence requires more than predicting how the world may evolve: predictions must remain actionable as the world continues to change. We introduce InternW0, the first instantiation of the InternW physical world model series from Shanghai AI Laboratory, built around omnimodal interfaces, asynchronous multi-frequency processing, and local physical modeling under partial observations and external influences. InternW0 jointly learns future visual dynamics and continuous robot control through an asymmetric video--action architecture with flow matching. A high-capacity video expert provides longer-horizon predictive context, while a lightweight action expert operates at a faster timescale. Instead of regenerating the future for every action update, InternW0 reuses layerwise K/V and…</p>
+<p><a href="https://arxiv.org/abs/2609.27656">论文原文</a> · <a href="https://arxiv.org/pdf/2609.27656">PDF</a> · <a href="https://huggingface.co/papers/2609.27656">讨论与热度</a></p><hr>
+<h2>5. Qwen-Planner-Agent: A Closed-Loop AI-for-AI Framework for Real-World Mobile Planner Agents</h2>
+<p><strong>强化学习</strong> · 发表 2026-09-24 · 综合分 4.92</p>
+<p>Zotero 摘要相关性：0.434（相似度分数，不是概率）。</p>
+<p>HF 点赞 14 · 讨论 2</p>
+<p>较上次观测（1.0 天前）：点赞 +3 · 讨论 +0。</p>
+<p><strong>规则标签：</strong>强化学习 · 推理</p>
+<p><strong>中文概述：</strong>针对移动规划任务中复杂长程任务与真实设备交互成本高的问题，作者提出了Qwen-Planner-Agent。该框架采用闭环AI-for-AI范式，集成数据生产、模型训练与部署。通过引入Competence-Aware Reward-and-Advantage Engineering (CARE)及执行证据驱动的反馈机制，实现任务协同与系统迭代。作者声称该方法在MobilePA-Bench基准测试中优于其他评估模型，并在保持通用能力的同时提升了代理性能。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出一种基于人类门控的代理数据飞轮，通过专业代理构建任务、收集轨迹并自动筛选训练数据，实现数据的自我迭代与平衡。<br><small>摘要依据：AI for Data builds a human-gated agentic data flywheel in which specialized agents construct tasks, collect interaction trajectories, curate and balance training data, and use training feedback to guide subsequent data generation.</small></li>
+<li>引入Competence-Aware Reward-and-Advantage Engineering (CARE)技术，在保持任务性能的前提下降低模型推理与工具使用的成本。<br><small>摘要依据：we introduce Competence-Aware Reward-and-Advantage Engineering (CARE) to reduce reasoning and tool-use costs while preserving task performance.</small></li>
+<li>构建了基于执行证据驱动的闭环系统，通过将运行时反馈与失败轨迹反馈至模型，实现了模型与执行环境的协同进化。<br><small>摘要依据：AI drives model--harness co-evolution through an execution-evidence-driven loop that orchestrates memory, skills, and tools at runtime and feeds structured action feedback and preserved failure traces back into coordinated model and harness adaptation.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>
+<p><strong>原文摘要节选：</strong>The rapid progression of large language models is extending AI from passive content generation into the active workflows of engineering and scientific discovery. This shift raises a compelling question: can AI be both the object of development and an active participant in building next-generation AI systems? We explore this question by building Qwen-Planner-Agent within a closed-loop AI-for-AI framework for scalable development and iterative improvement. Mobile planning offers a demanding test of this approach: complex, long-horizon tasks challenge agent reliability, while costly real-device interaction limits development scalability. The framework connects data production, model training, and deployment through a shared action-feedback-verification contract. (i) AI for Data builds a…</p>
+<p><a href="https://arxiv.org/abs/2609.29892">论文原文</a> · <a href="https://arxiv.org/pdf/2609.29892">PDF</a> · <a href="https://huggingface.co/papers/2609.29892">讨论与热度</a></p><hr>
+<h2>6. MemBodied: Recurrent Associative Memory for Vision-Language-Action Models</h2>
+<p><strong>机器人</strong> · 发表 2026-09-23 · 综合分 4.87</p>
+<p>Zotero 摘要相关性：0.415（相似度分数，不是概率）。</p>
+<p>HF 点赞 15 · 讨论 2 · 仓库累计 Star 10（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +4 · 讨论 +0 · Star +1。</p>
+<p><strong>规则标签：</strong>视觉语言动作</p>
+<p><strong>中文概述：</strong>针对视觉语言动作模型在处理依赖历史信息的操纵任务时存在的上下文冗余与推理延迟问题，作者提出了MemBodied方法。该方法引入了一种固定大小的片段记忆机制，包含关联状态和片段锚点，通过在动作生成过程中整合这些记忆组件，而非直接利用过去的观测数据，从而提升了机器人执行复杂任务的能力。实验结果表明，该模型在多个评估基准上提升了成功率，并实现了参数效率与性能的平衡。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>MemBodied通过关联状态和片段锚点构成的固定大小记忆机制，在处理依赖历史信息的操纵任务时显著超越了现有策略。<br><small>摘要依据：Across five evaluated RMBench tasks requiring memory, MemBodied achieves 7.81times the mean success rate of a stateless policy and 2.98times of vanilla recurrent memory, while outperforming the strongest memory-augmented baseline by 1.3times with 10times fewer added parameters.</small></li>
+<li>在LIBERO-Long基准测试中，MemBodied实现了相比无状态策略的性能提升，展示了其在处理长程依赖任务中的实用性。<br><small>摘要依据：On the fully observable LIBERO-Long suite, it reached 90.6%, a 5.4% improvement over the stateless π_0 policy.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 视觉语言动作</p>
+<p><strong>原文摘要节选：</strong>Vision-Language-Action models provide a strong foundation for general-purpose robot control, yet a vast majority of policies do not preserve and leverage episode-level information beyond the current observation. This limitation is consequential in history-dependent manipulation tasks that depend on information available only in past observations. Retaining past observations in context can aid in recovering this information, but at the significant cost of ever-growing, bloated context and inference latency. We thus introduce MemBodied, a fixed-size episodic memory with two complementary components: an associative state that records interactions across policy calls and an episode anchor that preserves a compact representation of the initial scene as a reference. At each policy call, the…</p>
+<p><a href="https://arxiv.org/abs/2609.28256">论文原文</a> · <a href="https://arxiv.org/pdf/2609.28256">PDF</a> · <a href="https://huggingface.co/papers/2609.28256">讨论与热度</a> · <a href="https://github.com/declare-lab/MemBodied">代码</a></p><hr>
+<h2>7. RRSI: Regularized Recursive Self-Improvement of Agent Harnesses</h2>
+<p><strong>通用 AI</strong> · 发表 2026-09-21 · 综合分 4.86</p>
+<p>Zotero 摘要相关性：0.364（相似度分数，不是概率）。</p>
+<p>HF 点赞 210 · 讨论 2 · 本次 HF 热榜第 4 位 · 仓库累计 Star 557（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +0 · Star +182。</p>
+<p><strong>中文概述：</strong>针对大语言模型智能体框架（harness）递归自我改进过程中出现的过拟合现象，本文提出了一种正则化递归自我改进方法（RRSI）。该方法通过在候选建议阶段引入时间退火预算与轨迹探索机制，并在选择阶段配备评估器与修剪器，旨在限制针对特定任务的过度优化，从而提升框架的泛化能力和效率。实验结果表明，该方法在多个任务基准上实现了性能提升，并降低了策略词元开销。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>RRSI通过正则化约束候选建议与选择过程，有效缓解了递归进化中因记忆训练任务导致的过拟合问题，增强了智能体机制的泛化性。<br><small>摘要依据：We introduce Regularized Recursive Self-Improvement of Agent Harnesses (RRSI), which incorporates the principles of regularizations into harness self-improvement by constraining the evolution candidate proposal and selection.</small></li>
+<li>在八个任务基准测试中，RRSI不仅在训练分布上获得性能提升，在分布外基准上最高提升了4.7个点，且大幅降低了推理成本。<br><small>摘要依据：Across eight benchmarks spanning coding, agentic workspace and engineering design tasks, RRSI gains up to 14.1 points on the split it evolves against and up to 4.7 points on the five out-of-distribution benchmarks, while producing a harness that runs on 30% fewer policy tokens than the unregularized evolution.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>
+<p><strong>原文摘要节选：</strong>An LLM agent&#x27;s capability is largely magnified by its harness, namely the prompts, control flow, tooling, memory, and context management surrounding the frozen backbone model. Recent methods increasingly automate this process by iteratively proposing and selecting component-wise edits of an agent harness, practically establishing a form of recursive self-improvement (RSI) at the agent-system level. However, such recursive evolution may overfit by memorizing the training tasks, showing large in-distribution gains that shrink or even vanish on out-of-distribution benchmarks. We introduce Regularized Recursive Self-Improvement of Agent Harnesses (RRSI), which incorporates the principles of regularizations into harness self-improvement by constraining the evolution candidate proposal and…</p>
+<p><a href="https://arxiv.org/abs/2609.24972">论文原文</a> · <a href="https://arxiv.org/pdf/2609.24972">PDF</a> · <a href="https://huggingface.co/papers/2609.24972">讨论与热度</a> · <a href="https://github.com/google-research/rrsi">代码</a></p><hr>
+<h2>8. Verifiable Hidden Dynamics Play: Generating Agentic RL Environments from Solved Mechanisms</h2>
+<p><strong>通用 AI</strong> · 发表 2026-09-23 · 综合分 4.77</p>
+<p>Zotero 摘要相关性：0.381（相似度分数，不是概率）。</p>
+<p>HF 点赞 21 · 讨论 1</p>
+<p>较上次观测（1.0 天前）：点赞 +9 · 讨论 +0。</p>
+<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>
+<p><strong>原文摘要节选：</strong>Language-model agents increasingly face long-horizon tasks with evolving state, interdependent decisions, and delayed outcomes. Scaling their training requires diverse agentic environments, dependable outcome signals, and low extension cost. Existing generation pipelines commonly construct an environment before defining its outcome rule or annotating its trajectories, leaving dynamics and evaluation to be aligned post hoc. VHD-Play reverses this dependency by sampling and solving a mathematical model before a corpus-grounded setter renders its decision process as stateful tools. The executable dynamics and trajectory-scoring reference are inherited from the same solved model. The pipeline produces 3,300 diverse agentic environments at a cost of a few cents each. Training Qwen3.6-35B-A3B…</p>
+<p><a href="https://arxiv.org/abs/2609.27321">论文原文</a> · <a href="https://arxiv.org/pdf/2609.27321">PDF</a> · <a href="https://huggingface.co/papers/2609.27321">讨论与热度</a></p><hr>
+<h2>9. PackLab: A Comprehensive Framework for Developing, Training, and Evaluating MLLMs in Robotic Bin Packing</h2>
+<p><strong>机器人 / 强化学习</strong> · 发表 2026-09-20 · 综合分 4.74</p>
+<p>Zotero 摘要相关性：0.430（相似度分数，不是概率）。</p>
+<p>HF 点赞 14 · 讨论 2 · 仓库累计 Star 8（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +3 · 讨论 +0 · Star +0。</p>
+<p><strong>规则标签：</strong>强化学习</p>
+<p><strong>中文概述：</strong>针对机器人装箱任务中长程序列决策的挑战，本文提出了PackLab框架。该框架包含用于生成训练轨迹和评估物理结果的仿真平台PackLab-Suite，专注于理解物体与容器状态以实现闭环决策的专用多模态大模型PackLab-VLM，以及用于系统性评测的基准测试集PackLab-Bench。实验结果显示，PackLab-VLM在多种配置下表现优于传统启发式算法、强化学习方法及通用多模态模型。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>PackLab-VLM通过理解演变的物体与容器状态，实现了联合物体选择与放置位置预测的闭环决策。<br><small>摘要依据：PackLab-VLM is a packing-specialized MLLM that understands the evolving object and container states to jointly select objects and predict placements in a closed-loop manner.</small></li>
+<li>PackLab-VLM在装箱任务中展现出优于现有启发式算法、传统强化学习及通用大模型的性能。<br><small>摘要依据：Extensive experiments demonstrate that, on average, PackLab-VLM outperforms conventional packing heuristics, traditional reinforcement learning methods, and general-purpose MLLMs across object sets and container configurations, highlighting the potential of MLLMs for long-horizon robotic packing.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作</p>
+<p><strong>原文摘要节选：</strong>Robotic bin packing requires long-horizon sequential decision-making, as each object placement affects the available space for subsequent packing. Existing methods primarily rely on hand-crafted geometric heuristics that optimize predefined objectives or reinforcement learning policies learned through trial and error over predefined training configurations. Despite recent advances in multimodal large language models (MLLMs) for this task, their potential for closed-loop sequential decisions across heterogeneous packing configurations remains underexplored. To address this gap, we introduce PackLab, a comprehensive framework for developing, training, and evaluating MLLMs for closed-loop robotic bin packing. PackLab-Suite provides a physics-based simulation platform for scalable generation…</p>
+<p><a href="https://arxiv.org/abs/2609.23784">论文原文</a> · <a href="https://arxiv.org/pdf/2609.23784">PDF</a> · <a href="https://huggingface.co/papers/2609.23784">讨论与热度</a> · <a href="https://github.com/Correr-Zhou/PackLab">代码</a></p><hr>
+<h2>10. PACT: From Credit Assignment to Critic Alignment</h2>
+<p><strong>强化学习</strong> · 发表 2026-09-22 · 综合分 4.73</p>
+<p>Zotero 摘要相关性：0.367（相似度分数，不是概率）。</p>
+<p>HF 点赞 27 · 讨论 3</p>
+<p>较上次观测（1.0 天前）：点赞 +11 · 讨论 +0。</p>
+<p><strong>规则标签：</strong>强化学习 · PPO · 大模型后训练 · 推理</p>
+<p><strong>中文概述：</strong>该论文探讨了大型语言模型强化学习训练中token级信用分配的数学定义问题。作者提出了完备性、前缀一致性和中立性三个正则性条件，并据此推导出一套统一的信用分配理论。基于该理论，作者分析了现有算法（如OPD、RLOO、GAE）的特性，并提出了一种新的训练方法——策略对齐评论员训练（PACT）。通过改变更新顺序并引入重要性采样校正，PACT在数学推理任务及SWE-bench代码生成任务中表现出优于PPO和GRPO的性能。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>作者建立了token级信用分配的数学定义，并证明了三个正则性条件能够唯一确定该信用值，为解释强化学习算法提供了统一基础。<br><small>摘要依据：We formulate three regularity conditions, namely Completeness, Prefix Consistency, and Neutrality, and prove that they uniquely determine token-level credit.</small></li>
+<li>提出了PACT训练方法，通过采用“先演员后评论员”的更新顺序并进行重要性采样校正，实现了评论员与更新后策略的更好对齐。<br><small>摘要依据：These motivate Policy Aligned Critic Training (PACT), which adopts an Actor-then-Critic update order to apply importance sampling correction to critic training and better align the critic with the updated policy.</small></li>
+<li>在智能体数学推理和SWE-bench Verified基准测试中，PACT在准确率和通过率上均超过了对比基线算法（如PPO和GRPO）。<br><small>摘要依据：In agentic mathematical reasoning, PACT achieves 72.87% average accuracy across four benchmarks, outperforming GRPO and PPO by 8.80 and 13.16 percentage points, respectively.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>大模型后训练 · 强化学习 · PPO · 推理</p>
+<p><strong>原文摘要节选：</strong>Reinforcement learning has become a central component of large language model (LLM) post-training, yet token-level credit lacks a generally accepted mathematical definition, leaving its relationship to commonly used training signals unclear. We formulate three regularity conditions, namely Completeness, Prefix Consistency, and Neutrality, and prove that they uniquely determine token-level credit. This characterization provides a unified basis for explaining phenomena across existing algorithms and guides the development of an improved actor-critic training procedure. Through this lens, an ideal teacher in On-Policy Distillation (OPD) acts as an implicit critic, yielding an expected policy gradient proportional to that induced by token-level credit. Response-level REINFORCE Leave-One-Out…</p>
+<p><a href="https://arxiv.org/abs/2609.26355">论文原文</a> · <a href="https://arxiv.org/pdf/2609.26355">PDF</a> · <a href="https://huggingface.co/papers/2609.26355">讨论与热度</a></p><hr></body></html>

@@ -1,0 +1,18 @@
+{
+  "overview": "针对人形机器人行走与操作任务耦合的挑战，本文提出了一种名为HuGo的分层架构。该方法利用大语言模型（LLM）基于任务描述直接生成高层策略代码，并结合低层全身策略进行执行。通过引入基于数值轨迹和视频帧的反馈机制，系统能对代码进行迭代优化。实验表明，HuGo无需特定任务的奖励设计或演示数据，即可在多种仿真任务中取得优于强化学习基线的效果，并实现了仿真策略到现实硬件的零样本迁移。",
+  "highlights": [
+    {
+      "text": "提出了一种基于LLM的分层方法，能够从任务描述中生成高层控制代码，从而避免了繁琐的奖励工程或针对特定任务的训练。",
+      "evidence": "HuGo, Humanoid policy code Generation, uses a Large Language Model (LLM) to generate executable, closed-loop high-level policy code from a task description on top of a frozen low-level whole-body policy."
+    },
+    {
+      "text": "通过引入基于轨迹和视觉反馈的迭代优化循环，在无需专家演示的情况下实现了仿真策略向真实硬件的零样本迁移与性能优化。",
+      "evidence": "We further demonstrate zero-shot transfer of simulation-generated policies to hardware and show that applying the same refinement loop to real-world rollouts can further improve transfer performance without expert demonstrations or policy retraining."
+    }
+  ],
+  "tags": [
+    "人形机器人",
+    "大模型后训练",
+    "Sim-to-Real"
+  ]
+}

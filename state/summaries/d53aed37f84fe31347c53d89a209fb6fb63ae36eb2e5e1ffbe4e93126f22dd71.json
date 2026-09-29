@@ -1,0 +1,16 @@
+{
+  "overview": "针对液压挖掘机控制中高精度与高速度难以兼顾的问题，本文提出了一种在线基于模型的强化学习框架。该方法通过从零学习概率动力学集成模型，结合采样模型预测控制及精度门控轮廓目标函数，实现了无需演示或模拟预训练的硬件直接学习。实验表明，该框架在数据效率上优于评估的基准模型，并在实际11.5吨液压挖掘机上实现了快速收敛与高精度路径跟踪。",
+  "highlights": [
+    {
+      "text": "该框架能够在无需外部演示或预训练的情况下，直接在11.5吨重的液压挖掘机上进行在线学习。",
+      "evidence": "We validate the framework by learning directly on an 11.5-ton Menzi Muck M445 hydraulic excavator, without demonstrations or simulation pretraining."
+    },
+    {
+      "text": "学习效率显著提升，仅需20分钟交互即可达到现有方法100-150分钟训练的效果，40分钟后实现高运行速度下的亚厘米级误差。",
+      "evidence": "After 20 minutes of interaction, the controller reaches tracking accuracy comparable to prior learned controllers trained on 100-150 minutes of data. After 40 minutes, it sustains sub-centimeter mean path error at high operating speeds."
+    }
+  ],
+  "tags": [
+    "强化学习"
+  ]
+}

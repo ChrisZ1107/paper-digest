@@ -1,0 +1,22 @@
+{
+  "overview": "InternW0 是一款旨在实现高效现实世界交互的物理世界模型。该模型采用异步多频率处理架构，通过非对称视频-动作架构联合学习未来视觉动力学与机器人控制。它利用高容量视频专家提供长视界预测上下文，并结合轻量级动作专家实现快速决策。作者声称该模型通过观测条件下的上下文路由技术，支持多形态具身智能，并在复杂操作任务及科学实验流程中展现了有效性。",
+  "highlights": [
+    {
+      "text": "InternW0 采用非对称的视频-动作架构，通过异步多频率处理实现高效的物理预测与实时控制。",
+      "evidence": "InternW0 jointly learns future visual dynamics and continuous robot control through an asymmetric video--action architecture with flow matching. A high-capacity video expert provides longer-horizon predictive context, while a lightweight action expert operates at a faster timescale."
+    },
+    {
+      "text": "该模型通过观测条件下的上下文路由技术，无需为每次动作更新重新生成预测，从而提升了计算效率。",
+      "evidence": "Instead of regenerating the future for every action update, InternW0 reuses layerwise K/V and adapts it to newly observed states through observation-conditioned context routing."
+    },
+    {
+      "text": "InternW0 在包含金属有机框架合成及精细移液操作等复杂科学任务中验证了其通用交互能力。",
+      "evidence": "Evaluation spans simulation benchmarks and real-world scientific tasks, including a 15-stage metal--organic framework synthesis workflow and 5-stage contact- and force-aware dexterous manipulation for general-purpose quantitative pipetting."
+    }
+  ],
+  "tags": [
+    "世界模型",
+    "机器人操作",
+    "Sim-to-Real"
+  ]
+}

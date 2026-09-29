@@ -1,0 +1,21 @@
+{
+  "overview": "本文针对四足机器人穿过狭窄缝隙的视觉运动控制任务，提出了一种两阶段强化学习框架。该方法利用可微分仿真进行准解析策略梯度（QPG）计算，并结合特权观察下的预训练评价者（Critic）热启动机制。作者声称该框架在无需针对参考轨迹重置的情况下，显著提升了视觉策略的训练效率与成功率，并表现出良好的泛化能力与跨平台通用性。",
+  "highlights": [
+    {
+      "text": "利用准解析策略梯度（QPG）避免了视觉渲染的反向传播，有效降低了计算与内存开销并提升了样本效率。",
+      "evidence": "The framework utilizes QPG to avoid backpropagation through visual rendering, reducing computation and memory costs while improving sample efficiency."
+    },
+    {
+      "text": "通过评价者热启动策略，该框架在训练效率与缝隙穿越成功率上优于冷启动或全滚动时间反向传播方法。",
+      "evidence": "This substantially improves training efficiency and traversal success compared with cold-starting the critic or using full-rollout BPTT."
+    },
+    {
+      "text": "该方法不依赖基于动作监督的训练，使得策略能够在不同无人机平台间更高效地泛化，并支持未见过的缝隙形状。",
+      "evidence": "Our framework does not require retraining the expert actor when system parameters change, enabling more efficient generalization across drone platforms than state-of-the-art visual gap-traversal methods based on action supervision. The learned visual policy also generalizes to gaps with unseen shapes."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "Sim-to-Real"
+  ]
+}

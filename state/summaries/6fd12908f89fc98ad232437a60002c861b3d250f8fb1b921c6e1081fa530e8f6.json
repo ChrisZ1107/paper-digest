@@ -1,0 +1,17 @@
+{
+  "overview": "针对视觉语言动作模型在处理依赖历史信息的操纵任务时存在的上下文冗余与推理延迟问题，作者提出了MemBodied方法。该方法引入了一种固定大小的片段记忆机制，包含关联状态和片段锚点，通过在动作生成过程中整合这些记忆组件，而非直接利用过去的观测数据，从而提升了机器人执行复杂任务的能力。实验结果表明，该模型在多个评估基准上提升了成功率，并实现了参数效率与性能的平衡。",
+  "highlights": [
+    {
+      "text": "MemBodied通过关联状态和片段锚点构成的固定大小记忆机制，在处理依赖历史信息的操纵任务时显著超越了现有策略。",
+      "evidence": "Across five evaluated RMBench tasks requiring memory, MemBodied achieves 7.81times the mean success rate of a stateless policy and 2.98times of vanilla recurrent memory, while outperforming the strongest memory-augmented baseline by 1.3times with 10times fewer added parameters."
+    },
+    {
+      "text": "在LIBERO-Long基准测试中，MemBodied实现了相比无状态策略的性能提升，展示了其在处理长程依赖任务中的实用性。",
+      "evidence": "On the fully observable LIBERO-Long suite, it reached 90.6%, a 5.4% improvement over the stateless π_0 policy."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "视觉语言动作"
+  ]
+}
