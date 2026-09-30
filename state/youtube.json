@@ -847,6 +847,110 @@
           "abstract_zh": "将语言模型的输出归因于其内部计算是可解释性领域的一个未决问题。现有的利用因果干预、梯度或可学习掩码的方法，要么计算成本过高，要么难以识别真正具有因果重要性的内部计算。我们提出将归因问题表述为识别使下游损失最小化的内部组件嵌套子集的问题。为了学习这一任务，我们引入了 Matryoshka Attribution (MAttr)，这是一种通过简单的可微 sigmoid top-$k$ 算子对掩码进行参数化的掩码学习方法。通过在训练过程中对 $k$ 进行随机化处理，我们对所有稀疏度水平进行同步监督训练，从而学习到按归因分数排序的组件序列。MAttr 在机械可解释性基准（Mechanistic Interpretability Benchmark, Mueller et al., 2025）的官方排行榜上排名第一；我们的方法能够跨不同的电路基底识别出稀疏且具有任务迁移能力的电路。作为一项实际应用，我们展示了 MAttr 可以通过强化学习进行训练，从而识别出在大语言模型微调中导致下游行为变化的权重。我们在拒绝回答的评判分数上训练 MAttr，并发现将 Llama 3.1 8B Instruct 模型中 1% 的权重恢复到基础模型状态，就足以消除拒绝行为并保持模型能力。我们将 MAttr 视为将可解释性成功转化为可通过梯度下降解决的可学习目标，并鼓励未来开展相关方向的研究。"
         }
       ]
+    },
+    "3WYcwVpPdfE": {
+      "video_id": "3WYcwVpPdfE",
+      "video_title": "The Past Frames the Future: Memory for Autoregressive Video Generation (Sep 2026)",
+      "published": "2026-09-30",
+      "video_url": "https://www.youtube.com/watch?v=3WYcwVpPdfE",
+      "papers": [
+        {
+          "id": "2609.28466",
+          "title": "The Past Frames the Future: Memory for Autoregressive Video Generation (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.28466"
+        }
+      ]
+    },
+    "Kzhfa0-metk": {
+      "video_id": "Kzhfa0-metk",
+      "video_title": "EmbodiedMemory-Bench: Benchmarking Embodied Memory for Long-Horizon Embodied Tasks (Sep 2026)",
+      "published": "2026-09-30",
+      "video_url": "https://www.youtube.com/watch?v=Kzhfa0-metk",
+      "papers": [
+        {
+          "id": "2609.28236",
+          "title": "EmbodiedMemory-Bench: Benchmarking Embodied Memory for Long-Horizon Embodied Tasks (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.28236"
+        }
+      ]
+    },
+    "qtQiDi_r9PA": {
+      "video_id": "qtQiDi_r9PA",
+      "video_title": "Training Object Permanence in World Models (Sep 2026)",
+      "published": "2026-09-30",
+      "video_url": "https://www.youtube.com/watch?v=qtQiDi_r9PA",
+      "papers": [
+        {
+          "id": "2609.28654",
+          "title": "Training Object Permanence in World Models (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.28654"
+        }
+      ]
+    },
+    "SRIeK0v9N3s": {
+      "video_id": "SRIeK0v9N3s",
+      "video_title": "On the Diffusibility of High-Dimensional Latents (Sep 2026)",
+      "published": "2026-09-30",
+      "video_url": "https://www.youtube.com/watch?v=SRIeK0v9N3s",
+      "papers": [
+        {
+          "id": "2609.28473",
+          "title": "On the Diffusibility of High-Dimensional Latents (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.28473"
+        }
+      ]
+    },
+    "r2fi5hBs85Q": {
+      "video_id": "r2fi5hBs85Q",
+      "video_title": "Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs",
+      "published": "2026-09-30",
+      "video_url": "https://www.youtube.com/watch?v=r2fi5hBs85Q",
+      "papers": [
+        {
+          "id": "2609.26796",
+          "title": "Flash-dLLM: IO-Aware KV Caching and Parallel Decoding for Fast, Memory-Efficient Diffusion LLMs (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.26796"
+        }
+      ]
+    },
+    "lucnBMlowXI": {
+      "video_id": "lucnBMlowXI",
+      "video_title": "Harness as a Language: A Minimalist Agent Framework With Maximal Expressivity (Sep 2026)",
+      "published": "2026-09-30",
+      "video_url": "https://www.youtube.com/watch?v=lucnBMlowXI",
+      "papers": [
+        {
+          "id": "2609.26891",
+          "title": "Harness as a Language: A Minimalist Agent Framework With Maximal Expressivity (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.26891"
+        }
+      ]
+    },
+    "AcK0BuwyM3w": {
+      "video_id": "AcK0BuwyM3w",
+      "video_title": "Generalizable Robotic Insertion with World Models (Sep 2026)",
+      "published": "2026-09-30",
+      "video_url": "https://www.youtube.com/watch?v=AcK0BuwyM3w",
+      "papers": [
+        {
+          "id": "2609.28258",
+          "title": "Generalizable Robotic Insertion with World Models (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.28258"
+        }
+      ]
+    },
+    "PkIDBrHIpLc": {
+      "video_id": "PkIDBrHIpLc",
+      "video_title": "Statistical Inference for Causal Discovery under Selection and Latent Variables via Single-Target…",
+      "published": "2026-09-30",
+      "video_url": "https://www.youtube.com/watch?v=PkIDBrHIpLc",
+      "papers": [
+        {
+          "id": "2609.28856",
+          "title": "Statistical Inference for Causal Discovery under Selection and Latent Variables via Single-Target Interventions (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.28856"
+        }
+      ]
     }
   }
 }
