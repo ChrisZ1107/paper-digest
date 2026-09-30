@@ -1,0 +1,21 @@
+{
+  "overview": "针对大语言模型智能体在处理超长周期（xLong-horizon）任务时面临的执行方差、高延迟导致的GPU闲置以及非线性分支带来的训练冗余问题，本文提出了QwenGyre框架。该框架通过在 rollout 和训练过程间弹性重分配 GPU 资源，并结合轨迹处理器进行路径去重与进度评估，旨在优化训练效率并提升模型性能。",
+  "highlights": [
+    {
+      "text": "QwenGyre 框架通过动态弹性分配 GPU 资源和轨迹重构去重技术，显著提升了处理超长周期任务的训练效率。",
+      "evidence": "QwenGyre elastically reallocates GPUs between rollout and training without interrupting live executions, while its trajectory processor reconstructs branching histories, scores partial progress, and deduplicates redundant paths to bound training costs."
+    },
+    {
+      "text": "在特定基准测试中，基于 Qwen 3.8 2.4T 模型，QwenGyre 在 48 步训练后使 NL2RepoBench 指标获得了 6.0% 的绝对提升。",
+      "evidence": "Scaled to our flagship model, Qwen~3.8 2.4T, with 700K tokens per rollout, QwenGyre yields a 6.0% absolute gain on NL2RepoBench (52.5% to 58.5%) in 48 steps."
+    },
+    {
+      "text": "实验结果表明，QwenGyre 在多个领域的训练任务中相较于 Colocate 和 Async 方法分别实现了最高 1.85 倍和 1.78 倍的加速。",
+      "evidence": "Across our evaluations on diverse domains of training datasets, QwenGyre delivers up to 1.85times and 1.78times speedups over Colocate and Async, respectively."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "推理"
+  ]
+}

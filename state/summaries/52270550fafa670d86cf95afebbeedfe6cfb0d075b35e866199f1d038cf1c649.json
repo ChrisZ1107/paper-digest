@@ -1,0 +1,22 @@
+{
+  "overview": "针对通用智能体在多服务环境下协作能力不足的问题，本文提出了CompoWorld框架。该方法通过组合有限的可重用服务来扩展任务空间，并利用代码智能体实现服务接口标准化。作者通过依赖图构建多步骤任务，并采用有监督微调（SFT）和完成度导向的强化学习（RL）奖励机制对Qwen模型进行训练。实验结果表明，该方法在八个基准测试中平均提升了9.17分，并在AutomationBench上优于对比模型。",
+  "highlights": [
+    {
+      "text": "CompoWorld通过组合可重用服务扩展了任务空间，并利用依赖图实现了需要信息跨服务流转的任务生成与验证。",
+      "evidence": "A random-walk procedure connects services through dependency graphs, enabling the generation and verification of tasks that require information to flow across services."
+    },
+    {
+      "text": "作者设计了完成度导向的奖励机制，通过关注 rollout 组内通过率较低的标准，引导强化学习模型完成复杂任务。",
+      "evidence": "while our Completion-Focused Rubric Reward guides reinforcement learning (RL) toward full task completion by emphasizing criteria with lower pass rates within each rollout group."
+    },
+    {
+      "text": "基于CompoWorld训练的Qwen3.6-35B-A3B模型在八个基准测试中表现优于基础模型，并在AutomationBench上超过了Claude Opus 4.6等模型。",
+      "evidence": "Experimental results show that CompoWorld improves on its backbone by 9.17 points on average across eight benchmarks. On AutomationBench, it surpasses frontier models such as Claude Opus 4.6 and leads all compared agent-specialized 35B-A3B models."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "强化学习",
+    "推理"
+  ]
+}

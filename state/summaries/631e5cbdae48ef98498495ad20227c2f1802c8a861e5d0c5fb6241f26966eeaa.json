@@ -1,0 +1,16 @@
+{
+  "overview": "针对视频生成模型中的物体恒存性问题，本文提出了一种名为WROP的数据基础设施。作者设计了包含6个认知类别、150项受认知科学启发的任务，通过Blender生成了包含1.5M样本的训练语料库及评估考试。研究评估了14种视频模型，作者开发的16B参数世界模型PWM-WROP在盲测Elo排名中表现优异，在续写类模型中排名第一。",
+  "highlights": [
+    {
+      "text": "作者开发了WROP数据集，包含150个受认知科学启发的任务，用于训练和评估视频生成模型对物体恒存性的理解。",
+      "evidence": "We introduce WROP (World Reasoning with Object Permanence), a data infrastructure of 150 hand-designed cognitive science inspired tasks, divided into six cognitive categories."
+    },
+    {
+      "text": "提出的PWM-WROP模型在评估考试中表现出色，在续写类模型中排名首位，且在总体盲测中排名第三。",
+      "evidence": "In a blind pairwise Elo study, PWM-WROP ranks first among continuation models and third overall, behind only a statistical tie between two reference-to-video models."
+    }
+  ],
+  "tags": [
+    "世界模型"
+  ]
+}

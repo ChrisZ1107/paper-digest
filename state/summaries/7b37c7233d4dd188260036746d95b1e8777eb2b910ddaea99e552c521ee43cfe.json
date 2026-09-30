@@ -1,0 +1,18 @@
+{
+  "overview": "针对视觉语言动作模型在环境变化时泛化能力不足及动作逻辑难以修订的问题，本文提出“物理编码（Physical Coding）”框架。该方法将物理任务的状态记录与决策过程表示为可执行代码，通过HexaAnything代理调用感知、规划与控制工具，并引入闭环反馈。作者声称该机制不仅提升了机器人在RoboCasa365及PhyBench测试集上的任务完成率，还通过将经过验证的执行轨迹转化为可复用的数据与记忆，初步实现了模型在任务执行过程中的自我演进。",
+  "highlights": [
+    {
+      "text": "提出物理编码框架，通过将任务状态和决策逻辑显式编码为可执行代码，显著提升了机器人在复杂任务中的泛化能力。",
+      "evidence": "We propose Physical Coding, representing task state and execution as code. Code as World records objects, relations, constraints, and progress; Code as Policy organizes planning, verification, recovery, and execution."
+    },
+    {
+      "text": "实验结果显示，HexaAnything代理在RoboCasa365测试集上表现优于XR-1 VLA模型，且在物理实验和桌面任务中展现出高效的自主完成能力。",
+      "evidence": "On RoboCasa365, HexaAnything improves Composite-Unseen and overall success over XR-1 VLA, and its Harness-trained HexaModel beats the base on every split, indicating code traces internalize physical execution."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "视觉语言动作",
+    "推理"
+  ]
+}

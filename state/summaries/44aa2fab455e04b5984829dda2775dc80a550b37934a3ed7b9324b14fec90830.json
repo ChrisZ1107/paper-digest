@@ -1,0 +1,16 @@
+{
+  "overview": "针对高风险、高精度且动作具有不可逆性的运动控制问题，作者指出传统强化学习在处理此类尖锐奖励景观时存在困难。为此，作者提出了状态条件射击（SCOOT）算法，该算法基于优势加权回归（AWR），通过仅利用精英样本进行优化、采用混合专家（MoE）策略以及引入距离正则化与学习课程，实现了更精准的动作控制。实验以台球运动为对象，验证了该方法在学习高精度物理动作及发现多种策略方面的有效性。",
+  "highlights": [
+    {
+      "text": "提出SCOOT算法，通过利用精英样本优化、混合专家策略及学习课程，有效应对高风险运动控制中的尖锐奖励分布。",
+      "evidence": "we propose and evaluate State-Conditioned Shooting (SCOOT), a novel DRL algorithm that builds on advantage-weighted regression (AWR) with three key modifications: 1) Performing policy optimization only using elite samples, allowing the policy to better latch on to the rare high-reward action samples; 2) Utilizing a mixture-of-experts (MoE) policy, to allow switching between reward landscape modes depending on the state; 3) Adding a distance regularization term and a learning curriculum to encourage exploring diverse strategies before adapting to the most advantageous samples."
+    },
+    {
+      "text": "通过物理台球模拟实验，证实了算法能够实现极高的动作精度并发现多种射击策略。",
+      "evidence": "We showcase our features' performance in learning physically-based billiard shots demonstrating high action precision and discovering multiple shot strategies for a given ball configuration."
+    }
+  ],
+  "tags": [
+    "强化学习"
+  ]
+}

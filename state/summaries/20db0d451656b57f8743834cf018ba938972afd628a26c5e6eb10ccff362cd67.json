@@ -1,0 +1,21 @@
+{
+  "overview": "针对视觉语言动作（VLA）模型在机器人操作任务中应对故障及调整行为的局限，本文提出了一种名为“递归约束蒸馏”（Recursive Harness Distillation）的方法。该方法通过强智能体将交互经验转化为轻量级智能体的操作指南（Playbook），并通过执行反馈递归优化该指南。作者声称，无需更新模型参数即可在多智能体间复用这些干预知识，从而显著提升机器人操作任务的成功率。",
+  "highlights": [
+    {
+      "text": "提出递归约束蒸馏方法，通过强智能体将交互经验蒸馏为轻量级智能体的操作指南，并利用执行反馈循环进行优化。",
+      "evidence": "A strong agent distills its experience into a playbook for a light agent, then recursively refines the playbook using the light agent's execution feedback."
+    },
+    {
+      "text": "实验结果显示，该方法使轻量级智能体在SimplerEnv Bridge上的任务成功率从基准线的41.7%提升至66.7%。",
+      "evidence": "On SimplerEnv Bridge, the light agent with the playbook achieves 66.7% success, compared with 41.7% for the GR00T-only baseline, and outperforms the strong agent without a playbook."
+    },
+    {
+      "text": "在真实世界操作任务中，使用该约束指南可将任务成功率从37.3%提高到64.0%。",
+      "evidence": "In real-world manipulation, the harness improves success from 37.3% to 64.0%."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "视觉语言动作"
+  ]
+}

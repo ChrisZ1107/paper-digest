@@ -1,0 +1,17 @@
+{
+  "overview": "针对利用多模态基础模型作为自主演示者生成机器人数据时存在的成本高昂及效率低下问题，作者提出了CAPEX框架。该方法通过引入经验条件化机制，根据之前的执行反馈动态调整基础模型的推理与重规划频率。在RoboCasa任务及物理实验平台上的评估显示，CAPEX能显著提升成功演示的获取数量并降低单位成本，且以此训练的策略在性能上可媲美基于人工远程操作数据的训练结果，验证了其作为可扩展机器人经验获取源的可行性。",
+  "highlights": [
+    {
+      "text": "CAPEX通过根据执行经验调整基础模型的推理频率，显著提升了数据采集效率并降低了成本。",
+      "evidence": "CAPEX increases the number of successful demonstrations by 4.3x while reducing the cost per successful demonstration by 80%."
+    },
+    {
+      "text": "利用CAPEX生成的自主数据训练的机器人策略，其性能与人工远程操作数据训练的策略相当。",
+      "evidence": "Policies trained on CAPEX-generated data approach the performance of those trained on matched human demonstrations; with longer training, this gap largely closes for policies trained from scratch."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "模仿学习"
+  ]
+}

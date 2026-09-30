@@ -1,0 +1,17 @@
+{
+  "overview": "针对统一多模态模型在图像生成与自我修正上的挑战，本文提出了UMM-Reflection方法。该方法利用强化学习端到端地训练模型进行反射推理与图像修改，使模型能够根据生成结果自主诊断并修正图像。作者声称，通过在完整反射轨迹上进行联合优化，该模型在无需外部验证器的情况下，显著提升了图像生成的质量和符合度。",
+  "highlights": [
+    {
+      "text": "UMM-Reflection通过在统一模型内进行反射轨迹的强化学习训练，避免了复杂的每轮信用分配，实现了反射策略与图像修改的联合优化。",
+      "evidence": "We introduce UMM-Reflection, which applies reinforcement learning (RL) to complete reflection trajectories inside one unified model: sibling trajectories share one initial image, so the group-relative advantage compares reflection strategies, and one trajectory-level advantage updates both the reflection tokens and the flow-based revisions, avoiding the combinatorial blow-up of per-round credit assignment."
+    },
+    {
+      "text": "该模型在无需推理阶段外部验证器的情况下，在多个基准测试中表现出显著的性能提升。",
+      "evidence": "On BAGEL, UMM-Reflection improves GenEval by 12.05 points over SFT, and the gains transfer to WISE (+10.97), OneIG-Bench (+3.48), and T2I-CompBench++ (+4.63), none of which is used in training."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "推理"
+  ]
+}

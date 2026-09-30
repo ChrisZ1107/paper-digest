@@ -1,0 +1,492 @@
+{
+  "date": "2026-09-30",
+  "timestamp": "2026-09-30T09:03:31.604601+08:00",
+  "title": "2026-09-30 热门论文 Top 10｜机器人·强化学习·AI",
+  "slug": "2026-09-30",
+  "papers": [
+    {
+      "id": "2609.35432",
+      "title": "Self-Evolving Coding Agents: From Digital Programs to Physical-World Intelligence",
+      "abstract": "Vision-language-action (VLA) and world-action (WAM) models map observations and instructions directly to robot actions. This directness ties a policy to training: minor layout or viewpoint changes cause failure, and instructions generalize poorly. The root cause lies in representation: task requirements, conditions, progress, and failure recovery are implicitly encoded in action sequences, making them difficult to inspect or revise. Digital coding agents offer a precedent: LLMs call tools, verify results, and revise from feedback as executable code. The same working pattern of explicit state, manageable execution, and revisable procedures underlies generalization and long-horizon execution in the physical world, letting physical experience return as reusable programs, memory, or evidence. We propose Physical Coding, representing task state and execution as code. Code as World records objects, relations, constraints, and progress; Code as Policy organizes planning, verification, recovery, and execution. We build HexaAnything, which calls perception, planning, and control tools, including VLA/WAM policies, and makes in-the-loop decisions from external feedback. Verified traces become data and memory, enabling evolution from tools and Harness to model weights, architectures, and ultimately hardware and task design. On RoboCasa365, HexaAnything improves Composite-Unseen and overall success over XR-1 VLA, and its Harness-trained HexaModel beats the base on every split, indicating code traces internalize physical execution. On PhyBench and a dual-arm AgileX robot, the agent autonomously completes physics experiments and most tabletop tasks, often faster than published results. We observe data, model, and tool self-evolution; future work targets weight internalization, autonomous redesign of architectures, languages, representations, and tasks, and deployment in manufacturing and science.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-09-28",
+      "age_days": 2.0441157939930554,
+      "upvotes": 91,
+      "comments": 2,
+      "stars": 30,
+      "repo": "https://github.com/HexaFuture/PhysicalCoding",
+      "trending_rank": 44,
+      "sources": [
+        "Hugging Face",
+        "arXiv"
+      ],
+      "date_label": "发表",
+      "relevance": 0.43244,
+      "growth": null,
+      "score": 5.023,
+      "rule_tags": [
+        "视觉语言动作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对视觉语言动作模型在环境变化时泛化能力不足及动作逻辑难以修订的问题，本文提出“物理编码（Physical Coding）”框架。该方法将物理任务的状态记录与决策过程表示为可执行代码，通过HexaAnything代理调用感知、规划与控制工具，并引入闭环反馈。作者声称该机制不仅提升了机器人在RoboCasa365及PhyBench测试集上的任务完成率，还通过将经过验证的执行轨迹转化为可复用的数据与记忆，初步实现了模型在任务执行过程中的自我演进。",
+        "highlights": [
+          {
+            "text": "提出物理编码框架，通过将任务状态和决策逻辑显式编码为可执行代码，显著提升了机器人在复杂任务中的泛化能力。",
+            "evidence": "We propose Physical Coding, representing task state and execution as code. Code as World records objects, relations, constraints, and progress; Code as Policy organizes planning, verification, recovery, and execution."
+          },
+          {
+            "text": "实验结果显示，HexaAnything代理在RoboCasa365测试集上表现优于XR-1 VLA模型，且在物理实验和桌面任务中展现出高效的自主完成能力。",
+            "evidence": "On RoboCasa365, HexaAnything improves Composite-Unseen and overall success over XR-1 VLA, and its Harness-trained HexaModel beats the base on every split, indicating code traces internalize physical execution."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "视觉语言动作",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.24972",
+      "title": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
+      "abstract": "An LLM agent's capability is largely magnified by its harness, namely the prompts, control flow, tooling, memory, and context management surrounding the frozen backbone model. Recent methods increasingly automate this process by iteratively proposing and selecting component-wise edits of an agent harness, practically establishing a form of recursive self-improvement (RSI) at the agent-system level. However, such recursive evolution may overfit by memorizing the training tasks, showing large in-distribution gains that shrink or even vanish on out-of-distribution benchmarks. We introduce Regularized Recursive Self-Improvement of Agent Harnesses (RRSI), which incorporates the principles of regularizations into harness self-improvement by constraining the evolution candidate proposal and selection. The proposer operates with a temporally annealed budget, limiting how many edits a candidate can bundle, and it encourages unexplored trajectories based on evolution history. The selector is equipped with a critic and a pruner: the critic screens benchmark-specific proposals, while the pruner, removes changes that are too small, too expensive, or no longer useful. Together these constraints favor reusable agent mechanisms over benchmark-specific ones or even noises. Across eight benchmarks spanning coding, agentic workspace and engineering design tasks, RRSI gains up to 14.1 points on the split it evolves against and up to 4.7 points on the five out-of-distribution benchmarks, while producing a harness that runs on 30% fewer policy tokens than the unregularized evolution. Code is available at https://github.com/google-research/rrsi and project page is https://regularized-rsi.com/.",
+      "topics": [
+        "通用 AI"
+      ],
+      "published": "2026-09-21",
+      "age_days": 9.044115793993056,
+      "upvotes": 216,
+      "comments": 2,
+      "stars": 904,
+      "repo": "https://github.com/google-research/rrsi",
+      "trending_rank": 2,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.36429,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 6,
+        "comments": 0,
+        "stars": 347
+      },
+      "score": 5.017,
+      "rule_tags": [],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对大语言模型智能体框架（harness）递归自我改进过程中出现的过拟合现象，本文提出了一种正则化递归自我改进方法（RRSI）。该方法通过在候选建议阶段引入时间退火预算与轨迹探索机制，并在选择阶段配备评估器与修剪器，旨在限制针对特定任务的过度优化，从而提升框架的泛化能力和效率。实验结果表明，该方法在多个任务基准上实现了性能提升，并降低了策略词元开销。",
+        "highlights": [
+          {
+            "text": "RRSI通过正则化约束候选建议与选择过程，有效缓解了递归进化中因记忆训练任务导致的过拟合问题，增强了智能体机制的泛化性。",
+            "evidence": "We introduce Regularized Recursive Self-Improvement of Agent Harnesses (RRSI), which incorporates the principles of regularizations into harness self-improvement by constraining the evolution candidate proposal and selection."
+          },
+          {
+            "text": "在八个任务基准测试中，RRSI不仅在训练分布上获得性能提升，在分布外基准上最高提升了4.7个点，且大幅降低了推理成本。",
+            "evidence": "Across eight benchmarks spanning coding, agentic workspace and engineering design tasks, RRSI gains up to 14.1 points on the split it evolves against and up to 4.7 points on the five out-of-distribution benchmarks, while producing a harness that runs on 30% fewer policy tokens than the unregularized evolution."
+          }
+        ],
+        "tags": [
+          "大模型后训练",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.27308",
+      "title": "EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics",
+      "abstract": "We study coding agents for long-horizon, dexterous robotics and ask whether their solutions can provide scalable supervision for learning general robot policies. To test this, we develop EMBODIEDSWE-BENCH, a simulation benchmark for coding agents spanning contact-rich manipulation, deformable objects, and long-horizon tasks requiring up to half an hour of continuous interaction. We find that frontier coding agents can solve complex long-horizon tasks and transfer prior solutions across both tasks and embodiments. We also design supporting tools that help agents more effectively solve these tasks. However, the resulting solutions require substantial iterative interaction and are typically specialized to individual task instances. We therefore introduce EMBODIEDSWE-GEN, which expands a single solution from coding agent into large diverse trajectories for training a VLA. VLA performance improves with more generated demonstrations, and agent-aided diversification improves generalization to held-out task variations. We also show that a VLA finetuned solely on coding-agent-generated simulation demonstrations completes a long-horizon task on real robot. Together, our framework uses coding agents to solve complex robotics tasks and turn verified solutions into scalable supervision for robot policies.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-09-23",
+      "age_days": 7.044115793993055,
+      "upvotes": 4,
+      "comments": 2,
+      "stars": 103,
+      "repo": "https://github.com/EmbodiedSWE/EmbodiedSWE",
+      "trending_rank": 70,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.48369,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 0,
+        "comments": 0,
+        "stars": 6
+      },
+      "score": 4.765,
+      "rule_tags": [
+        "机器人操作",
+        "视觉语言动作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文研究了编码智能体在长序列灵巧机器人任务中的应用，并探讨了其作为通用机器人策略监督来源的可行性。作者提出了EMBODIEDSWE-BENCH基准测试平台，涵盖多种复杂操纵任务，并开发了EMBODIEDSWE-GEN框架，通过扩展编码智能体的解决方案生成多样化轨迹，用于微调视觉语言动作（VLA）模型。实验表明，该方法能够实现从模拟环境到真实机器人的策略迁移，为复杂机器人任务提供可扩展的监督。",
+        "highlights": [
+          {
+            "text": "提出一种将编码智能体生成的模拟演示转化为通用机器人策略训练监督信号的框架。",
+            "evidence": "Together, our framework uses coding agents to solve complex robotics tasks and turn verified solutions into scalable supervision for robot policies."
+          },
+          {
+            "text": "利用编码智能体生成的模拟演示对VLA模型进行微调，实现了真实机器人长序列任务的执行。",
+            "evidence": "We also show that a VLA finetuned solely on coding-agent-generated simulation demonstrations completes a long-horizon task on real robot."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "视觉语言动作",
+          "Sim-to-Real"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.33378",
+      "title": "Recursive Harness Distillation across Agents for Robot Manipulation",
+      "abstract": "A central goal in robotics is to enable manipulation across changing tasks and environments. Vision-language-action (VLA) models provide broad manipulation capabilities but can struggle when execution requires diagnosing failures and adapting behavior. Strong agents can discover effective interventions through interaction with these policies. We propose Recursive Harness Distillation to accumulate this experience as reusable guidance across agents. A strong agent distills its experience into a playbook for a light agent, then recursively refines the playbook using the light agent's execution feedback. The resulting playbook enables agents to reuse accumulated intervention knowledge in new task instances without updating model parameters. In real-world manipulation, the harness improves success from 37.3% to 64.0%. On SimplerEnv Bridge, the light agent with the playbook achieves 66.7% success, compared with 41.7% for the GR00T-only baseline, and outperforms the strong agent without a playbook. The same playbook also benefits the strong agent, which reaches 79.2% success. These results demonstrate the feasibility of harness distillation for robotics: intervention experience can be accumulated, refined through execution, and reused across agents to improve manipulation.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-09-27",
+      "age_days": 3.044115793993056,
+      "upvotes": 30,
+      "comments": 1,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face",
+        "arXiv"
+      ],
+      "date_label": "发表",
+      "relevance": 0.44721,
+      "growth": null,
+      "score": 4.703,
+      "rule_tags": [
+        "视觉语言动作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对视觉语言动作（VLA）模型在机器人操作任务中应对故障及调整行为的局限，本文提出了一种名为“递归约束蒸馏”（Recursive Harness Distillation）的方法。该方法通过强智能体将交互经验转化为轻量级智能体的操作指南（Playbook），并通过执行反馈递归优化该指南。作者声称，无需更新模型参数即可在多智能体间复用这些干预知识，从而显著提升机器人操作任务的成功率。",
+        "highlights": [
+          {
+            "text": "提出递归约束蒸馏方法，通过强智能体将交互经验蒸馏为轻量级智能体的操作指南，并利用执行反馈循环进行优化。",
+            "evidence": "A strong agent distills its experience into a playbook for a light agent, then recursively refines the playbook using the light agent's execution feedback."
+          },
+          {
+            "text": "实验结果显示，该方法使轻量级智能体在SimplerEnv Bridge上的任务成功率从基准线的41.7%提升至66.7%。",
+            "evidence": "On SimplerEnv Bridge, the light agent with the playbook achieves 66.7% success, compared with 41.7% for the GR00T-only baseline, and outperforms the strong agent without a playbook."
+          },
+          {
+            "text": "在真实世界操作任务中，使用该约束指南可将任务成功率从37.3%提高到64.0%。",
+            "evidence": "In real-world manipulation, the harness improves success from 37.3% to 64.0%."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "视觉语言动作"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.14858",
+      "title": "Dream-RSI: Recursive Self-Improvement through Evolving Worlds",
+      "abstract": "Recursive self-improvement is becoming increasingly vital for autonomous AI agents, where progress hinges on discovering high-value solutions across complex domains. The driver of this process is effective exploration, however, managing and improving exploration strategies remains a major bottleneck. Current systems face a fundamental dilemma: fixed strategies fail to adapt as search spaces scale, while online policy optimization requires navigating vast meta-search spaces under delayed and expensive feedback over long-horizon rollouts. We introduce Dream-RSI, a framework for scalable and recursively self-improving exploration. A lightweight orchestration layer makes exploration explicit and programmable while leaving the underlying coding agent unchanged. Our key insight is that accumulated discovery history can serve as a replay simulator over the realized search space. By performing dreaming in the replay simulator constructed from historical discovery trees, Dream-RSI secures immediate, low-cost off-policy feedback to evaluate and refine exploration policies without invoking repetitive, expensive online evaluations. The improved policy is subsequently redeployed online to drive further discovery, continuously expanding the simulator pool in a self-improving loop. Across algorithm engineering, mathematical optimization, and GPU kernel engineering, Dream-RSI achieves competitive or improved discovery quality while substantially reducing discovery cost in several settings.",
+      "topics": [
+        "通用 AI"
+      ],
+      "published": "2026-09-14",
+      "age_days": 16.044115793993054,
+      "upvotes": 247,
+      "comments": 3,
+      "stars": 1304,
+      "repo": "https://github.com/zhengkid/Dream-RSI",
+      "trending_rank": 32,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.38475,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 1,
+        "comments": 0,
+        "stars": 37
+      },
+      "score": 4.658,
+      "rule_tags": [],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对自主AI智能体在复杂领域中进行递归自我改进时面临的探索策略瓶颈，Dream-RSI框架提出了一种基于演化世界模型的方案。该框架通过轻量级编排层，利用积累的发现历史构建重放模拟器，使智能体能够在模拟器中进行“梦境”训练以获取低成本离线反馈，从而优化探索策略。作者声称该方法在算法工程、数学优化及GPU内核工程任务中，在显著降低发现成本的同时，实现了具有竞争力的发现质量。",
+        "highlights": [
+          {
+            "text": "Dream-RSI通过利用历史发现记录构建重放模拟器，实现了低成本的离线策略评估与改进，避免了高昂的重复在线调用。",
+            "evidence": "By performing dreaming in the replay simulator constructed from historical discovery trees, Dream-RSI secures immediate, low-cost off-policy feedback to evaluate and refine exploration policies without invoking repetitive, expensive online evaluations."
+          },
+          {
+            "text": "在算法工程、数学优化及GPU内核工程等多个任务中，Dream-RSI在保持竞争性探索成果的同时，有效降低了计算成本。",
+            "evidence": "Across algorithm engineering, mathematical optimization, and GPU kernel engineering, Dream-RSI achieves competitive or improved discovery quality while substantially reducing discovery cost in several settings."
+          }
+        ],
+        "tags": [
+          "大模型后训练",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.28654",
+      "title": "Training Object Permanence in World Models",
+      "abstract": "Object permanence and solidity are hallmarks of human cognitive priors. Recent studies show that video generation models, a paradigmatic class of current world models, have begun to show emerged reasoning abilities, making them ideal candidates for building human-like physical intelligence. Do video models have emerged object permanence in them? If not, could we train them with a core-cognition inspired dataset? We introduce WROP (World Reasoning with Object Permanence), a data infrastructure of 150 hand-designed cognitive science inspired tasks, divided into six cognitive categories. We build Blender generators that randomize speed, lighting, camera angle, and other nuisance parameters while preserving each task's cognitive structure, yielding 10,000+ samples per task. We release a 1.5M-sample training corpus and a 300-question exam. On this exam we evaluate 14 video models: 3 reference-to-video, 7 edit, and 4 continuation, among which PWM-WROP, our 16B world model. In a blind pairwise Elo study, PWM-WROP ranks first among continuation models and third overall, behind only a statistical tie between two reference-to-video models. We release the data, exam, model answers, scores, weights, and PWM, our native-PyTorch training stack on AWS Trainium2.",
+      "topics": [
+        "通用 AI"
+      ],
+      "published": "2026-09-23",
+      "age_days": 7.044115793993055,
+      "upvotes": 236,
+      "comments": 2,
+      "stars": 394,
+      "repo": "https://github.com/hokindeng/object-permanence",
+      "trending_rank": 9,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.29474,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 26,
+        "comments": 0,
+        "stars": 99
+      },
+      "score": 4.655,
+      "rule_tags": [
+        "世界模型",
+        "推理"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对视频生成模型中的物体恒存性问题，本文提出了一种名为WROP的数据基础设施。作者设计了包含6个认知类别、150项受认知科学启发的任务，通过Blender生成了包含1.5M样本的训练语料库及评估考试。研究评估了14种视频模型，作者开发的16B参数世界模型PWM-WROP在盲测Elo排名中表现优异，在续写类模型中排名第一。",
+        "highlights": [
+          {
+            "text": "作者开发了WROP数据集，包含150个受认知科学启发的任务，用于训练和评估视频生成模型对物体恒存性的理解。",
+            "evidence": "We introduce WROP (World Reasoning with Object Permanence), a data infrastructure of 150 hand-designed cognitive science inspired tasks, divided into six cognitive categories."
+          },
+          {
+            "text": "提出的PWM-WROP模型在评估考试中表现出色，在续写类模型中排名首位，且在总体盲测中排名第三。",
+            "evidence": "In a blind pairwise Elo study, PWM-WROP ranks first among continuation models and third overall, behind only a statistical tie between two reference-to-video models."
+          }
+        ],
+        "tags": [
+          "世界模型"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.25001",
+      "title": "GameHorizon Suite: Multi-Horizon Data and Evaluation in Gameplay",
+      "abstract": "Modern video games provide a measurable testbed for AI models, combining abilities of visual understanding, instruction decomposition, goal planning, and precise action control over multiple temporal horizons. Existing datasets and benchmarks, however, either cover a narrow range of games, lack language instructions, or rely on high-variance online rollouts. To address these challenges, we introduce GameHorizon, a unified data and evaluation suite that measures gameplay capabilities at different horizons for diverse model families. GameHorizon Suite consists of three components. First, GameHorizon-Annotator is a scalable and automated annotation pipeline for multi-horizon instructions. Second, utilizing the pipeline, we construct GameHorizon-Data, the first large-scale AAA gameplay dataset with temporally aligned videos, player actions, and multi-horizon instructions. It comprises 5,000 hours of recordings from 21 games, collected by 100 human expert players. Third, we build GameHorizon-Bench with reproducible offline and stepwise online testing. The offline track enables reproducible evaluation using thousands of standardized questions organized into three primary tasks and a series of diagnostic variants, while the online track tests whether offline scores reflect actual gameplay capabilities and localizes failures to specific steps within long-horizon gameplay. Based on our GameHorizon Suite, we evaluate 47 models through more than one million model invocations, revealing a meaningful hierarchy of task difficulty and pronounced differences in model capabilities. Our work can provide a standardized yardstick for evaluating gameplay capabilities across horizons and model families. We will release our dataset, annotator, and benchmark to facilitate future research.",
+      "topics": [
+        "通用 AI"
+      ],
+      "published": "2026-09-21",
+      "age_days": 9.044115793993056,
+      "upvotes": 130,
+      "comments": 3,
+      "stars": 370,
+      "repo": "https://github.com/TencentARC/GameHorizon",
+      "trending_rank": 22,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.36363,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 0,
+        "comments": 0,
+        "stars": 34
+      },
+      "score": 4.565,
+      "rule_tags": [],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对现有视频游戏AI基准测试范围狭窄、缺乏语言指令及在线测试方差大等问题，本文提出了GameHorizon套件。该套件包含自动化标注流水线、包含5000小时AAA游戏数据的多时间尺度数据集，以及支持离线与分步在线评估的基准测试。作者通过对47种模型进行测试，旨在提供一个标准化工具，用以评估模型在视觉理解、指令分解及长周期目标规划方面的游戏表现。",
+        "highlights": [
+          {
+            "text": "构建了首个包含视频、玩家动作及多时间尺度指令的AAA级游戏大型数据集，涵盖21款游戏共5000小时的专家录制数据。",
+            "evidence": "utilizing the pipeline, we construct GameHorizon-Data, the first large-scale AAA gameplay dataset with temporally aligned videos, player actions, and multi-horizon instructions. It comprises 5,000 hours of recordings from 21 games, collected by 100 human expert players."
+          },
+          {
+            "text": "开发了GameHorizon-Bench，通过离线与在线双轨评估，支持对游戏能力进行跨时间尺度的标准化测试与故障定位。",
+            "evidence": "Third, we build GameHorizon-Bench with reproducible offline and stepwise online testing. The offline track enables reproducible evaluation using thousands of standardized questions organized into three primary tasks and a series of diagnostic variants, while the online track tests whether offline scores reflect actual gameplay capabilities and localizes failures to specific steps within long-horizon gameplay."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.33848",
+      "title": "QwenGyre: An Elastic Reinforcement Learning Framework for Training xLong-Horizon Agents",
+      "abstract": "Large language model (LLM) agents increasingly undertake extreme-long (xlong) horizon tasks, where a single execution can span hours, hundreds of model--environment interactions, and nearly 1M tokens per rollout. Applying online reinforcement learning (RL) to such executions poses two fundamental challenges: (1) severe execution variance and prolonged rollout delays cause massive GPU idling; and (2) complex non-linear branching generates massive trajectory redundancy, crippling training efficiency. To address these, we presents QwenGyre, an end-to-end framework for xlong-horizon online RL. QwenGyre elastically reallocates GPUs between rollout and training without interrupting live executions, while its trajectory processor reconstructs branching histories, scores partial progress, and deduplicates redundant paths to bound training costs. Scaled to our flagship model, Qwen~3.8 2.4T, with 700K tokens per rollout, QwenGyre yields a 6.0% absolute gain on NL2RepoBench (52.5% to 58.5%) in 48 steps. Across our evaluations on diverse domains of training datasets, QwenGyre delivers up to 1.85times and 1.78times speedups over Colocate and Async, respectively.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-09-27",
+      "age_days": 3.044115793993056,
+      "upvotes": 27,
+      "comments": 1,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face",
+        "arXiv"
+      ],
+      "date_label": "发表",
+      "relevance": 0.42487,
+      "growth": null,
+      "score": 4.534,
+      "rule_tags": [
+        "强化学习"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对大语言模型智能体在处理超长周期（xLong-horizon）任务时面临的执行方差、高延迟导致的GPU闲置以及非线性分支带来的训练冗余问题，本文提出了QwenGyre框架。该框架通过在 rollout 和训练过程间弹性重分配 GPU 资源，并结合轨迹处理器进行路径去重与进度评估，旨在优化训练效率并提升模型性能。",
+        "highlights": [
+          {
+            "text": "QwenGyre 框架通过动态弹性分配 GPU 资源和轨迹重构去重技术，显著提升了处理超长周期任务的训练效率。",
+            "evidence": "QwenGyre elastically reallocates GPUs between rollout and training without interrupting live executions, while its trajectory processor reconstructs branching histories, scores partial progress, and deduplicates redundant paths to bound training costs."
+          },
+          {
+            "text": "在特定基准测试中，基于 Qwen 3.8 2.4T 模型，QwenGyre 在 48 步训练后使 NL2RepoBench 指标获得了 6.0% 的绝对提升。",
+            "evidence": "Scaled to our flagship model, Qwen~3.8 2.4T, with 700K tokens per rollout, QwenGyre yields a 6.0% absolute gain on NL2RepoBench (52.5% to 58.5%) in 48 steps."
+          },
+          {
+            "text": "实验结果表明，QwenGyre 在多个领域的训练任务中相较于 Colocate 和 Async 方法分别实现了最高 1.85 倍和 1.78 倍的加速。",
+            "evidence": "Across our evaluations on diverse domains of training datasets, QwenGyre delivers up to 1.85times and 1.78times speedups over Colocate and Async, respectively."
+          }
+        ],
+        "tags": [
+          "大模型后训练",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.33665",
+      "title": "CompoWorld: Compositional Environment Scaling for General Agents",
+      "abstract": "Automatically generated environments provide a scalable source of interaction data for training general agents. However, existing approaches mainly generate tasks within a single environment, while real-world workflows require agents to connect information and actions across multiple services. We introduce Compositional Environment Scaling (CompoWorld), which expands the task space by composing a finite library of reusable services. Coding agents turn tool specifications into verified services with typed states and shared interfaces, while a world model handles tools that cannot be reliably implemented. A random-walk procedure connects services through dependency graphs, enabling the generation and verification of tasks that require information to flow across services. Verified trajectories support supervised fine-tuning (SFT), while our Completion-Focused Rubric Reward guides reinforcement learning (RL) toward full task completion by emphasizing criteria with lower pass rates within each rollout group. We construct 448 services exposing 10,130 tools and use 3K SFT trajectories and 1K RL tasks to train Qwen3.6-35B-A3B. Experimental results show that CompoWorld improves on its backbone by 9.17 points on average across eight benchmarks. On AutomationBench, it surpasses frontier models such as Claude Opus 4.6 and leads all compared agent-specialized 35B-A3B models.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-09-27",
+      "age_days": 3.044115793993056,
+      "upvotes": 30,
+      "comments": 1,
+      "stars": 0,
+      "repo": "https://github.com/AllSpark-Research/CompoWorld",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face",
+        "arXiv"
+      ],
+      "date_label": "发表",
+      "relevance": 0.41541,
+      "growth": null,
+      "score": 4.496,
+      "rule_tags": [
+        "强化学习",
+        "世界模型"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对通用智能体在多服务环境下协作能力不足的问题，本文提出了CompoWorld框架。该方法通过组合有限的可重用服务来扩展任务空间，并利用代码智能体实现服务接口标准化。作者通过依赖图构建多步骤任务，并采用有监督微调（SFT）和完成度导向的强化学习（RL）奖励机制对Qwen模型进行训练。实验结果表明，该方法在八个基准测试中平均提升了9.17分，并在AutomationBench上优于对比模型。",
+        "highlights": [
+          {
+            "text": "CompoWorld通过组合可重用服务扩展了任务空间，并利用依赖图实现了需要信息跨服务流转的任务生成与验证。",
+            "evidence": "A random-walk procedure connects services through dependency graphs, enabling the generation and verification of tasks that require information to flow across services."
+          },
+          {
+            "text": "作者设计了完成度导向的奖励机制，通过关注 rollout 组内通过率较低的标准，引导强化学习模型完成复杂任务。",
+            "evidence": "while our Completion-Focused Rubric Reward guides reinforcement learning (RL) toward full task completion by emphasizing criteria with lower pass rates within each rollout group."
+          },
+          {
+            "text": "基于CompoWorld训练的Qwen3.6-35B-A3B模型在八个基准测试中表现优于基础模型，并在AutomationBench上超过了Claude Opus 4.6等模型。",
+            "evidence": "Experimental results show that CompoWorld improves on its backbone by 9.17 points on average across eight benchmarks. On AutomationBench, it surpasses frontier models such as Claude Opus 4.6 and leads all compared agent-specialized 35B-A3B models."
+          }
+        ],
+        "tags": [
+          "大模型后训练",
+          "强化学习",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.35767",
+      "title": "Learning Native Reflection in Unified Models with Interleaved Reinforcement Learning",
+      "abstract": "Unified multimodal models can both look at and render images, so in principle they can repair their own generations: diagnose what an image gets wrong, revise it, observe the result, and diagnose again. Whether a revision helps is known only after it is rendered, so the reflection text and the image generation must be learned jointly, over the whole loop. Supervised fine-tuning (SFT) on reflection trajectories gives a cold start but does not find the high-success repair paths, and naive RL that optimizes only the renderer or only one head leaves most of the gain untapped. We introduce UMM-Reflection, which applies reinforcement learning (RL) to complete reflection trajectories inside one unified model: sibling trajectories share one initial image, so the group-relative advantage compares reflection strategies, and one trajectory-level advantage updates both the reflection tokens and the flow-based revisions, avoiding the combinatorial blow-up of per-round credit assignment. Unlike single-round editing or pipelines with an external critic, credit flows across rounds and to both roles of the same model, and no verifier is needed at inference. On BAGEL, UMM-Reflection improves GenEval by 12.05 points over SFT, and the gains transfer to WISE (+10.97), OneIG-Bench (+3.48), and T2I-CompBench++ (+4.63), none of which is used in training.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-09-28",
+      "age_days": 2.0441157939930554,
+      "upvotes": 36,
+      "comments": 2,
+      "stars": 18,
+      "repo": "https://github.com/waltstephen/UMM-Reflection",
+      "trending_rank": 39,
+      "sources": [
+        "Hugging Face",
+        "arXiv"
+      ],
+      "date_label": "发表",
+      "relevance": 0.3501,
+      "growth": null,
+      "score": 4.353,
+      "rule_tags": [
+        "强化学习"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对统一多模态模型在图像生成与自我修正上的挑战，本文提出了UMM-Reflection方法。该方法利用强化学习端到端地训练模型进行反射推理与图像修改，使模型能够根据生成结果自主诊断并修正图像。作者声称，通过在完整反射轨迹上进行联合优化，该模型在无需外部验证器的情况下，显著提升了图像生成的质量和符合度。",
+        "highlights": [
+          {
+            "text": "UMM-Reflection通过在统一模型内进行反射轨迹的强化学习训练，避免了复杂的每轮信用分配，实现了反射策略与图像修改的联合优化。",
+            "evidence": "We introduce UMM-Reflection, which applies reinforcement learning (RL) to complete reflection trajectories inside one unified model: sibling trajectories share one initial image, so the group-relative advantage compares reflection strategies, and one trajectory-level advantage updates both the reflection tokens and the flow-based revisions, avoiding the combinatorial blow-up of per-round credit assignment."
+          },
+          {
+            "text": "该模型在无需推理阶段外部验证器的情况下，在多个基准测试中表现出显著的性能提升。",
+            "evidence": "On BAGEL, UMM-Reflection improves GenEval by 12.05 points over SFT, and the gains transfer to WISE (+10.97), OneIG-Bench (+3.48), and T2I-CompBench++ (+4.63), none of which is used in training."
+          }
+        ],
+        "tags": [
+          "大模型后训练",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    }
+  ],
+  "candidate_count": 2053,
+  "personalization_note": "已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。",
+  "html": "<h1>2026-09-30 热门论文 Top 10</h1>\n<p>机器人 · 强化学习 · 通用 AI</p>\n<p>生成时间：2026-09-30 09:03 CST。从 2053 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>\n<p>候选来源：<a href=\"https://huggingface.co/papers\">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>\n<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>\n<h2>1. Self-Evolving Coding Agents: From Digital Programs to Physical-World Intelligence</h2>\n<p><strong>机器人</strong> · 发表 2026-09-28 · 综合分 5.02</p>\n<p>Zotero 摘要相关性：0.432（相似度分数，不是概率）。</p>\n<p>HF 点赞 91 · 讨论 2 · 本次 HF 热榜第 44 位 · 仓库累计 Star 30（仓库可能包含多篇论文）</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>视觉语言动作</p>\n<p><strong>中文概述：</strong>针对视觉语言动作模型在环境变化时泛化能力不足及动作逻辑难以修订的问题，本文提出“物理编码（Physical Coding）”框架。该方法将物理任务的状态记录与决策过程表示为可执行代码，通过HexaAnything代理调用感知、规划与控制工具，并引入闭环反馈。作者声称该机制不仅提升了机器人在RoboCasa365及PhyBench测试集上的任务完成率，还通过将经过验证的执行轨迹转化为可复用的数据与记忆，初步实现了模型在任务执行过程中的自我演进。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出物理编码框架，通过将任务状态和决策逻辑显式编码为可执行代码，显著提升了机器人在复杂任务中的泛化能力。<br><small>摘要依据：We propose Physical Coding, representing task state and execution as code. Code as World records objects, relations, constraints, and progress; Code as Policy organizes planning, verification, recovery, and execution.</small></li>\n<li>实验结果显示，HexaAnything代理在RoboCasa365测试集上表现优于XR-1 VLA模型，且在物理实验和桌面任务中展现出高效的自主完成能力。<br><small>摘要依据：On RoboCasa365, HexaAnything improves Composite-Unseen and overall success over XR-1 VLA, and its Harness-trained HexaModel beats the base on every split, indicating code traces internalize physical execution.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 视觉语言动作 · 推理</p>\n<p><strong>原文摘要节选：</strong>Vision-language-action (VLA) and world-action (WAM) models map observations and instructions directly to robot actions. This directness ties a policy to training: minor layout or viewpoint changes cause failure, and instructions generalize poorly. The root cause lies in representation: task requirements, conditions, progress, and failure recovery are implicitly encoded in action sequences, making them difficult to inspect or revise. Digital coding agents offer a precedent: LLMs call tools, verify results, and revise from feedback as executable code. The same working pattern of explicit state, manageable execution, and revisable procedures underlies generalization and long-horizon execution in the physical world, letting physical experience return as reusable programs, memory, or evidence.…</p>\n<p><a href=\"https://arxiv.org/abs/2609.35432\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.35432\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.35432\">讨论与热度</a> · <a href=\"https://github.com/HexaFuture/PhysicalCoding\">代码</a></p><hr>\n<h2>2. RRSI: Regularized Recursive Self-Improvement of Agent Harnesses</h2>\n<p><strong>通用 AI</strong> · 发表 2026-09-21 · 综合分 5.02</p>\n<p>Zotero 摘要相关性：0.364（相似度分数，不是概率）。</p>\n<p>HF 点赞 216 · 讨论 2 · 本次 HF 热榜第 2 位 · 仓库累计 Star 904（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +6 · 讨论 +0 · Star +347。</p>\n<p><strong>中文概述：</strong>针对大语言模型智能体框架（harness）递归自我改进过程中出现的过拟合现象，本文提出了一种正则化递归自我改进方法（RRSI）。该方法通过在候选建议阶段引入时间退火预算与轨迹探索机制，并在选择阶段配备评估器与修剪器，旨在限制针对特定任务的过度优化，从而提升框架的泛化能力和效率。实验结果表明，该方法在多个任务基准上实现了性能提升，并降低了策略词元开销。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>RRSI通过正则化约束候选建议与选择过程，有效缓解了递归进化中因记忆训练任务导致的过拟合问题，增强了智能体机制的泛化性。<br><small>摘要依据：We introduce Regularized Recursive Self-Improvement of Agent Harnesses (RRSI), which incorporates the principles of regularizations into harness self-improvement by constraining the evolution candidate proposal and selection.</small></li>\n<li>在八个任务基准测试中，RRSI不仅在训练分布上获得性能提升，在分布外基准上最高提升了4.7个点，且大幅降低了推理成本。<br><small>摘要依据：Across eight benchmarks spanning coding, agentic workspace and engineering design tasks, RRSI gains up to 14.1 points on the split it evolves against and up to 4.7 points on the five out-of-distribution benchmarks, while producing a harness that runs on 30% fewer policy tokens than the unregularized evolution.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>\n<p><strong>原文摘要节选：</strong>An LLM agent&#x27;s capability is largely magnified by its harness, namely the prompts, control flow, tooling, memory, and context management surrounding the frozen backbone model. Recent methods increasingly automate this process by iteratively proposing and selecting component-wise edits of an agent harness, practically establishing a form of recursive self-improvement (RSI) at the agent-system level. However, such recursive evolution may overfit by memorizing the training tasks, showing large in-distribution gains that shrink or even vanish on out-of-distribution benchmarks. We introduce Regularized Recursive Self-Improvement of Agent Harnesses (RRSI), which incorporates the principles of regularizations into harness self-improvement by constraining the evolution candidate proposal and…</p>\n<p><a href=\"https://arxiv.org/abs/2609.24972\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.24972\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.24972\">讨论与热度</a> · <a href=\"https://github.com/google-research/rrsi\">代码</a></p><hr>\n<h2>3. EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics</h2>\n<p><strong>机器人</strong> · 发表 2026-09-23 · 综合分 4.76</p>\n<p>Zotero 摘要相关性：0.484（相似度分数，不是概率）。</p>\n<p>HF 点赞 4 · 讨论 2 · 本次 HF 热榜第 70 位 · 仓库累计 Star 103（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +0 · 讨论 +0 · Star +6。</p>\n<p><strong>规则标签：</strong>机器人操作 · 视觉语言动作</p>\n<p><strong>中文概述：</strong>本文研究了编码智能体在长序列灵巧机器人任务中的应用，并探讨了其作为通用机器人策略监督来源的可行性。作者提出了EMBODIEDSWE-BENCH基准测试平台，涵盖多种复杂操纵任务，并开发了EMBODIEDSWE-GEN框架，通过扩展编码智能体的解决方案生成多样化轨迹，用于微调视觉语言动作（VLA）模型。实验表明，该方法能够实现从模拟环境到真实机器人的策略迁移，为复杂机器人任务提供可扩展的监督。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出一种将编码智能体生成的模拟演示转化为通用机器人策略训练监督信号的框架。<br><small>摘要依据：Together, our framework uses coding agents to solve complex robotics tasks and turn verified solutions into scalable supervision for robot policies.</small></li>\n<li>利用编码智能体生成的模拟演示对VLA模型进行微调，实现了真实机器人长序列任务的执行。<br><small>摘要依据：We also show that a VLA finetuned solely on coding-agent-generated simulation demonstrations completes a long-horizon task on real robot.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 视觉语言动作 · Sim-to-Real</p>\n<p><strong>原文摘要节选：</strong>We study coding agents for long-horizon, dexterous robotics and ask whether their solutions can provide scalable supervision for learning general robot policies. To test this, we develop EMBODIEDSWE-BENCH, a simulation benchmark for coding agents spanning contact-rich manipulation, deformable objects, and long-horizon tasks requiring up to half an hour of continuous interaction. We find that frontier coding agents can solve complex long-horizon tasks and transfer prior solutions across both tasks and embodiments. We also design supporting tools that help agents more effectively solve these tasks. However, the resulting solutions require substantial iterative interaction and are typically specialized to individual task instances. We therefore introduce EMBODIEDSWE-GEN, which expands a…</p>\n<p><a href=\"https://arxiv.org/abs/2609.27308\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.27308\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.27308\">讨论与热度</a> · <a href=\"https://github.com/EmbodiedSWE/EmbodiedSWE\">代码</a></p><hr>\n<h2>4. Recursive Harness Distillation across Agents for Robot Manipulation</h2>\n<p><strong>机器人</strong> · 发表 2026-09-27 · 综合分 4.70</p>\n<p>Zotero 摘要相关性：0.447（相似度分数，不是概率）。</p>\n<p>HF 点赞 30 · 讨论 1</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>视觉语言动作</p>\n<p><strong>中文概述：</strong>针对视觉语言动作（VLA）模型在机器人操作任务中应对故障及调整行为的局限，本文提出了一种名为“递归约束蒸馏”（Recursive Harness Distillation）的方法。该方法通过强智能体将交互经验转化为轻量级智能体的操作指南（Playbook），并通过执行反馈递归优化该指南。作者声称，无需更新模型参数即可在多智能体间复用这些干预知识，从而显著提升机器人操作任务的成功率。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出递归约束蒸馏方法，通过强智能体将交互经验蒸馏为轻量级智能体的操作指南，并利用执行反馈循环进行优化。<br><small>摘要依据：A strong agent distills its experience into a playbook for a light agent, then recursively refines the playbook using the light agent&#x27;s execution feedback.</small></li>\n<li>实验结果显示，该方法使轻量级智能体在SimplerEnv Bridge上的任务成功率从基准线的41.7%提升至66.7%。<br><small>摘要依据：On SimplerEnv Bridge, the light agent with the playbook achieves 66.7% success, compared with 41.7% for the GR00T-only baseline, and outperforms the strong agent without a playbook.</small></li>\n<li>在真实世界操作任务中，使用该约束指南可将任务成功率从37.3%提高到64.0%。<br><small>摘要依据：In real-world manipulation, the harness improves success from 37.3% to 64.0%.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 视觉语言动作</p>\n<p><strong>原文摘要节选：</strong>A central goal in robotics is to enable manipulation across changing tasks and environments. Vision-language-action (VLA) models provide broad manipulation capabilities but can struggle when execution requires diagnosing failures and adapting behavior. Strong agents can discover effective interventions through interaction with these policies. We propose Recursive Harness Distillation to accumulate this experience as reusable guidance across agents. A strong agent distills its experience into a playbook for a light agent, then recursively refines the playbook using the light agent&#x27;s execution feedback. The resulting playbook enables agents to reuse accumulated intervention knowledge in new task instances without updating model parameters. In real-world manipulation, the harness improves…</p>\n<p><a href=\"https://arxiv.org/abs/2609.33378\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.33378\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.33378\">讨论与热度</a></p><hr>\n<h2>5. Dream-RSI: Recursive Self-Improvement through Evolving Worlds</h2>\n<p><strong>通用 AI</strong> · 发表 2026-09-14 · 综合分 4.66</p>\n<p>Zotero 摘要相关性：0.385（相似度分数，不是概率）。</p>\n<p>HF 点赞 247 · 讨论 3 · 本次 HF 热榜第 32 位 · 仓库累计 Star 1304（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +0 · Star +37。</p>\n<p><strong>中文概述：</strong>针对自主AI智能体在复杂领域中进行递归自我改进时面临的探索策略瓶颈，Dream-RSI框架提出了一种基于演化世界模型的方案。该框架通过轻量级编排层，利用积累的发现历史构建重放模拟器，使智能体能够在模拟器中进行“梦境”训练以获取低成本离线反馈，从而优化探索策略。作者声称该方法在算法工程、数学优化及GPU内核工程任务中，在显著降低发现成本的同时，实现了具有竞争力的发现质量。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>Dream-RSI通过利用历史发现记录构建重放模拟器，实现了低成本的离线策略评估与改进，避免了高昂的重复在线调用。<br><small>摘要依据：By performing dreaming in the replay simulator constructed from historical discovery trees, Dream-RSI secures immediate, low-cost off-policy feedback to evaluate and refine exploration policies without invoking repetitive, expensive online evaluations.</small></li>\n<li>在算法工程、数学优化及GPU内核工程等多个任务中，Dream-RSI在保持竞争性探索成果的同时，有效降低了计算成本。<br><small>摘要依据：Across algorithm engineering, mathematical optimization, and GPU kernel engineering, Dream-RSI achieves competitive or improved discovery quality while substantially reducing discovery cost in several settings.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>\n<p><strong>原文摘要节选：</strong>Recursive self-improvement is becoming increasingly vital for autonomous AI agents, where progress hinges on discovering high-value solutions across complex domains. The driver of this process is effective exploration, however, managing and improving exploration strategies remains a major bottleneck. Current systems face a fundamental dilemma: fixed strategies fail to adapt as search spaces scale, while online policy optimization requires navigating vast meta-search spaces under delayed and expensive feedback over long-horizon rollouts. We introduce Dream-RSI, a framework for scalable and recursively self-improving exploration. A lightweight orchestration layer makes exploration explicit and programmable while leaving the underlying coding agent unchanged. Our key insight is that…</p>\n<p><a href=\"https://arxiv.org/abs/2609.14858\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.14858\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.14858\">讨论与热度</a> · <a href=\"https://github.com/zhengkid/Dream-RSI\">代码</a></p><hr>\n<h2>6. Training Object Permanence in World Models</h2>\n<p><strong>通用 AI</strong> · 发表 2026-09-23 · 综合分 4.66</p>\n<p>Zotero 摘要相关性：0.295（相似度分数，不是概率）。</p>\n<p>HF 点赞 236 · 讨论 2 · 本次 HF 热榜第 9 位 · 仓库累计 Star 394（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +26 · 讨论 +0 · Star +99。</p>\n<p><strong>规则标签：</strong>世界模型 · 推理</p>\n<p><strong>中文概述：</strong>针对视频生成模型中的物体恒存性问题，本文提出了一种名为WROP的数据基础设施。作者设计了包含6个认知类别、150项受认知科学启发的任务，通过Blender生成了包含1.5M样本的训练语料库及评估考试。研究评估了14种视频模型，作者开发的16B参数世界模型PWM-WROP在盲测Elo排名中表现优异，在续写类模型中排名第一。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>作者开发了WROP数据集，包含150个受认知科学启发的任务，用于训练和评估视频生成模型对物体恒存性的理解。<br><small>摘要依据：We introduce WROP (World Reasoning with Object Permanence), a data infrastructure of 150 hand-designed cognitive science inspired tasks, divided into six cognitive categories.</small></li>\n<li>提出的PWM-WROP模型在评估考试中表现出色，在续写类模型中排名首位，且在总体盲测中排名第三。<br><small>摘要依据：In a blind pairwise Elo study, PWM-WROP ranks first among continuation models and third overall, behind only a statistical tie between two reference-to-video models.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>世界模型</p>\n<p><strong>原文摘要节选：</strong>Object permanence and solidity are hallmarks of human cognitive priors. Recent studies show that video generation models, a paradigmatic class of current world models, have begun to show emerged reasoning abilities, making them ideal candidates for building human-like physical intelligence. Do video models have emerged object permanence in them? If not, could we train them with a core-cognition inspired dataset? We introduce WROP (World Reasoning with Object Permanence), a data infrastructure of 150 hand-designed cognitive science inspired tasks, divided into six cognitive categories. We build Blender generators that randomize speed, lighting, camera angle, and other nuisance parameters while preserving each task&#x27;s cognitive structure, yielding 10,000+ samples per task. We release a…</p>\n<p><a href=\"https://arxiv.org/abs/2609.28654\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.28654\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.28654\">讨论与热度</a> · <a href=\"https://github.com/hokindeng/object-permanence\">代码</a></p><hr>\n<h2>7. GameHorizon Suite: Multi-Horizon Data and Evaluation in Gameplay</h2>\n<p><strong>通用 AI</strong> · 发表 2026-09-21 · 综合分 4.57</p>\n<p>Zotero 摘要相关性：0.364（相似度分数，不是概率）。</p>\n<p>HF 点赞 130 · 讨论 3 · 本次 HF 热榜第 22 位 · 仓库累计 Star 370（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +0 · 讨论 +0 · Star +34。</p>\n<p><strong>中文概述：</strong>针对现有视频游戏AI基准测试范围狭窄、缺乏语言指令及在线测试方差大等问题，本文提出了GameHorizon套件。该套件包含自动化标注流水线、包含5000小时AAA游戏数据的多时间尺度数据集，以及支持离线与分步在线评估的基准测试。作者通过对47种模型进行测试，旨在提供一个标准化工具，用以评估模型在视觉理解、指令分解及长周期目标规划方面的游戏表现。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>构建了首个包含视频、玩家动作及多时间尺度指令的AAA级游戏大型数据集，涵盖21款游戏共5000小时的专家录制数据。<br><small>摘要依据：utilizing the pipeline, we construct GameHorizon-Data, the first large-scale AAA gameplay dataset with temporally aligned videos, player actions, and multi-horizon instructions. It comprises 5,000 hours of recordings from 21 games, collected by 100 human expert players.</small></li>\n<li>开发了GameHorizon-Bench，通过离线与在线双轨评估，支持对游戏能力进行跨时间尺度的标准化测试与故障定位。<br><small>摘要依据：Third, we build GameHorizon-Bench with reproducible offline and stepwise online testing. The offline track enables reproducible evaluation using thousands of standardized questions organized into three primary tasks and a series of diagnostic variants, while the online track tests whether offline scores reflect actual gameplay capabilities and localizes failures to specific steps within long-horizon gameplay.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 推理</p>\n<p><strong>原文摘要节选：</strong>Modern video games provide a measurable testbed for AI models, combining abilities of visual understanding, instruction decomposition, goal planning, and precise action control over multiple temporal horizons. Existing datasets and benchmarks, however, either cover a narrow range of games, lack language instructions, or rely on high-variance online rollouts. To address these challenges, we introduce GameHorizon, a unified data and evaluation suite that measures gameplay capabilities at different horizons for diverse model families. GameHorizon Suite consists of three components. First, GameHorizon-Annotator is a scalable and automated annotation pipeline for multi-horizon instructions. Second, utilizing the pipeline, we construct GameHorizon-Data, the first large-scale AAA gameplay…</p>\n<p><a href=\"https://arxiv.org/abs/2609.25001\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.25001\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.25001\">讨论与热度</a> · <a href=\"https://github.com/TencentARC/GameHorizon\">代码</a></p><hr>\n<h2>8. QwenGyre: An Elastic Reinforcement Learning Framework for Training xLong-Horizon Agents</h2>\n<p><strong>强化学习</strong> · 发表 2026-09-27 · 综合分 4.53</p>\n<p>Zotero 摘要相关性：0.425（相似度分数，不是概率）。</p>\n<p>HF 点赞 27 · 讨论 1</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习</p>\n<p><strong>中文概述：</strong>针对大语言模型智能体在处理超长周期（xLong-horizon）任务时面临的执行方差、高延迟导致的GPU闲置以及非线性分支带来的训练冗余问题，本文提出了QwenGyre框架。该框架通过在 rollout 和训练过程间弹性重分配 GPU 资源，并结合轨迹处理器进行路径去重与进度评估，旨在优化训练效率并提升模型性能。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>QwenGyre 框架通过动态弹性分配 GPU 资源和轨迹重构去重技术，显著提升了处理超长周期任务的训练效率。<br><small>摘要依据：QwenGyre elastically reallocates GPUs between rollout and training without interrupting live executions, while its trajectory processor reconstructs branching histories, scores partial progress, and deduplicates redundant paths to bound training costs.</small></li>\n<li>在特定基准测试中，基于 Qwen 3.8 2.4T 模型，QwenGyre 在 48 步训练后使 NL2RepoBench 指标获得了 6.0% 的绝对提升。<br><small>摘要依据：Scaled to our flagship model, Qwen~3.8 2.4T, with 700K tokens per rollout, QwenGyre yields a 6.0% absolute gain on NL2RepoBench (52.5% to 58.5%) in 48 steps.</small></li>\n<li>实验结果表明，QwenGyre 在多个领域的训练任务中相较于 Colocate 和 Async 方法分别实现了最高 1.85 倍和 1.78 倍的加速。<br><small>摘要依据：Across our evaluations on diverse domains of training datasets, QwenGyre delivers up to 1.85times and 1.78times speedups over Colocate and Async, respectively.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>\n<p><strong>原文摘要节选：</strong>Large language model (LLM) agents increasingly undertake extreme-long (xlong) horizon tasks, where a single execution can span hours, hundreds of model--environment interactions, and nearly 1M tokens per rollout. Applying online reinforcement learning (RL) to such executions poses two fundamental challenges: (1) severe execution variance and prolonged rollout delays cause massive GPU idling; and (2) complex non-linear branching generates massive trajectory redundancy, crippling training efficiency. To address these, we presents QwenGyre, an end-to-end framework for xlong-horizon online RL. QwenGyre elastically reallocates GPUs between rollout and training without interrupting live executions, while its trajectory processor reconstructs branching histories, scores partial progress, and…</p>\n<p><a href=\"https://arxiv.org/abs/2609.33848\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.33848\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.33848\">讨论与热度</a></p><hr>\n<h2>9. CompoWorld: Compositional Environment Scaling for General Agents</h2>\n<p><strong>强化学习</strong> · 发表 2026-09-27 · 综合分 4.50</p>\n<p>Zotero 摘要相关性：0.415（相似度分数，不是概率）。</p>\n<p>HF 点赞 30 · 讨论 1 · 仓库累计 Star 0（仓库可能包含多篇论文）</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习 · 世界模型</p>\n<p><strong>中文概述：</strong>针对通用智能体在多服务环境下协作能力不足的问题，本文提出了CompoWorld框架。该方法通过组合有限的可重用服务来扩展任务空间，并利用代码智能体实现服务接口标准化。作者通过依赖图构建多步骤任务，并采用有监督微调（SFT）和完成度导向的强化学习（RL）奖励机制对Qwen模型进行训练。实验结果表明，该方法在八个基准测试中平均提升了9.17分，并在AutomationBench上优于对比模型。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>CompoWorld通过组合可重用服务扩展了任务空间，并利用依赖图实现了需要信息跨服务流转的任务生成与验证。<br><small>摘要依据：A random-walk procedure connects services through dependency graphs, enabling the generation and verification of tasks that require information to flow across services.</small></li>\n<li>作者设计了完成度导向的奖励机制，通过关注 rollout 组内通过率较低的标准，引导强化学习模型完成复杂任务。<br><small>摘要依据：while our Completion-Focused Rubric Reward guides reinforcement learning (RL) toward full task completion by emphasizing criteria with lower pass rates within each rollout group.</small></li>\n<li>基于CompoWorld训练的Qwen3.6-35B-A3B模型在八个基准测试中表现优于基础模型，并在AutomationBench上超过了Claude Opus 4.6等模型。<br><small>摘要依据：Experimental results show that CompoWorld improves on its backbone by 9.17 points on average across eight benchmarks. On AutomationBench, it surpasses frontier models such as Claude Opus 4.6 and leads all compared agent-specialized 35B-A3B models.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>大模型后训练 · 强化学习 · 推理</p>\n<p><strong>原文摘要节选：</strong>Automatically generated environments provide a scalable source of interaction data for training general agents. However, existing approaches mainly generate tasks within a single environment, while real-world workflows require agents to connect information and actions across multiple services. We introduce Compositional Environment Scaling (CompoWorld), which expands the task space by composing a finite library of reusable services. Coding agents turn tool specifications into verified services with typed states and shared interfaces, while a world model handles tools that cannot be reliably implemented. A random-walk procedure connects services through dependency graphs, enabling the generation and verification of tasks that require information to flow across services. Verified…</p>\n<p><a href=\"https://arxiv.org/abs/2609.33665\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.33665\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.33665\">讨论与热度</a> · <a href=\"https://github.com/AllSpark-Research/CompoWorld\">代码</a></p><hr>\n<h2>10. Learning Native Reflection in Unified Models with Interleaved Reinforcement Learning</h2>\n<p><strong>强化学习</strong> · 发表 2026-09-28 · 综合分 4.35</p>\n<p>Zotero 摘要相关性：0.350（相似度分数，不是概率）。</p>\n<p>HF 点赞 36 · 讨论 2 · 本次 HF 热榜第 39 位 · 仓库累计 Star 18（仓库可能包含多篇论文）</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习</p>\n<p><strong>中文概述：</strong>针对统一多模态模型在图像生成与自我修正上的挑战，本文提出了UMM-Reflection方法。该方法利用强化学习端到端地训练模型进行反射推理与图像修改，使模型能够根据生成结果自主诊断并修正图像。作者声称，通过在完整反射轨迹上进行联合优化，该模型在无需外部验证器的情况下，显著提升了图像生成的质量和符合度。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>UMM-Reflection通过在统一模型内进行反射轨迹的强化学习训练，避免了复杂的每轮信用分配，实现了反射策略与图像修改的联合优化。<br><small>摘要依据：We introduce UMM-Reflection, which applies reinforcement learning (RL) to complete reflection trajectories inside one unified model: sibling trajectories share one initial image, so the group-relative advantage compares reflection strategies, and one trajectory-level advantage updates both the reflection tokens and the flow-based revisions, avoiding the combinatorial blow-up of per-round credit assignment.</small></li>\n<li>该模型在无需推理阶段外部验证器的情况下，在多个基准测试中表现出显著的性能提升。<br><small>摘要依据：On BAGEL, UMM-Reflection improves GenEval by 12.05 points over SFT, and the gains transfer to WISE (+10.97), OneIG-Bench (+3.48), and T2I-CompBench++ (+4.63), none of which is used in training.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>\n<p><strong>原文摘要节选：</strong>Unified multimodal models can both look at and render images, so in principle they can repair their own generations: diagnose what an image gets wrong, revise it, observe the result, and diagnose again. Whether a revision helps is known only after it is rendered, so the reflection text and the image generation must be learned jointly, over the whole loop. Supervised fine-tuning (SFT) on reflection trajectories gives a cold start but does not find the high-success repair paths, and naive RL that optimizes only the renderer or only one head leaves most of the gain untapped. We introduce UMM-Reflection, which applies reinforcement learning (RL) to complete reflection trajectories inside one unified model: sibling trajectories share one initial image, so the group-relative advantage compares…</p>\n<p><a href=\"https://arxiv.org/abs/2609.35767\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.35767\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.35767\">讨论与热度</a> · <a href=\"https://github.com/waltstephen/UMM-Reflection\">代码</a></p><hr>"
+}

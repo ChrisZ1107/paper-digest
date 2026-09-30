@@ -1,0 +1,23 @@
+{
+  "overview": "针对生成式机器人策略在模仿学习中易受数据偏差和分布偏移影响的问题，本文提出了RoboFFT框架。该方法通过在前向噪声过程中对采样动作应用加权评分或流匹配损失，构建用于PPO更新的代理策略比率，实现在线强化学习对生成式策略的微调。作者声称该框架在多种模拟基准测试及真实世界任务中，相较于基线方法表现出更高的性能、稳定性和训练效率。",
+  "highlights": [
+    {
+      "text": "RoboFFT提出了一种通过前向噪声过程微调生成式策略的新方法，克服了似然估计难以处理的问题。",
+      "evidence": "In this work, we propose RoboFFT, a forward-process reinforcement learning framework for finetuning generative robot policies, which applies forward noising to sampled actions and uses the weighted score / flow matching loss to construct a surrogate policy ratio for PPO-style updates."
+    },
+    {
+      "text": "实验表明，该方法在处理长程规划及稀疏奖励任务时，能够持续提升性能并保持训练的稳定性与效率。",
+      "evidence": "Extensive experiments and analysis demonstrate that RoboFFT consistently improves performance while achieving better stability and training efficiency."
+    },
+    {
+      "text": "RoboFFT不仅适用于模拟环境，还被成功集成至真实世界强化学习框架中，验证了其现实任务的有效性。",
+      "evidence": "We further integrate RoboFFT into a real world RL framework and demonstrate its effectiveness in real world tasks."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "PPO",
+    "Sim-to-Real",
+    "机器人操作"
+  ]
+}

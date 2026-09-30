@@ -1,0 +1,18 @@
+{
+  "overview": "本文提出了一种针对四足机器人的地形感知行星探测框架，旨在解决未知不规则地形下的导航与探索问题。该方法结合了外感知（RGB-D相机）生成的几何高程地图与内感知（本体感受）提供的交互特征，构建多层全局表征。通过探索模块选择目标区域并结合导航系统进行运动规划，作者声称该框架能有效扩展地图，并降低机器人在后续导航中的单位运输成本（CoT）。",
+  "highlights": [
+    {
+      "text": "提出了一种结合外感知与内感知映射的地形感知探索框架，通过多层地图表征实现机器人对行星环境的自主探索。",
+      "evidence": "This paper presents a terrain-aware exploration framework that combines exteroceptive and proprioceptive mapping for a quadruped robot in lunar-like environments."
+    },
+    {
+      "text": "实验证明该方法通过关联地形几何与机器人交互信息，在后续导航任务中实现了比初始探索阶段更低的单位运输成本。",
+      "evidence": "Subsequent navigation using this information exhibits lower average Cost of Transport (CoT) than initial exploration."
+    }
+  ],
+  "tags": [
+    "四足机器人",
+    "足式运动",
+    "导航"
+  ]
+}

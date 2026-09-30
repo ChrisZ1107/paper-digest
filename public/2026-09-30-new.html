@@ -1,0 +1,72 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>2026-09-30 每日新论文 5</title><body><h1>2026-09-30 每日新论文 5</h1>
+<p>机器人 · 强化学习 · 通用 AI</p>
+<p>生成时间：2026-09-30 09:03 CST。从 2053 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>
+<p>本栏优先收录最近发布且未出现在近期日报的 arXiv 论文，不按热度排序；相关性分用于结合你的 Zotero 收藏偏好。</p>
+<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>
+<p>本次合格候选不足 10 篇，实际收录 5 篇。</p>
+<h2>1. Demonstration-Free Success-Probability Reward Learning for Generalist Robot Policies</h2>
+<p><strong>机器人 / 强化学习</strong> · 公告 2026-09-29 · 综合分 3.46</p>
+<p>Zotero 摘要相关性：0.531（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>强化学习</p>
+<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>
+<p><strong>原文摘要节选：</strong>Reinforcement learning (RL) enables generalist robot policies to improve through trial-and-error interaction, yet its effectiveness is fundamentally constrained by sparse task rewards. Existing general-purpose reward models typically alleviate this issue by learning task progress from expert demonstrations, but introduce a distribution mismatch with the mixed-quality rollouts encountered during policy optimization, making their estimates unreliable on suboptimal and failed behaviors from which the policy must learn. In this work, we introduce a demonstration-free reward learning paradigm where dense reward feedback can be learned directly from sparse task outcomes and policy experience. We theoretically show that terminal task outcomes implicitly define dense success-probability feedback…</p>
+<p><a href="https://arxiv.org/abs/2609.33653">论文原文</a> · <a href="https://arxiv.org/pdf/2609.33653">PDF</a></p><hr>
+<h2>2. RoboFFT: Finetuning generative robot policy via online reinforcement learning with forward process</h2>
+<p><strong>机器人 / 强化学习</strong> · 公告 2026-09-29 · 综合分 3.44</p>
+<p>Zotero 摘要相关性：0.529（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>强化学习 · PPO · 模仿学习</p>
+<p><strong>中文概述：</strong>针对生成式机器人策略在模仿学习中易受数据偏差和分布偏移影响的问题，本文提出了RoboFFT框架。该方法通过在前向噪声过程中对采样动作应用加权评分或流匹配损失，构建用于PPO更新的代理策略比率，实现在线强化学习对生成式策略的微调。作者声称该框架在多种模拟基准测试及真实世界任务中，相较于基线方法表现出更高的性能、稳定性和训练效率。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>RoboFFT提出了一种通过前向噪声过程微调生成式策略的新方法，克服了似然估计难以处理的问题。<br><small>摘要依据：In this work, we propose RoboFFT, a forward-process reinforcement learning framework for finetuning generative robot policies, which applies forward noising to sampled actions and uses the weighted score / flow matching loss to construct a surrogate policy ratio for PPO-style updates.</small></li>
+<li>实验表明，该方法在处理长程规划及稀疏奖励任务时，能够持续提升性能并保持训练的稳定性与效率。<br><small>摘要依据：Extensive experiments and analysis demonstrate that RoboFFT consistently improves performance while achieving better stability and training efficiency.</small></li>
+<li>RoboFFT不仅适用于模拟环境，还被成功集成至真实世界强化学习框架中，验证了其现实任务的有效性。<br><small>摘要依据：We further integrate RoboFFT into a real world RL framework and demonstrate its effectiveness in real world tasks.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习 · PPO · Sim-to-Real · 机器人操作</p>
+<p><strong>原文摘要节选：</strong>Generative models, such as diffusion and flow-based models, have shown strong promise for robot policy learning by capturing complex and multimodal action distributions from demonstrations. However, policies trained solely with imitation learning often suffer from imperfect demonstrations and distributional shifts, while further improvement typically requires additional expert data. Reinforcement learning offers a natural solution through environment interaction, but effectively finetuning generative robot policies remains challenging due to the intractability of likelihood estimation. In this work, we propose RoboFFT, a forward-process reinforcement learning framework for finetuning generative robot policies, which applies forward noising to sampled actions and uses the weighted score /…</p>
+<p><a href="https://arxiv.org/abs/2609.32236">论文原文</a> · <a href="https://arxiv.org/pdf/2609.32236">PDF</a></p><hr>
+<h2>3. CAPEX: Efficiently Distilling Foundation Model Behavior into Deployable Robot Policies through Experience-Adaptive Reasoning</h2>
+<p><strong>机器人</strong> · 公告 2026-09-29 · 综合分 3.36</p>
+<p>Zotero 摘要相关性：0.517（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>推理</p>
+<p><strong>中文概述：</strong>针对利用多模态基础模型作为自主演示者生成机器人数据时存在的成本高昂及效率低下问题，作者提出了CAPEX框架。该方法通过引入经验条件化机制，根据之前的执行反馈动态调整基础模型的推理与重规划频率。在RoboCasa任务及物理实验平台上的评估显示，CAPEX能显著提升成功演示的获取数量并降低单位成本，且以此训练的策略在性能上可媲美基于人工远程操作数据的训练结果，验证了其作为可扩展机器人经验获取源的可行性。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>CAPEX通过根据执行经验调整基础模型的推理频率，显著提升了数据采集效率并降低了成本。<br><small>摘要依据：CAPEX increases the number of successful demonstrations by 4.3x while reducing the cost per successful demonstration by 80%.</small></li>
+<li>利用CAPEX生成的自主数据训练的机器人策略，其性能与人工远程操作数据训练的策略相当。<br><small>摘要依据：Policies trained on CAPEX-generated data approach the performance of those trained on matched human demonstrations; with longer training, this gap largely closes for policies trained from scratch.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 模仿学习</p>
+<p><strong>原文摘要节选：</strong>Robot learning has largely relied on human-teleoperated demonstrations to acquire effective learnable behaviors. However, human-operated data collection processes can be unintuitive, difficult to scale, and inherently asynchronous. We explore an alternative: distilling physical behavior from general-purpose multimodal foundation models into deployable robot policies by using the foundation model itself as an autonomous demonstrator. While sufficiently capable models can generate successful zero-shot manipulation trajectories, repeatedly invoking them during physical execution is slow and expensive, limiting their utility as scalable data generators. As a solution, we introduce CAPEX, an experience-conditioned demonstration collection framework that uses execution experience from previous…</p>
+<p><a href="https://arxiv.org/abs/2609.33007">论文原文</a> · <a href="https://arxiv.org/pdf/2609.33007">PDF</a></p><hr>
+<h2>4. Terrain-Aware Autonomous Planetary Exploration for Exteroceptive-Proprioceptive Mapping with Quadruped Scouts</h2>
+<p><strong>机器人</strong> · 公告 2026-09-29 · 综合分 3.36</p>
+<p>Zotero 摘要相关性：0.517（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>四足机器人 · 足式运动 · 导航</p>
+<p><strong>中文概述：</strong>本文提出了一种针对四足机器人的地形感知行星探测框架，旨在解决未知不规则地形下的导航与探索问题。该方法结合了外感知（RGB-D相机）生成的几何高程地图与内感知（本体感受）提供的交互特征，构建多层全局表征。通过探索模块选择目标区域并结合导航系统进行运动规划，作者声称该框架能有效扩展地图，并降低机器人在后续导航中的单位运输成本（CoT）。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出了一种结合外感知与内感知映射的地形感知探索框架，通过多层地图表征实现机器人对行星环境的自主探索。<br><small>摘要依据：This paper presents a terrain-aware exploration framework that combines exteroceptive and proprioceptive mapping for a quadruped robot in lunar-like environments.</small></li>
+<li>实验证明该方法通过关联地形几何与机器人交互信息，在后续导航任务中实现了比初始探索阶段更低的单位运输成本。<br><small>摘要依据：Subsequent navigation using this information exhibits lower average Cost of Transport (CoT) than initial exploration.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>四足机器人 · 足式运动 · 导航</p>
+<p><strong>原文摘要节选：</strong>Autonomous planetary exploration requires robots to navigate unknown, uneven terrain while assessing risk, traversability, and energetic cost. Quadruped scouts are well suited for this task because they can traverse irregular surfaces and gather mobility-relevant information during locomotion. This paper presents a terrain-aware exploration framework that combines exteroceptive and proprioceptive mapping for a quadruped robot in lunar-like environments. An onboard RGB-D camera builds robot-centered elevation maps, estimates geometric traversability, and derives navigation costs for autonomous planning. In parallel, proprioceptive measurements provide interaction-aware terrain cues that complement geometry-based assessment. Local maps are incrementally registered into a global multi-layer…</p>
+<p><a href="https://arxiv.org/abs/2609.35493">论文原文</a> · <a href="https://arxiv.org/pdf/2609.35493">PDF</a></p><hr>
+<h2>5. Learning High-Risk High-Precision Motion Control</h2>
+<p><strong>机器人 / 强化学习</strong> · 公告 2026-09-29 · 综合分 3.33</p>
+<p>Zotero 摘要相关性：0.512（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>强化学习</p>
+<p><strong>中文概述：</strong>针对高风险、高精度且动作具有不可逆性的运动控制问题，作者指出传统强化学习在处理此类尖锐奖励景观时存在困难。为此，作者提出了状态条件射击（SCOOT）算法，该算法基于优势加权回归（AWR），通过仅利用精英样本进行优化、采用混合专家（MoE）策略以及引入距离正则化与学习课程，实现了更精准的动作控制。实验以台球运动为对象，验证了该方法在学习高精度物理动作及发现多种策略方面的有效性。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出SCOOT算法，通过利用精英样本优化、混合专家策略及学习课程，有效应对高风险运动控制中的尖锐奖励分布。<br><small>摘要依据：we propose and evaluate State-Conditioned Shooting (SCOOT), a novel DRL algorithm that builds on advantage-weighted regression (AWR) with three key modifications: 1) Performing policy optimization only using elite samples, allowing the policy to better latch on to the rare high-reward action samples; 2) Utilizing a mixture-of-experts (MoE) policy, to allow switching between reward landscape modes depending on the state; 3) Adding a distance regularization term and a learning curriculum to encourage exploring diverse strategies before adapting to the most advantageous samples.</small></li>
+<li>通过物理台球模拟实验，证实了算法能够实现极高的动作精度并发现多种射击策略。<br><small>摘要依据：We showcase our features&#x27; performance in learning physically-based billiard shots demonstrating high action precision and discovering multiple shot strategies for a given ball configuration.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习</p>
+<p><strong>原文摘要节选：</strong>Deep reinforcement learning (DRL) algorithms for movement control are typically evaluated and benchmarked on sequential decision tasks where imprecise actions may be corrected with later actions, thus allowing high returns with noisy actions. In contrast, we focus on an under-researched class of high-risk, high-precision motion control problems where actions carry irreversible outcomes, driving sharp peaks and ridges to plague the state-action reward landscape. Using computational pool as a representative example of such problems, we propose and evaluate State-Conditioned Shooting (SCOOT), a novel DRL algorithm that builds on advantage-weighted regression (AWR) with three key modifications: 1) Performing policy optimization only using elite samples, allowing the policy to better latch on…</p>
+<p><a href="https://arxiv.org/abs/2609.34851">论文原文</a> · <a href="https://arxiv.org/pdf/2609.34851">PDF</a></p><hr></body></html>
