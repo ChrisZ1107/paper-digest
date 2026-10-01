@@ -967,6 +967,45 @@
           "abstract_zh": "在存在潜在混杂和选择偏差的情况下，从观测数据和干预数据进行因果发现变得极具挑战性，因为因果结构已无法再通过观测变量上的有向无环图（DAG）来充分表示。现有的无模型方法通常依赖于指数级的条件独立性检验，且在高维设置中提供的不确定性量化有限。我们开发了一个用于在存在潜在变量和选择偏差下，利用单目标干预进行因果发现的无模型且约束查询最优的统计推断框架。我们引入了系统诱导子图（SIS）来捕捉系统变量之间的因果关系，同时考虑了上下文变量。我们通过最大祖先图（MAGs）建立了其可识别性，并证明了对每个观测到的系统变量进行干预足以实现唯一识别，且在最坏情况下是必要的。基于这些结果，我们开发了一个两阶段图推断过程，在第一阶段具有足够检验效能的前提下，实现了渐近的族系错误率（FWER）控制。对于 $d_X$ 个观测系统变量，该过程最多需要 $\frac{5}{2}d_X^2$ 次统计检验，且可在每个阶段内并行化，其约束查询复杂度在常数因子范围内达到了最优。该框架兼容软干预，并避免了参数化结构方程的假设。我们通过对干扰素-$\beta$ 刺激的 A549 肺癌细胞系的 Perturb-seq 数据进行分析，展示了这些方法的有效性。"
         }
       ]
+    },
+    "EEphXSKRhpI": {
+      "video_id": "EEphXSKRhpI",
+      "video_title": "Recursive Self-Improvement via On-Policy Distillation for Reasoning (Sep 2026)",
+      "published": "2026-10-01",
+      "video_url": "https://www.youtube.com/watch?v=EEphXSKRhpI",
+      "papers": [
+        {
+          "id": "2609.30652",
+          "title": "Recursive Self-Improvement via On-Policy Distillation for Reasoning (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.30652"
+        }
+      ]
+    },
+    "-WgJ4z2cf6A": {
+      "video_id": "-WgJ4z2cf6A",
+      "video_title": "InternW0-$Δ$: A World Action Model Bridging Predictive Dynamics and Actions with 20K+ Hours of Open…",
+      "published": "2026-10-01",
+      "video_url": "https://www.youtube.com/watch?v=-WgJ4z2cf6A",
+      "papers": [
+        {
+          "id": "2609.31394",
+          "title": "InternW0-$Δ$: A World Action Model Bridging Predictive Dynamics and Actions with 20K+ Hours of Open Data (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.31394"
+        }
+      ]
+    },
+    "vt8U1hmNSo0": {
+      "video_id": "vt8U1hmNSo0",
+      "video_title": "Your Transformer Can Hold Two Thoughts at Once: Evidence of Linear Superposition in LLMs (Sep 2026)",
+      "published": "2026-10-01",
+      "video_url": "https://www.youtube.com/watch?v=vt8U1hmNSo0",
+      "papers": [
+        {
+          "id": "2609.29845",
+          "title": "Your Transformer Can Hold Two Thoughts at Once: Evidence of Linear Superposition in LLMs (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.29845"
+        }
+      ]
     }
   }
 }
