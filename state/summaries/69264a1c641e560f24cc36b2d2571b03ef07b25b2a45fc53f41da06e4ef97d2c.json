@@ -1,0 +1,17 @@
+{
+  "overview": "本文综述了机器人上下文学习（ICL）方法，探讨了机器人如何利用演示和交互在部署期间无需微调神经网络参数即可适应新任务。作者将现有的ICL方法归纳为上下文条件策略、几何演示迁移、基于世界模型的控制以及基于技能和智能体的执行四类。通过对比分析这些接口的迁移假设、训练机制及记忆作用，本文考察了相关机制如何确保机器人在面对物体、环境和执行条件变化时的鲁棒性，并提出了关于任务获取与物理递归自我改进的研究议程。",
+  "highlights": [
+    {
+      "text": "将机器人上下文学习方法系统性地归类为四大家族，并揭示了不同接口在迁移假设与上下文利用机制上的差异。",
+      "evidence": "We organize this literature review around the interfaces connecting contextual evidence to execution, distinguishing four families: context-conditioned policies, geometric demonstration transfer, world-model-based control, and skill- and agent-based execution."
+    },
+    {
+      "text": "分析了上下文学习机制在处理机器人操纵和导航任务时，应对环境、物体及执行条件变动的能力。",
+      "evidence": "Across manipulation and navigation, we examine how these mechanisms preserve taught requirements as objects, environments, and execution conditions change."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "导航"
+  ]
+}

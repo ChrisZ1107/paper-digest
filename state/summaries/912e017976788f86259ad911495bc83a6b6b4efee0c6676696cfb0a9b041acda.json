@@ -1,0 +1,16 @@
+{
+  "overview": "本文研究了世界动作模型（WAMs）在推理阶段是否需要生成未来帧的问题。研究发现，虽然隐式WAMs可加速推理，但缺乏显式WAMs的泛化优势。作者通过控制变量实验揭示，泛化能力源于对未来的准备而非完整生成过程，并据此提出了Simple-WAM方法。该方法通过将未来建模简化为单次全噪声视频Token的前向传递，实现了在保持高效的同时，在多项任务中达到优于显式WAMs的泛化性能。",
+  "highlights": [
+    {
+      "text": "研究揭示了消除推理阶段的未来条件会导致模型在环境扰动、数据效率和任务泛化三个维度上的性能退化。",
+      "evidence": "Controlled comparisons with a matched backbone, training data, and budget reveal consistent degradation across all three axes when the action expert no longer conditions on future representations."
+    },
+    {
+      "text": "提出Simple-WAM方法，通过仅保留单次前向传递的未来建模并调整噪声调度，兼顾了推理效率与泛化性能。",
+      "evidence": "We therefore propose Simple-WAM, which simplifies future modeling into a single forward pass of fully noised video tokens and adapts the training-time noise schedule to this inference behavior."
+    }
+  ],
+  "tags": [
+    "世界模型"
+  ]
+}

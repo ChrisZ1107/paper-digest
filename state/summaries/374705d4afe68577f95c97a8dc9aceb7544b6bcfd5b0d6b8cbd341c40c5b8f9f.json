@@ -1,0 +1,21 @@
+{
+  "overview": "针对自主智能体在处理超长周期任务时的局限性，本文提出了Marathoner模型。该研究设计了一套后训练流程，包括利用GitHub代码库合成超长周期任务、多任务链式生成以及拒绝采样微调。此外，研究通过在独立沙箱中进行强化学习探索，并引入后期阶段奖励策略，旨在提升智能体的长期执行能力。作者声称，该模型在多个基准测试中表现优异，能实现超过10小时的持续工作与1000次以上的工具调用。",
+  "highlights": [
+    {
+      "text": "提出了一种包含超长周期任务合成、任务链式扩展及拒绝采样微调的完整后训练流程，显著提升了模型的长期任务执行能力。",
+      "evidence": "Specifically, we propose a comprehensive post-training pipeline to instill this critical capability into base model."
+    },
+    {
+      "text": "引入了后期阶段奖励策略，通过显式鼓励模型在执行周期的后半段执行有效操作，促进了复杂目标的实现。",
+      "evidence": "We further propose a novel reward strategy, Later Stage Bonus Reward, which explicitly encourages model to perform meaningful maneuvers during later stages of execution."
+    },
+    {
+      "text": "实验结果表明，Marathoner在多项基准测试中优于基准模型及部分强力专有模型，具备超过10小时、1000次以上工具调用的长期作业能力。",
+      "evidence": "Further analysis shows that Marathoner can consistently work for 10+ hours and conduct 1000+ tool calls on highly challenging tasks."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "推理"
+  ]
+}

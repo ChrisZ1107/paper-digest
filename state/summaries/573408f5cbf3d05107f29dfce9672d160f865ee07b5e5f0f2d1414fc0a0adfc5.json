@@ -1,0 +1,23 @@
+{
+  "overview": "针对空中操作中数据获取困难与政策评估成本高等挑战，本文提出了AeroManip-VLA基准框架。该方法利用GPU加速的仿真环境与底层载荷感知控制，结合强化学习策略与专家规则自动生成大规模、多样化的演示数据，并引入自动事件标记和轨迹分类机制。作者声称该框架能实现空中操作的高效数据生成、精细化轨迹分析及系统化的视觉语言动作（VLA）模型评估。",
+  "highlights": [
+    {
+      "text": "构建了包含底层载荷感知飞行与操作控制的GPU加速仿真框架，支持在并行环境下进行大规模空中操作任务。",
+      "evidence": "AeroManip-VLA provides a GPU-accelerated simulation framework with low-level payload-aware flight and manipulation control in massively parallel environments."
+    },
+    {
+      "text": "利用强化学习策略与专家规则的结合，无需人工遥操作即可在多样化场景中自动生成包括抓取、放置及长周期任务的演示数据。",
+      "evidence": "Building on this framework, we combine reusable reinforcement learning policies with expert task rules to automatically generate demonstrations without human teleoperation across diverse objects, environments, and randomized initial conditions."
+    },
+    {
+      "text": "引入了自动事件标记与轨迹分类功能，支持对任务进度、行为结果及安全相关失效模式的精细化分析。",
+      "evidence": "We further introduce automated event labeling and trajectory categorization to filter demonstrations. These mechanisms enable fine-grained analysis of task progress, behavioral outcomes, and safety-related failures."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "视觉语言动作",
+    "强化学习",
+    "模仿学习"
+  ]
+}

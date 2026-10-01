@@ -1,0 +1,17 @@
+{
+  "overview": "针对机器人策略在未观测环境动态变化下适应性不足的问题，本文提出了SCOUT框架。该方法通过一个前向动力学模型与动作预测策略共享潜在空间，在测试阶段利用动作执行后的结果反馈，实时更新环境动态的内部信念。作者声称，该方法能够实现机器人策略的快速在线适应，并在模拟操作基准测试和真实世界实验中表现出稳健的Sim-to-Real迁移能力。",
+  "highlights": [
+    {
+      "text": "SCOUT框架通过前向动力学模型与动作预测策略共享潜空间，实现了利用动作结果反馈实时更新环境动态信念，从而快速适应未知物理特性。",
+      "evidence": "Our approach couples an action-prediction policy with a forward dynamics model via a shared belief latent space. During meta-training, an inner loop updates this shared belief latent by minimizing the dynamics prediction error against the observed action outcome, while the outer loop optimizes the network for action selection."
+    },
+    {
+      "text": "该方法通过基于动作-结果偏差的潜空间信念更新，有效避免了策略在自适应过程中的灾难性遗忘。",
+      "evidence": "By updating its latent belief based on action-outcome mismatches, the policy automatically adapts without risking catastrophic forgetting."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "Sim-to-Real"
+  ]
+}

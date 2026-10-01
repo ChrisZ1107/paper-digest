@@ -1,0 +1,20 @@
+{
+  "overview": "随着大型语言模型的发展，AI代理正向跨领域长程工作流演进。针对现有系统设计复杂且耦合度高的问题，作者提出了Raven，一个开源的多智能体生态系统。Raven旨在自动构建和演进用于特定领域的可组合智能模块，通过主机代理（Host Agent）协调任务分解与执行，并利用经验库实现技能沉淀。作者声称该方法在复杂长程任务中显著优于现有智能体系统，拓展了可靠的任务覆盖范围。",
+  "highlights": [
+    {
+      "text": "Raven通过自动构建和演进针对特定模型和领域的模块化工具，将每个可执行的模型-工具对视为可组合的智能单元。",
+      "evidence": "We introduce Raven, The Harness of Harnesses, an open-source multi-agent ecosystem that automatically constructs and evolves modular harnesses for specific models and domains, treating each executable model--harness pair as a composable unit of intelligence."
+    },
+    {
+      "text": "Raven的主机代理能够有效进行任务分解、智能体匹配及执行协调，并利用EverOS和Skill Forge实现跨任务的经验保留与复用。",
+      "evidence": "To support an All-Domain Collaboration Network, its Host Agent decomposes goals, matches subtasks to specialized agents, coordinates execution dependencies, and integrates results, while a host archive and EverOS preserve experience across tasks and Skill Forge makes that experience available as reusable procedures."
+    },
+    {
+      "text": "在复杂长程任务中，Raven的性能优于现有的先进智能体系统。",
+      "evidence": "On complex and long-horizon tasks, Raven significantly outperforms the state-of-the-art agent systems, pushing the frontier of composable agentic intelligence."
+    }
+  ],
+  "tags": [
+    "大模型后训练"
+  ]
+}

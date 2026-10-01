@@ -1,0 +1,21 @@
+{
+  "overview": "针对构建社交导航训练环境成本高的问题，作者提出了一种将普通单目步行视频转换为策略状态空间内闭环训练环境的管线。该方法通过将静态场景表示为度量可通行性地图，并回放视频中提取的行人轨迹，无需重建真实渲染场景即可定义前向动力学并模拟反事实机器人状态。实验表明，该方法在Arena基准测试及真实机器人场景下均表现出较优的导航成功率。",
+  "highlights": [
+    {
+      "text": "提出了一种高效管线，通过将单目步行视频转化为策略状态空间内的模拟环境，有效避开了高昂的场景构建与行人行为建模成本。",
+      "evidence": "We propose an efficient pipeline that converts ordinary monocular walking videos directly into closed-loop social-navigation training environments in the policy's state space."
+    },
+    {
+      "text": "该方法通过抽象化的度量可通行性地图与轨迹回放技术，实现了无需重建或渲染真实观测图像的反事实机器人状态模拟。",
+      "evidence": "This abstraction allows us to define the forward dynamics directly in the policy's state space and efficiently simulate counterfactual robot states without reconstructing or rendering photorealistic observations."
+    },
+    {
+      "text": "实验结果显示该策略在Arena基准测试中优于现有基准，并在无需策略微调的情况下在真实机器人测试中取得了较高成功率。",
+      "evidence": "The resulting policy achieves 81.2% success in the independent Arena benchmark, compared with 75.0% for the strongest baseline, and succeeds in 19/20 real-robot trials without policy fine-tuning."
+    }
+  ],
+  "tags": [
+    "导航",
+    "Sim-to-Real"
+  ]
+}

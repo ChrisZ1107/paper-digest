@@ -1,0 +1,22 @@
+{
+  "overview": "针对视觉语言导航任务中全景图像信息未被充分利用的问题，作者提出了PanoVLN。该方法通过改进动作预测机制（引入置信度引导执行策略）、优化包含分支路径的监督训练策略，以及整合全景图的语义与几何特征，实现了更长视野的动作规划和空间关系感知。实验结果表明，该方法在R2R-CE和RxR-CE数据集上取得了性能提升，并在四足机器人实机测试中表现出更快的导航速度。",
+  "highlights": [
+    {
+      "text": "提出置信度引导执行（CGE）策略，通过预测更长的动作序列并动态决定重规划时机，利用全景图像的广角视野支持长程规划。",
+      "evidence": "Specifically, we introduce a confidence-guided execution (CGE) strategy that dynamically determines how many predicted actions to execute before replanning."
+    },
+    {
+      "text": "结合RGB全景图像的语义与几何特征，在不增加视觉标记的前提下增强了模型对场景内容及空间布局的理解。",
+      "evidence": "We combine semantic and geometric features from RGB panoramas to capture both scene content and spatial layout without adding visual tokens."
+    },
+    {
+      "text": "实机测试验证了PanoVLN在四足机器人上相比既有视觉语言导航方法具有更快的导航速度和更少的停顿。",
+      "evidence": "Real-world experiments on a quadruped further demonstrate faster navigation with fewer pauses than prior VLN methods."
+    }
+  ],
+  "tags": [
+    "四足机器人",
+    "导航",
+    "Sim-to-Real"
+  ]
+}

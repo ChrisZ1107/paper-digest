@@ -1,0 +1,19 @@
+{
+  "overview": "为了解决机器人数据收集昂贵且难以扩展的问题，本文提出了SkillWeaver框架。该框架利用视觉语言模型（VLM）作为推理智能体，通过调用参数化的神经交互技能（NIS）来执行闭环操作。作者通过验证器引导的树搜索实现自主探索，生成长程任务经验。实验结果表明，该方法能够自主生成大规模演示数据，并在仿真和真实世界中提升机器人对新物体、复杂配置及新环境的泛化能力与迁移性能。",
+  "highlights": [
+    {
+      "text": "SkillWeaver引入了一种智能体探索框架，通过调用并参数化神经交互技能，在无需预设执行流程的情况下发现长程任务行为。",
+      "evidence": "We instantiate NIS as reinforcement-learned policies for closed-loop, contact-rich manipulation and organize exploration as verifier-guided tree search, enabling the agent to discover successful long-horizon behaviors without relying on predetermined execution pipelines."
+    },
+    {
+      "text": "该方法实现了自主规模化数据采集，共生成了涵盖14.1K个场景的39.1K条演示数据，并成功蒸馏为视觉运动策略。",
+      "evidence": "SkillWeaver scales autonomously to 39.1K demonstrations across 14.1K scenes, which we distill into visuomotor policies."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "Sim-to-Real",
+    "强化学习",
+    "视觉语言动作"
+  ]
+}

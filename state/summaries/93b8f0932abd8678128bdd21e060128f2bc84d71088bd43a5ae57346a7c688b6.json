@@ -1,0 +1,22 @@
+{
+  "overview": "针对无需额外专家演示进行机器人策略适配的问题，作者提出了EVO-WAM框架。该方法通过增强世界动作模型（WAM）的自回归生成能力，利用视觉语言模型筛选任务完成前缀，并结合逆动力学模型验证视频动作一致性，从而在无需外部环境交互的情况下实现模型的自我进化。实验结果显示，该方法在多种仿真与现实任务中显著提升了策略的成功率。",
+  "highlights": [
+    {
+      "text": "EVO-WAM通过利用自身生成的视频动作轨迹进行迭代训练，实现了在未见任务上的策略适配，且无需在外部环境中执行候选动作。",
+      "evidence": "We propose EVO-WAM, a framework that adapts WAMs to unseen tasks by learning from their own generated video-action trajectories, without executing candidate actions in an external environment."
+    },
+    {
+      "text": "利用视觉语言模型和逆动力学模型进行质量过滤，确保了训练数据中任务完成情况与视频动作一致性的可靠性。",
+      "evidence": "Second, we identify reliable training experience by selecting task-completing prefixes with a vision-language model and verifying their video-action consistency with an inverse dynamics model."
+    },
+    {
+      "text": "在七项未见过的RoboTwin 2.0任务及三项现实世界长周期组合任务中，该方法显著提升了任务执行的平均成功率。",
+      "evidence": "On seven unseen RoboTwin 2.0 tasks, EVO-WAM increases average success rates from 26.9% to 68.0% for Cosmos3 and from 28.5% to 46.4% for DreamZero, reaching approximately 2.5times and 1.6times their initial success rates."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "世界模型",
+    "视觉语言动作"
+  ]
+}
