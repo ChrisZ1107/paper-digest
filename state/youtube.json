@@ -1012,6 +1012,227 @@
           "abstract_zh": "尽管大型语言模型（LLMs）依赖于高度非线性的组件，但我们在本研究中证明它们展现出基本的线性特征：当来自不同文本流的输入进行线性组合时，模型的输出呈现为各个独立下一个 token 分布的叠加。我们将此称为“叠加线性假设”（Superposition Linearity Hypothesis）。我们提供的证据表明，叠加是 Transformer 架构的一种内在属性，而非训练过程中的涌现结果；事实上，我们观察到随着预训练的进行，这种叠加趋于减弱。然而，我们证明通过轻量级微调可以大幅恢复这种线性，从而显著降低预测的下一个 token 分布与各个独立下一个 token 分布的平均值之间的差异。最后，我们引入了一种引导解码过程来解耦叠加的输出，使得在单次前向传播中能够同时生成两个连贯的后续文本。"
         }
       ]
+    },
+    "dRtpVrZbcDM": {
+      "video_id": "dRtpVrZbcDM",
+      "video_title": "RAPID: Robot Agentic Programming from Demonstrations (Sep 2026)",
+      "published": "2026-10-02",
+      "video_url": "https://www.youtube.com/watch?v=dRtpVrZbcDM",
+      "papers": [
+        {
+          "id": "2609.30249",
+          "title": "RAPID: Robot Agentic Programming from Demonstrations (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.30249"
+        }
+      ]
+    },
+    "4yS7E4P0-ZQ": {
+      "video_id": "4yS7E4P0-ZQ",
+      "video_title": "AD-E2E-JEPA: A Joint-Embedding Predictive Architecture For End-to-End Autonomous Driving (Sep 2026)",
+      "published": "2026-10-02",
+      "video_url": "https://www.youtube.com/watch?v=4yS7E4P0-ZQ",
+      "papers": [
+        {
+          "id": "2609.34085",
+          "title": "AD-E2E-JEPA: A Joint-Embedding Predictive Architecture For End-to-End Autonomous Driving (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.34085"
+        }
+      ]
+    },
+    "SaOjDxoBgxQ": {
+      "video_id": "SaOjDxoBgxQ",
+      "video_title": "Context Language Models (Sep 2026)",
+      "published": "2026-10-02",
+      "video_url": "https://www.youtube.com/watch?v=SaOjDxoBgxQ",
+      "papers": [
+        {
+          "id": "2609.37725",
+          "title": "Context Language Models (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.37725"
+        }
+      ]
+    },
+    "BVhUC4N4bBw": {
+      "video_id": "BVhUC4N4bBw",
+      "video_title": "FlashLoop: Fast and Memory-Efficient Looped Transformers via Lazy Updates (Sep 2026)",
+      "published": "2026-10-02",
+      "video_url": "https://www.youtube.com/watch?v=BVhUC4N4bBw",
+      "papers": [
+        {
+          "id": "2609.29812",
+          "title": "FlashLoop: Fast and Memory-Efficient Looped Transformers via Lazy Updates (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.29812"
+        }
+      ]
+    },
+    "mKiOAf37i0c": {
+      "video_id": "mKiOAf37i0c",
+      "video_title": "DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool…",
+      "published": "2026-10-02",
+      "video_url": "https://www.youtube.com/watch?v=mKiOAf37i0c",
+      "papers": [
+        {
+          "id": "2609.35318",
+          "title": "DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.35318"
+        }
+      ]
+    },
+    "tZ6ubS539Vk": {
+      "video_id": "tZ6ubS539Vk",
+      "video_title": "Rufus-Air: An Open LLM Post-Training Recipe (Sep 2026)",
+      "published": "2026-10-02",
+      "video_url": "https://www.youtube.com/watch?v=tZ6ubS539Vk",
+      "papers": [
+        {
+          "id": "2609.29421",
+          "title": "Rufus-Air: An Open LLM Post-Training Recipe (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.29421"
+        }
+      ]
+    },
+    "wGjzJHLqHsM": {
+      "video_id": "wGjzJHLqHsM",
+      "video_title": "EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics (Sep 2026)",
+      "published": "2026-10-02",
+      "video_url": "https://www.youtube.com/watch?v=wGjzJHLqHsM",
+      "papers": [
+        {
+          "id": "2609.27308",
+          "title": "EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.27308"
+        }
+      ]
+    },
+    "B43f3k4esAs": {
+      "video_id": "B43f3k4esAs",
+      "video_title": "Rolling-WAM: World Action Models with Rolling Imagination (Sep 2026)",
+      "published": "2026-10-02",
+      "video_url": "https://www.youtube.com/watch?v=B43f3k4esAs",
+      "papers": [
+        {
+          "id": "2609.30247",
+          "title": "Rolling-WAM: World Action Models with Rolling Imagination (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.30247"
+        }
+      ]
+    },
+    "xx7kefgS3Vg": {
+      "video_id": "xx7kefgS3Vg",
+      "video_title": "Simplex Diffusion Models (Sep 2026)",
+      "published": "2026-10-02",
+      "video_url": "https://www.youtube.com/watch?v=xx7kefgS3Vg",
+      "papers": [
+        {
+          "id": "2609.35553",
+          "title": "Simplex Diffusion Models (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.35553"
+        }
+      ]
+    },
+    "OXssVs8YU2c": {
+      "video_id": "OXssVs8YU2c",
+      "video_title": "Block Sparse Attention with Log-Linear Complexity (Sep 2026)",
+      "published": "2026-10-02",
+      "video_url": "https://www.youtube.com/watch?v=OXssVs8YU2c",
+      "papers": [
+        {
+          "id": "2609.31093",
+          "title": "Block Sparse Attention with Log-Linear Complexity (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.31093"
+        }
+      ]
+    },
+    "i4K1QMoumY0": {
+      "video_id": "i4K1QMoumY0",
+      "video_title": "Just Ask Jev: Reinforcement Learning for Calibrated Decisions as a Zero-Shot Detector of AI…",
+      "published": "2026-10-02",
+      "video_url": "https://www.youtube.com/watch?v=i4K1QMoumY0",
+      "papers": [
+        {
+          "id": "2609.29429",
+          "title": "Just Ask Jev: Reinforcement Learning for Calibrated Decisions as a Zero-Shot Detector of AI Alignment Failures (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.29429"
+        }
+      ]
+    },
+    "I1ZeiQbJXgc": {
+      "video_id": "I1ZeiQbJXgc",
+      "video_title": "TrackEverything: Long Horizon Dense Tracking via De-Duplicating 3D Scene Representations (Sep 2026)",
+      "published": "2026-10-02",
+      "video_url": "https://www.youtube.com/watch?v=I1ZeiQbJXgc",
+      "papers": [
+        {
+          "id": "2609.30222",
+          "title": "TrackEverything: Long Horizon Dense Tracking via De-Duplicating 3D Scene Representations (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.30222"
+        }
+      ]
+    },
+    "unPuLkMO3zk": {
+      "video_id": "unPuLkMO3zk",
+      "video_title": "Generalization Dynamics of LM Pre-training (Sep 2026)",
+      "published": "2026-10-02",
+      "video_url": "https://www.youtube.com/watch?v=unPuLkMO3zk",
+      "papers": [
+        {
+          "id": "2609.33150",
+          "title": "Generalization Dynamics of LM Pre-training (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.33150"
+        }
+      ]
+    },
+    "gTWop3vXZ_w": {
+      "video_id": "gTWop3vXZ_w",
+      "video_title": "MatToolBench: Benchmarking Multimodal Agents in Real-World Materials Science Workflows (Sep 2026)",
+      "published": "2026-10-02",
+      "video_url": "https://www.youtube.com/watch?v=gTWop3vXZ_w",
+      "papers": [
+        {
+          "id": "2609.37053",
+          "title": "MatToolBench: Benchmarking Multimodal Agents in Real-World Materials Science Workflows (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.37053"
+        }
+      ]
+    },
+    "oaJM8h9YX9k": {
+      "video_id": "oaJM8h9YX9k",
+      "video_title": "Agent Priors-guided Policy Learning (Sep 2026)",
+      "published": "2026-10-02",
+      "video_url": "https://www.youtube.com/watch?v=oaJM8h9YX9k",
+      "papers": [
+        {
+          "id": "2609.35690",
+          "title": "Agent Priors-guided Policy Learning (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.35690"
+        }
+      ]
+    },
+    "tcKY92SWFZE": {
+      "video_id": "tcKY92SWFZE",
+      "video_title": "Despite Instructions: Frontier Agents Improvise Covert Channels at Test Time (Sep 2026)",
+      "published": "2026-10-02",
+      "video_url": "https://www.youtube.com/watch?v=tcKY92SWFZE",
+      "papers": [
+        {
+          "id": "2609.32701",
+          "title": "Despite Instructions: Frontier Agents Improvise Covert Channels at Test Time (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.32701"
+        }
+      ]
+    },
+    "DFJ7VHyfbKY": {
+      "video_id": "DFJ7VHyfbKY",
+      "video_title": "Raven: The Harness of Harnesses for Composable Agentic Intelligence (Sep 2026)",
+      "published": "2026-10-02",
+      "video_url": "https://www.youtube.com/watch?v=DFJ7VHyfbKY",
+      "papers": [
+        {
+          "id": "2609.33439",
+          "title": "Raven: The Harness of Harnesses for Composable Agentic Intelligence (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.33439"
+        }
+      ]
     }
   }
 }
