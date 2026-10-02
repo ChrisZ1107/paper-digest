@@ -1,0 +1,19 @@
+{
+  "overview": "本研究评估了GPT-6 Astra作为通用具身策略的能力。作者通过在抓取操作、灵巧操作、移动操作、导航、运动控制及人形机器人任务中进行评估，分析了该模型在直接控制、混合策略控制及反馈适应方面的表现。结果表明，GPT-6 Astra在决策规划上具有潜力，但在复杂物理控制的稳定性、实时性和精确动作生成方面仍存在局限性，其高推理延迟限制了实际应用效果。",
+  "highlights": [
+    {
+      "text": "GPT-6 Astra在任务规划与辅助控制方面展现出一定能力，在导航和部分人形机器人任务中表现优于基线，但在直接进行密集的动作生成时可靠性不足。",
+      "evidence": "In locomotion, dense motion-reference generation remains unreliable: none of five sequential attempts on a single obstacle course reaches the goal, despite improvements in stability and forward progress."
+    },
+    {
+      "text": "高推理延迟是其实际应用的主要约束，长时间的物理交互需要大量的模型调用，导致物理模拟在推理过程中必须暂停。",
+      "evidence": "A 30-second locomotion run requires 250 model calls averaging 39.86 seconds each, with physics paused during inference."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "导航",
+    "人形机器人",
+    "推理"
+  ]
+}

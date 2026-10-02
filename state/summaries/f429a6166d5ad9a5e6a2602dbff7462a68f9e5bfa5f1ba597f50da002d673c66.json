@@ -1,0 +1,17 @@
+{
+  "overview": "针对四足机器人通过复杂地形时仅凭几何和视觉信息难以准确预测交互动力学的问题，本文提出了一种基于经验的持续学习管线。该方法利用固定参数的DINOv3视觉特征，预测足底滑移、地面反作用力等五个本体感知指标及其相关不确定性。通过带有验证门控的受限经验回放策略，模型在学习新地形的同时有效缓解了对历史数据的性能退化。实验验证了该方法在提升机器人导航安全性方面的效果。",
+  "highlights": [
+    {
+      "text": "提出一种结合本体感知指标预测与不确定性估计的持续学习架构，能根据实时交互经验动态更新地形交互预测。",
+      "evidence": "A compact evidential regressor allows us to predict these indicators together with aleatoric and epistemic uncertainty from the visual descriptors."
+    },
+    {
+      "text": "引入了基于验证门控的持续学习策略，在保持对新地形自适应能力的同时，显著降低了模型在历史数据上的性能退化。",
+      "evidence": "Continual adaptation combines bounded experience replay with a validation gate: candidate models replace the deployed predictor only when they improve performance on recent held-out data while keeping degradation on historical held-out data within a prescribed tolerance."
+    }
+  ],
+  "tags": [
+    "四足机器人",
+    "导航"
+  ]
+}

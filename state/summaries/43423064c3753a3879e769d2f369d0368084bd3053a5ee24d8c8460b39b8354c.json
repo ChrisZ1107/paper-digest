@@ -1,0 +1,21 @@
+{
+  "overview": "针对肌肉驱动模型在非平坦地形运动控制中的挑战，本文提出TERRA框架。该方法仅需运动轨迹数据，通过整合地形先验、接触估计及负空间证据恢复任务相关的支撑几何，并应用解剖学与接触约束进行重定向。作者声称，该方法有效提升了地形交互的准确性与解剖学约束满足度，并在多种非平坦地形数据集上实现了肌肉驱动的高效运动控制。",
+  "highlights": [
+    {
+      "text": "TERRA框架能够仅从运动轨迹中恢复任务相关的支撑几何，并处理肌肉解剖及接触约束。",
+      "evidence": "From kinematic trajectories alone, TERRA combines terrain priors, estimated contacts, and negative free-space evidence to recover task-relevant support geometry. TERRA further considers anatomical, tendon-continuity, and contact constraints during retargeting."
+    },
+    {
+      "text": "该方法通过处理多源数据集，成功训练出适用于多样化非平坦地形的肌肉驱动控制策略。",
+      "evidence": "Using the resulting motion-terrain pairs from five datasets, we successfully train a single muscle-actuated control policy on 9.4 hours of diverse locomotion."
+    },
+    {
+      "text": "实验证明，TERRA在地形重建、重定向及轨迹跟踪任务中均优于基准方法，降低了违规现象并提升了完成率。",
+      "evidence": "Across reconstruction, retargeting, and held-out tracking benchmarks, TERRA improves terrain accuracy, sharply reduces anatomical and interaction violations, and achieves the highest observed completion rate over supported terrain families."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "足式运动"
+  ]
+}

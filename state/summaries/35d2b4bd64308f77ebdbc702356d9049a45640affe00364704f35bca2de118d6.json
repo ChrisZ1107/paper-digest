@@ -1,0 +1,17 @@
+{
+  "overview": "针对现有基于LLM的控制方法在推理延迟与规划开销方面的局限性，本文提出“Code to Control”方法。该方法将控制器结构与参数分离，利用LLM合成Python程序结构，并结合无导数搜索优化参数以适应连续控制。实验表明，该方法在不需要实时推理或规划的情况下，实现了实时控制性能，在多项Atari、Flappy Bird及MuJoCo任务中表现出优于规划类程序合成方法的效果，并展现出良好的环境泛化性。",
+  "highlights": [
+    {
+      "text": "Code to Control通过分离程序结构与参数，实现了无需LLM推理或规划的实时控制。",
+      "evidence": "Once learned, the resulting controllers require neither LLM inference nor planning at decision time, enabling real-time gameplay and, under our timing protocol, faster action selection than a PPO policy."
+    },
+    {
+      "text": "该方法在多项基准测试中优于现有的规划类程序合成方法，并能有效处理复杂的运动控制任务。",
+      "evidence": "Across a suite of Atari games, Flappy Bird, and MuJoCo tasks, Code to Control outperforms planning-based program synthesis methods, remains competitive with deep reinforcement learning while using fewer environment interactions, transfers across substantial changes in environment dynamics, and scales to complex locomotion tasks."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "推理"
+  ]
+}

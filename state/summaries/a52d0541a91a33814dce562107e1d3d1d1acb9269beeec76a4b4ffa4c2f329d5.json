@@ -1,0 +1,23 @@
+{
+  "overview": "本文提出了一种名为Context Language Models（CLM）的新型语言模型架构。该方法将上下文视为一个可由模型自主更新的文件，而非依赖外部机制进行管理。作者声称，这种方式允许模型学习上下文的核心要素，并天然适配多智能体系统。实验表明，CLM在多项任务中相比现有SOTA策略提升了性能并降低了计算开销，同时支持通过自然语言指令和在线强化学习进一步优化管理策略。",
+  "highlights": [
+    {
+      "text": "CLM通过自主管理上下文文件，在保持或提升性能的同时显著降低了计算开销。",
+      "evidence": "11.4% higher accuracy with 21.5% fewer FLOPs on BrowseComp-Plus, 5% higher scores with 59% fewer FLOPs on 12-hour EdgeBench, and 65% greater improvement with the same compute on a 24-hour multi-repository agent-swarm task."
+    },
+    {
+      "text": "作者提出了一种在线强化学习方法，通过微调模型以提升上下文管理表现。",
+      "evidence": "We also introduce an online reinforcement learning method for CLMs, improving Qwen3.5-9B performance on BrowseComp-Plus by 47.6% while using 12% fewer FLOPs."
+    },
+    {
+      "text": "通过协同设计后缀缓存复用技术，CLM在推理阶段进一步减少了服务器端计算需求。",
+      "evidence": "Finally, we co-design Suffix Cache Reuse for CLM serving, further reducing server-side compute by 35% relative to standard SGLang at matched performance."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "推理",
+    "多智能体",
+    "强化学习"
+  ]
+}

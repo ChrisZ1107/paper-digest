@@ -1,0 +1,515 @@
+{
+  "date": "2026-10-02",
+  "timestamp": "2026-10-02T09:05:24.878014+08:00",
+  "title": "2026-10-02 热门论文 Top 10｜机器人·强化学习·AI",
+  "slug": "2026-10-02",
+  "papers": [
+    {
+      "id": "2609.35432",
+      "title": "Self-Evolving Coding Agents: From Digital Programs to Physical-World Intelligence",
+      "abstract": "Vision-language-action (VLA) and world-action (WAM) models map observations and instructions directly to robot actions. This directness ties a policy to training: minor layout or viewpoint changes cause failure, and instructions generalize poorly. The root cause lies in representation: task requirements, conditions, progress, and failure recovery are implicitly encoded in action sequences, making them difficult to inspect or revise. Digital coding agents offer a precedent: LLMs call tools, verify results, and revise from feedback as executable code. The same working pattern of explicit state, manageable execution, and revisable procedures underlies generalization and long-horizon execution in the physical world, letting physical experience return as reusable programs, memory, or evidence. We propose Physical Coding, representing task state and execution as code. Code as World records objects, relations, constraints, and progress; Code as Policy organizes planning, verification, recovery, and execution. We build HexaAnything, which calls perception, planning, and control tools, including VLA/WAM policies, and makes in-the-loop decisions from external feedback. Verified traces become data and memory, enabling evolution from tools and Harness to model weights, architectures, and ultimately hardware and task design. On RoboCasa365, HexaAnything improves Composite-Unseen and overall success over XR-1 VLA, and its Harness-trained HexaModel beats the base on every split, indicating code traces internalize physical execution. On PhyBench and a dual-arm AgileX robot, the agent autonomously completes physics experiments and most tabletop tasks, often faster than published results. We observe data, model, and tool self-evolution; future work targets weight internalization, autonomous redesign of architectures, languages, representations, and tasks, and deployment in manufacturing and science.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-09-28",
+      "age_days": 4.045426828865741,
+      "upvotes": 106,
+      "comments": 2,
+      "stars": 46,
+      "repo": "https://github.com/HexaFuture/PhysicalCoding",
+      "trending_rank": 62,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.43244,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 6,
+        "comments": 0,
+        "stars": 1
+      },
+      "score": 5.351,
+      "rule_tags": [
+        "视觉语言动作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对视觉语言动作模型在环境变化时泛化能力不足及动作逻辑难以修订的问题，本文提出“物理编码（Physical Coding）”框架。该方法将物理任务的状态记录与决策过程表示为可执行代码，通过HexaAnything代理调用感知、规划与控制工具，并引入闭环反馈。作者声称该机制不仅提升了机器人在RoboCasa365及PhyBench测试集上的任务完成率，还通过将经过验证的执行轨迹转化为可复用的数据与记忆，初步实现了模型在任务执行过程中的自我演进。",
+        "highlights": [
+          {
+            "text": "提出物理编码框架，通过将任务状态和决策逻辑显式编码为可执行代码，显著提升了机器人在复杂任务中的泛化能力。",
+            "evidence": "We propose Physical Coding, representing task state and execution as code. Code as World records objects, relations, constraints, and progress; Code as Policy organizes planning, verification, recovery, and execution."
+          },
+          {
+            "text": "实验结果显示，HexaAnything代理在RoboCasa365测试集上表现优于XR-1 VLA模型，且在物理实验和桌面任务中展现出高效的自主完成能力。",
+            "evidence": "On RoboCasa365, HexaAnything improves Composite-Unseen and overall success over XR-1 VLA, and its Harness-trained HexaModel beats the base on every split, indicating code traces internalize physical execution."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "视觉语言动作",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.38653",
+      "title": "TERRA: Terrain-Aware Reconstruction, Retargeting and Control for Musculoskeletal Locomotion",
+      "abstract": "Recent advances in musculoskeletal modeling and reinforcement learning have enabled muscle-actuated agents to reproduce increasingly complex human motions. Yet these capabilities remain largely confined to flat ground, in part because motion datasets rarely include aligned terrain geometry and because retargeting terrain interactions to complex musculoskeletal bodies is challenging. We present TERRA, an end-to-end pipeline for terrain-aware retargeting and control of musculoskeletal locomotion. From kinematic trajectories alone, TERRA combines terrain priors, estimated contacts, and negative free-space evidence to recover task-relevant support geometry. TERRA further considers anatomical, tendon-continuity, and contact constraints during retargeting. Using the resulting motion-terrain pairs from five datasets, we successfully train a single muscle-actuated control policy on 9.4 hours of diverse locomotion. Across reconstruction, retargeting, and held-out tracking benchmarks, TERRA improves terrain accuracy, sharply reduces anatomical and interaction violations, and achieves the highest observed completion rate over supported terrain families. Overall, TERRA provides a practical route from scene-less motion data to muscle-actuated locomotion over diverse non-flat terrain. Project website: https://cnai.epfl.ch/terra/",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-09-29",
+      "age_days": 3.045426828865741,
+      "upvotes": 32,
+      "comments": 1,
+      "stars": 6,
+      "repo": "https://github.com/amathislab/terra",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face",
+        "arXiv"
+      ],
+      "date_label": "发表",
+      "relevance": 0.53104,
+      "growth": null,
+      "score": 5.262,
+      "rule_tags": [
+        "强化学习",
+        "足式运动"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对肌肉驱动模型在非平坦地形运动控制中的挑战，本文提出TERRA框架。该方法仅需运动轨迹数据，通过整合地形先验、接触估计及负空间证据恢复任务相关的支撑几何，并应用解剖学与接触约束进行重定向。作者声称，该方法有效提升了地形交互的准确性与解剖学约束满足度，并在多种非平坦地形数据集上实现了肌肉驱动的高效运动控制。",
+        "highlights": [
+          {
+            "text": "TERRA框架能够仅从运动轨迹中恢复任务相关的支撑几何，并处理肌肉解剖及接触约束。",
+            "evidence": "From kinematic trajectories alone, TERRA combines terrain priors, estimated contacts, and negative free-space evidence to recover task-relevant support geometry. TERRA further considers anatomical, tendon-continuity, and contact constraints during retargeting."
+          },
+          {
+            "text": "该方法通过处理多源数据集，成功训练出适用于多样化非平坦地形的肌肉驱动控制策略。",
+            "evidence": "Using the resulting motion-terrain pairs from five datasets, we successfully train a single muscle-actuated control policy on 9.4 hours of diverse locomotion."
+          },
+          {
+            "text": "实验证明，TERRA在地形重建、重定向及轨迹跟踪任务中均优于基准方法，降低了违规现象并提升了完成率。",
+            "evidence": "Across reconstruction, retargeting, and held-out tracking benchmarks, TERRA improves terrain accuracy, sharply reduces anatomical and interaction violations, and achieves the highest observed completion rate over supported terrain families."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "足式运动"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.34759",
+      "title": "PanoVLN: Towards Effective Panoramic Vision-and-Language Navigation",
+      "abstract": "Recent vision-language models (VLMs) have advanced vision-and-language navigation (VLN), enabling models to predict navigation actions from visual observations and language instructions. In this work, we explore VLN with panoramic observations and introduce PanoVLN. The motivation is straightforward: more complete visual context should enable better-informed navigation decisions. For example, a panorama can reveal a passage outside a perspective camera's field of view, allowing the model to identify the intended route without additional exploration. However, we find that simply replacing perspective images with panoramas yields only limited gains. Our diagnosis suggests that fully exploiting wider visibility requires modifications to action prediction, training supervision, and visual representation. First, wider visibility supports longer-horizon action planning. We make the model predict longer action sequences, enabling larger turns and subsequent movement from a single panorama. Specifically, we introduce a confidence-guided execution (CGE) strategy that dynamically determines how many predicted actions to execute before replanning. Second, wider visibility also brings more complex route choices. We therefore construct training routes with frequent branching points and clear instructions to provide targeted supervision for route selection. Third, panoramic navigation requires understanding spatial relationships across viewing directions, beyond recognizing individual landmarks. We combine semantic and geometric features from RGB panoramas to capture both scene content and spatial layout without adding visual tokens. With a 4B backbone and RGB-only input, PanoVLN surpasses the previous SOTA by 11.9% and 8.7% in success rate on R2R-CE and RxR-CE Val-Unseen. Real-world experiments on a quadruped further demonstrate faster navigation with fewer pauses than prior VLN methods.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-09-28",
+      "age_days": 4.045426828865741,
+      "upvotes": 152,
+      "comments": 1,
+      "stars": 26,
+      "repo": "https://github.com/wangzhen-w/PanoVLN",
+      "trending_rank": 51,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.39738,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 20,
+        "comments": 0
+      },
+      "score": 5.242,
+      "rule_tags": [
+        "四足机器人",
+        "导航"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对视觉语言导航任务中全景图像信息未被充分利用的问题，作者提出了PanoVLN。该方法通过改进动作预测机制（引入置信度引导执行策略）、优化包含分支路径的监督训练策略，以及整合全景图的语义与几何特征，实现了更长视野的动作规划和空间关系感知。实验结果表明，该方法在R2R-CE和RxR-CE数据集上取得了性能提升，并在四足机器人实机测试中表现出更快的导航速度。",
+        "highlights": [
+          {
+            "text": "提出置信度引导执行（CGE）策略，通过预测更长的动作序列并动态决定重规划时机，利用全景图像的广角视野支持长程规划。",
+            "evidence": "Specifically, we introduce a confidence-guided execution (CGE) strategy that dynamically determines how many predicted actions to execute before replanning."
+          },
+          {
+            "text": "结合RGB全景图像的语义与几何特征，在不增加视觉标记的前提下增强了模型对场景内容及空间布局的理解。",
+            "evidence": "We combine semantic and geometric features from RGB panoramas to capture both scene content and spatial layout without adding visual tokens."
+          },
+          {
+            "text": "实机测试验证了PanoVLN在四足机器人上相比既有视觉语言导航方法具有更快的导航速度和更少的停顿。",
+            "evidence": "Real-world experiments on a quadruped further demonstrate faster navigation with fewer pauses than prior VLN methods."
+          }
+        ],
+        "tags": [
+          "四足机器人",
+          "导航",
+          "Sim-to-Real"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.36484",
+      "title": "The Teacher Is a Direction, Not a Destination: Extrapolating RL-Induced Representation Residuals in On-Policy Distillation",
+      "abstract": "On-policy distillation (OPD) trains a student to match the teacher's next-token distributions on the student's own trajectories and has yielded substantial empirical gains. Generalized variants allow the student to surpass the teacher by extrapolating an implicit reward in output space. The language-model head, however, attenuates this change anisotropically: much of the change encoded in the teacher's hidden states reaches the logits at a small fraction of its weight, and the sampled-token log-probability ratios on which output-space extrapolation relies inject noise that the extrapolation amplifies, making training unstable. We observe that reinforcement learning (RL) shifts a model's internal representations relative to its base checkpoint, and that the direction of this shift can be measured at every layer. Motivated by this observation, we propose RIDE (RL-Induced Direction Extrapolation), which extrapolates the RL-induced change directly in representation space: at every layer and token position, RIDE computes the residual between the teacher and its pre-RL checkpoint and regresses the student's hidden states toward targets displaced beyond the teacher along this residual. Conditioned on a sampled trajectory, this regression is equivalent to maximizing a linear directional reward defined by the residual under a quadratic penalty centered at the teacher, which makes explicit how the objective moves the student along the RL-induced direction while limiting its deviation from the teacher. Across four base/RL-teacher pairs spanning different scales, architectures, and pre-training lineages, RIDE approaches or exceeds the RL-trained teacher on every pair and is the only method whose mean does so, and it consistently outperforms output-space extrapolation, which degrades the student whenever the teacher is close to its base. Project page: https://github.com/xixixixixxxx/RIDE.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-09-29",
+      "age_days": 3.045426828865741,
+      "upvotes": 276,
+      "comments": 2,
+      "stars": 1,
+      "repo": "https://github.com/xixixixixxxx/RIDE",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.34101,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 276,
+        "comments": 2
+      },
+      "score": 5.143,
+      "rule_tags": [
+        "强化学习"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对策略内蒸馏（OPD）中输出空间外推不稳定的问题，作者提出了RIDE（RL诱导方向外推）方法。该方法在表征空间而非输出空间进行外推，通过计算强化学习教师模型与基础检查点之间的残差，将学生模型的目标向残差方向偏移。实验表明，RIDE能够稳定地引导学生模型超越教师模型，在多项任务中表现优于传统的输出空间外推方法。",
+        "highlights": [
+          {
+            "text": "RIDE通过直接在每一层的表征空间中外推RL诱导的变更，解决了输出空间外推中存在的噪声放大与训练不稳定问题。",
+            "evidence": "RIDE (RL-Induced Direction Extrapolation), which extrapolates the RL-induced change directly in representation space: at every layer and token position, RIDE computes the residual between the teacher and its pre-RL checkpoint and regresses the student's hidden states toward targets displaced beyond the teacher along this residual."
+          },
+          {
+            "text": "在多种规模、架构及预训练背景的实验对比中，RIDE在所有配置下均能达到或超过RL教师模型的表现，并始终优于传统的输出空间外推法。",
+            "evidence": "Across four base/RL-teacher pairs spanning different scales, architectures, and pre-training lineages, RIDE approaches or exceeds the RL-trained teacher on every pair and is the only method whose mean does so, and it consistently outperforms output-space extrapolation"
+          }
+        ],
+        "tags": [
+          "大模型后训练",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.33439",
+      "title": "Raven: The Harness of Harnesses for Composable Agentic Intelligence",
+      "abstract": "As large language models advance, AI agents are moving beyond isolated, domain-specific tasks toward long-horizon, cross-domain workflows. This transition exposes two challenges: increasing harness complexity makes manual design difficult to scale, while tighter coupling to specific domains limits the generality of a single harness. The central question thus shifts from how to engineer a stronger harness for one domain to how to autonomously construct specialized harnesses, improve them through experience, and orchestrate them across domains. We introduce Raven, The Harness of Harnesses, an open-source multi-agent ecosystem that automatically constructs and evolves modular harnesses for specific models and domains, treating each executable model--harness pair as a composable unit of intelligence. To support an All-Domain Collaboration Network, its Host Agent decomposes goals, matches subtasks to specialized agents, coordinates execution dependencies, and integrates results, while a host archive and EverOS preserve experience across tasks and Skill Forge makes that experience available as reusable procedures. Our theory establishes sufficient conditions for such composition to expand reliable task coverage beyond that of the available individual agents under a shared resource budget. On complex and long-horizon tasks, Raven significantly outperforms the state-of-the-art agent systems, pushing the frontier of composable agentic intelligence.",
+      "topics": [
+        "通用 AI"
+      ],
+      "published": "2026-09-27",
+      "age_days": 5.045426828865741,
+      "upvotes": 499,
+      "comments": 3,
+      "stars": 5033,
+      "repo": "https://github.com/EverMind-AI/Raven",
+      "trending_rank": 1,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.32219,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 47,
+        "comments": 1,
+        "stars": 96
+      },
+      "score": 5.042,
+      "rule_tags": [
+        "多智能体"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "随着大型语言模型的发展，AI代理正向跨领域长程工作流演进。针对现有系统设计复杂且耦合度高的问题，作者提出了Raven，一个开源的多智能体生态系统。Raven旨在自动构建和演进用于特定领域的可组合智能模块，通过主机代理（Host Agent）协调任务分解与执行，并利用经验库实现技能沉淀。作者声称该方法在复杂长程任务中显著优于现有智能体系统，拓展了可靠的任务覆盖范围。",
+        "highlights": [
+          {
+            "text": "Raven通过自动构建和演进针对特定模型和领域的模块化工具，将每个可执行的模型-工具对视为可组合的智能单元。",
+            "evidence": "We introduce Raven, The Harness of Harnesses, an open-source multi-agent ecosystem that automatically constructs and evolves modular harnesses for specific models and domains, treating each executable model--harness pair as a composable unit of intelligence."
+          },
+          {
+            "text": "Raven的主机代理能够有效进行任务分解、智能体匹配及执行协调，并利用EverOS和Skill Forge实现跨任务的经验保留与复用。",
+            "evidence": "To support an All-Domain Collaboration Network, its Host Agent decomposes goals, matches subtasks to specialized agents, coordinates execution dependencies, and integrates results, while a host archive and EverOS preserve experience across tasks and Skill Forge makes that experience available as reusable procedures."
+          },
+          {
+            "text": "在复杂长程任务中，Raven的性能优于现有的先进智能体系统。",
+            "evidence": "On complex and long-horizon tasks, Raven significantly outperforms the state-of-the-art agent systems, pushing the frontier of composable agentic intelligence."
+          }
+        ],
+        "tags": [
+          "大模型后训练"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.33325",
+      "title": "VisionHOPE: Visual Backbones as Self-Modifying Learning Systems",
+      "abstract": "Visual backbones have evolved from Convolutional Neural Networks (CNNs) with local aggregation to Vision Transformers (ViTs) with global interactions, State-Space Models (SSMs) with input-dependent state transitions, and Test-Time Training (TTT) layers that adapt an inner learner while processing an image. Across this progression, visual computation has become increasingly adaptive to each input, yet the rules governing that adaptation remain largely prescribed by the trained backbone. We introduce VisionHOPE, the first generic visual backbone formulated as a self-modifying learning system, in which what the model remembers and how it learns co-evolve within an image. Building on the self-referential construction of Nested Learning (NL), VisionHOPE realizes this co-evolution through five coupled memories that store content, generate key and value representations, and govern learning rate and retention. These memories evolve jointly as visual context accumulates along each scan. However, directly applying the unconstrained self-referential update to a visual backbone leads to instability. We therefore derive a stability-matched step-size control scheme that combines a soft cap on self-referential injection with a spectral clamp on the retained memory transition, and prove that the resulting memory dynamics are non-expansive along each scan. For two-dimensional feature maps, we adapt NL's chunk formulation by aligning chunks with image rows and columns across four directional scans. The proposed VisionHOPE achieves competitive results on ImageNet-1K, COCO, and ADE20K, establishing self-modifying learning systems as a practical foundation for general-purpose visual backbones. The code is available at https://github.com/PSRben/VisionHOPE.",
+      "topics": [
+        "通用 AI"
+      ],
+      "published": "2026-09-27",
+      "age_days": 5.045426828865741,
+      "upvotes": 319,
+      "comments": 2,
+      "stars": 391,
+      "repo": "https://github.com/PSRben/VisionHOPE",
+      "trending_rank": 6,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.32425,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 103,
+        "comments": 0,
+        "stars": 306
+      },
+      "score": 5.014,
+      "rule_tags": [],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "论文提出了VisionHOPE，这是一种作为自修改学习系统构建的通用视觉骨干网络。该方法基于嵌套学习（NL）的自引用结构，通过五个耦合的记忆模块实现视觉内容记忆与学习规则的协同进化，并引入了稳定性匹配的步长控制方案以解决自引用更新带来的不稳定性。实验结果表明，该模型在ImageNet-1K、COCO和ADE20K数据集上取得了具有竞争力的性能，验证了自修改学习系统在通用视觉骨干中的应用潜力。",
+        "highlights": [
+          {
+            "text": "VisionHOPE实现了视觉内容记忆与学习规则在单张图像处理过程中的协同进化。",
+            "evidence": "We introduce VisionHOPE, the first generic visual backbone formulated as a self-modifying learning system, in which what the model remembers and how it learns co-evolve within an image."
+          },
+          {
+            "text": "提出了一种基于稳定性匹配的步长控制机制，通过限制自引用注入与频谱钳位确保记忆动力学在扫描过程中的非扩展性。",
+            "evidence": "We therefore derive a stability-matched step-size control scheme that combines a soft cap on self-referential injection with a spectral clamp on the retained memory transition, and prove that the resulting memory dynamics are non-expansive along each scan."
+          }
+        ],
+        "tags": [],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.34981",
+      "title": "What Makes World Action Models Generalize? An Empirical Study of Test-Time Future Modeling",
+      "abstract": "World action models (WAMs) predict the future alongside actions during training. Due to the heavy computation cost of video denoising, whether the future must still be generated during inference is disputed: Explicit WAMs denoise it into clean frames along with every action chunk, whereas Latent WAMs discard it entirely for acceleration. We find that latent WAMs, despite matching explicit ones on in-distribution tasks, fail to retain the generalization benefits that originally motivated WAMs. To demonstrate this, we evaluate generalization along three axes: environmental perturbation, data efficiency, and task generalization. Controlled comparisons with a matched backbone, training data, and budget reveal consistent degradation across all three axes when the action expert no longer conditions on future representations. Further analysis shows that the gap arises almost entirely from the first denoising step: the benefit comes from preparing the future, not generating it. We therefore propose Simple-WAM, which simplifies future modeling into a single forward pass of fully noised video tokens and adapts the training-time noise schedule to this inference behavior. Across simulation and real-world tasks, Simple-WAM achieves the best of both worlds, leading explicit WAMs in generalization performance with efficiency comparable to Latent WAMs. Project Page: https://zrporz.github.io/Simple-WAM-Web/",
+      "topics": [
+        "通用 AI"
+      ],
+      "published": "2026-09-29",
+      "age_days": 3.045426828865741,
+      "upvotes": 111,
+      "comments": 2,
+      "stars": 62,
+      "repo": "https://github.com/LeapLabTHU/Simple-WAM",
+      "trending_rank": 10,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.35184,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 8,
+        "comments": 1,
+        "stars": 4
+      },
+      "score": 4.992,
+      "rule_tags": [],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文研究了世界动作模型（WAMs）在推理阶段是否需要生成未来帧的问题。研究发现，虽然隐式WAMs可加速推理，但缺乏显式WAMs的泛化优势。作者通过控制变量实验揭示，泛化能力源于对未来的准备而非完整生成过程，并据此提出了Simple-WAM方法。该方法通过将未来建模简化为单次全噪声视频Token的前向传递，实现了在保持高效的同时，在多项任务中达到优于显式WAMs的泛化性能。",
+        "highlights": [
+          {
+            "text": "研究揭示了消除推理阶段的未来条件会导致模型在环境扰动、数据效率和任务泛化三个维度上的性能退化。",
+            "evidence": "Controlled comparisons with a matched backbone, training data, and budget reveal consistent degradation across all three axes when the action expert no longer conditions on future representations."
+          },
+          {
+            "text": "提出Simple-WAM方法，通过仅保留单次前向传递的未来建模并调整噪声调度，兼顾了推理效率与泛化性能。",
+            "evidence": "We therefore propose Simple-WAM, which simplifies future modeling into a single forward pass of fully noised video tokens and adapts the training-time noise schedule to this inference behavior."
+          }
+        ],
+        "tags": [
+          "世界模型"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.38537",
+      "title": "Systematically Exploring the Capabilities of GPT-6 Astra as Embodied Policies",
+      "abstract": "GPT-6 Astra exhibits a remarkable ability to generate numerical robot actions, extending its role beyond high-level planning. To assess Astra's capabilities as general-purpose embodied policies, we conduct comprehensive evaluations across six domains, examining direct control, cooperation with learned policies, and feedback-driven adaptation. In gripper manipulation, Astra can correct task targets and prepare contact conditions for subsequent policy execution; hybrid control with π0.5 achieves 48% success on the evaluated RoboDojo subset. In dexterous manipulation, hybrid control achieves 50% success in ten experience-guided DexJoCo trials, while direct in-hand control struggles to coordinate finger contacts. In mobile manipulation, hybrid control reaches 38.7% success on the evaluated RoboCasa365. In navigation, Astra leads our local comparisons, reaching 92% success on RxR instruction following and 82% on HM3D object search, although search incurs substantial detours. In locomotion, dense motion-reference generation remains unreliable: none of five sequential attempts on a single obstacle course reaches the goal, despite improvements in stability and forward progress. In humanoid loco-manipulation, Astra exceeds baseline methods on 13 of 30 HumanoidBench tasks with pretrained whole-body controllers. These findings reveal a gap between useful task decisions and reliable physical control. Inference latency further constrains practical control: across 50 RoboDojo instances per condition, policy-assisted and direct control consume 624.8 million and 1.132 billion tokens. A 30-second locomotion run requires 250 model calls averaging 39.86 seconds each, with physics paused during inference.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-09-29",
+      "age_days": 3.045426828865741,
+      "upvotes": 28,
+      "comments": 1,
+      "stars": 565,
+      "repo": "https://github.com/anonymous-report-421/GPT-as-Policy",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face",
+        "arXiv"
+      ],
+      "date_label": "发表",
+      "relevance": 0.47922,
+      "growth": null,
+      "score": 4.896,
+      "rule_tags": [
+        "人形机器人",
+        "足式运动",
+        "机器人操作",
+        "导航"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本研究评估了GPT-6 Astra作为通用具身策略的能力。作者通过在抓取操作、灵巧操作、移动操作、导航、运动控制及人形机器人任务中进行评估，分析了该模型在直接控制、混合策略控制及反馈适应方面的表现。结果表明，GPT-6 Astra在决策规划上具有潜力，但在复杂物理控制的稳定性、实时性和精确动作生成方面仍存在局限性，其高推理延迟限制了实际应用效果。",
+        "highlights": [
+          {
+            "text": "GPT-6 Astra在任务规划与辅助控制方面展现出一定能力，在导航和部分人形机器人任务中表现优于基线，但在直接进行密集的动作生成时可靠性不足。",
+            "evidence": "In locomotion, dense motion-reference generation remains unreliable: none of five sequential attempts on a single obstacle course reaches the goal, despite improvements in stability and forward progress."
+          },
+          {
+            "text": "高推理延迟是其实际应用的主要约束，长时间的物理交互需要大量的模型调用，导致物理模拟在推理过程中必须暂停。",
+            "evidence": "A 30-second locomotion run requires 250 model calls averaging 39.86 seconds each, with physics paused during inference."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "导航",
+          "人形机器人",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.37725",
+      "title": "Context Language Models",
+      "abstract": "We introduce Context Language Models (CLMs), language models that natively manage their own context. We implement this by treating the context as a file and allowing the model to make unrestricted updates to this file. This allows the model to learn what is most important to maintain in context, and naturally extends to multi-agent systems where multiple agent contexts coexist as files. Building CLMs zero-shot with existing models outperforms SOTA context management strategies across a variety of tasks: 11.4% higher accuracy with 21.5% fewer FLOPs on BrowseComp-Plus, 5% higher scores with 59% fewer FLOPs on 12-hour EdgeBench, and 65% greater improvement with the same compute on a 24-hour multi-repository agent-swarm task. Moreover, by shifting context management from external harness control to intrinsic model behavior, CLMs naturally enable both in-context and parametric learning of context-management strategies. We show that CLMs can be steered with natural-language instructions evolved through a standard skill-optimization loop, improving held-out accuracy by up to 35.9 points on a context-management task while reducing compute. We also introduce an online reinforcement learning method for CLMs, improving Qwen3.5-9B performance on BrowseComp-Plus by 47.6% while using 12% fewer FLOPs. Finally, we co-design Suffix Cache Reuse for CLM serving, further reducing server-side compute by 35% relative to standard SGLang at matched performance.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-09-29",
+      "age_days": 3.045426828865741,
+      "upvotes": 27,
+      "comments": 2,
+      "stars": 277,
+      "repo": "https://github.com/facebookresearch/context-language-models",
+      "trending_rank": 4,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.33487,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 3,
+        "comments": 1,
+        "stars": 233
+      },
+      "score": 4.855,
+      "rule_tags": [
+        "强化学习",
+        "多智能体"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文提出了一种名为Context Language Models（CLM）的新型语言模型架构。该方法将上下文视为一个可由模型自主更新的文件，而非依赖外部机制进行管理。作者声称，这种方式允许模型学习上下文的核心要素，并天然适配多智能体系统。实验表明，CLM在多项任务中相比现有SOTA策略提升了性能并降低了计算开销，同时支持通过自然语言指令和在线强化学习进一步优化管理策略。",
+        "highlights": [
+          {
+            "text": "CLM通过自主管理上下文文件，在保持或提升性能的同时显著降低了计算开销。",
+            "evidence": "11.4% higher accuracy with 21.5% fewer FLOPs on BrowseComp-Plus, 5% higher scores with 59% fewer FLOPs on 12-hour EdgeBench, and 65% greater improvement with the same compute on a 24-hour multi-repository agent-swarm task."
+          },
+          {
+            "text": "作者提出了一种在线强化学习方法，通过微调模型以提升上下文管理表现。",
+            "evidence": "We also introduce an online reinforcement learning method for CLMs, improving Qwen3.5-9B performance on BrowseComp-Plus by 47.6% while using 12% fewer FLOPs."
+          },
+          {
+            "text": "通过协同设计后缀缓存复用技术，CLM在推理阶段进一步减少了服务器端计算需求。",
+            "evidence": "Finally, we co-design Suffix Cache Reuse for CLM serving, further reducing server-side compute by 35% relative to standard SGLang at matched performance."
+          }
+        ],
+        "tags": [
+          "大模型后训练",
+          "推理",
+          "多智能体",
+          "强化学习"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.37372",
+      "title": "Think Before You Score: Thinking Reward Model for Visual Generation",
+      "abstract": "Visual reward models are essential for evaluating and improving visual generation models, yet existing approaches typically map task conditions and candidate outputs directly to scalar rewards, leaving implicit what should be evaluated for each individual case. We introduce Think Before You Score, a paradigm that explicitly determines what matters for each case before judging how well the candidate performs. Following this principle, we propose the Thinking Reward Model (TRM), which formulates case-adaptive rubrics, performs rubric-guided assessment, and produces fine-grained pointwise rewards. We further observe that conventional pairwise preference optimization can induce score polarization, and introduce Pairwise Dual-Group Relative Policy Optimization (PD-GRPO), which leverages pairwise supervision to improve reward discrimination while preserving fine-grained pointwise scoring. Extensive experiments on image generation and editing reward-modeling benchmarks demonstrate that TRM achieves state-of-the-art performance among open-source reward models while remaining highly competitive with proprietary alternatives. Moreover, using TRM as a reward for reinforcement learning consistently improves diverse visual generation models, demonstrating that its fine-grained, case-adaptive rewards translate into effective optimization signals for visual generation.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-09-29",
+      "age_days": 3.045426828865741,
+      "upvotes": 88,
+      "comments": 2,
+      "stars": 31,
+      "repo": "https://github.com/bxhsort/Thinking_Reward_Model",
+      "trending_rank": 57,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.3529,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 4,
+        "comments": 1,
+        "stars": 0
+      },
+      "score": 4.839,
+      "rule_tags": [
+        "强化学习",
+        "大模型后训练"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对现有视觉奖励模型直接映射标量得分导致评价标准隐性化的问题，本文提出“先思考后评分”范式。作者引入了思维奖励模型（TRM），通过构建案例自适应准则并进行细粒度评估。同时，为缓解传统配对偏好优化导致的得分极化现象，开发了配对双组相对策略优化算法（PD-GRPO）。实验表明，该模型在图像生成与编辑基准测试中表现出色，并能为强化学习提供有效的优化信号。",
+        "highlights": [
+          {
+            "text": "提出思维奖励模型（TRM），通过生成案例自适应评价准则实现细粒度的点对点奖励评估。",
+            "evidence": "We introduce Think Before You Score, a paradigm that explicitly determines what matters for each case before judging how well the candidate performs. Following this principle, we propose the Thinking Reward Model (TRM), which formulates case-adaptive rubrics, performs rubric-guided assessment, and produces fine-grained pointwise rewards."
+          },
+          {
+            "text": "开发配对双组相对策略优化（PD-GRPO）算法，在提升奖励判别能力的同时防止得分极化。",
+            "evidence": "We further observe that conventional pairwise preference optimization can induce score polarization, and introduce Pairwise Dual-Group Relative Policy Optimization (PD-GRPO), which leverages pairwise supervision to improve reward discrimination while preserving fine-grained pointwise scoring."
+          },
+          {
+            "text": "TRM在视觉生成任务中可提供有效的强化学习优化信号，实现模型性能提升。",
+            "evidence": "Moreover, using TRM as a reward for reinforcement learning consistently improves diverse visual generation models, demonstrating that its fine-grained, case-adaptive rewards translate into effective optimization signals for visual generation."
+          }
+        ],
+        "tags": [
+          "强化学习"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    }
+  ],
+  "candidate_count": 1004,
+  "personalization_note": "已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。",
+  "html": "<h1>2026-10-02 热门论文 Top 10</h1>\n<p>机器人 · 强化学习 · 通用 AI</p>\n<p>生成时间：2026-10-02 09:05 CST。从 1004 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>\n<p>候选来源：<a href=\"https://huggingface.co/papers\">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>\n<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>\n<h2>1. Self-Evolving Coding Agents: From Digital Programs to Physical-World Intelligence</h2>\n<p><strong>机器人</strong> · 发表 2026-09-28 · 综合分 5.35</p>\n<p>Zotero 摘要相关性：0.432（相似度分数，不是概率）。</p>\n<p>HF 点赞 106 · 讨论 2 · 本次 HF 热榜第 62 位 · 仓库累计 Star 46（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +6 · 讨论 +0 · Star +1。</p>\n<p><strong>规则标签：</strong>视觉语言动作</p>\n<p><strong>中文概述：</strong>针对视觉语言动作模型在环境变化时泛化能力不足及动作逻辑难以修订的问题，本文提出“物理编码（Physical Coding）”框架。该方法将物理任务的状态记录与决策过程表示为可执行代码，通过HexaAnything代理调用感知、规划与控制工具，并引入闭环反馈。作者声称该机制不仅提升了机器人在RoboCasa365及PhyBench测试集上的任务完成率，还通过将经过验证的执行轨迹转化为可复用的数据与记忆，初步实现了模型在任务执行过程中的自我演进。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出物理编码框架，通过将任务状态和决策逻辑显式编码为可执行代码，显著提升了机器人在复杂任务中的泛化能力。<br><small>摘要依据：We propose Physical Coding, representing task state and execution as code. Code as World records objects, relations, constraints, and progress; Code as Policy organizes planning, verification, recovery, and execution.</small></li>\n<li>实验结果显示，HexaAnything代理在RoboCasa365测试集上表现优于XR-1 VLA模型，且在物理实验和桌面任务中展现出高效的自主完成能力。<br><small>摘要依据：On RoboCasa365, HexaAnything improves Composite-Unseen and overall success over XR-1 VLA, and its Harness-trained HexaModel beats the base on every split, indicating code traces internalize physical execution.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 视觉语言动作 · 推理</p>\n<p><strong>原文摘要节选：</strong>Vision-language-action (VLA) and world-action (WAM) models map observations and instructions directly to robot actions. This directness ties a policy to training: minor layout or viewpoint changes cause failure, and instructions generalize poorly. The root cause lies in representation: task requirements, conditions, progress, and failure recovery are implicitly encoded in action sequences, making them difficult to inspect or revise. Digital coding agents offer a precedent: LLMs call tools, verify results, and revise from feedback as executable code. The same working pattern of explicit state, manageable execution, and revisable procedures underlies generalization and long-horizon execution in the physical world, letting physical experience return as reusable programs, memory, or evidence.…</p>\n<p><a href=\"https://arxiv.org/abs/2609.35432\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.35432\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.35432\">讨论与热度</a> · <a href=\"https://github.com/HexaFuture/PhysicalCoding\">代码</a></p><hr>\n<h2>2. TERRA: Terrain-Aware Reconstruction, Retargeting and Control for Musculoskeletal Locomotion</h2>\n<p><strong>机器人 / 强化学习</strong> · 发表 2026-09-29 · 综合分 5.26</p>\n<p>Zotero 摘要相关性：0.531（相似度分数，不是概率）。</p>\n<p>HF 点赞 32 · 讨论 1 · 仓库累计 Star 6（仓库可能包含多篇论文）</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习 · 足式运动</p>\n<p><strong>中文概述：</strong>针对肌肉驱动模型在非平坦地形运动控制中的挑战，本文提出TERRA框架。该方法仅需运动轨迹数据，通过整合地形先验、接触估计及负空间证据恢复任务相关的支撑几何，并应用解剖学与接触约束进行重定向。作者声称，该方法有效提升了地形交互的准确性与解剖学约束满足度，并在多种非平坦地形数据集上实现了肌肉驱动的高效运动控制。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>TERRA框架能够仅从运动轨迹中恢复任务相关的支撑几何，并处理肌肉解剖及接触约束。<br><small>摘要依据：From kinematic trajectories alone, TERRA combines terrain priors, estimated contacts, and negative free-space evidence to recover task-relevant support geometry. TERRA further considers anatomical, tendon-continuity, and contact constraints during retargeting.</small></li>\n<li>该方法通过处理多源数据集，成功训练出适用于多样化非平坦地形的肌肉驱动控制策略。<br><small>摘要依据：Using the resulting motion-terrain pairs from five datasets, we successfully train a single muscle-actuated control policy on 9.4 hours of diverse locomotion.</small></li>\n<li>实验证明，TERRA在地形重建、重定向及轨迹跟踪任务中均优于基准方法，降低了违规现象并提升了完成率。<br><small>摘要依据：Across reconstruction, retargeting, and held-out tracking benchmarks, TERRA improves terrain accuracy, sharply reduces anatomical and interaction violations, and achieves the highest observed completion rate over supported terrain families.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · 足式运动</p>\n<p><strong>原文摘要节选：</strong>Recent advances in musculoskeletal modeling and reinforcement learning have enabled muscle-actuated agents to reproduce increasingly complex human motions. Yet these capabilities remain largely confined to flat ground, in part because motion datasets rarely include aligned terrain geometry and because retargeting terrain interactions to complex musculoskeletal bodies is challenging. We present TERRA, an end-to-end pipeline for terrain-aware retargeting and control of musculoskeletal locomotion. From kinematic trajectories alone, TERRA combines terrain priors, estimated contacts, and negative free-space evidence to recover task-relevant support geometry. TERRA further considers anatomical, tendon-continuity, and contact constraints during retargeting. Using the resulting motion-terrain…</p>\n<p><a href=\"https://arxiv.org/abs/2609.38653\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.38653\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.38653\">讨论与热度</a> · <a href=\"https://github.com/amathislab/terra\">代码</a></p><hr>\n<h2>3. PanoVLN: Towards Effective Panoramic Vision-and-Language Navigation</h2>\n<p><strong>机器人</strong> · 发表 2026-09-28 · 综合分 5.24</p>\n<p>Zotero 摘要相关性：0.397（相似度分数，不是概率）。</p>\n<p>HF 点赞 152 · 讨论 1 · 本次 HF 热榜第 51 位 · 仓库累计 Star 26（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +20 · 讨论 +0。</p>\n<p><strong>规则标签：</strong>四足机器人 · 导航</p>\n<p><strong>中文概述：</strong>针对视觉语言导航任务中全景图像信息未被充分利用的问题，作者提出了PanoVLN。该方法通过改进动作预测机制（引入置信度引导执行策略）、优化包含分支路径的监督训练策略，以及整合全景图的语义与几何特征，实现了更长视野的动作规划和空间关系感知。实验结果表明，该方法在R2R-CE和RxR-CE数据集上取得了性能提升，并在四足机器人实机测试中表现出更快的导航速度。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出置信度引导执行（CGE）策略，通过预测更长的动作序列并动态决定重规划时机，利用全景图像的广角视野支持长程规划。<br><small>摘要依据：Specifically, we introduce a confidence-guided execution (CGE) strategy that dynamically determines how many predicted actions to execute before replanning.</small></li>\n<li>结合RGB全景图像的语义与几何特征，在不增加视觉标记的前提下增强了模型对场景内容及空间布局的理解。<br><small>摘要依据：We combine semantic and geometric features from RGB panoramas to capture both scene content and spatial layout without adding visual tokens.</small></li>\n<li>实机测试验证了PanoVLN在四足机器人上相比既有视觉语言导航方法具有更快的导航速度和更少的停顿。<br><small>摘要依据：Real-world experiments on a quadruped further demonstrate faster navigation with fewer pauses than prior VLN methods.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>四足机器人 · 导航 · Sim-to-Real</p>\n<p><strong>原文摘要节选：</strong>Recent vision-language models (VLMs) have advanced vision-and-language navigation (VLN), enabling models to predict navigation actions from visual observations and language instructions. In this work, we explore VLN with panoramic observations and introduce PanoVLN. The motivation is straightforward: more complete visual context should enable better-informed navigation decisions. For example, a panorama can reveal a passage outside a perspective camera&#x27;s field of view, allowing the model to identify the intended route without additional exploration. However, we find that simply replacing perspective images with panoramas yields only limited gains. Our diagnosis suggests that fully exploiting wider visibility requires modifications to action prediction, training supervision, and visual…</p>\n<p><a href=\"https://arxiv.org/abs/2609.34759\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.34759\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.34759\">讨论与热度</a> · <a href=\"https://github.com/wangzhen-w/PanoVLN\">代码</a></p><hr>\n<h2>4. The Teacher Is a Direction, Not a Destination: Extrapolating RL-Induced Representation Residuals in On-Policy Distillation</h2>\n<p><strong>强化学习</strong> · 发表 2026-09-29 · 综合分 5.14</p>\n<p>Zotero 摘要相关性：0.341（相似度分数，不是概率）。</p>\n<p>HF 点赞 276 · 讨论 2 · 仓库累计 Star 1（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +276 · 讨论 +2。</p>\n<p><strong>规则标签：</strong>强化学习</p>\n<p><strong>中文概述：</strong>针对策略内蒸馏（OPD）中输出空间外推不稳定的问题，作者提出了RIDE（RL诱导方向外推）方法。该方法在表征空间而非输出空间进行外推，通过计算强化学习教师模型与基础检查点之间的残差，将学生模型的目标向残差方向偏移。实验表明，RIDE能够稳定地引导学生模型超越教师模型，在多项任务中表现优于传统的输出空间外推方法。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>RIDE通过直接在每一层的表征空间中外推RL诱导的变更，解决了输出空间外推中存在的噪声放大与训练不稳定问题。<br><small>摘要依据：RIDE (RL-Induced Direction Extrapolation), which extrapolates the RL-induced change directly in representation space: at every layer and token position, RIDE computes the residual between the teacher and its pre-RL checkpoint and regresses the student&#x27;s hidden states toward targets displaced beyond the teacher along this residual.</small></li>\n<li>在多种规模、架构及预训练背景的实验对比中，RIDE在所有配置下均能达到或超过RL教师模型的表现，并始终优于传统的输出空间外推法。<br><small>摘要依据：Across four base/RL-teacher pairs spanning different scales, architectures, and pre-training lineages, RIDE approaches or exceeds the RL-trained teacher on every pair and is the only method whose mean does so, and it consistently outperforms output-space extrapolation</small></li>\n</ul>\n<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>\n<p><strong>原文摘要节选：</strong>On-policy distillation (OPD) trains a student to match the teacher&#x27;s next-token distributions on the student&#x27;s own trajectories and has yielded substantial empirical gains. Generalized variants allow the student to surpass the teacher by extrapolating an implicit reward in output space. The language-model head, however, attenuates this change anisotropically: much of the change encoded in the teacher&#x27;s hidden states reaches the logits at a small fraction of its weight, and the sampled-token log-probability ratios on which output-space extrapolation relies inject noise that the extrapolation amplifies, making training unstable. We observe that reinforcement learning (RL) shifts a model&#x27;s internal representations relative to its base checkpoint, and that the direction of this shift can be…</p>\n<p><a href=\"https://arxiv.org/abs/2609.36484\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.36484\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.36484\">讨论与热度</a> · <a href=\"https://github.com/xixixixixxxx/RIDE\">代码</a></p><hr>\n<h2>5. Raven: The Harness of Harnesses for Composable Agentic Intelligence</h2>\n<p><strong>通用 AI</strong> · 发表 2026-09-27 · 综合分 5.04</p>\n<p>Zotero 摘要相关性：0.322（相似度分数，不是概率）。</p>\n<p>HF 点赞 499 · 讨论 3 · 本次 HF 热榜第 1 位 · 仓库累计 Star 5033（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +47 · 讨论 +1 · Star +96。</p>\n<p><strong>规则标签：</strong>多智能体</p>\n<p><strong>中文概述：</strong>随着大型语言模型的发展，AI代理正向跨领域长程工作流演进。针对现有系统设计复杂且耦合度高的问题，作者提出了Raven，一个开源的多智能体生态系统。Raven旨在自动构建和演进用于特定领域的可组合智能模块，通过主机代理（Host Agent）协调任务分解与执行，并利用经验库实现技能沉淀。作者声称该方法在复杂长程任务中显著优于现有智能体系统，拓展了可靠的任务覆盖范围。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>Raven通过自动构建和演进针对特定模型和领域的模块化工具，将每个可执行的模型-工具对视为可组合的智能单元。<br><small>摘要依据：We introduce Raven, The Harness of Harnesses, an open-source multi-agent ecosystem that automatically constructs and evolves modular harnesses for specific models and domains, treating each executable model--harness pair as a composable unit of intelligence.</small></li>\n<li>Raven的主机代理能够有效进行任务分解、智能体匹配及执行协调，并利用EverOS和Skill Forge实现跨任务的经验保留与复用。<br><small>摘要依据：To support an All-Domain Collaboration Network, its Host Agent decomposes goals, matches subtasks to specialized agents, coordinates execution dependencies, and integrates results, while a host archive and EverOS preserve experience across tasks and Skill Forge makes that experience available as reusable procedures.</small></li>\n<li>在复杂长程任务中，Raven的性能优于现有的先进智能体系统。<br><small>摘要依据：On complex and long-horizon tasks, Raven significantly outperforms the state-of-the-art agent systems, pushing the frontier of composable agentic intelligence.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>大模型后训练</p>\n<p><strong>原文摘要节选：</strong>As large language models advance, AI agents are moving beyond isolated, domain-specific tasks toward long-horizon, cross-domain workflows. This transition exposes two challenges: increasing harness complexity makes manual design difficult to scale, while tighter coupling to specific domains limits the generality of a single harness. The central question thus shifts from how to engineer a stronger harness for one domain to how to autonomously construct specialized harnesses, improve them through experience, and orchestrate them across domains. We introduce Raven, The Harness of Harnesses, an open-source multi-agent ecosystem that automatically constructs and evolves modular harnesses for specific models and domains, treating each executable model--harness pair as a composable unit of…</p>\n<p><a href=\"https://arxiv.org/abs/2609.33439\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.33439\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.33439\">讨论与热度</a> · <a href=\"https://github.com/EverMind-AI/Raven\">代码</a></p><hr>\n<h2>6. VisionHOPE: Visual Backbones as Self-Modifying Learning Systems</h2>\n<p><strong>通用 AI</strong> · 发表 2026-09-27 · 综合分 5.01</p>\n<p>Zotero 摘要相关性：0.324（相似度分数，不是概率）。</p>\n<p>HF 点赞 319 · 讨论 2 · 本次 HF 热榜第 6 位 · 仓库累计 Star 391（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +103 · 讨论 +0 · Star +306。</p>\n<p><strong>中文概述：</strong>论文提出了VisionHOPE，这是一种作为自修改学习系统构建的通用视觉骨干网络。该方法基于嵌套学习（NL）的自引用结构，通过五个耦合的记忆模块实现视觉内容记忆与学习规则的协同进化，并引入了稳定性匹配的步长控制方案以解决自引用更新带来的不稳定性。实验结果表明，该模型在ImageNet-1K、COCO和ADE20K数据集上取得了具有竞争力的性能，验证了自修改学习系统在通用视觉骨干中的应用潜力。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>VisionHOPE实现了视觉内容记忆与学习规则在单张图像处理过程中的协同进化。<br><small>摘要依据：We introduce VisionHOPE, the first generic visual backbone formulated as a self-modifying learning system, in which what the model remembers and how it learns co-evolve within an image.</small></li>\n<li>提出了一种基于稳定性匹配的步长控制机制，通过限制自引用注入与频谱钳位确保记忆动力学在扫描过程中的非扩展性。<br><small>摘要依据：We therefore derive a stability-matched step-size control scheme that combines a soft cap on self-referential injection with a spectral clamp on the retained memory transition, and prove that the resulting memory dynamics are non-expansive along each scan.</small></li>\n</ul>\n<p><strong>原文摘要节选：</strong>Visual backbones have evolved from Convolutional Neural Networks (CNNs) with local aggregation to Vision Transformers (ViTs) with global interactions, State-Space Models (SSMs) with input-dependent state transitions, and Test-Time Training (TTT) layers that adapt an inner learner while processing an image. Across this progression, visual computation has become increasingly adaptive to each input, yet the rules governing that adaptation remain largely prescribed by the trained backbone. We introduce VisionHOPE, the first generic visual backbone formulated as a self-modifying learning system, in which what the model remembers and how it learns co-evolve within an image. Building on the self-referential construction of Nested Learning (NL), VisionHOPE realizes this co-evolution through five…</p>\n<p><a href=\"https://arxiv.org/abs/2609.33325\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.33325\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.33325\">讨论与热度</a> · <a href=\"https://github.com/PSRben/VisionHOPE\">代码</a></p><hr>\n<h2>7. What Makes World Action Models Generalize? An Empirical Study of Test-Time Future Modeling</h2>\n<p><strong>通用 AI</strong> · 发表 2026-09-29 · 综合分 4.99</p>\n<p>Zotero 摘要相关性：0.352（相似度分数，不是概率）。</p>\n<p>HF 点赞 111 · 讨论 2 · 本次 HF 热榜第 10 位 · 仓库累计 Star 62（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +8 · 讨论 +1 · Star +4。</p>\n<p><strong>中文概述：</strong>本文研究了世界动作模型（WAMs）在推理阶段是否需要生成未来帧的问题。研究发现，虽然隐式WAMs可加速推理，但缺乏显式WAMs的泛化优势。作者通过控制变量实验揭示，泛化能力源于对未来的准备而非完整生成过程，并据此提出了Simple-WAM方法。该方法通过将未来建模简化为单次全噪声视频Token的前向传递，实现了在保持高效的同时，在多项任务中达到优于显式WAMs的泛化性能。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>研究揭示了消除推理阶段的未来条件会导致模型在环境扰动、数据效率和任务泛化三个维度上的性能退化。<br><small>摘要依据：Controlled comparisons with a matched backbone, training data, and budget reveal consistent degradation across all three axes when the action expert no longer conditions on future representations.</small></li>\n<li>提出Simple-WAM方法，通过仅保留单次前向传递的未来建模并调整噪声调度，兼顾了推理效率与泛化性能。<br><small>摘要依据：We therefore propose Simple-WAM, which simplifies future modeling into a single forward pass of fully noised video tokens and adapts the training-time noise schedule to this inference behavior.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>世界模型</p>\n<p><strong>原文摘要节选：</strong>World action models (WAMs) predict the future alongside actions during training. Due to the heavy computation cost of video denoising, whether the future must still be generated during inference is disputed: Explicit WAMs denoise it into clean frames along with every action chunk, whereas Latent WAMs discard it entirely for acceleration. We find that latent WAMs, despite matching explicit ones on in-distribution tasks, fail to retain the generalization benefits that originally motivated WAMs. To demonstrate this, we evaluate generalization along three axes: environmental perturbation, data efficiency, and task generalization. Controlled comparisons with a matched backbone, training data, and budget reveal consistent degradation across all three axes when the action expert no longer…</p>\n<p><a href=\"https://arxiv.org/abs/2609.34981\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.34981\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.34981\">讨论与热度</a> · <a href=\"https://github.com/LeapLabTHU/Simple-WAM\">代码</a></p><hr>\n<h2>8. Systematically Exploring the Capabilities of GPT-6 Astra as Embodied Policies</h2>\n<p><strong>机器人</strong> · 发表 2026-09-29 · 综合分 4.90</p>\n<p>Zotero 摘要相关性：0.479（相似度分数，不是概率）。</p>\n<p>HF 点赞 28 · 讨论 1 · 仓库累计 Star 565（仓库可能包含多篇论文）</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>人形机器人 · 足式运动 · 机器人操作 · 导航</p>\n<p><strong>中文概述：</strong>本研究评估了GPT-6 Astra作为通用具身策略的能力。作者通过在抓取操作、灵巧操作、移动操作、导航、运动控制及人形机器人任务中进行评估，分析了该模型在直接控制、混合策略控制及反馈适应方面的表现。结果表明，GPT-6 Astra在决策规划上具有潜力，但在复杂物理控制的稳定性、实时性和精确动作生成方面仍存在局限性，其高推理延迟限制了实际应用效果。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>GPT-6 Astra在任务规划与辅助控制方面展现出一定能力，在导航和部分人形机器人任务中表现优于基线，但在直接进行密集的动作生成时可靠性不足。<br><small>摘要依据：In locomotion, dense motion-reference generation remains unreliable: none of five sequential attempts on a single obstacle course reaches the goal, despite improvements in stability and forward progress.</small></li>\n<li>高推理延迟是其实际应用的主要约束，长时间的物理交互需要大量的模型调用，导致物理模拟在推理过程中必须暂停。<br><small>摘要依据：A 30-second locomotion run requires 250 model calls averaging 39.86 seconds each, with physics paused during inference.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 导航 · 人形机器人 · 推理</p>\n<p><strong>原文摘要节选：</strong>GPT-6 Astra exhibits a remarkable ability to generate numerical robot actions, extending its role beyond high-level planning. To assess Astra&#x27;s capabilities as general-purpose embodied policies, we conduct comprehensive evaluations across six domains, examining direct control, cooperation with learned policies, and feedback-driven adaptation. In gripper manipulation, Astra can correct task targets and prepare contact conditions for subsequent policy execution; hybrid control with π0.5 achieves 48% success on the evaluated RoboDojo subset. In dexterous manipulation, hybrid control achieves 50% success in ten experience-guided DexJoCo trials, while direct in-hand control struggles to coordinate finger contacts. In mobile manipulation, hybrid control reaches 38.7% success on the evaluated…</p>\n<p><a href=\"https://arxiv.org/abs/2609.38537\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.38537\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.38537\">讨论与热度</a> · <a href=\"https://github.com/anonymous-report-421/GPT-as-Policy\">代码</a></p><hr>\n<h2>9. Context Language Models</h2>\n<p><strong>强化学习</strong> · 发表 2026-09-29 · 综合分 4.86</p>\n<p>Zotero 摘要相关性：0.335（相似度分数，不是概率）。</p>\n<p>HF 点赞 27 · 讨论 2 · 本次 HF 热榜第 4 位 · 仓库累计 Star 277（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +3 · 讨论 +1 · Star +233。</p>\n<p><strong>规则标签：</strong>强化学习 · 多智能体</p>\n<p><strong>中文概述：</strong>本文提出了一种名为Context Language Models（CLM）的新型语言模型架构。该方法将上下文视为一个可由模型自主更新的文件，而非依赖外部机制进行管理。作者声称，这种方式允许模型学习上下文的核心要素，并天然适配多智能体系统。实验表明，CLM在多项任务中相比现有SOTA策略提升了性能并降低了计算开销，同时支持通过自然语言指令和在线强化学习进一步优化管理策略。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>CLM通过自主管理上下文文件，在保持或提升性能的同时显著降低了计算开销。<br><small>摘要依据：11.4% higher accuracy with 21.5% fewer FLOPs on BrowseComp-Plus, 5% higher scores with 59% fewer FLOPs on 12-hour EdgeBench, and 65% greater improvement with the same compute on a 24-hour multi-repository agent-swarm task.</small></li>\n<li>作者提出了一种在线强化学习方法，通过微调模型以提升上下文管理表现。<br><small>摘要依据：We also introduce an online reinforcement learning method for CLMs, improving Qwen3.5-9B performance on BrowseComp-Plus by 47.6% while using 12% fewer FLOPs.</small></li>\n<li>通过协同设计后缀缓存复用技术，CLM在推理阶段进一步减少了服务器端计算需求。<br><small>摘要依据：Finally, we co-design Suffix Cache Reuse for CLM serving, further reducing server-side compute by 35% relative to standard SGLang at matched performance.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>大模型后训练 · 推理 · 多智能体 · 强化学习</p>\n<p><strong>原文摘要节选：</strong>We introduce Context Language Models (CLMs), language models that natively manage their own context. We implement this by treating the context as a file and allowing the model to make unrestricted updates to this file. This allows the model to learn what is most important to maintain in context, and naturally extends to multi-agent systems where multiple agent contexts coexist as files. Building CLMs zero-shot with existing models outperforms SOTA context management strategies across a variety of tasks: 11.4% higher accuracy with 21.5% fewer FLOPs on BrowseComp-Plus, 5% higher scores with 59% fewer FLOPs on 12-hour EdgeBench, and 65% greater improvement with the same compute on a 24-hour multi-repository agent-swarm task. Moreover, by shifting context management from external harness…</p>\n<p><a href=\"https://arxiv.org/abs/2609.37725\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.37725\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.37725\">讨论与热度</a> · <a href=\"https://github.com/facebookresearch/context-language-models\">代码</a></p><hr>\n<h2>10. Think Before You Score: Thinking Reward Model for Visual Generation</h2>\n<p><strong>强化学习</strong> · 发表 2026-09-29 · 综合分 4.84</p>\n<p>Zotero 摘要相关性：0.353（相似度分数，不是概率）。</p>\n<p>HF 点赞 88 · 讨论 2 · 本次 HF 热榜第 57 位 · 仓库累计 Star 31（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +4 · 讨论 +1 · Star +0。</p>\n<p><strong>规则标签：</strong>强化学习 · 大模型后训练</p>\n<p><strong>中文概述：</strong>针对现有视觉奖励模型直接映射标量得分导致评价标准隐性化的问题，本文提出“先思考后评分”范式。作者引入了思维奖励模型（TRM），通过构建案例自适应准则并进行细粒度评估。同时，为缓解传统配对偏好优化导致的得分极化现象，开发了配对双组相对策略优化算法（PD-GRPO）。实验表明，该模型在图像生成与编辑基准测试中表现出色，并能为强化学习提供有效的优化信号。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出思维奖励模型（TRM），通过生成案例自适应评价准则实现细粒度的点对点奖励评估。<br><small>摘要依据：We introduce Think Before You Score, a paradigm that explicitly determines what matters for each case before judging how well the candidate performs. Following this principle, we propose the Thinking Reward Model (TRM), which formulates case-adaptive rubrics, performs rubric-guided assessment, and produces fine-grained pointwise rewards.</small></li>\n<li>开发配对双组相对策略优化（PD-GRPO）算法，在提升奖励判别能力的同时防止得分极化。<br><small>摘要依据：We further observe that conventional pairwise preference optimization can induce score polarization, and introduce Pairwise Dual-Group Relative Policy Optimization (PD-GRPO), which leverages pairwise supervision to improve reward discrimination while preserving fine-grained pointwise scoring.</small></li>\n<li>TRM在视觉生成任务中可提供有效的强化学习优化信号，实现模型性能提升。<br><small>摘要依据：Moreover, using TRM as a reward for reinforcement learning consistently improves diverse visual generation models, demonstrating that its fine-grained, case-adaptive rewards translate into effective optimization signals for visual generation.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习</p>\n<p><strong>原文摘要节选：</strong>Visual reward models are essential for evaluating and improving visual generation models, yet existing approaches typically map task conditions and candidate outputs directly to scalar rewards, leaving implicit what should be evaluated for each individual case. We introduce Think Before You Score, a paradigm that explicitly determines what matters for each case before judging how well the candidate performs. Following this principle, we propose the Thinking Reward Model (TRM), which formulates case-adaptive rubrics, performs rubric-guided assessment, and produces fine-grained pointwise rewards. We further observe that conventional pairwise preference optimization can induce score polarization, and introduce Pairwise Dual-Group Relative Policy Optimization (PD-GRPO), which leverages…</p>\n<p><a href=\"https://arxiv.org/abs/2609.37372\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.37372\">PDF</a> · <a href=\"https://huggingface.co/papers/2609.37372\">讨论与热度</a> · <a href=\"https://github.com/bxhsort/Thinking_Reward_Model\">代码</a></p><hr>"
+}

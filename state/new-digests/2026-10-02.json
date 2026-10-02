@@ -1,0 +1,245 @@
+{
+  "date": "2026-10-02",
+  "timestamp": "2026-10-02T09:05:24.878014+08:00",
+  "title": "2026-10-02 每日新论文 5",
+  "slug": "2026-10-02-new",
+  "papers": [
+    {
+      "id": "2609.39179",
+      "title": "LocoWM: High-Precision Locomotion through World-Model-Guided Residual Adaptation",
+      "abstract": "High-precision locomotion combines motion-command tracking with precise regulation of task-relevant physical states, enabling robots to interact reliably with their surroundings during motion. Joint end-to-end optimization can leave precision objectives insufficiently optimized, while reactive residual control adjusts actions only after deviations become observable. We present \\textbf{LocoWM}, a world-model-guided preactive residual adaptation framework for high-precision locomotion. A base policy provides command-following locomotion, while an action-conditioned world model predicts a sequence of future physical states from proprioceptive history and the proposed base action. A residual adapter conditions on this predicted sequence to generate additive action corrections that compensate for anticipated deviations. Two-stage training first learns locomotion and action-conditioned dynamics, then freezes both modules while training the adapter, separating locomotion acquisition from precision adaptation. Experiments spanning terrain leveling, acceleration compensation, and push recovery demonstrate improved control precision and disturbance robustness over end-to-end and reactive residual baselines. Demos and code are available at: https://zhaozijie2022.github.io/LocoWM",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-01",
+      "date_label": "公告",
+      "age_days": 0.878760162199074,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.55217,
+      "growth": null,
+      "score": 3.589,
+      "rule_tags": [
+        "足式运动",
+        "世界模型"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对高精度足式运动中端到端优化不足及反应式控制滞后的问题，本文提出了LocoWM框架。该方法引入行动条件世界模型，通过预测未来物理状态序列来指导残差适配器，从而主动生成动作修正以补偿预期偏差。研究采用两阶段训练策略，实现了基本运动能力学习与高精度补偿任务的解耦，实验表明该方法在地形平整、加速度补偿及抗干扰能力方面优于对比基线。",
+        "highlights": [
+          {
+            "text": "LocoWM通过行动条件世界模型预测未来状态，实现了高精度运动的预主动式残差适配。",
+            "evidence": "A base policy provides command-following locomotion, while an action-conditioned world model predicts a sequence of future physical states from proprioceptive history and the proposed base action. A residual adapter conditions on this predicted sequence to generate additive action corrections that compensate for anticipated deviations."
+          },
+          {
+            "text": "通过两阶段训练策略，将基本运动能力的获取与精密任务的适配过程分离开来。",
+            "evidence": "Two-stage training first learns locomotion and action-conditioned dynamics, then freezes both modules while training the adapter, separating locomotion acquisition from precision adaptation."
+          },
+          {
+            "text": "在地形平整、加速度补偿及抗干扰等测试中，表现出比端到端和反应式残差基线更高的控制精度。",
+            "evidence": "Experiments spanning terrain leveling, acceleration compensation, and push recovery demonstrate improved control precision and disturbance robustness over end-to-end and reactive residual baselines."
+          }
+        ],
+        "tags": [
+          "足式运动"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.38928",
+      "title": "Local-Minimum Escaper: Programmatic Subgoal Generation for Robust Navigation in Unknown Environments",
+      "abstract": "Mapless navigation in unknown and partially observable environments remains challenging for mobile robots, particularly when local minima prevent the robot from making progress toward its goal. Existing local navigation methods often lack an explicit mechanism for escaping such situations, while deep reinforcement learning (DRL) approaches typically learn recovery behaviors implicitly through reward design and policy optimization. In this work, we propose \\textbf{LME} (Local-Minimum Escaper), a programmatic hierarchical framework that explicitly generates and reasons subgoals to guide robots out of local-minimum regions. LME operates solely on local observations and selects candidate subgoals using interpretable heuristic criteria that account for both surrounding obstacle geometry and candidate-location safety. A local planner then generates low-level motion commands toward the selected subgoal. This design enables LME to handle environments both with and without local minima within a unified framework, while remaining independent of the underlying local planner and requiring no additional training. Extensive experiments in simulated and real-world environments demonstrate that LME provides robust navigation performance and generalizes to challenging unseen scenarios. Furthermore, the generated subgoals can be used to guide different local planners, substantially improving their ability to escape local minima. Successful deployments on both differential-drive and quadruped robots further demonstrate the practical applicability and generality of the proposed framework.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-10-01",
+      "date_label": "公告",
+      "age_days": 0.878760162199074,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.5219,
+      "growth": null,
+      "score": 3.392,
+      "rule_tags": [
+        "强化学习",
+        "四足机器人",
+        "导航"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文针对移动机器人在未知环境中因陷入局部最优而难以到达目标的问题，提出了一种名为LME（Local-Minimum Escaper）的程序化分层框架。该方法通过基于局部观测的启发式准则显式生成子目标，引导机器人脱离障碍物包围区域。实验表明，LME无需额外训练即可与多种底层运动规划器集成，在仿真及四足和差速机器人实地测试中展现了稳健的导航性能和泛化能力。",
+        "highlights": [
+          {
+            "text": "LME框架通过启发式准则显式生成子目标以摆脱局部最优，无需额外的学习过程即可实现，且与底层运动规划器解耦。",
+            "evidence": "LME operates solely on local observations and selects candidate subgoals using interpretable heuristic criteria that account for both surrounding obstacle geometry and candidate-location safety. A local planner then generates low-level motion commands toward the selected subgoal."
+          },
+          {
+            "text": "该方法表现出良好的泛化性，不仅能在不同环境下保持鲁棒导航，还能有效增强现有局部规划器的脱困能力。",
+            "evidence": "Furthermore, the generated subgoals can be used to guide different local planners, substantially improving their ability to escape local minima."
+          }
+        ],
+        "tags": [
+          "四足机器人",
+          "导航"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.39755",
+      "title": "Experience-Driven Continual Learning of Terrain Traversability for Quadruped Robots",
+      "abstract": "Safe and efficient quadruped navigation over unfamiliar terrain requires predicting terrain-robot interaction before contact: geometry and visual appearance alone cannot reveal how the robot will slip, load its feet, or expend energy. This paper presents a continual learning pipeline that uses locomotion experience to learn these interaction outcomes from pre-contact images and continually updates the predictions as new contacts are observed. Pre-contact descriptors, produced by a DINOv3 backbone model frozen during training, are mapped to five proprioceptive indicators weighted according to measurement reliability: planar foot slip, mean normal ground-reaction force, traction index, cost of transport, and touchdown loading rate. A compact evidential regressor allows us to predict these indicators together with aleatoric and epistemic uncertainty from the visual descriptors. Continual adaptation combines bounded experience replay with a validation gate: candidate models replace the deployed predictor only when they improve performance on recent held-out data while keeping degradation on historical held-out data within a prescribed tolerance. Predictions and epistemic uncertainty are projected into a local multilayer map and combined into a conservative traversability score map whose property weights can be adjusted without retraining. The resulting map is used for downstream navigation tests. The ROS2 implementation supports evaluation on a Unitree Go2 in simulation and on hardware, with models trained separately in each domain. On a sequential hardware stream over three previously unseen terrains, gated replay reduces final anchor negative log-likelihood (NLL) degradation by 23.1% relative to replay without the gate while attaining similar new-terrain adaptation.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-01",
+      "date_label": "公告",
+      "age_days": 0.878760162199074,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.50941,
+      "growth": null,
+      "score": 3.311,
+      "rule_tags": [
+        "四足机器人",
+        "足式运动",
+        "导航"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对四足机器人通过复杂地形时仅凭几何和视觉信息难以准确预测交互动力学的问题，本文提出了一种基于经验的持续学习管线。该方法利用固定参数的DINOv3视觉特征，预测足底滑移、地面反作用力等五个本体感知指标及其相关不确定性。通过带有验证门控的受限经验回放策略，模型在学习新地形的同时有效缓解了对历史数据的性能退化。实验验证了该方法在提升机器人导航安全性方面的效果。",
+        "highlights": [
+          {
+            "text": "提出一种结合本体感知指标预测与不确定性估计的持续学习架构，能根据实时交互经验动态更新地形交互预测。",
+            "evidence": "A compact evidential regressor allows us to predict these indicators together with aleatoric and epistemic uncertainty from the visual descriptors."
+          },
+          {
+            "text": "引入了基于验证门控的持续学习策略，在保持对新地形自适应能力的同时，显著降低了模型在历史数据上的性能退化。",
+            "evidence": "Continual adaptation combines bounded experience replay with a validation gate: candidate models replace the deployed predictor only when they improve performance on recent held-out data while keeping degradation on historical held-out data within a prescribed tolerance."
+          }
+        ],
+        "tags": [
+          "四足机器人",
+          "导航"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.38966",
+      "title": "Video2SwimFish: An Automated Pipeline for Reconstructing Controllable Fish Models and Biological Locomotion from Real Fish Videos",
+      "abstract": "We present Video2SwimFish, an automated pipeline and benchmark for building controllable fish assets from real-fish videos for underwater embodied AI. Given synchronized multi-view videos of an individual fish, the pipeline reconstructs a metrically scaled deformable mesh from a VLM-selected canonical frame, generates internal articulation adapted to that individual's morphology through a VLM actor-critic loop, and extracts a Biological Locomotion Manifold (BLM) from the fish's observed midline curvature. The BLM provides a low-dimensional action space bounded by real-fish motion, enabling an individual swimming policy to be learned for each reconstructed fish. We release two paired datasets: synchronized top- and front-view recordings of 120 individual fish across 6 species, and the controllable assets and individual swimming policies derived from them. Because every asset is tied to the animal it came from, the dataset supports a benchmark that evaluates locomotion learning not only on task success but on fidelity to that individual in trajectory shape, body curvature, and tail-beat frequency, across trajectory following, reward-free swimming behavior transfer from video, and a downstream case study in which a simulated BlueROV underwater robot captures one of the assets. We find that task success and locomotion fidelity do not necessarily improve together: the method achieving the highest task completion is not the method achieving the highest locomotion fidelity, and we identify faithful reproduction of individual animal locomotion as an open challenge for the community. Project website: https://hangongchen.github.io/video2swimfish-web/.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-10-01",
+      "date_label": "公告",
+      "age_days": 0.878760162199074,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.50626,
+      "growth": null,
+      "score": 3.291,
+      "rule_tags": [
+        "足式运动"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "Video2SwimFish 是一套用于从真实鱼类多视角视频中构建可控鱼类资产的自动化流程及基准。该方法通过视觉语言模型（VLM）辅助构建可变形网格与内部关节，并提取生物运动流形（BLM）以定义受生物学约束的低维动作空间。作者利用该流程构建了包含120条鱼的实验数据集，并评估了模拟鱼类在任务成功率与运动保真度之间的权衡，结果显示任务完成度与运动模仿的逼真度并不总是同步提升。",
+        "highlights": [
+          {
+            "text": "提出了一种基于VLM的自动化管线，能够从多视角视频中重建具有生物力学约束的鱼类资产与低维动作空间。",
+            "evidence": "Given synchronized multi-view videos of an individual fish, the pipeline reconstructs a metrically scaled deformable mesh from a VLM-selected canonical frame, generates internal articulation adapted to that individual's morphology through a VLM actor-critic loop, and extracts a Biological Locomotion Manifold (BLM) from the fish's observed midline curvature."
+          },
+          {
+            "text": "构建了包含6个物种、120条鱼的双视角视频数据集，并证明了任务成功率与生物运动保真度之间存在矛盾。",
+            "evidence": "We find that task success and locomotion fidelity do not necessarily improve together: the method achieving the highest task completion is not the method achieving the highest locomotion fidelity, and we identify faithful reproduction of individual animal locomotion as an open challenge for the community."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "Sim-to-Real"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2609.38733",
+      "title": "Code to Control: Synthesizing Parameterized Reactive Controllers",
+      "abstract": "Recent LLM-based approaches to control either invoke a language model to select actions or synthesize world models that require planning at every decision, introducing latency that can limit real-time use. We introduce Code to Control, an approach that synthesizes Python controllers which execute directly as policies. Code to Control separates program structure from parameters. An LLM synthesizes the controller structure, while derivative-free search fits its parameters for continuous control using feedback from the environment. Once learned, the resulting controllers require neither LLM inference nor planning at decision time, enabling real-time gameplay and, under our timing protocol, faster action selection than a PPO policy. Across a suite of Atari games, Flappy Bird, and MuJoCo tasks, Code to Control outperforms planning-based program synthesis methods, remains competitive with deep reinforcement learning while using fewer environment interactions, transfers across substantial changes in environment dynamics, and scales to complex locomotion tasks.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-10-01",
+      "date_label": "公告",
+      "age_days": 0.878760162199074,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.49942,
+      "growth": null,
+      "score": 3.246,
+      "rule_tags": [
+        "强化学习",
+        "PPO",
+        "足式运动",
+        "世界模型"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对现有基于LLM的控制方法在推理延迟与规划开销方面的局限性，本文提出“Code to Control”方法。该方法将控制器结构与参数分离，利用LLM合成Python程序结构，并结合无导数搜索优化参数以适应连续控制。实验表明，该方法在不需要实时推理或规划的情况下，实现了实时控制性能，在多项Atari、Flappy Bird及MuJoCo任务中表现出优于规划类程序合成方法的效果，并展现出良好的环境泛化性。",
+        "highlights": [
+          {
+            "text": "Code to Control通过分离程序结构与参数，实现了无需LLM推理或规划的实时控制。",
+            "evidence": "Once learned, the resulting controllers require neither LLM inference nor planning at decision time, enabling real-time gameplay and, under our timing protocol, faster action selection than a PPO policy."
+          },
+          {
+            "text": "该方法在多项基准测试中优于现有的规划类程序合成方法，并能有效处理复杂的运动控制任务。",
+            "evidence": "Across a suite of Atari games, Flappy Bird, and MuJoCo tasks, Code to Control outperforms planning-based program synthesis methods, remains competitive with deep reinforcement learning while using fewer environment interactions, transfers across substantial changes in environment dynamics, and scales to complex locomotion tasks."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    }
+  ],
+  "candidate_count": 1004,
+  "personalization_note": "已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。",
+  "html": "<h1>2026-10-02 每日新论文 5</h1>\n<p>机器人 · 强化学习 · 通用 AI</p>\n<p>生成时间：2026-10-02 09:05 CST。从 1004 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>\n<p>本栏优先收录最近发布且未出现在近期日报的 arXiv 论文，不按热度排序；相关性分用于结合你的 Zotero 收藏偏好。</p>\n<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>\n<p>本次合格候选不足 10 篇，实际收录 5 篇。</p>\n<h2>1. LocoWM: High-Precision Locomotion through World-Model-Guided Residual Adaptation</h2>\n<p><strong>机器人</strong> · 公告 2026-10-01 · 综合分 3.59</p>\n<p>Zotero 摘要相关性：0.552（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>足式运动 · 世界模型</p>\n<p><strong>中文概述：</strong>针对高精度足式运动中端到端优化不足及反应式控制滞后的问题，本文提出了LocoWM框架。该方法引入行动条件世界模型，通过预测未来物理状态序列来指导残差适配器，从而主动生成动作修正以补偿预期偏差。研究采用两阶段训练策略，实现了基本运动能力学习与高精度补偿任务的解耦，实验表明该方法在地形平整、加速度补偿及抗干扰能力方面优于对比基线。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>LocoWM通过行动条件世界模型预测未来状态，实现了高精度运动的预主动式残差适配。<br><small>摘要依据：A base policy provides command-following locomotion, while an action-conditioned world model predicts a sequence of future physical states from proprioceptive history and the proposed base action. A residual adapter conditions on this predicted sequence to generate additive action corrections that compensate for anticipated deviations.</small></li>\n<li>通过两阶段训练策略，将基本运动能力的获取与精密任务的适配过程分离开来。<br><small>摘要依据：Two-stage training first learns locomotion and action-conditioned dynamics, then freezes both modules while training the adapter, separating locomotion acquisition from precision adaptation.</small></li>\n<li>在地形平整、加速度补偿及抗干扰等测试中，表现出比端到端和反应式残差基线更高的控制精度。<br><small>摘要依据：Experiments spanning terrain leveling, acceleration compensation, and push recovery demonstrate improved control precision and disturbance robustness over end-to-end and reactive residual baselines.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>足式运动</p>\n<p><strong>原文摘要节选：</strong>High-precision locomotion combines motion-command tracking with precise regulation of task-relevant physical states, enabling robots to interact reliably with their surroundings during motion. Joint end-to-end optimization can leave precision objectives insufficiently optimized, while reactive residual control adjusts actions only after deviations become observable. We present \\textbf{LocoWM}, a world-model-guided preactive residual adaptation framework for high-precision locomotion. A base policy provides command-following locomotion, while an action-conditioned world model predicts a sequence of future physical states from proprioceptive history and the proposed base action. A residual adapter conditions on this predicted sequence to generate additive action corrections that compensate…</p>\n<p><a href=\"https://arxiv.org/abs/2609.39179\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.39179\">PDF</a></p><hr>\n<h2>2. Local-Minimum Escaper: Programmatic Subgoal Generation for Robust Navigation in Unknown Environments</h2>\n<p><strong>机器人 / 强化学习</strong> · 公告 2026-10-01 · 综合分 3.39</p>\n<p>Zotero 摘要相关性：0.522（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习 · 四足机器人 · 导航</p>\n<p><strong>中文概述：</strong>本文针对移动机器人在未知环境中因陷入局部最优而难以到达目标的问题，提出了一种名为LME（Local-Minimum Escaper）的程序化分层框架。该方法通过基于局部观测的启发式准则显式生成子目标，引导机器人脱离障碍物包围区域。实验表明，LME无需额外训练即可与多种底层运动规划器集成，在仿真及四足和差速机器人实地测试中展现了稳健的导航性能和泛化能力。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>LME框架通过启发式准则显式生成子目标以摆脱局部最优，无需额外的学习过程即可实现，且与底层运动规划器解耦。<br><small>摘要依据：LME operates solely on local observations and selects candidate subgoals using interpretable heuristic criteria that account for both surrounding obstacle geometry and candidate-location safety. A local planner then generates low-level motion commands toward the selected subgoal.</small></li>\n<li>该方法表现出良好的泛化性，不仅能在不同环境下保持鲁棒导航，还能有效增强现有局部规划器的脱困能力。<br><small>摘要依据：Furthermore, the generated subgoals can be used to guide different local planners, substantially improving their ability to escape local minima.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>四足机器人 · 导航</p>\n<p><strong>原文摘要节选：</strong>Mapless navigation in unknown and partially observable environments remains challenging for mobile robots, particularly when local minima prevent the robot from making progress toward its goal. Existing local navigation methods often lack an explicit mechanism for escaping such situations, while deep reinforcement learning (DRL) approaches typically learn recovery behaviors implicitly through reward design and policy optimization. In this work, we propose \\textbf{LME} (Local-Minimum Escaper), a programmatic hierarchical framework that explicitly generates and reasons subgoals to guide robots out of local-minimum regions. LME operates solely on local observations and selects candidate subgoals using interpretable heuristic criteria that account for both surrounding obstacle geometry and…</p>\n<p><a href=\"https://arxiv.org/abs/2609.38928\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.38928\">PDF</a></p><hr>\n<h2>3. Experience-Driven Continual Learning of Terrain Traversability for Quadruped Robots</h2>\n<p><strong>机器人</strong> · 公告 2026-10-01 · 综合分 3.31</p>\n<p>Zotero 摘要相关性：0.509（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>四足机器人 · 足式运动 · 导航</p>\n<p><strong>中文概述：</strong>针对四足机器人通过复杂地形时仅凭几何和视觉信息难以准确预测交互动力学的问题，本文提出了一种基于经验的持续学习管线。该方法利用固定参数的DINOv3视觉特征，预测足底滑移、地面反作用力等五个本体感知指标及其相关不确定性。通过带有验证门控的受限经验回放策略，模型在学习新地形的同时有效缓解了对历史数据的性能退化。实验验证了该方法在提升机器人导航安全性方面的效果。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出一种结合本体感知指标预测与不确定性估计的持续学习架构，能根据实时交互经验动态更新地形交互预测。<br><small>摘要依据：A compact evidential regressor allows us to predict these indicators together with aleatoric and epistemic uncertainty from the visual descriptors.</small></li>\n<li>引入了基于验证门控的持续学习策略，在保持对新地形自适应能力的同时，显著降低了模型在历史数据上的性能退化。<br><small>摘要依据：Continual adaptation combines bounded experience replay with a validation gate: candidate models replace the deployed predictor only when they improve performance on recent held-out data while keeping degradation on historical held-out data within a prescribed tolerance.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>四足机器人 · 导航</p>\n<p><strong>原文摘要节选：</strong>Safe and efficient quadruped navigation over unfamiliar terrain requires predicting terrain-robot interaction before contact: geometry and visual appearance alone cannot reveal how the robot will slip, load its feet, or expend energy. This paper presents a continual learning pipeline that uses locomotion experience to learn these interaction outcomes from pre-contact images and continually updates the predictions as new contacts are observed. Pre-contact descriptors, produced by a DINOv3 backbone model frozen during training, are mapped to five proprioceptive indicators weighted according to measurement reliability: planar foot slip, mean normal ground-reaction force, traction index, cost of transport, and touchdown loading rate. A compact evidential regressor allows us to predict these…</p>\n<p><a href=\"https://arxiv.org/abs/2609.39755\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.39755\">PDF</a></p><hr>\n<h2>4. Video2SwimFish: An Automated Pipeline for Reconstructing Controllable Fish Models and Biological Locomotion from Real Fish Videos</h2>\n<p><strong>机器人 / 强化学习</strong> · 公告 2026-10-01 · 综合分 3.29</p>\n<p>Zotero 摘要相关性：0.506（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>足式运动</p>\n<p><strong>中文概述：</strong>Video2SwimFish 是一套用于从真实鱼类多视角视频中构建可控鱼类资产的自动化流程及基准。该方法通过视觉语言模型（VLM）辅助构建可变形网格与内部关节，并提取生物运动流形（BLM）以定义受生物学约束的低维动作空间。作者利用该流程构建了包含120条鱼的实验数据集，并评估了模拟鱼类在任务成功率与运动保真度之间的权衡，结果显示任务完成度与运动模仿的逼真度并不总是同步提升。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出了一种基于VLM的自动化管线，能够从多视角视频中重建具有生物力学约束的鱼类资产与低维动作空间。<br><small>摘要依据：Given synchronized multi-view videos of an individual fish, the pipeline reconstructs a metrically scaled deformable mesh from a VLM-selected canonical frame, generates internal articulation adapted to that individual&#x27;s morphology through a VLM actor-critic loop, and extracts a Biological Locomotion Manifold (BLM) from the fish&#x27;s observed midline curvature.</small></li>\n<li>构建了包含6个物种、120条鱼的双视角视频数据集，并证明了任务成功率与生物运动保真度之间存在矛盾。<br><small>摘要依据：We find that task success and locomotion fidelity do not necessarily improve together: the method achieving the highest task completion is not the method achieving the highest locomotion fidelity, and we identify faithful reproduction of individual animal locomotion as an open challenge for the community.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · Sim-to-Real</p>\n<p><strong>原文摘要节选：</strong>We present Video2SwimFish, an automated pipeline and benchmark for building controllable fish assets from real-fish videos for underwater embodied AI. Given synchronized multi-view videos of an individual fish, the pipeline reconstructs a metrically scaled deformable mesh from a VLM-selected canonical frame, generates internal articulation adapted to that individual&#x27;s morphology through a VLM actor-critic loop, and extracts a Biological Locomotion Manifold (BLM) from the fish&#x27;s observed midline curvature. The BLM provides a low-dimensional action space bounded by real-fish motion, enabling an individual swimming policy to be learned for each reconstructed fish. We release two paired datasets: synchronized top- and front-view recordings of 120 individual fish across 6 species, and the…</p>\n<p><a href=\"https://arxiv.org/abs/2609.38966\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.38966\">PDF</a></p><hr>\n<h2>5. Code to Control: Synthesizing Parameterized Reactive Controllers</h2>\n<p><strong>机器人 / 强化学习</strong> · 公告 2026-10-01 · 综合分 3.25</p>\n<p>Zotero 摘要相关性：0.499（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习 · PPO · 足式运动 · 世界模型</p>\n<p><strong>中文概述：</strong>针对现有基于LLM的控制方法在推理延迟与规划开销方面的局限性，本文提出“Code to Control”方法。该方法将控制器结构与参数分离，利用LLM合成Python程序结构，并结合无导数搜索优化参数以适应连续控制。实验表明，该方法在不需要实时推理或规划的情况下，实现了实时控制性能，在多项Atari、Flappy Bird及MuJoCo任务中表现出优于规划类程序合成方法的效果，并展现出良好的环境泛化性。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>Code to Control通过分离程序结构与参数，实现了无需LLM推理或规划的实时控制。<br><small>摘要依据：Once learned, the resulting controllers require neither LLM inference nor planning at decision time, enabling real-time gameplay and, under our timing protocol, faster action selection than a PPO policy.</small></li>\n<li>该方法在多项基准测试中优于现有的规划类程序合成方法，并能有效处理复杂的运动控制任务。<br><small>摘要依据：Across a suite of Atari games, Flappy Bird, and MuJoCo tasks, Code to Control outperforms planning-based program synthesis methods, remains competitive with deep reinforcement learning while using fewer environment interactions, transfers across substantial changes in environment dynamics, and scales to complex locomotion tasks.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · 推理</p>\n<p><strong>原文摘要节选：</strong>Recent LLM-based approaches to control either invoke a language model to select actions or synthesize world models that require planning at every decision, introducing latency that can limit real-time use. We introduce Code to Control, an approach that synthesizes Python controllers which execute directly as policies. Code to Control separates program structure from parameters. An LLM synthesizes the controller structure, while derivative-free search fits its parameters for continuous control using feedback from the environment. Once learned, the resulting controllers require neither LLM inference nor planning at decision time, enabling real-time gameplay and, under our timing protocol, faster action selection than a PPO policy. Across a suite of Atari games, Flappy Bird, and MuJoCo…</p>\n<p><a href=\"https://arxiv.org/abs/2609.38733\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2609.38733\">PDF</a></p><hr>"
+}

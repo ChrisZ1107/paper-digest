@@ -1,0 +1,14 @@
+{
+  "overview": "论文提出了VisionHOPE，这是一种作为自修改学习系统构建的通用视觉骨干网络。该方法基于嵌套学习（NL）的自引用结构，通过五个耦合的记忆模块实现视觉内容记忆与学习规则的协同进化，并引入了稳定性匹配的步长控制方案以解决自引用更新带来的不稳定性。实验结果表明，该模型在ImageNet-1K、COCO和ADE20K数据集上取得了具有竞争力的性能，验证了自修改学习系统在通用视觉骨干中的应用潜力。",
+  "highlights": [
+    {
+      "text": "VisionHOPE实现了视觉内容记忆与学习规则在单张图像处理过程中的协同进化。",
+      "evidence": "We introduce VisionHOPE, the first generic visual backbone formulated as a self-modifying learning system, in which what the model remembers and how it learns co-evolve within an image."
+    },
+    {
+      "text": "提出了一种基于稳定性匹配的步长控制机制，通过限制自引用注入与频谱钳位确保记忆动力学在扫描过程中的非扩展性。",
+      "evidence": "We therefore derive a stability-matched step-size control scheme that combines a soft cap on self-referential injection with a spectral clamp on the retained memory transition, and prove that the resulting memory dynamics are non-expansive along each scan."
+    }
+  ],
+  "tags": []
+}

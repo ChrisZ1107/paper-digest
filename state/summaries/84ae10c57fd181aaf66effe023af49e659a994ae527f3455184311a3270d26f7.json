@@ -1,0 +1,20 @@
+{
+  "overview": "针对现有视觉奖励模型直接映射标量得分导致评价标准隐性化的问题，本文提出“先思考后评分”范式。作者引入了思维奖励模型（TRM），通过构建案例自适应准则并进行细粒度评估。同时，为缓解传统配对偏好优化导致的得分极化现象，开发了配对双组相对策略优化算法（PD-GRPO）。实验表明，该模型在图像生成与编辑基准测试中表现出色，并能为强化学习提供有效的优化信号。",
+  "highlights": [
+    {
+      "text": "提出思维奖励模型（TRM），通过生成案例自适应评价准则实现细粒度的点对点奖励评估。",
+      "evidence": "We introduce Think Before You Score, a paradigm that explicitly determines what matters for each case before judging how well the candidate performs. Following this principle, we propose the Thinking Reward Model (TRM), which formulates case-adaptive rubrics, performs rubric-guided assessment, and produces fine-grained pointwise rewards."
+    },
+    {
+      "text": "开发配对双组相对策略优化（PD-GRPO）算法，在提升奖励判别能力的同时防止得分极化。",
+      "evidence": "We further observe that conventional pairwise preference optimization can induce score polarization, and introduce Pairwise Dual-Group Relative Policy Optimization (PD-GRPO), which leverages pairwise supervision to improve reward discrimination while preserving fine-grained pointwise scoring."
+    },
+    {
+      "text": "TRM在视觉生成任务中可提供有效的强化学习优化信号，实现模型性能提升。",
+      "evidence": "Moreover, using TRM as a reward for reinforcement learning consistently improves diverse visual generation models, demonstrating that its fine-grained, case-adaptive rewards translate into effective optimization signals for visual generation."
+    }
+  ],
+  "tags": [
+    "强化学习"
+  ]
+}

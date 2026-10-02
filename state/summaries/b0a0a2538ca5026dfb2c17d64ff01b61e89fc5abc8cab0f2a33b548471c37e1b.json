@@ -1,0 +1,17 @@
+{
+  "overview": "针对策略内蒸馏（OPD）中输出空间外推不稳定的问题，作者提出了RIDE（RL诱导方向外推）方法。该方法在表征空间而非输出空间进行外推，通过计算强化学习教师模型与基础检查点之间的残差，将学生模型的目标向残差方向偏移。实验表明，RIDE能够稳定地引导学生模型超越教师模型，在多项任务中表现优于传统的输出空间外推方法。",
+  "highlights": [
+    {
+      "text": "RIDE通过直接在每一层的表征空间中外推RL诱导的变更，解决了输出空间外推中存在的噪声放大与训练不稳定问题。",
+      "evidence": "RIDE (RL-Induced Direction Extrapolation), which extrapolates the RL-induced change directly in representation space: at every layer and token position, RIDE computes the residual between the teacher and its pre-RL checkpoint and regresses the student's hidden states toward targets displaced beyond the teacher along this residual."
+    },
+    {
+      "text": "在多种规模、架构及预训练背景的实验对比中，RIDE在所有配置下均能达到或超过RL教师模型的表现，并始终优于传统的输出空间外推法。",
+      "evidence": "Across four base/RL-teacher pairs spanning different scales, architectures, and pre-training lineages, RIDE approaches or exceeds the RL-trained teacher on every pair and is the only method whose mean does so, and it consistently outperforms output-space extrapolation"
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "推理"
+  ]
+}

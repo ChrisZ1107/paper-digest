@@ -1,0 +1,20 @@
+{
+  "overview": "针对高精度足式运动中端到端优化不足及反应式控制滞后的问题，本文提出了LocoWM框架。该方法引入行动条件世界模型，通过预测未来物理状态序列来指导残差适配器，从而主动生成动作修正以补偿预期偏差。研究采用两阶段训练策略，实现了基本运动能力学习与高精度补偿任务的解耦，实验表明该方法在地形平整、加速度补偿及抗干扰能力方面优于对比基线。",
+  "highlights": [
+    {
+      "text": "LocoWM通过行动条件世界模型预测未来状态，实现了高精度运动的预主动式残差适配。",
+      "evidence": "A base policy provides command-following locomotion, while an action-conditioned world model predicts a sequence of future physical states from proprioceptive history and the proposed base action. A residual adapter conditions on this predicted sequence to generate additive action corrections that compensate for anticipated deviations."
+    },
+    {
+      "text": "通过两阶段训练策略，将基本运动能力的获取与精密任务的适配过程分离开来。",
+      "evidence": "Two-stage training first learns locomotion and action-conditioned dynamics, then freezes both modules while training the adapter, separating locomotion acquisition from precision adaptation."
+    },
+    {
+      "text": "在地形平整、加速度补偿及抗干扰等测试中，表现出比端到端和反应式残差基线更高的控制精度。",
+      "evidence": "Experiments spanning terrain leveling, acceleration compensation, and push recovery demonstrate improved control precision and disturbance robustness over end-to-end and reactive residual baselines."
+    }
+  ],
+  "tags": [
+    "足式运动"
+  ]
+}

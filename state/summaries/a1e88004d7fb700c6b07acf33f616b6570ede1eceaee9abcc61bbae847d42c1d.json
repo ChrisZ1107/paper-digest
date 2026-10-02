@@ -1,0 +1,17 @@
+{
+  "overview": "本文针对移动机器人在未知环境中因陷入局部最优而难以到达目标的问题，提出了一种名为LME（Local-Minimum Escaper）的程序化分层框架。该方法通过基于局部观测的启发式准则显式生成子目标，引导机器人脱离障碍物包围区域。实验表明，LME无需额外训练即可与多种底层运动规划器集成，在仿真及四足和差速机器人实地测试中展现了稳健的导航性能和泛化能力。",
+  "highlights": [
+    {
+      "text": "LME框架通过启发式准则显式生成子目标以摆脱局部最优，无需额外的学习过程即可实现，且与底层运动规划器解耦。",
+      "evidence": "LME operates solely on local observations and selects candidate subgoals using interpretable heuristic criteria that account for both surrounding obstacle geometry and candidate-location safety. A local planner then generates low-level motion commands toward the selected subgoal."
+    },
+    {
+      "text": "该方法表现出良好的泛化性，不仅能在不同环境下保持鲁棒导航，还能有效增强现有局部规划器的脱困能力。",
+      "evidence": "Furthermore, the generated subgoals can be used to guide different local planners, substantially improving their ability to escape local minima."
+    }
+  ],
+  "tags": [
+    "四足机器人",
+    "导航"
+  ]
+}
