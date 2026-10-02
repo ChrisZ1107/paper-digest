@@ -1106,7 +1106,9 @@
         {
           "id": "2609.27308",
           "title": "EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics (Sep 2026)",
-          "url": "https://arxiv.org/abs/2609.27308"
+          "url": "https://arxiv.org/abs/2609.27308",
+          "abstract": "We study coding agents for long-horizon, dexterous robotics and ask whether their solutions can provide scalable supervision for learning general robot policies. To test this, we develop EMBODIEDSWE-BENCH, a simulation benchmark for coding agents spanning contact-rich manipulation, deformable objects, and long-horizon tasks requiring up to half an hour of continuous interaction. We find that frontier coding agents can solve complex long-horizon tasks and transfer prior solutions across both tasks and embodiments. We also design supporting tools that help agents more effectively solve these tasks. However, the resulting solutions require substantial iterative interaction and are typically specialized to individual task instances. We therefore introduce EMBODIEDSWE-GEN, which expands a single solution from coding agent into large diverse trajectories for training a VLA. VLA performance improves with more generated demonstrations, and agent-aided diversification improves generalization to held-out task variations. We also show that a VLA finetuned solely on coding-agent-generated simulation demonstrations completes a long-horizon task on real robot. Together, our framework uses coding agents to solve complex robotics tasks and turn verified solutions into scalable supervision for robot policies.",
+          "abstract_zh": "我们研究了用于长跨度、灵巧机器人的编程智能体，并探讨了它们的解决方案能否为学习通用机器人策略提供可扩展的监督。为验证这一点，我们开发了 EMBODIEDSWE-BENCH，这是一个针对编程智能体的模拟基准测试，涵盖了接触丰富的操作、可变形物体以及需要长达半小时连续交互的长跨度任务。我们发现，前沿编程智能体能够解决复杂的长跨度任务，并在不同任务和形态之间迁移先前的解决方案。我们还设计了辅助工具，帮助智能体更有效地解决这些任务。然而，由此产生的解决方案需要大量的迭代交互，且通常专门针对单个任务实例。因此，我们引入了 EMBODIEDSWE-GEN，它将编程智能体的单一解决方案扩展为用于训练 VLA 的大规模多样化轨迹。随着生成演示数量的增加，VLA 的性能得到提升，且智能体辅助的多样化有助于提高对未见任务变体的泛化能力。我们还展示了一个仅在编程智能体生成的模拟演示上进行微调的 VLA，能够在真实机器人上完成长跨度任务。总之，我们的框架利用编程智能体来解决复杂的机器人任务，并将验证过的解决方案转化为机器人策略的可扩展监督。"
         }
       ]
     },
