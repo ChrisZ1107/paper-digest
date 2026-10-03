@@ -1,0 +1,17 @@
+{
+  "overview": "针对机器人操作中部分可观测性导致的策略执行受限问题，本文引入了HIDE基准测试，包含15项涉及历史状态回溯和执行进度跟踪的任务。作者提出SEEK框架，通过结合三种互补的记忆机制来保留历史证据并跟踪执行状态。实验表明，该方法在模拟和真实世界场景下均能有效提升任务成功率，验证了维护隐藏任务状态内部表征对于解决复杂操作任务的重要性。",
+  "highlights": [
+    {
+      "text": "作者开发了HIDE基准测试，通过包含重复计数、历史状态回溯和执行进度跟踪的任务，评估机器人操作中的记忆能力。",
+      "evidence": "HIDE comprises 15 tasks covering repetition counting, historical-state recall, and execution-progress tracking, with randomized initial configurations and decision points where similar observations require different actions depending on prior events."
+    },
+    {
+      "text": "提出的SEEK框架结合了三种记忆机制，在HIDE基准测试中实现了最高的平均成功率，并提升了模拟与真实世界任务的性能。",
+      "evidence": "Individual mechanisms benefit some tasks but can degrade others; their combination achieves the highest average success rate on HIDE among the evaluated configurations."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "Sim-to-Real"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "overview": "针对视觉语言模型（VLM）在机器人控制中存在的频繁调用与冗余观测导致的代币开销大问题，该论文提出了PyRUA-Lean交互式代码执行框架。该方法结合了反馈驱动的原语组合与选择性观测机制，将经典原语与视觉-语言-动作（VLA）策略集成在Python代码单元中。实验结果表明，在相同的调用预算下，该方法相较于基线方案提升了任务成功率，并显著降低了LLM调用次数与输入代币消耗。",
+  "highlights": [
+    {
+      "text": "PyRUA-Lean框架通过反馈驱动的原语组合和选择性观测，有效提升了机器人的执行效率与成功率。",
+      "evidence": "PyRUA-Lean, an interactive code-execution framework that couples feedback-driven primitive composition with selective observation: the agent composes classical robot primitives and learned vision-language-action (VLA) policies into Python cells that perform conditional checks and local retries, returning only explicitly requested images and state feedback for replanning."
+    },
+    {
+      "text": "在LIBERO-PRO等模拟基准测试中，该方法在保持相同调用预算的情况下，将任务成功率由63.1%提升至71.7%。",
+      "evidence": "Across 700 simulated task instances from LIBERO-PRO, RoboTwin 2.0, and RoboCasa365, we compare PyRUA-Lean with a tool-calling baseline using the same GPT-6 Astra planner and underlying robot primitives. Under equal LLM-call budgets, PyRUA-Lean increases overall success from 63.1% to 71.7%."
+    },
+    {
+      "text": "在成功解决的任务中，该方法实现了显著的资源优化，包括49%的LLM调用减少及65%的输入代币节省。",
+      "evidence": "On instances solved by both agents, it uses 49% fewer LLM calls and 65% fewer input tokens."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "视觉语言动作",
+    "推理"
+  ]
+}

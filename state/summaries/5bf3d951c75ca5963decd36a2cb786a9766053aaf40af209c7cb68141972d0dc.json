@@ -1,0 +1,21 @@
+{
+  "overview": "针对大模型强化学习后训练中“准确率提升但解空间覆盖范围下降”的现象，本研究探讨了代理任务中的权衡问题。作者提出“锐化税”（Sharpening Tax）这一诊断指标，量化后训练导致的测试时可扩展性损失。研究表明，虽后训练提升了单次准确率，但降低了多样本尝试下的覆盖率。为此，作者开发了后验回火组采样（PTGS）方法，通过动态调整采样温度，在提高单次准确率的同时减少了该项税收损失。",
+  "highlights": [
+    {
+      "text": "提出“锐化税”指标，用于定量衡量模型在后训练过程中因牺牲解空间覆盖范围而带来的测试时可扩展性损失。",
+      "evidence": "To measure this cost, we propose Sharpening Tax, a diagnostic metric that quantifies the loss in test-time scalability after post-training."
+    },
+    {
+      "text": "研究发现后训练会导致任务结果趋向两极化，即始终解决或从未解决，从而提升了采样效率，却损害了整体覆盖率。",
+      "evidence": "We further analyze the underlying mechanism and show that post-training pushes tasks toward two extremes, always solved or never solved, and thereby improves sampling efficiency and consistency at the cost of solution coverage."
+    },
+    {
+      "text": "提出一种名为PTGS的采样策略，通过根据提示难度自适应调节温度，有效降低了锐化税的影响。",
+      "evidence": "Applied during RL training in two agentic environments, PTGS pays a smaller tax than the fixed-temperature baseline, solving more tasks under repeated sampling while also improving single-shot accuracy."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "推理"
+  ]
+}
