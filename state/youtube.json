@@ -1267,6 +1267,162 @@
           "abstract_zh": "随着大语言模型的进步，AI智能体正从孤立的、特定领域的任务转向长周期、跨领域的工作流。这一转变带来了两个挑战：日益增加的测试框架（harness）复杂性使得手动设计难以扩展，而与特定领域过紧的耦合限制了单个框架的通用性。因此，核心问题已从“如何为一个领域设计更强大的框架”转变为“如何自主构建专业化框架，通过经验改进它们，并在跨领域任务中进行协同”。我们推出了Raven，即“框架之框架”（The Harness of Harnesses），这是一个开源的多智能体生态系统，能够为特定模型和领域自动构建并演进模块化框架，将每个可执行的“模型-框架”对视为一个可组合的智能单元。为了支持“全领域协作网络”，其宿主智能体（Host Agent）负责分解目标、将子任务匹配给专业智能体、协调执行依赖关系并整合结果；同时，宿主档案（Host Archive）和EverOS负责跨任务保存经验，而技能锻造（Skill Forge）则使这些经验能够以可复用的流程形式被调用。我们的理论确立了此类组合在共享资源预算下，将可靠的任务覆盖范围扩展至超越现有单个智能体能力的充分条件。在复杂和长周期的任务中，Raven的表现显著优于现有的最先进智能体系统，推动了可组合智能体智能的前沿发展。"
         }
       ]
+    },
+    "HTrP2lji9NM": {
+      "video_id": "HTrP2lji9NM",
+      "video_title": "Decoding Looped Transformers Better for (Almost) Free (Oct 2026)",
+      "published": "2026-10-04",
+      "video_url": "https://www.youtube.com/watch?v=HTrP2lji9NM",
+      "papers": [
+        {
+          "id": "2610.02185",
+          "title": "Decoding Looped Transformers Better for (Almost) Free (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.02185"
+        }
+      ]
+    },
+    "uqa6gu3RUoY": {
+      "video_id": "uqa6gu3RUoY",
+      "video_title": "You Only Edit Once: Incentivizing In-Context Capability of LLMs via Local Demonstration Refinement",
+      "published": "2026-10-04",
+      "video_url": "https://www.youtube.com/watch?v=uqa6gu3RUoY",
+      "papers": [
+        {
+          "id": "2609.33609",
+          "title": "You Only Edit Once: Incentivizing In-Context Capability of LLMs via Local Demonstration Refinement (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.33609"
+        }
+      ]
+    },
+    "pQrtWYgwt2k": {
+      "video_id": "pQrtWYgwt2k",
+      "video_title": "SketchSSM: Write to the Full State, Read from a Compact Sketch (Sep 2026)",
+      "published": "2026-10-04",
+      "video_url": "https://www.youtube.com/watch?v=pQrtWYgwt2k",
+      "papers": [
+        {
+          "id": "2609.33051",
+          "title": "SketchSSM: Write to the Full State, Read from a Compact Sketch (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.33051"
+        }
+      ]
+    },
+    "0T5CgPYJPw4": {
+      "video_id": "0T5CgPYJPw4",
+      "video_title": "FuseReg: Regularizing Layer Fusion Mitigates the Reconstruction-Generation Gap in Representation…",
+      "published": "2026-10-04",
+      "video_url": "https://www.youtube.com/watch?v=0T5CgPYJPw4",
+      "papers": [
+        {
+          "id": "2609.31620",
+          "title": "FuseReg: Regularizing Layer Fusion Mitigates the Reconstruction-Generation Gap in Representation Autoencoders (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.31620"
+        }
+      ]
+    },
+    "DhnaUOJF3YQ": {
+      "video_id": "DhnaUOJF3YQ",
+      "video_title": "Sharpening Tax in Post-Training (Oct 2026)",
+      "published": "2026-10-04",
+      "video_url": "https://www.youtube.com/watch?v=DhnaUOJF3YQ",
+      "papers": [
+        {
+          "id": "2610.01509",
+          "title": "Sharpening Tax in Post-Training (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.01509"
+        }
+      ]
+    },
+    "nSS7_fOg-wI": {
+      "video_id": "nSS7_fOg-wI",
+      "video_title": "Improving Test-Time Scaling with Adaptive Looped Transformers (Sep 2026)",
+      "published": "2026-10-04",
+      "video_url": "https://www.youtube.com/watch?v=nSS7_fOg-wI",
+      "papers": [
+        {
+          "id": "2609.35748",
+          "title": "Improving Test-Time Scaling with Adaptive Looped Transformers (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.35748"
+        }
+      ]
+    },
+    "bNurmFALzCA": {
+      "video_id": "bNurmFALzCA",
+      "video_title": "Write Back the $Δ$: Revisiting the Same Tokens with Fresh Representations (Sep 2026)",
+      "published": "2026-10-04",
+      "video_url": "https://www.youtube.com/watch?v=bNurmFALzCA",
+      "papers": [
+        {
+          "id": "2609.32457",
+          "title": "Write Back the $Δ$: Revisiting the Same Tokens with Fresh Representations (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.32457"
+        }
+      ]
+    },
+    "UqDniRY8O-Q": {
+      "video_id": "UqDniRY8O-Q",
+      "video_title": "T$^2$Mem: Learning Test-Time Memory for Robotics (Sep 2026)",
+      "published": "2026-10-04",
+      "video_url": "https://www.youtube.com/watch?v=UqDniRY8O-Q",
+      "papers": [
+        {
+          "id": "2609.36720",
+          "title": "T$^2$Mem: Learning Test-Time Memory for Robotics (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.36720"
+        }
+      ]
+    },
+    "2WkDHxB3PNc": {
+      "video_id": "2WkDHxB3PNc",
+      "video_title": "Hard Vision, Easy Vision: What GPT-6 Astra Reveals Across Computer Vision (Sep 2026)",
+      "published": "2026-10-04",
+      "video_url": "https://www.youtube.com/watch?v=2WkDHxB3PNc",
+      "papers": [
+        {
+          "id": "2609.35718",
+          "title": "Hard Vision, Easy Vision: What GPT-6 Astra Reveals Across Computer Vision (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.35718"
+        }
+      ]
+    },
+    "eCwRJOBULDs": {
+      "video_id": "eCwRJOBULDs",
+      "video_title": "Looped Diffusion Transformer (Sep 2026)",
+      "published": "2026-10-04",
+      "video_url": "https://www.youtube.com/watch?v=eCwRJOBULDs",
+      "papers": [
+        {
+          "id": "2609.40305",
+          "title": "Looped Diffusion Transformer (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.40305"
+        }
+      ]
+    },
+    "V_4wBjF2rCo": {
+      "video_id": "V_4wBjF2rCo",
+      "video_title": "ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research (Oct 2026)",
+      "published": "2026-10-04",
+      "video_url": "https://www.youtube.com/watch?v=V_4wBjF2rCo",
+      "papers": [
+        {
+          "id": "2610.02202",
+          "title": "ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.02202"
+        }
+      ]
+    },
+    "mWHnjiKX18E": {
+      "video_id": "mWHnjiKX18E",
+      "video_title": "Harness Learning Enables Generalizable Test-Time Adaptation (Sep 2026)",
+      "published": "2026-10-04",
+      "video_url": "https://www.youtube.com/watch?v=mWHnjiKX18E",
+      "papers": [
+        {
+          "id": "2609.35738",
+          "title": "Harness Learning Enables Generalizable Test-Time Adaptation (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.35738"
+        }
+      ]
     }
   }
 }
