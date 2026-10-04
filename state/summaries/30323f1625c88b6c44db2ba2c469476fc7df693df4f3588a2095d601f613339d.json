@@ -1,0 +1,21 @@
+{
+  "overview": "针对视频生成模型在具身智能领域模拟多步物理推理的局限性，本文提出了Ego2Act基准。该基准包含110项日常任务的2640个第一人称视频，用于评估模型在给定初始图像和目标前提下生成逼真操作视频的能力。此外，作者设计了Ego2ActJudge评估流程，实验发现现有模型在执行多步任务时常出现步骤缺失或动力学物理不真实等问题。",
+  "highlights": [
+    {
+      "text": "提出包含110项真实任务和2640个视频的Ego2Act基准，用于评估视频生成模型在多步操作任务中的物理推理能力。",
+      "evidence": "We introduce Ego2Act, a goal-directed benchmark featuring 2,640 videos from 110 real-world tasks across day-to-day settings, varying object clutter and multi-step complexity."
+    },
+    {
+      "text": "开发了参考无关的评估流水线Ego2ActJudge，其对任务完成度和物理合理性的评估结果与人类共识的一致性更高。",
+      "evidence": "To support scalable evaluation, we also introduce Ego2ActJudge, a reference-free evaluation pipeline that achieves better task completion and physics plausibility evaluation alignment with human consensus compared to relevant baselines."
+    },
+    {
+      "text": "研究指出当前视频生成模型在处理复杂对象交互及长时世界建模时，常表现出步骤执行不完整及物理动力学模拟失败等问题。",
+      "evidence": "Furthermore, models consistently fail at fine-grained physical dynamics, particularly during complex object manipulation and persistent world modeling."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "世界模型"
+  ]
+}

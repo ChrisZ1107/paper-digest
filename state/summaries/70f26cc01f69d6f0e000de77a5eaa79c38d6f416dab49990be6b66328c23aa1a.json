@@ -1,0 +1,21 @@
+{
+  "overview": "针对多步智能体训练中动作序列平坦化、忽视重复性子任务结构的问题，本文提出了X-Tree框架。该方法通过统计重用率从数据中自动提取层次化的技能树（X-Tree），将频繁出现的成功技能构件化，而非依赖大模型生成。作者通过离线强化学习、在线强化学习及自蒸馏三种方式将其集成至训练中，在WebArena等多个基准测试中，X-Tree在相同算力预算下显著提升了智能体的任务成功率。",
+  "highlights": [
+    {
+      "text": "提出X-Tree框架，通过计算动作跨度的重用率自动发现层次化技能结构，无需依赖大模型辅助。",
+      "evidence": "Following text tokenizers, which build a vocabulary by counting alone, we score action spans by reusability and merge canonicalized actions into a reusable eXperience tree (X-Tree)."
+    },
+    {
+      "text": "X-Tree能够集成到离线强化学习、在线强化学习及自蒸馏三种训练范式中，实现更高效的泛化。",
+      "evidence": "We integrate X-Tree into three training settings: offline RL, with each node as a training instance; online RLVR, with an adaptive skill bonus; and on-policy self-distillation, with X-Tree as the self-teacher's privileged context."
+    },
+    {
+      "text": "在相同数据和计算预算下，X-Tree在WebArena、ScienceWorld和WebShop任务上分别实现了高达4.5%、5.8%和4.1%的性能提升。",
+      "evidence": "Across WebArena, ScienceWorld, and WebShop at three model scales, X-Tree improves over standard recipes at matched data and budget by up to 4.5% SR on WebArena, 5.8% SR on ScienceWorld and 4.1% success on WebShop."
+    }
+  ],
+  "tags": [
+    "离线强化学习",
+    "推理"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "overview": "针对灵巧手操作中探索与精细控制的冲突，作者提出了DexPolicy。该方法通过将探索规模设为训练步数的显式函数，在固定损失函数、架构和奖励设置下，实现从广泛到精细的退火式探索。实验表明，该策略在五种YCB物体及真实机器人平台上，均有效提升了轨迹引导下的操作成功率。",
+  "highlights": [
+    {
+      "text": "DexPolicy通过将动作噪声设为训练步数的显式函数，在不改变底层算法结构的前提下，通过分阶段探索提升了灵巧操作的成功率。",
+      "evidence": "DexPolicy makes that scale an explicit function of training steps, annealing from broad to narrow exploration while holding loss, architecture, reward, and optimizer settings fixed."
+    },
+    {
+      "text": "在RealMan RM75机械臂和Inspire/RH56手上的实验显示，使用FPO方法后，平均目标成功率从25.0%大幅提升至85.0%。",
+      "evidence": "On a RealMan RM75 arm with an Inspire/RH56 hand, 360 trials over three objects raise mean Target success from 25.0% to 85.0% (FPO), 10.0% to 63.3% (GRPO), and 8.3% to 43.3% (PPO), with one trained model per object-method condition."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "PPO",
+    "机器人操作"
+  ]
+}

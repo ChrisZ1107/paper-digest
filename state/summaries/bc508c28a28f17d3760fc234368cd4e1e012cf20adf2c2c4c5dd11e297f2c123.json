@@ -1,0 +1,17 @@
+{
+  "overview": "本文针对大模型智能体（LLM agents）的框架（harness）优化问题，提出了一种自动化课程学习方法ActiveSaddler。该方法将课程建模为非平稳多臂老虎机问题，通过抽象重复性故障模式，动态调整优化目标优先级，实现训练场景与框架的协同进化。实验表明，该方法能有效提升智能体在GAIA2和Terminal-Bench 2.0上的测试表现。",
+  "highlights": [
+    {
+      "text": "ActiveSaddler通过将课程建模为动态优化的非平稳老虎机问题，实现了训练场景与智能体框架的协同演进。",
+      "evidence": "ActiveSaddler models the evolving curriculum as a non-stationary bandit with dynamically instantiated optimization targets."
+    },
+    {
+      "text": "实验结果显示，该方法在GAIA2和Terminal-Bench 2.0基准测试中，较固定场景顺序的优化策略显著提升了Pass@1准确率。",
+      "evidence": "Experiments on GAIA2 and Terminal-Bench 2.0 show that ActiveSaddler consistently discovers stronger harnesses, improving test Pass@1 by 4.4 and 7.5 percentage points over the same harness optimizer using a scenario order fixed before optimization, respectively."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "推理"
+  ]
+}
