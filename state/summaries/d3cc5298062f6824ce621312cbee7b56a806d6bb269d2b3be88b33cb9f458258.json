@@ -1,0 +1,17 @@
+{
+  "overview": "该研究系统探讨了在强对弱模型蒸馏设置中，策略采样（rollout policy）对模型性能的影响。通过在Llama3和Qwen2.5模型家族上跨不同推理任务进行受控实验，作者评估了策略采样、Token级KL散度方向和学习率的作用。研究发现策略采样并非决定性因素，KL散度方向对任务性能和输出覆盖率的影响更为显著，学习率则控制了遗忘与参数更新的稀疏性。结果表明，在线策略（on-policy）采样并非总是优选，其价值取决于具体的优化目标与设置。",
+  "highlights": [
+    {
+      "text": "研究发现，前向KL散度在不同策略采样下表现出极强的稳健性，而反向KL散度则对策略敏感并倾向于使用学生模型生成的采样。",
+      "evidence": "forward KL is remarkably robust to rollout policy, with its performance stable and strong despite changes to the rollout policy, whereas reverse KL is substantially more sensitive and favours student-generated rollouts."
+    },
+    {
+      "text": "在线策略数据在特定任务中能提升泛化能力，但在后续的强化学习验证（RLVR）后这种优势并不总是可靠地持续。",
+      "evidence": "On-policy data nevertheless improves generalisation to harder variants of the Countdown arithmetic task under both KL directions, although this advantage does not reliably persist after subsequent RLVR."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "推理"
+  ]
+}
