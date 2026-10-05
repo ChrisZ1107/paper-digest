@@ -1447,6 +1447,100 @@
           "abstract_zh": "语言模型智能体由其模型及其框架（harness）共同定义，后者是组织模型调用、工具使用和信息流的可执行程序。由于不同任务需要不同的操作组织方式，因此需要利用手头任务的反馈来调整该框架。我们引入了“框架学习”（harness learning），即训练一个提议者（proposer）模型，利用执行反馈来修正求解器（solver）的框架。我们将这一过程表述为对可执行程序的元学习，其中框架的修正起到了基于梯度的适应中权重更新的作用。我们使用强化学习训练提议者，并将修正后框架的任务表现作为奖励。在测试时，提议者利用对新任务连续执行的反馈来优化框架，而无需执行任何参数空间的更新。在推理和多跳问答任务上的实验表明，框架学习提高了修正质量，并且在测试时的适应能力可以迁移到未见过的任务中。在单个修正上训练的策略可以在多轮迭代中持续改进框架，而在修正序列上进行训练所带来的收益则因设置不同而异。这些发现为通向能够将积累的经验转化为可泛化改进的持续学习智能体指明了方向。"
         }
       ]
+    },
+    "AqqJHAW8Zvo": {
+      "video_id": "AqqJHAW8Zvo",
+      "video_title": "VISTA: A Visual Harness for Reasoning in an Interactive World (Oct 2026)",
+      "published": "2026-10-05",
+      "video_url": "https://www.youtube.com/watch?v=AqqJHAW8Zvo",
+      "papers": [
+        {
+          "id": "2610.02200",
+          "title": "VISTA: A Visual Harness for Reasoning in an Interactive World (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.02200"
+        }
+      ]
+    },
+    "2FP1SUq1qPQ": {
+      "video_id": "2FP1SUq1qPQ",
+      "video_title": "Finetuning with Sampling: SFT Learns Better Than You Think (Oct 2026)",
+      "published": "2026-10-05",
+      "video_url": "https://www.youtube.com/watch?v=2FP1SUq1qPQ",
+      "papers": [
+        {
+          "id": "2610.02140",
+          "title": "Finetuning with Sampling: SFT Learns Better Than You Think (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.02140"
+        }
+      ]
+    },
+    "Ast35G5b8H8": {
+      "video_id": "Ast35G5b8H8",
+      "papers": []
+    },
+    "2j6bs_SAk0s": {
+      "video_id": "2j6bs_SAk0s",
+      "video_title": "How Jev Works: The AI Model That Can't Write, and What RLCD Is",
+      "published": "2026-10-05",
+      "video_url": "https://www.youtube.com/watch?v=2j6bs_SAk0s",
+      "papers": [
+        {
+          "id": "2507.16806",
+          "title": "2507.16806",
+          "url": "https://arxiv.org/abs/2507.16806"
+        },
+        {
+          "id": "2609.37647",
+          "title": "2609.37647",
+          "url": "https://arxiv.org/abs/2609.37647"
+        },
+        {
+          "id": "2609.26550",
+          "title": "2609.26550",
+          "url": "https://arxiv.org/abs/2609.26550"
+        },
+        {
+          "id": "2609.30216",
+          "title": "2609.30216",
+          "url": "https://arxiv.org/abs/2609.30216"
+        }
+      ]
+    },
+    "0ny1SNXqYxE": {
+      "video_id": "0ny1SNXqYxE",
+      "video_title": "Targeting Pivotal Decisions for Credit Assignment in Agentic Reinforcement Learning (Sep 2026)",
+      "published": "2026-10-05",
+      "video_url": "https://www.youtube.com/watch?v=0ny1SNXqYxE",
+      "papers": [
+        {
+          "id": "2609.36178",
+          "title": "Targeting Pivotal Decisions for Credit Assignment in Agentic Reinforcement Learning (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.36178"
+        }
+      ]
+    },
+    "1NMmagyDhD8": {
+      "video_id": "1NMmagyDhD8",
+      "video_title": "How JEPA Works: Predict the Meaning, Not the Pixels",
+      "published": "2026-10-05",
+      "video_url": "https://www.youtube.com/watch?v=1NMmagyDhD8",
+      "papers": [
+        {
+          "id": "2301.08243",
+          "title": "2301.08243",
+          "url": "https://arxiv.org/abs/2301.08243"
+        },
+        {
+          "id": "2404.08471",
+          "title": "2404.08471",
+          "url": "https://arxiv.org/abs/2404.08471"
+        },
+        {
+          "id": "2506.09985",
+          "title": "2506.09985",
+          "url": "https://arxiv.org/abs/2506.09985"
+        }
+      ]
     }
   }
 }
