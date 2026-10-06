@@ -1780,6 +1780,19 @@
           "abstract_zh": "生成式建模可以被表述为学习一种映射 f，使得其前推分布与数据分布相匹配。这种前推行为可以在推理时通过迭代方式实现，例如在扩散模型和基于流的模型中。在本文中，我们提出了一种名为 Drifting Models 的新范式，它在训练过程中演化前推分布，并自然地支持一步推理。我们引入了一个控制样本运动的漂移场（drifting field），并在分布匹配时达到平衡。这带来了一个训练目标，使得神经网络优化器能够演化分布。在实验中，我们的一步生成器在 256 x 256 分辨率的 ImageNet 上取得了最先进的结果，潜在空间中的 FID 为 1.54，像素空间中的 FID 为 1.61。我们希望这项工作能为高质量的一步生成开启新的机遇。"
         }
       ]
+    },
+    "Y6-87JLop4A": {
+      "video_id": "Y6-87JLop4A",
+      "video_title": "Scaling and Distilling Text Embeddings for Better Diffusibility (Oct 2026)",
+      "published": "2026-10-06",
+      "video_url": "https://www.youtube.com/watch?v=Y6-87JLop4A",
+      "papers": [
+        {
+          "id": "2610.01016",
+          "title": "Scaling and Distilling Text Embeddings for Better Diffusibility (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.01016"
+        }
+      ]
     }
   }
 }
