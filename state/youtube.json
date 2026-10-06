@@ -1561,6 +1561,182 @@
           "abstract_zh": "现代人工智能面临的一个重大挑战是学会理解世界，并主要通过观察来学习行动。本文探索了一种自监督学习方法，该方法结合了互联网规模的视频数据和少量的交互数据（机器人轨迹），旨在开发能够在物理世界中进行理解、预测和规划的模型。我们首先在包含超过100万小时互联网视频的图像和视频数据集上预训练了一个无动作的联合嵌入预测架构——V-JEPA 2。V-JEPA 2在运动理解方面表现出色（在Something-Something v2上达到77.3的top-1准确率），在人类动作预测方面达到了最先进的水平（在Epic-Kitchens-100上达到39.7的recall-at-5），超越了以往特定任务的模型。此外，在将V-JEPA 2与大语言模型对齐后，我们在80亿参数规模下在多个视频问答任务上展示了最先进的性能（例如，在PerceptionTest上达到84.0，在TempCompass上达到76.9）。最后，我们展示了如何通过使用来自Droid数据集的不到62小时的无标签机器人视频，对潜在动作条件下的世界模型V-JEPA 2-AC进行后训练，从而将自监督学习应用于机器人规划任务。我们将V-JEPA 2-AC以零样本方式部署在两个不同实验室的Franka机械臂上，实现了利用图像目标规划进行物体的抓取和放置。值得注意的是，这一成果的实现无需在这些环境中收集任何机器人数据，也无需任何特定任务的训练或奖励。这项工作证明了通过互联网规模数据和少量机器人交互数据进行自监督学习，可以产出一个能够在物理世界中进行规划的世界模型。"
         }
       ]
+    },
+    "kDEOofDhtOI": {
+      "video_id": "kDEOofDhtOI",
+      "video_title": "Trust the Critic More (Sep 2026)",
+      "published": "2026-10-06",
+      "video_url": "https://www.youtube.com/watch?v=kDEOofDhtOI",
+      "papers": [
+        {
+          "id": "2609.39247",
+          "title": "Trust the Critic More (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.39247"
+        }
+      ]
+    },
+    "dryICpjO0NY": {
+      "video_id": "dryICpjO0NY",
+      "video_title": "AnthroDial: Benchmarking LLM Anthropomorphism in Autonomous Social Interaction (Sep 2026)",
+      "published": "2026-10-06",
+      "video_url": "https://www.youtube.com/watch?v=dryICpjO0NY",
+      "papers": [
+        {
+          "id": "2609.37853",
+          "title": "AnthroDial: Benchmarking LLM Anthropomorphism in Autonomous Social Interaction (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.37853"
+        }
+      ]
+    },
+    "aS8o8L4Ug4c": {
+      "video_id": "aS8o8L4Ug4c",
+      "video_title": "PivotOPD: Learning to Recover from Pivotal Mistakes in Multi-Turn Agents (Sep 2026)",
+      "published": "2026-10-06",
+      "video_url": "https://www.youtube.com/watch?v=aS8o8L4Ug4c",
+      "papers": [
+        {
+          "id": "2609.40285",
+          "title": "PivotOPD: Learning to Recover from Pivotal Mistakes in Multi-Turn Agents (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.40285"
+        }
+      ]
+    },
+    "xKxEvN_Thh0": {
+      "video_id": "xKxEvN_Thh0",
+      "video_title": "Rethinking Representations for World-Action Modeling (Sep 2026)",
+      "published": "2026-10-06",
+      "video_url": "https://www.youtube.com/watch?v=xKxEvN_Thh0",
+      "papers": [
+        {
+          "id": "2609.38163",
+          "title": "Rethinking Representations for World-Action Modeling (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.38163"
+        }
+      ]
+    },
+    "BgGZfMO6n5E": {
+      "video_id": "BgGZfMO6n5E",
+      "video_title": "Triadic Linear Attention: Three-Dimensional Recurrent States for Long-Context Sequence Modeling",
+      "published": "2026-10-06",
+      "video_url": "https://www.youtube.com/watch?v=BgGZfMO6n5E",
+      "papers": [
+        {
+          "id": "2609.36529",
+          "title": "Triadic Linear Attention: Three-Dimensional Recurrent States for Long-Context Sequence Modeling (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.36529"
+        }
+      ]
+    },
+    "BSi4jiJoG98": {
+      "video_id": "BSi4jiJoG98",
+      "video_title": "How Far Are We from Removing the Visual Encoder? Scaling Laws for Encoder-Free Multimodal…",
+      "published": "2026-10-06",
+      "video_url": "https://www.youtube.com/watch?v=BSi4jiJoG98",
+      "papers": [
+        {
+          "id": "2609.35457",
+          "title": "How Far Are We from Removing the Visual Encoder? Scaling Laws for Encoder-Free Multimodal Pretraining (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.35457"
+        }
+      ]
+    },
+    "VKjdMv--AJ8": {
+      "video_id": "VKjdMv--AJ8",
+      "video_title": "How Diffusion Models Work: Learn to Undo the Noise",
+      "published": "2026-10-06",
+      "video_url": "https://www.youtube.com/watch?v=VKjdMv--AJ8",
+      "papers": [
+        {
+          "id": "2006.11239",
+          "title": "2006.11239",
+          "url": "https://arxiv.org/abs/2006.11239"
+        },
+        {
+          "id": "1503.03585",
+          "title": "1503.03585",
+          "url": "https://arxiv.org/abs/1503.03585"
+        },
+        {
+          "id": "1907.05600",
+          "title": "1907.05600",
+          "url": "https://arxiv.org/abs/1907.05600"
+        },
+        {
+          "id": "2011.13456",
+          "title": "2011.13456",
+          "url": "https://arxiv.org/abs/2011.13456"
+        },
+        {
+          "id": "2105.05233",
+          "title": "2105.05233",
+          "url": "https://arxiv.org/abs/2105.05233"
+        },
+        {
+          "id": "2112.10752",
+          "title": "2112.10752",
+          "url": "https://arxiv.org/abs/2112.10752"
+        },
+        {
+          "id": "2207.12598",
+          "title": "2207.12598",
+          "url": "https://arxiv.org/abs/2207.12598"
+        },
+        {
+          "id": "2210.02747",
+          "title": "2210.02747",
+          "url": "https://arxiv.org/abs/2210.02747"
+        },
+        {
+          "id": "2212.09748",
+          "title": "2212.09748",
+          "url": "https://arxiv.org/abs/2212.09748"
+        },
+        {
+          "id": "2303.01469",
+          "title": "2303.01469",
+          "url": "https://arxiv.org/abs/2303.01469"
+        },
+        {
+          "id": "2403.03206",
+          "title": "2403.03206",
+          "url": "https://arxiv.org/abs/2403.03206"
+        },
+        {
+          "id": "2502.09992",
+          "title": "2502.09992",
+          "url": "https://arxiv.org/abs/2502.09992"
+        },
+        {
+          "id": "2505.13447",
+          "title": "2505.13447",
+          "url": "https://arxiv.org/abs/2505.13447"
+        },
+        {
+          "id": "2511.13720",
+          "title": "2511.13720",
+          "url": "https://arxiv.org/abs/2511.13720"
+        },
+        {
+          "id": "2601.22158",
+          "title": "2601.22158",
+          "url": "https://arxiv.org/abs/2601.22158"
+        },
+        {
+          "id": "2608.00146",
+          "title": "2608.00146",
+          "url": "https://arxiv.org/abs/2608.00146"
+        },
+        {
+          "id": "2607.17585",
+          "title": "2607.17585",
+          "url": "https://arxiv.org/abs/2607.17585"
+        },
+        {
+          "id": "2602.04770",
+          "title": "2602.04770",
+          "url": "https://arxiv.org/abs/2602.04770"
+        }
+      ]
     }
   }
 }
