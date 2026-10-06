@@ -1,0 +1,18 @@
+{
+  "overview": "针对现有世界动作模型在长程预测中效率低且缺乏明确任务进展引导的问题，作者提出ProWAM模型。该方法通过预测稀疏的视觉子目标序列来引导动作生成，无需生成完整视频流。实验结果表明，该模型在LIBERO-Plus、RoboTwin模拟基准及零样本真实世界场景中表现优于现有基线，展现了利用视觉前瞻性指导闭环控制的有效性。",
+  "highlights": [
+    {
+      "text": "ProWAM通过预测有序的稀疏视觉子目标序列来辅助动作生成，从而规避了昂贵的完整视频预测。",
+      "evidence": "We present ProWAM, a progressive world action model that jointly predicts actions and an ordered sequence of sparse visual sub-goals, providing explicit visual guidance to anchor action generation throughout task execution."
+    },
+    {
+      "text": "该模型在多种模拟基准测试中表现卓越，并显著提升了在未知真实世界场景中的任务成功率。",
+      "evidence": "On simulation benchmarks, it sets new state-of-the-art results on LIBERO-Plus (85.8%) and randomized RoboTwin (75.7%), outperforming the strongest baseline with relative gains of up to +35.9%."
+    }
+  ],
+  "tags": [
+    "世界模型",
+    "机器人操作",
+    "Sim-to-Real"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "overview": "针对通用视觉语言模型（VLM）在零样本机器人操作中泛化能力不足的问题，本文提出了MotorMind系统。该框架通过连接VLM输出的中级动作与确定性控制，并结合异步监控与背景记忆更新，使通用VLM能够无需任务特定训练、代码生成或额外工具即可直接执行控制。作者声称，该方法在模拟和真实xArm6机器人环境中均表现出显著优于对比基线的操作成功率。",
+  "highlights": [
+    {
+      "text": "MotorMind通过中级动作接口与异步执行框架，使通用VLM在无需任务特定训练或外部工具的情况下实现零样本操作。",
+      "evidence": "In this work, we introduce MotorMind, a robot manipulation harness that connects VLM-proposed mid-level actions to deterministic robot control and feedback, with asynchronous monitoring and background memory updates. Without task-specific policy training, coding agents, or additional grounding tools such as SAM3, MotorMind achieves 66.7% success on the base LIBERO-PRO suites and 53.8% under perturbations"
+    },
+    {
+      "text": "在xArm6真实机器人实验中，该系统在直接操作及受到人工干扰的设置下，达到了95%的平均成功率。",
+      "evidence": "The same interface reaches 95% average success on a real xArm6 robot across direct manipulation and human-perturbation settings."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "视觉语言动作"
+  ]
+}
