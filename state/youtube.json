@@ -1800,6 +1800,49 @@
           "abstract_zh": "扩散语言模型（DLM）为自回归（AR）语言生成提供了一种有前景的替代方案。近期连续型DLM的发展将潜在扩散应用于连续文本嵌入，这引发了一个实际问题：哪种嵌入能构成最佳的潜在空间，即最具扩散性？为了回答这一问题，我们搜索了不同的嵌入，发现将嵌入模型扩展到同一系列中更强的模型（从T5到T5Gemma-1再到T5Gemma-2）可以显著提升生成性能。但原始的T5Gemma-2嵌入仍非最优。它们的判别性过强，以至于即使是合理的候选词嵌入也被区分开来，这使得生成过程容易受到不完美采样（imperfect sampling）的影响。因此，连续扩散模型往往无法达到其中任何一个词的嵌入，最终落入无效的嵌入空间。为了解决这个问题，我们将T5Gemma-2蒸馏为一个学生编码器，通过学习教师模型的解码概率作为软标签（soft labels）。通过学习这些软标签，学生模型在保持编码-解码机制的同时，拉近了候选词嵌入之间的距离。经蒸馏的嵌入形成了更连通且更具扩散性的潜在空间，相较于原生T5Gemma-2嵌入有了显著提升。最终，我们的中型DLM在OpenWebText数据集上，于真实文本熵下实现了17.8的生成困惑度（Gen. PPL）（对应的真实文本困惑度为15.4），在生成困惑度指标上超过了GPT-2-M。"
         }
       ]
+    },
+    "jwRwHBlbRsk": {
+      "video_id": "jwRwHBlbRsk",
+      "video_title": "DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression (Sep 2026)",
+      "published": "2026-10-07",
+      "video_url": "https://www.youtube.com/watch?v=jwRwHBlbRsk",
+      "papers": [
+        {
+          "id": "2609.19969",
+          "title": "DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.19969"
+        }
+      ]
+    },
+    "OGJ2eNLO_HU": {
+      "video_id": "OGJ2eNLO_HU",
+      "papers": []
+    },
+    "f4n_q_wD6xI": {
+      "video_id": "f4n_q_wD6xI",
+      "video_title": "Level-of-Token Diffusion (Oct 2026)",
+      "published": "2026-10-07",
+      "video_url": "https://www.youtube.com/watch?v=f4n_q_wD6xI",
+      "papers": [
+        {
+          "id": "2610.05816",
+          "title": "Level-of-Token Diffusion (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.05816"
+        }
+      ]
+    },
+    "fXAqigBirfc": {
+      "video_id": "fXAqigBirfc",
+      "video_title": "Learning Functional Subspaces for Neural Network Compression (Sep 2026)",
+      "published": "2026-10-07",
+      "video_url": "https://www.youtube.com/watch?v=fXAqigBirfc",
+      "papers": [
+        {
+          "id": "2609.40127",
+          "title": "Learning Functional Subspaces for Neural Network Compression (Sep 2026)",
+          "url": "https://arxiv.org/abs/2609.40127"
+        }
+      ]
     }
   }
 }
