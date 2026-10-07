@@ -1,0 +1,17 @@
+{
+  "overview": "针对模仿学习生成的机器人策略难以在推理阶段灵活调整执行速度的问题，本文提出了FreeSpeed方法。该方法无需额外训练，通过分析动作块中相邻动作的方向不一致性来评估任务阶段的紧迫性，从而自适应地重采样动作步长。实验结果表明，该方法在保持任务成功率的同时，实现了在模拟环境和真实世界操作任务中对执行速度的灵活调节。",
+  "highlights": [
+    {
+      "text": "FreeSpeed是一种无需额外训练的模块，能够通过分析动作方向一致性动态调整执行速度，且不影响任务成功率。",
+      "evidence": "FreeSpeed, a training-free module that post-processes action chunks from pretrained policies. FreeSpeed resamples each predicted chunk at the requested rate, then uses directional inconsistency between adjacent actions as the primary signal for rescaling."
+    },
+    {
+      "text": "在四个真实世界的操作任务中，FreeSpeed实现了0.38倍到1.97倍的速度调节，同时维持了94.0%的平均成功率。",
+      "evidence": "Across four real-world manipulation tasks, FreeSpeed achieves an average success rate of 94.0%, matching the frozen policy's 93.8%, while realizing execution rates from 0.38x to 1.97x."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "模仿学习"
+  ]
+}

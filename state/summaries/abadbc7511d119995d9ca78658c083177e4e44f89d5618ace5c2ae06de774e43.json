@@ -1,0 +1,19 @@
+{
+  "overview": "本文针对四足机器人在复杂地形上运输不固定堆叠负载的问题，提出了一种名为PAMORT的负载自适应多目标强化学习方法。该方法训练了一个条件化的多目标基础策略，并配合在线权重调整器，根据本体感受信息实时权衡运动性能与负载稳定性。实验表明，该方法在模拟环境和Unitree Go2真实平台上均实现了比单目标基准更高的运输成功率，并具备良好的零样本迁移能力。",
+  "highlights": [
+    {
+      "text": "PAMORT通过训练多目标基础策略及在线权重调整器，实现了基于本体感受的负载运输平衡策略。",
+      "evidence": "PAMORT trains a multi-objective base policy conditioned on a preference vector that weights locomotion and payload-stability reward groups, then trains a weight adjuster on the frozen policy to adapt this preference online from proprioception."
+    },
+    {
+      "text": "在Unitree Go2机器人上的真实环境实验显示，PAMORT在多种任务中表现出优于基准的零样本迁移能力。",
+      "evidence": "Real-world experiments on a Unitree Go2 demonstrate zero-shot transfer to slopes and steps at or beyond the training difficulty, with mean success rates of 0.850 for PAMORT and 0.675 for the baseline across eight tasks."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "四足机器人",
+    "足式运动",
+    "Sim-to-Real"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "overview": "针对现有工具使用后训练方法过度依赖环境合成而忽视系统整体交互的问题，作者提出了WEFT（Whole-system Evolution For Tool-use Post-training）框架。该方法通过构建可扩展的代理交互系统、执行驱动的自我演化机制以及稳定的后训练策略，在环境广度、任务复杂性和交互多样性方面提升了性能。实验结果表明，WEFT模型在多个基准测试中优于同等规模的环境扩展基准模型。",
+  "highlights": [
+    {
+      "text": "WEFT通过执行驱动的自我演化机制，利用执行轨迹和状态证据诊断失败原因并修正相关组件，通过迭代优化提升模型性能。",
+      "evidence": "Execution-driven self-evolution iteratively uses execution traces and state evidence to attribute failures and revise the responsible components, with fresh rollouts evaluating the changes and providing evidence for subsequent evolution rounds."
+    },
+    {
+      "text": "WEFT模型在BFCL V4、τ^2-Bench和Claw-Eval等基准测试中，表现优于同等规模的基准方法，在多个指标上实现显著提升。",
+      "evidence": "WEFT-8B and WEFT-14B outperform all evaluated matched-size environment-scaling baselines on BFCL V4, τ^2-Bench, and Claw-Eval."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "推理"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "overview": "本文针对循环语言模型中由于循环次数增加导致的训练与推理成本问题，提出通过使循环状态趋向不动点来优化模型。作者引入了学习型深度先验（learned prior）和正交注入（orthogonal injection）机制，以改善模型训练，实现了更高效的截断反向传播、更小的KV缓存占用以及更快的解码与强化学习更新速度。实验表明，该方法在多种规模下均降低了困惑度，且在小缓存配置下保持了与全缓存相当的性能。",
+  "highlights": [
+    {
+      "text": "提出学习型深度先验与正交注入机制，在多种参数规模下有效降低了模型的困惑度。",
+      "evidence": "From 100M to 1.6B parameters, the learned prior and orthogonal injection lower perplexity at every scale relative to Huginn's prior and existing injection schemes, respectively."
+    },
+    {
+      "text": "利用不动点特性实现了高效的强化学习更新，计算速度较传统回放轨迹反向传播提升2倍。",
+      "evidence": "RL updates that compute gradients from saved rollout states, 2x faster than backpropagating through the replayed trajectory."
+    },
+    {
+      "text": "通过学习型深度先验，在仅使用原先1/3大小KV缓存的情况下，性能仍能匹配全缓存配置的固定深度训练。",
+      "evidence": "At 1.6B, the learned prior with a 3x smaller KV cache matches the downstream average of fixed-depth training with the full cache."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "强化学习",
+    "推理"
+  ]
+}

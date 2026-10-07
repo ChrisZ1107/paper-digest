@@ -1,0 +1,147 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>2026-10-07 热门论文 Top 10｜机器人·强化学习·AI</title><body><h1>2026-10-07 热门论文 Top 10</h1>
+<p>机器人 · 强化学习 · 通用 AI</p>
+<p>生成时间：2026-10-07 09:01 CST。从 1338 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>
+<p>候选来源：<a href="https://huggingface.co/papers">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>
+<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>
+<h2>1. PointWAM: 3D World Action Modeling for Dexterous Robotic Manipulation</h2>
+<p><strong>机器人</strong> · 发表 2026-10-02 · 综合分 5.20</p>
+<p>Zotero 摘要相关性：0.397（相似度分数，不是概率）。</p>
+<p>HF 点赞 41 · 讨论 2</p>
+<p>较上次观测（1.0 天前）：点赞 +32 · 讨论 +1。</p>
+<p><strong>规则标签：</strong>机器人操作</p>
+<p><strong>中文概述：</strong>针对灵巧操作中难以捕捉3D空间结构与接触几何的问题，本文提出了PointWAM模型。该模型将世界分解为场景与手部，通过在共享时空坐标系下联合预测两者的3D点轨迹来实现动作建模。通过大规模人类演示视频预训练，该方法能有效利用场景轨迹监督，在DexJoCo任务及真实机器人实验中表现优于现有最优模型。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出了一种将场景与手部解耦的3D点轨迹预测框架，无需特定对象或关键点标注即可利用大规模人类演示视频进行预训练。<br><small>摘要依据：This explicit, disentangled representation enables effective pre-training on large-scale human demonstration videos without requiring any task-specific object or keypoint selection.</small></li>
+<li>引入场景轨迹监督机制显著提升了任务成功率，并在多个灵巧操作任务中超过了现有技术水平及视觉语言动作模型。<br><small>摘要依据：With both, PointWAM surpasses the prior state of the art on ten DexJoCo tasks by 11.7 points and outperforms strong VLAs on a real robot.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 世界模型 · 视觉语言动作</p>
+<p><strong>原文摘要节选：</strong>World action models jointly learn to forecast world dynamics and predict robot actions, such that the learned internal world dynamics guide accurate actions. Existing approaches typically represent the world as RGB frames or latent counterparts while predicting actions as end-effector poses or joint angles, but they often struggle to capture the 3D spatial structure and contact geometry central to dexterous manipulation. We introduce Point World Action Model (PointWAM), a 3D world action model that decomposes the world into a scene (i.e., environment) and hands (i.e., actor), and jointly forecasts both as 3D point trajectories within a shared space-time coordinate frame. This explicit, disentangled representation enables effective pre-training on large-scale human demonstration videos…</p>
+<p><a href="https://arxiv.org/abs/2610.02840">论文原文</a> · <a href="https://arxiv.org/pdf/2610.02840">PDF</a> · <a href="https://huggingface.co/papers/2610.02840">讨论与热度</a></p><hr>
+<h2>2. Beyond Future Prediction: Denoising as Generative Adaptation for Robot Control</h2>
+<p><strong>机器人</strong> · 发表 2026-09-23 · 综合分 4.78</p>
+<p>Zotero 摘要相关性：0.420（相似度分数，不是概率）。</p>
+<p>HF 点赞 25 · 讨论 3 · 仓库累计 Star 8（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +3 · 讨论 +2 · Star +2。</p>
+<p><strong>中文概述：</strong>针对基于生成式扩散Transformer（DiT）的机器人控制策略，现有研究多依赖未来视觉预测进行迁移。本文提出NowWAM方法，通过去噪当前观测并从同一视觉流中预测机器人动作，解除了对未来视觉目标的依赖。实验表明，该方法在保持去噪轨迹作为控制接口的同时，能够直接耦合生成式目标与动作表示。在LIBERO-Plus基准测试中，NowWAM在提升成功率的同时，显著降低了计算开销并提升了推理速度。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>NowWAM证明了生成式适配无需依赖未来视觉目标，去噪轨迹本身即是有效的控制接口。<br><small>摘要依据：suggesting that a separate future target is not essential for generative adaptation, while the denoising trajectory remains an effective interface for control.</small></li>
+<li>在LIBERO-Plus任务中，NowWAM对比未来目标联合训练基线提升了6.1个百分点，并将单步推理时间缩短了1.8倍。<br><small>摘要依据：On LIBERO-Plus, NowWAM reaches 87.7% with FLUX2-Klein, improving over the future-target co-training baseline by 6.1 points while halving training visual tokens (784 to 392) and reducing step time from 2.85 s to 1.63 s, a 1.8x speedup.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 推理</p>
+<p><strong>原文摘要节选：</strong>Pretrained generative Diffusion Transformers (DiTs) capture rich pixel-level visual and language-conditioned structure through large-scale image and video generation training. A growing line of robot policies builds on this generative prior, but how it should be transferred to control remains unclear, and existing approaches commonly instantiate this transfer through future visual prediction. We ask a more basic question: what a pretrained generative DiT actually contributes to action learning, and how this prior should be adapted for control. We introduce NowWAM, a future-target-free co-training formulation that denoises the current observation and predicts robot actions from the same visual stream, directly coupling the native generative objective to the action-facing representation…</p>
+<p><a href="https://arxiv.org/abs/2609.28339">论文原文</a> · <a href="https://arxiv.org/pdf/2609.28339">PDF</a> · <a href="https://huggingface.co/papers/2609.28339">讨论与热度</a> · <a href="https://github.com/xmz111/NowWAM">代码</a></p><hr>
+<h2>3. Learning from Runtime Feedback through Failure-Bank Self-Evolution for Vision-Language-Action Models</h2>
+<p><strong>机器人</strong> · 发表 2026-09-30 · 综合分 4.77</p>
+<p>Zotero 摘要相关性：0.420（相似度分数，不是概率）。</p>
+<p>HF 点赞 15 · 讨论 2 · 仓库累计 Star 2（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +2 · 讨论 +1 · Star +0。</p>
+<p><strong>规则标签：</strong>机器人操作 · 视觉语言动作</p>
+<p><strong>中文概述：</strong>针对视觉语言动作（VLA）模型在复杂机器人任务中面临的策略与安全盾冲突问题，本文提出了FailBank自进化框架。该方法通过将运行时的安全反馈转化为持久的策略改进目标，利用基于CBF的安全模块作为观察者生成修正信号，并结合结果感知机制进行LoRA微调。实验表明，该方法在提高任务成功率的同时，有效降低了策略诱发的累积成本。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>FailBank通过将运行时的安全反馈转化为持续的策略监督，改进了VLA模型在机器人操作中的表现。<br><small>摘要依据：These results show that runtime feedback can serve as persistent policy supervision rather than only as a temporary action constraint.</small></li>
+<li>在VLA-Arena基准测试中，FailBank相较于基础策略显著提升了成功率并降低了累积成本。<br><small>摘要依据：Across the two backbones, FailBank improves task success rate by 8.5 and 6.9 percentage points, while reducing policy-induced cumulative cost by 35.6\% and 23.8\%, respectively.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 视觉语言动作</p>
+<p><strong>原文摘要节选：</strong>Vision-language-action (VLA) models generalize broadly across robotic manipulation tasks, but complex environments require balancing task success with unintended contact. Runtime shields can correct individual actions, but they leave the underlying policy unchanged, so repeated disagreements may create a persistent policy-shield mismatch that blocks task progress. To address this challenge, we introduce FailBank, a four-stage self-evolving framework that converts runtime feedback into persistent policy improvement. During collection, a fixed CBF-based safety module serves as an observe-only teacher, producing counterfactual corrections while the policy remains in control. Outcome-aware admission then converts useful proposals into corrective targets and retains successful uncorrected…</p>
+<p><a href="https://arxiv.org/abs/2609.39820">论文原文</a> · <a href="https://arxiv.org/pdf/2609.39820">PDF</a> · <a href="https://huggingface.co/papers/2609.39820">讨论与热度</a> · <a href="https://github.com/Mingyuee88/FailBank">代码</a></p><hr>
+<h2>4. PanoVLN: Towards Effective Panoramic Vision-and-Language Navigation</h2>
+<p><strong>机器人</strong> · 发表 2026-09-28 · 综合分 4.65</p>
+<p>Zotero 摘要相关性：0.397（相似度分数，不是概率）。</p>
+<p>HF 点赞 166 · 讨论 1 · 本次 HF 热榜第 100 位 · 仓库累计 Star 62（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +0 · 讨论 +0 · Star +6。</p>
+<p><strong>规则标签：</strong>四足机器人 · 导航</p>
+<p><strong>中文概述：</strong>针对视觉语言导航任务中全景图像信息未被充分利用的问题，作者提出了PanoVLN。该方法通过改进动作预测机制（引入置信度引导执行策略）、优化包含分支路径的监督训练策略，以及整合全景图的语义与几何特征，实现了更长视野的动作规划和空间关系感知。实验结果表明，该方法在R2R-CE和RxR-CE数据集上取得了性能提升，并在四足机器人实机测试中表现出更快的导航速度。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出置信度引导执行（CGE）策略，通过预测更长的动作序列并动态决定重规划时机，利用全景图像的广角视野支持长程规划。<br><small>摘要依据：Specifically, we introduce a confidence-guided execution (CGE) strategy that dynamically determines how many predicted actions to execute before replanning.</small></li>
+<li>结合RGB全景图像的语义与几何特征，在不增加视觉标记的前提下增强了模型对场景内容及空间布局的理解。<br><small>摘要依据：We combine semantic and geometric features from RGB panoramas to capture both scene content and spatial layout without adding visual tokens.</small></li>
+<li>实机测试验证了PanoVLN在四足机器人上相比既有视觉语言导航方法具有更快的导航速度和更少的停顿。<br><small>摘要依据：Real-world experiments on a quadruped further demonstrate faster navigation with fewer pauses than prior VLN methods.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>四足机器人 · 导航 · Sim-to-Real</p>
+<p><strong>原文摘要节选：</strong>Recent vision-language models (VLMs) have advanced vision-and-language navigation (VLN), enabling models to predict navigation actions from visual observations and language instructions. In this work, we explore VLN with panoramic observations and introduce PanoVLN. The motivation is straightforward: more complete visual context should enable better-informed navigation decisions. For example, a panorama can reveal a passage outside a perspective camera&#x27;s field of view, allowing the model to identify the intended route without additional exploration. However, we find that simply replacing perspective images with panoramas yields only limited gains. Our diagnosis suggests that fully exploiting wider visibility requires modifications to action prediction, training supervision, and visual…</p>
+<p><a href="https://arxiv.org/abs/2609.34759">论文原文</a> · <a href="https://arxiv.org/pdf/2609.34759">PDF</a> · <a href="https://huggingface.co/papers/2609.34759">讨论与热度</a> · <a href="https://github.com/wangzhen-w/PanoVLN">代码</a></p><hr>
+<h2>5. Raven: The Harness of Harnesses for Composable Agentic Intelligence</h2>
+<p><strong>通用 AI</strong> · 发表 2026-09-27 · 综合分 4.63</p>
+<p>Zotero 摘要相关性：0.322（相似度分数，不是概率）。</p>
+<p>HF 点赞 566 · 讨论 4 · 本次 HF 热榜第 12 位 · 仓库累计 Star 5241（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +3 · 讨论 +1 · Star +34。</p>
+<p><strong>规则标签：</strong>多智能体</p>
+<p><strong>中文概述：</strong>随着大型语言模型的发展，AI代理正向跨领域长程工作流演进。针对现有系统设计复杂且耦合度高的问题，作者提出了Raven，一个开源的多智能体生态系统。Raven旨在自动构建和演进用于特定领域的可组合智能模块，通过主机代理（Host Agent）协调任务分解与执行，并利用经验库实现技能沉淀。作者声称该方法在复杂长程任务中显著优于现有智能体系统，拓展了可靠的任务覆盖范围。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>Raven通过自动构建和演进针对特定模型和领域的模块化工具，将每个可执行的模型-工具对视为可组合的智能单元。<br><small>摘要依据：We introduce Raven, The Harness of Harnesses, an open-source multi-agent ecosystem that automatically constructs and evolves modular harnesses for specific models and domains, treating each executable model--harness pair as a composable unit of intelligence.</small></li>
+<li>Raven的主机代理能够有效进行任务分解、智能体匹配及执行协调，并利用EverOS和Skill Forge实现跨任务的经验保留与复用。<br><small>摘要依据：To support an All-Domain Collaboration Network, its Host Agent decomposes goals, matches subtasks to specialized agents, coordinates execution dependencies, and integrates results, while a host archive and EverOS preserve experience across tasks and Skill Forge makes that experience available as reusable procedures.</small></li>
+<li>在复杂长程任务中，Raven的性能优于现有的先进智能体系统。<br><small>摘要依据：On complex and long-horizon tasks, Raven significantly outperforms the state-of-the-art agent systems, pushing the frontier of composable agentic intelligence.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>大模型后训练</p>
+<p><strong>原文摘要节选：</strong>As large language models advance, AI agents are moving beyond isolated, domain-specific tasks toward long-horizon, cross-domain workflows. This transition exposes two challenges: increasing harness complexity makes manual design difficult to scale, while tighter coupling to specific domains limits the generality of a single harness. The central question thus shifts from how to engineer a stronger harness for one domain to how to autonomously construct specialized harnesses, improve them through experience, and orchestrate them across domains. We introduce Raven, The Harness of Harnesses, an open-source multi-agent ecosystem that automatically constructs and evolves modular harnesses for specific models and domains, treating each executable model--harness pair as a composable unit of…</p>
+<p><a href="https://arxiv.org/abs/2609.33439">论文原文</a> · <a href="https://arxiv.org/pdf/2609.33439">PDF</a> · <a href="https://huggingface.co/papers/2609.33439">讨论与热度</a> · <a href="https://github.com/EverMind-AI/Raven">代码</a></p><hr>
+<h2>6. RobotUse: Allocating Computation, Context, and Decisions</h2>
+<p><strong>机器人</strong> · 发表 2026-10-04 · 综合分 4.61</p>
+<p>Zotero 摘要相关性：0.471（相似度分数，不是概率）。</p>
+<p>HF 点赞 11 · 讨论 1 · 仓库累计 Star 4（仓库可能包含多篇论文）</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>中文概述：</strong>针对机器人代理在执行任务时难以有效关联动作与结果、且难以维护决策上下文的问题，本文提出了RobotUse框架。该方法通过将计算、上下文和决策组织在物理动作的指定与修订周围，利用视觉选择目标和姿态，由后端处理几何、运动规划及控制。作者声称，RobotUse在RoboLab基准测试中达到了45%的任务成功率，通过持续学习机制提升了在真实环境下的任务迁移能力，并减少了对预定义动作抽象的依赖。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>RobotUse通过视觉目标选择与后端执行分离，有效组织了计算与决策，并在RoboLab测试中优于现有方法。<br><small>摘要依据：On RoboLab, RobotUse achieves 45% task success, outperforming CaP-X by 6.7 percentage points while maintaining compact decision contexts and reducing reliance on predefined action abstractions.</small></li>
+<li>该框架支持持续学习，能够通过更新持久化手册，实现从真实执行中获取反馈并迁移至后续任务。<br><small>摘要依据：Furthermore, we show that RobotUse learns from real-world execution despite imperfect feedback and transfers what it learns to subsequent tasks.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作</p>
+<p><strong>原文摘要节选：</strong>Robot agents must connect their intended actions to observed outcomes while retaining the context needed to revise their choices over repeated attempts. Existing interfaces often leave these choices inside predefined tools or require agents to manage detailed execution code and its growing history. We introduce RobotUse, a robot agent harness that organizes computation, context, and decisions around specifying and revising physical actions. Agents visually select targets and poses, while the backend handles geometry, motion planning, and control. Subagents retain detailed interactions within each subgoal and return the information needed for subsequent decisions. Continual harnessing lets agents learn from execution by updating a persistent playbook. On RoboLab, RobotUse achieves 45% task…</p>
+<p><a href="https://arxiv.org/abs/2610.04929">论文原文</a> · <a href="https://arxiv.org/pdf/2610.04929">PDF</a> · <a href="https://huggingface.co/papers/2610.04929">讨论与热度</a> · <a href="https://github.com/robotuse-team/RobotUse">代码</a></p><hr>
+<h2>7. WEFT: Scaling Tool-Use Post-Training for General-Purpose Agents</h2>
+<p><strong>通用 AI</strong> · 发表 2026-09-29 · 综合分 4.57</p>
+<p>Zotero 摘要相关性：0.371（相似度分数，不是概率）。</p>
+<p>HF 点赞 19 · 讨论 2</p>
+<p>较上次观测（1.0 天前）：点赞 +4 · 讨论 +1。</p>
+<p><strong>规则标签：</strong>大模型后训练</p>
+<p><strong>中文概述：</strong>针对现有工具使用后训练方法过度依赖环境合成而忽视系统整体交互的问题，作者提出了WEFT（Whole-system Evolution For Tool-use Post-training）框架。该方法通过构建可扩展的代理交互系统、执行驱动的自我演化机制以及稳定的后训练策略，在环境广度、任务复杂性和交互多样性方面提升了性能。实验结果表明，WEFT模型在多个基准测试中优于同等规模的环境扩展基准模型。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>WEFT通过执行驱动的自我演化机制，利用执行轨迹和状态证据诊断失败原因并修正相关组件，通过迭代优化提升模型性能。<br><small>摘要依据：Execution-driven self-evolution iteratively uses execution traces and state evidence to attribute failures and revise the responsible components, with fresh rollouts evaluating the changes and providing evidence for subsequent evolution rounds.</small></li>
+<li>WEFT模型在BFCL V4、τ^2-Bench和Claw-Eval等基准测试中，表现优于同等规模的基准方法，在多个指标上实现显著提升。<br><small>摘要依据：WEFT-8B and WEFT-14B outperform all evaluated matched-size environment-scaling baselines on BFCL V4, τ^2-Bench, and Claw-Eval.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>
+<p><strong>原文摘要节选：</strong>Recent efforts to scale tool-use post-training have largely centered on the synthesis of executable environments, which constitute only one component of a broader agentic interaction system comprising the environment, task, agent harness, and evaluator. Scaling environments in isolation, however, does not guarantee commensurate gains in model performance, because reliable learning signals depend on coherent interactions among all components of the agentic interaction system. To address this problem, we introduce WEFT (Whole-system Evolution For Tool-use Post-training), which couples scalable agentic interaction system construction, execution-driven self-evolution, and stable post-training. WEFT scales agentic interaction system construction across environment breadth, task complexity, and…</p>
+<p><a href="https://arxiv.org/abs/2609.36887">论文原文</a> · <a href="https://arxiv.org/pdf/2609.36887">PDF</a> · <a href="https://huggingface.co/papers/2609.36887">讨论与热度</a></p><hr>
+<h2>8. Context Language Models</h2>
+<p><strong>强化学习</strong> · 发表 2026-09-29 · 综合分 4.46</p>
+<p>Zotero 摘要相关性：0.335（相似度分数，不是概率）。</p>
+<p>HF 点赞 41 · 讨论 2 · 本次 HF 热榜第 11 位 · 仓库累计 Star 571（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +0 · Star +50。</p>
+<p><strong>规则标签：</strong>强化学习 · 多智能体</p>
+<p><strong>中文概述：</strong>本文提出了一种名为Context Language Models（CLM）的新型语言模型架构。该方法将上下文视为一个可由模型自主更新的文件，而非依赖外部机制进行管理。作者声称，这种方式允许模型学习上下文的核心要素，并天然适配多智能体系统。实验表明，CLM在多项任务中相比现有SOTA策略提升了性能并降低了计算开销，同时支持通过自然语言指令和在线强化学习进一步优化管理策略。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>CLM通过自主管理上下文文件，在保持或提升性能的同时显著降低了计算开销。<br><small>摘要依据：11.4% higher accuracy with 21.5% fewer FLOPs on BrowseComp-Plus, 5% higher scores with 59% fewer FLOPs on 12-hour EdgeBench, and 65% greater improvement with the same compute on a 24-hour multi-repository agent-swarm task.</small></li>
+<li>作者提出了一种在线强化学习方法，通过微调模型以提升上下文管理表现。<br><small>摘要依据：We also introduce an online reinforcement learning method for CLMs, improving Qwen3.5-9B performance on BrowseComp-Plus by 47.6% while using 12% fewer FLOPs.</small></li>
+<li>通过协同设计后缀缓存复用技术，CLM在推理阶段进一步减少了服务器端计算需求。<br><small>摘要依据：Finally, we co-design Suffix Cache Reuse for CLM serving, further reducing server-side compute by 35% relative to standard SGLang at matched performance.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>大模型后训练 · 推理 · 多智能体 · 强化学习</p>
+<p><strong>原文摘要节选：</strong>We introduce Context Language Models (CLMs), language models that natively manage their own context. We implement this by treating the context as a file and allowing the model to make unrestricted updates to this file. This allows the model to learn what is most important to maintain in context, and naturally extends to multi-agent systems where multiple agent contexts coexist as files. Building CLMs zero-shot with existing models outperforms SOTA context management strategies across a variety of tasks: 11.4% higher accuracy with 21.5% fewer FLOPs on BrowseComp-Plus, 5% higher scores with 59% fewer FLOPs on 12-hour EdgeBench, and 65% greater improvement with the same compute on a 24-hour multi-repository agent-swarm task. Moreover, by shifting context management from external harness…</p>
+<p><a href="https://arxiv.org/abs/2609.37725">论文原文</a> · <a href="https://arxiv.org/pdf/2609.37725">PDF</a> · <a href="https://huggingface.co/papers/2609.37725">讨论与热度</a> · <a href="https://github.com/facebookresearch/context-language-models">代码</a></p><hr>
+<h2>9. Towards Looped Models Done Right, Part II: Rethinking at Fixed Points</h2>
+<p><strong>强化学习</strong> · 发表 2026-10-05 · 综合分 4.13</p>
+<p>Zotero 摘要相关性：0.371（相似度分数，不是概率）。</p>
+<p>HF 点赞 17 · 讨论 1 · 仓库累计 Star 30（仓库可能包含多篇论文）</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>强化学习</p>
+<p><strong>中文概述：</strong>本文针对循环语言模型中由于循环次数增加导致的训练与推理成本问题，提出通过使循环状态趋向不动点来优化模型。作者引入了学习型深度先验（learned prior）和正交注入（orthogonal injection）机制，以改善模型训练，实现了更高效的截断反向传播、更小的KV缓存占用以及更快的解码与强化学习更新速度。实验表明，该方法在多种规模下均降低了困惑度，且在小缓存配置下保持了与全缓存相当的性能。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出学习型深度先验与正交注入机制，在多种参数规模下有效降低了模型的困惑度。<br><small>摘要依据：From 100M to 1.6B parameters, the learned prior and orthogonal injection lower perplexity at every scale relative to Huginn&#x27;s prior and existing injection schemes, respectively.</small></li>
+<li>利用不动点特性实现了高效的强化学习更新，计算速度较传统回放轨迹反向传播提升2倍。<br><small>摘要依据：RL updates that compute gradients from saved rollout states, 2x faster than backpropagating through the replayed trajectory.</small></li>
+<li>通过学习型深度先验，在仅使用原先1/3大小KV缓存的情况下，性能仍能匹配全缓存配置的固定深度训练。<br><small>摘要依据：At 1.6B, the learned prior with a 3x smaller KV cache matches the downstream average of fixed-depth training with the full cache.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>大模型后训练 · 强化学习 · 推理</p>
+<p><strong>原文摘要节选：</strong>Every recurrence of a looped language model adds cost in training, decoding, prefill, and reinforcement learning (RL). The closer recurrent states get to fixed points, the less the path to them matters. This enables truncated backpropagation in training; terminal key-value (KV) sharing for decoding with almost no loss in accuracy; a distilled student that prefills up to 1.79x faster; and RL updates that compute gradients from saved rollout states, 2x faster than backpropagating through the replayed trajectory. We therefore improve the two components of training that shape these fixed points: the depth prior and input injection. Fixed-depth training breaks KV sharing, and Huginn&#x27;s broad depth prior supports sharing but dilutes supervision at the target depth more than sharing requires; we…</p>
+<p><a href="https://arxiv.org/abs/2610.06833">论文原文</a> · <a href="https://arxiv.org/pdf/2610.06833">PDF</a> · <a href="https://huggingface.co/papers/2610.06833">讨论与热度</a> · <a href="https://github.com/ifm-ai/xllm-loop">代码</a></p><hr>
+<h2>10. VAMPS: Visual and Motor Policies from Sampling-Based Planning</h2>
+<p><strong>机器人 / 强化学习</strong> · 公告 2026-10-06 · 综合分 3.74</p>
+<p>Zotero 摘要相关性：0.575（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>足式运动</p>
+<p><strong>中文概述：</strong>VAMPS框架旨在解决直接在物理系统上学习机器人策略的成本与安全问题。该方法利用模型预测路径积分（MPPI）控制训练可重用策略，无需人类演示。VAMPS支持两种模式：一是在仿真中通过迭代优化训练本体感知策略，并迁移至四足机器人；二是通过自主采集的真实机器人数据直接训练视觉运动策略，并应用于拾取放置及力感知任务。作者声称该框架能有效提升策略学习的效率与通用性。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出了一种基于MPPI的迭代训练方法，在仿真中优化策略并改善短程规划，成功实现四足机器人的运动控制迁移。<br><small>摘要依据：Iterative refinement outperforms training once on frozen MPPI data, and we transfer the learned locomotion policy to a Unitree Go2.</small></li>
+<li>利用基于Transformer的动作分块技术，实现了在无需人工演示的情况下，通过自主采集的真实机器人数据学习复杂视觉运动任务。<br><small>摘要依据：Action Chunking with Transformers predicts action chunks, reducing the effective prediction horizon, and is trained offline on this fixed dataset.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>Sim-to-Real · 机器人操作 · 足式运动</p>
+<p><strong>原文摘要节选：</strong>Learning robot policies directly on physical systems remains difficult because data collection is costly and policy exploration can be unsafe. We introduce Visual and Motor Policies from Sampling-Based Planning (VAMPS), a framework that uses Model Predictive Path Integral (MPPI) control to train reusable policies without human demonstrations. VAMPS supports two training modes. For one-step proprioceptive policies, it operates iteratively in simulation: the policy warm-starts MPPI, and the refined trajectories provide new supervision as the policy changes. A learned terminal value improves short-horizon planning, while an Implicit Q-Learning (IQL) critic guides the policy update. Iterative refinement outperforms training once on frozen MPPI data, and we transfer the learned locomotion…</p>
+<p><a href="https://arxiv.org/abs/2610.05331">论文原文</a> · <a href="https://arxiv.org/pdf/2610.05331">PDF</a></p><hr></body></html>

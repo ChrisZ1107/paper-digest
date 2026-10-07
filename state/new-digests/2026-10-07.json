@@ -1,0 +1,220 @@
+{
+  "date": "2026-10-07",
+  "timestamp": "2026-10-07T09:01:48.320941+08:00",
+  "title": "2026-10-07 每日新论文 5",
+  "slug": "2026-10-07-new",
+  "papers": [
+    {
+      "id": "2610.05819",
+      "title": "Transporting Unsecured Stacked Payloads with a Quadrupedal Robot via Multi-Objective Reinforcement Learning",
+      "abstract": "Transporting unsecured payloads with legged robots over uneven terrain requires balancing locomotion performance and payload stability, since aggressive motion can destabilize the payload even when the robot remains stable. We study quadrupedal transportation of unsecured stacked boxes on an edgeless torso-mounted board without dedicated payload sensors or active carrier mechanisms. To address this trade-off, we propose Payload-Adaptive Multi-Objective Reinforcement learning for Transportation (PAMORT). PAMORT trains a multi-objective base policy conditioned on a preference vector that weights locomotion and payload-stability reward groups, then trains a weight adjuster on the frozen policy to adapt this preference online from proprioception. In simulation, PAMORT achieves comparable or better overall transportation success than a corresponding single-objective baseline across different payload configurations, including an unseen three-box stack, despite training only with two boxes. Real-world experiments on a Unitree Go2 demonstrate zero-shot transfer to slopes and steps at or beyond the training difficulty, with mean success rates of 0.850 for PAMORT and 0.675 for the baseline across eight tasks. These results demonstrate robust unsecured-payload transportation with online adaptation of the locomotion--payload trade-off from proprioceptive information.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-10-06",
+      "date_label": "公告",
+      "age_days": 0.8762537145949074,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.53287,
+      "growth": null,
+      "score": 3.464,
+      "rule_tags": [
+        "强化学习",
+        "四足机器人",
+        "足式运动"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文针对四足机器人在复杂地形上运输不固定堆叠负载的问题，提出了一种名为PAMORT的负载自适应多目标强化学习方法。该方法训练了一个条件化的多目标基础策略，并配合在线权重调整器，根据本体感受信息实时权衡运动性能与负载稳定性。实验表明，该方法在模拟环境和Unitree Go2真实平台上均实现了比单目标基准更高的运输成功率，并具备良好的零样本迁移能力。",
+        "highlights": [
+          {
+            "text": "PAMORT通过训练多目标基础策略及在线权重调整器，实现了基于本体感受的负载运输平衡策略。",
+            "evidence": "PAMORT trains a multi-objective base policy conditioned on a preference vector that weights locomotion and payload-stability reward groups, then trains a weight adjuster on the frozen policy to adapt this preference online from proprioception."
+          },
+          {
+            "text": "在Unitree Go2机器人上的真实环境实验显示，PAMORT在多种任务中表现出优于基准的零样本迁移能力。",
+            "evidence": "Real-world experiments on a Unitree Go2 demonstrate zero-shot transfer to slopes and steps at or beyond the training difficulty, with mean success rates of 0.850 for PAMORT and 0.675 for the baseline across eight tasks."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "四足机器人",
+          "足式运动",
+          "Sim-to-Real"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.05734",
+      "title": "FreeSpeed: Training-Free Speed Control for Generative Robot Policies",
+      "abstract": "Online control of execution speed is essential for deploying robot policies in real-world scenarios, as robots may need to speed up under time constraints or slow down to facilitate human interaction and improve safety. However, imitation-learned policies inherit the execution speed of their demonstrations, and test-time speed modification can introduce unrecoverable out-of-distribution observations, reducing task success. We observe that the directional inconsistency of action chunks reflects task-phase criticality, indicating how aggressively action step lengths can be modified while preserving task success. Based on this observation, we introduce FreeSpeed, a training-free module that post-processes action chunks from pretrained policies. FreeSpeed resamples each predicted chunk at the requested rate, then uses directional inconsistency between adjacent actions as the primary signal for rescaling. This signal adaptively determines how closely the execution speed can approach the requested speed, allowing flexible speed adjustment within the evaluated limits without compromising task success. Across three policy families and 50 simulated tasks, FreeSpeed supports online speed changes, with realized execution rates spanning 0.22x to 2.53x among settings that preserve per-task success. Across four real-world manipulation tasks, FreeSpeed achieves an average success rate of 94.0%, matching the frozen policy's 93.8%, while realizing execution rates from 0.38x to 1.97x.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-06",
+      "date_label": "公告",
+      "age_days": 0.8762537145949074,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.51764,
+      "growth": null,
+      "score": 3.365,
+      "rule_tags": [],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对模仿学习生成的机器人策略难以在推理阶段灵活调整执行速度的问题，本文提出了FreeSpeed方法。该方法无需额外训练，通过分析动作块中相邻动作的方向不一致性来评估任务阶段的紧迫性，从而自适应地重采样动作步长。实验结果表明，该方法在保持任务成功率的同时，实现了在模拟环境和真实世界操作任务中对执行速度的灵活调节。",
+        "highlights": [
+          {
+            "text": "FreeSpeed是一种无需额外训练的模块，能够通过分析动作方向一致性动态调整执行速度，且不影响任务成功率。",
+            "evidence": "FreeSpeed, a training-free module that post-processes action chunks from pretrained policies. FreeSpeed resamples each predicted chunk at the requested rate, then uses directional inconsistency between adjacent actions as the primary signal for rescaling."
+          },
+          {
+            "text": "在四个真实世界的操作任务中，FreeSpeed实现了0.38倍到1.97倍的速度调节，同时维持了94.0%的平均成功率。",
+            "evidence": "Across four real-world manipulation tasks, FreeSpeed achieves an average success rate of 94.0%, matching the frozen policy's 93.8%, while realizing execution rates from 0.38x to 1.97x."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "模仿学习"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.04054",
+      "title": "Reward-DAgger: Robot-Gated Interactive Imitation Learning with General-Purpose Progress-Based Reward Models",
+      "abstract": "Recent advances in robot learning have enabled generalist control policies capable of completing a wide range of tasks. However, their performance degrades when deployed in unseen environments, making it critical to detect failures and teach recovery behaviors. Existing runtime monitoring methods often require task- and policy-specific training or hyperparameter tuning, limiting cross-task deployment and introducing additional overhead during iterative policy updates. We present Reward-DAgger, a robot-gated interactive imitation learning framework that uses dense progress signals from a general-purpose reward model to determine when human intervention is needed. Our approach is agnostic to the underlying policy architecture, requires no access to policy internals, and can be applied across tasks without retuning the gating mechanism. Our results show that Reward-DAgger achieves a better failure-detection accuracy-latency tradeoff than existing runtime monitoring baselines. Across eight simulated and real-world tasks, Reward-DAgger consistently improves the downstream policy's autonomous success rate throughout interactive learning and achieves strong return on human effort, outperforming the baselines in most settings. Importantly, the same gating configuration is used across tasks without task-specific hyperparameter tuning, demonstrating transfer across tasks, environments, and policy architectures. Code and videos are available at https://liralab.usc.edu/reward-dagger.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-10-06",
+      "date_label": "公告",
+      "age_days": 0.8762537145949074,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.5148,
+      "growth": null,
+      "score": 3.346,
+      "rule_tags": [
+        "模仿学习"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对通用机器人策略在陌生环境下的性能下降问题，本文提出了Reward-DAgger框架。该方法利用通用奖励模型提供的密集进度信号来自动确定人工干预时机，实现机器人门控的交互式模仿学习。作者声称，该方法无需针对任务进行超参数调整，且与策略架构无关。实验证明，该框架在八项模拟与真实任务中改善了策略的自主成功率，并实现了良好的失败检测性能。",
+        "highlights": [
+          {
+            "text": "Reward-DAgger使用通用奖励模型的进度信号来判断何时需要人工介入，且无需为不同任务重新调整门控机制。",
+            "evidence": "We present Reward-DAgger, a robot-gated interactive imitation learning framework that uses dense progress signals from a general-purpose reward model to determine when human intervention is needed. Our approach is agnostic to the underlying policy architecture, requires no access to policy internals, and can be applied across tasks without retuning the gating mechanism."
+          },
+          {
+            "text": "在多项模拟和真实任务测试中，该方法在保持较好失败检测准确率的同时，提升了策略的自主成功率。",
+            "evidence": "Across eight simulated and real-world tasks, Reward-DAgger consistently improves the downstream policy's autonomous success rate throughout interactive learning and achieves strong return on human effort, outperforming the baselines in most settings."
+          }
+        ],
+        "tags": [
+          "模仿学习",
+          "机器人操作"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.05855",
+      "title": "Hierarchical Reinforcement Learning for Collision-Free Locomotion of an Underactuated Biped",
+      "abstract": "A bipedal robot cannot deviate from its path to avoid an obstacle without disturbing its balance, and this coupling is most severe on underactuated platforms such as the biped considered here, which has four actuated joints per leg and no hip or ankle roll. This paper presents a Hierarchical Reinforcement Learning (HRL) framework in which a High-Level (HL) policy observes the robot pose, 36 raycast proximity measurements, moving-obstacle states, and a receding-horizon local goal, and outputs a body-velocity command $(v_x, v_y, \\omega_{yaw})$ every ten control steps, while a velocity-conditioned Low-Level (LL) policy tracks each command through PD-controlled joint targets. Both policies are trained jointly with Soft Actor-Critic (SAC). Because the converged gait is task-agnostic, it is frozen and driven by classical planners over the same command interface, yielding three controlled baselines: SAC+A*, SAC+RRT*, and SAC+APF. Across 100 evaluation trials per method in randomized PyBullet environments, the proposed method reaches the goal in 98.0% of static and 88.0% of dynamic trials, against at most 78.0% and 68.0% for the planner hybrids, with path lengths within 4% of the A* reference, and ablations confirm that each observation channel and reward term contributes materially to this performance.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-10-06",
+      "date_label": "公告",
+      "age_days": 0.8762537145949074,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.51011,
+      "growth": null,
+      "score": 3.316,
+      "rule_tags": [
+        "强化学习",
+        "SAC",
+        "足式运动"
+      ],
+      "summary_status": "Gemini 暂不可用，显示规则标签与原文摘要。"
+    },
+    {
+      "id": "2610.04933",
+      "title": "DiVeR: Decision-Critical Verifier Learning for VLA Test-Time Scaling",
+      "abstract": "Scaling robot data and model capacity has improved Vision-Language-Action (VLA) policies, but further progress is constrained by the high cost of robotic data. Verifier-guided test-time scaling offers an efficient alternative by sampling multiple action candidates and selecting the one most likely to lead to task success at inference time. Existing classification-based verifiers learn from trajectory-level outcomes but treat all visited states equally, even though their value for candidate discrimination can vary across a trajectory. At many states, plausible actions are similar and provide limited discrimination signal, while only a sparse set of decision-critical states admits meaningfully different actions that can substantially affect downstream outcomes. To address this, we propose DiVeR, which estimates decision criticality from the dispersion of sampled action representations. DiVeR then uses this signal to reweight verifier learning toward states where action selection is most consequential, without requiring step-level annotations or additional environment interaction. Across LIBERO, RoboCasa, and real-world experiments on a Franka Research 3 robot, DiVeR consistently improves task success through more effective verifier-guided action selection, while adding negligible verifier inference overhead.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-06",
+      "date_label": "公告",
+      "age_days": 0.8762537145949074,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.50486,
+      "growth": null,
+      "score": 3.282,
+      "rule_tags": [
+        "视觉语言动作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对视觉语言动作（VLA）模型在推理阶段的验证器引导策略，本文提出了一种名为DiVeR的方法。该方法通过计算采样动作表征的离散度来评估决策关键性，并利用该信号对验证器进行重加权，聚焦于动作选择对任务结果影响显著的关键状态。实验证明，DiVeR在LIBERO、RoboCasa及真实Franka机器人任务中，以极低的推理开销提升了任务成功率。",
+        "highlights": [
+          {
+            "text": "DiVeR通过评估采样动作表征的离散度来识别决策关键状态，并以此为权重引导验证器学习，从而提升了任务成功率。",
+            "evidence": "To address this, we propose DiVeR, which estimates decision criticality from the dispersion of sampled action representations. DiVeR then uses this signal to reweight verifier learning toward states where action selection is most consequential, without requiring step-level annotations or additional environment interaction."
+          },
+          {
+            "text": "在无需额外环境交互或步骤级标注的情况下，该方法在多个仿真基准及真实机器人实验中实现了性能提升且推理开销极低。",
+            "evidence": "Across LIBERO, RoboCasa, and real-world experiments on a Franka Research 3 robot, DiVeR consistently improves task success through more effective verifier-guided action selection, while adding negligible verifier inference overhead."
+          }
+        ],
+        "tags": [
+          "视觉语言动作",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    }
+  ],
+  "candidate_count": 1338,
+  "personalization_note": "已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。",
+  "html": "<h1>2026-10-07 每日新论文 5</h1>\n<p>机器人 · 强化学习 · 通用 AI</p>\n<p>生成时间：2026-10-07 09:01 CST。从 1338 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>\n<p>本栏优先收录最近发布且未出现在近期日报的 arXiv 论文，不按热度排序；相关性分用于结合你的 Zotero 收藏偏好。</p>\n<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>\n<p>本次合格候选不足 10 篇，实际收录 5 篇。</p>\n<h2>1. Transporting Unsecured Stacked Payloads with a Quadrupedal Robot via Multi-Objective Reinforcement Learning</h2>\n<p><strong>机器人 / 强化学习</strong> · 公告 2026-10-06 · 综合分 3.46</p>\n<p>Zotero 摘要相关性：0.533（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习 · 四足机器人 · 足式运动</p>\n<p><strong>中文概述：</strong>本文针对四足机器人在复杂地形上运输不固定堆叠负载的问题，提出了一种名为PAMORT的负载自适应多目标强化学习方法。该方法训练了一个条件化的多目标基础策略，并配合在线权重调整器，根据本体感受信息实时权衡运动性能与负载稳定性。实验表明，该方法在模拟环境和Unitree Go2真实平台上均实现了比单目标基准更高的运输成功率，并具备良好的零样本迁移能力。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>PAMORT通过训练多目标基础策略及在线权重调整器，实现了基于本体感受的负载运输平衡策略。<br><small>摘要依据：PAMORT trains a multi-objective base policy conditioned on a preference vector that weights locomotion and payload-stability reward groups, then trains a weight adjuster on the frozen policy to adapt this preference online from proprioception.</small></li>\n<li>在Unitree Go2机器人上的真实环境实验显示，PAMORT在多种任务中表现出优于基准的零样本迁移能力。<br><small>摘要依据：Real-world experiments on a Unitree Go2 demonstrate zero-shot transfer to slopes and steps at or beyond the training difficulty, with mean success rates of 0.850 for PAMORT and 0.675 for the baseline across eight tasks.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · 四足机器人 · 足式运动 · Sim-to-Real</p>\n<p><strong>原文摘要节选：</strong>Transporting unsecured payloads with legged robots over uneven terrain requires balancing locomotion performance and payload stability, since aggressive motion can destabilize the payload even when the robot remains stable. We study quadrupedal transportation of unsecured stacked boxes on an edgeless torso-mounted board without dedicated payload sensors or active carrier mechanisms. To address this trade-off, we propose Payload-Adaptive Multi-Objective Reinforcement learning for Transportation (PAMORT). PAMORT trains a multi-objective base policy conditioned on a preference vector that weights locomotion and payload-stability reward groups, then trains a weight adjuster on the frozen policy to adapt this preference online from proprioception. In simulation, PAMORT achieves comparable or…</p>\n<p><a href=\"https://arxiv.org/abs/2610.05819\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.05819\">PDF</a></p><hr>\n<h2>2. FreeSpeed: Training-Free Speed Control for Generative Robot Policies</h2>\n<p><strong>机器人</strong> · 公告 2026-10-06 · 综合分 3.37</p>\n<p>Zotero 摘要相关性：0.518（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>中文概述：</strong>针对模仿学习生成的机器人策略难以在推理阶段灵活调整执行速度的问题，本文提出了FreeSpeed方法。该方法无需额外训练，通过分析动作块中相邻动作的方向不一致性来评估任务阶段的紧迫性，从而自适应地重采样动作步长。实验结果表明，该方法在保持任务成功率的同时，实现了在模拟环境和真实世界操作任务中对执行速度的灵活调节。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>FreeSpeed是一种无需额外训练的模块，能够通过分析动作方向一致性动态调整执行速度，且不影响任务成功率。<br><small>摘要依据：FreeSpeed, a training-free module that post-processes action chunks from pretrained policies. FreeSpeed resamples each predicted chunk at the requested rate, then uses directional inconsistency between adjacent actions as the primary signal for rescaling.</small></li>\n<li>在四个真实世界的操作任务中，FreeSpeed实现了0.38倍到1.97倍的速度调节，同时维持了94.0%的平均成功率。<br><small>摘要依据：Across four real-world manipulation tasks, FreeSpeed achieves an average success rate of 94.0%, matching the frozen policy&#x27;s 93.8%, while realizing execution rates from 0.38x to 1.97x.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 模仿学习</p>\n<p><strong>原文摘要节选：</strong>Online control of execution speed is essential for deploying robot policies in real-world scenarios, as robots may need to speed up under time constraints or slow down to facilitate human interaction and improve safety. However, imitation-learned policies inherit the execution speed of their demonstrations, and test-time speed modification can introduce unrecoverable out-of-distribution observations, reducing task success. We observe that the directional inconsistency of action chunks reflects task-phase criticality, indicating how aggressively action step lengths can be modified while preserving task success. Based on this observation, we introduce FreeSpeed, a training-free module that post-processes action chunks from pretrained policies. FreeSpeed resamples each predicted chunk at the…</p>\n<p><a href=\"https://arxiv.org/abs/2610.05734\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.05734\">PDF</a></p><hr>\n<h2>3. Reward-DAgger: Robot-Gated Interactive Imitation Learning with General-Purpose Progress-Based Reward Models</h2>\n<p><strong>机器人 / 强化学习</strong> · 公告 2026-10-06 · 综合分 3.35</p>\n<p>Zotero 摘要相关性：0.515（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>模仿学习</p>\n<p><strong>中文概述：</strong>针对通用机器人策略在陌生环境下的性能下降问题，本文提出了Reward-DAgger框架。该方法利用通用奖励模型提供的密集进度信号来自动确定人工干预时机，实现机器人门控的交互式模仿学习。作者声称，该方法无需针对任务进行超参数调整，且与策略架构无关。实验证明，该框架在八项模拟与真实任务中改善了策略的自主成功率，并实现了良好的失败检测性能。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>Reward-DAgger使用通用奖励模型的进度信号来判断何时需要人工介入，且无需为不同任务重新调整门控机制。<br><small>摘要依据：We present Reward-DAgger, a robot-gated interactive imitation learning framework that uses dense progress signals from a general-purpose reward model to determine when human intervention is needed. Our approach is agnostic to the underlying policy architecture, requires no access to policy internals, and can be applied across tasks without retuning the gating mechanism.</small></li>\n<li>在多项模拟和真实任务测试中，该方法在保持较好失败检测准确率的同时，提升了策略的自主成功率。<br><small>摘要依据：Across eight simulated and real-world tasks, Reward-DAgger consistently improves the downstream policy&#x27;s autonomous success rate throughout interactive learning and achieves strong return on human effort, outperforming the baselines in most settings.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>模仿学习 · 机器人操作</p>\n<p><strong>原文摘要节选：</strong>Recent advances in robot learning have enabled generalist control policies capable of completing a wide range of tasks. However, their performance degrades when deployed in unseen environments, making it critical to detect failures and teach recovery behaviors. Existing runtime monitoring methods often require task- and policy-specific training or hyperparameter tuning, limiting cross-task deployment and introducing additional overhead during iterative policy updates. We present Reward-DAgger, a robot-gated interactive imitation learning framework that uses dense progress signals from a general-purpose reward model to determine when human intervention is needed. Our approach is agnostic to the underlying policy architecture, requires no access to policy internals, and can be applied…</p>\n<p><a href=\"https://arxiv.org/abs/2610.04054\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.04054\">PDF</a></p><hr>\n<h2>4. Hierarchical Reinforcement Learning for Collision-Free Locomotion of an Underactuated Biped</h2>\n<p><strong>机器人 / 强化学习</strong> · 公告 2026-10-06 · 综合分 3.32</p>\n<p>Zotero 摘要相关性：0.510（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习 · SAC · 足式运动</p>\n<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>\n<p><strong>原文摘要节选：</strong>A bipedal robot cannot deviate from its path to avoid an obstacle without disturbing its balance, and this coupling is most severe on underactuated platforms such as the biped considered here, which has four actuated joints per leg and no hip or ankle roll. This paper presents a Hierarchical Reinforcement Learning (HRL) framework in which a High-Level (HL) policy observes the robot pose, 36 raycast proximity measurements, moving-obstacle states, and a receding-horizon local goal, and outputs a body-velocity command $(v_x, v_y, \\omega_{yaw})$ every ten control steps, while a velocity-conditioned Low-Level (LL) policy tracks each command through PD-controlled joint targets. Both policies are trained jointly with Soft Actor-Critic (SAC). Because the converged gait is task-agnostic, it is…</p>\n<p><a href=\"https://arxiv.org/abs/2610.05855\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.05855\">PDF</a></p><hr>\n<h2>5. DiVeR: Decision-Critical Verifier Learning for VLA Test-Time Scaling</h2>\n<p><strong>机器人</strong> · 公告 2026-10-06 · 综合分 3.28</p>\n<p>Zotero 摘要相关性：0.505（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>视觉语言动作</p>\n<p><strong>中文概述：</strong>针对视觉语言动作（VLA）模型在推理阶段的验证器引导策略，本文提出了一种名为DiVeR的方法。该方法通过计算采样动作表征的离散度来评估决策关键性，并利用该信号对验证器进行重加权，聚焦于动作选择对任务结果影响显著的关键状态。实验证明，DiVeR在LIBERO、RoboCasa及真实Franka机器人任务中，以极低的推理开销提升了任务成功率。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>DiVeR通过评估采样动作表征的离散度来识别决策关键状态，并以此为权重引导验证器学习，从而提升了任务成功率。<br><small>摘要依据：To address this, we propose DiVeR, which estimates decision criticality from the dispersion of sampled action representations. DiVeR then uses this signal to reweight verifier learning toward states where action selection is most consequential, without requiring step-level annotations or additional environment interaction.</small></li>\n<li>在无需额外环境交互或步骤级标注的情况下，该方法在多个仿真基准及真实机器人实验中实现了性能提升且推理开销极低。<br><small>摘要依据：Across LIBERO, RoboCasa, and real-world experiments on a Franka Research 3 robot, DiVeR consistently improves task success through more effective verifier-guided action selection, while adding negligible verifier inference overhead.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>视觉语言动作 · 推理</p>\n<p><strong>原文摘要节选：</strong>Scaling robot data and model capacity has improved Vision-Language-Action (VLA) policies, but further progress is constrained by the high cost of robotic data. Verifier-guided test-time scaling offers an efficient alternative by sampling multiple action candidates and selecting the one most likely to lead to task success at inference time. Existing classification-based verifiers learn from trajectory-level outcomes but treat all visited states equally, even though their value for candidate discrimination can vary across a trajectory. At many states, plausible actions are similar and provide limited discrimination signal, while only a sparse set of decision-critical states admits meaningfully different actions that can substantially affect downstream outcomes. To address this, we propose…</p>\n<p><a href=\"https://arxiv.org/abs/2610.04933\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.04933\">PDF</a></p><hr>"
+}

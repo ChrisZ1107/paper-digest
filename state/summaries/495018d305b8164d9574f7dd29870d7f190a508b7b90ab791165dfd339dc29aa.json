@@ -1,0 +1,17 @@
+{
+  "overview": "针对视觉语言动作（VLA）模型在推理阶段的验证器引导策略，本文提出了一种名为DiVeR的方法。该方法通过计算采样动作表征的离散度来评估决策关键性，并利用该信号对验证器进行重加权，聚焦于动作选择对任务结果影响显著的关键状态。实验证明，DiVeR在LIBERO、RoboCasa及真实Franka机器人任务中，以极低的推理开销提升了任务成功率。",
+  "highlights": [
+    {
+      "text": "DiVeR通过评估采样动作表征的离散度来识别决策关键状态，并以此为权重引导验证器学习，从而提升了任务成功率。",
+      "evidence": "To address this, we propose DiVeR, which estimates decision criticality from the dispersion of sampled action representations. DiVeR then uses this signal to reweight verifier learning toward states where action selection is most consequential, without requiring step-level annotations or additional environment interaction."
+    },
+    {
+      "text": "在无需额外环境交互或步骤级标注的情况下，该方法在多个仿真基准及真实机器人实验中实现了性能提升且推理开销极低。",
+      "evidence": "Across LIBERO, RoboCasa, and real-world experiments on a Franka Research 3 robot, DiVeR consistently improves task success through more effective verifier-guided action selection, while adding negligible verifier inference overhead."
+    }
+  ],
+  "tags": [
+    "视觉语言动作",
+    "推理"
+  ]
+}

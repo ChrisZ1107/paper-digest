@@ -1,0 +1,17 @@
+{
+  "overview": "针对视觉语言动作（VLA）模型在复杂机器人任务中面临的策略与安全盾冲突问题，本文提出了FailBank自进化框架。该方法通过将运行时的安全反馈转化为持久的策略改进目标，利用基于CBF的安全模块作为观察者生成修正信号，并结合结果感知机制进行LoRA微调。实验表明，该方法在提高任务成功率的同时，有效降低了策略诱发的累积成本。",
+  "highlights": [
+    {
+      "text": "FailBank通过将运行时的安全反馈转化为持续的策略监督，改进了VLA模型在机器人操作中的表现。",
+      "evidence": "These results show that runtime feedback can serve as persistent policy supervision rather than only as a temporary action constraint."
+    },
+    {
+      "text": "在VLA-Arena基准测试中，FailBank相较于基础策略显著提升了成功率并降低了累积成本。",
+      "evidence": "Across the two backbones, FailBank improves task success rate by 8.5 and 6.9 percentage points, while reducing policy-induced cumulative cost by 35.6\\% and 23.8\\%, respectively."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "视觉语言动作"
+  ]
+}

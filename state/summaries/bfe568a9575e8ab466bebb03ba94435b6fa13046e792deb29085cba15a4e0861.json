@@ -1,0 +1,18 @@
+{
+  "overview": "针对灵巧操作中难以捕捉3D空间结构与接触几何的问题，本文提出了PointWAM模型。该模型将世界分解为场景与手部，通过在共享时空坐标系下联合预测两者的3D点轨迹来实现动作建模。通过大规模人类演示视频预训练，该方法能有效利用场景轨迹监督，在DexJoCo任务及真实机器人实验中表现优于现有最优模型。",
+  "highlights": [
+    {
+      "text": "提出了一种将场景与手部解耦的3D点轨迹预测框架，无需特定对象或关键点标注即可利用大规模人类演示视频进行预训练。",
+      "evidence": "This explicit, disentangled representation enables effective pre-training on large-scale human demonstration videos without requiring any task-specific object or keypoint selection."
+    },
+    {
+      "text": "引入场景轨迹监督机制显著提升了任务成功率，并在多个灵巧操作任务中超过了现有技术水平及视觉语言动作模型。",
+      "evidence": "With both, PointWAM surpasses the prior state of the art on ten DexJoCo tasks by 11.7 points and outperforms strong VLAs on a real robot."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "世界模型",
+    "视觉语言动作"
+  ]
+}

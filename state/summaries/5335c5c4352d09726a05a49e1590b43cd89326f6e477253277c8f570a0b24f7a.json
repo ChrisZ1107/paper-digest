@@ -1,0 +1,17 @@
+{
+  "overview": "针对通用机器人策略在陌生环境下的性能下降问题，本文提出了Reward-DAgger框架。该方法利用通用奖励模型提供的密集进度信号来自动确定人工干预时机，实现机器人门控的交互式模仿学习。作者声称，该方法无需针对任务进行超参数调整，且与策略架构无关。实验证明，该框架在八项模拟与真实任务中改善了策略的自主成功率，并实现了良好的失败检测性能。",
+  "highlights": [
+    {
+      "text": "Reward-DAgger使用通用奖励模型的进度信号来判断何时需要人工介入，且无需为不同任务重新调整门控机制。",
+      "evidence": "We present Reward-DAgger, a robot-gated interactive imitation learning framework that uses dense progress signals from a general-purpose reward model to determine when human intervention is needed. Our approach is agnostic to the underlying policy architecture, requires no access to policy internals, and can be applied across tasks without retuning the gating mechanism."
+    },
+    {
+      "text": "在多项模拟和真实任务测试中，该方法在保持较好失败检测准确率的同时，提升了策略的自主成功率。",
+      "evidence": "Across eight simulated and real-world tasks, Reward-DAgger consistently improves the downstream policy's autonomous success rate throughout interactive learning and achieves strong return on human effort, outperforming the baselines in most settings."
+    }
+  ],
+  "tags": [
+    "模仿学习",
+    "机器人操作"
+  ]
+}

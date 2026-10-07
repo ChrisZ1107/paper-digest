@@ -1,0 +1,16 @@
+{
+  "overview": "针对机器人代理在执行任务时难以有效关联动作与结果、且难以维护决策上下文的问题，本文提出了RobotUse框架。该方法通过将计算、上下文和决策组织在物理动作的指定与修订周围，利用视觉选择目标和姿态，由后端处理几何、运动规划及控制。作者声称，RobotUse在RoboLab基准测试中达到了45%的任务成功率，通过持续学习机制提升了在真实环境下的任务迁移能力，并减少了对预定义动作抽象的依赖。",
+  "highlights": [
+    {
+      "text": "RobotUse通过视觉目标选择与后端执行分离，有效组织了计算与决策，并在RoboLab测试中优于现有方法。",
+      "evidence": "On RoboLab, RobotUse achieves 45% task success, outperforming CaP-X by 6.7 percentage points while maintaining compact decision contexts and reducing reliance on predefined action abstractions."
+    },
+    {
+      "text": "该框架支持持续学习，能够通过更新持久化手册，实现从真实执行中获取反馈并迁移至后续任务。",
+      "evidence": "Furthermore, we show that RobotUse learns from real-world execution despite imperfect feedback and transfers what it learns to subsequent tasks."
+    }
+  ],
+  "tags": [
+    "机器人操作"
+  ]
+}

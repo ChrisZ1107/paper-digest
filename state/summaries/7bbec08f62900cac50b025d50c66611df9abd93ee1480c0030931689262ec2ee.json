@@ -1,0 +1,17 @@
+{
+  "overview": "针对基于生成式扩散Transformer（DiT）的机器人控制策略，现有研究多依赖未来视觉预测进行迁移。本文提出NowWAM方法，通过去噪当前观测并从同一视觉流中预测机器人动作，解除了对未来视觉目标的依赖。实验表明，该方法在保持去噪轨迹作为控制接口的同时，能够直接耦合生成式目标与动作表示。在LIBERO-Plus基准测试中，NowWAM在提升成功率的同时，显著降低了计算开销并提升了推理速度。",
+  "highlights": [
+    {
+      "text": "NowWAM证明了生成式适配无需依赖未来视觉目标，去噪轨迹本身即是有效的控制接口。",
+      "evidence": "suggesting that a separate future target is not essential for generative adaptation, while the denoising trajectory remains an effective interface for control."
+    },
+    {
+      "text": "在LIBERO-Plus任务中，NowWAM对比未来目标联合训练基线提升了6.1个百分点，并将单步推理时间缩短了1.8倍。",
+      "evidence": "On LIBERO-Plus, NowWAM reaches 87.7% with FLUX2-Klein, improving over the future-target co-training baseline by 6.1 points while halving training visual tokens (784 to 392) and reducing step time from 2.85 s to 1.63 s, a 1.8x speedup."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "推理"
+  ]
+}

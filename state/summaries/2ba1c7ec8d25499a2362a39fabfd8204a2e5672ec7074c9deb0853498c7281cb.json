@@ -1,0 +1,18 @@
+{
+  "overview": "VAMPS框架旨在解决直接在物理系统上学习机器人策略的成本与安全问题。该方法利用模型预测路径积分（MPPI）控制训练可重用策略，无需人类演示。VAMPS支持两种模式：一是在仿真中通过迭代优化训练本体感知策略，并迁移至四足机器人；二是通过自主采集的真实机器人数据直接训练视觉运动策略，并应用于拾取放置及力感知任务。作者声称该框架能有效提升策略学习的效率与通用性。",
+  "highlights": [
+    {
+      "text": "提出了一种基于MPPI的迭代训练方法，在仿真中优化策略并改善短程规划，成功实现四足机器人的运动控制迁移。",
+      "evidence": "Iterative refinement outperforms training once on frozen MPPI data, and we transfer the learned locomotion policy to a Unitree Go2."
+    },
+    {
+      "text": "利用基于Transformer的动作分块技术，实现了在无需人工演示的情况下，通过自主采集的真实机器人数据学习复杂视觉运动任务。",
+      "evidence": "Action Chunking with Transformers predicts action chunks, reducing the effective prediction horizon, and is trained offline on this fixed dataset."
+    }
+  ],
+  "tags": [
+    "Sim-to-Real",
+    "机器人操作",
+    "足式运动"
+  ]
+}
