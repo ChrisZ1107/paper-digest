@@ -1,0 +1,18 @@
+{
+  "overview": "针对视觉语言动作（VLA）模型在不同任务状态和环境下表现不一致的问题，作者提出了一种名为SWAP（StepWise Action Policy Routing）的框架。该方法将策略路由建模为离线强化学习问题，通过学习一个路由评判器，在执行过程的每个决策步骤动态选择最优的VLA策略，而非仅依赖单一模型，从而提升了机器人操作任务的成功率和执行效率。",
+  "highlights": [
+    {
+      "text": "SWAP框架通过学习路由评判器，实现了在机器人执行过程中根据观测动态选择最适合的VLA策略，克服了单一策略在复杂环境下的局限性。",
+      "evidence": "SWAP formulates policy routing as an offline reinforcement learning problem, learning a routing critic that selects the most appropriate policy at each decision step given the current observation."
+    },
+    {
+      "text": "实验结果表明，在真实世界的DROID操作任务中，该方法相比固定策略基准提升了最高33%的成功率，并缩短了操作步长。",
+      "evidence": "SWAP improves over fixed-policy execution and routing baselines, giving absolute improvements in real-world task success up to 33% while reducing successful trajectory robot action step length by 28.3%."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "离线强化学习",
+    "视觉语言动作"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "overview": "针对视觉语言动作（VLA）策略中“可行性-可能性鸿沟”导致的安全性问题，作者提出了一种名为VICS-G的训练无关重排序方法。该方法通过推导历史条件策略下的可行未来边缘分布，筛选出能确保安全任务完成路径的动作候选。实验表明，该方法在不进行策略重训练或在线回溯的情况下，有效降低了累积安全成本，并保持了任务成功率和效率。",
+  "highlights": [
+    {
+      "text": "提出VICS-G方法，通过评估动作候选对未来安全完成任务的支持度，有效解决策略在局部最优但缺乏后续可行路径的问题。",
+      "evidence": "Our alarm-triggered, training-free reranker VICS-G lowers mean cumulative safety cost by 1.9%-57.5% across six Safety-CHORES settings while remaining within 2.5 percentage points of policy sampling in success and 0.82 steps in mean episode length."
+    },
+    {
+      "text": "该方法无需对策略进行重训练或执行在线回溯，为提升VLA策略的安全性提供了一种计算高效且实用的方案。",
+      "evidence": "Our approach offers a promising and practical path toward safer task completion, grounded in an exact policy-relative target yet requiring neither policy retraining nor online rollouts."
+    }
+  ],
+  "tags": [
+    "视觉语言动作",
+    "推理"
+  ]
+}

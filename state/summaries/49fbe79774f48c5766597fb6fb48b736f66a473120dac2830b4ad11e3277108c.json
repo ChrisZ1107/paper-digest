@@ -1,0 +1,16 @@
+{
+  "overview": "针对现有科学智能体基准测试难以随能力进化而保持区分度的问题，本文提出了AutoSciBench框架。该框架通过定义高层概念与底层生成配置，利用智能体轨迹反馈和评判意见，迭代修正任务配置并生成新任务，从而关闭逻辑漏洞，促使评估向原始数据解析和证据整合迁移。实验表明，该方法在计算生物学、材料科学及临床影像领域生成的基准测试能有效降低智能体准确率，显示出评估方案随能力进化的适应性。",
+  "highlights": [
+    {
+      "text": "AutoSciBench框架利用智能体求解轨迹和评判反馈，迭代优化任务生成配置，实现了评估任务的持续演进。",
+      "evidence": "Agents attempt to solve each task, producing solver trajectories and corresponding judge feedback which AutoSciBench uses to revise the recipe or concept, closing observed shortcuts and shifting tasks toward raw-data re-examination, interpretation of intermediate results, and evidence integration."
+    },
+    {
+      "text": "在计算生物学和材料科学领域，AutoSciBench生成的任务比人工构建的基准测试更能有效降低智能体的准确率。",
+      "evidence": "Generated benchmarks reduce average solver accuracy by 22.4 and 25.5 percentage points relative to the human-curated benchmarks in computational biology and materials science, respectively"
+    }
+  ],
+  "tags": [
+    "推理"
+  ]
+}

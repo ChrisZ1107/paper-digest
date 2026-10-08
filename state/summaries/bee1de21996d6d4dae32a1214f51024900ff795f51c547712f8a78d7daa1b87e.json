@@ -1,0 +1,23 @@
+{
+  "overview": "针对移动操作任务中空间感知与异构动作协调的挑战，作者提出了通用基础模型MM-ABC。该模型通过结合多级视觉语言模型特征进行空间感知，引入基于世界模型和几何意图的未来分支增强预测监督，并利用掩码联合注意力机制协调移动与操作动作流。实验结果表明，该模型在多个模拟基准测试及真实环境移动操作任务中均表现出较好的性能。",
+  "highlights": [
+    {
+      "text": "MM-ABC通过引入训练阶段的未来监督机制（世界模型与几何意图），显著增强了感知能力与操作意图预测。",
+      "evidence": "a training-only future branch that uses world imagination and geometric intent as extra supervision, strengthening perception and manipulation-intent prediction and improving the overall learning signal"
+    },
+    {
+      "text": "通过MM-APT机制，模型利用掩码联合注意力和精确动作预测，有效实现了对操作与移动动作流的协调控制。",
+      "evidence": "MM-APT, which coordinates separate manipulation and mobility streams through masked joint attention and clean-action x-prediction."
+    },
+    {
+      "text": "在广泛的跨数据集与多形态机器人预训练后，MM-ABC在EBench、RoboCasa365及真实世界任务中验证了其通用性。",
+      "evidence": "MM-ABC achieves 44.71% success on EBench, 61.2% on RoboCasa365, 99.1% on LIBERO, 82.8% on LIBERO-Plus without perturbation training, and 83% mean success on five real-world tasks."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "世界模型",
+    "视觉语言动作",
+    "Sim-to-Real"
+  ]
+}

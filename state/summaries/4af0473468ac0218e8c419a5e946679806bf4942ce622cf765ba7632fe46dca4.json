@@ -1,0 +1,19 @@
+{
+  "overview": "针对机器人行为学习中流策略（Flow policies）的优化需求，本文提出了QF3（Fast Flow RL with Filtered Q-Gradients）算法。该算法结合流匹配与评论家（critic）动作梯度，并通过过滤机制仅在动作维度接近重放数据时进行更新，以确保策略训练的可靠性。作者声称，QF3能实现从零开始训练人形机器人运动策略，并支持零样本硬件迁移，在训练效率上较FPO++有显著提升，同时适用于预训练策略的微调。",
+  "highlights": [
+    {
+      "text": "QF3通过仅在动作维度接近重放动作时应用评论家梯度，确保了流策略更新的可靠性。",
+      "evidence": "To keep updates where the critic and this prediction are reliable, QF3 applies the critic gradient only to action dimensions that stay near the replay action."
+    },
+    {
+      "text": "该算法实现了人形机器人运动策略从零开始的训练及其在硬件上的零样本迁移，且训练速度较现有方法提升10倍。",
+      "evidence": "Paired with a high-throughput off-policy training recipe, it trains humanoid locomotion and motion-tracking policies with a 10x wall-clock speedup over FPO++, a recent on-policy flow RL method."
+    }
+  ],
+  "tags": [
+    "人形机器人",
+    "足式运动",
+    "机器人操作",
+    "Sim-to-Real"
+  ]
+}

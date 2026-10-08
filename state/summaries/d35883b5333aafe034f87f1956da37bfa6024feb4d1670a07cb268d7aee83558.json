@@ -1,0 +1,16 @@
+{
+  "overview": "针对深度强化学习在物理机器人部署中产生的动作震荡问题，本文分析了现有的空间平滑方法可能导致任务性能下降的局限。作者重构了时间正则化的理论基础，证明其能通过时间惩罚项间接实现空间平滑效果。基于此，作者提出了一种名为CATS的方法，通过结合时间正则化与线性递增策略，在减少动作震荡的同时，有效维持了任务性能，并通过仿真及真实环境验证了其有效性。",
+  "highlights": [
+    {
+      "text": "作者证明了时间惩罚项能够约束在共享下一状态的当前状态之间的预期动作差异，从而揭示了其对空间平滑的辅助作用。",
+      "evidence": "We revisit this assumption by proving that the temporal penalty bounds the expected action differences between current states sharing a next state, revealing a spatial effect that empirically extends to spatial smoothness."
+    },
+    {
+      "text": "提出的CATS方法利用线性递增策略，使策略能够在执行平滑操作前优先学习到高奖励行为，从而更好地平衡性能与平滑度。",
+      "evidence": "Through linear ramp-up, CATS allows the policy to learn rewarding behavior before progressively smoothing its actions, improving return preservation and both temporal and spatial smoothness."
+    }
+  ],
+  "tags": [
+    "强化学习"
+  ]
+}

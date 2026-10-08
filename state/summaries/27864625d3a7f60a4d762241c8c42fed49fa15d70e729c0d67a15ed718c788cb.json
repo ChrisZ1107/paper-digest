@@ -1,0 +1,17 @@
+{
+  "overview": "针对大模型智能体在持续技能进化中难以保持行为证据与任务背景关联的问题，作者提出了EVISKILL框架。该方法将执行观测整理为可重放的证据卡片，并将技能修订与支持性上下文显式链接。通过针对性重放验证修订建议，并结合全局验证机制，系统实现了技能的积累与精炼。在三个基准测试上的实验表明，该方法能有效提升智能体的技能进化效果。",
+  "highlights": [
+    {
+      "text": "EVISKILL通过将执行观测组织为“可重放证据卡片”，解决了现有方法在技能演进过程中丢失行为证据和任务上下文的问题。",
+      "evidence": "we introduce EVISKILL, an evidence-driven framework that organizes execution observations into Replayable Evidence Cards and synthesizes edits with explicit links to their supporting contexts."
+    },
+    {
+      "text": "该框架通过针对性的重放验证和全局验证机制，能够有选择地保留并精炼技能更新，避免了因全局验证失败而丢弃有效局部修正的情况。",
+      "evidence": "Targeted replay verifies these edits through re-execution and provides feedback for correction. Across epochs, EVISKILL preserves evidence and provisionally retains supported edits for further refinement, while global validation governs their incorporation into the final skill."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "推理"
+  ]
+}

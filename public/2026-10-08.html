@@ -1,0 +1,141 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>2026-10-08 热门论文 Top 10｜机器人·强化学习·AI</title><body><h1>2026-10-08 热门论文 Top 10</h1>
+<p>机器人 · 强化学习 · 通用 AI</p>
+<p>生成时间：2026-10-08 09:01 CST。从 891 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>
+<p>候选来源：<a href="https://huggingface.co/papers">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>
+<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>
+<h2>1. DiVeR: Decision-Critical Verifier Learning for VLA Test-Time Scaling</h2>
+<p><strong>机器人</strong> · 发表 2026-10-04 · 综合分 5.64</p>
+<p>Zotero 摘要相关性：0.505（相似度分数，不是概率）。</p>
+<p>HF 点赞 9 · 讨论 1</p>
+<p>较上次观测（1.0 天前）：点赞 +9 · 讨论 +1。</p>
+<p><strong>规则标签：</strong>视觉语言动作</p>
+<p><strong>中文概述：</strong>针对视觉语言动作（VLA）模型在推理阶段的验证器引导策略，本文提出了一种名为DiVeR的方法。该方法通过计算采样动作表征的离散度来评估决策关键性，并利用该信号对验证器进行重加权，聚焦于动作选择对任务结果影响显著的关键状态。实验证明，DiVeR在LIBERO、RoboCasa及真实Franka机器人任务中，以极低的推理开销提升了任务成功率。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>DiVeR通过评估采样动作表征的离散度来识别决策关键状态，并以此为权重引导验证器学习，从而提升了任务成功率。<br><small>摘要依据：To address this, we propose DiVeR, which estimates decision criticality from the dispersion of sampled action representations. DiVeR then uses this signal to reweight verifier learning toward states where action selection is most consequential, without requiring step-level annotations or additional environment interaction.</small></li>
+<li>在无需额外环境交互或步骤级标注的情况下，该方法在多个仿真基准及真实机器人实验中实现了性能提升且推理开销极低。<br><small>摘要依据：Across LIBERO, RoboCasa, and real-world experiments on a Franka Research 3 robot, DiVeR consistently improves task success through more effective verifier-guided action selection, while adding negligible verifier inference overhead.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>视觉语言动作 · 推理</p>
+<p><strong>原文摘要节选：</strong>Scaling robot data and model capacity has improved Vision-Language-Action (VLA) policies, but further progress is constrained by the high cost of robotic data. Verifier-guided test-time scaling offers an efficient alternative by sampling multiple action candidates and selecting the one most likely to lead to task success at inference time. Existing classification-based verifiers learn from trajectory-level outcomes but treat all visited states equally, even though their value for candidate discrimination can vary across a trajectory. At many states, plausible actions are similar and provide limited discrimination signal, while only a sparse set of decision-critical states admits meaningfully different actions that can substantially affect downstream outcomes. To address this, we propose…</p>
+<p><a href="https://arxiv.org/abs/2610.04933">论文原文</a> · <a href="https://arxiv.org/pdf/2610.04933">PDF</a> · <a href="https://huggingface.co/papers/2610.04933">讨论与热度</a></p><hr>
+<h2>2. HuatuoGPT-3: RL-Only Domain Adaptation from Base Models</h2>
+<p><strong>通用 AI</strong> · 发表 2026-10-05 · 综合分 4.79</p>
+<p>Zotero 摘要相关性：0.338（相似度分数，不是概率）。</p>
+<p>HF 点赞 21 · 讨论 1 · 仓库累计 Star 16（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +21 · 讨论 +1。</p>
+<p><strong>中文概述：</strong>针对大语言模型领域自适应中传统SFT+RL管线存在的复杂性及探索多样性不足问题，该论文提出了One-stage Policy Optimization (OnePO)方法。通过引入自适应目标进化和教师退休机制，OnePO解决了梯度饥饿与教师分布锚定问题，实现了从基座模型直接进行强化学习的领域自适应，并在医学领域应用中展现了优于传统方法的性能。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出OnePO方法，通过动态调整学习策略和教师弃用机制，解决领域自适应训练中的梯度饥饿与教师分布锚定问题。<br><small>摘要依据：OnePO combines Adaptive Objective Evolution to strengthen learning on informative low-probability teacher tokens and Teacher Retirement to discard teacher outputs once the current policy can surpass them.</small></li>
+<li>在医学领域应用中，OnePO表现优于传统的SFT+RL及纯RL方法，并在HealthBench评测中达到更高分数。<br><small>摘要依据：On medical adaptation, OnePO achieves 67.2 on HealthBench (Total) with only 20K training samples, outperforming SFT+RL and pure RL by 2.7 and 7.4 points, respectively.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>
+<p><strong>原文摘要节选：</strong>Domain adaptation aims to turn a general-purpose large language model (LLM) into an expert for a target domain. While the dominant SFT+RL pipeline offers a convenient cold start, it may reduce exploration diversity and introduces additional complexity through multi-stage optimization. These limitations motivate RL-only adaptation. However, pure on-policy RL suffers from a cold-start problem, while mixed-policy RL still falls short: informative tokens in teacher outputs are learned too slowly in early training, and stale teacher outputs can hinder later improvement. We identify these two failure modes as Gradient Starvation and Teacher-Distribution Anchoring. To address them, we propose One-stage Policy Optimization (OnePO), which treats teacher outputs as transient guidance for policy…</p>
+<p><a href="https://arxiv.org/abs/2610.05966">论文原文</a> · <a href="https://arxiv.org/pdf/2610.05966">PDF</a> · <a href="https://huggingface.co/papers/2610.05966">讨论与热度</a> · <a href="https://github.com/FreedomIntelligence/HuatuoGPT-3">代码</a></p><hr>
+<h2>3. Taming VLAs under Robot Execution Errors: Self-Compensation and Stress Testing</h2>
+<p><strong>机器人</strong> · 发表 2026-09-29 · 综合分 4.78</p>
+<p>Zotero 摘要相关性：0.498（相似度分数，不是概率）。</p>
+<p>HF 点赞 25 · 讨论 2</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>视觉语言动作</p>
+<p><strong>中文概述：</strong>针对视觉语言动作（VLA）模型在机器人执行误差下表现不佳的问题，本文提出了一种名为“自我补偿VLA”的部署时自适应方法。该方法利用命令动作与执行动作之间的残差进行在线更新，无需奖励或标签。同时，作者开发了RoboStress仿真基准来模拟多种动力学误差，实验显示该方法提升了不同物理机械臂的成功率。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出了一种自我补偿VLA方法，通过计算命令动作与执行动作之间的残差，在不依赖奖励或标注的情况下实现部署时的在线自适应。<br><small>摘要依据：Without task rewards or labels, it updates the policy online using the residual between the action commanded by a VLA and the motion executed by the robot.</small></li>
+<li>开发了RoboStress仿真基准，通过集成摩擦、回隙、合规性和重力补偿误差等动力学模型，评估机器人执行误差下的鲁棒性。<br><small>摘要依据：It combines established joint-level models of friction, backlash, compliance, and gravity-compensation error into seven deployment scenarios whose execution errors depend on the robot&#x27;s state and motion history.</small></li>
+<li>在物理机械臂实验中，该方法将任务平均成功率提升了超过30个百分点，且泛化能力覆盖了未见过的物体。<br><small>摘要依据：On two physical robot arms with different usage histories, it raises the average task success rate by more than 30 percentage points on each arm, and the gains extend to objects not seen in the task demonstrations.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>视觉语言动作 · 机器人操作</p>
+<p><strong>原文摘要节选：</strong>Vision-language-action (VLA) policies often fail when a robot&#x27;s executed motion deviates from their commanded action. Such execution errors arise from the robot&#x27;s mechanics and operating conditions, such as wear and payload changes. We propose self-compensating VLA, a deployment-time adaptation method that enables a VLA policy to pre-compensate for the robot&#x27;s execution errors when generating commands. Without task rewards or labels, it updates the policy online using the residual between the action commanded by a VLA and the motion executed by the robot. To stress-test VLA robustness across execution conditions that are impractical to cover with physical robots alone, we introduce RoboStress, a controlled simulation benchmark. It combines established joint-level models of friction,…</p>
+<p><a href="https://arxiv.org/abs/2609.37334">论文原文</a> · <a href="https://arxiv.org/pdf/2609.37334">PDF</a> · <a href="https://huggingface.co/papers/2609.37334">讨论与热度</a></p><hr>
+<h2>4. MM-ABC: Towards Generalist Mobile Manipulation via Seeing, Coordinating and Imagining</h2>
+<p><strong>机器人</strong> · 发表 2026-09-28 · 综合分 4.71</p>
+<p>Zotero 摘要相关性：0.436（相似度分数，不是概率）。</p>
+<p>HF 点赞 6 · 讨论 1</p>
+<p>较上次观测（1.0 天前）：点赞 +5 · 讨论 +0。</p>
+<p><strong>规则标签：</strong>世界模型</p>
+<p><strong>中文概述：</strong>针对移动操作任务中空间感知与异构动作协调的挑战，作者提出了通用基础模型MM-ABC。该模型通过结合多级视觉语言模型特征进行空间感知，引入基于世界模型和几何意图的未来分支增强预测监督，并利用掩码联合注意力机制协调移动与操作动作流。实验结果表明，该模型在多个模拟基准测试及真实环境移动操作任务中均表现出较好的性能。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>MM-ABC通过引入训练阶段的未来监督机制（世界模型与几何意图），显著增强了感知能力与操作意图预测。<br><small>摘要依据：a training-only future branch that uses world imagination and geometric intent as extra supervision, strengthening perception and manipulation-intent prediction and improving the overall learning signal</small></li>
+<li>通过MM-APT机制，模型利用掩码联合注意力和精确动作预测，有效实现了对操作与移动动作流的协调控制。<br><small>摘要依据：MM-APT, which coordinates separate manipulation and mobility streams through masked joint attention and clean-action x-prediction.</small></li>
+<li>在广泛的跨数据集与多形态机器人预训练后，MM-ABC在EBench、RoboCasa365及真实世界任务中验证了其通用性。<br><small>摘要依据：MM-ABC achieves 44.71% success on EBench, 61.2% on RoboCasa365, 99.1% on LIBERO, 82.8% on LIBERO-Plus without perturbation training, and 83% mean success on five real-world tasks.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 世界模型 · 视觉语言动作 · Sim-to-Real</p>
+<p><strong>原文摘要节选：</strong>Mobile manipulation extends robot interaction beyond a fixed kinematic workspace by making the reachable region itself controllable. This flexibility introduces two central challenges: spatially grounded perception under continuous ego-motion and coordinated control of heterogeneous arm and base actions. Existing approaches strengthen geometry through explicit 3D representations or predictive world models, and often decouple mobility and manipulation into separate action streams. We argue that effective mobile manipulation requires not only decoupling, but also representations that support efficient cross-stream collaboration. We present MM-ABC, a foundation model built around Seeing, Coordinating, and Imagining Arm-Base Collaboration. MM-ABC combines sparse multi-level VLM features for…</p>
+<p><a href="https://arxiv.org/abs/2609.35652">论文原文</a> · <a href="https://arxiv.org/pdf/2609.35652">PDF</a> · <a href="https://huggingface.co/papers/2609.35652">讨论与热度</a></p><hr>
+<h2>5. A Safe Action Is Not Enough: Feasible-Future Decoding for Vision-Language-Action Policies</h2>
+<p><strong>机器人</strong> · 发表 2026-10-06 · 综合分 4.69</p>
+<p>Zotero 摘要相关性：0.380（相似度分数，不是概率）。</p>
+<p>HF 点赞 4 · 讨论 1</p>
+<p>较上次观测（1.0 天前）：点赞 +4 · 讨论 +1。</p>
+<p><strong>规则标签：</strong>视觉语言动作</p>
+<p><strong>中文概述：</strong>针对视觉语言动作（VLA）策略中“可行性-可能性鸿沟”导致的安全性问题，作者提出了一种名为VICS-G的训练无关重排序方法。该方法通过推导历史条件策略下的可行未来边缘分布，筛选出能确保安全任务完成路径的动作候选。实验表明，该方法在不进行策略重训练或在线回溯的情况下，有效降低了累积安全成本，并保持了任务成功率和效率。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出VICS-G方法，通过评估动作候选对未来安全完成任务的支持度，有效解决策略在局部最优但缺乏后续可行路径的问题。<br><small>摘要依据：Our alarm-triggered, training-free reranker VICS-G lowers mean cumulative safety cost by 1.9%-57.5% across six Safety-CHORES settings while remaining within 2.5 percentage points of policy sampling in success and 0.82 steps in mean episode length.</small></li>
+<li>该方法无需对策略进行重训练或执行在线回溯，为提升VLA策略的安全性提供了一种计算高效且实用的方案。<br><small>摘要依据：Our approach offers a promising and practical path toward safer task completion, grounded in an exact policy-relative target yet requiring neither policy retraining nor online rollouts.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>视觉语言动作 · 推理</p>
+<p><strong>原文摘要节选：</strong>A safe action is not necessarily a viable one. A frozen vision-language-action (VLA) policy can favor a locally admissible move that leaves no policy-supported route to safe task completion. We call this the feasibility-likelihood gap: likelihood ranks the next move, while feasibility depends on the futures it leaves open. To bring those futures into the decision, we derive the exact next-block marginal of the history-conditioned policy-environment trajectory law restricted to safe task completion. The derivation reveals a candidate-dependent feasible-future mass: its support records whether safe completion remains possible under the frozen continuation process, while its magnitude measures how much weighted safe-completion mass remains. Since exact evaluation is impractical online, we…</p>
+<p><a href="https://arxiv.org/abs/2610.05166">论文原文</a> · <a href="https://arxiv.org/pdf/2610.05166">PDF</a> · <a href="https://huggingface.co/papers/2610.05166">讨论与热度</a></p><hr>
+<h2>6. AutoSciBench: Autonomous Benchmark Generation for Evaluating Scientific Agents</h2>
+<p><strong>通用 AI</strong> · 发表 2026-10-04 · 综合分 4.62</p>
+<p>Zotero 摘要相关性：0.311（相似度分数，不是概率）。</p>
+<p>HF 点赞 27 · 讨论 1</p>
+<p>较上次观测（1.0 天前）：点赞 +27 · 讨论 +1。</p>
+<p><strong>规则标签：</strong>推理</p>
+<p><strong>中文概述：</strong>针对现有科学智能体基准测试难以随能力进化而保持区分度的问题，本文提出了AutoSciBench框架。该框架通过定义高层概念与底层生成配置，利用智能体轨迹反馈和评判意见，迭代修正任务配置并生成新任务，从而关闭逻辑漏洞，促使评估向原始数据解析和证据整合迁移。实验表明，该方法在计算生物学、材料科学及临床影像领域生成的基准测试能有效降低智能体准确率，显示出评估方案随能力进化的适应性。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>AutoSciBench框架利用智能体求解轨迹和评判反馈，迭代优化任务生成配置，实现了评估任务的持续演进。<br><small>摘要依据：Agents attempt to solve each task, producing solver trajectories and corresponding judge feedback which AutoSciBench uses to revise the recipe or concept, closing observed shortcuts and shifting tasks toward raw-data re-examination, interpretation of intermediate results, and evidence integration.</small></li>
+<li>在计算生物学和材料科学领域，AutoSciBench生成的任务比人工构建的基准测试更能有效降低智能体的准确率。<br><small>摘要依据：Generated benchmarks reduce average solver accuracy by 22.4 and 25.5 percentage points relative to the human-curated benchmarks in computational biology and materials science, respectively</small></li>
+</ul>
+<p><strong>AI 主题：</strong>推理</p>
+<p><strong>原文摘要节选：</strong>As agents rapidly evolve, existing benchmarks can become saturated, limiting their ability to distinguish capabilities and reveal remaining failure modes. Particularly in scientific domains, constructing and updating benchmarks requires substantial time, labor, and domain expertise, making it difficult to keep evaluation aligned with advances in agent capabilities. We address this challenge by investigating whether scientific-agent benchmarks can be automatically generated and iteratively adapted as agent capabilities evolve. We introduce AutoSciBench, a framework that represents each task as a high-level concept specifying the scientific domain, data modality, and required reasoning approach, together with a low-level recipe specifying how the question, environment, and ground-truth…</p>
+<p><a href="https://arxiv.org/abs/2610.05140">论文原文</a> · <a href="https://arxiv.org/pdf/2610.05140">PDF</a> · <a href="https://huggingface.co/papers/2610.05140">讨论与热度</a></p><hr>
+<h2>7. Context Language Models</h2>
+<p><strong>强化学习</strong> · 发表 2026-09-29 · 综合分 4.61</p>
+<p>Zotero 摘要相关性：0.335（相似度分数，不是概率）。</p>
+<p>HF 点赞 45 · 讨论 3 · 本次 HF 热榜第 12 位 · 仓库累计 Star 595（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +4 · 讨论 +1 · Star +24。</p>
+<p><strong>规则标签：</strong>强化学习 · 多智能体</p>
+<p><strong>中文概述：</strong>本文提出了一种名为Context Language Models（CLM）的新型语言模型架构。该方法将上下文视为一个可由模型自主更新的文件，而非依赖外部机制进行管理。作者声称，这种方式允许模型学习上下文的核心要素，并天然适配多智能体系统。实验表明，CLM在多项任务中相比现有SOTA策略提升了性能并降低了计算开销，同时支持通过自然语言指令和在线强化学习进一步优化管理策略。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>CLM通过自主管理上下文文件，在保持或提升性能的同时显著降低了计算开销。<br><small>摘要依据：11.4% higher accuracy with 21.5% fewer FLOPs on BrowseComp-Plus, 5% higher scores with 59% fewer FLOPs on 12-hour EdgeBench, and 65% greater improvement with the same compute on a 24-hour multi-repository agent-swarm task.</small></li>
+<li>作者提出了一种在线强化学习方法，通过微调模型以提升上下文管理表现。<br><small>摘要依据：We also introduce an online reinforcement learning method for CLMs, improving Qwen3.5-9B performance on BrowseComp-Plus by 47.6% while using 12% fewer FLOPs.</small></li>
+<li>通过协同设计后缀缓存复用技术，CLM在推理阶段进一步减少了服务器端计算需求。<br><small>摘要依据：Finally, we co-design Suffix Cache Reuse for CLM serving, further reducing server-side compute by 35% relative to standard SGLang at matched performance.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>大模型后训练 · 推理 · 多智能体 · 强化学习</p>
+<p><strong>原文摘要节选：</strong>We introduce Context Language Models (CLMs), language models that natively manage their own context. We implement this by treating the context as a file and allowing the model to make unrestricted updates to this file. This allows the model to learn what is most important to maintain in context, and naturally extends to multi-agent systems where multiple agent contexts coexist as files. Building CLMs zero-shot with existing models outperforms SOTA context management strategies across a variety of tasks: 11.4% higher accuracy with 21.5% fewer FLOPs on BrowseComp-Plus, 5% higher scores with 59% fewer FLOPs on 12-hour EdgeBench, and 65% greater improvement with the same compute on a 24-hour multi-repository agent-swarm task. Moreover, by shifting context management from external harness…</p>
+<p><a href="https://arxiv.org/abs/2609.37725">论文原文</a> · <a href="https://arxiv.org/pdf/2609.37725">PDF</a> · <a href="https://huggingface.co/papers/2609.37725">讨论与热度</a> · <a href="https://github.com/facebookresearch/context-language-models">代码</a></p><hr>
+<h2>8. EVISKILL: Grounding Skill Evolution in Replayable Evidence</h2>
+<p><strong>通用 AI</strong> · 发表 2026-10-04 · 综合分 4.61</p>
+<p>Zotero 摘要相关性：0.295（相似度分数，不是概率）。</p>
+<p>HF 点赞 36 · 讨论 1 · 本次 HF 热榜第 23 位 · 仓库累计 Star 26（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +36 · 讨论 +1。</p>
+<p><strong>中文概述：</strong>针对大模型智能体在持续技能进化中难以保持行为证据与任务背景关联的问题，作者提出了EVISKILL框架。该方法将执行观测整理为可重放的证据卡片，并将技能修订与支持性上下文显式链接。通过针对性重放验证修订建议，并结合全局验证机制，系统实现了技能的积累与精炼。在三个基准测试上的实验表明，该方法能有效提升智能体的技能进化效果。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>EVISKILL通过将执行观测组织为“可重放证据卡片”，解决了现有方法在技能演进过程中丢失行为证据和任务上下文的问题。<br><small>摘要依据：we introduce EVISKILL, an evidence-driven framework that organizes execution observations into Replayable Evidence Cards and synthesizes edits with explicit links to their supporting contexts.</small></li>
+<li>该框架通过针对性的重放验证和全局验证机制，能够有选择地保留并精炼技能更新，避免了因全局验证失败而丢弃有效局部修正的情况。<br><small>摘要依据：Targeted replay verifies these edits through re-execution and provides feedback for correction. Across epochs, EVISKILL preserves evidence and provisionally retains supported edits for further refinement, while global validation governs their incorporation into the final skill.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>
+<p><strong>原文摘要节选：</strong>Continual skill evolution enables LLM agents to accumulate and refine reusable procedural knowledge from interaction experience without updating model parameters. Its effectiveness depends on determining not only what to change, but also why a change is justified and when it should become persistent guidance. However, existing experience-driven methods can lose the behavioral evidence and task contexts supporting edits. Moreover, a global validation outcome provides an incomplete judgment of its constituent changes: locally supported corrections may be discarded with a rejected revision, while evidence may require further experience to inform useful updates. To this end, we introduce EVISKILL, an evidence-driven framework that organizes execution observations into Replayable Evidence…</p>
+<p><a href="https://arxiv.org/abs/2610.05030">论文原文</a> · <a href="https://arxiv.org/pdf/2610.05030">PDF</a> · <a href="https://huggingface.co/papers/2610.05030">讨论与热度</a> · <a href="https://github.com/Zhouyaner/Eviskill">代码</a></p><hr>
+<h2>9. Rationale-Guided Policy Optimization: Learning to Reason with Adaptive Rationale Scaffolding</h2>
+<p><strong>强化学习</strong> · 发表 2026-10-05 · 综合分 4.53</p>
+<p>Zotero 摘要相关性：0.458（相似度分数，不是概率）。</p>
+<p>HF 点赞 11 · 讨论 1 · 仓库累计 Star 1（仓库可能包含多篇论文）</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>强化学习 · 大模型后训练 · 推理</p>
+<p><strong>中文概述：</strong>针对大语言模型在强化学习中的奖励稀疏问题，本文提出了一种名为RGPO的优化框架。该方法通过将基础事实推理信息作为动态支架，根据模型的当前能力自适应引导训练过程，而非直接强制模仿。实验表明，RGPO不仅适用于纯文本推理，也适用于视觉语言任务，在稳定强化学习训练及提升模型推理能力方面表现出通用性与有效性。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出RGPO框架，将基础真值信息作为临时支架辅助模型生成，仅将高奖励的自主生成结果反馈至无引导设置，有效降低了奖励稀疏性的影响。<br><small>摘要依据：Rather than treating reference solutions as fixed imitation targets, RGPO uses them as temporary scaffolds: rationales help the model generate improved responses, after which only higher-reward, model-generated solutions are transferred back to the original unguided setting.</small></li>
+<li>RGPO在纯文本及视觉语言推理任务中均优于现有的RLVR基准方法，且消融实验证实了自适应推理引导对于性能提升的关键作用。<br><small>摘要依据：Across both language-only and vision-language reasoning settings, RGPO consistently improves performance over RLVR baselines, and ablation studies show that adaptive rationale guidance is a key contributor to these gains.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习 · 大模型后训练 · 推理</p>
+<p><strong>原文摘要节选：</strong>On-policy reinforcement learning has become a central paradigm for improving the reasoning abilities of large language models. However, its effectiveness is often limited by reward sparsity: when a model fails to discover correct trajectories for difficult problems, the optimization process receives little useful signal and may stagnate. Existing approaches mitigate this issue by incorporating off-policy demonstrations, expert traces, or model-generated solutions, but they typically require the auxiliary data to match the format of the reinforcement-learning task, often relying on rejection sampling from stronger models to obtain suitable training trajectories. We introduce Rationale-Guided Policy Optimization (RGPO), a framework that adaptively leverages ground-truth rationale…</p>
+<p><a href="https://arxiv.org/abs/2610.07342">论文原文</a> · <a href="https://arxiv.org/pdf/2610.07342">PDF</a> · <a href="https://huggingface.co/papers/2610.07342">讨论与热度</a> · <a href="https://github.com/VietHoang1512/rgpo">代码</a></p><hr>
+<h2>10. LoGRA: Scaling LLM Reinforcement Learning with Low-Rank Gradient Sketches</h2>
+<p><strong>强化学习</strong> · 发表 2026-10-05 · 综合分 4.46</p>
+<p>Zotero 摘要相关性：0.410（相似度分数，不是概率）。</p>
+<p>HF 点赞 23 · 讨论 2</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>强化学习 · 大模型后训练 · 推理</p>
+<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>
+<p><strong>原文摘要节选：</strong>Reinforcement learning (RL) has greatly advanced the capabilities of large language models (LLMs), but its memory demands remain a barrier to broader adoption. We introduce LoGRA, an approach to RL post-training that reduces memory by retaining useful learning signals in low-rank gradient sketches. These compact representations support both model updates and efficient policy synchronization. To prevent overly large updates from disrupting learning, we complement gradient compression with predicted-KL step control, which estimates policy changes before applying each update and adjusts its magnitude accordingly. Across reasoning tasks, LoGRA reduces average training memory by up to 45.7\% without sacrificing performance. It also enables stable training of a 27B-parameter model for over…</p>
+<p><a href="https://arxiv.org/abs/2610.06647">论文原文</a> · <a href="https://arxiv.org/pdf/2610.06647">PDF</a> · <a href="https://huggingface.co/papers/2610.06647">讨论与热度</a></p><hr></body></html>

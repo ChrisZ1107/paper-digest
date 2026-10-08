@@ -1,0 +1,18 @@
+{
+  "overview": "针对大语言模型在强化学习中的奖励稀疏问题，本文提出了一种名为RGPO的优化框架。该方法通过将基础事实推理信息作为动态支架，根据模型的当前能力自适应引导训练过程，而非直接强制模仿。实验表明，RGPO不仅适用于纯文本推理，也适用于视觉语言任务，在稳定强化学习训练及提升模型推理能力方面表现出通用性与有效性。",
+  "highlights": [
+    {
+      "text": "提出RGPO框架，将基础真值信息作为临时支架辅助模型生成，仅将高奖励的自主生成结果反馈至无引导设置，有效降低了奖励稀疏性的影响。",
+      "evidence": "Rather than treating reference solutions as fixed imitation targets, RGPO uses them as temporary scaffolds: rationales help the model generate improved responses, after which only higher-reward, model-generated solutions are transferred back to the original unguided setting."
+    },
+    {
+      "text": "RGPO在纯文本及视觉语言推理任务中均优于现有的RLVR基准方法，且消融实验证实了自适应推理引导对于性能提升的关键作用。",
+      "evidence": "Across both language-only and vision-language reasoning settings, RGPO consistently improves performance over RLVR baselines, and ablation studies show that adaptive rationale guidance is a key contributor to these gains."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "大模型后训练",
+    "推理"
+  ]
+}

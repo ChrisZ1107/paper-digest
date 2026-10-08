@@ -1,0 +1,18 @@
+{
+  "overview": "本文提出了一种名为TIGER的奖励构建与预训练框架，旨在提升稀疏奖励下桌面机器人操作任务的强化学习效率。该方法将动作分块模仿策略转化为任务空间进度估计器，通过将预测的动作分块映射为短时程末端执行器参考轨迹，向强化学习智能体提供密集进度奖励。作者声称，该方法在预训练阶段通过模仿引导的超前信号减轻了保守价值惩罚，从而在实验中提升了早期采样效率并降低了安全性违规率。",
+  "highlights": [
+    {
+      "text": "TIGER利用任务空间进度估计器为智能体提供密集奖励，从而在稀疏奖励环境中提升了学习效率。",
+      "evidence": "TIGER treats an action-chunked imitation policy not as an executable controller or action prior, but as a local task-space progress estimator: predicted action chunks are converted, using controller-aware action-to-motion mapping, into short-horizon end-effector references, and the RL agent receives dense progress rewards toward these references while the sparse environment reward remains the dominant objective."
+    },
+    {
+      "text": "该框架通过预训练阶段的模仿引导信号减少了离线探索，提高了样本效率并降低了安全性违规。",
+      "evidence": "During pretraining, TIGER uses imitation-guided look-ahead signals to relax conservative value penalties for actions predicted to make task-space progress, reducing off-manifold exploration during early online RL."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "强化学习",
+    "模仿学习"
+  ]
+}

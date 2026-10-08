@@ -1,0 +1,18 @@
+{
+  "overview": "针对室内杂乱环境下人形机器人长周期全身运动与操作任务的挑战，作者提出了Humanoid Horizon框架。该方法通过并行训练策略确保各阶段梯度更新，利用动态起始机制增强状态覆盖，并引入奖励门控防止后续阶段对早期成果的破坏。实验结果表明，该方法在双物体基准任务中实现了超过80%的阶段成功率，且在长序列任务中表现出比现有基线更平缓的性能衰减。",
+  "highlights": [
+    {
+      "text": "提出并行训练策略、动态起始机制和奖励门控，解决了长周期全身运动与操作任务中的奖励偏置和灾难性遗忘问题。",
+      "evidence": "In this work, we introduce Humanoid Horizon, a unified policy framework designed to overcome these limitations through three interrelated mechanisms."
+    },
+    {
+      "text": "Humanoid Horizon框架在包含两个物体的基准测试中，达到了超过80%的各阶段成功率。",
+      "evidence": "Collectively, these strategies achieve per-stage success rates exceeding 80\\% on the two-object LHM-Humanoid benchmark (350 training scenes, 66 held-out scenes)."
+    }
+  ],
+  "tags": [
+    "人形机器人",
+    "足式运动",
+    "机器人操作"
+  ]
+}

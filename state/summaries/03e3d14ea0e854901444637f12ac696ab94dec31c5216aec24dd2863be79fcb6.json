@@ -1,0 +1,17 @@
+{
+  "overview": "针对大语言模型领域自适应中传统SFT+RL管线存在的复杂性及探索多样性不足问题，该论文提出了One-stage Policy Optimization (OnePO)方法。通过引入自适应目标进化和教师退休机制，OnePO解决了梯度饥饿与教师分布锚定问题，实现了从基座模型直接进行强化学习的领域自适应，并在医学领域应用中展现了优于传统方法的性能。",
+  "highlights": [
+    {
+      "text": "提出OnePO方法，通过动态调整学习策略和教师弃用机制，解决领域自适应训练中的梯度饥饿与教师分布锚定问题。",
+      "evidence": "OnePO combines Adaptive Objective Evolution to strengthen learning on informative low-probability teacher tokens and Teacher Retirement to discard teacher outputs once the current policy can surpass them."
+    },
+    {
+      "text": "在医学领域应用中，OnePO表现优于传统的SFT+RL及纯RL方法，并在HealthBench评测中达到更高分数。",
+      "evidence": "On medical adaptation, OnePO achieves 67.2 on HealthBench (Total) with only 20K training samples, outperforming SFT+RL and pure RL by 2.7 and 7.4 points, respectively."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "推理"
+  ]
+}

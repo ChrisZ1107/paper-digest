@@ -1,0 +1,21 @@
+{
+  "overview": "针对视觉语言动作（VLA）模型在机器人执行误差下表现不佳的问题，本文提出了一种名为“自我补偿VLA”的部署时自适应方法。该方法利用命令动作与执行动作之间的残差进行在线更新，无需奖励或标签。同时，作者开发了RoboStress仿真基准来模拟多种动力学误差，实验显示该方法提升了不同物理机械臂的成功率。",
+  "highlights": [
+    {
+      "text": "提出了一种自我补偿VLA方法，通过计算命令动作与执行动作之间的残差，在不依赖奖励或标注的情况下实现部署时的在线自适应。",
+      "evidence": "Without task rewards or labels, it updates the policy online using the residual between the action commanded by a VLA and the motion executed by the robot."
+    },
+    {
+      "text": "开发了RoboStress仿真基准，通过集成摩擦、回隙、合规性和重力补偿误差等动力学模型，评估机器人执行误差下的鲁棒性。",
+      "evidence": "It combines established joint-level models of friction, backlash, compliance, and gravity-compensation error into seven deployment scenarios whose execution errors depend on the robot's state and motion history."
+    },
+    {
+      "text": "在物理机械臂实验中，该方法将任务平均成功率提升了超过30个百分点，且泛化能力覆盖了未见过的物体。",
+      "evidence": "On two physical robot arms with different usage histories, it raises the average task success rate by more than 30 percentage points on each arm, and the gains extend to objects not seen in the task demonstrations."
+    }
+  ],
+  "tags": [
+    "视觉语言动作",
+    "机器人操作"
+  ]
+}
