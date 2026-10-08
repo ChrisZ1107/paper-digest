@@ -1902,6 +1902,19 @@
     "r5kV9OwURKQ": {
       "video_id": "r5kV9OwURKQ",
       "papers": []
+    },
+    "_HSBqwn0HSM": {
+      "video_id": "_HSBqwn0HSM",
+      "video_title": "Truly Subquadratic 3SUM and Truly Subcubic APSP via Triangles in Sparse Lopsided Graphs (Oct 2026)",
+      "published": "2026-10-08",
+      "video_url": "https://www.youtube.com/watch?v=_HSBqwn0HSM",
+      "papers": [
+        {
+          "id": "2610.06783",
+          "title": "Truly Subquadratic 3SUM and Truly Subcubic APSP via Triangles in Sparse Lopsided Graphs (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.06783"
+        }
+      ]
     }
   }
 }
