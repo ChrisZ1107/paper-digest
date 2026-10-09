@@ -1917,6 +1917,59 @@
           "abstract_zh": "我们对 3SUM 和全源最短路径（APSP）问题的教科书级算法给出了首次多项式级别的改进：我们展示了如何以 O(n^{1.9992}) 的时间确定性地求解多项式规模整数上的 3SUM 问题，以及以 O(n^{2.9995}) 的时间求解具有多项式界限整数权重的有向 n 顶点图的 APSP 问题。这推翻了 3SUM 和 APSP 假设。利用已知的归约方法，我们还推翻了 3SUM 和 APSP 假设的实值版本、精确三角形（Exact Triangle）假设、零权 k-团（Zero-Weight k-Clique）假设，以及 van den Brand、Nanongkai 和 Saranurak 提出的三个矩形提示在线矩阵向量猜想，并为其他多种问题提供了多项式级别的加速。所有这些结果都源于一个单一的用于窄矩阵乘法的新算法。令 X 为 N×D 整数矩阵，Y 为 D×N 整数矩阵，其中 D≤N^{1/18}，令 W 为至多 N^2/√D 个位置的任意集合。我们可以在 O(N^2/D^{0.063}) 次运算内计算出条目 (XY)[I,J], (I,J)∈W，这在多项式意义上少于写出 XY 或逐一计算 N^2/√D 个内积所需的时间。我们通过修改 Coppersmith 矩形矩阵乘法算法的一个变体设计了该算法，该算法基于 Schönhage 的十乘法恒等式，仅执行 W 中条目所需的运算，并证明了只需极少的运算。将其解读为图算法，这可以在稀疏倾斜三部图上以真正的次二次时间解决全边稀疏三角形问题，其中两个部分具有 n 个顶点，而一个部分具有 n^{ε} 个顶点（ε<0.12）。根据已知的归约，精确三角形问题，进而 3SUM 和 APSP 问题，都可以归约为此问题。我们还提供了一个数据结构版本，可以回答预先未知的 XY 单个条目的查询。"
         }
       ]
+    },
+    "AxBSRS4tln8": {
+      "video_id": "AxBSRS4tln8",
+      "video_title": "Agent Harnesses Explained: Everything That Isn't the Model, and Why It's Getting Thinner",
+      "published": "2026-10-09",
+      "video_url": "https://www.youtube.com/watch?v=AxBSRS4tln8",
+      "papers": [
+        {
+          "id": "2609.00006",
+          "title": "2609.00006",
+          "url": "https://arxiv.org/abs/2609.00006"
+        },
+        {
+          "id": "2607.03691",
+          "title": "2607.03691",
+          "url": "https://arxiv.org/abs/2607.03691"
+        },
+        {
+          "id": "2609.20804",
+          "title": "2609.20804",
+          "url": "https://arxiv.org/abs/2609.20804"
+        },
+        {
+          "id": "2609.26891",
+          "title": "2609.26891",
+          "url": "https://arxiv.org/abs/2609.26891"
+        },
+        {
+          "id": "2609.24974",
+          "title": "2609.24974",
+          "url": "https://arxiv.org/abs/2609.24974"
+        },
+        {
+          "id": "2609.33439",
+          "title": "2609.33439",
+          "url": "https://arxiv.org/abs/2609.33439"
+        },
+        {
+          "id": "2609.24972",
+          "title": "2609.24972",
+          "url": "https://arxiv.org/abs/2609.24972"
+        },
+        {
+          "id": "2210.03629",
+          "title": "2210.03629",
+          "url": "https://arxiv.org/abs/2210.03629"
+        },
+        {
+          "id": "2405.15793",
+          "title": "2405.15793",
+          "url": "https://arxiv.org/abs/2405.15793"
+        }
+      ]
     }
   }
 }
