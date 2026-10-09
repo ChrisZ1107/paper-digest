@@ -1,0 +1,17 @@
+{
+  "overview": "针对强化学习中可验证奖励信号在处理分组目标时易丢失的问题，作者提出了前瞻性学习方法，并设计了自我反思蒸馏（SRD）。该方法通过将交互后的轨迹反馈蒸馏为预交互阶段的预测目标，使智能体能够从经验中提炼出未被即时奖励捕获的有效任务信息。实验表明，SRD在多项工具集成推理和长周期代理任务中能有效补充现有的强化学习方法，特别是在奖励差异稀缺的情境下表现显著。",
+  "highlights": [
+    {
+      "text": "SRD通过将事后获取的 privileged hindsight 蒸馏为与原策略一致的轨迹盲前瞻性预测，从而从看似无效的轨迹中提取学习信号。",
+      "evidence": "SRD distills this privileged hindsight into trajectory-blind foresight of the same policy."
+    },
+    {
+      "text": "在奖励分布均匀（即奖励缺乏对比度）的情况下，SRD相比传统RLVR方法表现出显著的性能优势，甚至在完全失败的场景中仍能实现增长。",
+      "evidence": "In the 2B setting, where 98% of groups are all-failure, the RLVR training ends up at 0.0% success, while adding SRD reaches 60.6% under the same rollout budget."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "推理"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "overview": "针对足式机器人全身控制中模型难以适应动态变化的问题，作者提出了一种名为LLA-MPPI的方法。该方法通过GPU并行计算维护一组具有不同物理参数的接触模拟器，利用窗口化预测误差实时选择最符合当前运动状态的模型，并据此进行全身模型预测路径积分控制。实验表明，该方法无需离线训练即可在多种任务中实现自适应控制。",
+  "highlights": [
+    {
+      "text": "提出LLA-MPPI算法，通过GPU并行模拟实现无需离线训练的实时自适应全身控制。",
+      "evidence": "The framework requires no offline training, and its selected hypotheses are physically interpretable."
+    },
+    {
+      "text": "通过实时比较预测误差选择最佳模型，在模拟任务中展现出显著的性能优势。",
+      "evidence": "Across four simulated tasks, it achieves 97.5% success while the strongest baseline reaches 74% and an oracle with the true model reaches 98.5%."
+    },
+    {
+      "text": "在Unitree Go2机器人硬件上验证了其在载荷变化、肢体故障及推箱作业中的适应能力。",
+      "evidence": "Hardware validation on a Unitree Go2 shows the robot walking under a payload added mid-run, walking after one leg is disabled, and pushing a box to its goal while increasing its mass on the fly."
+    }
+  ],
+  "tags": [
+    "足式运动",
+    "机器人操作"
+  ]
+}

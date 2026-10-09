@@ -1,0 +1,17 @@
+{
+  "overview": "针对机器人基础模型（RFM）中多步流匹配推理延迟高的问题，本文提出了Kinematic MeanFlow（K-MF）方法。该方法通过运动学恒等式将MeanFlow的导数项解耦为两个子区间项，分别捕捉去噪过程的早期和晚期动态，从而缓解误差累积。实验表明，K-MF能够支持RFM实现一步动作生成，并在多种任务中表现优于多步流匹配，同时显著降低了推理延迟。",
+  "highlights": [
+    {
+      "text": "提出K-MF方法实现RFM的一步动作生成，通过解耦导数项捕捉不同去噪阶段的动态，降低了误差放大。",
+      "evidence": "Specifically, grounded in a kinematic identity, K-MF decouples the time derivative term in the MeanFlow formulation into two sub-interval terms separated by an intermediate point. This decoupled formulation enables the two terms to capture early-stage and late-stage denoising dynamics, respectively, while mitigating the error amplification across the process."
+    },
+    {
+      "text": "K-MF显著提升了推理效率，将GR00T-N1.6动作头的延迟降低了约67.5%至74.4%。",
+      "evidence": "In terms of inference efficiency, K-MF reduces action-head latency of GR00T-N1.6 by 67.5%~74.4% across L40 and Jetson Orin in eager and compiled modes, yielding end-to-end latency reductions of 30.3%~54.9%."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "推理"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "overview": "本文针对在强化学习中识别最小充分见证（minimal sufficient witnesses）的难题，提出了最小见证强化学习（MWRL）。该方法通过对成功策略采样出的集合进行并集运算，利用贡献度分配来确保解的最小化并识别多种候选解。作者声称，MWRL能够从单一黑盒验证器的反馈中恢复整个见证家族，并将其应用于值迭代规划器及大语言模型，在多项实验中实现了对大多数最小见证的覆盖，有效扩展了强化学习的优化范畴。",
+  "highlights": [
+    {
+      "text": "MWRL通过联合评估成功提案并计算各提案的贡献，实现了对最小见证集的识别与覆盖，避免了冗余解。",
+      "evidence": "MWRL takes the union of the sets certified by successful proposals sampled from the policy and credits each proposal for the coverage the group union would lose without that proposal."
+    },
+    {
+      "text": "该方法不仅适用于值迭代规划，还能扩展至大语言模型的训练中，实现了对完整见证家族的恢复。",
+      "evidence": "Under this principle, we derive a value iteration planner that recovers the entire family of witnesses and a policy gradient method that can scale to large language models."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "大模型后训练",
+    "推理"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "overview": "针对人形机器人运动控制中机械化步态与人类运动数据通用性不足的矛盾，本文提出了HuMBLE学习框架。该方法通过教师-学生蒸馏技术，从人类运动数据中学习自然运动先验，随后结合多任务强化学习对策略进行微调，以平衡步态仿生特性与指令跟踪的鲁棒性。实验证明该框架可在Atlas和Unitree G1机器人上实现实时可控且具备人类步态特征的鲁棒行走。",
+  "highlights": [
+    {
+      "text": "开发了一种融合运动先验与多任务强化学习的框架，在保持人类步态特征的同时，实现了对任意转向指令的鲁棒跟踪。",
+      "evidence": "Benchmarks against Tabula Rasa RL policies trained without human data and ablation studies confirm that our framework yields a lightweight, deployable policy that reconstructs coordinated whole-body behavior from a steering command, retaining the human gait characteristics while remaining robust and fully steerable."
+    },
+    {
+      "text": "通过教师-学生蒸馏策略，将复杂的全身参考条件策略转化为仅依赖本体感受和平面躯干速度指令的轻量化策略。",
+      "evidence": "Specifically, we train a full-body reference-conditioned policy with Reinforcement Learning (RL), then distill it into a lightweight prior policy conditioned solely on proprioception and a planar torso-velocity steering command."
+    }
+  ],
+  "tags": [
+    "人形机器人",
+    "足式运动",
+    "强化学习",
+    "Sim-to-Real"
+  ]
+}

@@ -1,0 +1,490 @@
+{
+  "date": "2026-10-09",
+  "timestamp": "2026-10-09T09:02:15.609350+08:00",
+  "title": "2026-10-09 热门论文 Top 10｜机器人·强化学习·AI",
+  "slug": "2026-10-09",
+  "papers": [
+    {
+      "id": "2610.00864",
+      "title": "Kinematic MeanFlow: One-Step Action Generation Policy for Robotic Foundation Models",
+      "abstract": "In this paper, we study how to achieve one-step action generation in Robotic Foundation Models (RFMs), aiming to overcome the high inference latency of multi-step flow matching. MeanFlow provides a promising framework for this goal, yet its direct application leads to performance collapse. We discover that this stems from two distinctive dynamics exhibited in the RFM velocity field: (1) the ``local acceleration\" exhibits stability early on, but surges sharply towards the end of the denoising process, and (2) the spread of its magnitudes across samples widens as denoising progresses. To address these issues, we introduce Kinematic MeanFlow (K-MF), a novel one-step action policy tailored for RFMs. Specifically, grounded in a kinematic identity, K-MF decouples the time derivative term in the MeanFlow formulation into two sub-interval terms separated by an intermediate point. This decoupled formulation enables the two terms to capture early-stage and late-stage denoising dynamics, respectively, while mitigating the error amplification across the process. As a result, our K-MF empowers RFMs to achieve one-step action generation in both training from scratch and fine-tuning paradigms across diverse tasks, while outperforming multi-step flow matching in most settings. In terms of inference efficiency, K-MF reduces action-head latency of GR00T-N1.6 by 67.5%~74.4% across L40 and Jetson Orin in eager and compiled modes, yielding end-to-end latency reductions of 30.3%~54.9%. Code will be available at https://github.com/IntelChina-AI/K-MF.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-01",
+      "age_days": 8.043236219328705,
+      "upvotes": 40,
+      "comments": 1,
+      "stars": 1,
+      "repo": "https://github.com/IntelChina-AI/K-MF",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.42034,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 39,
+        "comments": 0,
+        "stars": 1
+      },
+      "score": 5.235,
+      "rule_tags": [],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对机器人基础模型（RFM）中多步流匹配推理延迟高的问题，本文提出了Kinematic MeanFlow（K-MF）方法。该方法通过运动学恒等式将MeanFlow的导数项解耦为两个子区间项，分别捕捉去噪过程的早期和晚期动态，从而缓解误差累积。实验表明，K-MF能够支持RFM实现一步动作生成，并在多种任务中表现优于多步流匹配，同时显著降低了推理延迟。",
+        "highlights": [
+          {
+            "text": "提出K-MF方法实现RFM的一步动作生成，通过解耦导数项捕捉不同去噪阶段的动态，降低了误差放大。",
+            "evidence": "Specifically, grounded in a kinematic identity, K-MF decouples the time derivative term in the MeanFlow formulation into two sub-interval terms separated by an intermediate point. This decoupled formulation enables the two terms to capture early-stage and late-stage denoising dynamics, respectively, while mitigating the error amplification across the process."
+          },
+          {
+            "text": "K-MF显著提升了推理效率，将GR00T-N1.6动作头的延迟降低了约67.5%至74.4%。",
+            "evidence": "In terms of inference efficiency, K-MF reduces action-head latency of GR00T-N1.6 by 67.5%~74.4% across L40 and Jetson Orin in eager and compiled modes, yielding end-to-end latency reductions of 30.3%~54.9%."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.07043",
+      "title": "TRIAGE: Direction-Aware Mismatch Stabilization of Native NVFP4 Reinforcement Learning",
+      "abstract": "Low-precision execution can substantially accelerate reinforcement learning (RL) for large language models, but discrepancies between learner and sampler execution can destabilize policy optimization. In this paper, we characterize the interaction between mismatch and the policy-gradient direction, distinguishing locally amplifying from contracting update contributions that mismatch magnitude alone cannot identify. In native NVFP4 runs, we observe an early imbalance between the two amplifying regions, favoring negative-advantage, negative-gap updates. Their tail tokens become concentrated in a small fraction of response segments before mismatch spreads globally. Motivated by these findings, we introduce TRIAGE, a direction-aware stabilization method that uses segment-level diagnosis to selectively rebalance policy-gradient updates and applies bounded repair to residual severe mismatch. TRIAGE modifies the optimization objective while retaining native NVFP4 weight-and activation 4-bit (W4A4) forward execution on both the sampler and learner. Experiments on Qwen3-4B and Qwen3-30B-A3B show stable optimization throughout the evaluated training horizon and achieve full precision level performance across five mathematical reasoning benchmarks, while native NVFP4 with TRIAGE provides up to 2.3x higher rollout throughput than BF16.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-10-05",
+      "age_days": 4.043236219328704,
+      "upvotes": 29,
+      "comments": 2,
+      "stars": 7,
+      "repo": "https://github.com/InfiXAI/TRIAGE",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.36957,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 27,
+        "comments": 1,
+        "stars": 6
+      },
+      "score": 5.07,
+      "rule_tags": [
+        "强化学习",
+        "推理"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对大语言模型强化学习中NVFP4低精度计算导致的策略优化不稳定问题，本文提出了一种名为TRIAGE的方向感知稳定化方法。该方法通过段级诊断区分策略梯度贡献，有选择地重新平衡梯度更新并应用边界修复。实验结果显示，该方法在保持W4A4原生执行的同时，在数学推理基准测试中达到了全精度性能，并显著提升了训练阶段的吞吐量。",
+        "highlights": [
+          {
+            "text": "TRIAGE通过段级诊断选择性地平衡策略梯度更新，并在保留原生NVFP4权重与激活4位（W4A4）前向执行的基础上，有效解决了低精度带来的训练不稳定问题。",
+            "evidence": "TRIAGE, a direction-aware stabilization method that uses segment-level diagnosis to selectively rebalance policy-gradient updates and applies bounded repair to residual severe mismatch. TRIAGE modifies the optimization objective while retaining native NVFP4 weight-and activation 4-bit (W4A4) forward execution on both the sampler and learner."
+          },
+          {
+            "text": "在Qwen3模型上的实验表明，TRIAGE在数学推理基准上实现了与全精度相当的性能，并提升了训练过程的吞吐效率。",
+            "evidence": "Experiments on Qwen3-4B and Qwen3-30B-A3B show stable optimization throughout the evaluated training horizon and achieve full precision level performance across five mathematical reasoning benchmarks, while native NVFP4 with TRIAGE provides up to 2.3x higher rollout throughput than BF16."
+          }
+        ],
+        "tags": [
+          "大模型后训练",
+          "强化学习"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.07342",
+      "title": "Rationale-Guided Policy Optimization: Learning to Reason with Adaptive Rationale Scaffolding",
+      "abstract": "On-policy reinforcement learning has become a central paradigm for improving the reasoning abilities of large language models. However, its effectiveness is often limited by reward sparsity: when a model fails to discover correct trajectories for difficult problems, the optimization process receives little useful signal and may stagnate. Existing approaches mitigate this issue by incorporating off-policy demonstrations, expert traces, or model-generated solutions, but they typically require the auxiliary data to match the format of the reinforcement-learning task, often relying on rejection sampling from stronger models to obtain suitable training trajectories. We introduce Rationale-Guided Policy Optimization (RGPO), a framework that adaptively leverages ground-truth rationale information according to the model's current capability while preserving its freedom to explore. Rather than treating reference solutions as fixed imitation targets, RGPO uses them as temporary scaffolds: rationales help the model generate improved responses, after which only higher-reward, model-generated solutions are transferred back to the original unguided setting. This design allows training to exploit available ground-truth information without requiring off-policy data to follow the same format as the RL task. Across both language-only and vision-language reasoning settings, RGPO consistently improves performance over RLVR baselines, and ablation studies show that adaptive rationale guidance is a key contributor to these gains. These results suggest that RGPO offers a practical and general approach for reducing reward sparsity, stabilizing reinforcement learning, and improving reasoning performance in both text-only and multimodal models.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-10-05",
+      "age_days": 4.043236219328704,
+      "upvotes": 12,
+      "comments": 2,
+      "stars": 1,
+      "repo": "https://github.com/VietHoang1512/rgpo",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.45789,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 1,
+        "comments": 1,
+        "stars": 0
+      },
+      "score": 5.001,
+      "rule_tags": [
+        "强化学习",
+        "大模型后训练",
+        "推理"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对大语言模型在强化学习中的奖励稀疏问题，本文提出了一种名为RGPO的优化框架。该方法通过将基础事实推理信息作为动态支架，根据模型的当前能力自适应引导训练过程，而非直接强制模仿。实验表明，RGPO不仅适用于纯文本推理，也适用于视觉语言任务，在稳定强化学习训练及提升模型推理能力方面表现出通用性与有效性。",
+        "highlights": [
+          {
+            "text": "提出RGPO框架，将基础真值信息作为临时支架辅助模型生成，仅将高奖励的自主生成结果反馈至无引导设置，有效降低了奖励稀疏性的影响。",
+            "evidence": "Rather than treating reference solutions as fixed imitation targets, RGPO uses them as temporary scaffolds: rationales help the model generate improved responses, after which only higher-reward, model-generated solutions are transferred back to the original unguided setting."
+          },
+          {
+            "text": "RGPO在纯文本及视觉语言推理任务中均优于现有的RLVR基准方法，且消融实验证实了自适应推理引导对于性能提升的关键作用。",
+            "evidence": "Across both language-only and vision-language reasoning settings, RGPO consistently improves performance over RLVR baselines, and ablation studies show that adaptive rationale guidance is a key contributor to these gains."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "大模型后训练",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.10528",
+      "title": "Long-WAM: Scaling the Context of World-Action Models",
+      "abstract": "Real-time robot control demands enough visual history to infer motion and task progress, but processing that history can delay action. We present Long-WAM, a model-system framework for scaling the context of causal world-action models under real-time control constraints. Our central finding is that access to history is not the same as using it: longer histories pay off far more when the video foundation is pretrained autoregressively (AR). We first learn causal prediction from robot and egocentric videos without action labels, then preserve this history-to-future structure during world-action adaptation. On RoboCasa GR-1, increasing context from 0.0 to 19.2 seconds raises success from 63.3% to 78.7%, whereas a bidirectionally pretrained initialization shows no net gain; robot-domain AR pretraining further raises peak success on GR-1 and LIBERO-Long. Long-WAM also achieves the best results among compared methods on LIBERO-Long, RoboTwin 2.0, and DOMINO. Streaming observation encoding, asynchronous execution, and hardware-specific acceleration enable deployment on RTX 5090, DGX Spark, and Jetson AGX Thor without dropping future prediction; on RTX 5090, each action chunk, including future-video latent prediction, takes 107.4 ms. Real-time deployment on Unitree G1 and YAM supports dynamic and long-horizon manipulation, including 95% success on dynamic cup stacking, where Pi0.5 and Fast-WAM succeed in none of 20 trials. As a memory-informed executor, Long-WAM also complements higher-level planning in composite tasks.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-07",
+      "age_days": 2.043236219328704,
+      "upvotes": 88,
+      "comments": 1,
+      "stars": 2687,
+      "repo": "https://github.com/NVlabs/LongLive",
+      "trending_rank": 17,
+      "sources": [
+        "Hugging Face",
+        "arXiv"
+      ],
+      "date_label": "发表",
+      "relevance": 0.41466,
+      "growth": null,
+      "score": 4.902,
+      "rule_tags": [],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对实时机器人控制中长历史上下文处理的延迟问题，本文提出了Long-WAM框架。该方法通过在机器人和自中心视频上进行因果预训练，建立历史到未来的预测结构，并结合异步执行与硬件加速实现实时部署。实验结果显示，该方法在多个机器人任务中提升了成功率，并实现了长跨度操作任务的动态执行。",
+        "highlights": [
+          {
+            "text": "基于自回归（AR）预训练的视频基础模型能够显著提升长历史上下文对机器人任务性能的贡献。",
+            "evidence": "Our central finding is that access to history is not the same as using it: longer histories pay off far more when the video foundation is pretrained autoregressively (AR)."
+          },
+          {
+            "text": "Long-WAM通过流式观察编码和硬件加速，实现了在计算资源有限的设备上实时预测，在动态杯子堆叠任务中表现优于对比方法。",
+            "evidence": "Real-time deployment on Unitree G1 and YAM supports dynamic and long-horizon manipulation, including 95% success on dynamic cup stacking, where Pi0.5 and Fast-WAM succeed in none of 20 trials."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "世界模型",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.10409",
+      "title": "RobotWorld: Benchmarking Multimodal Agents for Robot Use Across Diverse Tasks and Embodiments",
+      "abstract": "General-purpose agents increasingly write code, use tools, and complete complex digital tasks, raising the question of how far these capabilities carry into the physical world. To investigate this, we introduce RobotWorld, a challenging simulation testbed for robot use: turning instructions and observations into physical task execution through robot interfaces. Its 84 tasks span manipulation, mobile manipulation, locomotion, driving, and aerial control, with explicit interaction budgets and executable success checks. By analysing task outcomes alongside execution traces, we identify both the capabilities that transfer and the gaps that prevent reliable completion. Furthermore, we find that current agents can construct sophisticated perception and control workflows, including image segmentation, camera calibration, spatial estimation, and dynamics-based computation. These capabilities, however, do not consistently compose into successful behaviour: agents lose task-relevant object states despite reaching commanded poses, fail to correct ineffective actions, recover too late, or mistake unfinished tasks for completion. This uneven transfer also differs across models: Astra succeeds more often on spatial and constrained-contact goals, whereas Opus 5.5 succeeds more often on continuous-balance and timed-interaction goals. By linking these outcomes to execution behaviour, RobotWorld provides both a rigorous proving ground and an empirical account of the remaining capability gaps, thereby establishing concrete targets for training and designing more reliable physical-world agents.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-07",
+      "age_days": 2.043236219328704,
+      "upvotes": 29,
+      "comments": 1,
+      "stars": 25,
+      "repo": "https://github.com/robotworldai/robotworld",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face",
+        "arXiv"
+      ],
+      "date_label": "发表",
+      "relevance": 0.4707,
+      "growth": null,
+      "score": 4.901,
+      "rule_tags": [
+        "足式运动"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对通用智能体在物理世界应用能力的挑战，本文提出了RobotWorld仿真测试平台。该平台包含84项涵盖操作、移动、驾驶及空中控制的任务，通过分析执行轨迹和任务结果，评估了智能体在理解指令与物理交互执行方面的表现。作者声称，现有模型虽能构建复杂的视觉感知与控制流程，但在状态保持、动作纠错及任务完结判定等方面仍存在显著的局限性，并分析了不同模型间的性能差异。",
+        "highlights": [
+          {
+            "text": "RobotWorld包含84项涵盖多种机器人控制模式的任务，旨在测试智能体将指令转化为物理动作的能力。",
+            "evidence": "Its 84 tasks span manipulation, mobile manipulation, locomotion, driving, and aerial control, with explicit interaction budgets and executable success checks."
+          },
+          {
+            "text": "现有智能体能够构建复杂的感知与控制工作流，但在任务执行的连贯性、错误纠正及状态判断上表现欠佳。",
+            "evidence": "These capabilities, however, do not consistently compose into successful behaviour: agents lose task-relevant object states despite reaching commanded poses, fail to correct ineffective actions, recover too late, or mistake unfinished tasks for completion."
+          },
+          {
+            "text": "不同模型在物理任务上的能力表现存在差异，如Astra在空间约束任务中表现较好，而Opus 5.5在动态平衡任务中更具优势。",
+            "evidence": "This uneven transfer also differs across models: Astra succeeds more often on spatial and constrained-contact goals, whereas Opus 5.5 succeeds more often on continuous-balance and timed-interaction goals."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "导航"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.08621",
+      "title": "Recursive Game Creator: An Agentic Product-Level Experience-Oriented Game Harness",
+      "abstract": "Recent game design agents have made substantial progress in generating playable games. However, program correctness does not ensure an enjoyable experience for players. We present Recursive Game Creator, an experience-oriented harness to advance agentic game development from rough game prototypes into entertaining games. Recursive Game Creator organizes recursive development around four components: Designer, Builder, Player, and Reviewer. The Designer translates user instructions and Reviewer's feedback into detailed plans. The Builder turns these plans into candidate games. The coding-native Player creates and executes reusable policies through programmatic interfaces to efficiently collect diverse gameplay trajectories, mitigating evaluation bias caused by slow GUI-based collection. The Reviewer uses carefully designed trajectory-based metrics to induce player preferences, integrating with visual evidence and explicit textual preferences to evaluate games against game-specific criteria. Finally, the Reviewer accepts the better version and provides improvement reviews for the next round, closing the recursive loop. Our method achieves state-of-the-art overall performance of 77.89 on GameCraft-Bench. On GameASG-Bench, it achieves a strict task success rate of 53.2%, a 34.1% improvement over the same-model baseline, and the highest mean runtime-check pass rate at 93.4% among compared methods. A user study shows longer playtime and higher ratings. Code is coming soon.",
+      "topics": [
+        "通用 AI"
+      ],
+      "published": "2026-10-06",
+      "age_days": 3.0432362193287035,
+      "upvotes": 79,
+      "comments": 1,
+      "stars": 29,
+      "repo": "https://github.com/IMBALDY/RecursiveGameCreator",
+      "trending_rank": 19,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.31873,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 79,
+        "comments": 1
+      },
+      "score": 4.893,
+      "rule_tags": [],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对现有游戏生成智能体在程序正确性与玩家体验之间存在差距的问题，本文提出了Recursive Game Creator。该系统通过由Designer、Builder、Player和Reviewer四个组件构成的递归开发框架，将用户指令转化为游戏方案并进行迭代优化。作者声称，该方法在GameCraft-Bench和GameASG-Bench基准测试上均实现了性能提升，且用户研究表明其生成游戏的娱乐性更强。",
+        "highlights": [
+          {
+            "text": "提出一种以体验为导向的递归开发架构，通过Player组件的程序化接口高效采集轨迹，并利用Reviewer组件的指标闭环迭代以提升游戏娱乐性。",
+            "evidence": "The coding-native Player creates and executes reusable policies through programmatic interfaces to efficiently collect diverse gameplay trajectories, mitigating evaluation bias caused by slow GUI-based collection. The Reviewer uses carefully designed trajectory-based metrics to induce player preferences, integrating with visual evidence and explicit textual preferences to evaluate games against game-specific criteria."
+          },
+          {
+            "text": "实验结果表明，该方法在GameCraft-Bench上达到77.89分，并在GameASG-Bench上实现53.2%的任务成功率与93.4%的运行时检查通过率。",
+            "evidence": "Our method achieves state-of-the-art overall performance of 77.89 on GameCraft-Bench. On GameASG-Bench, it achieves a strict task success rate of 53.2%, a 34.1% improvement over the same-model baseline, and the highest mean runtime-check pass rate at 93.4% among compared methods."
+          }
+        ],
+        "tags": [],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.07226",
+      "title": "Minimal Witness Reinforcement Learning",
+      "abstract": "``What are the irreducible conditions that are sufficient to produce an outcome?'' is one of the most common questions that recur across computation and science. Its answers, the minimal sufficient witnesses, are what we mean by explanations, mechanisms and reasons. These problems usually ask for multiple minimal witnesses, yet standard RL methods may reveal only one solution or redundant ones. We formalize this problem as minimal-witness identification and introduce Minimal-Witness Reinforcement Learning (MWRL). MWRL takes the union of the sets certified by successful proposals sampled from the policy and credits each proposal for the coverage the group union would lose without that proposal. This credit assignment, derived directly from the problem definition, unifies the demands for minimality and recovery of alternatives from a single black-box verifier bit. Under this principle, we derive a value iteration planner that recovers the entire family of witnesses and a policy gradient method that can scale to large language models. Across different experimental settings, MWRL recovers most minimal witnesses, while other methods return redundant supersets or a single witness. By making witness families learnable from verifier feedback, MWRL expands the scope of reinforcement learning beyond single-solution optimization. Our code is available at https://github.com/TSUITUENYUE/MWRL.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-10-05",
+      "age_days": 4.043236219328704,
+      "upvotes": 18,
+      "comments": 2,
+      "stars": 0,
+      "repo": "https://github.com/TSUITUENYUE/MWRL",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.35493,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 18,
+        "comments": 2
+      },
+      "score": 4.871,
+      "rule_tags": [
+        "强化学习"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文针对在强化学习中识别最小充分见证（minimal sufficient witnesses）的难题，提出了最小见证强化学习（MWRL）。该方法通过对成功策略采样出的集合进行并集运算，利用贡献度分配来确保解的最小化并识别多种候选解。作者声称，MWRL能够从单一黑盒验证器的反馈中恢复整个见证家族，并将其应用于值迭代规划器及大语言模型，在多项实验中实现了对大多数最小见证的覆盖，有效扩展了强化学习的优化范畴。",
+        "highlights": [
+          {
+            "text": "MWRL通过联合评估成功提案并计算各提案的贡献，实现了对最小见证集的识别与覆盖，避免了冗余解。",
+            "evidence": "MWRL takes the union of the sets certified by successful proposals sampled from the policy and credits each proposal for the coverage the group union would lose without that proposal."
+          },
+          {
+            "text": "该方法不仅适用于值迭代规划，还能扩展至大语言模型的训练中，实现了对完整见证家族的恢复。",
+            "evidence": "Under this principle, we derive a value iteration planner that recovers the entire family of witnesses and a policy gradient method that can scale to large language models."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "大模型后训练",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.08077",
+      "title": "Self-Retrospection Distillation: Turning Post-hoc Experiences into Prior Foresight",
+      "abstract": "Reinforcement learning with verifiable rewards (RLVR) turns agent experience into learning signals primarily through scalar outcome rewards after interaction. For group-relative objectives, however, this signal vanishes when all rollouts receive the same reward, even though their trajectories may reveal useful information about what the task requires and how the agent fails. We ask a complementary question: can hindsight teach an agent what it could have anticipated before acting? We introduce prospective learning, which uses post-hoc experience to supervise foresight predictions from the pre-interaction view, and instantiate it with Self-Retrospection Distillation (SRD). Intuitively, a completed trajectory reveals knowledge that would have been useful and pitfalls that should be avoided; SRD distills this privileged hindsight into trajectory-blind foresight of the same policy. Foresight serves only as a training target and need not be explicitly generated at inference time. Across 10 tool-integrated reasoning and long-horizon agentic tasks, SRD complements RLVR and self-distillation baselines with gains of up to 24.2 pp. Its advantage is especially pronounced when reward contrast is scarce: when 37--98% of rollout groups are reward-uniform across model scales, yet SRD can still exploit learning signal from sampled trajectories. In the 2B setting, where 98% of groups are all-failure, the RLVR training ends up at 0.0% success, while adding SRD reaches 60.6% under the same rollout budget. Our results suggest that post-hoc agent experience is useful not only for evaluating or improving behavior, but also for shaping predictive representations before available interaction.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-10-06",
+      "age_days": 3.0432362193287035,
+      "upvotes": 14,
+      "comments": 1,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.34065,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 14,
+        "comments": 1
+      },
+      "score": 4.722,
+      "rule_tags": [
+        "强化学习",
+        "大模型后训练",
+        "推理"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对强化学习中可验证奖励信号在处理分组目标时易丢失的问题，作者提出了前瞻性学习方法，并设计了自我反思蒸馏（SRD）。该方法通过将交互后的轨迹反馈蒸馏为预交互阶段的预测目标，使智能体能够从经验中提炼出未被即时奖励捕获的有效任务信息。实验表明，SRD在多项工具集成推理和长周期代理任务中能有效补充现有的强化学习方法，特别是在奖励差异稀缺的情境下表现显著。",
+        "highlights": [
+          {
+            "text": "SRD通过将事后获取的 privileged hindsight 蒸馏为与原策略一致的轨迹盲前瞻性预测，从而从看似无效的轨迹中提取学习信号。",
+            "evidence": "SRD distills this privileged hindsight into trajectory-blind foresight of the same policy."
+          },
+          {
+            "text": "在奖励分布均匀（即奖励缺乏对比度）的情况下，SRD相比传统RLVR方法表现出显著的性能优势，甚至在完全失败的场景中仍能实现增长。",
+            "evidence": "In the 2B setting, where 98% of groups are all-failure, the RLVR training ends up at 0.0% success, while adding SRD reaches 60.6% under the same rollout budget."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.02054",
+      "title": "UniWAM: Unified World-Action Model",
+      "abstract": "Vision-language-action models benefit from the understanding and reasoning capabilities of pretrained vision-language models, but action-only supervision provides limited grounding in world dynamics. Conversely, world-action models inherit spatiotemporal priors from video generation models, yet remain limited in semantic understanding and reasoning under distribution shifts. We introduce UniWAM, a unified architecture that integrates a physical reasoner, a world generator, and an action predictor to jointly learn semantic understanding of the physical world, visual generation, and action prediction. To ensure the quality of the training data, we developed a rigorous data cleaning and annotation pipeline for both human egocentric data and robot data. To adapt the vision-language component to embodied tasks while preserving its inherited language capabilities, we represent low-level actions in natural language and introduce a pre-training recipe that assigns complementary supervision from visual question answering (VQA) data, human egocentric data, and robot demonstrations to the appropriate model components. During post-training, future visual noise augmentation reduces reliance on precise future predictions, while history-conditioned flow matching uses encoded action history to initialize action generation. Together, these designs significantly reduce denoising steps while maintaining performance. UniWAM achieves state-of-the-art (SOTA) performance across multiple evaluations, including in-distribution performance, robustness, generalization, instruction following, and long-horizon task execution. Furthermore, we uncover a log-linear scaling law of unified human-robot co-training, demonstrating the effectiveness of large-scale pre-training on a mixture of human and robot data.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-01",
+      "age_days": 8.043236219328705,
+      "upvotes": 48,
+      "comments": 2,
+      "stars": 91,
+      "repo": "https://github.com/UniWAM/UniWAM",
+      "trending_rank": 5,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.41759,
+      "growth": null,
+      "score": 4.687,
+      "rule_tags": [
+        "视觉语言动作",
+        "大模型后训练",
+        "推理"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对现有视觉语言动作模型在物理世界动力学理解不足、世界模型在推理能力上的局限，本研究提出了UniWAM架构。该模型集成了物理推理器、世界生成器和动作预测器，通过整合视觉问答、人类第一视角及机器人演示数据进行预训练，并引入后训练技术优化动作生成过程。作者声称该方法在多项评估中达到领先水平，并揭示了人类与机器人混合数据协同训练的对数线性缩放规律。",
+        "highlights": [
+          {
+            "text": "UniWAM结合了物理推理、视觉生成和动作预测，并通过统一的架构实现了对物理世界的语义理解。",
+            "evidence": "We introduce UniWAM, a unified architecture that integrates a physical reasoner, a world generator, and an action predictor to jointly learn semantic understanding of the physical world, visual generation, and action prediction."
+          },
+          {
+            "text": "研究团队提出了一种针对人类第一视角数据和机器人数据的严格数据清理与标注流程，并揭示了混合数据协同训练的缩放规律。",
+            "evidence": "Furthermore, we uncover a log-linear scaling law of unified human-robot co-training, demonstrating the effectiveness of large-scale pre-training on a mixture of human and robot data."
+          }
+        ],
+        "tags": [
+          "世界模型",
+          "视觉语言动作",
+          "模仿学习"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.06104",
+      "title": "Conditional Trajectory Peaks: Single-Pass Multimodal Policies over Action Chunks",
+      "abstract": "Multimodal imitation learning requires diverse executable futures under the same observation and consistent behavior across replanning cycles. We present Conditional Trajectory Peaks (CTP), a single-pass policy framework that jointly predicts complete action-chunk candidates, probability masses, and trajectory scales. Distribution-Aware Peak Specialization (DAPS) specializes trajectory peaks using trajectory-level posterior responsibilities and mass- and scale-modulated overlap constraints. Evidence-Gated Trajectory Belief Transport (ETBT) maintains cross-chunk consistency through geometric correspondence between exchangeable candidate sets, while allowing current policy evidence to override historical constraints. CTP achieves a coverage score of 91.40% on Push-T; success rates of 100.0%, 79.72%, and 84.44% on D3IL Avoiding, Aligning, and Sorting-2, respectively. On LIBERO, CTP achieves an average success rate of 97.25%. In real-world dual-arm experiments, CTP preserves both placement modes in a two-plate task, succeeding in all 50 trials. On bottle uprighting and pen placement into a holder, it maintains success rates comparable to π_{0.5} while reducing policy inference latency from 218.24 ms to 75.80 ms. These results demonstrate that single-pass trajectory modeling can combine multimodal behavior, closed-loop consistency, and efficient inference.",
+      "topics": [
+        "通用 AI"
+      ],
+      "published": "2026-10-05",
+      "age_days": 4.043236219328704,
+      "upvotes": 2,
+      "comments": 2,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.45119,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 1,
+        "comments": 1
+      },
+      "score": 4.676,
+      "rule_tags": [
+        "模仿学习"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文提出了一种名为Conditional Trajectory Peaks (CTP)的单程多模态模仿学习策略框架。该方法通过联合预测动作分块、概率质量和轨迹尺度来处理多模态未来，并引入分布感知峰值专门化（DAPS）和证据门控轨迹信念传输（ETBT）机制，旨在确保多模态行为的多样性与重规划周期内的轨迹一致性。作者声称该框架在多个模拟任务及真实世界双臂实验中表现出高成功率，并显著降低了推理延迟。",
+        "highlights": [
+          {
+            "text": "CTP框架通过单程模型联合预测动作分块候选、概率质量及轨迹尺度，实现了高效的多模态行为建模。",
+            "evidence": "We present Conditional Trajectory Peaks (CTP), a single-pass policy framework that jointly predicts complete action-chunk candidates, probability masses, and trajectory scales."
+          },
+          {
+            "text": "在保持高任务成功率的同时，CTP大幅降低了策略推理的延迟。",
+            "evidence": "On bottle uprighting and pen placement into a holder, it maintains success rates comparable to π_{0.5} while reducing policy inference latency from 218.24 ms to 75.80 ms."
+          }
+        ],
+        "tags": [
+          "模仿学习",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    }
+  ],
+  "candidate_count": 837,
+  "personalization_note": "已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。",
+  "html": "<h1>2026-10-09 热门论文 Top 10</h1>\n<p>机器人 · 强化学习 · 通用 AI</p>\n<p>生成时间：2026-10-09 09:02 CST。从 837 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>\n<p>候选来源：<a href=\"https://huggingface.co/papers\">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>\n<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>\n<h2>1. Kinematic MeanFlow: One-Step Action Generation Policy for Robotic Foundation Models</h2>\n<p><strong>机器人</strong> · 发表 2026-10-01 · 综合分 5.24</p>\n<p>Zotero 摘要相关性：0.420（相似度分数，不是概率）。</p>\n<p>HF 点赞 40 · 讨论 1 · 仓库累计 Star 1（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +39 · 讨论 +0 · Star +1。</p>\n<p><strong>中文概述：</strong>针对机器人基础模型（RFM）中多步流匹配推理延迟高的问题，本文提出了Kinematic MeanFlow（K-MF）方法。该方法通过运动学恒等式将MeanFlow的导数项解耦为两个子区间项，分别捕捉去噪过程的早期和晚期动态，从而缓解误差累积。实验表明，K-MF能够支持RFM实现一步动作生成，并在多种任务中表现优于多步流匹配，同时显著降低了推理延迟。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出K-MF方法实现RFM的一步动作生成，通过解耦导数项捕捉不同去噪阶段的动态，降低了误差放大。<br><small>摘要依据：Specifically, grounded in a kinematic identity, K-MF decouples the time derivative term in the MeanFlow formulation into two sub-interval terms separated by an intermediate point. This decoupled formulation enables the two terms to capture early-stage and late-stage denoising dynamics, respectively, while mitigating the error amplification across the process.</small></li>\n<li>K-MF显著提升了推理效率，将GR00T-N1.6动作头的延迟降低了约67.5%至74.4%。<br><small>摘要依据：In terms of inference efficiency, K-MF reduces action-head latency of GR00T-N1.6 by 67.5%~74.4% across L40 and Jetson Orin in eager and compiled modes, yielding end-to-end latency reductions of 30.3%~54.9%.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 推理</p>\n<p><strong>原文摘要节选：</strong>In this paper, we study how to achieve one-step action generation in Robotic Foundation Models (RFMs), aiming to overcome the high inference latency of multi-step flow matching. MeanFlow provides a promising framework for this goal, yet its direct application leads to performance collapse. We discover that this stems from two distinctive dynamics exhibited in the RFM velocity field: (1) the ``local acceleration&quot; exhibits stability early on, but surges sharply towards the end of the denoising process, and (2) the spread of its magnitudes across samples widens as denoising progresses. To address these issues, we introduce Kinematic MeanFlow (K-MF), a novel one-step action policy tailored for RFMs. Specifically, grounded in a kinematic identity, K-MF decouples the time derivative term in the…</p>\n<p><a href=\"https://arxiv.org/abs/2610.00864\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.00864\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.00864\">讨论与热度</a> · <a href=\"https://github.com/IntelChina-AI/K-MF\">代码</a></p><hr>\n<h2>2. TRIAGE: Direction-Aware Mismatch Stabilization of Native NVFP4 Reinforcement Learning</h2>\n<p><strong>强化学习</strong> · 发表 2026-10-05 · 综合分 5.07</p>\n<p>Zotero 摘要相关性：0.370（相似度分数，不是概率）。</p>\n<p>HF 点赞 29 · 讨论 2 · 仓库累计 Star 7（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +27 · 讨论 +1 · Star +6。</p>\n<p><strong>规则标签：</strong>强化学习 · 推理</p>\n<p><strong>中文概述：</strong>针对大语言模型强化学习中NVFP4低精度计算导致的策略优化不稳定问题，本文提出了一种名为TRIAGE的方向感知稳定化方法。该方法通过段级诊断区分策略梯度贡献，有选择地重新平衡梯度更新并应用边界修复。实验结果显示，该方法在保持W4A4原生执行的同时，在数学推理基准测试中达到了全精度性能，并显著提升了训练阶段的吞吐量。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>TRIAGE通过段级诊断选择性地平衡策略梯度更新，并在保留原生NVFP4权重与激活4位（W4A4）前向执行的基础上，有效解决了低精度带来的训练不稳定问题。<br><small>摘要依据：TRIAGE, a direction-aware stabilization method that uses segment-level diagnosis to selectively rebalance policy-gradient updates and applies bounded repair to residual severe mismatch. TRIAGE modifies the optimization objective while retaining native NVFP4 weight-and activation 4-bit (W4A4) forward execution on both the sampler and learner.</small></li>\n<li>在Qwen3模型上的实验表明，TRIAGE在数学推理基准上实现了与全精度相当的性能，并提升了训练过程的吞吐效率。<br><small>摘要依据：Experiments on Qwen3-4B and Qwen3-30B-A3B show stable optimization throughout the evaluated training horizon and achieve full precision level performance across five mathematical reasoning benchmarks, while native NVFP4 with TRIAGE provides up to 2.3x higher rollout throughput than BF16.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>大模型后训练 · 强化学习</p>\n<p><strong>原文摘要节选：</strong>Low-precision execution can substantially accelerate reinforcement learning (RL) for large language models, but discrepancies between learner and sampler execution can destabilize policy optimization. In this paper, we characterize the interaction between mismatch and the policy-gradient direction, distinguishing locally amplifying from contracting update contributions that mismatch magnitude alone cannot identify. In native NVFP4 runs, we observe an early imbalance between the two amplifying regions, favoring negative-advantage, negative-gap updates. Their tail tokens become concentrated in a small fraction of response segments before mismatch spreads globally. Motivated by these findings, we introduce TRIAGE, a direction-aware stabilization method that uses segment-level diagnosis to…</p>\n<p><a href=\"https://arxiv.org/abs/2610.07043\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.07043\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.07043\">讨论与热度</a> · <a href=\"https://github.com/InfiXAI/TRIAGE\">代码</a></p><hr>\n<h2>3. Rationale-Guided Policy Optimization: Learning to Reason with Adaptive Rationale Scaffolding</h2>\n<p><strong>强化学习</strong> · 发表 2026-10-05 · 综合分 5.00</p>\n<p>Zotero 摘要相关性：0.458（相似度分数，不是概率）。</p>\n<p>HF 点赞 12 · 讨论 2 · 仓库累计 Star 1（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +1 · Star +0。</p>\n<p><strong>规则标签：</strong>强化学习 · 大模型后训练 · 推理</p>\n<p><strong>中文概述：</strong>针对大语言模型在强化学习中的奖励稀疏问题，本文提出了一种名为RGPO的优化框架。该方法通过将基础事实推理信息作为动态支架，根据模型的当前能力自适应引导训练过程，而非直接强制模仿。实验表明，RGPO不仅适用于纯文本推理，也适用于视觉语言任务，在稳定强化学习训练及提升模型推理能力方面表现出通用性与有效性。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出RGPO框架，将基础真值信息作为临时支架辅助模型生成，仅将高奖励的自主生成结果反馈至无引导设置，有效降低了奖励稀疏性的影响。<br><small>摘要依据：Rather than treating reference solutions as fixed imitation targets, RGPO uses them as temporary scaffolds: rationales help the model generate improved responses, after which only higher-reward, model-generated solutions are transferred back to the original unguided setting.</small></li>\n<li>RGPO在纯文本及视觉语言推理任务中均优于现有的RLVR基准方法，且消融实验证实了自适应推理引导对于性能提升的关键作用。<br><small>摘要依据：Across both language-only and vision-language reasoning settings, RGPO consistently improves performance over RLVR baselines, and ablation studies show that adaptive rationale guidance is a key contributor to these gains.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · 大模型后训练 · 推理</p>\n<p><strong>原文摘要节选：</strong>On-policy reinforcement learning has become a central paradigm for improving the reasoning abilities of large language models. However, its effectiveness is often limited by reward sparsity: when a model fails to discover correct trajectories for difficult problems, the optimization process receives little useful signal and may stagnate. Existing approaches mitigate this issue by incorporating off-policy demonstrations, expert traces, or model-generated solutions, but they typically require the auxiliary data to match the format of the reinforcement-learning task, often relying on rejection sampling from stronger models to obtain suitable training trajectories. We introduce Rationale-Guided Policy Optimization (RGPO), a framework that adaptively leverages ground-truth rationale…</p>\n<p><a href=\"https://arxiv.org/abs/2610.07342\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.07342\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.07342\">讨论与热度</a> · <a href=\"https://github.com/VietHoang1512/rgpo\">代码</a></p><hr>\n<h2>4. Long-WAM: Scaling the Context of World-Action Models</h2>\n<p><strong>机器人</strong> · 发表 2026-10-07 · 综合分 4.90</p>\n<p>Zotero 摘要相关性：0.415（相似度分数，不是概率）。</p>\n<p>HF 点赞 88 · 讨论 1 · 本次 HF 热榜第 17 位 · 仓库累计 Star 2687（仓库可能包含多篇论文）</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>中文概述：</strong>针对实时机器人控制中长历史上下文处理的延迟问题，本文提出了Long-WAM框架。该方法通过在机器人和自中心视频上进行因果预训练，建立历史到未来的预测结构，并结合异步执行与硬件加速实现实时部署。实验结果显示，该方法在多个机器人任务中提升了成功率，并实现了长跨度操作任务的动态执行。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>基于自回归（AR）预训练的视频基础模型能够显著提升长历史上下文对机器人任务性能的贡献。<br><small>摘要依据：Our central finding is that access to history is not the same as using it: longer histories pay off far more when the video foundation is pretrained autoregressively (AR).</small></li>\n<li>Long-WAM通过流式观察编码和硬件加速，实现了在计算资源有限的设备上实时预测，在动态杯子堆叠任务中表现优于对比方法。<br><small>摘要依据：Real-time deployment on Unitree G1 and YAM supports dynamic and long-horizon manipulation, including 95% success on dynamic cup stacking, where Pi0.5 and Fast-WAM succeed in none of 20 trials.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 世界模型 · 推理</p>\n<p><strong>原文摘要节选：</strong>Real-time robot control demands enough visual history to infer motion and task progress, but processing that history can delay action. We present Long-WAM, a model-system framework for scaling the context of causal world-action models under real-time control constraints. Our central finding is that access to history is not the same as using it: longer histories pay off far more when the video foundation is pretrained autoregressively (AR). We first learn causal prediction from robot and egocentric videos without action labels, then preserve this history-to-future structure during world-action adaptation. On RoboCasa GR-1, increasing context from 0.0 to 19.2 seconds raises success from 63.3% to 78.7%, whereas a bidirectionally pretrained initialization shows no net gain; robot-domain AR…</p>\n<p><a href=\"https://arxiv.org/abs/2610.10528\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.10528\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.10528\">讨论与热度</a> · <a href=\"https://github.com/NVlabs/LongLive\">代码</a></p><hr>\n<h2>5. RobotWorld: Benchmarking Multimodal Agents for Robot Use Across Diverse Tasks and Embodiments</h2>\n<p><strong>机器人</strong> · 发表 2026-10-07 · 综合分 4.90</p>\n<p>Zotero 摘要相关性：0.471（相似度分数，不是概率）。</p>\n<p>HF 点赞 29 · 讨论 1 · 仓库累计 Star 25（仓库可能包含多篇论文）</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>足式运动</p>\n<p><strong>中文概述：</strong>针对通用智能体在物理世界应用能力的挑战，本文提出了RobotWorld仿真测试平台。该平台包含84项涵盖操作、移动、驾驶及空中控制的任务，通过分析执行轨迹和任务结果，评估了智能体在理解指令与物理交互执行方面的表现。作者声称，现有模型虽能构建复杂的视觉感知与控制流程，但在状态保持、动作纠错及任务完结判定等方面仍存在显著的局限性，并分析了不同模型间的性能差异。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>RobotWorld包含84项涵盖多种机器人控制模式的任务，旨在测试智能体将指令转化为物理动作的能力。<br><small>摘要依据：Its 84 tasks span manipulation, mobile manipulation, locomotion, driving, and aerial control, with explicit interaction budgets and executable success checks.</small></li>\n<li>现有智能体能够构建复杂的感知与控制工作流，但在任务执行的连贯性、错误纠正及状态判断上表现欠佳。<br><small>摘要依据：These capabilities, however, do not consistently compose into successful behaviour: agents lose task-relevant object states despite reaching commanded poses, fail to correct ineffective actions, recover too late, or mistake unfinished tasks for completion.</small></li>\n<li>不同模型在物理任务上的能力表现存在差异，如Astra在空间约束任务中表现较好，而Opus 5.5在动态平衡任务中更具优势。<br><small>摘要依据：This uneven transfer also differs across models: Astra succeeds more often on spatial and constrained-contact goals, whereas Opus 5.5 succeeds more often on continuous-balance and timed-interaction goals.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 导航</p>\n<p><strong>原文摘要节选：</strong>General-purpose agents increasingly write code, use tools, and complete complex digital tasks, raising the question of how far these capabilities carry into the physical world. To investigate this, we introduce RobotWorld, a challenging simulation testbed for robot use: turning instructions and observations into physical task execution through robot interfaces. Its 84 tasks span manipulation, mobile manipulation, locomotion, driving, and aerial control, with explicit interaction budgets and executable success checks. By analysing task outcomes alongside execution traces, we identify both the capabilities that transfer and the gaps that prevent reliable completion. Furthermore, we find that current agents can construct sophisticated perception and control workflows, including image…</p>\n<p><a href=\"https://arxiv.org/abs/2610.10409\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.10409\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.10409\">讨论与热度</a> · <a href=\"https://github.com/robotworldai/robotworld\">代码</a></p><hr>\n<h2>6. Recursive Game Creator: An Agentic Product-Level Experience-Oriented Game Harness</h2>\n<p><strong>通用 AI</strong> · 发表 2026-10-06 · 综合分 4.89</p>\n<p>Zotero 摘要相关性：0.319（相似度分数，不是概率）。</p>\n<p>HF 点赞 79 · 讨论 1 · 本次 HF 热榜第 19 位 · 仓库累计 Star 29（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +79 · 讨论 +1。</p>\n<p><strong>中文概述：</strong>针对现有游戏生成智能体在程序正确性与玩家体验之间存在差距的问题，本文提出了Recursive Game Creator。该系统通过由Designer、Builder、Player和Reviewer四个组件构成的递归开发框架，将用户指令转化为游戏方案并进行迭代优化。作者声称，该方法在GameCraft-Bench和GameASG-Bench基准测试上均实现了性能提升，且用户研究表明其生成游戏的娱乐性更强。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出一种以体验为导向的递归开发架构，通过Player组件的程序化接口高效采集轨迹，并利用Reviewer组件的指标闭环迭代以提升游戏娱乐性。<br><small>摘要依据：The coding-native Player creates and executes reusable policies through programmatic interfaces to efficiently collect diverse gameplay trajectories, mitigating evaluation bias caused by slow GUI-based collection. The Reviewer uses carefully designed trajectory-based metrics to induce player preferences, integrating with visual evidence and explicit textual preferences to evaluate games against game-specific criteria.</small></li>\n<li>实验结果表明，该方法在GameCraft-Bench上达到77.89分，并在GameASG-Bench上实现53.2%的任务成功率与93.4%的运行时检查通过率。<br><small>摘要依据：Our method achieves state-of-the-art overall performance of 77.89 on GameCraft-Bench. On GameASG-Bench, it achieves a strict task success rate of 53.2%, a 34.1% improvement over the same-model baseline, and the highest mean runtime-check pass rate at 93.4% among compared methods.</small></li>\n</ul>\n<p><strong>原文摘要节选：</strong>Recent game design agents have made substantial progress in generating playable games. However, program correctness does not ensure an enjoyable experience for players. We present Recursive Game Creator, an experience-oriented harness to advance agentic game development from rough game prototypes into entertaining games. Recursive Game Creator organizes recursive development around four components: Designer, Builder, Player, and Reviewer. The Designer translates user instructions and Reviewer&#x27;s feedback into detailed plans. The Builder turns these plans into candidate games. The coding-native Player creates and executes reusable policies through programmatic interfaces to efficiently collect diverse gameplay trajectories, mitigating evaluation bias caused by slow GUI-based collection. The…</p>\n<p><a href=\"https://arxiv.org/abs/2610.08621\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.08621\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.08621\">讨论与热度</a> · <a href=\"https://github.com/IMBALDY/RecursiveGameCreator\">代码</a></p><hr>\n<h2>7. Minimal Witness Reinforcement Learning</h2>\n<p><strong>强化学习</strong> · 发表 2026-10-05 · 综合分 4.87</p>\n<p>Zotero 摘要相关性：0.355（相似度分数，不是概率）。</p>\n<p>HF 点赞 18 · 讨论 2 · 仓库累计 Star 0（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +18 · 讨论 +2。</p>\n<p><strong>规则标签：</strong>强化学习</p>\n<p><strong>中文概述：</strong>本文针对在强化学习中识别最小充分见证（minimal sufficient witnesses）的难题，提出了最小见证强化学习（MWRL）。该方法通过对成功策略采样出的集合进行并集运算，利用贡献度分配来确保解的最小化并识别多种候选解。作者声称，MWRL能够从单一黑盒验证器的反馈中恢复整个见证家族，并将其应用于值迭代规划器及大语言模型，在多项实验中实现了对大多数最小见证的覆盖，有效扩展了强化学习的优化范畴。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>MWRL通过联合评估成功提案并计算各提案的贡献，实现了对最小见证集的识别与覆盖，避免了冗余解。<br><small>摘要依据：MWRL takes the union of the sets certified by successful proposals sampled from the policy and credits each proposal for the coverage the group union would lose without that proposal.</small></li>\n<li>该方法不仅适用于值迭代规划，还能扩展至大语言模型的训练中，实现了对完整见证家族的恢复。<br><small>摘要依据：Under this principle, we derive a value iteration planner that recovers the entire family of witnesses and a policy gradient method that can scale to large language models.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · 大模型后训练 · 推理</p>\n<p><strong>原文摘要节选：</strong>``What are the irreducible conditions that are sufficient to produce an outcome?&#x27;&#x27; is one of the most common questions that recur across computation and science. Its answers, the minimal sufficient witnesses, are what we mean by explanations, mechanisms and reasons. These problems usually ask for multiple minimal witnesses, yet standard RL methods may reveal only one solution or redundant ones. We formalize this problem as minimal-witness identification and introduce Minimal-Witness Reinforcement Learning (MWRL). MWRL takes the union of the sets certified by successful proposals sampled from the policy and credits each proposal for the coverage the group union would lose without that proposal. This credit assignment, derived directly from the problem definition, unifies the demands for…</p>\n<p><a href=\"https://arxiv.org/abs/2610.07226\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.07226\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.07226\">讨论与热度</a> · <a href=\"https://github.com/TSUITUENYUE/MWRL\">代码</a></p><hr>\n<h2>8. Self-Retrospection Distillation: Turning Post-hoc Experiences into Prior Foresight</h2>\n<p><strong>强化学习</strong> · 发表 2026-10-06 · 综合分 4.72</p>\n<p>Zotero 摘要相关性：0.341（相似度分数，不是概率）。</p>\n<p>HF 点赞 14 · 讨论 1</p>\n<p>较上次观测（1.0 天前）：点赞 +14 · 讨论 +1。</p>\n<p><strong>规则标签：</strong>强化学习 · 大模型后训练 · 推理</p>\n<p><strong>中文概述：</strong>针对强化学习中可验证奖励信号在处理分组目标时易丢失的问题，作者提出了前瞻性学习方法，并设计了自我反思蒸馏（SRD）。该方法通过将交互后的轨迹反馈蒸馏为预交互阶段的预测目标，使智能体能够从经验中提炼出未被即时奖励捕获的有效任务信息。实验表明，SRD在多项工具集成推理和长周期代理任务中能有效补充现有的强化学习方法，特别是在奖励差异稀缺的情境下表现显著。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>SRD通过将事后获取的 privileged hindsight 蒸馏为与原策略一致的轨迹盲前瞻性预测，从而从看似无效的轨迹中提取学习信号。<br><small>摘要依据：SRD distills this privileged hindsight into trajectory-blind foresight of the same policy.</small></li>\n<li>在奖励分布均匀（即奖励缺乏对比度）的情况下，SRD相比传统RLVR方法表现出显著的性能优势，甚至在完全失败的场景中仍能实现增长。<br><small>摘要依据：In the 2B setting, where 98% of groups are all-failure, the RLVR training ends up at 0.0% success, while adding SRD reaches 60.6% under the same rollout budget.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · 推理</p>\n<p><strong>原文摘要节选：</strong>Reinforcement learning with verifiable rewards (RLVR) turns agent experience into learning signals primarily through scalar outcome rewards after interaction. For group-relative objectives, however, this signal vanishes when all rollouts receive the same reward, even though their trajectories may reveal useful information about what the task requires and how the agent fails. We ask a complementary question: can hindsight teach an agent what it could have anticipated before acting? We introduce prospective learning, which uses post-hoc experience to supervise foresight predictions from the pre-interaction view, and instantiate it with Self-Retrospection Distillation (SRD). Intuitively, a completed trajectory reveals knowledge that would have been useful and pitfalls that should be avoided;…</p>\n<p><a href=\"https://arxiv.org/abs/2610.08077\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.08077\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.08077\">讨论与热度</a></p><hr>\n<h2>9. UniWAM: Unified World-Action Model</h2>\n<p><strong>机器人</strong> · 发表 2026-10-01 · 综合分 4.69</p>\n<p>Zotero 摘要相关性：0.418（相似度分数，不是概率）。</p>\n<p>HF 点赞 48 · 讨论 2 · 本次 HF 热榜第 5 位 · 仓库累计 Star 91（仓库可能包含多篇论文）</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>视觉语言动作 · 大模型后训练 · 推理</p>\n<p><strong>中文概述：</strong>针对现有视觉语言动作模型在物理世界动力学理解不足、世界模型在推理能力上的局限，本研究提出了UniWAM架构。该模型集成了物理推理器、世界生成器和动作预测器，通过整合视觉问答、人类第一视角及机器人演示数据进行预训练，并引入后训练技术优化动作生成过程。作者声称该方法在多项评估中达到领先水平，并揭示了人类与机器人混合数据协同训练的对数线性缩放规律。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>UniWAM结合了物理推理、视觉生成和动作预测，并通过统一的架构实现了对物理世界的语义理解。<br><small>摘要依据：We introduce UniWAM, a unified architecture that integrates a physical reasoner, a world generator, and an action predictor to jointly learn semantic understanding of the physical world, visual generation, and action prediction.</small></li>\n<li>研究团队提出了一种针对人类第一视角数据和机器人数据的严格数据清理与标注流程，并揭示了混合数据协同训练的缩放规律。<br><small>摘要依据：Furthermore, we uncover a log-linear scaling law of unified human-robot co-training, demonstrating the effectiveness of large-scale pre-training on a mixture of human and robot data.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>世界模型 · 视觉语言动作 · 模仿学习</p>\n<p><strong>原文摘要节选：</strong>Vision-language-action models benefit from the understanding and reasoning capabilities of pretrained vision-language models, but action-only supervision provides limited grounding in world dynamics. Conversely, world-action models inherit spatiotemporal priors from video generation models, yet remain limited in semantic understanding and reasoning under distribution shifts. We introduce UniWAM, a unified architecture that integrates a physical reasoner, a world generator, and an action predictor to jointly learn semantic understanding of the physical world, visual generation, and action prediction. To ensure the quality of the training data, we developed a rigorous data cleaning and annotation pipeline for both human egocentric data and robot data. To adapt the vision-language component…</p>\n<p><a href=\"https://arxiv.org/abs/2610.02054\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.02054\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.02054\">讨论与热度</a> · <a href=\"https://github.com/UniWAM/UniWAM\">代码</a></p><hr>\n<h2>10. Conditional Trajectory Peaks: Single-Pass Multimodal Policies over Action Chunks</h2>\n<p><strong>通用 AI</strong> · 发表 2026-10-05 · 综合分 4.68</p>\n<p>Zotero 摘要相关性：0.451（相似度分数，不是概率）。</p>\n<p>HF 点赞 2 · 讨论 2</p>\n<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +1。</p>\n<p><strong>规则标签：</strong>模仿学习</p>\n<p><strong>中文概述：</strong>本文提出了一种名为Conditional Trajectory Peaks (CTP)的单程多模态模仿学习策略框架。该方法通过联合预测动作分块、概率质量和轨迹尺度来处理多模态未来，并引入分布感知峰值专门化（DAPS）和证据门控轨迹信念传输（ETBT）机制，旨在确保多模态行为的多样性与重规划周期内的轨迹一致性。作者声称该框架在多个模拟任务及真实世界双臂实验中表现出高成功率，并显著降低了推理延迟。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>CTP框架通过单程模型联合预测动作分块候选、概率质量及轨迹尺度，实现了高效的多模态行为建模。<br><small>摘要依据：We present Conditional Trajectory Peaks (CTP), a single-pass policy framework that jointly predicts complete action-chunk candidates, probability masses, and trajectory scales.</small></li>\n<li>在保持高任务成功率的同时，CTP大幅降低了策略推理的延迟。<br><small>摘要依据：On bottle uprighting and pen placement into a holder, it maintains success rates comparable to π_{0.5} while reducing policy inference latency from 218.24 ms to 75.80 ms.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>模仿学习 · 推理</p>\n<p><strong>原文摘要节选：</strong>Multimodal imitation learning requires diverse executable futures under the same observation and consistent behavior across replanning cycles. We present Conditional Trajectory Peaks (CTP), a single-pass policy framework that jointly predicts complete action-chunk candidates, probability masses, and trajectory scales. Distribution-Aware Peak Specialization (DAPS) specializes trajectory peaks using trajectory-level posterior responsibilities and mass- and scale-modulated overlap constraints. Evidence-Gated Trajectory Belief Transport (ETBT) maintains cross-chunk consistency through geometric correspondence between exchangeable candidate sets, while allowing current policy evidence to override historical constraints. CTP achieves a coverage score of 91.40% on Push-T; success rates of…</p>\n<p><a href=\"https://arxiv.org/abs/2610.06104\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.06104\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.06104\">讨论与热度</a></p><hr>"
+}

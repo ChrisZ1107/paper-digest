@@ -1,0 +1,23 @@
+{
+  "overview": "针对四足机器人运动中能效与鲁棒性难以兼顾的问题，本文提出了一种分层强化学习（HRL）框架。该方法将关节层面的高频运动执行与低频步态适应解耦，旨在显式最小化运输成本（CoT）。通过三阶段的Isaac模拟训练，该策略实现了零样本的模拟到现实迁移，并能在不同地形和速度下自动适应步态，在提升能效的同时保持了运动的稳健性。",
+  "highlights": [
+    {
+      "text": "提出分层强化学习框架，将关节运动执行与步态适应解耦，有效降低了运输成本（CoT）。",
+      "evidence": "In this work, we propose a hierarchical reinforcement learning (HRL) framework that separates a high-frequency policy for stable and robust joint-level motion execution from low-frequency gait adaptation that explicitly minimizes the cost of transport (CoT)."
+    },
+    {
+      "text": "该方法实现了零样本Sim-to-Real迁移，在多种地形上表现出更好的运动稳健性与能效。",
+      "evidence": "The three-stage Isaac-based training procedure enables zero-shot sim-to-real transfer with improved tracking accuracy, robustness, and energy efficiency."
+    },
+    {
+      "text": "分层策略能够根据速度自动调整步态，并在广泛的速度范围内降低了运输成本。",
+      "evidence": "The learned hierarchy exhibits automatic speed-dependent gait adaptation, transitioning from pacing at low speeds to trotting at higher speeds."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "四足机器人",
+    "足式运动",
+    "Sim-to-Real"
+  ]
+}

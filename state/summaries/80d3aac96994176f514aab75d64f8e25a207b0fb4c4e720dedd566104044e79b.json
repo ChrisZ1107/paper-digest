@@ -1,0 +1,16 @@
+{
+  "overview": "本文提出LACE-CRAFT框架以解决机器人协同设计中从零开始训练导致的控制经验丢失问题。LACE通过重用 incumbent 的学习状态与执行器参数来辅助新形态策略学习，CRAFT则通过共享实验记录和行为回放来协作生成及评审设计方案。实验结果显示，该方法在五个运动基准任务上的平均得分较D2C提升了6.4%至91.9%，并验证了从几何模型到硬件平台的完整工作流。",
+  "highlights": [
+    {
+      "text": "LACE通过继承已有机器人的完整学习状态与执行器参数，实现了高效的策略初始化与形态适应。",
+      "evidence": "LACE resumes the incumbent's full learning state and initializes compatible challengers with its actor parameters and observation statistics."
+    },
+    {
+      "text": "在五个运动基准测试中，该方法表现出优于对比方法D2C的性能指标。",
+      "evidence": "Across five locomotion benchmarks, mean scores over three evaluation seeds are 6.4-91.9% higher than D2C."
+    }
+  ],
+  "tags": [
+    "足式运动"
+  ]
+}

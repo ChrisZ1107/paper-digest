@@ -1,0 +1,17 @@
+{
+  "overview": "本文提出了一种名为Conditional Trajectory Peaks (CTP)的单程多模态模仿学习策略框架。该方法通过联合预测动作分块、概率质量和轨迹尺度来处理多模态未来，并引入分布感知峰值专门化（DAPS）和证据门控轨迹信念传输（ETBT）机制，旨在确保多模态行为的多样性与重规划周期内的轨迹一致性。作者声称该框架在多个模拟任务及真实世界双臂实验中表现出高成功率，并显著降低了推理延迟。",
+  "highlights": [
+    {
+      "text": "CTP框架通过单程模型联合预测动作分块候选、概率质量及轨迹尺度，实现了高效的多模态行为建模。",
+      "evidence": "We present Conditional Trajectory Peaks (CTP), a single-pass policy framework that jointly predicts complete action-chunk candidates, probability masses, and trajectory scales."
+    },
+    {
+      "text": "在保持高任务成功率的同时，CTP大幅降低了策略推理的延迟。",
+      "evidence": "On bottle uprighting and pen placement into a holder, it maintains success rates comparable to π_{0.5} while reducing policy inference latency from 218.24 ms to 75.80 ms."
+    }
+  ],
+  "tags": [
+    "模仿学习",
+    "推理"
+  ]
+}

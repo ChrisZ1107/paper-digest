@@ -1,0 +1,14 @@
+{
+  "overview": "针对现有游戏生成智能体在程序正确性与玩家体验之间存在差距的问题，本文提出了Recursive Game Creator。该系统通过由Designer、Builder、Player和Reviewer四个组件构成的递归开发框架，将用户指令转化为游戏方案并进行迭代优化。作者声称，该方法在GameCraft-Bench和GameASG-Bench基准测试上均实现了性能提升，且用户研究表明其生成游戏的娱乐性更强。",
+  "highlights": [
+    {
+      "text": "提出一种以体验为导向的递归开发架构，通过Player组件的程序化接口高效采集轨迹，并利用Reviewer组件的指标闭环迭代以提升游戏娱乐性。",
+      "evidence": "The coding-native Player creates and executes reusable policies through programmatic interfaces to efficiently collect diverse gameplay trajectories, mitigating evaluation bias caused by slow GUI-based collection. The Reviewer uses carefully designed trajectory-based metrics to induce player preferences, integrating with visual evidence and explicit textual preferences to evaluate games against game-specific criteria."
+    },
+    {
+      "text": "实验结果表明，该方法在GameCraft-Bench上达到77.89分，并在GameASG-Bench上实现53.2%的任务成功率与93.4%的运行时检查通过率。",
+      "evidence": "Our method achieves state-of-the-art overall performance of 77.89 on GameCraft-Bench. On GameASG-Bench, it achieves a strict task success rate of 53.2%, a 34.1% improvement over the same-model baseline, and the highest mean runtime-check pass rate at 93.4% among compared methods."
+    }
+  ],
+  "tags": []
+}

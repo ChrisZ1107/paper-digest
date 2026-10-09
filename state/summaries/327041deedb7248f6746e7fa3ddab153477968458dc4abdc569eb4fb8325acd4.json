@@ -1,0 +1,21 @@
+{
+  "overview": "针对通用智能体在物理世界应用能力的挑战，本文提出了RobotWorld仿真测试平台。该平台包含84项涵盖操作、移动、驾驶及空中控制的任务，通过分析执行轨迹和任务结果，评估了智能体在理解指令与物理交互执行方面的表现。作者声称，现有模型虽能构建复杂的视觉感知与控制流程，但在状态保持、动作纠错及任务完结判定等方面仍存在显著的局限性，并分析了不同模型间的性能差异。",
+  "highlights": [
+    {
+      "text": "RobotWorld包含84项涵盖多种机器人控制模式的任务，旨在测试智能体将指令转化为物理动作的能力。",
+      "evidence": "Its 84 tasks span manipulation, mobile manipulation, locomotion, driving, and aerial control, with explicit interaction budgets and executable success checks."
+    },
+    {
+      "text": "现有智能体能够构建复杂的感知与控制工作流，但在任务执行的连贯性、错误纠正及状态判断上表现欠佳。",
+      "evidence": "These capabilities, however, do not consistently compose into successful behaviour: agents lose task-relevant object states despite reaching commanded poses, fail to correct ineffective actions, recover too late, or mistake unfinished tasks for completion."
+    },
+    {
+      "text": "不同模型在物理任务上的能力表现存在差异，如Astra在空间约束任务中表现较好，而Opus 5.5在动态平衡任务中更具优势。",
+      "evidence": "This uneven transfer also differs across models: Astra succeeds more often on spatial and constrained-contact goals, whereas Opus 5.5 succeeds more often on continuous-balance and timed-interaction goals."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "导航"
+  ]
+}

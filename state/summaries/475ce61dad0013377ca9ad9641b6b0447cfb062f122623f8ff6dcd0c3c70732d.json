@@ -1,0 +1,18 @@
+{
+  "overview": "针对实时机器人控制中长历史上下文处理的延迟问题，本文提出了Long-WAM框架。该方法通过在机器人和自中心视频上进行因果预训练，建立历史到未来的预测结构，并结合异步执行与硬件加速实现实时部署。实验结果显示，该方法在多个机器人任务中提升了成功率，并实现了长跨度操作任务的动态执行。",
+  "highlights": [
+    {
+      "text": "基于自回归（AR）预训练的视频基础模型能够显著提升长历史上下文对机器人任务性能的贡献。",
+      "evidence": "Our central finding is that access to history is not the same as using it: longer histories pay off far more when the video foundation is pretrained autoregressively (AR)."
+    },
+    {
+      "text": "Long-WAM通过流式观察编码和硬件加速，实现了在计算资源有限的设备上实时预测，在动态杯子堆叠任务中表现优于对比方法。",
+      "evidence": "Real-time deployment on Unitree G1 and YAM supports dynamic and long-horizon manipulation, including 95% success on dynamic cup stacking, where Pi0.5 and Fast-WAM succeed in none of 20 trials."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "世界模型",
+    "推理"
+  ]
+}

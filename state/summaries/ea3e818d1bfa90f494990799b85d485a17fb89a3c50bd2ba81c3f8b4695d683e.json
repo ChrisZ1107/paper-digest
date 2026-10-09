@@ -1,0 +1,17 @@
+{
+  "overview": "针对大语言模型强化学习中NVFP4低精度计算导致的策略优化不稳定问题，本文提出了一种名为TRIAGE的方向感知稳定化方法。该方法通过段级诊断区分策略梯度贡献，有选择地重新平衡梯度更新并应用边界修复。实验结果显示，该方法在保持W4A4原生执行的同时，在数学推理基准测试中达到了全精度性能，并显著提升了训练阶段的吞吐量。",
+  "highlights": [
+    {
+      "text": "TRIAGE通过段级诊断选择性地平衡策略梯度更新，并在保留原生NVFP4权重与激活4位（W4A4）前向执行的基础上，有效解决了低精度带来的训练不稳定问题。",
+      "evidence": "TRIAGE, a direction-aware stabilization method that uses segment-level diagnosis to selectively rebalance policy-gradient updates and applies bounded repair to residual severe mismatch. TRIAGE modifies the optimization objective while retaining native NVFP4 weight-and activation 4-bit (W4A4) forward execution on both the sampler and learner."
+    },
+    {
+      "text": "在Qwen3模型上的实验表明，TRIAGE在数学推理基准上实现了与全精度相当的性能，并提升了训练过程的吞吐效率。",
+      "evidence": "Experiments on Qwen3-4B and Qwen3-30B-A3B show stable optimization throughout the evaluated training horizon and achieve full precision level performance across five mathematical reasoning benchmarks, while native NVFP4 with TRIAGE provides up to 2.3x higher rollout throughput than BF16."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "强化学习"
+  ]
+}
