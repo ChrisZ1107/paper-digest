@@ -1980,6 +1980,99 @@
           "abstract_zh": "语言模型（LM）智能体正日益被用于自动化数字环境中的复杂任务。正如人类受益于集成开发环境等强大的软件应用程序来完成软件工程等复杂任务一样，我们认为语言模型智能体代表了一类具有自身需求和能力的新型终端用户，它们也将受益于专为其所用软件设计的定制化界面。我们研究了界面设计如何影响语言模型智能体的表现。作为此次探索的成果，我们推出了 SWE-agent：一个助力语言模型智能体自主使用计算机解决软件工程任务的系统。SWE-agent 的定制化智能体-计算机界面（ACI）显著增强了智能体创建和编辑代码文件、浏览整个代码库以及执行测试和其他程序的能力。我们在 SWE-bench 和 HumanEvalFix 上对 SWE-agent 进行了评估，两者均达到了最先进的性能，pass@1 率分别为 12.5% 和 87.7%，远超此前非交互式语言模型所取得的最先进水平。最后，我们深入探讨了 ACI 的设计如何影响智能体的行为和性能。"
         }
       ]
+    },
+    "SpXX1QVKqTs": {
+      "video_id": "SpXX1QVKqTs",
+      "video_title": "Looped Transformers Explained: More Depth Without More Parameters",
+      "published": "2026-10-09",
+      "video_url": "https://www.youtube.com/watch?v=SpXX1QVKqTs",
+      "papers": [
+        {
+          "id": "2502.05171",
+          "title": "2502.05171",
+          "url": "https://arxiv.org/abs/2502.05171"
+        },
+        {
+          "id": "2502.17416",
+          "title": "2502.17416",
+          "url": "https://arxiv.org/abs/2502.17416"
+        },
+        {
+          "id": "2510.25741",
+          "title": "2510.25741",
+          "url": "https://arxiv.org/abs/2510.25741"
+        },
+        {
+          "id": "2607.22083",
+          "title": "2607.22083",
+          "url": "https://arxiv.org/abs/2607.22083"
+        },
+        {
+          "id": "2606.18206",
+          "title": "2606.18206",
+          "url": "https://arxiv.org/abs/2606.18206"
+        },
+        {
+          "id": "2609.01343",
+          "title": "2609.01343",
+          "url": "https://arxiv.org/abs/2609.01343"
+        },
+        {
+          "id": "2609.29812",
+          "title": "2609.29812",
+          "url": "https://arxiv.org/abs/2609.29812"
+        },
+        {
+          "id": "2605.30215",
+          "title": "2605.30215",
+          "url": "https://arxiv.org/abs/2605.30215"
+        },
+        {
+          "id": "2604.09168",
+          "title": "2604.09168",
+          "url": "https://arxiv.org/abs/2604.09168"
+        },
+        {
+          "id": "1807.03819",
+          "title": "1807.03819",
+          "url": "https://arxiv.org/abs/1807.03819"
+        },
+        {
+          "id": "2410.20672",
+          "title": "2410.20672",
+          "url": "https://arxiv.org/abs/2410.20672"
+        },
+        {
+          "id": "2507.10524",
+          "title": "2507.10524",
+          "url": "https://arxiv.org/abs/2507.10524"
+        },
+        {
+          "id": "1909.11942",
+          "title": "1909.11942",
+          "url": "https://arxiv.org/abs/1909.11942"
+        },
+        {
+          "id": "2404.02258",
+          "title": "2404.02258",
+          "url": "https://arxiv.org/abs/2404.02258"
+        },
+        {
+          "id": "2412.06769",
+          "title": "2412.06769",
+          "url": "https://arxiv.org/abs/2412.06769"
+        },
+        {
+          "id": "1909.01377",
+          "title": "1909.01377",
+          "url": "https://arxiv.org/abs/1909.01377"
+        },
+        {
+          "id": "1603.08983",
+          "title": "1603.08983",
+          "url": "https://arxiv.org/abs/1603.08983"
+        }
+      ]
     }
   }
 }
