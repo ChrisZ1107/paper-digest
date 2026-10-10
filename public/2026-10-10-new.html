@@ -1,0 +1,78 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>2026-10-10 每日新论文 5</title><body><h1>2026-10-10 每日新论文 5</h1>
+<p>机器人 · 强化学习 · 通用 AI</p>
+<p>生成时间：2026-10-10 09:04 CST。从 830 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>
+<p>本栏优先收录最近发布且未出现在近期日报的 arXiv 论文，不按热度排序；相关性分用于结合你的 Zotero 收藏偏好。</p>
+<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>
+<p>本次合格候选不足 10 篇，实际收录 5 篇。</p>
+<h2>1. Teaching a Robot Dog New Tricks: Diverse Quadruped Skills via Combined Reinforcement and Imitation Learning with Adversarial Task Selection</h2>
+<p><strong>机器人 / 强化学习</strong> · 公告 2026-10-09 · 综合分 3.96</p>
+<p>Zotero 摘要相关性：0.609（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>强化学习 · PPO · 四足机器人 · 足式运动 · 模仿学习</p>
+<p><strong>中文概述：</strong>针对多任务四足机器人训练中样本效率低及梯度冲突等难题，本文提出一种包含三阶段的训练方法。该方法首先利用强化学习训练多个单任务教师策略，随后通过强化学习与模仿学习相结合的目标函数，并辅以对抗性任务选择机制，将教师策略蒸馏至单一学生策略中。作者声称该方法能够实现22项任务，并能组合出如爬行等新颖行为，同时在真实四足机器人上表现出良好的鲁棒性。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出一种结合强化学习、模仿学习及对抗性任务选择的训练框架，旨在提升多任务学习的效果并解决梯度冲突问题。<br><small>摘要依据：Then, two additional stages train a student policy with a multi-teacher distillation setup that uses a combined RL and Imitation Learning (IL) objective under an adversarial task selection process that focuses training on the worst-performing task.</small></li>
+<li>实验证明，该方法在22项任务上实现了有效的策略蒸馏，且对比PPO及传统蒸馏微调基线，在运动质量与指令跟踪准确性上表现更优。<br><small>摘要依据：Evaluations show our method preserves motion quality and tracks commands more accurately than PPO and distill-then-finetune baselines, and in some cases generalizes to new tasks without explicit training.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习 · 四足机器人 · 足式运动 · 模仿学习</p>
+<p><strong>原文摘要节选：</strong>Reinforcement Learning (RL) has enabled legged robots to perform a range of skills in single-task settings. However, applications such as farm robotics or space exploration require diverse skills such as locomotion, digging, or close-range surveying. Training an end-to-end policy to address this problem remains difficult due to challenges such as sample inefficiency and gradient conflict between tasks in multi-task learning. We propose a three-stage method that trains a single policy to perform distinct tasks such as walking, digging, and hopping, and compose them into novel behaviors such as crawling. First, multiple teacher policies are trained using RL on narrowly defined tasks. Then, two additional stages train a student policy with a multi-teacher distillation setup that uses a…</p>
+<p><a href="https://arxiv.org/abs/2610.10601">论文原文</a> · <a href="https://arxiv.org/pdf/2610.10601">PDF</a></p><hr>
+<h2>2. DAMP: Humanoid Locomotion via Denoised Belief Learning and Adversarial Motion Priors</h2>
+<p><strong>机器人 / 强化学习</strong> · 公告 2026-10-09 · 综合分 3.67</p>
+<p>Zotero 摘要相关性：0.564（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>强化学习 · 人形机器人 · 足式运动 · Sim-to-Real</p>
+<p><strong>中文概述：</strong>本文提出了DAMP强化学习框架，旨在解决人形机器人在无感知信息条件下，在复杂地形中实现鲁棒且自然运动的问题。该方法利用循环神经网络捕获时间依赖性，隐式推断关键任务潜变量。作者声称该端到端框架能够实现从仿真到现实环境的迁移，并表现出良好的鲁棒性和泛化能力。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>DAMP框架通过循环神经网络隐式推断关键任务潜变量，在无需外部感知信息的前提下实现了鲁棒的人形机器人运动。<br><small>摘要依据：The framework leverages recurrent neural networks to capture temporal dependencies and implicitly infer privileged and other task-relevant latent information.</small></li>
+<li>作者验证了该端到端框架具备从仿真到现实环境的迁移能力，并体现了良好的泛化性。<br><small>摘要依据：This end-to-end framework achieves transfer learning from simulation to real-world environments, demonstrating the proposed method&#x27;s robustness and generalization capabilities.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>人形机器人 · 足式运动 · 强化学习 · Sim-to-Real</p>
+<p><strong>原文摘要节选：</strong>Humanoid robots possess the structural capability to traverse complex terrains. However, achieving stable t raversal without relying on perceived information remains challenging, particularly in complex environments. This paper introduces DAMP, a reinforcement learning framework aimed at achieving robust and naturalistic humanoid locomotion over challenging terrains, with the assumption that no perceived information is available. The framework leverages recurrent neural networks to capture temporal dependencies and implicitly infer privileged and other task-relevant latent information. By aligning the learned representations with the task objective, the method enables robust and goal-consistent policy learning. This end-to-end framework achieves transfer learning from simulation to…</p>
+<p><a href="https://arxiv.org/abs/2610.11505">论文原文</a> · <a href="https://arxiv.org/pdf/2610.11505">PDF</a></p><hr>
+<h2>3. A Balanced Data Diet: Addressing the Exploration Bottleneck in Mega-Scale RL for Robot Control</h2>
+<p><strong>机器人 / 强化学习</strong> · 公告 2026-10-09 · 综合分 3.42</p>
+<p>Zotero 摘要相关性：0.527（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>强化学习 · 四足机器人 · 足式运动 · 机器人操作 · Sim-to-Real</p>
+<p><strong>中文概述：</strong>针对大规模并行仿真中强化学习存在的任务配置采样效率低下问题，作者提出了一种名为“成功引导采样（SGS）”的自适应采样方法。该方法将训练重点集中在策略能力的前沿区域，旨在通过优化采样分布提升学习信号利用率。实验结果显示，该方法在多地形四足运动和接触丰富的装配任务中表现出显著的扩展性，并成功实现了基于RGB输入的策略零样本真实硬件部署。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出SGS自适应采样算法，通过聚焦策略能力前沿的任务配置，显著提升大规模并行仿真强化学习的训练效率。<br><small>摘要依据：To mitigate this, we introduce Success Guided Sampling (SGS), a simple adaptive sampler that concentrates RL training on task configurations around the frontier of the policy&#x27;s capabilities.</small></li>
+<li>SGS方法在多达一百万个并行环境中实现了对复杂四足运动及精密装配任务的有效求解，突破了传统方法的局限。<br><small>摘要依据：Across experiments using up to $2^{20}$ (over one million) parallel environments, SGS enables RL to solve challenging multi-terrain quadruped locomotion and contact-rich assembly tasks that prior methods fail to solve.</small></li>
+<li>将学习到的操作策略蒸馏为基于RGB的策略，并验证了其在真实机器人硬件上的零样本迁移能力。<br><small>摘要依据：Finally, we distill the learned manipulation policies into RGB-based policies and demonstrate zero-shot transfer to several challenging assembly tasks on real hardware.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习 · 四足机器人 · 机器人操作 · Sim-to-Real</p>
+<p><strong>原文摘要节选：</strong>General-purpose robots must perform a wide range of tasks from agile locomotion to dexterous manipulation. While sim-to-real reinforcement learning (RL) has proven to be a useful tool for this goal, current RL pipelines depend on engineering-heavy, per-task structural priors such as shaped rewards and demonstrations. Recent work has shown that diverse simulator resets, combined with massively parallel simulation, can alleviate much of this engineering burden on several manipulation problems. However, we find that naively scaling this paradigm to more precise or dynamic problems remains non-trivial. While simulator resets can help with exploration, uniformly sampling over this distribution wastes a growing fraction of learning experience on task configurations the policy has already…</p>
+<p><a href="https://arxiv.org/abs/2610.12465">论文原文</a> · <a href="https://arxiv.org/pdf/2610.12465">PDF</a></p><hr>
+<h2>4. Residual Modeling Closes the Regression and Generative Policy Gap in Robot Learning</h2>
+<p><strong>机器人</strong> · 公告 2026-10-09 · 综合分 3.19</p>
+<p>Zotero 摘要相关性：0.491（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>视觉语言动作</p>
+<p><strong>中文概述：</strong>针对模仿学习中直接动作回归（MSE）与生成式策略（如扩散模型）之间的性能差距，本文从残差统计建模的角度进行了重新审视。作者指出MSE策略在处理具有重尾分布特征和状态相关变异的动作残差时，其梯度更新易受大残差干扰。为此，作者提出了异方差Student-t动作回归（HT-Policies），通过学习输入相关的残差尺度来抑制重尾影响。实验表明，HT-Policies在多个仿真和真实机器人任务中，以更快的训练与推理速度达到了与生成式策略相当的性能。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出异方差Student-t动作回归（HT-Policies）方法，通过学习输入相关的残差尺度有效降低了重尾数据对模型优化的负面影响。<br><small>摘要依据：Motivated by these findings, we introduce heteroscedastic Student-t action regression (HT-Policies), which learns input-dependent residual scales and reduces the influence of heavy tails.</small></li>
+<li>HT-Policies在训练效率和推理速度上表现更优，且在多种基准测试中能够达到与生成式策略相竞争的成功率。<br><small>摘要依据：Across four simulation benchmarks and real-robot evaluations, HT-Policies achieves success rates competitive with generative policy baselines, both when trained from scratch and from pretrained vision-language-action and world-action models, despite being faster in training and inference.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 模仿学习 · 视觉语言动作</p>
+<p><strong>原文摘要节选：</strong>Learning from demonstration has enabled impressive robot behaviors. A common choice for policy learning is to use diffusion or flow matching (Flow-Policies), which often outperforms direct action regression trained with mean squared error (MSE-Policies). This gap is commonly attributed to multimodal demonstrations. We revisit this gap from the perspective of statistical modeling: how action-prediction residuals shape policy optimization. Our analysis of real-world robot demonstration data reveals substantial state-dependent variation in residual scales and heavier-than-Gaussian tails. While both MSE-Policies and Flow-Policies exhibit heavy-tailed action residuals, their training gradients behave differently: MSE allocates more gradient magnitude to observations with large action…</p>
+<p><a href="https://arxiv.org/abs/2610.12231">论文原文</a> · <a href="https://arxiv.org/pdf/2610.12231">PDF</a></p><hr>
+<h2>5. Constrained Command-Conditioned Reinforcement Learning with Bandit Strategy Selection in Real-Time Strategy Games</h2>
+<p><strong>强化学习</strong> · 公告 2026-10-09 · 综合分 3.18</p>
+<p>Zotero 摘要相关性：0.489（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>强化学习 · PPO</p>
+<p><strong>中文概述：</strong>针对即时战略游戏中智能体对未知对手鲁棒性不足的问题，作者提出了一种结合约束策略的指令条件强化学习方法。该方法将策略指挥与单元控制解耦，利用Thompson采样作为战略家选择指令，并通过受限的PPO策略作为执行器执行。实验显示，该系统在MicroRTS环境下的多项对抗测试中，相比基准PPO模型显著提升了胜率，展现了更好的应对表现。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>作者提出了一种解耦机制，将战略指令选择与单元级动作控制分离，通过指挥条件下的执行器实现对复杂策略目标的遵循。<br><small>摘要依据：Separating strategic command selection from learned unit control allows different strategies to be selected for different opponents while reusing the same execution policy.</small></li>
+<li>引入Thompson采样多臂老虎机作为战略家，能够基于游戏观察动态选择指令，从而适应不同的对手策略。<br><small>摘要依据：A Thompson-sampling bandit acts as the strategist, selecting command tuples from an estimate of the opponent&#x27;s strategy built from in-game observations rather than opponent identity.</small></li>
+<li>在MicroRTS环境的对照实验中，该系统在对阵多个最强对手时表现出显著更高的胜率优势。<br><small>摘要依据：In a controlled comparison with a flat PPO baseline trained with the same architecture, budget, curriculum and self-play league, the strategist-executor system wins significantly more often against three of the four strongest opponents on a training map, including the two strongest held-out ones (0.55 to 0.97 and 0.01 to 0.34), with no significant difference against the others.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习 · PPO</p>
+<p><strong>原文摘要节选：</strong>Deep reinforcement learning agents reach strong performance in real-time strategy games but can be brittle against opponents outside their training distribution. Separating strategic command selection from learned unit control allows different strategies to be selected for different opponents while reusing the same execution policy. This requires an executor that can follow different commands and measurable criteria for assessing whether it does so. We introduce a constrained command-conditioned Proximal Policy Optimization (PPO) policy, the executor, for MicroRTS, a real-time strategy environment. Discrete commands specify strategic objectives and behavioral requirements for economy, army composition, military posture, and worker policy over multiple environment steps; the executor…</p>
+<p><a href="https://arxiv.org/abs/2610.11663">论文原文</a> · <a href="https://arxiv.org/pdf/2610.11663">PDF</a></p><hr></body></html>

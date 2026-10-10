@@ -1,0 +1,22 @@
+{
+  "overview": "本文提出了名为DreamTrue的多视角、跨具身机器人世界模型，旨在实现具备动作忠实度和物理合理性的视频预测。针对现有机器人数据集中校准不准和交互覆盖不足的问题，作者引入了离线几何校准技术以改善动作跟随，并提出反事实后训练策略以扩大交互覆盖范围。此外，作者构建了人工标注数据集训练具身视频奖励模型，用以指导强化学习后训练。实验表明，该模型在AgiBot上实现了业界领先的动作跟随表现，并降低了交互缺陷率。",
+  "highlights": [
+    {
+      "text": "提出离线几何校准与反事实后训练策略，分别提升了多具身机器人世界模型的动作跟随精度并扩大了交互场景覆盖。",
+      "evidence": "To improve action following across embodiments, we render action trajectories into image-space conditions and introduce offline geometric calibration to align these conditions with the target videos. To broaden interaction coverage, we introduce counterfactual post-training, modifying recorded action trajectories and generating future videos under a wider range of actions and contact configurations."
+    },
+    {
+      "text": "构建人工标注的缺陷数据集并训练奖励模型，通过强化学习后训练引导模型生成物理上更合理的交互结果。",
+      "evidence": "To provide feedback on these predictions without paired ground-truth futures, we construct a human-annotated video dataset covering robot, object, and interaction defects and use it to train an embodied video reward model. Its scores guide reinforcement-learning post-training toward more physically plausible interaction outcomes."
+    },
+    {
+      "text": "在AgiBot平台评估中，DreamTrue实现了业内领先的动作跟随能力，并将交互缺陷率从48.12%显著降低至6.25%。",
+      "evidence": "On AgiBot, DreamTrue attains state-of-the-art action following, while reducing the human-assessed interaction defect rate from from 48.12% to 6.25%."
+    }
+  ],
+  "tags": [
+    "世界模型",
+    "机器人操作",
+    "离线强化学习"
+  ]
+}

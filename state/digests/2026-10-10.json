@@ -1,0 +1,512 @@
+{
+  "date": "2026-10-10",
+  "timestamp": "2026-10-10T09:04:24.932759+08:00",
+  "title": "2026-10-10 热门论文 Top 10｜机器人·强化学习·AI",
+  "slug": "2026-10-10",
+  "papers": [
+    {
+      "id": "2610.10528",
+      "title": "Long-WAM: Scaling the Context of World-Action Models",
+      "abstract": "Real-time robot control demands enough visual history to infer motion and task progress, but processing that history can delay action. We present Long-WAM, a model-system framework for scaling the context of causal world-action models under real-time control constraints. Our central finding is that access to history is not the same as using it: longer histories pay off far more when the video foundation is pretrained autoregressively (AR). We first learn causal prediction from robot and egocentric videos without action labels, then preserve this history-to-future structure during world-action adaptation. On RoboCasa GR-1, increasing context from 0.0 to 19.2 seconds raises success from 63.3% to 78.7%, whereas a bidirectionally pretrained initialization shows no net gain; robot-domain AR pretraining further raises peak success on GR-1 and LIBERO-Long. Long-WAM also achieves the best results among compared methods on LIBERO-Long, RoboTwin 2.0, and DOMINO. Streaming observation encoding, asynchronous execution, and hardware-specific acceleration enable deployment on RTX 5090, DGX Spark, and Jetson AGX Thor without dropping future prediction; on RTX 5090, each action chunk, including future-video latent prediction, takes 107.4 ms. Real-time deployment on Unitree G1 and YAM supports dynamic and long-horizon manipulation, including 95% success on dynamic cup stacking, where Pi0.5 and Fast-WAM succeed in none of 20 trials. As a memory-informed executor, Long-WAM also complements higher-level planning in composite tasks.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-07",
+      "age_days": 3.0447330180439813,
+      "upvotes": 100,
+      "comments": 2,
+      "stars": 2722,
+      "repo": "https://github.com/NVlabs/LongLive",
+      "trending_rank": 23,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.41466,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 12,
+        "comments": 1,
+        "stars": 35
+      },
+      "score": 5.461,
+      "rule_tags": [],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对实时机器人控制中长历史上下文处理的延迟问题，本文提出了Long-WAM框架。该方法通过在机器人和自中心视频上进行因果预训练，建立历史到未来的预测结构，并结合异步执行与硬件加速实现实时部署。实验结果显示，该方法在多个机器人任务中提升了成功率，并实现了长跨度操作任务的动态执行。",
+        "highlights": [
+          {
+            "text": "基于自回归（AR）预训练的视频基础模型能够显著提升长历史上下文对机器人任务性能的贡献。",
+            "evidence": "Our central finding is that access to history is not the same as using it: longer histories pay off far more when the video foundation is pretrained autoregressively (AR)."
+          },
+          {
+            "text": "Long-WAM通过流式观察编码和硬件加速，实现了在计算资源有限的设备上实时预测，在动态杯子堆叠任务中表现优于对比方法。",
+            "evidence": "Real-time deployment on Unitree G1 and YAM supports dynamic and long-horizon manipulation, including 95% success on dynamic cup stacking, where Pi0.5 and Fast-WAM succeed in none of 20 trials."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "世界模型",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.10437",
+      "title": "Q-Learning with Scalar Adjoint Matching",
+      "abstract": "Flow policies capture rich and diverse action distributions, and fine-tuning them with off-policy RL to improve beyond the demonstrations has drawn growing interest. However, fine-tuning a flow policy against a learned value function is not trivial, because the policy generates its action over many flow steps. Adjoint matching offers a principled way to update the flow model itself by propagating value information from the final action back to each flow step, but it requires a vector--Jacobian product through the policy at every step, a cost that grows with the number of flow steps and the policy size. We observe that the batch-averaged velocity Jacobian of pretrained flow policies concentrates on its diagonal. Motivated by this finding, we derive a closed-form scalar adjoint that scales the value gradient at the final action by the flow time, eliminating the per-step vector--Jacobian products. We further find that controlling the critic's value at policy-generated actions is particularly important under the scalar adjoint. Based on these findings, we propose Q-learning with Scalar Adjoint Matching (SQAM), which combines the scalar adjoint with a value penalty at those actions. SQAM's gains concentrate on the four hardest OGBench domains, where its success rate exceeds that of the strongest baseline in each domain by 18 to 35 percentage points. To test whether SQAM extends to large pretrained policies, we also fine-tune a vision-language-action policy on a real bimanual robot. SQAM improves over supervised fine-tuning on all three tasks.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-10-07",
+      "age_days": 3.0447330180439813,
+      "upvotes": 18,
+      "comments": 2,
+      "stars": 5,
+      "repo": "https://github.com/yonghdong/sqam",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.45444,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 2,
+        "comments": 1,
+        "stars": 1
+      },
+      "score": 5.235,
+      "rule_tags": [
+        "视觉语言动作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对流策略（flow policy）在离线强化学习微调中计算代价高昂的问题，作者提出了标量伴随匹配（SQAM）方法。该方法观察到预训练流策略的批处理平均速度雅可比矩阵具有对角集中特性，从而导出了闭式标量伴随，消除了每一步的向量-雅可比乘积计算。作者声称SQAM在四项困难的OGBench任务中表现优于现有基准，并在真实双臂机器人视觉-语言-动作策略微调中取得性能提升。",
+        "highlights": [
+          {
+            "text": "提出了一种基于标量伴随的流策略优化方法，通过简化雅可比矩阵计算，有效降低了策略微调过程中的计算开销。",
+            "evidence": "Motivated by this finding, we derive a closed-form scalar adjoint that scales the value gradient at the final action by the flow time, eliminating the per-step vector--Jacobian products."
+          },
+          {
+            "text": "SQAM方法在四个极具挑战性的OGBench领域中展现了明显的性能优势，成功率显著高于最强基线模型。",
+            "evidence": "SQAM's gains concentrate on the four hardest OGBench domains, where its success rate exceeds that of the strongest baseline in each domain by 18 to 35 percentage points."
+          },
+          {
+            "text": "该方法可扩展至大规模预训练模型，在真实双臂机器人的多项任务微调中验证了其有效性。",
+            "evidence": "To test whether SQAM extends to large pretrained policies, we also fine-tune a vision-language-action policy on a real bimanual robot. SQAM improves over supervised fine-tuning on all three tasks."
+          }
+        ],
+        "tags": [
+          "离线强化学习",
+          "机器人操作",
+          "视觉语言动作"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.12126",
+      "title": "SuperNav: An Agentic Navigation System for Any Task in Any Scene",
+      "abstract": "General-purpose service robots need navigation systems that can handle diverse human requests in unfamiliar environments, combining task generality with scene generality. Some existing methods fine-tune multimodal large language models (MLLMs) to predict navigation actions, making their behavior dependent on the coverage of navigation training data and potentially limiting generalization to new requests and environments. Our key insight is to let the MLLM focus on interpreting requests, understanding scenes, and making decisions while preserving its general-purpose capabilities and delegating motion execution to navigation tools. To realize this idea, we introduce SuperNav, which equips a pretrained MLLM with a specialized agent harness without navigation-specific fine-tuning of the MLLM. Our harness supports these decisions with Navigation Skills, agent-oriented Tools for physical interaction, and task-progress and context management. A unified visual-point interface connects decision-making to motion by allowing the model to specify destinations directly in images and revise its decisions from execution feedback. Together, these components support sustained navigation across different task requirements and environments. SuperNav outperforms four evaluated baselines on instance-level, multi-object, and demand-driven tasks. Category-level evaluation on HM3D and deployment on a real quadruped robot further demonstrate its applicability across environments. Project Page: https://zju3dv.github.io/SuperNav/",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-08",
+      "age_days": 2.0447330180439813,
+      "upvotes": 62,
+      "comments": 1,
+      "stars": 51,
+      "repo": "https://github.com/zju3dv/SuperNav",
+      "trending_rank": 9,
+      "sources": [
+        "Hugging Face",
+        "arXiv"
+      ],
+      "date_label": "发表",
+      "relevance": 0.46362,
+      "growth": null,
+      "score": 5.206,
+      "rule_tags": [
+        "四足机器人",
+        "导航"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对通用服务机器人难以处理多样化任务与陌生环境的问题，本文提出了SuperNav导航系统。该方法摒弃了针对导航任务微调多模态大模型（MLLM）的范式，转而构建一个代理控制组件（agent harness），使模型专注于语义理解与决策，并通过专门的导航工具与视觉点接口实现动作执行。实验表明，该系统在多种导航任务中表现优于现有基准，并在四足机器人实机上验证了其环境适应性。",
+        "highlights": [
+          {
+            "text": "SuperNav通过构建专门的代理控制组件，在无需对多模态大模型进行导航任务微调的前提下，实现了对复杂任务的导航与控制。",
+            "evidence": "To realize this idea, we introduce SuperNav, which equips a pretrained MLLM with a specialized agent harness without navigation-specific fine-tuning of the MLLM."
+          },
+          {
+            "text": "通过统一的视觉点接口，模型可以直接在图像中指定目的地，并根据执行反馈动态调整决策，从而支持持续的导航任务。",
+            "evidence": "A unified visual-point interface connects decision-making to motion by allowing the model to specify destinations directly in images and revise its decisions from execution feedback."
+          },
+          {
+            "text": "实证结果显示，SuperNav在实例级、多目标及需求驱动任务中的表现优于现有的四种基准方法，并具备在四足机器人上的部署能力。",
+            "evidence": "SuperNav outperforms four evaluated baselines on instance-level, multi-object, and demand-driven tasks. Category-level evaluation on HM3D and deployment on a real quadruped robot further demonstrate its applicability across environments."
+          }
+        ],
+        "tags": [
+          "导航",
+          "四足机器人",
+          "Sim-to-Real"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.02054",
+      "title": "UniWAM: Unified World-Action Model",
+      "abstract": "Vision-language-action models benefit from the understanding and reasoning capabilities of pretrained vision-language models, but action-only supervision provides limited grounding in world dynamics. Conversely, world-action models inherit spatiotemporal priors from video generation models, yet remain limited in semantic understanding and reasoning under distribution shifts. We introduce UniWAM, a unified architecture that integrates a physical reasoner, a world generator, and an action predictor to jointly learn semantic understanding of the physical world, visual generation, and action prediction. To ensure the quality of the training data, we developed a rigorous data cleaning and annotation pipeline for both human egocentric data and robot data. To adapt the vision-language component to embodied tasks while preserving its inherited language capabilities, we represent low-level actions in natural language and introduce a pre-training recipe that assigns complementary supervision from visual question answering (VQA) data, human egocentric data, and robot demonstrations to the appropriate model components. During post-training, future visual noise augmentation reduces reliance on precise future predictions, while history-conditioned flow matching uses encoded action history to initialize action generation. Together, these designs significantly reduce denoising steps while maintaining performance. UniWAM achieves state-of-the-art (SOTA) performance across multiple evaluations, including in-distribution performance, robustness, generalization, instruction following, and long-horizon task execution. Furthermore, we uncover a log-linear scaling law of unified human-robot co-training, demonstrating the effectiveness of large-scale pre-training on a mixture of human and robot data.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-01",
+      "age_days": 9.044733018043981,
+      "upvotes": 54,
+      "comments": 3,
+      "stars": 107,
+      "repo": "https://github.com/UniWAM/UniWAM",
+      "trending_rank": 12,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.41759,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 6,
+        "comments": 1,
+        "stars": 16
+      },
+      "score": 5.189,
+      "rule_tags": [
+        "视觉语言动作",
+        "大模型后训练",
+        "推理"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对现有视觉语言动作模型在物理世界动力学理解不足、世界模型在推理能力上的局限，本研究提出了UniWAM架构。该模型集成了物理推理器、世界生成器和动作预测器，通过整合视觉问答、人类第一视角及机器人演示数据进行预训练，并引入后训练技术优化动作生成过程。作者声称该方法在多项评估中达到领先水平，并揭示了人类与机器人混合数据协同训练的对数线性缩放规律。",
+        "highlights": [
+          {
+            "text": "UniWAM结合了物理推理、视觉生成和动作预测，并通过统一的架构实现了对物理世界的语义理解。",
+            "evidence": "We introduce UniWAM, a unified architecture that integrates a physical reasoner, a world generator, and an action predictor to jointly learn semantic understanding of the physical world, visual generation, and action prediction."
+          },
+          {
+            "text": "研究团队提出了一种针对人类第一视角数据和机器人数据的严格数据清理与标注流程，并揭示了混合数据协同训练的缩放规律。",
+            "evidence": "Furthermore, we uncover a log-linear scaling law of unified human-robot co-training, demonstrating the effectiveness of large-scale pre-training on a mixture of human and robot data."
+          }
+        ],
+        "tags": [
+          "世界模型",
+          "视觉语言动作",
+          "模仿学习"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.12374",
+      "title": "AgentGarten: Code Worlds for Evolving Agents",
+      "abstract": "Interactive virtual worlds allow agents to learn through exploration and interaction. What agents can learn is bounded by the environments they practice in, which must be faithful, with consistent state, rules, and dynamics, and realistic, with observations that follow the real-world visual distributions. Achieving both across diverse worlds remains a bottleneck. We introduce AgentGarten, a framework that couples simulators and game engines with a shared neural renderer to build real-time interactive environments. Its simulation backends maintain persistent world state and execute program-defined interaction rules, while the renderer generates visual observations from structured conditions exported through a common interface. To build the neural renderer, we adapt a pretrained video model to geometry conditions, distill it with our proposed Adversarial Forcing, and optimize inference for real-time interaction. Adversarial Forcing makes history prefilling differentiable through exact replay, so that losses on later predictions update how the renderer encodes prior observations, and adds real-data adversarial supervision to improve its visual quality. In AgentGarten, agents perceive the world through visual observations, interact with it in real time, and improve by distilling each round of experience into playbooks that subsequent agents inherit and refine. Our empirical study demonstrates a substantial gain in learning efficiency, with agents learning from just 4 rounds compared with millions for a conventional reinforcement learning counterpart. As new worlds can be written as code and rendered through the same interface, environments can scale in both number and difficulty alongside their agents, a step toward agents that keep evolving through interactive experience.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-10-08",
+      "age_days": 2.0447330180439813,
+      "upvotes": 131,
+      "comments": 1,
+      "stars": 97,
+      "repo": "https://github.com/MirroS-Lab/AgentGarten",
+      "trending_rank": 7,
+      "sources": [
+        "Hugging Face",
+        "arXiv"
+      ],
+      "date_label": "发表",
+      "relevance": 0.42089,
+      "growth": null,
+      "score": 5.041,
+      "rule_tags": [
+        "强化学习"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文提出了AgentGarten框架，旨在构建交互式虚拟环境以促进智能体学习。该框架结合了仿真后端（用于处理持久状态和规则）与基于预训练视频模型的神经渲染器（用于生成高质量视觉观测）。通过引入“对抗性强迫”（Adversarial Forcing）技术，实现了历史预填充的可微性并提升了渲染质量。实验表明，该方法能使智能体在极少轮次内完成学习，相比传统强化学习方法显著提高了效率。",
+        "highlights": [
+          {
+            "text": "AgentGarten通过结合仿真引擎与神经渲染器，构建了支持实时交互的虚拟环境，并利用Adversarial Forcing优化渲染质量。",
+            "evidence": "We introduce AgentGarten, a framework that couples simulators and game engines with a shared neural renderer to build real-time interactive environments."
+          },
+          {
+            "text": "相较于传统强化学习方法，该方法通过经验提取与迭代，显著提升了智能体的学习效率。",
+            "evidence": "Our empirical study demonstrates a substantial gain in learning efficiency, with agents learning from just 4 rounds compared with millions for a conventional reinforcement learning counterpart."
+          }
+        ],
+        "tags": [
+          "强化学习"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.08077",
+      "title": "Self-Retrospection Distillation: Turning Post-hoc Experiences into Prior Foresight",
+      "abstract": "Reinforcement learning with verifiable rewards (RLVR) turns agent experience into learning signals primarily through scalar outcome rewards after interaction. For group-relative objectives, however, this signal vanishes when all rollouts receive the same reward, even though their trajectories may reveal useful information about what the task requires and how the agent fails. We ask a complementary question: can hindsight teach an agent what it could have anticipated before acting? We introduce prospective learning, which uses post-hoc experience to supervise foresight predictions from the pre-interaction view, and instantiate it with Self-Retrospection Distillation (SRD). Intuitively, a completed trajectory reveals knowledge that would have been useful and pitfalls that should be avoided; SRD distills this privileged hindsight into trajectory-blind foresight of the same policy. Foresight serves only as a training target and need not be explicitly generated at inference time. Across 10 tool-integrated reasoning and long-horizon agentic tasks, SRD complements RLVR and self-distillation baselines with gains of up to 24.2 pp. Its advantage is especially pronounced when reward contrast is scarce: when 37--98% of rollout groups are reward-uniform across model scales, yet SRD can still exploit learning signal from sampled trajectories. In the 2B setting, where 98% of groups are all-failure, the RLVR training ends up at 0.0% success, while adding SRD reaches 60.6% under the same rollout budget. Our results suggest that post-hoc agent experience is useful not only for evaluating or improving behavior, but also for shaping predictive representations before available interaction.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-10-06",
+      "age_days": 4.044733018043981,
+      "upvotes": 134,
+      "comments": 2,
+      "stars": 2,
+      "repo": "https://github.com/SalesforceAIResearch/SRD",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.34065,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 120,
+        "comments": 1
+      },
+      "score": 5.028,
+      "rule_tags": [
+        "强化学习",
+        "大模型后训练",
+        "推理"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对强化学习中可验证奖励信号在处理分组目标时易丢失的问题，作者提出了前瞻性学习方法，并设计了自我反思蒸馏（SRD）。该方法通过将交互后的轨迹反馈蒸馏为预交互阶段的预测目标，使智能体能够从经验中提炼出未被即时奖励捕获的有效任务信息。实验表明，SRD在多项工具集成推理和长周期代理任务中能有效补充现有的强化学习方法，特别是在奖励差异稀缺的情境下表现显著。",
+        "highlights": [
+          {
+            "text": "SRD通过将事后获取的 privileged hindsight 蒸馏为与原策略一致的轨迹盲前瞻性预测，从而从看似无效的轨迹中提取学习信号。",
+            "evidence": "SRD distills this privileged hindsight into trajectory-blind foresight of the same policy."
+          },
+          {
+            "text": "在奖励分布均匀（即奖励缺乏对比度）的情况下，SRD相比传统RLVR方法表现出显著的性能优势，甚至在完全失败的场景中仍能实现增长。",
+            "evidence": "In the 2B setting, where 98% of groups are all-failure, the RLVR training ends up at 0.0% success, while adding SRD reaches 60.6% under the same rollout budget."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.10515",
+      "title": "RoboJEPA: Scaling Robotic Latent World Models",
+      "abstract": "Latent world models have shown a remarkable ability to predict future states and to plan in the real world. In practice, however, we lack a principled way to estimate how their capabilities scale with model size, data, and compute, an open problem that slows progress in the field. In this work we present RoboJEPA, a world model based on the Joint Embedding Predictive Architecture (JEPA) and trained on a large-scale dataset spanning 12 robotic embodiments. We show that RoboJEPA's imagination error, the error of its latent rollouts, follows a second-order power law in compute, allowing us to predict model quality well beyond the scale at which the law is fit. We further show that downstream robotic planning performance improves predictably with compute, and that imagination error is strongly correlated with it, making it a reliable proxy for real-robot evaluation. Finally, we demonstrate that latent world models can be deployed zero-shot as robotic agents, planning toward a single goal image to solve tasks requiring long-horizon planning on real hardware. We release all model checkpoints together with our training and robot deployment code. To our knowledge, this is the first work to establish scaling laws for multi-embodiment robotic world models trained on real robot data, and RoboJEPA, at 8B parameters, is the largest JEPA predictor model trained to date.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-07",
+      "age_days": 3.0447330180439813,
+      "upvotes": 4,
+      "comments": 2,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.43994,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 3,
+        "comments": 1
+      },
+      "score": 4.997,
+      "rule_tags": [
+        "世界模型"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对机器人潜在世界模型在规模化方面的评估缺失问题，本文提出了RoboJEPA。该模型基于联合嵌入预测架构（JEPA），利用涵盖12种机器人形态的大规模数据集进行训练。研究发现，该模型的预测误差遵循计算量的二阶幂律，能够预测超出拟合范围的模型性能，且预测误差与下游机器人规划性能高度相关。此外，该研究验证了RoboJEPA在真实机器人硬件上通过单目标图像实现长时程零样本规划的能力。",
+        "highlights": [
+          {
+            "text": "RoboJEPA的预测误差遵循计算量的二阶幂律，可实现对超大规模模型性能的预测。",
+            "evidence": "We show that RoboJEPA's imagination error, the error of its latent rollouts, follows a second-order power law in compute, allowing us to predict model quality well beyond the scale at which the law is fit."
+          },
+          {
+            "text": "潜在世界模型能够实现零样本部署，并利用单目标图像完成真实环境下的长时程任务规划。",
+            "evidence": "Finally, we demonstrate that latent world models can be deployed zero-shot as robotic agents, planning toward a single goal image to solve tasks requiring long-horizon planning on real hardware."
+          }
+        ],
+        "tags": [
+          "世界模型"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.11959",
+      "title": "MiMo-V2.6: Scaling Reinforcement Learning Towards Self-Improvement",
+      "abstract": "Reinforcement learning (RL) is the central training paradigm for advancing large foundation models towards self-improvement. This report introduces the MiMo-V2.6 series, an omni-modal family that pushes the frontier of model intelligence by scaling RL compute. Prior to RL, we conduct mid-training on a broad multimodal corpus to provide ample exploration space, and build a solid infrastructure on the pretrained hybrid-SWA architecture to support subsequent scale-up. We scale RL compute along three dimensions: (1) larger batches and higher throughput, with an asynchronous training that consumes 1,568 samples and 2.7-3.7B tokens per step at context lengths of up to 1M; (2) more diverse and complex environments, spanning code, general, visual, and cyber domains under a mixture of agent harnesses; and (3) more grader compute, via groupwise agentic grading that yields more accurate reward signals for long-horizon tasks and steers the model towards shorter, more token-efficient solutions. To keep training stable at scale, we freeze the MoE router and establish a multi-layer defense against reward hacking. We further build infrastructure for mixed-task agentic RL, including a unified trajectory representation, high-concurrency multi-framework rollout, decoupled control and data planes, and training-inference consistency. We open-source the training dynamics, RL environments, and RL framework to facilitate reproduction and further research on scaled RL and model self-improvement.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-10-08",
+      "age_days": 2.0447330180439813,
+      "upvotes": 56,
+      "comments": 1,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.4493,
+      "growth": null,
+      "score": 4.897,
+      "rule_tags": [
+        "强化学习"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文介绍了MiMo-V2.6系列全模态模型，旨在通过扩大强化学习（RL）规模来推动模型实现自我改进。研究人员采用混合SWA架构，从三个维度扩展RL算力：增加训练批次与吞吐量、构建覆盖多领域的复杂环境，以及通过分组代理评估提供更精准的奖励信号。此外，该研究通过冻结MoE路由器与建立奖励黑客防御机制保障了大规模训练的稳定性，并开源了相关训练框架与环境以支持复现与研究。",
+        "highlights": [
+          {
+            "text": "MiMo-V2.6通过在代码、通用、视觉及网络等多领域构建多样化且复杂的环境，提升了模型的通用智能水平。",
+            "evidence": "(2) more diverse and complex environments, spanning code, general, visual, and cyber domains under a mixture of agent harnesses"
+          },
+          {
+            "text": "研究通过分组代理评估（groupwise agentic grading）技术，为长程任务提供了更准确的奖励信号，引导模型生成更高效的解决方案。",
+            "evidence": "(3) more grader compute, via groupwise agentic grading that yields more accurate reward signals for long-horizon tasks and steers the model towards shorter, more token-efficient solutions."
+          },
+          {
+            "text": "为保障大规模训练的稳定性，研究实施了冻结MoE路由器以及多层防御机制以抑制奖励黑客现象。",
+            "evidence": "To keep training stable at scale, we freeze the MoE router and establish a multi-layer defense against reward hacking."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "大模型后训练"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.12468",
+      "title": "DreamTrue: Action-Faithful Robot World Model with Counterfactual Post-Training",
+      "abstract": "We present DreamTrue, a multi-view, cross-embodiment robot world model for action-faithful and physically plausible video prediction. Training such a model on existing robot datasets faces two obstacles: imprecise calibration can impair action following, while limited coverage of unsuccessful interactions can bias predictions toward successful outcomes. To improve action following across embodiments, we render action trajectories into image-space conditions and introduce offline geometric calibration to align these conditions with the target videos. To broaden interaction coverage, we introduce counterfactual post-training, modifying recorded action trajectories and generating future videos under a wider range of actions and contact configurations. To provide feedback on these predictions without paired ground-truth futures, we construct a human-annotated video dataset covering robot, object, and interaction defects and use it to train an embodied video reward model. Its scores guide reinforcement-learning post-training toward more physically plausible interaction outcomes. On AgiBot, DreamTrue attains state-of-the-art action following, while reducing the human-assessed interaction defect rate from from 48.12% to 6.25%. Notably, our model ranks first in the world model track of the AgiBot World Challenge 2026. The project page can be found at https://brave-eai.github.io/DreamTrue.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-10-08",
+      "age_days": 2.0447330180439813,
+      "upvotes": 33,
+      "comments": 1,
+      "stars": 4,
+      "repo": "https://github.com/brave-eai/DreamTrue",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face",
+        "arXiv"
+      ],
+      "date_label": "发表",
+      "relevance": 0.4554,
+      "growth": null,
+      "score": 4.83,
+      "rule_tags": [
+        "世界模型",
+        "大模型后训练"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文提出了名为DreamTrue的多视角、跨具身机器人世界模型，旨在实现具备动作忠实度和物理合理性的视频预测。针对现有机器人数据集中校准不准和交互覆盖不足的问题，作者引入了离线几何校准技术以改善动作跟随，并提出反事实后训练策略以扩大交互覆盖范围。此外，作者构建了人工标注数据集训练具身视频奖励模型，用以指导强化学习后训练。实验表明，该模型在AgiBot上实现了业界领先的动作跟随表现，并降低了交互缺陷率。",
+        "highlights": [
+          {
+            "text": "提出离线几何校准与反事实后训练策略，分别提升了多具身机器人世界模型的动作跟随精度并扩大了交互场景覆盖。",
+            "evidence": "To improve action following across embodiments, we render action trajectories into image-space conditions and introduce offline geometric calibration to align these conditions with the target videos. To broaden interaction coverage, we introduce counterfactual post-training, modifying recorded action trajectories and generating future videos under a wider range of actions and contact configurations."
+          },
+          {
+            "text": "构建人工标注的缺陷数据集并训练奖励模型，通过强化学习后训练引导模型生成物理上更合理的交互结果。",
+            "evidence": "To provide feedback on these predictions without paired ground-truth futures, we construct a human-annotated video dataset covering robot, object, and interaction defects and use it to train an embodied video reward model. Its scores guide reinforcement-learning post-training toward more physically plausible interaction outcomes."
+          },
+          {
+            "text": "在AgiBot平台评估中，DreamTrue实现了业内领先的动作跟随能力，并将交互缺陷率从48.12%显著降低至6.25%。",
+            "evidence": "On AgiBot, DreamTrue attains state-of-the-art action following, while reducing the human-assessed interaction defect rate from from 48.12% to 6.25%."
+          }
+        ],
+        "tags": [
+          "世界模型",
+          "机器人操作",
+          "离线强化学习"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.09484",
+      "title": "MIMESIS: Learning User Simulators as Training Environments for Interactive Agents",
+      "abstract": "Training and evaluating interactive language agents typically requires rich user interactions, yet collecting human feedback is expensive and difficult to scale. Simulated users offer a scalable alternative, but they must both resemble real user behavior and provide useful learning experiences for agents. In contrast, most agent-training frameworks rely on off-the-shelf assistant LLMs, whose helpfulness can make them overly cooperative, explicit, and behaviorally homogeneous compared with real users. We introduce MIMESIS, a purpose-built user simulator trained on human conversations with explicit reasoning supervision and 13 realistic behavioral patterns derived from real user interactions. Empirically, our 9B model achieves a SOUL-Index of 65.7, surpassing the strongest frontier model. Compared with Claude-Opus-5, the strongest baseline on RealUserSim and SimulatorArena, MIMESIS improves behavioral fidelity by 13.4 points and reduces Turing distance by 3.6 points, respectively. We then freeze the simulator and train an agent by interacting with the frozen simulator using multi-turn reinforcement learning. Across eight environments, training with MIMESIS yields better agent performance than training with GPT-5.5 under all nine unseen user simulators, demonstrating stronger generalization to new user simulators. Moreover, we propose Coached On-Policy Self-Distillation (CSD), which leverages simulator-generated private reasoning traces and subsequent utterances as feedback on how well the agent addresses user needs. A coach converts this information into concise coaching notes that describe how the agent can better anticipate user needs and adapt its behavior over the course of an interaction. CSD turns this feedback into dense, token-level supervision beyond sparse task rewards, yielding further gains across all nine evaluation user models.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-10-07",
+      "age_days": 3.0447330180439813,
+      "upvotes": 20,
+      "comments": 2,
+      "stars": 5,
+      "repo": "https://github.com/VietHoang1512/mimesis",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.353,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 9,
+        "comments": 1,
+        "stars": 1
+      },
+      "score": 4.811,
+      "rule_tags": [
+        "强化学习",
+        "推理"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "为了解决交互式语言智能体训练中人工反馈获取困难及现有模拟器行为同质化的问题，作者提出了MIMESIS用户模拟器。该模型通过显式推理监督和13种真实行为模式进行训练，旨在生成更具真实感的用户交互。研究引入了“教练指导的策略内自我蒸馏”（CSD）方法，利用模拟器生成的推理痕迹对智能体进行精细化指导。实验表明，在多轮强化学习训练下，基于MIMESIS的智能体在多项指标及未知环境下的泛化性能均优于对比模型。",
+        "highlights": [
+          {
+            "text": "MIMESIS模拟器引入了13种真实行为模式及显式推理监督，在行为保真度和图灵距离指标上优于Claude-Opus-5等强基线模型。",
+            "evidence": "Compared with Claude-Opus-5, the strongest baseline on RealUserSim and SimulatorArena, MIMESIS improves behavioral fidelity by 13.4 points and reduces Turing distance by 3.6 points, respectively."
+          },
+          {
+            "text": "基于MIMESIS训练的智能体在多种未知用户模拟器环境下展现出更强的泛化性能，且优于使用GPT-5.5训练的效果。",
+            "evidence": "Across eight environments, training with MIMESIS yields better agent performance than training with GPT-5.5 under all nine unseen user simulators, demonstrating stronger generalization to new user simulators."
+          },
+          {
+            "text": "提出的CSD方法通过将模拟器的私有推理痕迹转化为教练指导，提供了超越稀疏任务奖励的令牌级监督，进一步提升了智能体性能。",
+            "evidence": "CSD turns this feedback into dense, token-level supervision beyond sparse task rewards, yielding further gains across all nine evaluation user models."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    }
+  ],
+  "candidate_count": 830,
+  "personalization_note": "已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。",
+  "html": "<h1>2026-10-10 热门论文 Top 10</h1>\n<p>机器人 · 强化学习 · 通用 AI</p>\n<p>生成时间：2026-10-10 09:04 CST。从 830 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>\n<p>候选来源：<a href=\"https://huggingface.co/papers\">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>\n<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>\n<h2>1. Long-WAM: Scaling the Context of World-Action Models</h2>\n<p><strong>机器人</strong> · 发表 2026-10-07 · 综合分 5.46</p>\n<p>Zotero 摘要相关性：0.415（相似度分数，不是概率）。</p>\n<p>HF 点赞 100 · 讨论 2 · 本次 HF 热榜第 23 位 · 仓库累计 Star 2722（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +12 · 讨论 +1 · Star +35。</p>\n<p><strong>中文概述：</strong>针对实时机器人控制中长历史上下文处理的延迟问题，本文提出了Long-WAM框架。该方法通过在机器人和自中心视频上进行因果预训练，建立历史到未来的预测结构，并结合异步执行与硬件加速实现实时部署。实验结果显示，该方法在多个机器人任务中提升了成功率，并实现了长跨度操作任务的动态执行。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>基于自回归（AR）预训练的视频基础模型能够显著提升长历史上下文对机器人任务性能的贡献。<br><small>摘要依据：Our central finding is that access to history is not the same as using it: longer histories pay off far more when the video foundation is pretrained autoregressively (AR).</small></li>\n<li>Long-WAM通过流式观察编码和硬件加速，实现了在计算资源有限的设备上实时预测，在动态杯子堆叠任务中表现优于对比方法。<br><small>摘要依据：Real-time deployment on Unitree G1 and YAM supports dynamic and long-horizon manipulation, including 95% success on dynamic cup stacking, where Pi0.5 and Fast-WAM succeed in none of 20 trials.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 世界模型 · 推理</p>\n<p><strong>原文摘要节选：</strong>Real-time robot control demands enough visual history to infer motion and task progress, but processing that history can delay action. We present Long-WAM, a model-system framework for scaling the context of causal world-action models under real-time control constraints. Our central finding is that access to history is not the same as using it: longer histories pay off far more when the video foundation is pretrained autoregressively (AR). We first learn causal prediction from robot and egocentric videos without action labels, then preserve this history-to-future structure during world-action adaptation. On RoboCasa GR-1, increasing context from 0.0 to 19.2 seconds raises success from 63.3% to 78.7%, whereas a bidirectionally pretrained initialization shows no net gain; robot-domain AR…</p>\n<p><a href=\"https://arxiv.org/abs/2610.10528\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.10528\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.10528\">讨论与热度</a> · <a href=\"https://github.com/NVlabs/LongLive\">代码</a></p><hr>\n<h2>2. Q-Learning with Scalar Adjoint Matching</h2>\n<p><strong>机器人 / 强化学习</strong> · 发表 2026-10-07 · 综合分 5.24</p>\n<p>Zotero 摘要相关性：0.454（相似度分数，不是概率）。</p>\n<p>HF 点赞 18 · 讨论 2 · 仓库累计 Star 5（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +2 · 讨论 +1 · Star +1。</p>\n<p><strong>规则标签：</strong>视觉语言动作</p>\n<p><strong>中文概述：</strong>针对流策略（flow policy）在离线强化学习微调中计算代价高昂的问题，作者提出了标量伴随匹配（SQAM）方法。该方法观察到预训练流策略的批处理平均速度雅可比矩阵具有对角集中特性，从而导出了闭式标量伴随，消除了每一步的向量-雅可比乘积计算。作者声称SQAM在四项困难的OGBench任务中表现优于现有基准，并在真实双臂机器人视觉-语言-动作策略微调中取得性能提升。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出了一种基于标量伴随的流策略优化方法，通过简化雅可比矩阵计算，有效降低了策略微调过程中的计算开销。<br><small>摘要依据：Motivated by this finding, we derive a closed-form scalar adjoint that scales the value gradient at the final action by the flow time, eliminating the per-step vector--Jacobian products.</small></li>\n<li>SQAM方法在四个极具挑战性的OGBench领域中展现了明显的性能优势，成功率显著高于最强基线模型。<br><small>摘要依据：SQAM&#x27;s gains concentrate on the four hardest OGBench domains, where its success rate exceeds that of the strongest baseline in each domain by 18 to 35 percentage points.</small></li>\n<li>该方法可扩展至大规模预训练模型，在真实双臂机器人的多项任务微调中验证了其有效性。<br><small>摘要依据：To test whether SQAM extends to large pretrained policies, we also fine-tune a vision-language-action policy on a real bimanual robot. SQAM improves over supervised fine-tuning on all three tasks.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>离线强化学习 · 机器人操作 · 视觉语言动作</p>\n<p><strong>原文摘要节选：</strong>Flow policies capture rich and diverse action distributions, and fine-tuning them with off-policy RL to improve beyond the demonstrations has drawn growing interest. However, fine-tuning a flow policy against a learned value function is not trivial, because the policy generates its action over many flow steps. Adjoint matching offers a principled way to update the flow model itself by propagating value information from the final action back to each flow step, but it requires a vector--Jacobian product through the policy at every step, a cost that grows with the number of flow steps and the policy size. We observe that the batch-averaged velocity Jacobian of pretrained flow policies concentrates on its diagonal. Motivated by this finding, we derive a closed-form scalar adjoint that scales…</p>\n<p><a href=\"https://arxiv.org/abs/2610.10437\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.10437\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.10437\">讨论与热度</a> · <a href=\"https://github.com/yonghdong/sqam\">代码</a></p><hr>\n<h2>3. SuperNav: An Agentic Navigation System for Any Task in Any Scene</h2>\n<p><strong>机器人</strong> · 发表 2026-10-08 · 综合分 5.21</p>\n<p>Zotero 摘要相关性：0.464（相似度分数，不是概率）。</p>\n<p>HF 点赞 62 · 讨论 1 · 本次 HF 热榜第 9 位 · 仓库累计 Star 51（仓库可能包含多篇论文）</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>四足机器人 · 导航</p>\n<p><strong>中文概述：</strong>针对通用服务机器人难以处理多样化任务与陌生环境的问题，本文提出了SuperNav导航系统。该方法摒弃了针对导航任务微调多模态大模型（MLLM）的范式，转而构建一个代理控制组件（agent harness），使模型专注于语义理解与决策，并通过专门的导航工具与视觉点接口实现动作执行。实验表明，该系统在多种导航任务中表现优于现有基准，并在四足机器人实机上验证了其环境适应性。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>SuperNav通过构建专门的代理控制组件，在无需对多模态大模型进行导航任务微调的前提下，实现了对复杂任务的导航与控制。<br><small>摘要依据：To realize this idea, we introduce SuperNav, which equips a pretrained MLLM with a specialized agent harness without navigation-specific fine-tuning of the MLLM.</small></li>\n<li>通过统一的视觉点接口，模型可以直接在图像中指定目的地，并根据执行反馈动态调整决策，从而支持持续的导航任务。<br><small>摘要依据：A unified visual-point interface connects decision-making to motion by allowing the model to specify destinations directly in images and revise its decisions from execution feedback.</small></li>\n<li>实证结果显示，SuperNav在实例级、多目标及需求驱动任务中的表现优于现有的四种基准方法，并具备在四足机器人上的部署能力。<br><small>摘要依据：SuperNav outperforms four evaluated baselines on instance-level, multi-object, and demand-driven tasks. Category-level evaluation on HM3D and deployment on a real quadruped robot further demonstrate its applicability across environments.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>导航 · 四足机器人 · Sim-to-Real</p>\n<p><strong>原文摘要节选：</strong>General-purpose service robots need navigation systems that can handle diverse human requests in unfamiliar environments, combining task generality with scene generality. Some existing methods fine-tune multimodal large language models (MLLMs) to predict navigation actions, making their behavior dependent on the coverage of navigation training data and potentially limiting generalization to new requests and environments. Our key insight is to let the MLLM focus on interpreting requests, understanding scenes, and making decisions while preserving its general-purpose capabilities and delegating motion execution to navigation tools. To realize this idea, we introduce SuperNav, which equips a pretrained MLLM with a specialized agent harness without navigation-specific fine-tuning of the MLLM.…</p>\n<p><a href=\"https://arxiv.org/abs/2610.12126\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.12126\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.12126\">讨论与热度</a> · <a href=\"https://github.com/zju3dv/SuperNav\">代码</a></p><hr>\n<h2>4. UniWAM: Unified World-Action Model</h2>\n<p><strong>机器人</strong> · 发表 2026-10-01 · 综合分 5.19</p>\n<p>Zotero 摘要相关性：0.418（相似度分数，不是概率）。</p>\n<p>HF 点赞 54 · 讨论 3 · 本次 HF 热榜第 12 位 · 仓库累计 Star 107（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +6 · 讨论 +1 · Star +16。</p>\n<p><strong>规则标签：</strong>视觉语言动作 · 大模型后训练 · 推理</p>\n<p><strong>中文概述：</strong>针对现有视觉语言动作模型在物理世界动力学理解不足、世界模型在推理能力上的局限，本研究提出了UniWAM架构。该模型集成了物理推理器、世界生成器和动作预测器，通过整合视觉问答、人类第一视角及机器人演示数据进行预训练，并引入后训练技术优化动作生成过程。作者声称该方法在多项评估中达到领先水平，并揭示了人类与机器人混合数据协同训练的对数线性缩放规律。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>UniWAM结合了物理推理、视觉生成和动作预测，并通过统一的架构实现了对物理世界的语义理解。<br><small>摘要依据：We introduce UniWAM, a unified architecture that integrates a physical reasoner, a world generator, and an action predictor to jointly learn semantic understanding of the physical world, visual generation, and action prediction.</small></li>\n<li>研究团队提出了一种针对人类第一视角数据和机器人数据的严格数据清理与标注流程，并揭示了混合数据协同训练的缩放规律。<br><small>摘要依据：Furthermore, we uncover a log-linear scaling law of unified human-robot co-training, demonstrating the effectiveness of large-scale pre-training on a mixture of human and robot data.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>世界模型 · 视觉语言动作 · 模仿学习</p>\n<p><strong>原文摘要节选：</strong>Vision-language-action models benefit from the understanding and reasoning capabilities of pretrained vision-language models, but action-only supervision provides limited grounding in world dynamics. Conversely, world-action models inherit spatiotemporal priors from video generation models, yet remain limited in semantic understanding and reasoning under distribution shifts. We introduce UniWAM, a unified architecture that integrates a physical reasoner, a world generator, and an action predictor to jointly learn semantic understanding of the physical world, visual generation, and action prediction. To ensure the quality of the training data, we developed a rigorous data cleaning and annotation pipeline for both human egocentric data and robot data. To adapt the vision-language component…</p>\n<p><a href=\"https://arxiv.org/abs/2610.02054\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.02054\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.02054\">讨论与热度</a> · <a href=\"https://github.com/UniWAM/UniWAM\">代码</a></p><hr>\n<h2>5. AgentGarten: Code Worlds for Evolving Agents</h2>\n<p><strong>强化学习</strong> · 发表 2026-10-08 · 综合分 5.04</p>\n<p>Zotero 摘要相关性：0.421（相似度分数，不是概率）。</p>\n<p>HF 点赞 131 · 讨论 1 · 本次 HF 热榜第 7 位 · 仓库累计 Star 97（仓库可能包含多篇论文）</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习</p>\n<p><strong>中文概述：</strong>本文提出了AgentGarten框架，旨在构建交互式虚拟环境以促进智能体学习。该框架结合了仿真后端（用于处理持久状态和规则）与基于预训练视频模型的神经渲染器（用于生成高质量视觉观测）。通过引入“对抗性强迫”（Adversarial Forcing）技术，实现了历史预填充的可微性并提升了渲染质量。实验表明，该方法能使智能体在极少轮次内完成学习，相比传统强化学习方法显著提高了效率。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>AgentGarten通过结合仿真引擎与神经渲染器，构建了支持实时交互的虚拟环境，并利用Adversarial Forcing优化渲染质量。<br><small>摘要依据：We introduce AgentGarten, a framework that couples simulators and game engines with a shared neural renderer to build real-time interactive environments.</small></li>\n<li>相较于传统强化学习方法，该方法通过经验提取与迭代，显著提升了智能体的学习效率。<br><small>摘要依据：Our empirical study demonstrates a substantial gain in learning efficiency, with agents learning from just 4 rounds compared with millions for a conventional reinforcement learning counterpart.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习</p>\n<p><strong>原文摘要节选：</strong>Interactive virtual worlds allow agents to learn through exploration and interaction. What agents can learn is bounded by the environments they practice in, which must be faithful, with consistent state, rules, and dynamics, and realistic, with observations that follow the real-world visual distributions. Achieving both across diverse worlds remains a bottleneck. We introduce AgentGarten, a framework that couples simulators and game engines with a shared neural renderer to build real-time interactive environments. Its simulation backends maintain persistent world state and execute program-defined interaction rules, while the renderer generates visual observations from structured conditions exported through a common interface. To build the neural renderer, we adapt a pretrained video model…</p>\n<p><a href=\"https://arxiv.org/abs/2610.12374\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.12374\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.12374\">讨论与热度</a> · <a href=\"https://github.com/MirroS-Lab/AgentGarten\">代码</a></p><hr>\n<h2>6. Self-Retrospection Distillation: Turning Post-hoc Experiences into Prior Foresight</h2>\n<p><strong>强化学习</strong> · 发表 2026-10-06 · 综合分 5.03</p>\n<p>Zotero 摘要相关性：0.341（相似度分数，不是概率）。</p>\n<p>HF 点赞 134 · 讨论 2 · 仓库累计 Star 2（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +120 · 讨论 +1。</p>\n<p><strong>规则标签：</strong>强化学习 · 大模型后训练 · 推理</p>\n<p><strong>中文概述：</strong>针对强化学习中可验证奖励信号在处理分组目标时易丢失的问题，作者提出了前瞻性学习方法，并设计了自我反思蒸馏（SRD）。该方法通过将交互后的轨迹反馈蒸馏为预交互阶段的预测目标，使智能体能够从经验中提炼出未被即时奖励捕获的有效任务信息。实验表明，SRD在多项工具集成推理和长周期代理任务中能有效补充现有的强化学习方法，特别是在奖励差异稀缺的情境下表现显著。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>SRD通过将事后获取的 privileged hindsight 蒸馏为与原策略一致的轨迹盲前瞻性预测，从而从看似无效的轨迹中提取学习信号。<br><small>摘要依据：SRD distills this privileged hindsight into trajectory-blind foresight of the same policy.</small></li>\n<li>在奖励分布均匀（即奖励缺乏对比度）的情况下，SRD相比传统RLVR方法表现出显著的性能优势，甚至在完全失败的场景中仍能实现增长。<br><small>摘要依据：In the 2B setting, where 98% of groups are all-failure, the RLVR training ends up at 0.0% success, while adding SRD reaches 60.6% under the same rollout budget.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · 推理</p>\n<p><strong>原文摘要节选：</strong>Reinforcement learning with verifiable rewards (RLVR) turns agent experience into learning signals primarily through scalar outcome rewards after interaction. For group-relative objectives, however, this signal vanishes when all rollouts receive the same reward, even though their trajectories may reveal useful information about what the task requires and how the agent fails. We ask a complementary question: can hindsight teach an agent what it could have anticipated before acting? We introduce prospective learning, which uses post-hoc experience to supervise foresight predictions from the pre-interaction view, and instantiate it with Self-Retrospection Distillation (SRD). Intuitively, a completed trajectory reveals knowledge that would have been useful and pitfalls that should be avoided;…</p>\n<p><a href=\"https://arxiv.org/abs/2610.08077\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.08077\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.08077\">讨论与热度</a> · <a href=\"https://github.com/SalesforceAIResearch/SRD\">代码</a></p><hr>\n<h2>7. RoboJEPA: Scaling Robotic Latent World Models</h2>\n<p><strong>机器人</strong> · 发表 2026-10-07 · 综合分 5.00</p>\n<p>Zotero 摘要相关性：0.440（相似度分数，不是概率）。</p>\n<p>HF 点赞 4 · 讨论 2</p>\n<p>较上次观测（1.0 天前）：点赞 +3 · 讨论 +1。</p>\n<p><strong>规则标签：</strong>世界模型</p>\n<p><strong>中文概述：</strong>针对机器人潜在世界模型在规模化方面的评估缺失问题，本文提出了RoboJEPA。该模型基于联合嵌入预测架构（JEPA），利用涵盖12种机器人形态的大规模数据集进行训练。研究发现，该模型的预测误差遵循计算量的二阶幂律，能够预测超出拟合范围的模型性能，且预测误差与下游机器人规划性能高度相关。此外，该研究验证了RoboJEPA在真实机器人硬件上通过单目标图像实现长时程零样本规划的能力。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>RoboJEPA的预测误差遵循计算量的二阶幂律，可实现对超大规模模型性能的预测。<br><small>摘要依据：We show that RoboJEPA&#x27;s imagination error, the error of its latent rollouts, follows a second-order power law in compute, allowing us to predict model quality well beyond the scale at which the law is fit.</small></li>\n<li>潜在世界模型能够实现零样本部署，并利用单目标图像完成真实环境下的长时程任务规划。<br><small>摘要依据：Finally, we demonstrate that latent world models can be deployed zero-shot as robotic agents, planning toward a single goal image to solve tasks requiring long-horizon planning on real hardware.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>世界模型</p>\n<p><strong>原文摘要节选：</strong>Latent world models have shown a remarkable ability to predict future states and to plan in the real world. In practice, however, we lack a principled way to estimate how their capabilities scale with model size, data, and compute, an open problem that slows progress in the field. In this work we present RoboJEPA, a world model based on the Joint Embedding Predictive Architecture (JEPA) and trained on a large-scale dataset spanning 12 robotic embodiments. We show that RoboJEPA&#x27;s imagination error, the error of its latent rollouts, follows a second-order power law in compute, allowing us to predict model quality well beyond the scale at which the law is fit. We further show that downstream robotic planning performance improves predictably with compute, and that imagination error is…</p>\n<p><a href=\"https://arxiv.org/abs/2610.10515\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.10515\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.10515\">讨论与热度</a></p><hr>\n<h2>8. MiMo-V2.6: Scaling Reinforcement Learning Towards Self-Improvement</h2>\n<p><strong>强化学习</strong> · 发表 2026-10-08 · 综合分 4.90</p>\n<p>Zotero 摘要相关性：0.449（相似度分数，不是概率）。</p>\n<p>HF 点赞 56 · 讨论 1</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习</p>\n<p><strong>中文概述：</strong>本文介绍了MiMo-V2.6系列全模态模型，旨在通过扩大强化学习（RL）规模来推动模型实现自我改进。研究人员采用混合SWA架构，从三个维度扩展RL算力：增加训练批次与吞吐量、构建覆盖多领域的复杂环境，以及通过分组代理评估提供更精准的奖励信号。此外，该研究通过冻结MoE路由器与建立奖励黑客防御机制保障了大规模训练的稳定性，并开源了相关训练框架与环境以支持复现与研究。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>MiMo-V2.6通过在代码、通用、视觉及网络等多领域构建多样化且复杂的环境，提升了模型的通用智能水平。<br><small>摘要依据：(2) more diverse and complex environments, spanning code, general, visual, and cyber domains under a mixture of agent harnesses</small></li>\n<li>研究通过分组代理评估（groupwise agentic grading）技术，为长程任务提供了更准确的奖励信号，引导模型生成更高效的解决方案。<br><small>摘要依据：(3) more grader compute, via groupwise agentic grading that yields more accurate reward signals for long-horizon tasks and steers the model towards shorter, more token-efficient solutions.</small></li>\n<li>为保障大规模训练的稳定性，研究实施了冻结MoE路由器以及多层防御机制以抑制奖励黑客现象。<br><small>摘要依据：To keep training stable at scale, we freeze the MoE router and establish a multi-layer defense against reward hacking.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · 大模型后训练</p>\n<p><strong>原文摘要节选：</strong>Reinforcement learning (RL) is the central training paradigm for advancing large foundation models towards self-improvement. This report introduces the MiMo-V2.6 series, an omni-modal family that pushes the frontier of model intelligence by scaling RL compute. Prior to RL, we conduct mid-training on a broad multimodal corpus to provide ample exploration space, and build a solid infrastructure on the pretrained hybrid-SWA architecture to support subsequent scale-up. We scale RL compute along three dimensions: (1) larger batches and higher throughput, with an asynchronous training that consumes 1,568 samples and 2.7-3.7B tokens per step at context lengths of up to 1M; (2) more diverse and complex environments, spanning code, general, visual, and cyber domains under a mixture of agent…</p>\n<p><a href=\"https://arxiv.org/abs/2610.11959\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.11959\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.11959\">讨论与热度</a></p><hr>\n<h2>9. DreamTrue: Action-Faithful Robot World Model with Counterfactual Post-Training</h2>\n<p><strong>机器人 / 强化学习</strong> · 发表 2026-10-08 · 综合分 4.83</p>\n<p>Zotero 摘要相关性：0.455（相似度分数，不是概率）。</p>\n<p>HF 点赞 33 · 讨论 1 · 仓库累计 Star 4（仓库可能包含多篇论文）</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>世界模型 · 大模型后训练</p>\n<p><strong>中文概述：</strong>本文提出了名为DreamTrue的多视角、跨具身机器人世界模型，旨在实现具备动作忠实度和物理合理性的视频预测。针对现有机器人数据集中校准不准和交互覆盖不足的问题，作者引入了离线几何校准技术以改善动作跟随，并提出反事实后训练策略以扩大交互覆盖范围。此外，作者构建了人工标注数据集训练具身视频奖励模型，用以指导强化学习后训练。实验表明，该模型在AgiBot上实现了业界领先的动作跟随表现，并降低了交互缺陷率。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出离线几何校准与反事实后训练策略，分别提升了多具身机器人世界模型的动作跟随精度并扩大了交互场景覆盖。<br><small>摘要依据：To improve action following across embodiments, we render action trajectories into image-space conditions and introduce offline geometric calibration to align these conditions with the target videos. To broaden interaction coverage, we introduce counterfactual post-training, modifying recorded action trajectories and generating future videos under a wider range of actions and contact configurations.</small></li>\n<li>构建人工标注的缺陷数据集并训练奖励模型，通过强化学习后训练引导模型生成物理上更合理的交互结果。<br><small>摘要依据：To provide feedback on these predictions without paired ground-truth futures, we construct a human-annotated video dataset covering robot, object, and interaction defects and use it to train an embodied video reward model. Its scores guide reinforcement-learning post-training toward more physically plausible interaction outcomes.</small></li>\n<li>在AgiBot平台评估中，DreamTrue实现了业内领先的动作跟随能力，并将交互缺陷率从48.12%显著降低至6.25%。<br><small>摘要依据：On AgiBot, DreamTrue attains state-of-the-art action following, while reducing the human-assessed interaction defect rate from from 48.12% to 6.25%.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>世界模型 · 机器人操作 · 离线强化学习</p>\n<p><strong>原文摘要节选：</strong>We present DreamTrue, a multi-view, cross-embodiment robot world model for action-faithful and physically plausible video prediction. Training such a model on existing robot datasets faces two obstacles: imprecise calibration can impair action following, while limited coverage of unsuccessful interactions can bias predictions toward successful outcomes. To improve action following across embodiments, we render action trajectories into image-space conditions and introduce offline geometric calibration to align these conditions with the target videos. To broaden interaction coverage, we introduce counterfactual post-training, modifying recorded action trajectories and generating future videos under a wider range of actions and contact configurations. To provide feedback on these predictions…</p>\n<p><a href=\"https://arxiv.org/abs/2610.12468\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.12468\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.12468\">讨论与热度</a> · <a href=\"https://github.com/brave-eai/DreamTrue\">代码</a></p><hr>\n<h2>10. MIMESIS: Learning User Simulators as Training Environments for Interactive Agents</h2>\n<p><strong>强化学习</strong> · 发表 2026-10-07 · 综合分 4.81</p>\n<p>Zotero 摘要相关性：0.353（相似度分数，不是概率）。</p>\n<p>HF 点赞 20 · 讨论 2 · 仓库累计 Star 5（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +9 · 讨论 +1 · Star +1。</p>\n<p><strong>规则标签：</strong>强化学习 · 推理</p>\n<p><strong>中文概述：</strong>为了解决交互式语言智能体训练中人工反馈获取困难及现有模拟器行为同质化的问题，作者提出了MIMESIS用户模拟器。该模型通过显式推理监督和13种真实行为模式进行训练，旨在生成更具真实感的用户交互。研究引入了“教练指导的策略内自我蒸馏”（CSD）方法，利用模拟器生成的推理痕迹对智能体进行精细化指导。实验表明，在多轮强化学习训练下，基于MIMESIS的智能体在多项指标及未知环境下的泛化性能均优于对比模型。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>MIMESIS模拟器引入了13种真实行为模式及显式推理监督，在行为保真度和图灵距离指标上优于Claude-Opus-5等强基线模型。<br><small>摘要依据：Compared with Claude-Opus-5, the strongest baseline on RealUserSim and SimulatorArena, MIMESIS improves behavioral fidelity by 13.4 points and reduces Turing distance by 3.6 points, respectively.</small></li>\n<li>基于MIMESIS训练的智能体在多种未知用户模拟器环境下展现出更强的泛化性能，且优于使用GPT-5.5训练的效果。<br><small>摘要依据：Across eight environments, training with MIMESIS yields better agent performance than training with GPT-5.5 under all nine unseen user simulators, demonstrating stronger generalization to new user simulators.</small></li>\n<li>提出的CSD方法通过将模拟器的私有推理痕迹转化为教练指导，提供了超越稀疏任务奖励的令牌级监督，进一步提升了智能体性能。<br><small>摘要依据：CSD turns this feedback into dense, token-level supervision beyond sparse task rewards, yielding further gains across all nine evaluation user models.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · 推理</p>\n<p><strong>原文摘要节选：</strong>Training and evaluating interactive language agents typically requires rich user interactions, yet collecting human feedback is expensive and difficult to scale. Simulated users offer a scalable alternative, but they must both resemble real user behavior and provide useful learning experiences for agents. In contrast, most agent-training frameworks rely on off-the-shelf assistant LLMs, whose helpfulness can make them overly cooperative, explicit, and behaviorally homogeneous compared with real users. We introduce MIMESIS, a purpose-built user simulator trained on human conversations with explicit reasoning supervision and 13 realistic behavioral patterns derived from real user interactions. Empirically, our 9B model achieves a SOUL-Index of 65.7, surpassing the strongest frontier model.…</p>\n<p><a href=\"https://arxiv.org/abs/2610.09484\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.09484\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.09484\">讨论与热度</a> · <a href=\"https://github.com/VietHoang1512/mimesis\">代码</a></p><hr>"
+}

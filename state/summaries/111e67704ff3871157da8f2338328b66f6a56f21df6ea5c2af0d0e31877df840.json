@@ -1,0 +1,21 @@
+{
+  "overview": "本文介绍了MiMo-V2.6系列全模态模型，旨在通过扩大强化学习（RL）规模来推动模型实现自我改进。研究人员采用混合SWA架构，从三个维度扩展RL算力：增加训练批次与吞吐量、构建覆盖多领域的复杂环境，以及通过分组代理评估提供更精准的奖励信号。此外，该研究通过冻结MoE路由器与建立奖励黑客防御机制保障了大规模训练的稳定性，并开源了相关训练框架与环境以支持复现与研究。",
+  "highlights": [
+    {
+      "text": "MiMo-V2.6通过在代码、通用、视觉及网络等多领域构建多样化且复杂的环境，提升了模型的通用智能水平。",
+      "evidence": "(2) more diverse and complex environments, spanning code, general, visual, and cyber domains under a mixture of agent harnesses"
+    },
+    {
+      "text": "研究通过分组代理评估（groupwise agentic grading）技术，为长程任务提供了更准确的奖励信号，引导模型生成更高效的解决方案。",
+      "evidence": "(3) more grader compute, via groupwise agentic grading that yields more accurate reward signals for long-horizon tasks and steers the model towards shorter, more token-efficient solutions."
+    },
+    {
+      "text": "为保障大规模训练的稳定性，研究实施了冻结MoE路由器以及多层防御机制以抑制奖励黑客现象。",
+      "evidence": "To keep training stable at scale, we freeze the MoE router and establish a multi-layer defense against reward hacking."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "大模型后训练"
+  ]
+}

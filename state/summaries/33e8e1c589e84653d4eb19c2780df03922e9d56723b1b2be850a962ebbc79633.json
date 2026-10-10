@@ -1,0 +1,18 @@
+{
+  "overview": "针对模仿学习中直接动作回归（MSE）与生成式策略（如扩散模型）之间的性能差距，本文从残差统计建模的角度进行了重新审视。作者指出MSE策略在处理具有重尾分布特征和状态相关变异的动作残差时，其梯度更新易受大残差干扰。为此，作者提出了异方差Student-t动作回归（HT-Policies），通过学习输入相关的残差尺度来抑制重尾影响。实验表明，HT-Policies在多个仿真和真实机器人任务中，以更快的训练与推理速度达到了与生成式策略相当的性能。",
+  "highlights": [
+    {
+      "text": "提出异方差Student-t动作回归（HT-Policies）方法，通过学习输入相关的残差尺度有效降低了重尾数据对模型优化的负面影响。",
+      "evidence": "Motivated by these findings, we introduce heteroscedastic Student-t action regression (HT-Policies), which learns input-dependent residual scales and reduces the influence of heavy tails."
+    },
+    {
+      "text": "HT-Policies在训练效率和推理速度上表现更优，且在多种基准测试中能够达到与生成式策略相竞争的成功率。",
+      "evidence": "Across four simulation benchmarks and real-robot evaluations, HT-Policies achieves success rates competitive with generative policy baselines, both when trained from scratch and from pretrained vision-language-action and world-action models, despite being faster in training and inference."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "模仿学习",
+    "视觉语言动作"
+  ]
+}

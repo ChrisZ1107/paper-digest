@@ -1,0 +1,19 @@
+{
+  "overview": "针对多任务四足机器人训练中样本效率低及梯度冲突等难题，本文提出一种包含三阶段的训练方法。该方法首先利用强化学习训练多个单任务教师策略，随后通过强化学习与模仿学习相结合的目标函数，并辅以对抗性任务选择机制，将教师策略蒸馏至单一学生策略中。作者声称该方法能够实现22项任务，并能组合出如爬行等新颖行为，同时在真实四足机器人上表现出良好的鲁棒性。",
+  "highlights": [
+    {
+      "text": "提出一种结合强化学习、模仿学习及对抗性任务选择的训练框架，旨在提升多任务学习的效果并解决梯度冲突问题。",
+      "evidence": "Then, two additional stages train a student policy with a multi-teacher distillation setup that uses a combined RL and Imitation Learning (IL) objective under an adversarial task selection process that focuses training on the worst-performing task."
+    },
+    {
+      "text": "实验证明，该方法在22项任务上实现了有效的策略蒸馏，且对比PPO及传统蒸馏微调基线，在运动质量与指令跟踪准确性上表现更优。",
+      "evidence": "Evaluations show our method preserves motion quality and tracks commands more accurately than PPO and distill-then-finetune baselines, and in some cases generalizes to new tasks without explicit training."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "四足机器人",
+    "足式运动",
+    "模仿学习"
+  ]
+}

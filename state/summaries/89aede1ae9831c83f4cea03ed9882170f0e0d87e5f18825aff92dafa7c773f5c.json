@@ -1,0 +1,21 @@
+{
+  "overview": "为了解决交互式语言智能体训练中人工反馈获取困难及现有模拟器行为同质化的问题，作者提出了MIMESIS用户模拟器。该模型通过显式推理监督和13种真实行为模式进行训练，旨在生成更具真实感的用户交互。研究引入了“教练指导的策略内自我蒸馏”（CSD）方法，利用模拟器生成的推理痕迹对智能体进行精细化指导。实验表明，在多轮强化学习训练下，基于MIMESIS的智能体在多项指标及未知环境下的泛化性能均优于对比模型。",
+  "highlights": [
+    {
+      "text": "MIMESIS模拟器引入了13种真实行为模式及显式推理监督，在行为保真度和图灵距离指标上优于Claude-Opus-5等强基线模型。",
+      "evidence": "Compared with Claude-Opus-5, the strongest baseline on RealUserSim and SimulatorArena, MIMESIS improves behavioral fidelity by 13.4 points and reduces Turing distance by 3.6 points, respectively."
+    },
+    {
+      "text": "基于MIMESIS训练的智能体在多种未知用户模拟器环境下展现出更强的泛化性能，且优于使用GPT-5.5训练的效果。",
+      "evidence": "Across eight environments, training with MIMESIS yields better agent performance than training with GPT-5.5 under all nine unseen user simulators, demonstrating stronger generalization to new user simulators."
+    },
+    {
+      "text": "提出的CSD方法通过将模拟器的私有推理痕迹转化为教练指导，提供了超越稀疏任务奖励的令牌级监督，进一步提升了智能体性能。",
+      "evidence": "CSD turns this feedback into dense, token-level supervision beyond sparse task rewards, yielding further gains across all nine evaluation user models."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "推理"
+  ]
+}

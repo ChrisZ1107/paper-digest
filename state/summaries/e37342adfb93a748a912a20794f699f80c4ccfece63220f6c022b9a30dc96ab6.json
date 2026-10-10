@@ -1,0 +1,22 @@
+{
+  "overview": "针对通用服务机器人难以处理多样化任务与陌生环境的问题，本文提出了SuperNav导航系统。该方法摒弃了针对导航任务微调多模态大模型（MLLM）的范式，转而构建一个代理控制组件（agent harness），使模型专注于语义理解与决策，并通过专门的导航工具与视觉点接口实现动作执行。实验表明，该系统在多种导航任务中表现优于现有基准，并在四足机器人实机上验证了其环境适应性。",
+  "highlights": [
+    {
+      "text": "SuperNav通过构建专门的代理控制组件，在无需对多模态大模型进行导航任务微调的前提下，实现了对复杂任务的导航与控制。",
+      "evidence": "To realize this idea, we introduce SuperNav, which equips a pretrained MLLM with a specialized agent harness without navigation-specific fine-tuning of the MLLM."
+    },
+    {
+      "text": "通过统一的视觉点接口，模型可以直接在图像中指定目的地，并根据执行反馈动态调整决策，从而支持持续的导航任务。",
+      "evidence": "A unified visual-point interface connects decision-making to motion by allowing the model to specify destinations directly in images and revise its decisions from execution feedback."
+    },
+    {
+      "text": "实证结果显示，SuperNav在实例级、多目标及需求驱动任务中的表现优于现有的四种基准方法，并具备在四足机器人上的部署能力。",
+      "evidence": "SuperNav outperforms four evaluated baselines on instance-level, multi-object, and demand-driven tasks. Category-level evaluation on HM3D and deployment on a real quadruped robot further demonstrate its applicability across environments."
+    }
+  ],
+  "tags": [
+    "导航",
+    "四足机器人",
+    "Sim-to-Real"
+  ]
+}

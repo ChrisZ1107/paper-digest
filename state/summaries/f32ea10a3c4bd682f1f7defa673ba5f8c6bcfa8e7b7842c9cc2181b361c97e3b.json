@@ -1,0 +1,23 @@
+{
+  "overview": "针对大规模并行仿真中强化学习存在的任务配置采样效率低下问题，作者提出了一种名为“成功引导采样（SGS）”的自适应采样方法。该方法将训练重点集中在策略能力的前沿区域，旨在通过优化采样分布提升学习信号利用率。实验结果显示，该方法在多地形四足运动和接触丰富的装配任务中表现出显著的扩展性，并成功实现了基于RGB输入的策略零样本真实硬件部署。",
+  "highlights": [
+    {
+      "text": "提出SGS自适应采样算法，通过聚焦策略能力前沿的任务配置，显著提升大规模并行仿真强化学习的训练效率。",
+      "evidence": "To mitigate this, we introduce Success Guided Sampling (SGS), a simple adaptive sampler that concentrates RL training on task configurations around the frontier of the policy's capabilities."
+    },
+    {
+      "text": "SGS方法在多达一百万个并行环境中实现了对复杂四足运动及精密装配任务的有效求解，突破了传统方法的局限。",
+      "evidence": "Across experiments using up to $2^{20}$ (over one million) parallel environments, SGS enables RL to solve challenging multi-terrain quadruped locomotion and contact-rich assembly tasks that prior methods fail to solve."
+    },
+    {
+      "text": "将学习到的操作策略蒸馏为基于RGB的策略，并验证了其在真实机器人硬件上的零样本迁移能力。",
+      "evidence": "Finally, we distill the learned manipulation policies into RGB-based policies and demonstrate zero-shot transfer to several challenging assembly tasks on real hardware."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "四足机器人",
+    "机器人操作",
+    "Sim-to-Real"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "overview": "本文提出了DAMP强化学习框架，旨在解决人形机器人在无感知信息条件下，在复杂地形中实现鲁棒且自然运动的问题。该方法利用循环神经网络捕获时间依赖性，隐式推断关键任务潜变量。作者声称该端到端框架能够实现从仿真到现实环境的迁移，并表现出良好的鲁棒性和泛化能力。",
+  "highlights": [
+    {
+      "text": "DAMP框架通过循环神经网络隐式推断关键任务潜变量，在无需外部感知信息的前提下实现了鲁棒的人形机器人运动。",
+      "evidence": "The framework leverages recurrent neural networks to capture temporal dependencies and implicitly infer privileged and other task-relevant latent information."
+    },
+    {
+      "text": "作者验证了该端到端框架具备从仿真到现实环境的迁移能力，并体现了良好的泛化性。",
+      "evidence": "This end-to-end framework achieves transfer learning from simulation to real-world environments, demonstrating the proposed method's robustness and generalization capabilities."
+    }
+  ],
+  "tags": [
+    "人形机器人",
+    "足式运动",
+    "强化学习",
+    "Sim-to-Real"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "overview": "针对流策略（flow policy）在离线强化学习微调中计算代价高昂的问题，作者提出了标量伴随匹配（SQAM）方法。该方法观察到预训练流策略的批处理平均速度雅可比矩阵具有对角集中特性，从而导出了闭式标量伴随，消除了每一步的向量-雅可比乘积计算。作者声称SQAM在四项困难的OGBench任务中表现优于现有基准，并在真实双臂机器人视觉-语言-动作策略微调中取得性能提升。",
+  "highlights": [
+    {
+      "text": "提出了一种基于标量伴随的流策略优化方法，通过简化雅可比矩阵计算，有效降低了策略微调过程中的计算开销。",
+      "evidence": "Motivated by this finding, we derive a closed-form scalar adjoint that scales the value gradient at the final action by the flow time, eliminating the per-step vector--Jacobian products."
+    },
+    {
+      "text": "SQAM方法在四个极具挑战性的OGBench领域中展现了明显的性能优势，成功率显著高于最强基线模型。",
+      "evidence": "SQAM's gains concentrate on the four hardest OGBench domains, where its success rate exceeds that of the strongest baseline in each domain by 18 to 35 percentage points."
+    },
+    {
+      "text": "该方法可扩展至大规模预训练模型，在真实双臂机器人的多项任务微调中验证了其有效性。",
+      "evidence": "To test whether SQAM extends to large pretrained policies, we also fine-tune a vision-language-action policy on a real bimanual robot. SQAM improves over supervised fine-tuning on all three tasks."
+    }
+  ],
+  "tags": [
+    "离线强化学习",
+    "机器人操作",
+    "视觉语言动作"
+  ]
+}

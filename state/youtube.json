@@ -2125,7 +2125,9 @@
         {
           "id": "2610.07922",
           "title": "OpenWAM: An Open Framework for Composable World-Action Models (Oct 2026)",
-          "url": "https://arxiv.org/abs/2610.07922"
+          "url": "https://arxiv.org/abs/2610.07922",
+          "abstract": "World-action models (WAMs) couple future prediction with robot control, yet existing systems often vary the video backbone, interaction structure, supervision, and inference procedure simultaneously, making their design choices difficult to compare. We introduce OPENWAM, an open world-action modeling framework built around a common causal robot-video foundation and configurable video-action interaction. Starting from Wan2.2-5B, we perform causal robot-video pretraining on over 10,000 hours of video, then integrate an action expert through a shared Mixture-of-Transformers architecture that supports joint, video-then-action, action-then-video, and decoupled generation. OPENWAM achieves high success rates on four LIBERO suites and real-world bimanual tasks; robot-video training with causal adaptation improves VTA success on LIBERO-Long from 68.4% to 97.8%. The same configurable architecture naturally extends to inverse and forward dynamics, allowing us to study how counterfactual transitions improve independently trained dynamics models beyond demonstrations alone. When only the video predictor is adapted to a new task, a frozen local-context inverse dynamics model trained on counterfactual data and demonstrations achieves 84.0% mean success across four held-out LIBERO-90 tasks, compared with 47.0% for a full-context inverse model and 21.5% for a local-context model trained only on demonstrations. For forward dynamics, counterfactual supervision reduces RGB prediction error by 34.5% and raises outcome identification from 21.1% to 71.3% among 16 same-state outcomes. OPENWAM provides a common testbed for comparing WAM interaction designs and for studying dynamics learning from video data beyond successful demonstrations.",
+          "abstract_zh": "世界-动作模型（WAMs）将未来预测与机器人控制相结合，但现有系统往往同时改变视频主干网络、交互结构、监督方式和推理过程，使得设计选择难以比较。我们引入了OPENWAM，这是一个围绕通用因果机器人-视频基础并具备可配置视频-动作交互的开放式世界-动作建模框架。从Wan2.2-5B开始，我们在超过10,000小时的视频数据上进行了因果机器人-视频预训练，然后通过共享的Mixture-of-Transformers架构集成了一个动作专家，该架构支持联合生成、视频引导动作生成、动作引导视频生成以及解耦生成。OPENWAM在四个LIBERO套件和现实世界的双臂任务中实现了高成功率；结合因果适配的机器人-视频训练将LIBERO-Long上的VTA成功率从68.4%提高到了97.8%。同一可配置架构可以自然地扩展到逆向和正向动力学，使我们能够研究反事实转换如何改善独立训练的动力学模型，从而超越仅基于演示的学习。当仅对视频预测器进行新任务适配时，在一个仅在反事实数据和演示上训练的冻结局部上下文逆向动力学模型中，其在四个未见过的LIBERO-90任务上实现了84.0%的平均成功率，相比之下，全上下文逆向模型为47.0%，而仅在演示上训练的局部上下文模型仅为21.5%。对于正向动力学，反事实监督将RGB预测误差降低了34.5%，并将16个相同状态结果中的结果识别率从21.1%提高到了71.3%。OPENWAM为比较WAM交互设计以及研究超越成功演示的视频数据动力学学习提供了一个通用测试平台。"
         }
       ]
     },
@@ -2138,7 +2140,9 @@
         {
           "id": "2610.03716",
           "title": "MoSE3: Learning World-Space SE(3) at Every Pixel (Oct 2026)",
-          "url": "https://arxiv.org/abs/2610.03716"
+          "url": "https://arxiv.org/abs/2610.03716",
+          "abstract": "Dense 3D point tracking has been a prominent paradigm for modeling motion in dynamic scenes, but a point track is just a 3-DoF translation curve per pixel: it captures where pixels go, not the rotation of the underlying part, nor which pixels move together as one body. We propose MoSE3, the first feed-forward model that predicts dense SE(3) motion from monocular RGB video, producing full 6-DoF rigid transforms at every pixel in world space. Per-pixel SE(3) motion offers a richer view of how a scene moves: rotation, translation, and grouping all at once. Directly predicting SE(3) is challenging: rotations lie on a curved manifold that is ill-suited to Euclidean regression, and annotations for SE(3) are particularly difficult to acquire. To address these challenges, MoSE3 predicts per-pixel SE(3) through two jointly learned intermediates, 3D point tracks and rigidity embeddings, and recovers SE(3) by differentiably fitting transforms within each soft rigid cluster, enabling end-to-end prediction and supervision. To close the data gap, we introduce Art-Kubric, a large-scale synthetic dataset with dense SE(3) and rigidity labels for articulated objects with rich physical interactions. MoSE3 achieves state-of-the-art SE(3) estimation at pixel, part, and object levels on both rigid and articulated benchmarks, and state-of-the-art average 3D point tracking accuracy across three datasets, while showing strong generalization to real-world videos despite being trained solely on synthetic motion data.",
+          "abstract_zh": "稠密三维点跟踪一直是建模动态场景运动的重要范式，但点轨迹仅是每个像素的3自由度（3-DoF）平移曲线：它捕捉了像素的去向，却无法捕捉底层部件的旋转，也无法识别哪些像素作为同一刚体协同运动。我们提出了MoSE3，这是首个从单目RGB视频预测稠密SE(3)运动的前馈模型，能够在世界空间中为每个像素生成完整的6自由度（6-DoF）刚体变换。逐像素的SE(3)运动提供了关于场景运动更丰富的视角：同时涵盖了旋转、平移和分组信息。直接预测SE(3)极具挑战性：旋转位于弯曲流形上，不适用于欧几里得回归，且SE(3)的标注获取尤为困难。为了应对这些挑战，MoSE3通过两个联合学习的中间量（三维点轨迹和刚性嵌入）来预测逐像素SE(3)，并通过在每个软刚性簇内可微地拟合变换来恢复SE(3)，从而实现端到端的预测与监督。为了弥补数据缺口，我们引入了Art-Kubric，这是一个包含丰富物理交互的关节物体大规模合成数据集，提供稠密的SE(3)和刚性标签。MoSE3在刚性和关节物体基准测试中，在像素、部件和物体级别上均实现了最先进的SE(3)估计效果，并在三个数据集上达到了最先进的平均三维点跟踪精度，同时在仅使用合成运动数据训练的情况下，展现出了对真实世界视频的强大泛化能力。"
         }
       ]
     },
@@ -2177,7 +2181,9 @@
         {
           "id": "2610.10515",
           "title": "RoboJEPA: Scaling Robotic Latent World Models (Oct 2026)",
-          "url": "https://arxiv.org/abs/2610.10515"
+          "url": "https://arxiv.org/abs/2610.10515",
+          "abstract": "Latent world models have shown a remarkable ability to predict future states and to plan in the real world. In practice, however, we lack a principled way to estimate how their capabilities scale with model size, data, and compute, an open problem that slows progress in the field. In this work we present RoboJEPA, a world model based on the Joint Embedding Predictive Architecture (JEPA) and trained on a large-scale dataset spanning 12 robotic embodiments. We show that RoboJEPA's imagination error, the error of its latent rollouts, follows a second-order power law in compute, allowing us to predict model quality well beyond the scale at which the law is fit. We further show that downstream robotic planning performance improves predictably with compute, and that imagination error is strongly correlated with it, making it a reliable proxy for real-robot evaluation. Finally, we demonstrate that latent world models can be deployed zero-shot as robotic agents, planning toward a single goal image to solve tasks requiring long-horizon planning on real hardware. We release all model checkpoints together with our training and robot deployment code. To our knowledge, this is the first work to establish scaling laws for multi-embodiment robotic world models trained on real robot data, and RoboJEPA, at 8B parameters, is the largest JEPA predictor model trained to date.",
+          "abstract_zh": "潜在世界模型在预测未来状态和现实世界规划方面展现出了卓越的能力。然而在实践中，我们缺乏一种原则性的方法来评估模型性能如何随模型规模、数据量和计算资源进行扩展，这一悬而未决的问题拖慢了该领域的发展。在本项工作中，我们提出了RoboJEPA，这是一种基于联合嵌入预测架构（JEPA）的世界模型，并在涵盖12种机器人具身的大规模数据集上进行了训练。我们证明了RoboJEPA的想象误差（即其潜在演化过程的误差）遵循计算资源的二阶幂律，这使我们能够准确预测超出拟合规模范围的模型质量。我们进一步表明，下游机器人规划性能会随着计算资源的增加而可预测地提升，且想象误差与性能之间存在高度相关性，使其成为真实机器人评估的可靠代理指标。最后，我们展示了潜在世界模型可以作为机器人智能体进行零样本部署，通过以单张目标图像为导向进行规划，在真实硬件上解决需要长时程规划的任务。我们发布了所有模型检查点以及训练和机器人部署代码。据我们所知，这是首个为在真实机器人数据上训练的多具身机器人世界模型建立扩展定律的工作；RoboJEPA拥有80亿参数，是迄今为止训练规模最大的JEPA预测模型。"
         }
       ]
     },
@@ -2216,7 +2222,9 @@
         {
           "id": "2610.02208",
           "title": "Sphere Encoder 2 (Oct 2026)",
-          "url": "https://arxiv.org/abs/2610.02208"
+          "url": "https://arxiv.org/abs/2610.02208",
+          "abstract": "Sphere Encoder is an autoencoder that generates images by decoding random points from a high-dimensional latent sphere. We identify two limitations of the original formulation that reduce its generation quality. First, random points concentrate near the equator relative to the pole on an encoded latent, but the training rotation never reaches this region, leaving a gap that limits one-step generation. Second, training for generation with pixel-wise reconstruction loss encourages the decoder to average over plausible images, producing blurry images that lack high-frequency details. We present Sphere Encoder 2 to address both limitations, substantially improving image generation quality while maintaining the speed and simplicity of a autoencoder. Models are released at https://github.com/kaiyuyue/sphere2.",
+          "abstract_zh": "Sphere Encoder 是一种通过解码高维潜在球体上的随机点来生成图像的自动编码器。我们发现原始方案存在两个限制，降低了其生成质量。首先，在编码后的潜在空间中，随机点倾向于集中在赤道附近而非极点，但训练过程中的旋转无法触及这一区域，从而留下了限制一步生成能力的空白。其次，在生成训练中使用像素级重建损失，会促使解码器对合理的图像进行平均，导致生成的图像模糊且缺乏高频细节。我们提出了 Sphere Encoder 2 来解决这两个限制，在保持自动编码器速度和简洁性的同时，显著提升了图像生成质量。模型已发布于 https://github.com/kaiyuyue/sphere2。"
         }
       ]
     },
@@ -2242,7 +2250,9 @@
         {
           "id": "2610.06851",
           "title": "Base Models Can Reason By Taking a Cue From Training Data (Oct 2026)",
-          "url": "https://arxiv.org/abs/2610.06851"
+          "url": "https://arxiv.org/abs/2610.06851",
+          "abstract": "In this paper, we study how training data creates associations between the tokens at the start of a base model's response and the reasoning behavior that follows. First, we demonstrate that fixing particular starting token cues makes a base model's performance competitive with that of its reinforcement learning (RL)-trained counterparts on math and coding. For instance, the cue \".\\n\\nOkay\" raises Olmo-3-7B's MATH-500 pass@1 accuracy from 42% to 78%, while \"Alright,\" raises Qwen3-14B's from 72% to 87%. Second, RL makes these cues more likely, while fixing them recovers much of its performance gain over the base model. Third, we trace the reasoning effects of token cues to the training data. We perform causal data interventions to turn an arbitrary word, such as \"chicken\", into an effective reasoning cue, or remove an existing cue's effect. A similar edit makes the prompt instruction \"Think duck duck goose\" as effective as \"Think step by step\" at eliciting reasoning. We also find that the hidden state representations induced by different cues correlate with different document types from the training set. Finally, we extend our study of token cues with a case study in language model safety, finding that different cues elicit distinct refusal and compliance behaviors that correspond to different types of training data.",
+          "abstract_zh": "在本文中，我们研究了训练数据如何在基础模型的响应起始标记与后续的推理行为之间建立关联。首先，我们证明了固定特定的起始标记提示语（cue），能使基础模型在数学和编程任务上的表现与经过强化学习（RL）训练的模型相媲美。例如，“.\n\nOkay”这一提示将 Olmo-3-7B 的 MATH-500 pass@1 准确率从 42% 提升至 78%，而“Alright,”则将 Qwen3-14B 的准确率从 72% 提升至 87%。其次，强化学习增加了这些提示出现的概率，而固定这些提示语可以恢复模型相对于基础模型的大部分性能提升。第三，我们将标记提示的推理效应追溯至训练数据。我们通过因果数据干预，将任意词汇（如“chicken”）转化为有效的推理提示，或消除现有提示的效应。类似的编辑使得提示指令“Think duck duck goose”在激发推理能力方面与“Think step by step”同样有效。我们还发现，由不同提示诱导的隐藏状态表示与训练集中不同的文档类型相关联。最后，我们通过语言模型安全性的案例研究扩展了对标记提示的研究，发现不同的提示会引发截然不同的拒绝与合规行为，而这些行为分别对应于不同类型的训练数据。"
         }
       ]
     },

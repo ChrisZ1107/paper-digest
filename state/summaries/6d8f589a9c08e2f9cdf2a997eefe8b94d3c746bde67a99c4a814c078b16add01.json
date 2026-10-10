@@ -1,0 +1,21 @@
+{
+  "overview": "针对即时战略游戏中智能体对未知对手鲁棒性不足的问题，作者提出了一种结合约束策略的指令条件强化学习方法。该方法将策略指挥与单元控制解耦，利用Thompson采样作为战略家选择指令，并通过受限的PPO策略作为执行器执行。实验显示，该系统在MicroRTS环境下的多项对抗测试中，相比基准PPO模型显著提升了胜率，展现了更好的应对表现。",
+  "highlights": [
+    {
+      "text": "作者提出了一种解耦机制，将战略指令选择与单元级动作控制分离，通过指挥条件下的执行器实现对复杂策略目标的遵循。",
+      "evidence": "Separating strategic command selection from learned unit control allows different strategies to be selected for different opponents while reusing the same execution policy."
+    },
+    {
+      "text": "引入Thompson采样多臂老虎机作为战略家，能够基于游戏观察动态选择指令，从而适应不同的对手策略。",
+      "evidence": "A Thompson-sampling bandit acts as the strategist, selecting command tuples from an estimate of the opponent's strategy built from in-game observations rather than opponent identity."
+    },
+    {
+      "text": "在MicroRTS环境的对照实验中，该系统在对阵多个最强对手时表现出显著更高的胜率优势。",
+      "evidence": "In a controlled comparison with a flat PPO baseline trained with the same architecture, budget, curriculum and self-play league, the strategist-executor system wins significantly more often against three of the four strongest opponents on a training map, including the two strongest held-out ones (0.55 to 0.97 and 0.01 to 0.34), with no significant difference against the others."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "PPO"
+  ]
+}

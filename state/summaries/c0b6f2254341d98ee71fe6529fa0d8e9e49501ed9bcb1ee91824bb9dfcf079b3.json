@@ -1,0 +1,16 @@
+{
+  "overview": "本文提出了AgentGarten框架，旨在构建交互式虚拟环境以促进智能体学习。该框架结合了仿真后端（用于处理持久状态和规则）与基于预训练视频模型的神经渲染器（用于生成高质量视觉观测）。通过引入“对抗性强迫”（Adversarial Forcing）技术，实现了历史预填充的可微性并提升了渲染质量。实验表明，该方法能使智能体在极少轮次内完成学习，相比传统强化学习方法显著提高了效率。",
+  "highlights": [
+    {
+      "text": "AgentGarten通过结合仿真引擎与神经渲染器，构建了支持实时交互的虚拟环境，并利用Adversarial Forcing优化渲染质量。",
+      "evidence": "We introduce AgentGarten, a framework that couples simulators and game engines with a shared neural renderer to build real-time interactive environments."
+    },
+    {
+      "text": "相较于传统强化学习方法，该方法通过经验提取与迭代，显著提升了智能体的学习效率。",
+      "evidence": "Our empirical study demonstrates a substantial gain in learning efficiency, with agents learning from just 4 rounds compared with millions for a conventional reinforcement learning counterpart."
+    }
+  ],
+  "tags": [
+    "强化学习"
+  ]
+}
