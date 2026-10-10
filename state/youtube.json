@@ -2115,6 +2115,149 @@
           "abstract_zh": "本文引入了自适应计算时间（ACT），这是一种允许循环神经网络学习在接收输入和输出之间执行多少计算步骤的算法。ACT 对网络架构的改动极小，具有确定性和可微性，且不会向参数梯度引入任何噪声。本文提供了针对四个合成问题的实验结果：确定二进制向量的奇偶性、应用二进制逻辑运算、整数加法以及实数排序。总体而言，ACT 的使用显著提升了性能，能够根据问题需求成功调整计算步骤的数量。我们还展示了在 Hutter Prize Wikipedia 数据集上的字符级语言建模结果。在此案例中，ACT 并未带来巨大的性能提升，但它为数据结构提供了有趣的见解，即为更难预测的转换分配了更多计算资源，例如单词之间的空格和句子的结尾。这表明 ACT 或其他自适应计算方法可以为推断序列数据中的段边界提供一种通用方法。"
         }
       ]
+    },
+    "R8Ns8QbN5l4": {
+      "video_id": "R8Ns8QbN5l4",
+      "video_title": "OpenWAM: An Open Framework for Composable World-Action Models (Oct 2026)",
+      "published": "2026-10-10",
+      "video_url": "https://www.youtube.com/watch?v=R8Ns8QbN5l4",
+      "papers": [
+        {
+          "id": "2610.07922",
+          "title": "OpenWAM: An Open Framework for Composable World-Action Models (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.07922"
+        }
+      ]
+    },
+    "qYGXySKz9r8": {
+      "video_id": "qYGXySKz9r8",
+      "video_title": "MoSE3: Learning World-Space SE(3) at Every Pixel (Oct 2026)",
+      "published": "2026-10-10",
+      "video_url": "https://www.youtube.com/watch?v=qYGXySKz9r8",
+      "papers": [
+        {
+          "id": "2610.03716",
+          "title": "MoSE3: Learning World-Space SE(3) at Every Pixel (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.03716"
+        }
+      ]
+    },
+    "yZMQcjAMsnY": {
+      "video_id": "yZMQcjAMsnY",
+      "video_title": "Language Models that Play Chess and Explain Their Moves (Oct 2026)",
+      "published": "2026-10-10",
+      "video_url": "https://www.youtube.com/watch?v=yZMQcjAMsnY",
+      "papers": [
+        {
+          "id": "2610.03695",
+          "title": "Language Models that Play Chess and Explain Their Moves (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.03695"
+        }
+      ]
+    },
+    "1QV_QY0Szk4": {
+      "video_id": "1QV_QY0Szk4",
+      "video_title": "UniWAM: Unified World-Action Model (Oct 2026)",
+      "published": "2026-10-10",
+      "video_url": "https://www.youtube.com/watch?v=1QV_QY0Szk4",
+      "papers": [
+        {
+          "id": "2610.02054",
+          "title": "UniWAM: Unified World-Action Model (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.02054"
+        }
+      ]
+    },
+    "pu_82S-qYfo": {
+      "video_id": "pu_82S-qYfo",
+      "video_title": "RoboJEPA: Scaling Robotic Latent World Models (Oct 2026)",
+      "published": "2026-10-10",
+      "video_url": "https://www.youtube.com/watch?v=pu_82S-qYfo",
+      "papers": [
+        {
+          "id": "2610.10515",
+          "title": "RoboJEPA: Scaling Robotic Latent World Models (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.10515"
+        }
+      ]
+    },
+    "kFdBQnKD014": {
+      "video_id": "kFdBQnKD014",
+      "video_title": "QF3: Fast Flow RL with Filtered Q-Gradients (Oct 2026)",
+      "published": "2026-10-10",
+      "video_url": "https://www.youtube.com/watch?v=kFdBQnKD014",
+      "papers": [
+        {
+          "id": "2610.08789",
+          "title": "QF3: Fast Flow RL with Filtered Q-Gradients (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.08789"
+        }
+      ]
+    },
+    "6ozSoUYqnbY": {
+      "video_id": "6ozSoUYqnbY",
+      "video_title": "Priced Guidance: Can Language Models Generate Future Research Ideas? (Oct 2026)",
+      "published": "2026-10-10",
+      "video_url": "https://www.youtube.com/watch?v=6ozSoUYqnbY",
+      "papers": [
+        {
+          "id": "2610.04976",
+          "title": "Priced Guidance: Can Language Models Generate Future Research Ideas? (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.04976"
+        }
+      ]
+    },
+    "ssd_Cl1QcmA": {
+      "video_id": "ssd_Cl1QcmA",
+      "video_title": "Sphere Encoder 2 (Oct 2026)",
+      "published": "2026-10-10",
+      "video_url": "https://www.youtube.com/watch?v=ssd_Cl1QcmA",
+      "papers": [
+        {
+          "id": "2610.02208",
+          "title": "Sphere Encoder 2 (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.02208"
+        }
+      ]
+    },
+    "4digoCMhxn4": {
+      "video_id": "4digoCMhxn4",
+      "video_title": "UndoBench: Separating Task Competence from Recovery Capability in Tool-Using AI Agents (Oct 2026)",
+      "published": "2026-10-10",
+      "video_url": "https://www.youtube.com/watch?v=4digoCMhxn4",
+      "papers": [
+        {
+          "id": "2610.05622",
+          "title": "UndoBench: Separating Task Competence from Recovery Capability in Tool-Using AI Agents (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.05622"
+        }
+      ]
+    },
+    "NujneHGo0ZM": {
+      "video_id": "NujneHGo0ZM",
+      "video_title": "Base Models Can Reason By Taking a Cue From Training Data (Oct 2026)",
+      "published": "2026-10-10",
+      "video_url": "https://www.youtube.com/watch?v=NujneHGo0ZM",
+      "papers": [
+        {
+          "id": "2610.06851",
+          "title": "Base Models Can Reason By Taking a Cue From Training Data (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.06851"
+        }
+      ]
+    },
+    "BxYy0bz7qTk": {
+      "video_id": "BxYy0bz7qTk",
+      "video_title": "Towards Looped Models Done Right, Part II: Rethinking at Fixed Points (Oct 2026)",
+      "published": "2026-10-10",
+      "video_url": "https://www.youtube.com/watch?v=BxYy0bz7qTk",
+      "papers": [
+        {
+          "id": "2610.06833",
+          "title": "Towards Looped Models Done Right, Part II: Rethinking at Fixed Points (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.06833"
+        }
+      ]
     }
   }
 }
