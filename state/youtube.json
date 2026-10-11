@@ -2280,6 +2280,88 @@
           "abstract_zh": "循环语言模型的每一次递归都会增加训练、解码、预填充和强化学习（RL）的成本。循环状态越接近不动点，通往这些状态的路径就越不重要。这使得训练中可以进行截断反向传播；解码时可以使用几乎没有精度损失的终端键值（KV）共享；蒸馏后的学生模型预填充速度提高了 1.79 倍；以及 RL 更新可以通过保存的上线状态计算梯度，比对回放轨迹进行反向传播快 2 倍。因此，我们改进了塑造这些不动点的两个训练组件：深度先验和输入注入。固定深度训练会破坏 KV 共享，而 Huginn 的宽深度先验虽然支持共享，但在目标深度处的监督效果比共享所需的情况稀释得更多；我们通过预测反馈来学习该先验，并使用熵项来保持其广泛性。现有的注入方案允许状态中沿输入方向的分量放大或抵消注入；我们通过正交注入去除了该分量。从 100M 到 1.6B 参数，学习到的先验和正交注入分别在各个规模上降低了相对于 Huginn 先验和现有注入方案的困惑度。在 1.6B 规模下，使用 3 倍更小 KV 缓存的学习先验，其下游平均性能与使用全量缓存的固定深度训练相当。"
         }
       ]
+    },
+    "f8BOj2PrlYU": {
+      "video_id": "f8BOj2PrlYU",
+      "video_title": "IdeaAnchor: Teaching LLMs to Turn Literature into Research Ideas (Oct 2026)",
+      "published": "2026-10-11",
+      "video_url": "https://www.youtube.com/watch?v=f8BOj2PrlYU",
+      "papers": [
+        {
+          "id": "2610.08781",
+          "title": "IdeaAnchor: Teaching LLMs to Turn Literature into Research Ideas (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.08781"
+        }
+      ]
+    },
+    "CB90LIbczH8": {
+      "video_id": "CB90LIbczH8",
+      "video_title": "Embodied Turing Machines: Stateful Code for Robot Recursive Self-Improvement (Oct 2026)",
+      "published": "2026-10-11",
+      "video_url": "https://www.youtube.com/watch?v=CB90LIbczH8",
+      "papers": [
+        {
+          "id": "2610.12369",
+          "title": "Embodied Turing Machines: Stateful Code for Robot Recursive Self-Improvement (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.12369"
+        }
+      ]
+    },
+    "2gWgN1JvkmM": {
+      "video_id": "2gWgN1JvkmM",
+      "video_title": "LoGRA: Scaling LLM Reinforcement Learning with Low-Rank Gradient Sketches (Oct 2026)",
+      "published": "2026-10-11",
+      "video_url": "https://www.youtube.com/watch?v=2gWgN1JvkmM",
+      "papers": [
+        {
+          "id": "2610.06647",
+          "title": "LoGRA: Scaling LLM Reinforcement Learning with Low-Rank Gradient Sketches (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.06647"
+        }
+      ]
+    },
+    "FjHn53mfzpw": {
+      "video_id": "FjHn53mfzpw",
+      "video_title": "Video Prediction Policy 2: Predict Better, Act Better (Oct 2026)",
+      "published": "2026-10-11",
+      "video_url": "https://www.youtube.com/watch?v=FjHn53mfzpw",
+      "papers": [
+        {
+          "id": "2610.10270",
+          "title": "Video Prediction Policy 2: Predict Better, Act Better (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.10270"
+        }
+      ]
+    },
+    "BnZFXQLk9ac": {
+      "video_id": "BnZFXQLk9ac",
+      "video_title": "RSIGym: A Flexible Environment for Recursive Self-Improvement (Oct 2026)",
+      "published": "2026-10-11",
+      "video_url": "https://www.youtube.com/watch?v=BnZFXQLk9ac",
+      "papers": [
+        {
+          "id": "2610.10310",
+          "title": "RSIGym: A Flexible Environment for Recursive Self-Improvement (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.10310"
+        }
+      ]
+    },
+    "EzY4IuevtFU": {
+      "video_id": "EzY4IuevtFU",
+      "video_title": "Long-WAM: Scaling the Context of World-Action Models (Oct 2026)",
+      "published": "2026-10-11",
+      "video_url": "https://www.youtube.com/watch?v=EzY4IuevtFU",
+      "papers": [
+        {
+          "id": "2610.10528",
+          "title": "Long-WAM: Scaling the Context of World-Action Models (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.10528"
+        }
+      ]
+    },
+    "8PAonevCcDs": {
+      "video_id": "8PAonevCcDs",
+      "papers": []
     }
   }
 }
