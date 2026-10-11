@@ -1,0 +1,17 @@
+{
+  "overview": "为了评估大语言模型（LLM）智能体在陌生环境下的学习能力，作者提出了 Learn2Play Bench。该基准通过设计规则新颖或反直觉的文本游戏，要求智能体在无法依赖预训练先验知识的情况下，通过反复交互获取知识。实验通过对比不同骨干模型、自我演化方法及智能体框架，分析了经验保留策略、人类与智能体表现差距以及框架设计对性能和推理成本的影响。",
+  "highlights": [
+    {
+      "text": "相较于将经验总结为规则或策略，保留动作和反馈的完整记录能支持更有效的学习。",
+      "evidence": "Retaining complete records of actions and feedback can support more effective learning than summarizing these experiences into rules or strategies."
+    },
+    {
+      "text": "在相同骨干模型下，调整智能体框架（Harness）可以在提升性能的同时降低预估推理成本。",
+      "evidence": "With the backbone fixed, changing the harness can improve performance while reducing estimated inference cost."
+    }
+  ],
+  "tags": [
+    "推理",
+    "大模型后训练"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "overview": "该研究探讨了机器人语境学习（ICL），旨在解决其核心的提示歧义问题。作者提出了机器人ICL的明确问题定义，并构建了一个名为SimpleICL的简约框架，包含视觉提示编码器和低成本数据采集协议。实验表明，该方法无需大规模预训练或专用数据基础设施，即可在模拟和真实环境中实现稳健的任务表现，同时展现了在动作、语义、组合及可供性识别方面的关键特性。",
+  "highlights": [
+    {
+      "text": "作者为机器人ICL提供了明确的问题定义，明确了其学习目标并消除了提示语境中的歧义。",
+      "evidence": "In this work, we first provide a clear problem definition of robot ICL that explicitly defines its learning target and resolves this fundamental prompt ambiguity."
+    },
+    {
+      "text": "SimpleICL框架仅需低成本数据采集即可运行，无需依赖大规模预训练或复杂的数据基础设施。",
+      "evidence": "Without massive pre-training or specialized data infrastructure, our framework achieves strong performance in both simulation and real-world environments."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "Sim-to-Real"
+  ]
+}

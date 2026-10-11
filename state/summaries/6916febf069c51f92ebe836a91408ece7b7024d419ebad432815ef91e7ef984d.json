@@ -1,0 +1,24 @@
+{
+  "overview": "针对现有基准在异构任务与标准化多任务评估上的不足，作者提出了Hebero，一个基于Isaac Lab的GPU并行机器人学习基准，支持在40个异构任务上进行联合训练。为解决稀疏奖励与演示数据受限问题，作者设计了示范引导策略优化（DGPO）框架，并引入IW-ABC方法，通过自适应行为克隆与重要性采样优化多任务学习效率。实验结果表明，该方法在仿真任务中表现优于对比基线，且具备一定的Sim-to-Real迁移能力。",
+  "highlights": [
+    {
+      "text": "提出了包含40个异构任务的GPU并行基准Hebero，支持单一策略在多任务环境下的高效训练与评估。",
+      "evidence": "We introduce Hebero (Heterogeneous Benchmark for Robot Learning), a GPU-parallel Isaac Lab benchmark that enables efficient joint training and evaluation of a single policy across all 40 heterogeneous tasks."
+    },
+    {
+      "text": "提出的IW-ABC方法利用任务学习进度信号协调行为克隆，在50条演示数据下实现了优于FAMO-ABC的性能。",
+      "evidence": "Within DGPO framework, we introduce IW-ABC, which uses a lightweight per-task learning progress signal to coordinate adaptive behavior cloning (ABC), relaxing demonstration guidance with task progress, and importance weighting (IW), emphasizing lagging tasks in PPO updates. With 50 demonstrations per task, IW-ABC achieves 90.1% state-input mean success, outperforming the strongest baseline FAMO-ABC by 7.8 percentage points."
+    },
+    {
+      "text": "仿真训练的多任务策略在物理Piper机器人上成功验证了其执行四项实际任务的可行性。",
+      "evidence": "Real-world experiments further demonstrate that a single multi-task policy trained in simulation can successfully perform four tasks on a physical Piper robot."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "PPO",
+    "机器人操作",
+    "Sim-to-Real",
+    "模仿学习"
+  ]
+}
