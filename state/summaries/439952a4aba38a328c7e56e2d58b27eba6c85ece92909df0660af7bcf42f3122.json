@@ -1,0 +1,18 @@
+{
+  "overview": "针对现有视觉语言模型代理在处理空间几何结构时信息丢失及技能与策略优化脱节的问题，本文提出了ViSkill框架。该方法将成功交互编码为视觉原生技能卡片，通过闭环反馈机制实现技能积累与策略优化的协同提升，并引入可选的冷启动机制。实验表明，该方法在Sokoban、FrozenLake和PrimitiveSkill任务中取得了较高的成功率，且收敛速度优于标准PPO。",
+  "highlights": [
+    {
+      "text": "ViSkill框架通过将交互过程编码为视觉原生技能卡片，实现了技能积累与策略优化的闭环反馈，有效增强了VLM代理的性能。",
+      "evidence": "We propose ViSkill, a visual-native skill learning framework that encodes successful interactions as composite visual skill cards directly accessible to VLM agents. Retrieved skills guide both inference and reward shaping, while successful trajectories are distilled back into the library, forming a closed feedback loop in which skill accumulation and policy improvement reinforce each other."
+    },
+    {
+      "text": "在多项基准测试中，ViSkill展现了优于基准模型的表现，并具备更快的收敛速度。",
+      "evidence": "Evaluated on Sokoban, FrozenLake, and PrimitiveSkill, ViSkill achieves an overall success rate of 0.89, rising to 0.91 with cold-start initialization, outperforming all evaluated proprietary and open-source baselines while converging faster than standard PPO."
+    }
+  ],
+  "tags": [
+    "视觉语言动作",
+    "强化学习",
+    "PPO"
+  ]
+}
