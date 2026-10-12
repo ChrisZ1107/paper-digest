@@ -2374,6 +2374,23 @@
     "8PAonevCcDs": {
       "video_id": "8PAonevCcDs",
       "papers": []
+    },
+    "BG46zD1kDE8": {
+      "video_id": "BG46zD1kDE8",
+      "papers": []
+    },
+    "j0EiOzOD10Y": {
+      "video_id": "j0EiOzOD10Y",
+      "video_title": "A Self-Pruning Transformer: Extreme KV-Cache Compression with Universal Attention (Oct 2026)",
+      "published": "2026-10-12",
+      "video_url": "https://www.youtube.com/watch?v=j0EiOzOD10Y",
+      "papers": [
+        {
+          "id": "2610.09051",
+          "title": "A Self-Pruning Transformer: Extreme KV-Cache Compression with Universal Attention (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.09051"
+        }
+      ]
     }
   }
 }
