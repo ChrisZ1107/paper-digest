@@ -1,0 +1,73 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>2026-10-13 每日新论文 5</title><body><h1>2026-10-13 每日新论文 5</h1>
+<p>机器人 · 强化学习 · 通用 AI</p>
+<p>生成时间：2026-10-13 09:01 CST。从 654 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>
+<p>本栏优先收录最近发布且未出现在近期日报的 arXiv 论文，不按热度排序；相关性分用于结合你的 Zotero 收藏偏好。</p>
+<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>
+<p>本次合格候选不足 10 篇，实际收录 5 篇。</p>
+<h2>1. OGPO: Offline Goal-conditioned Policy Optimization for Recoverable Vision-Language-Action Models</h2>
+<p><strong>机器人</strong> · 公告 2026-10-12 · 综合分 3.38</p>
+<p>Zotero 摘要相关性：0.520（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>机器人操作 · 视觉语言动作 · 大模型后训练</p>
+<p><strong>中文概述：</strong>针对现有视觉语言动作（VLA）模型在机器人操作任务中过度依赖轨迹级模仿、缺乏纠偏能力的局限，本文提出了离线目标条件策略优化框架OGPO。该方法通过将离线演示数据重构为语义关键状态，构建目标条件过程奖励，从而将训练目标从单一动作模仿转变为关键状态可达性学习。实验结果显示，OGPO在LIBERO和MetaWorld基准测试中优于监督微调，并在扰动条件下展现出更强的鲁棒性与任务恢复能力。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>OGPO通过引入语义关键状态重标记与目标条件奖励，使VLA模型具备更强的任务恢复能力，无需在线交互即可从偏离轨迹的状态完成任务。<br><small>摘要依据：In this way, OGPO shifts VLA post-training from trajectory-level action imitation to key-state reachability learning, enabling policies to acquire a more robust ability to complete goal states from feasible off-demonstration states without requiring additional online interaction.</small></li>
+<li>在LIBERO和MetaWorld等基准测试中，OGPO相比传统的监督微调方式能有效提升策略性能。<br><small>摘要依据：Experiments on LIBERO and MetaWorld show that OGPO consistently improves VLA policy performance over standard supervised fine-tuning.</small></li>
+<li>在包含中途扰动的测试基准LIBERO-ReAct中，OGPO展现了在分布偏移和非演示状态下的更强鲁棒性和目标导向恢复能力。<br><small>摘要依据：Moreover, evaluations on LIBERO-Plus and our proposed LIBERO-ReAct, a mid-execution perturbation benchmark, further demonstrate that OGPO achieves stronger robustness and goal-directed recoverability under distribution shifts and recoverable off-demonstration states.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 离线强化学习 · 视觉语言动作 · 模仿学习</p>
+<p><strong>原文摘要节选：</strong>Vision-language-action (VLA) models have shown strong promise in robotic manipulation, yet their post-training still predominantly relies on trajectory-level supervised imitation over robot demonstrations. While effective for learning feasible actions, this paradigm supervises policies to reproduce expert actions at each step, biasing them toward demonstration-specific action paths and providing limited guidance for recovering toward task-progress states once execution deviates from demonstrated trajectories. To address this limitation, we propose OGPO, an Offline Goal-conditioned Policy Optimization framework for recoverable VLA post-training. Instead of treating offline demonstrations merely as step-wise action labels, OGPO adaptively relabels trajectories with semantic key states and…</p>
+<p><a href="https://arxiv.org/abs/2610.12914">论文原文</a> · <a href="https://arxiv.org/pdf/2610.12914">PDF</a></p><hr>
+<h2>2. CeDR-Nav: Cross-Embodiment Mapless Navigation via Offline Demonstration Recasting</h2>
+<p><strong>机器人</strong> · 公告 2026-10-12 · 综合分 3.33</p>
+<p>Zotero 摘要相关性：0.512（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>导航</p>
+<p><strong>中文概述：</strong>针对基于学习的导航策略难以跨机器人本体迁移的问题，本文提出了CeDR-Nav框架。该方法通过几何一致性缩放和针对性的演示有效性评估，将源本体的离线演示重构为目标本体的训练数据，并利用高斯混合策略生成避障动作，从而无需在线收集数据即可实现针对特定目标本体的导航策略训练。实验表明该方法有效提升了跨本体导航的成功率。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出了CeDR-Nav框架，通过将源机器人演示重构为目标机器人的训练数据，无需在线数据收集即可完成策略训练。<br><small>摘要依据：In this article, we present CeDR-Nav, a cross-embodiment demonstration recasting framework that trains a dedicated navigation policy for each target embodiment from existing source demonstrations without online data collection.</small></li>
+<li>该方法在跨本体导航模拟任务中显著提升了成功率，并实现了秒级的策略训练速度。<br><small>摘要依据：Extensive quantitative simulations and real-world deployments across multiple robot platforms demonstrate the effectiveness of CeDR-Nav, with an average success-rate gain of 13.8 percentage points over DRL-DCLP in cross-embodiment simulations and target-specific policy training completed within seconds.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>导航 · 离线强化学习</p>
+<p><strong>原文摘要节选：</strong>Learning-based methods have demonstrated strong performance in mapless robot navigation. However, a learned policy remains restricted to the embodiment on which it was trained. Many cross-embodiment navigation methods require time-consuming online training and can still underperform target-specific policies. In fact, demonstrations collected on a source embodiment already contain navigation experience that is potentially reusable for deriving a policy for each target embodiment, but the embodiment mismatch prevents these demonstrations from directly serving as valid supervision for the target. In this article, we present CeDR-Nav, a cross-embodiment demonstration recasting framework that trains a dedicated navigation policy for each target embodiment from existing source demonstrations…</p>
+<p><a href="https://arxiv.org/abs/2610.13007">论文原文</a> · <a href="https://arxiv.org/pdf/2610.13007">PDF</a></p><hr>
+<h2>3. Evo-RL: Iterative Robot Reinforcement Learning from Selective Experience</h2>
+<p><strong>机器人 / 强化学习</strong> · 公告 2026-10-12 · 综合分 3.22</p>
+<p>Zotero 摘要相关性：0.495（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>强化学习</p>
+<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>
+<p><strong>原文摘要节选：</strong>Existing real-world reinforcement learning methods improve robot policies by combining human corrections with autonomous rollouts. However, accumulated experience varies in its value for policy improvement, and even successful trajectories can contain inefficient or redundant behavior, motivating more selective experience reuse. To this end, we propose Evo-RL, an iterative reinforcement learning method that combines human interventions with advantage-guided experience selection. Evo-RL uses human corrections and experience with positive estimated advantages from successful trajectories to iteratively refine the policy. To support learning from these different experience sources, we introduce RW-RL-Dataset, which spans over 1,000 hours across four robot embodiments. On a real-world…</p>
+<p><a href="https://arxiv.org/abs/2610.13345">论文原文</a> · <a href="https://arxiv.org/pdf/2610.13345">PDF</a></p><hr>
+<h2>4. AlphaNIST: Emergent Assembly Skills from Binary Task Rewards</h2>
+<p><strong>机器人</strong> · 公告 2026-10-12 · 综合分 3.15</p>
+<p>Zotero 摘要相关性：0.485（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>机器人操作</p>
+<p><strong>中文概述：</strong>针对机器人装配任务中对繁琐指导的依赖问题，作者提出了AlphaNIST框架。该研究探讨了仅利用稀疏的二元任务奖励，是否能使机器人从零开始习得复杂的装配策略。实验结果表明，该方法在NIST装配任务板的20项任务中，无需演示、过程塑造或针对性调优，实现了98.2%的训练成功率，并表现出包括抓取规划和几何利用在内的灵巧行为。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>AlphaNIST仅通过稀疏的二元奖励，即可在无需演示、过程塑造或任务专用调优的情况下，实现高成功率的装配。<br><small>摘要依据：In simulation, we train a single policy from scratch across all 20 assembly tasks on the NIST Assembly Task Board #1, reaching 98.2% overall training success without demonstrations, progress shaping, scripted primitives, or per-task tuning.</small></li>
+<li>该框架习得的策略展现出类似于规划的复杂行为，能够自主进行多任务间的逻辑协调与重排序。<br><small>摘要依据：The learned policies discover dexterous and planning-like behaviors: choosing grasps for later assembly, using surrounding geometry to reorient parts, and preparing one part, assembling another, then returning to finish the first without an explicit planner.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 强化学习</p>
+<p><strong>原文摘要节选：</strong>The NIST Assembly Task Board #1 remains a challenging benchmark for learning-based methods in robotic manipulation. Over short horizons, it demands precise, contact-rich control of small, tight-fitting parts. Over long horizons, it requires recovery and coordination across extended action sequences. Demonstrations, task decomposition, and dense progress rewards have enabled research advances by providing guidance on how to assemble. But how much of the strategy must be specified? The progression from AlphaGo to AlphaGo Zero showed that RL at scale can discover superhuman strategies without prescribing how to win. AlphaNIST asks whether a sparse binary task reward and task diversity admitted by this task-agnostic reward can similarly let a robot discover how to assemble. In simulation, we…</p>
+<p><a href="https://arxiv.org/abs/2610.13354">论文原文</a> · <a href="https://arxiv.org/pdf/2610.13354">PDF</a></p><hr>
+<h2>5. Forward Dynamics Models</h2>
+<p><strong>机器人</strong> · 公告 2026-10-12 · 综合分 3.14</p>
+<p>Zotero 摘要相关性：0.483（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>视觉语言动作</p>
+<p><strong>中文概述：</strong>针对现有视觉语言动作模型（VLA）缺乏未来状态监督以及世界动作模型（WAM）推理成本高且存在误差传播的问题，本研究提出前向动力学模型（FDM）。该框架采用动作驱动未来的范式，通过动作特征耦合未来状态预测，实现端到端训练。在推理阶段，FDM无需生成未来状态，从而降低了计算成本。实验结果显示，该方法在模拟环境和真实机器人任务中均表现出优于现有基线模型的性能。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>FDM通过动作驱动未来的训练范式，利用地面真值未来状态对动作策略进行监督，同时阻止了预测误差向动作空间的传播。<br><small>摘要依据：Future prediction is conditioned on action features, never the reverse: end-to-end training lets ground-truth future states supervise the policy through these features, while prediction errors cannot propagate into actions.</small></li>
+<li>FDM在推理过程中完全跳过了未来生成步骤，有效避免了额外的计算开销。<br><small>摘要依据：At inference, FDM skips future generation entirely, avoiding its computational cost.</small></li>
+<li>实验表明FDM在LIBERO基准上达到99.4%的成功率，并在真实世界任务中相较于现有VLA和WAM方法有显著提升。<br><small>摘要依据：Experiments in simulation and on real robots demonstrate the effectiveness of FDM across both backbone families, achieving a state-of-the-art 99.4% average success rate on LIBERO and absolute gains of up to 13% over VLA and WAM methods on real-world tasks.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 视觉语言动作 · Sim-to-Real</p>
+<p><strong>原文摘要节选：</strong>Vision-language-action (VLA) models and world action models (WAMs) have advanced robotic policy learning by building on pretrained vision-language models (VLMs) and video generative models (VGMs), respectively. Yet VLAs learn without explicit supervision from future world states, while WAMs that condition actions on predicted futures incur extra inference cost and let visual prediction errors propagate into actions. We present Forward Dynamics Models (FDM), a family of robotic action models that couples action and future world-state prediction through an action-to-future paradigm. Future prediction is conditioned on action features, never the reverse: end-to-end training lets ground-truth future states supervise the policy through these features, while prediction errors cannot propagate…</p>
+<p><a href="https://arxiv.org/abs/2610.13117">论文原文</a> · <a href="https://arxiv.org/pdf/2610.13117">PDF</a></p><hr></body></html>

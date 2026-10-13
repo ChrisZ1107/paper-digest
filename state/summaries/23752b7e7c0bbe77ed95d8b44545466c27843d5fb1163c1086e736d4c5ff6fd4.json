@@ -1,0 +1,23 @@
+{
+  "overview": "针对现有视觉语言动作（VLA）模型在机器人操作任务中过度依赖轨迹级模仿、缺乏纠偏能力的局限，本文提出了离线目标条件策略优化框架OGPO。该方法通过将离线演示数据重构为语义关键状态，构建目标条件过程奖励，从而将训练目标从单一动作模仿转变为关键状态可达性学习。实验结果显示，OGPO在LIBERO和MetaWorld基准测试中优于监督微调，并在扰动条件下展现出更强的鲁棒性与任务恢复能力。",
+  "highlights": [
+    {
+      "text": "OGPO通过引入语义关键状态重标记与目标条件奖励，使VLA模型具备更强的任务恢复能力，无需在线交互即可从偏离轨迹的状态完成任务。",
+      "evidence": "In this way, OGPO shifts VLA post-training from trajectory-level action imitation to key-state reachability learning, enabling policies to acquire a more robust ability to complete goal states from feasible off-demonstration states without requiring additional online interaction."
+    },
+    {
+      "text": "在LIBERO和MetaWorld等基准测试中，OGPO相比传统的监督微调方式能有效提升策略性能。",
+      "evidence": "Experiments on LIBERO and MetaWorld show that OGPO consistently improves VLA policy performance over standard supervised fine-tuning."
+    },
+    {
+      "text": "在包含中途扰动的测试基准LIBERO-ReAct中，OGPO展现了在分布偏移和非演示状态下的更强鲁棒性和目标导向恢复能力。",
+      "evidence": "Moreover, evaluations on LIBERO-Plus and our proposed LIBERO-ReAct, a mid-execution perturbation benchmark, further demonstrate that OGPO achieves stronger robustness and goal-directed recoverability under distribution shifts and recoverable off-demonstration states."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "离线强化学习",
+    "视觉语言动作",
+    "模仿学习"
+  ]
+}

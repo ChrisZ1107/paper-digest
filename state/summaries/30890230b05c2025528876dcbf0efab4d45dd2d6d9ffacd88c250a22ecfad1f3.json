@@ -1,0 +1,17 @@
+{
+  "overview": "针对基于学习的导航策略难以跨机器人本体迁移的问题，本文提出了CeDR-Nav框架。该方法通过几何一致性缩放和针对性的演示有效性评估，将源本体的离线演示重构为目标本体的训练数据，并利用高斯混合策略生成避障动作，从而无需在线收集数据即可实现针对特定目标本体的导航策略训练。实验表明该方法有效提升了跨本体导航的成功率。",
+  "highlights": [
+    {
+      "text": "提出了CeDR-Nav框架，通过将源机器人演示重构为目标机器人的训练数据，无需在线数据收集即可完成策略训练。",
+      "evidence": "In this article, we present CeDR-Nav, a cross-embodiment demonstration recasting framework that trains a dedicated navigation policy for each target embodiment from existing source demonstrations without online data collection."
+    },
+    {
+      "text": "该方法在跨本体导航模拟任务中显著提升了成功率，并实现了秒级的策略训练速度。",
+      "evidence": "Extensive quantitative simulations and real-world deployments across multiple robot platforms demonstrate the effectiveness of CeDR-Nav, with an average success-rate gain of 13.8 percentage points over DRL-DCLP in cross-embodiment simulations and target-specific policy training completed within seconds."
+    }
+  ],
+  "tags": [
+    "导航",
+    "离线强化学习"
+  ]
+}

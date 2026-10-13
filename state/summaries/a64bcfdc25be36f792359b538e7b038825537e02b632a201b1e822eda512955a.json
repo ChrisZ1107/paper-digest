@@ -1,0 +1,16 @@
+{
+  "overview": "针对扩散模型在线强化学习中逆向过程方法效率受限及前向过程方法不稳定的问题，作者提出了DiffusionART（基于聚合优先奖励倾斜的扩散强化学习）。该方法通过将提示词奖励聚合为逆向过程状态的共享优化方向来消除一致性力，并引入信任域掩码的二次更新机制实现漂移自适应恢复，从而在无需EMA调优的情况下提升了训练效率与稳定性。实验表明，该方法在图像与视频生成任务中表现出显著的计算效率与奖励提升优势。",
+  "highlights": [
+    {
+      "text": "DiffusionART 通过聚合奖励方向消除了潜在的一致性力，并利用信任域掩码进行二次更新，实现了无需EMA调优的稳定训练。",
+      "evidence": "We introduce DiffusionART (Diffusion Reinforcement with Aggregation-First Reward Tilting), which aggregates each prompt's rewards into a shared reward-improving direction for reverse-process states, removing the consistency force by construction, and adds a trust-region-masked second update for drift-adaptive restoration without EMA tuning."
+    },
+    {
+      "text": "在HunyuanVideo-13B模型上，DiffusionART相比DiffusionNFT和Flow-GRPO-Fast大幅降低了计算成本，并显著提升了平均训练奖励。",
+      "evidence": "In particular, on HunyuanVideo-13B with equally weighted visual and motion quality rewards, DiffusionART reaches the late-stage mean reward levels of DiffusionNFT and Flow-GRPO-Fast with 12.02 and 11.72 times fewer GPU hours, respectively, while achieving 28.8% and 53.0% higher mean training rewards."
+    }
+  ],
+  "tags": [
+    "强化学习"
+  ]
+}

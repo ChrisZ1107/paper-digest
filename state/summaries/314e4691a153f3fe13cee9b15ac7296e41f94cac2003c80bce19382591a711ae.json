@@ -1,0 +1,17 @@
+{
+  "overview": "针对机器人装配任务中对繁琐指导的依赖问题，作者提出了AlphaNIST框架。该研究探讨了仅利用稀疏的二元任务奖励，是否能使机器人从零开始习得复杂的装配策略。实验结果表明，该方法在NIST装配任务板的20项任务中，无需演示、过程塑造或针对性调优，实现了98.2%的训练成功率，并表现出包括抓取规划和几何利用在内的灵巧行为。",
+  "highlights": [
+    {
+      "text": "AlphaNIST仅通过稀疏的二元奖励，即可在无需演示、过程塑造或任务专用调优的情况下，实现高成功率的装配。",
+      "evidence": "In simulation, we train a single policy from scratch across all 20 assembly tasks on the NIST Assembly Task Board #1, reaching 98.2% overall training success without demonstrations, progress shaping, scripted primitives, or per-task tuning."
+    },
+    {
+      "text": "该框架习得的策略展现出类似于规划的复杂行为，能够自主进行多任务间的逻辑协调与重排序。",
+      "evidence": "The learned policies discover dexterous and planning-like behaviors: choosing grasps for later assembly, using surrounding geometry to reorient parts, and preparing one part, assembling another, then returning to finish the first without an explicit planner."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "强化学习"
+  ]
+}

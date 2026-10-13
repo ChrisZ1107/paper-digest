@@ -1,0 +1,23 @@
+{
+  "overview": "针对人形机器人在实时视觉反应控制方面的挑战，本文提出了Reflex框架。该框架通过三阶段分解方法：首先利用强化学习学习全身体态捕获策略，接着学习从延迟观察中推断移动物体动力学，最后训练视觉编码器以实现直接从RGB-D图像中提取动力学表征。作者声称该方法在仿真和真实Unitree G1机器人上实现了对抛掷物体的有效捕捉，并验证了时间视觉历史对任务成功率的关键作用。",
+  "highlights": [
+    {
+      "text": "提出了一种将全身控制、动态推理与视觉感知解耦的三阶段训练框架，实现了人形机器人对移动目标的反应式捕捉。",
+      "evidence": "We present Reflex, a three-stage framework that learns these capabilities stage by stage while connecting them through a compact representation of object dynamics."
+    },
+    {
+      "text": "实验证明利用视觉编码器直接推断物体动力学具备高成功率，且时间视觉历史对保持任务表现至关重要。",
+      "evidence": "Temporal visual history is critical: removing it reduces success by 35.6 and 39.8 points on centered and laterally offset throws."
+    },
+    {
+      "text": "在真实机器人实验中，该系统能够捕捉人类抛掷的物体，在特定距离上达到了人类捕捉表现的显著比例。",
+      "evidence": "On a real Unitree G1, Reflex catches human-thrown boxes with 65% and 40% success at 2.5 and 5 m, reaching 76% and 59% of human catchers' success at the same distances."
+    }
+  ],
+  "tags": [
+    "人形机器人",
+    "机器人操作",
+    "强化学习",
+    "Sim-to-Real"
+  ]
+}
