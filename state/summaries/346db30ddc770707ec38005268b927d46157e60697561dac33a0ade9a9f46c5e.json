@@ -1,0 +1,16 @@
+{
+  "overview": "针对对抗性游戏中策略学习与适应的挑战，本研究提出了对抗性启发式学习（AHL）框架，利用AI智能体作为学习引擎，在固定模型权重的前提下迭代更新游戏策略与辅助软件。作者构建了包含12款游戏及1,920个人类程序的AAArena基准测试，评估了智能体在比赛预算内的排名提升能力。结果显示，当前模型配置在部分比赛中获得了金牌，但在复杂规则游戏中的表现仍逊于人类玩家，揭示了智能体在策略实现与长周期规划方面的局限性。",
+  "highlights": [
+    {
+      "text": "提出了对抗性启发式学习（AHL）范式，通过AI智能体在保持模型权重不变的情况下迭代改进游戏策略。",
+      "evidence": "Building on heuristic learning (HL), we formalize Adversarial Heuristic Learning (AHL), a paradigm that uses AI agents as learning engines to refine game policies and supporting software while keeping model weights fixed."
+    },
+    {
+      "text": "构建了AAArena基准测试，实验发现智能体能够利用自身及他人的对局回放进行策略改进，但复杂规则下的表现仍面临挑战。",
+      "evidence": "Further experiments show that opponent selection and dense feedback support policy improvement, and that agents learn from both on-policy replays of their own matches and off-policy replays of other players' matches."
+    }
+  ],
+  "tags": [
+    "推理"
+  ]
+}

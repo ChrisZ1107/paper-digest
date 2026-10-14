@@ -1,0 +1,22 @@
+{
+  "overview": "针对现有视觉语言动作模型在复杂及细小物体定位任务中的性能不足，作者提出了GroundingPI，这是一个4B参数规模的定位基础模型。该模型通过将点和框生成为共享词表中的量化坐标，结合多模态空间预训练、监督微调及基于GRPO的强化学习进行训练。实验表明，GroundingPI在多项定位基准上优于现有模型，并在机器人操作和自动驾驶任务中表现出显著的感知提升作用。",
+  "highlights": [
+    {
+      "text": "GroundingPI在34个定位基准测试中表现卓越，平均得分达到73.68%，超过了参数量更大的GPT-6 Astra。",
+      "evidence": "Against 44 baselines across 34 grounding benchmarks spanning 11 perceptual capabilities, GroundingPI establishes a new state of the art, averaging 73.68%, above the larger GPT-6 Astra (71.54%)."
+    },
+    {
+      "text": "作为视觉主干网络，GroundingPI在机器人操作任务中显示出更强的数据效率，仅需50%的演示数据即可超越使用75%数据训练的基线模型。",
+      "evidence": "On RoboCasa-GR1, GroundingPI trained with 50% of the demonstrations outperforms those baselines trained with 75%."
+    },
+    {
+      "text": "在自动驾驶场景中，该模型作为视觉主干网络应用时，在nuScenes数据集上实现了平均0.296米的开环L2误差。",
+      "evidence": "On nuScenes, used as the visual backbone, GroundingPI attains an average open-loop L2 error of 0.296 m."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "导航",
+    "推理"
+  ]
+}

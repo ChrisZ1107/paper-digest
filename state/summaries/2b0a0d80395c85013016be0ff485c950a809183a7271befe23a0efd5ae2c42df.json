@@ -1,0 +1,22 @@
+{
+  "overview": "本文针对长程组合式机器人操作任务，提出了一种名为ViGAR的层级框架。该方法将操作任务分解为视觉子目标规划器与子目标执行器，通过共享预训练的世界模型表示，分别实现任务级规划与动作生成。ViGAR支持上下文学习，无需更新参数即可根据全局目标图像调整行为。在RoboTwin基准测试及真实世界实验中，该方法展示了优于现有基线的任务成功率。",
+  "highlights": [
+    {
+      "text": "ViGAR采用层级化结构，通过视觉子目标规划器与子目标执行器的协同，改进了传统世界动作模型在子任务推理上的不足。",
+      "evidence": "We propose Visual Goal-conditioned Action Reasoning (ViGAR), a hierarchical framework that factorizes manipulation into a visual subgoal planner and a subgoal executor."
+    },
+    {
+      "text": "该框架利用预训练的世界模型表示支持上下文学习，能够根据全局目标图像实现任务分解，且无需参数更新。",
+      "evidence": "Moreover, our framework naturally supports in-context learning: using a global goal image as context can induce different subtask decompositions and behaviors without parameter updates."
+    },
+    {
+      "text": "在RoboTwin基准测试中，ViGAR在不同设置下均取得更高成功率，平均成功率较最优基线提升了12.86个百分点。",
+      "evidence": "On the RoboTwin Clean2Random benchmark, ViGAR achieves 82.00% and 67.02% success rates under the Clean and Random settings, respectively, surpassing the strongest baseline by 12.86 percentage points in average success rate."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "世界模型",
+    "推理"
+  ]
+}
