@@ -2393,6 +2393,271 @@
           "abstract_zh": "现代大语言模型（LLM）巨大的 KV-cache 规模为高效部署带来了障碍。近期的研究探索了用基于衰减的替代机制来替换注意力层中的 RoPE 位置编码，从而在推理过程中剪枝 KV-cache。然而，这些衰减函数的表达能力有限，在实践中往往退化为类似滑动窗口的驱逐模式。在这项工作中，我们提出了一种用于互补且新颖的衰减机制的统一框架，它在保留高表达力 RoPE 编码和 Softmax 注意力的同时，捕获了复杂的键（Key）统计信息和交互。由此产生的通用注意力（Universal Attention）架构具有极高的表达能力且支持端到端训练，其复合衰减机制充当了一种自然的“自适应”剪枝准则，能够移除对注意力计算贡献最小的 token。实验表明，通用注意力在自然语言和合成任务数据上实现了 $10\times$ 的最先进压缩比，同时与最先进的基准模型以及未剪枝的预言机（oracles）相比，下游性能还有所提升。此外，它在 16k 长度下展现了出色的长上下文泛化能力，实现了前所未有的 $25\times$ 压缩。"
         }
       ]
+    },
+    "_AOSfqKatxg": {
+      "video_id": "_AOSfqKatxg",
+      "papers": []
+    },
+    "N23fonNFZ4k": {
+      "video_id": "N23fonNFZ4k",
+      "papers": []
+    },
+    "AlpYM7TJAWQ": {
+      "video_id": "AlpYM7TJAWQ",
+      "video_title": "RoboRender: Robot-Oriented Video Generation for Visual Sim-to-Real Transfer (Oct 2026)",
+      "published": "2026-10-14",
+      "video_url": "https://www.youtube.com/watch?v=AlpYM7TJAWQ",
+      "papers": [
+        {
+          "id": "2610.09254",
+          "title": "RoboRender: Robot-Oriented Video Generation for Visual Sim-to-Real Transfer (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.09254"
+        }
+      ]
+    },
+    "SKng03lzY_0": {
+      "video_id": "SKng03lzY_0",
+      "video_title": "RSI-Anything: Unlocking Recursive Self-Improvement with World Models (Oct 2026)",
+      "published": "2026-10-14",
+      "video_url": "https://www.youtube.com/watch?v=SKng03lzY_0",
+      "papers": [
+        {
+          "id": "2610.13912",
+          "title": "RSI-Anything: Unlocking Recursive Self-Improvement with World Models (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.13912"
+        }
+      ]
+    },
+    "JHWJpYIHzyQ": {
+      "video_id": "JHWJpYIHzyQ",
+      "video_title": "TokenRouter: Efficient Serving System for Token-Level LLM Routing (Oct 2026)",
+      "published": "2026-10-14",
+      "video_url": "https://www.youtube.com/watch?v=JHWJpYIHzyQ",
+      "papers": [
+        {
+          "id": "2610.12242",
+          "title": "TokenRouter: Efficient Serving System for Token-Level LLM Routing (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.12242"
+        }
+      ]
+    },
+    "OGV_QzgM73M": {
+      "video_id": "OGV_QzgM73M",
+      "video_title": "More than 83.9% of the zeros of the Riemann zeta function are distinct and more than 67.35% are…",
+      "published": "2026-10-14",
+      "video_url": "https://www.youtube.com/watch?v=OGV_QzgM73M",
+      "papers": [
+        {
+          "id": "2610.08965",
+          "title": "More than 83.9% of the zeros of the Riemann zeta function are distinct and more than 67.35% are simple and on the critical line (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.08965"
+        }
+      ]
+    },
+    "n47UpOP_B08": {
+      "video_id": "n47UpOP_B08",
+      "video_title": "Shared Geometry As A Rosetta Stone: Cross-Modal Alignment Without Paired Data (Oct 2026)",
+      "published": "2026-10-14",
+      "video_url": "https://www.youtube.com/watch?v=n47UpOP_B08",
+      "papers": [
+        {
+          "id": "2610.09411",
+          "title": "Shared Geometry As A Rosetta Stone: Cross-Modal Alignment Without Paired Data (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.09411"
+        }
+      ]
+    },
+    "AzPPSTWxDbM": {
+      "video_id": "AzPPSTWxDbM",
+      "video_title": "EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution (Oct 2026)",
+      "published": "2026-10-14",
+      "video_url": "https://www.youtube.com/watch?v=AzPPSTWxDbM",
+      "papers": [
+        {
+          "id": "2610.10498",
+          "title": "EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.10498"
+        }
+      ]
+    },
+    "JmESZtxnOoE": {
+      "video_id": "JmESZtxnOoE",
+      "video_title": "RSI-Forge: From Research Papers to Environments for Recursive Self-Improvement (Oct 2026)",
+      "published": "2026-10-14",
+      "video_url": "https://www.youtube.com/watch?v=JmESZtxnOoE",
+      "papers": [
+        {
+          "id": "2610.09426",
+          "title": "RSI-Forge: From Research Papers to Environments for Recursive Self-Improvement (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.09426"
+        }
+      ]
+    },
+    "ZmXiCFZINTg": {
+      "video_id": "ZmXiCFZINTg",
+      "video_title": "AI Models Can Provably Hide Arbitrary Capabilities (Oct 2026)",
+      "published": "2026-10-14",
+      "video_url": "https://www.youtube.com/watch?v=ZmXiCFZINTg",
+      "papers": [
+        {
+          "id": "2610.13928",
+          "title": "AI Models Can Provably Hide Arbitrary Capabilities (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.13928"
+        }
+      ]
+    },
+    "rPndeoBvi0Y": {
+      "video_id": "rPndeoBvi0Y",
+      "video_title": "Prior or Feedback? What an LLM Uses When Adapting Neural Operators (Oct 2026)",
+      "published": "2026-10-14",
+      "video_url": "https://www.youtube.com/watch?v=rPndeoBvi0Y",
+      "papers": [
+        {
+          "id": "2610.12325",
+          "title": "Prior or Feedback? What an LLM Uses When Adapting Neural Operators (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.12325"
+        }
+      ]
+    },
+    "nHi9ewdtsmQ": {
+      "video_id": "nHi9ewdtsmQ",
+      "video_title": "SuperNav: An Agentic Navigation System for Any Task in Any Scene (Oct 2026)",
+      "published": "2026-10-14",
+      "video_url": "https://www.youtube.com/watch?v=nHi9ewdtsmQ",
+      "papers": [
+        {
+          "id": "2610.12126",
+          "title": "SuperNav: An Agentic Navigation System for Any Task in Any Scene (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.12126"
+        }
+      ]
+    },
+    "PK01lTvxxdk": {
+      "video_id": "PK01lTvxxdk",
+      "video_title": "A Balanced Data Diet: Addressing the Exploration Bottleneck in Mega-Scale RL for Robot Control",
+      "published": "2026-10-14",
+      "video_url": "https://www.youtube.com/watch?v=PK01lTvxxdk",
+      "papers": [
+        {
+          "id": "2610.12465",
+          "title": "A Balanced Data Diet: Addressing the Exploration Bottleneck in Mega-Scale RL for Robot Control (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.12465"
+        }
+      ]
+    },
+    "lUjzlmTNRWg": {
+      "video_id": "lUjzlmTNRWg",
+      "video_title": "Can Jev be Your Q or Policy in Reinforcement Learning? (Oct 2026)",
+      "published": "2026-10-14",
+      "video_url": "https://www.youtube.com/watch?v=lUjzlmTNRWg",
+      "papers": [
+        {
+          "id": "2610.11692",
+          "title": "Can Jev be Your Q or Policy in Reinforcement Learning? (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.11692"
+        }
+      ]
+    },
+    "Twctm7VGar8": {
+      "video_id": "Twctm7VGar8",
+      "video_title": "AgentGarten: Code Worlds for Evolving Agents (Oct 2026)",
+      "published": "2026-10-14",
+      "video_url": "https://www.youtube.com/watch?v=Twctm7VGar8",
+      "papers": [
+        {
+          "id": "2610.12374",
+          "title": "AgentGarten: Code Worlds for Evolving Agents (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.12374"
+        }
+      ]
+    },
+    "DpXNjo5aYY0": {
+      "video_id": "DpXNjo5aYY0",
+      "video_title": "MiMo-V2.6: Scaling Reinforcement Learning Towards Self-Improvement (Oct 2026)",
+      "published": "2026-10-14",
+      "video_url": "https://www.youtube.com/watch?v=DpXNjo5aYY0",
+      "papers": [
+        {
+          "id": "2610.11959",
+          "title": "MiMo-V2.6: Scaling Reinforcement Learning Towards Self-Improvement (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.11959"
+        }
+      ]
+    },
+    "RiaivkAvMtA": {
+      "video_id": "RiaivkAvMtA",
+      "papers": []
+    },
+    "Ot8y0a5mRQY": {
+      "video_id": "Ot8y0a5mRQY",
+      "video_title": "Backpropagation Explained: How Neural Networks Learn, and the Attempts to Replace It",
+      "published": "2026-10-14",
+      "video_url": "https://www.youtube.com/watch?v=Ot8y0a5mRQY",
+      "papers": [
+        {
+          "id": "2001.08361",
+          "title": "2001.08361",
+          "url": "https://arxiv.org/abs/2001.08361"
+        },
+        {
+          "id": "2305.17333",
+          "title": "2305.17333",
+          "url": "https://arxiv.org/abs/2305.17333"
+        },
+        {
+          "id": "1608.05343",
+          "title": "1608.05343",
+          "url": "https://arxiv.org/abs/1608.05343"
+        },
+        {
+          "id": "2212.13345",
+          "title": "2212.13345",
+          "url": "https://arxiv.org/abs/2212.13345"
+        },
+        {
+          "id": "1602.05179",
+          "title": "1602.05179",
+          "url": "https://arxiv.org/abs/1602.05179"
+        },
+        {
+          "id": "2006.04182",
+          "title": "2006.04182",
+          "url": "https://arxiv.org/abs/2006.04182"
+        },
+        {
+          "id": "1703.03864",
+          "title": "1703.03864",
+          "url": "https://arxiv.org/abs/1703.03864"
+        },
+        {
+          "id": "2511.16652",
+          "title": "2511.16652",
+          "url": "https://arxiv.org/abs/2511.16652"
+        },
+        {
+          "id": "1807.04587",
+          "title": "1807.04587",
+          "url": "https://arxiv.org/abs/1807.04587"
+        },
+        {
+          "id": "2503.24322",
+          "title": "2503.24322",
+          "url": "https://arxiv.org/abs/2503.24322"
+        }
+      ]
+    },
+    "0m_EFiKKwDc": {
+      "video_id": "0m_EFiKKwDc",
+      "video_title": "Recursive Self-Improvement through Multi-Agent Self-Supervision (Oct 2026)",
+      "published": "2026-10-14",
+      "video_url": "https://www.youtube.com/watch?v=0m_EFiKKwDc",
+      "papers": [
+        {
+          "id": "2610.12176",
+          "title": "Recursive Self-Improvement through Multi-Agent Self-Supervision (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.12176"
+        }
+      ]
     }
   }
 }
