@@ -2723,6 +2723,19 @@
           "abstract_zh": "我们提出了 BrickBench，这是一个用于代理文本驱动的乐高套装设计的基准测试。给定一个提示，代理的任务是生成一个不仅满足语义和设计标准，而且在物理上可构建的组装方案。为此，它必须从离散的零件库中进行选择，并同时对局部和全局约束进行推理。我们在规模和零件可用性各不相同的三种设置下，对有效性、对齐度和设计质量进行了评分。我们提供了 BrickAgent，这是一个供编程代理构建、检查和验证其设计的环境。研究发现，领先的代理在很大程度上满足了可验证的物理和语义要求，但在设计水平上仍不及人类设计。我们已在 http://www.brickben.ch 发布了我们的基准测试和环境。"
         }
       ]
+    },
+    "pyriKyHEfTY": {
+      "video_id": "pyriKyHEfTY",
+      "video_title": "Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation (Oct 2026)",
+      "published": "2026-10-15",
+      "video_url": "https://www.youtube.com/watch?v=pyriKyHEfTY",
+      "papers": [
+        {
+          "id": "2610.14162",
+          "title": "Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.14162"
+        }
+      ]
     }
   }
 }
