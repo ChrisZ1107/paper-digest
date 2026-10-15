@@ -1,0 +1,21 @@
+{
+  "overview": "针对长程智能体任务中训练数据匮乏及奖励稀疏的问题，作者提出了Tev-Gym数据集与相应的训练方案。该数据集包含1170个具备密集进度奖励的验证环境，通过潜空间建模技术构建任务规范。结合进度潜力奖励塑造（PPRS）方法，作者训练了Tev-27B模型。实验结果声称，该模型在计算与数学科学领域的特定考试中表现优异，并在多个基准测试中达到了与主流模型相当的性能水平。",
+  "highlights": [
+    {
+      "text": "构建了包含1170个任务环境的Tev-Gym数据集，通过潜空间建模提供密集、可验证的进度奖励，解决长程任务训练数据不足问题。",
+      "evidence": "First, we introduce Tev-Gym, the first long-horizon agent training dataset with verifiable, dense, progressive rewards -- 1,170 verified task environments across 7 domains."
+    },
+    {
+      "text": "提出进度潜力奖励塑造（PPRS）方法，将任务进度转化为每步密集奖励，从而提升长程任务的训练效率。",
+      "evidence": "Second, we turn this metric into a training recipe: via progress-potential reward shaping (PPRS), we convert progress into a dense per-step reward that improves training efficiency and makes otherwise-intractable tasks trainable."
+    },
+    {
+      "text": "Tev-27B模型在多个基准测试中展现出强劲性能，在部分任务中达到了与GPT-6 Astra和Claude Opus等大模型相当的水平。",
+      "evidence": "Training with this recipe yields Tev-27B, which achieves substantial gains on the Agents' Last Exam computing and math sciences domains (ALE-CM), matching GPT-6 Astra and Claude Opus 5 at Pass@5."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "推理"
+  ]
+}

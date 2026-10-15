@@ -1,0 +1,18 @@
+{
+  "overview": "城市尺度3D定位通常依赖预计算候选框，导致在大场景下效率低下。为此，作者提出了Urbex，一种将3D定位转化为主动空间搜索的视觉语言代理框架。该框架将城市级场景建模为交互式多视图环境，使视觉语言模型代理能够通过查询地标、缩放局部和渲染斜视图来进行定位。作者利用强化学习优化了该代理的工具使用策略。实验表明，Urbex在CityRefer数据集上实现了最优的定位性能，并表现出更快的推理速度与跨场景稳健性。",
+  "highlights": [
+    {
+      "text": "Urbex通过主动空间搜索取代传统的候选框排序，实现了无需候选框的城市级3D定位。",
+      "evidence": "We propose Urbex, an agentic vision-language framework that instead casts grounding as active spatial search."
+    },
+    {
+      "text": "在CityRefer数据集上，Urbex在定位精度与效率上均优于现有的城市尺度排序基线模型。",
+      "evidence": "Experiments show that Urbex achieves the best Hit@1 and IoU on CityRefer, supports candidate-free grounding without ground-truth boxes, and is substantially faster than the strongest city-scale ranking baseline."
+    }
+  ],
+  "tags": [
+    "视觉语言动作",
+    "强化学习",
+    "导航"
+  ]
+}

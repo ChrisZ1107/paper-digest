@@ -1,0 +1,77 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>2026-10-15 每日新论文 5</title><body><h1>2026-10-15 每日新论文 5</h1>
+<p>机器人 · 强化学习 · 通用 AI</p>
+<p>生成时间：2026-10-15 09:02 CST。从 1971 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>
+<p>本栏优先收录最近发布且未出现在近期日报的 arXiv 论文，不按热度排序；相关性分用于结合你的 Zotero 收藏偏好。</p>
+<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>
+<p>本次合格候选不足 10 篇，实际收录 5 篇。</p>
+<h2>1. PointWalker: Mapless Quadruped Locomotion Directly From Raw LiDAR Point Clouds</h2>
+<p><strong>机器人 / 强化学习</strong> · 公告 2026-10-14 · 综合分 3.48</p>
+<p>Zotero 摘要相关性：0.536（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>强化学习 · PPO · 四足机器人 · 足式运动</p>
+<p><strong>中文概述：</strong>针对四足机器人在复杂多变地形中因依赖地图构建而易受误差干扰的问题，本文提出了PointWalker框架。该方法通过单一强化学习策略直接处理来自四个LiDAR传感器的原始点云数据，利用线性自注意力机制进行编码并结合本体感知，实现无地图的地形运动控制。作者声称该方法在模拟环境中表现优异，并能以零样本方式在实际机器人上实现跨越障碍、负重及长距离巡航等任务。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>PointWalker通过直接处理原始LiDAR点云，无需构建地形图或进行落脚点估计，增强了对复杂及镂空地形的适应性。<br><small>摘要依据：In this paper, we present PointWalker, a mapless framework whose single reinforcement learning policy directly consumes raw point clouds from four light detection and ranging (LiDAR) sensors. Voxelized points are encoded by linear self-attention and fused with proprioception through cross-attention, so terrain geometry reaches the policy without maps or foothold estimation.</small></li>
+<li>在模拟测试中，该方法仅通过一次PPO训练即可覆盖七种不同地形类型，平均成功率达到90.1%。<br><small>摘要依据：One proximal policy optimization (PPO) run, with terrain-aware rewards and dual-channel simulation of see-through gratings, yields one policy for all seven terrain classes with a 90.1% mean success rate in simulation.</small></li>
+<li>在Deep Robotics X30机器人上的实机测试表明，该方法可实现零样本部署，支持跨越0.8米间隙、攀爬45度楼梯及长达2.5公里的山地穿越。<br><small>摘要依据：Deployed zero-shot on a Deep Robotics X30 at 50 Hz onboard, it crosses 0.8-m gaps, climbs 0.8-m platforms and 45{\deg} steel-grating stairs, carries a 50-kg payload, and completes a 2.5-km mountain route.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>PPO · 四足机器人 · 足式运动</p>
+<p><strong>原文摘要节选：</strong>Quadruped robots deployed for inspection and field missions must cross heterogeneous terrain, from stairs, slopes, and gaps to high platforms, stepping stones, and balance beams, where safe support is sparse or see-through. Existing methods interpose a terrain map or a depth image between sensing and control. Maps are costly to maintain, corrupted by odometry drift and outliers, and misled by see-through gratings, while depth cameras degrade with lighting and surface material. In this paper, we present PointWalker, a mapless framework whose single reinforcement learning policy directly consumes raw point clouds from four light detection and ranging (LiDAR) sensors. Voxelized points are encoded by linear self-attention and fused with proprioception through cross-attention, so terrain…</p>
+<p><a href="https://arxiv.org/abs/2610.15548">论文原文</a> · <a href="https://arxiv.org/pdf/2610.15548">PDF</a></p><hr>
+<h2>2. Beyond Fixed Visual History: Learning Motion-Adaptive Temporal Receptive Fields for Complex-Terrain Quadruped Locomotion</h2>
+<p><strong>机器人</strong> · 公告 2026-10-14 · 综合分 3.46</p>
+<p>Zotero 摘要相关性：0.532（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>四足机器人 · 足式运动</p>
+<p><strong>中文概述：</strong>针对四足机器人在复杂地形中运动时，固定时间窗口的视觉历史无法适应不同运动状态的问题，本文提出了TempoLoco框架。该方法通过本体感受历史和地形证据，动态组织并聚合深度视觉内存，使策略能根据机器人当前的运动状态调整视觉感受野。实验表明，该方法在仿真和真实四足机器人上实现了更高的地形通过成功率。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出TempoLoco框架，根据四足机器人的运动状态动态组织视觉记忆，实现视觉预期与当前运动能力的对齐。<br><small>摘要依据：To address this limitation, we propose TempoLoco, a body-aware dynamic visual perception framework that organizes visual memory according to the robot&#x27;s current locomotion state.</small></li>
+<li>在复杂地形评估中，TempoLoco的表现优于固定窗口和均匀多尺度融合基线，成功率显著提升。<br><small>摘要依据：From the experiment analysis, TempoLoco achieves a 78.4% success rate, compared with 58.2% for the strongest fixed-history baseline and 62.1% for uniform multi-scale fusion.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>四足机器人 · 足式运动 · Sim-to-Real</p>
+<p><strong>原文摘要节选：</strong>Versatile quadruped locomotion depends on a tight coupling between what the robot perceives and what its body can execute. Yet existing visual controllers typically organize depth history using fixed temporal patterns, overlooking that the same temporal span corresponds to different spatial ranges as the robot&#x27;s speed, posture, and gait phase change. Consequently, the same visual history may be insufficient in one motion state but outdated or misaligned in another. To address this limitation, we propose TempoLoco, a body-aware dynamic visual perception framework that organizes visual memory according to the robot&#x27;s current locomotion state. TempoLoco learns multiple complementary temporal views from a long depth buffer, encodes them within a shared feature space, and dynamically…</p>
+<p><a href="https://arxiv.org/abs/2610.14753">论文原文</a> · <a href="https://arxiv.org/pdf/2610.14753">PDF</a></p><hr>
+<h2>3. OneDemo: Unified Policy Learning and Data Generation from a Single Demonstration</h2>
+<p><strong>机器人 / 强化学习</strong> · 公告 2026-10-14 · 综合分 3.45</p>
+<p>Zotero 摘要相关性：0.531（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>强化学习</p>
+<p><strong>中文概述：</strong>针对从单一专家演示中学习机器人策略存在的数据多样性匮乏问题，本文提出OneDemo框架。该方法将演示编辑建模为强化学习任务，通过学习在以物体为中心的轨迹段之间进行转换与几何适应，实现单一演示向多样化轨迹的扩展。作者声称该框架能同时作为任务策略和可重用的演示生成器，在Meta-World和DexMimicGen任务中表现出高成功率，并能有效支持大规模的策略训练。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>OneDemo通过强化学习将单一演示扩展为多样化轨迹，在Meta-World任务中实现了高成功率。<br><small>摘要依据：Across 15 Meta-World tasks, OneDemo reaches a 92.7% success rate within 53.7k environment interactions on average.</small></li>
+<li>该方法作为演示生成器具有高效性，生成的演示数据可用于训练高性能的BC-RNN策略。<br><small>摘要依据：Across 9 DexMimicGen tasks, it generates successful demonstrations with a 98.4% average success rate, and BC-RNN policies trained on the generated data achieve 99.6% average success at matched dataset scale.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 强化学习</p>
+<p><strong>原文摘要节选：</strong>Learning robot policies from demonstrations is often limited by the cost of collecting diverse, high-quality expert data. While an appealing alternative is to expand a single successful demonstration into a diverse set of successful trajectories, existing augmentation methods typically rely on manually designed transformation rules or complex trajectory planning, requiring substantial task-specific engineering and human effort. We introduce OneDemo, a reinforcement learning framework that learns to edit a single successful demonstration for new task configurations. We formulate demonstration editing as a structured reinforcement learning problem, in which an editor learns, from sparse task-success rewards, both when to transition between object-centric trajectory segments and how to…</p>
+<p><a href="https://arxiv.org/abs/2610.18188">论文原文</a> · <a href="https://arxiv.org/pdf/2610.18188">PDF</a></p><hr>
+<h2>4. From Pixels to Executable Physics: Behavior-Grounded World Models for Embodied Action Consequence Prediction</h2>
+<p><strong>机器人</strong> · 公告 2026-10-14 · 综合分 3.41</p>
+<p>Zotero 摘要相关性：0.524（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>四足机器人 · 导航 · 世界模型</p>
+<p><strong>中文概述：</strong>针对四足机器人在复杂户外地形中难以准确预测行动后果的问题，本文提出了DR-WM（物理一致性世界模型）。该方法通过RGB图像重构场景几何，并集成从实测数据中校准的接触属性先验，从而模拟地形与机器人的物理交互。实验表明，该模型生成的未来观测结果能有效指导视频世界模型，在物理指标预测上优于现有基线，并能显著提升视觉语言模型在动作选择任务中的表现。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出了一种名为DR-WM的物理一致性世界模型，通过整合机器人与地形的接触动力学来准确预测四足机器人的行动后果。<br><small>摘要依据：We present DR-WM, a physically consistent world model that incorporates robot-terrain contact dynamics to predict the consequences of quadruped actions.</small></li>
+<li>DR-WM生成的物理预测显著优于几何基线和统一物理参数基线，并提升了大型视觉语言模型在动作选择任务中的表现。<br><small>摘要依据：Extensive experiments demonstrate that DR-WM substantially outperforms geometry-only baselines and baselines with uniform physical parameters on key physical metrics characterizing action outcomes, while achieving the best performance among the evaluated baselines.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>四足机器人 · 世界模型 · 视觉语言动作 · 导航</p>
+<p><strong>原文摘要节选：</strong>In outdoor environments, varying terrain and contact conditions can cause identical action commands to produce different motion outcomes for quadruped robots. Predicting these outcomes is essential for reliable navigation and informed path selection. Existing video world models can generate visually plausible futures, yet often struggle to capture robot dynamics and terrain interactions, leading to overly optimistic predictions of action outcomes. We present DR-WM, a physically consistent world model that incorporates robot-terrain contact dynamics to predict the consequences of quadruped actions. Starting from an initial RGB image, our method reconstructs scene geometry and integrates dense, dimensionless priors over terrain contact properties, calibrated using real-world action-response…</p>
+<p><a href="https://arxiv.org/abs/2610.17630">论文原文</a> · <a href="https://arxiv.org/pdf/2610.17630">PDF</a></p><hr>
+<h2>5. Load-Aware Quadruped Navigation with Online Contact-based Geometry Estimation</h2>
+<p><strong>机器人 / 强化学习</strong> · 公告 2026-10-14 · 综合分 3.37</p>
+<p>Zotero 摘要相关性：0.519（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>强化学习 · 四足机器人 · 足式运动 · 导航 · 模仿学习</p>
+<p><strong>中文概述：</strong>本文针对携带负载的四足机器人导航问题，提出了一个两阶段学习框架。首先通过强化学习训练导航策略LOADNav，使其能根据负载几何尺寸调整轨迹；其次通过模仿学习训练在线几何估计器CoGE，利用接触事件感知未知负载的几何信息。实验结果表明，该框架能在无需先验知识的情况下，使机器人根据实时估计的负载尺寸调整导航行为，缩小了与已知几何信息策略间的性能差距。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出了一种基于接触事件的在线几何估计器，能够在没有先验知识的情况下推断所携带负载的形状和尺寸。<br><small>摘要依据：In Phase 2, we train CoGE, an online geometry predictor via imitation learning, which estimates unknown payload geometry from occasional contact events.</small></li>
+<li>研发的导航策略能够根据在线评估的负载几何特征，自动调整机器人的移动路径和避障行为。<br><small>摘要依据：In Phase 1, we train LOADNav, a load-aware navigation policy via reinforcement learning, enabling the robot to adapt its trajectory and clearance behavior according to the geometric size of the carried object.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>四足机器人 · 强化学习 · 模仿学习 · 导航</p>
+<p><strong>原文摘要节选：</strong>Navigating cluttered environments while carrying objects remains a challenging problem for quadruped robots. Compared with works that focused on load-aware locomotion adaptation to maintain gait stability, existing autonomous navigation systems generally ignore the influence of carried objects&#x27; geometries and use fixed footprint inflation, leading to overly conservative navigation. To fill this knowledge gap, we propose a two-phase load-aware navigation learning framework. In Phase 1, we train LOADNav, a load-aware navigation policy via reinforcement learning, enabling the robot to adapt its trajectory and clearance behavior according to the geometric size of the carried object. In Phase 2, we train CoGE, an online geometry predictor via imitation learning, which estimates unknown payload…</p>
+<p><a href="https://arxiv.org/abs/2610.14596">论文原文</a> · <a href="https://arxiv.org/pdf/2610.14596">PDF</a></p><hr></body></html>

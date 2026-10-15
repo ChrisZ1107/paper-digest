@@ -1,0 +1,22 @@
+{
+  "overview": "针对四足机器人在复杂多变地形中因依赖地图构建而易受误差干扰的问题，本文提出了PointWalker框架。该方法通过单一强化学习策略直接处理来自四个LiDAR传感器的原始点云数据，利用线性自注意力机制进行编码并结合本体感知，实现无地图的地形运动控制。作者声称该方法在模拟环境中表现优异，并能以零样本方式在实际机器人上实现跨越障碍、负重及长距离巡航等任务。",
+  "highlights": [
+    {
+      "text": "PointWalker通过直接处理原始LiDAR点云，无需构建地形图或进行落脚点估计，增强了对复杂及镂空地形的适应性。",
+      "evidence": "In this paper, we present PointWalker, a mapless framework whose single reinforcement learning policy directly consumes raw point clouds from four light detection and ranging (LiDAR) sensors. Voxelized points are encoded by linear self-attention and fused with proprioception through cross-attention, so terrain geometry reaches the policy without maps or foothold estimation."
+    },
+    {
+      "text": "在模拟测试中，该方法仅通过一次PPO训练即可覆盖七种不同地形类型，平均成功率达到90.1%。",
+      "evidence": "One proximal policy optimization (PPO) run, with terrain-aware rewards and dual-channel simulation of see-through gratings, yields one policy for all seven terrain classes with a 90.1% mean success rate in simulation."
+    },
+    {
+      "text": "在Deep Robotics X30机器人上的实机测试表明，该方法可实现零样本部署，支持跨越0.8米间隙、攀爬45度楼梯及长达2.5公里的山地穿越。",
+      "evidence": "Deployed zero-shot on a Deep Robotics X30 at 50 Hz onboard, it crosses 0.8-m gaps, climbs 0.8-m platforms and 45{\\deg} steel-grating stairs, carries a 50-kg payload, and completes a 2.5-km mountain route."
+    }
+  ],
+  "tags": [
+    "PPO",
+    "四足机器人",
+    "足式运动"
+  ]
+}

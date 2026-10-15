@@ -1,0 +1,24 @@
+{
+  "overview": "本文提出了一种名为GreenWAM的机器人通用世界模型，旨在通过单一架构同时处理场景预测与动作决策。该模型通过统一20种机器人家族的解剖动作空间，并采用联合训练策略实现跨形态的通用能力。作者声称，GreenWAM在WorldArena 1.0基准测试中表现出顶尖的预测精度，并在RoboTwin 2.0、LIBERO和CALVIN等基准测试中展现出极具竞争力的零样本策略执行效果，且在真实人形机器人部署中优于对照策略。",
+  "highlights": [
+    {
+      "text": "提出了一种共享解剖动作空间，整合了从双臂到灵巧人形机器人在内的20个机器人家族，实现了通用控制基础。",
+      "evidence": "a shared anatomical action space that describes 20 robot families, from bimanual arms to dexterous humanoids, in common joint coordinates"
+    },
+    {
+      "text": "GreenWAM在模拟基准测试中表现出色，在WorldArena 1.0上领先于同类模型，并在LIBERO-plus等测试中达到最高零样本成功率。",
+      "evidence": "As a world model, GreenWAM attains top-tier trajectory, depth and 3D accuracy on WorldArena 1.0, ahead of every world-action model and video generator in our comparison."
+    },
+    {
+      "text": "在真实人形机器人部署中，该模型表现优于基于π_{0.5}和Cosmos 3 Edge适配的策略，并可蒸馏实现实时控制。",
+      "evidence": "We further adapt GreenWAM to a real humanoid, where it succeeds more often than policies adapted from π_{0.5} and from Cosmos 3 Edge, and distill it into a single-step policy for real-time control."
+    }
+  ],
+  "tags": [
+    "世界模型",
+    "机器人操作",
+    "人形机器人",
+    "Sim-to-Real",
+    "视觉语言动作"
+  ]
+}

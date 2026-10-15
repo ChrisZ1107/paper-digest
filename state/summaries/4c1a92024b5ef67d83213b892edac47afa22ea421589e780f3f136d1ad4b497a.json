@@ -1,0 +1,17 @@
+{
+  "overview": "针对从单一专家演示中学习机器人策略存在的数据多样性匮乏问题，本文提出OneDemo框架。该方法将演示编辑建模为强化学习任务，通过学习在以物体为中心的轨迹段之间进行转换与几何适应，实现单一演示向多样化轨迹的扩展。作者声称该框架能同时作为任务策略和可重用的演示生成器，在Meta-World和DexMimicGen任务中表现出高成功率，并能有效支持大规模的策略训练。",
+  "highlights": [
+    {
+      "text": "OneDemo通过强化学习将单一演示扩展为多样化轨迹，在Meta-World任务中实现了高成功率。",
+      "evidence": "Across 15 Meta-World tasks, OneDemo reaches a 92.7% success rate within 53.7k environment interactions on average."
+    },
+    {
+      "text": "该方法作为演示生成器具有高效性，生成的演示数据可用于训练高性能的BC-RNN策略。",
+      "evidence": "Across 9 DexMimicGen tasks, it generates successful demonstrations with a 98.4% average success rate, and BC-RNN policies trained on the generated data achieve 99.6% average success at matched dataset scale."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "强化学习"
+  ]
+}

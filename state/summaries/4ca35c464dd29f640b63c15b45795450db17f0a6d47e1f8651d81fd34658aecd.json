@@ -1,0 +1,19 @@
+{
+  "overview": "针对四足机器人在复杂户外地形中难以准确预测行动后果的问题，本文提出了DR-WM（物理一致性世界模型）。该方法通过RGB图像重构场景几何，并集成从实测数据中校准的接触属性先验，从而模拟地形与机器人的物理交互。实验表明，该模型生成的未来观测结果能有效指导视频世界模型，在物理指标预测上优于现有基线，并能显著提升视觉语言模型在动作选择任务中的表现。",
+  "highlights": [
+    {
+      "text": "提出了一种名为DR-WM的物理一致性世界模型，通过整合机器人与地形的接触动力学来准确预测四足机器人的行动后果。",
+      "evidence": "We present DR-WM, a physically consistent world model that incorporates robot-terrain contact dynamics to predict the consequences of quadruped actions."
+    },
+    {
+      "text": "DR-WM生成的物理预测显著优于几何基线和统一物理参数基线，并提升了大型视觉语言模型在动作选择任务中的表现。",
+      "evidence": "Extensive experiments demonstrate that DR-WM substantially outperforms geometry-only baselines and baselines with uniform physical parameters on key physical metrics characterizing action outcomes, while achieving the best performance among the evaluated baselines."
+    }
+  ],
+  "tags": [
+    "四足机器人",
+    "世界模型",
+    "视觉语言动作",
+    "导航"
+  ]
+}

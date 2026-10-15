@@ -1,0 +1,22 @@
+{
+  "overview": "针对视觉语言动作（VLA）模型缺乏环境后果建模的问题，本文提出了WAVE-0框架。该方法通过轻量级潜空间世界模型将VLA与世界动作模型（WAM）相结合，利用反事实排序目标在真实机器人动作数据上训练，将预训练VLA的语义理解与显式未来预测统一。作者声称该方法无需像素重构或大规模视频预训练，在多项仿真任务及真实世界操作中均表现出较高的成功率，有效增强了操作性能和泛化能力。",
+  "highlights": [
+    {
+      "text": "WAVE-0框架通过2.57亿参数的轻量级潜空间世界模型，实现了潜空间规划、未来预测与动作生成的统一，避免了高昂的视频生成成本。",
+      "evidence": "Built on a pretrained VLA, its 257M world model translates VLM-generated latent action plans into predicted future representations that condition the action expert, unifying latent planning, future prediction, and action generation."
+    },
+    {
+      "text": "该模型通过反事实排序目标直接基于真实机器人动作进行训练，无需像素重构或大规模视频预训练。",
+      "evidence": "The world model is trained directly on ground-truth robot actions with a counterfactual ranking objective, requiring neither pixel reconstruction nor large-scale video pretraining."
+    },
+    {
+      "text": "实验结果表明，WAVE-0在多项仿真基准测试中表现出色，并在真实世界任务中显著提升了原始策略的成功率。",
+      "evidence": "WAVE-0 achieves success rates of 91.47% on RoboTwin 2.0 and 98.7% on LIBERO, along with 88.0%, 61.4%, and 75.0% on LIBERO-Plus, LIBERO-Pro, and LIBERO-Para, respectively. On real-world tasks, it improves the success rate of π_{0.5} from 38.3% to 73.3%."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "世界模型",
+    "视觉语言动作"
+  ]
+}

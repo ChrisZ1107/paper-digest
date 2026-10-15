@@ -1,0 +1,22 @@
+{
+  "overview": "LeWAM提出了一种用于机器人控制的端到端联合嵌入预测架构（JEPA）。该方法通过联合训练目标同时优化下一时刻潜状态预测与动作流匹配，并在潜状态上引入各向同性高斯约束。作者声称该模型支持直接策略执行与高效规划，并在接触丰富及长程任务中显著提升了成功率与规划速度，同时在模拟和物理机器人上的行为克隆表现也具有竞争力。",
+  "highlights": [
+    {
+      "text": "LeWAM通过联合训练目标和潜状态约束，实现了策略执行与规划的统一，显著提升了视觉规划任务的成功率与速度。",
+      "evidence": "Compared with prior JEPAs in visual planning, LeWAM improves success rate from 28.6% to 89.7% on contact-rich tasks and from 10.9% to 46.2% on long-horizon tasks, and plans 32.3 times faster."
+    },
+    {
+      "text": "在行为克隆任务中，LeWAM在仿真环境及物理机器人上均表现出与现有主流方法相当的竞争力。",
+      "evidence": "On behavior cloning tasks in simulation and physical robots, LeWAM is also competitive with established methods."
+    },
+    {
+      "text": "可解释性分析表明，LeWAM能够学习到与控制相关的表征及动作分布，从而有效引导测试阶段的规划与控制。",
+      "evidence": "Interpretability analyses show that LeWAM learns control-relevant representations and action distributions effectively guiding test-time planning and control."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "Sim-to-Real",
+    "模仿学习"
+  ]
+}

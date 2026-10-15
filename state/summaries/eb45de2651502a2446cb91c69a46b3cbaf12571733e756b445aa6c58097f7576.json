@@ -1,0 +1,19 @@
+{
+  "overview": "本文针对携带负载的四足机器人导航问题，提出了一个两阶段学习框架。首先通过强化学习训练导航策略LOADNav，使其能根据负载几何尺寸调整轨迹；其次通过模仿学习训练在线几何估计器CoGE，利用接触事件感知未知负载的几何信息。实验结果表明，该框架能在无需先验知识的情况下，使机器人根据实时估计的负载尺寸调整导航行为，缩小了与已知几何信息策略间的性能差距。",
+  "highlights": [
+    {
+      "text": "提出了一种基于接触事件的在线几何估计器，能够在没有先验知识的情况下推断所携带负载的形状和尺寸。",
+      "evidence": "In Phase 2, we train CoGE, an online geometry predictor via imitation learning, which estimates unknown payload geometry from occasional contact events."
+    },
+    {
+      "text": "研发的导航策略能够根据在线评估的负载几何特征，自动调整机器人的移动路径和避障行为。",
+      "evidence": "In Phase 1, we train LOADNav, a load-aware navigation policy via reinforcement learning, enabling the robot to adapt its trajectory and clearance behavior according to the geometric size of the carried object."
+    }
+  ],
+  "tags": [
+    "四足机器人",
+    "强化学习",
+    "模仿学习",
+    "导航"
+  ]
+}

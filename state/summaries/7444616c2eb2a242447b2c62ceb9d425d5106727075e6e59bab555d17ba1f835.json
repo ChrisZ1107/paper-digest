@@ -1,0 +1,18 @@
+{
+  "overview": "针对四足机器人在复杂地形中运动时，固定时间窗口的视觉历史无法适应不同运动状态的问题，本文提出了TempoLoco框架。该方法通过本体感受历史和地形证据，动态组织并聚合深度视觉内存，使策略能根据机器人当前的运动状态调整视觉感受野。实验表明，该方法在仿真和真实四足机器人上实现了更高的地形通过成功率。",
+  "highlights": [
+    {
+      "text": "提出TempoLoco框架，根据四足机器人的运动状态动态组织视觉记忆，实现视觉预期与当前运动能力的对齐。",
+      "evidence": "To address this limitation, we propose TempoLoco, a body-aware dynamic visual perception framework that organizes visual memory according to the robot's current locomotion state."
+    },
+    {
+      "text": "在复杂地形评估中，TempoLoco的表现优于固定窗口和均匀多尺度融合基线，成功率显著提升。",
+      "evidence": "From the experiment analysis, TempoLoco achieves a 78.4% success rate, compared with 58.2% for the strongest fixed-history baseline and 62.1% for uniform multi-scale fusion."
+    }
+  ],
+  "tags": [
+    "四足机器人",
+    "足式运动",
+    "Sim-to-Real"
+  ]
+}
