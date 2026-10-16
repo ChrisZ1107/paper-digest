@@ -1,0 +1,19 @@
+{
+  "overview": "针对足式机器人视觉避障中传统可微强化学习梯度失效的问题，本文提出E2DRL框架。该方法引入软性可微障碍物交互机制，通过多关键点穿透惩罚和速度条件下的梯度整形提供训练信号。作者通过SAPO算法训练特权教师模型，并蒸馏至递归视觉学生模型，结合地形感知门控模块实现部署。仿真与实机实验表明，该方法在样本效率及3D避障性能上优于PPO及DCBF NMPC方案。",
+  "highlights": [
+    {
+      "text": "提出一种软性可微障碍物交互方案，通过多体关键点的穿透惩罚及速度条件下的停止梯度整形，有效解决了复杂接触场景下的梯度退化问题。",
+      "evidence": "We present E2DRL, which addresses this with a soft differentiable obstacle-interaction formulation: penetration penalties across multiple body keypoints with velocity-conditioned stop-gradient shaping to provide the first-order training signals for 3D obstacle avoidance."
+    },
+    {
+      "text": "作者验证了该方法在Unitree Go2机器人上的Sim-to-Real部署，实现了端到端可微强化学习在静态及动态环境下的3D避障应用。",
+      "evidence": "We present the first sim-to-real validation of end-to-end differentiable RL for 3D obstacle avoidance on a Unitree Go2 in static and dynamic environments."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "四足机器人",
+    "足式运动",
+    "Sim-to-Real"
+  ]
+}

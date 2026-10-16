@@ -1,0 +1,258 @@
+{
+  "date": "2026-10-16",
+  "timestamp": "2026-10-16T09:03:44.763792+08:00",
+  "title": "2026-10-16 每日新论文 5",
+  "slug": "2026-10-16-new",
+  "papers": [
+    {
+      "id": "2610.19615",
+      "title": "PolyMorph: Learning Locomotion Policy for Cross-Embodiment Adaptation",
+      "abstract": "Reinforcement learning has enabled robust locomotion for legged robots, but learned policies are typically tied to a specific robot morphology and require additional engineering when the number of legs, actuators, or mechanical properties change. We present PolyMorph, a morphology-conditioned framework that learns a single locomotion policy for heterogeneous legged robots. PolyMorph converts each robot's URDF into joint-link modules and combines a recurrent encoder, graph-based Transformer, and per-joint decoder to generate actions across variable leg counts and joint configurations. To improve training stability, PolyMorph uses morphology-normalized rewards, adaptive robot sampling, and URDF-derived PD-gain initialization. We evaluate PolyMorph in simulation across bipedal, tripedal, and quadrupedal robots, including unseen morphology variants and platforms, and deploy the policy on real quadruped platforms operated in multiple configurations. The results show that a single PolyMorph policy generalizes across diverse robot morphologies without per-robot policy retraining.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-10-15",
+      "date_label": "公告",
+      "age_days": 0.8776014327777778,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.56275,
+      "growth": null,
+      "score": 3.658,
+      "rule_tags": [
+        "强化学习",
+        "四足机器人",
+        "足式运动"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对强化学习足式机器人控制策略难以适应不同形态的问题，本文提出了PolyMorph框架。该方法通过将机器人URDF转换为关节链路模块，结合循环编码器、图Transformer和逐关节解码器，实现单一策略在异构足式机器人间的通用。作者声称，该方法在无需针对特定机器人重训练的情况下，即可实现对多种形态和未见过的机器人平台的适应。",
+        "highlights": [
+          {
+            "text": "PolyMorph通过形态条件编码架构，使单一运动策略能够适应不同数量的腿部及关节配置。",
+            "evidence": "PolyMorph converts each robot's URDF into joint-link modules and combines a recurrent encoder, graph-based Transformer, and per-joint decoder to generate actions across variable leg counts and joint configurations."
+          },
+          {
+            "text": "该框架通过形态标准化奖励等训练优化手段，实现了跨形态的零样本泛化，并在真实四足机器人平台上得到验证。",
+            "evidence": "The results show that a single PolyMorph policy generalizes across diverse robot morphologies without per-robot policy retraining."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "足式运动",
+          "Sim-to-Real"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.19627",
+      "title": "E2DRL: End-to-End Differentiable Reinforcement Learning for 3D Obstacle Avoidance in Quadruped Robots",
+      "abstract": "Differentiable reinforcement learning shows strong promise for robot policy learning, but its application to legged locomotion has remained limited to blind walking or simulated 2D tasks. Extending it to end-to-end visual obstacle avoidance is challenging because hard collision constraints and early termination upon contact corrupt first-order gradients, trapping optimizers in local minima. We present E2DRL, which addresses this with a soft differentiable obstacle-interaction formulation: penetration penalties across multiple body keypoints with velocity-conditioned stop-gradient shaping to provide the first-order training signals for 3D obstacle avoidance. To realize a deployable perception-control system, a privileged teacher trained via Soft Analytic Policy Optimization (SAPO) in a differentiable simulator is distilled into a recurrent depth-based student via DAgger, then blended with a base locomotion policy using a terrain-aware gating module for deployment. In simulation, E2DRL achieves higher sample efficiency than PPO and demonstrates superior velocity-tracking performance and 3D obstacle-avoidance capability compared with both PPO and Duality-based DCBF NMPC. We present the first sim-to-real validation of end-to-end differentiable RL for 3D obstacle avoidance on a Unitree Go2 in static and dynamic environments.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-10-15",
+      "date_label": "公告",
+      "age_days": 0.8776014327777778,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.54607,
+      "growth": null,
+      "score": 3.549,
+      "rule_tags": [
+        "强化学习",
+        "PPO",
+        "四足机器人",
+        "足式运动",
+        "Sim-to-Real"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对足式机器人视觉避障中传统可微强化学习梯度失效的问题，本文提出E2DRL框架。该方法引入软性可微障碍物交互机制，通过多关键点穿透惩罚和速度条件下的梯度整形提供训练信号。作者通过SAPO算法训练特权教师模型，并蒸馏至递归视觉学生模型，结合地形感知门控模块实现部署。仿真与实机实验表明，该方法在样本效率及3D避障性能上优于PPO及DCBF NMPC方案。",
+        "highlights": [
+          {
+            "text": "提出一种软性可微障碍物交互方案，通过多体关键点的穿透惩罚及速度条件下的停止梯度整形，有效解决了复杂接触场景下的梯度退化问题。",
+            "evidence": "We present E2DRL, which addresses this with a soft differentiable obstacle-interaction formulation: penetration penalties across multiple body keypoints with velocity-conditioned stop-gradient shaping to provide the first-order training signals for 3D obstacle avoidance."
+          },
+          {
+            "text": "作者验证了该方法在Unitree Go2机器人上的Sim-to-Real部署，实现了端到端可微强化学习在静态及动态环境下的3D避障应用。",
+            "evidence": "We present the first sim-to-real validation of end-to-end differentiable RL for 3D obstacle avoidance on a Unitree Go2 in static and dynamic environments."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "四足机器人",
+          "足式运动",
+          "Sim-to-Real"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.20318",
+      "title": "Efficient Test-Time Adaptation For Robot Policies",
+      "abstract": "Reinforcement-learning policies for robot locomotion can fail at deployment when operating conditions shift (e.g., rough or slippery terrain, payload changes, sensing degradation), and retraining or manual recalibration is often infeasible under on-device latency and memory constraints. We study test-time adaptation (TTA) for robotic control: adapting a pretrained policy online and in a self-supervised manner during execution, without access to rewards. Our starting point is a lightweight baseline that updates only the actor using a frozen pretrained critic as a deployment-time performance surrogate. Building on this, we introduce TEMPO, a test-time entropy-regularized, memory-guided policy optimization method that stabilizes critic-driven updates under severe shift. TEMPO combines (i) an entropy-promoting regularizer on the critic's predictive distribution to mitigate overconfident extrapolation, and (ii) a score-based memory, inspired by prioritized replay, that prioritizes low-value (\"hard\") observations and applies importance sampling to focus limited computation on the most informative deployment conditions. Across Go1, Go2, and G1 in MuJoCo Playground under four representative shifts and multiple architectures, TEMPO yields consistent gains, reaching up to 80% improvement in a single-device setting. We further validate on a physical Unitree Go2 with an added calf payload, where fully on-device adaptation improves performance over the non-adapted baseline across real-world episodes.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-15",
+      "date_label": "公告",
+      "age_days": 0.8776014327777778,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.53819,
+      "growth": null,
+      "score": 3.498,
+      "rule_tags": [
+        "足式运动"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对机器人策略在运行环境变动时易失效且难以实时重训练的问题，本研究提出了一种测试时自适应方法TEMPO。该方法在无需奖励信号的情况下，利用冻结的评论家网络作为性能替代指标，通过引入熵正则化及基于分数的记忆机制，在线优化执行策略。实验在多种机器人平台及模拟和真实环境中验证了该方法能有效提升策略在复杂环境下的适应性。",
+        "highlights": [
+          {
+            "text": "TEMPO方法通过引入熵正则化和记忆导向策略优化，在严重环境偏移下稳定了基于评论家的在线更新过程。",
+            "evidence": "Building on this, we introduce TEMPO, a test-time entropy-regularized, memory-guided policy optimization method that stabilizes critic-driven updates under severe shift."
+          },
+          {
+            "text": "该方法通过优先处理高难度的观测数据并应用重要性采样，显著提升了设备端实时自适应的性能。",
+            "evidence": "TEMPO combines (i) an entropy-promoting regularizer on the critic's predictive distribution to mitigate overconfident extrapolation, and (ii) a score-based memory, inspired by prioritized replay, that prioritizes low-value (\"hard\") observations and applies importance sampling to focus limited computation on the most informative deployment conditions."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "四足机器人",
+          "人形机器人",
+          "足式运动",
+          "Sim-to-Real"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.20241",
+      "title": "Learning Navigation from Multimodal Demonstrations with Geometric Candidate Modes",
+      "abstract": "Offline navigation demonstrations are multimodal, because one observation often allows several valid actions, such as passing an obstacle on either side. Behavior cloning averages these actions, potentially leading to unsafe routes. Multimodal policies must discover the alternatives from the data, but similar states can lead to different routes whose current actions overlap. In navigation, the alternatives have a geometric cause and can be computed from one observation. We propose a hierarchical neural-network policy that computes candidate modes from local geometry and learns from demonstrations which mode to follow and how. A high-level policy selects a mode using the goal and its previous choice among a set of candidate modes, and a low-level policy turns it into an action. In simulation, the policy succeeds in over 95\\% of seen and unseen test cases, compared with at most 43\\% and 20\\% for four offline learning baselines and 79\\% and 67\\% for a heuristic that uses the same modes without learning. The simulation-trained policy also transfers to a LimX Tron 1 bipedal robot.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-15",
+      "date_label": "公告",
+      "age_days": 0.8776014327777778,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.5181,
+      "growth": null,
+      "score": 3.368,
+      "rule_tags": [
+        "导航",
+        "模仿学习"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对离线导航演示中行为克隆易导致路径不安全的多模态问题，本文提出了一种基于几何候选模式的分层神经网络导航策略。该方法利用局部几何信息计算候选模式，通过高层策略根据目标和历史选择选定模式，再由底层策略执行具体动作。作者声称该策略在模拟测试中表现优于多种离线学习基线及启发式算法，并在LimX Tron 1双足机器人上实现了Sim-to-Real迁移。",
+        "highlights": [
+          {
+            "text": "提出了一种基于几何原理计算候选模式的分层导航策略，有效解决离线导航中因行为克隆导致的路径不安全问题。",
+            "evidence": "In navigation, the alternatives have a geometric cause and can be computed from one observation. We propose a hierarchical neural-network policy that computes candidate modes from local geometry and learns from demonstrations which mode to follow and how."
+          },
+          {
+            "text": "该方法在模拟环境中展现出高成功率，显著优于基线对比算法，并成功在实体双足机器人上进行验证。",
+            "evidence": "In simulation, the policy succeeds in over 95\\% of seen and unseen test cases, compared with at most 43\\% and 20\\% for four offline learning baselines and 79\\% and 67\\% for a heuristic that uses the same modes without learning. The simulation-trained policy also transfers to a LimX Tron 1 bipedal robot."
+          }
+        ],
+        "tags": [
+          "离线强化学习",
+          "导航",
+          "Sim-to-Real",
+          "人形机器人"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.20255",
+      "title": "Safe Reinforcement Learning with Receding-Horizon Safety Critic and Differentiable Action Shields",
+      "abstract": "Despite the Markov assumption, safety failures in robot reinforcement learning rarely occur instantaneously; they typically emerge over several steps as the policy enters unfamiliar states under disturbances and domain shift. We address this limitation by learning a receding-horizon safety critic that predicts whether a state will remain non-terminating over the next receding horizon, enabling anticipatory detection of impending locomotion failures. The critic is trained from rollout-derived horizon labels with a composite objective that combines horizon classification, control-barrier-function-inspired temporal consistency, and smoothness regularization, and we aggregate an ensemble of critics with a conservative Conditional Value at Risk estimate to account for uncertainty. Building on the learned critic, we derive a closed-form, differentiable CBF-style safety filter that minimally modifies the policy action to improve predicted safety, and integrate it into PPO with an anticipation loss to reduce policy-filter mismatch during training. In simulated quadruped locomotion, our method improves robustness under action noise, external perturbations, and terrain shifts, reducing catastrophic failures while maintaining competitive returns.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-10-15",
+      "date_label": "公告",
+      "age_days": 0.8776014327777778,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.49641,
+      "growth": null,
+      "score": 3.227,
+      "rule_tags": [
+        "强化学习",
+        "PPO",
+        "四足机器人",
+        "足式运动"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对机器人强化学习中安全失效往往随时间演化的现象，作者提出了一种基于后退视界安全评价器的方法。该方法通过预测状态在未来视界内是否保持安全来识别潜在失效，并结合受控制障碍函数（CBF）启发的微分安全滤波器，对策略动作进行最小化调整。在四足机器人仿真实验中，该方法旨在通过提升 anticipatory 安全检测能力，增强系统在噪声、干扰及环境变化下的鲁棒性。",
+        "highlights": [
+          {
+            "text": "提出一种学习型的后退视界安全评价器，通过预测未来视界内的失效概率实现对运动失败的 anticipatory 检测。",
+            "evidence": "We address this limitation by learning a receding-horizon safety critic that predicts whether a state will remain non-terminating over the next receding horizon, enabling anticipatory detection of impending locomotion failures."
+          },
+          {
+            "text": "设计了一个闭式、可微分的CBF风格安全滤波器，并在PPO中引入anticipation loss以减小策略与滤波器之间的训练偏差。",
+            "evidence": "Building on the learned critic, we derive a closed-form, differentiable CBF-style safety filter that minimally modifies the policy action to improve predicted safety, and integrate it into PPO with an anticipation loss to reduce policy-filter mismatch during training."
+          },
+          {
+            "text": "仿真测试表明，该方法能够增强四足机器人在动作噪声、外部干扰和地形变化下的鲁棒性，有效降低灾难性失败。",
+            "evidence": "In simulated quadruped locomotion, our method improves robustness under action noise, external perturbations, and terrain shifts, reducing catastrophic failures while maintaining competitive returns."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "PPO",
+          "四足机器人",
+          "足式运动"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    }
+  ],
+  "candidate_count": 747,
+  "personalization_note": "已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。",
+  "html": "<h1>2026-10-16 每日新论文 5</h1>\n<p>机器人 · 强化学习 · 通用 AI</p>\n<p>生成时间：2026-10-16 09:03 CST。从 747 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>\n<p>本栏优先收录最近发布且未出现在近期日报的 arXiv 论文，不按热度排序；相关性分用于结合你的 Zotero 收藏偏好。</p>\n<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>\n<p>本次合格候选不足 10 篇，实际收录 5 篇。</p>\n<h2>1. PolyMorph: Learning Locomotion Policy for Cross-Embodiment Adaptation</h2>\n<p><strong>机器人 / 强化学习</strong> · 公告 2026-10-15 · 综合分 3.66</p>\n<p>Zotero 摘要相关性：0.563（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习 · 四足机器人 · 足式运动</p>\n<p><strong>中文概述：</strong>针对强化学习足式机器人控制策略难以适应不同形态的问题，本文提出了PolyMorph框架。该方法通过将机器人URDF转换为关节链路模块，结合循环编码器、图Transformer和逐关节解码器，实现单一策略在异构足式机器人间的通用。作者声称，该方法在无需针对特定机器人重训练的情况下，即可实现对多种形态和未见过的机器人平台的适应。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>PolyMorph通过形态条件编码架构，使单一运动策略能够适应不同数量的腿部及关节配置。<br><small>摘要依据：PolyMorph converts each robot&#x27;s URDF into joint-link modules and combines a recurrent encoder, graph-based Transformer, and per-joint decoder to generate actions across variable leg counts and joint configurations.</small></li>\n<li>该框架通过形态标准化奖励等训练优化手段，实现了跨形态的零样本泛化，并在真实四足机器人平台上得到验证。<br><small>摘要依据：The results show that a single PolyMorph policy generalizes across diverse robot morphologies without per-robot policy retraining.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · 足式运动 · Sim-to-Real</p>\n<p><strong>原文摘要节选：</strong>Reinforcement learning has enabled robust locomotion for legged robots, but learned policies are typically tied to a specific robot morphology and require additional engineering when the number of legs, actuators, or mechanical properties change. We present PolyMorph, a morphology-conditioned framework that learns a single locomotion policy for heterogeneous legged robots. PolyMorph converts each robot&#x27;s URDF into joint-link modules and combines a recurrent encoder, graph-based Transformer, and per-joint decoder to generate actions across variable leg counts and joint configurations. To improve training stability, PolyMorph uses morphology-normalized rewards, adaptive robot sampling, and URDF-derived PD-gain initialization. We evaluate PolyMorph in simulation across bipedal, tripedal, and…</p>\n<p><a href=\"https://arxiv.org/abs/2610.19615\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.19615\">PDF</a></p><hr>\n<h2>2. E2DRL: End-to-End Differentiable Reinforcement Learning for 3D Obstacle Avoidance in Quadruped Robots</h2>\n<p><strong>机器人 / 强化学习</strong> · 公告 2026-10-15 · 综合分 3.55</p>\n<p>Zotero 摘要相关性：0.546（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习 · PPO · 四足机器人 · 足式运动 · Sim-to-Real</p>\n<p><strong>中文概述：</strong>针对足式机器人视觉避障中传统可微强化学习梯度失效的问题，本文提出E2DRL框架。该方法引入软性可微障碍物交互机制，通过多关键点穿透惩罚和速度条件下的梯度整形提供训练信号。作者通过SAPO算法训练特权教师模型，并蒸馏至递归视觉学生模型，结合地形感知门控模块实现部署。仿真与实机实验表明，该方法在样本效率及3D避障性能上优于PPO及DCBF NMPC方案。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出一种软性可微障碍物交互方案，通过多体关键点的穿透惩罚及速度条件下的停止梯度整形，有效解决了复杂接触场景下的梯度退化问题。<br><small>摘要依据：We present E2DRL, which addresses this with a soft differentiable obstacle-interaction formulation: penetration penalties across multiple body keypoints with velocity-conditioned stop-gradient shaping to provide the first-order training signals for 3D obstacle avoidance.</small></li>\n<li>作者验证了该方法在Unitree Go2机器人上的Sim-to-Real部署，实现了端到端可微强化学习在静态及动态环境下的3D避障应用。<br><small>摘要依据：We present the first sim-to-real validation of end-to-end differentiable RL for 3D obstacle avoidance on a Unitree Go2 in static and dynamic environments.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · 四足机器人 · 足式运动 · Sim-to-Real</p>\n<p><strong>原文摘要节选：</strong>Differentiable reinforcement learning shows strong promise for robot policy learning, but its application to legged locomotion has remained limited to blind walking or simulated 2D tasks. Extending it to end-to-end visual obstacle avoidance is challenging because hard collision constraints and early termination upon contact corrupt first-order gradients, trapping optimizers in local minima. We present E2DRL, which addresses this with a soft differentiable obstacle-interaction formulation: penetration penalties across multiple body keypoints with velocity-conditioned stop-gradient shaping to provide the first-order training signals for 3D obstacle avoidance. To realize a deployable perception-control system, a privileged teacher trained via Soft Analytic Policy Optimization (SAPO) in a…</p>\n<p><a href=\"https://arxiv.org/abs/2610.19627\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.19627\">PDF</a></p><hr>\n<h2>3. Efficient Test-Time Adaptation For Robot Policies</h2>\n<p><strong>机器人</strong> · 公告 2026-10-15 · 综合分 3.50</p>\n<p>Zotero 摘要相关性：0.538（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>足式运动</p>\n<p><strong>中文概述：</strong>针对机器人策略在运行环境变动时易失效且难以实时重训练的问题，本研究提出了一种测试时自适应方法TEMPO。该方法在无需奖励信号的情况下，利用冻结的评论家网络作为性能替代指标，通过引入熵正则化及基于分数的记忆机制，在线优化执行策略。实验在多种机器人平台及模拟和真实环境中验证了该方法能有效提升策略在复杂环境下的适应性。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>TEMPO方法通过引入熵正则化和记忆导向策略优化，在严重环境偏移下稳定了基于评论家的在线更新过程。<br><small>摘要依据：Building on this, we introduce TEMPO, a test-time entropy-regularized, memory-guided policy optimization method that stabilizes critic-driven updates under severe shift.</small></li>\n<li>该方法通过优先处理高难度的观测数据并应用重要性采样，显著提升了设备端实时自适应的性能。<br><small>摘要依据：TEMPO combines (i) an entropy-promoting regularizer on the critic&#x27;s predictive distribution to mitigate overconfident extrapolation, and (ii) a score-based memory, inspired by prioritized replay, that prioritizes low-value (&quot;hard&quot;) observations and applies importance sampling to focus limited computation on the most informative deployment conditions.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · 四足机器人 · 人形机器人 · 足式运动 · Sim-to-Real</p>\n<p><strong>原文摘要节选：</strong>Reinforcement-learning policies for robot locomotion can fail at deployment when operating conditions shift (e.g., rough or slippery terrain, payload changes, sensing degradation), and retraining or manual recalibration is often infeasible under on-device latency and memory constraints. We study test-time adaptation (TTA) for robotic control: adapting a pretrained policy online and in a self-supervised manner during execution, without access to rewards. Our starting point is a lightweight baseline that updates only the actor using a frozen pretrained critic as a deployment-time performance surrogate. Building on this, we introduce TEMPO, a test-time entropy-regularized, memory-guided policy optimization method that stabilizes critic-driven updates under severe shift. TEMPO combines (i) an…</p>\n<p><a href=\"https://arxiv.org/abs/2610.20318\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.20318\">PDF</a></p><hr>\n<h2>4. Learning Navigation from Multimodal Demonstrations with Geometric Candidate Modes</h2>\n<p><strong>机器人</strong> · 公告 2026-10-15 · 综合分 3.37</p>\n<p>Zotero 摘要相关性：0.518（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>导航 · 模仿学习</p>\n<p><strong>中文概述：</strong>针对离线导航演示中行为克隆易导致路径不安全的多模态问题，本文提出了一种基于几何候选模式的分层神经网络导航策略。该方法利用局部几何信息计算候选模式，通过高层策略根据目标和历史选择选定模式，再由底层策略执行具体动作。作者声称该策略在模拟测试中表现优于多种离线学习基线及启发式算法，并在LimX Tron 1双足机器人上实现了Sim-to-Real迁移。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出了一种基于几何原理计算候选模式的分层导航策略，有效解决离线导航中因行为克隆导致的路径不安全问题。<br><small>摘要依据：In navigation, the alternatives have a geometric cause and can be computed from one observation. We propose a hierarchical neural-network policy that computes candidate modes from local geometry and learns from demonstrations which mode to follow and how.</small></li>\n<li>该方法在模拟环境中展现出高成功率，显著优于基线对比算法，并成功在实体双足机器人上进行验证。<br><small>摘要依据：In simulation, the policy succeeds in over 95\\% of seen and unseen test cases, compared with at most 43\\% and 20\\% for four offline learning baselines and 79\\% and 67\\% for a heuristic that uses the same modes without learning. The simulation-trained policy also transfers to a LimX Tron 1 bipedal robot.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>离线强化学习 · 导航 · Sim-to-Real · 人形机器人</p>\n<p><strong>原文摘要节选：</strong>Offline navigation demonstrations are multimodal, because one observation often allows several valid actions, such as passing an obstacle on either side. Behavior cloning averages these actions, potentially leading to unsafe routes. Multimodal policies must discover the alternatives from the data, but similar states can lead to different routes whose current actions overlap. In navigation, the alternatives have a geometric cause and can be computed from one observation. We propose a hierarchical neural-network policy that computes candidate modes from local geometry and learns from demonstrations which mode to follow and how. A high-level policy selects a mode using the goal and its previous choice among a set of candidate modes, and a low-level policy turns it into an action. In…</p>\n<p><a href=\"https://arxiv.org/abs/2610.20241\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.20241\">PDF</a></p><hr>\n<h2>5. Safe Reinforcement Learning with Receding-Horizon Safety Critic and Differentiable Action Shields</h2>\n<p><strong>机器人 / 强化学习</strong> · 公告 2026-10-15 · 综合分 3.23</p>\n<p>Zotero 摘要相关性：0.496（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习 · PPO · 四足机器人 · 足式运动</p>\n<p><strong>中文概述：</strong>针对机器人强化学习中安全失效往往随时间演化的现象，作者提出了一种基于后退视界安全评价器的方法。该方法通过预测状态在未来视界内是否保持安全来识别潜在失效，并结合受控制障碍函数（CBF）启发的微分安全滤波器，对策略动作进行最小化调整。在四足机器人仿真实验中，该方法旨在通过提升 anticipatory 安全检测能力，增强系统在噪声、干扰及环境变化下的鲁棒性。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出一种学习型的后退视界安全评价器，通过预测未来视界内的失效概率实现对运动失败的 anticipatory 检测。<br><small>摘要依据：We address this limitation by learning a receding-horizon safety critic that predicts whether a state will remain non-terminating over the next receding horizon, enabling anticipatory detection of impending locomotion failures.</small></li>\n<li>设计了一个闭式、可微分的CBF风格安全滤波器，并在PPO中引入anticipation loss以减小策略与滤波器之间的训练偏差。<br><small>摘要依据：Building on the learned critic, we derive a closed-form, differentiable CBF-style safety filter that minimally modifies the policy action to improve predicted safety, and integrate it into PPO with an anticipation loss to reduce policy-filter mismatch during training.</small></li>\n<li>仿真测试表明，该方法能够增强四足机器人在动作噪声、外部干扰和地形变化下的鲁棒性，有效降低灾难性失败。<br><small>摘要依据：In simulated quadruped locomotion, our method improves robustness under action noise, external perturbations, and terrain shifts, reducing catastrophic failures while maintaining competitive returns.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · PPO · 四足机器人 · 足式运动</p>\n<p><strong>原文摘要节选：</strong>Despite the Markov assumption, safety failures in robot reinforcement learning rarely occur instantaneously; they typically emerge over several steps as the policy enters unfamiliar states under disturbances and domain shift. We address this limitation by learning a receding-horizon safety critic that predicts whether a state will remain non-terminating over the next receding horizon, enabling anticipatory detection of impending locomotion failures. The critic is trained from rollout-derived horizon labels with a composite objective that combines horizon classification, control-barrier-function-inspired temporal consistency, and smoothness regularization, and we aggregate an ensemble of critics with a conservative Conditional Value at Risk estimate to account for uncertainty. Building on…</p>\n<p><a href=\"https://arxiv.org/abs/2610.20255\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.20255\">PDF</a></p><hr>"
+}

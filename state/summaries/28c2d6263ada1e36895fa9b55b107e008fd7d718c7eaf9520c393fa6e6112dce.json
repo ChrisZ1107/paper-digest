@@ -1,0 +1,17 @@
+{
+  "overview": "本文探讨了机器人智能领域从底层动作预测向目标导向型智能体系统的范式转变。作者界定了“智能体机器人”的概念，即具备推理指令、交互环境、自主纠错和动态策略调整能力的系统。通过梳理模型、数据、环境与支撑平台四个功能领域，文章总结了现有研究现状，探讨了智能体如何优化决策与学习过程，并分析了该领域面临的挑战及未来发展方向。",
+  "highlights": [
+    {
+      "text": "作者构建了“智能体机器人”的统一分类框架，将相关研究系统性地划分为模型、数据、环境与支撑平台四大功能域下的十七个类别。",
+      "evidence": "We then clarify the definition and scope of agentic robots and organize existing research into seventeen categories across four functional domains: Model, Data, Environment, and Harness."
+    },
+    {
+      "text": "文章回顾了机器人领域从单纯的策略学习向集成视觉-语言-动作模型、世界模型等能力的智能体系统的演进过程。",
+      "evidence": "We first trace the development from robot policies to agentic systems, covering vision-language-action models, world models, and world-action models."
+    }
+  ],
+  "tags": [
+    "视觉语言动作",
+    "世界模型"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "overview": "针对视觉语言导航中高质量指令标注成本高及数据更新滞后的问题，本文提出了一种名为RSI-Nav的以数据为中心的递归自改进框架。该方法通过策略同步的语言-动作双重引导，在统一模型内实现指令跟随与指令生成。通过分片处理无标注轨迹并实时迭代模型，确保生成的监督信息与当前策略同步，提升了导航的成功率及空间理解能力。",
+  "highlights": [
+    {
+      "text": "RSI-Nav框架将指令跟随与指令生成任务统一在共享模型中，通过分片处理无标注轨迹并实时更新，解决了传统方法中监督滞后于策略演进的问题。",
+      "evidence": "This shard-wise update keeps newly generated supervision aligned with the evolving policy."
+    },
+    {
+      "text": "实验结果表明，RSI-Nav框架在R2R-CE数据集上达到了68.6%的成功率（SR），在RxR-CE数据集上达到了72.4%的成功率。",
+      "evidence": "Extensive experiments show that RSI-Nav reaches 68.6% SR on R2R-CE and 72.4% SR on RxR-CE, while providing stronger instruction-generation utility and modestly improved spatial understanding after recursive evolution."
+    }
+  ],
+  "tags": [
+    "导航",
+    "视觉语言动作"
+  ]
+}

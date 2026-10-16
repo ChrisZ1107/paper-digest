@@ -1,0 +1,17 @@
+{
+  "overview": "本文针对智能体强化学习中的自我蒸馏方法进行了系统性评估。作者指出，现有研究存在基线复用不当、缺乏直接对比以及忽视训练稳定性和计算成本等问题。通过在ALFWorld、ScienceWorld等任务上对比十种代表性方法与GRPO，作者发现现有方法在性能提升方面有限，且常伴随训练不稳定和成本效益不足的问题，旨在为未来的公平对比提供基准参考。",
+  "highlights": [
+    {
+      "text": "研究发现自我蒸馏方法相比GRPO的性能提升范围有限，且没有哪种方法能在所有评估设置中表现持续优于GRPO。",
+      "evidence": "First, gains over GRPO remain limited in scope, with no method consistently outperforming it across settings."
+    },
+    {
+      "text": "实验证明高性能表现可能掩盖训练过程的不稳定性，且额外的计算成本投入并不总是能转化为更好的模型效果。",
+      "evidence": "Second, strong final performance can mask unstable training. Third, additional training cost does not consistently translate into better performance."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "推理"
+  ]
+}

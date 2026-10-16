@@ -1,0 +1,18 @@
+{
+  "overview": "本文提出了Player-1框架，旨在提升计算机控制智能体在游戏中的表现。针对现有模型依赖演示数据覆盖不足的问题，作者通过构建包含16个合成环境的Player-1-Gym进行强化学习，并扩展了包含相对指针移动和复合动作的动作空间。实验表明，该方法在MineDojo、ViZDoom等任务中显著提升了成功率，证明了利用合成经验进行后训练能有效改善游戏的泛化控制能力。",
+  "highlights": [
+    {
+      "text": "通过引入Player-1-Gym合成环境与PPO算法，显著提升了游戏任务的成功率。",
+      "evidence": "The resulting Player-1-9B and Player-1-35B-A3B improve MineDojo-300 success over their SFT policies by 27.8 and 17.7 percentage points, respectively."
+    },
+    {
+      "text": "扩展了计算机操作的动作空间，包括相对指针移动和复合输入，以适应游戏复杂控制需求。",
+      "evidence": "We extend the computer-use action space with relative pointer motion, sustained inputs, and composite actions."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "PPO",
+    "大模型后训练"
+  ]
+}

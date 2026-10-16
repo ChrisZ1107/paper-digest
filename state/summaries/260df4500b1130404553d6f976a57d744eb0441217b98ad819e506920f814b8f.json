@@ -1,0 +1,20 @@
+{
+  "overview": "针对机器人策略在运行环境变动时易失效且难以实时重训练的问题，本研究提出了一种测试时自适应方法TEMPO。该方法在无需奖励信号的情况下，利用冻结的评论家网络作为性能替代指标，通过引入熵正则化及基于分数的记忆机制，在线优化执行策略。实验在多种机器人平台及模拟和真实环境中验证了该方法能有效提升策略在复杂环境下的适应性。",
+  "highlights": [
+    {
+      "text": "TEMPO方法通过引入熵正则化和记忆导向策略优化，在严重环境偏移下稳定了基于评论家的在线更新过程。",
+      "evidence": "Building on this, we introduce TEMPO, a test-time entropy-regularized, memory-guided policy optimization method that stabilizes critic-driven updates under severe shift."
+    },
+    {
+      "text": "该方法通过优先处理高难度的观测数据并应用重要性采样，显著提升了设备端实时自适应的性能。",
+      "evidence": "TEMPO combines (i) an entropy-promoting regularizer on the critic's predictive distribution to mitigate overconfident extrapolation, and (ii) a score-based memory, inspired by prioritized replay, that prioritizes low-value (\"hard\") observations and applies importance sampling to focus limited computation on the most informative deployment conditions."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "四足机器人",
+    "人形机器人",
+    "足式运动",
+    "Sim-to-Real"
+  ]
+}

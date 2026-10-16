@@ -1,0 +1,19 @@
+{
+  "overview": "针对离线导航演示中行为克隆易导致路径不安全的多模态问题，本文提出了一种基于几何候选模式的分层神经网络导航策略。该方法利用局部几何信息计算候选模式，通过高层策略根据目标和历史选择选定模式，再由底层策略执行具体动作。作者声称该策略在模拟测试中表现优于多种离线学习基线及启发式算法，并在LimX Tron 1双足机器人上实现了Sim-to-Real迁移。",
+  "highlights": [
+    {
+      "text": "提出了一种基于几何原理计算候选模式的分层导航策略，有效解决离线导航中因行为克隆导致的路径不安全问题。",
+      "evidence": "In navigation, the alternatives have a geometric cause and can be computed from one observation. We propose a hierarchical neural-network policy that computes candidate modes from local geometry and learns from demonstrations which mode to follow and how."
+    },
+    {
+      "text": "该方法在模拟环境中展现出高成功率，显著优于基线对比算法，并成功在实体双足机器人上进行验证。",
+      "evidence": "In simulation, the policy succeeds in over 95\\% of seen and unseen test cases, compared with at most 43\\% and 20\\% for four offline learning baselines and 79\\% and 67\\% for a heuristic that uses the same modes without learning. The simulation-trained policy also transfers to a LimX Tron 1 bipedal robot."
+    }
+  ],
+  "tags": [
+    "离线强化学习",
+    "导航",
+    "Sim-to-Real",
+    "人形机器人"
+  ]
+}

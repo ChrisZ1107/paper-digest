@@ -1,0 +1,18 @@
+{
+  "overview": "针对强化学习足式机器人控制策略难以适应不同形态的问题，本文提出了PolyMorph框架。该方法通过将机器人URDF转换为关节链路模块，结合循环编码器、图Transformer和逐关节解码器，实现单一策略在异构足式机器人间的通用。作者声称，该方法在无需针对特定机器人重训练的情况下，即可实现对多种形态和未见过的机器人平台的适应。",
+  "highlights": [
+    {
+      "text": "PolyMorph通过形态条件编码架构，使单一运动策略能够适应不同数量的腿部及关节配置。",
+      "evidence": "PolyMorph converts each robot's URDF into joint-link modules and combines a recurrent encoder, graph-based Transformer, and per-joint decoder to generate actions across variable leg counts and joint configurations."
+    },
+    {
+      "text": "该框架通过形态标准化奖励等训练优化手段，实现了跨形态的零样本泛化，并在真实四足机器人平台上得到验证。",
+      "evidence": "The results show that a single PolyMorph policy generalizes across diverse robot morphologies without per-robot policy retraining."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "足式运动",
+    "Sim-to-Real"
+  ]
+}

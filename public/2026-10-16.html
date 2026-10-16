@@ -1,0 +1,138 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>2026-10-16 热门论文 Top 10｜机器人·强化学习·AI</title><body><h1>2026-10-16 热门论文 Top 10</h1>
+<p>机器人 · 强化学习 · 通用 AI</p>
+<p>生成时间：2026-10-16 09:03 CST。从 747 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>
+<p>候选来源：<a href="https://huggingface.co/papers">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>
+<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>
+<h2>1. Player-1: Learning to Play from Synthetic Experience</h2>
+<p><strong>强化学习</strong> · 发表 2026-10-14 · 综合分 5.72</p>
+<p>Zotero 摘要相关性：0.512（相似度分数，不是概率）。</p>
+<p>HF 点赞 272 · 讨论 1 · 本次 HF 热榜第 6 位 · 仓库累计 Star 75（仓库可能包含多篇论文）</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>强化学习 · PPO · 大模型后训练 · 推理</p>
+<p><strong>中文概述：</strong>本文提出了Player-1框架，旨在提升计算机控制智能体在游戏中的表现。针对现有模型依赖演示数据覆盖不足的问题，作者通过构建包含16个合成环境的Player-1-Gym进行强化学习，并扩展了包含相对指针移动和复合动作的动作空间。实验表明，该方法在MineDojo、ViZDoom等任务中显著提升了成功率，证明了利用合成经验进行后训练能有效改善游戏的泛化控制能力。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>通过引入Player-1-Gym合成环境与PPO算法，显著提升了游戏任务的成功率。<br><small>摘要依据：The resulting Player-1-9B and Player-1-35B-A3B improve MineDojo-300 success over their SFT policies by 27.8 and 17.7 percentage points, respectively.</small></li>
+<li>扩展了计算机操作的动作空间，包括相对指针移动和复合输入，以适应游戏复杂控制需求。<br><small>摘要依据：We extend the computer-use action space with relative pointer motion, sustained inputs, and composite actions.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习 · PPO · 大模型后训练</p>
+<p><strong>原文摘要节选：</strong>Computer-use agents have demonstrated strong capabilities in interpreting screens and executing keyboard and mouse actions. However, games, with their visually rich worlds and diverse mechanics, remain challenging and offer a demanding next step toward general digital control. Current game-agent learning pipelines often rely on large-scale demonstrations with limited coverage of dynamic game states, while scalable environments for interactive training remain difficult to obtain. We introduce Player-1, a post-training framework for learning game control beyond demonstrations through synthetic experience. We extend the computer-use action space with relative pointer motion, sustained inputs, and composite actions. For supervised initialization, we fine-tune computer-use models on 6,044…</p>
+<p><a href="https://arxiv.org/abs/2610.20584">论文原文</a> · <a href="https://arxiv.org/pdf/2610.20584">PDF</a> · <a href="https://huggingface.co/papers/2610.20584">讨论与热度</a> · <a href="https://github.com/TencentARC/Player-1">代码</a></p><hr>
+<h2>2. GroundingPI: A Grounding Foundation Model towards Physical Intelligence with Visual Primitives</h2>
+<p><strong>机器人 / 强化学习</strong> · 发表 2026-09-30 · 综合分 5.68</p>
+<p>Zotero 摘要相关性：0.488（相似度分数，不是概率）。</p>
+<p>HF 点赞 315 · 讨论 2 · 本次 HF 热榜第 59 位 · 仓库累计 Star 93（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +48 · 讨论 +0 · Star +23。</p>
+<p><strong>规则标签：</strong>强化学习 · 机器人操作 · 视觉语言动作 · 大模型后训练</p>
+<p><strong>中文概述：</strong>针对现有视觉语言动作模型在复杂及细小物体定位任务中的性能不足，作者提出了GroundingPI，这是一个4B参数规模的定位基础模型。该模型通过将点和框生成为共享词表中的量化坐标，结合多模态空间预训练、监督微调及基于GRPO的强化学习进行训练。实验表明，GroundingPI在多项定位基准上优于现有模型，并在机器人操作和自动驾驶任务中表现出显著的感知提升作用。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>GroundingPI在34个定位基准测试中表现卓越，平均得分达到73.68%，超过了参数量更大的GPT-6 Astra。<br><small>摘要依据：Against 44 baselines across 34 grounding benchmarks spanning 11 perceptual capabilities, GroundingPI establishes a new state of the art, averaging 73.68%, above the larger GPT-6 Astra (71.54%).</small></li>
+<li>作为视觉主干网络，GroundingPI在机器人操作任务中显示出更强的数据效率，仅需50%的演示数据即可超越使用75%数据训练的基线模型。<br><small>摘要依据：On RoboCasa-GR1, GroundingPI trained with 50% of the demonstrations outperforms those baselines trained with 75%.</small></li>
+<li>在自动驾驶场景中，该模型作为视觉主干网络应用时，在nuScenes数据集上实现了平均0.296米的开环L2误差。<br><small>摘要依据：On nuScenes, used as the visual backbone, GroundingPI attains an average open-loop L2 error of 0.296 m.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 导航 · 推理</p>
+<p><strong>原文摘要节选：</strong>Precise grounding matters. It specifies which object is the target and where that object is, even in clutter and for tiny objects, and it has to be fast enough for closed-loop control. Yet vision-language-action (VLA) and world-action models (WAMs) take perception from general-purpose vision-language and video-generation backbones, which still fail in these settings. We introduce GroundingPI, a 4B grounding foundation model that generates points and boxes as quantized coordinates in a shared vocabulary. Training combines multimodal and spatial pretraining, supervised fine-tuning, and reinforcement learning with GRPO, using supervision from public datasets and dedicated data engines. Against 44 baselines across 34 grounding benchmarks spanning 11 perceptual capabilities, GroundingPI…</p>
+<p><a href="https://arxiv.org/abs/2609.39601">论文原文</a> · <a href="https://arxiv.org/pdf/2609.39601">PDF</a> · <a href="https://huggingface.co/papers/2609.39601">讨论与热度</a> · <a href="https://github.com/groundingpi/GroundingPI">代码</a></p><hr>
+<h2>3. Urbex: Agentic Spatial Grounding for City-Scale 3D Scenes</h2>
+<p><strong>强化学习</strong> · 发表 2026-10-13 · 综合分 5.64</p>
+<p>Zotero 摘要相关性：0.458（相似度分数，不是概率）。</p>
+<p>HF 点赞 116 · 讨论 1 · 本次 HF 热榜第 7 位 · 仓库累计 Star 92（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +6 · 讨论 +0 · Star +13。</p>
+<p><strong>规则标签：</strong>强化学习</p>
+<p><strong>中文概述：</strong>城市尺度3D定位通常依赖预计算候选框，导致在大场景下效率低下。为此，作者提出了Urbex，一种将3D定位转化为主动空间搜索的视觉语言代理框架。该框架将城市级场景建模为交互式多视图环境，使视觉语言模型代理能够通过查询地标、缩放局部和渲染斜视图来进行定位。作者利用强化学习优化了该代理的工具使用策略。实验表明，Urbex在CityRefer数据集上实现了最优的定位性能，并表现出更快的推理速度与跨场景稳健性。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>Urbex通过主动空间搜索取代传统的候选框排序，实现了无需候选框的城市级3D定位。<br><small>摘要依据：We propose Urbex, an agentic vision-language framework that instead casts grounding as active spatial search.</small></li>
+<li>在CityRefer数据集上，Urbex在定位精度与效率上均优于现有的城市尺度排序基线模型。<br><small>摘要依据：Experiments show that Urbex achieves the best Hit@1 and IoU on CityRefer, supports candidate-free grounding without ground-truth boxes, and is substantially faster than the strongest city-scale ranking baseline.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>视觉语言动作 · 强化学习 · 导航</p>
+<p><strong>原文摘要节选：</strong>City-scale 3D grounding is commonly formulated as candidate ranking, which requires precomputed instance proposals and becomes inefficient in large outdoor scenes. We propose Urbex, an agentic vision-language framework that instead casts grounding as active spatial search. Urbex represents a city-scale 3D scene as an interactive multi-view environment, allowing a VLM agent to query landmarks, zoom into local regions, render oblique views, and commit a grounded bounding box. We optimize this tool-use policy with reinforcement learning on CityRefer, using smooth localization rewards and lightweight shaping rewards for efficient exploration. Experiments show that Urbex achieves the best Hit@1 and IoU on CityRefer, supports candidate-free grounding without ground-truth boxes, and is…</p>
+<p><a href="https://arxiv.org/abs/2610.18356">论文原文</a> · <a href="https://arxiv.org/pdf/2610.18356">PDF</a> · <a href="https://huggingface.co/papers/2610.18356">讨论与热度</a> · <a href="https://github.com/AMAP-ML/Urbex">代码</a></p><hr>
+<h2>4. WAVE-0: Bridging VLA Policies and WAMs with Lightweight Latent Future Prediction</h2>
+<p><strong>机器人</strong> · 发表 2026-10-13 · 综合分 5.32</p>
+<p>Zotero 摘要相关性：0.456（相似度分数，不是概率）。</p>
+<p>HF 点赞 24 · 讨论 1 · 本次 HF 热榜第 96 位 · 仓库累计 Star 21（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +2 · 讨论 +0 · Star +7。</p>
+<p><strong>规则标签：</strong>机器人操作 · 世界模型 · 视觉语言动作</p>
+<p><strong>中文概述：</strong>针对视觉语言动作（VLA）模型缺乏环境后果建模的问题，本文提出了WAVE-0框架。该方法通过轻量级潜空间世界模型将VLA与世界动作模型（WAM）相结合，利用反事实排序目标在真实机器人动作数据上训练，将预训练VLA的语义理解与显式未来预测统一。作者声称该方法无需像素重构或大规模视频预训练，在多项仿真任务及真实世界操作中均表现出较高的成功率，有效增强了操作性能和泛化能力。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>WAVE-0框架通过2.57亿参数的轻量级潜空间世界模型，实现了潜空间规划、未来预测与动作生成的统一，避免了高昂的视频生成成本。<br><small>摘要依据：Built on a pretrained VLA, its 257M world model translates VLM-generated latent action plans into predicted future representations that condition the action expert, unifying latent planning, future prediction, and action generation.</small></li>
+<li>该模型通过反事实排序目标直接基于真实机器人动作进行训练，无需像素重构或大规模视频预训练。<br><small>摘要依据：The world model is trained directly on ground-truth robot actions with a counterfactual ranking objective, requiring neither pixel reconstruction nor large-scale video pretraining.</small></li>
+<li>实验结果表明，WAVE-0在多项仿真基准测试中表现出色，并在真实世界任务中显著提升了原始策略的成功率。<br><small>摘要依据：WAVE-0 achieves success rates of 91.47% on RoboTwin 2.0 and 98.7% on LIBERO, along with 88.0%, 61.4%, and 75.0% on LIBERO-Plus, LIBERO-Pro, and LIBERO-Para, respectively. On real-world tasks, it improves the success rate of π_{0.5} from 38.3% to 73.3%.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 世界模型 · 视觉语言动作</p>
+<p><strong>原文摘要节选：</strong>Vision-language-action (VLA) policies excel at generalist robotic manipulation but generate actions without explicitly modeling their environmental consequences. World action models (WAMs) incorporate future prediction, yet most rely on costly video generation, while latent alternatives either use predicted futures only as auxiliary targets or infer latent actions from suboptimal visual transitions through costly large-scale video pretraining. We introduce WAVE-0 (World-model-Augmented VLA Execution), a framework that bridges VLAs and WAMs through a lightweight latent world model. By connecting the semantic understanding of pretrained VLAs with explicit future prediction, WAVE-0 allows anticipated action consequences to directly guide action generation. Built on a pretrained VLA, its 257M…</p>
+<p><a href="https://arxiv.org/abs/2610.18568">论文原文</a> · <a href="https://arxiv.org/pdf/2610.18568">PDF</a> · <a href="https://huggingface.co/papers/2610.18568">讨论与热度</a> · <a href="https://github.com/AutoLab-SAI-SJTU/WAVE-0">代码</a></p><hr>
+<h2>5. Towards Agentic Robots: Model, Data, Environment, and Harness</h2>
+<p><strong>机器人</strong> · 发表 2026-10-14 · 综合分 5.26</p>
+<p>Zotero 摘要相关性：0.494（相似度分数，不是概率）。</p>
+<p>HF 点赞 29 · 讨论 1 · 本次 HF 热榜第 13 位 · 仓库累计 Star 66（仓库可能包含多篇论文）</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>世界模型 · 视觉语言动作</p>
+<p><strong>中文概述：</strong>本文探讨了机器人智能领域从底层动作预测向目标导向型智能体系统的范式转变。作者界定了“智能体机器人”的概念，即具备推理指令、交互环境、自主纠错和动态策略调整能力的系统。通过梳理模型、数据、环境与支撑平台四个功能领域，文章总结了现有研究现状，探讨了智能体如何优化决策与学习过程，并分析了该领域面临的挑战及未来发展方向。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>作者构建了“智能体机器人”的统一分类框架，将相关研究系统性地划分为模型、数据、环境与支撑平台四大功能域下的十七个类别。<br><small>摘要依据：We then clarify the definition and scope of agentic robots and organize existing research into seventeen categories across four functional domains: Model, Data, Environment, and Harness.</small></li>
+<li>文章回顾了机器人领域从单纯的策略学习向集成视觉-语言-动作模型、世界模型等能力的智能体系统的演进过程。<br><small>摘要依据：We first trace the development from robot policies to agentic systems, covering vision-language-action models, world models, and world-action models.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>视觉语言动作 · 世界模型</p>
+<p><strong>原文摘要节选：</strong>Foundation models are driving a paradigm shift in robotic intelligence, moving beyond low-level action prediction to goal-directed orchestration of data collection, model training, task planning, and real-world execution. We characterize this emerging paradigm as an agentic robots, in which agents reason over human instructions, interact with robotic environments, rectify execution errors autonomously, and dynamically adjust operational strategies. Although this field develops fast, current studies are not well connected. Researchers have no consistent view of how to combine different agentic functions into a complete robot system. This paper provides a unified overview of existing research on agentic robots. We first trace the development from robot policies to agentic systems, covering…</p>
+<p><a href="https://arxiv.org/abs/2610.20442">论文原文</a> · <a href="https://arxiv.org/pdf/2610.20442">PDF</a> · <a href="https://huggingface.co/papers/2610.20442">讨论与热度</a> · <a href="https://github.com/chonghanqin/Awesome-Agentic-Robots">代码</a></p><hr>
+<h2>6. SuperNav: An Agentic Navigation System for Any Task in Any Scene</h2>
+<p><strong>机器人</strong> · 发表 2026-10-08 · 综合分 5.21</p>
+<p>Zotero 摘要相关性：0.464（相似度分数，不是概率）。</p>
+<p>HF 点赞 86 · 讨论 2 · 本次 HF 热榜第 73 位 · 仓库累计 Star 171（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +0 · Star +4。</p>
+<p><strong>规则标签：</strong>四足机器人 · 导航</p>
+<p><strong>中文概述：</strong>针对通用服务机器人难以处理多样化任务与陌生环境的问题，本文提出了SuperNav导航系统。该方法摒弃了针对导航任务微调多模态大模型（MLLM）的范式，转而构建一个代理控制组件（agent harness），使模型专注于语义理解与决策，并通过专门的导航工具与视觉点接口实现动作执行。实验表明，该系统在多种导航任务中表现优于现有基准，并在四足机器人实机上验证了其环境适应性。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>SuperNav通过构建专门的代理控制组件，在无需对多模态大模型进行导航任务微调的前提下，实现了对复杂任务的导航与控制。<br><small>摘要依据：To realize this idea, we introduce SuperNav, which equips a pretrained MLLM with a specialized agent harness without navigation-specific fine-tuning of the MLLM.</small></li>
+<li>通过统一的视觉点接口，模型可以直接在图像中指定目的地，并根据执行反馈动态调整决策，从而支持持续的导航任务。<br><small>摘要依据：A unified visual-point interface connects decision-making to motion by allowing the model to specify destinations directly in images and revise its decisions from execution feedback.</small></li>
+<li>实证结果显示，SuperNav在实例级、多目标及需求驱动任务中的表现优于现有的四种基准方法，并具备在四足机器人上的部署能力。<br><small>摘要依据：SuperNav outperforms four evaluated baselines on instance-level, multi-object, and demand-driven tasks. Category-level evaluation on HM3D and deployment on a real quadruped robot further demonstrate its applicability across environments.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>导航 · 四足机器人 · Sim-to-Real</p>
+<p><strong>原文摘要节选：</strong>General-purpose service robots need navigation systems that can handle diverse human requests in unfamiliar environments, combining task generality with scene generality. Some existing methods fine-tune multimodal large language models (MLLMs) to predict navigation actions, making their behavior dependent on the coverage of navigation training data and potentially limiting generalization to new requests and environments. Our key insight is to let the MLLM focus on interpreting requests, understanding scenes, and making decisions while preserving its general-purpose capabilities and delegating motion execution to navigation tools. To realize this idea, we introduce SuperNav, which equips a pretrained MLLM with a specialized agent harness without navigation-specific fine-tuning of the MLLM.…</p>
+<p><a href="https://arxiv.org/abs/2610.12126">论文原文</a> · <a href="https://arxiv.org/pdf/2610.12126">PDF</a> · <a href="https://huggingface.co/papers/2610.12126">讨论与热度</a> · <a href="https://github.com/zju3dv/SuperNav">代码</a></p><hr>
+<h2>7. More Methods, Better Agents? A Reality Check on Self-Distillation in Agentic Reinforcement Learning</h2>
+<p><strong>强化学习</strong> · 发表 2026-10-14 · 综合分 5.12</p>
+<p>Zotero 摘要相关性：0.449（相似度分数，不是概率）。</p>
+<p>HF 点赞 72 · 讨论 2 · 本次 HF 热榜第 21 位 · 仓库累计 Star 32（仓库可能包含多篇论文）</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>强化学习 · 大模型后训练</p>
+<p><strong>中文概述：</strong>本文针对智能体强化学习中的自我蒸馏方法进行了系统性评估。作者指出，现有研究存在基线复用不当、缺乏直接对比以及忽视训练稳定性和计算成本等问题。通过在ALFWorld、ScienceWorld等任务上对比十种代表性方法与GRPO，作者发现现有方法在性能提升方面有限，且常伴随训练不稳定和成本效益不足的问题，旨在为未来的公平对比提供基准参考。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>研究发现自我蒸馏方法相比GRPO的性能提升范围有限，且没有哪种方法能在所有评估设置中表现持续优于GRPO。<br><small>摘要依据：First, gains over GRPO remain limited in scope, with no method consistently outperforming it across settings.</small></li>
+<li>实验证明高性能表现可能掩盖训练过程的不稳定性，且额外的计算成本投入并不总是能转化为更好的模型效果。<br><small>摘要依据：Second, strong final performance can mask unstable training. Third, additional training cost does not consistently translate into better performance.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习 · 推理</p>
+<p><strong>原文摘要节选：</strong>Self-distillation in agentic reinforcement learning has produced a growing number of methods. However, existing evaluations often reuse published baseline scores under differing experimental conditions, provide few direct comparisons among contemporaneous methods, and give limited attention to training stability and computational cost. These limitations obscure the source of reported gains and the practical strengths and weaknesses of competing methods. Costly agent training further motivates a common basis for comparison. To address these gaps, we compare ten representative methods against GRPO on ALFWorld, ScienceWorld, Search-QA, and WebShop across three model sizes. Our study comprises 132 training runs totaling 12,124.4 recorded H800 GPU-hours, with repeated evaluations over eight…</p>
+<p><a href="https://arxiv.org/abs/2610.19789">论文原文</a> · <a href="https://arxiv.org/pdf/2610.19789">PDF</a> · <a href="https://huggingface.co/papers/2610.19789">讨论与热度</a> · <a href="https://github.com/aim-uofa/Self-Distillation-AgentRL">代码</a></p><hr>
+<h2>8. Data-Centric Recursive Self-Improvement for Navigation via Policy-Synchronized Language-Action Dual Bootstrapping</h2>
+<p><strong>通用 AI</strong> · 发表 2026-10-11 · 综合分 5.05</p>
+<p>Zotero 摘要相关性：0.426（相似度分数，不是概率）。</p>
+<p>HF 点赞 26 · 讨论 2 · 本次 HF 热榜第 50 位 · 仓库累计 Star 27（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +1 · Star +5。</p>
+<p><strong>规则标签：</strong>导航 · 推理</p>
+<p><strong>中文概述：</strong>针对视觉语言导航中高质量指令标注成本高及数据更新滞后的问题，本文提出了一种名为RSI-Nav的以数据为中心的递归自改进框架。该方法通过策略同步的语言-动作双重引导，在统一模型内实现指令跟随与指令生成。通过分片处理无标注轨迹并实时迭代模型，确保生成的监督信息与当前策略同步，提升了导航的成功率及空间理解能力。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>RSI-Nav框架将指令跟随与指令生成任务统一在共享模型中，通过分片处理无标注轨迹并实时更新，解决了传统方法中监督滞后于策略演进的问题。<br><small>摘要依据：This shard-wise update keeps newly generated supervision aligned with the evolving policy.</small></li>
+<li>实验结果表明，RSI-Nav框架在R2R-CE数据集上达到了68.6%的成功率（SR），在RxR-CE数据集上达到了72.4%的成功率。<br><small>摘要依据：Extensive experiments show that RSI-Nav reaches 68.6% SR on R2R-CE and 72.4% SR on RxR-CE, while providing stronger instruction-generation utility and modestly improved spatial understanding after recursive evolution.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>导航 · 视觉语言动作</p>
+<p><strong>原文摘要节选：</strong>Vision-language navigation requires agents to follow natural-language instructions to reach target locations, making high-quality language supervision essential. Since human annotation is costly, prior work has explored scalable data synthesis methods. However, existing methods typically either use separate models for navigation and instruction generation or couple the two tasks through task-specific components; most also annotate the full trajectory corpus with a fixed model before updating, which can cause generated supervision to lag behind the evolving policy. Therefore, we introduce RSI-Nav, a data-centric recursive self-improvement framework for navigation via policy-synchronized language-action dual bootstrapping, which unifies vision-language-to-action instruction following and…</p>
+<p><a href="https://arxiv.org/abs/2610.15782">论文原文</a> · <a href="https://arxiv.org/pdf/2610.15782">PDF</a> · <a href="https://huggingface.co/papers/2610.15782">讨论与热度</a> · <a href="https://github.com/OpenGVLab/RSI-Nav">代码</a></p><hr>
+<h2>9. RAR: Rate-Adaptive Rollout for Time-Consistent Interactive World Models</h2>
+<p><strong>通用 AI</strong> · 发表 2026-10-12 · 综合分 5.02</p>
+<p>Zotero 摘要相关性：0.394（相似度分数，不是概率）。</p>
+<p>HF 点赞 13 · 讨论 1 · 仓库累计 Star 11（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +13 · 讨论 +1。</p>
+<p><strong>规则标签：</strong>世界模型</p>
+<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>
+<p><strong>原文摘要节选：</strong>Video-based interactive world models aim to enable real-time, user-controllable environments. Yet most existing systems are trained and rolled out at a fixed temporal rate, limiting both runtime-rate adaptation and physical-horizon coverage -- a limitation we term temporal-rate coupling. Specifically, when runtime generation throughput differs from the learned temporal rate, the generated world evolves unintentionally more slowly or quickly. Moreover, using a single temporal rate imposes an inherent trade-off between temporal granularity and physical horizon: higher rates capture finer motion but cover a shorter duration under a fixed context window. To address both limitations, we introduce Rate-Adaptive Rollout (RAR), a framework that enables interactive world models to roll out at…</p>
+<p><a href="https://arxiv.org/abs/2610.16302">论文原文</a> · <a href="https://arxiv.org/pdf/2610.16302">PDF</a> · <a href="https://huggingface.co/papers/2610.16302">讨论与热度</a> · <a href="https://github.com/HKUST-LongGroup/RAR">代码</a></p><hr>
+<h2>10. Acting Through Registers</h2>
+<p><strong>机器人</strong> · 发表 2026-10-13 · 综合分 4.86</p>
+<p>Zotero 摘要相关性：0.387（相似度分数，不是概率）。</p>
+<p>HF 点赞 7 · 讨论 1 · 仓库累计 Star 7（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +7 · 讨论 +1。</p>
+<p><strong>规则标签：</strong>世界模型</p>
+<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>
+<p><strong>原文摘要节选：</strong>World Action Models (WAMs) use generative visual representations to condition robot actions, yet how these representations organize action-relevant information remains poorly understood. We identify persistent high-norm spatial outliers in WAM representations and find that their action relevance persists even after normalization and K/V projection attenuate their extreme magnitude. Motivated by this observation, we introduce RegisterWAM, which adds learnable non-spatial registers to the world model and uses them directly for action conditioning. Registers alone do not fully eliminate spatial outliers; pairing them with observation flow-matching (FM) loss supervision suppresses spatial outliers while concentrating high-norm responses in registers. Beyond this reorganization, observation FM…</p>
+<p><a href="https://arxiv.org/abs/2610.17638">论文原文</a> · <a href="https://arxiv.org/pdf/2610.17638">PDF</a> · <a href="https://huggingface.co/papers/2610.17638">讨论与热度</a> · <a href="https://github.com/Z1zyw/RegisterWAM">代码</a></p><hr></body></html>

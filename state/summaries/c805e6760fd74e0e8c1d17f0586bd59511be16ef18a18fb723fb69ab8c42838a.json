@@ -1,0 +1,23 @@
+{
+  "overview": "针对机器人强化学习中安全失效往往随时间演化的现象，作者提出了一种基于后退视界安全评价器的方法。该方法通过预测状态在未来视界内是否保持安全来识别潜在失效，并结合受控制障碍函数（CBF）启发的微分安全滤波器，对策略动作进行最小化调整。在四足机器人仿真实验中，该方法旨在通过提升 anticipatory 安全检测能力，增强系统在噪声、干扰及环境变化下的鲁棒性。",
+  "highlights": [
+    {
+      "text": "提出一种学习型的后退视界安全评价器，通过预测未来视界内的失效概率实现对运动失败的 anticipatory 检测。",
+      "evidence": "We address this limitation by learning a receding-horizon safety critic that predicts whether a state will remain non-terminating over the next receding horizon, enabling anticipatory detection of impending locomotion failures."
+    },
+    {
+      "text": "设计了一个闭式、可微分的CBF风格安全滤波器，并在PPO中引入anticipation loss以减小策略与滤波器之间的训练偏差。",
+      "evidence": "Building on the learned critic, we derive a closed-form, differentiable CBF-style safety filter that minimally modifies the policy action to improve predicted safety, and integrate it into PPO with an anticipation loss to reduce policy-filter mismatch during training."
+    },
+    {
+      "text": "仿真测试表明，该方法能够增强四足机器人在动作噪声、外部干扰和地形变化下的鲁棒性，有效降低灾难性失败。",
+      "evidence": "In simulated quadruped locomotion, our method improves robustness under action noise, external perturbations, and terrain shifts, reducing catastrophic failures while maintaining competitive returns."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "PPO",
+    "四足机器人",
+    "足式运动"
+  ]
+}
