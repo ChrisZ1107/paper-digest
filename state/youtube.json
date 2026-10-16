@@ -2738,6 +2738,115 @@
           "abstract_zh": "扩散语言模型（DLMs）提供并行采样，相较于自回归模型生成速度更快，随着推理成为主要的计算负载，这一优势愈发重要。然而，DLMs 在采样步数较少时性能下降迅速，且在每一步都要处理完整序列，并需要多次遍历数据集才能达到理想质量。我们提出了下一概念建模（Next-Concept Modeling, NCM），这是一个两阶段的从粗到细框架：多尺度残差 VQ-VAE 将文本编码为离散码层次结构，Transformer 逐层生成文本，并行预测每一层内的所有码。在参数规模匹配的情况下，NCM 在 LM1B 上实现了比最强 DLM 基线更好的生成困惑度，且运行速度快了 21 倍。在 OpenWebText 上，NCM 与最强 DLM 具有竞争力，同时运行速度快了 10 倍；在 XSum 上，它在达到与最强 DLM 相同的 ROUGE-L 指标的同时，速度快了 31 倍。在数独推理任务中，NCM 在所有难度级别上均优于自回归和扩散基线，且使用的函数评估次数更少。"
         }
       ]
+    },
+    "gqUxfbSfSjU": {
+      "video_id": "gqUxfbSfSjU",
+      "papers": []
+    },
+    "-eG-hbmqcZg": {
+      "video_id": "-eG-hbmqcZg",
+      "papers": []
+    },
+    "Wa8rjjw-9gg": {
+      "video_id": "Wa8rjjw-9gg",
+      "video_title": "Hybrid Reasoning Agents (Oct 2026)",
+      "published": "2026-10-16",
+      "video_url": "https://www.youtube.com/watch?v=Wa8rjjw-9gg",
+      "papers": [
+        {
+          "id": "2610.18861",
+          "title": "Hybrid Reasoning Agents (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.18861"
+        }
+      ]
+    },
+    "Jta61RUC3Kw": {
+      "video_id": "Jta61RUC3Kw",
+      "video_title": "Correction Training for Diffusion Models (Oct 2026)",
+      "published": "2026-10-16",
+      "video_url": "https://www.youtube.com/watch?v=Jta61RUC3Kw",
+      "papers": [
+        {
+          "id": "2610.14136",
+          "title": "Correction Training for Diffusion Models (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.14136"
+        }
+      ]
+    },
+    "VIKAVoyXi6U": {
+      "video_id": "VIKAVoyXi6U",
+      "video_title": "Context Language Models Explained: When the Model Manages Its Own Context",
+      "published": "2026-10-16",
+      "video_url": "https://www.youtube.com/watch?v=VIKAVoyXi6U",
+      "papers": [
+        {
+          "id": "2609.37725",
+          "title": "2609.37725",
+          "url": "https://arxiv.org/abs/2609.37725"
+        },
+        {
+          "id": "2310.08560",
+          "title": "2310.08560",
+          "url": "https://arxiv.org/abs/2310.08560"
+        },
+        {
+          "id": "2512.24601",
+          "title": "2512.24601",
+          "url": "https://arxiv.org/abs/2512.24601"
+        }
+      ]
+    },
+    "uD0CdMgyLQ8": {
+      "video_id": "uD0CdMgyLQ8",
+      "video_title": "SGF+: Decoupling Gradient Flows for Autoregressive Video Generation (Oct 2026)",
+      "published": "2026-10-16",
+      "video_url": "https://www.youtube.com/watch?v=uD0CdMgyLQ8",
+      "papers": [
+        {
+          "id": "2610.10429",
+          "title": "SGF+: Decoupling Gradient Flows for Autoregressive Video Generation (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.10429"
+        }
+      ]
+    },
+    "LkTe4tZwEHs": {
+      "video_id": "LkTe4tZwEHs",
+      "video_title": "Thinking Inertia: LLMs Keep Thinking When Told Not To (Oct 2026)",
+      "published": "2026-10-16",
+      "video_url": "https://www.youtube.com/watch?v=LkTe4tZwEHs",
+      "papers": [
+        {
+          "id": "2610.11765",
+          "title": "Thinking Inertia: LLMs Keep Thinking When Told Not To (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.11765"
+        }
+      ]
+    },
+    "mDmy1ZAS6hg": {
+      "video_id": "mDmy1ZAS6hg",
+      "video_title": "ReplaySSM: Cache SSM Inputs, Not State (Oct 2026)",
+      "published": "2026-10-16",
+      "video_url": "https://www.youtube.com/watch?v=mDmy1ZAS6hg",
+      "papers": [
+        {
+          "id": "2610.13778",
+          "title": "ReplaySSM: Cache SSM Inputs, Not State (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.13778"
+        }
+      ]
+    },
+    "zWEl_nn5zDc": {
+      "video_id": "zWEl_nn5zDc",
+      "video_title": "LeWAM: End-to-End World and Action Modeling with JEPAs (Oct 2026)",
+      "published": "2026-10-16",
+      "video_url": "https://www.youtube.com/watch?v=zWEl_nn5zDc",
+      "papers": [
+        {
+          "id": "2610.12818",
+          "title": "LeWAM: End-to-End World and Action Modeling with JEPAs (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.12818"
+        }
+      ]
     }
   }
 }
