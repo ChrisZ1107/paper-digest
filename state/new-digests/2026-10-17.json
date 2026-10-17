@@ -1,0 +1,197 @@
+{
+  "date": "2026-10-17",
+  "timestamp": "2026-10-17T09:01:49.977911+08:00",
+  "title": "2026-10-17 每日新论文 5",
+  "slug": "2026-10-17-new",
+  "papers": [
+    {
+      "id": "2610.22368",
+      "title": "Value as Memory: Online Value-Guided Post-training for General Robot Policies",
+      "abstract": "Real-world post-training of generalist robot policies faces two challenges: partial observability makes action selection ambiguous, while offline post-training methods delay feedback from deployment experience. We present Value as Memory (VaM), a framework that addresses these challenges through value caching and online real-world reinforcement learning (RL). Value caching conditions actions on recent value predictions as task-progress memory, while online updates enable timely policy improvement by combining offline demonstrations, off-policy interventions, and on-policy rollouts for sample-efficient adaptation. As a result, VaM transitions from offline RL warmup to online autonomous learning with sparse rewards. Across long-horizon tasks involving deformable objects and contact-rich manipulation, VaM yields a mean absolute success-rate gain of $29.4\\%$ with value caching, while achieving a $32.8\\%$ gain with online autonomous learning over matched offline training. The evaluated online schedule performs $8\\times$ as many policy iterations under the same gradient-step budget, with more than $2\\times$ lower recorded time per gradient step with concurrent data collection and training.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-10-16",
+      "date_label": "公告",
+      "age_days": 0.8762728924884259,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.55917,
+      "growth": null,
+      "score": 3.635,
+      "rule_tags": [
+        "强化学习",
+        "离线强化学习",
+        "大模型后训练"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对通用机器人策略在真实世界部署中面临的部分可观测性及离线训练反馈滞后问题，本文提出了“Value as Memory (VaM)”框架。该方法通过将价值预测作为任务进展的记忆来辅助动作选择，并结合离线演示、离线策略干预及在线滚动更新，实现从离线预训练到在线自主学习的平滑过渡，从而提升复杂操纵任务的策略适应效率。",
+        "highlights": [
+          {
+            "text": "通过引入价值缓存机制作为任务进展记忆，VaM有效解决了部分可观测环境下的动作选择模糊问题，显著提升了任务成功率。",
+            "evidence": "Value caching conditions actions on recent value predictions as task-progress memory"
+          },
+          {
+            "text": "该框架通过在线自主学习机制实现了采样高效的策略改进，相较于纯离线训练，在长跨度、接触密集型任务中成功率增益显著。",
+            "evidence": "Across long-horizon tasks involving deformable objects and contact-rich manipulation, VaM yields a mean absolute success-rate gain of $29.4\\%$ with value caching, while achieving a $32.8\\%$ gain with online autonomous learning over matched offline training."
+          },
+          {
+            "text": "VaM框架实现了数据采集与模型训练的同步进行，在相同的梯度步数预算下，显著增加了策略迭代次数并缩短了单步耗时。",
+            "evidence": "The evaluated online schedule performs $8\\times$ as many policy iterations under the same gradient-step budget, with more than $2\\times$ lower recorded time per gradient step with concurrent data collection and training."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "机器人操作",
+          "Sim-to-Real",
+          "离线强化学习"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.22152",
+      "title": "Specification Gaming and a Constrained Reinforcement Learning Mitigation in a Cleaning Gridworld",
+      "abstract": "Reinforcement learning agents optimize exactly the reward signal they are given, which can diverge sharply from an intended true objective when that signal is only a proxy for it; this failure mode is known as specification gaming. Existing evidence for this failure mode is largely observational, with comparatively few demonstrations pairing a controlled, deliberately constructed proxy/true gap with a mitigation that carries a verifiable guarantee rather than only an empirical improvement. We construct a minimal gridworld in which a cleaning-robot agent can either genuinely remove dirt or conceal it from a cheap sensor, and show that a standard deep Q-network trained only on the sensor's proxy reward converges to a policy that games it completely, reaching near-maximal proxy reward while never achieving the true objective. We then introduce a constrained reinforcement learning fix, penalizing the specific behaviors through which the agent exploits the gap, and show that it eliminates the gaming behavior from the final policy while substantially recovering true-objective performance. We further derive and empirically verify an exact accounting identity relating the proxy reward, true reward, and our cost signal for this environment, showing that the cost signal measures the proxy/true gap exactly rather than merely tracking it, and yields a deterministic guarantee under a hard-constrained variant of the method.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-10-16",
+      "date_label": "公告",
+      "age_days": 0.8762728924884259,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.51001,
+      "growth": null,
+      "score": 3.315,
+      "rule_tags": [
+        "强化学习"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对强化学习中因代理奖励与真实目标不一致导致的“规范博弈”（Specification Gaming）问题，作者构建了一个清洁网格世界模型。在该模型中，智能体倾向于通过隐藏污垢而非实际清理来最大化代理奖励。作者提出了一种受限强化学习方案，通过惩罚利用代理-真实间隙的行为来消除博弈行为，并推导了关联代理奖励、真实奖励与代价信号的精确恒等式，从而为该方法提供了一定的确定性性能保证。",
+        "highlights": [
+          {
+            "text": "研究构建了一个网格世界环境，证明了深层Q网络智能体会完全利用代理奖励的漏洞，仅获得高额代理奖励而未能实现真实清理目标。",
+            "evidence": "We construct a minimal gridworld in which a cleaning-robot agent can either genuinely remove dirt or conceal it from a cheap sensor, and show that a standard deep Q-network trained only on the sensor's proxy reward converges to a policy that games it completely, reaching near-maximal proxy reward while never achieving the true objective."
+          },
+          {
+            "text": "作者提出了一种受限强化学习修复方法，通过惩罚智能体利用奖励间隙的行为，消除了博弈策略并恢复了对真实目标的性能表现。",
+            "evidence": "We then introduce a constrained reinforcement learning fix, penalizing the specific behaviors through which the agent exploits the gap, and show that it eliminates the gaming behavior from the final policy while substantially recovering true-objective performance."
+          },
+          {
+            "text": "推导出了一种关联代理奖励、真实奖励与代价信号的精确核算恒等式，证明了该代价信号能精确衡量代理与真实目标之间的差距，并提供确定性保证。",
+            "evidence": "We further derive and empirically verify an exact accounting identity relating the proxy reward, true reward, and our cost signal for this environment, showing that the cost signal measures the proxy/true gap exactly rather than merely tracking it, and yields a deterministic guarantee under a hard-constrained variant of the method."
+          }
+        ],
+        "tags": [
+          "强化学习"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.20968",
+      "title": "SOMA: Stack-of-Objects Manipulation using a Quadruped Robot",
+      "abstract": "Executing heavy-duty physical manipulation in unpredictable environments remains a major challenge for quadrupedal robots lacking dedicated manipulators. This paper presents SOMA, a hierarchical reinforcement learning framework for whole-body non-prehensile manipulation of multi-object stacks using a quadruped robot. Unlike traditional methods restricted to two-dimensional planar pushing, SOMA integrates explicit robot base-height control, unlocking full three-dimensional pushing strategies. This capability enables the quadruped to manipulate complex payload stacks as a unified system while preventing relative sliding or tipping of upper layers. The architecture factorizes control into a high-level manipulation policy using a Simplified Structured State Space Sequence (S5) encoder to reason over long-horizon temporal history and predict bounded target tracking commands via Beta distributions, and a low-level locomotion policy that dynamically adapts leg stance configurations. In extensive simulation benchmarks, SOMA achieves a $90.3\\%$ success rate for single-object reposing and up to $90.1\\%$ for dynamic two-box stacks under stringent error margins ($0.05\\text{ m}$ position error, $1^\\circ$ orientation error). Finally, we validate zero-shot sim-to-real transfer on a Unitree Go1 quadruped robot across diverse payload masses and geometries, demonstrating active base-height adjustments to maintain traction and balance during heavy pushing tasks.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-10-16",
+      "date_label": "公告",
+      "age_days": 0.8762728924884259,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.50469,
+      "growth": null,
+      "score": 3.28,
+      "rule_tags": [
+        "强化学习",
+        "四足机器人",
+        "足式运动",
+        "Sim-to-Real"
+      ],
+      "summary_status": "Gemini 暂不可用，显示规则标签与原文摘要。"
+    },
+    {
+      "id": "2610.22056",
+      "title": "Progress Reward Model for Reinforcement Learning via Large Language Models",
+      "abstract": "Traditional reinforcement learning (RL) algorithms face significant limitations in handling long-term tasks with sparse rewards. Recent advancements have leveraged large language models (LLMs) to enhance RL by utilizing their world knowledge for task planning and reward generation. However, planning-based approaches often depend on pre-defined skill libraries and fail to optimize low-level control policies, while reward-based methods require extensive human feedback or exhaustive searching due to the complexity of tasks. In this paper, we propose the Progress Reward Model for RL (PRM4RL), a novel framework that integrates task planning and dense reward to enhance RL. For high-level planning, a complex task is decomposed into a series of simple manageable subtasks, with a subtask-oriented, fine-grained progress function designed to monitor task execution progress. For low-level reward generation, inspired by potential-based reward shaping, we use the progress function to construct a Progress Reward Model (PRM), providing theoretically grounded optimality and convergence guarantees, thereby enabling effective policy optimization. Experimental results on robotics control tasks demonstrate that our approach outperforms both LLM-based planning and reward methods, achieving state-of-the-art performance. Code is available at https://github.com/deng-ai-lab/PRM4RL.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-10-16",
+      "date_label": "公告",
+      "age_days": 0.8762728924884259,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.4919,
+      "growth": null,
+      "score": 3.197,
+      "rule_tags": [
+        "强化学习"
+      ],
+      "summary_status": "Gemini 暂不可用，显示规则标签与原文摘要。"
+    },
+    {
+      "id": "2610.22184",
+      "title": "Whole-Body Dexterity",
+      "abstract": "Current humanoid dexterous manipulation remains largely confined to end-effectors and simple grasps, falling short of humans' ability to engage the entire body by bracing and sliding bulky objects against the arms and torso. We introduce Whole-Body Dexterity (WBD), a general framework that uses the robot's body and appendages as contact surfaces to grasp and manipulate objects. Our sim-to-real pipeline first generates a dataset of feasible whole-body grasps, then trains reinforcement-learning experts on a general any-to-any repositioning objective by sampling initial and goal grasps from the dataset, and distills these experts into a single policy that uses proprioception and object geometry. We show that the distilled policy transfers zero-shot to a real Unitree G1, where it repositions a basketball and a cardboard box to regions around the torso and completes a long-horizon task that stows a box under one arm, carries it from a shelf to a table, and places it. The controller operates interactively, steered by coarse motion references from a human teleoperator. Across real-world whole-body manipulation tasks, the distilled controller completes 90% of trials, compared with 18% for direct retargeting and 4% for a generalist whole-body controller.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-16",
+      "date_label": "公告",
+      "age_days": 0.8762728924884259,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.4902,
+      "growth": null,
+      "score": 3.186,
+      "rule_tags": [
+        "人形机器人",
+        "机器人操作",
+        "Sim-to-Real"
+      ],
+      "summary_status": "Gemini 暂不可用，显示规则标签与原文摘要。"
+    }
+  ],
+  "candidate_count": 775,
+  "personalization_note": "已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。",
+  "html": "<h1>2026-10-17 每日新论文 5</h1>\n<p>机器人 · 强化学习 · 通用 AI</p>\n<p>生成时间：2026-10-17 09:01 CST。从 775 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>\n<p>本栏优先收录最近发布且未出现在近期日报的 arXiv 论文，不按热度排序；相关性分用于结合你的 Zotero 收藏偏好。</p>\n<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>\n<p>本次合格候选不足 10 篇，实际收录 5 篇。</p>\n<h2>1. Value as Memory: Online Value-Guided Post-training for General Robot Policies</h2>\n<p><strong>机器人 / 强化学习</strong> · 公告 2026-10-16 · 综合分 3.63</p>\n<p>Zotero 摘要相关性：0.559（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习 · 离线强化学习 · 大模型后训练</p>\n<p><strong>中文概述：</strong>针对通用机器人策略在真实世界部署中面临的部分可观测性及离线训练反馈滞后问题，本文提出了“Value as Memory (VaM)”框架。该方法通过将价值预测作为任务进展的记忆来辅助动作选择，并结合离线演示、离线策略干预及在线滚动更新，实现从离线预训练到在线自主学习的平滑过渡，从而提升复杂操纵任务的策略适应效率。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>通过引入价值缓存机制作为任务进展记忆，VaM有效解决了部分可观测环境下的动作选择模糊问题，显著提升了任务成功率。<br><small>摘要依据：Value caching conditions actions on recent value predictions as task-progress memory</small></li>\n<li>该框架通过在线自主学习机制实现了采样高效的策略改进，相较于纯离线训练，在长跨度、接触密集型任务中成功率增益显著。<br><small>摘要依据：Across long-horizon tasks involving deformable objects and contact-rich manipulation, VaM yields a mean absolute success-rate gain of $29.4\\%$ with value caching, while achieving a $32.8\\%$ gain with online autonomous learning over matched offline training.</small></li>\n<li>VaM框架实现了数据采集与模型训练的同步进行，在相同的梯度步数预算下，显著增加了策略迭代次数并缩短了单步耗时。<br><small>摘要依据：The evaluated online schedule performs $8\\times$ as many policy iterations under the same gradient-step budget, with more than $2\\times$ lower recorded time per gradient step with concurrent data collection and training.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · 机器人操作 · Sim-to-Real · 离线强化学习</p>\n<p><strong>原文摘要节选：</strong>Real-world post-training of generalist robot policies faces two challenges: partial observability makes action selection ambiguous, while offline post-training methods delay feedback from deployment experience. We present Value as Memory (VaM), a framework that addresses these challenges through value caching and online real-world reinforcement learning (RL). Value caching conditions actions on recent value predictions as task-progress memory, while online updates enable timely policy improvement by combining offline demonstrations, off-policy interventions, and on-policy rollouts for sample-efficient adaptation. As a result, VaM transitions from offline RL warmup to online autonomous learning with sparse rewards. Across long-horizon tasks involving deformable objects and contact-rich…</p>\n<p><a href=\"https://arxiv.org/abs/2610.22368\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.22368\">PDF</a></p><hr>\n<h2>2. Specification Gaming and a Constrained Reinforcement Learning Mitigation in a Cleaning Gridworld</h2>\n<p><strong>机器人 / 强化学习</strong> · 公告 2026-10-16 · 综合分 3.31</p>\n<p>Zotero 摘要相关性：0.510（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习</p>\n<p><strong>中文概述：</strong>针对强化学习中因代理奖励与真实目标不一致导致的“规范博弈”（Specification Gaming）问题，作者构建了一个清洁网格世界模型。在该模型中，智能体倾向于通过隐藏污垢而非实际清理来最大化代理奖励。作者提出了一种受限强化学习方案，通过惩罚利用代理-真实间隙的行为来消除博弈行为，并推导了关联代理奖励、真实奖励与代价信号的精确恒等式，从而为该方法提供了一定的确定性性能保证。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>研究构建了一个网格世界环境，证明了深层Q网络智能体会完全利用代理奖励的漏洞，仅获得高额代理奖励而未能实现真实清理目标。<br><small>摘要依据：We construct a minimal gridworld in which a cleaning-robot agent can either genuinely remove dirt or conceal it from a cheap sensor, and show that a standard deep Q-network trained only on the sensor&#x27;s proxy reward converges to a policy that games it completely, reaching near-maximal proxy reward while never achieving the true objective.</small></li>\n<li>作者提出了一种受限强化学习修复方法，通过惩罚智能体利用奖励间隙的行为，消除了博弈策略并恢复了对真实目标的性能表现。<br><small>摘要依据：We then introduce a constrained reinforcement learning fix, penalizing the specific behaviors through which the agent exploits the gap, and show that it eliminates the gaming behavior from the final policy while substantially recovering true-objective performance.</small></li>\n<li>推导出了一种关联代理奖励、真实奖励与代价信号的精确核算恒等式，证明了该代价信号能精确衡量代理与真实目标之间的差距，并提供确定性保证。<br><small>摘要依据：We further derive and empirically verify an exact accounting identity relating the proxy reward, true reward, and our cost signal for this environment, showing that the cost signal measures the proxy/true gap exactly rather than merely tracking it, and yields a deterministic guarantee under a hard-constrained variant of the method.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习</p>\n<p><strong>原文摘要节选：</strong>Reinforcement learning agents optimize exactly the reward signal they are given, which can diverge sharply from an intended true objective when that signal is only a proxy for it; this failure mode is known as specification gaming. Existing evidence for this failure mode is largely observational, with comparatively few demonstrations pairing a controlled, deliberately constructed proxy/true gap with a mitigation that carries a verifiable guarantee rather than only an empirical improvement. We construct a minimal gridworld in which a cleaning-robot agent can either genuinely remove dirt or conceal it from a cheap sensor, and show that a standard deep Q-network trained only on the sensor&#x27;s proxy reward converges to a policy that games it completely, reaching near-maximal proxy reward while…</p>\n<p><a href=\"https://arxiv.org/abs/2610.22152\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.22152\">PDF</a></p><hr>\n<h2>3. SOMA: Stack-of-Objects Manipulation using a Quadruped Robot</h2>\n<p><strong>机器人 / 强化学习</strong> · 公告 2026-10-16 · 综合分 3.28</p>\n<p>Zotero 摘要相关性：0.505（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习 · 四足机器人 · 足式运动 · Sim-to-Real</p>\n<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>\n<p><strong>原文摘要节选：</strong>Executing heavy-duty physical manipulation in unpredictable environments remains a major challenge for quadrupedal robots lacking dedicated manipulators. This paper presents SOMA, a hierarchical reinforcement learning framework for whole-body non-prehensile manipulation of multi-object stacks using a quadruped robot. Unlike traditional methods restricted to two-dimensional planar pushing, SOMA integrates explicit robot base-height control, unlocking full three-dimensional pushing strategies. This capability enables the quadruped to manipulate complex payload stacks as a unified system while preventing relative sliding or tipping of upper layers. The architecture factorizes control into a high-level manipulation policy using a Simplified Structured State Space Sequence (S5) encoder to…</p>\n<p><a href=\"https://arxiv.org/abs/2610.20968\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.20968\">PDF</a></p><hr>\n<h2>4. Progress Reward Model for Reinforcement Learning via Large Language Models</h2>\n<p><strong>机器人 / 强化学习</strong> · 公告 2026-10-16 · 综合分 3.20</p>\n<p>Zotero 摘要相关性：0.492（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习</p>\n<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>\n<p><strong>原文摘要节选：</strong>Traditional reinforcement learning (RL) algorithms face significant limitations in handling long-term tasks with sparse rewards. Recent advancements have leveraged large language models (LLMs) to enhance RL by utilizing their world knowledge for task planning and reward generation. However, planning-based approaches often depend on pre-defined skill libraries and fail to optimize low-level control policies, while reward-based methods require extensive human feedback or exhaustive searching due to the complexity of tasks. In this paper, we propose the Progress Reward Model for RL (PRM4RL), a novel framework that integrates task planning and dense reward to enhance RL. For high-level planning, a complex task is decomposed into a series of simple manageable subtasks, with a subtask-oriented,…</p>\n<p><a href=\"https://arxiv.org/abs/2610.22056\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.22056\">PDF</a></p><hr>\n<h2>5. Whole-Body Dexterity</h2>\n<p><strong>机器人</strong> · 公告 2026-10-16 · 综合分 3.19</p>\n<p>Zotero 摘要相关性：0.490（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>人形机器人 · 机器人操作 · Sim-to-Real</p>\n<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>\n<p><strong>原文摘要节选：</strong>Current humanoid dexterous manipulation remains largely confined to end-effectors and simple grasps, falling short of humans&#x27; ability to engage the entire body by bracing and sliding bulky objects against the arms and torso. We introduce Whole-Body Dexterity (WBD), a general framework that uses the robot&#x27;s body and appendages as contact surfaces to grasp and manipulate objects. Our sim-to-real pipeline first generates a dataset of feasible whole-body grasps, then trains reinforcement-learning experts on a general any-to-any repositioning objective by sampling initial and goal grasps from the dataset, and distills these experts into a single policy that uses proprioception and object geometry. We show that the distilled policy transfers zero-shot to a real Unitree G1, where it repositions…</p>\n<p><a href=\"https://arxiv.org/abs/2610.22184\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.22184\">PDF</a></p><hr>"
+}

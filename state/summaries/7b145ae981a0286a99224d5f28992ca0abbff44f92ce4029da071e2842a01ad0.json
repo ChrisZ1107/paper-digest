@@ -1,0 +1,23 @@
+{
+  "overview": "针对通用机器人策略在真实世界部署中面临的部分可观测性及离线训练反馈滞后问题，本文提出了“Value as Memory (VaM)”框架。该方法通过将价值预测作为任务进展的记忆来辅助动作选择，并结合离线演示、离线策略干预及在线滚动更新，实现从离线预训练到在线自主学习的平滑过渡，从而提升复杂操纵任务的策略适应效率。",
+  "highlights": [
+    {
+      "text": "通过引入价值缓存机制作为任务进展记忆，VaM有效解决了部分可观测环境下的动作选择模糊问题，显著提升了任务成功率。",
+      "evidence": "Value caching conditions actions on recent value predictions as task-progress memory"
+    },
+    {
+      "text": "该框架通过在线自主学习机制实现了采样高效的策略改进，相较于纯离线训练，在长跨度、接触密集型任务中成功率增益显著。",
+      "evidence": "Across long-horizon tasks involving deformable objects and contact-rich manipulation, VaM yields a mean absolute success-rate gain of $29.4\\%$ with value caching, while achieving a $32.8\\%$ gain with online autonomous learning over matched offline training."
+    },
+    {
+      "text": "VaM框架实现了数据采集与模型训练的同步进行，在相同的梯度步数预算下，显著增加了策略迭代次数并缩短了单步耗时。",
+      "evidence": "The evaluated online schedule performs $8\\times$ as many policy iterations under the same gradient-step budget, with more than $2\\times$ lower recorded time per gradient step with concurrent data collection and training."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "机器人操作",
+    "Sim-to-Real",
+    "离线强化学习"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "overview": "针对视觉智能体需从视频流中进行实时决策的需求，本文提出了VideoJev模型家族。该系统通过改造预训练多模态大语言模型（MLLM），引入共享头架构，将视频理解与交互任务统一为时间间隔评分与选项选择的结构化决策问题。此外，通过缓存推理与联合推理机制，该方法在保持模型语义灵活性的同时，有效提高了多查询任务下的决策效率与推理速度。",
+  "highlights": [
+    {
+      "text": "VideoJev通过引入共享头部结构，将时间定位与多项选择视频问答统一为结构化决策任务，从而实现高效决策。",
+      "evidence": "We adapt pretrained multimodal large language models (MLLMs) by replacing autoregressive answer decoding with a shared head that scores temporal intervals and textual options against video evidence. These scores yield event spans or answer choices, unifying temporal grounding and multiple-choice video question answering."
+    },
+    {
+      "text": "该模型通过缓存推理和联合推理机制复用视觉计算，显著提升了处理多个查询任务的推理速度。",
+      "evidence": "VideoJev therefore reuses visual computation through Cached inference for queries as they arrive and Joint inference for multiple queries in a single forward pass."
+    },
+    {
+      "text": "实验表明，VideoJev在多个时间定位基准上提升了平均mIoU，并在视频问答任务中实现了推理速度的显著提升。",
+      "evidence": "Across three temporal grounding benchmarks, VideoJev-4B and VideoJev-35B-A3B improve mean mIoU over their backbones by 6.7 and 10.8 points, respectively, with measured inference speedups of 2.8-3.1times."
+    }
+  ],
+  "tags": [
+    "推理"
+  ]
+}
