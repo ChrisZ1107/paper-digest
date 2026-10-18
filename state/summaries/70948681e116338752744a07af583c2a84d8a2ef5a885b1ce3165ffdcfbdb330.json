@@ -1,0 +1,17 @@
+{
+  "overview": "该论文提出了OneWM框架，旨在统一因果训练中世界建模与动作建模的关系。OneWM通过共享视频-动作架构，将动作既作为世界预测的条件，又作为策略学习的目标。作者在LIBERO、LIBERO-Plus和RoboCasa365等平台上进行了评估，实验表明，该统一框架能够实现世界建模与动作生成之间的相互促进，提升策略性能与泛化能力，并增强多视角下的世界预测保真度。",
+  "highlights": [
+    {
+      "text": "学习特定动作的视觉结果能够提升策略的性能及其在多变场景中的泛化能力。",
+      "evidence": "Learning the visual consequences of specified actions improves policy performance and generalization across changing scenes."
+    },
+    {
+      "text": "在同一架构下，动作学习反过来提升了多视角世界预测的保真度。",
+      "evidence": "In turn, action learning improves multi-view world-prediction fidelity under the same architecture."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "世界模型"
+  ]
+}

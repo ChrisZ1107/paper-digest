@@ -1,0 +1,17 @@
+{
+  "overview": "针对现有智能体强化学习方法通常假设单会话轨迹、无法有效处理多会话任务的问题，本文提出了多会话智能体强化学习（Multi-Session Agentic RL）框架。作者提出了一种名为Mosaic的方法，通过引入无需Critic的分层优化策略，在轨迹层将会话使用信号纳入优势估计，并在会话层根据边际贡献调整优势。在Qwen3.5-4B模型上的实验表明，该方法在上下文压缩和子智能体分支场景中相比广播机制更具效率和性能优势。",
+  "highlights": [
+    {
+      "text": "Mosaic采用分层优化策略，通过整合会话使用信号并根据边际贡献调整会话优势，提升了多会话任务的处理能力。",
+      "evidence": "At the trajectory level, it incorporates session-usage signals into advantage estimation. At the session level, it shapes each session's advantage according to the estimated marginal contribution."
+    },
+    {
+      "text": "实验结果表明，在上下文压缩和子智能体分支场景中，Mosaic在提升性能的同时实现了更少的平均会话消耗。",
+      "evidence": "Experiments on BrowseComp with Qwen3.5-4B show that Mosaic outperforms broadcasting in both context compaction and subagent forking scenarios while using fewer sessions on average."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "推理"
+  ]
+}

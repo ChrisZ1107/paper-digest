@@ -1,0 +1,16 @@
+{
+  "overview": "视觉语言动作（VLA）模型常因缺乏对物理状态变化的监督而过度拟合观测与动作的关联。针对此问题，作者提出了VLA-Δ框架，通过将当前状态与未来状态之间的物理变化作为明确的学习目标，构建了包含语义与视觉运动变化标注的大规模预训练数据集。该方法为连续动作生成提供了直接监督，且在推理阶段无需额外计算开销。实验表明，VLA-Δ在LIBERO和RoboTwin基准测试中表现出色，并在真实机器人实验中优于π_{0.5}。",
+  "highlights": [
+    {
+      "text": "VLA-Δ引入物理状态变化作为学习目标，通过明确的监督优化连续动作生成过程，提升了模型对物理变化的理解。",
+      "evidence": "We therefore propose VLA-Δ, a general framework that uses physical changes between current and future states as explicit learning targets."
+    },
+    {
+      "text": "该方法在保持推理高效性的同时，在主流机器人基准测试及真实环境实验中均展示了优于或媲美现有顶尖模型（如π_{0.5}）的性能。",
+      "evidence": "VLA-Δ achieves performance competitive with the state of the art on LIBERO and RoboTwin, and outperforms π_{0.5} in real-robot experiments."
+    }
+  ],
+  "tags": [
+    "视觉语言动作"
+  ]
+}
