@@ -2865,6 +2865,196 @@
           "abstract_zh": "联合嵌入预测架构（JEPAs）可以在无需像素重建的情况下学习紧凑的潜在世界模型。现有的 JEPA 流水线通常在添加控制策略或求解器之前，先训练视觉表征和动作条件下的动力学模型。我们引入了 LeWAM，这是一个用于控制的端到端 JEPA，其特点包括：（1）针对下一潜在状态预测和动作流匹配的联合训练目标，以及（2）对潜在状态施加各向同性高斯约束，使单个模型能够通过评估采样动作及其学习到的潜在动力学，实现直接的策略执行和高效规划。在视觉规划任务中，与此前的 JEPA 相比，LeWAM 在接触丰富的任务上将成功率从 28.6% 提高到 89.7%，在长程任务上从 10.9% 提高到 46.2%，且规划速度提升了 32.3 倍。在模拟环境和实体机器人的行为克隆任务中，LeWAM 也展现出了与成熟方法相当的竞争力。可解释性分析表明，LeWAM 学习到的控制相关表征和动作分布能够有效地指导测试时的规划与控制。"
         }
       ]
+    },
+    "Kd7LpZV6AiM": {
+      "video_id": "Kd7LpZV6AiM",
+      "video_title": "Cowork-Gym: Synthesizing Interactive Work Environments at Scale (Oct 2026)",
+      "published": "2026-10-18",
+      "video_url": "https://www.youtube.com/watch?v=Kd7LpZV6AiM",
+      "papers": [
+        {
+          "id": "2610.17670",
+          "title": "Cowork-Gym: Synthesizing Interactive Work Environments at Scale (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.17670"
+        }
+      ]
+    },
+    "lko6nKftDYg": {
+      "video_id": "lko6nKftDYg",
+      "video_title": "DuoDiscover: Scaling Autonomous Discovery Beyond the Evaluation Bottleneck (Oct 2026)",
+      "published": "2026-10-18",
+      "video_url": "https://www.youtube.com/watch?v=lko6nKftDYg",
+      "papers": [
+        {
+          "id": "2610.17184",
+          "title": "DuoDiscover: Scaling Autonomous Discovery Beyond the Evaluation Bottleneck (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.17184"
+        }
+      ]
+    },
+    "QqcTXtheUnQ": {
+      "video_id": "QqcTXtheUnQ",
+      "video_title": "Towards Physically Grounded Articulated 3D Assets: A Multi-Agent Pipeline and Benchmark (Oct 2026)",
+      "published": "2026-10-18",
+      "video_url": "https://www.youtube.com/watch?v=QqcTXtheUnQ",
+      "papers": [
+        {
+          "id": "2610.13947",
+          "title": "Towards Physically Grounded Articulated 3D Assets: A Multi-Agent Pipeline and Benchmark (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.13947"
+        }
+      ]
+    },
+    "oisC-7rmuaw": {
+      "video_id": "oisC-7rmuaw",
+      "video_title": "Scalable Weak-to-Strong Verifier Hardening for Agent Environments (Oct 2026)",
+      "published": "2026-10-18",
+      "video_url": "https://www.youtube.com/watch?v=oisC-7rmuaw",
+      "papers": [
+        {
+          "id": "2610.15924",
+          "title": "Scalable Weak-to-Strong Verifier Hardening for Agent Environments (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.15924"
+        }
+      ]
+    },
+    "-67LLY8tbDM": {
+      "video_id": "-67LLY8tbDM",
+      "video_title": "Interaction-as-a-Judge (Oct 2026)",
+      "published": "2026-10-18",
+      "video_url": "https://www.youtube.com/watch?v=-67LLY8tbDM",
+      "papers": [
+        {
+          "id": "2610.17895",
+          "title": "Interaction-as-a-Judge (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.17895"
+        }
+      ]
+    },
+    "Ja8Rq4WgEsY": {
+      "video_id": "Ja8Rq4WgEsY",
+      "video_title": "Generative Representation Learning for Scalable Latent Tokenization (Oct 2026)",
+      "published": "2026-10-18",
+      "video_url": "https://www.youtube.com/watch?v=Ja8Rq4WgEsY",
+      "papers": [
+        {
+          "id": "2610.20533",
+          "title": "Generative Representation Learning for Scalable Latent Tokenization (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.20533"
+        }
+      ]
+    },
+    "SLmJDcQO9d8": {
+      "video_id": "SLmJDcQO9d8",
+      "video_title": "Towards Agentic Robots: Model, Data, Environment, and Harness (Oct 2026)",
+      "published": "2026-10-18",
+      "video_url": "https://www.youtube.com/watch?v=SLmJDcQO9d8",
+      "papers": [
+        {
+          "id": "2610.20442",
+          "title": "Towards Agentic Robots: Model, Data, Environment, and Harness (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.20442"
+        }
+      ]
+    },
+    "5wM3zyXQ9Iw": {
+      "video_id": "5wM3zyXQ9Iw",
+      "video_title": "LLM-to-Flow Distillation: Teaching Natural Language Goals to Scientific Generators (Oct 2026)",
+      "published": "2026-10-18",
+      "video_url": "https://www.youtube.com/watch?v=5wM3zyXQ9Iw",
+      "papers": [
+        {
+          "id": "2610.17246",
+          "title": "LLM-to-Flow Distillation: Teaching Natural Language Goals to Scientific Generators (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.17246"
+        }
+      ]
+    },
+    "wuX4A6CzmDg": {
+      "video_id": "wuX4A6CzmDg",
+      "video_title": "Are We Overthinking One-Step Generation? (Oct 2026)",
+      "published": "2026-10-18",
+      "video_url": "https://www.youtube.com/watch?v=wuX4A6CzmDg",
+      "papers": [
+        {
+          "id": "2610.20331",
+          "title": "Are We Overthinking One-Step Generation? (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.20331"
+        }
+      ]
+    },
+    "WX6m4ofbgIA": {
+      "video_id": "WX6m4ofbgIA",
+      "video_title": "Designing Protein Structures from Natural Language (Oct 2026)",
+      "published": "2026-10-18",
+      "video_url": "https://www.youtube.com/watch?v=WX6m4ofbgIA",
+      "papers": [
+        {
+          "id": "2610.13917",
+          "title": "Designing Protein Structures from Natural Language (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.13917"
+        }
+      ]
+    },
+    "PXodjLzVt3M": {
+      "video_id": "PXodjLzVt3M",
+      "video_title": "A team of Gemini 4 Argon agents beats Minecraft (Oct 2026)",
+      "published": "2026-10-18",
+      "video_url": "https://www.youtube.com/watch?v=PXodjLzVt3M",
+      "papers": [
+        {
+          "id": "2610.22319",
+          "title": "A team of Gemini 4 Argon agents beats Minecraft (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.22319"
+        }
+      ]
+    },
+    "zSWp3XkRQGA": {
+      "video_id": "zSWp3XkRQGA",
+      "papers": []
+    },
+    "M6Gbeix7CF8": {
+      "video_id": "M6Gbeix7CF8",
+      "papers": []
+    },
+    "WtVZEtIRFF4": {
+      "video_id": "WtVZEtIRFF4",
+      "video_title": "AutoEnvScaling: Automating the Data Flywheel with Terminal Agents (Oct 2026)",
+      "published": "2026-10-18",
+      "video_url": "https://www.youtube.com/watch?v=WtVZEtIRFF4",
+      "papers": [
+        {
+          "id": "2610.14163",
+          "title": "AutoEnvScaling: Automating the Data Flywheel with Terminal Agents (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.14163"
+        }
+      ]
+    },
+    "ktUmhY5soRA": {
+      "video_id": "ktUmhY5soRA",
+      "video_title": "VideoJev: System One Model for Video Understanding and Interaction (Oct 2026)",
+      "published": "2026-10-18",
+      "video_url": "https://www.youtube.com/watch?v=ktUmhY5soRA",
+      "papers": [
+        {
+          "id": "2610.18615",
+          "title": "VideoJev: System One Model for Video Understanding and Interaction (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.18615"
+        }
+      ]
+    },
+    "soOh_p77Yq4": {
+      "video_id": "soOh_p77Yq4",
+      "video_title": "Few-Step Generation via Data-Space Iteration (Oct 2026)",
+      "published": "2026-10-18",
+      "video_url": "https://www.youtube.com/watch?v=soOh_p77Yq4",
+      "papers": [
+        {
+          "id": "2610.12102",
+          "title": "Few-Step Generation via Data-Space Iteration (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.12102"
+        }
+      ]
     }
   }
 }
