@@ -1,0 +1,21 @@
+{
+  "overview": "针对机器人环境构建中物理有效性与训练实用性难以平衡的问题，本文提出CoDA框架。该方法通过共享异构记忆实现模拟数据引擎与动作策略的协同进化。系统利用视觉语言评价器诊断策略失效，并将其转化为生成程序以重现困难场景，同时配合Text2potential方法为动作块价值学习提供阶段性监督。实验表明，该方法在多种操作任务中提升了策略在分布外环境下的成功率与鲁棒性。",
+  "highlights": [
+    {
+      "text": "提出CoDA框架，通过模拟数据引擎与动作策略的协同进化，利用共享记忆实现诊断生成与策略训练的闭环优化。",
+      "evidence": "We introduce CoDA, a framework in which a simulation data engine and an action policy co-evolve through a shared heterogeneous memory of environment construction, policy failures, and learning progress."
+    },
+    {
+      "text": "引入Text2potential技术，将策略诊断转化为阶段性势能函数，为动作块学习提供稠密监督信号。",
+      "evidence": "We further propose Text2potential to convert these diagnoses into staged potentials for action-chunk value learning, providing dense supervision for policy updates while preserving the task's optimal policy under standard shaping assumptions."
+    },
+    {
+      "text": "CoDA在多项操作任务测试中显著提升了分布外成功率，并优于现有的闭环基准方法。",
+      "evidence": "Across four manipulation task families, CoDA improves out-of-distribution success from 5.3% after supervised fine-tuning to 27.6%, exceeding the strongest closed-loop baseline by 9.5 percentage points with the same generation budget."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "模仿学习"
+  ]
+}

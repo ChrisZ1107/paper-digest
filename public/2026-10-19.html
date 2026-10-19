@@ -1,0 +1,146 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>2026-10-19 热门论文 Top 10｜机器人·强化学习·AI</title><body><h1>2026-10-19 热门论文 Top 10</h1>
+<p>机器人 · 强化学习 · 通用 AI</p>
+<p>生成时间：2026-10-19 09:02 CST。从 132 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>
+<p>候选来源：<a href="https://huggingface.co/papers">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>
+<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>
+<h2>1. Player-1: Learning to Play from Synthetic Experience</h2>
+<p><strong>强化学习</strong> · 发表 2026-10-14 · 综合分 5.79</p>
+<p>Zotero 摘要相关性：0.512（相似度分数，不是概率）。</p>
+<p>HF 点赞 334 · 讨论 3 · 本次 HF 热榜第 11 位 · 仓库累计 Star 149（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +0 · 讨论 +0 · Star +40。</p>
+<p><strong>规则标签：</strong>强化学习 · PPO · 大模型后训练 · 推理</p>
+<p><strong>中文概述：</strong>本文提出了Player-1框架，旨在提升计算机控制智能体在游戏中的表现。针对现有模型依赖演示数据覆盖不足的问题，作者通过构建包含16个合成环境的Player-1-Gym进行强化学习，并扩展了包含相对指针移动和复合动作的动作空间。实验表明，该方法在MineDojo、ViZDoom等任务中显著提升了成功率，证明了利用合成经验进行后训练能有效改善游戏的泛化控制能力。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>通过引入Player-1-Gym合成环境与PPO算法，显著提升了游戏任务的成功率。<br><small>摘要依据：The resulting Player-1-9B and Player-1-35B-A3B improve MineDojo-300 success over their SFT policies by 27.8 and 17.7 percentage points, respectively.</small></li>
+<li>扩展了计算机操作的动作空间，包括相对指针移动和复合输入，以适应游戏复杂控制需求。<br><small>摘要依据：We extend the computer-use action space with relative pointer motion, sustained inputs, and composite actions.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习 · PPO · 大模型后训练</p>
+<p><strong>原文摘要节选：</strong>Computer-use agents have demonstrated strong capabilities in interpreting screens and executing keyboard and mouse actions. However, games, with their visually rich worlds and diverse mechanics, remain challenging and offer a demanding next step toward general digital control. Current game-agent learning pipelines often rely on large-scale demonstrations with limited coverage of dynamic game states, while scalable environments for interactive training remain difficult to obtain. We introduce Player-1, a post-training framework for learning game control beyond demonstrations through synthetic experience. We extend the computer-use action space with relative pointer motion, sustained inputs, and composite actions. For supervised initialization, we fine-tune computer-use models on 6,044…</p>
+<p><a href="https://arxiv.org/abs/2610.20584">论文原文</a> · <a href="https://arxiv.org/pdf/2610.20584">PDF</a> · <a href="https://huggingface.co/papers/2610.20584">讨论与热度</a> · <a href="https://github.com/TencentARC/Player-1">代码</a></p><hr>
+<h2>2. Urbex: Agentic Spatial Grounding for City-Scale 3D Scenes</h2>
+<p><strong>强化学习</strong> · 发表 2026-10-13 · 综合分 5.44</p>
+<p>Zotero 摘要相关性：0.458（相似度分数，不是概率）。</p>
+<p>HF 点赞 133 · 讨论 1 · 本次 HF 热榜第 29 位 · 仓库累计 Star 101（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +5 · 讨论 +0 · Star +2。</p>
+<p><strong>规则标签：</strong>强化学习</p>
+<p><strong>中文概述：</strong>城市尺度3D定位通常依赖预计算候选框，导致在大场景下效率低下。为此，作者提出了Urbex，一种将3D定位转化为主动空间搜索的视觉语言代理框架。该框架将城市级场景建模为交互式多视图环境，使视觉语言模型代理能够通过查询地标、缩放局部和渲染斜视图来进行定位。作者利用强化学习优化了该代理的工具使用策略。实验表明，Urbex在CityRefer数据集上实现了最优的定位性能，并表现出更快的推理速度与跨场景稳健性。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>Urbex通过主动空间搜索取代传统的候选框排序，实现了无需候选框的城市级3D定位。<br><small>摘要依据：We propose Urbex, an agentic vision-language framework that instead casts grounding as active spatial search.</small></li>
+<li>在CityRefer数据集上，Urbex在定位精度与效率上均优于现有的城市尺度排序基线模型。<br><small>摘要依据：Experiments show that Urbex achieves the best Hit@1 and IoU on CityRefer, supports candidate-free grounding without ground-truth boxes, and is substantially faster than the strongest city-scale ranking baseline.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>视觉语言动作 · 强化学习 · 导航</p>
+<p><strong>原文摘要节选：</strong>City-scale 3D grounding is commonly formulated as candidate ranking, which requires precomputed instance proposals and becomes inefficient in large outdoor scenes. We propose Urbex, an agentic vision-language framework that instead casts grounding as active spatial search. Urbex represents a city-scale 3D scene as an interactive multi-view environment, allowing a VLM agent to query landmarks, zoom into local regions, render oblique views, and commit a grounded bounding box. We optimize this tool-use policy with reinforcement learning on CityRefer, using smooth localization rewards and lightweight shaping rewards for efficient exploration. Experiments show that Urbex achieves the best Hit@1 and IoU on CityRefer, supports candidate-free grounding without ground-truth boxes, and is…</p>
+<p><a href="https://arxiv.org/abs/2610.18356">论文原文</a> · <a href="https://arxiv.org/pdf/2610.18356">PDF</a> · <a href="https://huggingface.co/papers/2610.18356">讨论与热度</a> · <a href="https://github.com/AMAP-ML/Urbex">代码</a></p><hr>
+<h2>3. MAI-Gym: An Open All-in-One Platform for GUI Agent Evaluation and RL Training across Mobile and Computer Environments</h2>
+<p><strong>强化学习</strong> · 发表 2026-10-14 · 综合分 5.41</p>
+<p>Zotero 摘要相关性：0.452（相似度分数，不是概率）。</p>
+<p>HF 点赞 155 · 讨论 2 · 本次 HF 热榜第 70 位 · 仓库累计 Star 26（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +2 · 讨论 +1 · Star +2。</p>
+<p><strong>规则标签：</strong>强化学习</p>
+<p><strong>中文概述：</strong>针对图形用户界面（GUI）代理在训练环境成本高和任务稀缺方面的挑战，本文提出了MAI-Gym平台。该平台统一了移动端、桌面端及网页端的GUI代理评估、数据采集与在线强化学习训练。MAI-Gym支持多达20,000个并行环境实例，并能自动合成多样化应用与任务。作者声称，通过该平台训练的MAI-Gym-9B模型在多个基准测试中表现出色，且其实际模拟训练成果已成功迁移至真实手机应用中。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>MAI-Gym提供了一个集成平台，支持移动、桌面及网页端的GUI代理评估与在线强化学习训练，并可扩展至20,000个并行环境实例。<br><small>摘要依据：MAI-Gym, an open all-in-one platform that unifies GUI agent evaluation, data collection, and online RL training across mobile, computer, and web environments. Through a shared rollout pipeline, MAI-Gym ensures consistent agent behavior across evaluation and training, supports ten established benchmarks, and scales to 20,000 parallel environment instances.</small></li>
+<li>MAI-Gym-9B在10B参数以下的开源GUI代理中达到领先水平，且在模拟环境中的训练效果可有效迁移至真实设备。<br><small>摘要依据：Using MAI-Gym, we train MAI-Gym-9B, a unified 9B agent for mobile and computer use, achieving state-of-the-art performance among open GUI agents under 10B parameters: 78.4% on MobileWorld and 76.2% on OSWorld-Verified. Importantly, RL in a mocked train-ticketing app transfers to its real-world counterpart, improving task success on a phys- ical phone from 28.8% to 48.1%.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习</p>
+<p><strong>原文摘要节选：</strong>Online reinforcement learning (RL) with verifiable rewards has driven rapid progress in mathematics, coding, and tool use, but scaling this success to GUI agents remains challenging due to the high cost of interactive environments and the scarcity of realistic training tasks. We introduce MAI-Gym, an open all-in-one platform that unifies GUI agent evaluation, data collection, and online RL training across mobile, computer, and web environments. Through a shared rollout pipeline, MAI-Gym ensures consistent agent behavior across evaluation and training, supports ten established benchmarks, and scales to 20,000 parallel environment instances. Beyond scalable infrastructure, MAI-Gym enables automated synthesis of diverse GUI applications and challenging tasks, including resettable mocked apps…</p>
+<p><a href="https://arxiv.org/abs/2610.20939">论文原文</a> · <a href="https://arxiv.org/pdf/2610.20939">PDF</a> · <a href="https://huggingface.co/papers/2610.20939">讨论与热度</a> · <a href="https://github.com/Tongyi-MAI/MAI-Gym">代码</a></p><hr>
+<h2>4. Towards Agentic Robots: Model, Data, Environment, and Harness</h2>
+<p><strong>机器人</strong> · 发表 2026-10-14 · 综合分 5.28</p>
+<p>Zotero 摘要相关性：0.494（相似度分数，不是概率）。</p>
+<p>HF 点赞 34 · 讨论 2 · 本次 HF 热榜第 37 位 · 仓库累计 Star 90（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +0 · 讨论 +0 · Star +5。</p>
+<p><strong>规则标签：</strong>世界模型 · 视觉语言动作</p>
+<p><strong>中文概述：</strong>本文探讨了机器人智能领域从底层动作预测向目标导向型智能体系统的范式转变。作者界定了“智能体机器人”的概念，即具备推理指令、交互环境、自主纠错和动态策略调整能力的系统。通过梳理模型、数据、环境与支撑平台四个功能领域，文章总结了现有研究现状，探讨了智能体如何优化决策与学习过程，并分析了该领域面临的挑战及未来发展方向。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>作者构建了“智能体机器人”的统一分类框架，将相关研究系统性地划分为模型、数据、环境与支撑平台四大功能域下的十七个类别。<br><small>摘要依据：We then clarify the definition and scope of agentic robots and organize existing research into seventeen categories across four functional domains: Model, Data, Environment, and Harness.</small></li>
+<li>文章回顾了机器人领域从单纯的策略学习向集成视觉-语言-动作模型、世界模型等能力的智能体系统的演进过程。<br><small>摘要依据：We first trace the development from robot policies to agentic systems, covering vision-language-action models, world models, and world-action models.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>视觉语言动作 · 世界模型</p>
+<p><strong>原文摘要节选：</strong>Foundation models are driving a paradigm shift in robotic intelligence, moving beyond low-level action prediction to goal-directed orchestration of data collection, model training, task planning, and real-world execution. We characterize this emerging paradigm as an agentic robots, in which agents reason over human instructions, interact with robotic environments, rectify execution errors autonomously, and dynamically adjust operational strategies. Although this field develops fast, current studies are not well connected. Researchers have no consistent view of how to combine different agentic functions into a complete robot system. This paper provides a unified overview of existing research on agentic robots. We first trace the development from robot policies to agentic systems, covering…</p>
+<p><a href="https://arxiv.org/abs/2610.20442">论文原文</a> · <a href="https://arxiv.org/pdf/2610.20442">PDF</a> · <a href="https://huggingface.co/papers/2610.20442">讨论与热度</a> · <a href="https://github.com/chonghanqin/Awesome-Agentic-Robots">代码</a></p><hr>
+<h2>5. More Methods, Better Agents? A Reality Check on Self-Distillation in Agentic Reinforcement Learning</h2>
+<p><strong>强化学习</strong> · 发表 2026-10-14 · 综合分 5.12</p>
+<p>Zotero 摘要相关性：0.449（相似度分数，不是概率）。</p>
+<p>HF 点赞 82 · 讨论 3 · 本次 HF 热榜第 45 位 · 仓库累计 Star 78（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +0 · 讨论 +0 · Star +6。</p>
+<p><strong>规则标签：</strong>强化学习 · 大模型后训练</p>
+<p><strong>中文概述：</strong>本文针对智能体强化学习中的自我蒸馏方法进行了系统性评估。作者指出，现有研究存在基线复用不当、缺乏直接对比以及忽视训练稳定性和计算成本等问题。通过在ALFWorld、ScienceWorld等任务上对比十种代表性方法与GRPO，作者发现现有方法在性能提升方面有限，且常伴随训练不稳定和成本效益不足的问题，旨在为未来的公平对比提供基准参考。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>研究发现自我蒸馏方法相比GRPO的性能提升范围有限，且没有哪种方法能在所有评估设置中表现持续优于GRPO。<br><small>摘要依据：First, gains over GRPO remain limited in scope, with no method consistently outperforming it across settings.</small></li>
+<li>实验证明高性能表现可能掩盖训练过程的不稳定性，且额外的计算成本投入并不总是能转化为更好的模型效果。<br><small>摘要依据：Second, strong final performance can mask unstable training. Third, additional training cost does not consistently translate into better performance.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习 · 推理</p>
+<p><strong>原文摘要节选：</strong>Self-distillation in agentic reinforcement learning has produced a growing number of methods. However, existing evaluations often reuse published baseline scores under differing experimental conditions, provide few direct comparisons among contemporaneous methods, and give limited attention to training stability and computational cost. These limitations obscure the source of reported gains and the practical strengths and weaknesses of competing methods. Costly agent training further motivates a common basis for comparison. To address these gaps, we compare ten representative methods against GRPO on ALFWorld, ScienceWorld, Search-QA, and WebShop across three model sizes. Our study comprises 132 training runs totaling 12,124.4 recorded H800 GPU-hours, with repeated evaluations over eight…</p>
+<p><a href="https://arxiv.org/abs/2610.19789">论文原文</a> · <a href="https://arxiv.org/pdf/2610.19789">PDF</a> · <a href="https://huggingface.co/papers/2610.19789">讨论与热度</a> · <a href="https://github.com/aim-uofa/Self-Distillation-AgentRL">代码</a></p><hr>
+<h2>6. GroundingPI: A Grounding Foundation Model towards Physical Intelligence with Visual Primitives</h2>
+<p><strong>机器人 / 强化学习</strong> · 发表 2026-09-30 · 综合分 5.07</p>
+<p>Zotero 摘要相关性：0.488（相似度分数，不是概率）。</p>
+<p>HF 点赞 321 · 讨论 2 · 本次 HF 热榜第 80 位 · 仓库累计 Star 121（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +0 · 讨论 +0 · Star +14。</p>
+<p><strong>规则标签：</strong>强化学习 · 机器人操作 · 视觉语言动作 · 大模型后训练</p>
+<p><strong>中文概述：</strong>针对现有视觉语言动作模型在复杂及细小物体定位任务中的性能不足，作者提出了GroundingPI，这是一个4B参数规模的定位基础模型。该模型通过将点和框生成为共享词表中的量化坐标，结合多模态空间预训练、监督微调及基于GRPO的强化学习进行训练。实验表明，GroundingPI在多项定位基准上优于现有模型，并在机器人操作和自动驾驶任务中表现出显著的感知提升作用。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>GroundingPI在34个定位基准测试中表现卓越，平均得分达到73.68%，超过了参数量更大的GPT-6 Astra。<br><small>摘要依据：Against 44 baselines across 34 grounding benchmarks spanning 11 perceptual capabilities, GroundingPI establishes a new state of the art, averaging 73.68%, above the larger GPT-6 Astra (71.54%).</small></li>
+<li>作为视觉主干网络，GroundingPI在机器人操作任务中显示出更强的数据效率，仅需50%的演示数据即可超越使用75%数据训练的基线模型。<br><small>摘要依据：On RoboCasa-GR1, GroundingPI trained with 50% of the demonstrations outperforms those baselines trained with 75%.</small></li>
+<li>在自动驾驶场景中，该模型作为视觉主干网络应用时，在nuScenes数据集上实现了平均0.296米的开环L2误差。<br><small>摘要依据：On nuScenes, used as the visual backbone, GroundingPI attains an average open-loop L2 error of 0.296 m.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 导航 · 推理</p>
+<p><strong>原文摘要节选：</strong>Precise grounding matters. It specifies which object is the target and where that object is, even in clutter and for tiny objects, and it has to be fast enough for closed-loop control. Yet vision-language-action (VLA) and world-action models (WAMs) take perception from general-purpose vision-language and video-generation backbones, which still fail in these settings. We introduce GroundingPI, a 4B grounding foundation model that generates points and boxes as quantized coordinates in a shared vocabulary. Training combines multimodal and spatial pretraining, supervised fine-tuning, and reinforcement learning with GRPO, using supervision from public datasets and dedicated data engines. Against 44 baselines across 34 grounding benchmarks spanning 11 perceptual capabilities, GroundingPI…</p>
+<p><a href="https://arxiv.org/abs/2609.39601">论文原文</a> · <a href="https://arxiv.org/pdf/2609.39601">PDF</a> · <a href="https://huggingface.co/papers/2609.39601">讨论与热度</a> · <a href="https://github.com/groundingpi/GroundingPI">代码</a></p><hr>
+<h2>7. CoDA: Co-Evolution of Data Engines and Action Policies</h2>
+<p><strong>机器人</strong> · 发表 2026-10-15 · 综合分 5.03</p>
+<p>Zotero 摘要相关性：0.506（相似度分数，不是概率）。</p>
+<p>HF 点赞 9 · 讨论 3</p>
+<p>较上次观测（1.0 天前）：点赞 +0 · 讨论 +1。</p>
+<p><strong>中文概述：</strong>针对机器人环境构建中物理有效性与训练实用性难以平衡的问题，本文提出CoDA框架。该方法通过共享异构记忆实现模拟数据引擎与动作策略的协同进化。系统利用视觉语言评价器诊断策略失效，并将其转化为生成程序以重现困难场景，同时配合Text2potential方法为动作块价值学习提供阶段性监督。实验表明，该方法在多种操作任务中提升了策略在分布外环境下的成功率与鲁棒性。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出CoDA框架，通过模拟数据引擎与动作策略的协同进化，利用共享记忆实现诊断生成与策略训练的闭环优化。<br><small>摘要依据：We introduce CoDA, a framework in which a simulation data engine and an action policy co-evolve through a shared heterogeneous memory of environment construction, policy failures, and learning progress.</small></li>
+<li>引入Text2potential技术，将策略诊断转化为阶段性势能函数，为动作块学习提供稠密监督信号。<br><small>摘要依据：We further propose Text2potential to convert these diagnoses into staged potentials for action-chunk value learning, providing dense supervision for policy updates while preserving the task&#x27;s optimal policy under standard shaping assumptions.</small></li>
+<li>CoDA在多项操作任务测试中显著提升了分布外成功率，并优于现有的闭环基准方法。<br><small>摘要依据：Across four manipulation task families, CoDA improves out-of-distribution success from 5.3% after supervised fine-tuning to 27.6%, exceeding the strongest closed-loop baseline by 9.5 percentage points with the same generation budget.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 模仿学习</p>
+<p><strong>原文摘要节选：</strong>Generative simulation can automate robot environment construction, but physically valid environments are not necessarily useful for training. The challenge is to identify environments that address a policy&#x27;s failures and supervision that helps it overcome them. We introduce CoDA, a framework in which a simulation data engine and an action policy co-evolve through a shared heterogeneous memory of environment construction, policy failures, and learning progress. The memory compiles validated diagnoses from a vision-language critic into generation programs that recreate difficulties and training programs that help the policy overcome them. We further propose Text2potential to convert these diagnoses into staged potentials for action-chunk value learning, providing dense supervision for…</p>
+<p><a href="https://arxiv.org/abs/2610.22362">论文原文</a> · <a href="https://arxiv.org/pdf/2610.22362">PDF</a> · <a href="https://huggingface.co/papers/2610.22362">讨论与热度</a></p><hr>
+<h2>8. Harness^2: Recursive Agent Harnessing for an Open World</h2>
+<p><strong>通用 AI</strong> · 发表 2026-10-09 · 综合分 4.99</p>
+<p>Zotero 摘要相关性：0.353（相似度分数，不是概率）。</p>
+<p>HF 点赞 115 · 讨论 1 · 本次 HF 热榜第 1 位 · 仓库累计 Star 3414（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +7 · 讨论 +0 · Star +2550。</p>
+<p><strong>中文概述：</strong>本文针对LLM智能体在开放世界中因缺乏基准验证器及任务通用性差导致执行框架（Harness）难以改进的问题，提出了Harness^2框架。该框架包含任务级与框架级两层递归机制：前者通过对比式“提出-探测-组合”步骤在无真值验证情况下优化执行框架；后者通过提取优化经验实现持续改进。实验表明，该方法在多个基准测试中均能有效提升主流模型的任务表现。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出了一种对比式的“提出-探测-组合”递归流程，在无需基准验证器的情况下实现了对任务执行框架的自动优化。<br><small>摘要依据：Task-level recursion refines the current task&#x27;s harness using a contrastive Propose-Probe-Compose step that reliably guides edits without ground-truth verifiers, and can be scaled further via parallel or sequential recursion.</small></li>
+<li>通过引入框架级递归机制，将任务执行经验转化为持续改进能力，提升了智能体对未来任务的适应性。<br><small>摘要依据：Harnessing-level recursion then extracts experience from these edits to update a continual improvement harness, enabling the agent to better adapt to future tasks.</small></li>
+<li>在三个专业基准测试中，该方法显著提升了GLM-5和Gemini 3.5 Flash模型在基础配置下的性能表现。<br><small>摘要依据：Across three professional benchmarks and four model-harness configurations, a single step consistently improves GLM-5 and Gemini 3.5 Flash over their base harnesses, yielding gains of up to 11.5 points on WorkBuddy-Bench, 4.5 points on JobBench, and 11.8 percentage points on LAB</small></li>
+</ul>
+<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>
+<p><strong>原文摘要节选：</strong>LLM agents&#x27; capabilities depend not only on their underlying models but also on their execution harnesses. Recursive self-improvement (RSI) offers a promising approach to automatically evolve these harnesses. However, deploying RSI in open-world settings still faces two critical challenges. First, open-world tasks are typically unseen during the harness design phase and novel at test time, leaving no ground-truth verifiers to reliably guide online harness edits. Second, the RSI process remains highly task-specific and fails to generalize to novel scenarios. We introduce Harness^2, a plug-and-play, recursive agent harnessing framework that addresses these challenges through two connected levels of recursion. Task-level recursion refines the current task&#x27;s harness using a contrastive…</p>
+<p><a href="https://arxiv.org/abs/2610.14224">论文原文</a> · <a href="https://arxiv.org/pdf/2610.14224">PDF</a> · <a href="https://huggingface.co/papers/2610.14224">讨论与热度</a> · <a href="https://github.com/google-research/harness2">代码</a></p><hr>
+<h2>9. VLA-Δ: Learning Physical State Transition for Vision-Language-Action Models</h2>
+<p><strong>机器人</strong> · 发表 2026-10-15 · 综合分 4.96</p>
+<p>Zotero 摘要相关性：0.460（相似度分数，不是概率）。</p>
+<p>HF 点赞 54 · 讨论 2 · 仓库累计 Star 17（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +0 · 讨论 +0 · Star +1。</p>
+<p><strong>规则标签：</strong>视觉语言动作 · 推理</p>
+<p><strong>中文概述：</strong>视觉语言动作（VLA）模型常因缺乏对物理状态变化的监督而过度拟合观测与动作的关联。针对此问题，作者提出了VLA-Δ框架，通过将当前状态与未来状态之间的物理变化作为明确的学习目标，构建了包含语义与视觉运动变化标注的大规模预训练数据集。该方法为连续动作生成提供了直接监督，且在推理阶段无需额外计算开销。实验表明，VLA-Δ在LIBERO和RoboTwin基准测试中表现出色，并在真实机器人实验中优于π_{0.5}。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>VLA-Δ引入物理状态变化作为学习目标，通过明确的监督优化连续动作生成过程，提升了模型对物理变化的理解。<br><small>摘要依据：We therefore propose VLA-Δ, a general framework that uses physical changes between current and future states as explicit learning targets.</small></li>
+<li>该方法在保持推理高效性的同时，在主流机器人基准测试及真实环境实验中均展示了优于或媲美现有顶尖模型（如π_{0.5}）的性能。<br><small>摘要依据：VLA-Δ achieves performance competitive with the state of the art on LIBERO and RoboTwin, and outperforms π_{0.5} in real-robot experiments.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>视觉语言动作</p>
+<p><strong>原文摘要节选：</strong>Vision-language-action (VLA) models transfer semantic knowledge acquired through vision-language pretraining to robot control, achieving strong performance across various benchmarks. However, most VLAs directly map observations to demonstrated actions without explicit supervision of intermediate physical state changes, making them prone to overfitting observation-action correspondences. Some methods introduce intermediate reasoning or future-state prediction in language, visual, or latent spaces to guide action generation, but do not explicitly supervise the physical state transition itself. We therefore propose VLA-Δ, a general framework that uses physical changes between current and future states as explicit learning targets. To support this objective, we construct a large-scale…</p>
+<p><a href="https://arxiv.org/abs/2610.21306">论文原文</a> · <a href="https://arxiv.org/pdf/2610.21306">PDF</a> · <a href="https://huggingface.co/papers/2610.21306">讨论与热度</a> · <a href="https://github.com/ZJU-OmniAI/VLA-Delta">代码</a></p><hr>
+<h2>10. Mosaic: Multi-Session Agentic Reinforcement Learning</h2>
+<p><strong>强化学习</strong> · 发表 2026-10-15 · 综合分 4.85</p>
+<p>Zotero 摘要相关性：0.398（相似度分数，不是概率）。</p>
+<p>HF 点赞 54 · 讨论 2 · 本次 HF 热榜第 56 位 · 仓库累计 Star 34（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +0 · Star +1。</p>
+<p><strong>规则标签：</strong>强化学习</p>
+<p><strong>中文概述：</strong>针对现有智能体强化学习方法通常假设单会话轨迹、无法有效处理多会话任务的问题，本文提出了多会话智能体强化学习（Multi-Session Agentic RL）框架。作者提出了一种名为Mosaic的方法，通过引入无需Critic的分层优化策略，在轨迹层将会话使用信号纳入优势估计，并在会话层根据边际贡献调整优势。在Qwen3.5-4B模型上的实验表明，该方法在上下文压缩和子智能体分支场景中相比广播机制更具效率和性能优势。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>Mosaic采用分层优化策略，通过整合会话使用信号并根据边际贡献调整会话优势，提升了多会话任务的处理能力。<br><small>摘要依据：At the trajectory level, it incorporates session-usage signals into advantage estimation. At the session level, it shapes each session&#x27;s advantage according to the estimated marginal contribution.</small></li>
+<li>实验结果表明，在上下文压缩和子智能体分支场景中，Mosaic在提升性能的同时实现了更少的平均会话消耗。<br><small>摘要依据：Experiments on BrowseComp with Qwen3.5-4B show that Mosaic outperforms broadcasting in both context compaction and subagent forking scenarios while using fewer sessions on average.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习 · 推理</p>
+<p><strong>原文摘要节选：</strong>Most existing agentic reinforcement learning methods assume single-session trajectories, where interaction proceeds within one continuously accumulated context. However, agentic techniques such as context compaction and subagent forking may produce trajectories spanning multiple sessions, creating a mismatch between the single-session training assumption and inference-time execution. Therefore, we introduce Multi-Session Agentic Reinforcement Learning, a more general setting that supports an arbitrary number of sessions within a trajectory. Under this setting, a widely adopted method is to broadcast trajectory-level advantages to all sessions, but this does not distinguish contributions from various sessions or guide session allocation within trajectories. To address this issue, we…</p>
+<p><a href="https://arxiv.org/abs/2610.22174">论文原文</a> · <a href="https://arxiv.org/pdf/2610.22174">PDF</a> · <a href="https://huggingface.co/papers/2610.22174">讨论与热度</a> · <a href="https://github.com/LARK-AI-Lab/Mosaic">代码</a></p><hr></body></html>

@@ -1,0 +1,21 @@
+{
+  "overview": "本文针对LLM智能体在开放世界中因缺乏基准验证器及任务通用性差导致执行框架（Harness）难以改进的问题，提出了Harness^2框架。该框架包含任务级与框架级两层递归机制：前者通过对比式“提出-探测-组合”步骤在无真值验证情况下优化执行框架；后者通过提取优化经验实现持续改进。实验表明，该方法在多个基准测试中均能有效提升主流模型的任务表现。",
+  "highlights": [
+    {
+      "text": "提出了一种对比式的“提出-探测-组合”递归流程，在无需基准验证器的情况下实现了对任务执行框架的自动优化。",
+      "evidence": "Task-level recursion refines the current task's harness using a contrastive Propose-Probe-Compose step that reliably guides edits without ground-truth verifiers, and can be scaled further via parallel or sequential recursion."
+    },
+    {
+      "text": "通过引入框架级递归机制，将任务执行经验转化为持续改进能力，提升了智能体对未来任务的适应性。",
+      "evidence": "Harnessing-level recursion then extracts experience from these edits to update a continual improvement harness, enabling the agent to better adapt to future tasks."
+    },
+    {
+      "text": "在三个专业基准测试中，该方法显著提升了GLM-5和Gemini 3.5 Flash模型在基础配置下的性能表现。",
+      "evidence": "Across three professional benchmarks and four model-harness configurations, a single step consistently improves GLM-5 and Gemini 3.5 Flash over their base harnesses, yielding gains of up to 11.5 points on WorkBuddy-Bench, 4.5 points on JobBench, and 11.8 percentage points on LAB"
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "推理"
+  ]
+}
