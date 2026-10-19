@@ -3083,6 +3083,62 @@
           "abstract_zh": "Flow matching 已成为训练高质量生成模型的一种可扩展范式，但从学习到的概率流中进行采样需要多次网络评估。蒸馏可以将此成本降低至一次或少数几次评估；然而，单步生成往往会牺牲质量，使得少步生成成为实际应用中的运行模式。现有的少步方法沿着概率流执行迭代计算，因此需要固定且人工选择的时间步离散化。这种离散化通常是根据经验选择的，且调整成本高昂；当样本或空间位置之间的细化难度不同时，它也可能具有限制性。我们引入了数据空间迭代（data-space iteration），这是一种去除了流离散化的少步生成框架。从噪声出发，共享生成器直接在数据空间中细化其预测，并对每次迭代进行训练，以产生在其容量允许范围内的最佳样本。我们的公式以极小的改动即可与分布匹配蒸馏（DMD）相结合，从而能够在匹配的训练设置下对不同迭代方法进行受控比较。在类别条件 ImageNet 256x256 上，数据空间迭代的表现优于标准的离散化基线，并且在无需针对特定调度进行训练的情况下，匹配或改进了通过调度搜索选择的变体。这些结果表明，对于快速生成而言，数据空间迭代提供了一种简单且有效的替代离散化流空间迭代的方法。"
         }
       ]
+    },
+    "A3ivcJeq3mY": {
+      "video_id": "A3ivcJeq3mY",
+      "video_title": "World Modeling Through Spectral Alignment (Oct 2026)",
+      "published": "2026-10-19",
+      "video_url": "https://www.youtube.com/watch?v=A3ivcJeq3mY",
+      "papers": [
+        {
+          "id": "2610.15429",
+          "title": "World Modeling Through Spectral Alignment (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.15429"
+        }
+      ]
+    },
+    "5zt6eXbPytQ": {
+      "video_id": "5zt6eXbPytQ",
+      "video_title": "Jeva: System One Models from First Principles (Oct 2026)",
+      "published": "2026-10-19",
+      "video_url": "https://www.youtube.com/watch?v=5zt6eXbPytQ",
+      "papers": [
+        {
+          "id": "2610.18773",
+          "title": "Jeva: System One Models from First Principles (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.18773"
+        }
+      ]
+    },
+    "B3qz6LFRNUY": {
+      "video_id": "B3qz6LFRNUY",
+      "video_title": "Training Language Models to Fail Gracefully (Oct 2026)",
+      "published": "2026-10-19",
+      "video_url": "https://www.youtube.com/watch?v=B3qz6LFRNUY",
+      "papers": [
+        {
+          "id": "2610.20401",
+          "title": "Training Language Models to Fail Gracefully (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.20401"
+        }
+      ]
+    },
+    "jMokdur7oWg": {
+      "video_id": "jMokdur7oWg",
+      "video_title": "VLA-$Δ$: Learning Physical State Transition for Vision-Language-Action Models (Oct 2026)",
+      "published": "2026-10-19",
+      "video_url": "https://www.youtube.com/watch?v=jMokdur7oWg",
+      "papers": [
+        {
+          "id": "2610.21306",
+          "title": "VLA-$Δ$: Learning Physical State Transition for Vision-Language-Action Models (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.21306"
+        }
+      ]
+    },
+    "yzJogVGupvs": {
+      "video_id": "yzJogVGupvs",
+      "papers": []
     }
   }
 }
