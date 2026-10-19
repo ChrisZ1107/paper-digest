@@ -3093,7 +3093,9 @@
         {
           "id": "2610.15429",
           "title": "World Modeling Through Spectral Alignment (Oct 2026)",
-          "url": "https://arxiv.org/abs/2610.15429"
+          "url": "https://arxiv.org/abs/2610.15429",
+          "abstract": "How do we tell a world model what information to preserve? We study this question through the lens of spectral representation learning. We introduce SpecWM, a JEPA framework that explicitly specifies desired relationships between observations through a target similarity kernel and trains the encoder to reproduce those relationships in its embedding geometry. Different kernels provide different supervision, ranging from physical state information to a fully self-supervised temporal kernel requiring only the ordering of observations within trajectories. We characterize the global optima of the objective, establish conditions for linear recoverability and invariance to nuisance information, and connect temporal-kernel similarity to the behavioral successor measure under an idealized setting. Empirically, the choice of kernel strongly controls which physical quantities are recoverable from the representation. More importantly, temporal spectral alignment improves CEM planning success over LeWorldModel from 52% to 68% on OGBench Cube, 49% to 77% on OGBench Scene, and 29% to 51% on CALVIN. These results suggest that explicitly specifying representation geometry provides a simple way to steer what latent world models preserve for control.",
+          "abstract_zh": "我们该如何告诉世界模型需要保留哪些信息？本文通过谱表示学习（spectral representation learning）的视角研究了这一问题。我们引入了 SpecWM，这是一种 JEPA 框架，它通过目标相似度核（target similarity kernel）明确指定观测值之间预期的关系，并训练编码器在嵌入几何空间中复现这些关系。不同的核提供不同的监督信号，从物理状态信息到仅需观测值轨迹顺序的完全自监督时间核（temporal kernel）。我们刻画了该目标的全局最优解，建立了线性可恢复性（linear recoverability）和对干扰信息不变性的条件，并在理想化设置下将时间核相似度与行为后继测度（behavioral successor measure）联系起来。实验表明，核的选择强烈影响了从表示中可恢复的物理量。更重要的是，时间谱对齐（temporal spectral alignment）将 CEM 规划在 OGBench Cube 上的成功率从 52% 提升至 68%，在 OGBench Scene 上从 49% 提升至 77%，在 CALVIN 上从 29% 提升至 51%，均优于 LeWorldModel。这些结果表明，明确指定表示几何结构为引导潜在世界模型保留用于控制的信息提供了一种简便方法。"
         }
       ]
     },
