@@ -3147,6 +3147,71 @@
     "yzJogVGupvs": {
       "video_id": "yzJogVGupvs",
       "papers": []
+    },
+    "t6CcpqPFV0U": {
+      "video_id": "t6CcpqPFV0U",
+      "video_title": "Mitigating Cross-Modal Hallucinations by Correcting Modality Misrouting in Omnimodal LLMs (Oct 2026)",
+      "published": "2026-10-20",
+      "video_url": "https://www.youtube.com/watch?v=t6CcpqPFV0U",
+      "papers": [
+        {
+          "id": "2610.18141",
+          "title": "Mitigating Cross-Modal Hallucinations by Correcting Modality Misrouting in Omnimodal LLMs (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.18141"
+        }
+      ]
+    },
+    "V7Xgk2ROeXI": {
+      "video_id": "V7Xgk2ROeXI",
+      "video_title": "Terminal-RSI: Recursive Self-Improving Terminal Agents via Recursive Self-Rewrite and Policy-Refine",
+      "published": "2026-10-20",
+      "video_url": "https://www.youtube.com/watch?v=V7Xgk2ROeXI",
+      "papers": [
+        {
+          "id": "2610.22192",
+          "title": "Terminal-RSI: Recursive Self-Improving Terminal Agents via Recursive Self-Rewrite and Policy-Refine (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.22192"
+        }
+      ]
+    },
+    "U5ZOcoGLG3w": {
+      "video_id": "U5ZOcoGLG3w",
+      "video_title": "T2-z: Test-Time Optimization of Environment Latents for Robotic World Models (Oct 2026)",
+      "published": "2026-10-20",
+      "video_url": "https://www.youtube.com/watch?v=U5ZOcoGLG3w",
+      "papers": [
+        {
+          "id": "2610.22364",
+          "title": "T2-z: Test-Time Optimization of Environment Latents for Robotic World Models (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.22364"
+        }
+      ]
+    },
+    "VhIZiaBo65M": {
+      "video_id": "VhIZiaBo65M",
+      "video_title": "Scaling Discovery Requires Forgetting (Oct 2026)",
+      "published": "2026-10-20",
+      "video_url": "https://www.youtube.com/watch?v=VhIZiaBo65M",
+      "papers": [
+        {
+          "id": "2610.20563",
+          "title": "Scaling Discovery Requires Forgetting (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.20563"
+        }
+      ]
+    },
+    "OKhpPzY2gZ4": {
+      "video_id": "OKhpPzY2gZ4",
+      "video_title": "The Agentic Scientist: Orchestrating Coding Agents for Automated Scientific (Co-)Discovery",
+      "published": "2026-10-20",
+      "video_url": "https://www.youtube.com/watch?v=OKhpPzY2gZ4",
+      "papers": [
+        {
+          "id": "2610.18933",
+          "title": "The Agentic Scientist: Orchestrating Coding Agents for Automated Scientific (Co-)Discovery (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.18933"
+        }
+      ]
     }
   }
 }
