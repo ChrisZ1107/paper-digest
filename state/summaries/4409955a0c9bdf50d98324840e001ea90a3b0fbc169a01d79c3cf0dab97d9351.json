@@ -1,0 +1,18 @@
+{
+  "overview": "针对四足机器人难以应对工业与灾难现场复杂多变地形的问题，本文提出了FCTS（失败引导的课程树搜索）框架。该方法利用机器人在此前训练中的局部穿越失败信息，通过蒙特卡洛树搜索自动生成针对性地形，以优化策略训练。实验结果表明，该方法在复杂真实场景重构地形上的穿越成功率显著优于现有基准，且实机部署验证了其Sim-to-Real的迁移能力。",
+  "highlights": [
+    {
+      "text": "FCTS框架利用机器人在训练过程中的局部穿越失败信息，通过蒙特卡洛树搜索自动生成具有针对性的训练地形，以提升复杂环境下的泛化能力。",
+      "evidence": "We propose FCTS, a failure-conditioned terrain curriculum framework that uses localized traversal failures to automatically generate the terrains a policy should train on next. Each failure's location, termination mode, robot state, and surrounding terrain geometry condition this generation, and Monte Carlo Tree Search explores alternative curriculum trajectories under a fixed training budget."
+    },
+    {
+      "text": "在复杂地形的测试中，相比基准方法，FCTS框架将中等难度课程的成功率由28.4%提升至85.8%，高难度课程由14.9%提升至44.7%。",
+      "evidence": "On terrains built from scanned real-world construction sites, FCTS raises success rate from 28.4% to 85.8% on a medium-difficulty course and from 14.9% to 44.7% on a hard course relative to the strongest parkour or LLM-curriculum baselines"
+    }
+  ],
+  "tags": [
+    "四足机器人",
+    "足式运动",
+    "Sim-to-Real"
+  ]
+}

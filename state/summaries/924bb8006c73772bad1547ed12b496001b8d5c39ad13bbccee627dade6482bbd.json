@@ -1,0 +1,17 @@
+{
+  "overview": "针对四足操作机器人（quadruped manipulator）在复杂非结构化环境下的运动与操作耦合难题，本文提出了一种基于强化学习的全身控制框架。该方法结合了混合任务表征与任务优先级的全身学习策略，旨在协同处理移动与操作任务，同时保持末端执行器的任务一致性。作者通过在小型四足平台上进行实地实验，验证了该框架在斜坡、楼梯及可变形地形等环境下的适应能力。",
+  "highlights": [
+    {
+      "text": "提出了一种基于强化学习的全身控制框架，通过混合任务表征与任务优先级策略，实现了四足机器人移动与操作任务的有效协同。",
+      "evidence": "The proposed framework combines a hybrid task representation with task-prioritized whole-body learning to coordinate locomotion and manipulation while preserving task-consistent end-effector behavior."
+    },
+    {
+      "text": "该框架在小型四足操作机器人平台上得到了验证，能够成功应对包括30度斜坡、楼梯及可变形地形在内的多种复杂真实环境。",
+      "evidence": "Real-world experiments demonstrate successful deployment on complex terrains such as slopes up to 30 degrees, stairs, and deformable terrain."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "四足机器人"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "overview": "针对通用机器人策略在微调过程中在线交互效率低的问题，本文提出了AnchorQ方法。该方法引入结构化的潜在动作表示，通过流反转将参考行为映射为状态条件锚点，并在锚点周围进行粒子采样以实现细粒度优化。作者声称，相比现有的基准方法，该方法在模拟和真实世界的操作任务中提升了样本效率及成功率。",
+  "highlights": [
+    {
+      "text": "AnchorQ利用流反转技术建立结构化的潜在动作表示，通过在参考行为锚点周围进行价值引导的粒子采样，实现了从粗到细的策略优化，克服了传统噪声空间探索效率低的问题。",
+      "evidence": "At each decision step, AnchorQ uses flow reversal to map reference behaviors to state-conditioned latent anchors, samples local particles around those anchors, and applies value-guided sampling to explore promising refinements."
+    },
+    {
+      "text": "实验证明，在相同的交互预算下，AnchorQ在真实世界操作任务中的成功率提升了37%，在模拟任务中的吞吐量提高了97%。",
+      "evidence": "Across simulated and real-world manipulation tasks, AnchorQ outperforms state-of-the-art post-training baselines in sample efficiency, delivering a 37% improvement in real-world success rate and 97% higher simulated task throughput under the same interaction budget."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "大模型后训练"
+  ]
+}

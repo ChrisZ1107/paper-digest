@@ -1,0 +1,16 @@
+{
+  "overview": "本文提出了TransNav，一种基于Transformer的四足无人机端到端导航方法，旨在解决复杂静态与动态环境下的避障问题。该方法采用基于Patch的点云编码方案，将局部特征提取与全局上下文建模结合，实现高效的环境表示。通过集成轻量级点质量动力学模型，该策略支持无监督学习，直接对预测轨迹序列的成本进行优化，无需专家演示，实现了感知与导航的一体化，并具备较低的机载推理成本。",
+  "highlights": [
+    {
+      "text": "TransNav采用基于Patch的点云编码方案，能够统一处理静态与动态环境下的避障问题。",
+      "evidence": "TransNav employs a patch-based point-cloud encoding scheme that combines local feature extraction with global contextual modeling, enabling compact yet informative environment representation."
+    },
+    {
+      "text": "该方法通过结合轻量级点质量动力学模型进行无监督学习，无需专家数据即可优化轨迹成本。",
+      "evidence": "Moreover, we develop an unsupervised learning strategy by incorporating a lightweight point-mass dynamics model, which directly optimizes trajectory-level costs over the predicted sequence through numerical gradient propagation."
+    }
+  ],
+  "tags": [
+    "导航"
+  ]
+}

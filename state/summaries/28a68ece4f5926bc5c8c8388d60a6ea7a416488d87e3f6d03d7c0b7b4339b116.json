@@ -1,0 +1,20 @@
+{
+  "overview": "针对越野环境下的高速自主导航任务，作者提出了一种名为SpatialBEV的动态学习方法。该方法利用鸟瞰图（BEV）特征获取预测状态周围的几何与语义信息，从而建立更具空间结构感的动力学模型。此外，作者引入了一种挖掘数据集难点场景的评估方法。实验结果表明，该方法在离线数据集及实际高难度越野赛道上，均能有效降低动力学预测误差及跨轨误差。",
+  "highlights": [
+    {
+      "text": "SpatialBEV通过在预测状态周围查询鸟瞰图（BEV）特征，结合局部环境的几何和语义提示来增强动力学预测，改善了以往简单化条件设置的局限性。",
+      "evidence": "At each step, we query the bird's-eye-view (BEV) features around the predicted state, conditioning the next prediction on current geometric and semantic cues."
+    },
+    {
+      "text": "在不同季节的数据集对比中，SpatialBEV相比物理模型和学习基线方法，将预测误差降低了17.1%。",
+      "evidence": "On datasets collected across seasons, SpatialBEV reduces prediction error by 17.1%, compared to physics-based and learned baselines."
+    },
+    {
+      "text": "在实际硬件平台的高速（≥10 m/s）越野测试中，SpatialBEV实现了25.3%的最大跨轨误差缩减。",
+      "evidence": "We further evaluate on hardware on high-speed ($\\geq$10 m/s) and geometrically challenging courses with a 25.3% reduction in maximum cross-track error."
+    }
+  ],
+  "tags": [
+    "导航"
+  ]
+}
