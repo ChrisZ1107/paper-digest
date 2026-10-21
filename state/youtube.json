@@ -3222,6 +3222,251 @@
           "abstract_zh": "现代编程智能体正在从根本上重塑人类在计算研究中的角色：它们编写代码、发起计算机模拟实验、分析实验结果，并以不断延长的跨度自主运行。尽管有了这些发展，完全自主的研究智能体仍受限于有限的构思范围和短视的爬山搜索动态。为了弥补这一差距，我们推出了 The Agentic Scientist，这是一个端到端的分布式流程，旨在让研究人员能够与现代编程智能体并肩开展计算研究。在继承前代系统能力的基础上，我们的系统将研究拆解为任务起草、创意生成、规划、沙盒实验、结果汇总、基线与消融实验构建、事后分析以及论文撰写。至关重要的是，该流程的每一步均由新一代编程智能体驱动，并利用了智能体自我验证机制。整个研究过程由一个元控制器驱动，该控制器负责管理并行研究智能体，并在每个阶段强制执行标准验证。这种设计使得同一编排层能够在具有不同执行环境、编程工具链和评估指标的异构领域中重复使用。我们的系统可在多种自主程度下使用：既可作为科研辅助工具，也可执行端到端的科学调查。在科研辅助模式下，我们利用系统的一个开发版本提交了一篇研究论文，并被 ALIFE 2026 接收。我们进一步将 The Agentic Scientist 完全自主地应用于机器学习领域的开放性问题求解任务，并证明了该系统在不同计算研究领域实现科学发现的能力。我们的消融实验表明，可靠的科学自主性不仅依赖于基础模型的能力，还取决于跨智能体的编排层。"
         }
       ]
+    },
+    "QM69tSXogNw": {
+      "video_id": "QM69tSXogNw",
+      "video_title": "InfiniSplat v2: Analyzing and Improving Feed-Forward 3DGS from Any Views (Oct 2026)",
+      "published": "2026-10-21",
+      "video_url": "https://www.youtube.com/watch?v=QM69tSXogNw",
+      "papers": [
+        {
+          "id": "2610.20341",
+          "title": "InfiniSplat v2: Analyzing and Improving Feed-Forward 3DGS from Any Views (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.20341"
+        }
+      ]
+    },
+    "OdMxRqs26C0": {
+      "video_id": "OdMxRqs26C0",
+      "video_title": "CyberArena: Benchmarking AI Agents in Live Symmetric Attack-and-Defense Combat (Oct 2026)",
+      "published": "2026-10-21",
+      "video_url": "https://www.youtube.com/watch?v=OdMxRqs26C0",
+      "papers": [
+        {
+          "id": "2610.19005",
+          "title": "CyberArena: Benchmarking AI Agents in Live Symmetric Attack-and-Defense Combat (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.19005"
+        }
+      ]
+    },
+    "Kr9LxnwPulw": {
+      "video_id": "Kr9LxnwPulw",
+      "video_title": "Any Time, Any Space: A World-State-Centric Framework for Agentic Video Generation (Oct 2026)",
+      "published": "2026-10-21",
+      "video_url": "https://www.youtube.com/watch?v=Kr9LxnwPulw",
+      "papers": [
+        {
+          "id": "2610.20571",
+          "title": "Any Time, Any Space: A World-State-Centric Framework for Agentic Video Generation (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.20571"
+        }
+      ]
+    },
+    "bTb5be8QMU0": {
+      "video_id": "bTb5be8QMU0",
+      "video_title": "Scene-Designer: Learning Design Intelligence for Agentic 3D Scene Generation (Oct 2026)",
+      "published": "2026-10-21",
+      "video_url": "https://www.youtube.com/watch?v=bTb5be8QMU0",
+      "papers": [
+        {
+          "id": "2610.23121",
+          "title": "Scene-Designer: Learning Design Intelligence for Agentic 3D Scene Generation (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.23121"
+        }
+      ]
+    },
+    "r9MJRQNJ2ys": {
+      "video_id": "r9MJRQNJ2ys",
+      "video_title": "EmbodiedEvo: Self-Evolving Coding Agent For Physical Intelligence (Oct 2026)",
+      "published": "2026-10-21",
+      "video_url": "https://www.youtube.com/watch?v=r9MJRQNJ2ys",
+      "papers": [
+        {
+          "id": "2610.18867",
+          "title": "EmbodiedEvo: Self-Evolving Coding Agent For Physical Intelligence (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.18867"
+        }
+      ]
+    },
+    "5nSiZXa4dSc": {
+      "video_id": "5nSiZXa4dSc",
+      "video_title": "Librarian Agents: Training LLMs to Curate Long-Context Workspaces that Anticipate Future Queries",
+      "published": "2026-10-21",
+      "video_url": "https://www.youtube.com/watch?v=5nSiZXa4dSc",
+      "papers": [
+        {
+          "id": "2610.22273",
+          "title": "Librarian Agents: Training LLMs to Curate Long-Context Workspaces that Anticipate Future Queries (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.22273"
+        }
+      ]
+    },
+    "ONxq4vySlww": {
+      "video_id": "ONxq4vySlww",
+      "video_title": "AutoSFT: An Agentic System for Automated Data Research in Supervised Fine-Tuning (Oct 2026)",
+      "published": "2026-10-21",
+      "video_url": "https://www.youtube.com/watch?v=ONxq4vySlww",
+      "papers": [
+        {
+          "id": "2610.22194",
+          "title": "AutoSFT: An Agentic System for Automated Data Research in Supervised Fine-Tuning (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.22194"
+        }
+      ]
+    },
+    "AJ_1zaW3-2g": {
+      "video_id": "AJ_1zaW3-2g",
+      "video_title": "A team of Gemini 4 Argon agents beats Minecraft (Oct 2026)",
+      "published": "2026-10-21",
+      "video_url": "https://www.youtube.com/watch?v=AJ_1zaW3-2g",
+      "papers": [
+        {
+          "id": "2610.22319",
+          "title": "A team of Gemini 4 Argon agents beats Minecraft (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.22319"
+        }
+      ]
+    },
+    "1r7z5iVr1bY": {
+      "video_id": "1r7z5iVr1bY",
+      "video_title": "More Methods, Better Agents? A Reality Check on Self-Distillation in Agentic Reinforcement Learning",
+      "published": "2026-10-21",
+      "video_url": "https://www.youtube.com/watch?v=1r7z5iVr1bY",
+      "papers": [
+        {
+          "id": "2610.19789",
+          "title": "More Methods, Better Agents? A Reality Check on Self-Distillation in Agentic Reinforcement Learning (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.19789"
+        }
+      ]
+    },
+    "7Czj3n5vlE4": {
+      "video_id": "7Czj3n5vlE4",
+      "video_title": "Reasoning Models Explained: From Chain of Thought to Hybrid Reasoning Agents",
+      "published": "2026-10-21",
+      "video_url": "https://www.youtube.com/watch?v=7Czj3n5vlE4",
+      "papers": [
+        {
+          "id": "2610.18861",
+          "title": "2610.18861",
+          "url": "https://arxiv.org/abs/2610.18861"
+        },
+        {
+          "id": "2112.00114",
+          "title": "2112.00114",
+          "url": "https://arxiv.org/abs/2112.00114"
+        },
+        {
+          "id": "2201.11903",
+          "title": "2201.11903",
+          "url": "https://arxiv.org/abs/2201.11903"
+        },
+        {
+          "id": "2205.11916",
+          "title": "2205.11916",
+          "url": "https://arxiv.org/abs/2205.11916"
+        },
+        {
+          "id": "2203.11171",
+          "title": "2203.11171",
+          "url": "https://arxiv.org/abs/2203.11171"
+        },
+        {
+          "id": "2305.20050",
+          "title": "2305.20050",
+          "url": "https://arxiv.org/abs/2305.20050"
+        },
+        {
+          "id": "2305.10601",
+          "title": "2305.10601",
+          "url": "https://arxiv.org/abs/2305.10601"
+        },
+        {
+          "id": "2203.14465",
+          "title": "2203.14465",
+          "url": "https://arxiv.org/abs/2203.14465"
+        },
+        {
+          "id": "2412.16720",
+          "title": "2412.16720",
+          "url": "https://arxiv.org/abs/2412.16720"
+        },
+        {
+          "id": "2501.12948",
+          "title": "2501.12948",
+          "url": "https://arxiv.org/abs/2501.12948"
+        },
+        {
+          "id": "2501.19393",
+          "title": "2501.19393",
+          "url": "https://arxiv.org/abs/2501.19393"
+        },
+        {
+          "id": "2504.13837",
+          "title": "2504.13837",
+          "url": "https://arxiv.org/abs/2504.13837"
+        },
+        {
+          "id": "2506.06941",
+          "title": "2506.06941",
+          "url": "https://arxiv.org/abs/2506.06941"
+        },
+        {
+          "id": "2505.05410",
+          "title": "2505.05410",
+          "url": "https://arxiv.org/abs/2505.05410"
+        },
+        {
+          "id": "2310.02226",
+          "title": "2310.02226",
+          "url": "https://arxiv.org/abs/2310.02226"
+        },
+        {
+          "id": "2311.01460",
+          "title": "2311.01460",
+          "url": "https://arxiv.org/abs/2311.01460"
+        },
+        {
+          "id": "2412.06769",
+          "title": "2412.06769",
+          "url": "https://arxiv.org/abs/2412.06769"
+        },
+        {
+          "id": "2604.06374",
+          "title": "2604.06374",
+          "url": "https://arxiv.org/abs/2604.06374"
+        },
+        {
+          "id": "2606.31779",
+          "title": "2606.31779",
+          "url": "https://arxiv.org/abs/2606.31779"
+        },
+        {
+          "id": "2507.11473",
+          "title": "2507.11473",
+          "url": "https://arxiv.org/abs/2507.11473"
+        },
+        {
+          "id": "2211.10435",
+          "title": "2211.10435",
+          "url": "https://arxiv.org/abs/2211.10435"
+        },
+        {
+          "id": "2210.03629",
+          "title": "2210.03629",
+          "url": "https://arxiv.org/abs/2210.03629"
+        },
+        {
+          "id": "2303.11366",
+          "title": "2303.11366",
+          "url": "https://arxiv.org/abs/2303.11366"
+        },
+        {
+          "id": "2606.13106",
+          "title": "2606.13106",
+          "url": "https://arxiv.org/abs/2606.13106"
+        }
+      ]
     }
   }
 }
