@@ -3508,6 +3508,19 @@
           "url": "https://arxiv.org/abs/2606.13106"
         }
       ]
+    },
+    "NE5daA0QZTA": {
+      "video_id": "NE5daA0QZTA",
+      "video_title": "Tree-Aware Posterior Distillation for Long-Horizon Agentic Reinforcement Learning (Oct 2026)",
+      "published": "2026-10-21",
+      "video_url": "https://www.youtube.com/watch?v=NE5daA0QZTA",
+      "papers": [
+        {
+          "id": "2610.23181",
+          "title": "Tree-Aware Posterior Distillation for Long-Horizon Agentic Reinforcement Learning (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.23181"
+        }
+      ]
     }
   }
 }
