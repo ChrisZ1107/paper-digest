@@ -1,0 +1,17 @@
+{
+  "overview": "针对机器人集群部署过程中提升策略可靠性的需求，本文提出了集体经验学习（CEL）范式。该方法通过失败引导的经验检索微调（FERT），利用失败上下文从共享的成功轨迹中检索片段进行监督更新，无需人工干预或专家演示。同时，配合故障容错异步训练系统（FATS），实现了集群内经验的自动收集与策略优化。实验结果显示，该方法在多种机器人操作任务中提升了成功率，并随集群规模扩大表现出更好的性能。",
+  "highlights": [
+    {
+      "text": "FERT方法无需收集额外的专家演示或纠正动作，通过利用失败上下文检索共享经验库中的成功轨迹片段来指导策略更新。",
+      "evidence": "We realize CEL through failure-guided experience retrieval fine-tuning (FERT), which uses failure contexts from robot executions to retrieve relevant trajectory segments from the fleet's shared successful experience and uses their actions as supervision for policy updates, without collecting additional expert demonstrations or corrective actions."
+    },
+    {
+      "text": "作者通过五个真实世界操作任务验证了该方法的可靠性，在未参与训练数据的机器人上实现了93.3%至99.2%的成功率。",
+      "evidence": "Across five real-world manipulation tasks, the resulting policies achieve success rates of 93.3-99.2%, evaluated over 120 trials per task on robots excluded from training data collection."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "Sim-to-Real"
+  ]
+}

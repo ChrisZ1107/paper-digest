@@ -1,0 +1,23 @@
+{
+  "overview": "针对被动轮式四足机器人的节能导航问题，本文提出了SkateNav框架。通过强化学习结合时间预算目标，该框架统一学习了转向、推进及推进-滑行的时间分配。利用自适应滑行周期和频率调制策略，实现了对滑行阶段的灵活控制，解决了传统速度追踪目标抑制滑行效率的问题。仿真与实机实验表明，该方法在复杂环境下实现了节能导航，且具备良好的零样本迁移能力。",
+  "highlights": [
+    {
+      "text": "提出了一种基于强化学习的统一滑行-导航框架，通过时间预算目标联合优化转向与推进策略，并利用频率调制适应导航需求。",
+      "evidence": "To address these challenges, we propose SkateNav, a unified skating-navigation framework based on reinforcement learning. A time-budgeted goal-reaching objective allows the policy to jointly learn steering, propulsion, and their temporal allocation."
+    },
+    {
+      "text": "相比现有的规划器-控制器基线模型，SkateNav在仿真实验中表现出更高的任务成功率和更低的运输成本。",
+      "evidence": "Simulation experiments demonstrate higher average success rates and lower cost of transport than the evaluated planner-controller baselines"
+    },
+    {
+      "text": "实现了从仿真到被动轮式Mini Cheetah机器人的零样本迁移，能够适应多种复杂室内外环境。",
+      "evidence": "Real-world experiments demonstrate zero-shot transfer from simulation to a passive-wheel Mini Cheetah across cluttered indoor spaces, slopes, and paved outdoor surfaces."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "四足机器人",
+    "导航",
+    "Sim-to-Real"
+  ]
+}

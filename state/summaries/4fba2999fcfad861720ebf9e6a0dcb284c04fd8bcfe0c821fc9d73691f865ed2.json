@@ -1,0 +1,22 @@
+{
+  "overview": "本文探讨了如何通过视觉语言模型（VLM）在三维环境中进行主动探索与思考。作者提出ACT3D框架，仅利用单张图像作为输入，使模型通过交互式动作（如移动、转向）获取环境信息。模型先进行轨迹监督微调，随后通过以最终答案准确性为驱动的强化学习进行训练，无需直接指导具体的探索路径。实验表明，ACT3D在六项三维基准测试中表现优于基准模型及部分闭源模型，并展现出针对问题的自适应探索能力。",
+  "highlights": [
+    {
+      "text": "ACT3D通过结果驱动的强化学习，使VLM在无需直接动作指导的情况下，自动学习高效的探索策略。",
+      "evidence": "Crucially, RL provides no direct supervision over which viewpoints the model should visit or which exploration actions it should take. Instead, the model must learn an effective exploration policy solely from the extent to which its interactions improve performance."
+    },
+    {
+      "text": "在六项三维基准测试中，ACT3D模型平均准确率达到53.2%，较基准Qwen模型提升22.0%，且在输入帧数更少的情况下超越了Gemini 1.5 Flash。",
+      "evidence": "Across six 3D benchmarks, our model ACT3D achieves an average accuracy of 53.2% that improves its base Qwen model by 22.0% and surpasses proprietary Gemini 3.6 Flash. ACT3D also outperforms existing open-source 3D methods while using 50-70% fewer input frames"
+    },
+    {
+      "text": "分析显示，该模型表现出问题导向的自适应探索特征，在需要深度探索的问题上准确率提升显著。",
+      "evidence": "Performance gains over the base model increase from 0.6% on questions answerable from the initial view to 16.3% on those requiring extensive exploration."
+    }
+  ],
+  "tags": [
+    "视觉语言动作",
+    "强化学习",
+    "推理"
+  ]
+}

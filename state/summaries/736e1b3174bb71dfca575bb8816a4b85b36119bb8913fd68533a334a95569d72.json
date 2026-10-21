@@ -1,0 +1,23 @@
+{
+  "overview": "本文展示了一种利用四足机器人脚部自主解开巨型魔方的方法。研究团队开发了一套车载RGB-D感知流水线，用于估计魔方的位姿与颜色状态，并通过强化学习训练全身运动技能，实现机器人脚部对魔方的精确操控与转动。实验结果显示，该系统能够结合车载感知与协调的足式操作，在硬件平台上自主完成多步物理任务。",
+  "highlights": [
+    {
+      "text": "开发了一套基于车载RGB-D相机的感知流水线，能够实时估计魔方的几何位姿及其颜色状态。",
+      "evidence": "We develop an onboard RGB-D perception pipeline that estimates the cube's metric pose and its full color state from partial views acquired through locomotion and flipping."
+    },
+    {
+      "text": "利用强化学习训练全身操控技能，通过将特权信息蒸馏为基于深度与本体感觉的策略，实现鲁棒的机器人操作。",
+      "evidence": "We train these skills using reinforcement learning with privileged observations and distill them into policies that map onboard depth and proprioception to joint targets."
+    },
+    {
+      "text": "系统在真实硬件环境中成功完成了三次全自主魔方还原，验证了足式机器人执行长序列物理任务的可行性。",
+      "evidence": "The system completes three autonomous hardware solves, each about 30 steps over 8-9 minutes."
+    }
+  ],
+  "tags": [
+    "四足机器人",
+    "机器人操作",
+    "强化学习",
+    "Sim-to-Real"
+  ]
+}

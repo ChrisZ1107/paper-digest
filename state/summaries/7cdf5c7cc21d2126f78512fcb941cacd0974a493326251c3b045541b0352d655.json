@@ -1,0 +1,19 @@
+{
+  "overview": "针对语言引导的局部导航任务，本文提出ScaleNav框架，旨在解决数据规模化难题。该方法通过互联网第一人称视频进行目标导向的视觉动力学预训练，结合模拟环境下的动作对齐与联合微调，使机器人能够根据文本指令导航至目标位置。实验结果显示，ScaleNav在模拟基准测试中优于现有基线，并在真实四足机器人上验证了其泛化能力。",
+  "highlights": [
+    {
+      "text": "提出ScaleNav框架，利用互联网海量第一人称视频学习视觉动力学，解决了导航策略训练中数据采集成本高与Sim-to-Real差距的问题。",
+      "evidence": "Internet egocentric videos offer a scalable source of real-world navigation experience. Our key insight is to learn goal-directed visual dynamics from Internet egocentric videos, and use these dynamics to support robot action generation."
+    },
+    {
+      "text": "ScaleNav在Short-Horizon OVON与HabitatGS-LN基准测试中表现出色，分别达到86.5%和94.9%的成功率，并已在真实四足机器人上完成部署测试。",
+      "evidence": "ScaleNav achieves success rates of 86.5% on a single-view adaptation of Short-Horizon OVON and 94.9% on our HabitatGS-LN benchmark, outperforming the evaluated baselines on both benchmarks. We further deploy and evaluate ScaleNav on a real quadruped robot, with results supporting the model's ability to generalize to real-world navigation."
+    }
+  ],
+  "tags": [
+    "导航",
+    "四足机器人",
+    "Sim-to-Real",
+    "世界模型"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "overview": "本文评估了GPT-6-Astra在机器人操作与导航任务中的表现。研究者通过12个基准测试探究了该模型在上下文学习下的能力极限，并分析了将其作为高层推理器与低层控制器结合的代理机制。实验发现，尽管该模型展现出较高的具身能力，但在真实物理部署中仍面临数据采集成本高、物理约束限制及长期执行效率等挑战。作者认为该模型尚未达到实用具身智能的标准。",
+  "highlights": [
+    {
+      "text": "GPT-6-Astra在跨越桌面操作、人形机器人、移动平台及灵巧手的12个代表性基准测试中，通过上下文学习实现了出色的性能。",
+      "evidence": "We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance"
+    },
+    {
+      "text": "研究指出高层“系统2”推理器与低层“系统1”控制器的闭环协调方案虽然有效，但伴随着较高的计算成本。",
+      "evidence": "We identify that close-loop coordination between a high-level \"System 2\" reasoner (i.e., GPT-6-Astra) and a low-level \"System 1\" controller (e.g., π0.5) is costly but effective."
+    },
+    {
+      "text": "在8种机器人配置的实机部署实验中，研究发现现有范式难以通过延长执行时间来换取物理约束下的高成功率。",
+      "evidence": "Our experiments on 8 robot configurations reveal substantial gaps: 1) robot demonstrations required for ICL are expensive to collect, and 2) it is implausible to trade longer execution for higher success rates with physical constraints."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "导航",
+    "人形机器人",
+    "推理"
+  ]
+}

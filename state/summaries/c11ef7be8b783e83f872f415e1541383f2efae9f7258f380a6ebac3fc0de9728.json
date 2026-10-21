@@ -1,0 +1,18 @@
+{
+  "overview": "针对大语言模型在编程任务中策略与环境交互工具（harness）相互耦合的局限性，本文提出一种名为Self-HPO的递归自进化框架。该方法通过交替优化策略与环境工具，使策略模型能够根据自身失败模式自动生成环境工具，并基于此通过强化学习进行迭代更新。实验结果表明，该方法在多个编程基准测试中优于单一组件优化基线，有效提升了模型的任务解析率与代码执行稳定性。",
+  "highlights": [
+    {
+      "text": "提出Self-HPO框架，实现编程代理策略模型与环境交互工具的交替自优化，有效解决单一组件优化不足的问题。",
+      "evidence": "In light of this, we propose Self-HPO, a recursive self-improving framework for coding agents that alternates harness and policy optimization, using the evolving policy as its own harness proposer."
+    },
+    {
+      "text": "实验证明Self-HPO能显著提升Qwen3.5-35B-A3B在编程任务中的解析率，且具备泛化至分布外任务的能力。",
+      "evidence": "Across three coding benchmarks, Self-HPO consistently outperforms harness-only and policy-only baselines, improving Qwen3.5-35B-A3B's average resolve rate from 57.8% to 64.8%, with gains generalizing to out-of-distribution settings."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "强化学习",
+    "推理"
+  ]
+}

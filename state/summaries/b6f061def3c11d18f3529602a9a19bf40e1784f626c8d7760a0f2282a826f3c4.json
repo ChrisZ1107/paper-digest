@@ -1,0 +1,22 @@
+{
+  "overview": "针对四足机器人运动控制中的全身协调问题，本文提出了一种结合强化学习与基于模型的全身控制（WBC）的分层框架。该方法利用强化学习调整结构化的运动参考（包括步态、触点等），而底层的步态调度器和脉冲控制器负责高频执行。作者声称，通过在干扰课程环境下进行训练，该分层控制器在模拟器中的平均存活率优于单纯的基准模型控制器。",
+  "highlights": [
+    {
+      "text": "提出了一种将强化学习与基于模型的全身控制相结合的分层架构，通过调整结构化运动参考实现自适应运动。",
+      "evidence": "We present a hierarchical controller in which reinforcement learning adapts these structured locomotion references while a gait scheduler, reactive footstep planner, and whole-body impulse controller retain responsibility for high-frequency execution."
+    },
+    {
+      "text": "实验结果显示，该分层控制器在六方向干扰测试下的平均存活率为77.29%，显著高于对照组的50.35%。",
+      "evidence": "Under a common simulator and evaluation protocol, the proposed controller achieves 77.29% mean survival across the tested disturbance grid, compared with 50.35% for the model-based reference controller."
+    },
+    {
+      "text": "消融实验表明，自适应落脚点规划是对提升抗干扰性能贡献最大的因素。",
+      "evidence": "Training-time channel ablations identify adaptive foothold placement as the largest marginal contributor to grid survival and reveal direction-dependent effects of gait-rate adaptation."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "四足机器人",
+    "足式运动"
+  ]
+}

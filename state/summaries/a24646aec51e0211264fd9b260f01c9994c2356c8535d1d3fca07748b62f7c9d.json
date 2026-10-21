@@ -1,0 +1,18 @@
+{
+  "overview": "本文提出了一种基于快速仿真的强化学习训练框架，旨在提升空间机器人的控制策略开发。该方法对硬件需求较低，能够在单一消费级GPU上进行训练。作者声称，该框架训练的策略可可靠地迁移至真实世界，并使四足机器人在少于20分钟的训练后，即可在包括月球模拟设施在内的多种复杂地形中实现可靠行走。",
+  "highlights": [
+    {
+      "text": "提出了一种高效的训练框架，仅需不到20分钟即可在单块消费级显卡上完成训练。",
+      "evidence": "With this setup, we show that a quadruped robot can learn to traverse diverse real-world terrains reliably---including in a lunar-analog facility---after less than 20 minutes of training on a single consumer-grade GPU."
+    },
+    {
+      "text": "该方法具有较低的硬件门槛，且在仿真中学习的控制策略能够可靠地迁移至现实环境。",
+      "evidence": "The hardware requirements are minimal and the simulation-learned policies transfer reliably to the real world."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "四足机器人",
+    "Sim-to-Real"
+  ]
+}
