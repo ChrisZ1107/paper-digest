@@ -3548,6 +3548,53 @@
           "abstract_zh": "具有可验证奖励的强化学习已成为大语言模型一种可扩展的训练后范式。然而，在长程交互中训练智能体面临两个挑战：仅使用终端奖励会导致回合级信用分配稀疏且方差大；而在固定采样批次上进行序列式小批量更新，由于当前策略偏离行为策略，会引入策略过时问题。现有方法通过学习到的评估器、过程奖励模型或同策略蒸馏来获得更密集的信用分配，但它们依赖于价值网络、步骤级标注或更强大的外部教师，增加了训练复杂度。同时，重要性采样和裁剪虽能缓解策略漂移，但并未指定一个有限目标来阻止序列更新过度偏离。为此，我们引入了 TreeOPSD，这是一个用于长程智能体强化学习的无评估器、树感知后验自蒸馏框架。TreeOPSD 将每个交互回合视为一个树节点，从共享前缀分支出替代性延续，并将终端奖励递归回传为隐式的回合级信用。随后，它将每个信用映射为一个闭式且有界的教师分布，该分布由相对于冻结行为策略的似然比进行参数化。最小化该教师分布与学生策略之间的散度，不仅能在行为策略处恢复策略梯度方向，还能在序列小批量更新中将更新约束在一个有限目标内。实验表明，TreeOPSD 在多个竞争性基准测试和不同模型规模下提升了智能体能力，尤其是在长程任务中；例如，在深度研究（Deep Research）设定下，它使 Qwen3-30B-A3B-Thinking-2507 的平均准确率比 GRPO 提高了 4.97 个百分点。"
         }
       ]
+    },
+    "ZXCIft8WK8o": {
+      "video_id": "ZXCIft8WK8o",
+      "papers": []
+    },
+    "uM362tY996E": {
+      "video_id": "uM362tY996E",
+      "video_title": "LatentLoop: Scaling Looped MoE Models with Asymmetric Compute Allocation (Oct 2026)",
+      "published": "2026-10-22",
+      "video_url": "https://www.youtube.com/watch?v=uM362tY996E",
+      "papers": [
+        {
+          "id": "2610.19975",
+          "title": "LatentLoop: Scaling Looped MoE Models with Asymmetric Compute Allocation (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.19975"
+        }
+      ]
+    },
+    "R7UQIik5pCA": {
+      "video_id": "R7UQIik5pCA",
+      "video_title": "Has GPT-6-Astra Achieved Embodied Intelligence? (Oct 2026)",
+      "published": "2026-10-22",
+      "video_url": "https://www.youtube.com/watch?v=R7UQIik5pCA",
+      "papers": [
+        {
+          "id": "2610.22471",
+          "title": "Has GPT-6-Astra Achieved Embodied Intelligence? (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.22471"
+        }
+      ]
+    },
+    "QZ-L58XILmY": {
+      "video_id": "QZ-L58XILmY",
+      "papers": []
+    },
+    "fRr2iS8wYOg": {
+      "video_id": "fRr2iS8wYOg",
+      "video_title": "Your Transformer Is Secretly Elastic (Oct 2026)",
+      "published": "2026-10-22",
+      "video_url": "https://www.youtube.com/watch?v=fRr2iS8wYOg",
+      "papers": [
+        {
+          "id": "2610.20588",
+          "title": "Your Transformer Is Secretly Elastic (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.20588"
+        }
+      ]
     }
   }
 }
