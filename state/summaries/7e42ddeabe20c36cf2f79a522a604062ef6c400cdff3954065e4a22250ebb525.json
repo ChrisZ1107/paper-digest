@@ -1,0 +1,16 @@
+{
+  "overview": "该研究旨在解决具身动物模型难以同时实现目标导向行为与自然探索运动的问题。作者提出了名为SCAMPER的系统，通过引入包含运动先验（motion prior）和行为先验（behavior prior）的变分架构，训练具身虚拟大鼠模型。研究声称，该系统不仅能生成逼真的自然运动，还能在稀疏奖励环境下有效完成任务，为神经AI领域模拟动物行为提供了新工具。",
+  "highlights": [
+    {
+      "text": "SCAMPER系统能够使虚拟大鼠模型在目标导向行为和随机探索过程中均表现出自然的运动特征。",
+      "evidence": "Here, we introduce Simulated Control via Augmented Motor Priors for Embodied Reinforcement learning (SCAMPER), a system for training an embodied virtual rat model, enabling natural movements during both goal-directed behavior and random exploration."
+    },
+    {
+      "text": "通过结合两种先验架构，系统能够有效提升探索能力并适应稀疏奖励下的学习任务。",
+      "evidence": "SCAMPER can also learn from sparse rewards as a result of the diverse movements induced by the behavior prior, allowing the system to model realistic sparse-reward tasks from experimental neuroscience."
+    }
+  ],
+  "tags": [
+    "强化学习"
+  ]
+}

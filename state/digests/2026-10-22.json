@@ -1,0 +1,451 @@
+{
+  "date": "2026-10-22",
+  "timestamp": "2026-10-22T09:02:24.242252+08:00",
+  "title": "2026-10-22 热门论文 Top 10｜机器人·强化学习·AI",
+  "slug": "2026-10-22",
+  "papers": [
+    {
+      "id": "2610.22471",
+      "title": "Has GPT-6-Astra Achieved Embodied Intelligence?",
+      "abstract": "GPT-6-Astra demonstrates a level of competence in robotic manipulation and navigation that challenges the conventional paradigm of building specialized models for individual tasks and embodiments. In this report, we ask not only how capable GPT-6-Astra is, but what its capabilities imply for the field. First, we probe the limits of standalone GPT-6-Astra. We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance (Fig. 1). Future research may focus on improving 1) the generality of ICL 2) cost and execution time, 3) physical-state verification, 4) recovery from irreversible failures, and 5) long-horizon preservation of progress. Second, we study the agentic harness for embodied control. We identify that close-loop coordination between a high-level \"System 2\" reasoner (i.e., GPT-6-Astra) and a low-level \"System 1\" controller (e.g., π0.5) is costly but effective. Third, we examine GPT-6-Astra on real-world deployment. Our experiments on 8 robot configurations reveal substantial gaps: 1) robot demonstrations required for ICL are expensive to collect, and 2) it is implausible to trade longer execution for higher success rates with physical constraints. Fourth, we envision the next generation of embodied benchmarks. We develop a prototype that 1) derives tasks from real-world needs, 2) provides no in-domain demonstrations, and 3) judges agents on a world clock that keeps running while they deliberate. Taken together, our results suggest that GPT-6-Astra has largely crossed the threshold of embodied competence, but not yet that of practical embodied intelligence.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-15",
+      "age_days": 7.043336137175927,
+      "upvotes": 456,
+      "comments": 2,
+      "stars": 218,
+      "repo": "https://github.com/OpenSenseNova/SenseNova-RoboRSI",
+      "trending_rank": 13,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.47693,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 35,
+        "comments": 0,
+        "stars": 30
+      },
+      "score": 5.857,
+      "rule_tags": [
+        "人形机器人",
+        "机器人操作",
+        "导航"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文评估了GPT-6-Astra在机器人操作与导航任务中的表现。研究者通过12个基准测试探究了该模型在上下文学习下的能力极限，并分析了将其作为高层推理器与低层控制器结合的代理机制。实验发现，尽管该模型展现出较高的具身能力，但在真实物理部署中仍面临数据采集成本高、物理约束限制及长期执行效率等挑战。作者认为该模型尚未达到实用具身智能的标准。",
+        "highlights": [
+          {
+            "text": "GPT-6-Astra在跨越桌面操作、人形机器人、移动平台及灵巧手的12个代表性基准测试中，通过上下文学习实现了出色的性能。",
+            "evidence": "We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance"
+          },
+          {
+            "text": "研究指出高层“系统2”推理器与低层“系统1”控制器的闭环协调方案虽然有效，但伴随着较高的计算成本。",
+            "evidence": "We identify that close-loop coordination between a high-level \"System 2\" reasoner (i.e., GPT-6-Astra) and a low-level \"System 1\" controller (e.g., π0.5) is costly but effective."
+          },
+          {
+            "text": "在8种机器人配置的实机部署实验中，研究发现现有范式难以通过延长执行时间来换取物理约束下的高成功率。",
+            "evidence": "Our experiments on 8 robot configurations reveal substantial gaps: 1) robot demonstrations required for ICL are expensive to collect, and 2) it is implausible to trade longer execution for higher success rates with physical constraints."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "导航",
+          "人形机器人",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.20584",
+      "title": "Player-1: Learning to Play from Synthetic Experience",
+      "abstract": "Computer-use agents have demonstrated strong capabilities in interpreting screens and executing keyboard and mouse actions. However, games, with their visually rich worlds and diverse mechanics, remain challenging and offer a demanding next step toward general digital control. Current game-agent learning pipelines often rely on large-scale demonstrations with limited coverage of dynamic game states, while scalable environments for interactive training remain difficult to obtain. We introduce Player-1, a post-training framework for learning game control beyond demonstrations through synthetic experience. We extend the computer-use action space with relative pointer motion, sustained inputs, and composite actions. For supervised initialization, we fine-tune computer-use models on 6,044 curated gameplay trajectories that pair recorded actions with task instructions and visual reasoning. We construct Player-1-Gym, sixteen synthetic 2D and 3D environments designed around control demands shared across games. Programmatically verifiable rewards and randomized observations and control dynamics support multi-environment reinforcement learning with PPO. The resulting Player-1-9B and Player-1-35B-A3B improve MineDojo-300 success over their SFT policies by 27.8 and 17.7 percentage points, respectively. Player-1-9B reaches 38.33% success compared with 12.63% for the strongest evaluated baseline, with further gains over SFT on ViZDoom-10 and GameWorld. Further analyses show that broader synthetic environment coverage improves transfer, while the use of composite actions that combine multiple keyboard and mouse inputs increases during RL. We demonstrate that learning from synthetic experience substantially improves game control beyond supervised initialization, with gains that generalize beyond the RL training suite.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-10-14",
+      "age_days": 8.043336137175926,
+      "upvotes": 348,
+      "comments": 3,
+      "stars": 187,
+      "repo": "https://github.com/TencentARC/Player-1",
+      "trending_rank": 49,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.51225,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 1,
+        "comments": 0,
+        "stars": 5
+      },
+      "score": 5.682,
+      "rule_tags": [
+        "强化学习",
+        "PPO",
+        "大模型后训练",
+        "推理"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文提出了Player-1框架，旨在提升计算机控制智能体在游戏中的表现。针对现有模型依赖演示数据覆盖不足的问题，作者通过构建包含16个合成环境的Player-1-Gym进行强化学习，并扩展了包含相对指针移动和复合动作的动作空间。实验表明，该方法在MineDojo、ViZDoom等任务中显著提升了成功率，证明了利用合成经验进行后训练能有效改善游戏的泛化控制能力。",
+        "highlights": [
+          {
+            "text": "通过引入Player-1-Gym合成环境与PPO算法，显著提升了游戏任务的成功率。",
+            "evidence": "The resulting Player-1-9B and Player-1-35B-A3B improve MineDojo-300 success over their SFT policies by 27.8 and 17.7 percentage points, respectively."
+          },
+          {
+            "text": "扩展了计算机操作的动作空间，包括相对指针移动和复合输入，以适应游戏复杂控制需求。",
+            "evidence": "We extend the computer-use action space with relative pointer motion, sustained inputs, and composite actions."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "PPO",
+          "大模型后训练"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.26855",
+      "title": "Ropedia W0: Scaling Loco-Manipulation World Models across Embodiments with Human Experience",
+      "abstract": "World models enable embodied agents to anticipate action consequences, yet jointly modeling locomotion and manipulation across diverse embodiments remains challenging due to heterogeneous action spaces and limited multimodal supervision. We present Ropedia W0, the first egocentric loco-manipulation world foundation model spanning humans and robots with diverse embodiments. We curate Xp-Data, comprising 10k hours of egocentric human data and 3k hours of robot data with unified multimodal annotations and systematic quality control. A unified kinematic representation encodes locomotion through camera poses and manipulation through projected skeletons, with robot skeletons combining embodiment-specific forward kinematics with extensive manual keypoint annotation and correction. We also introduce Xp-Teleop, a long-horizon loco-manipulation benchmark based on high-quality dexterous humanoid teleoperation data. Evaluations demonstrate state-of-the-art performance across five cross-embodiment benchmarks (DreamDojo, Ψ_0, ω-HOME, Xp-Teleop, and AgiBot) and on held-out human egocentric video, from zero-shot inference to few-shot and full-data post-training. Scaling human pre-training data improves performance on both human and robot evaluations. After distillation, our model supports real-time, minute-long rollouts, enabling live VR interaction. Applications in policy evaluation, model-based planning, and world-action modeling further demonstrate the model's utility for embodied decision-making.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-19",
+      "age_days": 3.043336137175926,
+      "upvotes": 177,
+      "comments": 1,
+      "stars": 36,
+      "repo": "https://github.com/Ropedia/ropedia-w0",
+      "trending_rank": 68,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.42789,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 177,
+        "comments": 1
+      },
+      "score": 5.672,
+      "rule_tags": [
+        "人形机器人",
+        "足式运动",
+        "机器人操作",
+        "世界模型",
+        "大模型后训练"
+      ],
+      "summary_status": "Gemini 暂不可用，显示规则标签与原文摘要。"
+    },
+    {
+      "id": "2610.20442",
+      "title": "Towards Agentic Robots: Model, Data, Environment, and Harness",
+      "abstract": "Foundation models are driving a paradigm shift in robotic intelligence, moving beyond low-level action prediction to goal-directed orchestration of data collection, model training, task planning, and real-world execution. We characterize this emerging paradigm as an agentic robots, in which agents reason over human instructions, interact with robotic environments, rectify execution errors autonomously, and dynamically adjust operational strategies. Although this field develops fast, current studies are not well connected. Researchers have no consistent view of how to combine different agentic functions into a complete robot system. This paper provides a unified overview of existing research on agentic robots. We first trace the development from robot policies to agentic systems, covering vision-language-action models, world models, and world-action models. We then clarify the definition and scope of agentic robots and organize existing research into seventeen categories across four functional domains: Model, Data, Environment, and Harness. Across these domains, we examine how agents shape model learning and robot decisions, collect and curate robot data, construct worlds, tasks, and tests for learning and evaluation, and organize capabilities for robot use. Finally, we discuss open challenges and outline directions for future research. Looking forward, we hope this work contributes to a clearer understanding of agentic robots and supports new approaches to making them more capable, reliable, and adaptive.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-14",
+      "age_days": 8.043336137175926,
+      "upvotes": 43,
+      "comments": 2,
+      "stars": 111,
+      "repo": "https://github.com/chonghanqin/Awesome-Agentic-Robots",
+      "trending_rank": 93,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.49396,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 1,
+        "comments": 0,
+        "stars": 8
+      },
+      "score": 5.363,
+      "rule_tags": [
+        "世界模型",
+        "视觉语言动作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文探讨了机器人智能领域从底层动作预测向目标导向型智能体系统的范式转变。作者界定了“智能体机器人”的概念，即具备推理指令、交互环境、自主纠错和动态策略调整能力的系统。通过梳理模型、数据、环境与支撑平台四个功能领域，文章总结了现有研究现状，探讨了智能体如何优化决策与学习过程，并分析了该领域面临的挑战及未来发展方向。",
+        "highlights": [
+          {
+            "text": "作者构建了“智能体机器人”的统一分类框架，将相关研究系统性地划分为模型、数据、环境与支撑平台四大功能域下的十七个类别。",
+            "evidence": "We then clarify the definition and scope of agentic robots and organize existing research into seventeen categories across four functional domains: Model, Data, Environment, and Harness."
+          },
+          {
+            "text": "文章回顾了机器人领域从单纯的策略学习向集成视觉-语言-动作模型、世界模型等能力的智能体系统的演进过程。",
+            "evidence": "We first trace the development from robot policies to agentic systems, covering vision-language-action models, world models, and world-action models."
+          }
+        ],
+        "tags": [
+          "视觉语言动作",
+          "世界模型"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.25690",
+      "title": "ScaleNav: Scalable Internet Video Pretraining for Language-Conditioned Local Navigation",
+      "abstract": "We study language-conditioned local navigation, where a robot must navigate to a text-specified target visible in its initial observation and stop at the described location. End-to-end navigation policies require diverse training data to generalize across scenes, yet real-robot data is costly to collect and simulated data leaves a sim-to-real gap. Internet egocentric videos offer a scalable source of real-world navigation experience. Our key insight is to learn goal-directed visual dynamics from Internet egocentric videos, and use these dynamics to support robot action generation. To this end, we propose ScaleNav, a unified world-action framework with three-stage training. We first perform instruction-conditioned video pretraining on these videos to learn how observations evolve as the camera approaches instructed targets across diverse real-world scenes. Action alignment then uses action-labeled simulated data to train the model to predict executable action chunks. Joint fine-tuning subsequently optimizes all trainable components together for navigation. ScaleNav achieves success rates of 86.5% on a single-view adaptation of Short-Horizon OVON and 94.9% on our HabitatGS-LN benchmark, outperforming the evaluated baselines on both benchmarks. We further deploy and evaluate ScaleNav on a real quadruped robot, with results supporting the model's ability to generalize to real-world navigation. Code and videos are available at https://zju3dv.github.io/ScaleNav/",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-19",
+      "age_days": 3.043336137175926,
+      "upvotes": 84,
+      "comments": 2,
+      "stars": 40,
+      "repo": "https://github.com/MachEmbodied/ScaleNav",
+      "trending_rank": 44,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.46929,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 0,
+        "comments": 0,
+        "stars": 3
+      },
+      "score": 5.294,
+      "rule_tags": [
+        "四足机器人",
+        "导航",
+        "Sim-to-Real"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对语言引导的局部导航任务，本文提出ScaleNav框架，旨在解决数据规模化难题。该方法通过互联网第一人称视频进行目标导向的视觉动力学预训练，结合模拟环境下的动作对齐与联合微调，使机器人能够根据文本指令导航至目标位置。实验结果显示，ScaleNav在模拟基准测试中优于现有基线，并在真实四足机器人上验证了其泛化能力。",
+        "highlights": [
+          {
+            "text": "提出ScaleNav框架，利用互联网海量第一人称视频学习视觉动力学，解决了导航策略训练中数据采集成本高与Sim-to-Real差距的问题。",
+            "evidence": "Internet egocentric videos offer a scalable source of real-world navigation experience. Our key insight is to learn goal-directed visual dynamics from Internet egocentric videos, and use these dynamics to support robot action generation."
+          },
+          {
+            "text": "ScaleNav在Short-Horizon OVON与HabitatGS-LN基准测试中表现出色，分别达到86.5%和94.9%的成功率，并已在真实四足机器人上完成部署测试。",
+            "evidence": "ScaleNav achieves success rates of 86.5% on a single-view adaptation of Short-Horizon OVON and 94.9% on our HabitatGS-LN benchmark, outperforming the evaluated baselines on both benchmarks. We further deploy and evaluate ScaleNav on a real quadruped robot, with results supporting the model's ability to generalize to real-world navigation."
+          }
+        ],
+        "tags": [
+          "导航",
+          "四足机器人",
+          "Sim-to-Real",
+          "世界模型"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.22791",
+      "title": "Self-Evolving Coding Agents via Harness-Policy Optimization",
+      "abstract": "Large language model (LLM) agents have shown promising potential in coding tasks, and their performance is jointly determined by the policy model and the harness that mediates their interaction with the environment. Indeed, harness and policy are mutually reinforcing and evolving only one component is suboptimal---a harness tuned for one checkpoint may not target the failure modes of an updated policy, while policy learning remains limited to the trajectories elicited by a fixed harness. In light of this, we propose Self-HPO, a recursive self-improving framework for coding agents that alternates harness and policy optimization, using the evolving policy as its own harness proposer. Specifically, in each round, the current policy first analyzes its own failures and proposes new harness candidates (H-step). The policy is then updated through reinforcement learning (RL) under the selected harness (P-step), and hard tasks identified during training form the next harness search set, keeping harness optimization targeted to the policy's evolving failure modes. Across three coding benchmarks, Self-HPO consistently outperforms harness-only and policy-only baselines, improving Qwen3.5-35B-A3B's average resolve rate from 57.8% to 64.8%, with gains generalizing to out-of-distribution settings. Further analysis shows that both optimized components retain gains even when paired with their base counterparts, while their joint gain exceeds the sum of their individual gains. Self-HPO also improves reliability (Pass@1) and expands the capability frontier (Pass@k) over the base agent. Additionally, we show that with a stronger external model (e.g., Opus 4.8) as the harness proposer, the same framework yields a further performance boost.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-10-16",
+      "age_days": 6.043336137175927,
+      "upvotes": 45,
+      "comments": 4,
+      "stars": 28,
+      "repo": "https://github.com/MSR-Orchard/Self-HPO",
+      "trending_rank": 91,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.38952,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 4,
+        "comments": 1,
+        "stars": 13
+      },
+      "score": 5.026,
+      "rule_tags": [
+        "强化学习"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对大语言模型在编程任务中策略与环境交互工具（harness）相互耦合的局限性，本文提出一种名为Self-HPO的递归自进化框架。该方法通过交替优化策略与环境工具，使策略模型能够根据自身失败模式自动生成环境工具，并基于此通过强化学习进行迭代更新。实验结果表明，该方法在多个编程基准测试中优于单一组件优化基线，有效提升了模型的任务解析率与代码执行稳定性。",
+        "highlights": [
+          {
+            "text": "提出Self-HPO框架，实现编程代理策略模型与环境交互工具的交替自优化，有效解决单一组件优化不足的问题。",
+            "evidence": "In light of this, we propose Self-HPO, a recursive self-improving framework for coding agents that alternates harness and policy optimization, using the evolving policy as its own harness proposer."
+          },
+          {
+            "text": "实验证明Self-HPO能显著提升Qwen3.5-35B-A3B在编程任务中的解析率，且具备泛化至分布外任务的能力。",
+            "evidence": "Across three coding benchmarks, Self-HPO consistently outperforms harness-only and policy-only baselines, improving Qwen3.5-35B-A3B's average resolve rate from 57.8% to 64.8%, with gains generalizing to out-of-distribution settings."
+          }
+        ],
+        "tags": [
+          "大模型后训练",
+          "强化学习",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.25078",
+      "title": "CoEvo-RSI: When Harnesses Evolve, Which Models Should Follow?",
+      "abstract": "Model--harness co-evolution has emerged as a prominent paradigm for recursive self-improving (RSI) agents, jointly evolving their execution scaffolds and intrinsic capabilities. We study the persistent yet often overlooked brain--body mismatch problem in this paradigm, where an evolving harness (body) demands behaviors its model (brain) has not learned or restricts capabilities it already possesses. We introduce CoEvo-RSI, a RSI framework that advances model--harness co-evolution through agent-driven, bidirectional historical inheritance. Drawing on a shared evolutionary archive and execution feedback, a meta-agent coordinates harness development from historical designs with model checkpoint selection or merging and subsequent adaptation under the selected harness, aligning inherited capabilities with evolving execution requirements to reduce brain--body mismatch. Using only supervised fine-tuning (SFT) on its own rejection-sampled trajectories, CoEvo-RSI makes Qwen3.5-9B competitive with larger models across diverse vertical applications, including multi-agent failure attribution, role-aware text-to-SQL, and smart-home instruction following. It surpasses DeepSeek-V4-Pro on TraceElephant (+14.16 agent accuracy) and GLM-5.3 on HomeBench VM (+4.90 success rate), underscoring the need for brain--body alignment and the potential of bidirectional historical inheritance to advance agent co-evolution.",
+      "topics": [
+        "通用 AI"
+      ],
+      "published": "2026-10-18",
+      "age_days": 4.043336137175927,
+      "upvotes": 59,
+      "comments": 2,
+      "stars": 5,
+      "repo": "https://github.com/SuJQ0722/CoEvo-RSI",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.34859,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 59,
+        "comments": 2
+      },
+      "score": 5.011,
+      "rule_tags": [
+        "多智能体"
+      ],
+      "summary_status": "Gemini 暂不可用，显示规则标签与原文摘要。"
+    },
+    {
+      "id": "2610.25043",
+      "title": "VLA-Rolling: Fewer Denoising Steps, Better Control via Adaptive Action Reuse",
+      "abstract": "Flow-matching vision-language-action (VLA) models generate an action chunk by iteratively denoising Gaussian noise, but typically execute only a short prefix before replanning with updated observations. Under this receding-horizon paradigm, the unexecuted remainder---the action tail---is discarded, and the next chunk is regenerated from fresh noise. We show that this discarded tail retains transferable denoising progress: action-tail initialization can match or outperform a native 10-step Gaussian baseline using fewer denoising steps. However, the optimal denoising budget varies substantially across samples, indicating that tail reuse should be adapted to the updated environment. Based on this observation, we introduce VLA-Rolling, a lightweight inference framework that reuses action tails through three stages: action-tail inheritance, per-action confidence estimation, and confidence-guided refinement through renoising and denoising budget allocation, while the underlying VLA remains frozen. Across π_{0.5}, SmolVLA, X-VLA, and MolmoAct2 on LIBERO, MetaWorld, LIBERO-Plus, and RoboTwin 2.0, VLA-Rolling reduces action-chunk inference cost in all 16 model--benchmark pairs, achieving up to a 1.48times speedup, while improving success rate in 14 pairs by up to 15.08 percentage points. These results show that action tails are not merely discarded predictions, but reusable intermediate states that enable more efficient and accurate VLA inference. These results demonstrate that the action tail can support the generation of better actions with fewer denoising steps. Our project is available at https://chenbao123ww.github.io/VLA-Rolling/.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-18",
+      "age_days": 4.043336137175927,
+      "upvotes": 59,
+      "comments": 1,
+      "stars": 9,
+      "repo": "https://github.com/ZJU-OmniAI/VLA-Rolling",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.34754,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 59,
+        "comments": 1
+      },
+      "score": 4.975,
+      "rule_tags": [
+        "视觉语言动作"
+      ],
+      "summary_status": "Gemini 暂不可用，显示规则标签与原文摘要。"
+    },
+    {
+      "id": "2610.18356",
+      "title": "Urbex: Agentic Spatial Grounding for City-Scale 3D Scenes",
+      "abstract": "City-scale 3D grounding is commonly formulated as candidate ranking, which requires precomputed instance proposals and becomes inefficient in large outdoor scenes. We propose Urbex, an agentic vision-language framework that instead casts grounding as active spatial search. Urbex represents a city-scale 3D scene as an interactive multi-view environment, allowing a VLM agent to query landmarks, zoom into local regions, render oblique views, and commit a grounded bounding box. We optimize this tool-use policy with reinforcement learning on CityRefer, using smooth localization rewards and lightweight shaping rewards for efficient exploration. Experiments show that Urbex achieves the best Hit@1 and IoU on CityRefer, supports candidate-free grounding without ground-truth boxes, and is substantially faster than the strongest city-scale ranking baseline. Zero-shot results on STPLS3D-Refer further indicate improved cross-scene robustness.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-10-13",
+      "age_days": 9.043336137175926,
+      "upvotes": 133,
+      "comments": 1,
+      "stars": 107,
+      "repo": "https://github.com/AMAP-ML/Urbex",
+      "trending_rank": 92,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.45791,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 0,
+        "comments": 0,
+        "stars": 1
+      },
+      "score": 4.935,
+      "rule_tags": [
+        "强化学习"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "城市尺度3D定位通常依赖预计算候选框，导致在大场景下效率低下。为此，作者提出了Urbex，一种将3D定位转化为主动空间搜索的视觉语言代理框架。该框架将城市级场景建模为交互式多视图环境，使视觉语言模型代理能够通过查询地标、缩放局部和渲染斜视图来进行定位。作者利用强化学习优化了该代理的工具使用策略。实验表明，Urbex在CityRefer数据集上实现了最优的定位性能，并表现出更快的推理速度与跨场景稳健性。",
+        "highlights": [
+          {
+            "text": "Urbex通过主动空间搜索取代传统的候选框排序，实现了无需候选框的城市级3D定位。",
+            "evidence": "We propose Urbex, an agentic vision-language framework that instead casts grounding as active spatial search."
+          },
+          {
+            "text": "在CityRefer数据集上，Urbex在定位精度与效率上均优于现有的城市尺度排序基线模型。",
+            "evidence": "Experiments show that Urbex achieves the best Hit@1 and IoU on CityRefer, supports candidate-free grounding without ground-truth boxes, and is substantially faster than the strongest city-scale ranking baseline."
+          }
+        ],
+        "tags": [
+          "视觉语言动作",
+          "强化学习",
+          "导航"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.26711",
+      "title": "PVBench: Quantifying Physical Plausibility in Video Generation with Object-Level Physical Measurements",
+      "abstract": "Recent video generation models produce visually compelling outputs, yet their physical plausibility remains poorly measured. Physical plausibility asks whether generated objects obey geometry, kinematics, dynamics, and conservation laws. Existing benchmarks rely on coarse visual-language model judgments or target embodied world models rather than video generation itself. We introduce PVBench, a physical video benchmark that quantitatively measures the plausibility of generated videos across 46 dimensions organized into seven domains, spanning: i) instruction and semantic fidelity, ii) behavioral and causal consistency, iii) perceptual and temporal quality, iv) geometric and spatial consistency, v) material properties and field states, vi) kinematic and spatiotemporal persistence, vii) and mechanical plausibility with conservation laws. PVBench comprises 600 carefully crafted prompts, of which 30% involve physical embodied agents such as robot arms, humanoids, quadrupeds, and multi-agent systems. For challenging physically tractable dimensions, it pairs each with specialized vision models that derive verifiable, physically grounded measurements, such as object-level 6D pose, metric scale, surface normals, kinematics, and numerical conservation-law residuals. It thus avoids relying solely on subjective scoring, while supporting both text-to-video and image-to-video generation. Finally, we validate the agreement between automatic metrics and human judgments through human evaluation. Meanwhile, we evaluate mainstream open-source and closed-source models and present several insights. By releasing the benchmark, prompts, and calibration protocol, we aim to foster physically grounded video generation.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-19",
+      "age_days": 3.043336137175926,
+      "upvotes": 5,
+      "comments": 1,
+      "stars": 8,
+      "repo": "https://github.com/KSZG-11/PVBench",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.41439,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 5,
+        "comments": 1
+      },
+      "score": 4.933,
+      "rule_tags": [
+        "四足机器人",
+        "人形机器人",
+        "世界模型",
+        "多智能体"
+      ],
+      "summary_status": "Gemini 暂不可用，显示规则标签与原文摘要。"
+    }
+  ],
+  "candidate_count": 767,
+  "personalization_note": "已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。",
+  "html": "<h1>2026-10-22 热门论文 Top 10</h1>\n<p>机器人 · 强化学习 · 通用 AI</p>\n<p>生成时间：2026-10-22 09:02 CST。从 767 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>\n<p>候选来源：<a href=\"https://huggingface.co/papers\">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>\n<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>\n<h2>1. Has GPT-6-Astra Achieved Embodied Intelligence?</h2>\n<p><strong>机器人</strong> · 发表 2026-10-15 · 综合分 5.86</p>\n<p>Zotero 摘要相关性：0.477（相似度分数，不是概率）。</p>\n<p>HF 点赞 456 · 讨论 2 · 本次 HF 热榜第 13 位 · 仓库累计 Star 218（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +35 · 讨论 +0 · Star +30。</p>\n<p><strong>规则标签：</strong>人形机器人 · 机器人操作 · 导航</p>\n<p><strong>中文概述：</strong>本文评估了GPT-6-Astra在机器人操作与导航任务中的表现。研究者通过12个基准测试探究了该模型在上下文学习下的能力极限，并分析了将其作为高层推理器与低层控制器结合的代理机制。实验发现，尽管该模型展现出较高的具身能力，但在真实物理部署中仍面临数据采集成本高、物理约束限制及长期执行效率等挑战。作者认为该模型尚未达到实用具身智能的标准。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>GPT-6-Astra在跨越桌面操作、人形机器人、移动平台及灵巧手的12个代表性基准测试中，通过上下文学习实现了出色的性能。<br><small>摘要依据：We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance</small></li>\n<li>研究指出高层“系统2”推理器与低层“系统1”控制器的闭环协调方案虽然有效，但伴随着较高的计算成本。<br><small>摘要依据：We identify that close-loop coordination between a high-level &quot;System 2&quot; reasoner (i.e., GPT-6-Astra) and a low-level &quot;System 1&quot; controller (e.g., π0.5) is costly but effective.</small></li>\n<li>在8种机器人配置的实机部署实验中，研究发现现有范式难以通过延长执行时间来换取物理约束下的高成功率。<br><small>摘要依据：Our experiments on 8 robot configurations reveal substantial gaps: 1) robot demonstrations required for ICL are expensive to collect, and 2) it is implausible to trade longer execution for higher success rates with physical constraints.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 导航 · 人形机器人 · 推理</p>\n<p><strong>原文摘要节选：</strong>GPT-6-Astra demonstrates a level of competence in robotic manipulation and navigation that challenges the conventional paradigm of building specialized models for individual tasks and embodiments. In this report, we ask not only how capable GPT-6-Astra is, but what its capabilities imply for the field. First, we probe the limits of standalone GPT-6-Astra. We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance (Fig. 1). Future research may focus on improving 1) the generality of ICL 2) cost and…</p>\n<p><a href=\"https://arxiv.org/abs/2610.22471\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.22471\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.22471\">讨论与热度</a> · <a href=\"https://github.com/OpenSenseNova/SenseNova-RoboRSI\">代码</a></p><hr>\n<h2>2. Player-1: Learning to Play from Synthetic Experience</h2>\n<p><strong>强化学习</strong> · 发表 2026-10-14 · 综合分 5.68</p>\n<p>Zotero 摘要相关性：0.512（相似度分数，不是概率）。</p>\n<p>HF 点赞 348 · 讨论 3 · 本次 HF 热榜第 49 位 · 仓库累计 Star 187（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +0 · Star +5。</p>\n<p><strong>规则标签：</strong>强化学习 · PPO · 大模型后训练 · 推理</p>\n<p><strong>中文概述：</strong>本文提出了Player-1框架，旨在提升计算机控制智能体在游戏中的表现。针对现有模型依赖演示数据覆盖不足的问题，作者通过构建包含16个合成环境的Player-1-Gym进行强化学习，并扩展了包含相对指针移动和复合动作的动作空间。实验表明，该方法在MineDojo、ViZDoom等任务中显著提升了成功率，证明了利用合成经验进行后训练能有效改善游戏的泛化控制能力。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>通过引入Player-1-Gym合成环境与PPO算法，显著提升了游戏任务的成功率。<br><small>摘要依据：The resulting Player-1-9B and Player-1-35B-A3B improve MineDojo-300 success over their SFT policies by 27.8 and 17.7 percentage points, respectively.</small></li>\n<li>扩展了计算机操作的动作空间，包括相对指针移动和复合输入，以适应游戏复杂控制需求。<br><small>摘要依据：We extend the computer-use action space with relative pointer motion, sustained inputs, and composite actions.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · PPO · 大模型后训练</p>\n<p><strong>原文摘要节选：</strong>Computer-use agents have demonstrated strong capabilities in interpreting screens and executing keyboard and mouse actions. However, games, with their visually rich worlds and diverse mechanics, remain challenging and offer a demanding next step toward general digital control. Current game-agent learning pipelines often rely on large-scale demonstrations with limited coverage of dynamic game states, while scalable environments for interactive training remain difficult to obtain. We introduce Player-1, a post-training framework for learning game control beyond demonstrations through synthetic experience. We extend the computer-use action space with relative pointer motion, sustained inputs, and composite actions. For supervised initialization, we fine-tune computer-use models on 6,044…</p>\n<p><a href=\"https://arxiv.org/abs/2610.20584\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.20584\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.20584\">讨论与热度</a> · <a href=\"https://github.com/TencentARC/Player-1\">代码</a></p><hr>\n<h2>3. Ropedia W0: Scaling Loco-Manipulation World Models across Embodiments with Human Experience</h2>\n<p><strong>机器人</strong> · 发表 2026-10-19 · 综合分 5.67</p>\n<p>Zotero 摘要相关性：0.428（相似度分数，不是概率）。</p>\n<p>HF 点赞 177 · 讨论 1 · 本次 HF 热榜第 68 位 · 仓库累计 Star 36（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +177 · 讨论 +1。</p>\n<p><strong>规则标签：</strong>人形机器人 · 足式运动 · 机器人操作 · 世界模型 · 大模型后训练</p>\n<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>\n<p><strong>原文摘要节选：</strong>World models enable embodied agents to anticipate action consequences, yet jointly modeling locomotion and manipulation across diverse embodiments remains challenging due to heterogeneous action spaces and limited multimodal supervision. We present Ropedia W0, the first egocentric loco-manipulation world foundation model spanning humans and robots with diverse embodiments. We curate Xp-Data, comprising 10k hours of egocentric human data and 3k hours of robot data with unified multimodal annotations and systematic quality control. A unified kinematic representation encodes locomotion through camera poses and manipulation through projected skeletons, with robot skeletons combining embodiment-specific forward kinematics with extensive manual keypoint annotation and correction. We also…</p>\n<p><a href=\"https://arxiv.org/abs/2610.26855\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.26855\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.26855\">讨论与热度</a> · <a href=\"https://github.com/Ropedia/ropedia-w0\">代码</a></p><hr>\n<h2>4. Towards Agentic Robots: Model, Data, Environment, and Harness</h2>\n<p><strong>机器人</strong> · 发表 2026-10-14 · 综合分 5.36</p>\n<p>Zotero 摘要相关性：0.494（相似度分数，不是概率）。</p>\n<p>HF 点赞 43 · 讨论 2 · 本次 HF 热榜第 93 位 · 仓库累计 Star 111（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +0 · Star +8。</p>\n<p><strong>规则标签：</strong>世界模型 · 视觉语言动作</p>\n<p><strong>中文概述：</strong>本文探讨了机器人智能领域从底层动作预测向目标导向型智能体系统的范式转变。作者界定了“智能体机器人”的概念，即具备推理指令、交互环境、自主纠错和动态策略调整能力的系统。通过梳理模型、数据、环境与支撑平台四个功能领域，文章总结了现有研究现状，探讨了智能体如何优化决策与学习过程，并分析了该领域面临的挑战及未来发展方向。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>作者构建了“智能体机器人”的统一分类框架，将相关研究系统性地划分为模型、数据、环境与支撑平台四大功能域下的十七个类别。<br><small>摘要依据：We then clarify the definition and scope of agentic robots and organize existing research into seventeen categories across four functional domains: Model, Data, Environment, and Harness.</small></li>\n<li>文章回顾了机器人领域从单纯的策略学习向集成视觉-语言-动作模型、世界模型等能力的智能体系统的演进过程。<br><small>摘要依据：We first trace the development from robot policies to agentic systems, covering vision-language-action models, world models, and world-action models.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>视觉语言动作 · 世界模型</p>\n<p><strong>原文摘要节选：</strong>Foundation models are driving a paradigm shift in robotic intelligence, moving beyond low-level action prediction to goal-directed orchestration of data collection, model training, task planning, and real-world execution. We characterize this emerging paradigm as an agentic robots, in which agents reason over human instructions, interact with robotic environments, rectify execution errors autonomously, and dynamically adjust operational strategies. Although this field develops fast, current studies are not well connected. Researchers have no consistent view of how to combine different agentic functions into a complete robot system. This paper provides a unified overview of existing research on agentic robots. We first trace the development from robot policies to agentic systems, covering…</p>\n<p><a href=\"https://arxiv.org/abs/2610.20442\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.20442\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.20442\">讨论与热度</a> · <a href=\"https://github.com/chonghanqin/Awesome-Agentic-Robots\">代码</a></p><hr>\n<h2>5. ScaleNav: Scalable Internet Video Pretraining for Language-Conditioned Local Navigation</h2>\n<p><strong>机器人</strong> · 发表 2026-10-19 · 综合分 5.29</p>\n<p>Zotero 摘要相关性：0.469（相似度分数，不是概率）。</p>\n<p>HF 点赞 84 · 讨论 2 · 本次 HF 热榜第 44 位 · 仓库累计 Star 40（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +0 · 讨论 +0 · Star +3。</p>\n<p><strong>规则标签：</strong>四足机器人 · 导航 · Sim-to-Real</p>\n<p><strong>中文概述：</strong>针对语言引导的局部导航任务，本文提出ScaleNav框架，旨在解决数据规模化难题。该方法通过互联网第一人称视频进行目标导向的视觉动力学预训练，结合模拟环境下的动作对齐与联合微调，使机器人能够根据文本指令导航至目标位置。实验结果显示，ScaleNav在模拟基准测试中优于现有基线，并在真实四足机器人上验证了其泛化能力。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出ScaleNav框架，利用互联网海量第一人称视频学习视觉动力学，解决了导航策略训练中数据采集成本高与Sim-to-Real差距的问题。<br><small>摘要依据：Internet egocentric videos offer a scalable source of real-world navigation experience. Our key insight is to learn goal-directed visual dynamics from Internet egocentric videos, and use these dynamics to support robot action generation.</small></li>\n<li>ScaleNav在Short-Horizon OVON与HabitatGS-LN基准测试中表现出色，分别达到86.5%和94.9%的成功率，并已在真实四足机器人上完成部署测试。<br><small>摘要依据：ScaleNav achieves success rates of 86.5% on a single-view adaptation of Short-Horizon OVON and 94.9% on our HabitatGS-LN benchmark, outperforming the evaluated baselines on both benchmarks. We further deploy and evaluate ScaleNav on a real quadruped robot, with results supporting the model&#x27;s ability to generalize to real-world navigation.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>导航 · 四足机器人 · Sim-to-Real · 世界模型</p>\n<p><strong>原文摘要节选：</strong>We study language-conditioned local navigation, where a robot must navigate to a text-specified target visible in its initial observation and stop at the described location. End-to-end navigation policies require diverse training data to generalize across scenes, yet real-robot data is costly to collect and simulated data leaves a sim-to-real gap. Internet egocentric videos offer a scalable source of real-world navigation experience. Our key insight is to learn goal-directed visual dynamics from Internet egocentric videos, and use these dynamics to support robot action generation. To this end, we propose ScaleNav, a unified world-action framework with three-stage training. We first perform instruction-conditioned video pretraining on these videos to learn how observations evolve as the…</p>\n<p><a href=\"https://arxiv.org/abs/2610.25690\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.25690\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.25690\">讨论与热度</a> · <a href=\"https://github.com/MachEmbodied/ScaleNav\">代码</a></p><hr>\n<h2>6. Self-Evolving Coding Agents via Harness-Policy Optimization</h2>\n<p><strong>强化学习</strong> · 发表 2026-10-16 · 综合分 5.03</p>\n<p>Zotero 摘要相关性：0.390（相似度分数，不是概率）。</p>\n<p>HF 点赞 45 · 讨论 4 · 本次 HF 热榜第 91 位 · 仓库累计 Star 28（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +4 · 讨论 +1 · Star +13。</p>\n<p><strong>规则标签：</strong>强化学习</p>\n<p><strong>中文概述：</strong>针对大语言模型在编程任务中策略与环境交互工具（harness）相互耦合的局限性，本文提出一种名为Self-HPO的递归自进化框架。该方法通过交替优化策略与环境工具，使策略模型能够根据自身失败模式自动生成环境工具，并基于此通过强化学习进行迭代更新。实验结果表明，该方法在多个编程基准测试中优于单一组件优化基线，有效提升了模型的任务解析率与代码执行稳定性。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出Self-HPO框架，实现编程代理策略模型与环境交互工具的交替自优化，有效解决单一组件优化不足的问题。<br><small>摘要依据：In light of this, we propose Self-HPO, a recursive self-improving framework for coding agents that alternates harness and policy optimization, using the evolving policy as its own harness proposer.</small></li>\n<li>实验证明Self-HPO能显著提升Qwen3.5-35B-A3B在编程任务中的解析率，且具备泛化至分布外任务的能力。<br><small>摘要依据：Across three coding benchmarks, Self-HPO consistently outperforms harness-only and policy-only baselines, improving Qwen3.5-35B-A3B&#x27;s average resolve rate from 57.8% to 64.8%, with gains generalizing to out-of-distribution settings.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>大模型后训练 · 强化学习 · 推理</p>\n<p><strong>原文摘要节选：</strong>Large language model (LLM) agents have shown promising potential in coding tasks, and their performance is jointly determined by the policy model and the harness that mediates their interaction with the environment. Indeed, harness and policy are mutually reinforcing and evolving only one component is suboptimal---a harness tuned for one checkpoint may not target the failure modes of an updated policy, while policy learning remains limited to the trajectories elicited by a fixed harness. In light of this, we propose Self-HPO, a recursive self-improving framework for coding agents that alternates harness and policy optimization, using the evolving policy as its own harness proposer. Specifically, in each round, the current policy first analyzes its own failures and proposes new harness…</p>\n<p><a href=\"https://arxiv.org/abs/2610.22791\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.22791\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.22791\">讨论与热度</a> · <a href=\"https://github.com/MSR-Orchard/Self-HPO\">代码</a></p><hr>\n<h2>7. CoEvo-RSI: When Harnesses Evolve, Which Models Should Follow?</h2>\n<p><strong>通用 AI</strong> · 发表 2026-10-18 · 综合分 5.01</p>\n<p>Zotero 摘要相关性：0.349（相似度分数，不是概率）。</p>\n<p>HF 点赞 59 · 讨论 2 · 仓库累计 Star 5（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +59 · 讨论 +2。</p>\n<p><strong>规则标签：</strong>多智能体</p>\n<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>\n<p><strong>原文摘要节选：</strong>Model--harness co-evolution has emerged as a prominent paradigm for recursive self-improving (RSI) agents, jointly evolving their execution scaffolds and intrinsic capabilities. We study the persistent yet often overlooked brain--body mismatch problem in this paradigm, where an evolving harness (body) demands behaviors its model (brain) has not learned or restricts capabilities it already possesses. We introduce CoEvo-RSI, a RSI framework that advances model--harness co-evolution through agent-driven, bidirectional historical inheritance. Drawing on a shared evolutionary archive and execution feedback, a meta-agent coordinates harness development from historical designs with model checkpoint selection or merging and subsequent adaptation under the selected harness, aligning inherited…</p>\n<p><a href=\"https://arxiv.org/abs/2610.25078\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.25078\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.25078\">讨论与热度</a> · <a href=\"https://github.com/SuJQ0722/CoEvo-RSI\">代码</a></p><hr>\n<h2>8. VLA-Rolling: Fewer Denoising Steps, Better Control via Adaptive Action Reuse</h2>\n<p><strong>机器人</strong> · 发表 2026-10-18 · 综合分 4.97</p>\n<p>Zotero 摘要相关性：0.348（相似度分数，不是概率）。</p>\n<p>HF 点赞 59 · 讨论 1 · 仓库累计 Star 9（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +59 · 讨论 +1。</p>\n<p><strong>规则标签：</strong>视觉语言动作</p>\n<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>\n<p><strong>原文摘要节选：</strong>Flow-matching vision-language-action (VLA) models generate an action chunk by iteratively denoising Gaussian noise, but typically execute only a short prefix before replanning with updated observations. Under this receding-horizon paradigm, the unexecuted remainder---the action tail---is discarded, and the next chunk is regenerated from fresh noise. We show that this discarded tail retains transferable denoising progress: action-tail initialization can match or outperform a native 10-step Gaussian baseline using fewer denoising steps. However, the optimal denoising budget varies substantially across samples, indicating that tail reuse should be adapted to the updated environment. Based on this observation, we introduce VLA-Rolling, a lightweight inference framework that reuses action…</p>\n<p><a href=\"https://arxiv.org/abs/2610.25043\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.25043\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.25043\">讨论与热度</a> · <a href=\"https://github.com/ZJU-OmniAI/VLA-Rolling\">代码</a></p><hr>\n<h2>9. Urbex: Agentic Spatial Grounding for City-Scale 3D Scenes</h2>\n<p><strong>强化学习</strong> · 发表 2026-10-13 · 综合分 4.93</p>\n<p>Zotero 摘要相关性：0.458（相似度分数，不是概率）。</p>\n<p>HF 点赞 133 · 讨论 1 · 本次 HF 热榜第 92 位 · 仓库累计 Star 107（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +0 · 讨论 +0 · Star +1。</p>\n<p><strong>规则标签：</strong>强化学习</p>\n<p><strong>中文概述：</strong>城市尺度3D定位通常依赖预计算候选框，导致在大场景下效率低下。为此，作者提出了Urbex，一种将3D定位转化为主动空间搜索的视觉语言代理框架。该框架将城市级场景建模为交互式多视图环境，使视觉语言模型代理能够通过查询地标、缩放局部和渲染斜视图来进行定位。作者利用强化学习优化了该代理的工具使用策略。实验表明，Urbex在CityRefer数据集上实现了最优的定位性能，并表现出更快的推理速度与跨场景稳健性。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>Urbex通过主动空间搜索取代传统的候选框排序，实现了无需候选框的城市级3D定位。<br><small>摘要依据：We propose Urbex, an agentic vision-language framework that instead casts grounding as active spatial search.</small></li>\n<li>在CityRefer数据集上，Urbex在定位精度与效率上均优于现有的城市尺度排序基线模型。<br><small>摘要依据：Experiments show that Urbex achieves the best Hit@1 and IoU on CityRefer, supports candidate-free grounding without ground-truth boxes, and is substantially faster than the strongest city-scale ranking baseline.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>视觉语言动作 · 强化学习 · 导航</p>\n<p><strong>原文摘要节选：</strong>City-scale 3D grounding is commonly formulated as candidate ranking, which requires precomputed instance proposals and becomes inefficient in large outdoor scenes. We propose Urbex, an agentic vision-language framework that instead casts grounding as active spatial search. Urbex represents a city-scale 3D scene as an interactive multi-view environment, allowing a VLM agent to query landmarks, zoom into local regions, render oblique views, and commit a grounded bounding box. We optimize this tool-use policy with reinforcement learning on CityRefer, using smooth localization rewards and lightweight shaping rewards for efficient exploration. Experiments show that Urbex achieves the best Hit@1 and IoU on CityRefer, supports candidate-free grounding without ground-truth boxes, and is…</p>\n<p><a href=\"https://arxiv.org/abs/2610.18356\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.18356\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.18356\">讨论与热度</a> · <a href=\"https://github.com/AMAP-ML/Urbex\">代码</a></p><hr>\n<h2>10. PVBench: Quantifying Physical Plausibility in Video Generation with Object-Level Physical Measurements</h2>\n<p><strong>机器人</strong> · 发表 2026-10-19 · 综合分 4.93</p>\n<p>Zotero 摘要相关性：0.414（相似度分数，不是概率）。</p>\n<p>HF 点赞 5 · 讨论 1 · 仓库累计 Star 8（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +5 · 讨论 +1。</p>\n<p><strong>规则标签：</strong>四足机器人 · 人形机器人 · 世界模型 · 多智能体</p>\n<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>\n<p><strong>原文摘要节选：</strong>Recent video generation models produce visually compelling outputs, yet their physical plausibility remains poorly measured. Physical plausibility asks whether generated objects obey geometry, kinematics, dynamics, and conservation laws. Existing benchmarks rely on coarse visual-language model judgments or target embodied world models rather than video generation itself. We introduce PVBench, a physical video benchmark that quantitatively measures the plausibility of generated videos across 46 dimensions organized into seven domains, spanning: i) instruction and semantic fidelity, ii) behavioral and causal consistency, iii) perceptual and temporal quality, iv) geometric and spatial consistency, v) material properties and field states, vi) kinematic and spatiotemporal persistence, vii) and…</p>\n<p><a href=\"https://arxiv.org/abs/2610.26711\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.26711\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.26711\">讨论与热度</a> · <a href=\"https://github.com/KSZG-11/PVBench\">代码</a></p><hr>"
+}

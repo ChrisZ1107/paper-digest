@@ -1,0 +1,17 @@
+{
+  "overview": "针对工业移动机器人导航在不同环境下的部署难题，本文研究了基于NVIDIA X-Mobility和COMPASS框架的学习型导航策略。作者在仿真环境中构建了数字孪生系统，对比了引入NVIDIA Cosmos模拟到现实（Sim-to-Real）增强数据前后的策略表现。实验结果显示，通过数字孪生训练并加入Cosmos增强数据，能显著提升机器人在现实场景中的任务成功率和效率，缩小了学习型导航与传统工业导航方案的性能差距。",
+  "highlights": [
+    {
+      "text": "在数字孪生中使用Cosmos模拟到现实增强进行训练，使学习型导航在四个场景中的现实任务成功率从65.3%提升至91.7%。",
+      "evidence": "Training in the digital twin with Cosmos sim-to-real augmentation raises the real-world success rate of learned navigation from 65.3% to 91.7% across four scenarios"
+    },
+    {
+      "text": "基于Cosmos的策略显著缩短了加权行驶时间，使其性能表现与生产级导航栈的差距缩小至8.3个百分点以内。",
+      "evidence": "and nearly halves its weighted travel time compared with simulation-only training, bringing it within 8.3 points of the production navigation stack, fully onboard"
+    }
+  ],
+  "tags": [
+    "导航",
+    "Sim-to-Real"
+  ]
+}
