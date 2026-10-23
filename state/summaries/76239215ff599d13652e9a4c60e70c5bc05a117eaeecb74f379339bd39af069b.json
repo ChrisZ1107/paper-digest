@@ -1,0 +1,18 @@
+{
+  "overview": "针对机器人代理规划器缺乏自身能力提升的问题，该研究提出了AgenticRoboRL框架。该方法通过结合监督微调与多轮强化学习，实现对机器人规划器的后训练。通过引入特定于执行机制的适配器，该框架能够兼容VLA技能调用和控制代码生成等不同机制。实验结果表明，该方法能显著提升规划器的任务成功率，验证了后训练在改善机器人规划能力方面的有效性。",
+  "highlights": [
+    {
+      "text": "提出AgenticRoboRL框架，通过监督微调与强化学习相结合的方式，实现了跨不同执行机制的机器人规划器后训练。",
+      "evidence": "To this end, we introduce AgenticRoboRL, a framework for post-training robot planners across different harnesses. The training recipe combines supervised fine-tuning with multi-turn reinforcement learning."
+    },
+    {
+      "text": "在LIBERO-PRO基准测试中，9B参数的规划器在应用该后训练方法后，任务成功率从18.1%显著提升至71.0%。",
+      "evidence": "On LIBERO-PRO, AgenticRoboRL raises the success rate of a 9B-parameter planner from 18.1% to 71.0% without external memory, approaching the 72.1% achieved by Codex (GPT-5.5) with external memory."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "机器人操作",
+    "大模型后训练"
+  ]
+}

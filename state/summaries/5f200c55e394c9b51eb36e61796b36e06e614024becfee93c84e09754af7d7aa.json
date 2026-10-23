@@ -1,0 +1,22 @@
+{
+  "overview": "针对人形机器人感知运动中传统密集高程图带来的冗余计算问题，本文提出一种基于落脚点预测（FPM）的预处理方法。该方法仅在预测的未来落脚点周围采样局部高程图信息，并将预测模型与运动策略协同训练。作者声称，该方法有效降低了训练复杂度，在相同任务难度下显著缩短了训练迭代次数，并在多种复杂非结构化地形中表现出优于完整地图观察策略的泛化能力，且无需昂贵的注意力机制。",
+  "highlights": [
+    {
+      "text": "通过引入轻量级落脚点预测模型对高程图进行预处理，显著提升了策略的训练效率。",
+      "evidence": "With the proposed lightweight preprocessing, the policy reaches a given terrain difficulty in roughly a third of the training iterations required with the complete map."
+    },
+    {
+      "text": "在复杂环境下，该方法在稀疏落脚点任务及未见地形中表现优于全图观察策略，且性能可比肩计算成本更高的注意力机制模型。",
+      "evidence": "It outperforms policies that observe the complete map where footholds are sparse, including in narrow walled corridors, and on unseen terrain, and it matches an attention-based encoder trained at several times the cost."
+    },
+    {
+      "text": "该策略在Unitree G1人形机器人上实现了零样本迁移，能够适应多种室外及室内的复杂障碍地形。",
+      "evidence": "The policy transfers zero-shot to a Unitree G1 humanoid traversing various obstacles, stairs, gaps, and step-downs beyond the training distribution in both indoor and outdoor environments."
+    }
+  ],
+  "tags": [
+    "人形机器人",
+    "足式运动",
+    "Sim-to-Real"
+  ]
+}

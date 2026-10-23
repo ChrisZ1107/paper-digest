@@ -1,0 +1,17 @@
+{
+  "overview": "本文针对人形机器人跌倒恢复问题，提出了一种名为RISE的方法。该方法通过构建恢复动作词汇表，并结合视觉扩散规划器预测运动意图，实现在推理阶段根据任务目标（如期望朝向、起立速度或路径）动态引导机器人执行不同的恢复动作。实验表明，该方法无需重新训练即可实现多样化的跌倒恢复、地形适应及实时轨迹引导，并在Unitree G1机器人上进行了实际部署验证。",
+  "highlights": [
+    {
+      "text": "RISE方法允许在推理时根据任务目标引导人形机器人的起立动作，实现对恢复路径和方式的控制。",
+      "evidence": "We present RISE, an approach to perceptive humanoid recovery that lets task objectives steer how the robot returns to standing at inference time."
+    },
+    {
+      "text": "该方法通过视觉扩散规划器预测运动意图，并结合任务成本函数，在无需重新训练的情况下实现测试时的动作引导。",
+      "evidence": "A visual diffusion planner learns from executions of this vocabulary to predict motion intent as future body states. Task costs guide this prediction toward a desired heading, rise speed, or path."
+    }
+  ],
+  "tags": [
+    "人形机器人",
+    "Sim-to-Real"
+  ]
+}

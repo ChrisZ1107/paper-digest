@@ -1,0 +1,17 @@
+{
+  "overview": "该研究探讨了扩展视觉定位对提升具身操作感知基础的作用。作者提出了一种统一的数据处理流程，将机器人操作记录与多样化视觉数据相结合，并生成可验证的定位监督信号。通过对Qwen3.5-9B模型进行约150万个样本的微调，作者构建了ACE-Brain-0.6模型，并声称其在多个公开定位基准测试中的平均得分优于GPT-6 Astra，证明了扩展可验证的定位监督能够增强中等规模模型在具身操作任务中的空间感知能力。",
+  "highlights": [
+    {
+      "text": "作者开发了一种统一数据流水线，通过自动标注机器人录制数据并融合多样化视觉来源，构建了可验证的定位监督信号。",
+      "evidence": "We develop a unified data pipeline that combines robot manipulation recordings with complementary visual data from diverse sources. After automatically annotating the robot recordings, the pipeline converts the collected data into verifiable grounding supervision."
+    },
+    {
+      "text": "ACE-Brain-0.6模型在七项公共定位基准测试中的四项表现超过GPT-6 Astra，总体平均分达到75.41。",
+      "evidence": "The model outperforms GPT-6 Astra on four of seven public grounding benchmarks, with an overall average score of 75.41 compared with Astra's 73.68."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "大模型后训练"
+  ]
+}

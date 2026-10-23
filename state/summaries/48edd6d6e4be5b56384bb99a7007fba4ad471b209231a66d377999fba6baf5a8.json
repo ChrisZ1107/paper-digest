@@ -1,0 +1,23 @@
+{
+  "overview": "针对月球重力环境下四足机器人的越障需求，本文提出了一种多阶段强化学习方法，旨在训练一个端到端的点对点跳跃控制策略。该策略架构简单，仅依赖机载传感器，具备月球任务部署的可行性。实验在仿真环境中验证了跳跃精度，并通过地面卸载实验证明了该策略在模拟月球重力下的硬件迁移能力及动力学特征的一致性。",
+  "highlights": [
+    {
+      "text": "提出了一种可在月球重力环境下实现点对点跳跃的端到端强化学习控制策略，该策略架构简洁且适配机载传感能力。",
+      "evidence": "We present a multistage reinforcement-learning approach that produces a single end-to-end control policy for commanded point-to-point jumping under lunar gravity. The resulting policy has a simple architecture and relies exclusively on mission-compatible onboard sensing"
+    },
+    {
+      "text": "仿真测试表明该策略能实现高精度的跳跃控制，并在包括控制指令更新停滞等异常工况下表现出一定的鲁棒性。",
+      "evidence": "In simulation, the learned policy performs accurate point-to-point jumps with landing errors smaller than the robot's body size. We analyze the torque and power demands of lunar jumping and characterize performance degradation under extreme outlier events, including control-update freezes of up to \\SI{1}{s} during flight."
+    },
+    {
+      "text": "通过物理卸载实验验证了策略的硬件迁移可行性，实测的扭矩与功率曲线符合仿真预期且未超出硬件极限。",
+      "evidence": "Hardware transfer demonstrates that the policy can successfully execute a vertical jump under lunar-gravity offloading. Furthermore, the measured torque and power profiles are consistent with the simulation results and remain within the robot's hardware limits."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "四足机器人",
+    "足式运动",
+    "Sim-to-Real"
+  ]
+}

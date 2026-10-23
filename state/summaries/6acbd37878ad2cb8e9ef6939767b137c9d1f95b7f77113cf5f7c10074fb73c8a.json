@@ -1,0 +1,21 @@
+{
+  "overview": "针对机器人基础模型在复杂操作任务中适应性不足的问题，作者提出了一种名为TIDE的人机交互在线后训练系统。该方法通过 provenance-conditioned 监督学习框架，利用部署过程中收集的人类干预和策略生成的轨迹数据在线更新策略，无需学习判别器、奖励模型或动作评分器。实验表明，TIDE在四项双臂操作任务中能够有效提升任务完成率，且单次任务在线训练耗时小于一小时。",
+  "highlights": [
+    {
+      "text": "TIDE通过监督学习框架实现策略的在线更新，避免了传统在线强化学习中对判别器或奖励模型的依赖，从而降低了训练复杂性。",
+      "evidence": "TIDE introduces a provenance-conditioned supervised learning framework that updates the policy online from human interventions and policy-generated rollouts collected during deployment, without a learned critic, reward model, or action scorer."
+    },
+    {
+      "text": "在四个真实世界的双臂操作任务中，该方法相比仅使用冷启动策略或离线演示数据，显著提升了任务进度与完成率。",
+      "evidence": "Across four real-world bimanual manipulation tasks, TIDE improves milestone-normalized task progress and binary full-task completion over the warm-start policy and matched additional offline demonstrations"
+    },
+    {
+      "text": "该系统具备高效的在线训练性能，每项任务的后训练过程可在不到一小时内完成，且支持异步检查点处理。",
+      "evidence": "Each task-specific online post-training session, from the start of deployment rollouts until the final checkpoint is available, completes in less than one hour while learning and checkpoint handling run asynchronously."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "模仿学习"
+  ]
+}

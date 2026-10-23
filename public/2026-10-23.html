@@ -1,0 +1,130 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>2026-10-23 热门论文 Top 10｜机器人·强化学习·AI</title><body><h1>2026-10-23 热门论文 Top 10</h1>
+<p>机器人 · 强化学习 · 通用 AI</p>
+<p>生成时间：2026-10-23 09:01 CST。从 652 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>
+<p>候选来源：<a href="https://huggingface.co/papers">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>
+<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>
+<h2>1. AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics</h2>
+<p><strong>机器人 / 强化学习</strong> · 发表 2026-10-20 · 综合分 5.81</p>
+<p>Zotero 摘要相关性：0.495（相似度分数，不是概率）。</p>
+<p>HF 点赞 21 · 讨论 1 · 仓库累计 Star 11（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +21 · 讨论 +1。</p>
+<p><strong>规则标签：</strong>强化学习 · 视觉语言动作 · 大模型后训练</p>
+<p><strong>中文概述：</strong>针对机器人代理规划器缺乏自身能力提升的问题，该研究提出了AgenticRoboRL框架。该方法通过结合监督微调与多轮强化学习，实现对机器人规划器的后训练。通过引入特定于执行机制的适配器，该框架能够兼容VLA技能调用和控制代码生成等不同机制。实验结果表明，该方法能显著提升规划器的任务成功率，验证了后训练在改善机器人规划能力方面的有效性。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出AgenticRoboRL框架，通过监督微调与强化学习相结合的方式，实现了跨不同执行机制的机器人规划器后训练。<br><small>摘要依据：To this end, we introduce AgenticRoboRL, a framework for post-training robot planners across different harnesses. The training recipe combines supervised fine-tuning with multi-turn reinforcement learning.</small></li>
+<li>在LIBERO-PRO基准测试中，9B参数的规划器在应用该后训练方法后，任务成功率从18.1%显著提升至71.0%。<br><small>摘要依据：On LIBERO-PRO, AgenticRoboRL raises the success rate of a 9B-parameter planner from 18.1% to 71.0% without external memory, approaching the 72.1% achieved by Codex (GPT-5.5) with external memory.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习 · 机器人操作 · 大模型后训练</p>
+<p><strong>原文摘要节选：</strong>Agentic robotics systems combine planners with robot harnesses to perform complex manipulation tasks. Recent work improves these systems through better harnesses and external memory, but relies on powerful closed-source models as planners and does not improve the planners&#x27; own capabilities. In contrast, coding agents have improved substantially by post-training the model itself. We therefore investigate whether post-training can also improve robot planners. However, applying it across robot harnesses requires accommodating different execution mechanisms, including VLA skill invocation and control-code generation. To this end, we introduce AgenticRoboRL, a framework for post-training robot planners across different harnesses. The training recipe combines supervised fine-tuning with…</p>
+<p><a href="https://arxiv.org/abs/2610.28589">论文原文</a> · <a href="https://arxiv.org/pdf/2610.28589">PDF</a> · <a href="https://huggingface.co/papers/2610.28589">讨论与热度</a> · <a href="https://github.com/xinxinliu-ai/AgenticRoboRL">代码</a></p><hr>
+<h2>2. Has GPT-6-Astra Achieved Embodied Intelligence?</h2>
+<p><strong>机器人</strong> · 发表 2026-10-15 · 综合分 5.72</p>
+<p>Zotero 摘要相关性：0.477（相似度分数，不是概率）。</p>
+<p>HF 点赞 465 · 讨论 2 · 本次 HF 热榜第 18 位 · 仓库累计 Star 243（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +9 · 讨论 +0 · Star +25。</p>
+<p><strong>规则标签：</strong>人形机器人 · 机器人操作 · 导航</p>
+<p><strong>中文概述：</strong>本文评估了GPT-6-Astra在机器人操作与导航任务中的表现。研究者通过12个基准测试探究了该模型在上下文学习下的能力极限，并分析了将其作为高层推理器与低层控制器结合的代理机制。实验发现，尽管该模型展现出较高的具身能力，但在真实物理部署中仍面临数据采集成本高、物理约束限制及长期执行效率等挑战。作者认为该模型尚未达到实用具身智能的标准。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>GPT-6-Astra在跨越桌面操作、人形机器人、移动平台及灵巧手的12个代表性基准测试中，通过上下文学习实现了出色的性能。<br><small>摘要依据：We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance</small></li>
+<li>研究指出高层“系统2”推理器与低层“系统1”控制器的闭环协调方案虽然有效，但伴随着较高的计算成本。<br><small>摘要依据：We identify that close-loop coordination between a high-level &quot;System 2&quot; reasoner (i.e., GPT-6-Astra) and a low-level &quot;System 1&quot; controller (e.g., π0.5) is costly but effective.</small></li>
+<li>在8种机器人配置的实机部署实验中，研究发现现有范式难以通过延长执行时间来换取物理约束下的高成功率。<br><small>摘要依据：Our experiments on 8 robot configurations reveal substantial gaps: 1) robot demonstrations required for ICL are expensive to collect, and 2) it is implausible to trade longer execution for higher success rates with physical constraints.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 导航 · 人形机器人 · 推理</p>
+<p><strong>原文摘要节选：</strong>GPT-6-Astra demonstrates a level of competence in robotic manipulation and navigation that challenges the conventional paradigm of building specialized models for individual tasks and embodiments. In this report, we ask not only how capable GPT-6-Astra is, but what its capabilities imply for the field. First, we probe the limits of standalone GPT-6-Astra. We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance (Fig. 1). Future research may focus on improving 1) the generality of ICL 2) cost and…</p>
+<p><a href="https://arxiv.org/abs/2610.22471">论文原文</a> · <a href="https://arxiv.org/pdf/2610.22471">PDF</a> · <a href="https://huggingface.co/papers/2610.22471">讨论与热度</a> · <a href="https://github.com/OpenSenseNova/SenseNova-RoboRSI">代码</a></p><hr>
+<h2>3. Player-1: Learning to Play from Synthetic Experience</h2>
+<p><strong>强化学习</strong> · 发表 2026-10-14 · 综合分 5.57</p>
+<p>Zotero 摘要相关性：0.512（相似度分数，不是概率）。</p>
+<p>HF 点赞 349 · 讨论 3 · 本次 HF 热榜第 72 位 · 仓库累计 Star 184（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +0 · Star -3。</p>
+<p><strong>规则标签：</strong>强化学习 · PPO · 大模型后训练 · 推理</p>
+<p><strong>中文概述：</strong>本文提出了Player-1框架，旨在提升计算机控制智能体在游戏中的表现。针对现有模型依赖演示数据覆盖不足的问题，作者通过构建包含16个合成环境的Player-1-Gym进行强化学习，并扩展了包含相对指针移动和复合动作的动作空间。实验表明，该方法在MineDojo、ViZDoom等任务中显著提升了成功率，证明了利用合成经验进行后训练能有效改善游戏的泛化控制能力。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>通过引入Player-1-Gym合成环境与PPO算法，显著提升了游戏任务的成功率。<br><small>摘要依据：The resulting Player-1-9B and Player-1-35B-A3B improve MineDojo-300 success over their SFT policies by 27.8 and 17.7 percentage points, respectively.</small></li>
+<li>扩展了计算机操作的动作空间，包括相对指针移动和复合输入，以适应游戏复杂控制需求。<br><small>摘要依据：We extend the computer-use action space with relative pointer motion, sustained inputs, and composite actions.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习 · PPO · 大模型后训练</p>
+<p><strong>原文摘要节选：</strong>Computer-use agents have demonstrated strong capabilities in interpreting screens and executing keyboard and mouse actions. However, games, with their visually rich worlds and diverse mechanics, remain challenging and offer a demanding next step toward general digital control. Current game-agent learning pipelines often rely on large-scale demonstrations with limited coverage of dynamic game states, while scalable environments for interactive training remain difficult to obtain. We introduce Player-1, a post-training framework for learning game control beyond demonstrations through synthetic experience. We extend the computer-use action space with relative pointer motion, sustained inputs, and composite actions. For supervised initialization, we fine-tune computer-use models on 6,044…</p>
+<p><a href="https://arxiv.org/abs/2610.20584">论文原文</a> · <a href="https://arxiv.org/pdf/2610.20584">PDF</a> · <a href="https://huggingface.co/papers/2610.20584">讨论与热度</a> · <a href="https://github.com/TencentARC/Player-1">代码</a></p><hr>
+<h2>4. ScaleNav: Scalable Internet Video Pretraining for Language-Conditioned Local Navigation</h2>
+<p><strong>机器人</strong> · 发表 2026-10-19 · 综合分 5.56</p>
+<p>Zotero 摘要相关性：0.469（相似度分数，不是概率）。</p>
+<p>HF 点赞 89 · 讨论 2 · 本次 HF 热榜第 63 位 · 仓库累计 Star 41（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +5 · 讨论 +0 · Star +1。</p>
+<p><strong>规则标签：</strong>四足机器人 · 导航 · Sim-to-Real</p>
+<p><strong>中文概述：</strong>针对语言引导的局部导航任务，本文提出ScaleNav框架，旨在解决数据规模化难题。该方法通过互联网第一人称视频进行目标导向的视觉动力学预训练，结合模拟环境下的动作对齐与联合微调，使机器人能够根据文本指令导航至目标位置。实验结果显示，ScaleNav在模拟基准测试中优于现有基线，并在真实四足机器人上验证了其泛化能力。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出ScaleNav框架，利用互联网海量第一人称视频学习视觉动力学，解决了导航策略训练中数据采集成本高与Sim-to-Real差距的问题。<br><small>摘要依据：Internet egocentric videos offer a scalable source of real-world navigation experience. Our key insight is to learn goal-directed visual dynamics from Internet egocentric videos, and use these dynamics to support robot action generation.</small></li>
+<li>ScaleNav在Short-Horizon OVON与HabitatGS-LN基准测试中表现出色，分别达到86.5%和94.9%的成功率，并已在真实四足机器人上完成部署测试。<br><small>摘要依据：ScaleNav achieves success rates of 86.5% on a single-view adaptation of Short-Horizon OVON and 94.9% on our HabitatGS-LN benchmark, outperforming the evaluated baselines on both benchmarks. We further deploy and evaluate ScaleNav on a real quadruped robot, with results supporting the model&#x27;s ability to generalize to real-world navigation.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>导航 · 四足机器人 · Sim-to-Real · 世界模型</p>
+<p><strong>原文摘要节选：</strong>We study language-conditioned local navigation, where a robot must navigate to a text-specified target visible in its initial observation and stop at the described location. End-to-end navigation policies require diverse training data to generalize across scenes, yet real-robot data is costly to collect and simulated data leaves a sim-to-real gap. Internet egocentric videos offer a scalable source of real-world navigation experience. Our key insight is to learn goal-directed visual dynamics from Internet egocentric videos, and use these dynamics to support robot action generation. To this end, we propose ScaleNav, a unified world-action framework with three-stage training. We first perform instruction-conditioned video pretraining on these videos to learn how observations evolve as the…</p>
+<p><a href="https://arxiv.org/abs/2610.25690">论文原文</a> · <a href="https://arxiv.org/pdf/2610.25690">PDF</a> · <a href="https://huggingface.co/papers/2610.25690">讨论与热度</a> · <a href="https://github.com/MachEmbodied/ScaleNav">代码</a></p><hr>
+<h2>5. Learning the 4D World through Point Trajectory Forecasting</h2>
+<p><strong>机器人</strong> · 发表 2026-10-20 · 综合分 5.42</p>
+<p>Zotero 摘要相关性：0.433（相似度分数，不是概率）。</p>
+<p>HF 点赞 48 · 讨论 2 · 仓库累计 Star 26（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +7 · 讨论 +1 · Star +9。</p>
+<p><strong>规则标签：</strong>世界模型</p>
+<p><strong>中文概述：</strong>本文提出了一种名为Video-Point Model（VPM）的世界模型，旨在通过多视角视频历史和语言指令进行视频预测与3D点轨迹预测。该模型通过相机条件下的多视角处理，将物理点运动轨迹作为监督信号，实现了跨视角外观变化与3D运动的对齐。作者将该模型扩展至机器人控制领域，通过加入动作标记，使策略能够在3D感知的表示基础上进行推理。实验结果表明，点轨迹监督有效提升了视频生成的保真度、3D运动准确性及机器人操作任务的成功率。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>VPM模型通过引入点轨迹监督，有效提升了视频预测的视觉保真度和3D运动准确性。<br><small>摘要依据：On VP-WorldBench and existing 4D generation benchmarks, point supervision improves both video fidelity and 3D motion accuracy over a video-only counterpart</small></li>
+<li>通过将机器人动作整合为模型标记，该方法提升了模型在仿真及真实环境下的操作任务成功率。<br><small>摘要依据：and in simulated and real-robot experiments, it also raises the manipulation success of the action-enabled model.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>世界模型 · 机器人操作</p>
+<p><strong>原文摘要节选：</strong>Reliable multi-view forecasting requires videos from different cameras to describe the same evolving 3D scene. To this end, we introduce Video-Point Model (VPM), a world model that conditions on multi-view video histories and a language instruction to jointly forecast future videos from arbitrary viewpoints and the 3D trajectories of persistent scene points. We extend a pretrained world model with camera-conditioned multi-view processing that integrates complementary observations across cameras, and add a trajectory head that predicts how physical points move through time. Each trajectory tracks a single point across all views, and supervising these trajectories alongside video generation therefore anchors appearance changes in every camera to a shared description of 3D motion. To support…</p>
+<p><a href="https://arxiv.org/abs/2610.28594">论文原文</a> · <a href="https://arxiv.org/pdf/2610.28594">PDF</a> · <a href="https://huggingface.co/papers/2610.28594">讨论与热度</a> · <a href="https://github.com/rootyJeon/VPM">代码</a></p><hr>
+<h2>6. ACE-Brain-0.6: Scaling Spatial Grounding for Physical Foundation Models</h2>
+<p><strong>机器人</strong> · 发表 2026-10-19 · 综合分 5.18</p>
+<p>Zotero 摘要相关性：0.433（相似度分数，不是概率）。</p>
+<p>HF 点赞 9 · 讨论 1 · 仓库累计 Star 8（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +9 · 讨论 +1。</p>
+<p><strong>规则标签：</strong>推理</p>
+<p><strong>中文概述：</strong>该研究探讨了扩展视觉定位对提升具身操作感知基础的作用。作者提出了一种统一的数据处理流程，将机器人操作记录与多样化视觉数据相结合，并生成可验证的定位监督信号。通过对Qwen3.5-9B模型进行约150万个样本的微调，作者构建了ACE-Brain-0.6模型，并声称其在多个公开定位基准测试中的平均得分优于GPT-6 Astra，证明了扩展可验证的定位监督能够增强中等规模模型在具身操作任务中的空间感知能力。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>作者开发了一种统一数据流水线，通过自动标注机器人录制数据并融合多样化视觉来源，构建了可验证的定位监督信号。<br><small>摘要依据：We develop a unified data pipeline that combines robot manipulation recordings with complementary visual data from diverse sources. After automatically annotating the robot recordings, the pipeline converts the collected data into verifiable grounding supervision.</small></li>
+<li>ACE-Brain-0.6模型在七项公共定位基准测试中的四项表现超过GPT-6 Astra，总体平均分达到75.41。<br><small>摘要依据：The model outperforms GPT-6 Astra on four of seven public grounding benchmarks, with an overall average score of 75.41 compared with Astra&#x27;s 73.68.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 大模型后训练</p>
+<p><strong>原文摘要节选：</strong>General-purpose multimodal models, including GPT-6 Astra and Claude Opus 5.5, demonstrate broad capabilities in embodied manipulation. Our analysis indicates that this generality is accompanied by strong spatial perception, as Astra can determine where to interact with task-relevant entities amid visual distractors. Because spatial perception connects high-level reasoning to the physical scene, we investigate scaling visual grounding to strengthen the perceptual foundation of general embodied operation. We develop a unified data pipeline that combines robot manipulation recordings with complementary visual data from diverse sources. After automatically annotating the robot recordings, the pipeline converts the collected data into verifiable grounding supervision. Fine-tuning Qwen3.5-9B on…</p>
+<p><a href="https://arxiv.org/abs/2610.27040">论文原文</a> · <a href="https://arxiv.org/pdf/2610.27040">PDF</a> · <a href="https://huggingface.co/papers/2610.27040">讨论与热度</a> · <a href="https://github.com/DAXIAORobotics/ACE-Brain-0.6">代码</a></p><hr>
+<h2>7. Towards Agentic Robots: Model, Data, Environment, and Harness</h2>
+<p><strong>机器人</strong> · 发表 2026-10-14 · 综合分 5.17</p>
+<p>Zotero 摘要相关性：0.494（相似度分数，不是概率）。</p>
+<p>HF 点赞 43 · 讨论 2 · 本次 HF 热榜第 96 位 · 仓库累计 Star 122（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +0 · 讨论 +0 · Star +11。</p>
+<p><strong>规则标签：</strong>世界模型 · 视觉语言动作</p>
+<p><strong>中文概述：</strong>本文探讨了机器人智能领域从底层动作预测向目标导向型智能体系统的范式转变。作者界定了“智能体机器人”的概念，即具备推理指令、交互环境、自主纠错和动态策略调整能力的系统。通过梳理模型、数据、环境与支撑平台四个功能领域，文章总结了现有研究现状，探讨了智能体如何优化决策与学习过程，并分析了该领域面临的挑战及未来发展方向。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>作者构建了“智能体机器人”的统一分类框架，将相关研究系统性地划分为模型、数据、环境与支撑平台四大功能域下的十七个类别。<br><small>摘要依据：We then clarify the definition and scope of agentic robots and organize existing research into seventeen categories across four functional domains: Model, Data, Environment, and Harness.</small></li>
+<li>文章回顾了机器人领域从单纯的策略学习向集成视觉-语言-动作模型、世界模型等能力的智能体系统的演进过程。<br><small>摘要依据：We first trace the development from robot policies to agentic systems, covering vision-language-action models, world models, and world-action models.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>视觉语言动作 · 世界模型</p>
+<p><strong>原文摘要节选：</strong>Foundation models are driving a paradigm shift in robotic intelligence, moving beyond low-level action prediction to goal-directed orchestration of data collection, model training, task planning, and real-world execution. We characterize this emerging paradigm as an agentic robots, in which agents reason over human instructions, interact with robotic environments, rectify execution errors autonomously, and dynamically adjust operational strategies. Although this field develops fast, current studies are not well connected. Researchers have no consistent view of how to combine different agentic functions into a complete robot system. This paper provides a unified overview of existing research on agentic robots. We first trace the development from robot policies to agentic systems, covering…</p>
+<p><a href="https://arxiv.org/abs/2610.20442">论文原文</a> · <a href="https://arxiv.org/pdf/2610.20442">PDF</a> · <a href="https://huggingface.co/papers/2610.20442">讨论与热度</a> · <a href="https://github.com/chonghanqin/Awesome-Agentic-Robots">代码</a></p><hr>
+<h2>8. Ropedia W0: Scaling Loco-Manipulation World Models across Embodiments with Human Experience</h2>
+<p><strong>机器人</strong> · 发表 2026-10-19 · 综合分 5.15</p>
+<p>Zotero 摘要相关性：0.428（相似度分数，不是概率）。</p>
+<p>HF 点赞 145 · 讨论 2 · 本次 HF 热榜第 81 位 · 仓库累计 Star 44（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 -32 · 讨论 +1 · Star +8。</p>
+<p><strong>规则标签：</strong>人形机器人 · 足式运动 · 机器人操作 · 世界模型 · 大模型后训练</p>
+<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>
+<p><strong>原文摘要节选：</strong>World models enable embodied agents to anticipate action consequences, yet jointly modeling locomotion and manipulation across diverse embodiments remains challenging due to heterogeneous action spaces and limited multimodal supervision. We present Ropedia W0, the first egocentric loco-manipulation world foundation model spanning humans and robots with diverse embodiments. We curate Xp-Data, comprising 10k hours of egocentric human data and 3k hours of robot data with unified multimodal annotations and systematic quality control. A unified kinematic representation encodes locomotion through camera poses and manipulation through projected skeletons, with robot skeletons combining embodiment-specific forward kinematics with extensive manual keypoint annotation and correction. We also…</p>
+<p><a href="https://arxiv.org/abs/2610.26855">论文原文</a> · <a href="https://arxiv.org/pdf/2610.26855">PDF</a> · <a href="https://huggingface.co/papers/2610.26855">讨论与热度</a> · <a href="https://github.com/Ropedia/ropedia-w0">代码</a></p><hr>
+<h2>9. EAU: Environment-Agent-User Co-evolution for Training User-Centric Agents</h2>
+<p><strong>强化学习</strong> · 发表 2026-10-12 · 综合分 5.04</p>
+<p>Zotero 摘要相关性：0.421（相似度分数，不是概率）。</p>
+<p>HF 点赞 17 · 讨论 8 · 仓库累计 Star 8（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +8 · 讨论 +1 · Star +7。</p>
+<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>
+<p><strong>原文摘要节选：</strong>Training LLM agents to interact with users over multiple turns is challenging because the learning signal depends not only on the agent, but also on the user simulator and environment, which jointly shape the agent&#x27;s experience. Simulated users can be stochastic or inconsistent, while environments may contain unreliable tools, incomplete state coverage, and incorrect verifiers. Prior work mainly addresses the resulting instability through reward shaping or denser supervision, while treating these components as fixed. We instead introduce EAU, a meta-agent framework for environment--agent--user co-evolution. During training, EAU monitors trajectories, tool traces, rewards, and training statistics; diagnoses failures and uninformative interactions; and proposes targeted modifications to the…</p>
+<p><a href="https://arxiv.org/abs/2610.16523">论文原文</a> · <a href="https://arxiv.org/pdf/2610.16523">PDF</a> · <a href="https://huggingface.co/papers/2610.16523">讨论与热度</a> · <a href="https://github.com/StringNLPLAB/meta-agent">代码</a></p><hr>
+<h2>10. Training the Whole Agent, Not Just the Model</h2>
+<p><strong>强化学习</strong> · 发表 2026-10-20 · 综合分 5.00</p>
+<p>Zotero 摘要相关性：0.392（相似度分数，不是概率）。</p>
+<p>HF 点赞 13 · 讨论 2 · 仓库累计 Star 1（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +9 · 讨论 +1 · Star +0。</p>
+<p><strong>规则标签：</strong>强化学习 · 大模型后训练</p>
+<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>
+<p><strong>原文摘要节选：</strong>Training coding agents typically updates the policy while keeping the harness fixed. During training, trajectories reveal flawed repair strategies and interaction problems that vary across tasks and change as the policy learns. We introduce HarnessAdapt-RL, which trains the policy and adapts its harness during reinforcement learning. For flawed repair strategies, a frozen teacher generates task-specific mechanism-level skills. For interaction problems recurring across tasks, a separate teacher model evolves tools and hooks, keeping each change only if it improves the observed pass rate or the observed trainable rate without lowering either. The policy trains with the adapted harness, and its new trajectories guide further adaptation. With a 9B base model, HarnessAdapt-RL improves pass@1…</p>
+<p><a href="https://arxiv.org/abs/2610.28069">论文原文</a> · <a href="https://arxiv.org/pdf/2610.28069">PDF</a> · <a href="https://huggingface.co/papers/2610.28069">讨论与热度</a> · <a href="https://github.com/lingxiaotang/HarnessAdapt-RL">代码</a></p><hr></body></html>

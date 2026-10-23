@@ -1,0 +1,17 @@
+{
+  "overview": "本文提出了一种名为Video-Point Model（VPM）的世界模型，旨在通过多视角视频历史和语言指令进行视频预测与3D点轨迹预测。该模型通过相机条件下的多视角处理，将物理点运动轨迹作为监督信号，实现了跨视角外观变化与3D运动的对齐。作者将该模型扩展至机器人控制领域，通过加入动作标记，使策略能够在3D感知的表示基础上进行推理。实验结果表明，点轨迹监督有效提升了视频生成的保真度、3D运动准确性及机器人操作任务的成功率。",
+  "highlights": [
+    {
+      "text": "VPM模型通过引入点轨迹监督，有效提升了视频预测的视觉保真度和3D运动准确性。",
+      "evidence": "On VP-WorldBench and existing 4D generation benchmarks, point supervision improves both video fidelity and 3D motion accuracy over a video-only counterpart"
+    },
+    {
+      "text": "通过将机器人动作整合为模型标记，该方法提升了模型在仿真及真实环境下的操作任务成功率。",
+      "evidence": "and in simulated and real-robot experiments, it also raises the manipulation success of the action-enabled model."
+    }
+  ],
+  "tags": [
+    "世界模型",
+    "机器人操作"
+  ]
+}
