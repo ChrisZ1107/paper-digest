@@ -1,0 +1,23 @@
+{
+  "overview": "针对人形机器人在复杂地形中运动控制的需求，作者提出了一种结合动作先验与强化学习的控制框架。该框架利用自监督注意力机制的接触规划器预测未来接触，并结合接触条件跟踪器实现全身协调运动。作者声称，该方法将接触作为感官与动作间的接口，在利用运动数据提供自然运动先验的同时，保留了强化学习在复杂环境中探索灵活行为的能力，实现了无需外部参考输入的部署。",
+  "highlights": [
+    {
+      "text": "提出一种基于注意力机制的接触规划器与接触条件跟踪器，通过将接触作为中介，使策略能够内化运动的接触感知结构。",
+      "evidence": "An explicit, self-supervised, attention-based contact planner predicts future body-environment contacts, while a contact-conditioned tracker translates these plans into coordinated whole-body motion. Together, they establish contact as an interface between sensory observations and control actions."
+    },
+    {
+      "text": "该框架允许单策略在利用运动先验实现自然全身协调的同时，通过强化学习微调探索环境差异。",
+      "evidence": "Consequently, a single policy can exploit data-driven motion priors for natural whole-body coordination while retaining the flexibility to discover environment-dependent behaviors through reinforcement learning."
+    },
+    {
+      "text": "部署时完全依赖车载观测，无需任何参考输入，实现了在复杂环境中的多样化人形移动。",
+      "evidence": "Operating entirely from onboard observations without any reference inputs at deployment, this framework enables versatile humanoid mobility in challenging environments."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "人形机器人",
+    "足式运动",
+    "Sim-to-Real"
+  ]
+}
