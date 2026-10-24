@@ -3671,6 +3671,19 @@
     "sY8MnrtUNWI": {
       "video_id": "sY8MnrtUNWI",
       "papers": []
+    },
+    "X1Qndd9p7c8": {
+      "video_id": "X1Qndd9p7c8",
+      "video_title": "DiscoveryRSI: Recursively Learning to Discover Valuable Hypotheses (Oct 2026)",
+      "published": "2026-10-24",
+      "video_url": "https://www.youtube.com/watch?v=X1Qndd9p7c8",
+      "papers": [
+        {
+          "id": "2610.23839",
+          "title": "DiscoveryRSI: Recursively Learning to Discover Valuable Hypotheses (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.23839"
+        }
+      ]
     }
   }
 }
