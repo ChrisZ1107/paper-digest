@@ -3601,6 +3601,70 @@
           "abstract_zh": "扩展Transformer规模已造就了具备广泛能力、且部署在异构硬件和波动工作负载中的模型。然而，模型系列通常只提供几种固定的尺寸（如S、B、L），迫使用户必须根据硬件和延迟限制来选择模型。这种刚性在查询负载变化时往往不是最优的。我们引入了一种无需重新训练的方法，将预训练的Transformer“弹性化”为一个能够在连续的计算预算中实时自适应的单一模型。我们的核心贡献在于对功能单元排序问题进行了可微松弛：不同于以往在每个MLP块或注意力头分配单一重要性权重的做法，我们将每一个独立的MLP神经元和注意力头在同一尺度上进行联合排序，通过在多个稀疏度目标下同时最小化模型的损失来实现。在从22M到8B参数的27个视觉和文本Transformer编码器上，我们的方法实现了高达60%稀疏度的平滑性能衰减，并在深度剪枝下优于一次性（one-shot）基线方法。例如，将DINOv3 ViT-H+/16剪枝至50%稀疏度可剔除4.27亿参数，同时ImageNet-1k线性探测准确率仅下降0.8%，且无需进行权重修正或重新训练。在60%稀疏度下，一个被剪枝的AugReg ViT-B/16模型在A100 GPU上实现了高达1.80倍的吞吐量提升和1.26倍的单次查询延迟降低。弹性模型的构建仅需几分钟，且构建时间随参数量的增加呈次线性增长。"
         }
       ]
+    },
+    "M1dlDpG8tZ8": {
+      "video_id": "M1dlDpG8tZ8",
+      "video_title": "VLA-Rolling: Fewer Denoising Steps, Better Control via Adaptive Action Reuse (Oct 2026)",
+      "published": "2026-10-24",
+      "video_url": "https://www.youtube.com/watch?v=M1dlDpG8tZ8",
+      "papers": [
+        {
+          "id": "2610.25043",
+          "title": "VLA-Rolling: Fewer Denoising Steps, Better Control via Adaptive Action Reuse (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.25043"
+        }
+      ]
+    },
+    "JhSf5_2l_cA": {
+      "video_id": "JhSf5_2l_cA",
+      "video_title": "Agentic World Action Models (Oct 2026)",
+      "published": "2026-10-24",
+      "video_url": "https://www.youtube.com/watch?v=JhSf5_2l_cA",
+      "papers": [
+        {
+          "id": "2610.30136",
+          "title": "Agentic World Action Models (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.30136"
+        }
+      ]
+    },
+    "nfS_vTXZXww": {
+      "video_id": "nfS_vTXZXww",
+      "video_title": "MemT-1.0: Towards Memory-Native Evolution (Oct 2026)",
+      "published": "2026-10-24",
+      "video_url": "https://www.youtube.com/watch?v=nfS_vTXZXww",
+      "papers": [
+        {
+          "id": "2610.26825",
+          "title": "MemT-1.0: Towards Memory-Native Evolution (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.26825"
+        }
+      ]
+    },
+    "IYtPcFXkRyA": {
+      "video_id": "IYtPcFXkRyA",
+      "papers": []
+    },
+    "Y6PqLGFz8bY": {
+      "video_id": "Y6PqLGFz8bY",
+      "papers": []
+    },
+    "ddOrPO1RKzY": {
+      "video_id": "ddOrPO1RKzY",
+      "video_title": "SuperMimic: Scaling Humanoid Whole-Body Control with One Differentiable World Model (Oct 2026)",
+      "published": "2026-10-24",
+      "video_url": "https://www.youtube.com/watch?v=ddOrPO1RKzY",
+      "papers": [
+        {
+          "id": "2610.28480",
+          "title": "SuperMimic: Scaling Humanoid Whole-Body Control with One Differentiable World Model (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.28480"
+        }
+      ]
+    },
+    "sY8MnrtUNWI": {
+      "video_id": "sY8MnrtUNWI",
+      "papers": []
     }
   }
 }
