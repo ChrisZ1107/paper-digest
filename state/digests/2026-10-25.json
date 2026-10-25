@@ -1,0 +1,386 @@
+{
+  "date": "2026-10-25",
+  "timestamp": "2026-10-25T09:02:28.376254+08:00",
+  "title": "2026-10-25 热门论文 Top 10｜机器人·强化学习·AI",
+  "slug": "2026-10-25",
+  "papers": [
+    {
+      "id": "2610.28589",
+      "title": "AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics",
+      "abstract": "Agentic robotics systems combine planners with robot harnesses to perform complex manipulation tasks. Recent work improves these systems through better harnesses and external memory, but relies on powerful closed-source models as planners and does not improve the planners' own capabilities. In contrast, coding agents have improved substantially by post-training the model itself. We therefore investigate whether post-training can also improve robot planners. However, applying it across robot harnesses requires accommodating different execution mechanisms, including VLA skill invocation and control-code generation. To this end, we introduce AgenticRoboRL, a framework for post-training robot planners across different harnesses. The training recipe combines supervised fine-tuning with multi-turn reinforcement learning. To accommodate different execution mechanisms, harness-specific adapters connect recorded planner interactions with task outcomes, enabling a common RL training pipeline while keeping execution components fixed. On LIBERO-PRO, AgenticRoboRL raises the success rate of a 9B-parameter planner from 18.1% to 71.0% without external memory, approaching the 72.1% achieved by Codex (GPT-5.5) with external memory. These results demonstrate post-training as an effective approach for improving robot planners. We will release the framework and trained planner checkpoints.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-10-20",
+      "age_days": 5.043383984421296,
+      "upvotes": 43,
+      "comments": 2,
+      "stars": 19,
+      "repo": "https://github.com/xinxinliu-ai/AgenticRoboRL",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.49545,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 5,
+        "comments": 0,
+        "stars": 2
+      },
+      "score": 5.592,
+      "rule_tags": [
+        "强化学习",
+        "视觉语言动作",
+        "大模型后训练"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对机器人代理规划器缺乏自身能力提升的问题，该研究提出了AgenticRoboRL框架。该方法通过结合监督微调与多轮强化学习，实现对机器人规划器的后训练。通过引入特定于执行机制的适配器，该框架能够兼容VLA技能调用和控制代码生成等不同机制。实验结果表明，该方法能显著提升规划器的任务成功率，验证了后训练在改善机器人规划能力方面的有效性。",
+        "highlights": [
+          {
+            "text": "提出AgenticRoboRL框架，通过监督微调与强化学习相结合的方式，实现了跨不同执行机制的机器人规划器后训练。",
+            "evidence": "To this end, we introduce AgenticRoboRL, a framework for post-training robot planners across different harnesses. The training recipe combines supervised fine-tuning with multi-turn reinforcement learning."
+          },
+          {
+            "text": "在LIBERO-PRO基准测试中，9B参数的规划器在应用该后训练方法后，任务成功率从18.1%显著提升至71.0%。",
+            "evidence": "On LIBERO-PRO, AgenticRoboRL raises the success rate of a 9B-parameter planner from 18.1% to 71.0% without external memory, approaching the 72.1% achieved by Codex (GPT-5.5) with external memory."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "机器人操作",
+          "大模型后训练"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.22471",
+      "title": "Has GPT-6-Astra Achieved Embodied Intelligence?",
+      "abstract": "GPT-6-Astra demonstrates a level of competence in robotic manipulation and navigation that challenges the conventional paradigm of building specialized models for individual tasks and embodiments. In this report, we ask not only how capable GPT-6-Astra is, but what its capabilities imply for the field. First, we probe the limits of standalone GPT-6-Astra. We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance (Fig. 1). Future research may focus on improving 1) the generality of ICL 2) cost and execution time, 3) physical-state verification, 4) recovery from irreversible failures, and 5) long-horizon preservation of progress. Second, we study the agentic harness for embodied control. We identify that close-loop coordination between a high-level \"System 2\" reasoner (i.e., GPT-6-Astra) and a low-level \"System 1\" controller (e.g., π0.5) is costly but effective. Third, we examine GPT-6-Astra on real-world deployment. Our experiments on 8 robot configurations reveal substantial gaps: 1) robot demonstrations required for ICL are expensive to collect, and 2) it is implausible to trade longer execution for higher success rates with physical constraints. Fourth, we envision the next generation of embodied benchmarks. We develop a prototype that 1) derives tasks from real-world needs, 2) provides no in-domain demonstrations, and 3) judges agents on a world clock that keeps running while they deliberate. Taken together, our results suggest that GPT-6-Astra has largely crossed the threshold of embodied competence, but not yet that of practical embodied intelligence.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-15",
+      "age_days": 10.043383984421297,
+      "upvotes": 473,
+      "comments": 2,
+      "stars": 266,
+      "repo": "https://github.com/OpenSenseNova/SenseNova-RoboRSI",
+      "trending_rank": 33,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.47693,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 4,
+        "comments": 0,
+        "stars": 8
+      },
+      "score": 5.544,
+      "rule_tags": [
+        "人形机器人",
+        "机器人操作",
+        "导航"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文评估了GPT-6-Astra在机器人操作与导航任务中的表现。研究者通过12个基准测试探究了该模型在上下文学习下的能力极限，并分析了将其作为高层推理器与低层控制器结合的代理机制。实验发现，尽管该模型展现出较高的具身能力，但在真实物理部署中仍面临数据采集成本高、物理约束限制及长期执行效率等挑战。作者认为该模型尚未达到实用具身智能的标准。",
+        "highlights": [
+          {
+            "text": "GPT-6-Astra在跨越桌面操作、人形机器人、移动平台及灵巧手的12个代表性基准测试中，通过上下文学习实现了出色的性能。",
+            "evidence": "We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance"
+          },
+          {
+            "text": "研究指出高层“系统2”推理器与低层“系统1”控制器的闭环协调方案虽然有效，但伴随着较高的计算成本。",
+            "evidence": "We identify that close-loop coordination between a high-level \"System 2\" reasoner (i.e., GPT-6-Astra) and a low-level \"System 1\" controller (e.g., π0.5) is costly but effective."
+          },
+          {
+            "text": "在8种机器人配置的实机部署实验中，研究发现现有范式难以通过延长执行时间来换取物理约束下的高成功率。",
+            "evidence": "Our experiments on 8 robot configurations reveal substantial gaps: 1) robot demonstrations required for ICL are expensive to collect, and 2) it is implausible to trade longer execution for higher success rates with physical constraints."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "导航",
+          "人形机器人",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.29677",
+      "title": "Toward Recursive Self-Improvement in Physical AI",
+      "abstract": "Recursive self-improvement (RSI) describes a system that improves not only its behavior but also the process by which it improves. Recent digital agents test this idea by rewriting their own code and checking each version with executable tests. Bringing these mechanisms into the physical world requires learning from partial observations through costly trials, while accounting for changing operating conditions and potentially irreversible consequences. We position RSI within robot learning and trace pathways from improving robot capabilities to improving the processes that generate them. We examine how physical experience can strengthen these improvement mechanisms and when the resulting gains can support further self-improvement of the mechanisms themselves. Gains carry forward only when feedback addresses remaining learning needs, the receiving component can use the change, its value survives changes in tasks or hardware, and continued practice remains safe and affordable. Existing studies, concentrated in manipulation, support behavioral improvement, benefits to later learning, and procedure improvement. Some systems also change the improver's knowledge or tools, but the physical studies reviewed here have yet to isolate gains attributable to recursion. We synthesize these findings into evaluation principles and research directions for machines that, trial by trial, safely improve the way they improve.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-21",
+      "age_days": 4.043383984421296,
+      "upvotes": 56,
+      "comments": 2,
+      "stars": 30,
+      "repo": "https://github.com/Physical2RSI/Awesome-Physical2RSI",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.42742,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 10,
+        "comments": 1,
+        "stars": 22
+      },
+      "score": 5.412,
+      "rule_tags": [],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "该文探讨了物理人工智能领域中递归自我改进（RSI）的可行性。作者分析了如何将数字化代理的自我代码重写机制引入物理机器人学习中，重点讨论了在处理部分观测、变动环境及安全限制下的改进过程。文章通过梳理现有操作类研究，总结了机器人行为、后续学习及流程改进的现状，并提出了评估原则与研究方向，旨在探讨如何让机器在物理交互中安全地改进其自身的改进过程。",
+        "highlights": [
+          {
+            "text": "作者分析了将递归自我改进引入物理世界所面临的挑战，包括高成本试验、部分观测以及不可逆后果的风险。",
+            "evidence": "Bringing these mechanisms into the physical world requires learning from partial observations through costly trials, while accounting for changing operating conditions and potentially irreversible consequences."
+          },
+          {
+            "text": "研究指出，尽管现有操作类研究在改善行为和流程方面取得了一定进展，但目前尚未有物理实验证实递归改进带来的具体增益。",
+            "evidence": "Some systems also change the improver's knowledge or tools, but the physical studies reviewed here have yet to isolate gains attributable to recursion."
+          }
+        ],
+        "tags": [
+          "机器人操作"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.29560",
+      "title": "From VLM Planners to Robotic Agents: Self-Evolving Harnesses for History-Dependent Manipulation",
+      "abstract": "Vision-language-action (VLA) models achieve strong performance across embodied manipulation tasks by unifying visual understanding, language conditioning, and action generation. However, long-horizon tasks can involve non-Markovian dependencies: successful decisions may require retaining task progress and past interaction outcomes, while partial observability and execution errors compound over time. Existing work has begun to address these challenges by augmenting foundation-model policies with memory and by introducing hierarchical architectures that separate high-level planning from low-level execution. We organize the high-level VLM as a robotic agent through an editable harness to maintain task context and improve planning through execution experience. We instantiate this approach as SERA (Self-Evolving Robotic Agent), with a fixed VLA executor providing low-level control. The harness maintains and updates task context using observations and execution feedback to guide subsequent planning. Self-evolution uses environment rollouts to propose and evaluate harness revisions, with the selected configuration fixed before held-out testing. On RoboMME, SERA achieves 51.38% overall success with autonomous selection, compared with 44.38% without self-evolution. Our exploration suggests that agentic planning is a promising direction for history-dependent robotic manipulation.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-21",
+      "age_days": 4.043383984421296,
+      "upvotes": 28,
+      "comments": 1,
+      "stars": 4,
+      "repo": "https://github.com/StevenKKXS/SERA",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.48009,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 4,
+        "comments": 0,
+        "stars": 0
+      },
+      "score": 5.375,
+      "rule_tags": [
+        "机器人操作",
+        "视觉语言动作"
+      ],
+      "summary_status": "Gemini 暂不可用，显示规则标签与原文摘要。"
+    },
+    {
+      "id": "2610.27851",
+      "title": "LaLa-World: Scaling Latent World Models with Natural Language Actions",
+      "abstract": "This paper shows that JEPA-style latent world models (LWMs) can learn across diverse domains and data sources by adopting the language-conditioned interface of video generation models. We establish this approach as an effective and efficient basis for planning with imagination and downstream policy fine-tuning. To this end, we introduce LaLa-World, a Language-conditioned Latent World model that learns from simulation and robot trajectories together with broader image and video data. Two designs make this work. First, we describe both numerical actions and visual changes in language, enabling joint training of a single future predictor across heterogeneous datasets. Second, we build the predictor on a language model, allowing it to interpret language conditions while predicting future latent states. The resulting predictor achieves higher average MPC planning performance than existing LWMs trained separately for each domain or task. Adding image and video data further improves average planning performance and robustness to action phrasing. In a matched comparison with an RAEv2-based video generation model baseline, LaLa-World reaches comparable planning performance with 6times less training cost and 13.9times faster planning. Beyond planning, the pretrained LaLa-World serves as an initialization for LaLa-Policy, which jointly predicts actions and future visual representations. LaLa-Policy performs competitively with Cosmos Policy on LIBERO and RoboCasa, with up to 5.5times faster inference.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-21",
+      "age_days": 4.043383984421296,
+      "upvotes": 35,
+      "comments": 3,
+      "stars": 4,
+      "repo": "https://github.com/junha1125/LaLa-World",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.44149,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 7,
+        "comments": 1,
+        "stars": 0
+      },
+      "score": 5.339,
+      "rule_tags": [
+        "世界模型"
+      ],
+      "summary_status": "Gemini 暂不可用，显示规则标签与原文摘要。"
+    },
+    {
+      "id": "2610.30320",
+      "title": "Self-Distilling Future Video Representations for World Action Models",
+      "abstract": "World Action Models (WAMs) have emerged as a promising approach to learning generalist robot policies using rich spatiotemporal priors from pre-trained video diffusion models. A recent line of WAMs improves inference efficiency by conditioning a separate action decoder on intermediate future video representations extracted from a single denoising step, avoiding costly iterative denoising required for video generation. This design makes action prediction depend directly on the quality of these future representations. In this paper, we introduce Future REpresentation learning via self-Distillation with temporal context (FRED), a framework that trains WAMs to improve the quality of future video representations from noise in a single denoising step. Specifically, FRED uses self-distillation to predict future representations from noise, using representations extracted from ground-truth future observations as targets. We further condition the video model on historical observations, providing temporal context for predicting future representations better. Across diverse real-world manipulation scenarios, FRED consistently outperforms competing WAMs. It achieves particularly large gains on long-horizon and out-of-domain tasks under zero-shot environment generalization, and substantially improves human-to-robot skill transfer, reaching 50.0% task success on tasks absent from robot training data and demonstrated only in human videos, compared with 19.4% for the best competing WAM.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-21",
+      "age_days": 4.043383984421296,
+      "upvotes": 36,
+      "comments": 2,
+      "stars": 7,
+      "repo": "https://github.com/suhyeok-jang/FRED",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.41682,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 13,
+        "comments": 1,
+        "stars": 3
+      },
+      "score": 5.295,
+      "rule_tags": [],
+      "summary_status": "Gemini 暂不可用，显示规则标签与原文摘要。"
+    },
+    {
+      "id": "2610.31494",
+      "title": "AgentVQA: A Unified Benchmark for Agentic Visual Understanding",
+      "abstract": "Vision-language models (VLMs) can perform a broad range of tasks across diverse settings, yet their performance in agentic contexts remains poorly understood. Although online evaluations in simulators and real-world environments are essential for measuring interactive agent performance, they are costly and challenging to scale. Complementary offline VQA benchmarks can enable faster and more reliable comparisons across agentic domains, yet existing benchmarks remain limited and fragmented. To address this gap, we introduce AgentVQA, an offline benchmark for evaluating VLMs on realistic agentic scenarios across five agent domains: Web Agents, Robotics, Egocentric Videos, Games, and Spatial Planning. We build AgentVQA by manually selecting 1000 challenging, real-world agent examples from 23 source datasets and adapting them for reliable offline evaluation. The resulting benchmark preserves realistic scenarios from interactive environments across diverse domains, and its model rankings track those from corresponding online evaluations. Across the 22 evaluated models, the best achieves only 58.5% accuracy. Our cross-domain analysis shows that errors are driven primarily by failures to ground and maintain accurate representations of the current and evolving visual state, including localizing relevant UI elements, interpreting motion, tracking state changes over time, and inferring 3D spatial relationships, rather than by task misinterpretation or downstream logical reasoning.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-22",
+      "age_days": 3.0433839844212964,
+      "upvotes": 17,
+      "comments": 2,
+      "stars": 8,
+      "repo": "https://github.com/zlab-princeton/AgentVQA",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.43288,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 6,
+        "comments": 1,
+        "stars": 3
+      },
+      "score": 5.289,
+      "rule_tags": [
+        "推理"
+      ],
+      "summary_status": "Gemini 暂不可用，显示规则标签与原文摘要。"
+    },
+    {
+      "id": "2610.25376",
+      "title": "TILDE: Teacher-in-the-Loop Distillation from Embodied Foundation Models",
+      "abstract": "Large-scale action pretraining equips Embodied Foundation Models (EFMs) with strong manipulation capabilities, with particular strengths in generalization and closed-loop robustness, but reproducing such pretraining requires substantial robot data and computation. To transfer these capabilities from pretrained EFMs to policies without action pretraining, we introduce TILDE (Teacher-In-the-Loop Distillation from EFMs), which synergizes on-policy distillation at student-induced states with learning from teacher-executed recovery trajectories. We further propose AutoDAgger, an autonomous data aggregation pipeline in which a robotic reward model is utilized to monitor task progress and trigger teacher intervention, thereby collecting recovery experience without human monitoring or manual control. AutoDAgger accelerates recovery-trajectory collection by more than 2times compared with the human-in-the-loop method. By unifying learning from demonstrations, on-policy teacher supervision, and teacher's corrective behavior, TILDE improves task performance by up to 4.1times over behavior cloning across three real-world tasks and supports effective cross-architecture distillation.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-10-18",
+      "age_days": 7.043383984421296,
+      "upvotes": 8,
+      "comments": 2,
+      "stars": 7,
+      "repo": "https://github.com/hku-sail/TILDE",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.44734,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 6,
+        "comments": 1,
+        "stars": 0
+      },
+      "score": 5.087,
+      "rule_tags": [
+        "模仿学习"
+      ],
+      "summary_status": "Gemini 暂不可用，显示规则标签与原文摘要。"
+    },
+    {
+      "id": "2610.19705",
+      "title": "RouteWeaver: Weaving Mode Selection and Execution into Unified LLM Routing",
+      "abstract": "LLM routing dynamically selects and coordinates heterogeneous language models across diverse tasks. However, existing approaches are largely built around a predefined execution paradigm, such as single-round, multi-round, or agentic routing, which fixes how model calls are organized and limits adaptation to different query needs. We propose RouteWeaver, a unified routing framework that integrates these routing modes within a single LLM policy, jointly learning which mode to use and how to select models within that mode. To jointly optimize mode selection and within-mode execution, we develop COMET-GRPO (COordinated Mode-Execution Training), which decouples the trajectory-level advantage into separate signals for mode selection and within-mode execution, enabling more targeted credit assignment to each decision level. We further introduce progressive exploration, which gradually shifts training from externally assigned modes to autonomous selection, so that the router first learns how to execute each mode before deciding when to use it. We evaluate RouteWeaver across mathematics, coding, knowledge, logical reasoning, and factual recall. RouteWeaver achieves an average accuracy of 61.4%, an 11.03% relative improvement over the strongest baseline, and outperforms all compared baselines in each of the five domains. Ablations show that both COMET-GRPO and progressive exploration are important for adaptive routing; without progressive exploration, the routing policy collapses entirely to single-round execution.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-10-19",
+      "age_days": 6.043383984421296,
+      "upvotes": 23,
+      "comments": 2,
+      "stars": 3,
+      "repo": "https://github.com/LaughKing/RouteWeaver",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.39586,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 6,
+        "comments": 1,
+        "stars": 1
+      },
+      "score": 4.922,
+      "rule_tags": [
+        "强化学习",
+        "大模型后训练",
+        "推理"
+      ],
+      "summary_status": "Gemini 暂不可用，显示规则标签与原文摘要。"
+    },
+    {
+      "id": "2610.23344",
+      "title": "Language Models Learn to Improve Language Models",
+      "abstract": "Large language models (LLMs) are increasingly used to automate AI research, including language-model (LM) development, offering a potential path toward recursive self-improvement. However, turning experimental feedback into a learned ability to propose effective improvements across models faces two challenges. First, training such an ability with real feedback is expensive: reinforcement learning (RL) requires evaluating tens of thousands of proposals, each potentially requiring a full model-training run. Even at ten GPU-hours per run, reward collection alone would consume hundreds of thousands of GPU-hours, motivating a cheaper surrogate. Second, surrogate feedback can become unreliable as policy optimization favors overestimated proposals when the proposal distribution shifts. To address these challenges, we propose LM2LM, which trains LLMs with RL to generate effective LM improvement proposals. To provide scalable feedback, we use a research world model (RWM), a frozen LLM that predicts proposal gains from real experimental records provided in context, as the reward model for RL. To maintain feedback reliability, we periodically execute current-policy proposals ranked highly by the RWM and add their measured outcomes to its context. Across eight autoregressive and diffusion LM development environments, real-execution evaluations on held-out tasks show that LM2LM enables Qwen3.8-27B to outperform GPT-6-sol, even when GPT-6-sol is given 300 real experimental records in context, while requiring 33% lower data-generation cost. LM2LM also generalizes to a model family unseen during training.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-10-16",
+      "age_days": 9.043383984421297,
+      "upvotes": 15,
+      "comments": 2,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.40095,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 8,
+        "comments": 0
+      },
+      "score": 4.752,
+      "rule_tags": [
+        "强化学习",
+        "世界模型"
+      ],
+      "summary_status": "Gemini 暂不可用，显示规则标签与原文摘要。"
+    }
+  ],
+  "candidate_count": 138,
+  "personalization_note": "已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。",
+  "html": "<h1>2026-10-25 热门论文 Top 10</h1>\n<p>机器人 · 强化学习 · 通用 AI</p>\n<p>生成时间：2026-10-25 09:02 CST。从 138 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>\n<p>候选来源：<a href=\"https://huggingface.co/papers\">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>\n<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>\n<h2>1. AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics</h2>\n<p><strong>机器人 / 强化学习</strong> · 发表 2026-10-20 · 综合分 5.59</p>\n<p>Zotero 摘要相关性：0.495（相似度分数，不是概率）。</p>\n<p>HF 点赞 43 · 讨论 2 · 仓库累计 Star 19（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +5 · 讨论 +0 · Star +2。</p>\n<p><strong>规则标签：</strong>强化学习 · 视觉语言动作 · 大模型后训练</p>\n<p><strong>中文概述：</strong>针对机器人代理规划器缺乏自身能力提升的问题，该研究提出了AgenticRoboRL框架。该方法通过结合监督微调与多轮强化学习，实现对机器人规划器的后训练。通过引入特定于执行机制的适配器，该框架能够兼容VLA技能调用和控制代码生成等不同机制。实验结果表明，该方法能显著提升规划器的任务成功率，验证了后训练在改善机器人规划能力方面的有效性。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出AgenticRoboRL框架，通过监督微调与强化学习相结合的方式，实现了跨不同执行机制的机器人规划器后训练。<br><small>摘要依据：To this end, we introduce AgenticRoboRL, a framework for post-training robot planners across different harnesses. The training recipe combines supervised fine-tuning with multi-turn reinforcement learning.</small></li>\n<li>在LIBERO-PRO基准测试中，9B参数的规划器在应用该后训练方法后，任务成功率从18.1%显著提升至71.0%。<br><small>摘要依据：On LIBERO-PRO, AgenticRoboRL raises the success rate of a 9B-parameter planner from 18.1% to 71.0% without external memory, approaching the 72.1% achieved by Codex (GPT-5.5) with external memory.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · 机器人操作 · 大模型后训练</p>\n<p><strong>原文摘要节选：</strong>Agentic robotics systems combine planners with robot harnesses to perform complex manipulation tasks. Recent work improves these systems through better harnesses and external memory, but relies on powerful closed-source models as planners and does not improve the planners&#x27; own capabilities. In contrast, coding agents have improved substantially by post-training the model itself. We therefore investigate whether post-training can also improve robot planners. However, applying it across robot harnesses requires accommodating different execution mechanisms, including VLA skill invocation and control-code generation. To this end, we introduce AgenticRoboRL, a framework for post-training robot planners across different harnesses. The training recipe combines supervised fine-tuning with…</p>\n<p><a href=\"https://arxiv.org/abs/2610.28589\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.28589\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.28589\">讨论与热度</a> · <a href=\"https://github.com/xinxinliu-ai/AgenticRoboRL\">代码</a></p><hr>\n<h2>2. Has GPT-6-Astra Achieved Embodied Intelligence?</h2>\n<p><strong>机器人</strong> · 发表 2026-10-15 · 综合分 5.54</p>\n<p>Zotero 摘要相关性：0.477（相似度分数，不是概率）。</p>\n<p>HF 点赞 473 · 讨论 2 · 本次 HF 热榜第 33 位 · 仓库累计 Star 266（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +4 · 讨论 +0 · Star +8。</p>\n<p><strong>规则标签：</strong>人形机器人 · 机器人操作 · 导航</p>\n<p><strong>中文概述：</strong>本文评估了GPT-6-Astra在机器人操作与导航任务中的表现。研究者通过12个基准测试探究了该模型在上下文学习下的能力极限，并分析了将其作为高层推理器与低层控制器结合的代理机制。实验发现，尽管该模型展现出较高的具身能力，但在真实物理部署中仍面临数据采集成本高、物理约束限制及长期执行效率等挑战。作者认为该模型尚未达到实用具身智能的标准。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>GPT-6-Astra在跨越桌面操作、人形机器人、移动平台及灵巧手的12个代表性基准测试中，通过上下文学习实现了出色的性能。<br><small>摘要依据：We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance</small></li>\n<li>研究指出高层“系统2”推理器与低层“系统1”控制器的闭环协调方案虽然有效，但伴随着较高的计算成本。<br><small>摘要依据：We identify that close-loop coordination between a high-level &quot;System 2&quot; reasoner (i.e., GPT-6-Astra) and a low-level &quot;System 1&quot; controller (e.g., π0.5) is costly but effective.</small></li>\n<li>在8种机器人配置的实机部署实验中，研究发现现有范式难以通过延长执行时间来换取物理约束下的高成功率。<br><small>摘要依据：Our experiments on 8 robot configurations reveal substantial gaps: 1) robot demonstrations required for ICL are expensive to collect, and 2) it is implausible to trade longer execution for higher success rates with physical constraints.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 导航 · 人形机器人 · 推理</p>\n<p><strong>原文摘要节选：</strong>GPT-6-Astra demonstrates a level of competence in robotic manipulation and navigation that challenges the conventional paradigm of building specialized models for individual tasks and embodiments. In this report, we ask not only how capable GPT-6-Astra is, but what its capabilities imply for the field. First, we probe the limits of standalone GPT-6-Astra. We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance (Fig. 1). Future research may focus on improving 1) the generality of ICL 2) cost and…</p>\n<p><a href=\"https://arxiv.org/abs/2610.22471\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.22471\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.22471\">讨论与热度</a> · <a href=\"https://github.com/OpenSenseNova/SenseNova-RoboRSI\">代码</a></p><hr>\n<h2>3. Toward Recursive Self-Improvement in Physical AI</h2>\n<p><strong>机器人</strong> · 发表 2026-10-21 · 综合分 5.41</p>\n<p>Zotero 摘要相关性：0.427（相似度分数，不是概率）。</p>\n<p>HF 点赞 56 · 讨论 2 · 仓库累计 Star 30（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +10 · 讨论 +1 · Star +22。</p>\n<p><strong>中文概述：</strong>该文探讨了物理人工智能领域中递归自我改进（RSI）的可行性。作者分析了如何将数字化代理的自我代码重写机制引入物理机器人学习中，重点讨论了在处理部分观测、变动环境及安全限制下的改进过程。文章通过梳理现有操作类研究，总结了机器人行为、后续学习及流程改进的现状，并提出了评估原则与研究方向，旨在探讨如何让机器在物理交互中安全地改进其自身的改进过程。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>作者分析了将递归自我改进引入物理世界所面临的挑战，包括高成本试验、部分观测以及不可逆后果的风险。<br><small>摘要依据：Bringing these mechanisms into the physical world requires learning from partial observations through costly trials, while accounting for changing operating conditions and potentially irreversible consequences.</small></li>\n<li>研究指出，尽管现有操作类研究在改善行为和流程方面取得了一定进展，但目前尚未有物理实验证实递归改进带来的具体增益。<br><small>摘要依据：Some systems also change the improver&#x27;s knowledge or tools, but the physical studies reviewed here have yet to isolate gains attributable to recursion.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作</p>\n<p><strong>原文摘要节选：</strong>Recursive self-improvement (RSI) describes a system that improves not only its behavior but also the process by which it improves. Recent digital agents test this idea by rewriting their own code and checking each version with executable tests. Bringing these mechanisms into the physical world requires learning from partial observations through costly trials, while accounting for changing operating conditions and potentially irreversible consequences. We position RSI within robot learning and trace pathways from improving robot capabilities to improving the processes that generate them. We examine how physical experience can strengthen these improvement mechanisms and when the resulting gains can support further self-improvement of the mechanisms themselves. Gains carry forward only when…</p>\n<p><a href=\"https://arxiv.org/abs/2610.29677\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.29677\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.29677\">讨论与热度</a> · <a href=\"https://github.com/Physical2RSI/Awesome-Physical2RSI\">代码</a></p><hr>\n<h2>4. From VLM Planners to Robotic Agents: Self-Evolving Harnesses for History-Dependent Manipulation</h2>\n<p><strong>机器人</strong> · 发表 2026-10-21 · 综合分 5.38</p>\n<p>Zotero 摘要相关性：0.480（相似度分数，不是概率）。</p>\n<p>HF 点赞 28 · 讨论 1 · 仓库累计 Star 4（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +4 · 讨论 +0 · Star +0。</p>\n<p><strong>规则标签：</strong>机器人操作 · 视觉语言动作</p>\n<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>\n<p><strong>原文摘要节选：</strong>Vision-language-action (VLA) models achieve strong performance across embodied manipulation tasks by unifying visual understanding, language conditioning, and action generation. However, long-horizon tasks can involve non-Markovian dependencies: successful decisions may require retaining task progress and past interaction outcomes, while partial observability and execution errors compound over time. Existing work has begun to address these challenges by augmenting foundation-model policies with memory and by introducing hierarchical architectures that separate high-level planning from low-level execution. We organize the high-level VLM as a robotic agent through an editable harness to maintain task context and improve planning through execution experience. We instantiate this approach as…</p>\n<p><a href=\"https://arxiv.org/abs/2610.29560\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.29560\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.29560\">讨论与热度</a> · <a href=\"https://github.com/StevenKKXS/SERA\">代码</a></p><hr>\n<h2>5. LaLa-World: Scaling Latent World Models with Natural Language Actions</h2>\n<p><strong>机器人</strong> · 发表 2026-10-21 · 综合分 5.34</p>\n<p>Zotero 摘要相关性：0.441（相似度分数，不是概率）。</p>\n<p>HF 点赞 35 · 讨论 3 · 仓库累计 Star 4（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +7 · 讨论 +1 · Star +0。</p>\n<p><strong>规则标签：</strong>世界模型</p>\n<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>\n<p><strong>原文摘要节选：</strong>This paper shows that JEPA-style latent world models (LWMs) can learn across diverse domains and data sources by adopting the language-conditioned interface of video generation models. We establish this approach as an effective and efficient basis for planning with imagination and downstream policy fine-tuning. To this end, we introduce LaLa-World, a Language-conditioned Latent World model that learns from simulation and robot trajectories together with broader image and video data. Two designs make this work. First, we describe both numerical actions and visual changes in language, enabling joint training of a single future predictor across heterogeneous datasets. Second, we build the predictor on a language model, allowing it to interpret language conditions while predicting future…</p>\n<p><a href=\"https://arxiv.org/abs/2610.27851\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.27851\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.27851\">讨论与热度</a> · <a href=\"https://github.com/junha1125/LaLa-World\">代码</a></p><hr>\n<h2>6. Self-Distilling Future Video Representations for World Action Models</h2>\n<p><strong>机器人</strong> · 发表 2026-10-21 · 综合分 5.29</p>\n<p>Zotero 摘要相关性：0.417（相似度分数，不是概率）。</p>\n<p>HF 点赞 36 · 讨论 2 · 仓库累计 Star 7（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +13 · 讨论 +1 · Star +3。</p>\n<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>\n<p><strong>原文摘要节选：</strong>World Action Models (WAMs) have emerged as a promising approach to learning generalist robot policies using rich spatiotemporal priors from pre-trained video diffusion models. A recent line of WAMs improves inference efficiency by conditioning a separate action decoder on intermediate future video representations extracted from a single denoising step, avoiding costly iterative denoising required for video generation. This design makes action prediction depend directly on the quality of these future representations. In this paper, we introduce Future REpresentation learning via self-Distillation with temporal context (FRED), a framework that trains WAMs to improve the quality of future video representations from noise in a single denoising step. Specifically, FRED uses self-distillation…</p>\n<p><a href=\"https://arxiv.org/abs/2610.30320\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.30320\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.30320\">讨论与热度</a> · <a href=\"https://github.com/suhyeok-jang/FRED\">代码</a></p><hr>\n<h2>7. AgentVQA: A Unified Benchmark for Agentic Visual Understanding</h2>\n<p><strong>机器人</strong> · 发表 2026-10-22 · 综合分 5.29</p>\n<p>Zotero 摘要相关性：0.433（相似度分数，不是概率）。</p>\n<p>HF 点赞 17 · 讨论 2 · 仓库累计 Star 8（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +6 · 讨论 +1 · Star +3。</p>\n<p><strong>规则标签：</strong>推理</p>\n<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>\n<p><strong>原文摘要节选：</strong>Vision-language models (VLMs) can perform a broad range of tasks across diverse settings, yet their performance in agentic contexts remains poorly understood. Although online evaluations in simulators and real-world environments are essential for measuring interactive agent performance, they are costly and challenging to scale. Complementary offline VQA benchmarks can enable faster and more reliable comparisons across agentic domains, yet existing benchmarks remain limited and fragmented. To address this gap, we introduce AgentVQA, an offline benchmark for evaluating VLMs on realistic agentic scenarios across five agent domains: Web Agents, Robotics, Egocentric Videos, Games, and Spatial Planning. We build AgentVQA by manually selecting 1000 challenging, real-world agent examples from 23…</p>\n<p><a href=\"https://arxiv.org/abs/2610.31494\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.31494\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.31494\">讨论与热度</a> · <a href=\"https://github.com/zlab-princeton/AgentVQA\">代码</a></p><hr>\n<h2>8. TILDE: Teacher-in-the-Loop Distillation from Embodied Foundation Models</h2>\n<p><strong>机器人 / 强化学习</strong> · 发表 2026-10-18 · 综合分 5.09</p>\n<p>Zotero 摘要相关性：0.447（相似度分数，不是概率）。</p>\n<p>HF 点赞 8 · 讨论 2 · 仓库累计 Star 7（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +6 · 讨论 +1 · Star +0。</p>\n<p><strong>规则标签：</strong>模仿学习</p>\n<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>\n<p><strong>原文摘要节选：</strong>Large-scale action pretraining equips Embodied Foundation Models (EFMs) with strong manipulation capabilities, with particular strengths in generalization and closed-loop robustness, but reproducing such pretraining requires substantial robot data and computation. To transfer these capabilities from pretrained EFMs to policies without action pretraining, we introduce TILDE (Teacher-In-the-Loop Distillation from EFMs), which synergizes on-policy distillation at student-induced states with learning from teacher-executed recovery trajectories. We further propose AutoDAgger, an autonomous data aggregation pipeline in which a robotic reward model is utilized to monitor task progress and trigger teacher intervention, thereby collecting recovery experience without human monitoring or manual…</p>\n<p><a href=\"https://arxiv.org/abs/2610.25376\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.25376\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.25376\">讨论与热度</a> · <a href=\"https://github.com/hku-sail/TILDE\">代码</a></p><hr>\n<h2>9. RouteWeaver: Weaving Mode Selection and Execution into Unified LLM Routing</h2>\n<p><strong>强化学习</strong> · 发表 2026-10-19 · 综合分 4.92</p>\n<p>Zotero 摘要相关性：0.396（相似度分数，不是概率）。</p>\n<p>HF 点赞 23 · 讨论 2 · 仓库累计 Star 3（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +6 · 讨论 +1 · Star +1。</p>\n<p><strong>规则标签：</strong>强化学习 · 大模型后训练 · 推理</p>\n<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>\n<p><strong>原文摘要节选：</strong>LLM routing dynamically selects and coordinates heterogeneous language models across diverse tasks. However, existing approaches are largely built around a predefined execution paradigm, such as single-round, multi-round, or agentic routing, which fixes how model calls are organized and limits adaptation to different query needs. We propose RouteWeaver, a unified routing framework that integrates these routing modes within a single LLM policy, jointly learning which mode to use and how to select models within that mode. To jointly optimize mode selection and within-mode execution, we develop COMET-GRPO (COordinated Mode-Execution Training), which decouples the trajectory-level advantage into separate signals for mode selection and within-mode execution, enabling more targeted credit…</p>\n<p><a href=\"https://arxiv.org/abs/2610.19705\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.19705\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.19705\">讨论与热度</a> · <a href=\"https://github.com/LaughKing/RouteWeaver\">代码</a></p><hr>\n<h2>10. Language Models Learn to Improve Language Models</h2>\n<p><strong>强化学习</strong> · 发表 2026-10-16 · 综合分 4.75</p>\n<p>Zotero 摘要相关性：0.401（相似度分数，不是概率）。</p>\n<p>HF 点赞 15 · 讨论 2</p>\n<p>较上次观测（1.0 天前）：点赞 +8 · 讨论 +0。</p>\n<p><strong>规则标签：</strong>强化学习 · 世界模型</p>\n<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>\n<p><strong>原文摘要节选：</strong>Large language models (LLMs) are increasingly used to automate AI research, including language-model (LM) development, offering a potential path toward recursive self-improvement. However, turning experimental feedback into a learned ability to propose effective improvements across models faces two challenges. First, training such an ability with real feedback is expensive: reinforcement learning (RL) requires evaluating tens of thousands of proposals, each potentially requiring a full model-training run. Even at ten GPU-hours per run, reward collection alone would consume hundreds of thousands of GPU-hours, motivating a cheaper surrogate. Second, surrogate feedback can become unreliable as policy optimization favors overestimated proposals when the proposal distribution shifts. To…</p>\n<p><a href=\"https://arxiv.org/abs/2610.23344\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.23344\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.23344\">讨论与热度</a></p><hr>"
+}
