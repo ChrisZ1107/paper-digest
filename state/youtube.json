@@ -3688,6 +3688,88 @@
           "abstract_zh": "科学发现要求将有价值的假设转化为实际的探究，然而从这一演进的研究过程中学习仍然具有挑战性。我们提出了一种关于有价值且可测试的研究假设的操作性定义：基于证据的关于后果性不确定性的主张，辅以可行的调查、明确的决策标准和替代解释。我们的DiscoveryRSI框架通过多智能体演化搜索构建假设树，将选定的调查汇编成可执行的Harbor任务，并通过三种机制进行递归学习：假设信用优化将科学评估归因于记录在案的研究贡献；利用重演识别高效策略和反复出现的失败以改进研究工作流；再发现将公认的改进应用于新的调查，为后续学习积累经验。我们还引入了DFM-Bench，它在假设、修订、发展路径和研究运行层面提供了对假设质量和累积研究进展的全面评估。在四个生命科学领域中，自动化评估显示假设质量从基础模型的4.86上升到两轮自我改进后的5.39，其中在可证伪性和数据可解决性方面增幅显著。我们通过专家评审进一步验证了假设质量，将我们的DiscoveryRSI-27B与其他研究智能体进行了比较。初步的人工评估显示，DiscoveryRSI-27B在假设重要性以及主张的合理性和证据支撑度方面得分高于GPT-6 Luna。DiscoveryRSI-27B的假设与模型截止日期之后发表的研究的对应率为6.3%，显著优于GPT-6的2.5%和Claude Opus 5的2.3%，同时在研究路径上提供了更高的人工评定改进。"
         }
       ]
+    },
+    "nttQ90QXTOw": {
+      "video_id": "nttQ90QXTOw",
+      "papers": []
+    },
+    "EHnj_GV6KQI": {
+      "video_id": "EHnj_GV6KQI",
+      "video_title": "Why is AI-generated language so hard to understand? (Oct 2026)",
+      "published": "2026-10-25",
+      "video_url": "https://www.youtube.com/watch?v=EHnj_GV6KQI",
+      "papers": [
+        {
+          "id": "2610.29162",
+          "title": "Why is AI-generated language so hard to understand? (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.29162"
+        }
+      ]
+    },
+    "Q5HnD30nwGY": {
+      "video_id": "Q5HnD30nwGY",
+      "video_title": "TokenGate: Adapting LLMs for Fast and Memory-Efficient Prefill with Learned Token Pruning (Oct 2026)",
+      "published": "2026-10-25",
+      "video_url": "https://www.youtube.com/watch?v=Q5HnD30nwGY",
+      "papers": [
+        {
+          "id": "2610.26754",
+          "title": "TokenGate: Adapting LLMs for Fast and Memory-Efficient Prefill with Learned Token Pruning (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.26754"
+        }
+      ]
+    },
+    "V7QpkkUY7oU": {
+      "video_id": "V7QpkkUY7oU",
+      "video_title": "Sage-A1.5: From Long-Horizon Execution to Scientific Exploration with Capability Composition",
+      "published": "2026-10-25",
+      "video_url": "https://www.youtube.com/watch?v=V7QpkkUY7oU",
+      "papers": [
+        {
+          "id": "2610.28578",
+          "title": "Sage-A1.5: From Long-Horizon Execution to Scientific Exploration with Capability Composition (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.28578"
+        }
+      ]
+    },
+    "VxltHfQP0m0": {
+      "video_id": "VxltHfQP0m0",
+      "video_title": "HarnessPro: Recursive Harness Self-Improvement with Pareto Optimization (Oct 2026)",
+      "published": "2026-10-25",
+      "video_url": "https://www.youtube.com/watch?v=VxltHfQP0m0",
+      "papers": [
+        {
+          "id": "2610.26770",
+          "title": "HarnessPro: Recursive Harness Self-Improvement with Pareto Optimization (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.26770"
+        }
+      ]
+    },
+    "tReWAmT8oEk": {
+      "video_id": "tReWAmT8oEk",
+      "video_title": "Learning the 4D World through Point Trajectory Forecasting (Oct 2026)",
+      "published": "2026-10-25",
+      "video_url": "https://www.youtube.com/watch?v=tReWAmT8oEk",
+      "papers": [
+        {
+          "id": "2610.28594",
+          "title": "Learning the 4D World through Point Trajectory Forecasting (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.28594"
+        }
+      ]
+    },
+    "mSX9kLlI0bo": {
+      "video_id": "mSX9kLlI0bo",
+      "video_title": "Text-to-Image Generative Modeling Without Language Pretraining (Oct 2026)",
+      "published": "2026-10-25",
+      "video_url": "https://www.youtube.com/watch?v=mSX9kLlI0bo",
+      "papers": [
+        {
+          "id": "2610.26863",
+          "title": "Text-to-Image Generative Modeling Without Language Pretraining (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.26863"
+        }
+      ]
     }
   }
 }
