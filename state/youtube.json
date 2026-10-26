@@ -3782,6 +3782,162 @@
           "abstract_zh": "现代文本到图像（T2I）系统使用互联网规模的语言预训练来实现文本条件的图像生成。我们探讨了语言预训练对于强大的T2I生成是否必要。我们推出了Halcyon，这是一个完全从零开始在包含1亿个图像-文本对的GPIC数据集上预训练的早期融合多模态自回归模型系列。Halcyon-0.52B在预训练计算量减少18.2倍的情况下，性能优于LlamaGen-XL/8（48.0 vs. 63.3 gFD）。此外，Halcyon-1.6B在预训练计算量减少275倍的情况下，性能优于JiT-T2I-XXL/8++（35.3 vs. 41.0 gFD）。受控实验表明，仅文本的预训练并不能改善T2I生成效果。通过将标题丢弃替换为I2T监督，Halcyon还能学习图像描述任务，并在相同的预训练预算下保持具有竞争力的T2I生成质量。我们证明了强大的T2I系统无需互联网规模的语言预训练，即可从零开始训练。代码和模型已在 https://cs.stanford.edu/~keshik/halcyon 发布。"
         }
       ]
+    },
+    "fD9raQUCcX0": {
+      "video_id": "fD9raQUCcX0",
+      "video_title": "S-Agent 2.0: Spatial Reasoning with a General Coding Agent (Oct 2026)",
+      "published": "2026-10-26",
+      "video_url": "https://www.youtube.com/watch?v=fD9raQUCcX0",
+      "papers": [
+        {
+          "id": "2610.28354",
+          "title": "S-Agent 2.0: Spatial Reasoning with a General Coding Agent (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.28354"
+        }
+      ]
+    },
+    "He4WFaSu7Gk": {
+      "video_id": "He4WFaSu7Gk",
+      "video_title": "SteerAct: Unlocking Action Models through Few-Shot Temporal Steering (Oct 2026)",
+      "published": "2026-10-26",
+      "video_url": "https://www.youtube.com/watch?v=He4WFaSu7Gk",
+      "papers": [
+        {
+          "id": "2610.25632",
+          "title": "SteerAct: Unlocking Action Models through Few-Shot Temporal Steering (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.25632"
+        }
+      ]
+    },
+    "DDPpaMxkVZU": {
+      "video_id": "DDPpaMxkVZU",
+      "video_title": "Physical Words: A Vocabulary for Structuring Latent Reasoning in Robot Manipulation (Oct 2026)",
+      "published": "2026-10-26",
+      "video_url": "https://www.youtube.com/watch?v=DDPpaMxkVZU",
+      "papers": [
+        {
+          "id": "2610.26854",
+          "title": "Physical Words: A Vocabulary for Structuring Latent Reasoning in Robot Manipulation (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.26854"
+        }
+      ]
+    },
+    "bRSsoZqWMlY": {
+      "video_id": "bRSsoZqWMlY",
+      "video_title": "Learning Self-Orchestration in Decentralized Agent Swarms (Oct 2026)",
+      "published": "2026-10-26",
+      "video_url": "https://www.youtube.com/watch?v=bRSsoZqWMlY",
+      "papers": [
+        {
+          "id": "2610.22322",
+          "title": "Learning Self-Orchestration in Decentralized Agent Swarms (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.22322"
+        }
+      ]
+    },
+    "O8k4BDG93RI": {
+      "video_id": "O8k4BDG93RI",
+      "video_title": "SWIFT: Self-guided Weak-to-strong dIFfusion models via Target extrapolation (Oct 2026)",
+      "published": "2026-10-26",
+      "video_url": "https://www.youtube.com/watch?v=O8k4BDG93RI",
+      "papers": [
+        {
+          "id": "2610.25844",
+          "title": "SWIFT: Self-guided Weak-to-strong dIFfusion models via Target extrapolation (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.25844"
+        }
+      ]
+    },
+    "J9eqnqXB0aM": {
+      "video_id": "J9eqnqXB0aM",
+      "video_title": "Automating ML for Science: Can Frontier Agents Climb Scientific Hills in the Wild? (Oct 2026)",
+      "published": "2026-10-26",
+      "video_url": "https://www.youtube.com/watch?v=J9eqnqXB0aM",
+      "papers": [
+        {
+          "id": "2610.28763",
+          "title": "Automating ML for Science: Can Frontier Agents Climb Scientific Hills in the Wild? (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.28763"
+        }
+      ]
+    },
+    "ozJuoQSzPds": {
+      "video_id": "ozJuoQSzPds",
+      "video_title": "Are Self-Evolving Agents Continual Learners? (Oct 2026)",
+      "published": "2026-10-26",
+      "video_url": "https://www.youtube.com/watch?v=ozJuoQSzPds",
+      "papers": [
+        {
+          "id": "2610.25858",
+          "title": "Are Self-Evolving Agents Continual Learners? (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.25858"
+        }
+      ]
+    },
+    "XzWcxwsb7vg": {
+      "video_id": "XzWcxwsb7vg",
+      "video_title": "Is Complex Agentic Memory Always Needed? Naive RAG Is Stronger Than We Thought (Oct 2026)",
+      "published": "2026-10-26",
+      "video_url": "https://www.youtube.com/watch?v=XzWcxwsb7vg",
+      "papers": [
+        {
+          "id": "2610.30755",
+          "title": "Is Complex Agentic Memory Always Needed? Naive RAG Is Stronger Than We Thought (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.30755"
+        }
+      ]
+    },
+    "Byq5MfZsPgs": {
+      "video_id": "Byq5MfZsPgs",
+      "video_title": "A Unifying View of Distributionally Robust Optimization for Probability Smoothing via Maximum…",
+      "published": "2026-10-26",
+      "video_url": "https://www.youtube.com/watch?v=Byq5MfZsPgs",
+      "papers": [
+        {
+          "id": "2610.25684",
+          "title": "A Unifying View of Distributionally Robust Optimization for Probability Smoothing via Maximum Entropy (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.25684"
+        }
+      ]
+    },
+    "Ce6lA_GijX4": {
+      "video_id": "Ce6lA_GijX4",
+      "video_title": "Muse Glimmer 30B: An On-Device Agentic Model (Oct 2026)",
+      "published": "2026-10-26",
+      "video_url": "https://www.youtube.com/watch?v=Ce6lA_GijX4",
+      "papers": [
+        {
+          "id": "2610.24628",
+          "title": "Muse Glimmer 30B: An On-Device Agentic Model (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.24628"
+        }
+      ]
+    },
+    "C8q55Gj9ZQE": {
+      "video_id": "C8q55Gj9ZQE",
+      "video_title": "Large Flow Language Models (Oct 2026)",
+      "published": "2026-10-26",
+      "video_url": "https://www.youtube.com/watch?v=C8q55Gj9ZQE",
+      "papers": [
+        {
+          "id": "2610.28559",
+          "title": "Large Flow Language Models (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.28559"
+        }
+      ]
+    },
+    "POxEC8h60DY": {
+      "video_id": "POxEC8h60DY",
+      "video_title": "A Fix for Softmax and Cross-Entropy (Oct 2026)",
+      "published": "2026-10-26",
+      "video_url": "https://www.youtube.com/watch?v=POxEC8h60DY",
+      "papers": [
+        {
+          "id": "2610.31642",
+          "title": "A Fix for Softmax and Cross-Entropy (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.31642"
+        }
+      ]
     }
   }
 }
