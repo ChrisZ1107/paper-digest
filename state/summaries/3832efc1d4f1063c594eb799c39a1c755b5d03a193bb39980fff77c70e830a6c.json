@@ -1,0 +1,23 @@
+{
+  "overview": "针对双臂灵巧操作中接触数据稀缺与任务协调困难的问题，本文提出了DONIC模型和BiHOI数据集。DONIC结合近端策略优化（PPO）与模仿学习，通过引入以物体为中心的每手奖励机制和Clip-Centered Advantages优势函数，实现单策略在多类型任务上的协调控制。实验表明，该方法在多种物体操作轨迹上表现出优于现有基准的跟踪性能。",
+  "highlights": [
+    {
+      "text": "提出了DONIC模型和BiHOI数据集，通过结合近端策略优化与模仿学习，实现了跨操作类别和人类动作源的通用双臂跟踪。",
+      "evidence": "DONIC, the first generalist bimanual tracker jointly trained across operation categories and human-motion sources, together with 2) BiHOI, a multi-view dataset of 1,575 sequences spanning 229 objects and emphasizing sustained bimanual interaction"
+    },
+    {
+      "text": "引入了以物体为中心的每手奖励机制与Clip-Centered Advantages方法，有效提升了单策略处理异构参考任务的协调性。",
+      "evidence": "An object-centered per-hand reward maintains object-motion feedback while supervising each hand according to its reference contact role. Clip-Centered Advantages remove reference-dependent advantage offsets while preserving within-trajectory differences."
+    },
+    {
+      "text": "无需微调，DONIC在未知轨迹和未见物体上的成功率显著高于当前先进的双臂跟踪基准。",
+      "evidence": "Without finetuning, a single checkpoint achieves 86.79% success on unseen trajectories of training objects and 57.32% on held-out objects, surpassing the state-of-the-art bimanual tracking baselines by 77.36 and 45.73 percentage points."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "PPO",
+    "机器人操作",
+    "模仿学习"
+  ]
+}

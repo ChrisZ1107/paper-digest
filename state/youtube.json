@@ -3792,7 +3792,9 @@
         {
           "id": "2610.28354",
           "title": "S-Agent 2.0: Spatial Reasoning with a General Coding Agent (Oct 2026)",
-          "url": "https://arxiv.org/abs/2610.28354"
+          "url": "https://arxiv.org/abs/2610.28354",
+          "abstract": "Spatial reasoning asks a model to work out where objects are in 3D space, how they relate to one another, and how they move. Agentic VLMs have recently brought large improvements on such tasks by letting the model actively gather evidence with 3D perception tools instead of answering in a single pass. Even so, on many questions the tools return the right evidence and the model still does not arrive at the correct answer: the gap between model and tools, where raw readings become usable conclusions, is left unfilled. We present S-Agent 2.0, a spatial reasoning agent that equips an off-the-shelf general coding agent with a command-line perception toolkit, and we design the interface around one principle: help the VLM close the evidence loop: acquire scene evidence, remember it in a persistent scene memory, and interpret each reading in plain spatial language. This design keeps the full flexibility of a coding agent, and every reading it acts on stays grounded in the tools' geometry. On MMSI-Bench and ReVSI, the toolkit improves a strong open-source model, Qwen3.8-27B, by +13.9 and +20.5 points over the same agent without tools, and a strong closed-source model, Gemini-3.8-Flash, by +11.2 and +9.6 points. With the open backbone S-Agent 2.0 reaches 66.5 on MMSI-Bench and 82.3 on ReVSI, ahead of the specialized system SpatialClaw on the same backbone (62.6 and 74.5), and with Gemini-3.8-Flash it reaches 74.1 and 90.5 against its 67.0 and 79.7. Both tool gains shrink as the backbone grows more capable, but SpatialClaw's shrinks far more on ReVSI, from +13.2 to +2.7, while ours stays at +9.6. S-Agent 2.0 also works across different general coding agent harnesses, such as Codex and Claude Code.",
+          "abstract_zh": "空间推理要求模型确定物体在三维空间中的位置、它们之间的相互关系以及它们的运动方式。代理型视觉语言模型（Agentic VLMs）通过让模型利用三维感知工具主动收集证据，而不是通过单次推理得出结论，近期在这些任务上取得了巨大进步。即便如此，在许多问题上，即使工具返回了正确的证据，模型仍无法得出正确答案：模型与工具之间存在鸿沟，即原始读数尚未转化为可用的结论。我们提出了 S-Agent 2.0，这是一个空间推理智能体，它为现成的通用编码智能体配备了一个命令行感知工具包。我们在设计接口时遵循一个原则：帮助视觉语言模型闭合证据循环——获取场景证据，将其记录在持久化的场景记忆中，并用简单的空间语言解读每一项读数。这种设计保持了编码智能体的充分灵活性，并且它所处理的每一项读数都基于工具的几何信息。在 MMSI-Bench 和 ReVSI 基准测试中，该工具包使强大的开源模型 Qwen3.8-27B 相比未使用工具的同类智能体分别提升了 13.9 和 20.5 个百分点，使强大的闭源模型 Gemini-3.8-Flash 分别提升了 11.2 和 9.6 个百分点。在基于开放骨干网络的情况下，S-Agent 2.0 在 MMSI-Bench 和 ReVSI 上分别达到了 66.5 和 82.3 分，优于相同骨干网络下的专用系统 SpatialClaw（分别为 62.6 和 74.5）；在使用 Gemini-3.8-Flash 时，S-Agent 2.0 分别达到了 74.1 和 90.5 分，而其原始性能为 67.0 和 79.7 分。随着骨干模型能力的增强，两种工具带来的增益都会缩小，但 SpatialClaw 在 ReVSI 上的增益缩减幅度远大于我们（从 +13.2 缩减至 +2.7），而我们保持在 +9.6。S-Agent 2.0 还能在不同的通用编码智能体框架（如 Codex 和 Claude Code）中兼容工作。"
         }
       ]
     },
@@ -3844,7 +3846,9 @@
         {
           "id": "2610.25844",
           "title": "SWIFT: Self-guided Weak-to-strong dIFfusion models via Target extrapolation (Oct 2026)",
-          "url": "https://arxiv.org/abs/2610.25844"
+          "url": "https://arxiv.org/abs/2610.25844",
+          "abstract": "Training high-quality diffusion models is computationally expensive, and inference-time guidance often adds further sampling cost. In this work, we introduce Swift, a simple yet effective self-guided training method that uses a frozen weak denoiser to improve a stronger model without adding inference overhead. For each noisy input, Swift extrapolates the clean regression target away from the weak denoiser's prediction, amplifying components that remain underfit. The weak guide can be an early training checkpoint, requires no backpropagation during main-model training, and is discarded afterward. The resulting model retains the original sampler and supports both conditional and unconditional generation without label dropout or an unconditional branch. We explain this mechanism through a spectral analysis of finite-time population gradient flow in an RKHS. With an early-stopped weak guide, we prove that a nonempty range of extrapolation strengths yields strictly lower posterior-mean error than matched standard training, despite shifting the regression target away from the posterior mean. Experiments on CIFAR-10 and ImageNet-256 demonstrate improvements across model scales and representations. In one ImageNet-256 configuration, Swift surpasses the baseline's best FID using roughly half the total training compute, including guide preparation and training overhead. On RAEv2, it achieves FID 1.15 without inference-time guidance and 0.99 with guidance. These results establish target extrapolation as an effective approach to weak-to-strong diffusion training with efficient single-model inference.",
+          "abstract_zh": "训练高质量扩散模型计算成本高昂，且推理时的引导通常会增加额外的采样开销。在这项工作中，我们引入了Swift，这是一种简单而有效的自引导训练方法，它利用冻结的弱降噪器来改进强模型，且不会增加推理负担。对于每个加噪输入，Swift将干净的回归目标从弱降噪器的预测中外推出去，从而放大那些仍未充分拟合的成分。弱引导可以是早期训练的检查点，在主模型训练期间无需反向传播，且事后会被丢弃。由此产生的模型保留了原始采样器，并支持条件和无条件生成，无需标签丢弃或无条件分支。我们通过对RKHS中有限时间种群梯度流的频谱分析解释了这一机制。利用提前停止的弱引导，我们证明了在一定范围内的非空外推强度下，尽管将回归目标从后验均值偏移，却能产生比匹配的标准训练严格更低的后验均值误差。在CIFAR-10和ImageNet-256上的实验证明了该方法在不同模型规模和表示上的改进。在一种ImageNet-256配置下，Swift仅用大约一半的总训练计算量（包括引导准备和训练开销）就超过了基线模型的最佳FID。在RAEv2上，该方法在无推理引导下达到了1.15的FID，在有引导下达到了0.99。这些结果确立了目标外推法作为一种高效单模型推理的弱到强扩散训练的有效途径。"
         }
       ]
     },
@@ -3857,7 +3861,8 @@
         {
           "id": "2610.28763",
           "title": "Automating ML for Science: Can Frontier Agents Climb Scientific Hills in the Wild? (Oct 2026)",
-          "url": "https://arxiv.org/abs/2610.28763"
+          "url": "https://arxiv.org/abs/2610.28763",
+          "abstract": "Frontier coding agents are increasingly framed as end-to-end automated researchers, and ML for science offers a demanding test of that promise: improving a scientific model often requires domain insight beyond routine ML engineering. We introduce Agent4Sci, a long-horizon testbed for measuring how far today's agents can improve the published best models on scientific ML benchmarks, spanning 20 benchmarks across 11 domains. Rather than ranking agents on a leaderboard, Agent4Sci asks what kinds of progress agents can make on these tasks under in-the-wild conditions, and where they fall short. Empirically, today's frontier agents advance the published best on every benchmark, with Claude Opus reaching 10.4% mean relative improvement and no run flagged for academic misconduct. These gains, however, come almost entirely from a bag of ML-engineering tricks rather than research-level insight. Trajectory analysis surfaces three recurring limitations in this setting: novelty miscalibration, resource under-utilization, and rapid collapse into local engineering sweeps. Lightweight plug-in skills for research ideation, experiment management, and scheduled checklists raise Claude Opus from 10.4% to 20.1% and Codex from 4.4% to 8.1%, while yielding more diverse, domain-relevant interventions. Agent4Sci gives the community a way to track and push frontier agents from ML engineering toward domain insight on real-world ML-for-science problems. Code and data are available on GitHub (https://github.com/maszhongming/agent4sci) and Hugging Face (https://huggingface.co/datasets/MingZhong/agent4sci)."
         }
       ]
     },
@@ -3870,7 +3875,9 @@
         {
           "id": "2610.25858",
           "title": "Are Self-Evolving Agents Continual Learners? (Oct 2026)",
-          "url": "https://arxiv.org/abs/2610.25858"
+          "url": "https://arxiv.org/abs/2610.25858",
+          "abstract": "Large language model agents are often deployed in environments where new knowledge, tools, and workflows keep arriving. Such an agent is therefore expected to adapt continually, learning new tasks as they arrive without forgetting earlier ones. This resembles the continual learning problem, but at a pace that conventional gradient updates cannot sustain. Nonparametric self-evolving agents are a natural alternative: they adapt by rewriting their own harness, such as prompts, memory, and skills, from task feedback while the model weights stay frozen. We study whether such agents are effective continual learners across four drifting task streams that shift in topic, workflow, or domain (built from BIRD, BFCL, and ScienceWorld). Evaluating three representative methods spanning experience retrieval and self-modification (ReasoningBank, GEPA, and Meta-Harness), we find that although self-evolution improves aggregate performance on most streams, higher plasticity consistently comes at the cost of stability. Specifically, self-modifying methods apply global edits to a shared prompt or workspace, interfering with unseen tasks and overwriting earlier knowledge as the stream shifts. Conversely, similarity-based memory retrieval localizes updates across distant domains, but still retrieves foreign memories on unseen tasks and suffers from retrieval collision when similar queries require conflicting workflows. These findings show that current self-evolving agents remain incomplete continual learners.",
+          "abstract_zh": "大型语言模型智能体通常被部署在不断涌现新知识、新工具和新工作流的环境中。因此，人们期望这类智能体能够持续适应，在学习新任务的同时不遗忘先前的任务。这类似于持续学习问题，但其节奏是传统梯度更新所无法维持的。非参数化自我进化智能体是一种自然的替代方案：它们通过根据任务反馈重写自身的配置（如提示词、记忆和技能）来完成适应，而模型权重保持不变。我们研究了此类智能体在四个随主题、工作流或领域漂移的任务流（基于 BIRD、BFCL 和 ScienceWorld 构建）中是否是有效的持续学习者。通过评估涵盖经验检索和自我修改的三种代表性方法（ReasoningBank、GEPA 和 Meta-Harness），我们发现，尽管自我进化提升了大多数任务流的整体性能，但更高的可塑性始终以牺牲稳定性为代价。具体而言，自我修改方法会对共享提示词或工作区进行全局编辑，这会干扰未见任务，并在任务流发生偏移时覆盖先前的知识。相反，基于相似性的记忆检索将更新本地化到不同领域，但在未见任务上仍会检索到无关的记忆，并且当相似的查询需要相互冲突的工作流时，会遭遇检索冲突。这些发现表明，当前的自我进化智能体作为持续学习者尚不完善。"
         }
       ]
     },
@@ -3883,7 +3890,9 @@
         {
           "id": "2610.30755",
           "title": "Is Complex Agentic Memory Always Needed? Naive RAG Is Stronger Than We Thought (Oct 2026)",
-          "url": "https://arxiv.org/abs/2610.30755"
+          "url": "https://arxiv.org/abs/2610.30755",
+          "abstract": "LLM memory is widely used in long-term conversation understanding. Agentic memory systems often use mutation, structural organization, learned retrieval strategies, or other complex operations. Is this complexity always necessary? We study Raw-RAG, a naive RAG baseline using dense retrieval and reranking over raw history to supply evidence to a reader LLM. Across LoCoMo, LongMemEval, MEME, and MemoryAgentBench, Raw-RAG ranks first among the compared memory systems in six of seven benchmark-model settings, outperforming the strongest compared agentic memory system by 0.13-5.53 points. We investigate why raw-history retrieval remains competitive. Evidence analysis shows that its higher coverage of necessary evidence can offset lower utilization. Useful evidence includes both answer values and the relations and dependency paths needed to derive them. Even complete access to transformed memory stores leaves an accuracy gap relative to raw evidence, highlighting the importance of preserving raw information. These findings challenge the necessity of complex agentic memory for the evaluated conversation tasks and establish naive RAG as an essential baseline.",
+          "abstract_zh": "大模型（LLM）记忆被广泛应用于长对话理解中。智能体（Agentic）记忆系统常采用变异、结构化组织、学习型检索策略或其他复杂操作。这种复杂性真的总是必要的吗？我们研究了Raw-RAG，这是一个朴素的RAG基线，通过对原始历史记录进行密集检索和重排序，为阅读器LLM提供证据。在LoCoMo、LongMemEval、MEME和MemoryAgentBench测试中，Raw-RAG在七个基准模型设置中的六个里排名第一，超越了最强的对比智能体记忆系统，领先幅度为0.13至5.53个百分点。我们探讨了为何原始历史记录检索依然具有竞争力。证据分析表明，其对必要证据更高的覆盖率可以弥补利用率较低的不足。有用证据既包括答案值，也包括推导答案所需的各种关系和依赖路径。即便完全访问经过转换的记忆存储，与原始证据相比仍存在准确率差距，这凸显了保留原始信息的重要性。这些发现对在所评估的对话任务中使用复杂智能体记忆的必要性提出了质疑，并将朴素RAG确立为一个重要的基线。"
         }
       ]
     },
@@ -3909,7 +3918,9 @@
         {
           "id": "2610.24628",
           "title": "Muse Glimmer 30B: An On-Device Agentic Model (Oct 2026)",
-          "url": "https://arxiv.org/abs/2610.24628"
+          "url": "https://arxiv.org/abs/2610.24628",
+          "abstract": "We introduce Muse Glimmer, an open-source 30B parameter causal language model with perception encoder, purpose-built for autonomous agentic tasks on consumer hardware. Muse Glimmer integrates multi-step reasoning, reliable tool use and failure recovery into a single model that runs locally on consumer devices without requiring cloud infrastructure. The model accepts text and image inputs and produces text outputs, was trained on data from over a hundred languages, and is quantized to approximately 4-bit precision for efficient single-GPU inference. Muse Glimmer achieves state-of-the-art performance for its size class on agentic benchmarks, setting a new standard compared to the models of its size: Gemma4-31B and Qwen3.6-27B on tool use, multi-step planning, and agentic task completion. We release the model under the Apache 2.0 license to foster open-source development of capable, safe, local AI agents.",
+          "abstract_zh": "我们推出了 Muse Glimmer，这是一个具有感知编码器的 30B 参数开源因果语言模型，专为消费级硬件上的自主代理任务而设计。Muse Glimmer 将多步推理、可靠的工具使用和故障恢复集成到单一模型中，无需云基础设施即可在消费级设备上本地运行。该模型接受文本和图像输入并生成文本输出，使用了超过一百种语言的数据进行训练，并被量化至约 4-bit 精度，以实现高效的单 GPU 推理。Muse Glimmer 在代理基准测试中达到了同等规模模型的最先进水平，在工具使用、多步规划和代理任务完成度方面，为同量级模型 Gemma4-31B 和 Qwen3.6-27B 树立了新标准。我们以 Apache 2.0 许可证发布该模型，旨在促进功能强大、安全且本地化的 AI 代理的开源发展。"
         }
       ]
     },
@@ -3922,7 +3933,9 @@
         {
           "id": "2610.28559",
           "title": "Large Flow Language Models (Oct 2026)",
-          "url": "https://arxiv.org/abs/2610.28559"
+          "url": "https://arxiv.org/abs/2610.28559",
+          "abstract": "Continuous flow language models offer a path to parallel generation with tools for control and acceleration unavailable to discrete diffusion, yet effective techniques for building them at the billion-parameter scale remain less established. We present Lafa (Large flow language model), a fast, high-performing flow language model scaled to 8B parameters in a data-efficient manner. Lafa is a blockwise flow model with causal attention on the prefix and bidirectional, asynchronous flow within each block. This design enables efficient training by adapting pretrained autoregressive (AR) models and fast inference via prefix caching and blockwise parallel decoding. We train Lafa at 0.5B, 7B, and 8B scales with fewer than 30B tokens, more efficient than previous diffusion models, and evaluate it on instruction following, reasoning, and coding, where the learned flow matches or surpasses the quality of AR and can be distilled into flow maps for one- and few-step generation. Notably, flow training preserves or even improves pretrained AR capabilities via a multi-token prediction effect, which we leverage in a self-speculative decoding scheme that verifies flow-based drafts autoregressively within a single model. This yields 2.54x the throughput of an AR model at comparable quality, outperforming multi-token prediction and discrete diffusion methods. Our findings show that continuous flows can serve as a scalable foundation for language modeling.",
+          "abstract_zh": "连续流语言模型为并行生成提供了一条路径，并具备离散扩散模型所不具备的控制和加速工具，但在大参数规模下构建此类模型的有效技术尚不成熟。我们提出了 Lafa (Large flow language model)，这是一种以数据高效方式扩展至 8B 参数的快速、高性能流语言模型。Lafa 是一种分块流模型，在前缀上采用因果注意力机制，在每个块内进行双向异步流处理。该设计通过适配预训练的自回归 (AR) 模型实现了高效训练，并通过前缀缓存和分块并行解码实现了快速推理。我们在 0.5B、7B 和 8B 规模上，利用少于 30B 的 token 对 Lafa 进行了训练，其效率高于先前的扩散模型。我们在指令遵循、推理和编码任务上对其进行了评估，结果显示学习到的流模型在质量上与自回归模型持平或更优，并可被蒸馏为用于一步或少步生成的流映射。值得注意的是，流训练通过多 token 预测效应保留甚至提升了预训练的自回归能力，我们利用这一点设计了一种自投机解码方案，在单个模型内对基于流的草稿进行自回归验证。该方法在质量相当的情况下，吞吐量达到了自回归模型的 2.54 倍，优于多 token 预测和离散扩散方法。我们的研究结果表明，连续流可以作为语言建模的可扩展基础。"
         }
       ]
     },
@@ -3935,7 +3948,9 @@
         {
           "id": "2610.31642",
           "title": "A Fix for Softmax and Cross-Entropy (Oct 2026)",
-          "url": "https://arxiv.org/abs/2610.31642"
+          "url": "https://arxiv.org/abs/2610.31642",
+          "abstract": "Standard implementations of softmax, log-softmax, and cross-entropy have two numerical bugs. The first bug, Softmax Collapse, rounds the target logit's gradient to zero if that one logit is much larger than the others, resulting in gradients that no longer sum to zero. The second bug, Softmax Cancellation, occurs when student logits are close to teacher logits, and produces non-zero gradients even when the student and teacher logits are equal. We present simple implementations of log-softmax, softmax, and cross-entropy that fix both bugs. Our fix eliminates the previously-observed \"Slingshot\" phenomenon, speeds up grokking with weight decay, prevents accuracy collapse without weight decay, stops student networks from drifting away from the teacher during distillation, and shows that after memorization, logit growth is bounded by an equilibrium between weight decay and Adam's $ε$ hyperparameter.",
+          "abstract_zh": "softmax、log-softmax和交叉熵的标准实现存在两个数值错误。第一个错误是“Softmax坍缩”（Softmax Collapse），当目标logit远大于其他logit时，其梯度会被四舍五入为零，导致梯度之和不再为零。第二个错误是“Softmax抵消”（Softmax Cancellation），发生在学生模型的logit接近教师模型的logit时，即使两者相等，仍会产生非零梯度。我们提出了一种修正这两个错误的log-softmax、softmax和交叉熵的简单实现。我们的修正消除了此前观察到的“弹弓”（Slingshot）现象，加速了权重衰减下的“顿悟”（grokking）过程，防止了无权重衰减下的精度坍缩，阻止了蒸馏过程中学生网络偏离教师网络，并表明在记忆阶段之后，logit的增长受到权重衰减与Adam算法中ε超参数之间平衡的限制。"
         }
       ]
     }

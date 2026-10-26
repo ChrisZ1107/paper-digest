@@ -1,0 +1,17 @@
+{
+  "overview": "针对长程机器人操作任务中存在的非马尔可夫依赖与部分可观测性问题，作者提出了SERA（Self-Evolving Robotic Agent）框架。该方法通过可编辑的交互接口（harness）为视觉语言模型（VLM）提供任务上下文记忆，并利用环境执行经验进行自我进化以优化高层规划，同时由固定的VLA执行器负责低层控制。实验结果表明，该方法在RoboMME任务中较无自我进化机制的基准提高了成功率。",
+  "highlights": [
+    {
+      "text": "提出SERA框架，通过可编辑的交互接口记录任务上下文，增强了VLM在长程操作任务中的规划能力。",
+      "evidence": "We organize the high-level VLM as a robotic agent through an editable harness to maintain task context and improve planning through execution experience."
+    },
+    {
+      "text": "SERA利用环境执行反馈进行自我进化，并固定最优配置进行测试，显著提升了任务成功率。",
+      "evidence": "On RoboMME, SERA achieves 51.38% overall success with autonomous selection, compared with 44.38% without self-evolution."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "视觉语言动作"
+  ]
+}

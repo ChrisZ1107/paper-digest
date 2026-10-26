@@ -1,0 +1,17 @@
+{
+  "overview": "该论文提出了多模态具身智能体（MMEAs）的概念，旨在统一计算机应用与机器人应用。作者引入了PAPAV框架，将智能体功能概括为感知（Perceive）、预测（Anticipate）、规划（Plan）、执行（Act）和验证（Verify）五个核心能力。通过对比计算机与机器人环境中的物理约束，作者指出当前64个基准测试中对预测和验证能力的评估不足，并主张通过该框架全面衡量智能体表现，而非仅依赖任务成功率。",
+  "highlights": [
+    {
+      "text": "提出PAPAV框架，将具身智能体功能统一抽象为感知、预测、规划、执行和验证五个核心维度，用以分析不同应用场景间的共性与差异。",
+      "evidence": "We introduce PAPAV, a unified capability-centric framework of five recurring functions: Perceive the current state, Anticipate action effects, Plan a feasible course, Act through an interface or body, and Verify the outcome."
+    },
+    {
+      "text": "通过对64个基准测试的分析发现，目前研究主要聚焦于执行阶段，而对预测与验证能力的评估严重不足。",
+      "evidence": "Across 64 benchmarks, explicit evaluation centers on Act; only 5 assess Anticipate and 3 assess Verify, leaving both largely hidden behind task success."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "推理"
+  ]
+}

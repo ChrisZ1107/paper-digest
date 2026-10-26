@@ -1,0 +1,22 @@
+{
+  "overview": "针对不同具身智能体在运动与操作联合建模中面临的动作空间异构与多模态监管不足问题，作者提出了Ropedia W0世界基础模型。该模型通过整合1万小时的人类第一人称视角数据与3千小时机器人数据（Xp-Data），采用统一运动学表征实现了跨具身建模。实验表明，该模型在五个跨具身基准测试及人类视频预测中表现出优异性能，支持实时长程推演与多种具身决策任务。",
+  "highlights": [
+    {
+      "text": "提出Ropedia W0，作为首个覆盖人类及多种机器人具身的第一人称视角运动与操作世界基础模型，利用统一的运动学表征解决动作空间异构挑战。",
+      "evidence": "We present Ropedia W0, the first egocentric loco-manipulation world foundation model spanning humans and robots with diverse embodiments."
+    },
+    {
+      "text": "构建了包含1万小时人类数据与3千小时机器人数据的Xp-Data数据集，验证了扩大人类预训练数据规模有助于提升人类与机器人任务的评估表现。",
+      "evidence": "Scaling human pre-training data improves performance on both human and robot evaluations."
+    },
+    {
+      "text": "模型经蒸馏后具备实时长程推演能力，并在五个跨具身基准测试及Held-out人类视频预测中实现了SOTA性能。",
+      "evidence": "Evaluations demonstrate state-of-the-art performance across five cross-embodiment benchmarks (DreamDojo, Ψ_0, ω-HOME, Xp-Teleop, and AgiBot) and on held-out human egocentric video, from zero-shot inference to few-shot and full-data post-training."
+    }
+  ],
+  "tags": [
+    "世界模型",
+    "机器人操作",
+    "足式运动"
+  ]
+}
