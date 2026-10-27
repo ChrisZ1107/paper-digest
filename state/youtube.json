@@ -3962,6 +3962,23 @@
           "abstract_zh": "softmax、log-softmax和交叉熵的标准实现存在两个数值错误。第一个错误是“Softmax坍缩”（Softmax Collapse），当目标logit远大于其他logit时，其梯度会被四舍五入为零，导致梯度之和不再为零。第二个错误是“Softmax抵消”（Softmax Cancellation），发生在学生模型的logit接近教师模型的logit时，即使两者相等，仍会产生非零梯度。我们提出了一种修正这两个错误的log-softmax、softmax和交叉熵的简单实现。我们的修正消除了此前观察到的“弹弓”（Slingshot）现象，加速了权重衰减下的“顿悟”（grokking）过程，防止了无权重衰减下的精度坍缩，阻止了蒸馏过程中学生网络偏离教师网络，并表明在记忆阶段之后，logit的增长受到权重衰减与Adam算法中ε超参数之间平衡的限制。"
         }
       ]
+    },
+    "B5MdlhnUroY": {
+      "video_id": "B5MdlhnUroY",
+      "papers": []
+    },
+    "NdK9Dmi6owk": {
+      "video_id": "NdK9Dmi6owk",
+      "video_title": "Ropedia W0: Scaling Loco-Manipulation World Models across Embodiments with Human Experience",
+      "published": "2026-10-27",
+      "video_url": "https://www.youtube.com/watch?v=NdK9Dmi6owk",
+      "papers": [
+        {
+          "id": "2610.26855",
+          "title": "Ropedia W0: Scaling Loco-Manipulation World Models across Embodiments with Human Experience (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.26855"
+        }
+      ]
     }
   }
 }
