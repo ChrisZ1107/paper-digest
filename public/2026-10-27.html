@@ -1,0 +1,115 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>2026-10-27 热门论文 Top 10｜机器人·强化学习·AI</title><body><h1>2026-10-27 热门论文 Top 10</h1>
+<p>机器人 · 强化学习 · 通用 AI</p>
+<p>生成时间：2026-10-27 09:01 CST。从 580 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>
+<p>候选来源：<a href="https://huggingface.co/papers">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>
+<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>
+<h2>1. Has GPT-6-Astra Achieved Embodied Intelligence?</h2>
+<p><strong>机器人</strong> · 发表 2026-10-15 · 综合分 5.47</p>
+<p>Zotero 摘要相关性：0.477（相似度分数，不是概率）。</p>
+<p>HF 点赞 481 · 讨论 2 · 本次 HF 热榜第 43 位 · 仓库累计 Star 288（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +3 · 讨论 +0 · Star +14。</p>
+<p><strong>规则标签：</strong>人形机器人 · 机器人操作 · 导航</p>
+<p><strong>中文概述：</strong>本文评估了GPT-6-Astra在机器人操作与导航任务中的表现。研究者通过12个基准测试探究了该模型在上下文学习下的能力极限，并分析了将其作为高层推理器与低层控制器结合的代理机制。实验发现，尽管该模型展现出较高的具身能力，但在真实物理部署中仍面临数据采集成本高、物理约束限制及长期执行效率等挑战。作者认为该模型尚未达到实用具身智能的标准。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>GPT-6-Astra在跨越桌面操作、人形机器人、移动平台及灵巧手的12个代表性基准测试中，通过上下文学习实现了出色的性能。<br><small>摘要依据：We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance</small></li>
+<li>研究指出高层“系统2”推理器与低层“系统1”控制器的闭环协调方案虽然有效，但伴随着较高的计算成本。<br><small>摘要依据：We identify that close-loop coordination between a high-level &quot;System 2&quot; reasoner (i.e., GPT-6-Astra) and a low-level &quot;System 1&quot; controller (e.g., π0.5) is costly but effective.</small></li>
+<li>在8种机器人配置的实机部署实验中，研究发现现有范式难以通过延长执行时间来换取物理约束下的高成功率。<br><small>摘要依据：Our experiments on 8 robot configurations reveal substantial gaps: 1) robot demonstrations required for ICL are expensive to collect, and 2) it is implausible to trade longer execution for higher success rates with physical constraints.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 导航 · 人形机器人 · 推理</p>
+<p><strong>原文摘要节选：</strong>GPT-6-Astra demonstrates a level of competence in robotic manipulation and navigation that challenges the conventional paradigm of building specialized models for individual tasks and embodiments. In this report, we ask not only how capable GPT-6-Astra is, but what its capabilities imply for the field. First, we probe the limits of standalone GPT-6-Astra. We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance (Fig. 1). Future research may focus on improving 1) the generality of ICL 2) cost and…</p>
+<p><a href="https://arxiv.org/abs/2610.22471">论文原文</a> · <a href="https://arxiv.org/pdf/2610.22471">PDF</a> · <a href="https://huggingface.co/papers/2610.22471">讨论与热度</a> · <a href="https://github.com/OpenSenseNova/SenseNova-RoboRSI">代码</a></p><hr>
+<h2>2. Toward Recursive Self-Improvement in Physical AI</h2>
+<p><strong>机器人</strong> · 发表 2026-10-21 · 综合分 5.40</p>
+<p>Zotero 摘要相关性：0.427（相似度分数，不是概率）。</p>
+<p>HF 点赞 76 · 讨论 2 · 本次 HF 热榜第 95 位 · 仓库累计 Star 62（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +17 · 讨论 +0 · Star +14。</p>
+<p><strong>中文概述：</strong>该文探讨了物理人工智能领域中递归自我改进（RSI）的可行性。作者分析了如何将数字化代理的自我代码重写机制引入物理机器人学习中，重点讨论了在处理部分观测、变动环境及安全限制下的改进过程。文章通过梳理现有操作类研究，总结了机器人行为、后续学习及流程改进的现状，并提出了评估原则与研究方向，旨在探讨如何让机器在物理交互中安全地改进其自身的改进过程。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>作者分析了将递归自我改进引入物理世界所面临的挑战，包括高成本试验、部分观测以及不可逆后果的风险。<br><small>摘要依据：Bringing these mechanisms into the physical world requires learning from partial observations through costly trials, while accounting for changing operating conditions and potentially irreversible consequences.</small></li>
+<li>研究指出，尽管现有操作类研究在改善行为和流程方面取得了一定进展，但目前尚未有物理实验证实递归改进带来的具体增益。<br><small>摘要依据：Some systems also change the improver&#x27;s knowledge or tools, but the physical studies reviewed here have yet to isolate gains attributable to recursion.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作</p>
+<p><strong>原文摘要节选：</strong>Recursive self-improvement (RSI) describes a system that improves not only its behavior but also the process by which it improves. Recent digital agents test this idea by rewriting their own code and checking each version with executable tests. Bringing these mechanisms into the physical world requires learning from partial observations through costly trials, while accounting for changing operating conditions and potentially irreversible consequences. We position RSI within robot learning and trace pathways from improving robot capabilities to improving the processes that generate them. We examine how physical experience can strengthen these improvement mechanisms and when the resulting gains can support further self-improvement of the mechanisms themselves. Gains carry forward only when…</p>
+<p><a href="https://arxiv.org/abs/2610.29677">论文原文</a> · <a href="https://arxiv.org/pdf/2610.29677">PDF</a> · <a href="https://huggingface.co/papers/2610.29677">讨论与热度</a> · <a href="https://github.com/Physical2RSI/Awesome-Physical2RSI">代码</a></p><hr>
+<h2>3. LaLa-World: Scaling Latent World Models with Natural Language Actions</h2>
+<p><strong>机器人</strong> · 发表 2026-10-21 · 综合分 5.36</p>
+<p>Zotero 摘要相关性：0.441（相似度分数，不是概率）。</p>
+<p>HF 点赞 55 · 讨论 3 · 仓库累计 Star 4（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +17 · 讨论 +0 · Star +0。</p>
+<p><strong>规则标签：</strong>世界模型</p>
+<p><strong>中文概述：</strong>本文提出了LaLa-World，一种基于语言条件接口的潜在世界模型（LWM）。该方法通过将数值动作和视觉变化转化为自然语言描述，实现了跨不同领域和异构数据集的统一联合训练。作者声称，LaLa-World在模型预测控制（MPC）规划任务中表现出比传统LWM更高的性能与效率，并可作为初始化模型用于提升后续策略（LaLa-Policy）在机器人操作任务中的推理速度。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>LaLa-World通过将数值动作和视觉变化转化为语言描述，实现了异构数据集的联合训练，并在规划效率上显著优于现有模型。<br><small>摘要依据：First, we describe both numerical actions and visual changes in language, enabling joint training of a single future predictor across heterogeneous datasets.</small></li>
+<li>与RAEv2基准相比，LaLa-World在保持相当规划性能的同时，训练成本降低了6倍，规划速度提升了13.9倍。<br><small>摘要依据：In a matched comparison with an RAEv2-based video generation model baseline, LaLa-World reaches comparable planning performance with 6times less training cost and 13.9times faster planning.</small></li>
+<li>基于预训练的LaLa-Policy在LIBERO和RoboCasa基准测试中具有竞争力，推理速度最高可提升5.5倍。<br><small>摘要依据：LaLa-Policy performs competitively with Cosmos Policy on LIBERO and RoboCasa, with up to 5.5times faster inference.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>世界模型 · 机器人操作 · 推理</p>
+<p><strong>原文摘要节选：</strong>This paper shows that JEPA-style latent world models (LWMs) can learn across diverse domains and data sources by adopting the language-conditioned interface of video generation models. We establish this approach as an effective and efficient basis for planning with imagination and downstream policy fine-tuning. To this end, we introduce LaLa-World, a Language-conditioned Latent World model that learns from simulation and robot trajectories together with broader image and video data. Two designs make this work. First, we describe both numerical actions and visual changes in language, enabling joint training of a single future predictor across heterogeneous datasets. Second, we build the predictor on a language model, allowing it to interpret language conditions while predicting future…</p>
+<p><a href="https://arxiv.org/abs/2610.27851">论文原文</a> · <a href="https://arxiv.org/pdf/2610.27851">PDF</a> · <a href="https://huggingface.co/papers/2610.27851">讨论与热度</a> · <a href="https://github.com/junha1125/LaLa-World">代码</a></p><hr>
+<h2>4. AgentVQA: A Unified Benchmark for Agentic Visual Understanding</h2>
+<p><strong>机器人</strong> · 发表 2026-10-22 · 综合分 5.14</p>
+<p>Zotero 摘要相关性：0.433（相似度分数，不是概率）。</p>
+<p>HF 点赞 25 · 讨论 2 · 仓库累计 Star 8（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +7 · 讨论 +0 · Star +0。</p>
+<p><strong>规则标签：</strong>推理</p>
+<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>
+<p><strong>原文摘要节选：</strong>Vision-language models (VLMs) can perform a broad range of tasks across diverse settings, yet their performance in agentic contexts remains poorly understood. Although online evaluations in simulators and real-world environments are essential for measuring interactive agent performance, they are costly and challenging to scale. Complementary offline VQA benchmarks can enable faster and more reliable comparisons across agentic domains, yet existing benchmarks remain limited and fragmented. To address this gap, we introduce AgentVQA, an offline benchmark for evaluating VLMs on realistic agentic scenarios across five agent domains: Web Agents, Robotics, Egocentric Videos, Games, and Spatial Planning. We build AgentVQA by manually selecting 1000 challenging, real-world agent examples from 23…</p>
+<p><a href="https://arxiv.org/abs/2610.31494">论文原文</a> · <a href="https://arxiv.org/pdf/2610.31494">PDF</a> · <a href="https://huggingface.co/papers/2610.31494">讨论与热度</a> · <a href="https://github.com/zlab-princeton/AgentVQA">代码</a></p><hr>
+<h2>5. Self-Distilling Future Video Representations for World Action Models</h2>
+<p><strong>机器人</strong> · 发表 2026-10-21 · 综合分 5.12</p>
+<p>Zotero 摘要相关性：0.417（相似度分数，不是概率）。</p>
+<p>HF 点赞 48 · 讨论 2 · 仓库累计 Star 9（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +11 · 讨论 +0 · Star +0。</p>
+<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>
+<p><strong>原文摘要节选：</strong>World Action Models (WAMs) have emerged as a promising approach to learning generalist robot policies using rich spatiotemporal priors from pre-trained video diffusion models. A recent line of WAMs improves inference efficiency by conditioning a separate action decoder on intermediate future video representations extracted from a single denoising step, avoiding costly iterative denoising required for video generation. This design makes action prediction depend directly on the quality of these future representations. In this paper, we introduce Future REpresentation learning via self-Distillation with temporal context (FRED), a framework that trains WAMs to improve the quality of future video representations from noise in a single denoising step. Specifically, FRED uses self-distillation…</p>
+<p><a href="https://arxiv.org/abs/2610.30320">论文原文</a> · <a href="https://arxiv.org/pdf/2610.30320">PDF</a> · <a href="https://huggingface.co/papers/2610.30320">讨论与热度</a> · <a href="https://github.com/suhyeok-jang/FRED">代码</a></p><hr>
+<h2>6. In-Context Learning for Robots: Methods and Applications</h2>
+<p><strong>机器人</strong> · 发表 2026-09-28 · 综合分 5.01</p>
+<p>Zotero 摘要相关性：0.430（相似度分数，不是概率）。</p>
+<p>HF 点赞 195 · 讨论 2 · 本次 HF 热榜第 89 位 · 仓库累计 Star 204（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +52 · 讨论 +0 · Star +17。</p>
+<p><strong>规则标签：</strong>导航</p>
+<p><strong>中文概述：</strong>本文综述了机器人上下文学习（ICL）方法，探讨了机器人如何利用演示和交互在部署期间无需微调神经网络参数即可适应新任务。作者将现有的ICL方法归纳为上下文条件策略、几何演示迁移、基于世界模型的控制以及基于技能和智能体的执行四类。通过对比分析这些接口的迁移假设、训练机制及记忆作用，本文考察了相关机制如何确保机器人在面对物体、环境和执行条件变化时的鲁棒性，并提出了关于任务获取与物理递归自我改进的研究议程。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>将机器人上下文学习方法系统性地归类为四大家族，并揭示了不同接口在迁移假设与上下文利用机制上的差异。<br><small>摘要依据：We organize this literature review around the interfaces connecting contextual evidence to execution, distinguishing four families: context-conditioned policies, geometric demonstration transfer, world-model-based control, and skill- and agent-based execution.</small></li>
+<li>分析了上下文学习机制在处理机器人操纵和导航任务时，应对环境、物体及执行条件变动的能力。<br><small>摘要依据：Across manipulation and navigation, we examine how these mechanisms preserve taught requirements as objects, environments, and execution conditions change.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 导航</p>
+<p><strong>原文摘要节选：</strong>General-purpose robots must infer what a new task requires and translate that understanding into appropriate physical action. In-context learning (ICL) for robots supports this process by using demonstrations and interaction to direct existing competence with neural parameters held fixed during deployment. We organize this literature review around the interfaces connecting contextual evidence to execution, distinguishing four families: context-conditioned policies, geometric demonstration transfer, world-model-based control, and skill- and agent-based execution. Comparing these interfaces clarifies their transfer assumptions and the roles of training, correspondence, and memory in making context useful. Across manipulation and navigation, we examine how these mechanisms preserve taught…</p>
+<p><a href="https://arxiv.org/abs/2609.36012">论文原文</a> · <a href="https://arxiv.org/pdf/2609.36012">PDF</a> · <a href="https://huggingface.co/papers/2609.36012">讨论与热度</a> · <a href="https://github.com/JethroJames/awesome-robots-icl">代码</a></p><hr>
+<h2>7. SCOPE: Compiling Natural-Language Policies into Neurosymbolic Predicate Programs</h2>
+<p><strong>通用 AI</strong> · 发表 2026-10-22 · 综合分 5.00</p>
+<p>Zotero 摘要相关性：0.380（相似度分数，不是概率）。</p>
+<p>HF 点赞 32 · 讨论 8</p>
+<p>较上次观测（1.0 天前）：点赞 +17 · 讨论 +0。</p>
+<p><strong>规则标签：</strong>推理</p>
+<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>
+<p><strong>原文摘要节选：</strong>Policy enforcement for LLM agents has shifted from single-turn content moderation to compound, application-specific policies evaluated over multi-turn transcripts and tool-call trajectories. Fine-tuned guardrail models are efficient but degrade on compound policies, and while LLM-as-a-judge approaches achieve higher accuracy, they incur high inference cost and tend to produce unstable predictions. Neurosymbolic methods offer a natural alternative, decomposing the policy into narrow neural decisions composed under explicit logic. However, existing symbolic layers lack the required expressiveness and are optimized against fixed data rather than the policy itself. To address this, we introduce SCOPE, which compiles a policy into an executable program of neural predicates executed by small…</p>
+<p><a href="https://arxiv.org/abs/2610.31062">论文原文</a> · <a href="https://arxiv.org/pdf/2610.31062">PDF</a> · <a href="https://huggingface.co/papers/2610.31062">讨论与热度</a></p><hr>
+<h2>8. RynnUnify: Towards Unified Embodied Brain</h2>
+<p><strong>机器人 / 强化学习</strong> · 发表 2026-10-23 · 综合分 4.94</p>
+<p>Zotero 摘要相关性：0.467（相似度分数，不是概率）。</p>
+<p>HF 点赞 33 · 讨论 1 · 本次 HF 热榜第 54 位 · 仓库累计 Star 18（仓库可能包含多篇论文）</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>强化学习 · 推理</p>
+<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>
+<p><strong>原文摘要节选：</strong>We introduce RynnUnify, a 16B unified embodied model that combines strong embodied understanding with long-horizon visual planning through interleaved video--language reasoning. With capabilities spanning spatial reasoning, physical prediction, and grounding, RynnUnify connects an understanding of the physical world with visual anticipation of how it evolves across successive subtasks. Building on these capabilities, we further develop an agentic extension through reinforcement learning to selectively use video predictions for reasoning about unobserved states and interaction outcomes. We also develop a world-action extension of the full RynnUnify model, translating its understanding and prediction capabilities into robot control. To evaluate these capabilities, we introduce Rynn-VP and…</p>
+<p><a href="https://arxiv.org/abs/2610.32965">论文原文</a> · <a href="https://arxiv.org/pdf/2610.32965">PDF</a> · <a href="https://huggingface.co/papers/2610.32965">讨论与热度</a> · <a href="https://github.com/alibaba-damo-academy/RynnUnify">代码</a></p><hr>
+<h2>9. TILDE: Teacher-in-the-Loop Distillation from Embodied Foundation Models</h2>
+<p><strong>机器人 / 强化学习</strong> · 发表 2026-10-18 · 综合分 4.81</p>
+<p>Zotero 摘要相关性：0.447（相似度分数，不是概率）。</p>
+<p>HF 点赞 11 · 讨论 2 · 仓库累计 Star 9（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +2 · 讨论 +0 · Star +2。</p>
+<p><strong>规则标签：</strong>模仿学习</p>
+<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>
+<p><strong>原文摘要节选：</strong>Large-scale action pretraining equips Embodied Foundation Models (EFMs) with strong manipulation capabilities, with particular strengths in generalization and closed-loop robustness, but reproducing such pretraining requires substantial robot data and computation. To transfer these capabilities from pretrained EFMs to policies without action pretraining, we introduce TILDE (Teacher-In-the-Loop Distillation from EFMs), which synergizes on-policy distillation at student-induced states with learning from teacher-executed recovery trajectories. We further propose AutoDAgger, an autonomous data aggregation pipeline in which a robotic reward model is utilized to monitor task progress and trigger teacher intervention, thereby collecting recovery experience without human monitoring or manual…</p>
+<p><a href="https://arxiv.org/abs/2610.25376">论文原文</a> · <a href="https://arxiv.org/pdf/2610.25376">PDF</a> · <a href="https://huggingface.co/papers/2610.25376">讨论与热度</a> · <a href="https://github.com/hku-sail/TILDE">代码</a></p><hr>
+<h2>10. RouteWeaver: Weaving Mode Selection and Execution into Unified LLM Routing</h2>
+<p><strong>强化学习</strong> · 发表 2026-10-19 · 综合分 4.80</p>
+<p>Zotero 摘要相关性：0.396（相似度分数，不是概率）。</p>
+<p>HF 点赞 32 · 讨论 2 · 仓库累计 Star 3（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +7 · 讨论 +0 · Star +0。</p>
+<p><strong>规则标签：</strong>强化学习 · 大模型后训练 · 推理</p>
+<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>
+<p><strong>原文摘要节选：</strong>LLM routing dynamically selects and coordinates heterogeneous language models across diverse tasks. However, existing approaches are largely built around a predefined execution paradigm, such as single-round, multi-round, or agentic routing, which fixes how model calls are organized and limits adaptation to different query needs. We propose RouteWeaver, a unified routing framework that integrates these routing modes within a single LLM policy, jointly learning which mode to use and how to select models within that mode. To jointly optimize mode selection and within-mode execution, we develop COMET-GRPO (COordinated Mode-Execution Training), which decouples the trajectory-level advantage into separate signals for mode selection and within-mode execution, enabling more targeted credit…</p>
+<p><a href="https://arxiv.org/abs/2610.19705">论文原文</a> · <a href="https://arxiv.org/pdf/2610.19705">PDF</a> · <a href="https://huggingface.co/papers/2610.19705">讨论与热度</a> · <a href="https://github.com/LaughKing/RouteWeaver">代码</a></p><hr></body></html>

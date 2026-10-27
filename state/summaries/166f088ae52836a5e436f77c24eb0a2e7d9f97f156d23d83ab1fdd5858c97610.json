@@ -1,0 +1,22 @@
+{
+  "overview": "本文提出了LaLa-World，一种基于语言条件接口的潜在世界模型（LWM）。该方法通过将数值动作和视觉变化转化为自然语言描述，实现了跨不同领域和异构数据集的统一联合训练。作者声称，LaLa-World在模型预测控制（MPC）规划任务中表现出比传统LWM更高的性能与效率，并可作为初始化模型用于提升后续策略（LaLa-Policy）在机器人操作任务中的推理速度。",
+  "highlights": [
+    {
+      "text": "LaLa-World通过将数值动作和视觉变化转化为语言描述，实现了异构数据集的联合训练，并在规划效率上显著优于现有模型。",
+      "evidence": "First, we describe both numerical actions and visual changes in language, enabling joint training of a single future predictor across heterogeneous datasets."
+    },
+    {
+      "text": "与RAEv2基准相比，LaLa-World在保持相当规划性能的同时，训练成本降低了6倍，规划速度提升了13.9倍。",
+      "evidence": "In a matched comparison with an RAEv2-based video generation model baseline, LaLa-World reaches comparable planning performance with 6times less training cost and 13.9times faster planning."
+    },
+    {
+      "text": "基于预训练的LaLa-Policy在LIBERO和RoboCasa基准测试中具有竞争力，推理速度最高可提升5.5倍。",
+      "evidence": "LaLa-Policy performs competitively with Cosmos Policy on LIBERO and RoboCasa, with up to 5.5times faster inference."
+    }
+  ],
+  "tags": [
+    "世界模型",
+    "机器人操作",
+    "推理"
+  ]
+}
