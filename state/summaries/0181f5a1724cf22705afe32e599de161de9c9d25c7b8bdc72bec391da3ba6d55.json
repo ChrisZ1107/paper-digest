@@ -1,0 +1,17 @@
+{
+  "overview": "针对现有视觉语言动作（VLA）模型在处理多视角输入时难以动态调整视角依赖的问题，本文提出了FocusVLA框架。该方法通过历史动作预测未来交互意图，从而引导动作生成过程中的动态视角路由。作者声称，通过跨任务阶段自适应协调全局与局部观测，该方法在RoboTwin 2.0基准测试及真实世界评估中均显著提升了机器人的操作成功率，且具有良好的通用兼容性。",
+  "highlights": [
+    {
+      "text": "提出了一种基于未来交互意图引导的动态视角路由框架FocusVLA，旨在解决现有VLA模型在机器人操作中对多视角信息利用不足的问题。",
+      "evidence": "FocusVLA predicts future interaction intent from historical actions and uses it to guide dynamic view routing during action generation."
+    },
+    {
+      "text": "实验结果显示，FocusVLA在RoboTwin 2.0模拟基准和真实世界任务中均表现出显著的成功率提升。",
+      "evidence": "On RoboTwin 2.0, FocusVLA improves the average success rate over the strongest baseline π_{0.5} by 10.10 pp. In real-world evaluation, FocusVLA improves the success rate from 71.7\\% to 85.0\\%, achieving a 13.3\\% gain over π_{0.5}."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "视觉语言动作"
+  ]
+}

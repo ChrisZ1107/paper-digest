@@ -1,0 +1,16 @@
+{
+  "overview": "本文介绍了Flora，一套用于机器人基础模型生命周期的数据引擎。该系统旨在提供结果奖励标注、过程奖励标注及带时间戳的字幕生成功能，以支持机器人数据的筛选、平衡及强化学习后的训练。作者声称，Flora在多个字幕及奖励基准测试中达到行业领先水平，且在成本效益和规模化处理能力方面表现优异，旨在通过开源助力研究人员扩展机器人数据集。",
+  "highlights": [
+    {
+      "text": "Flora在多个关键基准测试中表现出色，并在成本效益上显著优于基于API的模型。",
+      "evidence": "Flora achieves SOTA scores on the captioning benchmark WGO-Bench and reward benchmarks RoboReward and Robometer. On internal benchmarks it is competitive with GPT-6 Astra while beating other frontier models. The model is substantially cheaper than API-based alternatives, roughly 125 times cheaper than GPT-6 Astra."
+    },
+    {
+      "text": "Flora具备工业级的大规模数据处理能力，支持高强度的自动化标注任务。",
+      "evidence": "Florais battle tested at scale, labeling 200,000 hours of data per day across 512 GB300s."
+    }
+  ],
+  "tags": [
+    "大模型后训练"
+  ]
+}

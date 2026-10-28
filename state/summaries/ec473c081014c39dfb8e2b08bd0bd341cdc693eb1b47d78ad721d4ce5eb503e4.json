@@ -1,0 +1,22 @@
+{
+  "overview": "针对开放世界游戏（如Minecraft）中长程自主性与原生界面控制难以兼顾的问题，本文提出了HiSTEVE分层视觉语言动作（VLA）代理。该方法通过引入具备结构化记忆和VLM规划器的代理框架，配合策略耦合的任务完成状态检测器，实现了子任务的有效编排。在控制层，利用单一VLA结合定制的归一化分支与鼠标动作嵌入，直接处理视觉输入并执行键盘鼠标操作。实验结果显示，该代理在多项基准测试中表现出色，并具备完成如从头制作铁镐等长程任务的能力。",
+  "highlights": [
+    {
+      "text": "HiSTEVE通过分层架构结合了长程规划与原生视觉运动控制，解决了现有代理在自主性与原生界面交互上的局限性。",
+      "evidence": "To bridge this gap, we propose HiSTEVE, a hierarchical VLA agent with a capability-aware agent harness."
+    },
+    {
+      "text": "通过引入特定架构优化（RMSNorm分支与分离的鼠标动作嵌入）及多阶段训练，提升了代理在复杂界面下的交互可靠性。",
+      "evidence": "To mitigate interference between heterogeneous GUI and non-GUI interactions, we introduce regime-specific RMSNorm branches and separate mouse-movement token embeddings."
+    },
+    {
+      "text": "HiSTEVE在MineStudio Bench和OpenHA基准测试中达到了顶尖的原子任务性能，并能执行长程游戏任务。",
+      "evidence": "HiSTEVE achieves state-of-the-art atomic-task performance, scoring 85.0% on MineStudio Bench and a 37.4% average success rate on OpenHA, while also completing long-horizon tasks such as crafting an iron pickaxe from scratch like human players."
+    }
+  ],
+  "tags": [
+    "视觉语言动作",
+    "模仿学习",
+    "强化学习"
+  ]
+}

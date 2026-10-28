@@ -1,0 +1,19 @@
+{
+  "overview": "针对机器人操作中行为克隆高度依赖训练数据覆盖范围的问题，作者提出了DiscoDemo框架。该方法将强化学习作为数据生成器，通过结合平行反向课程学习和成功门控多样性目标，训练特权潜变量条件策略，以生成多样化的成功轨迹数据集。作者声称，该数据集在提升下游视觉运动策略的表现方面优于单一解法，并在仿真及真实机器人实验中取得了性能提升。",
+  "highlights": [
+    {
+      "text": "DiscoDemo通过并行反向课程学习和成功门控多样性目标训练生成器，旨在发现并保留多样化的成功操作轨迹。",
+      "evidence": "We introduce DiscoDemo, which trains a privileged latent-conditioned RL generator with a parallel reverse curriculum and a success-gated diversity objective to discover diverse solutions while preserving task success."
+    },
+    {
+      "text": "实验结果表明，使用DiscoDemo生成的数据集能显著提升下游视觉运动策略在仿真和真实环境中的成功率。",
+      "evidence": "Averaged across tasks, downstream success increases to 62% from 40% for the strongest baseline in simulation, and to 78% from 39% on the real robot, respectively."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "模仿学习",
+    "强化学习",
+    "Sim-to-Real"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "overview": "RynnUnify是一款160亿参数的统一具身模型，旨在通过视频与语言推理实现长程视觉规划与具身理解。作者结合了强化学习代理扩展与世界-动作扩展，使模型能够进行空间推理、物理预测并直接输出机器人控制指令。实验表明，该模型在具身理解评分及长程视觉规划任务上表现优于对比基线，在RoboCasa365及真实机器人任务中展示了任务执行能力。",
+  "highlights": [
+    {
+      "text": "RynnUnify在多项基准测试中提升了长程视觉规划与具身推理性能，表现优于Cosmos 3 Nano。",
+      "evidence": "Experiments show that RynnUnify achieves the highest average embodied understanding score among the evaluated unified multimodal models and improves the Rynn-VP overall score by 9.75 points over Cosmos 3 Nano."
+    },
+    {
+      "text": "通过强化学习扩展，RynnUnify能够利用视频预测进行推理，提升了在未观测状态下的任务表现。",
+      "evidence": "Its agentic extension improves the Rynn-GEU average by 6.0 points over direct reasoning, while the world-action extension achieves 51.5\\% success on 20 selected composite RoboCasa365 tasks and 46.7\\% average success across three real-robot tasks."
+    }
+  ],
+  "tags": [
+    "世界模型",
+    "机器人操作",
+    "强化学习"
+  ]
+}

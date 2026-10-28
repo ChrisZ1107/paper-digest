@@ -1,0 +1,17 @@
+{
+  "overview": "针对工具使用智能体训练中成功轨迹往往缺乏决策依据及多步依赖的问题，本文提出了Trajectory2Gym框架。该方法通过构建可执行的交互序列，重点关注未被支持的组合结构，并仅从基于可见历史的决策中提取监督信号。通过结构支持选择和父级归一化微调，将轨迹生成重构为可学习交互经验的构建过程。实验表明，该方法显著提升了Qwen3在多个工具使用基准测试中的性能。",
+  "highlights": [
+    {
+      "text": "Trajectory2Gym通过构建围绕组合结构的交互并从中提取有根据的决策，提升了工具使用智能体的监督质量。",
+      "evidence": "We introduce Trajectory2Gym, which constructs executable interactions around under-supported compositional structures and derives supervision only from grounded decisions in their realized executions."
+    },
+    {
+      "text": "在五个Qwen3模型尺度上的实验显示，该方法在Tau1、Tau2和BFCL基准测试中实现了显著的性能提升。",
+      "evidence": "Across five Qwen3 scales, Trajectory2Gym improves Tau1, Tau2, and BFCL at every tested scale, increasing the equal-weight three-benchmark mean by 16.9-29.8 percentage points."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "推理"
+  ]
+}

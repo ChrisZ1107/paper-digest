@@ -1,0 +1,21 @@
+{
+  "overview": "针对AI模型在感知、语言与推理能力上的割裂问题，本文提出了统一的视觉语言世界模型Ψ-0.6。该模型引入“思维流”（streams of thought）机制，通过共享标记接口整合视觉、文本、几何与运动表示。作者声称，该模型在多视角空间推理任务中表现出色，支持反事实模拟，并利用任务反馈的强化学习优化推理过程中的中间表示选择，从而提升了视觉问答的准确性与跨任务泛化能力。",
+  "highlights": [
+    {
+      "text": "Ψ-0.6 实现了感知、语言、几何与模拟的自适应组合，通过统一的“思维流”机制在共享推理过程中交替处理多模态信息。",
+      "evidence": "We introduce Ψ-0.6, a unified vision-language world model that adaptively composes perception, language, geometry, and simulation within a shared reasoning process we call streams of thought."
+    },
+    {
+      "text": "该模型支持反事实场景模拟，通过生成并解释想象中的场景来判断特定动作对物理环境的影响。",
+      "evidence": "It also supports counterfactual simulation: generating and interpreting imagined scenes to determine, for example, whether moving an object would obstruct a pathway."
+    },
+    {
+      "text": "通过引入强化学习进行任务反馈训练，模型能够优化中间表示的选择与生成，实现视觉问答准确性的提升。",
+      "evidence": "Reinforcement learning from task feedback jointly optimizes the selection, generation, and use of intermediate representations, improving visual question-answering accuracy with gains that transfer to unseen benchmarks."
+    }
+  ],
+  "tags": [
+    "世界模型",
+    "推理"
+  ]
+}

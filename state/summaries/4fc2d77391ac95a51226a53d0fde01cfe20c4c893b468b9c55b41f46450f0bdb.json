@@ -1,0 +1,18 @@
+{
+  "overview": "针对机器人策略在任务理解与动作执行方面的需求，该研究提出了Zero-real Agent Policy (ZAP)。该方法利用预训练的视觉语言模型获取世界理解能力，随后通过监督微调和GRPO在仿真任务中训练动作控制。作者声称，ZAP在无需真实世界数据训练的情况下，在现实任务中实现了96.7%的成功率，并表现出对未知物体、目标及不同机体结构的泛化能力。",
+  "highlights": [
+    {
+      "text": "ZAP无需真实世界机器人数据即可在现实任务中达到96.7%的成功率，并在推理效率和成本上优于对比模型。",
+      "evidence": "Without any real-world robot data during training, ZAP reaches 96.7% success on real-world tasks, matching GPT-6 Astra in our harness and outperforming the MolmoAct2 VLA (33.3%), while running 3x faster and 17x cheaper than GPT-6 Astra."
+    },
+    {
+      "text": "ZAP展现了强大的组合泛化能力，能够完成训练数据中未出现的任务类型，并能迁移至未见过的机器人机体。",
+      "evidence": "We demonstrate that ZAP also generalizes to completely new objects, goals, strategies, and language by seating a test tube in a rack (and choosing a different hole in the rack when prompted), handing a test tube between arms mid-air, drawing an X on a tic-tac-toe board, and playing chess. These goals and types of manipulation don't appear in our training data. Furthermore, ZAP also transfers to an unseen embodiment."
+    }
+  ],
+  "tags": [
+    "视觉语言动作",
+    "Sim-to-Real",
+    "推理"
+  ]
+}

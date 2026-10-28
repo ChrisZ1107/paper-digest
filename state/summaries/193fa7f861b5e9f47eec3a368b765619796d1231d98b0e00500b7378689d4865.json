@@ -1,0 +1,23 @@
+{
+  "overview": "针对异构足式机器人协同运输中运动能力差异及负载共享挑战，本文提出了HA-DiPO框架。该框架采用集中训练、分布式执行（CTDE）策略，通过分层结构解耦团队协作与个体运动控制：高层利用扩散策略学习协作指令，底层控制个体动作跟踪。作者声称该方法无需演示即可从零开始训练，在仿真环境下表现出更优的协作能力，并在四足轮腿机器人与人形机器人的协作运输实验中得到验证。",
+  "highlights": [
+    {
+      "text": "提出一种分层多智能体强化学习框架，利用扩散策略提升协作响应的灵活性。",
+      "evidence": "The high-level diffusion policies offer more flexible action distributions than single-Gaussian parameterizations, allowing potentially multimodal coordination responses to be represented."
+    },
+    {
+      "text": "实现了无需机器人间通信的分布式执行，通过局部观测即可完成协同运输任务。",
+      "evidence": "At execution, each robot generates coordination commands using only local robot and payload observations, without partner-state inputs or inter-robot messages."
+    },
+    {
+      "text": "在仿真与现实场景中验证了该方法在异构机器人协同运输中的有效性。",
+      "evidence": "Real-world experiments further demonstrate quadrupedal-wheeled-legged and human-robot cooperative transport."
+    }
+  ],
+  "tags": [
+    "多智能体",
+    "强化学习",
+    "足式运动",
+    "Sim-to-Real"
+  ]
+}

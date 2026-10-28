@@ -1,0 +1,18 @@
+{
+  "overview": "针对人形机器人运动跟踪在部署时面临的动力学差异问题，本文提出了HumanoidNDM框架。该方法通过低频参考扰动机制收集真实世界数据，训练基于历史本体感知的神经动力学模型，并利用模型梯度进行策略微调。作者声称该框架无需运动捕捉系统，即可实现高效的在线部署适应，并在Unitree G1机器人上完成了验证。",
+  "highlights": [
+    {
+      "text": "提出了一种基于真实世界训练的神经动力学模型，通过引入低频参考扰动和自适应强度机制，实现了无需运动捕捉系统的在线策略微调。",
+      "evidence": "we introduce a low-frequency reference perturbation method with an adaptive intensity mechanism, balancing deployment feasibility and exploration efficiency."
+    },
+    {
+      "text": "HumanoidNDM框架能够利用模型梯度进行策略反向传播微调，显著提升了在复杂扰动下的数据效率与现实世界适应能力。",
+      "evidence": "we directly fine-tune the policy via backpropagated model gradients, achieving high data efficiency."
+    }
+  ],
+  "tags": [
+    "人形机器人",
+    "足式运动",
+    "Sim-to-Real"
+  ]
+}

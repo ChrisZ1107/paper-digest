@@ -1,0 +1,18 @@
+{
+  "overview": "针对具身智能视频生成模型评估缺失的问题，作者提出了RoboJudge-Bench基准，用于评估多模态大模型（MLLM）在具身视频物理依从性和指令对齐方面的评价能力。实验发现通用MLLM与人类评价存在偏差，为此作者构建了RoboJudge-Train数据集，通过监督微调与强化学习训练出RoboJudge-9B模型。结果显示，RoboJudge-9B在基准测试中展现出与人类评估更高的一致性，并能作为下游评估工具衡量生成模型的性能。",
+  "highlights": [
+    {
+      "text": "构建了包含800段人类标注视频的RoboJudge-Bench，用于评估多模态模型作为具身视频评估者的表现。",
+      "evidence": "To address this gap, we introduce RoboJudge-Bench, a benchmark for evaluating MLLMs as judges of embodied video generation."
+    },
+    {
+      "text": "训练出的RoboJudge-9B模型在物理依从性和指令对齐评估上达到了与人类评价最高的Pearson相关系数。",
+      "evidence": "Among the model judges evaluated on RoboJudge-Bench, RoboJudge-9B achieves the highest overall agreement, reaching a Pearson correlation of 0.719 with a statistically significant 0.089 gain over Gemini-3.7-Flash, the best-performing proprietary baseline in our evaluation."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "世界模型",
+    "推理"
+  ]
+}

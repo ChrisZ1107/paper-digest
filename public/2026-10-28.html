@@ -1,0 +1,148 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>2026-10-28 热门论文 Top 10｜机器人·强化学习·AI</title><body><h1>2026-10-28 热门论文 Top 10</h1>
+<p>机器人 · 强化学习 · 通用 AI</p>
+<p>生成时间：2026-10-28 09:05 CST。从 1110 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>
+<p>候选来源：<a href="https://huggingface.co/papers">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>
+<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>
+<h2>1. DiscoDemo: Discovering Efficient and Diverse Robot Demonstrations for Imitation Learning</h2>
+<p><strong>机器人 / 强化学习</strong> · 发表 2026-10-23 · 综合分 5.88</p>
+<p>Zotero 摘要相关性：0.507（相似度分数，不是概率）。</p>
+<p>HF 点赞 25 · 讨论 2 · 仓库累计 Star 11（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +25 · 讨论 +2。</p>
+<p><strong>规则标签：</strong>强化学习 · 机器人操作 · 模仿学习 · 视觉语言动作</p>
+<p><strong>中文概述：</strong>针对机器人操作中行为克隆高度依赖训练数据覆盖范围的问题，作者提出了DiscoDemo框架。该方法将强化学习作为数据生成器，通过结合平行反向课程学习和成功门控多样性目标，训练特权潜变量条件策略，以生成多样化的成功轨迹数据集。作者声称，该数据集在提升下游视觉运动策略的表现方面优于单一解法，并在仿真及真实机器人实验中取得了性能提升。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>DiscoDemo通过并行反向课程学习和成功门控多样性目标训练生成器，旨在发现并保留多样化的成功操作轨迹。<br><small>摘要依据：We introduce DiscoDemo, which trains a privileged latent-conditioned RL generator with a parallel reverse curriculum and a success-gated diversity objective to discover diverse solutions while preserving task success.</small></li>
+<li>实验结果表明，使用DiscoDemo生成的数据集能显著提升下游视觉运动策略在仿真和真实环境中的成功率。<br><small>摘要依据：Averaged across tasks, downstream success increases to 62% from 40% for the strongest baseline in simulation, and to 78% from 39% on the real robot, respectively.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 模仿学习 · 强化学习 · Sim-to-Real</p>
+<p><strong>原文摘要节选：</strong>Behavior cloning for robotic manipulation is highly sensitive to the coverage of its training data, yet collecting diverse successful demonstrations remains costly. We study reinforcement learning (RL) not as a deployable controller, but as a data generator for downstream visuomotor imitation learning. Our key premise is that multiple successful solution modes cover a broader range of successful trajectories than repeatedly collecting a single narrow solution. We introduce DiscoDemo, which trains a privileged latent-conditioned RL generator with a parallel reverse curriculum and a success-gated diversity objective to discover diverse solutions while preserving task success. The trained generator produces multiple successful closed-loop behaviors, which are safety-filtered and exported as…</p>
+<p><a href="https://arxiv.org/abs/2610.32093">论文原文</a> · <a href="https://arxiv.org/pdf/2610.32093">PDF</a> · <a href="https://huggingface.co/papers/2610.32093">讨论与热度</a> · <a href="https://github.com/DAVIAN-Robotics/DiscoDemo">代码</a></p><hr>
+<h2>2. RynnUnify: Towards Unified Embodied Brain</h2>
+<p><strong>机器人 / 强化学习</strong> · 发表 2026-10-23 · 综合分 5.70</p>
+<p>Zotero 摘要相关性：0.467（相似度分数，不是概率）。</p>
+<p>HF 点赞 54 · 讨论 2 · 本次 HF 热榜第 73 位 · 仓库累计 Star 23（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +21 · 讨论 +1 · Star +5。</p>
+<p><strong>规则标签：</strong>强化学习 · 推理</p>
+<p><strong>中文概述：</strong>RynnUnify是一款160亿参数的统一具身模型，旨在通过视频与语言推理实现长程视觉规划与具身理解。作者结合了强化学习代理扩展与世界-动作扩展，使模型能够进行空间推理、物理预测并直接输出机器人控制指令。实验表明，该模型在具身理解评分及长程视觉规划任务上表现优于对比基线，在RoboCasa365及真实机器人任务中展示了任务执行能力。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>RynnUnify在多项基准测试中提升了长程视觉规划与具身推理性能，表现优于Cosmos 3 Nano。<br><small>摘要依据：Experiments show that RynnUnify achieves the highest average embodied understanding score among the evaluated unified multimodal models and improves the Rynn-VP overall score by 9.75 points over Cosmos 3 Nano.</small></li>
+<li>通过强化学习扩展，RynnUnify能够利用视频预测进行推理，提升了在未观测状态下的任务表现。<br><small>摘要依据：Its agentic extension improves the Rynn-GEU average by 6.0 points over direct reasoning, while the world-action extension achieves 51.5\% success on 20 selected composite RoboCasa365 tasks and 46.7\% average success across three real-robot tasks.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>世界模型 · 机器人操作 · 强化学习</p>
+<p><strong>原文摘要节选：</strong>We introduce RynnUnify, a 16B unified embodied model that combines strong embodied understanding with long-horizon visual planning through interleaved video--language reasoning. With capabilities spanning spatial reasoning, physical prediction, and grounding, RynnUnify connects an understanding of the physical world with visual anticipation of how it evolves across successive subtasks. Building on these capabilities, we further develop an agentic extension through reinforcement learning to selectively use video predictions for reasoning about unobserved states and interaction outcomes. We also develop a world-action extension of the full RynnUnify model, translating its understanding and prediction capabilities into robot control. To evaluate these capabilities, we introduce Rynn-VP and…</p>
+<p><a href="https://arxiv.org/abs/2610.32965">论文原文</a> · <a href="https://arxiv.org/pdf/2610.32965">PDF</a> · <a href="https://huggingface.co/papers/2610.32965">讨论与热度</a> · <a href="https://github.com/alibaba-damo-academy/RynnUnify">代码</a></p><hr>
+<h2>3. Has GPT-6-Astra Achieved Embodied Intelligence?</h2>
+<p><strong>机器人</strong> · 发表 2026-10-15 · 综合分 5.44</p>
+<p>Zotero 摘要相关性：0.477（相似度分数，不是概率）。</p>
+<p>HF 点赞 484 · 讨论 2 · 本次 HF 热榜第 57 位 · 仓库累计 Star 303（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +3 · 讨论 +0 · Star +15。</p>
+<p><strong>规则标签：</strong>人形机器人 · 机器人操作 · 导航</p>
+<p><strong>中文概述：</strong>本文评估了GPT-6-Astra在机器人操作与导航任务中的表现。研究者通过12个基准测试探究了该模型在上下文学习下的能力极限，并分析了将其作为高层推理器与低层控制器结合的代理机制。实验发现，尽管该模型展现出较高的具身能力，但在真实物理部署中仍面临数据采集成本高、物理约束限制及长期执行效率等挑战。作者认为该模型尚未达到实用具身智能的标准。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>GPT-6-Astra在跨越桌面操作、人形机器人、移动平台及灵巧手的12个代表性基准测试中，通过上下文学习实现了出色的性能。<br><small>摘要依据：We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance</small></li>
+<li>研究指出高层“系统2”推理器与低层“系统1”控制器的闭环协调方案虽然有效，但伴随着较高的计算成本。<br><small>摘要依据：We identify that close-loop coordination between a high-level &quot;System 2&quot; reasoner (i.e., GPT-6-Astra) and a low-level &quot;System 1&quot; controller (e.g., π0.5) is costly but effective.</small></li>
+<li>在8种机器人配置的实机部署实验中，研究发现现有范式难以通过延长执行时间来换取物理约束下的高成功率。<br><small>摘要依据：Our experiments on 8 robot configurations reveal substantial gaps: 1) robot demonstrations required for ICL are expensive to collect, and 2) it is implausible to trade longer execution for higher success rates with physical constraints.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 导航 · 人形机器人 · 推理</p>
+<p><strong>原文摘要节选：</strong>GPT-6-Astra demonstrates a level of competence in robotic manipulation and navigation that challenges the conventional paradigm of building specialized models for individual tasks and embodiments. In this report, we ask not only how capable GPT-6-Astra is, but what its capabilities imply for the field. First, we probe the limits of standalone GPT-6-Astra. We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance (Fig. 1). Future research may focus on improving 1) the generality of ICL 2) cost and…</p>
+<p><a href="https://arxiv.org/abs/2610.22471">论文原文</a> · <a href="https://arxiv.org/pdf/2610.22471">PDF</a> · <a href="https://huggingface.co/papers/2610.22471">讨论与热度</a> · <a href="https://github.com/OpenSenseNova/SenseNova-RoboRSI">代码</a></p><hr>
+<h2>4. HiSTEVE 1.0: Harnessing Human-Interface VLA Agents for Open-World Games</h2>
+<p><strong>机器人 / 强化学习</strong> · 发表 2026-10-22 · 综合分 5.27</p>
+<p>Zotero 摘要相关性：0.420（相似度分数，不是概率）。</p>
+<p>HF 点赞 55 · 讨论 4</p>
+<p>较上次观测（1.0 天前）：点赞 +17 · 讨论 +1。</p>
+<p><strong>规则标签：</strong>强化学习 · 模仿学习 · 视觉语言动作</p>
+<p><strong>中文概述：</strong>针对开放世界游戏（如Minecraft）中长程自主性与原生界面控制难以兼顾的问题，本文提出了HiSTEVE分层视觉语言动作（VLA）代理。该方法通过引入具备结构化记忆和VLM规划器的代理框架，配合策略耦合的任务完成状态检测器，实现了子任务的有效编排。在控制层，利用单一VLA结合定制的归一化分支与鼠标动作嵌入，直接处理视觉输入并执行键盘鼠标操作。实验结果显示，该代理在多项基准测试中表现出色，并具备完成如从头制作铁镐等长程任务的能力。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>HiSTEVE通过分层架构结合了长程规划与原生视觉运动控制，解决了现有代理在自主性与原生界面交互上的局限性。<br><small>摘要依据：To bridge this gap, we propose HiSTEVE, a hierarchical VLA agent with a capability-aware agent harness.</small></li>
+<li>通过引入特定架构优化（RMSNorm分支与分离的鼠标动作嵌入）及多阶段训练，提升了代理在复杂界面下的交互可靠性。<br><small>摘要依据：To mitigate interference between heterogeneous GUI and non-GUI interactions, we introduce regime-specific RMSNorm branches and separate mouse-movement token embeddings.</small></li>
+<li>HiSTEVE在MineStudio Bench和OpenHA基准测试中达到了顶尖的原子任务性能，并能执行长程游戏任务。<br><small>摘要依据：HiSTEVE achieves state-of-the-art atomic-task performance, scoring 85.0% on MineStudio Bench and a 37.4% average success rate on OpenHA, while also completing long-horizon tasks such as crafting an iron pickaxe from scratch like human players.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>视觉语言动作 · 模仿学习 · 强化学习</p>
+<p><strong>原文摘要节选：</strong>Building virtual embodied agents that operate in open-ended games like human players is a long-standing goal requiring both long-horizon autonomy and reliable native-interface control. As a procedurally generated open world, Minecraft provides a natural testbed for studying the integration of these capabilities. Existing agents typically provide either native visuomotor control without long-horizon autonomy or high-level planning executed through environment APIs or predefined skills. To bridge this gap, we propose HiSTEVE, a hierarchical VLA agent with a capability-aware agent harness. At the orchestration level, we equip the harness with structured memory for tracking progress and a VLM planner for selecting subtasks within the VLA&#x27;s capabilities. To reliably determine subtask…</p>
+<p><a href="https://arxiv.org/abs/2610.31162">论文原文</a> · <a href="https://arxiv.org/pdf/2610.31162">PDF</a> · <a href="https://huggingface.co/papers/2610.31162">讨论与热度</a></p><hr>
+<h2>5. FLORA: An Open Model Suite for Scaling Robotics Data Engines</h2>
+<p><strong>机器人</strong> · 发表 2026-10-22 · 综合分 4.99</p>
+<p>Zotero 摘要相关性：0.440（相似度分数，不是概率）。</p>
+<p>HF 点赞 2 · 讨论 2 · 本次 HF 热榜第 95 位 · 仓库累计 Star 32（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +2 · 讨论 +1 · Star +16。</p>
+<p><strong>规则标签：</strong>大模型后训练</p>
+<p><strong>中文概述：</strong>本文介绍了Flora，一套用于机器人基础模型生命周期的数据引擎。该系统旨在提供结果奖励标注、过程奖励标注及带时间戳的字幕生成功能，以支持机器人数据的筛选、平衡及强化学习后的训练。作者声称，Flora在多个字幕及奖励基准测试中达到行业领先水平，且在成本效益和规模化处理能力方面表现优异，旨在通过开源助力研究人员扩展机器人数据集。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>Flora在多个关键基准测试中表现出色，并在成本效益上显著优于基于API的模型。<br><small>摘要依据：Flora achieves SOTA scores on the captioning benchmark WGO-Bench and reward benchmarks RoboReward and Robometer. On internal benchmarks it is competitive with GPT-6 Astra while beating other frontier models. The model is substantially cheaper than API-based alternatives, roughly 125 times cheaper than GPT-6 Astra.</small></li>
+<li>Flora具备工业级的大规模数据处理能力，支持高强度的自动化标注任务。<br><small>摘要依据：Florais battle tested at scale, labeling 200,000 hours of data per day across 512 GB300s.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>大模型后训练</p>
+<p><strong>原文摘要节选：</strong>The life-cycle of robotics foundation models crucially depends on data labels. Outcome reward labels are needed for monitoring real-world deployments. Process reward labels are needed during RL post-training. Timestamped captions are needed for filtering and balancing pretraining data. We present Flora, an industrial-quality data engine used for training GR00T models, that simultaneously covers these capabilities. Flora achieves SOTA scores on the captioning benchmark WGO-Bench and reward benchmarks RoboReward and Robometer. On internal benchmarks it is competitive with GPT-6 Astra while beating other frontier models. The model is substantially cheaper than API-based alternatives, roughly 125 times cheaper than GPT-6 Astra. Florais battle tested at scale, labeling 200,000 hours of data…</p>
+<p><a href="https://arxiv.org/abs/2610.31779">论文原文</a> · <a href="https://arxiv.org/pdf/2610.31779">PDF</a> · <a href="https://huggingface.co/papers/2610.31779">讨论与热度</a> · <a href="https://github.com/NVIDIA/Flora">代码</a></p><hr>
+<h2>6. Ropedia W0: Scaling Loco-Manipulation World Models across Embodiments with Human Experience</h2>
+<p><strong>机器人</strong> · 发表 2026-10-19 · 综合分 4.91</p>
+<p>Zotero 摘要相关性：0.428（相似度分数，不是概率）。</p>
+<p>HF 点赞 151 · 讨论 2 · 本次 HF 热榜第 90 位 · 仓库累计 Star 120（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +0 · 讨论 +0 · Star +14。</p>
+<p><strong>规则标签：</strong>人形机器人 · 足式运动 · 机器人操作 · 世界模型 · 大模型后训练</p>
+<p><strong>中文概述：</strong>针对不同具身智能体在运动与操作联合建模中面临的动作空间异构与多模态监管不足问题，作者提出了Ropedia W0世界基础模型。该模型通过整合1万小时的人类第一人称视角数据与3千小时机器人数据（Xp-Data），采用统一运动学表征实现了跨具身建模。实验表明，该模型在五个跨具身基准测试及人类视频预测中表现出优异性能，支持实时长程推演与多种具身决策任务。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出Ropedia W0，作为首个覆盖人类及多种机器人具身的第一人称视角运动与操作世界基础模型，利用统一的运动学表征解决动作空间异构挑战。<br><small>摘要依据：We present Ropedia W0, the first egocentric loco-manipulation world foundation model spanning humans and robots with diverse embodiments.</small></li>
+<li>构建了包含1万小时人类数据与3千小时机器人数据的Xp-Data数据集，验证了扩大人类预训练数据规模有助于提升人类与机器人任务的评估表现。<br><small>摘要依据：Scaling human pre-training data improves performance on both human and robot evaluations.</small></li>
+<li>模型经蒸馏后具备实时长程推演能力，并在五个跨具身基准测试及Held-out人类视频预测中实现了SOTA性能。<br><small>摘要依据：Evaluations demonstrate state-of-the-art performance across five cross-embodiment benchmarks (DreamDojo, Ψ_0, ω-HOME, Xp-Teleop, and AgiBot) and on held-out human egocentric video, from zero-shot inference to few-shot and full-data post-training.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>世界模型 · 机器人操作 · 足式运动</p>
+<p><strong>原文摘要节选：</strong>World models enable embodied agents to anticipate action consequences, yet jointly modeling locomotion and manipulation across diverse embodiments remains challenging due to heterogeneous action spaces and limited multimodal supervision. We present Ropedia W0, the first egocentric loco-manipulation world foundation model spanning humans and robots with diverse embodiments. We curate Xp-Data, comprising 10k hours of egocentric human data and 3k hours of robot data with unified multimodal annotations and systematic quality control. A unified kinematic representation encodes locomotion through camera poses and manipulation through projected skeletons, with robot skeletons combining embodiment-specific forward kinematics with extensive manual keypoint annotation and correction. We also…</p>
+<p><a href="https://arxiv.org/abs/2610.26855">论文原文</a> · <a href="https://arxiv.org/pdf/2610.26855">PDF</a> · <a href="https://huggingface.co/papers/2610.26855">讨论与热度</a> · <a href="https://github.com/Ropedia/ropedia-w0">代码</a></p><hr>
+<h2>7. FocusVLA: Future-Intent Guided Dynamic View Routing for Vision-Language-Action Models</h2>
+<p><strong>机器人</strong> · 发表 2026-10-22 · 综合分 4.91</p>
+<p>Zotero 摘要相关性：0.392（相似度分数，不是概率）。</p>
+<p>HF 点赞 12 · 讨论 2</p>
+<p>较上次观测（1.0 天前）：点赞 +11 · 讨论 +1。</p>
+<p><strong>规则标签：</strong>机器人操作 · 视觉语言动作</p>
+<p><strong>中文概述：</strong>针对现有视觉语言动作（VLA）模型在处理多视角输入时难以动态调整视角依赖的问题，本文提出了FocusVLA框架。该方法通过历史动作预测未来交互意图，从而引导动作生成过程中的动态视角路由。作者声称，通过跨任务阶段自适应协调全局与局部观测，该方法在RoboTwin 2.0基准测试及真实世界评估中均显著提升了机器人的操作成功率，且具有良好的通用兼容性。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出了一种基于未来交互意图引导的动态视角路由框架FocusVLA，旨在解决现有VLA模型在机器人操作中对多视角信息利用不足的问题。<br><small>摘要依据：FocusVLA predicts future interaction intent from historical actions and uses it to guide dynamic view routing during action generation.</small></li>
+<li>实验结果显示，FocusVLA在RoboTwin 2.0模拟基准和真实世界任务中均表现出显著的成功率提升。<br><small>摘要依据：On RoboTwin 2.0, FocusVLA improves the average success rate over the strongest baseline π_{0.5} by 10.10 pp. In real-world evaluation, FocusVLA improves the success rate from 71.7\% to 85.0\%, achieving a 13.3\% gain over π_{0.5}.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 视觉语言动作</p>
+<p><strong>原文摘要节选：</strong>Vision-language-action (VLA) models have become an important paradigm for robotic manipulation by unifying visual perception, language understanding, and action generation. Since reliable manipulation requires sufficient observation of objects, end-effectors, and their spatial relationships, multi-view inputs are widely used to provide complementary spatial information. However, our experiments show that existing VLA models do not fully exploit such multi-view complementarity. The policy tends to persistently rely on the wrist view, lacking the ability to dynamically adjust global-local view dependency across manipulation stages, which limits stage adaptability and robustness. To address this issue, we propose FocusVLA, a stage-aware multi-view routing framework. FocusVLA predicts future…</p>
+<p><a href="https://arxiv.org/abs/2610.31423">论文原文</a> · <a href="https://arxiv.org/pdf/2610.31423">PDF</a> · <a href="https://huggingface.co/papers/2610.31423">讨论与热度</a></p><hr>
+<h2>8. Trajectory2Gym: Decision-Grounded Compositional Interaction Synthesis for Tool-Use Agents</h2>
+<p><strong>通用 AI</strong> · 发表 2026-10-24 · 综合分 4.73</p>
+<p>Zotero 摘要相关性：0.390（相似度分数，不是概率）。</p>
+<p>HF 点赞 336 · 讨论 2 · 仓库累计 Star 5（仓库可能包含多篇论文）</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>中文概述：</strong>针对工具使用智能体训练中成功轨迹往往缺乏决策依据及多步依赖的问题，本文提出了Trajectory2Gym框架。该方法通过构建可执行的交互序列，重点关注未被支持的组合结构，并仅从基于可见历史的决策中提取监督信号。通过结构支持选择和父级归一化微调，将轨迹生成重构为可学习交互经验的构建过程。实验表明，该方法显著提升了Qwen3在多个工具使用基准测试中的性能。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>Trajectory2Gym通过构建围绕组合结构的交互并从中提取有根据的决策，提升了工具使用智能体的监督质量。<br><small>摘要依据：We introduce Trajectory2Gym, which constructs executable interactions around under-supported compositional structures and derives supervision only from grounded decisions in their realized executions.</small></li>
+<li>在五个Qwen3模型尺度上的实验显示，该方法在Tau1、Tau2和BFCL基准测试中实现了显著的性能提升。<br><small>摘要依据：Across five Qwen3 scales, Trajectory2Gym improves Tau1, Tau2, and BFCL at every tested scale, increasing the equal-weight three-benchmark mean by 16.9-29.8 percentage points.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>
+<p><strong>原文摘要节选：</strong>Successful tool-use trajectories are not necessarily useful supervision. Even successful interactions may underrepresent multi-step dependencies or contain actions that are unjustified by the information visible to the agent at decision time. We identify two coupled requirements for effective trajectory supervision: compositional coverage, so that important observation-action dependencies are represented, and decision grounding, so that each supervised action is supported by the learner-visible interaction history. We introduce Trajectory2Gym, which constructs executable interactions around under-supported compositional structures and derives supervision only from grounded decisions in their realized executions. Structural-support selection allocates the resulting experience, while…</p>
+<p><a href="https://arxiv.org/abs/2610.33568">论文原文</a> · <a href="https://arxiv.org/pdf/2610.33568">PDF</a> · <a href="https://huggingface.co/papers/2610.33568">讨论与热度</a> · <a href="https://github.com/yihaohu0118/Trajectory2Gym">代码</a></p><hr>
+<h2>9. Ψ-0.6: Adaptive Streams of Thought in a Unified Vision-Language World Model</h2>
+<p><strong>强化学习</strong> · 发表 2026-10-23 · 综合分 4.58</p>
+<p>Zotero 摘要相关性：0.375（相似度分数，不是概率）。</p>
+<p>HF 点赞 5 · 讨论 1</p>
+<p>较上次观测（1.0 天前）：点赞 +5 · 讨论 +1。</p>
+<p><strong>规则标签：</strong>强化学习 · 世界模型 · 推理</p>
+<p><strong>中文概述：</strong>针对AI模型在感知、语言与推理能力上的割裂问题，本文提出了统一的视觉语言世界模型Ψ-0.6。该模型引入“思维流”（streams of thought）机制，通过共享标记接口整合视觉、文本、几何与运动表示。作者声称，该模型在多视角空间推理任务中表现出色，支持反事实模拟，并利用任务反馈的强化学习优化推理过程中的中间表示选择，从而提升了视觉问答的准确性与跨任务泛化能力。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>Ψ-0.6 实现了感知、语言、几何与模拟的自适应组合，通过统一的“思维流”机制在共享推理过程中交替处理多模态信息。<br><small>摘要依据：We introduce Ψ-0.6, a unified vision-language world model that adaptively composes perception, language, geometry, and simulation within a shared reasoning process we call streams of thought.</small></li>
+<li>该模型支持反事实场景模拟，通过生成并解释想象中的场景来判断特定动作对物理环境的影响。<br><small>摘要依据：It also supports counterfactual simulation: generating and interpreting imagined scenes to determine, for example, whether moving an object would obstruct a pathway.</small></li>
+<li>通过引入强化学习进行任务反馈训练，模型能够优化中间表示的选择与生成，实现视觉问答准确性的提升。<br><small>摘要依据：Reinforcement learning from task feedback jointly optimizes the selection, generation, and use of intermediate representations, improving visual question-answering accuracy with gains that transfer to unseen benchmarks.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>世界模型 · 推理</p>
+<p><strong>原文摘要节选：</strong>Humans reason about the physical world by flexibly combining different forms of inference as a problem unfolds. Achieving this flexibility is a major open challenge in AI: capabilities often remain separated across specialized models, limiting how they can be composed and jointly adapted to a task. We introduce Ψ-0.6, a unified vision-language world model that adaptively composes perception, language, geometry, and simulation within a shared reasoning process we call streams of thought. These streams interleave images, text, and explicit representations of geometry and motion, all of which the model can generate and interpret through a shared token interface. Ψ-0.6 surpasses leading open-weight models zero-shot on multi-view spatial reasoning, with further gains from reasoning through…</p>
+<p><a href="https://arxiv.org/abs/2610.32177">论文原文</a> · <a href="https://arxiv.org/pdf/2610.32177">PDF</a> · <a href="https://huggingface.co/papers/2610.32177">讨论与热度</a> · <a href="https://github.com/neuroailab/psi-0.6">代码</a></p><hr>
+<h2>10. RoboJudge: Multimodal Language Models as Judges for Embodied Video Generation</h2>
+<p><strong>机器人 / 强化学习</strong> · 发表 2026-10-20 · 综合分 4.27</p>
+<p>Zotero 摘要相关性：0.371（相似度分数，不是概率）。</p>
+<p>HF 点赞 5 · 讨论 2 · 仓库累计 Star 2（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +2 · 讨论 +1 · Star +0。</p>
+<p><strong>规则标签：</strong>强化学习 · 机器人操作 · 世界模型 · 推理</p>
+<p><strong>中文概述：</strong>针对具身智能视频生成模型评估缺失的问题，作者提出了RoboJudge-Bench基准，用于评估多模态大模型（MLLM）在具身视频物理依从性和指令对齐方面的评价能力。实验发现通用MLLM与人类评价存在偏差，为此作者构建了RoboJudge-Train数据集，通过监督微调与强化学习训练出RoboJudge-9B模型。结果显示，RoboJudge-9B在基准测试中展现出与人类评估更高的一致性，并能作为下游评估工具衡量生成模型的性能。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>构建了包含800段人类标注视频的RoboJudge-Bench，用于评估多模态模型作为具身视频评估者的表现。<br><small>摘要依据：To address this gap, we introduce RoboJudge-Bench, a benchmark for evaluating MLLMs as judges of embodied video generation.</small></li>
+<li>训练出的RoboJudge-9B模型在物理依从性和指令对齐评估上达到了与人类评价最高的Pearson相关系数。<br><small>摘要依据：Among the model judges evaluated on RoboJudge-Bench, RoboJudge-9B achieves the highest overall agreement, reaching a Pearson correlation of 0.719 with a statistically significant 0.089 gain over Gemini-3.7-Flash, the best-performing proprietary baseline in our evaluation.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 世界模型 · 推理</p>
+<p><strong>原文摘要节选：</strong>Video generation models are promising foundations for embodied world models, but only if their generated rollouts are physically valid and faithful to task instructions. Multimodal large language models (MLLMs) are increasingly used to judge these properties, yet their agreement with human judgments on embodied videos has not been systematically evaluated. To address this gap, we introduce RoboJudge-Bench, a benchmark for evaluating MLLMs as judges of embodied video generation. The benchmark measures two fundamental dimensions, Physical Adherence and Instruction Alignment, across 800 human-annotated videos from 8 source corpora and 10 video generators, spanning grippers, human hands, and dexterous hands. Experiments reveal uneven alignment between existing judges and human ratings:…</p>
+<p><a href="https://arxiv.org/abs/2610.27782">论文原文</a> · <a href="https://arxiv.org/pdf/2610.27782">PDF</a> · <a href="https://huggingface.co/papers/2610.27782">讨论与热度</a> · <a href="https://github.com/Sphere-AI-Lab/RoboJudge">代码</a></p><hr></body></html>

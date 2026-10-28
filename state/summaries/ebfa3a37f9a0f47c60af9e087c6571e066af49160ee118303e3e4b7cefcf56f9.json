@@ -1,0 +1,22 @@
+{
+  "overview": "针对足式移动操作任务在复杂环境下的泛化与错误恢复问题，本文提出了ThinkLocoManip系统。该系统采用交替式推理与执行范式，将移动能力整合进智能体推理工具集，并通过关键帧思考机制实现长周期任务的上下文保持与错误修复。作者声称，该方法在复杂长周期任务中的成功率显著高于现有的直接动作生成及规划-执行范式，实验验证了其推理、工具编排及技能协调的有效性。",
+  "highlights": [
+    {
+      "text": "提出了交替式的推理与执行范式，使智能体能持续评估当前状态并动态调整策略，提升了任务执行的灵活性。",
+      "evidence": "ThinkLocoManip adopts an interleaved reasoning-and-acting paradigm, allowing the agent to continuously reason about its current state, execute actions, observe their outcomes, and adapt its strategy accordingly."
+    },
+    {
+      "text": "引入了关键帧思考机制，通过保存关键执行上下文以支持高效的错误恢复，从而应对长周期任务中的失败。",
+      "evidence": "To tackle task failure during long-horizon interactions, we develop keyframe thinking mechanism to preserve critical execution context and support efficient error recovery."
+    },
+    {
+      "text": "实测表现优于现有方法，在长周期足式移动操作任务中取得了77%的成功率，约为对比基准的两倍以上。",
+      "evidence": "Notably, ThinkLocoManip achieves a success rate of 77%, more than twice that of the strongest plan-then-act baseline (37.1%)."
+    }
+  ],
+  "tags": [
+    "足式运动",
+    "机器人操作",
+    "导航"
+  ]
+}
