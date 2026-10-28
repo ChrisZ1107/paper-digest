@@ -3981,6 +3981,137 @@
           "abstract_zh": "世界模型使具身智能体能够预测动作后果，然而由于动作空间异构以及多模态监督有限，跨不同具身形式联合建模移动和操作仍然具有挑战性。我们提出了 Ropedia W0，这是首个跨越人类和多种具身机器人形式的以自我为中心的移动-操作世界基础模型。我们构建了 Xp-Data，包含 1 万小时的以自我为中心的人类数据和 3 千小时的机器人数据，并配有统一的多模态标注和系统的质量控制。一种统一的运动学表示通过相机位姿编码移动，通过投影骨架编码操作，其中机器人骨架结合了特定于具身的运动学正解以及大量人工关键点标注和校正。我们还推出了 Xp-Teleop，这是一个基于高质量灵巧人形遥操作数据的长跨度移动-操作基准测试。评估表明，该模型在五个跨具身基准测试（DreamDojo, Ψ0, ω-HOME, Xp-Teleop 和 AgiBot）以及未见过的人类以自我为中心视频上均展现了最先进的性能，涵盖了从零样本推理到少样本及全数据后训练的多种场景。扩展人类预训练数据提升了在人类和机器人评估中的表现。经过蒸馏后，我们的模型支持实时的分钟级预测回放，实现了实时虚拟现实（VR）交互。在策略评估、基于模型的规划和世界-动作建模方面的应用进一步证明了该模型在具身决策中的实用性。"
         }
       ]
+    },
+    "OcoAZYFnh3g": {
+      "video_id": "OcoAZYFnh3g",
+      "video_title": "Action Learning for Scientific Simulations (Oct 2026)",
+      "published": "2026-10-28",
+      "video_url": "https://www.youtube.com/watch?v=OcoAZYFnh3g",
+      "papers": [
+        {
+          "id": "2610.31585",
+          "title": "Action Learning for Scientific Simulations (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.31585"
+        }
+      ]
+    },
+    "FppkOPIiWbU": {
+      "video_id": "FppkOPIiWbU",
+      "papers": []
+    },
+    "sKNlLSdBreU": {
+      "video_id": "sKNlLSdBreU",
+      "video_title": "Continual Learning Explained: Can AI Models Actually Keep Learning?",
+      "published": "2026-10-28",
+      "video_url": "https://www.youtube.com/watch?v=sKNlLSdBreU",
+      "papers": [
+        {
+          "id": "2603.15381",
+          "title": "2603.15381",
+          "url": "https://arxiv.org/abs/2603.15381"
+        },
+        {
+          "id": "1612.00796",
+          "title": "1612.00796",
+          "url": "https://arxiv.org/abs/1612.00796"
+        },
+        {
+          "id": "2306.13812",
+          "title": "2306.13812",
+          "url": "https://arxiv.org/abs/2306.13812"
+        },
+        {
+          "id": "2501.00663",
+          "title": "2501.00663",
+          "url": "https://arxiv.org/abs/2501.00663"
+        },
+        {
+          "id": "2512.23675",
+          "title": "2512.23675",
+          "url": "https://arxiv.org/abs/2512.23675"
+        },
+        {
+          "id": "2602.21204",
+          "title": "2602.21204",
+          "url": "https://arxiv.org/abs/2602.21204"
+        },
+        {
+          "id": "2512.24695",
+          "title": "2512.24695",
+          "url": "https://arxiv.org/abs/2512.24695"
+        },
+        {
+          "id": "2510.15103",
+          "title": "2510.15103",
+          "url": "https://arxiv.org/abs/2510.15103"
+        },
+        {
+          "id": "2509.04259",
+          "title": "2509.04259",
+          "url": "https://arxiv.org/abs/2509.04259"
+        },
+        {
+          "id": "2609.06986",
+          "title": "2609.06986",
+          "url": "https://arxiv.org/abs/2609.06986"
+        },
+        {
+          "id": "2511.14759",
+          "title": "2511.14759",
+          "url": "https://arxiv.org/abs/2511.14759"
+        },
+        {
+          "id": "2609.26457",
+          "title": "2609.26457",
+          "url": "https://arxiv.org/abs/2609.26457"
+        },
+        {
+          "id": "2610.13912",
+          "title": "2610.13912",
+          "url": "https://arxiv.org/abs/2610.13912"
+        },
+        {
+          "id": "2610.22192",
+          "title": "2610.22192",
+          "url": "https://arxiv.org/abs/2610.22192"
+        },
+        {
+          "id": "2608.11095",
+          "title": "2608.11095",
+          "url": "https://arxiv.org/abs/2608.11095"
+        },
+        {
+          "id": "2610.20563",
+          "title": "2610.20563",
+          "url": "https://arxiv.org/abs/2610.20563"
+        },
+        {
+          "id": "2606.05661",
+          "title": "2606.05661",
+          "url": "https://arxiv.org/abs/2606.05661"
+        },
+        {
+          "id": "2609.11873",
+          "title": "2609.11873",
+          "url": "https://arxiv.org/abs/2609.11873"
+        }
+      ]
+    },
+    "p3ADvgFmrp0": {
+      "video_id": "p3ADvgFmrp0",
+      "papers": []
+    },
+    "9Ygfn5gNfN4": {
+      "video_id": "9Ygfn5gNfN4",
+      "papers": []
+    },
+    "SInrds7967M": {
+      "video_id": "SInrds7967M",
+      "papers": []
+    },
+    "V53WQzxUvLA": {
+      "video_id": "V53WQzxUvLA",
+      "papers": []
     }
   }
 }
