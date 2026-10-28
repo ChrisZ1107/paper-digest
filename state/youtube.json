@@ -3991,7 +3991,8 @@
         {
           "id": "2610.31585",
           "title": "Action Learning for Scientific Simulations (Oct 2026)",
-          "url": "https://arxiv.org/abs/2610.31585"
+          "url": "https://arxiv.org/abs/2610.31585",
+          "abstract": "Understanding and controlling how systems evolve is central to science and engineering, where many problems require reasoning about complete trajectories. Existing approaches typically learn local dynamics or generate trajectories, but objectives constructed from individual transitions can miss dependencies across time, while generative models do not necessarily provide a tractable objective for evaluating and optimizing arbitrary paths. We study $\\textit{action learning}$, the problem of recovering a stochastic action from trajectory observations, yielding a common objective for reasoning about dynamical systems. We introduce $\\textbf{LEAP}$ ($\\textbf{L}$earned $\\textbf{E}$nergy on $\\textbf{A}$ction $\\textbf{P}$aths), which anchors the unknown action to a tractable reference process and learns the remaining correction by comparing observed trajectories with reference trajectories. This construction yields a differentiable objective on path space that can capture both local dynamical structure and nonadditive dependencies across time. Once learned, the same action can be flexibly reused for path ranking and inference, mechanism steering, constrained optimization and sampling. Across stochastic physical systems, many-body orbital dynamics and molecular simulations, LEAP recovers underlying dynamics, captures dependencies across time and enables transfer across inference objectives and physical conditions. We show that $\\textit{action learning}$ is a promising framework for turning trajectory observations into reusable objectives for scientific inference and control."
         }
       ]
     },
@@ -4008,12 +4009,16 @@
         {
           "id": "2603.15381",
           "title": "2603.15381",
-          "url": "https://arxiv.org/abs/2603.15381"
+          "url": "https://arxiv.org/abs/2603.15381",
+          "abstract": "We critically examine the limitations of current AI models in achieving autonomous learning and propose a learning architecture inspired by human and animal cognition. The proposed framework integrates learning from observation (System A) and learning from active behavior (System B) while flexibly switching between these learning modes as a function of internally generated meta-control signals (System M). We discuss how this could be built by taking inspiration on how organisms adapt to real-world, dynamic environments across evolutionary and developmental timescales.",
+          "abstract_zh": "我们批判性地审视了当前人工智能模型在实现自主学习方面的局限性，并提出了一种受人类和动物认知启发的学习架构。该框架整合了从观察中学习（系统 A）和从主动行为中学习（系统 B），并根据内部生成的元控制信号（系统 M）灵活切换这些学习模式。我们探讨了如何借鉴生物体在进化和发展时间尺度上适应现实动态环境的方式，来构建这一架构。"
         },
         {
           "id": "1612.00796",
           "title": "1612.00796",
-          "url": "https://arxiv.org/abs/1612.00796"
+          "url": "https://arxiv.org/abs/1612.00796",
+          "abstract": "The ability to learn tasks in a sequential fashion is crucial to the development of artificial intelligence. Neural networks are not, in general, capable of this and it has been widely thought that catastrophic forgetting is an inevitable feature of connectionist models. We show that it is possible to overcome this limitation and train networks that can maintain expertise on tasks which they have not experienced for a long time. Our approach remembers old tasks by selectively slowing down learning on the weights important for those tasks. We demonstrate our approach is scalable and effective by solving a set of classification tasks based on the MNIST hand written digit dataset and by learning several Atari 2600 games sequentially.",
+          "abstract_zh": "以连续方式学习任务的能力对于人工智能的发展至关重要。神经网络通常不具备这种能力，并且人们普遍认为灾难性遗忘是联结主义模型不可避免的特征。我们证明了克服这一局限性是可能的，并能够训练出在长时间未接触过任务的情况下仍能保持其专业水平的网络。我们的方法通过选择性地减缓对那些任务至关重要的权重的学习速度来记忆旧任务。我们通过解决基于 MNIST 手写数字数据集的一系列分类任务，以及连续学习多个 Atari 2600 游戏，证明了该方法具有可扩展性和有效性。"
         },
         {
           "id": "2306.13812",
@@ -4039,7 +4044,9 @@
         {
           "id": "2602.21204",
           "title": "2602.21204",
-          "url": "https://arxiv.org/abs/2602.21204"
+          "url": "https://arxiv.org/abs/2602.21204",
+          "abstract": "Test-time training (TTT) with KV binding as sequence modeling layer is commonly interpreted as a form of online meta-learning that memorizes a key-value mapping at test time. However, our analysis reveals multiple phenomena that contradict this memorization-based interpretation. Motivated by these findings, we revisit the formulation of TTT and show that a broad class of TTT architectures can be expressed as a form of learned linear attention operator. Beyond explaining previously puzzling model behaviors, this perspective yields multiple practical benefits: it enables principled architectural simplifications, admits fully parallel formulations that preserve performance while improving efficiency, and provides a systematic reduction of diverse TTT variants to a standard linear attention form. Overall, our results reframe TTT not as test-time memorization, but as learned linear attention with enhanced representational capacity. Project page: https://research.nvidia.com/labs/sil/projects/tttla/.",
+          "abstract_zh": "以KV绑定作为序列建模层的测试时训练（Test-time training, TTT）通常被解释为一种在线元学习形式，即在测试时记忆键值映射。然而，我们的分析揭示了多种与这种基于记忆的解释相矛盾的现象。受这些发现的启发，我们重新审视了TTT的表述，并证明了一大类TTT架构可以表示为一种学习到的线性注意力算子。除了能够解释此前令人困惑的模型行为外，这一视角还带来了多项实际益处：它实现了原则性的架构简化，允许在保持性能的同时提高效率的全并行表述，并提供了一种将多种TTT变体系统地归约为标准线性注意力形式的方法。总的来说，我们的研究结果将TTT重新定义为一种具有更强表征能力的学习型线性注意力，而非测试时记忆。项目页面：https://research.nvidia.com/labs/sil/projects/tttla/。"
         },
         {
           "id": "2512.24695",
