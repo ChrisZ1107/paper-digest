@@ -1,0 +1,17 @@
+{
+  "overview": "针对大语言模型长链式思维推理中无评论员方法存在的局限，研究者提出了S3AC方法。该方法通过优化的评论员训练方案提供词元级优势评估，并引入难度感知提示采样（DAPS）策略，利用提示级基线选择提示，从而在减少采样浪费的同时提升模型性能。实验表明，该方法在多种规模的模型上表现优于GRPO变体，并在大规模模型上实现了稳定的单采样训练。",
+  "highlights": [
+    {
+      "text": "提出S3AC方法，通过引入难度感知提示采样机制，有效利用评论员提供的难度估计，在不依赖离线初始化的情况下显著减少了采样过程的资源浪费。",
+      "evidence": "Using the prompt-level baseline to estimate difficulty, we propose Difficulty-Aware Prompt Sampling (DAPS). DAPS combines this estimate with outcome history to select prompts before generation, reducing rollout waste without offline difficulty initialization."
+    },
+    {
+      "text": "S3AC方法在多规模模型上均表现出性能优势，且在35B参数规模下实现了稳定的单采样训练，克服了传统无评论员基线方法在后期训练中的性能衰减问题。",
+      "evidence": "S3AC improves group-rollout performance across dense and mixture-of-experts models from 1.5B to 397B parameters, outperforming a modern GRPO variant (GRPO-X). At 35B, it sustains single-rollout training while tested critic-free baselines deteriorate after initial gains."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "推理"
+  ]
+}

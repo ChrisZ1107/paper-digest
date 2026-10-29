@@ -1,0 +1,514 @@
+{
+  "date": "2026-10-29",
+  "timestamp": "2026-10-29T09:03:38.372193+08:00",
+  "title": "2026-10-29 热门论文 Top 10｜机器人·强化学习·AI",
+  "slug": "2026-10-29",
+  "papers": [
+    {
+      "id": "2610.34356",
+      "title": "RynnVLA-Latent: Scaling Robotic Manipulation Foundation Models with 3D-Grounded Latent Actions",
+      "abstract": "Scaling vision-language-action (VLA) models is constrained by scarce action-labeled demonstrations and incompatible control spaces across robot embodiments. We present RynnVLA-Latent, a framework that turns heterogeneous interaction videos into scalable supervision for robot policy pretraining. At its core, RynnLAM learns continuous, 3D-grounded latent actions from visual transitions without requiring native robot controls. By combining residual future-feature prediction, camera-compensated 3D-flow supervision, and camera-motion decoupling, RynnLAM encourages representations that capture control-relevant motion rather than appearance changes alone. We apply RynnLAM to 30.1K hours of human, robot, and simulation videos, producing 745.52M latent-action descriptors. RynnVLA-Latent then learns to predict latent-action chunks from visual observations and language through flow matching, before adapting its pretrained backbone and action expert to embodiment-specific robot actions. The resulting 4B policy achieves 98.8% success on LIBERO, 84.7% on LIBERO-Plus without benchmark-specific adaptation, 51.9% average success across five VLABench tracks, and 88.6% average success on the RoboTwin 2.0 bimanual benchmark. It also achieves the highest observed success rates among the compared methods on six real-world manipulation tasks across dexterous-hand and mobile-gripper platforms. Together with representation ablations and data-scaling results, these findings demonstrate the potential of latent-action supervision for scaling robot policy learning beyond native action-labeled data.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-25",
+      "age_days": 4.044194122604167,
+      "upvotes": 29,
+      "comments": 3,
+      "stars": 11,
+      "repo": "https://github.com/alibaba-damo-academy/RynnVLA-Latent",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.46077,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 16,
+        "comments": 1,
+        "stars": 2
+      },
+      "score": 5.593,
+      "rule_tags": [
+        "机器人操作",
+        "视觉语言动作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对视觉语言动作模型在动作标注数据稀缺及异构机器人控制空间兼容性上的限制，本文提出了RynnVLA-Latent框架。该方法通过RynnLAM从交互视频中学习3D基础的潜在动作表示，并结合流匹配技术预测潜在动作块。作者声称，该模型利用大规模多源视频进行预训练并适配特定机器人后，在多个机器人操作基准测试及真实世界操作任务中展现了优异的成功率，证实了潜在动作监督在扩展策略学习方面的潜力。",
+        "highlights": [
+          {
+            "text": "提出RynnLAM方法，能够在无需原生机器人控制数据的情况下，从视觉转换中学习连续的、具有3D基础的潜在动作。",
+            "evidence": "At its core, RynnLAM learns continuous, 3D-grounded latent actions from visual transitions without requiring native robot controls."
+          },
+          {
+            "text": "RynnVLA-Latent在多个基准测试（如LIBERO和RoboTwin 2.0）及多种真实操作任务中表现出高成功率，优于对比方法。",
+            "evidence": "The resulting 4B policy achieves 98.8% success on LIBERO, 84.7% on LIBERO-Plus without benchmark-specific adaptation, 51.9% average success across five VLABench tracks, and 88.6% average success on the RoboTwin 2.0 bimanual benchmark."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "视觉语言动作"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.32965",
+      "title": "RynnUnify: Towards Unified Embodied Brain",
+      "abstract": "We introduce RynnUnify, a 16B unified embodied model that combines strong embodied understanding with long-horizon visual planning through interleaved video--language reasoning. With capabilities spanning spatial reasoning, physical prediction, and grounding, RynnUnify connects an understanding of the physical world with visual anticipation of how it evolves across successive subtasks. Building on these capabilities, we further develop an agentic extension through reinforcement learning to selectively use video predictions for reasoning about unobserved states and interaction outcomes. We also develop a world-action extension of the full RynnUnify model, translating its understanding and prediction capabilities into robot control. To evaluate these capabilities, we introduce Rynn-VP and Rynn-GEU for long-horizon visual planning and anticipatory reasoning. Experiments show that RynnUnify achieves the highest average embodied understanding score among the evaluated unified multimodal models and improves the Rynn-VP overall score by 9.75 points over Cosmos 3 Nano. Its agentic extension improves the Rynn-GEU average by 6.0 points over direct reasoning, while the world-action extension achieves 51.5\\% success on 20 selected composite RoboCasa365 tasks and 46.7\\% average success across three real-robot tasks. Together, these results establish RynnUnify as a shared foundation for embodied understanding, visual planning, and robot control, taking a step toward a unified embodied brain.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-10-23",
+      "age_days": 6.044194122604167,
+      "upvotes": 55,
+      "comments": 2,
+      "stars": 38,
+      "repo": "https://github.com/alibaba-damo-academy/RynnUnify",
+      "trending_rank": 85,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.46699,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 1,
+        "comments": 0,
+        "stars": 15
+      },
+      "score": 5.321,
+      "rule_tags": [
+        "强化学习",
+        "推理"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "RynnUnify是一款160亿参数的统一具身模型，旨在通过视频与语言推理实现长程视觉规划与具身理解。作者结合了强化学习代理扩展与世界-动作扩展，使模型能够进行空间推理、物理预测并直接输出机器人控制指令。实验表明，该模型在具身理解评分及长程视觉规划任务上表现优于对比基线，在RoboCasa365及真实机器人任务中展示了任务执行能力。",
+        "highlights": [
+          {
+            "text": "RynnUnify在多项基准测试中提升了长程视觉规划与具身推理性能，表现优于Cosmos 3 Nano。",
+            "evidence": "Experiments show that RynnUnify achieves the highest average embodied understanding score among the evaluated unified multimodal models and improves the Rynn-VP overall score by 9.75 points over Cosmos 3 Nano."
+          },
+          {
+            "text": "通过强化学习扩展，RynnUnify能够利用视频预测进行推理，提升了在未观测状态下的任务表现。",
+            "evidence": "Its agentic extension improves the Rynn-GEU average by 6.0 points over direct reasoning, while the world-action extension achieves 51.5\\% success on 20 selected composite RoboCasa365 tasks and 46.7\\% average success across three real-robot tasks."
+          }
+        ],
+        "tags": [
+          "世界模型",
+          "机器人操作",
+          "强化学习"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.22471",
+      "title": "Has GPT-6-Astra Achieved Embodied Intelligence?",
+      "abstract": "GPT-6-Astra demonstrates a level of competence in robotic manipulation and navigation that challenges the conventional paradigm of building specialized models for individual tasks and embodiments. In this report, we ask not only how capable GPT-6-Astra is, but what its capabilities imply for the field. First, we probe the limits of standalone GPT-6-Astra. We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance (Fig. 1). Future research may focus on improving 1) the generality of ICL 2) cost and execution time, 3) physical-state verification, 4) recovery from irreversible failures, and 5) long-horizon preservation of progress. Second, we study the agentic harness for embodied control. We identify that close-loop coordination between a high-level \"System 2\" reasoner (i.e., GPT-6-Astra) and a low-level \"System 1\" controller (e.g., π0.5) is costly but effective. Third, we examine GPT-6-Astra on real-world deployment. Our experiments on 8 robot configurations reveal substantial gaps: 1) robot demonstrations required for ICL are expensive to collect, and 2) it is implausible to trade longer execution for higher success rates with physical constraints. Fourth, we envision the next generation of embodied benchmarks. We develop a prototype that 1) derives tasks from real-world needs, 2) provides no in-domain demonstrations, and 3) judges agents on a world clock that keeps running while they deliberate. Taken together, our results suggest that GPT-6-Astra has largely crossed the threshold of embodied competence, but not yet that of practical embodied intelligence.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-15",
+      "age_days": 14.044194122604168,
+      "upvotes": 485,
+      "comments": 2,
+      "stars": 310,
+      "repo": "https://github.com/OpenSenseNova/SenseNova-RoboRSI",
+      "trending_rank": 71,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.47693,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 1,
+        "comments": 0,
+        "stars": 7
+      },
+      "score": 5.28,
+      "rule_tags": [
+        "人形机器人",
+        "机器人操作",
+        "导航"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文评估了GPT-6-Astra在机器人操作与导航任务中的表现。研究者通过12个基准测试探究了该模型在上下文学习下的能力极限，并分析了将其作为高层推理器与低层控制器结合的代理机制。实验发现，尽管该模型展现出较高的具身能力，但在真实物理部署中仍面临数据采集成本高、物理约束限制及长期执行效率等挑战。作者认为该模型尚未达到实用具身智能的标准。",
+        "highlights": [
+          {
+            "text": "GPT-6-Astra在跨越桌面操作、人形机器人、移动平台及灵巧手的12个代表性基准测试中，通过上下文学习实现了出色的性能。",
+            "evidence": "We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance"
+          },
+          {
+            "text": "研究指出高层“系统2”推理器与低层“系统1”控制器的闭环协调方案虽然有效，但伴随着较高的计算成本。",
+            "evidence": "We identify that close-loop coordination between a high-level \"System 2\" reasoner (i.e., GPT-6-Astra) and a low-level \"System 1\" controller (e.g., π0.5) is costly but effective."
+          },
+          {
+            "text": "在8种机器人配置的实机部署实验中，研究发现现有范式难以通过延长执行时间来换取物理约束下的高成功率。",
+            "evidence": "Our experiments on 8 robot configurations reveal substantial gaps: 1) robot demonstrations required for ICL are expensive to collect, and 2) it is implausible to trade longer execution for higher success rates with physical constraints."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "导航",
+          "人形机器人",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.35013",
+      "title": "Multiscale Policy Optimization for Long-Horizon LLM Agents",
+      "abstract": "Long-horizon LLM agents interact with their environments through complete assistant turns while generating each action token by token. We observe that critic values vary primarily across turns, motivating optimization anchored at turns with finer credit allocation among tokens. We propose Multiscale Policy Optimization (MPO), combining Multiscale Advantage Estimation (MAE) and turn-level importance sampling to align credit assignment and policy updates at the turn scale. Extensive experiments across search, tool-use, and automation tasks with 4B and 30B-A3B models demonstrate consistent gains over strong RL baselines.",
+      "topics": [
+        "通用 AI"
+      ],
+      "published": "2026-10-26",
+      "age_days": 3.0441941226041664,
+      "upvotes": 373,
+      "comments": 3,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.35195,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 373,
+        "comments": 3
+      },
+      "score": 5.247,
+      "rule_tags": [],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对长程大语言模型智能体在生成动作时面临的信用分配问题，本文提出了多尺度策略优化（MPO）方法。该方法结合了多尺度优势估计（MAE）和回合级重要性采样，旨在将信用分配与策略更新锚定在完整对话回合的尺度上。实验表明，该方法在搜索、工具使用及自动化任务中相比现有强化学习基线模型表现出性能提升。",
+        "highlights": [
+          {
+            "text": "提出多尺度策略优化（MPO）方法，通过回合级信用分配优化长程智能体。",
+            "evidence": "We propose Multiscale Policy Optimization (MPO), combining Multiscale Advantage Estimation (MAE) and turn-level importance sampling to align credit assignment and policy updates at the turn scale."
+          },
+          {
+            "text": "MPO在多种复杂任务中展现出优于现有强化学习基线的性能。",
+            "evidence": "Extensive experiments across search, tool-use, and automation tasks with 4B and 30B-A3B models demonstrate consistent gains over strong RL baselines."
+          }
+        ],
+        "tags": [
+          "大模型后训练",
+          "强化学习",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.35385",
+      "title": "EmbodiedLab: Benchmarking Embodied Agents That Act to Know",
+      "abstract": "Embodied agents are expected to accomplish real-world goals by deciding for themselves how and when to interact with their surroundings. For many such goals, changing the physical state of the world is the means rather than the end: the agent changes the state of a system through interaction, observes the feedback, and explores until it either achieves the goal itself (e.g., discovering physical laws) or learns what the goal requires; it acts to know. Manipulation benchmarks stop at acting to change, with the target state given; scientific discovery benchmarks evaluate knowing but replace physical experimentation with symbolic actions or numerical queries. We introduce EmbodiedLab, a benchmark in which a robot must act to know. Quantitative science experiments make this setting controllable: the parameters of the system are resampled for every instance, so the result cannot be known in advance, yet it can be scored exactly. Across 30 experiments in five disciplines on 14 apparatus platforms, the agent receives an objective and the apparatus, chooses its own procedure, and operates a physics-based simulated laboratory, reading the instruments through its cameras. Evaluation checks what the agent came to know, grounded in readings recorded during the episode, as well as the physical state the task requires; every experiment is verified to be solvable. We evaluate six frontier models in their developers' coding agents with native observation and control, with added perception and motion planning, and with manipulation skills distilled from the strongest agents. With native control, even the strongest agent succeeds less than half the time; for every agent, most failures arise in interacting with the apparatus, and manipulation skills help weaker agents more than perception and planning. The benchmark and its evaluation code are available at https://github.com/HexaFuture/EmbodiedLab.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-26",
+      "age_days": 3.0441941226041664,
+      "upvotes": 19,
+      "comments": 2,
+      "stars": 16,
+      "repo": "https://github.com/HexaFuture/EmbodiedLab",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.42464,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 5,
+        "comments": 0,
+        "stars": 4
+      },
+      "score": 5.167,
+      "rule_tags": [],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对具身智能体“为了解而行动”的能力，作者提出了EmbodiedLab基准测试。该基准通过在物理模拟实验室中进行受控的定量科学实验，要求智能体自主选择程序、通过交互改变系统状态并观测反馈以达成目标。实验涵盖五个学科的30个项目，旨在评估智能体在无法预知结果的情况下通过探索获取知识并操作物理装置的能力。研究发现，即使是前沿模型在原生控制下成功率也较低，且操作技能对提升模型表现至关重要。",
+        "highlights": [
+          {
+            "text": "EmbodiedLab基准通过科学实验的定量化，实现了对具身智能体自主探索与交互过程的可控评估。",
+            "evidence": "Quantitative science experiments make this setting controllable: the parameters of the system are resampled for every instance, so the result cannot be known in advance, yet it can be scored exactly."
+          },
+          {
+            "text": "在对前沿模型的评估中，即便表现最好的智能体原生成功率不足50%，且操作交互环节是主要的失败原因。",
+            "evidence": "With native control, even the strongest agent succeeds less than half the time; for every agent, most failures arise in interacting with the apparatus"
+          },
+          {
+            "text": "实验结果表明，相比于感知与规划能力的提升，具备专门的操作技能能为较弱的智能体带来更显著的性能改善。",
+            "evidence": "manipulation skills help weaker agents more than perception and planning."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "Sim-to-Real"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.37381",
+      "title": "PDRVLA: A Vision-Language-Action Model with Physical Dynamics Representations",
+      "abstract": "Vision--Language--Action (VLA) models generate robot actions from visual observations and language instructions, but their understanding of physical dynamics remains limited. Video world models can capture scene dynamics, yet generating future videos introduces high latency into the control loop. We introduce PDRVLA, whose lightweight Physical Dynamics Module extracts physical tokens from vision--language features to condition action generation without online video generation. The module learns through direct prediction of future RGB, depth, and optical-flow features, with auxiliary supervision through a frozen pretrained video world model. Training relies entirely on publicly available data, expanded through human-to-robot synthesis, subtask annotation, and embodied chain-of-thought (ECoT) annotation. Across four simulation benchmarks, PDRVLA achieves success rates of 99.3% on LIBERO, 89.9% on LIBERO-Plus, 93.6% on RoboTwin~2.0, and 81.5% on SimplerEnv. Ablations show improved future prediction with world-model supervision and evaluate how subtask conditioning, future object-pose supervision, and ECoT training affect action success.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-27",
+      "age_days": 2.0441941226041664,
+      "upvotes": 139,
+      "comments": 1,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face",
+        "arXiv"
+      ],
+      "date_label": "发表",
+      "relevance": 0.46621,
+      "growth": null,
+      "score": 5.162,
+      "rule_tags": [
+        "世界模型",
+        "视觉语言动作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对现有视觉语言动作（VLA）模型在物理动态理解上的局限性以及视频生成模型控制延迟高的问题，本研究提出了PDRVLA模型。该方法引入了一个轻量级物理动态模块，通过直接预测未来RGB、深度及光流特征来提取物理标记，从而在无需实时视频生成的情况下优化动作生成。作者声称，通过在多种仿真基准测试中的验证，该方法显著提升了机器人的任务成功率。",
+        "highlights": [
+          {
+            "text": "提出一种轻量级物理动态模块，在无需在线生成未来视频的前提下，通过提取物理标记引导动作生成，有效降低了控制延迟。",
+            "evidence": "We introduce PDRVLA, whose lightweight Physical Dynamics Module extracts physical tokens from vision--language features to condition action generation without online video generation."
+          },
+          {
+            "text": "PDRVLA在多个机器人仿真基准测试中表现出色，在LIBERO等任务中均达到了较高的成功率。",
+            "evidence": "Across four simulation benchmarks, PDRVLA achieves success rates of 99.3% on LIBERO, 89.9% on LIBERO-Plus, 93.6% on RoboTwin~2.0, and 81.5% on SimplerEnv."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "视觉语言动作"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.14018",
+      "title": "RoboHarness: A Simple Harness Outperforms VLA and World Action Models",
+      "abstract": "The rise of large language models (LLMs) has opened a path toward generalist embodied AI, raising the question of how LLMs can act in the physical world. One straightforward approach is training the model to generate actions: collect robot-action data and video demonstration, refine LLM architecture with an action head, and train a vision-language-action (VLA) model at scale. However, we argue that coding agents have the potential to realize generalist embodied manipulation. All they need is a simple yet effective robot harness. We present RoboHarness: a robotic harness that gives LLM agents a visual-geometric control panel so that they can directly understand and invoke embodied tasks. With RoboHarness, Qwen3.8-Flash-Next outperforms state-of-the-art VLA models on BEHAVIOR Challenge 2025 tasks. The implementation is open source.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-16",
+      "age_days": 13.044194122604168,
+      "upvotes": 20,
+      "comments": 2,
+      "stars": 272,
+      "repo": "https://github.com/BinceQu/RoboHarness",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.45006,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 12,
+        "comments": 1,
+        "stars": 3
+      },
+      "score": 5.159,
+      "rule_tags": [
+        "视觉语言动作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对通用具身智能中大语言模型（LLM）动作生成的问题，作者提出了RoboHarness。该方法通过为LLM代理构建一个视觉-几何控制面板，使其能够直接理解并调用具身任务，而非单纯依赖端到端的视觉语言动作（VLA）模型训练。作者声称，基于RoboHarness的Qwen3.8-Flash-Next模型在BEHAVIOR Challenge 2025任务中表现优于现有的先进VLA模型。",
+        "highlights": [
+          {
+            "text": "RoboHarness提供了一种视觉-几何控制面板，使LLM代理能够直接理解并执行具身控制任务。",
+            "evidence": "We present RoboHarness: a robotic harness that gives LLM agents a visual-geometric control panel so that they can directly understand and invoke embodied tasks."
+          },
+          {
+            "text": "在BEHAVIOR Challenge 2025基准测试中，使用RoboHarness的Qwen3.8-Flash-Next模型表现超过了当前的先进VLA模型。",
+            "evidence": "With RoboHarness, Qwen3.8-Flash-Next outperforms state-of-the-art VLA models on BEHAVIOR Challenge 2025 tasks."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "视觉语言动作",
+          "大模型后训练"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.37666",
+      "title": "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning",
+      "abstract": "Vision-Language-Action (VLA) models have made substantial progress in robotic manipulation, but their generalization remains constrained by the diversity and coverage of action-labeled robot demonstrations. Human videos provide much broader behavioral and environmental experience, while learning from them faces a fundamental trade-off between scalable data and explicit action grounding. We introduce ThinkWorld, a VLA learning framework that grounds action reasoning in world dynamics and strengthens it through reinforcement learning with world imagination. ThinkWorld represents each action thought as a Chain-of-Dynamics (CoD), a sequence of discrete motion tokens that captures the intermediate dynamics connecting the current world to a future state and serves as a common action representation across embodiments. We first initialize CoD with action-labeled demonstrations, then predict the future induced by each CoD and reinforce those whose predictions better match the observed outcome. This enables videos without action annotations to provide direct supervision from observed state transitions, allowing human and robot experience to refine the same reasoning space. Experiments in simulation and on real robots demonstrate effective human-to-robot transfer and strong generalization to unseen tasks and environments.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-10-27",
+      "age_days": 2.0441941226041664,
+      "upvotes": 48,
+      "comments": 1,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face",
+        "arXiv"
+      ],
+      "date_label": "发表",
+      "relevance": 0.47524,
+      "growth": null,
+      "score": 5.036,
+      "rule_tags": [
+        "强化学习",
+        "机器人操作",
+        "视觉语言动作",
+        "推理"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对视觉语言动作模型在机器人操作中受限于动作标注数据的问题，作者提出了ThinkWorld框架。该框架引入“动力学链”（CoD）作为动作表征，通过世界模型想象和强化学习，使模型能够利用无动作标注的人类视频进行训练。实验表明，该方法实现了有效的人机技能迁移，并提升了模型在未知任务与环境下的泛化能力。",
+        "highlights": [
+          {
+            "text": "提出了一种将动作推理建立在世界动力学基础上的VLA学习框架，通过世界想象进行强化学习来增强推理能力。",
+            "evidence": "We introduce ThinkWorld, a VLA learning framework that grounds action reasoning in world dynamics and strengthens it through reinforcement learning with world imagination."
+          },
+          {
+            "text": "引入动力学链（CoD）作为跨实体的统一动作表征，允许利用无标注视频进行监督学习。",
+            "evidence": "This enables videos without action annotations to provide direct supervision from observed state transitions, allowing human and robot experience to refine the same reasoning space."
+          }
+        ],
+        "tags": [
+          "视觉语言动作",
+          "机器人操作",
+          "世界模型",
+          "Sim-to-Real"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.35518",
+      "title": "S3AC: Stabilized, Selective, and Scalable Actor-Critic for LLM Reasoning",
+      "abstract": "Critic-free methods are widely used in reinforcement learning with verifiable rewards (RLVR) for long chain-of-thought (CoT) reasoning, avoiding difficult and costly critic training. Common alternatives lack token-level credit assignment and typically rely on grouped rollouts to estimate prompt-specific baselines. A critic can address both limitations, but long-CoT critic training is hindered by insufficient coverage of trajectories with diverse lengths and early gradients dominated by the newly initialized value head. We introduce S3AC (Stabilized, Selective, and Scalable Actor-Critic) for LLM reasoning, built around a practical critic-training recipe. The trained critic provides token-specific advantages and prompt-specific baselines. Using the prompt-level baseline to estimate difficulty, we propose Difficulty-Aware Prompt Sampling (DAPS). DAPS combines this estimate with outcome history to select prompts before generation, reducing rollout waste without offline difficulty initialization. S3AC improves group-rollout performance across dense and mixture-of-experts models from 1.5B to 397B parameters, outperforming a modern GRPO variant (GRPO-X). At 35B, it sustains single-rollout training while tested critic-free baselines deteriorate after initial gains.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-10-26",
+      "age_days": 3.0441941226041664,
+      "upvotes": 31,
+      "comments": 2,
+      "stars": 5219,
+      "repo": "https://github.com/InternLM/xtuner",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.35727,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 15,
+        "comments": 1,
+        "stars": -1
+      },
+      "score": 4.91,
+      "rule_tags": [
+        "强化学习",
+        "大模型后训练",
+        "推理"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对大语言模型长链式思维推理中无评论员方法存在的局限，研究者提出了S3AC方法。该方法通过优化的评论员训练方案提供词元级优势评估，并引入难度感知提示采样（DAPS）策略，利用提示级基线选择提示，从而在减少采样浪费的同时提升模型性能。实验表明，该方法在多种规模的模型上表现优于GRPO变体，并在大规模模型上实现了稳定的单采样训练。",
+        "highlights": [
+          {
+            "text": "提出S3AC方法，通过引入难度感知提示采样机制，有效利用评论员提供的难度估计，在不依赖离线初始化的情况下显著减少了采样过程的资源浪费。",
+            "evidence": "Using the prompt-level baseline to estimate difficulty, we propose Difficulty-Aware Prompt Sampling (DAPS). DAPS combines this estimate with outcome history to select prompts before generation, reducing rollout waste without offline difficulty initialization."
+          },
+          {
+            "text": "S3AC方法在多规模模型上均表现出性能优势，且在35B参数规模下实现了稳定的单采样训练，克服了传统无评论员基线方法在后期训练中的性能衰减问题。",
+            "evidence": "S3AC improves group-rollout performance across dense and mixture-of-experts models from 1.5B to 397B parameters, outperforming a modern GRPO variant (GRPO-X). At 35B, it sustains single-rollout training while tested critic-free baselines deteriorate after initial gains."
+          }
+        ],
+        "tags": [
+          "大模型后训练",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.33512",
+      "title": "Eat Your Precision: Precision Objective Mitigates Reward Hacking in Rubric-based RL",
+      "abstract": "Rubric-based rewards enable effective reinforcement learning on non-verifiable tasks. However, because these rewards are typically defined as a weighted measure of rubric coverage, models are trained primarily to maximize a recall objective. As a result, RL-trained models produce responses that are more complete but also more verbose and contain more unnecessary or factually incorrect content, leading them to be less preferred than responses from the base model. To address this issue, we present the FORK reward, which jointly optimizes recall and a novel precision objective, which requires each unit of a model response to be both necessary and factually correct, as measured by rubric-driven necessity credits and a factual-correctness grader, respectively. Our experimental results show that FORK outperforms existing rubric-based RL methods and achieves Pareto-optimal performance that balances rubric coverage and overall response quality. Compared to the original recall-based reward, FORK substantially improves precision and reduces response length while achieving similar rubric coverage, which leads to significantly higher win rate compared to the base policy (e.g., from 10.6% to 68.0% on RubricHub-Medical and from 22.1% to 74.1% on HealthBench).",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-10-24",
+      "age_days": 5.044194122604167,
+      "upvotes": 50,
+      "comments": 2,
+      "stars": 1,
+      "repo": "https://github.com/JHKim631/FORK",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.34676,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 17,
+        "comments": 1,
+        "stars": 0
+      },
+      "score": 4.811,
+      "rule_tags": [
+        "强化学习"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对基于评分标准的强化学习在不可验证任务中易出现奖励欺骗（Reward Hacking）导致回复冗长或包含错误的问题，作者提出了FORK奖励机制。该方法在优化召回率的同时引入精确度目标，要求模型回复的每个单元既具备必要性又具备事实准确性。实验表明，FORK在保持评分标准覆盖率的同时，有效降低了回复长度并提高了回复质量。",
+        "highlights": [
+          {
+            "text": "FORK通过联合优化召回率与精确度，确保模型回复的每个单元均具备必要性及事实准确性，从而缓解了传统的基于覆盖率的奖励机制所带来的冗长与错误问题。",
+            "evidence": "To address this issue, we present the FORK reward, which jointly optimizes recall and a novel precision objective, which requires each unit of a model response to be both necessary and factually correct, as measured by rubric-driven necessity credits and a factual-correctness grader, respectively."
+          },
+          {
+            "text": "实验结果证明，FORK在提升精确度和减少回复长度方面效果显著，在RubricHub-Medical和HealthBench测试集上大幅提升了相比基线策略的胜率。",
+            "evidence": "Compared to the original recall-based reward, FORK substantially improves precision and reduces response length while achieving similar rubric coverage, which leads to significantly higher win rate compared to the base policy (e.g., from 10.6% to 68.0% on RubricHub-Medical and from 22.1% to 74.1% on HealthBench)."
+          }
+        ],
+        "tags": [
+          "强化学习"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    }
+  ],
+  "candidate_count": 680,
+  "personalization_note": "已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。",
+  "html": "<h1>2026-10-29 热门论文 Top 10</h1>\n<p>机器人 · 强化学习 · 通用 AI</p>\n<p>生成时间：2026-10-29 09:03 CST。从 680 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>\n<p>候选来源：<a href=\"https://huggingface.co/papers\">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>\n<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>\n<h2>1. RynnVLA-Latent: Scaling Robotic Manipulation Foundation Models with 3D-Grounded Latent Actions</h2>\n<p><strong>机器人</strong> · 发表 2026-10-25 · 综合分 5.59</p>\n<p>Zotero 摘要相关性：0.461（相似度分数，不是概率）。</p>\n<p>HF 点赞 29 · 讨论 3 · 仓库累计 Star 11（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +16 · 讨论 +1 · Star +2。</p>\n<p><strong>规则标签：</strong>机器人操作 · 视觉语言动作</p>\n<p><strong>中文概述：</strong>针对视觉语言动作模型在动作标注数据稀缺及异构机器人控制空间兼容性上的限制，本文提出了RynnVLA-Latent框架。该方法通过RynnLAM从交互视频中学习3D基础的潜在动作表示，并结合流匹配技术预测潜在动作块。作者声称，该模型利用大规模多源视频进行预训练并适配特定机器人后，在多个机器人操作基准测试及真实世界操作任务中展现了优异的成功率，证实了潜在动作监督在扩展策略学习方面的潜力。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出RynnLAM方法，能够在无需原生机器人控制数据的情况下，从视觉转换中学习连续的、具有3D基础的潜在动作。<br><small>摘要依据：At its core, RynnLAM learns continuous, 3D-grounded latent actions from visual transitions without requiring native robot controls.</small></li>\n<li>RynnVLA-Latent在多个基准测试（如LIBERO和RoboTwin 2.0）及多种真实操作任务中表现出高成功率，优于对比方法。<br><small>摘要依据：The resulting 4B policy achieves 98.8% success on LIBERO, 84.7% on LIBERO-Plus without benchmark-specific adaptation, 51.9% average success across five VLABench tracks, and 88.6% average success on the RoboTwin 2.0 bimanual benchmark.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 视觉语言动作</p>\n<p><strong>原文摘要节选：</strong>Scaling vision-language-action (VLA) models is constrained by scarce action-labeled demonstrations and incompatible control spaces across robot embodiments. We present RynnVLA-Latent, a framework that turns heterogeneous interaction videos into scalable supervision for robot policy pretraining. At its core, RynnLAM learns continuous, 3D-grounded latent actions from visual transitions without requiring native robot controls. By combining residual future-feature prediction, camera-compensated 3D-flow supervision, and camera-motion decoupling, RynnLAM encourages representations that capture control-relevant motion rather than appearance changes alone. We apply RynnLAM to 30.1K hours of human, robot, and simulation videos, producing 745.52M latent-action descriptors. RynnVLA-Latent then…</p>\n<p><a href=\"https://arxiv.org/abs/2610.34356\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.34356\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.34356\">讨论与热度</a> · <a href=\"https://github.com/alibaba-damo-academy/RynnVLA-Latent\">代码</a></p><hr>\n<h2>2. RynnUnify: Towards Unified Embodied Brain</h2>\n<p><strong>机器人 / 强化学习</strong> · 发表 2026-10-23 · 综合分 5.32</p>\n<p>Zotero 摘要相关性：0.467（相似度分数，不是概率）。</p>\n<p>HF 点赞 55 · 讨论 2 · 本次 HF 热榜第 85 位 · 仓库累计 Star 38（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +0 · Star +15。</p>\n<p><strong>规则标签：</strong>强化学习 · 推理</p>\n<p><strong>中文概述：</strong>RynnUnify是一款160亿参数的统一具身模型，旨在通过视频与语言推理实现长程视觉规划与具身理解。作者结合了强化学习代理扩展与世界-动作扩展，使模型能够进行空间推理、物理预测并直接输出机器人控制指令。实验表明，该模型在具身理解评分及长程视觉规划任务上表现优于对比基线，在RoboCasa365及真实机器人任务中展示了任务执行能力。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>RynnUnify在多项基准测试中提升了长程视觉规划与具身推理性能，表现优于Cosmos 3 Nano。<br><small>摘要依据：Experiments show that RynnUnify achieves the highest average embodied understanding score among the evaluated unified multimodal models and improves the Rynn-VP overall score by 9.75 points over Cosmos 3 Nano.</small></li>\n<li>通过强化学习扩展，RynnUnify能够利用视频预测进行推理，提升了在未观测状态下的任务表现。<br><small>摘要依据：Its agentic extension improves the Rynn-GEU average by 6.0 points over direct reasoning, while the world-action extension achieves 51.5\\% success on 20 selected composite RoboCasa365 tasks and 46.7\\% average success across three real-robot tasks.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>世界模型 · 机器人操作 · 强化学习</p>\n<p><strong>原文摘要节选：</strong>We introduce RynnUnify, a 16B unified embodied model that combines strong embodied understanding with long-horizon visual planning through interleaved video--language reasoning. With capabilities spanning spatial reasoning, physical prediction, and grounding, RynnUnify connects an understanding of the physical world with visual anticipation of how it evolves across successive subtasks. Building on these capabilities, we further develop an agentic extension through reinforcement learning to selectively use video predictions for reasoning about unobserved states and interaction outcomes. We also develop a world-action extension of the full RynnUnify model, translating its understanding and prediction capabilities into robot control. To evaluate these capabilities, we introduce Rynn-VP and…</p>\n<p><a href=\"https://arxiv.org/abs/2610.32965\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.32965\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.32965\">讨论与热度</a> · <a href=\"https://github.com/alibaba-damo-academy/RynnUnify\">代码</a></p><hr>\n<h2>3. Has GPT-6-Astra Achieved Embodied Intelligence?</h2>\n<p><strong>机器人</strong> · 发表 2026-10-15 · 综合分 5.28</p>\n<p>Zotero 摘要相关性：0.477（相似度分数，不是概率）。</p>\n<p>HF 点赞 485 · 讨论 2 · 本次 HF 热榜第 71 位 · 仓库累计 Star 310（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +0 · Star +7。</p>\n<p><strong>规则标签：</strong>人形机器人 · 机器人操作 · 导航</p>\n<p><strong>中文概述：</strong>本文评估了GPT-6-Astra在机器人操作与导航任务中的表现。研究者通过12个基准测试探究了该模型在上下文学习下的能力极限，并分析了将其作为高层推理器与低层控制器结合的代理机制。实验发现，尽管该模型展现出较高的具身能力，但在真实物理部署中仍面临数据采集成本高、物理约束限制及长期执行效率等挑战。作者认为该模型尚未达到实用具身智能的标准。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>GPT-6-Astra在跨越桌面操作、人形机器人、移动平台及灵巧手的12个代表性基准测试中，通过上下文学习实现了出色的性能。<br><small>摘要依据：We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance</small></li>\n<li>研究指出高层“系统2”推理器与低层“系统1”控制器的闭环协调方案虽然有效，但伴随着较高的计算成本。<br><small>摘要依据：We identify that close-loop coordination between a high-level &quot;System 2&quot; reasoner (i.e., GPT-6-Astra) and a low-level &quot;System 1&quot; controller (e.g., π0.5) is costly but effective.</small></li>\n<li>在8种机器人配置的实机部署实验中，研究发现现有范式难以通过延长执行时间来换取物理约束下的高成功率。<br><small>摘要依据：Our experiments on 8 robot configurations reveal substantial gaps: 1) robot demonstrations required for ICL are expensive to collect, and 2) it is implausible to trade longer execution for higher success rates with physical constraints.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 导航 · 人形机器人 · 推理</p>\n<p><strong>原文摘要节选：</strong>GPT-6-Astra demonstrates a level of competence in robotic manipulation and navigation that challenges the conventional paradigm of building specialized models for individual tasks and embodiments. In this report, we ask not only how capable GPT-6-Astra is, but what its capabilities imply for the field. First, we probe the limits of standalone GPT-6-Astra. We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance (Fig. 1). Future research may focus on improving 1) the generality of ICL 2) cost and…</p>\n<p><a href=\"https://arxiv.org/abs/2610.22471\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.22471\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.22471\">讨论与热度</a> · <a href=\"https://github.com/OpenSenseNova/SenseNova-RoboRSI\">代码</a></p><hr>\n<h2>4. Multiscale Policy Optimization for Long-Horizon LLM Agents</h2>\n<p><strong>通用 AI</strong> · 发表 2026-10-26 · 综合分 5.25</p>\n<p>Zotero 摘要相关性：0.352（相似度分数，不是概率）。</p>\n<p>HF 点赞 373 · 讨论 3</p>\n<p>较上次观测（1.0 天前）：点赞 +373 · 讨论 +3。</p>\n<p><strong>中文概述：</strong>针对长程大语言模型智能体在生成动作时面临的信用分配问题，本文提出了多尺度策略优化（MPO）方法。该方法结合了多尺度优势估计（MAE）和回合级重要性采样，旨在将信用分配与策略更新锚定在完整对话回合的尺度上。实验表明，该方法在搜索、工具使用及自动化任务中相比现有强化学习基线模型表现出性能提升。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出多尺度策略优化（MPO）方法，通过回合级信用分配优化长程智能体。<br><small>摘要依据：We propose Multiscale Policy Optimization (MPO), combining Multiscale Advantage Estimation (MAE) and turn-level importance sampling to align credit assignment and policy updates at the turn scale.</small></li>\n<li>MPO在多种复杂任务中展现出优于现有强化学习基线的性能。<br><small>摘要依据：Extensive experiments across search, tool-use, and automation tasks with 4B and 30B-A3B models demonstrate consistent gains over strong RL baselines.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>大模型后训练 · 强化学习 · 推理</p>\n<p><strong>原文摘要节选：</strong>Long-horizon LLM agents interact with their environments through complete assistant turns while generating each action token by token. We observe that critic values vary primarily across turns, motivating optimization anchored at turns with finer credit allocation among tokens. We propose Multiscale Policy Optimization (MPO), combining Multiscale Advantage Estimation (MAE) and turn-level importance sampling to align credit assignment and policy updates at the turn scale. Extensive experiments across search, tool-use, and automation tasks with 4B and 30B-A3B models demonstrate consistent gains over strong RL baselines.</p>\n<p><a href=\"https://arxiv.org/abs/2610.35013\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.35013\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.35013\">讨论与热度</a></p><hr>\n<h2>5. EmbodiedLab: Benchmarking Embodied Agents That Act to Know</h2>\n<p><strong>机器人</strong> · 发表 2026-10-26 · 综合分 5.17</p>\n<p>Zotero 摘要相关性：0.425（相似度分数，不是概率）。</p>\n<p>HF 点赞 19 · 讨论 2 · 仓库累计 Star 16（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +5 · 讨论 +0 · Star +4。</p>\n<p><strong>中文概述：</strong>针对具身智能体“为了解而行动”的能力，作者提出了EmbodiedLab基准测试。该基准通过在物理模拟实验室中进行受控的定量科学实验，要求智能体自主选择程序、通过交互改变系统状态并观测反馈以达成目标。实验涵盖五个学科的30个项目，旨在评估智能体在无法预知结果的情况下通过探索获取知识并操作物理装置的能力。研究发现，即使是前沿模型在原生控制下成功率也较低，且操作技能对提升模型表现至关重要。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>EmbodiedLab基准通过科学实验的定量化，实现了对具身智能体自主探索与交互过程的可控评估。<br><small>摘要依据：Quantitative science experiments make this setting controllable: the parameters of the system are resampled for every instance, so the result cannot be known in advance, yet it can be scored exactly.</small></li>\n<li>在对前沿模型的评估中，即便表现最好的智能体原生成功率不足50%，且操作交互环节是主要的失败原因。<br><small>摘要依据：With native control, even the strongest agent succeeds less than half the time; for every agent, most failures arise in interacting with the apparatus</small></li>\n<li>实验结果表明，相比于感知与规划能力的提升，具备专门的操作技能能为较弱的智能体带来更显著的性能改善。<br><small>摘要依据：manipulation skills help weaker agents more than perception and planning.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · Sim-to-Real</p>\n<p><strong>原文摘要节选：</strong>Embodied agents are expected to accomplish real-world goals by deciding for themselves how and when to interact with their surroundings. For many such goals, changing the physical state of the world is the means rather than the end: the agent changes the state of a system through interaction, observes the feedback, and explores until it either achieves the goal itself (e.g., discovering physical laws) or learns what the goal requires; it acts to know. Manipulation benchmarks stop at acting to change, with the target state given; scientific discovery benchmarks evaluate knowing but replace physical experimentation with symbolic actions or numerical queries. We introduce EmbodiedLab, a benchmark in which a robot must act to know. Quantitative science experiments make this setting…</p>\n<p><a href=\"https://arxiv.org/abs/2610.35385\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.35385\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.35385\">讨论与热度</a> · <a href=\"https://github.com/HexaFuture/EmbodiedLab\">代码</a></p><hr>\n<h2>6. PDRVLA: A Vision-Language-Action Model with Physical Dynamics Representations</h2>\n<p><strong>机器人</strong> · 发表 2026-10-27 · 综合分 5.16</p>\n<p>Zotero 摘要相关性：0.466（相似度分数，不是概率）。</p>\n<p>HF 点赞 139 · 讨论 1</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>世界模型 · 视觉语言动作</p>\n<p><strong>中文概述：</strong>针对现有视觉语言动作（VLA）模型在物理动态理解上的局限性以及视频生成模型控制延迟高的问题，本研究提出了PDRVLA模型。该方法引入了一个轻量级物理动态模块，通过直接预测未来RGB、深度及光流特征来提取物理标记，从而在无需实时视频生成的情况下优化动作生成。作者声称，通过在多种仿真基准测试中的验证，该方法显著提升了机器人的任务成功率。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出一种轻量级物理动态模块，在无需在线生成未来视频的前提下，通过提取物理标记引导动作生成，有效降低了控制延迟。<br><small>摘要依据：We introduce PDRVLA, whose lightweight Physical Dynamics Module extracts physical tokens from vision--language features to condition action generation without online video generation.</small></li>\n<li>PDRVLA在多个机器人仿真基准测试中表现出色，在LIBERO等任务中均达到了较高的成功率。<br><small>摘要依据：Across four simulation benchmarks, PDRVLA achieves success rates of 99.3% on LIBERO, 89.9% on LIBERO-Plus, 93.6% on RoboTwin~2.0, and 81.5% on SimplerEnv.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 视觉语言动作</p>\n<p><strong>原文摘要节选：</strong>Vision--Language--Action (VLA) models generate robot actions from visual observations and language instructions, but their understanding of physical dynamics remains limited. Video world models can capture scene dynamics, yet generating future videos introduces high latency into the control loop. We introduce PDRVLA, whose lightweight Physical Dynamics Module extracts physical tokens from vision--language features to condition action generation without online video generation. The module learns through direct prediction of future RGB, depth, and optical-flow features, with auxiliary supervision through a frozen pretrained video world model. Training relies entirely on publicly available data, expanded through human-to-robot synthesis, subtask annotation, and embodied chain-of-thought…</p>\n<p><a href=\"https://arxiv.org/abs/2610.37381\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.37381\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.37381\">讨论与热度</a></p><hr>\n<h2>7. RoboHarness: A Simple Harness Outperforms VLA and World Action Models</h2>\n<p><strong>机器人</strong> · 发表 2026-10-16 · 综合分 5.16</p>\n<p>Zotero 摘要相关性：0.450（相似度分数，不是概率）。</p>\n<p>HF 点赞 20 · 讨论 2 · 仓库累计 Star 272（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +12 · 讨论 +1 · Star +3。</p>\n<p><strong>规则标签：</strong>视觉语言动作</p>\n<p><strong>中文概述：</strong>针对通用具身智能中大语言模型（LLM）动作生成的问题，作者提出了RoboHarness。该方法通过为LLM代理构建一个视觉-几何控制面板，使其能够直接理解并调用具身任务，而非单纯依赖端到端的视觉语言动作（VLA）模型训练。作者声称，基于RoboHarness的Qwen3.8-Flash-Next模型在BEHAVIOR Challenge 2025任务中表现优于现有的先进VLA模型。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>RoboHarness提供了一种视觉-几何控制面板，使LLM代理能够直接理解并执行具身控制任务。<br><small>摘要依据：We present RoboHarness: a robotic harness that gives LLM agents a visual-geometric control panel so that they can directly understand and invoke embodied tasks.</small></li>\n<li>在BEHAVIOR Challenge 2025基准测试中，使用RoboHarness的Qwen3.8-Flash-Next模型表现超过了当前的先进VLA模型。<br><small>摘要依据：With RoboHarness, Qwen3.8-Flash-Next outperforms state-of-the-art VLA models on BEHAVIOR Challenge 2025 tasks.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 视觉语言动作 · 大模型后训练</p>\n<p><strong>原文摘要节选：</strong>The rise of large language models (LLMs) has opened a path toward generalist embodied AI, raising the question of how LLMs can act in the physical world. One straightforward approach is training the model to generate actions: collect robot-action data and video demonstration, refine LLM architecture with an action head, and train a vision-language-action (VLA) model at scale. However, we argue that coding agents have the potential to realize generalist embodied manipulation. All they need is a simple yet effective robot harness. We present RoboHarness: a robotic harness that gives LLM agents a visual-geometric control panel so that they can directly understand and invoke embodied tasks. With RoboHarness, Qwen3.8-Flash-Next outperforms state-of-the-art VLA models on BEHAVIOR Challenge 2025…</p>\n<p><a href=\"https://arxiv.org/abs/2610.14018\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.14018\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.14018\">讨论与热度</a> · <a href=\"https://github.com/BinceQu/RoboHarness\">代码</a></p><hr>\n<h2>8. ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning</h2>\n<p><strong>机器人 / 强化学习</strong> · 发表 2026-10-27 · 综合分 5.04</p>\n<p>Zotero 摘要相关性：0.475（相似度分数，不是概率）。</p>\n<p>HF 点赞 48 · 讨论 1</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习 · 机器人操作 · 视觉语言动作 · 推理</p>\n<p><strong>中文概述：</strong>针对视觉语言动作模型在机器人操作中受限于动作标注数据的问题，作者提出了ThinkWorld框架。该框架引入“动力学链”（CoD）作为动作表征，通过世界模型想象和强化学习，使模型能够利用无动作标注的人类视频进行训练。实验表明，该方法实现了有效的人机技能迁移，并提升了模型在未知任务与环境下的泛化能力。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出了一种将动作推理建立在世界动力学基础上的VLA学习框架，通过世界想象进行强化学习来增强推理能力。<br><small>摘要依据：We introduce ThinkWorld, a VLA learning framework that grounds action reasoning in world dynamics and strengthens it through reinforcement learning with world imagination.</small></li>\n<li>引入动力学链（CoD）作为跨实体的统一动作表征，允许利用无标注视频进行监督学习。<br><small>摘要依据：This enables videos without action annotations to provide direct supervision from observed state transitions, allowing human and robot experience to refine the same reasoning space.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>视觉语言动作 · 机器人操作 · 世界模型 · Sim-to-Real</p>\n<p><strong>原文摘要节选：</strong>Vision-Language-Action (VLA) models have made substantial progress in robotic manipulation, but their generalization remains constrained by the diversity and coverage of action-labeled robot demonstrations. Human videos provide much broader behavioral and environmental experience, while learning from them faces a fundamental trade-off between scalable data and explicit action grounding. We introduce ThinkWorld, a VLA learning framework that grounds action reasoning in world dynamics and strengthens it through reinforcement learning with world imagination. ThinkWorld represents each action thought as a Chain-of-Dynamics (CoD), a sequence of discrete motion tokens that captures the intermediate dynamics connecting the current world to a future state and serves as a common action…</p>\n<p><a href=\"https://arxiv.org/abs/2610.37666\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.37666\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.37666\">讨论与热度</a></p><hr>\n<h2>9. S3AC: Stabilized, Selective, and Scalable Actor-Critic for LLM Reasoning</h2>\n<p><strong>强化学习</strong> · 发表 2026-10-26 · 综合分 4.91</p>\n<p>Zotero 摘要相关性：0.357（相似度分数，不是概率）。</p>\n<p>HF 点赞 31 · 讨论 2 · 仓库累计 Star 5219（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +15 · 讨论 +1 · Star -1。</p>\n<p><strong>规则标签：</strong>强化学习 · 大模型后训练 · 推理</p>\n<p><strong>中文概述：</strong>针对大语言模型长链式思维推理中无评论员方法存在的局限，研究者提出了S3AC方法。该方法通过优化的评论员训练方案提供词元级优势评估，并引入难度感知提示采样（DAPS）策略，利用提示级基线选择提示，从而在减少采样浪费的同时提升模型性能。实验表明，该方法在多种规模的模型上表现优于GRPO变体，并在大规模模型上实现了稳定的单采样训练。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出S3AC方法，通过引入难度感知提示采样机制，有效利用评论员提供的难度估计，在不依赖离线初始化的情况下显著减少了采样过程的资源浪费。<br><small>摘要依据：Using the prompt-level baseline to estimate difficulty, we propose Difficulty-Aware Prompt Sampling (DAPS). DAPS combines this estimate with outcome history to select prompts before generation, reducing rollout waste without offline difficulty initialization.</small></li>\n<li>S3AC方法在多规模模型上均表现出性能优势，且在35B参数规模下实现了稳定的单采样训练，克服了传统无评论员基线方法在后期训练中的性能衰减问题。<br><small>摘要依据：S3AC improves group-rollout performance across dense and mixture-of-experts models from 1.5B to 397B parameters, outperforming a modern GRPO variant (GRPO-X). At 35B, it sustains single-rollout training while tested critic-free baselines deteriorate after initial gains.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>\n<p><strong>原文摘要节选：</strong>Critic-free methods are widely used in reinforcement learning with verifiable rewards (RLVR) for long chain-of-thought (CoT) reasoning, avoiding difficult and costly critic training. Common alternatives lack token-level credit assignment and typically rely on grouped rollouts to estimate prompt-specific baselines. A critic can address both limitations, but long-CoT critic training is hindered by insufficient coverage of trajectories with diverse lengths and early gradients dominated by the newly initialized value head. We introduce S3AC (Stabilized, Selective, and Scalable Actor-Critic) for LLM reasoning, built around a practical critic-training recipe. The trained critic provides token-specific advantages and prompt-specific baselines. Using the prompt-level baseline to estimate…</p>\n<p><a href=\"https://arxiv.org/abs/2610.35518\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.35518\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.35518\">讨论与热度</a> · <a href=\"https://github.com/InternLM/xtuner\">代码</a></p><hr>\n<h2>10. Eat Your Precision: Precision Objective Mitigates Reward Hacking in Rubric-based RL</h2>\n<p><strong>强化学习</strong> · 发表 2026-10-24 · 综合分 4.81</p>\n<p>Zotero 摘要相关性：0.347（相似度分数，不是概率）。</p>\n<p>HF 点赞 50 · 讨论 2 · 仓库累计 Star 1（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +17 · 讨论 +1 · Star +0。</p>\n<p><strong>规则标签：</strong>强化学习</p>\n<p><strong>中文概述：</strong>针对基于评分标准的强化学习在不可验证任务中易出现奖励欺骗（Reward Hacking）导致回复冗长或包含错误的问题，作者提出了FORK奖励机制。该方法在优化召回率的同时引入精确度目标，要求模型回复的每个单元既具备必要性又具备事实准确性。实验表明，FORK在保持评分标准覆盖率的同时，有效降低了回复长度并提高了回复质量。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>FORK通过联合优化召回率与精确度，确保模型回复的每个单元均具备必要性及事实准确性，从而缓解了传统的基于覆盖率的奖励机制所带来的冗长与错误问题。<br><small>摘要依据：To address this issue, we present the FORK reward, which jointly optimizes recall and a novel precision objective, which requires each unit of a model response to be both necessary and factually correct, as measured by rubric-driven necessity credits and a factual-correctness grader, respectively.</small></li>\n<li>实验结果证明，FORK在提升精确度和减少回复长度方面效果显著，在RubricHub-Medical和HealthBench测试集上大幅提升了相比基线策略的胜率。<br><small>摘要依据：Compared to the original recall-based reward, FORK substantially improves precision and reduces response length while achieving similar rubric coverage, which leads to significantly higher win rate compared to the base policy (e.g., from 10.6% to 68.0% on RubricHub-Medical and from 22.1% to 74.1% on HealthBench).</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习</p>\n<p><strong>原文摘要节选：</strong>Rubric-based rewards enable effective reinforcement learning on non-verifiable tasks. However, because these rewards are typically defined as a weighted measure of rubric coverage, models are trained primarily to maximize a recall objective. As a result, RL-trained models produce responses that are more complete but also more verbose and contain more unnecessary or factually incorrect content, leading them to be less preferred than responses from the base model. To address this issue, we present the FORK reward, which jointly optimizes recall and a novel precision objective, which requires each unit of a model response to be both necessary and factually correct, as measured by rubric-driven necessity credits and a factual-correctness grader, respectively. Our experimental results show…</p>\n<p><a href=\"https://arxiv.org/abs/2610.33512\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.33512\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.33512\">讨论与热度</a> · <a href=\"https://github.com/JHKim631/FORK\">代码</a></p><hr>"
+}

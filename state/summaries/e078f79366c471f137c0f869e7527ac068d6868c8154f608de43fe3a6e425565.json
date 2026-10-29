@@ -1,0 +1,16 @@
+{
+  "overview": "针对基于评分标准的强化学习在不可验证任务中易出现奖励欺骗（Reward Hacking）导致回复冗长或包含错误的问题，作者提出了FORK奖励机制。该方法在优化召回率的同时引入精确度目标，要求模型回复的每个单元既具备必要性又具备事实准确性。实验表明，FORK在保持评分标准覆盖率的同时，有效降低了回复长度并提高了回复质量。",
+  "highlights": [
+    {
+      "text": "FORK通过联合优化召回率与精确度，确保模型回复的每个单元均具备必要性及事实准确性，从而缓解了传统的基于覆盖率的奖励机制所带来的冗长与错误问题。",
+      "evidence": "To address this issue, we present the FORK reward, which jointly optimizes recall and a novel precision objective, which requires each unit of a model response to be both necessary and factually correct, as measured by rubric-driven necessity credits and a factual-correctness grader, respectively."
+    },
+    {
+      "text": "实验结果证明，FORK在提升精确度和减少回复长度方面效果显著，在RubricHub-Medical和HealthBench测试集上大幅提升了相比基线策略的胜率。",
+      "evidence": "Compared to the original recall-based reward, FORK substantially improves precision and reduces response length while achieving similar rubric coverage, which leads to significantly higher win rate compared to the base policy (e.g., from 10.6% to 68.0% on RubricHub-Medical and from 22.1% to 74.1% on HealthBench)."
+    }
+  ],
+  "tags": [
+    "强化学习"
+  ]
+}

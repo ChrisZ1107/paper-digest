@@ -1,0 +1,16 @@
+{
+  "overview": "针对可重复使用运载火箭自主垂直降落中高度非线性动力学及高精度要求的挑战，本文提出了一种课程驱动的深度强化学习框架。该方法通过三阶段课程学习、评价器热身程序、重演机制以及优化的奖励函数设计，使智能体能够从远距离初始点精准导航并完成软着陆。实验结果显示，该策略在导航距离和着陆成功率方面均优于基准方法。",
+  "highlights": [
+    {
+      "text": "提出的课程学习框架结合了三阶段训练、评价器热身和重演机制，实现了远距离导航至精准着陆的控制。",
+      "evidence": "By employing a three-stage curriculum augmented with a critic warm-up procedure and a rehearsal mechanism to prevent catastrophic forgetting, alongside a high-dimensional observation vector utilizing a full 3 X 3 rotation-matrix, the agent is trained to navigate from an initial horizontal distance of 1,000 to 1,500 units vastly farther than prior benchmarks before executing a soft touchdown."
+    },
+    {
+      "text": "优化后的奖励函数通过限制每步奖励量级并改进累积进度项，提升了训练效率并解决了目标冲突问题。",
+      "evidence": "Crucially, we intro- duce a redesigned reward function that reduces unnecessary computational overhead and addresses limitations of earlier formulations, including poorly calibrated reward components and potentially conflicting optimization objectives."
+    }
+  ],
+  "tags": [
+    "强化学习"
+  ]
+}

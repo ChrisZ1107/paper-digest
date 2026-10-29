@@ -1,0 +1,18 @@
+{
+  "overview": "针对通用具身智能中大语言模型（LLM）动作生成的问题，作者提出了RoboHarness。该方法通过为LLM代理构建一个视觉-几何控制面板，使其能够直接理解并调用具身任务，而非单纯依赖端到端的视觉语言动作（VLA）模型训练。作者声称，基于RoboHarness的Qwen3.8-Flash-Next模型在BEHAVIOR Challenge 2025任务中表现优于现有的先进VLA模型。",
+  "highlights": [
+    {
+      "text": "RoboHarness提供了一种视觉-几何控制面板，使LLM代理能够直接理解并执行具身控制任务。",
+      "evidence": "We present RoboHarness: a robotic harness that gives LLM agents a visual-geometric control panel so that they can directly understand and invoke embodied tasks."
+    },
+    {
+      "text": "在BEHAVIOR Challenge 2025基准测试中，使用RoboHarness的Qwen3.8-Flash-Next模型表现超过了当前的先进VLA模型。",
+      "evidence": "With RoboHarness, Qwen3.8-Flash-Next outperforms state-of-the-art VLA models on BEHAVIOR Challenge 2025 tasks."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "视觉语言动作",
+    "大模型后训练"
+  ]
+}

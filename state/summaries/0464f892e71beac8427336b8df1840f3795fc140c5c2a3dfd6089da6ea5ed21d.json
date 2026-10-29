@@ -1,0 +1,17 @@
+{
+  "overview": "针对视觉语言动作模型在动作标注数据稀缺及异构机器人控制空间兼容性上的限制，本文提出了RynnVLA-Latent框架。该方法通过RynnLAM从交互视频中学习3D基础的潜在动作表示，并结合流匹配技术预测潜在动作块。作者声称，该模型利用大规模多源视频进行预训练并适配特定机器人后，在多个机器人操作基准测试及真实世界操作任务中展现了优异的成功率，证实了潜在动作监督在扩展策略学习方面的潜力。",
+  "highlights": [
+    {
+      "text": "提出RynnLAM方法，能够在无需原生机器人控制数据的情况下，从视觉转换中学习连续的、具有3D基础的潜在动作。",
+      "evidence": "At its core, RynnLAM learns continuous, 3D-grounded latent actions from visual transitions without requiring native robot controls."
+    },
+    {
+      "text": "RynnVLA-Latent在多个基准测试（如LIBERO和RoboTwin 2.0）及多种真实操作任务中表现出高成功率，优于对比方法。",
+      "evidence": "The resulting 4B policy achieves 98.8% success on LIBERO, 84.7% on LIBERO-Plus without benchmark-specific adaptation, 51.9% average success across five VLABench tracks, and 88.6% average success on the RoboTwin 2.0 bimanual benchmark."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "视觉语言动作"
+  ]
+}

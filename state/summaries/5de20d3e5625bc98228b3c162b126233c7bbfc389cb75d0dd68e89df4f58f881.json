@@ -1,0 +1,18 @@
+{
+  "overview": "针对人形行为基础模型（BFM）难以适应复杂地形的问题，作者提出了GRAFT框架。该方法通过在冻结的BFM基础上引入一个轻量级适配器，专门对下肢执行目标进行地形感知的残差修正。GRAFT利用任务奖励与足部几何奖励训练，并结合知识蒸馏将特权地形观测转化为机载深度信息，从而实现对复杂地形的高效适应，而无需重训练或微调整个BFM模型。",
+  "highlights": [
+    {
+      "text": "GRAFT通过轻量级适配器对冻结的行为追踪器进行地形适应，通过残差修正解决BFM在复杂地形下的运动表现问题，避免了高昂的重训练成本。",
+      "evidence": "GRAFT preserves the BFM parameters and motion-reference interface, while a lightweight adapter adds terrain-conditioned corrections only to lower-body execution targets."
+    },
+    {
+      "text": "该方法在四足与人形机器人仿真测试以及Unitree G1实机部署中均表现出有效性，能够利用机载深度信息顺利跨越楼梯、空隙和平台等复杂地形。",
+      "evidence": "We further validate it through real-world deployment on a Unitree G1, where the adapted SONIC tracker traverses terrain with onboard depth and unmodified references."
+    }
+  ],
+  "tags": [
+    "人形机器人",
+    "足式运动",
+    "Sim-to-Real"
+  ]
+}

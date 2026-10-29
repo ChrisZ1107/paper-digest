@@ -1,0 +1,18 @@
+{
+  "overview": "针对人形机器人在非连续地形下的跑酷难题，作者提出了HC2Robot框架。该方法旨在缩小非对称演员-评论家训练中存在的信息差距，通过预测远见模块(PFM)将特权监督转化为可部署的潜在表征，并结合超连接Transformer增强时序推理能力。实验表明，该方法在多种地形下的遍历成功率和立足点安全性均优于基准方法。",
+  "highlights": [
+    {
+      "text": "提出预测远见模块(PFM)，将特权模拟信号转化为可部署的潜在表征，使执行策略的智能体在无需特权感知的情况下获得足部触地预测信息。",
+      "evidence": "PFM predicts from deployable observations the policy-conditioned timing, location, and support quality of each foot's next touchdown event, converting privileged supervision into a deployable latent representation that provides the actor with predicted touchdown information without privileged runtime sensing."
+    },
+    {
+      "text": "HC2Robot框架在楼梯、缝隙、高台和斜坡等复杂地形中，模拟环境下的平均遍历成功率达到97.60%，且立足点安全性表现优异。",
+      "evidence": "Across stairs, gaps, high platforms, and slopes, HC2Robot achieves a mean simulated traversal success rate of 97.60% and consistently higher safe foothold rates than strong perceptive locomotion baselines, supporting improved traversal performance and geometric foothold support under deployable sensing."
+    }
+  ],
+  "tags": [
+    "人形机器人",
+    "足式运动",
+    "Sim-to-Real"
+  ]
+}

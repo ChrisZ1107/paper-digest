@@ -1,0 +1,17 @@
+{
+  "overview": "针对现有视觉语言动作（VLA）模型在物理动态理解上的局限性以及视频生成模型控制延迟高的问题，本研究提出了PDRVLA模型。该方法引入了一个轻量级物理动态模块，通过直接预测未来RGB、深度及光流特征来提取物理标记，从而在无需实时视频生成的情况下优化动作生成。作者声称，通过在多种仿真基准测试中的验证，该方法显著提升了机器人的任务成功率。",
+  "highlights": [
+    {
+      "text": "提出一种轻量级物理动态模块，在无需在线生成未来视频的前提下，通过提取物理标记引导动作生成，有效降低了控制延迟。",
+      "evidence": "We introduce PDRVLA, whose lightweight Physical Dynamics Module extracts physical tokens from vision--language features to condition action generation without online video generation."
+    },
+    {
+      "text": "PDRVLA在多个机器人仿真基准测试中表现出色，在LIBERO等任务中均达到了较高的成功率。",
+      "evidence": "Across four simulation benchmarks, PDRVLA achieves success rates of 99.3% on LIBERO, 89.9% on LIBERO-Plus, 93.6% on RoboTwin~2.0, and 81.5% on SimplerEnv."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "视觉语言动作"
+  ]
+}

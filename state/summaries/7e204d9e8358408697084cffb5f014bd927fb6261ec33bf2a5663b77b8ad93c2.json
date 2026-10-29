@@ -1,0 +1,19 @@
+{
+  "overview": "针对视觉语言动作模型在机器人操作中受限于动作标注数据的问题，作者提出了ThinkWorld框架。该框架引入“动力学链”（CoD）作为动作表征，通过世界模型想象和强化学习，使模型能够利用无动作标注的人类视频进行训练。实验表明，该方法实现了有效的人机技能迁移，并提升了模型在未知任务与环境下的泛化能力。",
+  "highlights": [
+    {
+      "text": "提出了一种将动作推理建立在世界动力学基础上的VLA学习框架，通过世界想象进行强化学习来增强推理能力。",
+      "evidence": "We introduce ThinkWorld, a VLA learning framework that grounds action reasoning in world dynamics and strengthens it through reinforcement learning with world imagination."
+    },
+    {
+      "text": "引入动力学链（CoD）作为跨实体的统一动作表征，允许利用无标注视频进行监督学习。",
+      "evidence": "This enables videos without action annotations to provide direct supervision from observed state transitions, allowing human and robot experience to refine the same reasoning space."
+    }
+  ],
+  "tags": [
+    "视觉语言动作",
+    "机器人操作",
+    "世界模型",
+    "Sim-to-Real"
+  ]
+}

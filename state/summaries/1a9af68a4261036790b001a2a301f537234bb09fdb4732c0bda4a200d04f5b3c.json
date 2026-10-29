@@ -1,0 +1,20 @@
+{
+  "overview": "针对人形机器人在受限空间内移动高度受限的问题，本文提出了REACH框架。该框架利用分层强化学习实现变高度双足行走与爬行模式，通过历史条件潜在表示处理爬行中的接触动力学，并设计双向转换策略解决模式切换难题。结合激光雷达规划器，该方法使Unitree G1人形机器人能在复杂受限环境中实现路径规划与稳健穿越。",
+  "highlights": [
+    {
+      "text": "提出了一种基于分层强化学习的框架，使人形机器人能够在受限环境中通过可变高度双足行走和爬行进行移动。",
+      "evidence": "We present REACH, an RL-based hierarchical framework that enables a Unitree G1 humanoid to traverse height-constrained environments through variable-height bipedal walking and crawling."
+    },
+    {
+      "text": "通过引入历史条件潜在表示，有效捕捉了爬行过程中的地形交互信息以应对复杂的接触动力学。",
+      "evidence": "To address contact-rich crawling dynamics, we employ a history-conditioned latent representation that captures terrain and interaction context from proprioceptive observations."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "人形机器人",
+    "足式运动",
+    "导航",
+    "Sim-to-Real"
+  ]
+}

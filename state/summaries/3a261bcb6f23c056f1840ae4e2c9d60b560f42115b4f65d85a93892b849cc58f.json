@@ -1,0 +1,18 @@
+{
+  "overview": "针对复杂长程移动操作任务，作者提出了一种基于阶段条件策略优化的方法。该方法通过引入阶段条件评论家、阶段门控奖励函数以及多阶段重置课程，训练统一策略以引导机器人行为。通过解耦分层控制架构，该方法实现了跨不同机器人硬件（如Unitree G1和加装机械臂的Spot）的复杂移动操作技能学习，无需依赖人类运动数据，实现了通过环境交互获取任务行为。",
+  "highlights": [
+    {
+      "text": "提出了一种基于阶段条件的PPO改进方法，通过多阶段重置课程和分层控制架构，实现了在不同硬件平台上学习复杂多阶段移动操作技能。",
+      "evidence": "Our method adapts PPO using a phase-conditioned critic, phase-gated reward functions, and a multi-phase reset curriculum to guide exploration. To support varied hardware, we employ a decoupled hierarchical control architecture that separates lower-level balancing dynamics from high-level phase execution."
+    },
+    {
+      "text": "该方法不依赖人类运动数据，能直接通过环境交互学习长程移动操作任务，并支持多种机器人硬件。",
+      "evidence": "Our approach enables the acquisition of complex loco-manipulation behaviors purely through environment interaction while directly incorporating high-level task structure into policy learning."
+    }
+  ],
+  "tags": [
+    "PPO",
+    "机器人操作",
+    "足式运动"
+  ]
+}

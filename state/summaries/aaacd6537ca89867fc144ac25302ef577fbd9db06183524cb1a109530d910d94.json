@@ -1,0 +1,18 @@
+{
+  "overview": "针对长程大语言模型智能体在生成动作时面临的信用分配问题，本文提出了多尺度策略优化（MPO）方法。该方法结合了多尺度优势估计（MAE）和回合级重要性采样，旨在将信用分配与策略更新锚定在完整对话回合的尺度上。实验表明，该方法在搜索、工具使用及自动化任务中相比现有强化学习基线模型表现出性能提升。",
+  "highlights": [
+    {
+      "text": "提出多尺度策略优化（MPO）方法，通过回合级信用分配优化长程智能体。",
+      "evidence": "We propose Multiscale Policy Optimization (MPO), combining Multiscale Advantage Estimation (MAE) and turn-level importance sampling to align credit assignment and policy updates at the turn scale."
+    },
+    {
+      "text": "MPO在多种复杂任务中展现出优于现有强化学习基线的性能。",
+      "evidence": "Extensive experiments across search, tool-use, and automation tasks with 4B and 30B-A3B models demonstrate consistent gains over strong RL baselines."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "强化学习",
+    "推理"
+  ]
+}

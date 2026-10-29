@@ -1,0 +1,21 @@
+{
+  "overview": "针对具身智能体“为了解而行动”的能力，作者提出了EmbodiedLab基准测试。该基准通过在物理模拟实验室中进行受控的定量科学实验，要求智能体自主选择程序、通过交互改变系统状态并观测反馈以达成目标。实验涵盖五个学科的30个项目，旨在评估智能体在无法预知结果的情况下通过探索获取知识并操作物理装置的能力。研究发现，即使是前沿模型在原生控制下成功率也较低，且操作技能对提升模型表现至关重要。",
+  "highlights": [
+    {
+      "text": "EmbodiedLab基准通过科学实验的定量化，实现了对具身智能体自主探索与交互过程的可控评估。",
+      "evidence": "Quantitative science experiments make this setting controllable: the parameters of the system are resampled for every instance, so the result cannot be known in advance, yet it can be scored exactly."
+    },
+    {
+      "text": "在对前沿模型的评估中，即便表现最好的智能体原生成功率不足50%，且操作交互环节是主要的失败原因。",
+      "evidence": "With native control, even the strongest agent succeeds less than half the time; for every agent, most failures arise in interacting with the apparatus"
+    },
+    {
+      "text": "实验结果表明，相比于感知与规划能力的提升，具备专门的操作技能能为较弱的智能体带来更显著的性能改善。",
+      "evidence": "manipulation skills help weaker agents more than perception and planning."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "Sim-to-Real"
+  ]
+}
