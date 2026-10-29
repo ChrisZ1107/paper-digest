@@ -4150,6 +4150,157 @@
     "V53WQzxUvLA": {
       "video_id": "V53WQzxUvLA",
       "papers": []
+    },
+    "s4rj4Wu8Urk": {
+      "video_id": "s4rj4Wu8Urk",
+      "video_title": "WeVisOne-VL: Unified Visual Perception from Objects to Pixels (Oct 2026)",
+      "published": "2026-10-29",
+      "video_url": "https://www.youtube.com/watch?v=s4rj4Wu8Urk",
+      "papers": [
+        {
+          "id": "2610.31329",
+          "title": "WeVisOne-VL: Unified Visual Perception from Objects to Pixels (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.31329"
+        }
+      ]
+    },
+    "fFpdoJa1Wpw": {
+      "video_id": "fFpdoJa1Wpw",
+      "papers": []
+    },
+    "m79Mm9Ec8ZM": {
+      "video_id": "m79Mm9Ec8ZM",
+      "video_title": "On-Policy Self-Training: Data-Free Self-Improvement in Large Language Models (Oct 2026)",
+      "published": "2026-10-29",
+      "video_url": "https://www.youtube.com/watch?v=m79Mm9Ec8ZM",
+      "papers": [
+        {
+          "id": "2610.32770",
+          "title": "On-Policy Self-Training: Data-Free Self-Improvement in Large Language Models (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.32770"
+        }
+      ]
+    },
+    "Rk2zDeCs2MI": {
+      "video_id": "Rk2zDeCs2MI",
+      "video_title": "IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems (Oct 2026)",
+      "published": "2026-10-29",
+      "video_url": "https://www.youtube.com/watch?v=Rk2zDeCs2MI",
+      "papers": [
+        {
+          "id": "2610.30949",
+          "title": "IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.30949"
+        }
+      ]
+    },
+    "nPnk9z6FguM": {
+      "video_id": "nPnk9z6FguM",
+      "video_title": "Training Small Language Models for Transferable Tool Selection (Oct 2026)",
+      "published": "2026-10-29",
+      "video_url": "https://www.youtube.com/watch?v=nPnk9z6FguM",
+      "papers": [
+        {
+          "id": "2610.31483",
+          "title": "Training Small Language Models for Transferable Tool Selection (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.31483"
+        }
+      ]
+    },
+    "pymMxwU2s8E": {
+      "video_id": "pymMxwU2s8E",
+      "video_title": "Humanoid Mobility via Attention-based Contacts (Oct 2026)",
+      "published": "2026-10-29",
+      "video_url": "https://www.youtube.com/watch?v=pymMxwU2s8E",
+      "papers": [
+        {
+          "id": "2610.31608",
+          "title": "Humanoid Mobility via Attention-based Contacts (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.31608"
+        }
+      ]
+    },
+    "l5BP-wwyCoI": {
+      "video_id": "l5BP-wwyCoI",
+      "video_title": "Foundation4D: Towards a unified perception and reconstruction model for autonomous vehicles",
+      "published": "2026-10-29",
+      "video_url": "https://www.youtube.com/watch?v=l5BP-wwyCoI",
+      "papers": [
+        {
+          "id": "2610.30340",
+          "title": "Foundation4D: Towards a unified perception and reconstruction model for autonomous vehicles (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.30340"
+        }
+      ]
+    },
+    "go3ENDAX-ds": {
+      "video_id": "go3ENDAX-ds",
+      "video_title": "Toward Recursive Self-Improvement in Physical AI (Oct 2026)",
+      "published": "2026-10-29",
+      "video_url": "https://www.youtube.com/watch?v=go3ENDAX-ds",
+      "papers": [
+        {
+          "id": "2610.29677",
+          "title": "Toward Recursive Self-Improvement in Physical AI (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.29677"
+        }
+      ]
+    },
+    "AFmzs5NEwrw": {
+      "video_id": "AFmzs5NEwrw",
+      "video_title": "Harness Scaling for Generalizable Agentic Reinforcement Learning (Oct 2026)",
+      "published": "2026-10-29",
+      "video_url": "https://www.youtube.com/watch?v=AFmzs5NEwrw",
+      "papers": [
+        {
+          "id": "2610.29458",
+          "title": "Harness Scaling for Generalizable Agentic Reinforcement Learning (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.29458"
+        }
+      ]
+    },
+    "GFFjbl6GeHM": {
+      "video_id": "GFFjbl6GeHM",
+      "video_title": "Reading, Writing, Sharing, and Interacting with the World through Video (Oct 2026)",
+      "published": "2026-10-29",
+      "video_url": "https://www.youtube.com/watch?v=GFFjbl6GeHM",
+      "papers": [
+        {
+          "id": "2610.31668",
+          "title": "Reading, Writing, Sharing, and Interacting with the World through Video (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.31668"
+        }
+      ]
+    },
+    "kobAm_PchU0": {
+      "video_id": "kobAm_PchU0",
+      "papers": []
+    },
+    "vK_aU0bjPuo": {
+      "video_id": "vK_aU0bjPuo",
+      "video_title": "BeNice! Closing Looping's Inference-Memory Gap via KV-Sharing (Oct 2026)",
+      "published": "2026-10-29",
+      "video_url": "https://www.youtube.com/watch?v=vK_aU0bjPuo",
+      "papers": [
+        {
+          "id": "2610.31633",
+          "title": "BeNice! Closing Looping's Inference-Memory Gap via KV-Sharing (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.31633"
+        }
+      ]
+    },
+    "LOrYM7JY61Y": {
+      "video_id": "LOrYM7JY61Y",
+      "video_title": "FrontierCS 2: A Benchmark for Computer Science R&D (Oct 2026)",
+      "published": "2026-10-29",
+      "video_url": "https://www.youtube.com/watch?v=LOrYM7JY61Y",
+      "papers": [
+        {
+          "id": "2610.29932",
+          "title": "FrontierCS 2: A Benchmark for Computer Science R&D (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.29932"
+        }
+      ]
     }
   }
 }
