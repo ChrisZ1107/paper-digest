@@ -4160,7 +4160,9 @@
         {
           "id": "2610.31329",
           "title": "WeVisOne-VL: Unified Visual Perception from Objects to Pixels (Oct 2026)",
-          "url": "https://arxiv.org/abs/2610.31329"
+          "url": "https://arxiv.org/abs/2610.31329",
+          "abstract": "Existing vision-language models (VLMs) remain unreliable for fine-grained visual perception. In this report, we present WeVisOne-VL (WeChat Vision All-in-One), a powerful VLM that unifies object-level and pixel-level perception through structured next-token prediction. It supports multiple visual tasks including object detection, referring localization, counting, OCR, segmentation, and matting, enabling localization at any user-specific granularity, from points and boxes to masks and alpha mattes. Architecturally, we integrate a lightweight pixel decoder into the VLM via a special <OBJ> token to generate instance-level pixel outputs. We train the model with a three-stage curriculum SFT followed by mixed-task RL. Across over 30 benchmarks, WeVisOne-VL demonstrates leading performance on both object-level and pixel-level tasks, while maintaining robust rejection for object-absent queries. By releasing WeVisOne-VL to the open-source community, we hope to advance VLMs from broad visual understanding toward truly reliable perception systems for real-world deployment.",
+          "abstract_zh": "现有的视觉-语言模型（VLMs）在细粒度视觉感知方面仍然不可靠。在本报告中，我们提出了 WeVisOne-VL（WeChat Vision All-in-One），这是一种强大的 VLM，通过结构化的下一个标记预测（next-token prediction）统一了对象级和像素级感知。它支持包括目标检测、指代定位、计数、OCR、分割和抠图在内的多种视觉任务，实现了从点、框到掩码和 Alpha 遮罩等任意用户特定粒度的定位。在架构上，我们通过一个特殊的 <OBJ> 标记将轻量级像素解码器集成到 VLM 中，以生成实例级的像素输出。我们通过三阶段课程 SFT（监督微调）和随后的混合任务 RL（强化学习）对模型进行了训练。在 30 多个基准测试中，WeVisOne-VL 在对象级和像素级任务上均展现出领先的性能，同时对对象缺失查询保持了稳健的拒绝能力。通过向开源社区发布 WeVisOne-VL，我们希望推动 VLM 从广泛的视觉理解迈向适用于现实世界部署的真正可靠的感知系统。"
         }
       ]
     },
@@ -4192,7 +4194,9 @@
         {
           "id": "2610.30949",
           "title": "IQuest-Q1: Advancing Foundation Capabilities for Agentic CLI Systems (Oct 2026)",
-          "url": "https://arxiv.org/abs/2610.30949"
+          "url": "https://arxiv.org/abs/2610.30949",
+          "abstract": "We present IQuest-Q1, a sparse Mixture-of-Experts (MoE) agentic foundation model with 320B total parameters (15B activated). IQuest-Q1 is developed through a three-stage process: (1) stable and efficient pre-training, combining Stable SplitNorm, Muon, and muP with a two-stage curriculum whose second stage increases the coding-data mixture, preserving a wide stability margin between safe and optimal learning rates; (2) fine-grained mid-training, expanding the data mixture across domains and formats and progressively extending the context; and (3) multi-scaffold with multi-version post-training, combining SFT, domain-specialized RL, and MOPD across various scaffolds to integrate complementary training signals and strengthen agentic coding capabilities. Furthermore, model merging combines different experts and checkpoints from different stages while mitigating conflicts among their parameter updates. The resulting IQuest-Q1 demonstrates capabilities in both coding and general tasks. We release IQuest-Q1 as an open-source model to support community research and development.",
+          "abstract_zh": "我们提出了IQuest-Q1，这是一款稀疏混合专家（MoE）代理基础模型，总参数量为320B（激活参数为15B）。IQuest-Q1的开发经历了三个阶段：(1) 稳定且高效的预训练，结合了Stable SplitNorm、Muon和muP，并采用了两阶段课程，第二阶段增加了编码数据混合比例，在安全和最优学习率之间保持了较宽的稳定性裕度；(2) 细粒度的中期训练，跨领域和格式扩展数据混合，并逐步扩展上下文；(3) 结合多版本后训练的多脚手架训练，在各种脚手架中整合SFT、领域专用RL和MOPD，以集成互补的训练信号并增强代理编码能力。此外，模型合并技术结合了来自不同阶段的不同专家和检查点，同时减轻了参数更新之间的冲突。最终的IQuest-Q1在编码和通用任务中均展现出卓越的能力。我们以开源模型形式发布IQuest-Q1，以支持社区的研究与开发。"
         }
       ]
     },
@@ -4205,7 +4209,9 @@
         {
           "id": "2610.31483",
           "title": "Training Small Language Models for Transferable Tool Selection (Oct 2026)",
-          "url": "https://arxiv.org/abs/2610.31483"
+          "url": "https://arxiv.org/abs/2610.31483",
+          "abstract": "As LLM agents operate over corpora of more than ten thousand tools, selecting the right tool for a complex multi-step user instruction becomes a central bottleneck. Tool descriptions cannot all fit in context, and relevance-based retrievers only rank tools without knowing which are actually needed. Recent work instead leverages proprietary commercial LLMs like Claude or ChatGPT to drive a retriever, decomposing the instruction and selecting over retrieved candidates. We show that a small, open model can be trained via reinforcement learning to perform the same functionality. On ToolBench, a Qwen3-8B model post-trained with our recipe outperforms Llama-4-Maverick (402B). In addition, the trained model transfers directly to different retrievers and generalizes to new tool corpora in different domains.",
+          "abstract_zh": "随着大语言模型（LLM）智能体在包含超过一万个工具的语料库上运行，为复杂的多步骤用户指令选择合适的工具已成为一个核心瓶颈。由于工具描述无法全部放入上下文，而基于相关性的检索器仅能对工具进行排序，却无法获知哪些工具是实际需要的。近期的研究转而利用 Claude 或 ChatGPT 等商业闭源大模型来驱动检索器，通过对指令进行分解并从检索出的候选项中进行选择。我们证明，一个小型开源模型可以通过强化学习进行训练，从而实现相同的功能。在 ToolBench 上，经过我们方案后训练的 Qwen3-8B 模型表现优于 Llama-4-Maverick (402B)。此外，该训练模型能够直接迁移到不同的检索器，并推广应用于不同领域的新工具语料库。"
         }
       ]
     },
@@ -4233,7 +4239,9 @@
         {
           "id": "2610.30340",
           "title": "Foundation4D: Towards a unified perception and reconstruction model for autonomous vehicles (Oct 2026)",
-          "url": "https://arxiv.org/abs/2610.30340"
+          "url": "https://arxiv.org/abs/2610.30340",
+          "abstract": "We introduce Foundation4D, a unified feed-forward model for geometry estimation, 3D detection, semantic occupancy, and Gaussian reconstruction from multi-camera driving video. A shared backbone uses factorized spatiotemporal attention to efficiently combine observations across cameras and time. Our video inference pipeline uses pose graph optimization to refine camera trajectories and assembles object tracks across input windows. We also develop a data annotation pipeline and release PAI-Foundation4D, a benchmark with dense depth and semantic occupancy labels for 1,253 driving clips. With benchmark-specific fine-tuning, Foundation4D achieves the lowest depth AbsRel on Waymo and nuScenes, the highest detection mAP on nuScenes, and the highest occupancy mIoU on OpenOccupancy among the compared methods. Our task-combination study shows benefits for both detection and geometry: co-training detection with geometry and occupancy improves top-class mAP by 1.2 points over detection-only training, while co-training geometry with detection reduces camera-to-rig translation error by $13.4\\%$ relative to geometry-only training. We further use the predicted geometry and trajectories as priors for lidarless NuRec, supporting reconstruction of driving scenes for simulation.",
+          "abstract_zh": "我们推出了 Foundation4D，这是一个用于多相机自动驾驶视频的几何估计、3D 检测、语义占据（semantic occupancy）和高斯重建的统一前馈模型。共享骨干网络利用分解的时空注意力机制，有效地结合了跨相机和跨时间的观测数据。我们的视频推理流水线使用位姿图优化来细化相机轨迹，并整合了输入窗口内的对象轨迹。我们还开发了一个数据标注流水线，并发布了 PAI-Foundation4D，这是一个包含 1,253 个驾驶片段的稠密深度和语义占据标签基准。通过针对基准的微调，Foundation4D 在 Waymo 和 nuScenes 上实现了最低的深度 AbsRel，在 nuScenes 上实现了最高的检测 mAP，并在 OpenOccupancy 上实现了所比较方法中最高的占据 mIoU。我们的任务组合研究表明，检测和几何任务可以互利：将检测与几何和占据任务共同训练，其顶级 mAP 比仅进行检测训练提高了 1.2 个点；而将几何与检测共同训练，其相机到车体（camera-to-rig）的平移误差较仅进行几何训练降低了 13.4%。我们进一步利用预测的几何和轨迹作为无激光雷达 NuRec 的先验，以支持模拟驾驶场景的重建。"
         }
       ]
     },
@@ -4246,7 +4254,9 @@
         {
           "id": "2610.29677",
           "title": "Toward Recursive Self-Improvement in Physical AI (Oct 2026)",
-          "url": "https://arxiv.org/abs/2610.29677"
+          "url": "https://arxiv.org/abs/2610.29677",
+          "abstract": "Recursive self-improvement (RSI) describes a system that improves not only its behavior but also the process by which it improves. Recent digital agents test this idea by rewriting their own code and checking each version with executable tests. Bringing these mechanisms into the physical world requires learning from partial observations through costly trials, while accounting for changing operating conditions and potentially irreversible consequences. We position RSI within robot learning and trace pathways from improving robot capabilities to improving the processes that generate them. We examine how physical experience can strengthen these improvement mechanisms and when the resulting gains can support further self-improvement of the mechanisms themselves. Gains carry forward only when feedback addresses remaining learning needs, the receiving component can use the change, its value survives changes in tasks or hardware, and continued practice remains safe and affordable. Existing studies, concentrated in manipulation, support behavioral improvement, benefits to later learning, and procedure improvement. Some systems also change the improver's knowledge or tools, but the physical studies reviewed here have yet to isolate gains attributable to recursion. We synthesize these findings into evaluation principles and research directions for machines that, trial by trial, safely improve the way they improve.",
+          "abstract_zh": "递归自我提升（RSI）描述了一种系统，它不仅能改进自身的行为，还能改进其提升自身的过程。近期的数字智能体通过重写自身代码并利用可执行测试来检查每个版本，从而对这一理念进行了验证。将这些机制引入物理世界，需要通过代价高昂的试验从局部观测中进行学习，同时还要应对不断变化的操作条件和可能产生的不可逆后果。我们将RSI置于机器人学习的背景下，探索从提升机器人能力到改进生成这些能力的流程的路径。我们研究了物理经验如何加强这些改进机制，以及由此产生的收益在何时能够支持机制本身的进一步自我提升。只有当反馈能够解决遗留的学习需求、接收组件能够利用这些变化、其价值能够抵御任务或硬件变更的影响，并且持续的实践保持安全且负担得起时，收益才能得以延续。现有的研究主要集中在操作领域，支持了行为改进、对后续学习的益处以及流程改进。一些系统也改变了提升者的知识或工具，但本文综述的物理实验尚未分离出可归因于递归的收益。我们将这些发现综合为评估原则和研究方向，旨在通过一次次试验，使机器能够安全地改进其改进自身的方式。"
         }
       ]
     },
@@ -4259,7 +4269,9 @@
         {
           "id": "2610.29458",
           "title": "Harness Scaling for Generalizable Agentic Reinforcement Learning (Oct 2026)",
-          "url": "https://arxiv.org/abs/2610.29458"
+          "url": "https://arxiv.org/abs/2610.29458",
+          "abstract": "Agent harnesses have become a central component of modern agentic systems, shaping how models use tools, manage context, and coordinate long-horizon interaction. Realizing the benefits of these harnesses depends on how effectively the underlying model can make use of them, motivating reinforcement learning directly through the harness. While recent efforts have explored harness diversification to reduce specialization to particular execution settings, how to systematically construct and organize harness diversity for cross-harness generalization remains insufficiently understood. This work studies Harness Scaling as a distinct scaling dimension for agentic RL, focusing on structured variation in how policies execute and interact with the same underlying task and environment. Concretely, we construct a factorized harness space, select a compact training subset with balanced factorial coverage, and organize cross-harness training through locality-aware task assignment. Across multiple benchmarks, model scales, and RL algorithms, Harness Scaling consistently improves generalization to unseen harness combinations. Moreover, policies trained through structured white-box harness variation transfer effectively to unseen external black-box harnesses, outperforming policies trained through a single complex black-box harness. These results establish harness diversity as a meaningful scaling dimension for agentic RL and highlight the importance of how this diversity is organized for cross-harness generalization.",
+          "abstract_zh": "代理工具框架（Agent harnesses）已成为现代代理系统的核心组件，决定了模型如何使用工具、管理上下文以及协调长跨度交互。发挥这些框架的优势取决于底层模型对其利用的有效性，这激发了直接通过框架进行强化学习的研究。尽管近期的研究探索了框架多样化以减少对特定执行环境的依赖，但如何系统地构建和组织框架多样性以实现跨框架泛化仍未被充分理解。本研究将“框架缩放”（Harness Scaling）作为代理强化学习的一个独特缩放维度，重点关注策略在执行和与相同底层任务及环境交互方式上的结构化变体。具体而言，我们构建了一个因子化的框架空间，选择了一个具有平衡因子覆盖范围的精简训练子集，并通过局部感知任务分配来组织跨框架训练。在多个基准测试、模型规模和强化学习算法上，框架缩放始终能够提升对未知框架组合的泛化能力。此外，通过结构化白盒框架变体训练出的策略能有效地迁移到未知的外部黑盒框架，其性能优于仅通过单一复杂黑盒框架训练的策略。这些结果确立了框架多样性作为代理强化学习中有意义的缩放维度，并强调了如何组织这种多样性对于实现跨框架泛化的重要性。"
         }
       ]
     },
@@ -4321,7 +4333,9 @@
         {
           "id": "2610.35845",
           "title": "Work Agents: Systems, Capabilities, and Optimization (Oct 2026)",
-          "url": "https://arxiv.org/abs/2610.35845"
+          "url": "https://arxiv.org/abs/2610.35845",
+          "abstract": "As foundation models evolve from information generation to digital work execution, agents are increasingly capable of completing complex tasks across tools, applications, and workflows. However, existing research lacks a unified perspective on how agents reliably accomplish delegated work. To address this gap, we present a work-centric, system-level perspective that views work agents as systems combining foundation models and runtime harnesses to execute tasks in stateful workspaces and deliver verifiable outcomes. We introduce two complementary dimensions, work persistence and work openness, to characterize working conditions, and classify digital work into five forms according to task scope and organization. Building on this framework, we identify five core capability families required for reliable work execution and examine approaches to model optimization, harness optimization, and their joint optimization. We further analyze existing evaluation methods and metrics from the perspective of work outcomes. Finally, we discuss future research directions, including sustained work delegation, adaptation to open environments, and the interaction between work execution and capability improvement. This paper provides a unified framework for understanding, optimizing, and evaluating work agents, supporting the development of systems capable of delivering reliable, verifiable, and practically valuable work outcomes.",
+          "abstract_zh": "随着基础模型从信息生成向数字化工作执行演进，智能体在跨工具、应用程序和工作流完成复杂任务的能力日益增强。然而，现有研究在智能体如何可靠地完成委派工作方面缺乏统一的视角。为弥补这一差距，我们提出了一个以工作为中心、系统级的视角，将工作智能体视为结合了基础模型和运行时环境的系统，旨在有状态的工作空间中执行任务并交付可验证的成果。我们引入了工作持久性和工作开放性这两个互补的维度来描述工作条件，并根据任务范围和组织形式将数字化工作分为五种类型。基于此框架，我们确定了可靠工作执行所需的五个核心能力族，并审视了模型优化、环境优化及其联合优化的方法。我们进一步从工作成果的角度分析了现有的评估方法和指标。最后，我们讨论了未来的研究方向，包括持续的工作委派、对开放环境的适应，以及工作执行与能力提升之间的相互作用。本文为理解、优化和评估工作智能体提供了一个统一的框架，支持开发能够交付可靠、可验证且具有实际价值的工作成果的系统。"
         }
       ]
     }
