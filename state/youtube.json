@@ -4571,6 +4571,19 @@
           "url": "https://arxiv.org/abs/2610.31889"
         }
       ]
+    },
+    "F7c5ZQ8s-2I": {
+      "video_id": "F7c5ZQ8s-2I",
+      "video_title": "EmbeddingGemma 2: Unified and Efficient Multimodal Representations (Oct 2026)",
+      "published": "2026-10-30",
+      "video_url": "https://www.youtube.com/watch?v=F7c5ZQ8s-2I",
+      "papers": [
+        {
+          "id": "2610.37364",
+          "title": "EmbeddingGemma 2: Unified and Efficient Multimodal Representations (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.37364"
+        }
+      ]
     }
   }
 }
