@@ -4338,6 +4338,227 @@
           "abstract_zh": "随着基础模型从信息生成向数字化工作执行演进，智能体在跨工具、应用程序和工作流完成复杂任务的能力日益增强。然而，现有研究在智能体如何可靠地完成委派工作方面缺乏统一的视角。为弥补这一差距，我们提出了一个以工作为中心、系统级的视角，将工作智能体视为结合了基础模型和运行时环境的系统，旨在有状态的工作空间中执行任务并交付可验证的成果。我们引入了工作持久性和工作开放性这两个互补的维度来描述工作条件，并根据任务范围和组织形式将数字化工作分为五种类型。基于此框架，我们确定了可靠工作执行所需的五个核心能力族，并审视了模型优化、环境优化及其联合优化的方法。我们进一步从工作成果的角度分析了现有的评估方法和指标。最后，我们讨论了未来的研究方向，包括持续的工作委派、对开放环境的适应，以及工作执行与能力提升之间的相互作用。本文为理解、优化和评估工作智能体提供了一个统一的框架，支持开发能够交付可靠、可验证且具有实际价值的工作成果的系统。"
         }
       ]
+    },
+    "OFQKNEL9bic": {
+      "video_id": "OFQKNEL9bic",
+      "video_title": "RynnUnify: Towards Unified Embodied Brain (Oct 2026)",
+      "published": "2026-10-30",
+      "video_url": "https://www.youtube.com/watch?v=OFQKNEL9bic",
+      "papers": [
+        {
+          "id": "2610.32965",
+          "title": "RynnUnify: Towards Unified Embodied Brain (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.32965"
+        }
+      ]
+    },
+    "VB0HnoHpjnc": {
+      "video_id": "VB0HnoHpjnc",
+      "video_title": "Retriever-Free Retrieval: Navigating Documents with Decision Models (Oct 2026)",
+      "published": "2026-10-30",
+      "video_url": "https://www.youtube.com/watch?v=VB0HnoHpjnc",
+      "papers": [
+        {
+          "id": "2610.35868",
+          "title": "Retriever-Free Retrieval: Navigating Documents with Decision Models (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.35868"
+        }
+      ]
+    },
+    "oqO7GEuB4FQ": {
+      "video_id": "oqO7GEuB4FQ",
+      "video_title": "Learning Quality-Controllable Robot Policies with Iterative Hindsight Relabeling (Oct 2026)",
+      "published": "2026-10-30",
+      "video_url": "https://www.youtube.com/watch?v=oqO7GEuB4FQ",
+      "papers": [
+        {
+          "id": "2610.37393",
+          "title": "Learning Quality-Controllable Robot Policies with Iterative Hindsight Relabeling (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.37393"
+        }
+      ]
+    },
+    "qJaet3QucBA": {
+      "video_id": "qJaet3QucBA",
+      "video_title": "Profiling a Frontier Agent with EBench: From Direct Control to Harness with Policy (Oct 2026)",
+      "published": "2026-10-30",
+      "video_url": "https://www.youtube.com/watch?v=qJaet3QucBA",
+      "papers": [
+        {
+          "id": "2610.35832",
+          "title": "Profiling a Frontier Agent with EBench: From Direct Control to Harness with Policy (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.35832"
+        }
+      ]
+    },
+    "rHXIo7R2WnQ": {
+      "video_id": "rHXIo7R2WnQ",
+      "video_title": "StreamVibe: Proactive Video Agents for Evolving User Intent (Oct 2026)",
+      "published": "2026-10-30",
+      "video_url": "https://www.youtube.com/watch?v=rHXIo7R2WnQ",
+      "papers": [
+        {
+          "id": "2610.34662",
+          "title": "StreamVibe: Proactive Video Agents for Evolving User Intent (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.34662"
+        }
+      ]
+    },
+    "S0RSnAuhPI4": {
+      "video_id": "S0RSnAuhPI4",
+      "video_title": "Behavior Spatial Benchmark: Evaluating Spatial Understanding for Robotics (Oct 2026)",
+      "published": "2026-10-30",
+      "video_url": "https://www.youtube.com/watch?v=S0RSnAuhPI4",
+      "papers": [
+        {
+          "id": "2610.34051",
+          "title": "Behavior Spatial Benchmark: Evaluating Spatial Understanding for Robotics (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.34051"
+        }
+      ]
+    },
+    "Ztpziopj41E": {
+      "video_id": "Ztpziopj41E",
+      "video_title": "Evolve on Graph: Self-Evolving Knowledge Graph Reasoning without Question Annotations (Oct 2026)",
+      "published": "2026-10-30",
+      "video_url": "https://www.youtube.com/watch?v=Ztpziopj41E",
+      "papers": [
+        {
+          "id": "2610.35598",
+          "title": "Evolve on Graph: Self-Evolving Knowledge Graph Reasoning without Question Annotations (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.35598"
+        }
+      ]
+    },
+    "x3aaNTdA75w": {
+      "video_id": "x3aaNTdA75w",
+      "video_title": "RSIHub: A Composable Framework for Agent-Evolution Methods (Oct 2026)",
+      "published": "2026-10-30",
+      "video_url": "https://www.youtube.com/watch?v=x3aaNTdA75w",
+      "papers": [
+        {
+          "id": "2610.32253",
+          "title": "RSIHub: A Composable Framework for Agent-Evolution Methods (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.32253"
+        }
+      ]
+    },
+    "XDFOqAqHCB4": {
+      "video_id": "XDFOqAqHCB4",
+      "video_title": "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning (Oct 2026)",
+      "published": "2026-10-30",
+      "video_url": "https://www.youtube.com/watch?v=XDFOqAqHCB4",
+      "papers": [
+        {
+          "id": "2610.37666",
+          "title": "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.37666"
+        }
+      ]
+    },
+    "smrWm_hD4Tg": {
+      "video_id": "smrWm_hD4Tg",
+      "video_title": "Rewriting Scaling Laws for Synthetic Data with Compute and Data Constraints (Oct 2026)",
+      "published": "2026-10-30",
+      "video_url": "https://www.youtube.com/watch?v=smrWm_hD4Tg",
+      "papers": [
+        {
+          "id": "2610.31867",
+          "title": "Rewriting Scaling Laws for Synthetic Data with Compute and Data Constraints (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.31867"
+        }
+      ]
+    },
+    "VeC0n2pDumk": {
+      "video_id": "VeC0n2pDumk",
+      "video_title": "Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success (Oct 2026)",
+      "published": "2026-10-30",
+      "video_url": "https://www.youtube.com/watch?v=VeC0n2pDumk",
+      "papers": [
+        {
+          "id": "2610.31670",
+          "title": "Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.31670"
+        }
+      ]
+    },
+    "hcBEaMHOCmU": {
+      "video_id": "hcBEaMHOCmU",
+      "video_title": "UniAction: Unified Action Conditioning for World Models (Oct 2026)",
+      "published": "2026-10-30",
+      "video_url": "https://www.youtube.com/watch?v=hcBEaMHOCmU",
+      "papers": [
+        {
+          "id": "2610.32977",
+          "title": "UniAction: Unified Action Conditioning for World Models (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.32977"
+        }
+      ]
+    },
+    "1TgO_VlUR4U": {
+      "video_id": "1TgO_VlUR4U",
+      "video_title": "Evolving Agent Teams (Oct 2026)",
+      "published": "2026-10-30",
+      "video_url": "https://www.youtube.com/watch?v=1TgO_VlUR4U",
+      "papers": [
+        {
+          "id": "2610.36848",
+          "title": "Evolving Agent Teams (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.36848"
+        }
+      ]
+    },
+    "uLWN3oQMnCg": {
+      "video_id": "uLWN3oQMnCg",
+      "video_title": "Loopholing All the Way: Language Modeling with Pure Self-Conditioning (Oct 2026)",
+      "published": "2026-10-30",
+      "video_url": "https://www.youtube.com/watch?v=uLWN3oQMnCg",
+      "papers": [
+        {
+          "id": "2610.30068",
+          "title": "Loopholing All the Way: Language Modeling with Pure Self-Conditioning (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.30068"
+        }
+      ]
+    },
+    "JgKqbI0nKn8": {
+      "video_id": "JgKqbI0nKn8",
+      "video_title": "Learning Force-Reactive Humanoid Loco-Manipulation (Oct 2026)",
+      "published": "2026-10-30",
+      "video_url": "https://www.youtube.com/watch?v=JgKqbI0nKn8",
+      "papers": [
+        {
+          "id": "2610.35862",
+          "title": "Learning Force-Reactive Humanoid Loco-Manipulation (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.35862"
+        }
+      ]
+    },
+    "9Gp12Y29GkU": {
+      "video_id": "9Gp12Y29GkU",
+      "video_title": "How High Can GPT-6 Astra Climb in Contact-Rich Manipulation? PhysLadder: A Hierarchical, Matched…",
+      "published": "2026-10-30",
+      "video_url": "https://www.youtube.com/watch?v=9Gp12Y29GkU",
+      "papers": [
+        {
+          "id": "2610.34527",
+          "title": "How High Can GPT-6 Astra Climb in Contact-Rich Manipulation? PhysLadder: A Hierarchical, Matched Sim-Real Benchmark for Physical Interaction (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.34527"
+        }
+      ]
+    },
+    "85gCd1_jbXw": {
+      "video_id": "85gCd1_jbXw",
+      "video_title": "Scaling Transformer Energy-based Models For High Quality Image Synthesis (Oct 2026)",
+      "published": "2026-10-30",
+      "video_url": "https://www.youtube.com/watch?v=85gCd1_jbXw",
+      "papers": [
+        {
+          "id": "2610.31889",
+          "title": "Scaling Transformer Energy-based Models For High Quality Image Synthesis (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.31889"
+        }
+      ]
     }
   }
 }
