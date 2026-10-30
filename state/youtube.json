@@ -4361,7 +4361,9 @@
         {
           "id": "2610.35868",
           "title": "Retriever-Free Retrieval: Navigating Documents with Decision Models (Oct 2026)",
-          "url": "https://arxiv.org/abs/2610.35868"
+          "url": "https://arxiv.org/abs/2610.35868",
+          "abstract": "While language models have become dramatically more capable, retrieval still largely relies on lexical matching or similarity in fixed embedding spaces. This creates a capability asymmetry: what the retriever fails to find, even the strongest generator cannot recover. We propose DecisionRAG, which brings the capabilities of pretrained language models to retrieval using decision models that jointly evaluate candidate branches in a single forward pass, without generating any tokens, and show that judging candidates in a shared context makes their relevance estimates comparable. Like a person browsing a library, DecisionRAG navigates the corpus's inherent structure from broad topics down to individual passages, deciding at each level which branches are worth exploring. Without task-specific training or a first-stage retriever, DecisionRAG outperforms dense retrieval with an 8B reranker by 13.8 R@1 points on MultiDoc2Dial and 17.4 Hit@1 points on Natural Questions. Across four benchmarks, including a corpus of 2.68 million Wikipedia paragraphs, retrieval takes just 0.7-1.8 seconds per query.",
+          "abstract_zh": "尽管语言模型的能力已大幅提升，但检索仍然主要依赖于词汇匹配或固定嵌入空间中的相似度。这造成了一种能力不对称：检索器无法找到的内容，即使是最强大的生成器也无法恢复。我们提出了DecisionRAG，通过决策模型将预训练语言模型的能力引入检索任务。该模型在单次前向传递中联合评估候选分支，而无需生成任何token，并表明在共享上下文中评估候选者使其相关性估计具有可比性。就像人在图书馆中浏览一样，DecisionRAG从广泛主题到单个段落导航语料库的固有结构，并在每个层级决定哪些分支值得探索。无需特定任务的训练或第一阶段检索器，DecisionRAG在MultiDoc2Dial上比8B重排序器（reranker）的R@1高出13.8个百分点，在Natural Questions上比Hit@1高出17.4个百分点。在包括268万个维基百科段落语料库在内的四个基准测试中，每个查询的检索时间仅需0.7-1.8秒。"
         }
       ]
     },
@@ -4581,7 +4583,9 @@
         {
           "id": "2610.37364",
           "title": "EmbeddingGemma 2: Unified and Efficient Multimodal Representations (Oct 2026)",
-          "url": "https://arxiv.org/abs/2610.37364"
+          "url": "https://arxiv.org/abs/2610.37364",
+          "abstract": "We present EmbeddingGemma 2, an open multimodal embedding model which natively represents text, images, audio, video, and combinations thereof in a unified space. Our approach introduces improvements such as simplified per-layer embeddings and a multi-stage curriculum with modality and objective progression which ensure strong quality across unimodal, cross-modal, and mixed-modal evaluations. Notably, in comprehensive embedding benchmarks across all modalities, EmbeddingGemma 2 establishes a new Pareto frontier, outperforming both specialist models and models two to twelve times larger. Furthermore, our design offers flexibility for resource-constrained environments, supporting selective modality encoder loading, adjustable vision token budgets, truncatable embedding dimensions, and quantized weights. We present ablations analyzing key decisions and release EmbeddingGemma 2 to promote further research.",
+          "abstract_zh": "我们推出了 EmbeddingGemma 2，这是一款开放的多模态嵌入模型，能够在一个统一的空间中原生表征文本、图像、音频、视频及其组合。我们的方法引入了多项改进，例如简化的逐层嵌入，以及采用模态和目标进阶的多阶段课程学习，确保了其在单模态、跨模态和混合模态评估中均具备卓越的质量。值得注意的是，在涵盖所有模态的综合嵌入基准测试中，EmbeddingGemma 2 确立了新的帕累托前沿，其性能不仅优于专业模型，还超越了规模大出 2 到 12 倍的模型。此外，我们的设计为资源受限的环境提供了灵活性，支持选择性加载模态编码器、可调的视觉 token 预算、可截断的嵌入维度以及量化权重。我们展示了分析关键决策的消融实验，并发布了 EmbeddingGemma 2 以促进进一步的研究。"
         }
       ]
     }
