@@ -1,0 +1,412 @@
+{
+  "date": "2026-10-30",
+  "timestamp": "2026-10-30T09:03:48.554159+08:00",
+  "title": "2026-10-30 热门论文 Top 10｜机器人·强化学习·AI",
+  "slug": "2026-10-30",
+  "papers": [
+    {
+      "id": "2610.36068",
+      "title": "Rollback: Experience Backtracking in World Models for Policy Improvement",
+      "abstract": "Action-conditioned world models offer a scalable alternative to costly real-world interaction for improving robot policies. However, existing world-model-based methods largely treat world models as forward-only surrogates of the physical environment, leaving untapped a capability no physical environment affords: rewinding to past decision points to explore counterfactual futures. We introduce Rollback, a policy improvement paradigm that turns world models from passive simulators into counterfactual engines: it rolls back to critical decision points, branches into alternative actions, and contrasts their outcomes to attribute success to individual decisions. This concentrates imagination where it matters most and distills counterfactual outcomes into fine-grained, action-level supervision without a separately learned value model. We build a scalable training system that unifies distributed world-model search with asynchronous real-robot execution, forming a self-reinforcing cycle: real-world experience continually sharpens the world model, and a sharper world model in turn drives further policy improvement. We term the world-model side of this cycle test-time physics grounding, a capability that hand-built physics simulators lack: while the world model serves as the training environment, real transitions from the policy it trains correct its dynamics through a lightweight LoRA pipeline. Experiments on three challenging real-world tasks show that Rollback improves success rates over the strongest baseline by an absolute 10.67%, 11.11%, and 11.85% on block extraction, ball tossing, and tabletop curling, respectively, while achieving more stable improvement throughout training. Although initialized from teleoperated demonstrations far below human level, Rollback surpasses the average success rate of human players on both ball tossing and tabletop curling within 8 hours of training.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-26",
+      "age_days": 4.04431196943287,
+      "upvotes": 86,
+      "comments": 2,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.48889,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 35,
+        "comments": 1
+      },
+      "score": 5.875,
+      "rule_tags": [
+        "世界模型"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "该论文提出了一种名为Rollback的机器人策略改进范式，旨在利用动作条件世界模型进行反事实推理。通过在关键决策点回溯并探索不同的替代动作，Rollback能够评估决策对结果的影响，从而在无需额外价值模型的情况下生成细粒度的动作级监督。此外，该系统通过异步真实机器人执行与世界模型训练的闭环，利用真实样本通过轻量级LoRA微调不断校准动力学模型，在三个现实任务中展示了性能提升。",
+        "highlights": [
+          {
+            "text": "提出Rollback范式，利用世界模型进行反事实推理，通过在关键决策点回溯并对比替代动作的结果，实现细粒度的动作级监督。",
+            "evidence": "We introduce Rollback, a policy improvement paradigm that turns world models from passive simulators into counterfactual engines: it rolls back to critical decision points, branches into alternative actions, and contrasts their outcomes to attribute success to individual decisions."
+          },
+          {
+            "text": "通过引入测试时物理接地机制，使世界模型能根据真实机器人执行的反馈通过LoRA进行实时动态校准。",
+            "evidence": "We term the world-model side of this cycle test-time physics grounding, a capability that hand-built physics simulators lack: while the world model serves as the training environment, real transitions from the policy it trains correct its dynamics through a lightweight LoRA pipeline."
+          }
+        ],
+        "tags": [
+          "世界模型",
+          "机器人操作",
+          "Sim-to-Real"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.37381",
+      "title": "PDRVLA: A Vision-Language-Action Model with Physical Dynamics Representations",
+      "abstract": "Vision--Language--Action (VLA) models generate robot actions from visual observations and language instructions, but their understanding of physical dynamics remains limited. Video world models can capture scene dynamics, yet generating future videos introduces high latency into the control loop. We introduce PDRVLA, whose lightweight Physical Dynamics Module extracts physical tokens from vision--language features to condition action generation without online video generation. The module learns through direct prediction of future RGB, depth, and optical-flow features, with auxiliary supervision through a frozen pretrained video world model. Training relies entirely on publicly available data, expanded through human-to-robot synthesis, subtask annotation, and embodied chain-of-thought (ECoT) annotation. Across four simulation benchmarks, PDRVLA achieves success rates of 99.3% on LIBERO, 89.9% on LIBERO-Plus, 93.6% on RoboTwin~2.0, and 81.5% on SimplerEnv. Ablations show improved future prediction with world-model supervision and evaluate how subtask conditioning, future object-pose supervision, and ECoT training affect action success.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-27",
+      "age_days": 3.0443119694328704,
+      "upvotes": 148,
+      "comments": 2,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.46621,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 9,
+        "comments": 1
+      },
+      "score": 5.656,
+      "rule_tags": [
+        "世界模型",
+        "视觉语言动作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对现有视觉语言动作（VLA）模型在物理动态理解上的局限性以及视频生成模型控制延迟高的问题，本研究提出了PDRVLA模型。该方法引入了一个轻量级物理动态模块，通过直接预测未来RGB、深度及光流特征来提取物理标记，从而在无需实时视频生成的情况下优化动作生成。作者声称，通过在多种仿真基准测试中的验证，该方法显著提升了机器人的任务成功率。",
+        "highlights": [
+          {
+            "text": "提出一种轻量级物理动态模块，在无需在线生成未来视频的前提下，通过提取物理标记引导动作生成，有效降低了控制延迟。",
+            "evidence": "We introduce PDRVLA, whose lightweight Physical Dynamics Module extracts physical tokens from vision--language features to condition action generation without online video generation."
+          },
+          {
+            "text": "PDRVLA在多个机器人仿真基准测试中表现出色，在LIBERO等任务中均达到了较高的成功率。",
+            "evidence": "Across four simulation benchmarks, PDRVLA achieves success rates of 99.3% on LIBERO, 89.9% on LIBERO-Plus, 93.6% on RoboTwin~2.0, and 81.5% on SimplerEnv."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "视觉语言动作"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.37666",
+      "title": "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning",
+      "abstract": "Vision-Language-Action (VLA) models have made substantial progress in robotic manipulation, but their generalization remains constrained by the diversity and coverage of action-labeled robot demonstrations. Human videos provide much broader behavioral and environmental experience, while learning from them faces a fundamental trade-off between scalable data and explicit action grounding. We introduce ThinkWorld, a VLA learning framework that grounds action reasoning in world dynamics and strengthens it through reinforcement learning with world imagination. ThinkWorld represents each action thought as a Chain-of-Dynamics (CoD), a sequence of discrete motion tokens that captures the intermediate dynamics connecting the current world to a future state and serves as a common action representation across embodiments. We first initialize CoD with action-labeled demonstrations, then predict the future induced by each CoD and reinforce those whose predictions better match the observed outcome. This enables videos without action annotations to provide direct supervision from observed state transitions, allowing human and robot experience to refine the same reasoning space. Experiments in simulation and on real robots demonstrate effective human-to-robot transfer and strong generalization to unseen tasks and environments.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-10-27",
+      "age_days": 3.0443119694328704,
+      "upvotes": 53,
+      "comments": 2,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.47524,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 5,
+        "comments": 1
+      },
+      "score": 5.573,
+      "rule_tags": [
+        "强化学习",
+        "机器人操作",
+        "视觉语言动作",
+        "推理"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对视觉语言动作模型在机器人操作中受限于动作标注数据的问题，作者提出了ThinkWorld框架。该框架引入“动力学链”（CoD）作为动作表征，通过世界模型想象和强化学习，使模型能够利用无动作标注的人类视频进行训练。实验表明，该方法实现了有效的人机技能迁移，并提升了模型在未知任务与环境下的泛化能力。",
+        "highlights": [
+          {
+            "text": "提出了一种将动作推理建立在世界动力学基础上的VLA学习框架，通过世界想象进行强化学习来增强推理能力。",
+            "evidence": "We introduce ThinkWorld, a VLA learning framework that grounds action reasoning in world dynamics and strengthens it through reinforcement learning with world imagination."
+          },
+          {
+            "text": "引入动力学链（CoD）作为跨实体的统一动作表征，允许利用无标注视频进行监督学习。",
+            "evidence": "This enables videos without action annotations to provide direct supervision from observed state transitions, allowing human and robot experience to refine the same reasoning space."
+          }
+        ],
+        "tags": [
+          "视觉语言动作",
+          "机器人操作",
+          "世界模型",
+          "Sim-to-Real"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.36077",
+      "title": "The Trinity:Capability-Driven Recursive Self-Improvement for Multimodal Agents",
+      "abstract": "Multimodal intelligence can be viewed as human-guided co-evolution between worlds and agents through interaction. However, scaling this process faces two bottlenecks: constructing heterogeneous, verifiable environments is costly, and manual Harness iteration cannot keep pace with growing task diversity and complexity. A key insight is that tasks with different modalities and surface forms can share the same underlying capability requirements. We therefore introduce The Trinity, a recursive self-improvement framework coupling world generation with Harness evolution through three roles: Creator, Explorer, and Evolver. Drawing on verified execution trajectories, Evolver shifts the basis of task organization from surface categories to shared requirements, reorganizing the original task tree into a hierarchical capability tree. We introduce Capability-Driven Real2Sim2Real: for heterogeneous tasks at the same node, Creator abstracts their common requirements into simplified, verifiable simulated worlds for capability learning, while evaluation on original tasks measures transfer. Along this capability tree, Explorer progressively evolves reusable capability modules through selective inheritance, forming a Harness tree whose validated updates accumulate across iterations within a fixed topology. The resulting Harnesses specialize in different capabilities, motivating a Capability-Aware Harness Router that uses public task information to select compatible module configurations from the tree. Our evolved Harnesses improve mean performance by 34 points across 28 training benchmarks and 26 points across 18 unseen benchmarks, including two real-world embodied tasks.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-26",
+      "age_days": 4.04431196943287,
+      "upvotes": 386,
+      "comments": 3,
+      "stars": 26,
+      "repo": "https://github.com/InfRec-Cardinal/The-Trinity",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.34545,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 74,
+        "comments": 1,
+        "stars": 12
+      },
+      "score": 5.109,
+      "rule_tags": [],
+      "summary_status": "Gemini 暂不可用，显示规则标签与原文摘要。"
+    },
+    {
+      "id": "2610.22471",
+      "title": "Has GPT-6-Astra Achieved Embodied Intelligence?",
+      "abstract": "GPT-6-Astra demonstrates a level of competence in robotic manipulation and navigation that challenges the conventional paradigm of building specialized models for individual tasks and embodiments. In this report, we ask not only how capable GPT-6-Astra is, but what its capabilities imply for the field. First, we probe the limits of standalone GPT-6-Astra. We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance (Fig. 1). Future research may focus on improving 1) the generality of ICL 2) cost and execution time, 3) physical-state verification, 4) recovery from irreversible failures, and 5) long-horizon preservation of progress. Second, we study the agentic harness for embodied control. We identify that close-loop coordination between a high-level \"System 2\" reasoner (i.e., GPT-6-Astra) and a low-level \"System 1\" controller (e.g., π0.5) is costly but effective. Third, we examine GPT-6-Astra on real-world deployment. Our experiments on 8 robot configurations reveal substantial gaps: 1) robot demonstrations required for ICL are expensive to collect, and 2) it is implausible to trade longer execution for higher success rates with physical constraints. Fourth, we envision the next generation of embodied benchmarks. We develop a prototype that 1) derives tasks from real-world needs, 2) provides no in-domain demonstrations, and 3) judges agents on a world clock that keeps running while they deliberate. Taken together, our results suggest that GPT-6-Astra has largely crossed the threshold of embodied competence, but not yet that of practical embodied intelligence.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-15",
+      "age_days": 15.04431196943287,
+      "upvotes": 327,
+      "comments": 2,
+      "stars": 315,
+      "repo": "https://github.com/OpenSenseNova/SenseNova-RoboRSI",
+      "trending_rank": 98,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.47693,
+      "growth": {
+        "days": 1.0,
+        "upvotes": -158,
+        "comments": 0,
+        "stars": 5
+      },
+      "score": 5.063,
+      "rule_tags": [
+        "人形机器人",
+        "机器人操作",
+        "导航"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文评估了GPT-6-Astra在机器人操作与导航任务中的表现。研究者通过12个基准测试探究了该模型在上下文学习下的能力极限，并分析了将其作为高层推理器与低层控制器结合的代理机制。实验发现，尽管该模型展现出较高的具身能力，但在真实物理部署中仍面临数据采集成本高、物理约束限制及长期执行效率等挑战。作者认为该模型尚未达到实用具身智能的标准。",
+        "highlights": [
+          {
+            "text": "GPT-6-Astra在跨越桌面操作、人形机器人、移动平台及灵巧手的12个代表性基准测试中，通过上下文学习实现了出色的性能。",
+            "evidence": "We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance"
+          },
+          {
+            "text": "研究指出高层“系统2”推理器与低层“系统1”控制器的闭环协调方案虽然有效，但伴随着较高的计算成本。",
+            "evidence": "We identify that close-loop coordination between a high-level \"System 2\" reasoner (i.e., GPT-6-Astra) and a low-level \"System 1\" controller (e.g., π0.5) is costly but effective."
+          },
+          {
+            "text": "在8种机器人配置的实机部署实验中，研究发现现有范式难以通过延长执行时间来换取物理约束下的高成功率。",
+            "evidence": "Our experiments on 8 robot configurations reveal substantial gaps: 1) robot demonstrations required for ICL are expensive to collect, and 2) it is implausible to trade longer execution for higher success rates with physical constraints."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "导航",
+          "人形机器人",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.34674",
+      "title": "Benchmarking Obstacle-Conditioned Safety in Household Robot Navigation",
+      "abstract": "Safe household navigation requires robots to regulate clearance and speed according to what an obstacle is and how close it is, without unnecessary conservatism. Yet existing evaluations do not test whether semantic safety distinctions are reflected in continuous motion. To that end, we introduce OSMA-Bench, an Obstacle-Conditioned Safe Motion Adaptation Benchmark built on spatially matched scenario sets that differ only in obstacle type. We also propose the Semantic Sensitivity Index (SSI), which measures whether clearance and distance-dependent speed and smoothness follow the caution ordering of obstacles. Evaluating VLM-based and vision-language-action (VLA) policies on the benchmark, we find that neither consistently adapts its motion to obstacle safety, even with explicit safety prompts. Our analysis shows that the policies can correctly distinguish obstacles by safety relevance but fail to reflect this distinction in the motion parameters or actions they produce. For VLM-based policies, which recognize the obstacle and then generate a navigation program, adding an explicit parameter-inference step between these two stages improves adaptation. These findings expose a gap in semantic-to-motion grounding, highlighting the need to translate semantic caution into appropriately safe motion.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-26",
+      "age_days": 4.04431196943287,
+      "upvotes": 10,
+      "comments": 3,
+      "stars": 2,
+      "repo": "https://github.com/OSMA-Bench/OSMA-Bench",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.41512,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 5,
+        "comments": 1,
+        "stars": 0
+      },
+      "score": 5.008,
+      "rule_tags": [
+        "导航",
+        "视觉语言动作"
+      ],
+      "summary_status": "Gemini 暂不可用，显示规则标签与原文摘要。"
+    },
+    {
+      "id": "2610.37219",
+      "title": "Vision-Language-Action or World-Action? Just Action Models",
+      "abstract": "The vision-language-action (VLA) and world-action model (WAM) communities debate whether control policies should inherit pretrained knowledge from vision-language models or from visual generators. The debate, however, bundles three separable choices: backbone initialization, the objective applied to future observations, and whether the machinery for that future loss is kept at inference. A gap between a VLA and a WAM therefore cannot simply be attributed to any one of them. We show that decoupling these choices yields a common framework for both families, which we term Just Action Model (JAM): a pretrained visual backbone with an action expert, trained with an action loss and a foresight loss. The foresight loss trains current-observation features to predict frozen encodings of the recorded future through a prediction head discarded after training, so no visual generation is involved in either training or inference, and the backbone can be chosen freely. We first compare objectives within fixed policy architectures, then evaluate the foresight recipe across backbone families. The resulting JAM policies outperform their matched FastWAM and ImageWAM counterparts on LIBERO and LIBERO-Plus, and achieve similar or slightly higher success rates on RoboTwin. Compared with FastWAM, JAM improves the success rates from 97.0%/55.3%/91.2% to 98.2%/64.5%/91.4%, respectively. With cached foresight targets, JAM reduces estimated online training FLOPs per sample per update by 73% relative to FastWAM. Our results show that future supervision improves control without visual generation or additional inference machinery, and strong foresight performance is attainable with either generator-initialized or vision-language backbones. Project Page: https://y0uroy.github.io/JAM",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-27",
+      "age_days": 3.0443119694328704,
+      "upvotes": 6,
+      "comments": 2,
+      "stars": 5,
+      "repo": "https://github.com/y0urOy/JAM",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.42258,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 2,
+        "comments": 1,
+        "stars": 3
+      },
+      "score": 4.948,
+      "rule_tags": [
+        "视觉语言动作"
+      ],
+      "summary_status": "Gemini 暂不可用，显示规则标签与原文摘要。"
+    },
+    {
+      "id": "2610.34921",
+      "title": "PhysEvolve: Verifier-grounded Self-evolution for Physical Reasoning with Executable Worlds",
+      "abstract": "Physical reasoning underpins how embodied systems understand and act in the physical world, yet vision-language models (VLMs) remain unreliable on questions about dynamics and physical causality. Progress is critically constrained by the scarcity of grounded counterfactual training data, as observational videos capture only the factual trajectory that occurred. The self-evolving paradigm offers a route beyond fixed datasets by enabling models to construct their own training problems. Extending this paradigm to physics, however, requires an external source of truth that can both validate model-proposed environments and verify alternative physical outcomes under intervention. We introduce , a verifier-grounded self-evolving framework that trains VLMs for causal physical reasoning from model-proposed executable worlds and simulation-authored tasks. At each round, a shared VLM proposes executable world programs and evidence schemas; a deterministic physics engine freezes each valid world, simulates matched baseline and body-elided counterfactual branches, and synthesizes discrete, answer-bound visual tasks. Exact verifier feedback from task solving updates both the shared policy via GRPO and an adaptive curriculum over physical intents. Starting from Qwen3-VL-8B-Instruct, achieves targeted gains across PhysBench, CausalPhys, and ContPhy without human intervention data, improving PhysBench Throwing by 8.8 points and ContPhy Counterfactual Removal and Goal-Pit by 7.4 and 24.4 points. These gains concentrate on interaction-sensitive and altered-world questions, demonstrating zero-shot transfer of causal principles to unseen complex dynamics (cloth, fluid, soft bodies) and real-world video.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-10-26",
+      "age_days": 4.04431196943287,
+      "upvotes": 3,
+      "comments": 2,
+      "stars": 3,
+      "repo": "https://github.com/yelonhu/PhysEvolve",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.41595,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 1,
+        "comments": 1,
+        "stars": 1
+      },
+      "score": 4.581,
+      "rule_tags": [
+        "强化学习",
+        "大模型后训练",
+        "推理"
+      ],
+      "summary_status": "Gemini 暂不可用，显示规则标签与原文摘要。"
+    },
+    {
+      "id": "2610.37037",
+      "title": "Zooming without Zooming v2: From Seeing Details to Connecting Evidence for Generalizable Multimodal Perception",
+      "abstract": "Multimodal perception forms the foundation of multimodal intelligence. In particular, spatial perception and multimodal long-context understanding are two pivotal tasks that underpin embodied AI and multimodal agents. However, synthesizing targeted, high-quality training data for these tasks remains difficult and costly. Our key insight is that these tasks share an underlying capability, which we call connecting evidence: identifying relevant visual facts, binding them to the correct entities, recovering their relations, and composing them into an answer. Crucially, targeted training data are far easier to synthesize for this capability than for these tasks themselves. To strengthen this capability, we propose EvidenceConnect, an easy-to-implement data synthesis framework that uses zoomed views of related regions within a single image to generate questions requiring comparison, aggregation, or chaining of visual evidence. To ensure quality, a reference answer is retained only when independent VLMs agree on it, and region-ablation tests discard questions whose answer survives the removal of selected regions. We then train base VLMs on the resulting data with RLVR, obtaining Zooming without Zooming v2 (ZwZ2). Although the synthesized data are not tailored to any downstream benchmark, ZwZ2 improves fine-grained and spatial perception, with further gains on embodied spatial reasoning, multimodal long-context understanding, multimodal agent tasks, and general visual reasoning. These results establish EvidenceConnect as an effective framework for supervising evidence connection and suggest that strengthening this shared capability leads to more generalizable multimodal perception.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-10-27",
+      "age_days": 3.0443119694328704,
+      "upvotes": 28,
+      "comments": 3,
+      "stars": 12,
+      "repo": "https://github.com/inclusionAI/Zooming-without-Zooming-v2",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.33565,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 3,
+        "comments": 1,
+        "stars": 0
+      },
+      "score": 4.552,
+      "rule_tags": [
+        "强化学习",
+        "大模型后训练",
+        "推理"
+      ],
+      "summary_status": "Gemini 暂不可用，显示规则标签与原文摘要。"
+    },
+    {
+      "id": "2610.30435",
+      "title": "Self-Assessment Reinforcement Learning for Search-State Awareness in Retrieval-Augmented Large Language Models",
+      "abstract": "Recent advances in search agents have enabled large language models to tackle complex tasks by retrieving and synthesizing external information. However, existing search agents often lack search-state awareness, i.e., the ability to recognize what information has been obtained and what remains missing, leading to hallucinated reasoning and prematurely terminated search. To address this limitation, we propose Self-Assessment Reinforcement Learning (SARL), a reinforcement learning framework in which models learn to recognize their own search state during training and improve their search behavior accordingly, without requiring additional assessment at test time. SARL achieves this through a dual reward design that captures the corrective effect of each assessment while penalizing excessive reliance on it, jointly encouraging effective and efficient search trajectories. Under this setup, SARL achieves a 24.3% relative improvement over the strongest baseline, with average gains of 35.9% on multi-hop reasoning and 27.9% on deep research benchmarks against the strongest per-benchmark baselines. SARL further surpasses methods built on auxiliary supervision or multi-agent coordination, despite operating as a standalone RL framework with no inference-time scaffolding. Beyond final performance, SARL maintains training stability under extended search horizons, a regime where existing methods consistently degrade, enabling sustained gains as task complexity grows.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-10-21",
+      "age_days": 9.04431196943287,
+      "upvotes": 3,
+      "comments": 2,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.42274,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 1,
+        "comments": 1
+      },
+      "score": 4.341,
+      "rule_tags": [
+        "强化学习",
+        "多智能体",
+        "推理"
+      ],
+      "summary_status": "Gemini 暂不可用，显示规则标签与原文摘要。"
+    }
+  ],
+  "candidate_count": 134,
+  "personalization_note": "已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。",
+  "html": "<h1>2026-10-30 热门论文 Top 10</h1>\n<p>机器人 · 强化学习 · 通用 AI</p>\n<p>生成时间：2026-10-30 09:03 CST。从 134 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>\n<p>候选来源：<a href=\"https://huggingface.co/papers\">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>\n<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>\n<h2>1. Rollback: Experience Backtracking in World Models for Policy Improvement</h2>\n<p><strong>机器人</strong> · 发表 2026-10-26 · 综合分 5.88</p>\n<p>Zotero 摘要相关性：0.489（相似度分数，不是概率）。</p>\n<p>HF 点赞 86 · 讨论 2</p>\n<p>较上次观测（1.0 天前）：点赞 +35 · 讨论 +1。</p>\n<p><strong>规则标签：</strong>世界模型</p>\n<p><strong>中文概述：</strong>该论文提出了一种名为Rollback的机器人策略改进范式，旨在利用动作条件世界模型进行反事实推理。通过在关键决策点回溯并探索不同的替代动作，Rollback能够评估决策对结果的影响，从而在无需额外价值模型的情况下生成细粒度的动作级监督。此外，该系统通过异步真实机器人执行与世界模型训练的闭环，利用真实样本通过轻量级LoRA微调不断校准动力学模型，在三个现实任务中展示了性能提升。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出Rollback范式，利用世界模型进行反事实推理，通过在关键决策点回溯并对比替代动作的结果，实现细粒度的动作级监督。<br><small>摘要依据：We introduce Rollback, a policy improvement paradigm that turns world models from passive simulators into counterfactual engines: it rolls back to critical decision points, branches into alternative actions, and contrasts their outcomes to attribute success to individual decisions.</small></li>\n<li>通过引入测试时物理接地机制，使世界模型能根据真实机器人执行的反馈通过LoRA进行实时动态校准。<br><small>摘要依据：We term the world-model side of this cycle test-time physics grounding, a capability that hand-built physics simulators lack: while the world model serves as the training environment, real transitions from the policy it trains correct its dynamics through a lightweight LoRA pipeline.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>世界模型 · 机器人操作 · Sim-to-Real</p>\n<p><strong>原文摘要节选：</strong>Action-conditioned world models offer a scalable alternative to costly real-world interaction for improving robot policies. However, existing world-model-based methods largely treat world models as forward-only surrogates of the physical environment, leaving untapped a capability no physical environment affords: rewinding to past decision points to explore counterfactual futures. We introduce Rollback, a policy improvement paradigm that turns world models from passive simulators into counterfactual engines: it rolls back to critical decision points, branches into alternative actions, and contrasts their outcomes to attribute success to individual decisions. This concentrates imagination where it matters most and distills counterfactual outcomes into fine-grained, action-level supervision…</p>\n<p><a href=\"https://arxiv.org/abs/2610.36068\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.36068\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.36068\">讨论与热度</a></p><hr>\n<h2>2. PDRVLA: A Vision-Language-Action Model with Physical Dynamics Representations</h2>\n<p><strong>机器人</strong> · 发表 2026-10-27 · 综合分 5.66</p>\n<p>Zotero 摘要相关性：0.466（相似度分数，不是概率）。</p>\n<p>HF 点赞 148 · 讨论 2</p>\n<p>较上次观测（1.0 天前）：点赞 +9 · 讨论 +1。</p>\n<p><strong>规则标签：</strong>世界模型 · 视觉语言动作</p>\n<p><strong>中文概述：</strong>针对现有视觉语言动作（VLA）模型在物理动态理解上的局限性以及视频生成模型控制延迟高的问题，本研究提出了PDRVLA模型。该方法引入了一个轻量级物理动态模块，通过直接预测未来RGB、深度及光流特征来提取物理标记，从而在无需实时视频生成的情况下优化动作生成。作者声称，通过在多种仿真基准测试中的验证，该方法显著提升了机器人的任务成功率。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出一种轻量级物理动态模块，在无需在线生成未来视频的前提下，通过提取物理标记引导动作生成，有效降低了控制延迟。<br><small>摘要依据：We introduce PDRVLA, whose lightweight Physical Dynamics Module extracts physical tokens from vision--language features to condition action generation without online video generation.</small></li>\n<li>PDRVLA在多个机器人仿真基准测试中表现出色，在LIBERO等任务中均达到了较高的成功率。<br><small>摘要依据：Across four simulation benchmarks, PDRVLA achieves success rates of 99.3% on LIBERO, 89.9% on LIBERO-Plus, 93.6% on RoboTwin~2.0, and 81.5% on SimplerEnv.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 视觉语言动作</p>\n<p><strong>原文摘要节选：</strong>Vision--Language--Action (VLA) models generate robot actions from visual observations and language instructions, but their understanding of physical dynamics remains limited. Video world models can capture scene dynamics, yet generating future videos introduces high latency into the control loop. We introduce PDRVLA, whose lightweight Physical Dynamics Module extracts physical tokens from vision--language features to condition action generation without online video generation. The module learns through direct prediction of future RGB, depth, and optical-flow features, with auxiliary supervision through a frozen pretrained video world model. Training relies entirely on publicly available data, expanded through human-to-robot synthesis, subtask annotation, and embodied chain-of-thought…</p>\n<p><a href=\"https://arxiv.org/abs/2610.37381\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.37381\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.37381\">讨论与热度</a></p><hr>\n<h2>3. ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning</h2>\n<p><strong>机器人 / 强化学习</strong> · 发表 2026-10-27 · 综合分 5.57</p>\n<p>Zotero 摘要相关性：0.475（相似度分数，不是概率）。</p>\n<p>HF 点赞 53 · 讨论 2</p>\n<p>较上次观测（1.0 天前）：点赞 +5 · 讨论 +1。</p>\n<p><strong>规则标签：</strong>强化学习 · 机器人操作 · 视觉语言动作 · 推理</p>\n<p><strong>中文概述：</strong>针对视觉语言动作模型在机器人操作中受限于动作标注数据的问题，作者提出了ThinkWorld框架。该框架引入“动力学链”（CoD）作为动作表征，通过世界模型想象和强化学习，使模型能够利用无动作标注的人类视频进行训练。实验表明，该方法实现了有效的人机技能迁移，并提升了模型在未知任务与环境下的泛化能力。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出了一种将动作推理建立在世界动力学基础上的VLA学习框架，通过世界想象进行强化学习来增强推理能力。<br><small>摘要依据：We introduce ThinkWorld, a VLA learning framework that grounds action reasoning in world dynamics and strengthens it through reinforcement learning with world imagination.</small></li>\n<li>引入动力学链（CoD）作为跨实体的统一动作表征，允许利用无标注视频进行监督学习。<br><small>摘要依据：This enables videos without action annotations to provide direct supervision from observed state transitions, allowing human and robot experience to refine the same reasoning space.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>视觉语言动作 · 机器人操作 · 世界模型 · Sim-to-Real</p>\n<p><strong>原文摘要节选：</strong>Vision-Language-Action (VLA) models have made substantial progress in robotic manipulation, but their generalization remains constrained by the diversity and coverage of action-labeled robot demonstrations. Human videos provide much broader behavioral and environmental experience, while learning from them faces a fundamental trade-off between scalable data and explicit action grounding. We introduce ThinkWorld, a VLA learning framework that grounds action reasoning in world dynamics and strengthens it through reinforcement learning with world imagination. ThinkWorld represents each action thought as a Chain-of-Dynamics (CoD), a sequence of discrete motion tokens that captures the intermediate dynamics connecting the current world to a future state and serves as a common action…</p>\n<p><a href=\"https://arxiv.org/abs/2610.37666\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.37666\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.37666\">讨论与热度</a></p><hr>\n<h2>4. The Trinity:Capability-Driven Recursive Self-Improvement for Multimodal Agents</h2>\n<p><strong>机器人</strong> · 发表 2026-10-26 · 综合分 5.11</p>\n<p>Zotero 摘要相关性：0.345（相似度分数，不是概率）。</p>\n<p>HF 点赞 386 · 讨论 3 · 仓库累计 Star 26（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +74 · 讨论 +1 · Star +12。</p>\n<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>\n<p><strong>原文摘要节选：</strong>Multimodal intelligence can be viewed as human-guided co-evolution between worlds and agents through interaction. However, scaling this process faces two bottlenecks: constructing heterogeneous, verifiable environments is costly, and manual Harness iteration cannot keep pace with growing task diversity and complexity. A key insight is that tasks with different modalities and surface forms can share the same underlying capability requirements. We therefore introduce The Trinity, a recursive self-improvement framework coupling world generation with Harness evolution through three roles: Creator, Explorer, and Evolver. Drawing on verified execution trajectories, Evolver shifts the basis of task organization from surface categories to shared requirements, reorganizing the original task tree…</p>\n<p><a href=\"https://arxiv.org/abs/2610.36077\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.36077\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.36077\">讨论与热度</a> · <a href=\"https://github.com/InfRec-Cardinal/The-Trinity\">代码</a></p><hr>\n<h2>5. Has GPT-6-Astra Achieved Embodied Intelligence?</h2>\n<p><strong>机器人</strong> · 发表 2026-10-15 · 综合分 5.06</p>\n<p>Zotero 摘要相关性：0.477（相似度分数，不是概率）。</p>\n<p>HF 点赞 327 · 讨论 2 · 本次 HF 热榜第 98 位 · 仓库累计 Star 315（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 -158 · 讨论 +0 · Star +5。</p>\n<p><strong>规则标签：</strong>人形机器人 · 机器人操作 · 导航</p>\n<p><strong>中文概述：</strong>本文评估了GPT-6-Astra在机器人操作与导航任务中的表现。研究者通过12个基准测试探究了该模型在上下文学习下的能力极限，并分析了将其作为高层推理器与低层控制器结合的代理机制。实验发现，尽管该模型展现出较高的具身能力，但在真实物理部署中仍面临数据采集成本高、物理约束限制及长期执行效率等挑战。作者认为该模型尚未达到实用具身智能的标准。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>GPT-6-Astra在跨越桌面操作、人形机器人、移动平台及灵巧手的12个代表性基准测试中，通过上下文学习实现了出色的性能。<br><small>摘要依据：We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance</small></li>\n<li>研究指出高层“系统2”推理器与低层“系统1”控制器的闭环协调方案虽然有效，但伴随着较高的计算成本。<br><small>摘要依据：We identify that close-loop coordination between a high-level &quot;System 2&quot; reasoner (i.e., GPT-6-Astra) and a low-level &quot;System 1&quot; controller (e.g., π0.5) is costly but effective.</small></li>\n<li>在8种机器人配置的实机部署实验中，研究发现现有范式难以通过延长执行时间来换取物理约束下的高成功率。<br><small>摘要依据：Our experiments on 8 robot configurations reveal substantial gaps: 1) robot demonstrations required for ICL are expensive to collect, and 2) it is implausible to trade longer execution for higher success rates with physical constraints.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 导航 · 人形机器人 · 推理</p>\n<p><strong>原文摘要节选：</strong>GPT-6-Astra demonstrates a level of competence in robotic manipulation and navigation that challenges the conventional paradigm of building specialized models for individual tasks and embodiments. In this report, we ask not only how capable GPT-6-Astra is, but what its capabilities imply for the field. First, we probe the limits of standalone GPT-6-Astra. We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance (Fig. 1). Future research may focus on improving 1) the generality of ICL 2) cost and…</p>\n<p><a href=\"https://arxiv.org/abs/2610.22471\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.22471\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.22471\">讨论与热度</a> · <a href=\"https://github.com/OpenSenseNova/SenseNova-RoboRSI\">代码</a></p><hr>\n<h2>6. Benchmarking Obstacle-Conditioned Safety in Household Robot Navigation</h2>\n<p><strong>机器人</strong> · 发表 2026-10-26 · 综合分 5.01</p>\n<p>Zotero 摘要相关性：0.415（相似度分数，不是概率）。</p>\n<p>HF 点赞 10 · 讨论 3 · 仓库累计 Star 2（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +5 · 讨论 +1 · Star +0。</p>\n<p><strong>规则标签：</strong>导航 · 视觉语言动作</p>\n<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>\n<p><strong>原文摘要节选：</strong>Safe household navigation requires robots to regulate clearance and speed according to what an obstacle is and how close it is, without unnecessary conservatism. Yet existing evaluations do not test whether semantic safety distinctions are reflected in continuous motion. To that end, we introduce OSMA-Bench, an Obstacle-Conditioned Safe Motion Adaptation Benchmark built on spatially matched scenario sets that differ only in obstacle type. We also propose the Semantic Sensitivity Index (SSI), which measures whether clearance and distance-dependent speed and smoothness follow the caution ordering of obstacles. Evaluating VLM-based and vision-language-action (VLA) policies on the benchmark, we find that neither consistently adapts its motion to obstacle safety, even with explicit safety…</p>\n<p><a href=\"https://arxiv.org/abs/2610.34674\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.34674\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.34674\">讨论与热度</a> · <a href=\"https://github.com/OSMA-Bench/OSMA-Bench\">代码</a></p><hr>\n<h2>7. Vision-Language-Action or World-Action? Just Action Models</h2>\n<p><strong>机器人</strong> · 发表 2026-10-27 · 综合分 4.95</p>\n<p>Zotero 摘要相关性：0.423（相似度分数，不是概率）。</p>\n<p>HF 点赞 6 · 讨论 2 · 仓库累计 Star 5（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +2 · 讨论 +1 · Star +3。</p>\n<p><strong>规则标签：</strong>视觉语言动作</p>\n<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>\n<p><strong>原文摘要节选：</strong>The vision-language-action (VLA) and world-action model (WAM) communities debate whether control policies should inherit pretrained knowledge from vision-language models or from visual generators. The debate, however, bundles three separable choices: backbone initialization, the objective applied to future observations, and whether the machinery for that future loss is kept at inference. A gap between a VLA and a WAM therefore cannot simply be attributed to any one of them. We show that decoupling these choices yields a common framework for both families, which we term Just Action Model (JAM): a pretrained visual backbone with an action expert, trained with an action loss and a foresight loss. The foresight loss trains current-observation features to predict frozen encodings of the…</p>\n<p><a href=\"https://arxiv.org/abs/2610.37219\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.37219\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.37219\">讨论与热度</a> · <a href=\"https://github.com/y0urOy/JAM\">代码</a></p><hr>\n<h2>8. PhysEvolve: Verifier-grounded Self-evolution for Physical Reasoning with Executable Worlds</h2>\n<p><strong>机器人 / 强化学习</strong> · 发表 2026-10-26 · 综合分 4.58</p>\n<p>Zotero 摘要相关性：0.416（相似度分数，不是概率）。</p>\n<p>HF 点赞 3 · 讨论 2 · 仓库累计 Star 3（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +1 · Star +1。</p>\n<p><strong>规则标签：</strong>强化学习 · 大模型后训练 · 推理</p>\n<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>\n<p><strong>原文摘要节选：</strong>Physical reasoning underpins how embodied systems understand and act in the physical world, yet vision-language models (VLMs) remain unreliable on questions about dynamics and physical causality. Progress is critically constrained by the scarcity of grounded counterfactual training data, as observational videos capture only the factual trajectory that occurred. The self-evolving paradigm offers a route beyond fixed datasets by enabling models to construct their own training problems. Extending this paradigm to physics, however, requires an external source of truth that can both validate model-proposed environments and verify alternative physical outcomes under intervention. We introduce , a verifier-grounded self-evolving framework that trains VLMs for causal physical reasoning from…</p>\n<p><a href=\"https://arxiv.org/abs/2610.34921\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.34921\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.34921\">讨论与热度</a> · <a href=\"https://github.com/yelonhu/PhysEvolve\">代码</a></p><hr>\n<h2>9. Zooming without Zooming v2: From Seeing Details to Connecting Evidence for Generalizable Multimodal Perception</h2>\n<p><strong>机器人 / 强化学习</strong> · 发表 2026-10-27 · 综合分 4.55</p>\n<p>Zotero 摘要相关性：0.336（相似度分数，不是概率）。</p>\n<p>HF 点赞 28 · 讨论 3 · 仓库累计 Star 12（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +3 · 讨论 +1 · Star +0。</p>\n<p><strong>规则标签：</strong>强化学习 · 大模型后训练 · 推理</p>\n<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>\n<p><strong>原文摘要节选：</strong>Multimodal perception forms the foundation of multimodal intelligence. In particular, spatial perception and multimodal long-context understanding are two pivotal tasks that underpin embodied AI and multimodal agents. However, synthesizing targeted, high-quality training data for these tasks remains difficult and costly. Our key insight is that these tasks share an underlying capability, which we call connecting evidence: identifying relevant visual facts, binding them to the correct entities, recovering their relations, and composing them into an answer. Crucially, targeted training data are far easier to synthesize for this capability than for these tasks themselves. To strengthen this capability, we propose EvidenceConnect, an easy-to-implement data synthesis framework that uses zoomed…</p>\n<p><a href=\"https://arxiv.org/abs/2610.37037\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.37037\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.37037\">讨论与热度</a> · <a href=\"https://github.com/inclusionAI/Zooming-without-Zooming-v2\">代码</a></p><hr>\n<h2>10. Self-Assessment Reinforcement Learning for Search-State Awareness in Retrieval-Augmented Large Language Models</h2>\n<p><strong>强化学习</strong> · 发表 2026-10-21 · 综合分 4.34</p>\n<p>Zotero 摘要相关性：0.423（相似度分数，不是概率）。</p>\n<p>HF 点赞 3 · 讨论 2</p>\n<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +1。</p>\n<p><strong>规则标签：</strong>强化学习 · 多智能体 · 推理</p>\n<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>\n<p><strong>原文摘要节选：</strong>Recent advances in search agents have enabled large language models to tackle complex tasks by retrieving and synthesizing external information. However, existing search agents often lack search-state awareness, i.e., the ability to recognize what information has been obtained and what remains missing, leading to hallucinated reasoning and prematurely terminated search. To address this limitation, we propose Self-Assessment Reinforcement Learning (SARL), a reinforcement learning framework in which models learn to recognize their own search state during training and improve their search behavior accordingly, without requiring additional assessment at test time. SARL achieves this through a dual reward design that captures the corrective effect of each assessment while penalizing excessive…</p>\n<p><a href=\"https://arxiv.org/abs/2610.30435\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.30435\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.30435\">讨论与热度</a></p><hr>"
+}

@@ -1,0 +1,18 @@
+{
+  "overview": "该论文提出了一种名为Rollback的机器人策略改进范式，旨在利用动作条件世界模型进行反事实推理。通过在关键决策点回溯并探索不同的替代动作，Rollback能够评估决策对结果的影响，从而在无需额外价值模型的情况下生成细粒度的动作级监督。此外，该系统通过异步真实机器人执行与世界模型训练的闭环，利用真实样本通过轻量级LoRA微调不断校准动力学模型，在三个现实任务中展示了性能提升。",
+  "highlights": [
+    {
+      "text": "提出Rollback范式，利用世界模型进行反事实推理，通过在关键决策点回溯并对比替代动作的结果，实现细粒度的动作级监督。",
+      "evidence": "We introduce Rollback, a policy improvement paradigm that turns world models from passive simulators into counterfactual engines: it rolls back to critical decision points, branches into alternative actions, and contrasts their outcomes to attribute success to individual decisions."
+    },
+    {
+      "text": "通过引入测试时物理接地机制，使世界模型能根据真实机器人执行的反馈通过LoRA进行实时动态校准。",
+      "evidence": "We term the world-model side of this cycle test-time physics grounding, a capability that hand-built physics simulators lack: while the world model serves as the training environment, real transitions from the policy it trains correct its dynamics through a lightweight LoRA pipeline."
+    }
+  ],
+  "tags": [
+    "世界模型",
+    "机器人操作",
+    "Sim-to-Real"
+  ]
+}
