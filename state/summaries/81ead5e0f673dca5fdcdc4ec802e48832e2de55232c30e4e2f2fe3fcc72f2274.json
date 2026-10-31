@@ -1,0 +1,17 @@
+{
+  "overview": "针对视觉语言模型在物理推理任务中表现不佳及训练数据匮乏的问题，本文提出PhysEvolve框架。该方法利用物理引擎作为真值来源，构建可执行的物理世界以生成对抗性训练任务。通过共享视觉语言模型提出任务及物理程序，并结合仿真反馈进行模型训练。实验结果表明，该方法在PhysBench及ContPhy等基准测试中实现了性能提升，并展示了对复杂物理动态及现实视频的零样本因果原则迁移能力。",
+  "highlights": [
+    {
+      "text": "PhysEvolve框架通过利用物理引擎作为验证器，实现了视觉语言模型在物理推理任务中的自我演化训练，无需人工标注数据。",
+      "evidence": "We introduce , a verifier-grounded self-evolving framework that trains VLMs for causal physical reasoning from model-proposed executable worlds and simulation-authored tasks."
+    },
+    {
+      "text": "该方法在PhysBench和ContPhy数据集上取得了显著性能提升，证明了其在处理物理因果与交互任务上的有效性。",
+      "evidence": "Starting from Qwen3-VL-8B-Instruct, achieves targeted gains across PhysBench, CausalPhys, and ContPhy without human intervention data, improving PhysBench Throwing by 8.8 points and ContPhy Counterfactual Removal and Goal-Pit by 7.4 and 24.4 points."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "推理"
+  ]
+}

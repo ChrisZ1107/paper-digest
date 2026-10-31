@@ -1,0 +1,147 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>2026-10-31 热门论文 Top 10｜机器人·强化学习·AI</title><body><h1>2026-10-31 热门论文 Top 10</h1>
+<p>机器人 · 强化学习 · 通用 AI</p>
+<p>生成时间：2026-10-31 09:01 CST。从 1013 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>
+<p>候选来源：<a href="https://huggingface.co/papers">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>
+<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>
+<h2>1. PDRVLA: A Vision-Language-Action Model with Physical Dynamics Representations</h2>
+<p><strong>机器人</strong> · 发表 2026-10-27 · 综合分 5.43</p>
+<p>Zotero 摘要相关性：0.466（相似度分数，不是概率）。</p>
+<p>HF 点赞 151 · 讨论 2</p>
+<p>较上次观测（1.0 天前）：点赞 +3 · 讨论 +0。</p>
+<p><strong>规则标签：</strong>世界模型 · 视觉语言动作</p>
+<p><strong>中文概述：</strong>针对现有视觉语言动作（VLA）模型在物理动态理解上的局限性以及视频生成模型控制延迟高的问题，本研究提出了PDRVLA模型。该方法引入了一个轻量级物理动态模块，通过直接预测未来RGB、深度及光流特征来提取物理标记，从而在无需实时视频生成的情况下优化动作生成。作者声称，通过在多种仿真基准测试中的验证，该方法显著提升了机器人的任务成功率。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出一种轻量级物理动态模块，在无需在线生成未来视频的前提下，通过提取物理标记引导动作生成，有效降低了控制延迟。<br><small>摘要依据：We introduce PDRVLA, whose lightweight Physical Dynamics Module extracts physical tokens from vision--language features to condition action generation without online video generation.</small></li>
+<li>PDRVLA在多个机器人仿真基准测试中表现出色，在LIBERO等任务中均达到了较高的成功率。<br><small>摘要依据：Across four simulation benchmarks, PDRVLA achieves success rates of 99.3% on LIBERO, 89.9% on LIBERO-Plus, 93.6% on RoboTwin~2.0, and 81.5% on SimplerEnv.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 视觉语言动作</p>
+<p><strong>原文摘要节选：</strong>Vision--Language--Action (VLA) models generate robot actions from visual observations and language instructions, but their understanding of physical dynamics remains limited. Video world models can capture scene dynamics, yet generating future videos introduces high latency into the control loop. We introduce PDRVLA, whose lightweight Physical Dynamics Module extracts physical tokens from vision--language features to condition action generation without online video generation. The module learns through direct prediction of future RGB, depth, and optical-flow features, with auxiliary supervision through a frozen pretrained video world model. Training relies entirely on publicly available data, expanded through human-to-robot synthesis, subtask annotation, and embodied chain-of-thought…</p>
+<p><a href="https://arxiv.org/abs/2610.37381">论文原文</a> · <a href="https://arxiv.org/pdf/2610.37381">PDF</a> · <a href="https://huggingface.co/papers/2610.37381">讨论与热度</a></p><hr>
+<h2>2. ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning</h2>
+<p><strong>机器人 / 强化学习</strong> · 发表 2026-10-27 · 综合分 5.33</p>
+<p>Zotero 摘要相关性：0.475（相似度分数，不是概率）。</p>
+<p>HF 点赞 55 · 讨论 2</p>
+<p>较上次观测（1.0 天前）：点赞 +2 · 讨论 +0。</p>
+<p><strong>规则标签：</strong>强化学习 · 机器人操作 · 视觉语言动作 · 推理</p>
+<p><strong>中文概述：</strong>针对视觉语言动作模型在机器人操作中受限于动作标注数据的问题，作者提出了ThinkWorld框架。该框架引入“动力学链”（CoD）作为动作表征，通过世界模型想象和强化学习，使模型能够利用无动作标注的人类视频进行训练。实验表明，该方法实现了有效的人机技能迁移，并提升了模型在未知任务与环境下的泛化能力。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出了一种将动作推理建立在世界动力学基础上的VLA学习框架，通过世界想象进行强化学习来增强推理能力。<br><small>摘要依据：We introduce ThinkWorld, a VLA learning framework that grounds action reasoning in world dynamics and strengthens it through reinforcement learning with world imagination.</small></li>
+<li>引入动力学链（CoD）作为跨实体的统一动作表征，允许利用无标注视频进行监督学习。<br><small>摘要依据：This enables videos without action annotations to provide direct supervision from observed state transitions, allowing human and robot experience to refine the same reasoning space.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>视觉语言动作 · 机器人操作 · 世界模型 · Sim-to-Real</p>
+<p><strong>原文摘要节选：</strong>Vision-Language-Action (VLA) models have made substantial progress in robotic manipulation, but their generalization remains constrained by the diversity and coverage of action-labeled robot demonstrations. Human videos provide much broader behavioral and environmental experience, while learning from them faces a fundamental trade-off between scalable data and explicit action grounding. We introduce ThinkWorld, a VLA learning framework that grounds action reasoning in world dynamics and strengthens it through reinforcement learning with world imagination. ThinkWorld represents each action thought as a Chain-of-Dynamics (CoD), a sequence of discrete motion tokens that captures the intermediate dynamics connecting the current world to a future state and serves as a common action…</p>
+<p><a href="https://arxiv.org/abs/2610.37666">论文原文</a> · <a href="https://arxiv.org/pdf/2610.37666">PDF</a> · <a href="https://huggingface.co/papers/2610.37666">讨论与热度</a></p><hr>
+<h2>3. Has GPT-6-Astra Achieved Embodied Intelligence?</h2>
+<p><strong>机器人</strong> · 发表 2026-10-15 · 综合分 5.23</p>
+<p>Zotero 摘要相关性：0.477（相似度分数，不是概率）。</p>
+<p>HF 点赞 328 · 讨论 2 · 本次 HF 热榜第 83 位 · 仓库累计 Star 336（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +0 · Star +21。</p>
+<p><strong>规则标签：</strong>人形机器人 · 机器人操作 · 导航</p>
+<p><strong>中文概述：</strong>本文评估了GPT-6-Astra在机器人操作与导航任务中的表现。研究者通过12个基准测试探究了该模型在上下文学习下的能力极限，并分析了将其作为高层推理器与低层控制器结合的代理机制。实验发现，尽管该模型展现出较高的具身能力，但在真实物理部署中仍面临数据采集成本高、物理约束限制及长期执行效率等挑战。作者认为该模型尚未达到实用具身智能的标准。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>GPT-6-Astra在跨越桌面操作、人形机器人、移动平台及灵巧手的12个代表性基准测试中，通过上下文学习实现了出色的性能。<br><small>摘要依据：We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance</small></li>
+<li>研究指出高层“系统2”推理器与低层“系统1”控制器的闭环协调方案虽然有效，但伴随着较高的计算成本。<br><small>摘要依据：We identify that close-loop coordination between a high-level &quot;System 2&quot; reasoner (i.e., GPT-6-Astra) and a low-level &quot;System 1&quot; controller (e.g., π0.5) is costly but effective.</small></li>
+<li>在8种机器人配置的实机部署实验中，研究发现现有范式难以通过延长执行时间来换取物理约束下的高成功率。<br><small>摘要依据：Our experiments on 8 robot configurations reveal substantial gaps: 1) robot demonstrations required for ICL are expensive to collect, and 2) it is implausible to trade longer execution for higher success rates with physical constraints.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 导航 · 人形机器人 · 推理</p>
+<p><strong>原文摘要节选：</strong>GPT-6-Astra demonstrates a level of competence in robotic manipulation and navigation that challenges the conventional paradigm of building specialized models for individual tasks and embodiments. In this report, we ask not only how capable GPT-6-Astra is, but what its capabilities imply for the field. First, we probe the limits of standalone GPT-6-Astra. We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance (Fig. 1). Future research may focus on improving 1) the generality of ICL 2) cost and…</p>
+<p><a href="https://arxiv.org/abs/2610.22471">论文原文</a> · <a href="https://arxiv.org/pdf/2610.22471">PDF</a> · <a href="https://huggingface.co/papers/2610.22471">讨论与热度</a> · <a href="https://github.com/OpenSenseNova/SenseNova-RoboRSI">代码</a></p><hr>
+<h2>4. Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success</h2>
+<p><strong>机器人</strong> · 发表 2026-10-23 · 综合分 5.02</p>
+<p>Zotero 摘要相关性：0.421（相似度分数，不是概率）。</p>
+<p>HF 点赞 27 · 讨论 2 · 仓库累计 Star 8（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +7 · 讨论 +1 · Star +0。</p>
+<p><strong>规则标签：</strong>视觉语言动作</p>
+<p><strong>中文概述：</strong>针对机器人基础模型评估成本高的问题，作者提出了传感器运动对齐（S^2）方法。该方法作为一种无需训练的离线指标，通过衡量模型感知表征与物理运动几何结构的一致性，量化模型能力。实验表明，S^2与下游机器人任务成功率呈正相关，能够作为一种低成本的评估代理，用于在部署前筛选模型架构并提供表征层面的解释。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出了一种无需训练的离线指标S^2，能够有效衡量模型感知表征与物理运动几何结构的一致性，从而作为评估机器人模型能力的低成本代理。<br><small>摘要依据：To test this, we propose Sensorimotor Alignment (S^2), a training-free offline metric that measures how well a model&#x27;s sensory representation aligns with the geometry of physical motion.</small></li>
+<li>研究发现S^2与机器人任务成功率高度相关，可用于在昂贵的闭环评估前优先筛选模型，并辅助视觉语言模型骨干的选择。<br><small>摘要依据：We find that S^2 correlates positively with downstream robot task success across model families, making it a low-cost offline proxy for prioritizing models before closed-loop evaluation. S^2 can also identify promising vision-language model (VLM) backbones before costly fine-tuning into vision-language-action models (VLAs).</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 推理</p>
+<p><strong>原文摘要节选：</strong>Robot foundation models are typically evaluated through costly closed-loop rollouts, motivating low-cost offline proxies for model capability. The Platonic Representation Hypothesis (PRH) suggests that as representations improve, modalities such as vision and language converge toward a shared statistical model of reality. We ask whether motion trajectories form another such modality: as embodied models become more capable, should their sensory representations converge toward the structure of physical motion? To test this, we propose Sensorimotor Alignment (S^2), a training-free offline metric that measures how well a model&#x27;s sensory representation aligns with the geometry of physical motion. We find that S^2 correlates positively with downstream robot task success across model families,…</p>
+<p><a href="https://arxiv.org/abs/2610.31670">论文原文</a> · <a href="https://arxiv.org/pdf/2610.31670">PDF</a> · <a href="https://huggingface.co/papers/2610.31670">讨论与热度</a> · <a href="https://github.com/yunfeixie233/sensorimotor-alignment">代码</a></p><hr>
+<h2>5. HuGe: Scaling Humanoid Generalist Vision-Language-Action Models with Egocentric Experience</h2>
+<p><strong>机器人</strong> · 发表 2026-10-25 · 综合分 4.96</p>
+<p>Zotero 摘要相关性：0.443（相似度分数，不是概率）。</p>
+<p>HF 点赞 4 · 讨论 2 · 仓库累计 Star 13（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +3 · 讨论 +1 · Star +2。</p>
+<p><strong>规则标签：</strong>人形机器人 · 视觉语言动作</p>
+<p><strong>中文概述：</strong>针对人形机器人视觉语言动作（VLA）模型面临的全身控制协同难及演示数据获取成本高的问题，本文提出了HuGe模型族。该方法通过整合超过2000小时的自我中心人类演示与机器人数据，结合预训练、人形适应及下游微调的三阶段流程，利用伪本体感觉构建及手臂外观重渲染技术实现跨形态迁移。实验表明，该模型在HumanoidArena仿真基准及Unitree G1实机抓取任务中表现优异。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出HuGe三阶段训练流程，通过伪本体感觉构建和视觉重渲染技术有效解决了人类演示与人形机器人之间的形态差异问题。<br><small>摘要依据：To facilitate transfer across embodiments, we construct pseudo-proprioceptive states through simulation playback during pre-training and modify arm appearance in egocentric observations through re-rendering during downstream fine-tuning.</small></li>
+<li>HuGe模型在HumanoidArena仿真基准上达到了当前最先进水平，并在Unitree G1实机上验证了通过整合自我中心演示能显著提升任务成功率。<br><small>摘要依据：With this pipeline, HuGe achieves the state-of-the-art on simulation benchmark HumanoidArena. Furthermore, real-world experiments on the Unitree G1 indicate that augmenting robot demonstrations with visually adapted egocentric demonstrations significantly increases success on a pick-and-drop task.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>人形机器人 · 视觉语言动作 · Sim-to-Real</p>
+<p><strong>原文摘要节选：</strong>Extending Vision-Language-Action models (VLAs) to humanoid robots requires coordinated whole-body control and diverse demonstrations that are costly to collect in real-world scenarios. Although egocentric human demonstrations provide a complementary source of task experience, differences in visual embodiment and missing robot proprioception complicate transfer to humanoid policies. To address these challenges, we introduce HuGe, a family of Humanoid Generalist VLAs pre-trained on over 2,000 hours of egocentric human and robot data. Specifically, HuGe employs three existing representative VLA architectures to predict latent motion tokens for a pretrained whole-body controller, together with hand-control signals. Based on this, we introduce a three-stage training pipeline that combines…</p>
+<p><a href="https://arxiv.org/abs/2610.34186">论文原文</a> · <a href="https://arxiv.org/pdf/2610.34186">PDF</a> · <a href="https://huggingface.co/papers/2610.34186">讨论与热度</a> · <a href="https://github.com/yliu-cs/HuGe">代码</a></p><hr>
+<h2>6. RynnWorld-Latent: A Cross-Embodiment World Model Conditioned on Universal Latent Actions</h2>
+<p><strong>机器人</strong> · 发表 2026-10-27 · 综合分 4.85</p>
+<p>Zotero 摘要相关性：0.458（相似度分数，不是概率）。</p>
+<p>HF 点赞 10 · 讨论 2 · 仓库累计 Star 11（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +0 · Star +0。</p>
+<p><strong>规则标签：</strong>世界模型 · 大模型后训练</p>
+<p><strong>中文概述：</strong>针对异构机器人实体动作空间不兼容及人类视频缺乏控制标签的挑战，本文提出了RynnWorld-Latent跨实体视频世界模型。该模型利用3D基础潜在动作作为通用条件接口，实现人类视频、机器人演示和仿真轨迹的联合预训练。实验表明，该方法不仅提升了视频预测性能，还通过数字远程操作和潜在动作合成两种数据生成路径，显著改善了仿真及真实机器人平台的策略执行成功率，验证了通用潜在动作在学习跨实体控制动态方面的可扩展性。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>该框架利用3D潜在动作作为通用接口，实现了跨人类视频、机器人演示及仿真数据的联合预训练，解决了不同实体间动作空间不兼容的问题。<br><small>摘要依据：This representation enables joint pretraining on human interaction videos, robot demonstrations, and simulation rollouts without requiring a common native action space.</small></li>
+<li>通过数字远程操作和潜在动作合成两种数据生成路径，模型在仿真LIBERO基准测试及真实机器人平台上均表现出更高的策略成功率。<br><small>摘要依据：Synthetic mid-training improves policy success rates on LIBERO and LIBERO-Plus, and both generation routes improve real-world policy success rates over real-demonstration-only training in the evaluated settings.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>世界模型 · 机器人操作 · Sim-to-Real</p>
+<p><strong>原文摘要节选：</strong>Learning controllable world dynamics from heterogeneous interaction videos is challenging because robot embodiments use incompatible action spaces, while human videos lack native control labels. We present RynnWorld-Latent, a cross-embodiment video world model that uses the 3D-grounded latent actions introduced by RynnLAM as a shared conditioning interface. This representation enables joint pretraining on human interaction videos, robot demonstrations, and simulation rollouts without requiring a common native action space. Built on a pretrained video transformer, RynnWorld-Latent combines global action tokens with an identity-initialized local pathway that aligns actions with future video latents. We pretrain on 23 datasets comprising approximately 553.5M frames and adapt the model to…</p>
+<p><a href="https://arxiv.org/abs/2610.36791">论文原文</a> · <a href="https://arxiv.org/pdf/2610.36791">PDF</a> · <a href="https://huggingface.co/papers/2610.36791">讨论与热度</a> · <a href="https://github.com/alibaba-damo-academy/RynnWorld-Latent">代码</a></p><hr>
+<h2>7. InteractiveWorld: A Verifiable Human-Centric Environment for Building Better Interactive MLLM Assistants</h2>
+<p><strong>机器人</strong> · 发表 2026-10-25 · 综合分 4.83</p>
+<p>Zotero 摘要相关性：0.372（相似度分数，不是概率）。</p>
+<p>HF 点赞 127 · 讨论 2 · 本次 HF 热榜第 50 位 · 仓库累计 Star 101（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +0 · Star +52。</p>
+<p><strong>中文概述：</strong>针对评估以人为中心的MLLM助手在物理世界提供协助的挑战，本文提出了InteractiveWorld环境。该环境通过模拟AI助手指导人类执行任务的闭环交互，实现了对物理世界任务的验证。在此基础上，作者构建了InteractiveBench基准测试集，涵盖120项多轮任务。评估实验显示，现有前沿多模态大模型在长程指导与规划任务中的表现仍有显著不足，为交互式助手的研发提供了验证平台与评估基准。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出InteractiveWorld环境，实现AI助手与人类行为主体的闭环交互验证，模拟助手指导人类完成物理任务的过程。<br><small>摘要依据：we propose InteractiveWorld, the first verifiable environment for closed-loop interaction between human and AI assistant.</small></li>
+<li>构建包含120项多轮任务的动态基准测试InteractiveBench，并通过状态奖励机制对任务结果进行可验证的评分。<br><small>摘要依据：Building on it, we introduce InteractiveBench, the first dynamic benchmark for egocentric AI assistants, with 120 multi-turn tasks across six categories. In each task, the assistant guides the human in real time, and every instruction shapes the outcome, which is scored by verifiable, state-based rewards.</small></li>
+<li>实验评估表明当前前沿MLLM在长程指导和规划任务中表现有限，距离成为可靠的物理世界助手尚有差距。<br><small>摘要依据：Experiments with 12 frontier MLLMs show they are still far from reliable assistants. Even the strongest model, Claude Fable 5.1, achieves at most 20% and 25% on long-horizon Guidance and Planning tasks, respectively.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>
+<p><strong>原文摘要节选：</strong>People have long dreamed of an assistant that is always there to guide them and remind what they forget, from new dishes to lost keys. Powered by multimodal large language models (MLLMs), egocentric AI assistants on wearable devices are bringing this dream within reach: they see what the user sees and give instructions for user&#x27;s physical work when necessary. However, testing such assistance is challenging and usually requires real people. The expensive and rare real interaction data leaves a key question unanswered: Can today&#x27;s MLLMs truly help people in physical world? To answer this question, we propose InteractiveWorld, the first verifiable environment for closed-loop interaction between human and AI assistant. Unlike existing robot-centric simulators, InteractiveWorld lets the…</p>
+<p><a href="https://arxiv.org/abs/2610.33966">论文原文</a> · <a href="https://arxiv.org/pdf/2610.33966">PDF</a> · <a href="https://huggingface.co/papers/2610.33966">讨论与热度</a> · <a href="https://github.com/facebookresearch/InteractiveWorld">代码</a></p><hr>
+<h2>8. Online Dense Reinforcement Learning with Planning-Grounding Agent for UI Navigation on Live IOS Apps</h2>
+<p><strong>强化学习</strong> · 发表 2026-10-29 · 综合分 4.59</p>
+<p>Zotero 摘要相关性：0.487（相似度分数，不是概率）。</p>
+<p>HF 点赞 6 · 讨论 1</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>强化学习 · PPO · 导航 · 离线强化学习</p>
+<p><strong>中文概述：</strong>针对现有UI导航模型面临的推理成本高或对静态轨迹依赖过强的问题，本文提出一种在iOS应用上进行在线强化学习的框架。该框架通过规划代理与UI基础模型解耦，利用大语言模型提供密集奖励信号，并采用PPO算法及名为GiGPPO的价值估计方法进行训练。实验表明，该方法在多个基准测试中优于监督微调和仅使用终端奖励的强化学习基线，展现出更好的分布外泛化能力。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出一种将规划代理与UI基础模型解耦的在线强化学习框架，并结合密集步级反馈与终端奖励优化智能体训练。<br><small>摘要依据：Our framework decouples the agent into two specialized components: a Planning agent and a UI Grounding model. We rely on an LLM-as-a-Judge to provide comprehensive reward signals, combining dense, step-level feedback to evaluate intermediate progress with a terminal reward for overall task completion.</small></li>
+<li>引入GiGPPO邻域条件价值估计方法，通过利用并发轨迹中视觉相似状态的奖励信号，提升了评估器的稳定性。<br><small>摘要依据：Furthermore, we introduce GiGPPO, a novel neighbor-conditioned value estimation method that improves critic stability by leveraging reward signals from visually similar states across concurrent trajectories.</small></li>
+<li>在UINavBench、iOSWorld和AndroidWorld等基准测试中，该方法相比监督微调和终端奖励基线表现出显著的性能提升。<br><small>摘要依据：Evaluations on rigorous benchmarks, including UINavBench, iOSWorld, and AndroidWorld, demonstrate that our online RL trained agents substantially outperform both SFT and terminal-only RL baselines while accelerating training convergence.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习 · PPO · 导航</p>
+<p><strong>原文摘要节选：</strong>While frontier vision-language models demonstrate strong capabilities in user interface (UI) navigation, their high inference costs prohibit everyday use. Conversely, smaller models trained via supervised fine-tuning (SFT) or offline reinforcement learning often memorize static trajectories, leading to brittle execution and an inability to recover from errors. To address these limitations, we propose a novel online reinforcement learning framework that trains UI navigation agents directly on live iOS applications. Our framework decouples the agent into two specialized components: a Planning agent and a UI Grounding model. We rely on an LLM-as-a-Judge to provide comprehensive reward signals, combining dense, step-level feedback to evaluate intermediate progress with a terminal reward for…</p>
+<p><a href="https://arxiv.org/abs/2610.39264">论文原文</a> · <a href="https://arxiv.org/pdf/2610.39264">PDF</a> · <a href="https://huggingface.co/papers/2610.39264">讨论与热度</a></p><hr>
+<h2>9. PhysEvolve: Verifier-grounded Self-evolution for Physical Reasoning with Executable Worlds</h2>
+<p><strong>机器人 / 强化学习</strong> · 发表 2026-10-26 · 综合分 4.57</p>
+<p>Zotero 摘要相关性：0.416（相似度分数，不是概率）。</p>
+<p>HF 点赞 5 · 讨论 2 · 仓库累计 Star 3（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +2 · 讨论 +0 · Star +0。</p>
+<p><strong>规则标签：</strong>强化学习 · 大模型后训练 · 推理</p>
+<p><strong>中文概述：</strong>针对视觉语言模型在物理推理任务中表现不佳及训练数据匮乏的问题，本文提出PhysEvolve框架。该方法利用物理引擎作为真值来源，构建可执行的物理世界以生成对抗性训练任务。通过共享视觉语言模型提出任务及物理程序，并结合仿真反馈进行模型训练。实验结果表明，该方法在PhysBench及ContPhy等基准测试中实现了性能提升，并展示了对复杂物理动态及现实视频的零样本因果原则迁移能力。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>PhysEvolve框架通过利用物理引擎作为验证器，实现了视觉语言模型在物理推理任务中的自我演化训练，无需人工标注数据。<br><small>摘要依据：We introduce , a verifier-grounded self-evolving framework that trains VLMs for causal physical reasoning from model-proposed executable worlds and simulation-authored tasks.</small></li>
+<li>该方法在PhysBench和ContPhy数据集上取得了显著性能提升，证明了其在处理物理因果与交互任务上的有效性。<br><small>摘要依据：Starting from Qwen3-VL-8B-Instruct, achieves targeted gains across PhysBench, CausalPhys, and ContPhy without human intervention data, improving PhysBench Throwing by 8.8 points and ContPhy Counterfactual Removal and Goal-Pit by 7.4 and 24.4 points.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>
+<p><strong>原文摘要节选：</strong>Physical reasoning underpins how embodied systems understand and act in the physical world, yet vision-language models (VLMs) remain unreliable on questions about dynamics and physical causality. Progress is critically constrained by the scarcity of grounded counterfactual training data, as observational videos capture only the factual trajectory that occurred. The self-evolving paradigm offers a route beyond fixed datasets by enabling models to construct their own training problems. Extending this paradigm to physics, however, requires an external source of truth that can both validate model-proposed environments and verify alternative physical outcomes under intervention. We introduce , a verifier-grounded self-evolving framework that trains VLMs for causal physical reasoning from…</p>
+<p><a href="https://arxiv.org/abs/2610.34921">论文原文</a> · <a href="https://arxiv.org/pdf/2610.34921">PDF</a> · <a href="https://huggingface.co/papers/2610.34921">讨论与热度</a> · <a href="https://github.com/yelonhu/PhysEvolve">代码</a></p><hr>
+<h2>10. Self-Assessment Reinforcement Learning for Search-State Awareness in Retrieval-Augmented Large Language Models</h2>
+<p><strong>强化学习</strong> · 发表 2026-10-21 · 综合分 4.41</p>
+<p>Zotero 摘要相关性：0.423（相似度分数，不是概率）。</p>
+<p>HF 点赞 5 · 讨论 2</p>
+<p>较上次观测（1.0 天前）：点赞 +2 · 讨论 +0。</p>
+<p><strong>规则标签：</strong>强化学习 · 多智能体 · 推理</p>
+<p><strong>中文概述：</strong>针对检索增强大语言模型在处理复杂任务时缺乏搜索状态感知、易导致幻觉和搜索过早终止的问题，本文提出了一种自我评估强化学习（SARL）框架。该方法通过双重奖励设计，使模型在训练过程中学习识别搜索状态并优化搜索行为，无需额外的推理时评估，从而在多跳推理和深度研究任务中提升了搜索效率与准确性。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>SARL框架通过自我评估机制增强了模型对搜索状态的认知，从而在无推理时额外辅助的情况下优化了搜索行为。<br><small>摘要依据：SARL achieves this through a dual reward design that captures the corrective effect of each assessment while penalizing excessive reliance on it, jointly encouraging effective and efficient search trajectories.</small></li>
+<li>该方法在多跳推理和深度研究基准测试中均优于现有最优基线，且在面对长搜索视界任务时仍能保持训练稳定性。<br><small>摘要依据：Under this setup, SARL achieves a 24.3% relative improvement over the strongest baseline, with average gains of 35.9% on multi-hop reasoning and 27.9% on deep research benchmarks against the strongest per-benchmark baselines.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习 · 推理</p>
+<p><strong>原文摘要节选：</strong>Recent advances in search agents have enabled large language models to tackle complex tasks by retrieving and synthesizing external information. However, existing search agents often lack search-state awareness, i.e., the ability to recognize what information has been obtained and what remains missing, leading to hallucinated reasoning and prematurely terminated search. To address this limitation, we propose Self-Assessment Reinforcement Learning (SARL), a reinforcement learning framework in which models learn to recognize their own search state during training and improve their search behavior accordingly, without requiring additional assessment at test time. SARL achieves this through a dual reward design that captures the corrective effect of each assessment while penalizing excessive…</p>
+<p><a href="https://arxiv.org/abs/2610.30435">论文原文</a> · <a href="https://arxiv.org/pdf/2610.30435">PDF</a> · <a href="https://huggingface.co/papers/2610.30435">讨论与热度</a></p><hr></body></html>

@@ -1,0 +1,18 @@
+{
+  "overview": "针对四足机器人拖曳非驱动挂车时的导航难题，作者提出了一种结合条件流匹配（CFM）与基于前向动力学模型（FDM）的模型预测路径积分（MPPI）控制的导航框架。该框架利用CFM优化MPPI的初始化，并通过MPPI实现路径的迭代修正。实验表明，该系统能在狭窄空间内实现实时避障导航，成功拖曳高达自身体重100%的负载。",
+  "highlights": [
+    {
+      "text": "提出结合条件流匹配与MPPI控制的导航框架，通过CFM改善初始化并加速MPPI收敛，利用FDM提升路径规划的可行性。",
+      "evidence": "The CFM model mitigates the initialization problem of MPPI and accelerates its convergence, while MPPI with the FDM recovers feasible solutions beyond the CFM model's training distribution by iterative refinement."
+    },
+    {
+      "text": "实现了全栈式机载导航系统，在复杂户外狭窄空间实验中，成功拖曳负载量达自身体重约100%的挂车。",
+      "evidence": "The system achieves an 85% success rate across 40 trials, towing a total load of up to 40 kg -- nearly 100% of RAIBO's body weight."
+    }
+  ],
+  "tags": [
+    "四足机器人",
+    "足式运动",
+    "导航"
+  ]
+}

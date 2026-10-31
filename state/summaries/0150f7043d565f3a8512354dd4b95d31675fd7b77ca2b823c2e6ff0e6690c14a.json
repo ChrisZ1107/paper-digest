@@ -1,0 +1,23 @@
+{
+  "overview": "针对四足机器人操作受限于现有控制器的问题，本文提出ELEVATE框架。该框架利用任务规划过程中的持续失败，识别并自动获取缺失的全身运动控制能力。它通过编码智能体构建并优化强化学习任务，将学习到的控制器存入库中并与现有控制器组合以重新执行任务。实验结果表明，该方法在仿真任务中实现了高成功率，并能将习得的能力直接迁移至真实四足操作机器人。",
+  "highlights": [
+    {
+      "text": "ELEVATE通过分析任务执行中的失败，自主识别并获取缺失的全身控制能力，并将验证后的控制器整合进库中以支持复杂任务。",
+      "evidence": "We present ELEVATE, a framework that uses persistent failures during task-program refinement to identify and acquire missing whole-body control capabilities."
+    },
+    {
+      "text": "该方法在仿真环境下自主获得了七种全身控制能力，并在五项超出原有工作空间的任务中达到98.4%至100%的平均成功率。",
+      "evidence": "On the five tasks beyond the initial controller's workspace, ELEVATE achieves mean success rates of 98.4%-100% across five independent runs, while coding-agent baselines with a fixed controller library fail to complete these tasks."
+    },
+    {
+      "text": "所合成的任务程序与习得的控制器可直接迁移至物理四足操作机器人，无需额外的机器人端训练或微调。",
+      "evidence": "The synthesized task programs, together with the acquired controllers, also transfer to a physical quadrupedal manipulator without real-robot training or fine-tuning, achieving 18/20 successes in rack retrieval and 16/20 in floor-to-rack placement."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "四足机器人",
+    "机器人操作",
+    "Sim-to-Real"
+  ]
+}

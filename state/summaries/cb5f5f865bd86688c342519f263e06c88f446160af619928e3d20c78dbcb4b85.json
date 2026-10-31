@@ -1,0 +1,17 @@
+{
+  "overview": "针对检索增强大语言模型在处理复杂任务时缺乏搜索状态感知、易导致幻觉和搜索过早终止的问题，本文提出了一种自我评估强化学习（SARL）框架。该方法通过双重奖励设计，使模型在训练过程中学习识别搜索状态并优化搜索行为，无需额外的推理时评估，从而在多跳推理和深度研究任务中提升了搜索效率与准确性。",
+  "highlights": [
+    {
+      "text": "SARL框架通过自我评估机制增强了模型对搜索状态的认知，从而在无推理时额外辅助的情况下优化了搜索行为。",
+      "evidence": "SARL achieves this through a dual reward design that captures the corrective effect of each assessment while penalizing excessive reliance on it, jointly encouraging effective and efficient search trajectories."
+    },
+    {
+      "text": "该方法在多跳推理和深度研究基准测试中均优于现有最优基线，且在面对长搜索视界任务时仍能保持训练稳定性。",
+      "evidence": "Under this setup, SARL achieves a 24.3% relative improvement over the strongest baseline, with average gains of 35.9% on multi-hop reasoning and 27.9% on deep research benchmarks against the strongest per-benchmark baselines."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "推理"
+  ]
+}

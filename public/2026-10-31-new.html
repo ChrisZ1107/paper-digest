@@ -1,0 +1,77 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>2026-10-31 每日新论文 5</title><body><h1>2026-10-31 每日新论文 5</h1>
+<p>机器人 · 强化学习 · 通用 AI</p>
+<p>生成时间：2026-10-31 09:01 CST。从 1013 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>
+<p>本栏优先收录最近发布且未出现在近期日报的 arXiv 论文，不按热度排序；相关性分用于结合你的 Zotero 收藏偏好。</p>
+<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>
+<p>本次合格候选不足 10 篇，实际收录 5 篇。</p>
+<h2>1. CSO: Refining Robotic Policies via Skill Distribution Alignment and Skill-Grained Optimization</h2>
+<p><strong>机器人 / 强化学习</strong> · 公告 2026-10-30 · 综合分 3.44</p>
+<p>Zotero 摘要相关性：0.530（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>强化学习 · 机器人操作 · 大模型后训练</p>
+<p><strong>中文概述：</strong>本文针对机器人操作中离散动作技能的量化误差及强化学习微调难题，提出了两阶段后训练框架CSO。首先利用拒绝采样监督微调将观测到技能的映射与成功轨迹对齐，随后在固定观测编码器的情况下进行技能策略优化，通过为每个完整技能计算独立的裁剪重要性权重以提升训练稳定性。实验表明，该方法在LIBERO及物理环境单臂任务中均取得了性能提升。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>CSO通过两阶段后训练策略有效解决了量化误差导致的技能分布偏差及强化学习微调中的不稳定性问题。<br><small>摘要依据：To address these challenges, we introduce Cascaded Skills Optimization (CSO), a two-stage post-training framework.</small></li>
+<li>该方法在LIBERO基准测试中表现出色，将平均成功率从80.1%提升至97.5%。<br><small>摘要依据：With a lightweight QueST-style policy, CSO raises overall LIBERO success from 80.1% to 97.5%, improves performance on RoboTwin2.0, and achieves 61.0% success across five physical single-arm tasks.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 强化学习 · Sim-to-Real</p>
+<p><strong>原文摘要节选：</strong>Discretizing continuous actions into discrete skills using methods like VQ-VAE has emerged as a powerful paradigm for robotic manipulation. However, quantization errors yield a suboptimal distribution for the skill prior, degrading its performance. While reinforcement learning offers a path for refinement, its direct application faces unstable encoder updates and a granularity dilemma in importance sampling. To address these challenges, we introduce Cascaded Skills Optimization (CSO), a two-stage post-training framework. First, Rejection-Sampling Supervised Fine-tuning aligns the model&#x27;s observation-to-skill mapping with the distribution of successful online trajectories via supervised fine-tuning. Second, with the observation encoder frozen, Skills Policy Optimization computes an…</p>
+<p><a href="https://arxiv.org/abs/2610.38357">论文原文</a> · <a href="https://arxiv.org/pdf/2610.38357">PDF</a></p><hr>
+<h2>2. RAIBO-Wagon: Real-Time Navigation System for a Legged Robot Towing a Wagon</h2>
+<p><strong>机器人</strong> · 公告 2026-10-30 · 综合分 3.44</p>
+<p>Zotero 摘要相关性：0.529（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>四足机器人 · 足式运动 · 导航</p>
+<p><strong>中文概述：</strong>针对四足机器人拖曳非驱动挂车时的导航难题，作者提出了一种结合条件流匹配（CFM）与基于前向动力学模型（FDM）的模型预测路径积分（MPPI）控制的导航框架。该框架利用CFM优化MPPI的初始化，并通过MPPI实现路径的迭代修正。实验表明，该系统能在狭窄空间内实现实时避障导航，成功拖曳高达自身体重100%的负载。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出结合条件流匹配与MPPI控制的导航框架，通过CFM改善初始化并加速MPPI收敛，利用FDM提升路径规划的可行性。<br><small>摘要依据：The CFM model mitigates the initialization problem of MPPI and accelerates its convergence, while MPPI with the FDM recovers feasible solutions beyond the CFM model&#x27;s training distribution by iterative refinement.</small></li>
+<li>实现了全栈式机载导航系统，在复杂户外狭窄空间实验中，成功拖曳负载量达自身体重约100%的挂车。<br><small>摘要依据：The system achieves an 85% success rate across 40 trials, towing a total load of up to 40 kg -- nearly 100% of RAIBO&#x27;s body weight.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>四足机器人 · 足式运动 · 导航</p>
+<p><strong>原文摘要节选：</strong>Legged robots have demonstrated advanced capabilities across a wide range of real-world tasks, yet much of this progress concerns the robot controlling only itself. Once the robot is coupled to an external object -- particularly an underactuated one -- the dynamics of the combined assembly become more complex. Towing a wagon is a common practical scenario, where coupled dynamics make reliable navigation challenging. This difficulty is amplified in confined spaces, where collision-free navigation requires finding a narrow set of feasible paths under strict real-time constraints. To address this, we propose a navigation framework that combines Conditional Flow Matching (CFM) with Model Predictive Path Integral (MPPI) control over a learned Forward Dynamics Model (FDM). The CFM model…</p>
+<p><a href="https://arxiv.org/abs/2610.39267">论文原文</a> · <a href="https://arxiv.org/pdf/2610.39267">PDF</a></p><hr>
+<h2>3. ELEVATE: Agentic Controller Acquisition from Task Failure for Quadrupedal Manipulation</h2>
+<p><strong>机器人</strong> · 公告 2026-10-30 · 综合分 3.41</p>
+<p>Zotero 摘要相关性：0.525（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>四足机器人</p>
+<p><strong>中文概述：</strong>针对四足机器人操作受限于现有控制器的问题，本文提出ELEVATE框架。该框架利用任务规划过程中的持续失败，识别并自动获取缺失的全身运动控制能力。它通过编码智能体构建并优化强化学习任务，将学习到的控制器存入库中并与现有控制器组合以重新执行任务。实验结果表明，该方法在仿真任务中实现了高成功率，并能将习得的能力直接迁移至真实四足操作机器人。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>ELEVATE通过分析任务执行中的失败，自主识别并获取缺失的全身控制能力，并将验证后的控制器整合进库中以支持复杂任务。<br><small>摘要依据：We present ELEVATE, a framework that uses persistent failures during task-program refinement to identify and acquire missing whole-body control capabilities.</small></li>
+<li>该方法在仿真环境下自主获得了七种全身控制能力，并在五项超出原有工作空间的任务中达到98.4%至100%的平均成功率。<br><small>摘要依据：On the five tasks beyond the initial controller&#x27;s workspace, ELEVATE achieves mean success rates of 98.4%-100% across five independent runs, while coding-agent baselines with a fixed controller library fail to complete these tasks.</small></li>
+<li>所合成的任务程序与习得的控制器可直接迁移至物理四足操作机器人，无需额外的机器人端训练或微调。<br><small>摘要依据：The synthesized task programs, together with the acquired controllers, also transfer to a physical quadrupedal manipulator without real-robot training or fine-tuning, achieving 18/20 successes in rack retrieval and 16/20 in floor-to-rack placement.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习 · 四足机器人 · 机器人操作 · Sim-to-Real</p>
+<p><strong>原文摘要节选：</strong>Quadrupedal manipulators can extend their workspace through whole-body interaction, but task-planning agents&#x27; capabilities remain limited by their available controllers. We present ELEVATE, a framework that uses persistent failures during task-program refinement to identify and acquire missing whole-body control capabilities. When these failures suggest a missing physical capability, a coding agent formulates and iteratively refines a reinforcement-learning problem, specifying behavior-specific rewards, curricula, and termination conditions. Validated controllers are added to the capability library and composed with existing controllers to retry the task. Starting from a single pretrained loco-manipulation controller, ELEVATE autonomously acquires controllers for wall-supported elevation,…</p>
+<p><a href="https://arxiv.org/abs/2610.38388">论文原文</a> · <a href="https://arxiv.org/pdf/2610.38388">PDF</a></p><hr>
+<h2>4. Is It the Curriculum or Just the Easy Start? Benchmarking Unsupervised Environment Design on Quadrupeds</h2>
+<p><strong>机器人 / 强化学习</strong> · 公告 2026-10-30 · 综合分 3.41</p>
+<p>Zotero 摘要相关性：0.524（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>强化学习 · PPO · 四足机器人 · 足式运动</p>
+<p><strong>中文概述：</strong>该研究旨在对四足机器人领域现有的无监督环境设计（UED）、领域随机化及课程学习方法进行系统基准测试。作者在MuJoCo MJX环境下，基于五种不同四足机器人模型，在统一协议下评估了14种方法。结果表明，没有单一方法在所有机器人和任务设置中均表现最优，且简单的训练难度设置在多种机器人分布内任务中具有较好的表现，研究最终为机器人环境课程的选择提供了参考指南。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>本研究构建了一个包含14种UED及机器人课程学习方法的统一基准测试，涵盖了五种在MuJoCo MJX中运行的3D四足机器人。<br><small>摘要依据：We present a benchmark that runs fourteen UED, domain-randomisation and robotics curricula under one protocol on five 3D quadrupeds in MuJoCo MJX: the closed-chain W01-TEK and the open-chain Unitree Go1 and Go2, Google Barkour vB and Boston Dynamics Spot.</small></li>
+<li>实验发现，简单的训练难度设置在多种机器人分布内任务中表现出色，且成功驱动的课程方法相比其他方法具有更高的出现频率。<br><small>摘要依据：Methods with easy or low-difficulty training levels, curated or not, fill the top groups on in-distribution random levels of Go1 and Barkour, and of W01-TEK apart from PAIRED+BiBC. The success-driven terrain curriculum from legged-robot practice is in a top group most often</small></li>
+</ul>
+<p><strong>AI 主题：</strong>四足机器人 · PPO · Sim-to-Real</p>
+<p><strong>原文摘要节选：</strong>Unsupervised environment design (UED) methods such as PLR, ACCEL, SFL and PAIRED are compared mostly on 2D mazes, grid worlds and BipedalWalker, while terrain curricula for legged robots are hand-designed and evaluated against a few baselines. We present a benchmark that runs fourteen UED, domain-randomisation and robotics curricula under one protocol on five 3D quadrupeds in MuJoCo MJX: the closed-chain W01-TEK and the open-chain Unitree Go1 and Go2, Google Barkour vB and Boston Dynamics Spot. Levels are vectors of eight interpretable terrain parameters, and all curricula drive the same PPO student at matched environment-step budgets. The evaluation reports success on random and held-out structured terrains, interquartile means with stratified bootstrap intervals, capability envelopes…</p>
+<p><a href="https://arxiv.org/abs/2610.40364">论文原文</a> · <a href="https://arxiv.org/pdf/2610.40364">PDF</a></p><hr>
+<h2>5. Explore Where It Matters: Targeted Exploration for Efficient Rover Adaptation</h2>
+<p><strong>机器人</strong> · 公告 2026-10-30 · 综合分 3.34</p>
+<p>Zotero 摘要相关性：0.514（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>足式运动 · Sim-to-Real · 世界模型</p>
+<p><strong>中文概述：</strong>针对行星探测车在不可预测的地形（如滑坡、沉陷）中面临的Sim-to-Real差距问题，作者提出了TERRA框架。该方法通过训练一个损失预测器来识别影响任务表现的模型误差，并利用奖励加权的预测损失指导模型在线适应。实验表明，TERRA在仿真环境下能快速实现爬坡任务，并在真实探测车实验中仅需少量试验即可恢复受控运动性能。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>TERRA框架通过奖励加权的预测损失与损失预测器，实现了针对任务相关模型误差的定向探索与高效适应。<br><small>摘要依据：TERRA adapts a simulation-trained world model with a reward-weighted prediction loss and trains a loss predictor to estimate where future performance-relevant errors are likely to occur, using this signal to guide exploration during MPC.</small></li>
+<li>在仿真与真实场景中，TERRA均表现出高效的收敛能力，尤其在真实地形测试中仅需极少量试验。<br><small>摘要依据：On the ERNEST rover, TERRA recovers coordinated active-suspension locomotion on a deformable Mars-simulant slope within three to five real-world trials.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>Sim-to-Real · 世界模型</p>
+<p><strong>原文摘要节选：</strong>Future planetary rovers will traverse steep, deformable terrain where slip, sinkage, and terrain deformation can threaten mobility. Although simulation can capture some wheel-soil effects, unmodeled deformable-terrain phenomena create sim-to-real gaps requiring deployment-time adaptation. Yet, rover operations leave little room for extensive trial-and-error. We introduce TERRA (Targeted Exploration for Reward-Relevant Adaptation), an online adaptation framework that efficiently seeks deployment data exposing task-relevant model errors and corrects them. TERRA adapts a simulation-trained world model with a reward-weighted prediction loss and trains a loss predictor to estimate where future performance-relevant errors are likely to occur, using this signal to guide exploration during MPC.…</p>
+<p><a href="https://arxiv.org/abs/2610.38657">论文原文</a> · <a href="https://arxiv.org/pdf/2610.38657">PDF</a></p><hr></body></html>

@@ -1,0 +1,18 @@
+{
+  "overview": "本文针对机器人操作中离散动作技能的量化误差及强化学习微调难题，提出了两阶段后训练框架CSO。首先利用拒绝采样监督微调将观测到技能的映射与成功轨迹对齐，随后在固定观测编码器的情况下进行技能策略优化，通过为每个完整技能计算独立的裁剪重要性权重以提升训练稳定性。实验表明，该方法在LIBERO及物理环境单臂任务中均取得了性能提升。",
+  "highlights": [
+    {
+      "text": "CSO通过两阶段后训练策略有效解决了量化误差导致的技能分布偏差及强化学习微调中的不稳定性问题。",
+      "evidence": "To address these challenges, we introduce Cascaded Skills Optimization (CSO), a two-stage post-training framework."
+    },
+    {
+      "text": "该方法在LIBERO基准测试中表现出色，将平均成功率从80.1%提升至97.5%。",
+      "evidence": "With a lightweight QueST-style policy, CSO raises overall LIBERO success from 80.1% to 97.5%, improves performance on RoboTwin2.0, and achieves 61.0% success across five physical single-arm tasks."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "强化学习",
+    "Sim-to-Real"
+  ]
+}

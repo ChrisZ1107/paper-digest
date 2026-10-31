@@ -1,0 +1,18 @@
+{
+  "overview": "该研究旨在对四足机器人领域现有的无监督环境设计（UED）、领域随机化及课程学习方法进行系统基准测试。作者在MuJoCo MJX环境下，基于五种不同四足机器人模型，在统一协议下评估了14种方法。结果表明，没有单一方法在所有机器人和任务设置中均表现最优，且简单的训练难度设置在多种机器人分布内任务中具有较好的表现，研究最终为机器人环境课程的选择提供了参考指南。",
+  "highlights": [
+    {
+      "text": "本研究构建了一个包含14种UED及机器人课程学习方法的统一基准测试，涵盖了五种在MuJoCo MJX中运行的3D四足机器人。",
+      "evidence": "We present a benchmark that runs fourteen UED, domain-randomisation and robotics curricula under one protocol on five 3D quadrupeds in MuJoCo MJX: the closed-chain W01-TEK and the open-chain Unitree Go1 and Go2, Google Barkour vB and Boston Dynamics Spot."
+    },
+    {
+      "text": "实验发现，简单的训练难度设置在多种机器人分布内任务中表现出色，且成功驱动的课程方法相比其他方法具有更高的出现频率。",
+      "evidence": "Methods with easy or low-difficulty training levels, curated or not, fill the top groups on in-distribution random levels of Go1 and Barkour, and of W01-TEK apart from PAIRED+BiBC. The success-driven terrain curriculum from legged-robot practice is in a top group most often"
+    }
+  ],
+  "tags": [
+    "四足机器人",
+    "PPO",
+    "Sim-to-Real"
+  ]
+}

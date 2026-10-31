@@ -1,0 +1,18 @@
+{
+  "overview": "针对人形机器人视觉语言动作（VLA）模型面临的全身控制协同难及演示数据获取成本高的问题，本文提出了HuGe模型族。该方法通过整合超过2000小时的自我中心人类演示与机器人数据，结合预训练、人形适应及下游微调的三阶段流程，利用伪本体感觉构建及手臂外观重渲染技术实现跨形态迁移。实验表明，该模型在HumanoidArena仿真基准及Unitree G1实机抓取任务中表现优异。",
+  "highlights": [
+    {
+      "text": "提出HuGe三阶段训练流程，通过伪本体感觉构建和视觉重渲染技术有效解决了人类演示与人形机器人之间的形态差异问题。",
+      "evidence": "To facilitate transfer across embodiments, we construct pseudo-proprioceptive states through simulation playback during pre-training and modify arm appearance in egocentric observations through re-rendering during downstream fine-tuning."
+    },
+    {
+      "text": "HuGe模型在HumanoidArena仿真基准上达到了当前最先进水平，并在Unitree G1实机上验证了通过整合自我中心演示能显著提升任务成功率。",
+      "evidence": "With this pipeline, HuGe achieves the state-of-the-art on simulation benchmark HumanoidArena. Furthermore, real-world experiments on the Unitree G1 indicate that augmenting robot demonstrations with visually adapted egocentric demonstrations significantly increases success on a pick-and-drop task."
+    }
+  ],
+  "tags": [
+    "人形机器人",
+    "视觉语言动作",
+    "Sim-to-Real"
+  ]
+}

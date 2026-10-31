@@ -1,0 +1,22 @@
+{
+  "overview": "针对现有UI导航模型面临的推理成本高或对静态轨迹依赖过强的问题，本文提出一种在iOS应用上进行在线强化学习的框架。该框架通过规划代理与UI基础模型解耦，利用大语言模型提供密集奖励信号，并采用PPO算法及名为GiGPPO的价值估计方法进行训练。实验表明，该方法在多个基准测试中优于监督微调和仅使用终端奖励的强化学习基线，展现出更好的分布外泛化能力。",
+  "highlights": [
+    {
+      "text": "提出一种将规划代理与UI基础模型解耦的在线强化学习框架，并结合密集步级反馈与终端奖励优化智能体训练。",
+      "evidence": "Our framework decouples the agent into two specialized components: a Planning agent and a UI Grounding model. We rely on an LLM-as-a-Judge to provide comprehensive reward signals, combining dense, step-level feedback to evaluate intermediate progress with a terminal reward for overall task completion."
+    },
+    {
+      "text": "引入GiGPPO邻域条件价值估计方法，通过利用并发轨迹中视觉相似状态的奖励信号，提升了评估器的稳定性。",
+      "evidence": "Furthermore, we introduce GiGPPO, a novel neighbor-conditioned value estimation method that improves critic stability by leveraging reward signals from visually similar states across concurrent trajectories."
+    },
+    {
+      "text": "在UINavBench、iOSWorld和AndroidWorld等基准测试中，该方法相比监督微调和终端奖励基线表现出显著的性能提升。",
+      "evidence": "Evaluations on rigorous benchmarks, including UINavBench, iOSWorld, and AndroidWorld, demonstrate that our online RL trained agents substantially outperform both SFT and terminal-only RL baselines while accelerating training convergence."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "PPO",
+    "导航"
+  ]
+}

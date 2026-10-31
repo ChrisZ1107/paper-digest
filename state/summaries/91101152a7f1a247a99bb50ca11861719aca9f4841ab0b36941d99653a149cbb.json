@@ -1,0 +1,17 @@
+{
+  "overview": "针对行星探测车在不可预测的地形（如滑坡、沉陷）中面临的Sim-to-Real差距问题，作者提出了TERRA框架。该方法通过训练一个损失预测器来识别影响任务表现的模型误差，并利用奖励加权的预测损失指导模型在线适应。实验表明，TERRA在仿真环境下能快速实现爬坡任务，并在真实探测车实验中仅需少量试验即可恢复受控运动性能。",
+  "highlights": [
+    {
+      "text": "TERRA框架通过奖励加权的预测损失与损失预测器，实现了针对任务相关模型误差的定向探索与高效适应。",
+      "evidence": "TERRA adapts a simulation-trained world model with a reward-weighted prediction loss and trains a loss predictor to estimate where future performance-relevant errors are likely to occur, using this signal to guide exploration during MPC."
+    },
+    {
+      "text": "在仿真与真实场景中，TERRA均表现出高效的收敛能力，尤其在真实地形测试中仅需极少量试验。",
+      "evidence": "On the ERNEST rover, TERRA recovers coordinated active-suspension locomotion on a deformable Mars-simulant slope within three to five real-world trials."
+    }
+  ],
+  "tags": [
+    "Sim-to-Real",
+    "世界模型"
+  ]
+}

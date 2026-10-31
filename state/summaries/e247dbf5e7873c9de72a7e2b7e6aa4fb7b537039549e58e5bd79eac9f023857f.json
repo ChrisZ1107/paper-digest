@@ -1,0 +1,21 @@
+{
+  "overview": "针对评估以人为中心的MLLM助手在物理世界提供协助的挑战，本文提出了InteractiveWorld环境。该环境通过模拟AI助手指导人类执行任务的闭环交互，实现了对物理世界任务的验证。在此基础上，作者构建了InteractiveBench基准测试集，涵盖120项多轮任务。评估实验显示，现有前沿多模态大模型在长程指导与规划任务中的表现仍有显著不足，为交互式助手的研发提供了验证平台与评估基准。",
+  "highlights": [
+    {
+      "text": "提出InteractiveWorld环境，实现AI助手与人类行为主体的闭环交互验证，模拟助手指导人类完成物理任务的过程。",
+      "evidence": "we propose InteractiveWorld, the first verifiable environment for closed-loop interaction between human and AI assistant."
+    },
+    {
+      "text": "构建包含120项多轮任务的动态基准测试InteractiveBench，并通过状态奖励机制对任务结果进行可验证的评分。",
+      "evidence": "Building on it, we introduce InteractiveBench, the first dynamic benchmark for egocentric AI assistants, with 120 multi-turn tasks across six categories. In each task, the assistant guides the human in real time, and every instruction shapes the outcome, which is scored by verifiable, state-based rewards."
+    },
+    {
+      "text": "实验评估表明当前前沿MLLM在长程指导和规划任务中表现有限，距离成为可靠的物理世界助手尚有差距。",
+      "evidence": "Experiments with 12 frontier MLLMs show they are still far from reliable assistants. Even the strongest model, Claude Fable 5.1, achieves at most 20% and 25% on long-horizon Guidance and Planning tasks, respectively."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "推理"
+  ]
+}

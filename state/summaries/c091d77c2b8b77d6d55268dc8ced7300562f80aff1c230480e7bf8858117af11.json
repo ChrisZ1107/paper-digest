@@ -1,0 +1,18 @@
+{
+  "overview": "针对异构机器人实体动作空间不兼容及人类视频缺乏控制标签的挑战，本文提出了RynnWorld-Latent跨实体视频世界模型。该模型利用3D基础潜在动作作为通用条件接口，实现人类视频、机器人演示和仿真轨迹的联合预训练。实验表明，该方法不仅提升了视频预测性能，还通过数字远程操作和潜在动作合成两种数据生成路径，显著改善了仿真及真实机器人平台的策略执行成功率，验证了通用潜在动作在学习跨实体控制动态方面的可扩展性。",
+  "highlights": [
+    {
+      "text": "该框架利用3D潜在动作作为通用接口，实现了跨人类视频、机器人演示及仿真数据的联合预训练，解决了不同实体间动作空间不兼容的问题。",
+      "evidence": "This representation enables joint pretraining on human interaction videos, robot demonstrations, and simulation rollouts without requiring a common native action space."
+    },
+    {
+      "text": "通过数字远程操作和潜在动作合成两种数据生成路径，模型在仿真LIBERO基准测试及真实机器人平台上均表现出更高的策略成功率。",
+      "evidence": "Synthetic mid-training improves policy success rates on LIBERO and LIBERO-Plus, and both generation routes improve real-world policy success rates over real-demonstration-only training in the evaluated settings."
+    }
+  ],
+  "tags": [
+    "世界模型",
+    "机器人操作",
+    "Sim-to-Real"
+  ]
+}

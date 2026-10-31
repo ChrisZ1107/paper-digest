@@ -1,0 +1,17 @@
+{
+  "overview": "针对机器人基础模型评估成本高的问题，作者提出了传感器运动对齐（S^2）方法。该方法作为一种无需训练的离线指标，通过衡量模型感知表征与物理运动几何结构的一致性，量化模型能力。实验表明，S^2与下游机器人任务成功率呈正相关，能够作为一种低成本的评估代理，用于在部署前筛选模型架构并提供表征层面的解释。",
+  "highlights": [
+    {
+      "text": "提出了一种无需训练的离线指标S^2，能够有效衡量模型感知表征与物理运动几何结构的一致性，从而作为评估机器人模型能力的低成本代理。",
+      "evidence": "To test this, we propose Sensorimotor Alignment (S^2), a training-free offline metric that measures how well a model's sensory representation aligns with the geometry of physical motion."
+    },
+    {
+      "text": "研究发现S^2与机器人任务成功率高度相关，可用于在昂贵的闭环评估前优先筛选模型，并辅助视觉语言模型骨干的选择。",
+      "evidence": "We find that S^2 correlates positively with downstream robot task success across model families, making it a low-cost offline proxy for prioritizing models before closed-loop evaluation. S^2 can also identify promising vision-language model (VLM) backbones before costly fine-tuning into vision-language-action models (VLAs)."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "推理"
+  ]
+}
