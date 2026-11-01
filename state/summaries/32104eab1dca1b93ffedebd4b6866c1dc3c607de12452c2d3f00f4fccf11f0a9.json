@@ -1,0 +1,18 @@
+{
+  "overview": "针对低成本SO-101机械臂缺乏空间约束和语言条件任务基准的问题，本文提出了基于Isaac Lab的SO-101 Bench仿真测试平台。该基准包含多种空间操作任务、大量物体类别及演示数据，旨在评估机器人策略的泛化能力。研究表明该仿真基准的策略排名与真实物理环境高度一致，并对比了视觉语言动作模型与大模型代理的性能，揭示了当前模型在空间放置与规划任务中的局限性。",
+  "highlights": [
+    {
+      "text": "SO-101 Bench在仿真环境中建立的策略排名与真实物理机器人上的排名完全一致，证明了其模拟的有效性。",
+      "evidence": "The twin ranks policies as the real robot does: five policies trained without real data, four VLAs and an LLM agent, keep their exact ranking when the same weights run on the physical arm in an unseen environment with unseen objects (Spearman rho = 1.00, MMRV = 0.000)"
+    },
+    {
+      "text": "结合大模型代码生成与底层学习策略的代理模型表现出最高得分，优于纯视觉语言动作模型。",
+      "evidence": "An LLM agent that writes code and hands grasping to a learned policy scores 83.2%, and an ablation shows that this lead comes from the choice of harness and the choice of language model."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "Sim-to-Real",
+    "视觉语言动作"
+  ]
+}

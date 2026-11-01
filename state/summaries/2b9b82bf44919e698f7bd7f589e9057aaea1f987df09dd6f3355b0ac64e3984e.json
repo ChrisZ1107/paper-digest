@@ -1,0 +1,16 @@
+{
+  "overview": "针对多模态感知中空间理解与长上下文处理的训练数据获取难问题，该论文提出了EvidenceConnect数据合成框架。该方法通过生成同一图像内不同区域的局部视图，构建需要关联与比较视觉证据的问题，并利用多模型共识及区域消融测试确保数据质量。通过在合成数据上训练基础多模态大模型（ZwZ2），作者声称显著提升了模型在细粒度感知、空间推理、多模态长上下文理解及具身智能代理任务上的通用性能。",
+  "highlights": [
+    {
+      "text": "提出EvidenceConnect框架，通过合成涉及视觉证据关联的问题来提升模型能力，无需针对特定任务定制训练数据。",
+      "evidence": "To strengthen this capability, we propose EvidenceConnect, an easy-to-implement data synthesis framework that uses zoomed views of related regions within a single image to generate questions requiring comparison, aggregation, or chaining of visual evidence."
+    },
+    {
+      "text": "ZwZ2模型在未经下游基准任务专门训练的情况下，表现出在细粒度感知、空间推理及多模态智能体任务上的通用提升。",
+      "evidence": "Although the synthesized data are not tailored to any downstream benchmark, ZwZ2 improves fine-grained and spatial perception, with further gains on embodied spatial reasoning, multimodal long-context understanding, multimodal agent tasks, and general visual reasoning."
+    }
+  ],
+  "tags": [
+    "视觉语言动作"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "overview": "针对基础模型训练阶段割裂的问题，作者提出了一种统一训练框架。该方法通过将强化学习目标推导为对模型生成目标分布的极大似然拟合，实现了预训练、监督微调与强化学习的统一算法框架。实验表明，这种方法通过混合静态数据与强化学习生成数据，在提升计算效率与任务覆盖范围的同时，保持了模型能力的广泛性，并为持续学习提供了更优起点。",
+  "highlights": [
+    {
+      "text": "通过将强化学习目标形式化为对模型生成分布的极大似然拟合，作者实现了一种能够覆盖基础模型全生命周期的单一统一训练算法。",
+      "evidence": "By deriving suitable RL objectives as maximum-likelihood fitting to model-generated target distributions, we place all of these stages under a single likelihood-based training algorithm, unified training."
+    },
+    {
+      "text": "统一训练框架通过混合静态数据与强化学习生成数据，提升了模型的准确度与计算权衡，并增强了模型在持续学习中的基础性能。",
+      "evidence": "Across controlled and real-world experiments, unified training improves the accuracy-compute tradeoff and task coverage while preserving broader capabilities, and provides a stronger starting point for continual learning."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "强化学习"
+  ]
+}

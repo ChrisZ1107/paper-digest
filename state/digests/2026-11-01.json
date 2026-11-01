@@ -1,0 +1,504 @@
+{
+  "date": "2026-11-01",
+  "timestamp": "2026-11-01T09:01:36.746542+08:00",
+  "title": "2026-11-01 热门论文 Top 10｜机器人·强化学习·AI",
+  "slug": "2026-11-01",
+  "papers": [
+    {
+      "id": "2610.37666",
+      "title": "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning",
+      "abstract": "Vision-Language-Action (VLA) models have made substantial progress in robotic manipulation, but their generalization remains constrained by the diversity and coverage of action-labeled robot demonstrations. Human videos provide much broader behavioral and environmental experience, while learning from them faces a fundamental trade-off between scalable data and explicit action grounding. We introduce ThinkWorld, a VLA learning framework that grounds action reasoning in world dynamics and strengthens it through reinforcement learning with world imagination. ThinkWorld represents each action thought as a Chain-of-Dynamics (CoD), a sequence of discrete motion tokens that captures the intermediate dynamics connecting the current world to a future state and serves as a common action representation across embodiments. We first initialize CoD with action-labeled demonstrations, then predict the future induced by each CoD and reinforce those whose predictions better match the observed outcome. This enables videos without action annotations to provide direct supervision from observed state transitions, allowing human and robot experience to refine the same reasoning space. Experiments in simulation and on real robots demonstrate effective human-to-robot transfer and strong generalization to unseen tasks and environments.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-10-27",
+      "age_days": 5.042786418310185,
+      "upvotes": 61,
+      "comments": 2,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.47524,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 6,
+        "comments": 0
+      },
+      "score": 5.47,
+      "rule_tags": [
+        "强化学习",
+        "机器人操作",
+        "视觉语言动作",
+        "推理"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对视觉语言动作模型在机器人操作中受限于动作标注数据的问题，作者提出了ThinkWorld框架。该框架引入“动力学链”（CoD）作为动作表征，通过世界模型想象和强化学习，使模型能够利用无动作标注的人类视频进行训练。实验表明，该方法实现了有效的人机技能迁移，并提升了模型在未知任务与环境下的泛化能力。",
+        "highlights": [
+          {
+            "text": "提出了一种将动作推理建立在世界动力学基础上的VLA学习框架，通过世界想象进行强化学习来增强推理能力。",
+            "evidence": "We introduce ThinkWorld, a VLA learning framework that grounds action reasoning in world dynamics and strengthens it through reinforcement learning with world imagination."
+          },
+          {
+            "text": "引入动力学链（CoD）作为跨实体的统一动作表征，允许利用无标注视频进行监督学习。",
+            "evidence": "This enables videos without action annotations to provide direct supervision from observed state transitions, allowing human and robot experience to refine the same reasoning space."
+          }
+        ],
+        "tags": [
+          "视觉语言动作",
+          "机器人操作",
+          "世界模型",
+          "Sim-to-Real"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.39264",
+      "title": "Online Dense Reinforcement Learning with Planning-Grounding Agent for UI Navigation on Live IOS Apps",
+      "abstract": "While frontier vision-language models demonstrate strong capabilities in user interface (UI) navigation, their high inference costs prohibit everyday use. Conversely, smaller models trained via supervised fine-tuning (SFT) or offline reinforcement learning often memorize static trajectories, leading to brittle execution and an inability to recover from errors. To address these limitations, we propose a novel online reinforcement learning framework that trains UI navigation agents directly on live iOS applications. Our framework decouples the agent into two specialized components: a Planning agent and a UI Grounding model. We rely on an LLM-as-a-Judge to provide comprehensive reward signals, combining dense, step-level feedback to evaluate intermediate progress with a terminal reward for overall task completion. To effectively leverage this dual reward structure, we optimize the agent using Proximal Policy Optimization (PPO) with step-level advantage estimation. Furthermore, we introduce GiGPPO, a novel neighbor-conditioned value estimation method that improves critic stability by leveraging reward signals from visually similar states across concurrent trajectories. To support this online training paradigm at scale, we introduce an efficient infrastructure that orchestrates hundreds of concurrent virtual iOS devices. Evaluations on rigorous benchmarks, including UINavBench, iOSWorld, and AndroidWorld, demonstrate that our online RL trained agents substantially outperform both SFT and terminal-only RL baselines while accelerating training convergence. Notably, our 8B RL agents achieve nearly a sevenfold improvement over the SFT baseline in out-of-distribution generalization to Android environments, while outperforming Gemini-3.5-Flash and tying with Gemini-3.1-Pro on real iOS applications.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-10-29",
+      "age_days": 3.042786418310185,
+      "upvotes": 9,
+      "comments": 2,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.48708,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 3,
+        "comments": 1
+      },
+      "score": 5.398,
+      "rule_tags": [
+        "强化学习",
+        "PPO",
+        "导航",
+        "离线强化学习"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对现有UI导航模型面临的推理成本高或对静态轨迹依赖过强的问题，本文提出一种在iOS应用上进行在线强化学习的框架。该框架通过规划代理与UI基础模型解耦，利用大语言模型提供密集奖励信号，并采用PPO算法及名为GiGPPO的价值估计方法进行训练。实验表明，该方法在多个基准测试中优于监督微调和仅使用终端奖励的强化学习基线，展现出更好的分布外泛化能力。",
+        "highlights": [
+          {
+            "text": "提出一种将规划代理与UI基础模型解耦的在线强化学习框架，并结合密集步级反馈与终端奖励优化智能体训练。",
+            "evidence": "Our framework decouples the agent into two specialized components: a Planning agent and a UI Grounding model. We rely on an LLM-as-a-Judge to provide comprehensive reward signals, combining dense, step-level feedback to evaluate intermediate progress with a terminal reward for overall task completion."
+          },
+          {
+            "text": "引入GiGPPO邻域条件价值估计方法，通过利用并发轨迹中视觉相似状态的奖励信号，提升了评估器的稳定性。",
+            "evidence": "Furthermore, we introduce GiGPPO, a novel neighbor-conditioned value estimation method that improves critic stability by leveraging reward signals from visually similar states across concurrent trajectories."
+          },
+          {
+            "text": "在UINavBench、iOSWorld和AndroidWorld等基准测试中，该方法相比监督微调和终端奖励基线表现出显著的性能提升。",
+            "evidence": "Evaluations on rigorous benchmarks, including UINavBench, iOSWorld, and AndroidWorld, demonstrate that our online RL trained agents substantially outperform both SFT and terminal-only RL baselines while accelerating training convergence."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "PPO",
+          "导航"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.37381",
+      "title": "PDRVLA: A Vision-Language-Action Model with Physical Dynamics Representations",
+      "abstract": "Vision--Language--Action (VLA) models generate robot actions from visual observations and language instructions, but their understanding of physical dynamics remains limited. Video world models can capture scene dynamics, yet generating future videos introduces high latency into the control loop. We introduce PDRVLA, whose lightweight Physical Dynamics Module extracts physical tokens from vision--language features to condition action generation without online video generation. The module learns through direct prediction of future RGB, depth, and optical-flow features, with auxiliary supervision through a frozen pretrained video world model. Training relies entirely on publicly available data, expanded through human-to-robot synthesis, subtask annotation, and embodied chain-of-thought (ECoT) annotation. Across four simulation benchmarks, PDRVLA achieves success rates of 99.3% on LIBERO, 89.9% on LIBERO-Plus, 93.6% on RoboTwin~2.0, and 81.5% on SimplerEnv. Ablations show improved future prediction with world-model supervision and evaluate how subtask conditioning, future object-pose supervision, and ECoT training affect action success.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-27",
+      "age_days": 5.042786418310185,
+      "upvotes": 152,
+      "comments": 2,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.46621,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 1,
+        "comments": 0
+      },
+      "score": 5.25,
+      "rule_tags": [
+        "世界模型",
+        "视觉语言动作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对现有视觉语言动作（VLA）模型在物理动态理解上的局限性以及视频生成模型控制延迟高的问题，本研究提出了PDRVLA模型。该方法引入了一个轻量级物理动态模块，通过直接预测未来RGB、深度及光流特征来提取物理标记，从而在无需实时视频生成的情况下优化动作生成。作者声称，通过在多种仿真基准测试中的验证，该方法显著提升了机器人的任务成功率。",
+        "highlights": [
+          {
+            "text": "提出一种轻量级物理动态模块，在无需在线生成未来视频的前提下，通过提取物理标记引导动作生成，有效降低了控制延迟。",
+            "evidence": "We introduce PDRVLA, whose lightweight Physical Dynamics Module extracts physical tokens from vision--language features to condition action generation without online video generation."
+          },
+          {
+            "text": "PDRVLA在多个机器人仿真基准测试中表现出色，在LIBERO等任务中均达到了较高的成功率。",
+            "evidence": "Across four simulation benchmarks, PDRVLA achieves success rates of 99.3% on LIBERO, 89.9% on LIBERO-Plus, 93.6% on RoboTwin~2.0, and 81.5% on SimplerEnv."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "视觉语言动作"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.34186",
+      "title": "HuGe: Scaling Humanoid Generalist Vision-Language-Action Models with Egocentric Experience",
+      "abstract": "Extending Vision-Language-Action models (VLAs) to humanoid robots requires coordinated whole-body control and diverse demonstrations that are costly to collect in real-world scenarios. Although egocentric human demonstrations provide a complementary source of task experience, differences in visual embodiment and missing robot proprioception complicate transfer to humanoid policies. To address these challenges, we introduce HuGe, a family of Humanoid Generalist VLAs pre-trained on over 2,000 hours of egocentric human and robot data. Specifically, HuGe employs three existing representative VLA architectures to predict latent motion tokens for a pretrained whole-body controller, together with hand-control signals. Based on this, we introduce a three-stage training pipeline that combines egocentric pre-training, humanoid adaptation, and downstream fine-tuning. To facilitate transfer across embodiments, we construct pseudo-proprioceptive states through simulation playback during pre-training and modify arm appearance in egocentric observations through re-rendering during downstream fine-tuning. With this pipeline, HuGe achieves the state-of-the-art on simulation benchmark HumanoidArena. Furthermore, real-world experiments on the Unitree G1 indicate that augmenting robot demonstrations with visually adapted egocentric demonstrations significantly increases success on a pick-and-drop task.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-25",
+      "age_days": 7.042786418310185,
+      "upvotes": 17,
+      "comments": 2,
+      "stars": 13,
+      "repo": "https://github.com/yliu-cs/HuGe",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.44282,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 13,
+        "comments": 0,
+        "stars": 0
+      },
+      "score": 5.195,
+      "rule_tags": [
+        "人形机器人",
+        "视觉语言动作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对人形机器人视觉语言动作（VLA）模型面临的全身控制协同难及演示数据获取成本高的问题，本文提出了HuGe模型族。该方法通过整合超过2000小时的自我中心人类演示与机器人数据，结合预训练、人形适应及下游微调的三阶段流程，利用伪本体感觉构建及手臂外观重渲染技术实现跨形态迁移。实验表明，该模型在HumanoidArena仿真基准及Unitree G1实机抓取任务中表现优异。",
+        "highlights": [
+          {
+            "text": "提出HuGe三阶段训练流程，通过伪本体感觉构建和视觉重渲染技术有效解决了人类演示与人形机器人之间的形态差异问题。",
+            "evidence": "To facilitate transfer across embodiments, we construct pseudo-proprioceptive states through simulation playback during pre-training and modify arm appearance in egocentric observations through re-rendering during downstream fine-tuning."
+          },
+          {
+            "text": "HuGe模型在HumanoidArena仿真基准上达到了当前最先进水平，并在Unitree G1实机上验证了通过整合自我中心演示能显著提升任务成功率。",
+            "evidence": "With this pipeline, HuGe achieves the state-of-the-art on simulation benchmark HumanoidArena. Furthermore, real-world experiments on the Unitree G1 indicate that augmenting robot demonstrations with visually adapted egocentric demonstrations significantly increases success on a pick-and-drop task."
+          }
+        ],
+        "tags": [
+          "人形机器人",
+          "视觉语言动作",
+          "Sim-to-Real"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.39287",
+      "title": "OpenFlyV2: An onboard vision-language-action model for aerial perception and navigation",
+      "abstract": "Human cognition flexibly draws on a shared perceptual foundation to understand environments, attend to referenced entities, reason about spatial relationships, and act. Endowing aerial robots with an analogous functional organization remains challenging, as existing systems are often specialized for individual capabilities, dependent on offboard computation, or unable to sustain closed-loop operation on resource-constrained platforms. We present OpenFlyV2, a unified onboard vision-language-action architecture that uses a shared vision-language representation to support semantic understanding, language-grounded perception, spatial reasoning, and continuous aerial control within a single model. A compact action expert converts the shared multimodal context into short-horizon flight waypoints, while motion-aware temporal memory and action priors reduce the computational cost of closed-loop execution. We construct , a simulation-based dataset comprising approximately 70,000 navigation trajectories and 60,000 vision-language instruction--response pairs. OpenFlyV2 generates action chunks, each comprising 12 waypoints, entirely onboard at 10 Hz using an NVIDIA Jetson Orin NX. It transfers zero-shot from simulation to physical quadrotor flight, achieving a 48\\% navigation success rate across four real-world environments without real-world aerial training data. Extensive results demonstrate that broad vision-language competence and continuous closed-loop flight can coexist within a single model on a resource-constrained aerial platform. Code will be made publicly available at https://github.com/Ideal-ljl/AeroBrain.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-29",
+      "age_days": 3.042786418310185,
+      "upvotes": 5,
+      "comments": 2,
+      "stars": 4,
+      "repo": "https://github.com/Ideal-ljl/AeroBrain",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.47925,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 1,
+        "comments": 1,
+        "stars": 3
+      },
+      "score": 5.175,
+      "rule_tags": [
+        "导航",
+        "视觉语言动作",
+        "推理"
+      ],
+      "summary_status": "Gemini 暂不可用，显示规则标签与原文摘要。"
+    },
+    {
+      "id": "2610.40564",
+      "title": "Training Foundation Models with a Single Algorithm",
+      "abstract": "Foundation models are typically trained in stages: pretraining, midtraining, supervised fine-tuning (SFT), and reinforcement learning (RL), with changes in both data and learning algorithms. We show that this algorithmic separation is not fundamental. By deriving suitable RL objectives as maximum-likelihood fitting to model-generated target distributions, we place all of these stages under a single likelihood-based training algorithm, unified training. This perspective turns the foundation-model training lifecycle into a problem of choosing which data to train on, in what proportions, and when, with conventional staged training as a special case. We instantiate this framework in a unified training system that mixes static data and RL generations within a single trainer. Across controlled and real-world experiments, unified training improves the accuracy-compute tradeoff and task coverage while preserving broader capabilities, and provides a stronger starting point for continual learning. This work lays the groundwork for a unified science of foundation-model training, connecting mathematical principles, training infrastructure, and the development of model capabilities.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-10-29",
+      "age_days": 3.042786418310185,
+      "upvotes": 8,
+      "comments": 3,
+      "stars": 17,
+      "repo": "https://github.com/yudasong/unified-training",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.38721,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 6,
+        "comments": 2,
+        "stars": 12
+      },
+      "score": 5.03,
+      "rule_tags": [
+        "强化学习"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对基础模型训练阶段割裂的问题，作者提出了一种统一训练框架。该方法通过将强化学习目标推导为对模型生成目标分布的极大似然拟合，实现了预训练、监督微调与强化学习的统一算法框架。实验表明，这种方法通过混合静态数据与强化学习生成数据，在提升计算效率与任务覆盖范围的同时，保持了模型能力的广泛性，并为持续学习提供了更优起点。",
+        "highlights": [
+          {
+            "text": "通过将强化学习目标形式化为对模型生成分布的极大似然拟合，作者实现了一种能够覆盖基础模型全生命周期的单一统一训练算法。",
+            "evidence": "By deriving suitable RL objectives as maximum-likelihood fitting to model-generated target distributions, we place all of these stages under a single likelihood-based training algorithm, unified training."
+          },
+          {
+            "text": "统一训练框架通过混合静态数据与强化学习生成数据，提升了模型的准确度与计算权衡，并增强了模型在持续学习中的基础性能。",
+            "evidence": "Across controlled and real-world experiments, unified training improves the accuracy-compute tradeoff and task coverage while preserving broader capabilities, and provides a stronger starting point for continual learning."
+          }
+        ],
+        "tags": [
+          "大模型后训练",
+          "强化学习"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.31670",
+      "title": "Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success",
+      "abstract": "Robot foundation models are typically evaluated through costly closed-loop rollouts, motivating low-cost offline proxies for model capability. The Platonic Representation Hypothesis (PRH) suggests that as representations improve, modalities such as vision and language converge toward a shared statistical model of reality. We ask whether motion trajectories form another such modality: as embodied models become more capable, should their sensory representations converge toward the structure of physical motion? To test this, we propose Sensorimotor Alignment (S^2), a training-free offline metric that measures how well a model's sensory representation aligns with the geometry of physical motion. We find that S^2 correlates positively with downstream robot task success across model families, making it a low-cost offline proxy for prioritizing models before closed-loop evaluation. S^2 can also identify promising vision-language model (VLM) backbones before costly fine-tuning into vision-language-action models (VLAs). Beyond this correlation, S^2 offers representation-level explanations for phenomena observed in VLAs and world action models (WAMs). With S^2, we extend PRH to robotics and make sensorimotor alignment measurable, offering a low-cost, representation-level view of robot foundation models that closed-loop success rates alone cannot reveal.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-23",
+      "age_days": 9.042786418310184,
+      "upvotes": 36,
+      "comments": 2,
+      "stars": 8,
+      "repo": "https://github.com/yunfeixie233/sensorimotor-alignment",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.42094,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 9,
+        "comments": 0,
+        "stars": 0
+      },
+      "score": 4.985,
+      "rule_tags": [
+        "视觉语言动作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对机器人基础模型评估成本高的问题，作者提出了传感器运动对齐（S^2）方法。该方法作为一种无需训练的离线指标，通过衡量模型感知表征与物理运动几何结构的一致性，量化模型能力。实验表明，S^2与下游机器人任务成功率呈正相关，能够作为一种低成本的评估代理，用于在部署前筛选模型架构并提供表征层面的解释。",
+        "highlights": [
+          {
+            "text": "提出了一种无需训练的离线指标S^2，能够有效衡量模型感知表征与物理运动几何结构的一致性，从而作为评估机器人模型能力的低成本代理。",
+            "evidence": "To test this, we propose Sensorimotor Alignment (S^2), a training-free offline metric that measures how well a model's sensory representation aligns with the geometry of physical motion."
+          },
+          {
+            "text": "研究发现S^2与机器人任务成功率高度相关，可用于在昂贵的闭环评估前优先筛选模型，并辅助视觉语言模型骨干的选择。",
+            "evidence": "We find that S^2 correlates positively with downstream robot task success across model families, making it a low-cost offline proxy for prioritizing models before closed-loop evaluation. S^2 can also identify promising vision-language model (VLM) backbones before costly fine-tuning into vision-language-action models (VLAs)."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.36420",
+      "title": "SO-101 Bench: Accessible Spatial Manipulation",
+      "abstract": "Low-cost arms such as the SO-101 have become the most common entry point to robot learning, yet no released policy performs spatially constrained, language-conditioned tasks on them out of the box, and existing SO-101 benchmarks run only on physical hardware with simple tasks and few held-out objects. We introduce SO-101 Bench, a simulated benchmark for language-conditioned spatial manipulation built on an Isaac Lab digital twin of a real SO-101 setup. It has four tasks scored as five families, 138 objects in seen, unseen-instance and unseen-class splits, 916 evaluation episodes with subsets for held-out appearances, rotate-to-fit planning and occlusion memory, and 3,629 simulated demonstrations on which every learned policy is fine-tuned under an equal compute budget. The twin ranks policies as the real robot does: five policies trained without real data, four VLAs and an LLM agent, keep their exact ranking when the same weights run on the physical arm in an unseen environment with unseen objects (Spearman rho = 1.00, MMRV = 0.000), although simulation overestimates success. Across nine VLAs and world-action models, the best learned policies score near 61%, with spatial placement, unseen object classes and rotate-to-fit planning remaining open. An LLM agent that writes code and hands grasping to a learned policy scores 83.2%, and an ablation shows that this lead comes from the choice of harness and the choice of language model.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-27",
+      "age_days": 5.042786418310185,
+      "upvotes": 8,
+      "comments": 3,
+      "stars": 41,
+      "repo": "https://github.com/5hadytru/so101_bench",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.48599,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 0,
+        "comments": 1,
+        "stars": 1
+      },
+      "score": 4.906,
+      "rule_tags": [
+        "机器人操作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对低成本SO-101机械臂缺乏空间约束和语言条件任务基准的问题，本文提出了基于Isaac Lab的SO-101 Bench仿真测试平台。该基准包含多种空间操作任务、大量物体类别及演示数据，旨在评估机器人策略的泛化能力。研究表明该仿真基准的策略排名与真实物理环境高度一致，并对比了视觉语言动作模型与大模型代理的性能，揭示了当前模型在空间放置与规划任务中的局限性。",
+        "highlights": [
+          {
+            "text": "SO-101 Bench在仿真环境中建立的策略排名与真实物理机器人上的排名完全一致，证明了其模拟的有效性。",
+            "evidence": "The twin ranks policies as the real robot does: five policies trained without real data, four VLAs and an LLM agent, keep their exact ranking when the same weights run on the physical arm in an unseen environment with unseen objects (Spearman rho = 1.00, MMRV = 0.000)"
+          },
+          {
+            "text": "结合大模型代码生成与底层学习策略的代理模型表现出最高得分，优于纯视觉语言动作模型。",
+            "evidence": "An LLM agent that writes code and hands grasping to a learned policy scores 83.2%, and an ablation shows that this lead comes from the choice of harness and the choice of language model."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "Sim-to-Real",
+          "视觉语言动作"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.36791",
+      "title": "RynnWorld-Latent: A Cross-Embodiment World Model Conditioned on Universal Latent Actions",
+      "abstract": "Learning controllable world dynamics from heterogeneous interaction videos is challenging because robot embodiments use incompatible action spaces, while human videos lack native control labels. We present RynnWorld-Latent, a cross-embodiment video world model that uses the 3D-grounded latent actions introduced by RynnLAM as a shared conditioning interface. This representation enables joint pretraining on human interaction videos, robot demonstrations, and simulation rollouts without requiring a common native action space. Built on a pretrained video transformer, RynnWorld-Latent combines global action tokens with an identity-initialized local pathway that aligns actions with future video latents. We pretrain on 23 datasets comprising approximately 553.5M frames and adapt the model to target robots through post-training. The framework supports two data-generation routes: digital teleoperation uses target robot commands to generate action-video demonstrations, while latent-action synthesis transfers source motion to an edited initial frame and pairs the resulting rollout with retargeted pseudo robot actions. Experiments show improved video prediction metrics on public benchmarks and two real-robot platforms, alongside qualitative action following when different action sequences share the same initial observation. Synthetic mid-training improves policy success rates on LIBERO and LIBERO-Plus, and both generation routes improve real-world policy success rates over real-demonstration-only training in the evaluated settings. These results support universal latent actions as a scalable interface for learning controllable visual dynamics across heterogeneous embodiments.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-27",
+      "age_days": 5.042786418310185,
+      "upvotes": 11,
+      "comments": 2,
+      "stars": 12,
+      "repo": "https://github.com/alibaba-damo-academy/RynnWorld-Latent",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.4579,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 1,
+        "comments": 0,
+        "stars": 1
+      },
+      "score": 4.882,
+      "rule_tags": [
+        "世界模型",
+        "大模型后训练"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对异构机器人实体动作空间不兼容及人类视频缺乏控制标签的挑战，本文提出了RynnWorld-Latent跨实体视频世界模型。该模型利用3D基础潜在动作作为通用条件接口，实现人类视频、机器人演示和仿真轨迹的联合预训练。实验表明，该方法不仅提升了视频预测性能，还通过数字远程操作和潜在动作合成两种数据生成路径，显著改善了仿真及真实机器人平台的策略执行成功率，验证了通用潜在动作在学习跨实体控制动态方面的可扩展性。",
+        "highlights": [
+          {
+            "text": "该框架利用3D潜在动作作为通用接口，实现了跨人类视频、机器人演示及仿真数据的联合预训练，解决了不同实体间动作空间不兼容的问题。",
+            "evidence": "This representation enables joint pretraining on human interaction videos, robot demonstrations, and simulation rollouts without requiring a common native action space."
+          },
+          {
+            "text": "通过数字远程操作和潜在动作合成两种数据生成路径，模型在仿真LIBERO基准测试及真实机器人平台上均表现出更高的策略成功率。",
+            "evidence": "Synthetic mid-training improves policy success rates on LIBERO and LIBERO-Plus, and both generation routes improve real-world policy success rates over real-demonstration-only training in the evaluated settings."
+          }
+        ],
+        "tags": [
+          "世界模型",
+          "机器人操作",
+          "Sim-to-Real"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.37037",
+      "title": "Zooming without Zooming v2: From Seeing Details to Connecting Evidence for Generalizable Multimodal Perception",
+      "abstract": "Multimodal perception forms the foundation of multimodal intelligence. In particular, spatial perception and multimodal long-context understanding are two pivotal tasks that underpin embodied AI and multimodal agents. However, synthesizing targeted, high-quality training data for these tasks remains difficult and costly. Our key insight is that these tasks share an underlying capability, which we call connecting evidence: identifying relevant visual facts, binding them to the correct entities, recovering their relations, and composing them into an answer. Crucially, targeted training data are far easier to synthesize for this capability than for these tasks themselves. To strengthen this capability, we propose EvidenceConnect, an easy-to-implement data synthesis framework that uses zoomed views of related regions within a single image to generate questions requiring comparison, aggregation, or chaining of visual evidence. To ensure quality, a reference answer is retained only when independent VLMs agree on it, and region-ablation tests discard questions whose answer survives the removal of selected regions. We then train base VLMs on the resulting data with RLVR, obtaining Zooming without Zooming v2 (ZwZ2). Although the synthesized data are not tailored to any downstream benchmark, ZwZ2 improves fine-grained and spatial perception, with further gains on embodied spatial reasoning, multimodal long-context understanding, multimodal agent tasks, and general visual reasoning. These results establish EvidenceConnect as an effective framework for supervising evidence connection and suggest that strengthening this shared capability leads to more generalizable multimodal perception.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-10-27",
+      "age_days": 5.042786418310185,
+      "upvotes": 31,
+      "comments": 3,
+      "stars": 14,
+      "repo": "https://github.com/inclusionAI/Zooming-without-Zooming-v2",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.33565,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 3,
+        "comments": 0,
+        "stars": 1
+      },
+      "score": 4.44,
+      "rule_tags": [
+        "强化学习",
+        "大模型后训练",
+        "推理"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对多模态感知中空间理解与长上下文处理的训练数据获取难问题，该论文提出了EvidenceConnect数据合成框架。该方法通过生成同一图像内不同区域的局部视图，构建需要关联与比较视觉证据的问题，并利用多模型共识及区域消融测试确保数据质量。通过在合成数据上训练基础多模态大模型（ZwZ2），作者声称显著提升了模型在细粒度感知、空间推理、多模态长上下文理解及具身智能代理任务上的通用性能。",
+        "highlights": [
+          {
+            "text": "提出EvidenceConnect框架，通过合成涉及视觉证据关联的问题来提升模型能力，无需针对特定任务定制训练数据。",
+            "evidence": "To strengthen this capability, we propose EvidenceConnect, an easy-to-implement data synthesis framework that uses zoomed views of related regions within a single image to generate questions requiring comparison, aggregation, or chaining of visual evidence."
+          },
+          {
+            "text": "ZwZ2模型在未经下游基准任务专门训练的情况下，表现出在细粒度感知、空间推理及多模态智能体任务上的通用提升。",
+            "evidence": "Although the synthesized data are not tailored to any downstream benchmark, ZwZ2 improves fine-grained and spatial perception, with further gains on embodied spatial reasoning, multimodal long-context understanding, multimodal agent tasks, and general visual reasoning."
+          }
+        ],
+        "tags": [
+          "视觉语言动作"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    }
+  ],
+  "candidate_count": 127,
+  "personalization_note": "已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。",
+  "html": "<h1>2026-11-01 热门论文 Top 10</h1>\n<p>机器人 · 强化学习 · 通用 AI</p>\n<p>生成时间：2026-11-01 09:01 CST。从 127 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>\n<p>候选来源：<a href=\"https://huggingface.co/papers\">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>\n<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>\n<h2>1. ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning</h2>\n<p><strong>机器人 / 强化学习</strong> · 发表 2026-10-27 · 综合分 5.47</p>\n<p>Zotero 摘要相关性：0.475（相似度分数，不是概率）。</p>\n<p>HF 点赞 61 · 讨论 2</p>\n<p>较上次观测（1.0 天前）：点赞 +6 · 讨论 +0。</p>\n<p><strong>规则标签：</strong>强化学习 · 机器人操作 · 视觉语言动作 · 推理</p>\n<p><strong>中文概述：</strong>针对视觉语言动作模型在机器人操作中受限于动作标注数据的问题，作者提出了ThinkWorld框架。该框架引入“动力学链”（CoD）作为动作表征，通过世界模型想象和强化学习，使模型能够利用无动作标注的人类视频进行训练。实验表明，该方法实现了有效的人机技能迁移，并提升了模型在未知任务与环境下的泛化能力。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出了一种将动作推理建立在世界动力学基础上的VLA学习框架，通过世界想象进行强化学习来增强推理能力。<br><small>摘要依据：We introduce ThinkWorld, a VLA learning framework that grounds action reasoning in world dynamics and strengthens it through reinforcement learning with world imagination.</small></li>\n<li>引入动力学链（CoD）作为跨实体的统一动作表征，允许利用无标注视频进行监督学习。<br><small>摘要依据：This enables videos without action annotations to provide direct supervision from observed state transitions, allowing human and robot experience to refine the same reasoning space.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>视觉语言动作 · 机器人操作 · 世界模型 · Sim-to-Real</p>\n<p><strong>原文摘要节选：</strong>Vision-Language-Action (VLA) models have made substantial progress in robotic manipulation, but their generalization remains constrained by the diversity and coverage of action-labeled robot demonstrations. Human videos provide much broader behavioral and environmental experience, while learning from them faces a fundamental trade-off between scalable data and explicit action grounding. We introduce ThinkWorld, a VLA learning framework that grounds action reasoning in world dynamics and strengthens it through reinforcement learning with world imagination. ThinkWorld represents each action thought as a Chain-of-Dynamics (CoD), a sequence of discrete motion tokens that captures the intermediate dynamics connecting the current world to a future state and serves as a common action…</p>\n<p><a href=\"https://arxiv.org/abs/2610.37666\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.37666\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.37666\">讨论与热度</a></p><hr>\n<h2>2. Online Dense Reinforcement Learning with Planning-Grounding Agent for UI Navigation on Live IOS Apps</h2>\n<p><strong>强化学习</strong> · 发表 2026-10-29 · 综合分 5.40</p>\n<p>Zotero 摘要相关性：0.487（相似度分数，不是概率）。</p>\n<p>HF 点赞 9 · 讨论 2</p>\n<p>较上次观测（1.0 天前）：点赞 +3 · 讨论 +1。</p>\n<p><strong>规则标签：</strong>强化学习 · PPO · 导航 · 离线强化学习</p>\n<p><strong>中文概述：</strong>针对现有UI导航模型面临的推理成本高或对静态轨迹依赖过强的问题，本文提出一种在iOS应用上进行在线强化学习的框架。该框架通过规划代理与UI基础模型解耦，利用大语言模型提供密集奖励信号，并采用PPO算法及名为GiGPPO的价值估计方法进行训练。实验表明，该方法在多个基准测试中优于监督微调和仅使用终端奖励的强化学习基线，展现出更好的分布外泛化能力。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出一种将规划代理与UI基础模型解耦的在线强化学习框架，并结合密集步级反馈与终端奖励优化智能体训练。<br><small>摘要依据：Our framework decouples the agent into two specialized components: a Planning agent and a UI Grounding model. We rely on an LLM-as-a-Judge to provide comprehensive reward signals, combining dense, step-level feedback to evaluate intermediate progress with a terminal reward for overall task completion.</small></li>\n<li>引入GiGPPO邻域条件价值估计方法，通过利用并发轨迹中视觉相似状态的奖励信号，提升了评估器的稳定性。<br><small>摘要依据：Furthermore, we introduce GiGPPO, a novel neighbor-conditioned value estimation method that improves critic stability by leveraging reward signals from visually similar states across concurrent trajectories.</small></li>\n<li>在UINavBench、iOSWorld和AndroidWorld等基准测试中，该方法相比监督微调和终端奖励基线表现出显著的性能提升。<br><small>摘要依据：Evaluations on rigorous benchmarks, including UINavBench, iOSWorld, and AndroidWorld, demonstrate that our online RL trained agents substantially outperform both SFT and terminal-only RL baselines while accelerating training convergence.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · PPO · 导航</p>\n<p><strong>原文摘要节选：</strong>While frontier vision-language models demonstrate strong capabilities in user interface (UI) navigation, their high inference costs prohibit everyday use. Conversely, smaller models trained via supervised fine-tuning (SFT) or offline reinforcement learning often memorize static trajectories, leading to brittle execution and an inability to recover from errors. To address these limitations, we propose a novel online reinforcement learning framework that trains UI navigation agents directly on live iOS applications. Our framework decouples the agent into two specialized components: a Planning agent and a UI Grounding model. We rely on an LLM-as-a-Judge to provide comprehensive reward signals, combining dense, step-level feedback to evaluate intermediate progress with a terminal reward for…</p>\n<p><a href=\"https://arxiv.org/abs/2610.39264\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.39264\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.39264\">讨论与热度</a></p><hr>\n<h2>3. PDRVLA: A Vision-Language-Action Model with Physical Dynamics Representations</h2>\n<p><strong>机器人</strong> · 发表 2026-10-27 · 综合分 5.25</p>\n<p>Zotero 摘要相关性：0.466（相似度分数，不是概率）。</p>\n<p>HF 点赞 152 · 讨论 2</p>\n<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +0。</p>\n<p><strong>规则标签：</strong>世界模型 · 视觉语言动作</p>\n<p><strong>中文概述：</strong>针对现有视觉语言动作（VLA）模型在物理动态理解上的局限性以及视频生成模型控制延迟高的问题，本研究提出了PDRVLA模型。该方法引入了一个轻量级物理动态模块，通过直接预测未来RGB、深度及光流特征来提取物理标记，从而在无需实时视频生成的情况下优化动作生成。作者声称，通过在多种仿真基准测试中的验证，该方法显著提升了机器人的任务成功率。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出一种轻量级物理动态模块，在无需在线生成未来视频的前提下，通过提取物理标记引导动作生成，有效降低了控制延迟。<br><small>摘要依据：We introduce PDRVLA, whose lightweight Physical Dynamics Module extracts physical tokens from vision--language features to condition action generation without online video generation.</small></li>\n<li>PDRVLA在多个机器人仿真基准测试中表现出色，在LIBERO等任务中均达到了较高的成功率。<br><small>摘要依据：Across four simulation benchmarks, PDRVLA achieves success rates of 99.3% on LIBERO, 89.9% on LIBERO-Plus, 93.6% on RoboTwin~2.0, and 81.5% on SimplerEnv.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 视觉语言动作</p>\n<p><strong>原文摘要节选：</strong>Vision--Language--Action (VLA) models generate robot actions from visual observations and language instructions, but their understanding of physical dynamics remains limited. Video world models can capture scene dynamics, yet generating future videos introduces high latency into the control loop. We introduce PDRVLA, whose lightweight Physical Dynamics Module extracts physical tokens from vision--language features to condition action generation without online video generation. The module learns through direct prediction of future RGB, depth, and optical-flow features, with auxiliary supervision through a frozen pretrained video world model. Training relies entirely on publicly available data, expanded through human-to-robot synthesis, subtask annotation, and embodied chain-of-thought…</p>\n<p><a href=\"https://arxiv.org/abs/2610.37381\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.37381\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.37381\">讨论与热度</a></p><hr>\n<h2>4. HuGe: Scaling Humanoid Generalist Vision-Language-Action Models with Egocentric Experience</h2>\n<p><strong>机器人</strong> · 发表 2026-10-25 · 综合分 5.20</p>\n<p>Zotero 摘要相关性：0.443（相似度分数，不是概率）。</p>\n<p>HF 点赞 17 · 讨论 2 · 仓库累计 Star 13（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +13 · 讨论 +0 · Star +0。</p>\n<p><strong>规则标签：</strong>人形机器人 · 视觉语言动作</p>\n<p><strong>中文概述：</strong>针对人形机器人视觉语言动作（VLA）模型面临的全身控制协同难及演示数据获取成本高的问题，本文提出了HuGe模型族。该方法通过整合超过2000小时的自我中心人类演示与机器人数据，结合预训练、人形适应及下游微调的三阶段流程，利用伪本体感觉构建及手臂外观重渲染技术实现跨形态迁移。实验表明，该模型在HumanoidArena仿真基准及Unitree G1实机抓取任务中表现优异。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出HuGe三阶段训练流程，通过伪本体感觉构建和视觉重渲染技术有效解决了人类演示与人形机器人之间的形态差异问题。<br><small>摘要依据：To facilitate transfer across embodiments, we construct pseudo-proprioceptive states through simulation playback during pre-training and modify arm appearance in egocentric observations through re-rendering during downstream fine-tuning.</small></li>\n<li>HuGe模型在HumanoidArena仿真基准上达到了当前最先进水平，并在Unitree G1实机上验证了通过整合自我中心演示能显著提升任务成功率。<br><small>摘要依据：With this pipeline, HuGe achieves the state-of-the-art on simulation benchmark HumanoidArena. Furthermore, real-world experiments on the Unitree G1 indicate that augmenting robot demonstrations with visually adapted egocentric demonstrations significantly increases success on a pick-and-drop task.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>人形机器人 · 视觉语言动作 · Sim-to-Real</p>\n<p><strong>原文摘要节选：</strong>Extending Vision-Language-Action models (VLAs) to humanoid robots requires coordinated whole-body control and diverse demonstrations that are costly to collect in real-world scenarios. Although egocentric human demonstrations provide a complementary source of task experience, differences in visual embodiment and missing robot proprioception complicate transfer to humanoid policies. To address these challenges, we introduce HuGe, a family of Humanoid Generalist VLAs pre-trained on over 2,000 hours of egocentric human and robot data. Specifically, HuGe employs three existing representative VLA architectures to predict latent motion tokens for a pretrained whole-body controller, together with hand-control signals. Based on this, we introduce a three-stage training pipeline that combines…</p>\n<p><a href=\"https://arxiv.org/abs/2610.34186\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.34186\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.34186\">讨论与热度</a> · <a href=\"https://github.com/yliu-cs/HuGe\">代码</a></p><hr>\n<h2>5. OpenFlyV2: An onboard vision-language-action model for aerial perception and navigation</h2>\n<p><strong>机器人</strong> · 发表 2026-10-29 · 综合分 5.17</p>\n<p>Zotero 摘要相关性：0.479（相似度分数，不是概率）。</p>\n<p>HF 点赞 5 · 讨论 2 · 仓库累计 Star 4（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +1 · Star +3。</p>\n<p><strong>规则标签：</strong>导航 · 视觉语言动作 · 推理</p>\n<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>\n<p><strong>原文摘要节选：</strong>Human cognition flexibly draws on a shared perceptual foundation to understand environments, attend to referenced entities, reason about spatial relationships, and act. Endowing aerial robots with an analogous functional organization remains challenging, as existing systems are often specialized for individual capabilities, dependent on offboard computation, or unable to sustain closed-loop operation on resource-constrained platforms. We present OpenFlyV2, a unified onboard vision-language-action architecture that uses a shared vision-language representation to support semantic understanding, language-grounded perception, spatial reasoning, and continuous aerial control within a single model. A compact action expert converts the shared multimodal context into short-horizon flight…</p>\n<p><a href=\"https://arxiv.org/abs/2610.39287\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.39287\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.39287\">讨论与热度</a> · <a href=\"https://github.com/Ideal-ljl/AeroBrain\">代码</a></p><hr>\n<h2>6. Training Foundation Models with a Single Algorithm</h2>\n<p><strong>强化学习</strong> · 发表 2026-10-29 · 综合分 5.03</p>\n<p>Zotero 摘要相关性：0.387（相似度分数，不是概率）。</p>\n<p>HF 点赞 8 · 讨论 3 · 仓库累计 Star 17（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +6 · 讨论 +2 · Star +12。</p>\n<p><strong>规则标签：</strong>强化学习</p>\n<p><strong>中文概述：</strong>针对基础模型训练阶段割裂的问题，作者提出了一种统一训练框架。该方法通过将强化学习目标推导为对模型生成目标分布的极大似然拟合，实现了预训练、监督微调与强化学习的统一算法框架。实验表明，这种方法通过混合静态数据与强化学习生成数据，在提升计算效率与任务覆盖范围的同时，保持了模型能力的广泛性，并为持续学习提供了更优起点。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>通过将强化学习目标形式化为对模型生成分布的极大似然拟合，作者实现了一种能够覆盖基础模型全生命周期的单一统一训练算法。<br><small>摘要依据：By deriving suitable RL objectives as maximum-likelihood fitting to model-generated target distributions, we place all of these stages under a single likelihood-based training algorithm, unified training.</small></li>\n<li>统一训练框架通过混合静态数据与强化学习生成数据，提升了模型的准确度与计算权衡，并增强了模型在持续学习中的基础性能。<br><small>摘要依据：Across controlled and real-world experiments, unified training improves the accuracy-compute tradeoff and task coverage while preserving broader capabilities, and provides a stronger starting point for continual learning.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>大模型后训练 · 强化学习</p>\n<p><strong>原文摘要节选：</strong>Foundation models are typically trained in stages: pretraining, midtraining, supervised fine-tuning (SFT), and reinforcement learning (RL), with changes in both data and learning algorithms. We show that this algorithmic separation is not fundamental. By deriving suitable RL objectives as maximum-likelihood fitting to model-generated target distributions, we place all of these stages under a single likelihood-based training algorithm, unified training. This perspective turns the foundation-model training lifecycle into a problem of choosing which data to train on, in what proportions, and when, with conventional staged training as a special case. We instantiate this framework in a unified training system that mixes static data and RL generations within a single trainer. Across controlled…</p>\n<p><a href=\"https://arxiv.org/abs/2610.40564\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.40564\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.40564\">讨论与热度</a> · <a href=\"https://github.com/yudasong/unified-training\">代码</a></p><hr>\n<h2>7. Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success</h2>\n<p><strong>机器人</strong> · 发表 2026-10-23 · 综合分 4.99</p>\n<p>Zotero 摘要相关性：0.421（相似度分数，不是概率）。</p>\n<p>HF 点赞 36 · 讨论 2 · 仓库累计 Star 8（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +9 · 讨论 +0 · Star +0。</p>\n<p><strong>规则标签：</strong>视觉语言动作</p>\n<p><strong>中文概述：</strong>针对机器人基础模型评估成本高的问题，作者提出了传感器运动对齐（S^2）方法。该方法作为一种无需训练的离线指标，通过衡量模型感知表征与物理运动几何结构的一致性，量化模型能力。实验表明，S^2与下游机器人任务成功率呈正相关，能够作为一种低成本的评估代理，用于在部署前筛选模型架构并提供表征层面的解释。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出了一种无需训练的离线指标S^2，能够有效衡量模型感知表征与物理运动几何结构的一致性，从而作为评估机器人模型能力的低成本代理。<br><small>摘要依据：To test this, we propose Sensorimotor Alignment (S^2), a training-free offline metric that measures how well a model&#x27;s sensory representation aligns with the geometry of physical motion.</small></li>\n<li>研究发现S^2与机器人任务成功率高度相关，可用于在昂贵的闭环评估前优先筛选模型，并辅助视觉语言模型骨干的选择。<br><small>摘要依据：We find that S^2 correlates positively with downstream robot task success across model families, making it a low-cost offline proxy for prioritizing models before closed-loop evaluation. S^2 can also identify promising vision-language model (VLM) backbones before costly fine-tuning into vision-language-action models (VLAs).</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 推理</p>\n<p><strong>原文摘要节选：</strong>Robot foundation models are typically evaluated through costly closed-loop rollouts, motivating low-cost offline proxies for model capability. The Platonic Representation Hypothesis (PRH) suggests that as representations improve, modalities such as vision and language converge toward a shared statistical model of reality. We ask whether motion trajectories form another such modality: as embodied models become more capable, should their sensory representations converge toward the structure of physical motion? To test this, we propose Sensorimotor Alignment (S^2), a training-free offline metric that measures how well a model&#x27;s sensory representation aligns with the geometry of physical motion. We find that S^2 correlates positively with downstream robot task success across model families,…</p>\n<p><a href=\"https://arxiv.org/abs/2610.31670\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.31670\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.31670\">讨论与热度</a> · <a href=\"https://github.com/yunfeixie233/sensorimotor-alignment\">代码</a></p><hr>\n<h2>8. SO-101 Bench: Accessible Spatial Manipulation</h2>\n<p><strong>机器人</strong> · 发表 2026-10-27 · 综合分 4.91</p>\n<p>Zotero 摘要相关性：0.486（相似度分数，不是概率）。</p>\n<p>HF 点赞 8 · 讨论 3 · 仓库累计 Star 41（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +0 · 讨论 +1 · Star +1。</p>\n<p><strong>规则标签：</strong>机器人操作</p>\n<p><strong>中文概述：</strong>针对低成本SO-101机械臂缺乏空间约束和语言条件任务基准的问题，本文提出了基于Isaac Lab的SO-101 Bench仿真测试平台。该基准包含多种空间操作任务、大量物体类别及演示数据，旨在评估机器人策略的泛化能力。研究表明该仿真基准的策略排名与真实物理环境高度一致，并对比了视觉语言动作模型与大模型代理的性能，揭示了当前模型在空间放置与规划任务中的局限性。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>SO-101 Bench在仿真环境中建立的策略排名与真实物理机器人上的排名完全一致，证明了其模拟的有效性。<br><small>摘要依据：The twin ranks policies as the real robot does: five policies trained without real data, four VLAs and an LLM agent, keep their exact ranking when the same weights run on the physical arm in an unseen environment with unseen objects (Spearman rho = 1.00, MMRV = 0.000)</small></li>\n<li>结合大模型代码生成与底层学习策略的代理模型表现出最高得分，优于纯视觉语言动作模型。<br><small>摘要依据：An LLM agent that writes code and hands grasping to a learned policy scores 83.2%, and an ablation shows that this lead comes from the choice of harness and the choice of language model.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · Sim-to-Real · 视觉语言动作</p>\n<p><strong>原文摘要节选：</strong>Low-cost arms such as the SO-101 have become the most common entry point to robot learning, yet no released policy performs spatially constrained, language-conditioned tasks on them out of the box, and existing SO-101 benchmarks run only on physical hardware with simple tasks and few held-out objects. We introduce SO-101 Bench, a simulated benchmark for language-conditioned spatial manipulation built on an Isaac Lab digital twin of a real SO-101 setup. It has four tasks scored as five families, 138 objects in seen, unseen-instance and unseen-class splits, 916 evaluation episodes with subsets for held-out appearances, rotate-to-fit planning and occlusion memory, and 3,629 simulated demonstrations on which every learned policy is fine-tuned under an equal compute budget. The twin ranks…</p>\n<p><a href=\"https://arxiv.org/abs/2610.36420\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.36420\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.36420\">讨论与热度</a> · <a href=\"https://github.com/5hadytru/so101_bench\">代码</a></p><hr>\n<h2>9. RynnWorld-Latent: A Cross-Embodiment World Model Conditioned on Universal Latent Actions</h2>\n<p><strong>机器人</strong> · 发表 2026-10-27 · 综合分 4.88</p>\n<p>Zotero 摘要相关性：0.458（相似度分数，不是概率）。</p>\n<p>HF 点赞 11 · 讨论 2 · 仓库累计 Star 12（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +0 · Star +1。</p>\n<p><strong>规则标签：</strong>世界模型 · 大模型后训练</p>\n<p><strong>中文概述：</strong>针对异构机器人实体动作空间不兼容及人类视频缺乏控制标签的挑战，本文提出了RynnWorld-Latent跨实体视频世界模型。该模型利用3D基础潜在动作作为通用条件接口，实现人类视频、机器人演示和仿真轨迹的联合预训练。实验表明，该方法不仅提升了视频预测性能，还通过数字远程操作和潜在动作合成两种数据生成路径，显著改善了仿真及真实机器人平台的策略执行成功率，验证了通用潜在动作在学习跨实体控制动态方面的可扩展性。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>该框架利用3D潜在动作作为通用接口，实现了跨人类视频、机器人演示及仿真数据的联合预训练，解决了不同实体间动作空间不兼容的问题。<br><small>摘要依据：This representation enables joint pretraining on human interaction videos, robot demonstrations, and simulation rollouts without requiring a common native action space.</small></li>\n<li>通过数字远程操作和潜在动作合成两种数据生成路径，模型在仿真LIBERO基准测试及真实机器人平台上均表现出更高的策略成功率。<br><small>摘要依据：Synthetic mid-training improves policy success rates on LIBERO and LIBERO-Plus, and both generation routes improve real-world policy success rates over real-demonstration-only training in the evaluated settings.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>世界模型 · 机器人操作 · Sim-to-Real</p>\n<p><strong>原文摘要节选：</strong>Learning controllable world dynamics from heterogeneous interaction videos is challenging because robot embodiments use incompatible action spaces, while human videos lack native control labels. We present RynnWorld-Latent, a cross-embodiment video world model that uses the 3D-grounded latent actions introduced by RynnLAM as a shared conditioning interface. This representation enables joint pretraining on human interaction videos, robot demonstrations, and simulation rollouts without requiring a common native action space. Built on a pretrained video transformer, RynnWorld-Latent combines global action tokens with an identity-initialized local pathway that aligns actions with future video latents. We pretrain on 23 datasets comprising approximately 553.5M frames and adapt the model to…</p>\n<p><a href=\"https://arxiv.org/abs/2610.36791\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.36791\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.36791\">讨论与热度</a> · <a href=\"https://github.com/alibaba-damo-academy/RynnWorld-Latent\">代码</a></p><hr>\n<h2>10. Zooming without Zooming v2: From Seeing Details to Connecting Evidence for Generalizable Multimodal Perception</h2>\n<p><strong>机器人 / 强化学习</strong> · 发表 2026-10-27 · 综合分 4.44</p>\n<p>Zotero 摘要相关性：0.336（相似度分数，不是概率）。</p>\n<p>HF 点赞 31 · 讨论 3 · 仓库累计 Star 14（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +3 · 讨论 +0 · Star +1。</p>\n<p><strong>规则标签：</strong>强化学习 · 大模型后训练 · 推理</p>\n<p><strong>中文概述：</strong>针对多模态感知中空间理解与长上下文处理的训练数据获取难问题，该论文提出了EvidenceConnect数据合成框架。该方法通过生成同一图像内不同区域的局部视图，构建需要关联与比较视觉证据的问题，并利用多模型共识及区域消融测试确保数据质量。通过在合成数据上训练基础多模态大模型（ZwZ2），作者声称显著提升了模型在细粒度感知、空间推理、多模态长上下文理解及具身智能代理任务上的通用性能。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出EvidenceConnect框架，通过合成涉及视觉证据关联的问题来提升模型能力，无需针对特定任务定制训练数据。<br><small>摘要依据：To strengthen this capability, we propose EvidenceConnect, an easy-to-implement data synthesis framework that uses zoomed views of related regions within a single image to generate questions requiring comparison, aggregation, or chaining of visual evidence.</small></li>\n<li>ZwZ2模型在未经下游基准任务专门训练的情况下，表现出在细粒度感知、空间推理及多模态智能体任务上的通用提升。<br><small>摘要依据：Although the synthesized data are not tailored to any downstream benchmark, ZwZ2 improves fine-grained and spatial perception, with further gains on embodied spatial reasoning, multimodal long-context understanding, multimodal agent tasks, and general visual reasoning.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>视觉语言动作</p>\n<p><strong>原文摘要节选：</strong>Multimodal perception forms the foundation of multimodal intelligence. In particular, spatial perception and multimodal long-context understanding are two pivotal tasks that underpin embodied AI and multimodal agents. However, synthesizing targeted, high-quality training data for these tasks remains difficult and costly. Our key insight is that these tasks share an underlying capability, which we call connecting evidence: identifying relevant visual facts, binding them to the correct entities, recovering their relations, and composing them into an answer. Crucially, targeted training data are far easier to synthesize for this capability than for these tasks themselves. To strengthen this capability, we propose EvidenceConnect, an easy-to-implement data synthesis framework that uses zoomed…</p>\n<p><a href=\"https://arxiv.org/abs/2610.37037\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.37037\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.37037\">讨论与热度</a> · <a href=\"https://github.com/inclusionAI/Zooming-without-Zooming-v2\">代码</a></p><hr>"
+}
