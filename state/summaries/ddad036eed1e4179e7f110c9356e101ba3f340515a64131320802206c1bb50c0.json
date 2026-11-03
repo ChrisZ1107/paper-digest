@@ -1,0 +1,18 @@
+{
+  "overview": "针对非结构化环境中执行器性能下降导致的机器人控制失效问题，本文提出了一种关节健康感知强化学习框架。该方法通过连续的关节健康向量建模执行器衰减，并引入HealthNet估计器从观测中推断各关节的残余作动能力，从而实现控制努力在健康与受损关节间的动态分配。实验表明，该方法在Walker、Go2、Cassie及Panda机械臂任务中，在不同程度的模拟性能下降环境下，均优于传统基线模型，显著提升了运动回报及操作成功率。",
+  "highlights": [
+    {
+      "text": "提出了基于关节健康向量和HealthNet估计器的强化学习框架，能够显式建模并利用连续的关节残余作动能力，以应对执行器性能退化。",
+      "evidence": "Our framework encodes actuator condition in a continuous joint-health vector and models degradation as multiplicative attenuation of executed actions. A dedicated HealthNet estimator infers per-joint health from recent observations and actions, allowing the policy to redistribute control effort across healthy and degraded joints."
+    },
+    {
+      "text": "在Walker、Go2、Cassie及Panda等多种机器人平台上，该方法在不同执行器退化程度下均表现出比传统基线模型更优的鲁棒性。",
+      "evidence": "The method outperforms nominal and degradation-trained no-health baselines on the main evaluated metrics."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "机器人操作",
+    "足式运动"
+  ]
+}

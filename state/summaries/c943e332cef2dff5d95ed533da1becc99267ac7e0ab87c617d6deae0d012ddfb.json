@@ -1,0 +1,17 @@
+{
+  "overview": "针对递归自改进模型中训练经验获取时机把握不当以及依赖自身预测进行自我监督的问题，研究提出了A-RSI方法。该方法通过监控训练日志中的奖励波动和准确率来动态刷新任务池，并利用模型自主生成的程序产生多模态问题及其可验证的参考答案，从而在无需人工标签或外部数据的情况下实现模型的自改进。实验表明，该方法在多个基准测试中提升了模型性能。",
+  "highlights": [
+    {
+      "text": "提出A-RSI方法，通过监控训练日志中的学习信号波动来决定何时刷新任务池，而非依赖验证集或测试集分数。",
+      "evidence": "A-RSI monitors reward variation and accuracy in training logs to refresh a task pool when its learning signal declines, without consulting validation or test scores."
+    },
+    {
+      "text": "利用模型编写的静态程序库生成多模态问题及其可独立验证的答案，实现了无需人工标注的闭环自训练。",
+      "evidence": "A static library of model-authored programs produces multimodal questions and derives their reference answers; we specify the task-generation contract, automatically verify chosen properties of the reward and refresh rules, and separately audit the generated answers."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "推理"
+  ]
+}

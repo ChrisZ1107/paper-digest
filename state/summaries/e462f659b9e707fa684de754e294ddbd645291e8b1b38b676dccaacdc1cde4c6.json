@@ -1,0 +1,14 @@
+{
+  "overview": "VibeGame是一个旨在通过自然语言提示创建完整2D游戏项目的框架。该系统通过AI原生游戏引擎将项目状态表示为结构化文本，并支持帧同步运行时控制。作者设计了一个由八个专业智能体组成的对抗性协作团队，实现了代码实现与审核的分离，并通过多轮循环解决问题。此外，该框架包含自进化机制，可将已完成的项目提炼为可复用的组件。实验表明，该系统在游戏生成任务中表现优于现有的智能体方案。",
+  "highlights": [
+    {
+      "text": "VibeGame利用AI原生游戏引擎，通过将项目状态表示为结构化文本，实现了对游戏行为的检查、执行与实时验证。",
+      "evidence": "Its AI-native game engine represents project state as schema-validated structured text and provides frame-synchronous runtime control, enabling agents to inspect game states, execute actions, and verify behavior at their own pace."
+    },
+    {
+      "text": "由八个专门智能体组成的对抗性协作团队，通过将代码实现与审核过程分离，提升了游戏开发的质量与反馈效率。",
+      "evidence": "Built upon this interface, we design an Adversarial Agent Team of eight specialized agents to separate implementation from review, so that problems are found and fixed through multi-round loops."
+    }
+  ],
+  "tags": []
+}

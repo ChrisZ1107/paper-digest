@@ -1,0 +1,19 @@
+{
+  "overview": "针对人形机器人在上方存在障碍物时的跌倒恢复难题，本文提出了一种基于强化学习的方法。该方法引入了接触支持的几何逃生引导，通过在奖励函数中加入机器人与障碍物重叠的增量式缩减，以及预训练运动先验、姿态相关支持和关节失速惩罚，使机器人能够仅依赖本体感受自主学习清理障碍、建立支撑并完成站立的策略。实验表明，该方法显著提升了机器人在模拟环境及真实场景下的恢复成功率。",
+  "highlights": [
+    {
+      "text": "提出一种接触支持的几何逃生引导机制，无需预设路径即可通过奖励信号引导机器人减少与障碍物的重叠，进而自主学习恢复策略。",
+      "evidence": "We introduce a reinforcement learning method with contact-supported geometric escape guidance, which rewards incremental reduction of robot-obstacle overlap without prescribing an escape path."
+    },
+    {
+      "text": "该方法仅利用本体感受即可实现人形机器人在受限空间下的跌倒恢复，并在真实环境的多种障碍物场景中展现出鲁棒性。",
+      "evidence": "On a Unitree G1, the deployed policy recovered in 95 of 150 attempts across seven real-world obstacle scenes, including furniture and multi-object arrangements absent from training."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "人形机器人",
+    "足式运动",
+    "Sim-to-Real"
+  ]
+}

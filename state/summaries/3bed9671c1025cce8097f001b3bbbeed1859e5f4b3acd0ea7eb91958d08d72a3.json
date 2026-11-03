@@ -1,0 +1,19 @@
+{
+  "overview": "针对复用预训练足式运动策略进行高精度移动操作的问题，本文提出了一种在线学习方法，用于建模冻结策略下的闭环动力学。该方法通过引入污染高斯模型结合高斯过程和随机傅里叶特征，解决了隐藏潜在条件导致的动力学响应异构性问题，有效降低了预测偏差与波动。实验表明，该方法能够实现高精度的移动操作，并在多种机械臂配置与任务中保持稳定的末端执行器跟踪性能。",
+  "highlights": [
+    {
+      "text": "提出污染高斯模型来处理策略中因潜在条件导致的运动响应异构性，从而减少动力学估计的偏差与波动。",
+      "evidence": "To address this problem, a contaminated Gaussian model is proposed to approximate the effects of latent conditions. The model uses two Gaussian components to approximate predictable and unpredictable responses under the same observed state."
+    },
+    {
+      "text": "该方法实现了高精度的移动操作，在模拟和硬件实验中，末端执行器跟踪误差达到0.01米。",
+      "evidence": "Simulation and hardware experiments demonstrate consistent end-effector tracking across different manipulator configurations and tasks, with errors of 0.01 m."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "足式运动",
+    "机器人操作",
+    "Sim-to-Real"
+  ]
+}

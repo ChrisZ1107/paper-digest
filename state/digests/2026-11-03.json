@@ -1,0 +1,489 @@
+{
+  "date": "2026-11-03",
+  "timestamp": "2026-11-03T09:02:03.210939+08:00",
+  "title": "2026-11-03 热门论文 Top 10｜机器人·强化学习·AI",
+  "slug": "2026-11-03",
+  "papers": [
+    {
+      "id": "2610.39264",
+      "title": "Online Dense Reinforcement Learning with Planning-Grounding Agent for UI Navigation on Live IOS Apps",
+      "abstract": "While frontier vision-language models demonstrate strong capabilities in user interface (UI) navigation, their high inference costs prohibit everyday use. Conversely, smaller models trained via supervised fine-tuning (SFT) or offline reinforcement learning often memorize static trajectories, leading to brittle execution and an inability to recover from errors. To address these limitations, we propose a novel online reinforcement learning framework that trains UI navigation agents directly on live iOS applications. Our framework decouples the agent into two specialized components: a Planning agent and a UI Grounding model. We rely on an LLM-as-a-Judge to provide comprehensive reward signals, combining dense, step-level feedback to evaluate intermediate progress with a terminal reward for overall task completion. To effectively leverage this dual reward structure, we optimize the agent using Proximal Policy Optimization (PPO) with step-level advantage estimation. Furthermore, we introduce GiGPPO, a novel neighbor-conditioned value estimation method that improves critic stability by leveraging reward signals from visually similar states across concurrent trajectories. To support this online training paradigm at scale, we introduce an efficient infrastructure that orchestrates hundreds of concurrent virtual iOS devices. Evaluations on rigorous benchmarks, including UINavBench, iOSWorld, and AndroidWorld, demonstrate that our online RL trained agents substantially outperform both SFT and terminal-only RL baselines while accelerating training convergence. Notably, our 8B RL agents achieve nearly a sevenfold improvement over the SFT baseline in out-of-distribution generalization to Android environments, while outperforming Gemini-3.5-Flash and tying with Gemini-3.1-Pro on real iOS applications.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-10-29",
+      "age_days": 5.043092719201389,
+      "upvotes": 16,
+      "comments": 2,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.48708,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 6,
+        "comments": 0
+      },
+      "score": 5.42,
+      "rule_tags": [
+        "强化学习",
+        "PPO",
+        "导航",
+        "离线强化学习"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对现有UI导航模型面临的推理成本高或对静态轨迹依赖过强的问题，本文提出一种在iOS应用上进行在线强化学习的框架。该框架通过规划代理与UI基础模型解耦，利用大语言模型提供密集奖励信号，并采用PPO算法及名为GiGPPO的价值估计方法进行训练。实验表明，该方法在多个基准测试中优于监督微调和仅使用终端奖励的强化学习基线，展现出更好的分布外泛化能力。",
+        "highlights": [
+          {
+            "text": "提出一种将规划代理与UI基础模型解耦的在线强化学习框架，并结合密集步级反馈与终端奖励优化智能体训练。",
+            "evidence": "Our framework decouples the agent into two specialized components: a Planning agent and a UI Grounding model. We rely on an LLM-as-a-Judge to provide comprehensive reward signals, combining dense, step-level feedback to evaluate intermediate progress with a terminal reward for overall task completion."
+          },
+          {
+            "text": "引入GiGPPO邻域条件价值估计方法，通过利用并发轨迹中视觉相似状态的奖励信号，提升了评估器的稳定性。",
+            "evidence": "Furthermore, we introduce GiGPPO, a novel neighbor-conditioned value estimation method that improves critic stability by leveraging reward signals from visually similar states across concurrent trajectories."
+          },
+          {
+            "text": "在UINavBench、iOSWorld和AndroidWorld等基准测试中，该方法相比监督微调和终端奖励基线表现出显著的性能提升。",
+            "evidence": "Evaluations on rigorous benchmarks, including UINavBench, iOSWorld, and AndroidWorld, demonstrate that our online RL trained agents substantially outperform both SFT and terminal-only RL baselines while accelerating training convergence."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "PPO",
+          "导航"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.36420",
+      "title": "SO-101 Bench: Accessible Spatial Manipulation",
+      "abstract": "Low-cost arms such as the SO-101 have become the most common entry point to robot learning, yet no released policy performs spatially constrained, language-conditioned tasks on them out of the box, and existing SO-101 benchmarks run only on physical hardware with simple tasks and few held-out objects. We introduce SO-101 Bench, a simulated benchmark for language-conditioned spatial manipulation built on an Isaac Lab digital twin of a real SO-101 setup. It has four tasks scored as five families, 138 objects in seen, unseen-instance and unseen-class splits, 916 evaluation episodes with subsets for held-out appearances, rotate-to-fit planning and occlusion memory, and 3,629 simulated demonstrations on which every learned policy is fine-tuned under an equal compute budget. The twin ranks policies as the real robot does: five policies trained without real data, four VLAs and an LLM agent, keep their exact ranking when the same weights run on the physical arm in an unseen environment with unseen objects (Spearman rho = 1.00, MMRV = 0.000), although simulation overestimates success. Across nine VLAs and world-action models, the best learned policies score near 61%, with spatial placement, unseen object classes and rotate-to-fit planning remaining open. An LLM agent that writes code and hands grasping to a learned policy scores 83.2%, and an ablation shows that this lead comes from the choice of harness and the choice of language model.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-27",
+      "age_days": 7.043092719201389,
+      "upvotes": 13,
+      "comments": 3,
+      "stars": 42,
+      "repo": "https://github.com/5hadytru/so101_bench",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.48599,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 4,
+        "comments": 0,
+        "stars": 0
+      },
+      "score": 5.25,
+      "rule_tags": [
+        "机器人操作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对低成本SO-101机械臂缺乏空间约束和语言条件任务基准的问题，本文提出了基于Isaac Lab的SO-101 Bench仿真测试平台。该基准包含多种空间操作任务、大量物体类别及演示数据，旨在评估机器人策略的泛化能力。研究表明该仿真基准的策略排名与真实物理环境高度一致，并对比了视觉语言动作模型与大模型代理的性能，揭示了当前模型在空间放置与规划任务中的局限性。",
+        "highlights": [
+          {
+            "text": "SO-101 Bench在仿真环境中建立的策略排名与真实物理机器人上的排名完全一致，证明了其模拟的有效性。",
+            "evidence": "The twin ranks policies as the real robot does: five policies trained without real data, four VLAs and an LLM agent, keep their exact ranking when the same weights run on the physical arm in an unseen environment with unseen objects (Spearman rho = 1.00, MMRV = 0.000)"
+          },
+          {
+            "text": "结合大模型代码生成与底层学习策略的代理模型表现出最高得分，优于纯视觉语言动作模型。",
+            "evidence": "An LLM agent that writes code and hands grasping to a learned policy scores 83.2%, and an ablation shows that this lead comes from the choice of harness and the choice of language model."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "Sim-to-Real",
+          "视觉语言动作"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.40799",
+      "title": "CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents",
+      "abstract": "Across coding, web, and tool-use tasks, language-model agents are now routinely trained with the same recipe: supervised fine-tuning (SFT) to learn the interface, then multi-turn reinforcement learning (RL) to master it. Code-as-policy (CaP) casts robot manipulation in the same form, as the policy writes code against robot APIs and reads back the results, so the same recipe should apply. Yet existing CaP agents sidestep training: they either prompt closed frontier models or delegate manipulation to pre-trained vision-language-action models (VLAs) and high-level skills, while small open vision-language models (VLMs) fail outright. We present CaPtain, an open post-training pipeline that turns a small open VLM into a capable CaP agent, with no VLA, frontier model, or privileged state at test time. CaPtain trains and deploys the policy inside CaPtain-Harness, which exposes low-level perception, geometry, and guarded-motion primitives across simulation and real hardware. We first align the base model via SFT on synthetic trajectories generated with GPT-6 Astra, then apply multi-turn RL. Multi-turn RL must credit tens of agent requests, whose physical effects often surface turns later, from a single end-of-episode outcome. We therefore introduce a physical critic that reads privileged simulator state, never seen by the policy, and credits each request by how much it changes the predicted chance of success. Starting from Qwen3.5-4B (0% zero-shot), CaPtain-4B reaches 55.4% held-out LIBERO success after SFT and 73.8% after RL. On LIBERO-PRO, it reaches 78.5%, surpassing several frontier-model agents, and its RL gains persist across three perturbation suites (+17.6 to +21.2 points). Without target-domain training, it attains 83.3% on SimplerEnv WidowX, exceeds frontier models on CaP-Bench, and runs on a real robot after simulation-only adaptation. We release all code, data, and model weights.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-10-29",
+      "age_days": 5.043092719201389,
+      "upvotes": 18,
+      "comments": 1,
+      "stars": 50,
+      "repo": "https://github.com/waltstephen/CaPtain",
+      "trending_rank": 33,
+      "sources": [
+        "Hugging Face",
+        "arXiv"
+      ],
+      "date_label": "发表",
+      "relevance": 0.47751,
+      "growth": null,
+      "score": 4.868,
+      "rule_tags": [
+        "强化学习",
+        "视觉语言动作",
+        "大模型后训练"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对代码即策略（CaP）机器人操作任务，本文提出CaPtain流水线，旨在训练小型开源视觉语言模型执行任务。该方法通过GPT-6 Astra生成的合成轨迹进行监督微调，并引入基于特权模拟状态的物理评判器进行多轮强化学习训练。实验表明，CaPtain-4B在LIBERO及多种基准测试中表现优异，无需测试时调用前沿大模型或特权信息，即可在仿真及真实机器人环境下实现有效操作。",
+        "highlights": [
+          {
+            "text": "提出CaPtain流水线，通过监督微调与基于物理评判器的多轮强化学习，使小型开源模型具备代码即策略（CaP）执行能力。",
+            "evidence": "We present CaPtain, an open post-training pipeline that turns a small open VLM into a capable CaP agent, with no VLA, frontier model, or privileged state at test time."
+          },
+          {
+            "text": "利用仅在训练期使用的物理评判器评估单次请求对任务成功率的贡献，有效解决了多轮交互中的归因难题。",
+            "evidence": "We therefore introduce a physical critic that reads privileged simulator state, never seen by the policy, and credits each request by how much it changes the predicted chance of success."
+          },
+          {
+            "text": "CaPtain模型在多个机器人基准测试中达到较高成功率，并表现出良好的泛化能力与鲁棒性。",
+            "evidence": "Starting from Qwen3.5-4B (0% zero-shot), CaPtain-4B reaches 55.4% held-out LIBERO success after SFT and 73.8% after RL. On LIBERO-PRO, it reaches 78.5%, surpassing several frontier-model agents"
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "大模型后训练",
+          "强化学习",
+          "Sim-to-Real"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.34186",
+      "title": "HuGe: Scaling Humanoid Generalist Vision-Language-Action Models with Egocentric Experience",
+      "abstract": "Extending Vision-Language-Action models (VLAs) to humanoid robots requires coordinated whole-body control and diverse demonstrations that are costly to collect in real-world scenarios. Although egocentric human demonstrations provide a complementary source of task experience, differences in visual embodiment and missing robot proprioception complicate transfer to humanoid policies. To address these challenges, we introduce HuGe, a family of Humanoid Generalist VLAs pre-trained on over 2,000 hours of egocentric human and robot data. Specifically, HuGe employs three existing representative VLA architectures to predict latent motion tokens for a pretrained whole-body controller, together with hand-control signals. Based on this, we introduce a three-stage training pipeline that combines egocentric pre-training, humanoid adaptation, and downstream fine-tuning. To facilitate transfer across embodiments, we construct pseudo-proprioceptive states through simulation playback during pre-training and modify arm appearance in egocentric observations through re-rendering during downstream fine-tuning. With this pipeline, HuGe achieves the state-of-the-art on simulation benchmark HumanoidArena. Furthermore, real-world experiments on the Unitree G1 indicate that augmenting robot demonstrations with visually adapted egocentric demonstrations significantly increases success on a pick-and-drop task.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-25",
+      "age_days": 9.04309271920139,
+      "upvotes": 44,
+      "comments": 2,
+      "stars": 14,
+      "repo": "https://github.com/yliu-cs/HuGe",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.44282,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 1,
+        "comments": 0,
+        "stars": 1
+      },
+      "score": 4.826,
+      "rule_tags": [
+        "人形机器人",
+        "视觉语言动作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对人形机器人视觉语言动作（VLA）模型面临的全身控制协同难及演示数据获取成本高的问题，本文提出了HuGe模型族。该方法通过整合超过2000小时的自我中心人类演示与机器人数据，结合预训练、人形适应及下游微调的三阶段流程，利用伪本体感觉构建及手臂外观重渲染技术实现跨形态迁移。实验表明，该模型在HumanoidArena仿真基准及Unitree G1实机抓取任务中表现优异。",
+        "highlights": [
+          {
+            "text": "提出HuGe三阶段训练流程，通过伪本体感觉构建和视觉重渲染技术有效解决了人类演示与人形机器人之间的形态差异问题。",
+            "evidence": "To facilitate transfer across embodiments, we construct pseudo-proprioceptive states through simulation playback during pre-training and modify arm appearance in egocentric observations through re-rendering during downstream fine-tuning."
+          },
+          {
+            "text": "HuGe模型在HumanoidArena仿真基准上达到了当前最先进水平，并在Unitree G1实机上验证了通过整合自我中心演示能显著提升任务成功率。",
+            "evidence": "With this pipeline, HuGe achieves the state-of-the-art on simulation benchmark HumanoidArena. Furthermore, real-world experiments on the Unitree G1 indicate that augmenting robot demonstrations with visually adapted egocentric demonstrations significantly increases success on a pick-and-drop task."
+          }
+        ],
+        "tags": [
+          "人形机器人",
+          "视觉语言动作",
+          "Sim-to-Real"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.39287",
+      "title": "OpenFlyV2: An onboard vision-language-action model for aerial perception and navigation",
+      "abstract": "Human cognition flexibly draws on a shared perceptual foundation to understand environments, attend to referenced entities, reason about spatial relationships, and act. Endowing aerial robots with an analogous functional organization remains challenging, as existing systems are often specialized for individual capabilities, dependent on offboard computation, or unable to sustain closed-loop operation on resource-constrained platforms. We present OpenFlyV2, a unified onboard vision-language-action architecture that uses a shared vision-language representation to support semantic understanding, language-grounded perception, spatial reasoning, and continuous aerial control within a single model. A compact action expert converts the shared multimodal context into short-horizon flight waypoints, while motion-aware temporal memory and action priors reduce the computational cost of closed-loop execution. We construct , a simulation-based dataset comprising approximately 70,000 navigation trajectories and 60,000 vision-language instruction--response pairs. OpenFlyV2 generates action chunks, each comprising 12 waypoints, entirely onboard at 10 Hz using an NVIDIA Jetson Orin NX. It transfers zero-shot from simulation to physical quadrotor flight, achieving a 48\\% navigation success rate across four real-world environments without real-world aerial training data. Extensive results demonstrate that broad vision-language competence and continuous closed-loop flight can coexist within a single model on a resource-constrained aerial platform. Code will be made publicly available at https://github.com/Ideal-ljl/AeroBrain.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-29",
+      "age_days": 5.043092719201389,
+      "upvotes": 7,
+      "comments": 2,
+      "stars": 15,
+      "repo": "https://github.com/Ideal-ljl/AeroBrain",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.47925,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 0,
+        "comments": 0,
+        "stars": 6
+      },
+      "score": 4.782,
+      "rule_tags": [
+        "导航",
+        "视觉语言动作",
+        "推理"
+      ],
+      "summary_status": "Gemini 暂不可用，显示规则标签与原文摘要。"
+    },
+    {
+      "id": "2610.40564",
+      "title": "Training Foundation Models with a Single Algorithm",
+      "abstract": "Foundation models are typically trained in stages: pretraining, midtraining, supervised fine-tuning (SFT), and reinforcement learning (RL), with changes in both data and learning algorithms. We show that this algorithmic separation is not fundamental. By deriving suitable RL objectives as maximum-likelihood fitting to model-generated target distributions, we place all of these stages under a single likelihood-based training algorithm, unified training. This perspective turns the foundation-model training lifecycle into a problem of choosing which data to train on, in what proportions, and when, with conventional staged training as a special case. We instantiate this framework in a unified training system that mixes static data and RL generations within a single trainer. Across controlled and real-world experiments, unified training improves the accuracy-compute tradeoff and task coverage while preserving broader capabilities, and provides a stronger starting point for continual learning. This work lays the groundwork for a unified science of foundation-model training, connecting mathematical principles, training infrastructure, and the development of model capabilities.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-10-29",
+      "age_days": 5.043092719201389,
+      "upvotes": 12,
+      "comments": 3,
+      "stars": 35,
+      "repo": "https://github.com/yudasong/unified-training",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.38721,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 3,
+        "comments": 0,
+        "stars": 8
+      },
+      "score": 4.758,
+      "rule_tags": [
+        "强化学习"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对基础模型训练阶段割裂的问题，作者提出了一种统一训练框架。该方法通过将强化学习目标推导为对模型生成目标分布的极大似然拟合，实现了预训练、监督微调与强化学习的统一算法框架。实验表明，这种方法通过混合静态数据与强化学习生成数据，在提升计算效率与任务覆盖范围的同时，保持了模型能力的广泛性，并为持续学习提供了更优起点。",
+        "highlights": [
+          {
+            "text": "通过将强化学习目标形式化为对模型生成分布的极大似然拟合，作者实现了一种能够覆盖基础模型全生命周期的单一统一训练算法。",
+            "evidence": "By deriving suitable RL objectives as maximum-likelihood fitting to model-generated target distributions, we place all of these stages under a single likelihood-based training algorithm, unified training."
+          },
+          {
+            "text": "统一训练框架通过混合静态数据与强化学习生成数据，提升了模型的准确度与计算权衡，并增强了模型在持续学习中的基础性能。",
+            "evidence": "Across controlled and real-world experiments, unified training improves the accuracy-compute tradeoff and task coverage while preserving broader capabilities, and provides a stronger starting point for continual learning."
+          }
+        ],
+        "tags": [
+          "大模型后训练",
+          "强化学习"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.31670",
+      "title": "Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success",
+      "abstract": "Robot foundation models are typically evaluated through costly closed-loop rollouts, motivating low-cost offline proxies for model capability. The Platonic Representation Hypothesis (PRH) suggests that as representations improve, modalities such as vision and language converge toward a shared statistical model of reality. We ask whether motion trajectories form another such modality: as embodied models become more capable, should their sensory representations converge toward the structure of physical motion? To test this, we propose Sensorimotor Alignment (S^2), a training-free offline metric that measures how well a model's sensory representation aligns with the geometry of physical motion. We find that S^2 correlates positively with downstream robot task success across model families, making it a low-cost offline proxy for prioritizing models before closed-loop evaluation. S^2 can also identify promising vision-language model (VLM) backbones before costly fine-tuning into vision-language-action models (VLAs). Beyond this correlation, S^2 offers representation-level explanations for phenomena observed in VLAs and world action models (WAMs). With S^2, we extend PRH to robotics and make sensorimotor alignment measurable, offering a low-cost, representation-level view of robot foundation models that closed-loop success rates alone cannot reveal.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-23",
+      "age_days": 11.04309271920139,
+      "upvotes": 56,
+      "comments": 2,
+      "stars": 8,
+      "repo": "https://github.com/yunfeixie233/sensorimotor-alignment",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.42094,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 2,
+        "comments": 0,
+        "stars": 0
+      },
+      "score": 4.705,
+      "rule_tags": [
+        "视觉语言动作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对机器人基础模型评估成本高的问题，作者提出了传感器运动对齐（S^2）方法。该方法作为一种无需训练的离线指标，通过衡量模型感知表征与物理运动几何结构的一致性，量化模型能力。实验表明，S^2与下游机器人任务成功率呈正相关，能够作为一种低成本的评估代理，用于在部署前筛选模型架构并提供表征层面的解释。",
+        "highlights": [
+          {
+            "text": "提出了一种无需训练的离线指标S^2，能够有效衡量模型感知表征与物理运动几何结构的一致性，从而作为评估机器人模型能力的低成本代理。",
+            "evidence": "To test this, we propose Sensorimotor Alignment (S^2), a training-free offline metric that measures how well a model's sensory representation aligns with the geometry of physical motion."
+          },
+          {
+            "text": "研究发现S^2与机器人任务成功率高度相关，可用于在昂贵的闭环评估前优先筛选模型，并辅助视觉语言模型骨干的选择。",
+            "evidence": "We find that S^2 correlates positively with downstream robot task success across model families, making it a low-cost offline proxy for prioritizing models before closed-loop evaluation. S^2 can also identify promising vision-language model (VLM) backbones before costly fine-tuning into vision-language-action models (VLAs)."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.38568",
+      "title": "A-RSI: Adaptive Task Refresh for Zero-Data Multimodal Self-Improvement",
+      "abstract": "Recursive self-improvement requires models not only to acquire useful training experience, but also to decide when their current experience has ceased to be useful. Existing methods often focus on what experience to generate next, while paying less attention to when fresh experience should be introduced. Many also construct training targets through self-consistency or majority voting, making supervision depend on the model's own uncertain predictions. We address these two questions separately: training dynamics determine when to acquire new experience, while the answers to new tasks remain independently checkable. A-RSI monitors reward variation and accuracy in training logs to refresh a task pool when its learning signal declines, without consulting validation or test scores. A static library of model-authored programs produces multimodal questions and derives their reference answers; we specify the task-generation contract, automatically verify chosen properties of the reward and refresh rules, and separately audit the generated answers. The training loop uses no external training examples or human-written answer labels. On the primary eleven-benchmark suite, A-RSI raises the performance average from 57.77 to 61.05 with 800 fresh tasks.",
+      "topics": [
+        "通用 AI"
+      ],
+      "published": "2026-10-28",
+      "age_days": 6.043092719201389,
+      "upvotes": 89,
+      "comments": 4,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.31846,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 17,
+        "comments": 0
+      },
+      "score": 4.603,
+      "rule_tags": [],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对递归自改进模型中训练经验获取时机把握不当以及依赖自身预测进行自我监督的问题，研究提出了A-RSI方法。该方法通过监控训练日志中的奖励波动和准确率来动态刷新任务池，并利用模型自主生成的程序产生多模态问题及其可验证的参考答案，从而在无需人工标签或外部数据的情况下实现模型的自改进。实验表明，该方法在多个基准测试中提升了模型性能。",
+        "highlights": [
+          {
+            "text": "提出A-RSI方法，通过监控训练日志中的学习信号波动来决定何时刷新任务池，而非依赖验证集或测试集分数。",
+            "evidence": "A-RSI monitors reward variation and accuracy in training logs to refresh a task pool when its learning signal declines, without consulting validation or test scores."
+          },
+          {
+            "text": "利用模型编写的静态程序库生成多模态问题及其可独立验证的答案，实现了无需人工标注的闭环自训练。",
+            "evidence": "A static library of model-authored programs produces multimodal questions and derives their reference answers; we specify the task-generation contract, automatically verify chosen properties of the reward and refresh rules, and separately audit the generated answers."
+          }
+        ],
+        "tags": [
+          "大模型后训练",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.33106",
+      "title": "VibeGame: Prompt-to-Game Development with AI-Native Engine and Self-Evolving Adversarial Agent Team",
+      "abstract": "Large language model agents have enabled software development through natural-language interaction, but extending this paradigm to end-to-end game development remains challenging. Building a playable game requires coordinating code, scenes, assets, animations, physics, and configurations, while allowing developers to validate their integrated behavior through interactive testing. We introduce VibeGame, a framework for creating complete 2D game projects from natural-language prompts and optional reference images. Its AI-native game engine represents project state as schema-validated structured text and provides frame-synchronous runtime control, enabling agents to inspect game states, execute actions, and verify behavior at their own pace. Built upon this interface, we design an Adversarial Agent Team of eight specialized agents to separate implementation from review, so that problems are found and fixed through multi-round loops. For each conducted and accepted project, we further introduce a training-free self-evolution mechanism to distill it into reusable skeletons, modules, and collaboration contracts for future development. We evaluate prompt-assets-to-game (PA2G), where agents are given an asset library, and prompt-to-game (P2G), where agents generate their own art. On a GameCraft-Bench subset, VibeGame in P2G consistently outperforms a range of agent harnesses in either P2G or PA2G with the same underlying model, including GPT-6.1-Sol.",
+      "topics": [
+        "通用 AI"
+      ],
+      "published": "2026-10-22",
+      "age_days": 12.04309271920139,
+      "upvotes": 38,
+      "comments": 2,
+      "stars": 337,
+      "repo": "https://github.com/tettethu/VibeGame",
+      "trending_rank": 70,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.33722,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 14,
+        "comments": 0,
+        "stars": 37
+      },
+      "score": 4.594,
+      "rule_tags": [],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "VibeGame是一个旨在通过自然语言提示创建完整2D游戏项目的框架。该系统通过AI原生游戏引擎将项目状态表示为结构化文本，并支持帧同步运行时控制。作者设计了一个由八个专业智能体组成的对抗性协作团队，实现了代码实现与审核的分离，并通过多轮循环解决问题。此外，该框架包含自进化机制，可将已完成的项目提炼为可复用的组件。实验表明，该系统在游戏生成任务中表现优于现有的智能体方案。",
+        "highlights": [
+          {
+            "text": "VibeGame利用AI原生游戏引擎，通过将项目状态表示为结构化文本，实现了对游戏行为的检查、执行与实时验证。",
+            "evidence": "Its AI-native game engine represents project state as schema-validated structured text and provides frame-synchronous runtime control, enabling agents to inspect game states, execute actions, and verify behavior at their own pace."
+          },
+          {
+            "text": "由八个专门智能体组成的对抗性协作团队，通过将代码实现与审核过程分离，提升了游戏开发的质量与反馈效率。",
+            "evidence": "Built upon this interface, we design an Adversarial Agent Team of eight specialized agents to separate implementation from review, so that problems are found and fixed through multi-round loops."
+          }
+        ],
+        "tags": [],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.39664",
+      "title": "EditAgent: Rethinking Agentic Image Editing",
+      "abstract": "Agentic image editors decompose complex requests into steps, but when a step fails, they mostly retry with the same narrow set of tools and a judge that scores each output by eye directly. We argue that such agents are bounded by two spaces: the action space of what the agent can do, and the observation space of what its judge can see. On our expert-annotated benchmark, a general-purpose editor yields no usable result in over 40% of the cases, and no judge is reliable across edit types. We present EditAgent, which expands both spaces. It routes each step to general editors and specialized methods, and attaches to each candidate a verification record. With these records, off-the-shelf VLM judges outperform finetuned reward models. Candidates are generated in parallel and judged in one listwise call: experts prefer this to sequential refinement in 78.5% of decided comparisons, at no more than half the judge calls. EditAgent improves two open-weight editors on three benchmarks and serves as a data engine for training stronger editors.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-10-29",
+      "age_days": 5.043092719201389,
+      "upvotes": 15,
+      "comments": 2,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.3285,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 4,
+        "comments": 0
+      },
+      "score": 4.304,
+      "rule_tags": [],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对现有智能体图像编辑在处理复杂请求时工具受限及评估不可靠的问题，本文提出了EditAgent。该方法通过扩展操作空间并引入验证记录，使视觉语言模型能够有效评估候选结果，并采用并行生成与列表式判断的机制。实验表明，EditAgent在多个基准测试中提升了现有编辑模型的性能，并可作为训练更强编辑模型的数据引擎。",
+        "highlights": [
+          {
+            "text": "EditAgent通过扩展操作空间与观测空间，能够将任务路由至通用及专用编辑器，并利用验证记录提升评估准确性。",
+            "evidence": "It routes each step to general editors and specialized methods, and attaches to each candidate a verification record. With these records, off-the-shelf VLM judges outperform finetuned reward models."
+          },
+          {
+            "text": "通过并行生成候选结果并进行列表式评估，EditAgent在保持更少调用次数的同时，获得了更优的编辑表现。",
+            "evidence": "Candidates are generated in parallel and judged in one listwise call: experts prefer this to sequential refinement in 78.5% of decided comparisons, at no more than half the judge calls."
+          }
+        ],
+        "tags": [
+          "大模型后训练",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    }
+  ],
+  "candidate_count": 570,
+  "personalization_note": "已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。",
+  "html": "<h1>2026-11-03 热门论文 Top 10</h1>\n<p>机器人 · 强化学习 · 通用 AI</p>\n<p>生成时间：2026-11-03 09:02 CST。从 570 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>\n<p>候选来源：<a href=\"https://huggingface.co/papers\">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>\n<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>\n<h2>1. Online Dense Reinforcement Learning with Planning-Grounding Agent for UI Navigation on Live IOS Apps</h2>\n<p><strong>强化学习</strong> · 发表 2026-10-29 · 综合分 5.42</p>\n<p>Zotero 摘要相关性：0.487（相似度分数，不是概率）。</p>\n<p>HF 点赞 16 · 讨论 2</p>\n<p>较上次观测（1.0 天前）：点赞 +6 · 讨论 +0。</p>\n<p><strong>规则标签：</strong>强化学习 · PPO · 导航 · 离线强化学习</p>\n<p><strong>中文概述：</strong>针对现有UI导航模型面临的推理成本高或对静态轨迹依赖过强的问题，本文提出一种在iOS应用上进行在线强化学习的框架。该框架通过规划代理与UI基础模型解耦，利用大语言模型提供密集奖励信号，并采用PPO算法及名为GiGPPO的价值估计方法进行训练。实验表明，该方法在多个基准测试中优于监督微调和仅使用终端奖励的强化学习基线，展现出更好的分布外泛化能力。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出一种将规划代理与UI基础模型解耦的在线强化学习框架，并结合密集步级反馈与终端奖励优化智能体训练。<br><small>摘要依据：Our framework decouples the agent into two specialized components: a Planning agent and a UI Grounding model. We rely on an LLM-as-a-Judge to provide comprehensive reward signals, combining dense, step-level feedback to evaluate intermediate progress with a terminal reward for overall task completion.</small></li>\n<li>引入GiGPPO邻域条件价值估计方法，通过利用并发轨迹中视觉相似状态的奖励信号，提升了评估器的稳定性。<br><small>摘要依据：Furthermore, we introduce GiGPPO, a novel neighbor-conditioned value estimation method that improves critic stability by leveraging reward signals from visually similar states across concurrent trajectories.</small></li>\n<li>在UINavBench、iOSWorld和AndroidWorld等基准测试中，该方法相比监督微调和终端奖励基线表现出显著的性能提升。<br><small>摘要依据：Evaluations on rigorous benchmarks, including UINavBench, iOSWorld, and AndroidWorld, demonstrate that our online RL trained agents substantially outperform both SFT and terminal-only RL baselines while accelerating training convergence.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · PPO · 导航</p>\n<p><strong>原文摘要节选：</strong>While frontier vision-language models demonstrate strong capabilities in user interface (UI) navigation, their high inference costs prohibit everyday use. Conversely, smaller models trained via supervised fine-tuning (SFT) or offline reinforcement learning often memorize static trajectories, leading to brittle execution and an inability to recover from errors. To address these limitations, we propose a novel online reinforcement learning framework that trains UI navigation agents directly on live iOS applications. Our framework decouples the agent into two specialized components: a Planning agent and a UI Grounding model. We rely on an LLM-as-a-Judge to provide comprehensive reward signals, combining dense, step-level feedback to evaluate intermediate progress with a terminal reward for…</p>\n<p><a href=\"https://arxiv.org/abs/2610.39264\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.39264\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.39264\">讨论与热度</a></p><hr>\n<h2>2. SO-101 Bench: Accessible Spatial Manipulation</h2>\n<p><strong>机器人</strong> · 发表 2026-10-27 · 综合分 5.25</p>\n<p>Zotero 摘要相关性：0.486（相似度分数，不是概率）。</p>\n<p>HF 点赞 13 · 讨论 3 · 仓库累计 Star 42（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +4 · 讨论 +0 · Star +0。</p>\n<p><strong>规则标签：</strong>机器人操作</p>\n<p><strong>中文概述：</strong>针对低成本SO-101机械臂缺乏空间约束和语言条件任务基准的问题，本文提出了基于Isaac Lab的SO-101 Bench仿真测试平台。该基准包含多种空间操作任务、大量物体类别及演示数据，旨在评估机器人策略的泛化能力。研究表明该仿真基准的策略排名与真实物理环境高度一致，并对比了视觉语言动作模型与大模型代理的性能，揭示了当前模型在空间放置与规划任务中的局限性。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>SO-101 Bench在仿真环境中建立的策略排名与真实物理机器人上的排名完全一致，证明了其模拟的有效性。<br><small>摘要依据：The twin ranks policies as the real robot does: five policies trained without real data, four VLAs and an LLM agent, keep their exact ranking when the same weights run on the physical arm in an unseen environment with unseen objects (Spearman rho = 1.00, MMRV = 0.000)</small></li>\n<li>结合大模型代码生成与底层学习策略的代理模型表现出最高得分，优于纯视觉语言动作模型。<br><small>摘要依据：An LLM agent that writes code and hands grasping to a learned policy scores 83.2%, and an ablation shows that this lead comes from the choice of harness and the choice of language model.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · Sim-to-Real · 视觉语言动作</p>\n<p><strong>原文摘要节选：</strong>Low-cost arms such as the SO-101 have become the most common entry point to robot learning, yet no released policy performs spatially constrained, language-conditioned tasks on them out of the box, and existing SO-101 benchmarks run only on physical hardware with simple tasks and few held-out objects. We introduce SO-101 Bench, a simulated benchmark for language-conditioned spatial manipulation built on an Isaac Lab digital twin of a real SO-101 setup. It has four tasks scored as five families, 138 objects in seen, unseen-instance and unseen-class splits, 916 evaluation episodes with subsets for held-out appearances, rotate-to-fit planning and occlusion memory, and 3,629 simulated demonstrations on which every learned policy is fine-tuned under an equal compute budget. The twin ranks…</p>\n<p><a href=\"https://arxiv.org/abs/2610.36420\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.36420\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.36420\">讨论与热度</a> · <a href=\"https://github.com/5hadytru/so101_bench\">代码</a></p><hr>\n<h2>3. CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents</h2>\n<p><strong>机器人 / 强化学习</strong> · 发表 2026-10-29 · 综合分 4.87</p>\n<p>Zotero 摘要相关性：0.478（相似度分数，不是概率）。</p>\n<p>HF 点赞 18 · 讨论 1 · 本次 HF 热榜第 33 位 · 仓库累计 Star 50（仓库可能包含多篇论文）</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习 · 视觉语言动作 · 大模型后训练</p>\n<p><strong>中文概述：</strong>针对代码即策略（CaP）机器人操作任务，本文提出CaPtain流水线，旨在训练小型开源视觉语言模型执行任务。该方法通过GPT-6 Astra生成的合成轨迹进行监督微调，并引入基于特权模拟状态的物理评判器进行多轮强化学习训练。实验表明，CaPtain-4B在LIBERO及多种基准测试中表现优异，无需测试时调用前沿大模型或特权信息，即可在仿真及真实机器人环境下实现有效操作。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出CaPtain流水线，通过监督微调与基于物理评判器的多轮强化学习，使小型开源模型具备代码即策略（CaP）执行能力。<br><small>摘要依据：We present CaPtain, an open post-training pipeline that turns a small open VLM into a capable CaP agent, with no VLA, frontier model, or privileged state at test time.</small></li>\n<li>利用仅在训练期使用的物理评判器评估单次请求对任务成功率的贡献，有效解决了多轮交互中的归因难题。<br><small>摘要依据：We therefore introduce a physical critic that reads privileged simulator state, never seen by the policy, and credits each request by how much it changes the predicted chance of success.</small></li>\n<li>CaPtain模型在多个机器人基准测试中达到较高成功率，并表现出良好的泛化能力与鲁棒性。<br><small>摘要依据：Starting from Qwen3.5-4B (0% zero-shot), CaPtain-4B reaches 55.4% held-out LIBERO success after SFT and 73.8% after RL. On LIBERO-PRO, it reaches 78.5%, surpassing several frontier-model agents</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 大模型后训练 · 强化学习 · Sim-to-Real</p>\n<p><strong>原文摘要节选：</strong>Across coding, web, and tool-use tasks, language-model agents are now routinely trained with the same recipe: supervised fine-tuning (SFT) to learn the interface, then multi-turn reinforcement learning (RL) to master it. Code-as-policy (CaP) casts robot manipulation in the same form, as the policy writes code against robot APIs and reads back the results, so the same recipe should apply. Yet existing CaP agents sidestep training: they either prompt closed frontier models or delegate manipulation to pre-trained vision-language-action models (VLAs) and high-level skills, while small open vision-language models (VLMs) fail outright. We present CaPtain, an open post-training pipeline that turns a small open VLM into a capable CaP agent, with no VLA, frontier model, or privileged state at test…</p>\n<p><a href=\"https://arxiv.org/abs/2610.40799\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.40799\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.40799\">讨论与热度</a> · <a href=\"https://github.com/waltstephen/CaPtain\">代码</a></p><hr>\n<h2>4. HuGe: Scaling Humanoid Generalist Vision-Language-Action Models with Egocentric Experience</h2>\n<p><strong>机器人</strong> · 发表 2026-10-25 · 综合分 4.83</p>\n<p>Zotero 摘要相关性：0.443（相似度分数，不是概率）。</p>\n<p>HF 点赞 44 · 讨论 2 · 仓库累计 Star 14（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +0 · Star +1。</p>\n<p><strong>规则标签：</strong>人形机器人 · 视觉语言动作</p>\n<p><strong>中文概述：</strong>针对人形机器人视觉语言动作（VLA）模型面临的全身控制协同难及演示数据获取成本高的问题，本文提出了HuGe模型族。该方法通过整合超过2000小时的自我中心人类演示与机器人数据，结合预训练、人形适应及下游微调的三阶段流程，利用伪本体感觉构建及手臂外观重渲染技术实现跨形态迁移。实验表明，该模型在HumanoidArena仿真基准及Unitree G1实机抓取任务中表现优异。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出HuGe三阶段训练流程，通过伪本体感觉构建和视觉重渲染技术有效解决了人类演示与人形机器人之间的形态差异问题。<br><small>摘要依据：To facilitate transfer across embodiments, we construct pseudo-proprioceptive states through simulation playback during pre-training and modify arm appearance in egocentric observations through re-rendering during downstream fine-tuning.</small></li>\n<li>HuGe模型在HumanoidArena仿真基准上达到了当前最先进水平，并在Unitree G1实机上验证了通过整合自我中心演示能显著提升任务成功率。<br><small>摘要依据：With this pipeline, HuGe achieves the state-of-the-art on simulation benchmark HumanoidArena. Furthermore, real-world experiments on the Unitree G1 indicate that augmenting robot demonstrations with visually adapted egocentric demonstrations significantly increases success on a pick-and-drop task.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>人形机器人 · 视觉语言动作 · Sim-to-Real</p>\n<p><strong>原文摘要节选：</strong>Extending Vision-Language-Action models (VLAs) to humanoid robots requires coordinated whole-body control and diverse demonstrations that are costly to collect in real-world scenarios. Although egocentric human demonstrations provide a complementary source of task experience, differences in visual embodiment and missing robot proprioception complicate transfer to humanoid policies. To address these challenges, we introduce HuGe, a family of Humanoid Generalist VLAs pre-trained on over 2,000 hours of egocentric human and robot data. Specifically, HuGe employs three existing representative VLA architectures to predict latent motion tokens for a pretrained whole-body controller, together with hand-control signals. Based on this, we introduce a three-stage training pipeline that combines…</p>\n<p><a href=\"https://arxiv.org/abs/2610.34186\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.34186\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.34186\">讨论与热度</a> · <a href=\"https://github.com/yliu-cs/HuGe\">代码</a></p><hr>\n<h2>5. OpenFlyV2: An onboard vision-language-action model for aerial perception and navigation</h2>\n<p><strong>机器人</strong> · 发表 2026-10-29 · 综合分 4.78</p>\n<p>Zotero 摘要相关性：0.479（相似度分数，不是概率）。</p>\n<p>HF 点赞 7 · 讨论 2 · 仓库累计 Star 15（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +0 · 讨论 +0 · Star +6。</p>\n<p><strong>规则标签：</strong>导航 · 视觉语言动作 · 推理</p>\n<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>\n<p><strong>原文摘要节选：</strong>Human cognition flexibly draws on a shared perceptual foundation to understand environments, attend to referenced entities, reason about spatial relationships, and act. Endowing aerial robots with an analogous functional organization remains challenging, as existing systems are often specialized for individual capabilities, dependent on offboard computation, or unable to sustain closed-loop operation on resource-constrained platforms. We present OpenFlyV2, a unified onboard vision-language-action architecture that uses a shared vision-language representation to support semantic understanding, language-grounded perception, spatial reasoning, and continuous aerial control within a single model. A compact action expert converts the shared multimodal context into short-horizon flight…</p>\n<p><a href=\"https://arxiv.org/abs/2610.39287\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.39287\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.39287\">讨论与热度</a> · <a href=\"https://github.com/Ideal-ljl/AeroBrain\">代码</a></p><hr>\n<h2>6. Training Foundation Models with a Single Algorithm</h2>\n<p><strong>强化学习</strong> · 发表 2026-10-29 · 综合分 4.76</p>\n<p>Zotero 摘要相关性：0.387（相似度分数，不是概率）。</p>\n<p>HF 点赞 12 · 讨论 3 · 仓库累计 Star 35（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +3 · 讨论 +0 · Star +8。</p>\n<p><strong>规则标签：</strong>强化学习</p>\n<p><strong>中文概述：</strong>针对基础模型训练阶段割裂的问题，作者提出了一种统一训练框架。该方法通过将强化学习目标推导为对模型生成目标分布的极大似然拟合，实现了预训练、监督微调与强化学习的统一算法框架。实验表明，这种方法通过混合静态数据与强化学习生成数据，在提升计算效率与任务覆盖范围的同时，保持了模型能力的广泛性，并为持续学习提供了更优起点。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>通过将强化学习目标形式化为对模型生成分布的极大似然拟合，作者实现了一种能够覆盖基础模型全生命周期的单一统一训练算法。<br><small>摘要依据：By deriving suitable RL objectives as maximum-likelihood fitting to model-generated target distributions, we place all of these stages under a single likelihood-based training algorithm, unified training.</small></li>\n<li>统一训练框架通过混合静态数据与强化学习生成数据，提升了模型的准确度与计算权衡，并增强了模型在持续学习中的基础性能。<br><small>摘要依据：Across controlled and real-world experiments, unified training improves the accuracy-compute tradeoff and task coverage while preserving broader capabilities, and provides a stronger starting point for continual learning.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>大模型后训练 · 强化学习</p>\n<p><strong>原文摘要节选：</strong>Foundation models are typically trained in stages: pretraining, midtraining, supervised fine-tuning (SFT), and reinforcement learning (RL), with changes in both data and learning algorithms. We show that this algorithmic separation is not fundamental. By deriving suitable RL objectives as maximum-likelihood fitting to model-generated target distributions, we place all of these stages under a single likelihood-based training algorithm, unified training. This perspective turns the foundation-model training lifecycle into a problem of choosing which data to train on, in what proportions, and when, with conventional staged training as a special case. We instantiate this framework in a unified training system that mixes static data and RL generations within a single trainer. Across controlled…</p>\n<p><a href=\"https://arxiv.org/abs/2610.40564\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.40564\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.40564\">讨论与热度</a> · <a href=\"https://github.com/yudasong/unified-training\">代码</a></p><hr>\n<h2>7. Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success</h2>\n<p><strong>机器人</strong> · 发表 2026-10-23 · 综合分 4.71</p>\n<p>Zotero 摘要相关性：0.421（相似度分数，不是概率）。</p>\n<p>HF 点赞 56 · 讨论 2 · 仓库累计 Star 8（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +2 · 讨论 +0 · Star +0。</p>\n<p><strong>规则标签：</strong>视觉语言动作</p>\n<p><strong>中文概述：</strong>针对机器人基础模型评估成本高的问题，作者提出了传感器运动对齐（S^2）方法。该方法作为一种无需训练的离线指标，通过衡量模型感知表征与物理运动几何结构的一致性，量化模型能力。实验表明，S^2与下游机器人任务成功率呈正相关，能够作为一种低成本的评估代理，用于在部署前筛选模型架构并提供表征层面的解释。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出了一种无需训练的离线指标S^2，能够有效衡量模型感知表征与物理运动几何结构的一致性，从而作为评估机器人模型能力的低成本代理。<br><small>摘要依据：To test this, we propose Sensorimotor Alignment (S^2), a training-free offline metric that measures how well a model&#x27;s sensory representation aligns with the geometry of physical motion.</small></li>\n<li>研究发现S^2与机器人任务成功率高度相关，可用于在昂贵的闭环评估前优先筛选模型，并辅助视觉语言模型骨干的选择。<br><small>摘要依据：We find that S^2 correlates positively with downstream robot task success across model families, making it a low-cost offline proxy for prioritizing models before closed-loop evaluation. S^2 can also identify promising vision-language model (VLM) backbones before costly fine-tuning into vision-language-action models (VLAs).</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 推理</p>\n<p><strong>原文摘要节选：</strong>Robot foundation models are typically evaluated through costly closed-loop rollouts, motivating low-cost offline proxies for model capability. The Platonic Representation Hypothesis (PRH) suggests that as representations improve, modalities such as vision and language converge toward a shared statistical model of reality. We ask whether motion trajectories form another such modality: as embodied models become more capable, should their sensory representations converge toward the structure of physical motion? To test this, we propose Sensorimotor Alignment (S^2), a training-free offline metric that measures how well a model&#x27;s sensory representation aligns with the geometry of physical motion. We find that S^2 correlates positively with downstream robot task success across model families,…</p>\n<p><a href=\"https://arxiv.org/abs/2610.31670\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.31670\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.31670\">讨论与热度</a> · <a href=\"https://github.com/yunfeixie233/sensorimotor-alignment\">代码</a></p><hr>\n<h2>8. A-RSI: Adaptive Task Refresh for Zero-Data Multimodal Self-Improvement</h2>\n<p><strong>通用 AI</strong> · 发表 2026-10-28 · 综合分 4.60</p>\n<p>Zotero 摘要相关性：0.318（相似度分数，不是概率）。</p>\n<p>HF 点赞 89 · 讨论 4</p>\n<p>较上次观测（1.0 天前）：点赞 +17 · 讨论 +0。</p>\n<p><strong>中文概述：</strong>针对递归自改进模型中训练经验获取时机把握不当以及依赖自身预测进行自我监督的问题，研究提出了A-RSI方法。该方法通过监控训练日志中的奖励波动和准确率来动态刷新任务池，并利用模型自主生成的程序产生多模态问题及其可验证的参考答案，从而在无需人工标签或外部数据的情况下实现模型的自改进。实验表明，该方法在多个基准测试中提升了模型性能。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出A-RSI方法，通过监控训练日志中的学习信号波动来决定何时刷新任务池，而非依赖验证集或测试集分数。<br><small>摘要依据：A-RSI monitors reward variation and accuracy in training logs to refresh a task pool when its learning signal declines, without consulting validation or test scores.</small></li>\n<li>利用模型编写的静态程序库生成多模态问题及其可独立验证的答案，实现了无需人工标注的闭环自训练。<br><small>摘要依据：A static library of model-authored programs produces multimodal questions and derives their reference answers; we specify the task-generation contract, automatically verify chosen properties of the reward and refresh rules, and separately audit the generated answers.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>\n<p><strong>原文摘要节选：</strong>Recursive self-improvement requires models not only to acquire useful training experience, but also to decide when their current experience has ceased to be useful. Existing methods often focus on what experience to generate next, while paying less attention to when fresh experience should be introduced. Many also construct training targets through self-consistency or majority voting, making supervision depend on the model&#x27;s own uncertain predictions. We address these two questions separately: training dynamics determine when to acquire new experience, while the answers to new tasks remain independently checkable. A-RSI monitors reward variation and accuracy in training logs to refresh a task pool when its learning signal declines, without consulting validation or test scores. A static…</p>\n<p><a href=\"https://arxiv.org/abs/2610.38568\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.38568\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.38568\">讨论与热度</a></p><hr>\n<h2>9. VibeGame: Prompt-to-Game Development with AI-Native Engine and Self-Evolving Adversarial Agent Team</h2>\n<p><strong>通用 AI</strong> · 发表 2026-10-22 · 综合分 4.59</p>\n<p>Zotero 摘要相关性：0.337（相似度分数，不是概率）。</p>\n<p>HF 点赞 38 · 讨论 2 · 本次 HF 热榜第 70 位 · 仓库累计 Star 337（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +14 · 讨论 +0 · Star +37。</p>\n<p><strong>中文概述：</strong>VibeGame是一个旨在通过自然语言提示创建完整2D游戏项目的框架。该系统通过AI原生游戏引擎将项目状态表示为结构化文本，并支持帧同步运行时控制。作者设计了一个由八个专业智能体组成的对抗性协作团队，实现了代码实现与审核的分离，并通过多轮循环解决问题。此外，该框架包含自进化机制，可将已完成的项目提炼为可复用的组件。实验表明，该系统在游戏生成任务中表现优于现有的智能体方案。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>VibeGame利用AI原生游戏引擎，通过将项目状态表示为结构化文本，实现了对游戏行为的检查、执行与实时验证。<br><small>摘要依据：Its AI-native game engine represents project state as schema-validated structured text and provides frame-synchronous runtime control, enabling agents to inspect game states, execute actions, and verify behavior at their own pace.</small></li>\n<li>由八个专门智能体组成的对抗性协作团队，通过将代码实现与审核过程分离，提升了游戏开发的质量与反馈效率。<br><small>摘要依据：Built upon this interface, we design an Adversarial Agent Team of eight specialized agents to separate implementation from review, so that problems are found and fixed through multi-round loops.</small></li>\n</ul>\n<p><strong>原文摘要节选：</strong>Large language model agents have enabled software development through natural-language interaction, but extending this paradigm to end-to-end game development remains challenging. Building a playable game requires coordinating code, scenes, assets, animations, physics, and configurations, while allowing developers to validate their integrated behavior through interactive testing. We introduce VibeGame, a framework for creating complete 2D game projects from natural-language prompts and optional reference images. Its AI-native game engine represents project state as schema-validated structured text and provides frame-synchronous runtime control, enabling agents to inspect game states, execute actions, and verify behavior at their own pace. Built upon this interface, we design an…</p>\n<p><a href=\"https://arxiv.org/abs/2610.33106\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.33106\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.33106\">讨论与热度</a> · <a href=\"https://github.com/tettethu/VibeGame\">代码</a></p><hr>\n<h2>10. EditAgent: Rethinking Agentic Image Editing</h2>\n<p><strong>强化学习</strong> · 发表 2026-10-29 · 综合分 4.30</p>\n<p>Zotero 摘要相关性：0.329（相似度分数，不是概率）。</p>\n<p>HF 点赞 15 · 讨论 2</p>\n<p>较上次观测（1.0 天前）：点赞 +4 · 讨论 +0。</p>\n<p><strong>中文概述：</strong>针对现有智能体图像编辑在处理复杂请求时工具受限及评估不可靠的问题，本文提出了EditAgent。该方法通过扩展操作空间并引入验证记录，使视觉语言模型能够有效评估候选结果，并采用并行生成与列表式判断的机制。实验表明，EditAgent在多个基准测试中提升了现有编辑模型的性能，并可作为训练更强编辑模型的数据引擎。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>EditAgent通过扩展操作空间与观测空间，能够将任务路由至通用及专用编辑器，并利用验证记录提升评估准确性。<br><small>摘要依据：It routes each step to general editors and specialized methods, and attaches to each candidate a verification record. With these records, off-the-shelf VLM judges outperform finetuned reward models.</small></li>\n<li>通过并行生成候选结果并进行列表式评估，EditAgent在保持更少调用次数的同时，获得了更优的编辑表现。<br><small>摘要依据：Candidates are generated in parallel and judged in one listwise call: experts prefer this to sequential refinement in 78.5% of decided comparisons, at no more than half the judge calls.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>\n<p><strong>原文摘要节选：</strong>Agentic image editors decompose complex requests into steps, but when a step fails, they mostly retry with the same narrow set of tools and a judge that scores each output by eye directly. We argue that such agents are bounded by two spaces: the action space of what the agent can do, and the observation space of what its judge can see. On our expert-annotated benchmark, a general-purpose editor yields no usable result in over 40% of the cases, and no judge is reliable across edit types. We present EditAgent, which expands both spaces. It routes each step to general editors and specialized methods, and attaches to each candidate a verification record. With these records, off-the-shelf VLM judges outperform finetuned reward models. Candidates are generated in parallel and judged in one…</p>\n<p><a href=\"https://arxiv.org/abs/2610.39664\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.39664\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.39664\">讨论与热度</a></p><hr>"
+}

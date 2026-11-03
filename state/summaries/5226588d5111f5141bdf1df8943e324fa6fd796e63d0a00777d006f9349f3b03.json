@@ -1,0 +1,23 @@
+{
+  "overview": "针对代码即策略（CaP）机器人操作任务，本文提出CaPtain流水线，旨在训练小型开源视觉语言模型执行任务。该方法通过GPT-6 Astra生成的合成轨迹进行监督微调，并引入基于特权模拟状态的物理评判器进行多轮强化学习训练。实验表明，CaPtain-4B在LIBERO及多种基准测试中表现优异，无需测试时调用前沿大模型或特权信息，即可在仿真及真实机器人环境下实现有效操作。",
+  "highlights": [
+    {
+      "text": "提出CaPtain流水线，通过监督微调与基于物理评判器的多轮强化学习，使小型开源模型具备代码即策略（CaP）执行能力。",
+      "evidence": "We present CaPtain, an open post-training pipeline that turns a small open VLM into a capable CaP agent, with no VLA, frontier model, or privileged state at test time."
+    },
+    {
+      "text": "利用仅在训练期使用的物理评判器评估单次请求对任务成功率的贡献，有效解决了多轮交互中的归因难题。",
+      "evidence": "We therefore introduce a physical critic that reads privileged simulator state, never seen by the policy, and credits each request by how much it changes the predicted chance of success."
+    },
+    {
+      "text": "CaPtain模型在多个机器人基准测试中达到较高成功率，并表现出良好的泛化能力与鲁棒性。",
+      "evidence": "Starting from Qwen3.5-4B (0% zero-shot), CaPtain-4B reaches 55.4% held-out LIBERO success after SFT and 73.8% after RL. On LIBERO-PRO, it reaches 78.5%, surpassing several frontier-model agents"
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "大模型后训练",
+    "强化学习",
+    "Sim-to-Real"
+  ]
+}

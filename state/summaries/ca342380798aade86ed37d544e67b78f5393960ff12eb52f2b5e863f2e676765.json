@@ -1,0 +1,17 @@
+{
+  "overview": "针对现有智能体图像编辑在处理复杂请求时工具受限及评估不可靠的问题，本文提出了EditAgent。该方法通过扩展操作空间并引入验证记录，使视觉语言模型能够有效评估候选结果，并采用并行生成与列表式判断的机制。实验表明，EditAgent在多个基准测试中提升了现有编辑模型的性能，并可作为训练更强编辑模型的数据引擎。",
+  "highlights": [
+    {
+      "text": "EditAgent通过扩展操作空间与观测空间，能够将任务路由至通用及专用编辑器，并利用验证记录提升评估准确性。",
+      "evidence": "It routes each step to general editors and specialized methods, and attaches to each candidate a verification record. With these records, off-the-shelf VLM judges outperform finetuned reward models."
+    },
+    {
+      "text": "通过并行生成候选结果并进行列表式评估，EditAgent在保持更少调用次数的同时，获得了更优的编辑表现。",
+      "evidence": "Candidates are generated in parallel and judged in one listwise call: experts prefer this to sequential refinement in 78.5% of decided comparisons, at no more than half the judge calls."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "推理"
+  ]
+}

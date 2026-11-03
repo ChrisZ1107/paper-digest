@@ -1,0 +1,17 @@
+{
+  "overview": "针对机器人持续学习中预训练策略适应难、参数增长及需额外示范的问题，本文提出了ResMerge框架。该方法在冻结的预训练策略之上学习可合并的残差策略，通过强化学习获取任务特定的修正，并引入残差场一致性（RFC）度量来合并兼容的残差，从而在无需额外专家示范的情况下实现有效的任务适应与参数空间优化。",
+  "highlights": [
+    {
+      "text": "ResMerge通过强化学习在冻结的预训练策略上学习任务特定的残差修正，无需额外专家示范即可适应新任务。",
+      "evidence": "residual reinforcement learning (RL) acquires task-specific corrections without additional expert demonstrations during adaptation"
+    },
+    {
+      "text": "引入了残差场一致性（RFC）指标，用于评估残差动作空间中的兼容性，并通过参数空间合并减少存储需求。",
+      "evidence": "We introduce Residual-Field Consistency (RFC), a simple, bounded, and interpretable metric that assesses compatibility in residual action-field space by comparing correction direction and magnitude."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "离线强化学习"
+  ]
+}
