@@ -4608,6 +4608,133 @@
           "abstract_zh": "我们推出了 EmbeddingGemma 2，这是一款开放的多模态嵌入模型，能够在一个统一的空间中原生表征文本、图像、音频、视频及其组合。我们的方法引入了多项改进，例如简化的逐层嵌入，以及采用模态和目标进阶的多阶段课程学习，确保了其在单模态、跨模态和混合模态评估中均具备卓越的质量。值得注意的是，在涵盖所有模态的综合嵌入基准测试中，EmbeddingGemma 2 确立了新的帕累托前沿，其性能不仅优于专业模型，还超越了规模大出 2 到 12 倍的模型。此外，我们的设计为资源受限的环境提供了灵活性，支持选择性加载模态编码器、可调的视觉 token 预算、可截断的嵌入维度以及量化权重。我们展示了分析关键决策的消融实验，并发布了 EmbeddingGemma 2 以促进进一步的研究。"
         }
       ]
+    },
+    "-2Jah_ma7sY": {
+      "video_id": "-2Jah_ma7sY",
+      "video_title": "Probing Spatial State Representations in Visual Foundation Models (Oct 2026)",
+      "published": "2026-11-03",
+      "video_url": "https://www.youtube.com/watch?v=-2Jah_ma7sY",
+      "papers": [
+        {
+          "id": "2610.40636",
+          "title": "Probing Spatial State Representations in Visual Foundation Models (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.40636"
+        }
+      ]
+    },
+    "uiabfIxxgbQ": {
+      "video_id": "uiabfIxxgbQ",
+      "video_title": "Weight-Space Programming Explained: Can an LLM Read and Write Neural Network Weights?",
+      "published": "2026-11-03",
+      "video_url": "https://www.youtube.com/watch?v=uiabfIxxgbQ",
+      "papers": [
+        {
+          "id": "2406.11717",
+          "title": "2406.11717",
+          "url": "https://arxiv.org/abs/2406.11717"
+        },
+        {
+          "id": "1707.06347",
+          "title": "1707.06347",
+          "url": "https://arxiv.org/abs/1707.06347"
+        },
+        {
+          "id": "2507.19457",
+          "title": "2507.19457",
+          "url": "https://arxiv.org/abs/2507.19457"
+        }
+      ]
+    },
+    "XAshbMu94V8": {
+      "video_id": "XAshbMu94V8",
+      "video_title": "How to Loop Your Transformer: Loop Scaling, Specialization, and Parallel Inference (Oct 2026)",
+      "published": "2026-11-03",
+      "video_url": "https://www.youtube.com/watch?v=XAshbMu94V8",
+      "papers": [
+        {
+          "id": "2610.40325",
+          "title": "How to Loop Your Transformer: Loop Scaling, Specialization, and Parallel Inference (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.40325"
+        }
+      ]
+    },
+    "ry3ANiVrHqE": {
+      "video_id": "ry3ANiVrHqE",
+      "video_title": "Know, then Draw: A New Learning Paradigm for Visual Generation (Oct 2026)",
+      "published": "2026-11-03",
+      "video_url": "https://www.youtube.com/watch?v=ry3ANiVrHqE",
+      "papers": [
+        {
+          "id": "2610.37626",
+          "title": "Know, then Draw: A New Learning Paradigm for Visual Generation (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.37626"
+        }
+      ]
+    },
+    "lED19NxSBTM": {
+      "video_id": "lED19NxSBTM",
+      "video_title": "GEPA-Curator: Curated Learning for Self Improving Agents (Oct 2026)",
+      "published": "2026-11-03",
+      "video_url": "https://www.youtube.com/watch?v=lED19NxSBTM",
+      "papers": [
+        {
+          "id": "2610.37651",
+          "title": "GEPA-Curator: Curated Learning for Self Improving Agents (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.37651"
+        }
+      ]
+    },
+    "fQv5f2sOdzY": {
+      "video_id": "fQv5f2sOdzY",
+      "video_title": "Training language models in simulation for psychiatric intake (Oct 2026)",
+      "published": "2026-11-03",
+      "video_url": "https://www.youtube.com/watch?v=fQv5f2sOdzY",
+      "papers": [
+        {
+          "id": "2610.40476",
+          "title": "Training language models in simulation for psychiatric intake (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.40476"
+        }
+      ]
+    },
+    "0q3HLE_khgE": {
+      "video_id": "0q3HLE_khgE",
+      "video_title": "Training Foundation Models with a Single Algorithm (Oct 2026)",
+      "published": "2026-11-03",
+      "video_url": "https://www.youtube.com/watch?v=0q3HLE_khgE",
+      "papers": [
+        {
+          "id": "2610.40564",
+          "title": "Training Foundation Models with a Single Algorithm (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.40564"
+        }
+      ]
+    },
+    "XFqcKiZa1UU": {
+      "video_id": "XFqcKiZa1UU",
+      "video_title": "Proving and Improving the Platonic Representation Hypothesis with JEPAs (Oct 2026)",
+      "published": "2026-11-03",
+      "video_url": "https://www.youtube.com/watch?v=XFqcKiZa1UU",
+      "papers": [
+        {
+          "id": "2610.39302",
+          "title": "Proving and Improving the Platonic Representation Hypothesis with JEPAs (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.39302"
+        }
+      ]
+    },
+    "dmQ4tz9eucY": {
+      "video_id": "dmQ4tz9eucY",
+      "video_title": "Timestral (Oct 2026)",
+      "published": "2026-11-03",
+      "video_url": "https://www.youtube.com/watch?v=dmQ4tz9eucY",
+      "papers": [
+        {
+          "id": "2610.37585",
+          "title": "Timestral (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.37585"
+        }
+      ]
     }
   }
 }
