@@ -4757,6 +4757,153 @@
           "abstract_zh": "我们推出了Timestral，这是一个包含四个参数量分别为5M、28M、123M和209M的概率预测时间序列基础模型系列。Timestral在GIFT-Eval、TIME和fev-bench上创下了新的最先进水平，其中Timestral-209M和Timestral-123M在所有指标上均占据前两位。我们通过三个要素实现了这一目标：解耦视界预测（DHF），它将预测标记与因果编码的上下文分离，使得更长的视界可以在不屏蔽上下文的情况下进行训练，且每个观测值既是预测目标也是后续预测的上下文；一个在因果架构内原生支持已知未来协变量的协变量框架；以及一个两阶段流水线，首先在一个多样化的大规模合成语料库上进行预训练，随后在包含真实和合成数据的混合数据集上进行扩展上下文的后训练。本报告描述了模型设计及其基准测试结果。所有四个模型的权重均可在Hugging Face上获取，推理代码可在GitHub上找到。"
         }
       ]
+    },
+    "roeRi-ROCO0": {
+      "video_id": "roeRi-ROCO0",
+      "video_title": "Aligning Autoresearch: Co-Improvement between Agents and Humans (Oct 2026)",
+      "published": "2026-11-04",
+      "video_url": "https://www.youtube.com/watch?v=roeRi-ROCO0",
+      "papers": [
+        {
+          "id": "2610.38882",
+          "title": "Aligning Autoresearch: Co-Improvement between Agents and Humans (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.38882"
+        }
+      ]
+    },
+    "H7fMKgmIVas": {
+      "video_id": "H7fMKgmIVas",
+      "video_title": "Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers (Oct 2026)",
+      "published": "2026-11-04",
+      "video_url": "https://www.youtube.com/watch?v=H7fMKgmIVas",
+      "papers": [
+        {
+          "id": "2610.40647",
+          "title": "Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.40647"
+        }
+      ]
+    },
+    "56IhzS67rvE": {
+      "video_id": "56IhzS67rvE",
+      "video_title": "Dual DeltaNet: Value-Side Memory Reorganization for Linear Attention (Oct 2026)",
+      "published": "2026-11-04",
+      "video_url": "https://www.youtube.com/watch?v=56IhzS67rvE",
+      "papers": [
+        {
+          "id": "2610.38578",
+          "title": "Dual DeltaNet: Value-Side Memory Reorganization for Linear Attention (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.38578"
+        }
+      ]
+    },
+    "0KtjrZwGXlw": {
+      "video_id": "0KtjrZwGXlw",
+      "video_title": "Intrinsic Distribution Matching (Oct 2026)",
+      "published": "2026-11-04",
+      "video_url": "https://www.youtube.com/watch?v=0KtjrZwGXlw",
+      "papers": [
+        {
+          "id": "2610.39633",
+          "title": "Intrinsic Distribution Matching (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.39633"
+        }
+      ]
+    },
+    "lwaHcp7l0Kg": {
+      "video_id": "lwaHcp7l0Kg",
+      "video_title": "Hierarchical World Models with Implicit Dynamics (Oct 2026)",
+      "published": "2026-11-04",
+      "video_url": "https://www.youtube.com/watch?v=lwaHcp7l0Kg",
+      "papers": [
+        {
+          "id": "2610.42146",
+          "title": "Hierarchical World Models with Implicit Dynamics (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.42146"
+        }
+      ]
+    },
+    "xgNFJJ-HpxM": {
+      "video_id": "xgNFJJ-HpxM",
+      "video_title": "Rethinking Pre-pretraining (Oct 2026)",
+      "published": "2026-11-04",
+      "video_url": "https://www.youtube.com/watch?v=xgNFJJ-HpxM",
+      "papers": [
+        {
+          "id": "2610.40051",
+          "title": "Rethinking Pre-pretraining (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.40051"
+        }
+      ]
+    },
+    "ldEFetxyoYg": {
+      "video_id": "ldEFetxyoYg",
+      "video_title": "Robotic Data Inoculation (Oct 2026)",
+      "published": "2026-11-04",
+      "video_url": "https://www.youtube.com/watch?v=ldEFetxyoYg",
+      "papers": [
+        {
+          "id": "2610.39054",
+          "title": "Robotic Data Inoculation (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.39054"
+        }
+      ]
+    },
+    "Ghbq1AbYxbE": {
+      "video_id": "Ghbq1AbYxbE",
+      "video_title": "L3G-World: Real-Time Infinite World Generation with Latent 3D Gaussian Memory (Oct 2026)",
+      "published": "2026-11-04",
+      "video_url": "https://www.youtube.com/watch?v=Ghbq1AbYxbE",
+      "papers": [
+        {
+          "id": "2610.40614",
+          "title": "L3G-World: Real-Time Infinite World Generation with Latent 3D Gaussian Memory (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.40614"
+        }
+      ]
+    },
+    "vVUt0FFiX9g": {
+      "video_id": "vVUt0FFiX9g",
+      "video_title": "Cross-Controller Transfer via In-Context Behavior Adaptation (Oct 2026)",
+      "published": "2026-11-04",
+      "video_url": "https://www.youtube.com/watch?v=vVUt0FFiX9g",
+      "papers": [
+        {
+          "id": "2610.39280",
+          "title": "Cross-Controller Transfer via In-Context Behavior Adaptation (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.39280"
+        }
+      ]
+    },
+    "mGlCP66Bzp4": {
+      "video_id": "mGlCP66Bzp4",
+      "video_title": "Multi-Token Prediction Done Right (Oct 2026)",
+      "published": "2026-11-04",
+      "video_url": "https://www.youtube.com/watch?v=mGlCP66Bzp4",
+      "papers": [
+        {
+          "id": "2610.38331",
+          "title": "Multi-Token Prediction Done Right (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.38331"
+        }
+      ]
+    },
+    "3xm5FOjrL9g": {
+      "video_id": "3xm5FOjrL9g",
+      "video_title": "FlatCake: A Flat KVCache Storage Architecture for LLM Serving (Oct 2026)",
+      "published": "2026-11-04",
+      "video_url": "https://www.youtube.com/watch?v=3xm5FOjrL9g",
+      "papers": [
+        {
+          "id": "2610.38355",
+          "title": "FlatCake: A Flat KVCache Storage Architecture for LLM Serving (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.38355"
+        }
+      ]
+    },
+    "m4rOVVWXoEM": {
+      "video_id": "m4rOVVWXoEM",
+      "papers": []
     }
   }
 }
