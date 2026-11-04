@@ -1,0 +1,16 @@
+{
+  "overview": "针对机器人任务中控制代码设计耗时的问题，论文提出了RoboArchitect框架，通过编码模型观察机器人执行情况、诊断故障并迭代修改控制策略（harness），从而优化固定策略的表现。该方法在无需微调模型权重的情况下，通过自动化设计控制逻辑和持久化记忆，在多个基准测试中显著提升了机器人在未见场景和任务下的操作成功率，证明了优化控制架构是提升机器人表现的有效路径。",
+  "highlights": [
+    {
+      "text": "RoboArchitect通过自动诊断和迭代优化，在无需更新任何模型参数的情况下，显著提升了机器人在未见场景和任务中的操作成功率。",
+      "evidence": "Without updating any model weights, RoboArchitect raises average success from 9.7% to 43.3% on unseen scenes (4.5x) and from 12.7% to 40.2% on unseen tasks (3.2x), across multiple benchmarks and policies."
+    },
+    {
+      "text": "该方法通过为机器人设计包含持久化记忆的控制架构，使其能够积累并应用有效的操作经验来优化后续决策。",
+      "evidence": "The harness also evolves its own persistent memory, carrying learned experience, such as effective grasp depths, into later decisions."
+    }
+  ],
+  "tags": [
+    "机器人操作"
+  ]
+}
