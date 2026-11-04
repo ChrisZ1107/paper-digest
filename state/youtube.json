@@ -4916,6 +4916,19 @@
     "m4rOVVWXoEM": {
       "video_id": "m4rOVVWXoEM",
       "papers": []
+    },
+    "cFLlCCxZ_70": {
+      "video_id": "cFLlCCxZ_70",
+      "video_title": "Gym-Anything for Robotics: Scaling Physical Simulations with Digital Agents (Oct 2026)",
+      "published": "2026-11-04",
+      "video_url": "https://www.youtube.com/watch?v=cFLlCCxZ_70",
+      "papers": [
+        {
+          "id": "2610.40565",
+          "title": "Gym-Anything for Robotics: Scaling Physical Simulations with Digital Agents (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.40565"
+        }
+      ]
     }
   }
 }
