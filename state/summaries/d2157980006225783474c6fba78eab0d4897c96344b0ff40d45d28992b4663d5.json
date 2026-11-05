@@ -1,0 +1,19 @@
+{
+  "overview": "针对现有足式机器人视觉语言动作模型缺乏物理基础与安全保证的问题，本文提出了一种名为Legged-VLN的安全架构。该架构将高层VLA规划器与底层物理接地层相结合，利用3D空间感知和符号距离场（SDF）生成可执行轨迹。通过结合贝塞尔参数化MPPI规划器与离散指数障碍函数（dEBF）约束，实现了具备可证明避障保证的导航，并已在人形和四足机器人上完成了实际验证。",
+  "highlights": [
+    {
+      "text": "提出了一种将高层视觉语言动作规划与底层物理感知层相结合的导航架构，为机器人提供了物理接地与明确的安全保证。",
+      "evidence": "In particular, we integrate a high-level VLA planner with a low-level physical-grounding layer that leverages efficient state estimation, in-situ 3D spatial perception, and an Signed Distance Field (SDF) representation to generate executable trajectories."
+    },
+    {
+      "text": "通过引入离散指数障碍函数约束，实现了具备可证明避障特性的导航规划，且该系统具备平台无关的模块化特性。",
+      "evidence": "We provide a navigation planner with provable collision-avoidance guarantees under the stated assumptions by combining a low-dimensional Bezier-parameterized MPPI planner with Discrete Exponential Barrier Function (dEBF) constraints."
+    }
+  ],
+  "tags": [
+    "四足机器人",
+    "人形机器人",
+    "导航",
+    "视觉语言动作"
+  ]
+}

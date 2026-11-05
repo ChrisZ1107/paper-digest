@@ -1,0 +1,18 @@
+{
+  "overview": "针对机器人城市导航中长距离执行指令困难的问题，本文提出WayTrace分层系统。该系统利用视觉语言模型将网络地图方向指令转化为原子语言命令，通过路径预测器在图像中规划路径，并结合强化学习策略进行跟踪。实验表明，该方法在模拟和真实城市环境中均表现出较强的导航稳健性，能有效处理长距离任务并适应多种复杂路况。",
+  "highlights": [
+    {
+      "text": "WayTrace通过分层架构将网络地图指令与机器人运动相连，并通过路径预测和强化学习策略实现长距离导航。",
+      "evidence": "We present WayTrace, a hierarchical system that connects web-map directions to robot motion through language."
+    },
+    {
+      "text": "在真实城市环境部署中，该系统能以约1.1 m/s的速度完成长达1.37公里的长距离导航任务。",
+      "evidence": "Deployed on a wheeled-legged robot, WayTrace completes real-world missions of up to 1.37 km at about 1.1 m/s through a busy city centre, rural trails and a university campus, handling crosswalks, staircases and construction sites."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "导航",
+    "Sim-to-Real"
+  ]
+}

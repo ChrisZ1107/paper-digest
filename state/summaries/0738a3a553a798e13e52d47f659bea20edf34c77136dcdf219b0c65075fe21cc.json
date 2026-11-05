@@ -1,0 +1,16 @@
+{
+  "overview": "针对预训练生成式机器人控制策略在在线强化学习中难以高效适配的问题，本文提出了CANDO方法。该方法在噪声空间残差学习基础上，引入了状态与噪声条件下的方向优化，并通过软保守约束替代固定的潜在可行区域。此外，CANDO结合了动作空间残差修正，在保持生成策略原有结构的同时实现了更好的采样效率和性能提升。",
+  "highlights": [
+    {
+      "text": "CANDO通过软保守约束移除预定义的潜在可行区域，在噪声空间内实现了更灵活的适应性调整。",
+      "evidence": "CNDO removes predefined latent feasible regions and instead regulates noise-space adaptation through the soft conservative constraint, which consists of conservative value estimation and gated execution."
+    },
+    {
+      "text": "结合噪声空间优化与动作空间残差，CANDO在实验中优于单一空间的优化方法。",
+      "evidence": "We further introduce Conservative Action-Noise Directional Optimization (CANDO), which adds an action-space residual, combining structured latent-space improvement with local action correction."
+    }
+  ],
+  "tags": [
+    "强化学习"
+  ]
+}

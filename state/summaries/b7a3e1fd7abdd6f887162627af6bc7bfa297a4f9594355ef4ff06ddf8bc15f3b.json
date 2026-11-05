@@ -1,0 +1,17 @@
+{
+  "overview": "本文介绍了Axion 1.0，这是一款具备强大代理能力的开源基础模型。该模型采用了极简的训练方案，仅包含两个阶段的轻量级监督微调和一个强化学习阶段，未采用中间预训练、DPO或策略蒸馏。作者通过模型感知的数据构建实现自主推理，利用自动化管线实现工具依赖推理，并通过强化学习增强长程规划能力。实验表明，该模型在多项基准测试中表现优异，且配套完整开源了训练方法与数据管线。",
+  "highlights": [
+    {
+      "text": "Axion 1.0采用极简的三阶段训练配方，避免了复杂的中间预训练与策略优化方法。",
+      "evidence": "Axion 1.0 is trained in only three stages: two lightweight supervised fine-tuning stages followed by reinforcement learning, without dedicated mid-training, direct preference optimization (DPO), or on-policy distillation (OPD)."
+    },
+    {
+      "text": "模型通过自动化的数据构建管线，有效提升了在自主推理和工具调用方面的综合性能。",
+      "evidence": "The second stage extends these capabilities to tool-dependent reasoning through a scalable pipeline for constructing diverse and automatically verifiable tasks grounded in real-world data sources and deterministic computation."
+    }
+  ],
+  "tags": [
+    "推理",
+    "大模型后训练"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "overview": "针对现有机器人使用智能体（RUA）依赖封闭私有模型导致研究受限的问题，作者提出了uni-robot-agent，这是一个支持进一步训练的开放权重机器人操作统一框架。实验表明，基于Qwen3.8-Flash-Next模型的方法在RoboDojo基准测试中优于GPT-6 Astra-RoboProbe及多种基线，并在19项真实世界任务中表现出竞争力。此外，作者分析了模型特性与机器人操作能力之间的联系，为未来RUA的协同训练提供了参考。",
+  "highlights": [
+    {
+      "text": "uni-robot-agent框架使开放权重模型在机器人操作任务中取得了具有竞争力的性能，且无需特权输入。",
+      "evidence": "Without privileged inputs, an out-of-the-box Qwen3.8-Flash-Next achieves a RoboDojo Score of 31.39, surpassing the published GPT-6 Astra-RoboProbe result of 28.97 and many VLA/WAM baselines, and performs competitively on 19 real-world tasks."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "视觉语言动作",
+    "大模型后训练"
+  ]
+}

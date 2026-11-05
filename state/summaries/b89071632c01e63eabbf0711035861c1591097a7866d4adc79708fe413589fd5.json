@@ -1,0 +1,16 @@
+{
+  "overview": "针对计算机使用智能体开发中交互数据匮乏、缺乏迭代反馈及递归改进受限的问题，本文提出了CUA-Master框架。该框架构建了内外嵌套的递归改进双循环机制：外层通过世界数据模型引导数据构建与优化，内层利用视频挖掘种子任务并进行可视化语义路径重建，通过自催化传播合成可控任务，并辅以快照回滚重试机制，旨在提升智能体在GUI和CLI环境下的任务执行能力与数据合成效率。",
+  "highlights": [
+    {
+      "text": "CUA-Master引入嵌套双循环递归改进机制，通过外层世界模型和内层自催化传播实现数据持续迭代。",
+      "evidence": "To address these challenges, we introduce CUA-Master, a nested double-loop recursive improvement framework."
+    },
+    {
+      "text": "作者声称CUA-Master-27B在多个主流计算机使用基准测试中表现优异。",
+      "evidence": "Extensive experiments demonstrate that CUA-Master-27B achieves competitive performance across GUI-only and GUI-CLI hybrid benchmarks, scoring 80.2 on OSWorld Verified, 36.9 on OSWorld 2.0, 43.9 on WeaveBench, and 25.0 on Agents' Last Exam."
+    }
+  ],
+  "tags": [
+    "大模型后训练"
+  ]
+}

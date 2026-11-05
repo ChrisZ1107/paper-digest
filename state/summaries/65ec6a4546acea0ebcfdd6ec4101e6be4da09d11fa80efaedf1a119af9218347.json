@@ -1,0 +1,14 @@
+{
+  "overview": "针对单目视频稠密3D跟踪中存在的对应关系错误、深度估计偏差及遮挡处理难题，本文提出ReLift框架。该方法将稠密3D跟踪重构为几何轨迹修复与补全任务，利用轨迹校正器交替处理轨迹内与轨迹间的注意力信息，从而优化轨迹质量。实验表明，该模型能够有效提升现有跟踪器与几何模型的效果，并在WorldTrack基准测试中实现了性能提升。",
+  "highlights": [
+    {
+      "text": "ReLift通过将稠密3D跟踪重构为轨迹修复任务，无需依赖特定视觉模型即可实现对既有提升轨迹的优化。",
+      "evidence": "Using only geometric inputs allows us to train directly on 3D trajectories with simulated lifting errors, decoupling training from images and from any specific tracker or geometry model."
+    },
+    {
+      "text": "该方法在WorldTrack基准测试中达到最优精度，在动态点上的性能较基准模型显著提升。",
+      "evidence": "On WorldTrack, ReLift achieves state-of-the-art mean accuracy, improving on the strongest baselines by 2.1 APD on all points and 3.0 on dynamic points"
+    }
+  ],
+  "tags": []
+}

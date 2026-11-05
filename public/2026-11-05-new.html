@@ -1,0 +1,76 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>2026-11-05 每日新论文 5</title><body><h1>2026-11-05 每日新论文 5</h1>
+<p>机器人 · 强化学习 · 通用 AI</p>
+<p>生成时间：2026-11-05 09:01 CST。从 703 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>
+<p>本栏优先收录最近发布且未出现在近期日报的 arXiv 论文，不按热度排序；相关性分用于结合你的 Zotero 收藏偏好。</p>
+<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>
+<p>本次合格候选不足 10 篇，实际收录 5 篇。</p>
+<h2>1. CANDO: Conservative Action-Noise Directional Optimization for Residual Reinforcement Learning</h2>
+<p><strong>机器人 / 强化学习</strong> · 公告 2026-11-04 · 综合分 3.25</p>
+<p>Zotero 摘要相关性：0.500（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>强化学习</p>
+<p><strong>中文概述：</strong>针对预训练生成式机器人控制策略在在线强化学习中难以高效适配的问题，本文提出了CANDO方法。该方法在噪声空间残差学习基础上，引入了状态与噪声条件下的方向优化，并通过软保守约束替代固定的潜在可行区域。此外，CANDO结合了动作空间残差修正，在保持生成策略原有结构的同时实现了更好的采样效率和性能提升。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>CANDO通过软保守约束移除预定义的潜在可行区域，在噪声空间内实现了更灵活的适应性调整。<br><small>摘要依据：CNDO removes predefined latent feasible regions and instead regulates noise-space adaptation through the soft conservative constraint, which consists of conservative value estimation and gated execution.</small></li>
+<li>结合噪声空间优化与动作空间残差，CANDO在实验中优于单一空间的优化方法。<br><small>摘要依据：We further introduce Conservative Action-Noise Directional Optimization (CANDO), which adds an action-space residual, combining structured latent-space improvement with local action correction.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习</p>
+<p><strong>原文摘要节选：</strong>Pretrained generative policies provide strong behavior priors for robot control, but adapting them efficiently with online reinforcement learning remains difficult. A central challenge is how to improve a frozen generative policy without destroying the structure learned from offline demonstrations. Noise-space residual methods address this by modifying the policy&#x27;s input noise, but existing noise-space methods typically regulate adaptation through fixed latent feasible regions, which may exclude valuable noise edits. In contrast, action-space residual methods are more sample-efficient, but their efficiency can still be further improved. We propose Conservative Noise Directional Optimization (CNDO), a noise-space residual RL method that improves a frozen generative policy by learning…</p>
+<p><a href="https://arxiv.org/abs/2611.04543">论文原文</a> · <a href="https://arxiv.org/pdf/2611.04543">PDF</a></p><hr>
+<h2>2. GSBR: Geometric Support Behavior Regularization for Online RL</h2>
+<p><strong>机器人 / 强化学习</strong> · 公告 2026-11-04 · 综合分 3.19</p>
+<p>Zotero 摘要相关性：0.491（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>强化学习 · 模仿学习</p>
+<p><strong>中文概述：</strong>针对在线强化学习中依赖预训练基策略导致的过度约束问题，作者提出了几何支持行为正则化（GSBR）方法。该方法根据动作距离基策略支持集的几何距离进行惩罚，允许在支持集范围内优化高性能模式，同时在支持集外对不可靠的动作实施平滑惩罚，从而在保持学习稳定性的同时提升了策略改进空间。实验表明，该方法在多个机器人任务中显著提高了成功率与吞吐量。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>GSBR通过平滑的几何惩罚机制，既允许策略在基策略支持集内集中于高价值模式，又能在支持集外允许必要的探索与改进。<br><small>摘要依据：Actions within the support incur no penalty, so the actor can concentrate on high-value modes; outside the support, where value estimates are less reliable, the penalty grows smoothly with distance while still permitting improvement when the value gained outweighs the penalty.</small></li>
+<li>在19项机器人基准测试任务中，GSBR表现出优异的性能，将基策略的平均成功率从33%提升至95%。<br><small>摘要依据：Across 19 tasks on four robotic benchmarks, GSBR raises the average success rate from 33% for the base policy to 95%, achieving the highest average success rate and throughput among all compared methods, with about 23% higher normalized throughput than the next-best RL method.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习 · 机器人操作 · 模仿学习</p>
+<p><strong>原文摘要节选：</strong>Regularizing online reinforcement learning (RL) toward a pretrained base policy can improve sample efficiency and learning stability, but regularization that is too restrictive limits how much the policy can improve. Base policies -- typically diffusion or flow-matching models trained by imitation learning on large, diverse datasets -- capture many behaviors that are reasonable but suboptimal. Existing regularizers using such base policies are too restrictive in one of two ways: behavioral cloning regularizers pull the actor toward the full base-policy distribution, penalizing it for discarding suboptimal modes, while hard support constraints forbid improvements that lie just outside the base policy&#x27;s support. We propose Geometric Support Behavior Regularization (GSBR), which penalizes…</p>
+<p><a href="https://arxiv.org/abs/2611.05295">论文原文</a> · <a href="https://arxiv.org/pdf/2611.05295">PDF</a></p><hr>
+<h2>3. WayTrace: A Map-to-Language-to-Trace Hierarchy for Embodied Urban Navigation</h2>
+<p><strong>机器人 / 强化学习</strong> · 公告 2026-11-04 · 综合分 3.18</p>
+<p>Zotero 摘要相关性：0.489（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>强化学习 · 足式运动 · 导航</p>
+<p><strong>中文概述：</strong>针对机器人城市导航中长距离执行指令困难的问题，本文提出WayTrace分层系统。该系统利用视觉语言模型将网络地图方向指令转化为原子语言命令，通过路径预测器在图像中规划路径，并结合强化学习策略进行跟踪。实验表明，该方法在模拟和真实城市环境中均表现出较强的导航稳健性，能有效处理长距离任务并适应多种复杂路况。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>WayTrace通过分层架构将网络地图指令与机器人运动相连，并通过路径预测和强化学习策略实现长距离导航。<br><small>摘要依据：We present WayTrace, a hierarchical system that connects web-map directions to robot motion through language.</small></li>
+<li>在真实城市环境部署中，该系统能以约1.1 m/s的速度完成长达1.37公里的长距离导航任务。<br><small>摘要依据：Deployed on a wheeled-legged robot, WayTrace completes real-world missions of up to 1.37 km at about 1.1 m/s through a busy city centre, rural trails and a university campus, handling crosswalks, staircases and construction sites.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习 · 导航 · Sim-to-Real</p>
+<p><strong>原文摘要节选：</strong>Web services provide walking directions for nearly every city, but following them reliably over long routes remains challenging for autonomous robots. Point-goal navigation policies rely heavily on accurate GNSS, while most vision-language navigation models struggle to execute even short instructions outdoors. We present WayTrace, a hierarchical system that connects web-map directions to robot motion through language. An off-the-shelf orchestrator vision-language model reads the turn-by-turn directions, a satellite map and recent camera images, and issues one atomic language command at a time, such as &quot;cross the road to the left&quot;. An onboard trace predictor, trained on over one million automatically labelled samples from street-level images, draws the path for this command in the image,…</p>
+<p><a href="https://arxiv.org/abs/2611.05129">论文原文</a> · <a href="https://arxiv.org/pdf/2611.05129">PDF</a></p><hr>
+<h2>4. Caging Vision-Language Navigation for Legged Robots via Barrier-Certified Safety Architecture</h2>
+<p><strong>机器人</strong> · 公告 2026-11-04 · 综合分 3.14</p>
+<p>Zotero 摘要相关性：0.483（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>四足机器人 · 人形机器人 · 足式运动 · 导航 · 视觉语言动作</p>
+<p><strong>中文概述：</strong>针对现有足式机器人视觉语言动作模型缺乏物理基础与安全保证的问题，本文提出了一种名为Legged-VLN的安全架构。该架构将高层VLA规划器与底层物理接地层相结合，利用3D空间感知和符号距离场（SDF）生成可执行轨迹。通过结合贝塞尔参数化MPPI规划器与离散指数障碍函数（dEBF）约束，实现了具备可证明避障保证的导航，并已在人形和四足机器人上完成了实际验证。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出了一种将高层视觉语言动作规划与底层物理感知层相结合的导航架构，为机器人提供了物理接地与明确的安全保证。<br><small>摘要依据：In particular, we integrate a high-level VLA planner with a low-level physical-grounding layer that leverages efficient state estimation, in-situ 3D spatial perception, and an Signed Distance Field (SDF) representation to generate executable trajectories.</small></li>
+<li>通过引入离散指数障碍函数约束，实现了具备可证明避障特性的导航规划，且该系统具备平台无关的模块化特性。<br><small>摘要依据：We provide a navigation planner with provable collision-avoidance guarantees under the stated assumptions by combining a low-dimensional Bezier-parameterized MPPI planner with Discrete Exponential Barrier Function (dEBF) constraints.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>四足机器人 · 人形机器人 · 导航 · 视觉语言动作</p>
+<p><strong>原文摘要节选：</strong>By harnessing the inherent commonsense capabilities of pretrained Large Language Models (LLMs) and Vision-Language Models (VLMs), current Vision-Language Action(VLA) models for legged robots excel at interpreting language-based navigation commands but lack the physical grounding and explicit safety assurance required for real-world operation. Therefore, this paper aims to cage Legged-Vision-Language Navigation (VLN) through a safety architecture that provides physical grounding and ensures navigation safety. The key idea is not to abandon the powerful capabilities of end-to-end VLA planning, but rather to augment and cage them. In particular, we integrate a high-level VLA planner with a low-level physical-grounding layer that leverages efficient state estimation, in-situ 3D spatial…</p>
+<p><a href="https://arxiv.org/abs/2611.04972">论文原文</a> · <a href="https://arxiv.org/pdf/2611.04972">PDF</a></p><hr>
+<h2>5. GUILD: Guided Iterative Data Collection for Imitation Learning</h2>
+<p><strong>机器人</strong> · 公告 2026-11-04 · 综合分 3.06</p>
+<p>Zotero 摘要相关性：0.470（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>模仿学习</p>
+<p><strong>中文概述：</strong>针对机器人模仿学习中远程操作采集数据效率低的问题，本文提出了GUILD方法。该方法采用迭代式引导数据采集框架，结合视觉语言模型提出任务建议，并利用预测性数据归因评估所采集数据对策略性能的影响，从而指导后续的数据采集过程。实验结果表明，与被动数据采集及其他基线相比，该方法在模拟和真实机器人环境中均显著提升了样本效率与部署性能。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出了一种闭环迭代式数据采集框架，通过视觉语言模型引导任务设置并利用数据归因评估反馈来优化采集过程。<br><small>摘要依据：We introduce an iterative framework that alternates between 1) task proposal and data collection and 2) data evaluation to close the loop.</small></li>
+<li>实验证实该方法能有效提升样本效率及机器人策略的部署表现。<br><small>摘要依据：We evaluate our approach in simulation and real robot settings, demonstrating that guided data collection substantially improves sample efficiency and deployment performance compared to passive data collection strategies, multiple baselines and experienced roboticists.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 模仿学习 · 视觉语言动作</p>
+<p><strong>原文摘要节选：</strong>Imitation learning policies in robotics are trained on datasets collected through costly real-world teleoperation. Often, the data-collection process is unguided, relying on the teleoperator&#x27;s intuition, resulting in data that contributes little to overall policy performance. Recent work has shown that curating such unguided datasets can substantially improve policy performance, but these approaches operate by filtering existing datasets after collection and therefore do not prevent the acquisition of uninformative data. In this work, we propose GUILD, a novel Guided Data Collection (GDC) method that actively reasons about which data should be collected to maximize downstream policy performance. We introduce an iterative framework that alternates between 1) task proposal and data…</p>
+<p><a href="https://arxiv.org/abs/2611.05368">论文原文</a> · <a href="https://arxiv.org/pdf/2611.05368">PDF</a></p><hr></body></html>

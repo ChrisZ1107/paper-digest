@@ -1,0 +1,21 @@
+{
+  "overview": "针对现有Web GUI智能体训练与评估面临的环境不稳定性及功能受限问题，本文提出了WebHarbor。这是一个包含153个可执行、容器化的真实网站仿真环境集合，通过人工与智能体协同构建，具备高视觉保真度和功能深度，提供3,518个涵盖复杂多步及认证后工作流的任务。实验表明，在该环境中使用强化学习训练的智能体在未见任务中表现出良好的泛化能力，并在多个基准测试中展现出竞争力。",
+  "highlights": [
+    {
+      "text": "构建了包含153个容器化网站环境的WebHarbor，为Web GUI智能体提供确定性的训练与评估支持。",
+      "evidence": "We propose WebHarbor, a suite of 153 executable and dockerized website environments that faithfully reconstruct the visual interfaces, content, and functional workflows of real-world web services under deterministic control."
+    },
+    {
+      "text": "WebHarbor支持复杂的多步及认证后任务流，弥补了现有研究在任务覆盖面上的不足。",
+      "evidence": "The resulting suite comprises 3,518 tasks spanning multi-step and post-authentication workflows, where existing works often fail to cover."
+    },
+    {
+      "text": "基于WebHarbor的强化学习训练可提升GUI智能体的泛化性能，使其在多个基准测试中达到主流开源智能体的水平。",
+      "evidence": "We demonstrate that a Qwen 4B-level GUI agent trained with RL in WebHarbor generalizes to unseen tasks and performs competitively with leading open-source GUI web agents across four benchmarks."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "机器人操作"
+  ]
+}

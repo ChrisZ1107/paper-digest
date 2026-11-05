@@ -1,0 +1,18 @@
+{
+  "overview": "针对机器人模仿学习中远程操作采集数据效率低的问题，本文提出了GUILD方法。该方法采用迭代式引导数据采集框架，结合视觉语言模型提出任务建议，并利用预测性数据归因评估所采集数据对策略性能的影响，从而指导后续的数据采集过程。实验结果表明，与被动数据采集及其他基线相比，该方法在模拟和真实机器人环境中均显著提升了样本效率与部署性能。",
+  "highlights": [
+    {
+      "text": "提出了一种闭环迭代式数据采集框架，通过视觉语言模型引导任务设置并利用数据归因评估反馈来优化采集过程。",
+      "evidence": "We introduce an iterative framework that alternates between 1) task proposal and data collection and 2) data evaluation to close the loop."
+    },
+    {
+      "text": "实验证实该方法能有效提升样本效率及机器人策略的部署表现。",
+      "evidence": "We evaluate our approach in simulation and real robot settings, demonstrating that guided data collection substantially improves sample efficiency and deployment performance compared to passive data collection strategies, multiple baselines and experienced roboticists."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "模仿学习",
+    "视觉语言动作"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "overview": "针对电脑使用智能体在处理复杂软件任务时面临的经验积累问题，北交大研究团队提出了NorthCUA集成系统。该系统通过Experience Flywheel生成多样化任务，利用递归自我改进机制积累已验证轨迹与技能。结合分阶段学习与桌面-网页联合强化学习，NorthCUA实现了从任务意图到完成的闭环优化。实验表明，该系列模型在图形界面定位、桌面执行及网页交互等方面达到开源模型的前沿水平。",
+  "highlights": [
+    {
+      "text": "NorthCUA系统通过递归自我改进机制处理未解任务，通过保存已验证的里程碑来积累可复用技能。",
+      "evidence": "For unsolved tasks, recursive self-improvement evolves reusable skills and preserves verified milestones so later attempts build on earlier progress."
+    },
+    {
+      "text": "该研究通过桌面与网页的联合强化学习，构建了经验生产与策略改进的完整闭环，显著提升了智能体的执行能力。",
+      "evidence": "The policy then learns from fresh attempts in the same Harness through joint desktop-web reinforcement learning, closing the loop between experience production and policy improvement."
+    },
+    {
+      "text": "NorthCUA系列模型在GUI定位、桌面执行及Web交互任务中展现了行业领先的性能。",
+      "evidence": "The resulting Nano, Mini, and Pro family achieves state-of-the-art results among open-source models across GUI grounding, desktop execution, and Web interaction under the reported evaluation settings."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "机器人操作"
+  ]
+}

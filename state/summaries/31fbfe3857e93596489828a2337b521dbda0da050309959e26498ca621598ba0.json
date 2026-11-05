@@ -1,0 +1,23 @@
+{
+  "overview": "本文介绍了RoboColosseum，这是一个分布式物理机器人评估框架，旨在跨多种机器人平台、任务和真实环境评估通用机器人策略。研究人员通过该框架评估了五种视觉语言动作（VLA）策略和三种AI智能体在四种机器人本体上的表现，涵盖了无任务适配的“公开赛道”和需微调的“微调赛道”。实验表明，现有系统在开放世界任务中表现仍不稳定，且策略在不同本体间的表现缺乏一致性，强调了分布式评估在识别策略泛化能力和任务进展方面的重要性。",
+  "highlights": [
+    {
+      "text": "RoboColosseum框架通过跨分布式本地机器人网络部署统一的评估协议，实现了对机器人策略在多环境下的规模化评估。",
+      "evidence": "We introduce RoboColosseum, a distributed evaluation framework that combines unified policy serving and standardized protocols across a network of locally operated robots in diverse environments."
+    },
+    {
+      "text": "研究发现现有模型在不同机器人本体间的任务表现相关性较弱，且开放赛道的初期评估结果难以准确预测微调后的表现。",
+      "evidence": "Policy rankings show weak agreement across embodiment-specific task suites (Kendall W = 0.24). Open Track rankings poorly predict relative performance after fine-tuning, with substantial rank reversals on all three embodiments shared between tracks."
+    },
+    {
+      "text": "引入部分进度度量标准能够揭示即便在任务失败时模型的能力差异，从而提供比单一成功率更精细的性能反馈。",
+      "evidence": "Measuring partial progress reveals differences that task success alone misses. On the G1 Humanoid, no policy completes any of the five tasks, yet average progress ranges from 13.3% to 23.2% across policies."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "视觉语言动作",
+    "Sim-to-Real",
+    "人形机器人"
+  ]
+}

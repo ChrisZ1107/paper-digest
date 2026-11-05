@@ -1,0 +1,20 @@
+{
+  "overview": "本文探讨了视频生成与智能体（Agent）技术的交叉领域，提出了一种执行运行时环境“智能体架构（Agent Harness）”。作者分析了该架构在三个方向的应用：通过协同脚本与规划实现的智能体视频生成；通过游戏引擎与视频模型混合设计的智能体世界建模；以及涵盖模型参数与评估器更新的递归自我改进机制。文章总结了构建自主视频生产系统面临的长期记忆、控制与评估等关键挑战。",
+  "highlights": [
+    {
+      "text": "提出智能体架构（Agent Harness）作为核心运行时，通过集成工具使用、状态维护与反馈回路，增强视频生成的规划与可控性。",
+      "evidence": "We study their intersection through the agent harness: an executable runtime that constructs context, exposes tools, maintains state, routes feedback, and manages budgets around video models."
+    },
+    {
+      "text": "探讨了智能体世界建模的混合设计，即利用游戏引擎或代码执行维护世界状态，由视频模型负责视觉渲染。",
+      "evidence": "We discuss hybrid designs in which game engines or agent-written programs maintain world state while video models render observations, and how agents and world models can mutually evaluate and improve one another."
+    },
+    {
+      "text": "分析了视频模型开发的递归自我改进流程，涵盖从输出修订到模型参数及评估器更新的系统化迭代。",
+      "evidence": "Third, recursive self-improvement (RSI) in video model development, distinguishing output revisions, updates to harness state, generator parameters, and evaluators, and changes to the improvement procedure itself."
+    }
+  ],
+  "tags": [
+    "世界模型"
+  ]
+}
