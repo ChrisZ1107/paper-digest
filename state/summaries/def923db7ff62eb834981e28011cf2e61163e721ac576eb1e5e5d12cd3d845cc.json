@@ -1,0 +1,22 @@
+{
+  "overview": "针对机器人基础模型依赖人工遥操作示范的问题，本文提出RoboTryOn方法，将人机动作迁移视为虚拟试衣过程。该方法通过将人类视频转化为指定机器人的操作视频，保持背景与任务一致，并利用逆动力学模型从合成视频中提取动作标签以进行策略学习。作者声称该方法显著提高了人形机器人在多项任务中的成功率，且降低了数据收集成本。",
+  "highlights": [
+    {
+      "text": "RoboTryOn通过将人类视频转换为目标机器人的操作视频，有效实现了将人类演示迁移至高自由度机器人。",
+      "evidence": "Specifically, RoboTryOn converts a human video into a video of the target robot specified by a reference image, while preserving the original task, objects, and background."
+    },
+    {
+      "text": "使用该方法生成的合成数据进行训练，可在无需真实机器人演示的情况下，将新型复杂任务的平均成功率从2%提升至60%。",
+      "evidence": "Our experiments across multiple humanoid embodiments show that policies trained with our synthetic data improve the average success rate on novel tasks, including challenging bimanual manipulation, from 2% to 60%, without any real robot demonstration of those tasks."
+    },
+    {
+      "text": "该方法在仅需约三分之一成本的情况下，实现了与纯人工遥操作演示训练相当的策略性能。",
+      "evidence": "Moreover, training with our synthetic data matches the performance of policies trained solely on teleoperated demonstrations at approximately a third of the collection cost, demonstrating the cost efficiency of our approach."
+    }
+  ],
+  "tags": [
+    "人形机器人",
+    "机器人操作",
+    "模仿学习"
+  ]
+}

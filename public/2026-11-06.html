@@ -1,0 +1,148 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>2026-11-06 热门论文 Top 10｜机器人·强化学习·AI</title><body><h1>2026-11-06 热门论文 Top 10</h1>
+<p>机器人 · 强化学习 · 通用 AI</p>
+<p>生成时间：2026-11-06 09:01 CST。从 616 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>
+<p>候选来源：<a href="https://huggingface.co/papers">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>
+<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>
+<h2>1. RoboColosseum: Evaluating Physical Intelligence at Scale In-The-Wild</h2>
+<p><strong>机器人</strong> · 发表 2026-11-02 · 综合分 5.63</p>
+<p>Zotero 摘要相关性：0.496（相似度分数，不是概率）。</p>
+<p>HF 点赞 47 · 讨论 2 · 仓库累计 Star 3（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +4 · 讨论 +1 · Star +0。</p>
+<p><strong>规则标签：</strong>人形机器人 · 视觉语言动作</p>
+<p><strong>中文概述：</strong>本文介绍了RoboColosseum，这是一个分布式物理机器人评估框架，旨在跨多种机器人平台、任务和真实环境评估通用机器人策略。研究人员通过该框架评估了五种视觉语言动作（VLA）策略和三种AI智能体在四种机器人本体上的表现，涵盖了无任务适配的“公开赛道”和需微调的“微调赛道”。实验表明，现有系统在开放世界任务中表现仍不稳定，且策略在不同本体间的表现缺乏一致性，强调了分布式评估在识别策略泛化能力和任务进展方面的重要性。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>RoboColosseum框架通过跨分布式本地机器人网络部署统一的评估协议，实现了对机器人策略在多环境下的规模化评估。<br><small>摘要依据：We introduce RoboColosseum, a distributed evaluation framework that combines unified policy serving and standardized protocols across a network of locally operated robots in diverse environments.</small></li>
+<li>研究发现现有模型在不同机器人本体间的任务表现相关性较弱，且开放赛道的初期评估结果难以准确预测微调后的表现。<br><small>摘要依据：Policy rankings show weak agreement across embodiment-specific task suites (Kendall W = 0.24). Open Track rankings poorly predict relative performance after fine-tuning, with substantial rank reversals on all three embodiments shared between tracks.</small></li>
+<li>引入部分进度度量标准能够揭示即便在任务失败时模型的能力差异，从而提供比单一成功率更精细的性能反馈。<br><small>摘要依据：Measuring partial progress reveals differences that task success alone misses. On the G1 Humanoid, no policy completes any of the five tasks, yet average progress ranges from 13.3% to 23.2% across policies.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 视觉语言动作 · Sim-to-Real · 人形机器人</p>
+<p><strong>原文摘要节选：</strong>General-purpose robot policies must work across robots, tasks, and environments, yet the variation that makes physical trials informative also makes them difficult to reproduce. We introduce RoboColosseum, a distributed evaluation framework that combines unified policy serving and standardized protocols across a network of locally operated robots in diverse environments. Our initial study evaluates five vision-language-action (VLA) policies and three frontier AI agents across four embodiments (SO-101, Franka, Bimanual-YAM, and G1 Humanoid). The Open Track compares models without task-specific adaptation in blinded, pairwise trials under matched local conditions. The Fine-tune Track measures how well VLA policies adapt to 20 tasks across all four embodiments when each policy receives the…</p>
+<p><a href="https://arxiv.org/abs/2611.02497">论文原文</a> · <a href="https://arxiv.org/pdf/2611.02497">PDF</a> · <a href="https://huggingface.co/papers/2611.02497">讨论与热度</a> · <a href="https://github.com/RoboColosseum/robocolosseum-client">代码</a></p><hr>
+<h2>2. Democratizing Robot-Use Agents: A Unified Harness with Open Models</h2>
+<p><strong>机器人</strong> · 发表 2026-11-01 · 综合分 5.47</p>
+<p>Zotero 摘要相关性：0.451（相似度分数，不是概率）。</p>
+<p>HF 点赞 47 · 讨论 1 · 本次 HF 热榜第 6 位 · 仓库累计 Star 230（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +4 · 讨论 +0 · Star +34。</p>
+<p><strong>规则标签：</strong>视觉语言动作</p>
+<p><strong>中文概述：</strong>针对现有机器人使用智能体（RUA）依赖封闭私有模型导致研究受限的问题，作者提出了uni-robot-agent，这是一个支持进一步训练的开放权重机器人操作统一框架。实验表明，基于Qwen3.8-Flash-Next模型的方法在RoboDojo基准测试中优于GPT-6 Astra-RoboProbe及多种基线，并在19项真实世界任务中表现出竞争力。此外，作者分析了模型特性与机器人操作能力之间的联系，为未来RUA的协同训练提供了参考。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>uni-robot-agent框架使开放权重模型在机器人操作任务中取得了具有竞争力的性能，且无需特权输入。<br><small>摘要依据：Without privileged inputs, an out-of-the-box Qwen3.8-Flash-Next achieves a RoboDojo Score of 31.39, surpassing the published GPT-6 Astra-RoboProbe result of 28.97 and many VLA/WAM baselines, and performs competitively on 19 real-world tasks.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 视觉语言动作 · 大模型后训练</p>
+<p><strong>原文摘要节选：</strong>Robot-use Agents (RUAs) have shown promising zero-shot manipulation capabilities, but reliance on frontier, proprietary models limits research into further training. To democratize RUA research, we introduce uni-robot-agent, a unified harness for competitive open-weight robot use that supports further training. Without privileged inputs, an out-of-the-box Qwen3.8-Flash-Next achieves a RoboDojo Score of 31.39, surpassing the published GPT-6 Astra-RoboProbe result of 28.97 and many VLA/WAM baselines, and performs competitively on 19 real-world tasks. Our analysis across model generations, families, and sizes links effective robot use to four general capabilities, suggesting that future RUA training should develop them jointly.</p>
+<p><a href="https://arxiv.org/abs/2611.01560">论文原文</a> · <a href="https://arxiv.org/pdf/2611.01560">PDF</a> · <a href="https://huggingface.co/papers/2611.01560">讨论与热度</a> · <a href="https://github.com/Open-RUA/uni-robot-agent">代码</a></p><hr>
+<h2>3. Axion 1.0: Open Agent Foundation Models, Simplified</h2>
+<p><strong>强化学习</strong> · 发表 2026-11-02 · 综合分 5.39</p>
+<p>Zotero 摘要相关性：0.424（相似度分数，不是概率）。</p>
+<p>HF 点赞 46 · 讨论 3 · 本次 HF 热榜第 41 位 · 仓库累计 Star 56（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +7 · 讨论 +1 · Star +19。</p>
+<p><strong>规则标签：</strong>强化学习 · 推理</p>
+<p><strong>中文概述：</strong>本文介绍了Axion 1.0，这是一款具备强大代理能力的开源基础模型。该模型采用了极简的训练方案，仅包含两个阶段的轻量级监督微调和一个强化学习阶段，未采用中间预训练、DPO或策略蒸馏。作者通过模型感知的数据构建实现自主推理，利用自动化管线实现工具依赖推理，并通过强化学习增强长程规划能力。实验表明，该模型在多项基准测试中表现优异，且配套完整开源了训练方法与数据管线。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>Axion 1.0采用极简的三阶段训练配方，避免了复杂的中间预训练与策略优化方法。<br><small>摘要依据：Axion 1.0 is trained in only three stages: two lightweight supervised fine-tuning stages followed by reinforcement learning, without dedicated mid-training, direct preference optimization (DPO), or on-policy distillation (OPD).</small></li>
+<li>模型通过自动化的数据构建管线，有效提升了在自主推理和工具调用方面的综合性能。<br><small>摘要依据：The second stage extends these capabilities to tool-dependent reasoning through a scalable pipeline for constructing diverse and automatically verifiable tasks grounded in real-world data sources and deterministic computation.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>推理 · 大模型后训练</p>
+<p><strong>原文摘要节选：</strong>We introduce Axion 1.0, a fully open agent foundation model that combines strong and broad agentic capabilities with a remarkably simple training recipe. Axion 1.0 is trained in only three stages: two lightweight supervised fine-tuning stages followed by reinforcement learning, without dedicated mid-training, direct preference optimization (DPO), or on-policy distillation (OPD). The first SFT stage develops strong self-contained reasoning through model-aware data construction, where we synthesize challenging problems and adversarially strengthen them based on the base model&#x27;s own successful solution strategies. The second stage extends these capabilities to tool-dependent reasoning through a scalable pipeline for constructing diverse and automatically verifiable tasks grounded in…</p>
+<p><a href="https://arxiv.org/abs/2611.03233">论文原文</a> · <a href="https://arxiv.org/pdf/2611.03233">PDF</a> · <a href="https://huggingface.co/papers/2611.03233">讨论与热度</a> · <a href="https://github.com/bytedance/axion1_0">代码</a></p><hr>
+<h2>4. Human-to-Robot Transfer via Bridging Representation and Action Space in VLAs</h2>
+<p><strong>机器人</strong> · 发表 2026-11-03 · 综合分 5.37</p>
+<p>Zotero 摘要相关性：0.442（相似度分数，不是概率）。</p>
+<p>HF 点赞 13 · 讨论 1 · 仓库累计 Star 2（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +13 · 讨论 +1。</p>
+<p><strong>规则标签：</strong>视觉语言动作</p>
+<p><strong>中文概述：</strong>针对视觉语言动作（VLA）模型在不同机器人实施方案间迁移困难的问题，作者提出了H2RB框架。该框架通过几何锚定对齐观察空间，利用解耦解码器共享动作潜空间，实现人类示范数据的有效利用。实验结果表明，H2RB在真实世界任务中显著提升了物体迁移和技能迁移的表现，并增强了模型在分布外场景下的鲁棒性，从而减少了对目标机器人特定数据的依赖。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>H2RB通过几何锚定对齐观察空间并利用解耦解码器共享动作潜空间，有效缓解了人类与机器人之间的实施差异。<br><small>摘要依据：H2RB bridges the embodiment gap at both interfaces: geometry-anchored alignment grounds human and robot observations in a compatible representation, while a decoupled-decoder tokenizer shares action latents without forcing both domains through a single action mapping.</small></li>
+<li>在真实世界任务中，H2RB显著提升了物体迁移和技能迁移的性能，并在基线方法失败的情况下表现出更优的迁移能力。<br><small>摘要依据：Across real-world tasks, H2RB substantially improves object transfer performance from 8.0 to 51.8 and enables skill transfer to score 62.7, in settings where co-train baselines totally fail to transfer human-demonstrated skills.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>视觉语言动作 · 机器人操作 · Sim-to-Real</p>
+<p><strong>原文摘要节选：</strong>Pretrained Vision-Language-Action (VLA) policies provide a strong starting point for deployment, but adapting them to a target robot and environment still requires costly embodiment-specific demonstrations. Human demonstrations are far easier to collect, yet directly leveraging them is challenging due to the substantial human-robot embodiment gap, particularly when the underlying VLA has been pretrained primarily on robot data. We introduce H2RB (Human-To-Robot Bridge), a human-robot co-training framework for adapting pretrained VLA policies from unpaired human and robot demonstrations. H2RB bridges the embodiment gap at both interfaces: geometry-anchored alignment grounds human and robot observations in a compatible representation, while a decoupled-decoder tokenizer shares action…</p>
+<p><a href="https://arxiv.org/abs/2611.04391">论文原文</a> · <a href="https://arxiv.org/pdf/2611.04391">PDF</a> · <a href="https://huggingface.co/papers/2611.04391">讨论与热度</a> · <a href="https://github.com/jun-brro/h2rb-code">代码</a></p><hr>
+<h2>5. WebHarbor: Docking Real Websites for Evolving GUI Agent Environments</h2>
+<p><strong>强化学习</strong> · 发表 2026-11-02 · 综合分 5.29</p>
+<p>Zotero 摘要相关性：0.435（相似度分数，不是概率）。</p>
+<p>HF 点赞 24 · 讨论 2 · 仓库累计 Star 54（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +5 · 讨论 +1 · Star +8。</p>
+<p><strong>规则标签：</strong>强化学习</p>
+<p><strong>中文概述：</strong>针对现有Web GUI智能体训练与评估面临的环境不稳定性及功能受限问题，本文提出了WebHarbor。这是一个包含153个可执行、容器化的真实网站仿真环境集合，通过人工与智能体协同构建，具备高视觉保真度和功能深度，提供3,518个涵盖复杂多步及认证后工作流的任务。实验表明，在该环境中使用强化学习训练的智能体在未见任务中表现出良好的泛化能力，并在多个基准测试中展现出竞争力。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>构建了包含153个容器化网站环境的WebHarbor，为Web GUI智能体提供确定性的训练与评估支持。<br><small>摘要依据：We propose WebHarbor, a suite of 153 executable and dockerized website environments that faithfully reconstruct the visual interfaces, content, and functional workflows of real-world web services under deterministic control.</small></li>
+<li>WebHarbor支持复杂的多步及认证后任务流，弥补了现有研究在任务覆盖面上的不足。<br><small>摘要依据：The resulting suite comprises 3,518 tasks spanning multi-step and post-authentication workflows, where existing works often fail to cover.</small></li>
+<li>基于WebHarbor的强化学习训练可提升GUI智能体的泛化性能，使其在多个基准测试中达到主流开源智能体的水平。<br><small>摘要依据：We demonstrate that a Qwen 4B-level GUI agent trained with RL in WebHarbor generalizes to unseen tasks and performs competitively with leading open-source GUI web agents across four benchmarks.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习 · 机器人操作</p>
+<p><strong>原文摘要节选：</strong>GUI web agents require realistic and interactive environments that remain stable during both evaluation and training. Live website evaluation suffers from changing content, access restrictions, and limited coverage of authenticated workflows, while existing synthetic environments for training often lack functional depth and visual fidelity. We propose WebHarbor, a suite of 153 executable and dockerized website environments that faithfully reconstruct the visual interfaces, content, and functional workflows of real-world web services under deterministic control. We build WebHarbor through task-driven human-agent collaboration, where environments evolve as new tasks expand their functional scope, coding agents implement the required changes, and human contributors audit visual fidelity,…</p>
+<p><a href="https://arxiv.org/abs/2611.03634">论文原文</a> · <a href="https://arxiv.org/pdf/2611.03634">PDF</a> · <a href="https://huggingface.co/papers/2611.03634">讨论与热度</a> · <a href="https://github.com/aiming-lab/WebHarbor">代码</a></p><hr>
+<h2>6. Are Frontier VLM Agents Ready to Be Robot Generalists? An Empirical Study with the Embodied Agent Arena</h2>
+<p><strong>机器人</strong> · 发表 2026-10-23 · 综合分 5.29</p>
+<p>Zotero 摘要相关性：0.427（相似度分数，不是概率）。</p>
+<p>HF 点赞 73 · 讨论 2 · 仓库累计 Star 22（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +68 · 讨论 +1 · Star +8。</p>
+<p><strong>规则标签：</strong>推理</p>
+<p><strong>中文概述：</strong>该研究旨在评估前沿视觉语言模型（VLM）作为通用机器人智能体的能力。作者通过构建包含1000个案例的Embodied Agent Arena评估框架，在几何、空间推理、可供性、任务规划和操作五个维度对十个VLM智能体进行了实证研究。结果表明，闭源模型在所有维度均表现领先，而开源模型虽具备一定空间推理能力，但在任务规划与操作成功率上仍存在显著差距，且增加计算资源并不总能解决执行中的逻辑和物理状态缺失问题。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>闭源模型在测试的全部五个领域均优于开源模型，而开源模型在空间推理方面表现尚可，但在任务规划和操作方面的成功率明显较低。<br><small>摘要依据：Closed-weight models lead all five domains, whereas open-weight VLMs show useful spatial reasoning but substantially lower planning and manipulation success.</small></li>
+<li>研究发现增加计算资源并不能统一解决智能体在执行中的失败问题，例如代码修复可能导致任务无法完成，自我审查反而可能修正正确的判断。<br><small>摘要依据：Additional computation does not uniformly resolve these failures: code repair can restore execution without completing the task, while self-review can reverse correct judgments.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 推理</p>
+<p><strong>原文摘要节选：</strong>A robot generalist must interpret a scene, act on it, and satisfy every condition of a task. How far do frontier vision-language models (VLMs) meet these demands? We introduce Embodied Agent Arena, evaluating ten VLM agents across Geometry, Spatial Reasoning, Affordance, Task Planning, and Manipulation. Its 1,000 cases combine 32 established sources with GeoProbe, our 168-case benchmark for camera, motion, depth, and scale estimation. A minimal harness leaves task decisions to the model through source-native interfaces. Closed-weight models lead all five domains, whereas open-weight VLMs show useful spatial reasoning but substantially lower planning and manipulation success. Beneath these averages, similar geometric errors conceal different scale and shape distortions, and valid region…</p>
+<p><a href="https://arxiv.org/abs/2610.00854">论文原文</a> · <a href="https://arxiv.org/pdf/2610.00854">PDF</a> · <a href="https://huggingface.co/papers/2610.00854">讨论与热度</a> · <a href="https://github.com/embodied-agent-arena/embodied-agent-arena">代码</a></p><hr>
+<h2>7. PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data</h2>
+<p><strong>机器人</strong> · 发表 2026-11-03 · 综合分 5.24</p>
+<p>Zotero 摘要相关性：0.394（相似度分数，不是概率）。</p>
+<p>HF 点赞 24 · 讨论 2</p>
+<p>较上次观测（1.0 天前）：点赞 +24 · 讨论 +2。</p>
+<p><strong>中文概述：</strong>针对机器人演示数据采集成本高昂的问题，本文提出了PyRUA-DataFarm系统。该系统利用大语言模型作为编码智能体，通过接收场景需求和少量校准数据，在仿真中自动构建任务、生成专家控制器及评估机制。结合视频生成模型，系统能输出与真实场景一致的视觉动作数据，实现了无需人工操作即可进行机器人策略训练及部署，显著降低了数据采集成本。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出一种自动化的机器人数据生成流程，利用大模型编码器在仿真中重建任务，并生成高质量的视觉动作数据用于策略训练。<br><small>摘要依据：In our DataFarm, the agent receives a data request and one calibration episode of the robot in the target scene and rebuilds the task in simulation: it writes the scene, an expert controller, and a success judge.</small></li>
+<li>基于DataFarm生成的训练数据在五项真实机器人任务中表现出色，且在环境变化的情况下相比传统远程操作训练的策略具有更强的鲁棒性。<br><small>摘要依据：On five real-robot tasks, policies trained only on farm data match policies trained on as many teleoperated episodes (93 vs. 84 successes in 100 trials), and under an unseen tablecloth and coloured light they keep 87 successes where the teleoperation-trained policies fall to 46.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · Sim-to-Real</p>
+<p><strong>原文摘要节选：</strong>Teleoperation remains the default way to collect robot demonstrations, but every episode costs robot and operator time, and every new task starts from scratch. We ask whether a coding agent can take over the teleoperator&#x27;s job. In our DataFarm, the agent receives a data request and one calibration episode of the robot in the target scene and rebuilds the task in simulation: it writes the scene, an expert controller, and a success judge. The simulator supplies exact actions, and a video model conditioned on real images renders each rollout as photographic video, generating all camera views together consistently. The output is real-ready data: synchronized camera views labelled with the robot&#x27;s actions, on which a policy can be trained directly and deployed on the real robot. Independent…</p>
+<p><a href="https://arxiv.org/abs/2611.05320">论文原文</a> · <a href="https://arxiv.org/pdf/2611.05320">PDF</a> · <a href="https://huggingface.co/papers/2611.05320">讨论与热度</a></p><hr>
+<h2>8. NorthCUA Technical Report: Turbocharging Computer-Use Agents through Experience at Scale</h2>
+<p><strong>强化学习</strong> · 发表 2026-11-01 · 综合分 5.06</p>
+<p>Zotero 摘要相关性：0.437（相似度分数，不是概率）。</p>
+<p>HF 点赞 32 · 讨论 1 · 本次 HF 热榜第 48 位 · 仓库累计 Star 52（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +0 · Star +7。</p>
+<p><strong>规则标签：</strong>强化学习</p>
+<p><strong>中文概述：</strong>针对电脑使用智能体在处理复杂软件任务时面临的经验积累问题，北交大研究团队提出了NorthCUA集成系统。该系统通过Experience Flywheel生成多样化任务，利用递归自我改进机制积累已验证轨迹与技能。结合分阶段学习与桌面-网页联合强化学习，NorthCUA实现了从任务意图到完成的闭环优化。实验表明，该系列模型在图形界面定位、桌面执行及网页交互等方面达到开源模型的前沿水平。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>NorthCUA系统通过递归自我改进机制处理未解任务，通过保存已验证的里程碑来积累可复用技能。<br><small>摘要依据：For unsolved tasks, recursive self-improvement evolves reusable skills and preserves verified milestones so later attempts build on earlier progress.</small></li>
+<li>该研究通过桌面与网页的联合强化学习，构建了经验生产与策略改进的完整闭环，显著提升了智能体的执行能力。<br><small>摘要依据：The policy then learns from fresh attempts in the same Harness through joint desktop-web reinforcement learning, closing the loop between experience production and policy improvement.</small></li>
+<li>NorthCUA系列模型在GUI定位、桌面执行及Web交互任务中展现了行业领先的性能。<br><small>摘要依据：The resulting Nano, Mini, and Pro family achieves state-of-the-art results among open-source models across GUI grounding, desktop execution, and Web interaction under the reported evaluation settings.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习 · 机器人操作</p>
+<p><strong>原文摘要节选：</strong>Scaling computer-use agents from individual actions to complex software work requires experience that connects decisions to complete outcomes. We present NorthCUA, an integrated system for turbocharging computer-use agents through experience at scale. Its Experience Flywheel supplies diverse executable tasks to the NorthCUA Harness, which sustains long interactions, records decisions, and checks task outcomes. The Flywheel uses these records to curate verified trajectories. For unsolved tasks, recursive self-improvement evolves reusable skills and preserves verified milestones so later attempts build on earlier progress. Staged Learning combines this experience with grounding data from the Flywheel to develop GUI competence through mid-training and long-horizon supervised fine-tuning. The…</p>
+<p><a href="https://arxiv.org/abs/2611.02102">论文原文</a> · <a href="https://arxiv.org/pdf/2611.02102">PDF</a> · <a href="https://huggingface.co/papers/2611.02102">讨论与热度</a> · <a href="https://github.com/beipo-ai/NorthCUA">代码</a></p><hr>
+<h2>9. Has GPT-6-Astra Achieved Embodied Intelligence?</h2>
+<p><strong>机器人</strong> · 发表 2026-10-15 · 综合分 5.01</p>
+<p>Zotero 摘要相关性：0.477（相似度分数，不是概率）。</p>
+<p>HF 点赞 135 · 讨论 2 · 本次 HF 热榜第 60 位 · 仓库累计 Star 446（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +0 · Star +24。</p>
+<p><strong>规则标签：</strong>人形机器人 · 机器人操作 · 导航</p>
+<p><strong>中文概述：</strong>本文评估了GPT-6-Astra在机器人操作与导航任务中的表现。研究者通过12个基准测试探究了该模型在上下文学习下的能力极限，并分析了将其作为高层推理器与低层控制器结合的代理机制。实验发现，尽管该模型展现出较高的具身能力，但在真实物理部署中仍面临数据采集成本高、物理约束限制及长期执行效率等挑战。作者认为该模型尚未达到实用具身智能的标准。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>GPT-6-Astra在跨越桌面操作、人形机器人、移动平台及灵巧手的12个代表性基准测试中，通过上下文学习实现了出色的性能。<br><small>摘要依据：We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance</small></li>
+<li>研究指出高层“系统2”推理器与低层“系统1”控制器的闭环协调方案虽然有效，但伴随着较高的计算成本。<br><small>摘要依据：We identify that close-loop coordination between a high-level &quot;System 2&quot; reasoner (i.e., GPT-6-Astra) and a low-level &quot;System 1&quot; controller (e.g., π0.5) is costly but effective.</small></li>
+<li>在8种机器人配置的实机部署实验中，研究发现现有范式难以通过延长执行时间来换取物理约束下的高成功率。<br><small>摘要依据：Our experiments on 8 robot configurations reveal substantial gaps: 1) robot demonstrations required for ICL are expensive to collect, and 2) it is implausible to trade longer execution for higher success rates with physical constraints.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 导航 · 人形机器人 · 推理</p>
+<p><strong>原文摘要节选：</strong>GPT-6-Astra demonstrates a level of competence in robotic manipulation and navigation that challenges the conventional paradigm of building specialized models for individual tasks and embodiments. In this report, we ask not only how capable GPT-6-Astra is, but what its capabilities imply for the field. First, we probe the limits of standalone GPT-6-Astra. We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance (Fig. 1). Future research may focus on improving 1) the generality of ICL 2) cost and…</p>
+<p><a href="https://arxiv.org/abs/2610.22471">论文原文</a> · <a href="https://arxiv.org/pdf/2610.22471">PDF</a> · <a href="https://huggingface.co/papers/2610.22471">讨论与热度</a> · <a href="https://github.com/OpenSenseNova/SenseNova-RoboRSI">代码</a></p><hr>
+<h2>10. RoboTryOn: Synthesizing Dexterous Robot Demonstrations from Human Videos via Virtual Try-On</h2>
+<p><strong>机器人</strong> · 发表 2026-11-03 · 综合分 4.97</p>
+<p>Zotero 摘要相关性：0.443（相似度分数，不是概率）。</p>
+<p>HF 点赞 6 · 讨论 2 · 仓库累计 Star 5（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +1 · Star +3。</p>
+<p><strong>规则标签：</strong>人形机器人 · 机器人操作</p>
+<p><strong>中文概述：</strong>针对机器人基础模型依赖人工遥操作示范的问题，本文提出RoboTryOn方法，将人机动作迁移视为虚拟试衣过程。该方法通过将人类视频转化为指定机器人的操作视频，保持背景与任务一致，并利用逆动力学模型从合成视频中提取动作标签以进行策略学习。作者声称该方法显著提高了人形机器人在多项任务中的成功率，且降低了数据收集成本。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>RoboTryOn通过将人类视频转换为目标机器人的操作视频，有效实现了将人类演示迁移至高自由度机器人。<br><small>摘要依据：Specifically, RoboTryOn converts a human video into a video of the target robot specified by a reference image, while preserving the original task, objects, and background.</small></li>
+<li>使用该方法生成的合成数据进行训练，可在无需真实机器人演示的情况下，将新型复杂任务的平均成功率从2%提升至60%。<br><small>摘要依据：Our experiments across multiple humanoid embodiments show that policies trained with our synthetic data improve the average success rate on novel tasks, including challenging bimanual manipulation, from 2% to 60%, without any real robot demonstration of those tasks.</small></li>
+<li>该方法在仅需约三分之一成本的情况下，实现了与纯人工遥操作演示训练相当的策略性能。<br><small>摘要依据：Moreover, training with our synthetic data matches the performance of policies trained solely on teleoperated demonstrations at approximately a third of the collection cost, demonstrating the cost efficiency of our approach.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>人形机器人 · 机器人操作 · 模仿学习</p>
+<p><strong>原文摘要节选：</strong>Robot foundation models have shown remarkable performance in robot control, yet adapting them to a new task still relies heavily on teleoperated demonstrations. Egocentric human videos offer a scalable substitute, but overlaying rendered robots on human videos or retargeting human poses into robot actions leaves significant visual or action gaps for high-DoF robot embodiments. To address this limitation, we propose RoboTryOn, which treats human-to-robot translation as virtual try-on: try-on keeps the person and swaps the garment, RoboTryOn keeps the demonstrated motion and swaps the human for the robot. Specifically, RoboTryOn converts a human video into a video of the target robot specified by a reference image, while preserving the original task, objects, and background. To maintain…</p>
+<p><a href="https://arxiv.org/abs/2611.05163">论文原文</a> · <a href="https://arxiv.org/pdf/2611.05163">PDF</a> · <a href="https://huggingface.co/papers/2611.05163">讨论与热度</a> · <a href="https://github.com/ryan-seungyong-lee/RoboTryOn">代码</a></p><hr></body></html>

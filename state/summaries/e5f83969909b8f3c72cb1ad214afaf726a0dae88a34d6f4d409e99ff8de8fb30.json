@@ -1,0 +1,17 @@
+{
+  "overview": "针对机器人演示数据采集成本高昂的问题，本文提出了PyRUA-DataFarm系统。该系统利用大语言模型作为编码智能体，通过接收场景需求和少量校准数据，在仿真中自动构建任务、生成专家控制器及评估机制。结合视频生成模型，系统能输出与真实场景一致的视觉动作数据，实现了无需人工操作即可进行机器人策略训练及部署，显著降低了数据采集成本。",
+  "highlights": [
+    {
+      "text": "提出一种自动化的机器人数据生成流程，利用大模型编码器在仿真中重建任务，并生成高质量的视觉动作数据用于策略训练。",
+      "evidence": "In our DataFarm, the agent receives a data request and one calibration episode of the robot in the target scene and rebuilds the task in simulation: it writes the scene, an expert controller, and a success judge."
+    },
+    {
+      "text": "基于DataFarm生成的训练数据在五项真实机器人任务中表现出色，且在环境变化的情况下相比传统远程操作训练的策略具有更强的鲁棒性。",
+      "evidence": "On five real-robot tasks, policies trained only on farm data match policies trained on as many teleoperated episodes (93 vs. 84 successes in 100 trials), and under an unseen tablecloth and coloured light they keep 87 successes where the teleoperation-trained policies fall to 46."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "Sim-to-Real"
+  ]
+}

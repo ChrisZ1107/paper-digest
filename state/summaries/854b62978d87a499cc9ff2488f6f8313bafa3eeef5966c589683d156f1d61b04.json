@@ -1,0 +1,17 @@
+{
+  "overview": "针对机器人操作任务中由于阶段性串行结构导致的难以迭代优化问题，本文提出了Compounding Physical RSI框架。该方法通过自动化能力差距评估定位执行失败阶段，利用行为正则化离线强化学习进行修正，并引入权重空间候选项以在优化新技能的同时保留已有能力。在RoboDojo-Sim基准测试中，该方法表现出较好的整体得分与成功率。",
+  "highlights": [
+    {
+      "text": "提出了Compounding Physical RSI框架，通过自动定位任务失败阶段并进行离线强化学习修正，将执行失败转化为可继承的能力。",
+      "evidence": "We propose Compounding Physical RSI, a self-evolving policy framework that turns execution failures into heritable capability."
+    },
+    {
+      "text": "引入权重空间候选项机制以保护已习得技能，在提升性能的同时防止灾难性遗忘。",
+      "evidence": "Third, to safeguard existing skills, our retention stage constructs weight-space candidates between the inherited reference policy and the refined policy, evaluates them across the task suite, and promotes the best candidate as the reference state for the next generation."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "离线强化学习"
+  ]
+}

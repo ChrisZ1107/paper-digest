@@ -1,0 +1,16 @@
+{
+  "overview": "本文研究了通用机器人策略在部署阶段实现多任务自我改进的可行性。作者通过构建结构化评估体系，系统性分析了价值估计、策略提取及资源分配等设计选择。研究结果表明，采用合适的强化学习方案不仅能在线提升通用策略在多项任务上的性能，还能增强其对未参与在线训练任务的泛化能力，为机器人基础模型的在线持续改进提供了证据。",
+  "highlights": [
+    {
+      "text": "提出并验证了一种能够实现通用机器人策略在线多任务改进的算法方案。",
+      "evidence": "We show that not only can generalist policies be improved online across diverse tasks, but that the right recipe can enable generalization and increase performance on tasks not considered during online training."
+    },
+    {
+      "text": "研究发现训练任务分布的覆盖范围与基于价值的强化学习方法对于实现泛化性能提升至关重要。",
+      "evidence": "We characterize when this generalization occurs and show that both the training task distribution and the use of value-based RL are critical."
+    }
+  ],
+  "tags": [
+    "强化学习"
+  ]
+}

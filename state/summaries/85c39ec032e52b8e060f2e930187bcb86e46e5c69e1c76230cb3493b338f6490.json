@@ -1,0 +1,17 @@
+{
+  "overview": "该研究旨在评估前沿视觉语言模型（VLM）作为通用机器人智能体的能力。作者通过构建包含1000个案例的Embodied Agent Arena评估框架，在几何、空间推理、可供性、任务规划和操作五个维度对十个VLM智能体进行了实证研究。结果表明，闭源模型在所有维度均表现领先，而开源模型虽具备一定空间推理能力，但在任务规划与操作成功率上仍存在显著差距，且增加计算资源并不总能解决执行中的逻辑和物理状态缺失问题。",
+  "highlights": [
+    {
+      "text": "闭源模型在测试的全部五个领域均优于开源模型，而开源模型在空间推理方面表现尚可，但在任务规划和操作方面的成功率明显较低。",
+      "evidence": "Closed-weight models lead all five domains, whereas open-weight VLMs show useful spatial reasoning but substantially lower planning and manipulation success."
+    },
+    {
+      "text": "研究发现增加计算资源并不能统一解决智能体在执行中的失败问题，例如代码修复可能导致任务无法完成，自我审查反而可能修正正确的判断。",
+      "evidence": "Additional computation does not uniformly resolve these failures: code repair can restore execution without completing the task, while self-review can reverse correct judgments."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "推理"
+  ]
+}

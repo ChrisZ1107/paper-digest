@@ -1,0 +1,18 @@
+{
+  "overview": "针对视觉语言动作（VLA）模型在不同机器人实施方案间迁移困难的问题，作者提出了H2RB框架。该框架通过几何锚定对齐观察空间，利用解耦解码器共享动作潜空间，实现人类示范数据的有效利用。实验结果表明，H2RB在真实世界任务中显著提升了物体迁移和技能迁移的表现，并增强了模型在分布外场景下的鲁棒性，从而减少了对目标机器人特定数据的依赖。",
+  "highlights": [
+    {
+      "text": "H2RB通过几何锚定对齐观察空间并利用解耦解码器共享动作潜空间，有效缓解了人类与机器人之间的实施差异。",
+      "evidence": "H2RB bridges the embodiment gap at both interfaces: geometry-anchored alignment grounds human and robot observations in a compatible representation, while a decoupled-decoder tokenizer shares action latents without forcing both domains through a single action mapping."
+    },
+    {
+      "text": "在真实世界任务中，H2RB显著提升了物体迁移和技能迁移的性能，并在基线方法失败的情况下表现出更优的迁移能力。",
+      "evidence": "Across real-world tasks, H2RB substantially improves object transfer performance from 8.0 to 51.8 and enables skill transfer to score 62.7, in settings where co-train baselines totally fail to transfer human-demonstrated skills."
+    }
+  ],
+  "tags": [
+    "视觉语言动作",
+    "机器人操作",
+    "Sim-to-Real"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "overview": "针对人形机器人在足球运动中难以兼顾多种灵敏技能与类人动作质量的问题，本文提出了Soccerbot框架。该方法通过从大规模人类足球动作捕捉数据中提取结构化潜空间运动先验，约束强化学习策略的学习空间。作者声称，该策略能够在一个统一框架内实现移动、带球、停球和踢球等动作，并具备在现实世界中零样本迁移至Unitree G1人形机器人的能力。",
+  "highlights": [
+    {
+      "text": "Soccerbot利用从大规模人类足球动作捕捉数据中提取的运动先验，实现了统一且类人的足球技能学习。",
+      "evidence": "We present soccerbot, a hierarchical reinforcement learning framework that resolves both limitations through a structured latent motion prior distilled from large-scale human soccer motion capture data."
+    },
+    {
+      "text": "通过在运动流形内进行策略训练，实现了包含移动、带球、停球和踢球的综合足球技能组合。",
+      "evidence": "By constraining policy learning within this dynamically plausible motion manifold, a single skill-conditioned policy naturally learns to perform moving, dribbling, trapping, and kicking in a unified formulation, while inherently producing human-like motion and fluid transitions during commanded skill switching."
+    },
+    {
+      "text": "该框架通过鲁棒性仿真设计，成功将训练策略零样本迁移至Unitree G1人形机器人并进行实际测试。",
+      "evidence": "Augmented by robustness-oriented simulation design, soccerbot transfers zero-shot to the Unitree G1 humanoid robot, demonstrating agile, natural, and robust execution of the full soccer skill repertoire under real-world conditions."
+    }
+  ],
+  "tags": [
+    "人形机器人",
+    "强化学习",
+    "Sim-to-Real"
+  ]
+}

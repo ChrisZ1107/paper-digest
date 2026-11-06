@@ -1,0 +1,18 @@
+{
+  "overview": "针对实验室机器人操作任务中在线强化学习面临的样本效率低和奖励稀疏问题，本文提出了TwinBridge框架。该方法结合3D高斯喷洒与物理仿真构建数字孪生，提供策略初始化及视觉密集奖励模型。实验表明，该方法在五个真实实验室任务中通过人机协同强化学习，实现了高自主成功率并提升了交互效率。",
+  "highlights": [
+    {
+      "text": "TwinBridge利用数字孪生技术为真实世界强化学习提供策略初始化与密集视觉奖励，有效提升了学习效率。",
+      "evidence": "We present TwinBridge, a digital twin-driven framework that supplies policy initialization and dense visual rewards for real-world online learning."
+    },
+    {
+      "text": "该方法在实验室机器人任务中表现出色，在较短的交互时间内达到了极高的成功率。",
+      "evidence": "Across five real-world laboratory tasks, TwinBridge achieves a final mean autonomous success rate of 98% with at most 25 minutes of real-world interaction per task."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "机器人操作",
+    "Sim-to-Real"
+  ]
+}

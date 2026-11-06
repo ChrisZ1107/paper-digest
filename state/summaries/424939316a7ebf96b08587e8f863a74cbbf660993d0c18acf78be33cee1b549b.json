@@ -1,0 +1,21 @@
+{
+  "overview": "针对移动操作机器人处理长期任务时对历史交互信息依赖评估不足的问题，本文提出了RoboCasa-Mem基准测试。该基准涵盖九项任务，要求智能体利用环境记忆（空间、属性、关系）和过程记忆（进度、调度）进行决策。作者引入行为条件评估机制，根据机器人早期行动推导后续任务约束，并提出了分层记忆增强策略（HMAP）作为基准模型，旨在支持对依赖记忆的移动操作行为进行系统性评估与开发。",
+  "highlights": [
+    {
+      "text": "提出了包含九项移动操作任务的RoboCasa-Mem基准，重点评估机器人对环境记忆和过程记忆的依赖能力。",
+      "evidence": "To address this gap, we introduce RoboCasa-Mem, a new benchmark comprising nine mobile manipulation tasks that require agents to use interaction history at key decision points."
+    },
+    {
+      "text": "引入了行为条件评估方法，通过根据机器人早期动作推导后续约束，实现了对行为一致性的动态评估。",
+      "evidence": "Particularly, we introduce Behavior-Conditioned Evaluation. For tasks with multiple valid execution paths, instead of fixing a single target or trajectory, the evaluator derives later task constraints from the robot's earlier actions."
+    },
+    {
+      "text": "开发了HMAP基准模型，通过结合结构化实体记忆与视觉语言动作控制器，实现对移动操作任务的规划与执行。",
+      "evidence": "We also develop a baseline on our benchmark, namely Hierarchical Memory-Augmented Policy(HMAP). Its high-level planner uses structured entity and process memories to generate subtasks."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "视觉语言动作"
+  ]
+}
