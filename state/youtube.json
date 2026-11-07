@@ -4949,6 +4949,71 @@
     "G0z83dkxyzc": {
       "video_id": "G0z83dkxyzc",
       "papers": []
+    },
+    "GLndKSnb6Nk": {
+      "video_id": "GLndKSnb6Nk",
+      "video_title": "Hinted Scaling Laws (Nov 2026)",
+      "published": "2026-11-07",
+      "video_url": "https://www.youtube.com/watch?v=GLndKSnb6Nk",
+      "papers": [
+        {
+          "id": "2611.02270",
+          "title": "Hinted Scaling Laws (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.02270"
+        }
+      ]
+    },
+    "fj66e0imFPA": {
+      "video_id": "fj66e0imFPA",
+      "video_title": "FrontierPhysics: Evaluating Agents for End-to-End Physics Research (Nov 2026)",
+      "published": "2026-11-07",
+      "video_url": "https://www.youtube.com/watch?v=fj66e0imFPA",
+      "papers": [
+        {
+          "id": "2611.06910",
+          "title": "FrontierPhysics: Evaluating Agents for End-to-End Physics Research (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.06910"
+        }
+      ]
+    },
+    "kJh396RVf0g": {
+      "video_id": "kJh396RVf0g",
+      "video_title": "Stabilizing On-Policy Targeted Guidance in Agentic Reinforcement Learning (Nov 2026)",
+      "published": "2026-11-07",
+      "video_url": "https://www.youtube.com/watch?v=kJh396RVf0g",
+      "papers": [
+        {
+          "id": "2611.05266",
+          "title": "Stabilizing On-Policy Targeted Guidance in Agentic Reinforcement Learning (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.05266"
+        }
+      ]
+    },
+    "2FhVP-NkF4k": {
+      "video_id": "2FhVP-NkF4k",
+      "video_title": "You don't need long context (Nov 2026)",
+      "published": "2026-11-07",
+      "video_url": "https://www.youtube.com/watch?v=2FhVP-NkF4k",
+      "papers": [
+        {
+          "id": "2611.05306",
+          "title": "You don't need long context (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.05306"
+        }
+      ]
+    },
+    "SZgDhCUKMTI": {
+      "video_id": "SZgDhCUKMTI",
+      "video_title": "Meta$^2$: Precomputing Reusable Knowledge for Online Harness Evolution in Long-Horizon Agents",
+      "published": "2026-11-07",
+      "video_url": "https://www.youtube.com/watch?v=SZgDhCUKMTI",
+      "papers": [
+        {
+          "id": "2611.05139",
+          "title": "Meta$^2$: Precomputing Reusable Knowledge for Online Harness Evolution in Long-Horizon Agents (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.05139"
+        }
+      ]
     }
   }
 }
