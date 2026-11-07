@@ -1,0 +1,22 @@
+{
+  "overview": "针对具身智能模型中机器人操作先验数据扩展需求，本文提出了Open-HumanScale架构。该方案利用5万小时标注后的第一人称视频语料库，通过系统性研究揭示了预训练数据量与机器人任务成功率之间的对数线性缩放规律。基于此构建的世界-动作模型HumanWAM通过仿真评估与物理机器人实验验证了其在大规模预训练及联合人机数据训练下的泛化能力，并在多个基准测试中达到了较高的成功率。",
+  "highlights": [
+    {
+      "text": "揭示了预训练数据时长与机器人下游任务成功率之间存在经验性的对数线性缩放规律。",
+      "evidence": "we systematically investigate pure human pretraining via closed-loop simulation evaluations and uncover an empirical log-linear scaling law linking pretraining data hours to downstream robot success rates."
+    },
+    {
+      "text": "通过引入视觉目标条件的联合人机数据预训练，显著提升了机器人在仿真与物理场景中的零样本泛化性能。",
+      "evidence": "Hybrid data scaling unlocks broad zero-shot generalization across both simulation and physical benchmarks, propelling post-trained RoboTwin 2.0 performance to new state-of-the-art levels"
+    },
+    {
+      "text": "HumanWAM-Goal模型展示了突现的具身上下文学习能力，可在无需参数更新的情况下适应未见过的视觉目标。",
+      "evidence": "On physical robots, HumanWAM-Goal further exhibits emergent embodied in-context learning, dynamically adapting its manipulation behavior to unseen visual goals without parameter updates."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "Sim-to-Real",
+    "世界模型"
+  ]
+}

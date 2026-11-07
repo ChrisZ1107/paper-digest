@@ -1,0 +1,16 @@
+{
+  "overview": "针对代码生成智能体如何通过物理交互实现能力长期提升的问题，本文提出了PyRUA-REAL框架。该框架利用递归自我改进（RSI）机制，将机器人探索经验转化为持久记忆及可复用的执行技能。实验表明，通过在真实世界中进行代码优化与部署，该方法能有效提升机器人在复杂操作任务中的执行成功率与鲁棒性。",
+  "highlights": [
+    {
+      "text": "PyRUA-REAL框架通过递归自我改进机制，将交互经验转化为持久化记忆和可复用的执行技能，支持机器人能力的持续提升。",
+      "evidence": "In this work, we study embodied recursive self-improvement (RSI) through real-world exploration, code refinement, and deployment using PyRUA-REAL, a framework in which coding agents retain interaction experience as persistent memory and reusable executable skills that inform subsequent exploration and improvement."
+    },
+    {
+      "text": "该方法在八项真实世界任务中取得了91.1%的平均成功率，并在RoboDojo基准测试中实现了84.4%的平均成功率。",
+      "evidence": "Across eight real-world tasks, PyRUA-REAL achieves an average success rate of 91.1%. In complementary evaluation on 42 tasks from the RoboDojo benchmark, it achieves an average success rate of 84.4%."
+    }
+  ],
+  "tags": [
+    "机器人操作"
+  ]
+}

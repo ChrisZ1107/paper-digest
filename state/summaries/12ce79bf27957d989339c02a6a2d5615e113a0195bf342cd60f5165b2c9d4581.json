@@ -1,0 +1,18 @@
+{
+  "overview": "针对感知型人形机器人运动中地形几何与身体状态关联性难以处理的问题，本文提出了STEP（时空显式预测训练）框架。该方法通过联合监督跨模态关系与动作依赖的状态演化，将深度和本体感觉信息聚合为紧凑的控制表示。仿真与实机实验表明，该方法在提升复杂地形遍历能力以及面对视觉输入退化时的鲁棒性方面具有优势。",
+  "highlights": [
+    {
+      "text": "STEP通过双向掩码预测和动作条件预测，联合监督跨模态关系与动作依赖的状态演化，优化了控制表示。",
+      "evidence": "We present Spatiotemporal Training with Explicit Prediction (STEP), a one-stage framework that jointly supervises cross-modal relationships and action-dependent state evolution within a shared control representation."
+    },
+    {
+      "text": "实机部署测试显示，该方法在包括楼梯、平台、缝隙及盲区倒退行走在内的多项复杂任务中表现出高成功率。",
+      "evidence": "Deployed on a 23-DoF Noetix E1 humanoid with onboard sensing, STEP succeeds in 98 of 100 hardware trials across stairs, a 40\\,cm platform, a 70\\,cm gap, stepping stones, and backward stair traversal without rearward terrain visibility."
+    }
+  ],
+  "tags": [
+    "人形机器人",
+    "足式运动",
+    "Sim-to-Real"
+  ]
+}

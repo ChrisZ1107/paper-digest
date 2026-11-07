@@ -1,0 +1,18 @@
+{
+  "overview": "针对视觉语言模型（VLM）控制人形机器人的需求，本文提出了HITCH接口。该方法通过将图像点位映射至3D坐标，并利用学习到的追踪器将指令转化为全身动作，实现了对机器人骨盆、躯干、四肢及注视点的有效控制。作者通过在包含五项基础任务的轨迹上对VLM进行微调，使其学习到操作人形机器人的能力，并在无需特定训练数据的情况下实现了任务成功率的提升。",
+  "highlights": [
+    {
+      "text": "提出了一种名为HITCH的全身接口，通过视觉感知实现3D位置定位，并利用学习到的追踪器将抽象指令转化为机器人全身动作。",
+      "evidence": "We present HITCH (Harness Interfaces To Command Humanoids), a harness in which perception returns the 3D position of any point the VLM selects in its image, and execution turns commands for the pelvis, torso, hands, walking, and gaze into whole-body motion with a learned tracker."
+    },
+    {
+      "text": "经过微调后的模型在SIMPLE和HumanoidArena测试任务中展现了任务执行能力，增加少量轨迹数据可显著提高成功率。",
+      "evidence": "Without task-specific trajectories, the fine-tuned model completes 51% of SIMPLE episodes and 42.5% of HumanoidArena episodes, and adding five trajectories per SIMPLE task raises its SIMPLE success to 95%."
+    }
+  ],
+  "tags": [
+    "人形机器人",
+    "机器人操作",
+    "视觉语言动作"
+  ]
+}

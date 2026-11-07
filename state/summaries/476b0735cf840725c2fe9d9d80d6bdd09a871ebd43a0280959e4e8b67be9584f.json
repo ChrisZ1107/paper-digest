@@ -1,0 +1,22 @@
+{
+  "overview": "该研究探讨了多轮强化学习在LLM智能体中的实际改进机制。作者通过Pass@(K,T)指标分析了采样宽度和交互深度对性能的影响，发现轨迹级强化学习的优势高度依赖于交互预算，且其核心作用在于提升错误恢复能力与长程任务韧性。为缓解预算依赖带来的部署风险，研究提出了BudgetMix RL策略，通过在训练期间调整交互预算来增强智能体的鲁棒性。",
+  "highlights": [
+    {
+      "text": "多轮智能体强化学习的性能优势高度依赖于交互预算，在预算收紧时该优势会显著减弱。",
+      "evidence": "Evaluating across sampling breadth K and interaction depth T via Pass@(K,T), we show that trajectory-level RL advantages depend on sufficient turn budgets, diminishing significantly when budgets tighten."
+    },
+    {
+      "text": "智能体强化学习并不均匀地提升单步决策质量，其核心优势集中在错误恢复和长程任务的韧性上。",
+      "evidence": "Besides, agentic RL does not uniformly elevate single-step decision quality; rather, its strength concentrates in error recovery and long-horizon resilience."
+    },
+    {
+      "text": "提出的BudgetMix RL策略在训练阶段动态调整交互预算，从而在多种执行场景中实现了稳健的性能表现。",
+      "evidence": "Experiments demonstrate that BudgetMix RL achieves robust performance across diverse execution settings."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "大模型后训练",
+    "推理"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "overview": "针对可变形线性物体（DLO）操作的高维度与复杂动力学挑战，本研究探讨了强化学习在单端抓取平面操作中的应用。作者评估了不同的近端策略优化（PPO）训练栈，分析了观察空间设计、异步执行策略以及鲁棒性训练对学习效率的影响。研究表明，利用GPU并行的训练环境和相对关键点观察设计，可实现高效训练，并在无需现实世界微调的情况下，将策略零样本迁移至真实物理实验中。",
+  "highlights": [
+    {
+      "text": "通过对比发现，基于GPU并行的MuJoCo Playground训练栈在相同的挂钟时间内，较基于CPU的方案能实现更快的收敛速度和更稳定的性能。",
+      "evidence": "We compare three Proximal Policy Optimization training stacks and find that the GPU-parallel MuJoCo Playground stack enables faster convergence and more consistent performance than CPU-based alternatives under the same wall-clock budget."
+    },
+    {
+      "text": "采用相对关键点观察设计与非对称演员-评论家（Actor-Critic）架构，能够显著提升强化学习算法的学习效率。",
+      "evidence": "Relative keypoint observations and an asymmetric actor-critic formulation further improve learning efficiency."
+    },
+    {
+      "text": "通过引入观测噪声、延迟、领域随机化及干扰训练，策略在模拟环境中表现优异，并成功在未进行现实微调的情况下完成物理环境下的零样本迁移。",
+      "evidence": "Using markerless RGB-D keypoint estimation, the policies transfer without real-world fine-tuning, succeeding in 9/10, 10/10, and 8/10 physical trials, respectively."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "PPO",
+    "机器人操作",
+    "Sim-to-Real"
+  ]
+}

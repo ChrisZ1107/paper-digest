@@ -4972,7 +4972,9 @@
         {
           "id": "2611.06910",
           "title": "FrontierPhysics: Evaluating Agents for End-to-End Physics Research (Nov 2026)",
-          "url": "https://arxiv.org/abs/2611.06910"
+          "url": "https://arxiv.org/abs/2611.06910",
+          "abstract": "AI agents are playing an increasingly important role in physics research. However, existing physics benchmarks only evaluate fixed questions, isolated sub-tasks, or paper reproduction with given solutions, and rarely check research quality alongside correctness. We introduce FrontierPhysics, an end-to-end benchmark with 56 tasks made by 42 physicists based on their own research, covering nine domains across theoretical, computational, and experimental physics. Each task requires agents to review the literature, develop a research plan, conduct research and experiments, and produce structured outputs and scientific manuscripts. Combining deterministic verifiers with expert-authored rubrics, FrontierPhysics evaluates whether agents' research is correct and publishable. Across 22 models in 26 configurations, no configuration passes more than 46 of its 168 rollouts. Manual review of agent trajectories shows that frontier agents' main weaknesses are insufficiently rigorous reasoning and limited expert intuition, rather than gaps in physics knowledge or execution errors.",
+          "abstract_zh": "AI智能体在物理学研究中正发挥着日益重要的作用。然而，现有的物理学基准测试仅评估固定问题、孤立子任务或给定解答的论文复现，很少在考察正确性的同时检验研究质量。我们推出了FrontierPhysics，这是一个端到端的基准测试，包含由42位物理学家基于其自身研究制定的56项任务，涵盖了理论物理、计算物理和实验物理领域的九个方向。每项任务都要求智能体查阅文献、制定研究计划、开展研究与实验，并生成结构化输出和科学手稿。通过结合确定性验证器与专家编写的评分标准，FrontierPhysics评估了智能体的研究是否正确且具备发表水平。在26种配置下的22个模型中，没有任何一种配置能够通过其168次演练中的超过46次。对智能体轨迹的手动审查表明，前沿智能体的主要弱点在于推理不够严谨且缺乏专家直觉，而非物理知识匮乏或执行错误。"
         }
       ]
     },
@@ -4985,7 +4987,9 @@
         {
           "id": "2611.05266",
           "title": "Stabilizing On-Policy Targeted Guidance in Agentic Reinforcement Learning (Nov 2026)",
-          "url": "https://arxiv.org/abs/2611.05266"
+          "url": "https://arxiv.org/abs/2611.05266",
+          "abstract": "Naive on-policy RL is often bottlenecked by the capabilities of the base model --- insufficient coverage can result in an inability to learn from certain rewards. At the same time, rewards in modern post-training systems often come from rich textual sources, e.g. judge models with a rubric of criteria. Can we utilize such structures to provide a rich directional signal that enables improving on otherwise difficult to optimize rewards? In this work, we examine a framework we refer to as targeted guidance that learns from per-turn textual feedback via an on-policy self-distillation objective. Our focus is not only on directly improving hard-to-optimize behaviors, but on how to do so throughout the training process without degrading baseline RL performance. Over a range of settings across an agentic multi-turn software engineering environment, we find success by combining targeted self-distillation with a per-criteria RL reward, and by limiting feedback to turns where the policy specifically fails. We further examine the design choices that lead to stable entropy and reduce oscillatory behavior throughout training.",
+          "abstract_zh": "朴素的同策略强化学习（on-policy RL）往往受限于基础模型的能力——覆盖范围不足可能导致无法从特定奖励中学习。与此同时，现代后训练系统中的奖励通常来自丰富的文本源，例如带有评分标准的评判模型。我们能否利用这种结构来提供丰富的方向性信号，从而改进那些难以优化的奖励？在这项工作中，我们研究了一个被称为“目标引导”（targeted guidance）的框架，该框架通过同策略自蒸馏（on-policy self-distillation）目标从每轮文本反馈中进行学习。我们的重点不仅在于直接改进难以优化的行为，还在于如何在整个训练过程中实现这一点，且不降低基准RL的性能。通过在代理式多轮软件工程环境中的一系列设置测试，我们发现将目标自蒸馏与基于准则的RL奖励相结合，并将反馈限制在策略明确失败的轮次，可以取得成功。我们进一步研究了导致熵稳定并减少训练过程中振荡行为的设计选择。"
         }
       ]
     },
@@ -4998,7 +5002,9 @@
         {
           "id": "2611.05306",
           "title": "You don't need long context (Nov 2026)",
-          "url": "https://arxiv.org/abs/2611.05306"
+          "url": "https://arxiv.org/abs/2611.05306",
+          "abstract": "Later tokens are costlier to generate than earlier tokens. On frontier open weight models, the disparity in cost may rise to as much as 7x. Through frequent compaction, we show across a broad range of long-horizon and long-input tasks that frontier language models sacrifice little to no task accuracy when maintaining short contexts. We further demonstrate that LLM performance does not collapse on long-horizon software engineering tasks even when taking at most one action per context, and based on that we outline the concept of semantic state space models (SSSMs). Our findings question the need for long-context language models.",
+          "abstract_zh": "生成后续标记的成本高于生成早期标记。在前沿开放权重模型中，这种成本差异最高可达7倍。通过频繁压缩，我们在广泛的长视野和长输入任务中表明，前沿语言模型在保持短上下文时，几乎不会牺牲任务准确性。我们进一步证明，即使每个上下文最多只采取一个行动，LLM在长视野软件工程任务上的性能也不会崩溃，并基于此概述了语义状态空间模型（SSSMs）的概念。我们的研究结果质疑了对长上下文语言模型的必要性。"
         }
       ]
     },
@@ -5011,7 +5017,9 @@
         {
           "id": "2611.05139",
           "title": "Meta$^2$: Precomputing Reusable Knowledge for Online Harness Evolution in Long-Horizon Agents (Nov 2026)",
-          "url": "https://arxiv.org/abs/2611.05139"
+          "url": "https://arxiv.org/abs/2611.05139",
+          "abstract": "Harness optimization improves long-horizon agents by refining the prompts, tools, memory, and hooks around a frozen model. Offline methods can learn from completed trajectories, but deploy one shared harness that may overfit training tasks and cannot react to evidence revealed during a new run. Online evolution can adapt before, during, or after one run through an evolver, but may have to reason about every intervention from scratch or rely on verifier feedback that is usually unavailable at test time. We introduce Meta$^2$, which moves offline optimization one level up: rather than optimizing a shared harness, it learns reusable knowledge for harness evolution and applies it within each task online. Offline, Meta$^2$ learns a textual Meta-Skill $M$ by contrasting training rollouts of the same task agent under three configurations: without an evolver, with an evolver guided by the current version of $M$, and with an evolver given privileged verifier information available only in training. Contrasts in trajectories and outcomes are aggregated across tasks to refine $M$ into reusable guidance on when and how to evolve, when to leave the harness unchanged, and which interventions to avoid. Online, an evolver combines the frozen $M$ with emerging trajectory evidence to decide whether to KEEP the harness unchanged or EVOLVE it through a task-local edit. Each edit applies to the rest of the same run without resetting its environment or progress. Thus, evolution guidance transfers across tasks while harness edits remain task-local, and held-out verifier feedback is never available to the evolver. On two long-horizon benchmarks, Terminal-Bench 2.1 and DeepSWE 1.1, Meta$^2$ achieves the highest performance among evaluated methods with GPT-5.6-Terra, reaching 81.00% and 44.44%, respectively. Ablations support the value of contrastive evolution guidance and keeping online harness edits task-local.",
+          "abstract_zh": "Harness优化通过对冻结模型周围的提示词、工具、记忆和钩子进行精调来提升长程智能体的性能。离线方法可以从已完成的轨迹中学习，但通常部署一个共享的Harness，这可能会导致对训练任务过拟合，且无法针对新运行过程中出现的证据做出反应。在线演化方法可以在单次运行前、运行中或运行后通过演化器进行适应，但可能需要从头开始推理每一次干预，或者依赖在测试时通常不可用的验证器反馈。我们提出了Meta^2，它将离线优化提升了一个层级：它不是优化一个共享的Harness，而是学习可重用的Harness演化知识，并在每个任务的在线阶段应用这些知识。在离线阶段，Meta^2通过对比同一任务智能体在三种配置下的训练回放来学习文本化的元技能M：无演化器配置、在当前版本M指导下使用演化器的配置，以及在训练期间获得特权验证器信息支持的演化器配置。通过跨任务聚合轨迹和结果的差异，将M精炼为关于何时以及如何演化、何时保持Harness不变、以及应避免哪些干预的可重用指导。在线阶段，演化器将冻结的M与新出现的轨迹证据相结合，以决定是保持Harness不变，还是通过任务局部的编辑来演化它。每次编辑都应用于同一运行的剩余部分，而无需重置环境或进度。因此，演化指导可以在任务间迁移，而Harness的编辑则保持在任务局部，且演化器在测试时无法获得受限的验证器反馈。在Terminal-Bench 2.1和DeepSWE 1.1这两个长程基准测试上，Meta^2在使用GPT-5.6-Terra模型时达到了所评估方法中的最高性能，分别达到了81.00%和44.44%。消融实验支持了对比演化指导的价值，以及保持在线Harness编辑为任务局部的必要性。"
         }
       ]
     }

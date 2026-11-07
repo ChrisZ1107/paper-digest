@@ -1,0 +1,18 @@
+{
+  "overview": "针对四足操作机器人最后一公里导航与抓取协同难的问题，本文提出了LMGN统一策略学习模型。该方法引入显式距离与方向可达性表示，并构建了语义对齐的层级专家混合策略（HMoE），通过协同优化导航与操作、阶段化专家路由及动作一致性，实现对基础位置调整、预抓取对齐及物体抓取提升等阶段的控制。实验表明，该方法有效提升了复杂环境下机器人最后一公里导航与抓取的成功率。",
+  "highlights": [
+    {
+      "text": "提出了一种基于显式距离与方向可达性表示的统一策略学习模型，用以解决最后一公里导航中的定位与姿态对齐问题。",
+      "evidence": "An Explicit Distance and Directional Reachability (ED-DR) representation is first introduced to explicitly represent the features of grasp-compatible base placement and approach direction."
+    },
+    {
+      "text": "构建了层级专家混合策略（HMoE），实现了针对机器人抓取各阶段（调整、对齐、执行、提升）的阶段感知行为建模。",
+      "evidence": "We then develop a semantically aligned Hierarchical Mixture-of-Experts (HMoE) policy that models stage-aware behaviors across the stages of base adjustment, pre-grasp alignment and grasp execution, and object lift."
+    }
+  ],
+  "tags": [
+    "四足机器人",
+    "机器人操作",
+    "导航"
+  ]
+}
