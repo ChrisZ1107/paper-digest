@@ -5024,6 +5024,19 @@
           "abstract_zh": "Harness优化通过对冻结模型周围的提示词、工具、记忆和钩子进行精调来提升长程智能体的性能。离线方法可以从已完成的轨迹中学习，但通常部署一个共享的Harness，这可能会导致对训练任务过拟合，且无法针对新运行过程中出现的证据做出反应。在线演化方法可以在单次运行前、运行中或运行后通过演化器进行适应，但可能需要从头开始推理每一次干预，或者依赖在测试时通常不可用的验证器反馈。我们提出了Meta^2，它将离线优化提升了一个层级：它不是优化一个共享的Harness，而是学习可重用的Harness演化知识，并在每个任务的在线阶段应用这些知识。在离线阶段，Meta^2通过对比同一任务智能体在三种配置下的训练回放来学习文本化的元技能M：无演化器配置、在当前版本M指导下使用演化器的配置，以及在训练期间获得特权验证器信息支持的演化器配置。通过跨任务聚合轨迹和结果的差异，将M精炼为关于何时以及如何演化、何时保持Harness不变、以及应避免哪些干预的可重用指导。在线阶段，演化器将冻结的M与新出现的轨迹证据相结合，以决定是保持Harness不变，还是通过任务局部的编辑来演化它。每次编辑都应用于同一运行的剩余部分，而无需重置环境或进度。因此，演化指导可以在任务间迁移，而Harness的编辑则保持在任务局部，且演化器在测试时无法获得受限的验证器反馈。在Terminal-Bench 2.1和DeepSWE 1.1这两个长程基准测试上，Meta^2在使用GPT-5.6-Terra模型时达到了所评估方法中的最高性能，分别达到了81.00%和44.44%。消融实验支持了对比演化指导的价值，以及保持在线Harness编辑为任务局部的必要性。"
         }
       ]
+    },
+    "wxblE1xdQG8": {
+      "video_id": "wxblE1xdQG8",
+      "video_title": "Artificial Hivemind: The Open-Ended Homogeneity of Language Models (and Beyond) (Oct 2025)",
+      "published": "2026-11-08",
+      "video_url": "https://www.youtube.com/watch?v=wxblE1xdQG8",
+      "papers": [
+        {
+          "id": "2510.22954",
+          "title": "Artificial Hivemind: The Open-Ended Homogeneity of Language Models (and Beyond) (Oct 2025)",
+          "url": "https://arxiv.org/abs/2510.22954"
+        }
+      ]
     }
   }
 }
