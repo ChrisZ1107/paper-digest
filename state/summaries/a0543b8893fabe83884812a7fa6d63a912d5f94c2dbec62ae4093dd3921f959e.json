@@ -1,0 +1,21 @@
+{
+  "overview": "针对现有视觉语言模型在生成机器人及自动驾驶视觉规划时存在的推理速度慢的问题，作者提出VFlash方法。该方法利用闪存基元解码技术，通过轻量级草拟器一次性联合预测视觉基元的坐标，而非逐个生成坐标token。实验结果显示，该方法在保持空间准确性的同时，显著提升了生成速度，并在多项机器人轨迹任务中优于基准模型。",
+  "highlights": [
+    {
+      "text": "VFlash通过一次前向传递生成整个视觉基元，显著提升了生成速度。",
+      "evidence": "VFlash exploits the known structure of visual primitives to predict their coordinates jointly, using a lightweight drafter that generates an entire primitive in one forward pass."
+    },
+    {
+      "text": "在3D点运动预测任务中，VFlash的生成速度提升约25倍。",
+      "evidence": "Preliminary single-rollout measurements indicate approximately 25x faster generation for 3D point motion forecasting."
+    },
+    {
+      "text": "基于VFlash规划的动作模型在多项任务套件中表现优于传统自回归基线。",
+      "evidence": "A world action model conditioned on VFlash plans achieves 70.2% average success across four MolmoSpaces task suites, compared with 62.6% for the baseline."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "世界模型"
+  ]
+}

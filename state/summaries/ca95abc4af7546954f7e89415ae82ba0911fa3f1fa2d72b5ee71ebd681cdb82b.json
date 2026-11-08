@@ -1,0 +1,17 @@
+{
+  "overview": "针对代理训练中执行器失效的问题，本文提出了Harness-S方法。该方法通过构建包含多种变体的姐妹执行器库，利用方向性进化生成专门修复不同错误的执行器。当基础执行器失败时，自适应路由机制会选择合适的辅助执行器进行救援，并将获得的经验能力整合到单一策略中，从而在不依赖辅助执行器的情况下提升基础执行器的整体性能。",
+  "highlights": [
+    {
+      "text": "Harness-S通过引入辅助执行器库并利用自适应路由机制，显著提升了代理在基础执行器下的表现。",
+      "evidence": "Across AppWorld, SWE-Gym, and DBBench, the trained policy substantially outperforms policy-only training when returned to the original base harness."
+    },
+    {
+      "text": "通过策略感知剖面重锚定机制，系统能够动态更新对辅助执行器性能的评估，以适应策略学习的演进。",
+      "evidence": "Policy-aware profile re-anchoring refreshes this evidence as the policy learns."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "推理"
+  ]
+}

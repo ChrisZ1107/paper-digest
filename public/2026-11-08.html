@@ -1,0 +1,144 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>2026-11-08 热门论文 Top 10｜机器人·强化学习·AI</title><body><h1>2026-11-08 热门论文 Top 10</h1>
+<p>机器人 · 强化学习 · 通用 AI</p>
+<p>生成时间：2026-11-08 09:01 CST。从 123 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>
+<p>候选来源：<a href="https://huggingface.co/papers">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>
+<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>
+<h2>1. SLA: Scaling Spatial-Language-Action Model via Continual Pre-training</h2>
+<p><strong>机器人</strong> · 发表 2026-11-05 · 综合分 5.52</p>
+<p>Zotero 摘要相关性：0.426（相似度分数，不是概率）。</p>
+<p>HF 点赞 81 · 讨论 3</p>
+<p>较上次观测（1.0 天前）：点赞 +33 · 讨论 +2。</p>
+<p><strong>规则标签：</strong>机器人操作 · 视觉语言动作 · 大模型后训练</p>
+<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>
+<p><strong>原文摘要节选：</strong>Reliable robotic manipulation requires both semantic understanding and precise control in three-dimensional space. However, vision-language-action (VLA) foundations largely inherit visual representations from 2D vision-language pre-training, while spatial supervision is often introduced only during task-specific adaptation. Developing spatial understanding as a transferable foundation-model capability therefore calls for learning from broader robot experience. We present SLA, a Spatial-Language-Action Model that scales implicit spatial alignment to continual pre-training and maintains it during downstream post-training. Initialized from a pretrained pi05 policy, SLA jointly optimizes action prediction and alignment between intermediate visual embeddings and spatial representations from a…</p>
+<p><a href="https://arxiv.org/abs/2611.08373">论文原文</a> · <a href="https://arxiv.org/pdf/2611.08373">PDF</a> · <a href="https://huggingface.co/papers/2611.08373">讨论与热度</a></p><hr>
+<h2>2. VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding</h2>
+<p><strong>机器人</strong> · 发表 2026-11-05 · 综合分 5.43</p>
+<p>Zotero 摘要相关性：0.438（相似度分数，不是概率）。</p>
+<p>HF 点赞 100 · 讨论 1</p>
+<p>较上次观测（1.0 天前）：点赞 +9 · 讨论 +1。</p>
+<p><strong>中文概述：</strong>针对现有视觉语言模型在生成机器人及自动驾驶视觉规划时存在的推理速度慢的问题，作者提出VFlash方法。该方法利用闪存基元解码技术，通过轻量级草拟器一次性联合预测视觉基元的坐标，而非逐个生成坐标token。实验结果显示，该方法在保持空间准确性的同时，显著提升了生成速度，并在多项机器人轨迹任务中优于基准模型。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>VFlash通过一次前向传递生成整个视觉基元，显著提升了生成速度。<br><small>摘要依据：VFlash exploits the known structure of visual primitives to predict their coordinates jointly, using a lightweight drafter that generates an entire primitive in one forward pass.</small></li>
+<li>在3D点运动预测任务中，VFlash的生成速度提升约25倍。<br><small>摘要依据：Preliminary single-rollout measurements indicate approximately 25x faster generation for 3D point motion forecasting.</small></li>
+<li>基于VFlash规划的动作模型在多项任务套件中表现优于传统自回归基线。<br><small>摘要依据：A world action model conditioned on VFlash plans achieves 70.2% average success across four MolmoSpaces task suites, compared with 62.6% for the baseline.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 世界模型</p>
+<p><strong>原文摘要节选：</strong>Models for physical AI tasks, such as robotics and autonomous driving, need not reason solely in language. They can use visual plans--points, bounding boxes, and trajectories--to represent spatial goals and anticipate motion. However, autoregressive vision-language models generate these plans one coordinate token at a time, making richer predictions increasingly costly. We introduce VFlash, a method for fast, accurate visual planning through Flash Primitive Decoding. VFlash exploits the known structure of visual primitives to predict their coordinates jointly, using a lightweight drafter that generates an entire primitive in one forward pass. The layout adapts to the primitive&#x27;s type, dimensionality, and length, supporting compact boxes and long, variable-length trajectories. Crucially,…</p>
+<p><a href="https://arxiv.org/abs/2611.08449">论文原文</a> · <a href="https://arxiv.org/pdf/2611.08449">PDF</a> · <a href="https://huggingface.co/papers/2611.08449">讨论与热度</a></p><hr>
+<h2>3. What Does Multi-Turn Reinforcement Learning Really Improve in LLM Agents?</h2>
+<p><strong>强化学习</strong> · 发表 2026-11-04 · 综合分 5.22</p>
+<p>Zotero 摘要相关性：0.427（相似度分数，不是概率）。</p>
+<p>HF 点赞 38 · 讨论 5 · 本次 HF 热榜第 84 位 · 仓库累计 Star 17（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +2 · 讨论 +2 · Star +0。</p>
+<p><strong>规则标签：</strong>强化学习</p>
+<p><strong>中文概述：</strong>该研究探讨了多轮强化学习在LLM智能体中的实际改进机制。作者通过Pass@(K,T)指标分析了采样宽度和交互深度对性能的影响，发现轨迹级强化学习的优势高度依赖于交互预算，且其核心作用在于提升错误恢复能力与长程任务韧性。为缓解预算依赖带来的部署风险，研究提出了BudgetMix RL策略，通过在训练期间调整交互预算来增强智能体的鲁棒性。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>多轮智能体强化学习的性能优势高度依赖于交互预算，在预算收紧时该优势会显著减弱。<br><small>摘要依据：Evaluating across sampling breadth K and interaction depth T via Pass@(K,T), we show that trajectory-level RL advantages depend on sufficient turn budgets, diminishing significantly when budgets tighten.</small></li>
+<li>智能体强化学习并不均匀地提升单步决策质量，其核心优势集中在错误恢复和长程任务的韧性上。<br><small>摘要依据：Besides, agentic RL does not uniformly elevate single-step decision quality; rather, its strength concentrates in error recovery and long-horizon resilience.</small></li>
+<li>提出的BudgetMix RL策略在训练阶段动态调整交互预算，从而在多种执行场景中实现了稳健的性能表现。<br><small>摘要依据：Experiments demonstrate that BudgetMix RL achieves robust performance across diverse execution settings.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习 · 大模型后训练 · 推理</p>
+<p><strong>原文摘要节选：</strong>While multi-turn agentic reinforcement learning (RL) excels on long-horizon tasks, its performance gains remain highly sensitive to interaction constraints. Evaluating across sampling breadth K and interaction depth T via Pass@(K,T), we show that trajectory-level RL advantages depend on sufficient turn budgets, diminishing significantly when budgets tighten. Besides, agentic RL does not uniformly elevate single-step decision quality; rather, its strength concentrates in error recovery and long-horizon resilience. To mitigate the deployment risks caused by this budget dependence, we provide a preliminary discussion on the benefits and limitations of process supervision signals and introduce BudgetMix RL as an alternative that varies interaction budgets during training. Experiments…</p>
+<p><a href="https://arxiv.org/abs/2611.06483">论文原文</a> · <a href="https://arxiv.org/pdf/2611.06483">PDF</a> · <a href="https://huggingface.co/papers/2611.06483">讨论与热度</a> · <a href="https://github.com/GaryStack/Rethinking-Agent-RL">代码</a></p><hr>
+<h2>4. Harness-S: Learning from Sibling Harnesses for Generalizable Agent Training</h2>
+<p><strong>强化学习</strong> · 发表 2026-11-03 · 综合分 5.21</p>
+<p>Zotero 摘要相关性：0.395（相似度分数，不是概率）。</p>
+<p>HF 点赞 63 · 讨论 5 · 本次 HF 热榜第 26 位 · 仓库累计 Star 57（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +9 · 讨论 +2 · Star +4。</p>
+<p><strong>规则标签：</strong>强化学习</p>
+<p><strong>中文概述：</strong>针对代理训练中执行器失效的问题，本文提出了Harness-S方法。该方法通过构建包含多种变体的姐妹执行器库，利用方向性进化生成专门修复不同错误的执行器。当基础执行器失败时，自适应路由机制会选择合适的辅助执行器进行救援，并将获得的经验能力整合到单一策略中，从而在不依赖辅助执行器的情况下提升基础执行器的整体性能。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>Harness-S通过引入辅助执行器库并利用自适应路由机制，显著提升了代理在基础执行器下的表现。<br><small>摘要依据：Across AppWorld, SWE-Gym, and DBBench, the trained policy substantially outperforms policy-only training when returned to the original base harness.</small></li>
+<li>通过策略感知剖面重锚定机制，系统能够动态更新对辅助执行器性能的评估，以适应策略学习的演进。<br><small>摘要依据：Policy-aware profile re-anchoring refreshes this evidence as the policy learns.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>
+<p><strong>原文摘要节选：</strong>Harness evolution from a common base exhibits Locality, Complementarity, and Nonstationarity: variants repair different failures, and their utility changes as the policy learns. Rather than seeking a universally superior harness, we introduce Harness-S to selectively rescue failures of a base execution system through sibling harnesses and transfer the resulting capabilities into a single policy that remains effective under the original harness. Directional Harness Evolution develops specialized sibling harnesses along distinct repair directions, forming a reusable Sibling Harness Pool that remains fixed during policy training. Complementary Harness Rescue Training invokes this pool only when all initial attempts under the base harness fail. The same policy generates fresh rollouts under…</p>
+<p><a href="https://arxiv.org/abs/2611.04277">论文原文</a> · <a href="https://arxiv.org/pdf/2611.04277">PDF</a> · <a href="https://huggingface.co/papers/2611.04277">讨论与热度</a> · <a href="https://github.com/DeepExperience/Harness-S">代码</a></p><hr>
+<h2>5. RoboTryOn: Synthesizing Dexterous Robot Demonstrations from Human Videos via Virtual Try-On</h2>
+<p><strong>机器人</strong> · 发表 2026-11-03 · 综合分 5.18</p>
+<p>Zotero 摘要相关性：0.443（相似度分数，不是概率）。</p>
+<p>HF 点赞 12 · 讨论 2 · 仓库累计 Star 9（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +6 · 讨论 +0 · Star +3。</p>
+<p><strong>规则标签：</strong>人形机器人 · 机器人操作</p>
+<p><strong>中文概述：</strong>针对机器人基础模型依赖人工遥操作示范的问题，本文提出RoboTryOn方法，将人机动作迁移视为虚拟试衣过程。该方法通过将人类视频转化为指定机器人的操作视频，保持背景与任务一致，并利用逆动力学模型从合成视频中提取动作标签以进行策略学习。作者声称该方法显著提高了人形机器人在多项任务中的成功率，且降低了数据收集成本。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>RoboTryOn通过将人类视频转换为目标机器人的操作视频，有效实现了将人类演示迁移至高自由度机器人。<br><small>摘要依据：Specifically, RoboTryOn converts a human video into a video of the target robot specified by a reference image, while preserving the original task, objects, and background.</small></li>
+<li>使用该方法生成的合成数据进行训练，可在无需真实机器人演示的情况下，将新型复杂任务的平均成功率从2%提升至60%。<br><small>摘要依据：Our experiments across multiple humanoid embodiments show that policies trained with our synthetic data improve the average success rate on novel tasks, including challenging bimanual manipulation, from 2% to 60%, without any real robot demonstration of those tasks.</small></li>
+<li>该方法在仅需约三分之一成本的情况下，实现了与纯人工遥操作演示训练相当的策略性能。<br><small>摘要依据：Moreover, training with our synthetic data matches the performance of policies trained solely on teleoperated demonstrations at approximately a third of the collection cost, demonstrating the cost efficiency of our approach.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>人形机器人 · 机器人操作 · 模仿学习</p>
+<p><strong>原文摘要节选：</strong>Robot foundation models have shown remarkable performance in robot control, yet adapting them to a new task still relies heavily on teleoperated demonstrations. Egocentric human videos offer a scalable substitute, but overlaying rendered robots on human videos or retargeting human poses into robot actions leaves significant visual or action gaps for high-DoF robot embodiments. To address this limitation, we propose RoboTryOn, which treats human-to-robot translation as virtual try-on: try-on keeps the person and swaps the garment, RoboTryOn keeps the demonstrated motion and swaps the human for the robot. Specifically, RoboTryOn converts a human video into a video of the target robot specified by a reference image, while preserving the original task, objects, and background. To maintain…</p>
+<p><a href="https://arxiv.org/abs/2611.05163">论文原文</a> · <a href="https://arxiv.org/pdf/2611.05163">PDF</a> · <a href="https://huggingface.co/papers/2611.05163">讨论与热度</a> · <a href="https://github.com/ryan-seungyong-lee/RoboTryOn">代码</a></p><hr>
+<h2>6. PyRUA-REAL: Robot Exploration and Adaptive Learning through RSI in the Real World</h2>
+<p><strong>机器人</strong> · 发表 2026-11-04 · 综合分 5.15</p>
+<p>Zotero 摘要相关性：0.463（相似度分数，不是概率）。</p>
+<p>HF 点赞 12 · 讨论 3</p>
+<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +2。</p>
+<p><strong>规则标签：</strong>推理</p>
+<p><strong>中文概述：</strong>针对代码生成智能体如何通过物理交互实现能力长期提升的问题，本文提出了PyRUA-REAL框架。该框架利用递归自我改进（RSI）机制，将机器人探索经验转化为持久记忆及可复用的执行技能。实验表明，通过在真实世界中进行代码优化与部署，该方法能有效提升机器人在复杂操作任务中的执行成功率与鲁棒性。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>PyRUA-REAL框架通过递归自我改进机制，将交互经验转化为持久化记忆和可复用的执行技能，支持机器人能力的持续提升。<br><small>摘要依据：In this work, we study embodied recursive self-improvement (RSI) through real-world exploration, code refinement, and deployment using PyRUA-REAL, a framework in which coding agents retain interaction experience as persistent memory and reusable executable skills that inform subsequent exploration and improvement.</small></li>
+<li>该方法在八项真实世界任务中取得了91.1%的平均成功率，并在RoboDojo基准测试中实现了84.4%的平均成功率。<br><small>摘要依据：Across eight real-world tasks, PyRUA-REAL achieves an average success rate of 91.1%. In complementary evaluation on 42 tasks from the RoboDojo benchmark, it achieves an average success rate of 84.4%.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作</p>
+<p><strong>原文摘要节选：</strong>Coding agents powered by models such as GPT-6-Astra connect spatial reasoning with executable robot behavior, raising the question of how such agents can produce lasting improvements in robot capabilities from physical interaction. In this work, we study embodied recursive self-improvement (RSI) through real-world exploration, code refinement, and deployment using PyRUA-REAL, a framework in which coding agents retain interaction experience as persistent memory and reusable executable skills that inform subsequent exploration and improvement. Our empirical study places physical manipulation at the center of the improvement process, examining how agents collaborate, what kinds of execution feedback support effective code refinement, and how task specifications and previously acquired skills…</p>
+<p><a href="https://arxiv.org/abs/2611.06768">论文原文</a> · <a href="https://arxiv.org/pdf/2611.06768">PDF</a> · <a href="https://huggingface.co/papers/2611.06768">讨论与热度</a></p><hr>
+<h2>7. Open-HumanScale: An Open Recipe for Scaling Human and Robot Experience for Embodied Foundation Models</h2>
+<p><strong>机器人</strong> · 发表 2026-11-04 · 综合分 5.07</p>
+<p>Zotero 摘要相关性：0.436（相似度分数，不是概率）。</p>
+<p>HF 点赞 19 · 讨论 2</p>
+<p>较上次观测（1.0 天前）：点赞 +4 · 讨论 +0。</p>
+<p><strong>规则标签：</strong>大模型后训练</p>
+<p><strong>中文概述：</strong>针对具身智能模型中机器人操作先验数据扩展需求，本文提出了Open-HumanScale架构。该方案利用5万小时标注后的第一人称视频语料库，通过系统性研究揭示了预训练数据量与机器人任务成功率之间的对数线性缩放规律。基于此构建的世界-动作模型HumanWAM通过仿真评估与物理机器人实验验证了其在大规模预训练及联合人机数据训练下的泛化能力，并在多个基准测试中达到了较高的成功率。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>揭示了预训练数据时长与机器人下游任务成功率之间存在经验性的对数线性缩放规律。<br><small>摘要依据：we systematically investigate pure human pretraining via closed-loop simulation evaluations and uncover an empirical log-linear scaling law linking pretraining data hours to downstream robot success rates.</small></li>
+<li>通过引入视觉目标条件的联合人机数据预训练，显著提升了机器人在仿真与物理场景中的零样本泛化性能。<br><small>摘要依据：Hybrid data scaling unlocks broad zero-shot generalization across both simulation and physical benchmarks, propelling post-trained RoboTwin 2.0 performance to new state-of-the-art levels</small></li>
+<li>HumanWAM-Goal模型展示了突现的具身上下文学习能力，可在无需参数更新的情况下适应未见过的视觉目标。<br><small>摘要依据：On physical robots, HumanWAM-Goal further exhibits emergent embodied in-context learning, dynamically adapting its manipulation behavior to unseen visual goals without parameter updates.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · Sim-to-Real · 世界模型</p>
+<p><strong>原文摘要节选：</strong>Egocentric human video offers a scalable source of manipulation priors for robot learning, yet translating raw data scale into generalizable robot policies demands rigorous data curation and training recipes. We introduce Open-HumanScale, the first fully open recipe for scaling egocentric pretraining to 50,000 hours, anchored by Open-HumanScale-50K---a curated egocentric video corpus densely annotated with hand motion and natural language. Leveraging this corpus, we systematically investigate pure human pretraining via closed-loop simulation evaluations and uncover an empirical log-linear scaling law linking pretraining data hours to downstream robot success rates. Grounded in these findings, we develop HumanWAM-Vanilla, a world--action model pretrained exclusively on 50k hours of…</p>
+<p><a href="https://arxiv.org/abs/2611.06817">论文原文</a> · <a href="https://arxiv.org/pdf/2611.06817">PDF</a> · <a href="https://huggingface.co/papers/2611.06817">讨论与热度</a></p><hr>
+<h2>8. Democratizing Robot-Use Agents: A Unified Harness with Open Models</h2>
+<p><strong>机器人</strong> · 发表 2026-11-01 · 综合分 5.04</p>
+<p>Zotero 摘要相关性：0.451（相似度分数，不是概率）。</p>
+<p>HF 点赞 48 · 讨论 1 · 本次 HF 热榜第 12 位 · 仓库累计 Star 276（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +0 · 讨论 +0 · Star +18。</p>
+<p><strong>规则标签：</strong>视觉语言动作</p>
+<p><strong>中文概述：</strong>针对现有机器人使用智能体（RUA）依赖封闭私有模型导致研究受限的问题，作者提出了uni-robot-agent，这是一个支持进一步训练的开放权重机器人操作统一框架。实验表明，基于Qwen3.8-Flash-Next模型的方法在RoboDojo基准测试中优于GPT-6 Astra-RoboProbe及多种基线，并在19项真实世界任务中表现出竞争力。此外，作者分析了模型特性与机器人操作能力之间的联系，为未来RUA的协同训练提供了参考。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>uni-robot-agent框架使开放权重模型在机器人操作任务中取得了具有竞争力的性能，且无需特权输入。<br><small>摘要依据：Without privileged inputs, an out-of-the-box Qwen3.8-Flash-Next achieves a RoboDojo Score of 31.39, surpassing the published GPT-6 Astra-RoboProbe result of 28.97 and many VLA/WAM baselines, and performs competitively on 19 real-world tasks.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 视觉语言动作 · 大模型后训练</p>
+<p><strong>原文摘要节选：</strong>Robot-use Agents (RUAs) have shown promising zero-shot manipulation capabilities, but reliance on frontier, proprietary models limits research into further training. To democratize RUA research, we introduce uni-robot-agent, a unified harness for competitive open-weight robot use that supports further training. Without privileged inputs, an out-of-the-box Qwen3.8-Flash-Next achieves a RoboDojo Score of 31.39, surpassing the published GPT-6 Astra-RoboProbe result of 28.97 and many VLA/WAM baselines, and performs competitively on 19 real-world tasks. Our analysis across model generations, families, and sizes links effective robot use to four general capabilities, suggesting that future RUA training should develop them jointly.</p>
+<p><a href="https://arxiv.org/abs/2611.01560">论文原文</a> · <a href="https://arxiv.org/pdf/2611.01560">PDF</a> · <a href="https://huggingface.co/papers/2611.01560">讨论与热度</a> · <a href="https://github.com/Open-RUA/uni-robot-agent">代码</a></p><hr>
+<h2>9. WebHarbor: Docking Real Websites for Evolving GUI Agent Environments</h2>
+<p><strong>强化学习</strong> · 发表 2026-11-02 · 综合分 4.96</p>
+<p>Zotero 摘要相关性：0.435（相似度分数，不是概率）。</p>
+<p>HF 点赞 27 · 讨论 2 · 仓库累计 Star 62（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +2 · 讨论 +0 · Star +2。</p>
+<p><strong>规则标签：</strong>强化学习</p>
+<p><strong>中文概述：</strong>针对现有Web GUI智能体训练与评估面临的环境不稳定性及功能受限问题，本文提出了WebHarbor。这是一个包含153个可执行、容器化的真实网站仿真环境集合，通过人工与智能体协同构建，具备高视觉保真度和功能深度，提供3,518个涵盖复杂多步及认证后工作流的任务。实验表明，在该环境中使用强化学习训练的智能体在未见任务中表现出良好的泛化能力，并在多个基准测试中展现出竞争力。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>构建了包含153个容器化网站环境的WebHarbor，为Web GUI智能体提供确定性的训练与评估支持。<br><small>摘要依据：We propose WebHarbor, a suite of 153 executable and dockerized website environments that faithfully reconstruct the visual interfaces, content, and functional workflows of real-world web services under deterministic control.</small></li>
+<li>WebHarbor支持复杂的多步及认证后任务流，弥补了现有研究在任务覆盖面上的不足。<br><small>摘要依据：The resulting suite comprises 3,518 tasks spanning multi-step and post-authentication workflows, where existing works often fail to cover.</small></li>
+<li>基于WebHarbor的强化学习训练可提升GUI智能体的泛化性能，使其在多个基准测试中达到主流开源智能体的水平。<br><small>摘要依据：We demonstrate that a Qwen 4B-level GUI agent trained with RL in WebHarbor generalizes to unseen tasks and performs competitively with leading open-source GUI web agents across four benchmarks.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习 · 机器人操作</p>
+<p><strong>原文摘要节选：</strong>GUI web agents require realistic and interactive environments that remain stable during both evaluation and training. Live website evaluation suffers from changing content, access restrictions, and limited coverage of authenticated workflows, while existing synthetic environments for training often lack functional depth and visual fidelity. We propose WebHarbor, a suite of 153 executable and dockerized website environments that faithfully reconstruct the visual interfaces, content, and functional workflows of real-world web services under deterministic control. We build WebHarbor through task-driven human-agent collaboration, where environments evolve as new tasks expand their functional scope, coding agents implement the required changes, and human contributors audit visual fidelity,…</p>
+<p><a href="https://arxiv.org/abs/2611.03634">论文原文</a> · <a href="https://arxiv.org/pdf/2611.03634">PDF</a> · <a href="https://huggingface.co/papers/2611.03634">讨论与热度</a> · <a href="https://github.com/aiming-lab/WebHarbor">代码</a></p><hr>
+<h2>10. Has GPT-6-Astra Achieved Embodied Intelligence?</h2>
+<p><strong>机器人</strong> · 发表 2026-10-15 · 综合分 4.83</p>
+<p>Zotero 摘要相关性：0.477（相似度分数，不是概率）。</p>
+<p>HF 点赞 135 · 讨论 2 · 本次 HF 热榜第 45 位 · 仓库累计 Star 504（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +0 · 讨论 +0 · Star +27。</p>
+<p><strong>规则标签：</strong>人形机器人 · 机器人操作 · 导航</p>
+<p><strong>中文概述：</strong>本文评估了GPT-6-Astra在机器人操作与导航任务中的表现。研究者通过12个基准测试探究了该模型在上下文学习下的能力极限，并分析了将其作为高层推理器与低层控制器结合的代理机制。实验发现，尽管该模型展现出较高的具身能力，但在真实物理部署中仍面临数据采集成本高、物理约束限制及长期执行效率等挑战。作者认为该模型尚未达到实用具身智能的标准。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>GPT-6-Astra在跨越桌面操作、人形机器人、移动平台及灵巧手的12个代表性基准测试中，通过上下文学习实现了出色的性能。<br><small>摘要依据：We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance</small></li>
+<li>研究指出高层“系统2”推理器与低层“系统1”控制器的闭环协调方案虽然有效，但伴随着较高的计算成本。<br><small>摘要依据：We identify that close-loop coordination between a high-level &quot;System 2&quot; reasoner (i.e., GPT-6-Astra) and a low-level &quot;System 1&quot; controller (e.g., π0.5) is costly but effective.</small></li>
+<li>在8种机器人配置的实机部署实验中，研究发现现有范式难以通过延长执行时间来换取物理约束下的高成功率。<br><small>摘要依据：Our experiments on 8 robot configurations reveal substantial gaps: 1) robot demonstrations required for ICL are expensive to collect, and 2) it is implausible to trade longer execution for higher success rates with physical constraints.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 导航 · 人形机器人 · 推理</p>
+<p><strong>原文摘要节选：</strong>GPT-6-Astra demonstrates a level of competence in robotic manipulation and navigation that challenges the conventional paradigm of building specialized models for individual tasks and embodiments. In this report, we ask not only how capable GPT-6-Astra is, but what its capabilities imply for the field. First, we probe the limits of standalone GPT-6-Astra. We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance (Fig. 1). Future research may focus on improving 1) the generality of ICL 2) cost and…</p>
+<p><a href="https://arxiv.org/abs/2610.22471">论文原文</a> · <a href="https://arxiv.org/pdf/2610.22471">PDF</a> · <a href="https://huggingface.co/papers/2610.22471">讨论与热度</a> · <a href="https://github.com/OpenSenseNova/SenseNova-RoboRSI">代码</a></p><hr></body></html>
