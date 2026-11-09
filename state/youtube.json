@@ -5039,6 +5039,208 @@
           "abstract_zh": "语言模型（LMs）往往难以生成多样化且类人的创意内容，这引发了人们对于通过反复接触相似输出而导致人类思维长期同质化的担忧。然而，评估语言模型输出多样性的可扩展方法仍然有限，特别是在超越随机数或名称生成等狭窄任务，或超越单一模型重复采样之外的场景中。我们引入了Infinity-Chat，这是一个包含2.6万条多样化、真实世界、开放式用户查询的大规模数据集，这些查询允许存在多种合理的答案，且没有单一的基础事实。我们首次提出了一套全面的分类法，用于表征提交给语言模型的开放式提示的全谱系，包括6个顶级类别（如头脑风暴与构思），并进一步细分为17个子类别。利用Infinity-Chat，我们对语言模型中的模式崩塌进行了大规模研究，揭示了语言模型在开放式生成中存在显著的“人工蜂群思维”（Artificial Hivemind）效应，其特征在于：（1）模型内重复，即单一模型持续生成相似的响应；（2）模型间同质化，即不同的模型产生惊人相似的输出。Infinity-Chat还包含了31,250条人类标注，涵盖绝对评分和成对偏好，每个示例均有25条独立的人类标注。这使得研究针对开放式查询的集体和个人特定人类偏好成为可能。我们的研究结果表明，尽管在整体质量上保持相当，但在引出不同特质标注者偏好的模型生成内容上，语言模型、奖励模型和作为评判者的语言模型对人类评分的校准程度较低。总体而言，INFINITY-CHAT提供了首个用于系统性研究语言模型真实世界开放式查询的大规模资源，揭示了关键的洞察，以指导未来旨在减轻“人工蜂群思维”所带来的长期AI安全风险的研究。"
         }
       ]
+    },
+    "FT5kcNplyB0": {
+      "video_id": "FT5kcNplyB0",
+      "video_title": "Hybrid Particle-Voxel Dynamics for Multimodal 3D World Simulation (Nov 2026)",
+      "published": "2026-11-09",
+      "video_url": "https://www.youtube.com/watch?v=FT5kcNplyB0",
+      "papers": [
+        {
+          "id": "2611.04492",
+          "title": "Hybrid Particle-Voxel Dynamics for Multimodal 3D World Simulation (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.04492"
+        }
+      ]
+    },
+    "2qwJsOVkDK4": {
+      "video_id": "2qwJsOVkDK4",
+      "video_title": "Memorilla: Latent Semantic Memory for LLMs (Oct 2026)",
+      "published": "2026-11-09",
+      "video_url": "https://www.youtube.com/watch?v=2qwJsOVkDK4",
+      "papers": [
+        {
+          "id": "2610.21375",
+          "title": "Memorilla: Latent Semantic Memory for LLMs (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.21375"
+        }
+      ]
+    },
+    "Usr-8uxi1u0": {
+      "video_id": "Usr-8uxi1u0",
+      "video_title": "ToolSpace: Scaling Tool-Centric Environment Synthesis for Long-Horizon Agents (Nov 2026)",
+      "published": "2026-11-09",
+      "video_url": "https://www.youtube.com/watch?v=Usr-8uxi1u0",
+      "papers": [
+        {
+          "id": "2611.05036",
+          "title": "ToolSpace: Scaling Tool-Centric Environment Synthesis for Long-Horizon Agents (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.05036"
+        }
+      ]
+    },
+    "2X8S6x5jBvg": {
+      "video_id": "2X8S6x5jBvg",
+      "video_title": "DreamX: Video Diffusion Model is a Universal Latent Action Learner (Nov 2026)",
+      "published": "2026-11-09",
+      "video_url": "https://www.youtube.com/watch?v=2X8S6x5jBvg",
+      "papers": [
+        {
+          "id": "2611.05377",
+          "title": "DreamX: Video Diffusion Model is a Universal Latent Action Learner (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.05377"
+        }
+      ]
+    },
+    "azXOlfaxu38": {
+      "video_id": "azXOlfaxu38",
+      "video_title": "VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding (Nov 2026)",
+      "published": "2026-11-09",
+      "video_url": "https://www.youtube.com/watch?v=azXOlfaxu38",
+      "papers": [
+        {
+          "id": "2611.08449",
+          "title": "VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.08449"
+        }
+      ]
+    },
+    "BMyXKTyM3eY": {
+      "video_id": "BMyXKTyM3eY",
+      "video_title": "CoworkOS:Scaling Agent Coworkers for Real-world Automation (Nov 2026)",
+      "published": "2026-11-09",
+      "video_url": "https://www.youtube.com/watch?v=BMyXKTyM3eY",
+      "papers": [
+        {
+          "id": "2611.03178",
+          "title": "CoworkOS:Scaling Agent Coworkers for Real-world Automation (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.03178"
+        }
+      ]
+    },
+    "pHKjlY-NPsU": {
+      "video_id": "pHKjlY-NPsU",
+      "video_title": "GSBR: Geometric Support Behavior Regularization for Online RL (Nov 2026)",
+      "published": "2026-11-09",
+      "video_url": "https://www.youtube.com/watch?v=pHKjlY-NPsU",
+      "papers": [
+        {
+          "id": "2611.05295",
+          "title": "GSBR: Geometric Support Behavior Regularization for Online RL (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.05295"
+        }
+      ]
+    },
+    "PGUzAMZKBbk": {
+      "video_id": "PGUzAMZKBbk",
+      "video_title": "Understanding AI from the Inside: The State of Mechanistic Interpretability for AI Safety (Nov 2026)",
+      "published": "2026-11-09",
+      "video_url": "https://www.youtube.com/watch?v=PGUzAMZKBbk",
+      "papers": [
+        {
+          "id": "2611.08438",
+          "title": "Understanding AI from the Inside: The State of Mechanistic Interpretability for AI Safety (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.08438"
+        }
+      ]
+    },
+    "-rrFw8bbZNg": {
+      "video_id": "-rrFw8bbZNg",
+      "video_title": "Latent Sparse Attention: Towards Subquadratic Ultra-Long Context Attention (Oct 2026)",
+      "published": "2026-11-09",
+      "video_url": "https://www.youtube.com/watch?v=-rrFw8bbZNg",
+      "papers": [
+        {
+          "id": "2610.42147",
+          "title": "Latent Sparse Attention: Towards Subquadratic Ultra-Long Context Attention (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.42147"
+        }
+      ]
+    },
+    "WOgKx-7PbRw": {
+      "video_id": "WOgKx-7PbRw",
+      "video_title": "IdeaTaste: Do LLMs Share the Research Taste of Human Researchers? (Nov 2026)",
+      "published": "2026-11-09",
+      "video_url": "https://www.youtube.com/watch?v=WOgKx-7PbRw",
+      "papers": [
+        {
+          "id": "2611.03424",
+          "title": "IdeaTaste: Do LLMs Share the Research Taste of Human Researchers? (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.03424"
+        }
+      ]
+    },
+    "ltf5S3Xb98s": {
+      "video_id": "ltf5S3Xb98s",
+      "video_title": "Democratizing Robot-Use Agents: A Unified Harness with Open Models (Nov 2026)",
+      "published": "2026-11-09",
+      "video_url": "https://www.youtube.com/watch?v=ltf5S3Xb98s",
+      "papers": [
+        {
+          "id": "2611.01560",
+          "title": "Democratizing Robot-Use Agents: A Unified Harness with Open Models (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.01560"
+        }
+      ]
+    },
+    "_8AU5_EBQ8s": {
+      "video_id": "_8AU5_EBQ8s",
+      "video_title": "Adversarial Speculative Reasoning Improves Long Horizon Agents (Nov 2026)",
+      "published": "2026-11-09",
+      "video_url": "https://www.youtube.com/watch?v=_8AU5_EBQ8s",
+      "papers": [
+        {
+          "id": "2611.05345",
+          "title": "Adversarial Speculative Reasoning Improves Long Horizon Agents (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.05345"
+        }
+      ]
+    },
+    "3SvpXlEMGXo": {
+      "video_id": "3SvpXlEMGXo",
+      "video_title": "On the Generalization Limitation of On-Policy Distillation for Post-RL Consolidation (Nov 2026)",
+      "published": "2026-11-09",
+      "video_url": "https://www.youtube.com/watch?v=3SvpXlEMGXo",
+      "papers": [
+        {
+          "id": "2611.05609",
+          "title": "On the Generalization Limitation of On-Policy Distillation for Post-RL Consolidation (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.05609"
+        }
+      ]
+    },
+    "UNPUQeTo3ag": {
+      "video_id": "UNPUQeTo3ag",
+      "video_title": "World Models: How Close Are We to General-Purpose Robots?",
+      "published": "2026-11-09",
+      "video_url": "https://www.youtube.com/watch?v=UNPUQeTo3ag",
+      "papers": [
+        {
+          "id": "2506.09985",
+          "title": "2506.09985",
+          "url": "https://arxiv.org/abs/2506.09985"
+        },
+        {
+          "id": "2610.06805",
+          "title": "2610.06805",
+          "url": "https://arxiv.org/abs/2610.06805"
+        },
+        {
+          "id": "2610.28480",
+          "title": "2610.28480",
+          "url": "https://arxiv.org/abs/2610.28480"
+        },
+        {
+          "id": "2610.22471",
+          "title": "2610.22471",
+          "url": "https://arxiv.org/abs/2610.22471"
+        },
+        {
+          "id": "1803.10122",
+          "title": "1803.10122",
+          "url": "https://arxiv.org/abs/1803.10122"
+        }
+      ]
     }
   }
 }
