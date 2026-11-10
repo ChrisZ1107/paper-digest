@@ -5277,6 +5277,62 @@
           "abstract_zh": "我们探索了为流行的强化学习环境构建生成式神经网络模型的方法。我们的世界模型（world model）可以以无监督的方式快速训练，从而学习环境的压缩空间和时间表征。通过将从世界模型提取的特征作为智能体的输入，我们可以训练一个非常紧凑且简单的策略来解决所需的任务。我们甚至可以让智能体完全在其世界模型生成的幻觉梦境中进行训练，并将该策略迁移回真实环境中。本文的交互式版本可在 https://worldmodels.github.io/ 访问。"
         }
       ]
+    },
+    "rH6IsJosOG4": {
+      "video_id": "rH6IsJosOG4",
+      "video_title": "Perceptive Humanoid Motion from Simulation (Nov 2026)",
+      "published": "2026-11-10",
+      "video_url": "https://www.youtube.com/watch?v=rH6IsJosOG4",
+      "papers": [
+        {
+          "id": "2611.06908",
+          "title": "Perceptive Humanoid Motion from Simulation (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.06908"
+        }
+      ]
+    },
+    "Te9tKY7N-Dk": {
+      "video_id": "Te9tKY7N-Dk",
+      "papers": []
+    },
+    "CPN1vAjBbIA": {
+      "video_id": "CPN1vAjBbIA",
+      "video_title": "SLA: Scaling Spatial-Language-Action Model via Continual Pre-training (Nov 2026)",
+      "published": "2026-11-10",
+      "video_url": "https://www.youtube.com/watch?v=CPN1vAjBbIA",
+      "papers": [
+        {
+          "id": "2611.08373",
+          "title": "SLA: Scaling Spatial-Language-Action Model via Continual Pre-training (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.08373"
+        }
+      ]
+    },
+    "NP0AfeQnSoU": {
+      "video_id": "NP0AfeQnSoU",
+      "video_title": "Scientist World: Grow a Research World for AI-Scientists (Nov 2026)",
+      "published": "2026-11-10",
+      "video_url": "https://www.youtube.com/watch?v=NP0AfeQnSoU",
+      "papers": [
+        {
+          "id": "2611.08478",
+          "title": "Scientist World: Grow a Research World for AI-Scientists (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.08478"
+        }
+      ]
+    },
+    "vEMUI66QQGw": {
+      "video_id": "vEMUI66QQGw",
+      "video_title": "From Pixels to Actions – Towards Native Vision-Language-Action Policies (Nov 2026)",
+      "published": "2026-11-10",
+      "video_url": "https://www.youtube.com/watch?v=vEMUI66QQGw",
+      "papers": [
+        {
+          "id": "2611.06918",
+          "title": "From Pixels to Actions – Towards Native Vision-Language-Action Policies (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.06918"
+        }
+      ]
     }
   }
 }
