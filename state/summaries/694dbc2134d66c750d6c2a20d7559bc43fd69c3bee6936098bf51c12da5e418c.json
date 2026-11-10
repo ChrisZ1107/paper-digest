@@ -1,0 +1,17 @@
+{
+  "overview": "该研究针对预训练机器人策略在面对未知障碍物时难以进行有效避障的问题，提出了一种推理时障碍物引导框架。通过将相对动作累积转化为工作空间轨迹，利用基于SDF的障碍物模型评估交互，并将障碍物响应反向传播至去噪过程中的所有动作增量。实验表明，该方法在多种操作任务中显著提升了无碰撞任务成功率。",
+  "highlights": [
+    {
+      "text": "提出了一种在推理时将障碍物响应传播到动作序列的框架，实现了更协调的避障动作。",
+      "evidence": "It rolls out cumulative relative actions into a workspace trajectory, evaluates obstacle interactions along the trajectory with an SDF-based obstacle model, and propagates each obstacle response to all contributing action increments during denoising."
+    },
+    {
+      "text": "在真实机器人实验中，该方法在七种障碍物约束场景下的避障成功率远高于对比的点式引导基线。",
+      "evidence": "Real-robot experiments across seven obstacleconstrained scenarios spanning four manipulation tasks show that our method achieves 105/140 (75.0%) collision-free task successes, compared with 8/140 (5.7%) for absolute-action pointwise guidance."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "推理"
+  ]
+}

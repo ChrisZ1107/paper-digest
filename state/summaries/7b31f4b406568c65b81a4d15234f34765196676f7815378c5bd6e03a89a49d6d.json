@@ -1,0 +1,23 @@
+{
+  "overview": "本文提出A2-MEAS具身多智能体框架，旨在通过代码作为扩展接口，解决机器人持续自主控制与失败恢复问题。该方法结合了纠错编码、MetaBrain监督机制及具备运动感知历史和潜在世界模型的视觉语言动作策略（A2-WLA）。作者声称，该设计在BEHAVIOR 2026和RoboTwin 2.0基准测试以及多项真实机器人任务中表现优于对比模型，且训练效率显著提升。",
+  "highlights": [
+    {
+      "text": "A2-MEAS框架通过代码作为扩展接口，利用纠错编码和MetaBrain监督机制实现机器人行为的有效纠错与自主导航。",
+      "evidence": "A2-MEAS, an embodied multi-agent framework built around code as a scaling interface. Learned correction codes combine corrective language, spatial evidence, execution history, and action proposals. MetaBrain provides training supervision and runtime guidance."
+    },
+    {
+      "text": "在BEHAVIOR 2026及RoboTwin 2.0等基准测试中，该方法在任务成功率和Q-score指标上均显示出相较于对比基准的性能优势。",
+      "evidence": "Surprisingly, this simple design with action pretraining and task specialization reaches 0.5755 Q-score on the 50-task BEHAVIOR 2026 public subset before online correction, 2.21x the 2025 winner's reported 0.2605 across different benchmark editions and training configurations."
+    },
+    {
+      "text": "该训练基础设施实现了高样本吞吐量，在匹配硬件条件下达到对比方案4.03倍的训练速度。",
+      "evidence": "Our training infrastructure delivers 427.1 samples per second, 4.03x the throughput of a pi0.5 reference implementation on matched hardware."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "视觉语言动作",
+    "世界模型",
+    "多智能体"
+  ]
+}

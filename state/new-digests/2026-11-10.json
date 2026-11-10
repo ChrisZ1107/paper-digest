@@ -1,0 +1,211 @@
+{
+  "date": "2026-11-10",
+  "timestamp": "2026-11-10T09:01:23.146850+08:00",
+  "title": "2026-11-10 每日新论文 5",
+  "slug": "2026-11-10-new",
+  "papers": [
+    {
+      "id": "2611.08857",
+      "title": "STRIDE: Learning Humanoid Locomotion in Minutes with Acceleration-Based Rewards",
+      "abstract": "Learning locomotion directly on a humanoid robot is a promising direction to avoid the sim-to-real gap. However, locomotion rewards in Reinforcement Learning (RL) typically track the base velocity, which cannot be measured onboard without an external motion capture system or well-calibrated state estimator. This is why we introduce \\method{}, which learns humanoid locomotion from minutes of samples with a reward that only requires the onboard Inertial Measurement Unit (IMU). Instead of tracking the base velocity, STRIDE rewards the robot for following a commanded acceleration profile. To learn efficiently from this reward, we use the off-policy RL algorithm XQC and combine a high gain setting for the joint position controllers with left-right symmetry augmentation. In simulation, STRIDE learns to walk on the Unitree G1 and Booster T1 humanoids within 14 minutes of samples. Compared to learning without these two components, it reduces the falls during training by 81%, while without them the robot learns only in over an hour.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-11-09",
+      "date_label": "公告",
+      "age_days": 0.8342956811342593,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.51762,
+      "growth": null,
+      "score": 3.365,
+      "rule_tags": [
+        "强化学习",
+        "人形机器人",
+        "足式运动",
+        "Sim-to-Real"
+      ],
+      "summary_status": "Gemini 暂不可用，显示规则标签与原文摘要。"
+    },
+    {
+      "id": "2611.09892",
+      "title": "On Agentic Manipulation Policies",
+      "abstract": "Recent work on robot manipulation has focused on specialist policies trained on demonstrations. We show that generalist AI models can control manipulators more reliably than specialist policies such as vision-language-action models (VLAs) and world-action models (WAMs). We systematically analyze agentic manipulation policies (AMPs), in which a generalist AI model commands the manipulator directly, adapting its actions as the task unfolds. We present AMP1, a reference harness that runs unchanged across single-arm, bimanual, and mobile manipulation. AMP1 achieves state-of-the-art results on the RoboLab-120 and CaP-Gym benchmarks, with no demonstrations or task-specific training. On RoboLab-120, AMP1 reaches an 85.6\\% success rate zero-shot, compared to 49.2\\% and 42.9\\% for leading VLA and WAM policies. The agent succeeds zero-shot in 104 of 108 real-world trials spanning twelve tasks and three robot instances, reducing failure rates by 20x and 15x relative to strong VLA and WAM baselines. The basic harness supplies no grasping, pushing, or placing skills; the agent develops its own strategies, such as searching for hidden objects, using objects as tools, and calibrating its cameras. With the addition of a persistent memory store, the agent can also learn from experience: an augmented harness with a memory representation that is carried across episodes lowers the failure rate on RoboDojo bimanual manipulation tasks by 4.6x relative to zero-shot deployment. Our analysis suggests that AMPs are substantially more general and robust than specialist manipulation policies, providing a promising foundation for robot manipulation.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-11-09",
+      "date_label": "公告",
+      "age_days": 0.8342956811342593,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.49533,
+      "growth": null,
+      "score": 3.22,
+      "rule_tags": [
+        "机器人操作",
+        "视觉语言动作"
+      ],
+      "summary_status": "Gemini 暂不可用，显示规则标签与原文摘要。"
+    },
+    {
+      "id": "2611.09266",
+      "title": "SUGARv2: Learning Diverse Visual Humanoid Loco-Manipulation Skills from Synthesized Interaction References",
+      "abstract": "Scaling up visual humanoid loco-manipulation skill acquisition requires reducing the human effort needed as tasks and spatial configurations expand, particularly in demonstration collection and task-specific training design. We present SUGARv2, a unified framework for learning diverse visual humanoid loco-manipulation skills through interaction reference synthesis and a shared training pipeline. To obtain diverse references at low cost, we adapt reusable task templates to different spatial configurations, synthesizing coordinated robot and object motions. To reduce task-specific reward design and training effort, we use reference-based imitation as a common learning objective across tasks. We first train privileged teachers to execute these references, then train visual policies through teacher distillation and reinforcement learning with the same reference-based mimic rewards, using diverse object instances and visual domain randomization to support visual generalization and sim-to-real transfer. Across five humanoid loco-manipulation tasks, SUGARv2 achieves a mean success rate of 91.0% in simulation. Deployment on a real humanoid robot further demonstrates successful sim-to-real transfer for whole-body manipulation. These results demonstrate the framework's potential for learning diverse visual humanoid loco-manipulation skills.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-11-09",
+      "date_label": "公告",
+      "age_days": 0.8342956811342593,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.49095,
+      "growth": null,
+      "score": 3.191,
+      "rule_tags": [
+        "强化学习",
+        "人形机器人",
+        "Sim-to-Real"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文提出了SUGARv2框架，旨在通过合成交互参考和共享训练流程，降低人形机器人学习复杂视觉操纵任务的人力成本。该方法利用任务模板合成机器人与物体的协同动作，并通过模仿学习训练特权教师模型，随后通过知识蒸馏和强化学习训练视觉策略，最终实现模拟环境中的高成功率及现实世界的零样本迁移。",
+        "highlights": [
+          {
+            "text": "提出了一种通过合成交互参考和统一训练流程，高效学习多种视觉人形运动操纵技能的通用框架。",
+            "evidence": "We present SUGARv2, a unified framework for learning diverse visual humanoid loco-manipulation skills through interaction reference synthesis and a shared training pipeline."
+          },
+          {
+            "text": "在模拟实验中实现了91.0%的平均成功率，并在真实人形机器人上验证了全身操纵任务的模拟到真实迁移能力。",
+            "evidence": "Across five humanoid loco-manipulation tasks, SUGARv2 achieves a mean success rate of 91.0% in simulation. Deployment on a real humanoid robot further demonstrates successful sim-to-real transfer for whole-body manipulation."
+          }
+        ],
+        "tags": [
+          "人形机器人",
+          "机器人操作",
+          "模仿学习",
+          "Sim-to-Real"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.09124",
+      "title": "Toward the Era of Agentic Embodied Intelligence",
+      "abstract": "Foundation models increasingly guide robot actions, yet sustained autonomy requires efficient control and failure recovery. We introduce A2-MEAS, an embodied multi-agent framework built around code as a scaling interface. Learned correction codes combine corrective language, spatial evidence, execution history, and action proposals. MetaBrain provides training supervision and runtime guidance. A correction encoder and adapter absorb this knowledge into policy weights during training, while fresh codes adapt behavior with frozen weights at deployment. The action model, A2-WLA, adds motion-aware history and a latent world model to a vision-language-action policy. Surprisingly, this simple design with action pretraining and task specialization reaches 0.5755 Q-score on the 50-task BEHAVIOR 2026 public subset before online correction, 2.21x the 2025 winner's reported 0.2605 across different benchmark editions and training configurations. On all 100 BEHAVIOR 2026 public tasks, A2-MEAS achieves 0.6411 Q-score and 45.40% task success. On RoboTwin 2.0, A2-WLA achieves 93.98% average success, rising to 95.05% with the complete system. Across 12 real-robot tasks in five household settings, A2-WLA achieves 57.92% average success versus 26.67% for pi0.5. In long-horizon pour-over coffee preparation, a history-conditioned adapter raises post-failure completion at two filter-handling steps from 14% to 94% and from 8% to 82%, compared with A2-WLA retries. Our training infrastructure delivers 427.1 samples per second, 4.03x the throughput of a pi0.5 reference implementation on matched hardware. We will release the system, models, training scripts, and infrastructure to support efficient embodied learning.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-11-09",
+      "date_label": "公告",
+      "age_days": 0.8342956811342593,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.4893,
+      "growth": null,
+      "score": 3.18,
+      "rule_tags": [
+        "世界模型",
+        "视觉语言动作",
+        "多智能体"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文提出A2-MEAS具身多智能体框架，旨在通过代码作为扩展接口，解决机器人持续自主控制与失败恢复问题。该方法结合了纠错编码、MetaBrain监督机制及具备运动感知历史和潜在世界模型的视觉语言动作策略（A2-WLA）。作者声称，该设计在BEHAVIOR 2026和RoboTwin 2.0基准测试以及多项真实机器人任务中表现优于对比模型，且训练效率显著提升。",
+        "highlights": [
+          {
+            "text": "A2-MEAS框架通过代码作为扩展接口，利用纠错编码和MetaBrain监督机制实现机器人行为的有效纠错与自主导航。",
+            "evidence": "A2-MEAS, an embodied multi-agent framework built around code as a scaling interface. Learned correction codes combine corrective language, spatial evidence, execution history, and action proposals. MetaBrain provides training supervision and runtime guidance."
+          },
+          {
+            "text": "在BEHAVIOR 2026及RoboTwin 2.0等基准测试中，该方法在任务成功率和Q-score指标上均显示出相较于对比基准的性能优势。",
+            "evidence": "Surprisingly, this simple design with action pretraining and task specialization reaches 0.5755 Q-score on the 50-task BEHAVIOR 2026 public subset before online correction, 2.21x the 2025 winner's reported 0.2605 across different benchmark editions and training configurations."
+          },
+          {
+            "text": "该训练基础设施实现了高样本吞吐量，在匹配硬件条件下达到对比方案4.03倍的训练速度。",
+            "evidence": "Our training infrastructure delivers 427.1 samples per second, 4.03x the throughput of a pi0.5 reference implementation on matched hardware."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "视觉语言动作",
+          "世界模型",
+          "多智能体"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.09340",
+      "title": "Horizon-Coupled Obstacle Guidance for Relative-Action Diffusion Policies",
+      "abstract": "Real-world robot deployment requires adapting learned policies to unseen obstacles without collecting new demonstrations or retraining. Existing policy-level guidance often applies obstacle corrections independently at individual horizon steps, which may address local obstacle violations but fail to coordinate the action sequence into a complete, task-directed detour. How obstacle responses should be propagated across the action horizon to coordinate complete, task-directed avoidance motion remains underexplored. We introduce an inferencetime obstacle-guidance framework for pretrained relative-action diffusion policies. It rolls out cumulative relative actions into a workspace trajectory, evaluates obstacle interactions along the trajectory with an SDF-based obstacle model, and propagates each obstacle response to all contributing action increments during denoising. Real-robot experiments across seven obstacleconstrained scenarios spanning four manipulation tasks show that our method achieves 105/140 (75.0%) collision-free task successes, compared with 8/140 (5.7%) for absolute-action pointwise guidance. Ablations show that the relative-action horizoncoupled formulation provides the larger observed improvement across both obstacle models.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-11-09",
+      "date_label": "公告",
+      "age_days": 0.8342956811342593,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.47489,
+      "growth": null,
+      "score": 3.087,
+      "rule_tags": [],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "该研究针对预训练机器人策略在面对未知障碍物时难以进行有效避障的问题，提出了一种推理时障碍物引导框架。通过将相对动作累积转化为工作空间轨迹，利用基于SDF的障碍物模型评估交互，并将障碍物响应反向传播至去噪过程中的所有动作增量。实验表明，该方法在多种操作任务中显著提升了无碰撞任务成功率。",
+        "highlights": [
+          {
+            "text": "提出了一种在推理时将障碍物响应传播到动作序列的框架，实现了更协调的避障动作。",
+            "evidence": "It rolls out cumulative relative actions into a workspace trajectory, evaluates obstacle interactions along the trajectory with an SDF-based obstacle model, and propagates each obstacle response to all contributing action increments during denoising."
+          },
+          {
+            "text": "在真实机器人实验中，该方法在七种障碍物约束场景下的避障成功率远高于对比的点式引导基线。",
+            "evidence": "Real-robot experiments across seven obstacleconstrained scenarios spanning four manipulation tasks show that our method achieves 105/140 (75.0%) collision-free task successes, compared with 8/140 (5.7%) for absolute-action pointwise guidance."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    }
+  ],
+  "candidate_count": 591,
+  "personalization_note": "已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。",
+  "html": "<h1>2026-11-10 每日新论文 5</h1>\n<p>机器人 · 强化学习 · 通用 AI</p>\n<p>生成时间：2026-11-10 09:01 CST。从 591 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>\n<p>本栏优先收录最近发布且未出现在近期日报的 arXiv 论文，不按热度排序；相关性分用于结合你的 Zotero 收藏偏好。</p>\n<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>\n<p>本次合格候选不足 10 篇，实际收录 5 篇。</p>\n<h2>1. STRIDE: Learning Humanoid Locomotion in Minutes with Acceleration-Based Rewards</h2>\n<p><strong>机器人 / 强化学习</strong> · 公告 2026-11-09 · 综合分 3.37</p>\n<p>Zotero 摘要相关性：0.518（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习 · 人形机器人 · 足式运动 · Sim-to-Real</p>\n<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>\n<p><strong>原文摘要节选：</strong>Learning locomotion directly on a humanoid robot is a promising direction to avoid the sim-to-real gap. However, locomotion rewards in Reinforcement Learning (RL) typically track the base velocity, which cannot be measured onboard without an external motion capture system or well-calibrated state estimator. This is why we introduce \\method{}, which learns humanoid locomotion from minutes of samples with a reward that only requires the onboard Inertial Measurement Unit (IMU). Instead of tracking the base velocity, STRIDE rewards the robot for following a commanded acceleration profile. To learn efficiently from this reward, we use the off-policy RL algorithm XQC and combine a high gain setting for the joint position controllers with left-right symmetry augmentation. In simulation, STRIDE…</p>\n<p><a href=\"https://arxiv.org/abs/2611.08857\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.08857\">PDF</a></p><hr>\n<h2>2. On Agentic Manipulation Policies</h2>\n<p><strong>机器人</strong> · 公告 2026-11-09 · 综合分 3.22</p>\n<p>Zotero 摘要相关性：0.495（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>机器人操作 · 视觉语言动作</p>\n<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>\n<p><strong>原文摘要节选：</strong>Recent work on robot manipulation has focused on specialist policies trained on demonstrations. We show that generalist AI models can control manipulators more reliably than specialist policies such as vision-language-action models (VLAs) and world-action models (WAMs). We systematically analyze agentic manipulation policies (AMPs), in which a generalist AI model commands the manipulator directly, adapting its actions as the task unfolds. We present AMP1, a reference harness that runs unchanged across single-arm, bimanual, and mobile manipulation. AMP1 achieves state-of-the-art results on the RoboLab-120 and CaP-Gym benchmarks, with no demonstrations or task-specific training. On RoboLab-120, AMP1 reaches an 85.6\\% success rate zero-shot, compared to 49.2\\% and 42.9\\% for leading VLA and…</p>\n<p><a href=\"https://arxiv.org/abs/2611.09892\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.09892\">PDF</a></p><hr>\n<h2>3. SUGARv2: Learning Diverse Visual Humanoid Loco-Manipulation Skills from Synthesized Interaction References</h2>\n<p><strong>机器人 / 强化学习</strong> · 公告 2026-11-09 · 综合分 3.19</p>\n<p>Zotero 摘要相关性：0.491（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习 · 人形机器人 · Sim-to-Real</p>\n<p><strong>中文概述：</strong>本文提出了SUGARv2框架，旨在通过合成交互参考和共享训练流程，降低人形机器人学习复杂视觉操纵任务的人力成本。该方法利用任务模板合成机器人与物体的协同动作，并通过模仿学习训练特权教师模型，随后通过知识蒸馏和强化学习训练视觉策略，最终实现模拟环境中的高成功率及现实世界的零样本迁移。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出了一种通过合成交互参考和统一训练流程，高效学习多种视觉人形运动操纵技能的通用框架。<br><small>摘要依据：We present SUGARv2, a unified framework for learning diverse visual humanoid loco-manipulation skills through interaction reference synthesis and a shared training pipeline.</small></li>\n<li>在模拟实验中实现了91.0%的平均成功率，并在真实人形机器人上验证了全身操纵任务的模拟到真实迁移能力。<br><small>摘要依据：Across five humanoid loco-manipulation tasks, SUGARv2 achieves a mean success rate of 91.0% in simulation. Deployment on a real humanoid robot further demonstrates successful sim-to-real transfer for whole-body manipulation.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>人形机器人 · 机器人操作 · 模仿学习 · Sim-to-Real</p>\n<p><strong>原文摘要节选：</strong>Scaling up visual humanoid loco-manipulation skill acquisition requires reducing the human effort needed as tasks and spatial configurations expand, particularly in demonstration collection and task-specific training design. We present SUGARv2, a unified framework for learning diverse visual humanoid loco-manipulation skills through interaction reference synthesis and a shared training pipeline. To obtain diverse references at low cost, we adapt reusable task templates to different spatial configurations, synthesizing coordinated robot and object motions. To reduce task-specific reward design and training effort, we use reference-based imitation as a common learning objective across tasks. We first train privileged teachers to execute these references, then train visual policies through…</p>\n<p><a href=\"https://arxiv.org/abs/2611.09266\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.09266\">PDF</a></p><hr>\n<h2>4. Toward the Era of Agentic Embodied Intelligence</h2>\n<p><strong>机器人</strong> · 公告 2026-11-09 · 综合分 3.18</p>\n<p>Zotero 摘要相关性：0.489（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>世界模型 · 视觉语言动作 · 多智能体</p>\n<p><strong>中文概述：</strong>本文提出A2-MEAS具身多智能体框架，旨在通过代码作为扩展接口，解决机器人持续自主控制与失败恢复问题。该方法结合了纠错编码、MetaBrain监督机制及具备运动感知历史和潜在世界模型的视觉语言动作策略（A2-WLA）。作者声称，该设计在BEHAVIOR 2026和RoboTwin 2.0基准测试以及多项真实机器人任务中表现优于对比模型，且训练效率显著提升。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>A2-MEAS框架通过代码作为扩展接口，利用纠错编码和MetaBrain监督机制实现机器人行为的有效纠错与自主导航。<br><small>摘要依据：A2-MEAS, an embodied multi-agent framework built around code as a scaling interface. Learned correction codes combine corrective language, spatial evidence, execution history, and action proposals. MetaBrain provides training supervision and runtime guidance.</small></li>\n<li>在BEHAVIOR 2026及RoboTwin 2.0等基准测试中，该方法在任务成功率和Q-score指标上均显示出相较于对比基准的性能优势。<br><small>摘要依据：Surprisingly, this simple design with action pretraining and task specialization reaches 0.5755 Q-score on the 50-task BEHAVIOR 2026 public subset before online correction, 2.21x the 2025 winner&#x27;s reported 0.2605 across different benchmark editions and training configurations.</small></li>\n<li>该训练基础设施实现了高样本吞吐量，在匹配硬件条件下达到对比方案4.03倍的训练速度。<br><small>摘要依据：Our training infrastructure delivers 427.1 samples per second, 4.03x the throughput of a pi0.5 reference implementation on matched hardware.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 视觉语言动作 · 世界模型 · 多智能体</p>\n<p><strong>原文摘要节选：</strong>Foundation models increasingly guide robot actions, yet sustained autonomy requires efficient control and failure recovery. We introduce A2-MEAS, an embodied multi-agent framework built around code as a scaling interface. Learned correction codes combine corrective language, spatial evidence, execution history, and action proposals. MetaBrain provides training supervision and runtime guidance. A correction encoder and adapter absorb this knowledge into policy weights during training, while fresh codes adapt behavior with frozen weights at deployment. The action model, A2-WLA, adds motion-aware history and a latent world model to a vision-language-action policy. Surprisingly, this simple design with action pretraining and task specialization reaches 0.5755 Q-score on the 50-task BEHAVIOR…</p>\n<p><a href=\"https://arxiv.org/abs/2611.09124\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.09124\">PDF</a></p><hr>\n<h2>5. Horizon-Coupled Obstacle Guidance for Relative-Action Diffusion Policies</h2>\n<p><strong>机器人</strong> · 公告 2026-11-09 · 综合分 3.09</p>\n<p>Zotero 摘要相关性：0.475（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>中文概述：</strong>该研究针对预训练机器人策略在面对未知障碍物时难以进行有效避障的问题，提出了一种推理时障碍物引导框架。通过将相对动作累积转化为工作空间轨迹，利用基于SDF的障碍物模型评估交互，并将障碍物响应反向传播至去噪过程中的所有动作增量。实验表明，该方法在多种操作任务中显著提升了无碰撞任务成功率。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出了一种在推理时将障碍物响应传播到动作序列的框架，实现了更协调的避障动作。<br><small>摘要依据：It rolls out cumulative relative actions into a workspace trajectory, evaluates obstacle interactions along the trajectory with an SDF-based obstacle model, and propagates each obstacle response to all contributing action increments during denoising.</small></li>\n<li>在真实机器人实验中，该方法在七种障碍物约束场景下的避障成功率远高于对比的点式引导基线。<br><small>摘要依据：Real-robot experiments across seven obstacleconstrained scenarios spanning four manipulation tasks show that our method achieves 105/140 (75.0%) collision-free task successes, compared with 8/140 (5.7%) for absolute-action pointwise guidance.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 推理</p>\n<p><strong>原文摘要节选：</strong>Real-world robot deployment requires adapting learned policies to unseen obstacles without collecting new demonstrations or retraining. Existing policy-level guidance often applies obstacle corrections independently at individual horizon steps, which may address local obstacle violations but fail to coordinate the action sequence into a complete, task-directed detour. How obstacle responses should be propagated across the action horizon to coordinate complete, task-directed avoidance motion remains underexplored. We introduce an inferencetime obstacle-guidance framework for pretrained relative-action diffusion policies. It rolls out cumulative relative actions into a workspace trajectory, evaluates obstacle interactions along the trajectory with an SDF-based obstacle model, and propagates…</p>\n<p><a href=\"https://arxiv.org/abs/2611.09340\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.09340\">PDF</a></p><hr>"
+}

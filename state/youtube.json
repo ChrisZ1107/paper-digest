@@ -5287,7 +5287,9 @@
         {
           "id": "2611.06908",
           "title": "Perceptive Humanoid Motion from Simulation (Nov 2026)",
-          "url": "https://arxiv.org/abs/2611.06908"
+          "url": "https://arxiv.org/abs/2611.06908",
+          "abstract": "Humanoid robots have the potential to automate a wide range of physical tasks. Progress toward generalist humanoid autonomy, however, remains constrained by a data bottleneck: mapping pixels and free-form language to low-level joint commands requires paired supervision, and no corpus of such data exists at sufficiently large scale. Some approaches rely on human teleoperation and wearable capture devices, which require at least an hour of human time to produce an hour of data. We present HALO, a humanoid autonomy system powered by a pipeline that synthesizes vision-language-motion data across a thousand procedurally generated homes. The corpus scales with compute rather than human labor. HALO acquires a repertoire of physical skills, including sitting on chairs, navigating to named objects, stepping sideways through half-open doors, crouching and crawling beneath tables, and pushing boxes. It orchestrates these skills to solve composite, long-horizon tasks. Without ever seeing a real home during training, HALO transfers zero-shot to the physical world, achieving a 91% success rate across 360 trials in six unmapped real-world environments. See https://apple-aiml-research.github.io/ml-halo/ for code and videos.",
+          "abstract_zh": "人形机器人有潜力实现广泛物理任务的自动化。然而，通往通用人形机器人自主性的进展仍受到数据瓶颈的制约：将像素和自由形式的语言映射到低级关节指令需要成对的监督，而目前尚不存在规模足够大的此类数据集。一些方法依赖于人类远程操作和可穿戴捕捉设备，这些方法需要至少一小时的人力投入才能产生一小时的数据。我们提出了HALO，这是一种由数据流水线驱动的人形机器人自主系统，该流水线可在数千个程序化生成的家庭环境中合成视觉-语言-运动数据。该语料库随计算资源规模扩展，而非依赖于人力。HALO获取了一套物理技能库，包括坐在椅子上、导航至指定物体、侧身穿过半开的门、在桌子下蹲伏爬行以及推动箱子。它能够协同这些技能来解决复杂的长序列任务。在训练期间从未接触过真实家庭环境的情况下，HALO在物理世界中实现了零样本迁移，在六个未映射的真实世界环境中进行的360次试验中达到了91%的成功率。代码和视频请见 https://apple-aiml-research.github.io/ml-halo/。"
         }
       ]
     },
@@ -5304,7 +5306,9 @@
         {
           "id": "2611.08373",
           "title": "SLA: Scaling Spatial-Language-Action Model via Continual Pre-training (Nov 2026)",
-          "url": "https://arxiv.org/abs/2611.08373"
+          "url": "https://arxiv.org/abs/2611.08373",
+          "abstract": "Reliable robotic manipulation requires both semantic understanding and precise control in three-dimensional space. However, vision-language-action (VLA) foundations largely inherit visual representations from 2D vision-language pre-training, while spatial supervision is often introduced only during task-specific adaptation. Developing spatial understanding as a transferable foundation-model capability therefore calls for learning from broader robot experience. We present SLA, a Spatial-Language-Action Model that scales implicit spatial alignment to continual pre-training and maintains it during downstream post-training. Initialized from a pretrained pi05 policy, SLA jointly optimizes action prediction and alignment between intermediate visual embeddings and spatial representations from a frozen 3D perception model. We curate and unify heterogeneous robot datasets to support spatial learning across diverse embodiments, tasks, and scenes. To accommodate this diversity, we introduce feature-dependent gates that adaptively aggregate visual embeddings from multiple VLA layers for spatial supervision. The teacher further exploits partially available depth and camera calibration alongside RGB observations, enabling effective use of heterogeneous geometric annotations. Probabilistic state dropout encourages reliance on visual cues and mitigates overfitting to demonstration trajectories. All auxiliary components are used only during training, allowing direct reuse of pretrained VLA weights and preserving the original inference architecture.",
+          "abstract_zh": "可靠的机器人操作需要语义理解和三维空间中的精确控制。然而，视觉-语言-动作（VLA）基础模型很大程度上继承了来自2D视觉-语言预训练的视觉表示，而空间监督通常仅在特定任务的适配阶段才引入。因此，将空间理解作为一种可迁移的基础模型能力，需要从更广泛的机器人经验中进行学习。我们提出了SLA（空间-语言-动作模型），这是一种将隐式空间对齐扩展到持续预训练并在下游后训练阶段保持该能力的模型。SLA从预训练的pi05策略初始化，联合优化动作预测以及中间视觉嵌入与来自冻结的3D感知模型的空间表示之间的对齐。我们整理并统一了异构机器人数据集，以支持跨不同实体、任务和场景的空间学习。为了适应这种多样性，我们引入了依赖于特征的门控机制，自适应地聚合来自多个VLA层的视觉嵌入以进行空间监督。教师模型进一步利用了部分可用的深度和相机标定信息以及RGB观测，从而有效利用了异构几何标注。概率状态丢弃机制鼓励模型依赖视觉线索，并缓解了对演示轨迹的过拟合。所有辅助组件仅在训练期间使用，这使得我们可以直接复用预训练的VLA权重并保留原始的推理架构。"
         }
       ]
     },
@@ -5317,7 +5321,9 @@
         {
           "id": "2611.08478",
           "title": "Scientist World: Grow a Research World for AI-Scientists (Nov 2026)",
-          "url": "https://arxiv.org/abs/2611.08478"
+          "url": "https://arxiv.org/abs/2611.08478",
+          "abstract": "AI-Scientists arrived, but a world for them to grow in did not. Human scientists take theirs for granted $-$ centuries of open problems and shared ideas, waiting in the scientific literature. To AI-Scientists, that world is readable but not runnable, so we build Scientist World for them: every research paper becomes an executable environment. Our autonomous pipeline extracts each paper's open-ended research question and reproduces its proposed method as the baseline; an AI-Scientist entering the environment is evaluated against what the human authors achieved. We release the first 1,000 verified environments. With the world as an evaluation, we found that frontier AI-Scientists can already surpass the human researchers 74% of the time. As a record of how AI does science, it contains 6,400 hours of research traces, with every idea, experiment, failure, and success. As a training ground, we are able to raise (+158%) a small model to match frontier models in research ideation. At last, AI-Scientists' own world has arrived, grown from and growing with science itself.",
+          "abstract_zh": "AI科学家已经到来，但供它们成长的世界却尚未建立。人类科学家将科研世界视为理所当然——数百年的悬而未决的难题和共享的思想，静候在科学文献中。对于AI科学家来说，那个世界是可读但不可运行的，因此我们为它们构建了科学家世界（Scientist World）：使每一篇研究论文都成为一个可执行的环境。我们的自主流水线提取每篇论文的开放性研究问题，并将其提出的方法重现为基准；进入该环境的AI科学家将根据人类作者所取得的成果进行评估。我们发布了首批1,000个经过验证的环境。通过将该世界作为评估基准，我们发现前沿AI科学家在74%的情况下已经能够超越人类研究人员。作为AI如何进行科学研究的记录，它包含了6,400小时的研究轨迹，记录了每一个想法、实验、失败与成功。作为一个训练场，我们能够将一个小模型的能力提升（+158%），使其在研究构思方面达到前沿模型的水平。最终，AI科学家自己的世界已经到来，它源于科学本身，并与科学共同成长。"
         }
       ]
     },
@@ -5330,7 +5336,9 @@
         {
           "id": "2611.06918",
           "title": "From Pixels to Actions – Towards Native Vision-Language-Action Policies (Nov 2026)",
-          "url": "https://arxiv.org/abs/2611.06918"
+          "url": "https://arxiv.org/abs/2611.06918",
+          "abstract": "Vision-language-action models are typically built on a simple premise: perception is first compressed by visual encoders, and action reasoning begins only afterwards. Yet manipulation often hinges on precisely the visual signals most vulnerable to this abstraction, e.g., local geometry, boundaries, depth, and subtle state changes. This raises a fundamental question: should action policies inherit a fixed visual endpoint, or directly access evolving visual computation? We introduce NEO-VLA, a structurally encoder-free vision-language-action framework. Images are tokenized by lightweight patch convolutional layers and evolve jointly with language throughout the backbone, allowing a flow-matching action expert to draw from instruction-conditioned visual representations at different depths. This simple change reveals a consistent pattern. Native architectures outperform encoder-based counterparts under controlled comparisons; full fine-tuning reduces but does not erase the gap, and additional scale alone cannot recover it. More strikingly, layer-wise probing shows that the action-critical signals often peak well before the final visual representation. Across diverse manipulation settings and distribution shifts, NEO-VLA consequently achieves stronger and more robust control. Together, these results suggest that embodied control benefits from access to visual representations across the computational hierarchy, rather than a fixed encoder output.",
+          "abstract_zh": "视觉-语言-动作模型通常建立在一个简单的前提之上：首先通过视觉编码器压缩感知信息，随后才开始动作推理。然而，操作任务往往依赖于最容易在此类抽象过程中受损的视觉信号，例如局部几何结构、边界、深度以及细微的状态变化。这提出了一个根本性问题：动作策略应该继承固定的视觉终点，还是直接访问不断演变的视觉计算过程？我们引入了NEO-VLA，这是一个结构上无需编码器的视觉-语言-动作框架。图像通过轻量级分块卷积层被转化为标记（token），并与语言在整个主干网络中共同演化，使得流匹配（flow-matching）动作专家能够从不同深度的指令条件视觉表示中获取信息。这一简单的改变揭示了一个一致的规律：在受控对比下，原生架构的表现优于基于编码器的同类模型；完全微调可以缩小但无法消除这一差距，且仅靠增加规模也无法弥补。更引人注目的是，逐层探测显示，对动作至关重要的信号往往在最终视觉表示形成之前就已经达到峰值。在多种操作设置和分布偏移下，NEO-VLA因此实现了更强、更稳健的控制。综上所述，这些结果表明具身控制受益于对整个计算层级中视觉表示的访问，而非仅依赖固定的编码器输出。"
         }
       ]
     }

@@ -1,0 +1,18 @@
+{
+  "overview": "针对现有视觉语言动作（VLA）模型在三维空间理解能力上的不足，本文提出了一种空间-语言-动作（SLA）模型。该模型通过持续预训练将隐式空间对齐融入到VLA框架中，利用多模态机器人数据集和特征依赖门控机制，将冻结的3D感知模型信息与视觉嵌入对齐。作者声称该方法在保留原推理架构的同时，有效增强了机器人在三维空间中的控制与语义理解能力。",
+  "highlights": [
+    {
+      "text": "提出SLA模型，通过持续预训练将隐式空间对齐能力整合进VLA架构，提升机器人对三维空间的理解。",
+      "evidence": "We present SLA, a Spatial-Language-Action Model that scales implicit spatial alignment to continual pre-training and maintains it during downstream post-training."
+    },
+    {
+      "text": "采用特征依赖门控机制，能够自适应地从多个VLA层聚合视觉嵌入，从而支持异构机器人数据集上的空间学习。",
+      "evidence": "To accommodate this diversity, we introduce feature-dependent gates that adaptively aggregate visual embeddings from multiple VLA layers for spatial supervision."
+    }
+  ],
+  "tags": [
+    "视觉语言动作",
+    "机器人操作",
+    "大模型后训练"
+  ]
+}

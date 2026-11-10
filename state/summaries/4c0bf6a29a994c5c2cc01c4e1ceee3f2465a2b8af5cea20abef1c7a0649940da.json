@@ -1,0 +1,19 @@
+{
+  "overview": "本文提出了SUGARv2框架，旨在通过合成交互参考和共享训练流程，降低人形机器人学习复杂视觉操纵任务的人力成本。该方法利用任务模板合成机器人与物体的协同动作，并通过模仿学习训练特权教师模型，随后通过知识蒸馏和强化学习训练视觉策略，最终实现模拟环境中的高成功率及现实世界的零样本迁移。",
+  "highlights": [
+    {
+      "text": "提出了一种通过合成交互参考和统一训练流程，高效学习多种视觉人形运动操纵技能的通用框架。",
+      "evidence": "We present SUGARv2, a unified framework for learning diverse visual humanoid loco-manipulation skills through interaction reference synthesis and a shared training pipeline."
+    },
+    {
+      "text": "在模拟实验中实现了91.0%的平均成功率，并在真实人形机器人上验证了全身操纵任务的模拟到真实迁移能力。",
+      "evidence": "Across five humanoid loco-manipulation tasks, SUGARv2 achieves a mean success rate of 91.0% in simulation. Deployment on a real humanoid robot further demonstrates successful sim-to-real transfer for whole-body manipulation."
+    }
+  ],
+  "tags": [
+    "人形机器人",
+    "机器人操作",
+    "模仿学习",
+    "Sim-to-Real"
+  ]
+}
