@@ -5341,6 +5341,75 @@
           "abstract_zh": "视觉-语言-动作模型通常建立在一个简单的前提之上：首先通过视觉编码器压缩感知信息，随后才开始动作推理。然而，操作任务往往依赖于最容易在此类抽象过程中受损的视觉信号，例如局部几何结构、边界、深度以及细微的状态变化。这提出了一个根本性问题：动作策略应该继承固定的视觉终点，还是直接访问不断演变的视觉计算过程？我们引入了NEO-VLA，这是一个结构上无需编码器的视觉-语言-动作框架。图像通过轻量级分块卷积层被转化为标记（token），并与语言在整个主干网络中共同演化，使得流匹配（flow-matching）动作专家能够从不同深度的指令条件视觉表示中获取信息。这一简单的改变揭示了一个一致的规律：在受控对比下，原生架构的表现优于基于编码器的同类模型；完全微调可以缩小但无法消除这一差距，且仅靠增加规模也无法弥补。更引人注目的是，逐层探测显示，对动作至关重要的信号往往在最终视觉表示形成之前就已经达到峰值。在多种操作设置和分布偏移下，NEO-VLA因此实现了更强、更稳健的控制。综上所述，这些结果表明具身控制受益于对整个计算层级中视觉表示的访问，而非仅依赖固定的编码器输出。"
         }
       ]
+    },
+    "9mXcY3UV3PY": {
+      "video_id": "9mXcY3UV3PY",
+      "video_title": "Open-HumanWAM: An Open Recipe for Scaling Human and Robot Experience for Embodied Foundation Models",
+      "published": "2026-11-11",
+      "video_url": "https://www.youtube.com/watch?v=9mXcY3UV3PY",
+      "papers": [
+        {
+          "id": "2611.06817",
+          "title": "Open-HumanWAM: An Open Recipe for Scaling Human and Robot Experience for Embodied Foundation Models (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.06817"
+        }
+      ]
+    },
+    "u9bXq8gjSdg": {
+      "video_id": "u9bXq8gjSdg",
+      "video_title": "Reinforcement Learning Enables Scaling Generalist Robot Policy Improvement (Nov 2026)",
+      "published": "2026-11-11",
+      "video_url": "https://www.youtube.com/watch?v=u9bXq8gjSdg",
+      "papers": [
+        {
+          "id": "2611.06905",
+          "title": "Reinforcement Learning Enables Scaling Generalist Robot Policy Improvement (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.06905"
+        }
+      ]
+    },
+    "0Qgu2JqCLa0": {
+      "video_id": "0Qgu2JqCLa0",
+      "papers": []
+    },
+    "J65csLeqebI": {
+      "video_id": "J65csLeqebI",
+      "video_title": "Shaping & Monitoring Models through their Internal Representations (Nov 2026)",
+      "published": "2026-11-11",
+      "video_url": "https://www.youtube.com/watch?v=J65csLeqebI",
+      "papers": [
+        {
+          "id": "2611.07071",
+          "title": "Shaping & Monitoring Models through their Internal Representations (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.07071"
+        }
+      ]
+    },
+    "CYAW-ArccPQ": {
+      "video_id": "CYAW-ArccPQ",
+      "video_title": "Learning Dynamics of On-Policy Distillation (Nov 2026)",
+      "published": "2026-11-11",
+      "video_url": "https://www.youtube.com/watch?v=CYAW-ArccPQ",
+      "papers": [
+        {
+          "id": "2611.08016",
+          "title": "Learning Dynamics of On-Policy Distillation (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.08016"
+        }
+      ]
+    },
+    "ry47K-ZlSVE": {
+      "video_id": "ry47K-ZlSVE",
+      "video_title": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization (Nov 2026)",
+      "published": "2026-11-11",
+      "video_url": "https://www.youtube.com/watch?v=ry47K-ZlSVE",
+      "papers": [
+        {
+          "id": "2611.08483",
+          "title": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.08483"
+        }
+      ]
     }
   }
 }
