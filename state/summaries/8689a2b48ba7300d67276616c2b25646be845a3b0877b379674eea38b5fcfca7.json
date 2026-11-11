@@ -1,0 +1,17 @@
+{
+  "overview": "该研究探讨了预训练表格基础模型（TabFM）作为无训练世界模型的潜力，将其用于动态系统的下一状态预测。实验在合成动力学系统和机器人运动基准上进行，评估了TabFM在小样本数据下的表现。结果显示，TabFM在数据稀缺环境下表现优于从头训练的LSTM和MLP，但在多步自回归预测中受上下文长度影响显著，且推理速度远低于传统模型，目前尚无法完全替代针对性训练的世界模型。",
+  "highlights": [
+    {
+      "text": "TabFM在小样本数据下的预测精度普遍优于从头训练的基准模型。",
+      "evidence": "Across synthetic dynamical systems and robot locomotion benchmarks, TabFM is more accurate than LSTM and MLP models trained from scratch on the same limited transitions in almost all settings"
+    },
+    {
+      "text": "TabFM的自回归预测效果高度依赖于上下文长度，长上下文能显著提升表现。",
+      "evidence": "When rolled out autoregressively over multiple steps, TabFM's accuracy depends strongly on how much context it is given. With a short context, its rollouts quickly degrade to the level of a trivial baseline, whereas with a long context they improve substantially"
+    }
+  ],
+  "tags": [
+    "世界模型",
+    "机器人操作"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "overview": "针对触觉感知依赖特定传感器物理特性的挑战，作者开发了名为LingBot-Touch的触觉基础模型。该模型通过统一不同类型触觉传感器的数据表征，构建了一种可扩展的通用触觉编码方案。实验证明，该方法生成的触觉Token可无缝集成至多种策略模型中，显著提升了机器人在模拟及真实环境下的复杂操作能力，并表现出良好的计算效率。",
+  "highlights": [
+    {
+      "text": "LingBot-Touch提供了一种跨多种触觉传感器的统一表征，具备良好的传感器通用性与可扩展性。",
+      "evidence": "Our model yields a unified representation across different tactile sensors (i.e., piezoresistive, magnetic, and visuotactile sensors), and is easily extensible to new sensor types."
+    },
+    {
+      "text": "该触觉表征作为即插即用的模块，可集成于扩散策略及视觉语言动作模型中，有效增强操作灵活性。",
+      "evidence": "The resulting tactile tokens are plug-and-play: they can be seamlessly integrated into policy models across paradigms, from diffusion policy to vision-language-action (VLA) models such as π_{0.5} and LingBot-VLA, consistently enhancing manipulation dexterity."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "Sim-to-Real",
+    "视觉语言动作"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "overview": "针对人形机器人训练缺乏大量演示数据的难题，该研究提出了DreamVLA框架。该方法利用生成的动作轨迹引导模拟环境中的强化学习训练，将其转化为可靠的任务执行路径。核心贡献在于一种参考条件下的DAgger蒸馏程序，通过从失败的轨迹点重启强化学习专家并聚合成功的纠正轨迹，解决了离线模仿学习中的分布偏移问题，实现了无需新的人工遥操作数据即可训练视觉语言动作策略。",
+  "highlights": [
+    {
+      "text": "提出DreamVLA框架，利用生成的运动轨迹引导模拟中的强化学习，从而在无需昂贵的人类遥操作数据的情况下训练视觉语言动作策略。",
+      "evidence": "To address this, we propose DreamVLA, which uses generated motion trajectories to guide reinforcement learning (RL) in simulation, converting them into reliable task execution trajectories. These trajectories train VLA models in simulation without new task-specific teleoperation data."
+    },
+    {
+      "text": "引入参考条件下的DAgger蒸馏程序，通过在失败的轨迹回放后重启强化学习专家并聚合纠正轨迹，有效缓解了离线模仿学习的分布偏移问题。",
+      "evidence": "Our central contribution is a reference-conditioned DAgger distillation procedure: after a failed learner rollout, we restart the RL expert from a sampled learner state with the same reference suffix and aggregate successful corrective trajectories, addressing the distribution shift left by offline imitation."
+    }
+  ],
+  "tags": [
+    "人形机器人",
+    "模仿学习",
+    "视觉语言动作"
+  ]
+}

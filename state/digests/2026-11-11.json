@@ -1,0 +1,494 @@
+{
+  "date": "2026-11-11",
+  "timestamp": "2026-11-11T09:02:44.065097+08:00",
+  "title": "2026-11-11 热门论文 Top 10｜机器人·强化学习·AI",
+  "slug": "2026-11-11",
+  "papers": [
+    {
+      "id": "2611.09124",
+      "title": "Toward the Era of Agentic Embodied Intelligence",
+      "abstract": "Foundation models increasingly guide robot actions, yet sustained autonomy requires efficient control and failure recovery. We introduce A2-MEAS, an embodied multi-agent framework built around code as a scaling interface. Learned correction codes combine corrective language, spatial evidence, execution history, and action proposals. MetaBrain provides training supervision and runtime guidance. A correction encoder and adapter absorb this knowledge into policy weights during training, while fresh codes adapt behavior with frozen weights at deployment. The action model, A2-WLA, adds motion-aware history and a latent world model to a vision-language-action policy. Surprisingly, this simple design with action pretraining and task specialization reaches 0.5755 Q-score on the 50-task BEHAVIOR 2026 public subset before online correction, 2.21x the 2025 winner's reported 0.2605 across different benchmark editions and training configurations. On all 100 BEHAVIOR 2026 public tasks, A2-MEAS achieves 0.6411 Q-score and 45.40% task success. On RoboTwin 2.0, A2-WLA achieves 93.98% average success, rising to 95.05% with the complete system. Across 12 real-robot tasks in five household settings, A2-WLA achieves 57.92% average success versus 26.67% for pi0.5. In long-horizon pour-over coffee preparation, a history-conditioned adapter raises post-failure completion at two filter-handling steps from 14% to 94% and from 8% to 82%, compared with A2-WLA retries. Our training infrastructure delivers 427.1 samples per second, 4.03x the throughput of a pi0.5 reference implementation on matched hardware. We will release the system, models, training scripts, and infrastructure to support efficient embodied learning.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-11-06",
+      "age_days": 5.043565568252315,
+      "upvotes": 49,
+      "comments": 3,
+      "stars": 9,
+      "repo": "https://github.com/AutoLab-SAI-SJTU/A2MEAS",
+      "trending_rank": 71,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.4893,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 49,
+        "comments": 3
+      },
+      "score": 5.916,
+      "rule_tags": [
+        "世界模型",
+        "视觉语言动作",
+        "多智能体"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文提出A2-MEAS具身多智能体框架，旨在通过代码作为扩展接口，解决机器人持续自主控制与失败恢复问题。该方法结合了纠错编码、MetaBrain监督机制及具备运动感知历史和潜在世界模型的视觉语言动作策略（A2-WLA）。作者声称，该设计在BEHAVIOR 2026和RoboTwin 2.0基准测试以及多项真实机器人任务中表现优于对比模型，且训练效率显著提升。",
+        "highlights": [
+          {
+            "text": "A2-MEAS框架通过代码作为扩展接口，利用纠错编码和MetaBrain监督机制实现机器人行为的有效纠错与自主导航。",
+            "evidence": "A2-MEAS, an embodied multi-agent framework built around code as a scaling interface. Learned correction codes combine corrective language, spatial evidence, execution history, and action proposals. MetaBrain provides training supervision and runtime guidance."
+          },
+          {
+            "text": "在BEHAVIOR 2026及RoboTwin 2.0等基准测试中，该方法在任务成功率和Q-score指标上均显示出相较于对比基准的性能优势。",
+            "evidence": "Surprisingly, this simple design with action pretraining and task specialization reaches 0.5755 Q-score on the 50-task BEHAVIOR 2026 public subset before online correction, 2.21x the 2025 winner's reported 0.2605 across different benchmark editions and training configurations."
+          },
+          {
+            "text": "该训练基础设施实现了高样本吞吐量，在匹配硬件条件下达到对比方案4.03倍的训练速度。",
+            "evidence": "Our training infrastructure delivers 427.1 samples per second, 4.03x the throughput of a pi0.5 reference implementation on matched hardware."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "视觉语言动作",
+          "世界模型",
+          "多智能体"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.09894",
+      "title": "Video-Coder: Reinforcing Agentic Coding for Video Generation",
+      "abstract": "Recent years have witnessed remarkable progress in video generation in terms of visual quality and temporal consistency. However, generating videos with precise spatial structure, coherent motion dynamics, and controllable scene composition remains challenging. In this paper, we introduce Video-Coder, the first attempt to train a code-driven video generation agent, which autonomously writes and executes code to construct a dynamic 3D scene (Draft Video) that provides structure and motion signals to downstream video generators. To support this paradigm, we design a dedicated data pipeline and curate two high-quality datasets, Video-Coder-SFT-6k and Video-Coder-RL-2k, which contain diverse prompts and ground-truth reference videos. We further develop the Video- Coder Harness, a unified interactive environment integrating code execution, 3D scene rendering, and execution feedback for agent training and inference. We then train Video-Coder with SFT fol- lowed by harness-native agentic reinforcement learning with dual reward feedback, which combines execution-based and video-based rewards. Additionally, we design an annealing training strategy that gradually reduces the execution reward over time, allowing the model to rely more on the video reward in the later training stages. Experiments show that Video-Coder achieves significant gains, improving Minimax-H3 by approximately 7 points on PhyGenBench and 24 points on VBench-2.0. We hope this work can serve as an open foundation for coding agents in video generation, and we fully open-source our data, models, and code",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-11-06",
+      "age_days": 5.043565568252315,
+      "upvotes": 20,
+      "comments": 3,
+      "stars": 54,
+      "repo": "https://github.com/CYWang735/Video-Coder",
+      "trending_rank": 28,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.42948,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 4,
+        "comments": 1,
+        "stars": 29
+      },
+      "score": 5.299,
+      "rule_tags": [
+        "强化学习"
+      ],
+      "summary_status": "Gemini 暂不可用，显示规则标签与原文摘要。"
+    },
+    {
+      "id": "2611.08449",
+      "title": "VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding",
+      "abstract": "Models for physical AI tasks, such as robotics and autonomous driving, need not reason solely in language. They can use visual plans--points, bounding boxes, and trajectories--to represent spatial goals and anticipate motion. However, autoregressive vision-language models generate these plans one coordinate token at a time, making richer predictions increasingly costly. We introduce VFlash, a method for fast, accurate visual planning through Flash Primitive Decoding. VFlash exploits the known structure of visual primitives to predict their coordinates jointly, using a lightweight drafter that generates an entire primitive in one forward pass. The layout adapts to the primitive's type, dimensionality, and length, supporting compact boxes and long, variable-length trajectories. Crucially, spatial accuracy need not require reproducing an autoregressive model's exact token sequence. VFlash therefore trains on annotated primitives and directly accepts structurally valid predictions without target-token agreement. Across the evaluated 2D and 3D robot trajectory tasks, VFlash consistently reduces prediction errors relative to autoregressive decoding. Preliminary single-rollout measurements indicate approximately 25x faster generation for 3D point motion forecasting. A world action model conditioned on VFlash plans achieves 70.2% average success across four MolmoSpaces task suites, compared with 62.6% for the baseline.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-11-05",
+      "age_days": 6.043565568252315,
+      "upvotes": 111,
+      "comments": 1,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.43832,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 2,
+        "comments": 0
+      },
+      "score": 5.056,
+      "rule_tags": [],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对现有视觉语言模型在生成机器人及自动驾驶视觉规划时存在的推理速度慢的问题，作者提出VFlash方法。该方法利用闪存基元解码技术，通过轻量级草拟器一次性联合预测视觉基元的坐标，而非逐个生成坐标token。实验结果显示，该方法在保持空间准确性的同时，显著提升了生成速度，并在多项机器人轨迹任务中优于基准模型。",
+        "highlights": [
+          {
+            "text": "VFlash通过一次前向传递生成整个视觉基元，显著提升了生成速度。",
+            "evidence": "VFlash exploits the known structure of visual primitives to predict their coordinates jointly, using a lightweight drafter that generates an entire primitive in one forward pass."
+          },
+          {
+            "text": "在3D点运动预测任务中，VFlash的生成速度提升约25倍。",
+            "evidence": "Preliminary single-rollout measurements indicate approximately 25x faster generation for 3D point motion forecasting."
+          },
+          {
+            "text": "基于VFlash规划的动作模型在多项任务套件中表现优于传统自回归基线。",
+            "evidence": "A world action model conditioned on VFlash plans achieves 70.2% average success across four MolmoSpaces task suites, compared with 62.6% for the baseline."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "世界模型"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.01560",
+      "title": "Democratizing Robot-Use Agents: A Unified Harness with Open Models",
+      "abstract": "Robot-use Agents (RUAs) have shown promising zero-shot manipulation capabilities, but reliance on frontier, proprietary models limits research into further training. To democratize RUA research, we introduce uni-robot-agent, a unified harness for competitive open-weight robot use that supports further training. Without privileged inputs, an out-of-the-box Qwen3.8-Flash-Next achieves a RoboDojo Score of 31.39, surpassing the published GPT-6 Astra-RoboProbe result of 28.97 and many VLA/WAM baselines, and performs competitively on 19 real-world tasks. Our analysis across model generations, families, and sizes links effective robot use to four general capabilities, suggesting that future RUA training should develop them jointly.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-11-01",
+      "age_days": 10.043565568252316,
+      "upvotes": 48,
+      "comments": 1,
+      "stars": 323,
+      "repo": "https://github.com/Open-RUA/uni-robot-agent",
+      "trending_rank": 27,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.45102,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 0,
+        "comments": 0,
+        "stars": 18
+      },
+      "score": 4.899,
+      "rule_tags": [
+        "视觉语言动作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对现有机器人使用智能体（RUA）依赖封闭私有模型导致研究受限的问题，作者提出了uni-robot-agent，这是一个支持进一步训练的开放权重机器人操作统一框架。实验表明，基于Qwen3.8-Flash-Next模型的方法在RoboDojo基准测试中优于GPT-6 Astra-RoboProbe及多种基线，并在19项真实世界任务中表现出竞争力。此外，作者分析了模型特性与机器人操作能力之间的联系，为未来RUA的协同训练提供了参考。",
+        "highlights": [
+          {
+            "text": "uni-robot-agent框架使开放权重模型在机器人操作任务中取得了具有竞争力的性能，且无需特权输入。",
+            "evidence": "Without privileged inputs, an out-of-the-box Qwen3.8-Flash-Next achieves a RoboDojo Score of 31.39, surpassing the published GPT-6 Astra-RoboProbe result of 28.97 and many VLA/WAM baselines, and performs competitively on 19 real-world tasks."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "视觉语言动作",
+          "大模型后训练"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2610.22471",
+      "title": "Has GPT-6-Astra Achieved Embodied Intelligence?",
+      "abstract": "GPT-6-Astra demonstrates a level of competence in robotic manipulation and navigation that challenges the conventional paradigm of building specialized models for individual tasks and embodiments. In this report, we ask not only how capable GPT-6-Astra is, but what its capabilities imply for the field. First, we probe the limits of standalone GPT-6-Astra. We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance (Fig. 1). Future research may focus on improving 1) the generality of ICL 2) cost and execution time, 3) physical-state verification, 4) recovery from irreversible failures, and 5) long-horizon preservation of progress. Second, we study the agentic harness for embodied control. We identify that close-loop coordination between a high-level \"System 2\" reasoner (i.e., GPT-6-Astra) and a low-level \"System 1\" controller (e.g., π0.5) is costly but effective. Third, we examine GPT-6-Astra on real-world deployment. Our experiments on 8 robot configurations reveal substantial gaps: 1) robot demonstrations required for ICL are expensive to collect, and 2) it is implausible to trade longer execution for higher success rates with physical constraints. Fourth, we envision the next generation of embodied benchmarks. We develop a prototype that 1) derives tasks from real-world needs, 2) provides no in-domain demonstrations, and 3) judges agents on a world clock that keeps running while they deliberate. Taken together, our results suggest that GPT-6-Astra has largely crossed the threshold of embodied competence, but not yet that of practical embodied intelligence.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-10-15",
+      "age_days": 27.043565568252316,
+      "upvotes": 135,
+      "comments": 2,
+      "stars": 599,
+      "repo": "https://github.com/OpenSenseNova/SenseNova-RoboRSI",
+      "trending_rank": 42,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.47693,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 0,
+        "comments": 0,
+        "stars": 38
+      },
+      "score": 4.782,
+      "rule_tags": [
+        "人形机器人",
+        "机器人操作",
+        "导航"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文评估了GPT-6-Astra在机器人操作与导航任务中的表现。研究者通过12个基准测试探究了该模型在上下文学习下的能力极限，并分析了将其作为高层推理器与低层控制器结合的代理机制。实验发现，尽管该模型展现出较高的具身能力，但在真实物理部署中仍面临数据采集成本高、物理约束限制及长期执行效率等挑战。作者认为该模型尚未达到实用具身智能的标准。",
+        "highlights": [
+          {
+            "text": "GPT-6-Astra在跨越桌面操作、人形机器人、移动平台及灵巧手的12个代表性基准测试中，通过上下文学习实现了出色的性能。",
+            "evidence": "We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance"
+          },
+          {
+            "text": "研究指出高层“系统2”推理器与低层“系统1”控制器的闭环协调方案虽然有效，但伴随着较高的计算成本。",
+            "evidence": "We identify that close-loop coordination between a high-level \"System 2\" reasoner (i.e., GPT-6-Astra) and a low-level \"System 1\" controller (e.g., π0.5) is costly but effective."
+          },
+          {
+            "text": "在8种机器人配置的实机部署实验中，研究发现现有范式难以通过延长执行时间来换取物理约束下的高成功率。",
+            "evidence": "Our experiments on 8 robot configurations reveal substantial gaps: 1) robot demonstrations required for ICL are expensive to collect, and 2) it is implausible to trade longer execution for higher success rates with physical constraints."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "导航",
+          "人形机器人",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.09017",
+      "title": "Frontier3DBench: Benchmarking Coding Agents for 3D Creation across Objects, Scenes, and Interactive Open Worlds",
+      "abstract": "Coding agents combine visual understanding with program execution, offering a new route to automated 3D creation. By translating images and instructions into editable programs, they bring reconstruction, generation, and editing into a shared workflow. Yet existing benchmarks fragment evaluation across task scopes and protocols, leaving their capabilities across construction levels unclear. We propose Frontier3DBench, a unified benchmark of 145 tasks across 9 categories spanning object, scene, and interactive open-world creation, with joint evaluation of appearance, structure, and behavior. Experiments with 11 model-harness configurations reveal strengths that vary by level: GPT-6.1-sol leads the object and scene levels and achieves the highest overall score of 66.02/100, whereas GPT-6-astra leads interactive world construction. However, all configurations score lower on reference reconstruction than on text-driven generation in object and scene tasks. Producing plausible content thus remains easier than reproducing specified geometry, layouts, and visual details. Moreover, generated worlds average 83.08/100 on local mechanisms but only 20.82 on motion clearance and 30.26 on stateful workflows: individual mechanisms often function, whereas complete activities that require coordinated actions and persistent state remain difficult. These results identify reference fidelity and coordinated activity completion as central bottlenecks for coding agents in 3D creation.",
+      "topics": [
+        "通用 AI"
+      ],
+      "published": "2026-11-06",
+      "age_days": 5.043565568252315,
+      "upvotes": 24,
+      "comments": 2,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.3427,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 15,
+        "comments": 1
+      },
+      "score": 4.721,
+      "rule_tags": [],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对现有3D创建基准测试分散且缺乏综合评估的问题，本文提出了Frontier3DBench。该基准涵盖了从物体、场景到交互式开放世界的145项任务，旨在评估编码智能体在外观、结构和行为方面的表现。通过对11种模型配置的实验，作者分析了智能体在不同创建层级的性能差异，并指出参考保真度和协同活动完成度是当前编码智能体在3D创建任务中的主要瓶颈。",
+        "highlights": [
+          {
+            "text": "Frontier3DBench提供了一个涵盖物体、场景及交互式开放世界创建的统一评估框架。",
+            "evidence": "We propose Frontier3DBench, a unified benchmark of 145 tasks across 9 categories spanning object, scene, and interactive open-world creation, with joint evaluation of appearance, structure, and behavior."
+          },
+          {
+            "text": "实验表明，编码智能体在生成内容时表现较好，但在精确复现几何结构和视觉细节方面仍面临挑战。",
+            "evidence": "Producing plausible content thus remains easier than reproducing specified geometry, layouts, and visual details."
+          },
+          {
+            "text": "复杂且需要多步协同和状态维持的交互式任务是编码智能体的薄弱环节。",
+            "evidence": "individual mechanisms often function, whereas complete activities that require coordinated actions and persistent state remain difficult."
+          }
+        ],
+        "tags": [
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.08373",
+      "title": "SLA: Scaling Spatial-Language-Action Model via Continual Pre-training",
+      "abstract": "Reliable robotic manipulation requires both semantic understanding and precise control in three-dimensional space. However, vision-language-action (VLA) foundations largely inherit visual representations from 2D vision-language pre-training, while spatial supervision is often introduced only during task-specific adaptation. Developing spatial understanding as a transferable foundation-model capability therefore calls for learning from broader robot experience. We present SLA, a Spatial-Language-Action Model that scales implicit spatial alignment to continual pre-training and maintains it during downstream post-training. Initialized from a pretrained pi05 policy, SLA jointly optimizes action prediction and alignment between intermediate visual embeddings and spatial representations from a frozen 3D perception model. We curate and unify heterogeneous robot datasets to support spatial learning across diverse embodiments, tasks, and scenes. To accommodate this diversity, we introduce feature-dependent gates that adaptively aggregate visual embeddings from multiple VLA layers for spatial supervision. The teacher further exploits partially available depth and camera calibration alongside RGB observations, enabling effective use of heterogeneous geometric annotations. Probabilistic state dropout encourages reliance on visual cues and mitigates overfitting to demonstration trajectories. All auxiliary components are used only during training, allowing direct reuse of pretrained VLA weights and preserving the original inference architecture.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-11-05",
+      "age_days": 6.043565568252315,
+      "upvotes": 86,
+      "comments": 3,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.42566,
+      "growth": {
+        "days": 1.0,
+        "upvotes": -11,
+        "comments": 0
+      },
+      "score": 4.7,
+      "rule_tags": [
+        "机器人操作",
+        "视觉语言动作",
+        "大模型后训练"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对现有视觉语言动作（VLA）模型在三维空间理解能力上的不足，本文提出了一种空间-语言-动作（SLA）模型。该模型通过持续预训练将隐式空间对齐融入到VLA框架中，利用多模态机器人数据集和特征依赖门控机制，将冻结的3D感知模型信息与视觉嵌入对齐。作者声称该方法在保留原推理架构的同时，有效增强了机器人在三维空间中的控制与语义理解能力。",
+        "highlights": [
+          {
+            "text": "提出SLA模型，通过持续预训练将隐式空间对齐能力整合进VLA架构，提升机器人对三维空间的理解。",
+            "evidence": "We present SLA, a Spatial-Language-Action Model that scales implicit spatial alignment to continual pre-training and maintains it during downstream post-training."
+          },
+          {
+            "text": "采用特征依赖门控机制，能够自适应地从多个VLA层聚合视觉嵌入，从而支持异构机器人数据集上的空间学习。",
+            "evidence": "To accommodate this diversity, we introduce feature-dependent gates that adaptively aggregate visual embeddings from multiple VLA layers for spatial supervision."
+          }
+        ],
+        "tags": [
+          "视觉语言动作",
+          "机器人操作",
+          "大模型后训练"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.12806",
+      "title": "Learning Heterogeneous Tactile Representation for General Dexterous Manipulation",
+      "abstract": "Tactile sensing is an indispensable modality for contact-rich dexterous manipulation, a capability that hints at the ultimate frontiers of embodied intelligence. However, commercially available tactile sensors are still at a relatively early stage of development, with each type of sensor offering irreplaceable strengths alongside its own drawbacks. A key challenge is thus to free tactile understanding from sensor-specific physics, so that embodied models can effectively leverage heterogeneous tactile data. To this end, we develop LingBot-Touch, a tactile foundation model characterized by the following properties. (i) Our model yields a unified representation across different tactile sensors (i.e., piezoresistive, magnetic, and visuotactile sensors), and is easily extensible to new sensor types. (ii) The resulting tactile tokens are plug-and-play: they can be seamlessly integrated into policy models across paradigms, from diffusion policy to vision-language-action (VLA) models such as π_{0.5} and LingBot-VLA, consistently enhancing manipulation dexterity. (iii) Extensive experiments, spanning simulation and real-robot deployments across multiple hardware platforms, demonstrate that our tactile representation substantially benefits complex manipulation tasks while maintaining strong computational efficiency. We believe the findings in this work demonstrate the potential of leveraging cross-sensor data to scale tactile learning, and offer encouraging insights for the design of future hardware and embodied models.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-11-09",
+      "age_days": 2.043565568252315,
+      "upvotes": 92,
+      "comments": 1,
+      "stars": 137,
+      "repo": "https://github.com/Robbyant/lingbot-touch",
+      "trending_rank": 6,
+      "sources": [
+        "Hugging Face",
+        "arXiv"
+      ],
+      "date_label": "发表",
+      "relevance": 0.36367,
+      "growth": null,
+      "score": 4.638,
+      "rule_tags": [
+        "机器人操作",
+        "视觉语言动作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对触觉感知依赖特定传感器物理特性的挑战，作者开发了名为LingBot-Touch的触觉基础模型。该模型通过统一不同类型触觉传感器的数据表征，构建了一种可扩展的通用触觉编码方案。实验证明，该方法生成的触觉Token可无缝集成至多种策略模型中，显著提升了机器人在模拟及真实环境下的复杂操作能力，并表现出良好的计算效率。",
+        "highlights": [
+          {
+            "text": "LingBot-Touch提供了一种跨多种触觉传感器的统一表征，具备良好的传感器通用性与可扩展性。",
+            "evidence": "Our model yields a unified representation across different tactile sensors (i.e., piezoresistive, magnetic, and visuotactile sensors), and is easily extensible to new sensor types."
+          },
+          {
+            "text": "该触觉表征作为即插即用的模块，可集成于扩散策略及视觉语言动作模型中，有效增强操作灵活性。",
+            "evidence": "The resulting tactile tokens are plug-and-play: they can be seamlessly integrated into policy models across paradigms, from diffusion policy to vision-language-action (VLA) models such as π_{0.5} and LingBot-VLA, consistently enhancing manipulation dexterity."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "Sim-to-Real",
+          "视觉语言动作"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.12886",
+      "title": "Reframe: Observation-Aligned Multi-Teacher On-Policy Distillation for Agentic Visual Reasoning",
+      "abstract": "Agentic reinforcement learning (RL) and multi-teacher on-policy distillation (MOPD) offer complementary routes to post-training. For visual agents, however, tool use presents two related challenges. Models may overlook useful tool-returned observations, while poorly grounded actions can limit the evidence available for subsequent distillation. We introduce Reframe, a post-training framework that treats the observation state, rather than only the output distribution, as an object of alignment. First, Ground-Drop-GRPO (GD-GRPO) trains spatial and temporal specialists with evidence-aware rewards and stochastic removal of the original visual input, encouraging them to acquire grounded evidence and use the returned observations. Second, Observation-Gated-MOPD (OG-MOPD) replaces deficient tool actions with canonical ones mid-rollout and resumes distillation from the repaired observation. The two stages complement each other, as learning to rely on tool-returned observations can help the policy benefit from observation repair. Neither stage requires a task-specific SFT cold start. Extensive experiments over 14 image and video benchmarks demonstrate that Reframe outperforms both Mix-RL and vanilla MOPD. Ablation results show that GD-GRPO increases observation dependence and tool gain compared with outcome-based GRPO.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-11-09",
+      "age_days": 2.043565568252315,
+      "upvotes": 37,
+      "comments": 2,
+      "stars": 31,
+      "repo": "https://github.com/EliYuan30/Reframe",
+      "trending_rank": 32,
+      "sources": [
+        "Hugging Face",
+        "arXiv"
+      ],
+      "date_label": "发表",
+      "relevance": 0.38999,
+      "growth": null,
+      "score": 4.624,
+      "rule_tags": [
+        "强化学习",
+        "大模型后训练",
+        "推理"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对具身智能体在视觉推理中工具使用不足及动作失准的问题，本文提出了Reframe后训练框架。该框架将观测状态作为对齐对象，通过GD-GRPO训练策略以增强对工具返回观测的依赖，并利用OG-MOPD在训练过程中修正动作并恢复观测，从而提升智能体的推理能力。实验表明，该方法优于Mix-RL及传统的多教师在线策略蒸馏。",
+        "highlights": [
+          {
+            "text": "Reframe框架通过GD-GRPO引入基于证据的奖励并随机移除视觉输入，促使智能体更好地利用工具返回的观测信息。",
+            "evidence": "Ground-Drop-GRPO (GD-GRPO) trains spatial and temporal specialists with evidence-aware rewards and stochastic removal of the original visual input, encouraging them to acquire grounded evidence and use the returned observations."
+          },
+          {
+            "text": "OG-MOPD方法通过在训练滚动过程中替换欠佳的动作并基于修复后的观测继续蒸馏，提升了模型性能。",
+            "evidence": "Observation-Gated-MOPD (OG-MOPD) replaces deficient tool actions with canonical ones mid-rollout and resumes distillation from the repaired observation."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.04277",
+      "title": "Harness-S: Learning from Sibling Harnesses for Generalizable Agent Training",
+      "abstract": "Harness evolution from a common base exhibits Locality, Complementarity, and Nonstationarity: variants repair different failures, and their utility changes as the policy learns. Rather than seeking a universally superior harness, we introduce Harness-S to selectively rescue failures of a base execution system through sibling harnesses and transfer the resulting capabilities into a single policy that remains effective under the original harness. Directional Harness Evolution develops specialized sibling harnesses along distinct repair directions, forming a reusable Sibling Harness Pool that remains fixed during policy training. Complementary Harness Rescue Training invokes this pool only when all initial attempts under the base harness fail. The same policy generates fresh rollouts under selected auxiliary harnesses, and these trajectories replace the failed group for reinforcement learning. An Adaptive Harness Router selects the Top-k variants using Harness Behavior Profiles and voting across multiple LLMs. Policy-aware profile re-anchoring refreshes this evidence as the policy learns. Across AppWorld, SWE-Gym, and DBBench, the trained policy substantially outperforms policy-only training when returned to the original base harness. Behavioral analyses and held-out cases support the transfer of harness-elicited behaviors into the policy itself. Reusing the router for Rank-1 inference provides additional gains at the same executor rollout count.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-11-03",
+      "age_days": 8.043565568252316,
+      "upvotes": 67,
+      "comments": 5,
+      "stars": 65,
+      "repo": "https://github.com/DeepExperience/Harness-S",
+      "trending_rank": 58,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.39515,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 0,
+        "comments": 0,
+        "stars": 3
+      },
+      "score": 4.617,
+      "rule_tags": [
+        "强化学习"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对代理训练中执行器失效的问题，本文提出了Harness-S方法。该方法通过构建包含多种变体的姐妹执行器库，利用方向性进化生成专门修复不同错误的执行器。当基础执行器失败时，自适应路由机制会选择合适的辅助执行器进行救援，并将获得的经验能力整合到单一策略中，从而在不依赖辅助执行器的情况下提升基础执行器的整体性能。",
+        "highlights": [
+          {
+            "text": "Harness-S通过引入辅助执行器库并利用自适应路由机制，显著提升了代理在基础执行器下的表现。",
+            "evidence": "Across AppWorld, SWE-Gym, and DBBench, the trained policy substantially outperforms policy-only training when returned to the original base harness."
+          },
+          {
+            "text": "通过策略感知剖面重锚定机制，系统能够动态更新对辅助执行器性能的评估，以适应策略学习的演进。",
+            "evidence": "Policy-aware profile re-anchoring refreshes this evidence as the policy learns."
+          }
+        ],
+        "tags": [
+          "大模型后训练",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    }
+  ],
+  "candidate_count": 1213,
+  "personalization_note": "已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。",
+  "html": "<h1>2026-11-11 热门论文 Top 10</h1>\n<p>机器人 · 强化学习 · 通用 AI</p>\n<p>生成时间：2026-11-11 09:02 CST。从 1213 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>\n<p>候选来源：<a href=\"https://huggingface.co/papers\">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>\n<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>\n<h2>1. Toward the Era of Agentic Embodied Intelligence</h2>\n<p><strong>机器人</strong> · 发表 2026-11-06 · 综合分 5.92</p>\n<p>Zotero 摘要相关性：0.489（相似度分数，不是概率）。</p>\n<p>HF 点赞 49 · 讨论 3 · 本次 HF 热榜第 71 位 · 仓库累计 Star 9（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +49 · 讨论 +3。</p>\n<p><strong>规则标签：</strong>世界模型 · 视觉语言动作 · 多智能体</p>\n<p><strong>中文概述：</strong>本文提出A2-MEAS具身多智能体框架，旨在通过代码作为扩展接口，解决机器人持续自主控制与失败恢复问题。该方法结合了纠错编码、MetaBrain监督机制及具备运动感知历史和潜在世界模型的视觉语言动作策略（A2-WLA）。作者声称，该设计在BEHAVIOR 2026和RoboTwin 2.0基准测试以及多项真实机器人任务中表现优于对比模型，且训练效率显著提升。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>A2-MEAS框架通过代码作为扩展接口，利用纠错编码和MetaBrain监督机制实现机器人行为的有效纠错与自主导航。<br><small>摘要依据：A2-MEAS, an embodied multi-agent framework built around code as a scaling interface. Learned correction codes combine corrective language, spatial evidence, execution history, and action proposals. MetaBrain provides training supervision and runtime guidance.</small></li>\n<li>在BEHAVIOR 2026及RoboTwin 2.0等基准测试中，该方法在任务成功率和Q-score指标上均显示出相较于对比基准的性能优势。<br><small>摘要依据：Surprisingly, this simple design with action pretraining and task specialization reaches 0.5755 Q-score on the 50-task BEHAVIOR 2026 public subset before online correction, 2.21x the 2025 winner&#x27;s reported 0.2605 across different benchmark editions and training configurations.</small></li>\n<li>该训练基础设施实现了高样本吞吐量，在匹配硬件条件下达到对比方案4.03倍的训练速度。<br><small>摘要依据：Our training infrastructure delivers 427.1 samples per second, 4.03x the throughput of a pi0.5 reference implementation on matched hardware.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 视觉语言动作 · 世界模型 · 多智能体</p>\n<p><strong>原文摘要节选：</strong>Foundation models increasingly guide robot actions, yet sustained autonomy requires efficient control and failure recovery. We introduce A2-MEAS, an embodied multi-agent framework built around code as a scaling interface. Learned correction codes combine corrective language, spatial evidence, execution history, and action proposals. MetaBrain provides training supervision and runtime guidance. A correction encoder and adapter absorb this knowledge into policy weights during training, while fresh codes adapt behavior with frozen weights at deployment. The action model, A2-WLA, adds motion-aware history and a latent world model to a vision-language-action policy. Surprisingly, this simple design with action pretraining and task specialization reaches 0.5755 Q-score on the 50-task BEHAVIOR…</p>\n<p><a href=\"https://arxiv.org/abs/2611.09124\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.09124\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.09124\">讨论与热度</a> · <a href=\"https://github.com/AutoLab-SAI-SJTU/A2MEAS\">代码</a></p><hr>\n<h2>2. Video-Coder: Reinforcing Agentic Coding for Video Generation</h2>\n<p><strong>强化学习</strong> · 发表 2026-11-06 · 综合分 5.30</p>\n<p>Zotero 摘要相关性：0.429（相似度分数，不是概率）。</p>\n<p>HF 点赞 20 · 讨论 3 · 本次 HF 热榜第 28 位 · 仓库累计 Star 54（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +4 · 讨论 +1 · Star +29。</p>\n<p><strong>规则标签：</strong>强化学习</p>\n<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>\n<p><strong>原文摘要节选：</strong>Recent years have witnessed remarkable progress in video generation in terms of visual quality and temporal consistency. However, generating videos with precise spatial structure, coherent motion dynamics, and controllable scene composition remains challenging. In this paper, we introduce Video-Coder, the first attempt to train a code-driven video generation agent, which autonomously writes and executes code to construct a dynamic 3D scene (Draft Video) that provides structure and motion signals to downstream video generators. To support this paradigm, we design a dedicated data pipeline and curate two high-quality datasets, Video-Coder-SFT-6k and Video-Coder-RL-2k, which contain diverse prompts and ground-truth reference videos. We further develop the Video- Coder Harness, a unified…</p>\n<p><a href=\"https://arxiv.org/abs/2611.09894\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.09894\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.09894\">讨论与热度</a> · <a href=\"https://github.com/CYWang735/Video-Coder\">代码</a></p><hr>\n<h2>3. VFlash: Fast, Accurate Visual Planning via Flash Primitive Decoding</h2>\n<p><strong>机器人</strong> · 发表 2026-11-05 · 综合分 5.06</p>\n<p>Zotero 摘要相关性：0.438（相似度分数，不是概率）。</p>\n<p>HF 点赞 111 · 讨论 1</p>\n<p>较上次观测（1.0 天前）：点赞 +2 · 讨论 +0。</p>\n<p><strong>中文概述：</strong>针对现有视觉语言模型在生成机器人及自动驾驶视觉规划时存在的推理速度慢的问题，作者提出VFlash方法。该方法利用闪存基元解码技术，通过轻量级草拟器一次性联合预测视觉基元的坐标，而非逐个生成坐标token。实验结果显示，该方法在保持空间准确性的同时，显著提升了生成速度，并在多项机器人轨迹任务中优于基准模型。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>VFlash通过一次前向传递生成整个视觉基元，显著提升了生成速度。<br><small>摘要依据：VFlash exploits the known structure of visual primitives to predict their coordinates jointly, using a lightweight drafter that generates an entire primitive in one forward pass.</small></li>\n<li>在3D点运动预测任务中，VFlash的生成速度提升约25倍。<br><small>摘要依据：Preliminary single-rollout measurements indicate approximately 25x faster generation for 3D point motion forecasting.</small></li>\n<li>基于VFlash规划的动作模型在多项任务套件中表现优于传统自回归基线。<br><small>摘要依据：A world action model conditioned on VFlash plans achieves 70.2% average success across four MolmoSpaces task suites, compared with 62.6% for the baseline.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 世界模型</p>\n<p><strong>原文摘要节选：</strong>Models for physical AI tasks, such as robotics and autonomous driving, need not reason solely in language. They can use visual plans--points, bounding boxes, and trajectories--to represent spatial goals and anticipate motion. However, autoregressive vision-language models generate these plans one coordinate token at a time, making richer predictions increasingly costly. We introduce VFlash, a method for fast, accurate visual planning through Flash Primitive Decoding. VFlash exploits the known structure of visual primitives to predict their coordinates jointly, using a lightweight drafter that generates an entire primitive in one forward pass. The layout adapts to the primitive&#x27;s type, dimensionality, and length, supporting compact boxes and long, variable-length trajectories. Crucially,…</p>\n<p><a href=\"https://arxiv.org/abs/2611.08449\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.08449\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.08449\">讨论与热度</a></p><hr>\n<h2>4. Democratizing Robot-Use Agents: A Unified Harness with Open Models</h2>\n<p><strong>机器人</strong> · 发表 2026-11-01 · 综合分 4.90</p>\n<p>Zotero 摘要相关性：0.451（相似度分数，不是概率）。</p>\n<p>HF 点赞 48 · 讨论 1 · 本次 HF 热榜第 27 位 · 仓库累计 Star 323（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +0 · 讨论 +0 · Star +18。</p>\n<p><strong>规则标签：</strong>视觉语言动作</p>\n<p><strong>中文概述：</strong>针对现有机器人使用智能体（RUA）依赖封闭私有模型导致研究受限的问题，作者提出了uni-robot-agent，这是一个支持进一步训练的开放权重机器人操作统一框架。实验表明，基于Qwen3.8-Flash-Next模型的方法在RoboDojo基准测试中优于GPT-6 Astra-RoboProbe及多种基线，并在19项真实世界任务中表现出竞争力。此外，作者分析了模型特性与机器人操作能力之间的联系，为未来RUA的协同训练提供了参考。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>uni-robot-agent框架使开放权重模型在机器人操作任务中取得了具有竞争力的性能，且无需特权输入。<br><small>摘要依据：Without privileged inputs, an out-of-the-box Qwen3.8-Flash-Next achieves a RoboDojo Score of 31.39, surpassing the published GPT-6 Astra-RoboProbe result of 28.97 and many VLA/WAM baselines, and performs competitively on 19 real-world tasks.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 视觉语言动作 · 大模型后训练</p>\n<p><strong>原文摘要节选：</strong>Robot-use Agents (RUAs) have shown promising zero-shot manipulation capabilities, but reliance on frontier, proprietary models limits research into further training. To democratize RUA research, we introduce uni-robot-agent, a unified harness for competitive open-weight robot use that supports further training. Without privileged inputs, an out-of-the-box Qwen3.8-Flash-Next achieves a RoboDojo Score of 31.39, surpassing the published GPT-6 Astra-RoboProbe result of 28.97 and many VLA/WAM baselines, and performs competitively on 19 real-world tasks. Our analysis across model generations, families, and sizes links effective robot use to four general capabilities, suggesting that future RUA training should develop them jointly.</p>\n<p><a href=\"https://arxiv.org/abs/2611.01560\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.01560\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.01560\">讨论与热度</a> · <a href=\"https://github.com/Open-RUA/uni-robot-agent\">代码</a></p><hr>\n<h2>5. Has GPT-6-Astra Achieved Embodied Intelligence?</h2>\n<p><strong>机器人</strong> · 发表 2026-10-15 · 综合分 4.78</p>\n<p>Zotero 摘要相关性：0.477（相似度分数，不是概率）。</p>\n<p>HF 点赞 135 · 讨论 2 · 本次 HF 热榜第 42 位 · 仓库累计 Star 599（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +0 · 讨论 +0 · Star +38。</p>\n<p><strong>规则标签：</strong>人形机器人 · 机器人操作 · 导航</p>\n<p><strong>中文概述：</strong>本文评估了GPT-6-Astra在机器人操作与导航任务中的表现。研究者通过12个基准测试探究了该模型在上下文学习下的能力极限，并分析了将其作为高层推理器与低层控制器结合的代理机制。实验发现，尽管该模型展现出较高的具身能力，但在真实物理部署中仍面临数据采集成本高、物理约束限制及长期执行效率等挑战。作者认为该模型尚未达到实用具身智能的标准。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>GPT-6-Astra在跨越桌面操作、人形机器人、移动平台及灵巧手的12个代表性基准测试中，通过上下文学习实现了出色的性能。<br><small>摘要依据：We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance</small></li>\n<li>研究指出高层“系统2”推理器与低层“系统1”控制器的闭环协调方案虽然有效，但伴随着较高的计算成本。<br><small>摘要依据：We identify that close-loop coordination between a high-level &quot;System 2&quot; reasoner (i.e., GPT-6-Astra) and a low-level &quot;System 1&quot; controller (e.g., π0.5) is costly but effective.</small></li>\n<li>在8种机器人配置的实机部署实验中，研究发现现有范式难以通过延长执行时间来换取物理约束下的高成功率。<br><small>摘要依据：Our experiments on 8 robot configurations reveal substantial gaps: 1) robot demonstrations required for ICL are expensive to collect, and 2) it is implausible to trade longer execution for higher success rates with physical constraints.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 导航 · 人形机器人 · 推理</p>\n<p><strong>原文摘要节选：</strong>GPT-6-Astra demonstrates a level of competence in robotic manipulation and navigation that challenges the conventional paradigm of building specialized models for individual tasks and embodiments. In this report, we ask not only how capable GPT-6-Astra is, but what its capabilities imply for the field. First, we probe the limits of standalone GPT-6-Astra. We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance (Fig. 1). Future research may focus on improving 1) the generality of ICL 2) cost and…</p>\n<p><a href=\"https://arxiv.org/abs/2610.22471\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2610.22471\">PDF</a> · <a href=\"https://huggingface.co/papers/2610.22471\">讨论与热度</a> · <a href=\"https://github.com/OpenSenseNova/SenseNova-RoboRSI\">代码</a></p><hr>\n<h2>6. Frontier3DBench: Benchmarking Coding Agents for 3D Creation across Objects, Scenes, and Interactive Open Worlds</h2>\n<p><strong>通用 AI</strong> · 发表 2026-11-06 · 综合分 4.72</p>\n<p>Zotero 摘要相关性：0.343（相似度分数，不是概率）。</p>\n<p>HF 点赞 24 · 讨论 2</p>\n<p>较上次观测（1.0 天前）：点赞 +15 · 讨论 +1。</p>\n<p><strong>中文概述：</strong>针对现有3D创建基准测试分散且缺乏综合评估的问题，本文提出了Frontier3DBench。该基准涵盖了从物体、场景到交互式开放世界的145项任务，旨在评估编码智能体在外观、结构和行为方面的表现。通过对11种模型配置的实验，作者分析了智能体在不同创建层级的性能差异，并指出参考保真度和协同活动完成度是当前编码智能体在3D创建任务中的主要瓶颈。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>Frontier3DBench提供了一个涵盖物体、场景及交互式开放世界创建的统一评估框架。<br><small>摘要依据：We propose Frontier3DBench, a unified benchmark of 145 tasks across 9 categories spanning object, scene, and interactive open-world creation, with joint evaluation of appearance, structure, and behavior.</small></li>\n<li>实验表明，编码智能体在生成内容时表现较好，但在精确复现几何结构和视觉细节方面仍面临挑战。<br><small>摘要依据：Producing plausible content thus remains easier than reproducing specified geometry, layouts, and visual details.</small></li>\n<li>复杂且需要多步协同和状态维持的交互式任务是编码智能体的薄弱环节。<br><small>摘要依据：individual mechanisms often function, whereas complete activities that require coordinated actions and persistent state remain difficult.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>推理</p>\n<p><strong>原文摘要节选：</strong>Coding agents combine visual understanding with program execution, offering a new route to automated 3D creation. By translating images and instructions into editable programs, they bring reconstruction, generation, and editing into a shared workflow. Yet existing benchmarks fragment evaluation across task scopes and protocols, leaving their capabilities across construction levels unclear. We propose Frontier3DBench, a unified benchmark of 145 tasks across 9 categories spanning object, scene, and interactive open-world creation, with joint evaluation of appearance, structure, and behavior. Experiments with 11 model-harness configurations reveal strengths that vary by level: GPT-6.1-sol leads the object and scene levels and achieves the highest overall score of 66.02/100, whereas…</p>\n<p><a href=\"https://arxiv.org/abs/2611.09017\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.09017\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.09017\">讨论与热度</a></p><hr>\n<h2>7. SLA: Scaling Spatial-Language-Action Model via Continual Pre-training</h2>\n<p><strong>机器人</strong> · 发表 2026-11-05 · 综合分 4.70</p>\n<p>Zotero 摘要相关性：0.426（相似度分数，不是概率）。</p>\n<p>HF 点赞 86 · 讨论 3</p>\n<p>较上次观测（1.0 天前）：点赞 -11 · 讨论 +0。</p>\n<p><strong>规则标签：</strong>机器人操作 · 视觉语言动作 · 大模型后训练</p>\n<p><strong>中文概述：</strong>针对现有视觉语言动作（VLA）模型在三维空间理解能力上的不足，本文提出了一种空间-语言-动作（SLA）模型。该模型通过持续预训练将隐式空间对齐融入到VLA框架中，利用多模态机器人数据集和特征依赖门控机制，将冻结的3D感知模型信息与视觉嵌入对齐。作者声称该方法在保留原推理架构的同时，有效增强了机器人在三维空间中的控制与语义理解能力。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出SLA模型，通过持续预训练将隐式空间对齐能力整合进VLA架构，提升机器人对三维空间的理解。<br><small>摘要依据：We present SLA, a Spatial-Language-Action Model that scales implicit spatial alignment to continual pre-training and maintains it during downstream post-training.</small></li>\n<li>采用特征依赖门控机制，能够自适应地从多个VLA层聚合视觉嵌入，从而支持异构机器人数据集上的空间学习。<br><small>摘要依据：To accommodate this diversity, we introduce feature-dependent gates that adaptively aggregate visual embeddings from multiple VLA layers for spatial supervision.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>视觉语言动作 · 机器人操作 · 大模型后训练</p>\n<p><strong>原文摘要节选：</strong>Reliable robotic manipulation requires both semantic understanding and precise control in three-dimensional space. However, vision-language-action (VLA) foundations largely inherit visual representations from 2D vision-language pre-training, while spatial supervision is often introduced only during task-specific adaptation. Developing spatial understanding as a transferable foundation-model capability therefore calls for learning from broader robot experience. We present SLA, a Spatial-Language-Action Model that scales implicit spatial alignment to continual pre-training and maintains it during downstream post-training. Initialized from a pretrained pi05 policy, SLA jointly optimizes action prediction and alignment between intermediate visual embeddings and spatial representations from a…</p>\n<p><a href=\"https://arxiv.org/abs/2611.08373\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.08373\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.08373\">讨论与热度</a></p><hr>\n<h2>8. Learning Heterogeneous Tactile Representation for General Dexterous Manipulation</h2>\n<p><strong>机器人</strong> · 发表 2026-11-09 · 综合分 4.64</p>\n<p>Zotero 摘要相关性：0.364（相似度分数，不是概率）。</p>\n<p>HF 点赞 92 · 讨论 1 · 本次 HF 热榜第 6 位 · 仓库累计 Star 137（仓库可能包含多篇论文）</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>机器人操作 · 视觉语言动作</p>\n<p><strong>中文概述：</strong>针对触觉感知依赖特定传感器物理特性的挑战，作者开发了名为LingBot-Touch的触觉基础模型。该模型通过统一不同类型触觉传感器的数据表征，构建了一种可扩展的通用触觉编码方案。实验证明，该方法生成的触觉Token可无缝集成至多种策略模型中，显著提升了机器人在模拟及真实环境下的复杂操作能力，并表现出良好的计算效率。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>LingBot-Touch提供了一种跨多种触觉传感器的统一表征，具备良好的传感器通用性与可扩展性。<br><small>摘要依据：Our model yields a unified representation across different tactile sensors (i.e., piezoresistive, magnetic, and visuotactile sensors), and is easily extensible to new sensor types.</small></li>\n<li>该触觉表征作为即插即用的模块，可集成于扩散策略及视觉语言动作模型中，有效增强操作灵活性。<br><small>摘要依据：The resulting tactile tokens are plug-and-play: they can be seamlessly integrated into policy models across paradigms, from diffusion policy to vision-language-action (VLA) models such as π_{0.5} and LingBot-VLA, consistently enhancing manipulation dexterity.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · Sim-to-Real · 视觉语言动作</p>\n<p><strong>原文摘要节选：</strong>Tactile sensing is an indispensable modality for contact-rich dexterous manipulation, a capability that hints at the ultimate frontiers of embodied intelligence. However, commercially available tactile sensors are still at a relatively early stage of development, with each type of sensor offering irreplaceable strengths alongside its own drawbacks. A key challenge is thus to free tactile understanding from sensor-specific physics, so that embodied models can effectively leverage heterogeneous tactile data. To this end, we develop LingBot-Touch, a tactile foundation model characterized by the following properties. (i) Our model yields a unified representation across different tactile sensors (i.e., piezoresistive, magnetic, and visuotactile sensors), and is easily extensible to new sensor…</p>\n<p><a href=\"https://arxiv.org/abs/2611.12806\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.12806\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.12806\">讨论与热度</a> · <a href=\"https://github.com/Robbyant/lingbot-touch\">代码</a></p><hr>\n<h2>9. Reframe: Observation-Aligned Multi-Teacher On-Policy Distillation for Agentic Visual Reasoning</h2>\n<p><strong>强化学习</strong> · 发表 2026-11-09 · 综合分 4.62</p>\n<p>Zotero 摘要相关性：0.390（相似度分数，不是概率）。</p>\n<p>HF 点赞 37 · 讨论 2 · 本次 HF 热榜第 32 位 · 仓库累计 Star 31（仓库可能包含多篇论文）</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习 · 大模型后训练 · 推理</p>\n<p><strong>中文概述：</strong>针对具身智能体在视觉推理中工具使用不足及动作失准的问题，本文提出了Reframe后训练框架。该框架将观测状态作为对齐对象，通过GD-GRPO训练策略以增强对工具返回观测的依赖，并利用OG-MOPD在训练过程中修正动作并恢复观测，从而提升智能体的推理能力。实验表明，该方法优于Mix-RL及传统的多教师在线策略蒸馏。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>Reframe框架通过GD-GRPO引入基于证据的奖励并随机移除视觉输入，促使智能体更好地利用工具返回的观测信息。<br><small>摘要依据：Ground-Drop-GRPO (GD-GRPO) trains spatial and temporal specialists with evidence-aware rewards and stochastic removal of the original visual input, encouraging them to acquire grounded evidence and use the returned observations.</small></li>\n<li>OG-MOPD方法通过在训练滚动过程中替换欠佳的动作并基于修复后的观测继续蒸馏，提升了模型性能。<br><small>摘要依据：Observation-Gated-MOPD (OG-MOPD) replaces deficient tool actions with canonical ones mid-rollout and resumes distillation from the repaired observation.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · 推理</p>\n<p><strong>原文摘要节选：</strong>Agentic reinforcement learning (RL) and multi-teacher on-policy distillation (MOPD) offer complementary routes to post-training. For visual agents, however, tool use presents two related challenges. Models may overlook useful tool-returned observations, while poorly grounded actions can limit the evidence available for subsequent distillation. We introduce Reframe, a post-training framework that treats the observation state, rather than only the output distribution, as an object of alignment. First, Ground-Drop-GRPO (GD-GRPO) trains spatial and temporal specialists with evidence-aware rewards and stochastic removal of the original visual input, encouraging them to acquire grounded evidence and use the returned observations. Second, Observation-Gated-MOPD (OG-MOPD) replaces deficient tool…</p>\n<p><a href=\"https://arxiv.org/abs/2611.12886\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.12886\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.12886\">讨论与热度</a> · <a href=\"https://github.com/EliYuan30/Reframe\">代码</a></p><hr>\n<h2>10. Harness-S: Learning from Sibling Harnesses for Generalizable Agent Training</h2>\n<p><strong>强化学习</strong> · 发表 2026-11-03 · 综合分 4.62</p>\n<p>Zotero 摘要相关性：0.395（相似度分数，不是概率）。</p>\n<p>HF 点赞 67 · 讨论 5 · 本次 HF 热榜第 58 位 · 仓库累计 Star 65（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +0 · 讨论 +0 · Star +3。</p>\n<p><strong>规则标签：</strong>强化学习</p>\n<p><strong>中文概述：</strong>针对代理训练中执行器失效的问题，本文提出了Harness-S方法。该方法通过构建包含多种变体的姐妹执行器库，利用方向性进化生成专门修复不同错误的执行器。当基础执行器失败时，自适应路由机制会选择合适的辅助执行器进行救援，并将获得的经验能力整合到单一策略中，从而在不依赖辅助执行器的情况下提升基础执行器的整体性能。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>Harness-S通过引入辅助执行器库并利用自适应路由机制，显著提升了代理在基础执行器下的表现。<br><small>摘要依据：Across AppWorld, SWE-Gym, and DBBench, the trained policy substantially outperforms policy-only training when returned to the original base harness.</small></li>\n<li>通过策略感知剖面重锚定机制，系统能够动态更新对辅助执行器性能的评估，以适应策略学习的演进。<br><small>摘要依据：Policy-aware profile re-anchoring refreshes this evidence as the policy learns.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>\n<p><strong>原文摘要节选：</strong>Harness evolution from a common base exhibits Locality, Complementarity, and Nonstationarity: variants repair different failures, and their utility changes as the policy learns. Rather than seeking a universally superior harness, we introduce Harness-S to selectively rescue failures of a base execution system through sibling harnesses and transfer the resulting capabilities into a single policy that remains effective under the original harness. Directional Harness Evolution develops specialized sibling harnesses along distinct repair directions, forming a reusable Sibling Harness Pool that remains fixed during policy training. Complementary Harness Rescue Training invokes this pool only when all initial attempts under the base harness fail. The same policy generates fresh rollouts under…</p>\n<p><a href=\"https://arxiv.org/abs/2611.04277\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.04277\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.04277\">讨论与热度</a> · <a href=\"https://github.com/DeepExperience/Harness-S\">代码</a></p><hr>"
+}

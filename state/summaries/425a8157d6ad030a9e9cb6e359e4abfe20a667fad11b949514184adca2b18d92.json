@@ -1,0 +1,20 @@
+{
+  "overview": "针对现有3D创建基准测试分散且缺乏综合评估的问题，本文提出了Frontier3DBench。该基准涵盖了从物体、场景到交互式开放世界的145项任务，旨在评估编码智能体在外观、结构和行为方面的表现。通过对11种模型配置的实验，作者分析了智能体在不同创建层级的性能差异，并指出参考保真度和协同活动完成度是当前编码智能体在3D创建任务中的主要瓶颈。",
+  "highlights": [
+    {
+      "text": "Frontier3DBench提供了一个涵盖物体、场景及交互式开放世界创建的统一评估框架。",
+      "evidence": "We propose Frontier3DBench, a unified benchmark of 145 tasks across 9 categories spanning object, scene, and interactive open-world creation, with joint evaluation of appearance, structure, and behavior."
+    },
+    {
+      "text": "实验表明，编码智能体在生成内容时表现较好，但在精确复现几何结构和视觉细节方面仍面临挑战。",
+      "evidence": "Producing plausible content thus remains easier than reproducing specified geometry, layouts, and visual details."
+    },
+    {
+      "text": "复杂且需要多步协同和状态维持的交互式任务是编码智能体的薄弱环节。",
+      "evidence": "individual mechanisms often function, whereas complete activities that require coordinated actions and persistent state remain difficult."
+    }
+  ],
+  "tags": [
+    "推理"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "overview": "针对未知且空间多变的干扰环境下自主导航控制能力不足的问题，本文提出了信念引导残差自适应控制框架（BRACE）。该框架通过从模型预测误差中推断干扰信念，利用分层强化学习方法调节参考轨迹，并将标称控制与残差项相结合。实验证明，该方法在仿真及四旋翼无人机实机测试中，相比模型预测控制和强化学习基准，在避障导航任务中表现出更好的性能。",
+  "highlights": [
+    {
+      "text": "提出了一种基于信念引导的残差自适应控制（BRACE）分层强化学习框架，能够有效应对未知且空间多变的干扰。",
+      "evidence": "We present Belief-guided Residual Adaptive Control (BRACE), a hierarchical reinforcement learning (RL) framework for reach-avoid navigation under unknown, bounded, spatially varying disturbances."
+    },
+    {
+      "text": "BRACE通过利用干扰信念来动态调整参考轨迹，并在多种实验环境中优于现有的导航基准方法。",
+      "evidence": "Across these settings, BRACE improves reach-avoid performance over model predictive control and RL baselines."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "导航"
+  ]
+}

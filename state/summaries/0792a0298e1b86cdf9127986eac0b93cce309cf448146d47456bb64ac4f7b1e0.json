@@ -1,0 +1,18 @@
+{
+  "overview": "本文探讨了视觉语言动作（VLA）模型在特定机器人任务中的微调策略，特别是在精度要求高的国际象棋棋子移动任务中。作者研究了数据量、训练更新量、模型选择方法以及仿真数据对真实场景性能的影响，通过在SO-101机械臂上的实验，分析了不同数据源的组合效果，并报告了多种强化学习和策略改进方法在此任务中的局限性。",
+  "highlights": [
+    {
+      "text": "研究发现学习率衰减对检查点评估至关重要，而传统的验证损失和动作误差指标在模型选择中不可靠。",
+      "evidence": "Importantly, we find that a short learning-rate cool-down adds up to 31 points and is necessary for comparing checkpoints, and that validation loss and action error are unreliable for model selection."
+    },
+    {
+      "text": "在真实机器人任务中，利用仿真示范数据进行预训练有助于提升性能，尤其是在真实数据匮乏的情况下。",
+      "evidence": "Partial results indicate that pretraining on the simulated demonstrations helps substantially, most clearly when real data is scarce."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "Sim-to-Real",
+    "视觉语言动作"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "overview": "针对行星着陆任务中燃料受限及轨迹控制复杂的挑战，本文提出了基于DreamerV3的DreamLander模型。该方法采用基于模型的强化学习，通过生成6自由度的最优制导与控制策略，实现了样本高效且具有通用性的着陆方案，在仿真中展现了高精度的着陆能力，并向着陆过程的端到端解决方案迈进。",
+  "highlights": [
+    {
+      "text": "DreamLander通过基于模型的强化学习生成6自由度最优制导与控制，实现了高精度着陆，着陆点偏差在2米以内且速度范数低于0.3米每秒。",
+      "evidence": "The model based approach creates a sample efficient and highly generalizable model that can be applied to a variety of scenarios whilst maintaining a high degree of accuracy, landing within 2 meters of the designated landing zone, and with velocity norm less than 0.3 meters per second."
+    }
+  ],
+  "tags": [
+    "世界模型",
+    "强化学习"
+  ]
+}
