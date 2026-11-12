@@ -5445,7 +5445,9 @@
         {
           "id": "2611.06858",
           "title": "CompressionBench: How can your coding agents compress LLMs? (Nov 2026)",
-          "url": "https://arxiv.org/abs/2611.06858"
+          "url": "https://arxiv.org/abs/2611.06858",
+          "abstract": "Recursive self-improvement requires AI systems to improve the models and infrastructure used by subsequent systems. LLM compression offers a concrete efficiency objective: retain a pretrained model's behavior within a smaller model storage budget. We study whether coding agents can carry out this step autonomously. We formulate compression as a terminal task in which an agent receives a source checkpoint, storage limit, inference environment, and time budget, then constructs compressed weights and executable inference code. The agent controls its algorithm and experiments; perplexity feedback guides search, and independent verification checks the final model. Across six agents and six model--size settings, 29 of 36 submissions pass verification. Selecting the lowest-perplexity agent design per task yields an average 3.4% perplexity increase over BF16 and 77.33% downstream accuracy, compared with 79.56% for BF16. Recorded experiments reveal how agents achieve these outcomes and where improvement breaks down. Agents lower PPL in 21 of 24 revisions at nearly fixed storage; complete-model feedback reverses 17 of 79 prior local rankings; and generation and inference tests expose failures that likelihood alone misses. The results identify representation design, experimental judgment, and capability validation as central to agent-driven model compression, a measurable component of efficiency-oriented self-improvement.",
+          "abstract_zh": "递归自我改进要求AI系统能够提升后续系统所使用的模型和基础设施。LLM压缩提供了一个具体的效率目标：在较小的模型存储预算内保留预训练模型的行为。我们研究了编码智能体是否能够自主执行这一步骤。我们将压缩任务定义为一个终极任务，即智能体接收一个源检查点、存储限制、推理环境和时间预算，然后构建压缩权重和可执行的推理代码。智能体控制其算法和实验；困惑度（perplexity）反馈指导搜索过程，独立的验证机制对最终模型进行检查。在六个智能体和六种模型尺寸设置的测试中，36个提交中有29个通过了验证。为每个任务选择困惑度最低的智能体设计，其平均困惑度比BF16增加了3.4%，下游任务准确率为77.33%，而BF16的准确率为79.56%。记录的实验揭示了智能体如何取得这些成果以及改进在何处受阻。智能体在几乎固定存储的情况下，在24次修订中的21次降低了PPL；完整模型反馈扭转了79个先前局部排名中的17个；生成和推理测试揭示了仅靠似然性（likelihood）无法发现的失败。研究结果表明，表征设计、实验判断和能力验证是智能体驱动的模型压缩的核心，这是面向效率的自我改进的一个可衡量组成部分。"
         }
       ]
     },
@@ -5458,7 +5460,9 @@
         {
           "id": "2611.09501",
           "title": "e-means: outperforming k-means (in one-tenth the epochs) (Nov 2026)",
-          "url": "https://arxiv.org/abs/2611.09501"
+          "url": "https://arxiv.org/abs/2611.09501",
+          "abstract": "Lloyd's k-means algorithm is a long-running standard for clustering, with applications in data analysis, retrieval, quantization and data curation. In this paper, we introduce an exponential moving average optimization procedure for k-means with mini-batch updates, powered by modern deep learning machinery and new insights. We also establish scaling laws on how decay rate and batch size impact final performance. This gives us a formulaic rule to fix them for multiple problem sizes and embedding datasets, without the need for any hyperparameter sweep. The resulting clustering algorithm, coined e-means, is much faster than Lloyd k-means and converges to lower losses, frequently even beating k-means++. On a wide array of embeddings datasets, it beats the loss of Lloyd k-means at 25 epochs in 1.4 to 2.6 epochs, which translates to 10-45x GPU wall-clock speedups compared to state-of-the-art k-means implementations. As an example, e-means partitions DINO10B, a dataset of 10 billion DINO embeddings, into 16 million clusters in only 2.5 epochs, reaching a loss below Lloyd's at 25 epochs.",
+          "abstract_zh": "Lloyd's k-means算法是聚类领域的长期标准，广泛应用于数据分析、检索、量化和数据整理。在本文中，我们引入了一种基于现代深度学习机制和新见解的、带有小批量更新的k-means指数移动平均优化过程。我们还建立了关于衰减率和批量大小如何影响最终性能的缩放定律。这为我们在多种问题规模和嵌入数据集上固定这些参数提供了一个公式化规则，无需进行任何超参数搜索。由此产生的聚类算法被称为e-means，它比Lloyd k-means快得多，并能收敛到更低的损失，甚至经常优于k-means++。在广泛的嵌入数据集上，它在1.4到2.6个epoch内即可达到Lloyd k-means在25个epoch时的损失水平，与最先进的k-means实现相比，这转化为10-45倍的GPU挂钟时间加速。作为一个例子，e-means仅用2.5个epoch就将包含100亿个DINO嵌入的数据集DINO10B划分为1600万个簇，其损失低于Lloyd算法在25个epoch时的水平。"
         }
       ]
     }
