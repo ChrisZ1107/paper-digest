@@ -5448,6 +5448,19 @@
           "url": "https://arxiv.org/abs/2611.06858"
         }
       ]
+    },
+    "MLaxwQsuDdM": {
+      "video_id": "MLaxwQsuDdM",
+      "video_title": "e-means: outperforming k-means (in one-tenth the epochs) (Nov 2026)",
+      "published": "2026-11-12",
+      "video_url": "https://www.youtube.com/watch?v=MLaxwQsuDdM",
+      "papers": [
+        {
+          "id": "2611.09501",
+          "title": "e-means: outperforming k-means (in one-tenth the epochs) (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.09501"
+        }
+      ]
     }
   }
 }
