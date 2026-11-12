@@ -5420,6 +5420,32 @@
           "abstract_zh": "大语言模型引导的进化搜索利用人工智能体通过迭代优化方案并结合高分方法来改进数学和计算问题的程序。然而，由于大语言模型在每一轮中都会生成冗长的思维链文本，且为了保持种群多样性必须多次重复此生成过程，导致该过程往往较慢。我们提出了SwarmEvolve，这是一个框架，其中每轮有数百个低成本智能体以群体形式工作，在潜空间中进行推理而无需解码为文本，并通过传递KV缓存来共享信息。每个群体从不同的角度研究问题。新颖性过滤器通过直接测量智能体隐藏状态向量之间的距离来保留最独特的想法。想法的交叉在潜空间中自然发生，因为总结器智能体接收所有群体成员的组合KV缓存。在数学发现和科学计算的21个问题上，SwarmEvolve获得了最高的平均分，并且只需中位数3到8分钟即可达到其他最先进框架在60分钟内才能达到的最佳分数。在多个问题上，使用Qwen3 8B的SwarmEvolve改进了AlphaEvolve最初用前沿大语言模型发现的解决方案。我们的研究表明，在潜空间中进行通信的智能体群体为科学问题的程序搜索提供了一种快速、低成本的方法。"
         }
       ]
+    },
+    "0oGMkWwbscw": {
+      "video_id": "0oGMkWwbscw",
+      "video_title": "Embodied First Exam (Nov 2026)",
+      "published": "2026-11-12",
+      "video_url": "https://www.youtube.com/watch?v=0oGMkWwbscw",
+      "papers": [
+        {
+          "id": "2611.12177",
+          "title": "Embodied First Exam (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.12177"
+        }
+      ]
+    },
+    "82ugqiTmwxw": {
+      "video_id": "82ugqiTmwxw",
+      "video_title": "CompressionBench: How can your coding agents compress LLMs? (Nov 2026)",
+      "published": "2026-11-12",
+      "video_url": "https://www.youtube.com/watch?v=82ugqiTmwxw",
+      "papers": [
+        {
+          "id": "2611.06858",
+          "title": "CompressionBench: How can your coding agents compress LLMs? (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.06858"
+        }
+      ]
     }
   }
 }
