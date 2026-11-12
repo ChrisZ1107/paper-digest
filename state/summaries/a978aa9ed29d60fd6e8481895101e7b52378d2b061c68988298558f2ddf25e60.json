@@ -1,0 +1,17 @@
+{
+  "overview": "针对深度强化学习在连续控制任务中缺乏可解释性的问题，本文提出符号模仿学习（Symbolic Imitation Learning）框架。该方法通过离线数据集将预训练策略蒸馏为由线性运动基元组成的决策列表，并结合在线增强随机搜索（ARS）算法对参数进行微调。实验表明，该方法在20项基准任务中表现接近甚至在11项任务中超越了原策略，且生成的策略简洁且具有良好的可解释性。",
+  "highlights": [
+    {
+      "text": "提出一种将离线数据蒸馏为可解释决策列表的符号模仿学习框架，并结合在线增强随机搜索算法进行性能优化。",
+      "evidence": "In this work, we introduce Symbolic Imitation Learning, a framework for distilling an oracle policy through an offline dataset into a decision list with linear model motion primitives. We show that this, in conjunction, with online Augmented-Random Search (ARS) tuning of the constants and motion primitives approximates the performance of the oracle across 20 benchmark RL tasks and exceeds the oracle in 11 of those 20 tasks"
+    },
+    {
+      "text": "该方法产生的策略在保持简洁性的同时具有高度的可解释性，便于领域专家进行理解。",
+      "evidence": "while simultaneously producing parsimonious, interpretable policies that domain experts can better understand."
+    }
+  ],
+  "tags": [
+    "模仿学习",
+    "离线强化学习"
+  ]
+}

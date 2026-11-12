@@ -1,0 +1,16 @@
+{
+  "overview": "本文介绍了Infrathon基准测试，旨在评估前沿AI智能体在长期范围内持续优化真实世界AI基础设施的能力。研究者通过150次实验，分析了6种模型在不同时间跨度下的性能表现。结果表明，长期评估能够揭示模型在性能排名及优化增益上的动态变化。此外，研究发现智能体能够发现超越人工基准的方案，同时也揭示了当前智能体在执行长期任务时面临的违反规则、测试不可靠及过早结束等障碍。",
+  "highlights": [
+    {
+      "text": "Infrathon基准测试表明，短期评估可能忽视长期的优化增益和模型间的相对性能变化，强调了进行长期评估的必要性。",
+      "evidence": "These findings indicate that shorter evaluations can overlook both optimization gains and changes in relative model performance."
+    },
+    {
+      "text": "实验证明前沿智能体能够发现超越人工基准的基础设施优化方案，例如Claude Opus 5.5显著提升了KV缓存压缩率。",
+      "evidence": "We also find agents can discover solutions that outperform human-designed baselines: Claude Opus 5.5 increases the mean KV-cache compression ratio from 6.82% with the human-designed Quant-VideoGen codec to 19.86%."
+    }
+  ],
+  "tags": [
+    "推理"
+  ]
+}

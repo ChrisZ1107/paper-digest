@@ -1,0 +1,16 @@
+{
+  "overview": "针对视频生成中空间结构、运动动力学及场景组成可控性不足的问题，本文提出了Video-Coder，这是首个代码驱动的视频生成智能体。该方法通过自主编写并执行代码构建动态3D场景，为下游视频生成器提供结构和运动引导。作者设计了专用数据集与交互环境，结合监督微调与强化学习策略，通过双重奖励机制训练智能体，显著提升了生成视频在物理规律和质量评估基准上的表现。",
+  "highlights": [
+    {
+      "text": "提出首个代码驱动的视频生成智能体，通过自主编写执行代码构建动态3D场景，为视频生成提供空间结构与运动控制信号。",
+      "evidence": "In this paper, we introduce Video-Coder, the first attempt to train a code-driven video generation agent, which autonomously writes and executes code to construct a dynamic 3D scene (Draft Video) that provides structure and motion signals to downstream video generators."
+    },
+    {
+      "text": "设计了结合执行反馈与视频评估的双重奖励机制及渐进式强化学习策略，有效提升了生成视频的质量。",
+      "evidence": "We then train Video-Coder with SFT fol- lowed by harness-native agentic reinforcement learning with dual reward feedback, which combines execution-based and video-based rewards. Additionally, we design an annealing training strategy that gradually reduces the execution reward over time"
+    }
+  ],
+  "tags": [
+    "强化学习"
+  ]
+}

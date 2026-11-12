@@ -1,0 +1,143 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>2026-11-12 热门论文 Top 10｜机器人·强化学习·AI</title><body><h1>2026-11-12 热门论文 Top 10</h1>
+<p>机器人 · 强化学习 · 通用 AI</p>
+<p>生成时间：2026-11-12 09:02 CST。从 642 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>
+<p>候选来源：<a href="https://huggingface.co/papers">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>
+<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>
+<h2>1. World In-Context Learning for Agentic Robot Manipulation</h2>
+<p><strong>机器人</strong> · 发表 2026-11-09 · 综合分 5.79</p>
+<p>Zotero 摘要相关性：0.458（相似度分数，不是概率）。</p>
+<p>HF 点赞 64 · 讨论 2 · 本次 HF 热榜第 58 位 · 仓库累计 Star 47（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +64 · 讨论 +2。</p>
+<p><strong>中文概述：</strong>针对现有机器人操作策略训练难以跨场景泛化的问题，作者提出一种基于“世界上下文学习”（WICL）的范式。该方法利用冻结模型在模拟环境中对任务进行排演，将任务步骤与对象角色的语义反馈直接记录在上下文而非网络权重中。通过构建RoboScript基础设施，该方法在RoboTwin 2.0的50项任务中实现了83.4%的平均成功率，并在无梯度更新的情况下优于传统的训练策略，验证了在上下文学习中获取操作技能的有效性。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出WICL范式，通过在模拟器中排演任务并将反馈写入上下文而非权重，使机器人能从单次演示中高效学习任务。<br><small>摘要依据：Based on this insight, we propose World In-Context Learning (WICL), a paradigm in which a frozen model starts from a demonstration, rehearses the task in a world such as a simulator, and writes the feedback into its context rather than its weights.</small></li>
+<li>RoboScript在RoboTwin 2.0的50项任务中表现优异，平均成功率达到83.4%，且在零梯度更新条件下显著超过了传统训练的动作策略。<br><small>摘要依据：On all 50 tasks of RoboTwin 2.0, RoboScript reaches 83.4% mean success across clean and randomized settings with one demonstration per task and no gradient updates, exceeding the strongest trained action policy by over 20 points.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · Sim-to-Real · 推理</p>
+<p><strong>原文摘要节选：</strong>Trained action policies write manipulation skill into network weights, tying what is learned to the distribution it is learned from. In-context learning (ICL) avoids this coupling but has not matched trained policies, because a demonstration recorded in another scene carries no feedback from the world the robot currently faces. We observe that what an agent learns in context is semantic, recording task steps and object roles rather than visual appearance, so experience gathered in one world transfers to another. Based on this insight, we propose World In-Context Learning (WICL), a paradigm in which a frozen model starts from a demonstration, rehearses the task in a world such as a simulator, and writes the feedback into its context rather than its weights. We build RoboScript, a modular…</p>
+<p><a href="https://arxiv.org/abs/2611.12885">论文原文</a> · <a href="https://arxiv.org/pdf/2611.12885">PDF</a> · <a href="https://huggingface.co/papers/2611.12885">讨论与热度</a> · <a href="https://github.com/ArcheOne-AI/RoboScript">代码</a></p><hr>
+<h2>2. Embodied First Exam</h2>
+<p><strong>机器人</strong> · 发表 2026-11-09 · 综合分 5.79</p>
+<p>Zotero 摘要相关性：0.488（相似度分数，不是概率）。</p>
+<p>HF 点赞 19 · 讨论 2 · 仓库累计 Star 259（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +19 · 讨论 +2。</p>
+<p><strong>规则标签：</strong>机器人操作</p>
+<p><strong>中文概述：</strong>针对现有机器人基准测试主要聚焦于视觉运动策略学习而忽略了代码智能体在物理约束下的控制能力问题，本文提出了Embodied First Exam。这是一个统一的代理原生评估框架，包含1156项任务，涵盖47种机器人，支持代码智能体通过直接控制、代码生成或训练策略等多种方式完成任务。作者通过该框架对八种智能体进行了测试，旨在评估代码智能体进入物理世界前的综合能力，并分析其失败原因。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出包含多种任务类型的Embodied First Exam评估框架，用于评估代码智能体对不同机器人的控制能力。<br><small>摘要依据：We therefore introduce the Embodied First Exam, a unified, comprehensive, and agent-native evaluation framework where coding agents can choose their own control approach: direct control, code to control, or train a policy to control.</small></li>
+<li>该框架包含三种评估设置，涵盖标准、实时以及基于特权模拟器状态的Oracle性能基准。<br><small>摘要依据：The Standard Setting mimics the real world: the agent receives only sensor observations and, by default, cannot reset the environment. Its Realtime variant keeps the environment running while the agent reasons. The Privileged Setting gives the agent access to the full simulator state and unlimited resets, allowing it to search for an oracle solution for training purposes.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · Sim-to-Real</p>
+<p><strong>原文摘要节选：</strong>Early successes on agentic robotics point to a potential paradigm shift toward using coding agents to control robots. Existing robotics benchmarks are built around visuomotor policy learning, leaving it open whether coding agents can reliably control diverse robots under physical-world constraints. We therefore introduce the Embodied First Exam, a unified, comprehensive, and agent-native evaluation framework where coding agents can choose their own control approach: direct control, code to control, or train a policy to control. We hope it serves as a first exam for coding agents before they enter the physical world, with 1,156 tasks in 35 suites on 47 robots, including 9 new suites that go beyond pick-and-place to spatial puzzles, dexterous manipulation, multi-robot interaction, dynamic…</p>
+<p><a href="https://arxiv.org/abs/2611.12177">论文原文</a> · <a href="https://arxiv.org/pdf/2611.12177">PDF</a> · <a href="https://huggingface.co/papers/2611.12177">讨论与热度</a> · <a href="https://github.com/mll-lab-nu/embodied-first-exam">代码</a></p><hr>
+<h2>3. Toward the Era of Agentic Embodied Intelligence</h2>
+<p><strong>机器人</strong> · 发表 2026-11-06 · 综合分 5.58</p>
+<p>Zotero 摘要相关性：0.489（相似度分数，不是概率）。</p>
+<p>HF 点赞 52 · 讨论 3 · 本次 HF 热榜第 86 位 · 仓库累计 Star 18（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +3 · 讨论 +0 · Star +9。</p>
+<p><strong>规则标签：</strong>世界模型 · 视觉语言动作 · 多智能体</p>
+<p><strong>中文概述：</strong>本文提出A2-MEAS具身多智能体框架，旨在通过代码作为扩展接口，解决机器人持续自主控制与失败恢复问题。该方法结合了纠错编码、MetaBrain监督机制及具备运动感知历史和潜在世界模型的视觉语言动作策略（A2-WLA）。作者声称，该设计在BEHAVIOR 2026和RoboTwin 2.0基准测试以及多项真实机器人任务中表现优于对比模型，且训练效率显著提升。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>A2-MEAS框架通过代码作为扩展接口，利用纠错编码和MetaBrain监督机制实现机器人行为的有效纠错与自主导航。<br><small>摘要依据：A2-MEAS, an embodied multi-agent framework built around code as a scaling interface. Learned correction codes combine corrective language, spatial evidence, execution history, and action proposals. MetaBrain provides training supervision and runtime guidance.</small></li>
+<li>在BEHAVIOR 2026及RoboTwin 2.0等基准测试中，该方法在任务成功率和Q-score指标上均显示出相较于对比基准的性能优势。<br><small>摘要依据：Surprisingly, this simple design with action pretraining and task specialization reaches 0.5755 Q-score on the 50-task BEHAVIOR 2026 public subset before online correction, 2.21x the 2025 winner&#x27;s reported 0.2605 across different benchmark editions and training configurations.</small></li>
+<li>该训练基础设施实现了高样本吞吐量，在匹配硬件条件下达到对比方案4.03倍的训练速度。<br><small>摘要依据：Our training infrastructure delivers 427.1 samples per second, 4.03x the throughput of a pi0.5 reference implementation on matched hardware.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 视觉语言动作 · 世界模型 · 多智能体</p>
+<p><strong>原文摘要节选：</strong>Foundation models increasingly guide robot actions, yet sustained autonomy requires efficient control and failure recovery. We introduce A2-MEAS, an embodied multi-agent framework built around code as a scaling interface. Learned correction codes combine corrective language, spatial evidence, execution history, and action proposals. MetaBrain provides training supervision and runtime guidance. A correction encoder and adapter absorb this knowledge into policy weights during training, while fresh codes adapt behavior with frozen weights at deployment. The action model, A2-WLA, adds motion-aware history and a latent world model to a vision-language-action policy. Surprisingly, this simple design with action pretraining and task specialization reaches 0.5755 Q-score on the 50-task BEHAVIOR…</p>
+<p><a href="https://arxiv.org/abs/2611.09124">论文原文</a> · <a href="https://arxiv.org/pdf/2611.09124">PDF</a> · <a href="https://huggingface.co/papers/2611.09124">讨论与热度</a> · <a href="https://github.com/AutoLab-SAI-SJTU/A2MEAS">代码</a></p><hr>
+<h2>4. DexForesight: Grounding Dexterous Policies with Implicit Spatial Foresight</h2>
+<p><strong>机器人</strong> · 发表 2026-11-10 · 综合分 5.48</p>
+<p>Zotero 摘要相关性：0.435（相似度分数，不是概率）。</p>
+<p>HF 点赞 24 · 讨论 1</p>
+<p>较上次观测（1.0 天前）：点赞 +24 · 讨论 +1。</p>
+<p><strong>规则标签：</strong>机器人操作 · 世界模型</p>
+<p><strong>中文概述：</strong>针对灵巧操作中对场景与手部空间预见性的需求，该研究提出了DexForesight框架。该方法通过将动态感知的世界模型表征注入灵巧策略的潜空间，实现隐式的空间预见，而非依赖显式的未来预测。实验在模拟环境和真实机器人平台上验证了该方法，结果显示其能有效提升复杂灵巧操作任务的成功率。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>DexForesight通过在离线数据上学习动作条件下的空间世界模型，捕捉机器人手部动态与场景变化，实现对空间预见性的隐式学习。<br><small>摘要依据：We introduce DexForesight, a framework that learns spatial foresight implicitly by injecting dynamics-aware world representations into the latent space of a dexterous policy.</small></li>
+<li>该方法在11项DexJoCo模拟任务中将基准策略的总体成功率从49.4%提升至60.5%。<br><small>摘要依据：On 11 DexJoCo simulation tasks, DexForesight improves the overall success rate of the base policy from 49.4% to 60.5%.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 世界模型 · 模仿学习 · Sim-to-Real</p>
+<p><strong>原文摘要节选：</strong>Dexterous manipulation requires rich spatial foresight over both the surrounding scene and the robot hand. Existing world-action models often acquire such predictive knowledge through explicit future prediction. We introduce DexForesight, a framework that learns spatial foresight implicitly by injecting dynamics-aware world representations into the latent space of a dexterous policy. During training, DexForesight learns an action-conditioned spatial world model from offline scene depth, kinematic hand geometry, and demonstration trajectories. The world model predicts 3D hand-point motion and visual feature changes, capturing both articulated hand dynamics and scene changes under demonstrated actions, including the motion of fingers occluded from the cameras. We then freeze the world model…</p>
+<p><a href="https://arxiv.org/abs/2611.11166">论文原文</a> · <a href="https://arxiv.org/pdf/2611.11166">PDF</a> · <a href="https://huggingface.co/papers/2611.11166">讨论与热度</a></p><hr>
+<h2>5. SWAM: Scaling World Action Models with Cross-Modal Alignment</h2>
+<p><strong>机器人</strong> · 发表 2026-11-09 · 综合分 5.28</p>
+<p>Zotero 摘要相关性：0.388（相似度分数，不是概率）。</p>
+<p>HF 点赞 21 · 讨论 3 · 本次 HF 热榜第 19 位 · 仓库累计 Star 38（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +18 · 讨论 +2 · Star +38。</p>
+<p><strong>中文概述：</strong>本文旨在探究世界动作模型（WAM）中语言-视频对齐与动作学习的协同机制。作者构建了包含4.7万小时视频与机器人演示的数据集，系统研究了语言-视频及语言-视频-动作监督对模型性能的影响，并探索了联合训练策略与架构设计。实验结果显示，该方法在机器人操作任务中表现出比基线模型更好的泛化能力，在多种评估条件下实现了较高的成功率。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出了一种系统性训练方案，通过混合自中心视频与UMI演示，在固定预算下提升了机器人的控制泛化能力。<br><small>摘要依据：Under a fixed training budget, mixing egocentric videos and UMI demonstrations improves control generalization.</small></li>
+<li>模型在真实世界任务中展现出更强的泛化性能，在三个任务上取得了40%的成功率，优于基线方法的23.33%。<br><small>摘要依据：Our model achieves 40.00% SR across three real-world tasks, compared with 23.33% for the strongest baseline, indicating better generalization under unseen conditions.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 世界模型 · Sim-to-Real</p>
+<p><strong>原文摘要节选：</strong>World action models jointly predict video and actions conditioned on language. Existing studies focus primarily on architectures and training mechanisms, typically treating language-video alignment acquired through video pretraining as an established foundation. However, introducing action learning may impair this alignment. Principled guidance on data and supervision design for maintaining language-video alignment during action learning remains limited. To investigate this, we curate a pool of approximately 47,000 hours of general videos, egocentric videos, UMI demonstrations, and robot demonstrations. Building on this, we systematically study how language-video supervision, language-video-action supervision, and the joint use of these two forms affect WAM performance. In particular, we…</p>
+<p><a href="https://arxiv.org/abs/2611.12870">论文原文</a> · <a href="https://arxiv.org/pdf/2611.12870">PDF</a> · <a href="https://huggingface.co/papers/2611.12870">讨论与热度</a> · <a href="https://github.com/shaaaaron/SWAM">代码</a></p><hr>
+<h2>6. Learning Heterogeneous Tactile Representation for General Dexterous Manipulation</h2>
+<p><strong>机器人</strong> · 发表 2026-11-09 · 综合分 5.11</p>
+<p>Zotero 摘要相关性：0.364（相似度分数，不是概率）。</p>
+<p>HF 点赞 98 · 讨论 2 · 本次 HF 热榜第 8 位 · 仓库累计 Star 210（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +6 · 讨论 +1 · Star +73。</p>
+<p><strong>规则标签：</strong>机器人操作 · 视觉语言动作</p>
+<p><strong>中文概述：</strong>针对触觉感知依赖特定传感器物理特性的挑战，作者开发了名为LingBot-Touch的触觉基础模型。该模型通过统一不同类型触觉传感器的数据表征，构建了一种可扩展的通用触觉编码方案。实验证明，该方法生成的触觉Token可无缝集成至多种策略模型中，显著提升了机器人在模拟及真实环境下的复杂操作能力，并表现出良好的计算效率。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>LingBot-Touch提供了一种跨多种触觉传感器的统一表征，具备良好的传感器通用性与可扩展性。<br><small>摘要依据：Our model yields a unified representation across different tactile sensors (i.e., piezoresistive, magnetic, and visuotactile sensors), and is easily extensible to new sensor types.</small></li>
+<li>该触觉表征作为即插即用的模块，可集成于扩散策略及视觉语言动作模型中，有效增强操作灵活性。<br><small>摘要依据：The resulting tactile tokens are plug-and-play: they can be seamlessly integrated into policy models across paradigms, from diffusion policy to vision-language-action (VLA) models such as π_{0.5} and LingBot-VLA, consistently enhancing manipulation dexterity.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · Sim-to-Real · 视觉语言动作</p>
+<p><strong>原文摘要节选：</strong>Tactile sensing is an indispensable modality for contact-rich dexterous manipulation, a capability that hints at the ultimate frontiers of embodied intelligence. However, commercially available tactile sensors are still at a relatively early stage of development, with each type of sensor offering irreplaceable strengths alongside its own drawbacks. A key challenge is thus to free tactile understanding from sensor-specific physics, so that embodied models can effectively leverage heterogeneous tactile data. To this end, we develop LingBot-Touch, a tactile foundation model characterized by the following properties. (i) Our model yields a unified representation across different tactile sensors (i.e., piezoresistive, magnetic, and visuotactile sensors), and is easily extensible to new sensor…</p>
+<p><a href="https://arxiv.org/abs/2611.12806">论文原文</a> · <a href="https://arxiv.org/pdf/2611.12806">PDF</a> · <a href="https://huggingface.co/papers/2611.12806">讨论与热度</a> · <a href="https://github.com/Robbyant/lingbot-touch">代码</a></p><hr>
+<h2>7. Infrathon: Benchmarking Language Agents for Real-World, Long-Horizon AI Infra Optimization</h2>
+<p><strong>通用 AI</strong> · 发表 2026-11-09 · 综合分 5.04</p>
+<p>Zotero 摘要相关性：0.351（相似度分数，不是概率）。</p>
+<p>HF 点赞 33 · 讨论 7 · 仓库累计 Star 18（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +31 · 讨论 +6。</p>
+<p><strong>中文概述：</strong>本文介绍了Infrathon基准测试，旨在评估前沿AI智能体在长期范围内持续优化真实世界AI基础设施的能力。研究者通过150次实验，分析了6种模型在不同时间跨度下的性能表现。结果表明，长期评估能够揭示模型在性能排名及优化增益上的动态变化。此外，研究发现智能体能够发现超越人工基准的方案，同时也揭示了当前智能体在执行长期任务时面临的违反规则、测试不可靠及过早结束等障碍。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>Infrathon基准测试表明，短期评估可能忽视长期的优化增益和模型间的相对性能变化，强调了进行长期评估的必要性。<br><small>摘要依据：These findings indicate that shorter evaluations can overlook both optimization gains and changes in relative model performance.</small></li>
+<li>实验证明前沿智能体能够发现超越人工基准的基础设施优化方案，例如Claude Opus 5.5显著提升了KV缓存压缩率。<br><small>摘要依据：We also find agents can discover solutions that outperform human-designed baselines: Claude Opus 5.5 increases the mean KV-cache compression ratio from 6.82% with the human-designed Quant-VideoGen codec to 19.86%.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>推理</p>
+<p><strong>原文摘要节选：</strong>In this work, we study whether frontier agent can continually improve real-world AI infrastructure over long horizons. We introduce Infrathon, a benchmark of diverse, long-horizon AI infrastructure optimization tasks across different levels. We evaluate six models across 150 runs with 24-hour budgets, totaling over 10,000 GPU-hours. Our results show that model rankings vary with the evaluation horizon, while 135 of the 150 runs achieve further improvements during the second half of their budgets. These findings indicate that shorter evaluations can overlook both optimization gains and changes in relative model performance. We also find agents can discover solutions that outperform human-designed baselines: Claude Opus 5.5 increases the mean KV-cache compression ratio from 6.82% with the…</p>
+<p><a href="https://arxiv.org/abs/2611.11995">论文原文</a> · <a href="https://arxiv.org/pdf/2611.11995">PDF</a> · <a href="https://huggingface.co/papers/2611.11995">讨论与热度</a> · <a href="https://github.com/InfrathonX/Infrathon">代码</a></p><hr>
+<h2>8. PhysOPSD: Code as Privilege for Physically Plausible Video Generation</h2>
+<p><strong>强化学习</strong> · 发表 2026-11-09 · 综合分 5.03</p>
+<p>Zotero 摘要相关性：0.399（相似度分数，不是概率）。</p>
+<p>HF 点赞 8 · 讨论 2 · 仓库累计 Star 2（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +8 · 讨论 +2。</p>
+<p><strong>规则标签：</strong>强化学习 · 大模型后训练</p>
+<p><strong>中文概述：</strong>现代视频生成模型在生成物理一致的动态和复杂交互方面仍存在不足。为解决监督微调的离线状态失配和强化学习中奖励函数稀疏的问题，作者提出PhysOPSD框架。该方法利用可执行代码作为特权物理上下文，通过PhysOPSD-Engine将真实物理场景转换为可验证的仿真程序，并引入双层物理特权及受控物理变异，从而在无需大量数据的前提下显著提升了视频生成的物理合理性。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出使用可执行代码作为生成视频的特权物理上下文，利用其本质的可编辑性、抽象性和可控性来弥补文本和视频模态的不足。<br><small>摘要依据：Unlike static visual observations, executable code instantiates an editable physical world with intrinsic abstraction and controllability.</small></li>
+<li>PhysOPSD框架通过双层物理特权和受控物理变异技术，在仅使用3000个样本的情况下，于多种模型架构上实现了物理合理性的提升，性能优于监督微调和强化学习基线。<br><small>摘要依据：Extensive experiments demonstrate that PhysOPSD substantially improves physical plausibility across diverse backbones, outperforming SFT and RL baselines with only 3K samples, while preserving general video generation quality.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>大模型后训练</p>
+<p><strong>原文摘要节选：</strong>While modern video generative models achieve remarkable visual fidelity, they remain noticeably brittle when generating physically plausible dynamics and complex interactions. Targeted post-training is crucial, yet supervised fine-tuning suffers from offline state mismatch, and reinforcement learning is hindered by sparse, ill-defined physical reward functions. On-Policy (Self-)Distillation (OPSD) reconciles on-policy rollouts with dense corrective feedback, shifting the core challenge to designing effective privileged context. However, conventional modalities fall short: text prompts are inherently declarative, whereas real reference videos heavily entangle physical laws with visual appearance without parametric control. To this end, we propose PhysOPSD, introducing executable code as…</p>
+<p><a href="https://arxiv.org/abs/2611.12411">论文原文</a> · <a href="https://arxiv.org/pdf/2611.12411">PDF</a> · <a href="https://huggingface.co/papers/2611.12411">讨论与热度</a> · <a href="https://github.com/aigc3d/PhysOPSD">代码</a></p><hr>
+<h2>9. Reframe: Observation-Aligned Multi-Teacher On-Policy Distillation for Agentic Visual Reasoning</h2>
+<p><strong>强化学习</strong> · 发表 2026-11-09 · 综合分 5.01</p>
+<p>Zotero 摘要相关性：0.390（相似度分数，不是概率）。</p>
+<p>HF 点赞 39 · 讨论 3 · 本次 HF 热榜第 49 位 · 仓库累计 Star 34（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +2 · 讨论 +1 · Star +3。</p>
+<p><strong>规则标签：</strong>强化学习 · 大模型后训练 · 推理</p>
+<p><strong>中文概述：</strong>针对具身智能体在视觉推理中工具使用不足及动作失准的问题，本文提出了Reframe后训练框架。该框架将观测状态作为对齐对象，通过GD-GRPO训练策略以增强对工具返回观测的依赖，并利用OG-MOPD在训练过程中修正动作并恢复观测，从而提升智能体的推理能力。实验表明，该方法优于Mix-RL及传统的多教师在线策略蒸馏。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>Reframe框架通过GD-GRPO引入基于证据的奖励并随机移除视觉输入，促使智能体更好地利用工具返回的观测信息。<br><small>摘要依据：Ground-Drop-GRPO (GD-GRPO) trains spatial and temporal specialists with evidence-aware rewards and stochastic removal of the original visual input, encouraging them to acquire grounded evidence and use the returned observations.</small></li>
+<li>OG-MOPD方法通过在训练滚动过程中替换欠佳的动作并基于修复后的观测继续蒸馏，提升了模型性能。<br><small>摘要依据：Observation-Gated-MOPD (OG-MOPD) replaces deficient tool actions with canonical ones mid-rollout and resumes distillation from the repaired observation.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习 · 推理</p>
+<p><strong>原文摘要节选：</strong>Agentic reinforcement learning (RL) and multi-teacher on-policy distillation (MOPD) offer complementary routes to post-training. For visual agents, however, tool use presents two related challenges. Models may overlook useful tool-returned observations, while poorly grounded actions can limit the evidence available for subsequent distillation. We introduce Reframe, a post-training framework that treats the observation state, rather than only the output distribution, as an object of alignment. First, Ground-Drop-GRPO (GD-GRPO) trains spatial and temporal specialists with evidence-aware rewards and stochastic removal of the original visual input, encouraging them to acquire grounded evidence and use the returned observations. Second, Observation-Gated-MOPD (OG-MOPD) replaces deficient tool…</p>
+<p><a href="https://arxiv.org/abs/2611.12886">论文原文</a> · <a href="https://arxiv.org/pdf/2611.12886">PDF</a> · <a href="https://huggingface.co/papers/2611.12886">讨论与热度</a> · <a href="https://github.com/EliYuan30/Reframe">代码</a></p><hr>
+<h2>10. Video-Coder: Reinforcing Agentic Coding for Video Generation</h2>
+<p><strong>强化学习</strong> · 发表 2026-11-06 · 综合分 4.98</p>
+<p>Zotero 摘要相关性：0.429（相似度分数，不是概率）。</p>
+<p>HF 点赞 21 · 讨论 3 · 本次 HF 热榜第 41 位 · 仓库累计 Star 63（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +0 · Star +9。</p>
+<p><strong>规则标签：</strong>强化学习</p>
+<p><strong>中文概述：</strong>针对视频生成中空间结构、运动动力学及场景组成可控性不足的问题，本文提出了Video-Coder，这是首个代码驱动的视频生成智能体。该方法通过自主编写并执行代码构建动态3D场景，为下游视频生成器提供结构和运动引导。作者设计了专用数据集与交互环境，结合监督微调与强化学习策略，通过双重奖励机制训练智能体，显著提升了生成视频在物理规律和质量评估基准上的表现。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出首个代码驱动的视频生成智能体，通过自主编写执行代码构建动态3D场景，为视频生成提供空间结构与运动控制信号。<br><small>摘要依据：In this paper, we introduce Video-Coder, the first attempt to train a code-driven video generation agent, which autonomously writes and executes code to construct a dynamic 3D scene (Draft Video) that provides structure and motion signals to downstream video generators.</small></li>
+<li>设计了结合执行反馈与视频评估的双重奖励机制及渐进式强化学习策略，有效提升了生成视频的质量。<br><small>摘要依据：We then train Video-Coder with SFT fol- lowed by harness-native agentic reinforcement learning with dual reward feedback, which combines execution-based and video-based rewards. Additionally, we design an annealing training strategy that gradually reduces the execution reward over time</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习</p>
+<p><strong>原文摘要节选：</strong>Recent years have witnessed remarkable progress in video generation in terms of visual quality and temporal consistency. However, generating videos with precise spatial structure, coherent motion dynamics, and controllable scene composition remains challenging. In this paper, we introduce Video-Coder, the first attempt to train a code-driven video generation agent, which autonomously writes and executes code to construct a dynamic 3D scene (Draft Video) that provides structure and motion signals to downstream video generators. To support this paradigm, we design a dedicated data pipeline and curate two high-quality datasets, Video-Coder-SFT-6k and Video-Coder-RL-2k, which contain diverse prompts and ground-truth reference videos. We further develop the Video- Coder Harness, a unified…</p>
+<p><a href="https://arxiv.org/abs/2611.09894">论文原文</a> · <a href="https://arxiv.org/pdf/2611.09894">PDF</a> · <a href="https://huggingface.co/papers/2611.09894">讨论与热度</a> · <a href="https://github.com/CYWang735/Video-Coder">代码</a></p><hr></body></html>

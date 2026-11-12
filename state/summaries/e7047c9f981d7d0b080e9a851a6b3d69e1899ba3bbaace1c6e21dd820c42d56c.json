@@ -1,0 +1,17 @@
+{
+  "overview": "本文提出了一种基于Koopman算子的模型驱动强化学习算法（K-MBRL），旨在解决非线性机器人系统的控制问题。该方法通过将非线性动力学近似为线性表示，利用随机Koopman算子学习系统动态，并结合评价函数估计未来成本。其核心优势在于通过线性动态简化梯度计算以实现高效策略优化，并通过单步预测缓解误差积累。实验验证了该方法在仿真任务及物理四足机器人复杂运动控制中的有效性。",
+  "highlights": [
+    {
+      "text": "利用线性Koopman动力学简化模型策略梯度的计算过程，提高了策略改进的计算效率。",
+      "evidence": "First, the linear Koopman dynamics simplify the model-dependent policy gradient computation to a constant matrix product, enabling computationally efficient policy improvement."
+    },
+    {
+      "text": "通过单步模型传播与评价函数相结合，在保持长期成本信息的同时减少了长视界演化带来的预测误差积累。",
+      "evidence": "Second, one-step model propagation mitigates the accumulation of prediction errors associated with long-horizon rollouts while retaining long-term cost information through the critic."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "四足机器人"
+  ]
+}

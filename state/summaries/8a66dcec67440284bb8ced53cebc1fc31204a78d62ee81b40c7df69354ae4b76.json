@@ -1,0 +1,19 @@
+{
+  "overview": "针对灵巧操作中对场景与手部空间预见性的需求，该研究提出了DexForesight框架。该方法通过将动态感知的世界模型表征注入灵巧策略的潜空间，实现隐式的空间预见，而非依赖显式的未来预测。实验在模拟环境和真实机器人平台上验证了该方法，结果显示其能有效提升复杂灵巧操作任务的成功率。",
+  "highlights": [
+    {
+      "text": "DexForesight通过在离线数据上学习动作条件下的空间世界模型，捕捉机器人手部动态与场景变化，实现对空间预见性的隐式学习。",
+      "evidence": "We introduce DexForesight, a framework that learns spatial foresight implicitly by injecting dynamics-aware world representations into the latent space of a dexterous policy."
+    },
+    {
+      "text": "该方法在11项DexJoCo模拟任务中将基准策略的总体成功率从49.4%提升至60.5%。",
+      "evidence": "On 11 DexJoCo simulation tasks, DexForesight improves the overall success rate of the base policy from 49.4% to 60.5%."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "世界模型",
+    "模仿学习",
+    "Sim-to-Real"
+  ]
+}

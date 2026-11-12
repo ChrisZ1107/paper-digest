@@ -1,0 +1,16 @@
+{
+  "overview": "现代视频生成模型在生成物理一致的动态和复杂交互方面仍存在不足。为解决监督微调的离线状态失配和强化学习中奖励函数稀疏的问题，作者提出PhysOPSD框架。该方法利用可执行代码作为特权物理上下文，通过PhysOPSD-Engine将真实物理场景转换为可验证的仿真程序，并引入双层物理特权及受控物理变异，从而在无需大量数据的前提下显著提升了视频生成的物理合理性。",
+  "highlights": [
+    {
+      "text": "提出使用可执行代码作为生成视频的特权物理上下文，利用其本质的可编辑性、抽象性和可控性来弥补文本和视频模态的不足。",
+      "evidence": "Unlike static visual observations, executable code instantiates an editable physical world with intrinsic abstraction and controllability."
+    },
+    {
+      "text": "PhysOPSD框架通过双层物理特权和受控物理变异技术，在仅使用3000个样本的情况下，于多种模型架构上实现了物理合理性的提升，性能优于监督微调和强化学习基线。",
+      "evidence": "Extensive experiments demonstrate that PhysOPSD substantially improves physical plausibility across diverse backbones, outperforming SFT and RL baselines with only 3K samples, while preserving general video generation quality."
+    }
+  ],
+  "tags": [
+    "大模型后训练"
+  ]
+}

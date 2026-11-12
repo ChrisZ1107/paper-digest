@@ -1,0 +1,18 @@
+{
+  "overview": "本文旨在探究世界动作模型（WAM）中语言-视频对齐与动作学习的协同机制。作者构建了包含4.7万小时视频与机器人演示的数据集，系统研究了语言-视频及语言-视频-动作监督对模型性能的影响，并探索了联合训练策略与架构设计。实验结果显示，该方法在机器人操作任务中表现出比基线模型更好的泛化能力，在多种评估条件下实现了较高的成功率。",
+  "highlights": [
+    {
+      "text": "提出了一种系统性训练方案，通过混合自中心视频与UMI演示，在固定预算下提升了机器人的控制泛化能力。",
+      "evidence": "Under a fixed training budget, mixing egocentric videos and UMI demonstrations improves control generalization."
+    },
+    {
+      "text": "模型在真实世界任务中展现出更强的泛化性能，在三个任务上取得了40%的成功率，优于基线方法的23.33%。",
+      "evidence": "Our model achieves 40.00% SR across three real-world tasks, compared with 23.33% for the strongest baseline, indicating better generalization under unseen conditions."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "世界模型",
+    "Sim-to-Real"
+  ]
+}

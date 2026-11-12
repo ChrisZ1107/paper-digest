@@ -1,0 +1,19 @@
+{
+  "overview": "针对现有世界模型因迭代视频去噪导致推理开销大的问题，本文提出了Elastic-WAM方法。该方法通过引入时空精炼需求场，自适应地在时间步和空间区域上分配世界模型的计算资源，决定去噪停止时机及精炼范围，从而在降低推理延迟的同时提升机器人任务控制性能。仿真及真实场景实验验证了其有效性。",
+  "highlights": [
+    {
+      "text": "提出Elastic-WAM方法，通过自适应分配时空计算资源，解决了世界模型在机器人控制中因固定去噪预算导致的推理效率低下问题。",
+      "evidence": "Motivated by these findings, we propose Elastic-WAM, which adaptively allocates world refinement computation across temporal denoising time and spatial future space."
+    },
+    {
+      "text": "实验表明该模型在多种模拟基准和真实长时操作任务中实现了SOTA性能，并有效降低了推理延迟。",
+      "evidence": "Evaluations across diverse simulation benchmarks and real-world long-horizon manipulation demonstrate state-of-the-art control performance with reduced inference latency."
+    }
+  ],
+  "tags": [
+    "世界模型",
+    "机器人操作",
+    "Sim-to-Real",
+    "推理"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "overview": "针对现有机器人基准测试主要聚焦于视觉运动策略学习而忽略了代码智能体在物理约束下的控制能力问题，本文提出了Embodied First Exam。这是一个统一的代理原生评估框架，包含1156项任务，涵盖47种机器人，支持代码智能体通过直接控制、代码生成或训练策略等多种方式完成任务。作者通过该框架对八种智能体进行了测试，旨在评估代码智能体进入物理世界前的综合能力，并分析其失败原因。",
+  "highlights": [
+    {
+      "text": "提出包含多种任务类型的Embodied First Exam评估框架，用于评估代码智能体对不同机器人的控制能力。",
+      "evidence": "We therefore introduce the Embodied First Exam, a unified, comprehensive, and agent-native evaluation framework where coding agents can choose their own control approach: direct control, code to control, or train a policy to control."
+    },
+    {
+      "text": "该框架包含三种评估设置，涵盖标准、实时以及基于特权模拟器状态的Oracle性能基准。",
+      "evidence": "The Standard Setting mimics the real world: the agent receives only sensor observations and, by default, cannot reset the environment. Its Realtime variant keeps the environment running while the agent reasons. The Privileged Setting gives the agent access to the full simulator state and unlimited resets, allowing it to search for an oracle solution for training purposes."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "Sim-to-Real"
+  ]
+}

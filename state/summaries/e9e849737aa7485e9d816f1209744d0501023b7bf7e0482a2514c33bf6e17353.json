@@ -1,0 +1,18 @@
+{
+  "overview": "该论文探讨了内在动机在构建世界模型中的作用。研究者在统一的模型强化学习框架下集成了24种内在目标，涵盖好奇心、熵和能力评估等，并结合观测重构、潜在预测及冗余减少等表征学习策略进行评估。实验结果表明，好奇心驱动的探索结合观测重构在多种控制任务中表现良好，而结合情景与终身新颖性的内在动机在组合视觉任务中实现了更好的零样本迁移与少样本适应，验证了内在动机在自主构建世界模型中的关键价值。",
+  "highlights": [
+    {
+      "text": "研究构建了统一的模型强化学习框架，评估了24种不同内在目标与三种表征学习策略对世界模型构建的影响。",
+      "evidence": "To address these gaps, we integrate 24 intrinsic objectives, including established methods and explicit variants spanning curiosity, entropy, and competency, into a common model-based reinforcement learning framework."
+    },
+    {
+      "text": "在组合视觉任务中，结合情景与终身新颖性的内在动机能够显著提升世界模型的零样本迁移和少样本适应能力。",
+      "evidence": "In compositional vision-based tasks, intrinsic motivation derived from both episodic and lifelong novelty---providing a complementary memory to the world model's generic recurrent state---achieves the best zero-shot transfer and few-shot adaptation."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "机器人操作",
+    "世界模型"
+  ]
+}
