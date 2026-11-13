@@ -5465,6 +5465,240 @@
           "abstract_zh": "Lloyd's k-means算法是聚类领域的长期标准，广泛应用于数据分析、检索、量化和数据整理。在本文中，我们引入了一种基于现代深度学习机制和新见解的、带有小批量更新的k-means指数移动平均优化过程。我们还建立了关于衰减率和批量大小如何影响最终性能的缩放定律。这为我们在多种问题规模和嵌入数据集上固定这些参数提供了一个公式化规则，无需进行任何超参数搜索。由此产生的聚类算法被称为e-means，它比Lloyd k-means快得多，并能收敛到更低的损失，甚至经常优于k-means++。在广泛的嵌入数据集上，它在1.4到2.6个epoch内即可达到Lloyd k-means在25个epoch时的损失水平，与最先进的k-means实现相比，这转化为10-45倍的GPU挂钟时间加速。作为一个例子，e-means仅用2.5个epoch就将包含100亿个DINO嵌入的数据集DINO10B划分为1600万个簇，其损失低于Lloyd算法在25个epoch时的水平。"
         }
       ]
+    },
+    "vnDYM026daY": {
+      "video_id": "vnDYM026daY",
+      "video_title": "ToolDex: An Ego-Exo Human Demonstration Dataset for Creative Physical Tool Use (Nov 2026)",
+      "published": "2026-11-13",
+      "video_url": "https://www.youtube.com/watch?v=vnDYM026daY",
+      "papers": [
+        {
+          "id": "2611.09036",
+          "title": "ToolDex: An Ego-Exo Human Demonstration Dataset for Creative Physical Tool Use (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.09036"
+        }
+      ]
+    },
+    "fD4P6mByaOk": {
+      "video_id": "fD4P6mByaOk",
+      "video_title": "WorldFoundry: Towards Unified Infrastructure for World Intelligence (Nov 2026)",
+      "published": "2026-11-13",
+      "video_url": "https://www.youtube.com/watch?v=fD4P6mByaOk",
+      "papers": [
+        {
+          "id": "2611.10771",
+          "title": "WorldFoundry: Towards Unified Infrastructure for World Intelligence (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.10771"
+        }
+      ]
+    },
+    "AAUu341njlk": {
+      "video_id": "AAUu341njlk",
+      "video_title": "Learning Heterogeneous Tactile Representation for General Dexterous Manipulation (Nov 2026)",
+      "published": "2026-11-13",
+      "video_url": "https://www.youtube.com/watch?v=AAUu341njlk",
+      "papers": [
+        {
+          "id": "2611.12806",
+          "title": "Learning Heterogeneous Tactile Representation for General Dexterous Manipulation (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.12806"
+        }
+      ]
+    },
+    "j8s3jEKzIgw": {
+      "video_id": "j8s3jEKzIgw",
+      "video_title": "Speculative Self-Distillation enables Efficient Knowledge Internalization (Nov 2026)",
+      "published": "2026-11-13",
+      "video_url": "https://www.youtube.com/watch?v=j8s3jEKzIgw",
+      "papers": [
+        {
+          "id": "2611.12016",
+          "title": "Speculative Self-Distillation enables Efficient Knowledge Internalization (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.12016"
+        }
+      ]
+    },
+    "gsmNaouA3Uw": {
+      "video_id": "gsmNaouA3Uw",
+      "video_title": "Discovering formally verified quantum programs with AI (Nov 2026)",
+      "published": "2026-11-13",
+      "video_url": "https://www.youtube.com/watch?v=gsmNaouA3Uw",
+      "papers": [
+        {
+          "id": "2611.09822",
+          "title": "Discovering formally verified quantum programs with AI (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.09822"
+        }
+      ]
+    },
+    "xGvRgBhPSvM": {
+      "video_id": "xGvRgBhPSvM",
+      "video_title": "The Surprising Effectiveness of Deleting Weights in LLM Post-Training (Nov 2026)",
+      "published": "2026-11-13",
+      "video_url": "https://www.youtube.com/watch?v=xGvRgBhPSvM",
+      "papers": [
+        {
+          "id": "2611.10866",
+          "title": "The Surprising Effectiveness of Deleting Weights in LLM Post-Training (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.10866"
+        }
+      ]
+    },
+    "Sj-yelQlqC8": {
+      "video_id": "Sj-yelQlqC8",
+      "video_title": "UGG: Unified Generative Geometry Model (Nov 2026)",
+      "published": "2026-11-13",
+      "video_url": "https://www.youtube.com/watch?v=Sj-yelQlqC8",
+      "papers": [
+        {
+          "id": "2611.14440",
+          "title": "UGG: Unified Generative Geometry Model (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.14440"
+        }
+      ]
+    },
+    "M2KalILuB8M": {
+      "video_id": "M2KalILuB8M",
+      "video_title": "On Agentic Manipulation Policies (Nov 2026)",
+      "published": "2026-11-13",
+      "video_url": "https://www.youtube.com/watch?v=M2KalILuB8M",
+      "papers": [
+        {
+          "id": "2611.09892",
+          "title": "On Agentic Manipulation Policies (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.09892"
+        }
+      ]
+    },
+    "-YvawNloylg": {
+      "video_id": "-YvawNloylg",
+      "video_title": "NPCBench: A Clinical Apprenticeship Benchmark for Multimodal Care-Pathway Reasoning in…",
+      "published": "2026-11-13",
+      "video_url": "https://www.youtube.com/watch?v=-YvawNloylg",
+      "papers": [
+        {
+          "id": "2611.08369",
+          "title": "NPCBench: A Clinical Apprenticeship Benchmark for Multimodal Care-Pathway Reasoning in Nasopharyngeal Carcinoma (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.08369"
+        }
+      ]
+    },
+    "NiMIe16D2Ys": {
+      "video_id": "NiMIe16D2Ys",
+      "video_title": "Video-Coder: Reinforcing Agentic Coding for Video Generation (Nov 2026)",
+      "published": "2026-11-13",
+      "video_url": "https://www.youtube.com/watch?v=NiMIe16D2Ys",
+      "papers": [
+        {
+          "id": "2611.09894",
+          "title": "Video-Coder: Reinforcing Agentic Coding for Video Generation (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.09894"
+        }
+      ]
+    },
+    "E58Tfq30tBU": {
+      "video_id": "E58Tfq30tBU",
+      "video_title": "System Optimizations for Cost-Efficient Agent Harnesses (Nov 2026)",
+      "published": "2026-11-13",
+      "video_url": "https://www.youtube.com/watch?v=E58Tfq30tBU",
+      "papers": [
+        {
+          "id": "2611.12122",
+          "title": "System Optimizations for Cost-Efficient Agent Harnesses (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.12122"
+        }
+      ]
+    },
+    "6rf-TlFGXEA": {
+      "video_id": "6rf-TlFGXEA",
+      "video_title": "BabyTheorist: A Benchmark for Learning to Theorize the World from Observation Alone (Nov 2026)",
+      "published": "2026-11-13",
+      "video_url": "https://www.youtube.com/watch?v=6rf-TlFGXEA",
+      "papers": [
+        {
+          "id": "2611.08177",
+          "title": "BabyTheorist: A Benchmark for Learning to Theorize the World from Observation Alone (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.08177"
+        }
+      ]
+    },
+    "DdGbhAi_teA": {
+      "video_id": "DdGbhAi_teA",
+      "video_title": "Evolving Infra: Agent-Adaptive LLM Serving at Scale (Nov 2026)",
+      "published": "2026-11-13",
+      "video_url": "https://www.youtube.com/watch?v=DdGbhAi_teA",
+      "papers": [
+        {
+          "id": "2611.12304",
+          "title": "Evolving Infra: Agent-Adaptive LLM Serving at Scale (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.12304"
+        }
+      ]
+    },
+    "_rJ23v5c5gw": {
+      "video_id": "_rJ23v5c5gw",
+      "video_title": "Benchmarks as Software: Terminal-Bench and the Case for Continuous Benchmarks (Nov 2026)",
+      "published": "2026-11-13",
+      "video_url": "https://www.youtube.com/watch?v=_rJ23v5c5gw",
+      "papers": [
+        {
+          "id": "2611.08417",
+          "title": "Benchmarks as Software: Terminal-Bench and the Case for Continuous Benchmarks (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.08417"
+        }
+      ]
+    },
+    "-eBMwGGcuMM": {
+      "video_id": "-eBMwGGcuMM",
+      "video_title": "SplatAnything: Gaussian Spacing Normalization for Feed-forward 3DGS across Arbitrary Scenes",
+      "published": "2026-11-13",
+      "video_url": "https://www.youtube.com/watch?v=-eBMwGGcuMM",
+      "papers": [
+        {
+          "id": "2611.08264",
+          "title": "SplatAnything: Gaussian Spacing Normalization for Feed-forward 3DGS across Arbitrary Scenes (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.08264"
+        }
+      ]
+    },
+    "a_Xs7SFa-JU": {
+      "video_id": "a_Xs7SFa-JU",
+      "video_title": "Energy-Based Reasoners: Your Recurrent Reasoner Should Be an Energy-Based Model (Nov 2026)",
+      "published": "2026-11-13",
+      "video_url": "https://www.youtube.com/watch?v=a_Xs7SFa-JU",
+      "papers": [
+        {
+          "id": "2611.08977",
+          "title": "Energy-Based Reasoners: Your Recurrent Reasoner Should Be an Energy-Based Model (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.08977"
+        }
+      ]
+    },
+    "Wb6Nrn0PlkU": {
+      "video_id": "Wb6Nrn0PlkU",
+      "video_title": "La-JEPA: Compact Robot Policies with Latent World Modeling (Nov 2026)",
+      "published": "2026-11-13",
+      "video_url": "https://www.youtube.com/watch?v=Wb6Nrn0PlkU",
+      "papers": [
+        {
+          "id": "2611.08156",
+          "title": "La-JEPA: Compact Robot Policies with Latent World Modeling (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.08156"
+        }
+      ]
+    },
+    "gtQO8jmUGes": {
+      "video_id": "gtQO8jmUGes",
+      "video_title": "Sage-Taiyi: A Metacognitive Architecture for Scientific Discovery (Nov 2026)",
+      "published": "2026-11-13",
+      "video_url": "https://www.youtube.com/watch?v=gtQO8jmUGes",
+      "papers": [
+        {
+          "id": "2611.12762",
+          "title": "Sage-Taiyi: A Metacognitive Architecture for Scientific Discovery (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.12762"
+        }
+      ]
     }
   }
 }
