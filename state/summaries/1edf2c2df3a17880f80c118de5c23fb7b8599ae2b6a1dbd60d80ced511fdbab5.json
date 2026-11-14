@@ -1,0 +1,18 @@
+{
+  "overview": "SPARC是由RoboCup救援机器人联盟开发的自主救援竞赛项目，旨在降低自主救援机器人的研究门槛。该项目以Unitree A2-W为标准硬件平台，提供基准环境、数据集、开源导航软件栈及仿真资源，支持研究者在导航、感知、操控及具身智能等领域开展灾后响应场景的研究，促进可复现研究与协作开发。",
+  "highlights": [
+    {
+      "text": "SPARC通过提供标准化的机器人平台和基准测试环境，降低了自主救援机器人研究的进入门槛。",
+      "evidence": "By providing a capable standard platform and established benchmark environments, researchers can focus on autonomous navigation, perception, manipulation, and embodied AI for challenging disaster-response scenarios."
+    },
+    {
+      "text": "项目公开了多项研究资源，包括竞赛数据集、开源导航软件栈及仿真资源。",
+      "evidence": "Furthermore, we present the first open SPARC datasets collected during the IEEE ICRA 2026 Legged Robot Challenges and RoboCup Rescue 2026, release an open-source software stack for autonomous navigation, and provide initial simulation assets representing RoboCup Rescue test environments."
+    }
+  ],
+  "tags": [
+    "四足机器人",
+    "导航",
+    "机器人操作"
+  ]
+}

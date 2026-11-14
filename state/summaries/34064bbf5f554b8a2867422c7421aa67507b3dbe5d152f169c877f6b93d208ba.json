@@ -1,0 +1,21 @@
+{
+  "overview": "本文针对两轮机器人越野赛道的自主导航挑战，提出了一种将赛道编码为地形语义层的学习框架。该方法将局部导航与运动控制视为联合优化问题，绕过传统的指令控制接口。配套的视觉感知流水线利用冻结的视觉基础模型与双头解码器，实现高频语义地图构建。实验表明，该系统使自行车机器人在崎岖山地赛道上实现了高速自主行驶，且在仿真环境中的故障率显著低于传统分层基准。",
+  "highlights": [
+    {
+      "text": "提出了一种将局部导航与运动控制作为联合优化问题的统一学习框架，通过地形语义编码即可适应从赛道竞速到敏捷跑酷的不同任务。",
+      "evidence": "First, we introduce a unified learning framework that treats local navigation and locomotion as a joint optimization problem, bypassing the twist or pose command interface of classical control hierarchies. With fixed reward weights, the same framework produces both trail racing and agile parkour, shaped only through terrain semantics and episode length."
+    },
+    {
+      "text": "开发了一种高频感知流水线，结合视觉基础模型与轻量化解码器，在机载设备上实时生成语义高程地图。",
+      "evidence": "Second, our perception pipeline combines a frozen vision foundation model with a lightweight dual-head decoder that predicts per-pixel terrain semantics and confidence scores, which are fused with LiDAR range measurements into an egocentric semantic elevation map at 30 Hz onboard an NVIDIA AGX Orin."
+    },
+    {
+      "text": "自行车机器人验证实验表明，系统能够在复杂山地赛道上以超过5 m/s的速度自主行驶，平均速度达到3.26 m/s。",
+      "evidence": "We validate our framework on the Ultra Mobility Vehicle (UMV), a bicycle robot that autonomously raced across all sections of a kilometer-long, unstructured mountain bike trail at speeds exceeding 5 m/s and averaging 3.26 m/s."
+    }
+  ],
+  "tags": [
+    "Sim-to-Real",
+    "导航"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "overview": "针对长动作序列（Long-chunk）策略在在线适应中样本效率低的问题，本文提出了ExRL方法。该方法不再直接优化动作序列，而是通过一个轻量级适配器学习动态调整每个动作块的执行时长，从而在降低优化维度的同时保持表达能力，实现了在真实场景中更高效的策略适应。",
+  "highlights": [
+    {
+      "text": "提出了一种通过控制动作块执行长度进行在线适应的方法ExRL，有效降低了策略适应的搜索空间维度。",
+      "evidence": "Our key insight is to shift adaptation from optimizing actions to optimizing how long to execute each predicted action chunk. This keeps the adaptation space low-dimensional while its expressivity grows with the chunk size."
+    },
+    {
+      "text": "ExRL在多种模拟及现实世界机器人任务中展现了高样本效率，且仅需极少的超参数调整。",
+      "evidence": "Across simulation benchmarks and real-world robotic tasks, ExRL enables sample-efficient adaptation of a diverse range of long-chunk policies with minimal task-specific hyperparameter tuning."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "Sim-to-Real"
+  ]
+}

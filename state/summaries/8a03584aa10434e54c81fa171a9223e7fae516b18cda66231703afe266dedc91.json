@@ -1,0 +1,16 @@
+{
+  "overview": "针对基于视觉的高速导航任务，本文提出了一种基于解析策略梯度（APG）的轨迹规划框架APG-Planner。该方法利用微分平坦性实现轨迹到状态的解析重构，构建了可微的轨迹级状态转换，从而能够通过解析计算策略梯度来优化决策。实验表明，该方法提升了训练效率，并在仿真及实际飞行与地面机器人平台中表现出优异的导航性能。",
+  "highlights": [
+    {
+      "text": "提出了一种基于解析策略梯度的轨迹规划学习框架，通过微分平坦性实现可微的状态转换，显著提高了训练效率。",
+      "evidence": "By iteratively performing trajectory planning and differentiable state transitions, we construct a differentiable episode rollout and analytically compute policy gradients from episode-level losses, improving both training efficiency and policy performance."
+    },
+    {
+      "text": "APG-Planner在仿真中表现出优于或等同于基准方法的效果，并在现实飞行测试中达到了11米/秒的高速。",
+      "evidence": "After approximately 30 minutes of training on a single GPU, APG-Planner demonstrates comparable or superior performance to existing baseline methods in simulation and achieves speeds of up to 11\\,m/s in real-world flight experiments."
+    }
+  ],
+  "tags": [
+    "导航"
+  ]
+}

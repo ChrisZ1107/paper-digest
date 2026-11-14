@@ -1,0 +1,18 @@
+{
+  "overview": "针对机器人在灾难现场等不稳固地形中遭遇地面坍塌需撤退的问题，本文提出了一种内存高效的并行强化学习框架。通过结合非坍塌地形的刚体模拟与坍塌区域的虚拟接触力，利用状态复用接触模型，在保持环境独立性的同时避免了昂贵的显式刚体坍塌建模。实验结果表明，该方法在显著提升并行环境采样规模、加速策略收敛的同时，在模拟环境及实机测试中均实现了有效的撤退表现。",
+  "highlights": [
+    {
+      "text": "提出一种混合地形建模方法，通过状态复用接触模型在低内存消耗下实现了并行环境间的独立体验。",
+      "evidence": "A State-Multiplexed Contact Model shares terrain geometry and a contact-response law while maintaining environment-specific collapse states, enabling independent experiences without terrain objects for collapsible regions."
+    },
+    {
+      "text": "显著提升了并行采样规模与学习效率，在相同内存限制下支持的并行环境数量提升超100倍，收敛速度快50倍以上。",
+      "evidence": "It supports over 100 times as many parallel environments as fine-resolution rigid-block terrain within the same GPU memory limit. This scalability and improved sample efficiency enable over 50 times faster policy convergence with comparable retreat performance."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "足式运动",
+    "Sim-to-Real"
+  ]
+}

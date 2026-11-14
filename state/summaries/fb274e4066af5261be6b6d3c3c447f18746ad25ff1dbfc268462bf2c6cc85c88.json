@@ -1,0 +1,18 @@
+{
+  "overview": "针对AAA游戏环境复杂难以自动验证任务完成情况的问题，本文提出GTAGym框架。该框架内置GTAVBench基准，包含基于《侠盗猎车手5》主线任务重构的103项在线任务及47项图像射击任务。通过自动化引擎状态检查与网页接口，支持大模型评估及强化学习。作者声称该框架能通过采样任务参数生成训练环境，实验显示对Qwen3.8-27B进行LoRA强化学习微调可提升模型在导航任务中的域内性能并实现迁移。",
+  "highlights": [
+    {
+      "text": "GTAGym提供了一个支持自动化引擎状态检查的环境框架，包含103项在线任务及47项图像射击任务，用于评估智能体的感知、推理和控制能力。",
+      "evidence": "Its evaluation benchmark, GTAVBench, derived from GTA V main-story missions, contains 103 online tasks reconstructed across nine task families, alongside 47 image-based shooting and sniping tasks using GTA V imagery."
+    },
+    {
+      "text": "GTAGym具备可扩展的任务生成器，可自动提供强化学习所需的奖励和终止信号，支持对模型进行LoRA强化学习微调。",
+      "evidence": "GTAGym also provides a scalable generator that samples task parameters within user-specified ranges and option sets under fixed templates, creating batches of 3D and image-based shooting environments for RL with automatic reward and termination signals."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "大模型后训练",
+    "推理"
+  ]
+}

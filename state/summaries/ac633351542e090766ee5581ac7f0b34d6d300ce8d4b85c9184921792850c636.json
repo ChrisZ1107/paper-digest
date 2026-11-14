@@ -1,0 +1,18 @@
+{
+  "overview": "针对无人机在短距离、对象相关飞行操纵中缺乏研究的问题，作者提出了“Flying-on-a-Word (Flow)”任务，要求无人机根据自然语言指令、视觉观察和状态动态生成连续飞行动作。为此，研究构建了包含真实世界和仿真轨迹的UAV-Flow数据集，并开发了结合模仿学习与TGRPO（Tail-Aware GRPO）策略的FlowVLA模型。实验表明，该方法在仿真评估中显著提升了任务成功率，并在真实环境中实现了稳健的对象相关飞行。",
+  "highlights": [
+    {
+      "text": "提出了UAV-Flow数据集，包含超过3万条真实飞行轨迹和1万条仿真轨迹，涵盖了多种基本运动指令和复杂的交互行为。",
+      "evidence": "To enable policy learning and closed-loop evaluation, we introduce UAV-Flow, a comprehensive dataset comprising 30,692 expert-piloted real-world trajectories across eight distinct motion categories, alongside 10,109 simulation trajectories in the UAV-Flow-Sim environment equipped with task-specific completion criteria."
+    },
+    {
+      "text": "引入了基于组奖励分布的TGRPO算法，通过强化高奖励动作序列，提升了FlowVLA模型在任务中的成功率与样本效率。",
+      "evidence": "By leveraging group reward distributions, TGRPO effectively reinforces high-reward action sequences. Evaluated on 273 held-out UAV-Flow-Sim episodes, pretrained FlowVLA achieves a mean success rate of 75.58%, outperforming the strongest baseline by 6.72 percentage points, which TGRPO post-training further elevates to 93.16% with superior sample efficiency."
+    }
+  ],
+  "tags": [
+    "模仿学习",
+    "Sim-to-Real",
+    "大模型后训练"
+  ]
+}

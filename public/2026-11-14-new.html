@@ -1,0 +1,77 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>2026-11-14 每日新论文 5</title><body><h1>2026-11-14 每日新论文 5</h1>
+<p>机器人 · 强化学习 · 通用 AI</p>
+<p>生成时间：2026-11-14 09:04 CST。从 877 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>
+<p>本栏优先收录最近发布且未出现在近期日报的 arXiv 论文，不按热度排序；相关性分用于结合你的 Zotero 收藏偏好。</p>
+<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>
+<p>本次合格候选不足 10 篇，实际收录 5 篇。</p>
+<h2>1. Autonomous Trail Racing with a Bicycle Robot</h2>
+<p><strong>机器人</strong> · 公告 2026-11-13 · 综合分 3.66</p>
+<p>Zotero 摘要相关性：0.563（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>足式运动 · 导航</p>
+<p><strong>中文概述：</strong>本文针对两轮机器人越野赛道的自主导航挑战，提出了一种将赛道编码为地形语义层的学习框架。该方法将局部导航与运动控制视为联合优化问题，绕过传统的指令控制接口。配套的视觉感知流水线利用冻结的视觉基础模型与双头解码器，实现高频语义地图构建。实验表明，该系统使自行车机器人在崎岖山地赛道上实现了高速自主行驶，且在仿真环境中的故障率显著低于传统分层基准。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出了一种将局部导航与运动控制作为联合优化问题的统一学习框架，通过地形语义编码即可适应从赛道竞速到敏捷跑酷的不同任务。<br><small>摘要依据：First, we introduce a unified learning framework that treats local navigation and locomotion as a joint optimization problem, bypassing the twist or pose command interface of classical control hierarchies. With fixed reward weights, the same framework produces both trail racing and agile parkour, shaped only through terrain semantics and episode length.</small></li>
+<li>开发了一种高频感知流水线，结合视觉基础模型与轻量化解码器，在机载设备上实时生成语义高程地图。<br><small>摘要依据：Second, our perception pipeline combines a frozen vision foundation model with a lightweight dual-head decoder that predicts per-pixel terrain semantics and confidence scores, which are fused with LiDAR range measurements into an egocentric semantic elevation map at 30 Hz onboard an NVIDIA AGX Orin.</small></li>
+<li>自行车机器人验证实验表明，系统能够在复杂山地赛道上以超过5 m/s的速度自主行驶，平均速度达到3.26 m/s。<br><small>摘要依据：We validate our framework on the Ultra Mobility Vehicle (UMV), a bicycle robot that autonomously raced across all sections of a kilometer-long, unstructured mountain bike trail at speeds exceeding 5 m/s and averaging 3.26 m/s.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>Sim-to-Real · 导航</p>
+<p><strong>原文摘要节选：</strong>Navigating off-road trails on a mountain bike requires diverse locomotion skills, including aerial maneuvers, cornering, and slip recovery, paired with sophisticated perception for scene understanding. Translating these capabilities to autonomous, two-wheeled robots remains a formidable challenge. We show that autonomous, high-speed trail navigation can be achieved through a single idea: encoding the trail as a semantic layer of the terrain. In simulation, this layer embeds the navigation task into the training environment; during deployment, it is reconstructed onboard from camera and LiDAR data. First, we introduce a unified learning framework that treats local navigation and locomotion as a joint optimization problem, bypassing the twist or pose command interface of classical control…</p>
+<p><a href="https://arxiv.org/abs/2611.15280">论文原文</a> · <a href="https://arxiv.org/pdf/2611.15280">PDF</a></p><hr>
+<h2>2. Memory-Efficient Parallel Policy Learning for Collapse-Reactive Retreat via Hybrid Terrain Modeling</h2>
+<p><strong>机器人 / 强化学习</strong> · 公告 2026-11-13 · 综合分 3.48</p>
+<p>Zotero 摘要相关性：0.536（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>强化学习 · 足式运动</p>
+<p><strong>中文概述：</strong>针对机器人在灾难现场等不稳固地形中遭遇地面坍塌需撤退的问题，本文提出了一种内存高效的并行强化学习框架。通过结合非坍塌地形的刚体模拟与坍塌区域的虚拟接触力，利用状态复用接触模型，在保持环境独立性的同时避免了昂贵的显式刚体坍塌建模。实验结果表明，该方法在显著提升并行环境采样规模、加速策略收敛的同时，在模拟环境及实机测试中均实现了有效的撤退表现。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出一种混合地形建模方法，通过状态复用接触模型在低内存消耗下实现了并行环境间的独立体验。<br><small>摘要依据：A State-Multiplexed Contact Model shares terrain geometry and a contact-response law while maintaining environment-specific collapse states, enabling independent experiences without terrain objects for collapsible regions.</small></li>
+<li>显著提升了并行采样规模与学习效率，在相同内存限制下支持的并行环境数量提升超100倍，收敛速度快50倍以上。<br><small>摘要依据：It supports over 100 times as many parallel environments as fine-resolution rigid-block terrain within the same GPU memory limit. This scalability and improved sample efficiency enable over 50 times faster policy convergence with comparable retreat performance.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习 · 足式运动 · Sim-to-Real</p>
+<p><strong>原文摘要节选：</strong>At disaster sites and on unstable slopes, robot contact can collapse uninspected terrain, requiring retreat upon support loss. Massively parallel reinforcement learning of collapse-reactive retreat requires independent state--action experiences. However, on shared rigid-body collapsible terrain, one robot&#x27;s collapse alters others&#x27; contacts without direct interaction. We call this indirect interference. Duplicating terrain objects prevents this but is memory-intensive, limiting parallel sampling. Our key insight is that policy learning does not necessarily require rigid-body collapse modeling, which is feasible but computationally expensive; collapse-induced contact responses can suffice. We therefore propose a memory-efficient parallel policy-learning framework for collapse-reactive…</p>
+<p><a href="https://arxiv.org/abs/2611.16337">论文原文</a> · <a href="https://arxiv.org/pdf/2611.16337">PDF</a></p><hr>
+<h2>3. UAV-Flow++: A Unified Suite for Benchmarking and Learning Language-Guided UAV Flight</h2>
+<p><strong>机器人 / 强化学习</strong> · 公告 2026-11-13 · 综合分 3.27</p>
+<p>Zotero 摘要相关性：0.504（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>强化学习 · 导航 · 大模型后训练</p>
+<p><strong>中文概述：</strong>针对无人机在短距离、对象相关飞行操纵中缺乏研究的问题，作者提出了“Flying-on-a-Word (Flow)”任务，要求无人机根据自然语言指令、视觉观察和状态动态生成连续飞行动作。为此，研究构建了包含真实世界和仿真轨迹的UAV-Flow数据集，并开发了结合模仿学习与TGRPO（Tail-Aware GRPO）策略的FlowVLA模型。实验表明，该方法在仿真评估中显著提升了任务成功率，并在真实环境中实现了稳健的对象相关飞行。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出了UAV-Flow数据集，包含超过3万条真实飞行轨迹和1万条仿真轨迹，涵盖了多种基本运动指令和复杂的交互行为。<br><small>摘要依据：To enable policy learning and closed-loop evaluation, we introduce UAV-Flow, a comprehensive dataset comprising 30,692 expert-piloted real-world trajectories across eight distinct motion categories, alongside 10,109 simulation trajectories in the UAV-Flow-Sim environment equipped with task-specific completion criteria.</small></li>
+<li>引入了基于组奖励分布的TGRPO算法，通过强化高奖励动作序列，提升了FlowVLA模型在任务中的成功率与样本效率。<br><small>摘要依据：By leveraging group reward distributions, TGRPO effectively reinforces high-reward action sequences. Evaluated on 273 held-out UAV-Flow-Sim episodes, pretrained FlowVLA achieves a mean success rate of 75.58%, outperforming the strongest baseline by 6.72 percentage points, which TGRPO post-training further elevates to 93.16% with superior sample efficiency.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>模仿学习 · Sim-to-Real · 大模型后训练</p>
+<p><strong>原文摘要节选：</strong>Language-guided UAV navigation has largely focused on long-horizon route planning, leaving short-range, object-relative flight maneuvers underexplored. To address this gap, we formulate Flying-on-a-Word (Flow), a task requiring a UAV to convert concise natural-language instruction, egocentric visual observation, and current state dynamics into continuous flight actions. Flow encompasses both primitive motion commands and complex object-interactive behaviors, assessing motion intent comprehension and spatial context grounding. To enable policy learning and closed-loop evaluation, we introduce UAV-Flow, a comprehensive dataset comprising 30,692 expert-piloted real-world trajectories across eight distinct motion categories, alongside 10,109 simulation trajectories in the UAV-Flow-Sim…</p>
+<p><a href="https://arxiv.org/abs/2611.17163">论文原文</a> · <a href="https://arxiv.org/pdf/2611.17163">PDF</a></p><hr>
+<h2>4. APG-Planner: Learning Vision-Based High-Speed Trajectory Planning via Analytic Policy Gradient</h2>
+<p><strong>机器人 / 强化学习</strong> · 公告 2026-11-13 · 综合分 3.16</p>
+<p>Zotero 摘要相关性：0.487（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>强化学习 · 导航</p>
+<p><strong>中文概述：</strong>针对基于视觉的高速导航任务，本文提出了一种基于解析策略梯度（APG）的轨迹规划框架APG-Planner。该方法利用微分平坦性实现轨迹到状态的解析重构，构建了可微的轨迹级状态转换，从而能够通过解析计算策略梯度来优化决策。实验表明，该方法提升了训练效率，并在仿真及实际飞行与地面机器人平台中表现出优异的导航性能。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出了一种基于解析策略梯度的轨迹规划学习框架，通过微分平坦性实现可微的状态转换，显著提高了训练效率。<br><small>摘要依据：By iteratively performing trajectory planning and differentiable state transitions, we construct a differentiable episode rollout and analytically compute policy gradients from episode-level losses, improving both training efficiency and policy performance.</small></li>
+<li>APG-Planner在仿真中表现出优于或等同于基准方法的效果，并在现实飞行测试中达到了11米/秒的高速。<br><small>摘要依据：After approximately 30 minutes of training on a single GPU, APG-Planner demonstrates comparable or superior performance to existing baseline methods in simulation and achieves speeds of up to 11\,m/s in real-world flight experiments.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>导航</p>
+<p><strong>原文摘要节选：</strong>Vision-based high-speed navigation requires a trajectory planner that can reactively generate smooth, collision-free trajectories from onboard visual observations. Deep reinforcement learning offers a promising approach to vision-based trajectory planning, as it enables the optimization of sequential decision-making policies in complex environments. However, model-free policy gradient methods rely on sample-based policy gradient estimation, which yields noisy gradient estimates and inefficient training. To this end, we propose a framework for learning trajectory planning policies using the analytic policy gradient (APG) method and use it to train APG-Planner, a vision-based high-speed trajectory planner. The proposed framework leverages differential flatness to analytically reconstruct…</p>
+<p><a href="https://arxiv.org/abs/2611.15296">论文原文</a> · <a href="https://arxiv.org/pdf/2611.15296">PDF</a></p><hr>
+<h2>5. SPARC: RoboCup Standard Platform for Autonomous Rescue Competition with Initial Datasets, Software, and Simulation Environments</h2>
+<p><strong>机器人</strong> · 公告 2026-11-13 · 综合分 3.15</p>
+<p>Zotero 摘要相关性：0.485（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>足式运动 · 导航</p>
+<p><strong>中文概述：</strong>SPARC是由RoboCup救援机器人联盟开发的自主救援竞赛项目，旨在降低自主救援机器人的研究门槛。该项目以Unitree A2-W为标准硬件平台，提供基准环境、数据集、开源导航软件栈及仿真资源，支持研究者在导航、感知、操控及具身智能等领域开展灾后响应场景的研究，促进可复现研究与协作开发。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>SPARC通过提供标准化的机器人平台和基准测试环境，降低了自主救援机器人研究的进入门槛。<br><small>摘要依据：By providing a capable standard platform and established benchmark environments, researchers can focus on autonomous navigation, perception, manipulation, and embodied AI for challenging disaster-response scenarios.</small></li>
+<li>项目公开了多项研究资源，包括竞赛数据集、开源导航软件栈及仿真资源。<br><small>摘要依据：Furthermore, we present the first open SPARC datasets collected during the IEEE ICRA 2026 Legged Robot Challenges and RoboCup Rescue 2026, release an open-source software stack for autonomous navigation, and provide initial simulation assets representing RoboCup Rescue test environments.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>四足机器人 · 导航 · 机器人操作</p>
+<p><strong>原文摘要节选：</strong>The RoboCup Standard Platform for Autonomous Rescue Competition (SPARC) is a new competition under development of the RoboCup Rescue Robot League that uses the Unitree A2-W as a common robot platform. SPARC aims to make research on artificial intelligence for autonomous rescue robots accessible to a broader research community, including groups without expertise in developing and maintaining custom robot hardware. By providing a capable standard platform and established benchmark environments, researchers can focus on autonomous navigation, perception, manipulation, and embodied AI for challenging disaster-response scenarios. This paper introduces the SPARC competition, its benchmark environment, and the Unitree A2-W standard platform. Furthermore, we present the first open SPARC datasets…</p>
+<p><a href="https://arxiv.org/abs/2611.15443">论文原文</a> · <a href="https://arxiv.org/pdf/2611.15443">PDF</a></p><hr></body></html>

@@ -1,0 +1,16 @@
+{
+  "overview": "针对物理AI在处理长程、多接触任务时表现脆弱的问题，作者提出了Ropedia Xperience 2数据集。该资源包含1,589个三维场景扫描和4,230条人类行为记录，旨在通过将场景转化为交互式仿真环境、将人体动作重定向至机器人轨迹以及生成长程轨迹，为物理AI的规模化学习提供标准化数据基础，从而探索物理智能的缩放定律。",
+  "highlights": [
+    {
+      "text": "Ropedia Xperience 2通过采集大量三维环境扫描和人类行为数据，建立了物理AI数据收集的黄金标准。",
+      "evidence": "To address this question, we introduce Ropedia Xperience 2, comprising 1,589 released metric-scale 3D scans and a collection of 4,230 egocentric recordings of 74 tasks (131 hours)."
+    },
+    {
+      "text": "该方案支持将采集到的现实数据转换为机器人学习所需的交互仿真环境与全身动作轨迹。",
+      "evidence": "We further show that each capture can be repurposed for robot learning: scenes are converted into physically interactive simulation environments, human motion is retargeted to whole-body robot trajectories, and additional robot behaviors are obtained through virtual teleoperation and automated long-horizon trajectory generation."
+    }
+  ],
+  "tags": [
+    "Sim-to-Real"
+  ]
+}
