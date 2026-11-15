@@ -5859,6 +5859,32 @@
     "HDCGMABubAQ": {
       "video_id": "HDCGMABubAQ",
       "papers": []
+    },
+    "zp9Ye8XcU_M": {
+      "video_id": "zp9Ye8XcU_M",
+      "video_title": "Unbundling Multimodal Vision Encoding (Nov 2026)",
+      "published": "2026-11-15",
+      "video_url": "https://www.youtube.com/watch?v=zp9Ye8XcU_M",
+      "papers": [
+        {
+          "id": "2611.17334",
+          "title": "Unbundling Multimodal Vision Encoding (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.17334"
+        }
+      ]
+    },
+    "7NyIQNJq3VQ": {
+      "video_id": "7NyIQNJq3VQ",
+      "video_title": "Are UFOs Real? Introducing Unified Factored Organizers (Nov 2026)",
+      "published": "2026-11-15",
+      "video_url": "https://www.youtube.com/watch?v=7NyIQNJq3VQ",
+      "papers": [
+        {
+          "id": "2611.11862",
+          "title": "Are UFOs Real? Introducing Unified Factored Organizers (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.11862"
+        }
+      ]
     }
   }
 }
