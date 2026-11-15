@@ -1,0 +1,20 @@
+{
+  "overview": "视频生成模型在物理动态和因果一致性方面仍面临挑战。本文提出PhysLoop框架，旨在通过大语言模型（LLMs）的物理知识引导，实现视频生成模型的物理化自我提升。该系统支持训练数据的可控构建及推理阶段的视频修复，通过识别并修正生成失败，促进模型在有限人工干预下实现递归式自我改进，并提供了包含10万段视频的数据集及相关评估基准。",
+  "highlights": [
+    {
+      "text": "PhysLoop框架通过集成大语言模型的物理知识，在视频生成的全生命周期中提供指导和约束，从而提升物理一致性。",
+      "evidence": "The harness guides and constrains LLMs throughout video generation, selection, and correction, distilling their physical knowledge into physically consistent videos."
+    },
+    {
+      "text": "该方法支持可控的训练数据构建以及推理阶段的视频修复功能。",
+      "evidence": "The framework supports controllable training-data construction and inference-time video repair."
+    },
+    {
+      "text": "作者发布了大规模物理数据集PhysLoop，覆盖多种室内外场景，并引入用于评估生成与修复能力的基准。",
+      "evidence": "We release 100K videos spanning diverse, realistic indoor and outdoor scenes, along with generation tools and two evaluation datasets: PhysLoop-Gen and PhysLoop-Repair."
+    }
+  ],
+  "tags": [
+    "大模型后训练"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "overview": "针对基础模型在机器人控制中的安全性隐患，本文提出了RoboRisk基准测试，涵盖任务拒绝、计划修正、执行风险、注入攻击和序列记忆五个维度。在此基础上，作者开发了LEASH安全框架，通过决策模型在任务、动作和执行阶段设置监控闸门。实验表明，LEASH能有效降低多种基础模型在机器人控制中的危害率，且基本维持了原有的任务完成性能。",
+  "highlights": [
+    {
+      "text": "提出了涵盖五大安全维度的RoboRisk基准，通过闭环执行全面评估机器人智能体的安全风险。",
+      "evidence": "We introduce RoboRisk, a comprehensive benchmark for evaluating safety in agentic robotics. Its 92 simulated tasks and 13 physical-robot tasks fall into five categories: Task-level Refusal (T), Plan Repair (P), Execution-time Hazard (E), Injection (I), and Sequential Memory (S)."
+    },
+    {
+      "text": "开发了LEASH框架，通过引入多层决策闸门对机器人动作进行实时安全审查。",
+      "evidence": "LEASH leverages a decision model (Jev or OpenAI's Decisions API) to implement task, action, and commit gates, which review the task, each action, and each irreversible operation in their visual context."
+    },
+    {
+      "text": "实验结果显示，LEASH在显著降低六种主流模型伤害率的同时，保持了任务完成率并控制了开销。",
+      "evidence": "Experiments on RoboRisk in simulation and on physical robots show that LEASH effectively reduces harm across all six foundation models. It largely preserves their task completion performance and adds little time and token overhead."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "推理"
+  ]
+}
