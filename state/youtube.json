@@ -5889,6 +5889,32 @@
           "abstract_zh": "深度学习领域的大部分研究隐含着一个假设：如果一个网络实现了低损失，那么它必然学习到了训练数据的良好表示。Kumar等人（2025，arXiv:2505.11581）近期的研究对这一假设提出了质疑，认为通过传统梯度下降训练的网络尽管实现了低损失，却学习到了破碎纠缠表示（FER），导致相关概念被割裂，无关概念被不适当地纠缠在一起。Kumar等人进一步表明，更好的表示是完全可能的：一个通过开放式、人在回路（human-in-the-loop）过程进化的网络，学习到了统一因子化表示（UFR），其捕获领域规律的能力远超通过传统梯度下降训练出的输出几乎一致的对应网络。受UFR启发，本文提出了统一因子化组织者（UFOs），这是一种旨在对其他网络的表示规律进行建模的网络。网络既可以被训练以实现任务目标的低损失，也可以被训练以使其表示与UFO学习到的模型对齐。实验证明，在表示易于解释的图像回归领域，使用UFO训练的网络能够学习到质量显著更高的表示。为了提供UFO对表示学习影响的定量证据，我们训练了一个Transformer，通过对比有无UFO正则化来观察其对模运算问题的“顿悟”（grokking）过程。当结合权重衰减时，与仅使用权重衰减相比，UFO可以将Transformer实现顿悟所需的训练步数减少超过10倍。在没有权重衰减的情况下，与未正则化的基线相比，UFO可以将Transformer实现顿悟所需的训练步数减少超过100倍。如果UFO是有效的，它们预示着一种新的范式，即损失函数本身也可以被训练以学习良好表示的有效模型。"
         }
       ]
+    },
+    "-1fbOMT7CoA": {
+      "video_id": "-1fbOMT7CoA",
+      "video_title": "Ropedia Xperience 2: A Gold Standard for Scaling Physical AI Environments and Behaviors (Nov 2026)",
+      "published": "2026-11-16",
+      "video_url": "https://www.youtube.com/watch?v=-1fbOMT7CoA",
+      "papers": [
+        {
+          "id": "2611.17060",
+          "title": "Ropedia Xperience 2: A Gold Standard for Scaling Physical AI Environments and Behaviors (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.17060"
+        }
+      ]
+    },
+    "GRv_82umq3I": {
+      "video_id": "GRv_82umq3I",
+      "video_title": "OnlyAct: Extracting Action Representations from Foundation Models for World Models (Nov 2026)",
+      "published": "2026-11-16",
+      "video_url": "https://www.youtube.com/watch?v=GRv_82umq3I",
+      "papers": [
+        {
+          "id": "2611.14420",
+          "title": "OnlyAct: Extracting Action Representations from Foundation Models for World Models (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.14420"
+        }
+      ]
     }
   }
 }
