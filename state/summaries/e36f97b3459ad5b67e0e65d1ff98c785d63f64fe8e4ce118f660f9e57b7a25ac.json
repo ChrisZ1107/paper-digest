@@ -1,0 +1,16 @@
+{
+  "overview": "针对现有自适应推理方法无法有效平衡推理开销与任务需求的问题，本文提出了一种零或T步推理模式（zero-or-T thinking）。该方法引入混合决策模型（HDM），通过轻量级自路由模块评估推理价值，决定模型是直接输出结果还是执行自回归推理。作者在代理任务中结合校准决策策略优化（CDPO）进行训练，实验结果显示该方法在保持性能的同时显著降低了推理成本。",
+  "highlights": [
+    {
+      "text": "提出混合决策模型HDM，通过自路由机制在隐式推理与显式推理之间按需切换，显著降低了推理延迟和Token消耗。",
+      "evidence": "The block estimates the value of thinking, the utility the slow mode is expected to add over the fast one, from what that implicit thinking has already produced, and the slow mode runs only where that value exceeds a price λ set per request."
+    },
+    {
+      "text": "在无逐决策标签的代理任务中引入校准决策策略优化（CDPO），实现了基于情节收益的自路由模块训练。",
+      "evidence": "Where no per-decision label exists, as in episodic agentic tasks, we introduce Calibrated Decision Policy Optimisation (CDPO), a reinforcement-learning recipe that trains the block from episode-level returns."
+    }
+  ],
+  "tags": [
+    "推理"
+  ]
+}

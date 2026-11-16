@@ -1,0 +1,16 @@
+{
+  "overview": "针对GPT-6机器人代理在RoboDojo基准测试中性能提升来源不明的问题，本文通过受控实验拆解并评估了连接方式、动作接口、经验复用及场景几何信息等设计要素。作者提出JustRUA框架，通过精简连接方式并保留完整历史记录等策略，在无需特定任务调优或自改进循环的情况下，显著提升了基准测试得分。",
+  "highlights": [
+    {
+      "text": "提出JustRUA框架，通过精简连接设计并在无需学习策略或特定调优的情况下，显著提升了模拟基准测试性能。",
+      "evidence": "JustRUA starts from the official L3 harness and keeps only what matters most. Even with no learned policy, self-improvement loop or task-specific tuning, this simple harness raises the score on the RoboDojo simulation benchmark substantially, from 29.7 to 50.3."
+    },
+    {
+      "text": "研究发现场景几何信息对提升机器人代理性能最有帮助，且在仅通过RGB预测深度的情况下依然有效。",
+      "evidence": "scene geometry helps most, even when depth is predicted from RGB alone."
+    }
+  ],
+  "tags": [
+    "机器人操作"
+  ]
+}
