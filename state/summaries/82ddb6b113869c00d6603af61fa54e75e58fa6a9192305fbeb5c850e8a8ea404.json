@@ -1,0 +1,18 @@
+{
+  "overview": "针对视觉感知受干扰时足式机器人易发生故障的问题，作者提出了PROOF框架。该方法采用两阶段教师-学生学习范式，显式建模感知可靠性。教师策略学习感知驱动行为及本体感知后备行为，学生网络则预测具备不确定性的外感特征，并在面对分布外输入时抑制视觉信息，从而提升机器人在复杂环境下的运动鲁棒性。",
+  "highlights": [
+    {
+      "text": "PROOF框架通过两阶段学习范式建模感知可靠性，使机器人在视觉退化环境下仍能保持稳定运动。",
+      "evidence": "Our method adopts a two-stage teacher-student learning paradigm that explicitly models perception reliability: the teacher learns both perception-driven and proprioceptive fallback behaviors, while the student predicts exteroceptive features with uncertainty and suppresses them under out-of-distribution inputs."
+    },
+    {
+      "text": "实验证明，在真实环境下，该方法能支持四足机器人在严重视觉干扰下维持鲁棒的运动表现。",
+      "evidence": "Under severe visual degradation, such as heavy occlusion and strong illumination changes, the robot continues to maintain stable and robust locomotion performance."
+    }
+  ],
+  "tags": [
+    "足式运动",
+    "四足机器人",
+    "Sim-to-Real"
+  ]
+}

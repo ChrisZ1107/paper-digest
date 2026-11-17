@@ -1,0 +1,16 @@
+{
+  "overview": "针对不同形态、感知和控制接口的机器人跨具身操作学习困难，EgoX提出了一种基于语义对齐的跨具身学习框架。该方法通过模块化跨具身Transformer（MXT+）对多种异构演示进行预训练，并引入具身梦境（Embodiment Dreaming）目标预测未来视觉与本体状态，以辅助共享架构学习不同具身的动力学特征。实验表明，该方法在多种物理和模拟机器人任务中显著提升了任务完成进度，特别是在分布外场景中展现出更强的泛化性能。",
+  "highlights": [
+    {
+      "text": "EgoX框架通过具身梦境目标促使共享Transformer模块学习不同机器人的动力学特性，有效提升了跨具身学习的效率。",
+      "evidence": "A training-only embodiment-dreaming objective predicts latent representations of future visual and proprioceptive states, encouraging the shared trunk to model each embodiment's dynamics."
+    },
+    {
+      "text": "预训练显著提升了机器人在多项任务中的表现，尤其是在面对分布外条件时优势更加明显。",
+      "evidence": "Across 13 task-embodiment pairs spanning five tasks and six robot embodiments, including five physical robots and one simulated humanoid, cross-embodiment pretraining raises MXT+'s average normalized task progress from 0.63 to 0.80 over training from scratch. The gains are particularly pronounced under out-of-distribution conditions, where average task progress increases from 0.53 to 0.77."
+    }
+  ],
+  "tags": [
+    "机器人操作"
+  ]
+}

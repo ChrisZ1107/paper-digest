@@ -1,0 +1,14 @@
+{
+  "overview": "本文探讨了代理式机器人的新兴范式，即利用基础模型结合具身架构处理开放世界任务。作者指出，代理式系统通过观察、意图解释、任务推理、工具调用及结果验证形成闭环决策核心。针对目前缺乏统一术语和评估体系的问题，本文提出了一套衡量闭环系统性能的评估框架，并剖析了从数字智能向物理自治转化时所面临的物理约束挑战，进而规划了旨在实现持续自主性的研究路线图。",
+  "highlights": [
+    {
+      "text": "提出代理式机器人核心架构“具身系统2”，该系统结合了基础模型与具身架构，以实现闭环决策与策略适应。",
+      "evidence": "We argue that Embodied System 2, realized by a foundation model together with an embodied harness, forms the decision-making core of agentic robotics."
+    },
+    {
+      "text": "针对当前缺乏共识的现状，设计了一套评估框架，旨在衡量具身智能模型的能力及整体闭环系统的执行性能。",
+      "evidence": "Motivated by this perspective, we propose an evaluation framework that measures both model capabilities and closed-loop system performance."
+    }
+  ],
+  "tags": []
+}

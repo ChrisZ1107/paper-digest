@@ -1,0 +1,18 @@
+{
+  "overview": "针对大语言模型在智能体任务中利用强化学习时丢失环境细粒度信息的问题，本文提出了一种Experience-Handoff强化学习方法。该方法将动作生成、反思与经验手册整理共同优化，使模型能够根据后续回滚表现对经验手册进行学习与评估。实验表明，该方法在多个智能体基准测试中优于基准方法，证明了优化未来回滚所继承的经验手册对提升性能的有效性。",
+  "highlights": [
+    {
+      "text": "该方法通过共同优化动作生成、反思和经验手册整理过程，实现了对任务经验的有效传递与利用。",
+      "evidence": "Our method, , evaluates candidate experience-handoff artifacts by their downstream effect on future actor rollouts, and co-optimizes the role-specific behaviors (action generator, insight reflector, and playbook curator) under a fixed scaffold."
+    },
+    {
+      "text": "在多个智能体基准测试中，该方法相比基准方案表现出更高的泛化性能。",
+      "evidence": "Across agentic benchmarks, achieves higher held-out performance than baseline methods."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "强化学习",
+    "推理"
+  ]
+}

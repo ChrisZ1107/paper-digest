@@ -1,0 +1,17 @@
+{
+  "overview": "针对移动机器人在复杂环境中的导航问题，本文提出了一种名为PoliMop的运动规划方法。该方法结合了运动学动态快速搜索随机树（RRT）与物理仿真，通过利用控制策略编码的技能进行路径搜索，同时结合简化质量点模型的预规划路径进行采样引导。实验表明，该方法可支持四足、人形及轮式机器人，在无需修改规划算法的情况下利用机器人自身的运动能力，有效降低了规划时间。",
+  "highlights": [
+    {
+      "text": "提出了一种利用策略仿真进行探索的动力学RRT规划器，使机器人能够基于自身物理能力寻找可行路径。",
+      "evidence": "We present a kinodynamic rapidly-exploring random tree (RRT) planner that uses physics simulation to exploit skills encoded in the control policy, which allows it to find a path in the scene with respect to the robot's capabilities."
+    },
+    {
+      "text": "采用质量点模型引导采样以聚焦于通向目标的区域，显著提升了规划效率。",
+      "evidence": "We guide sampling with a preplanned path for a simple mass-point model to focus exploration on promising regions leading toward the goal state, reducing planning time by up to 63%."
+    }
+  ],
+  "tags": [
+    "四足机器人",
+    "人形机器人"
+  ]
+}

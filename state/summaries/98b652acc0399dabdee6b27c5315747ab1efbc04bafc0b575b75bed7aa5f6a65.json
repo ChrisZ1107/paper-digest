@@ -1,0 +1,17 @@
+{
+  "overview": "本文介绍了一种名为Gamer的通用智能体框架，旨在处理复杂交互环境下的长程任务。该框架结合了感知、记忆管理和多步推理的端到端架构，支持在2D图形界面和3D模拟世界中交互。作者通过大规模键盘和鼠标交互数据进行预训练，并利用稀疏思维指令微调和多轮强化学习方法，提升了模型的长程决策能力与运行效率。实验结果表明，Gamer在多个3D开放世界游戏和2D基准测试中展现出良好的泛化能力和操作水平。",
+  "highlights": [
+    {
+      "text": "Gamer通过在大规模键盘与鼠标交互数据上进行预训练，有效学习了跨物理与虚拟域的环境动态。",
+      "evidence": "We first continue pre-training on a dataset constructed from tens of thousands of hours of device-level keyboard and mouse interaction. These trajectories span simulated games and embodied environments, allowing the model to learn environmental dynamics across both physical and virtual domains."
+    },
+    {
+      "text": "采用稀疏思维指令微调和多轮强化学习方法，在减少计算冗余的同时增强了长程决策的稳定性。",
+      "evidence": "Sparse-thinking instruction tuning then substantially reduces redundant computation while preserving the reasoning needed for complex decisions. We train the policy for long-horizon interaction with a stable multi-turn reinforcement learning method that addresses finite context windows, accumulated rollout errors, and sparse rewards."
+    }
+  ],
+  "tags": [
+    "视觉语言动作",
+    "推理"
+  ]
+}

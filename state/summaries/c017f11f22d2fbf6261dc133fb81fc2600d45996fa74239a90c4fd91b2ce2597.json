@@ -1,0 +1,17 @@
+{
+  "overview": "针对重型机械自动化面临的复杂动力学和非线性延迟挑战，以及物理实验的高风险问题，本文提出了一种基于模拟强化学习及模拟到现实迁移的方法。作者通过该方法实现了滑移转向装载机执行高难度特技动作，如双轮平衡行驶、崎岖地形导航及原地旋转等，证明了该方法在控制重型设备方面的有效性，为提升工程机械自动化水平提供了参考。",
+  "highlights": [
+    {
+      "text": "利用强化学习与模拟到现实迁移技术，成功实现了重型装载机执行高难度特技动作的自动化控制。",
+      "evidence": "Here, we show that \\ac{RL} in simulation, followed by transfer of the learned policies from simulation to reality, can successfully automate acrobatic maneuvers that push a heavy construction machine to the limits of its actuation and have only previously been accomplished by a small number of elite human operators in official world-record performances."
+    },
+    {
+      "text": "训练出的控制策略能够使5吨重的滑移转向装载机在双轮状态下实现稳定行驶、路径跟踪及原地旋转等复杂动态操作。",
+      "evidence": "The policies can autonomously swing the machine up onto two wheels and, while balancing on two wheels, drive over rough terrain, trace out specified trajectories, spin around, and swing the bucket back and forth before landing it safely back onto four wheels."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "Sim-to-Real"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "overview": "针对人形机器人因关节配置差异导致强化学习训练策略难以通用的问题，本文提出了一种基于身体对齐虚拟关节空间的架构。通过在策略与底层执行器之间引入确定性运动学层，将不同机器人的关节坐标标准化为统一的解剖学约定。实验表明，该方法在不改变训练策略的情况下，能使多种不同构造的人形机器人实现稳定的行走控制，显著提升了轨迹跟踪精度并降低了航向漂移。",
+  "highlights": [
+    {
+      "text": "提出了一种身体对齐的虚拟关节空间，使得策略可以在不同人形机器人间通用，无需修改训练方案。",
+      "evidence": "We introduce a body-aligned virtual joint space upstream of this mapping: policy actions and observations follow a common anatomical convention, and a deterministic kinematic layer maps virtual targets to native ones, leaving the existing transmission and low-level control stack unchanged."
+    },
+    {
+      "text": "在Unitree G1硬件测试中，该方法实现了更优的运动稳定性，并将航向漂移降低至原来的六分之一左右。",
+      "evidence": "and on Unitree G1 hardware it reduces heading drift by nearly a factor of six."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "人形机器人",
+    "足式运动"
+  ]
+}
