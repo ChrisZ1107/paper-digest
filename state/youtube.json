@@ -5919,6 +5919,32 @@
           "abstract_zh": "视频世界模型有望成为通用的交互式模拟器，但其训练受到动作监督的限制：动作标签稀缺，分布在不兼容的规范中，且无法随着无标签视频预训练语料库进行扩展。一种常见的解决方法是联合训练一个动作编码器，将连续帧压缩为潜在动作，并利用一个解码器根据前一帧和该潜在动作重建下一帧，从而强迫潜在动作仅捕捉新信息。这存在两个局限性：从头学习动作空间可能会限制其在未知领域的泛化能力；此外，瓶颈机制以牺牲表达能力来换取分离，设置得过紧会丢失细节，而设置得过松则会在领域偏移下存在场景泄漏的风险。我们主张采用不同的切入点：我们不从头开始学习动作，而是从一个预训练的基础模型（V-JEPA 2）出发，该模型的帧对嵌入在经过大规模、多样化的视频预训练后，已经承载了大量的动作信息。剩下的挑战是如何在提取动作的同时剔除场景信息。我们提出了一种无标签对比适配框架，通过拉近在不同场景下具有相同运动的帧对，并推开相同场景下具有不同运动的帧对，从而在不施加重建瓶颈的情况下重塑预训练空间的几何结构。我们引入了一个统一的评估协议，涵盖了动作表达能力、场景不变性和动作条件下的视频生成质量三个维度，并跨越了机器人操作、相机导航、游戏和驾驶基准测试，其中大多数基准在适配过程中是未见的。与无标注的潜在动作方法相比，我们的表示法具有显著更强的表达能力，同时在场景不变性上与之匹配，并且它们生成的世界模型能够更忠实地将演示的动作迁移到新场景中。"
         }
       ]
+    },
+    "sRsDcZAPjsw": {
+      "video_id": "sRsDcZAPjsw",
+      "video_title": "Hello Again: Exploiting Replay Protected Monotonic Counters to Brute-Force Windows Hello PINs",
+      "published": "2026-11-17",
+      "video_url": "https://www.youtube.com/watch?v=sRsDcZAPjsw",
+      "papers": [
+        {
+          "id": "2611.18126",
+          "title": "Hello Again: Exploiting Replay Protected Monotonic Counters to Brute-Force Windows Hello PINs (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.18126"
+        }
+      ]
+    },
+    "8tPwO4qWnYU": {
+      "video_id": "8tPwO4qWnYU",
+      "video_title": "SWAM: Scaling World Action Models with Cross-Modal Alignment (Nov 2026)",
+      "published": "2026-11-17",
+      "video_url": "https://www.youtube.com/watch?v=8tPwO4qWnYU",
+      "papers": [
+        {
+          "id": "2611.12870",
+          "title": "SWAM: Scaling World Action Models with Cross-Modal Alignment (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.12870"
+        }
+      ]
     }
   }
 }
