@@ -1,0 +1,499 @@
+{
+  "date": "2026-11-18",
+  "timestamp": "2026-11-18T09:02:21.927734+08:00",
+  "title": "2026-11-18 热门论文 Top 10｜机器人·强化学习·AI",
+  "slug": "2026-11-18",
+  "papers": [
+    {
+      "id": "2611.18397",
+      "title": "Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent",
+      "abstract": "We introduce Gamer, a generalist agent framework built for long-horizon tasks in complex interactive environments. Its end-to-end architecture combines perception, memory management, and multi-step reasoning. A shared training and deployment pipeline supports interaction with both conventional 2D graphical interfaces and complex 3D simulated worlds. We first continue pre-training on a dataset constructed from tens of thousands of hours of device-level keyboard and mouse interaction. These trajectories span simulated games and embodied environments, allowing the model to learn environmental dynamics across both physical and virtual domains. Sparse-thinking instruction tuning then substantially reduces redundant computation while preserving the reasoning needed for complex decisions. We train the policy for long-horizon interaction with a stable multi-turn reinforcement learning method that addresses finite context windows, accumulated rollout errors, and sparse rewards. For real-time interaction, a cloud-edge inference engine serves numerous simulated game environments concurrently, supports unbounded-context execution, and keeps online inference latency low. Across multiple challenging 3D open-world games, Gamer demonstrates solid generalization and operational efficiency comparable to skilled players. It also achieves competitive results on a range of conventional 2D game benchmarks. These results suggest that even repetitive keyboard and mouse trajectories can support substantial gains from scaling data and learning algorithms. Training on these trajectories helps Gamer learn complex skills more steadily in environments with both physical and digital properties. This approach offers a path toward generalist agents that can interact across digital and physical worlds.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-11-13",
+      "age_days": 5.043309348773149,
+      "upvotes": 119,
+      "comments": 4,
+      "stars": 492,
+      "repo": "https://github.com/RainBowLuoCS/Gamer",
+      "trending_rank": 4,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.4912,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 31,
+        "comments": 1,
+        "stars": 316
+      },
+      "score": 6.045,
+      "rule_tags": [
+        "强化学习",
+        "视觉语言动作",
+        "推理"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文介绍了一种名为Gamer的通用智能体框架，旨在处理复杂交互环境下的长程任务。该框架结合了感知、记忆管理和多步推理的端到端架构，支持在2D图形界面和3D模拟世界中交互。作者通过大规模键盘和鼠标交互数据进行预训练，并利用稀疏思维指令微调和多轮强化学习方法，提升了模型的长程决策能力与运行效率。实验结果表明，Gamer在多个3D开放世界游戏和2D基准测试中展现出良好的泛化能力和操作水平。",
+        "highlights": [
+          {
+            "text": "Gamer通过在大规模键盘与鼠标交互数据上进行预训练，有效学习了跨物理与虚拟域的环境动态。",
+            "evidence": "We first continue pre-training on a dataset constructed from tens of thousands of hours of device-level keyboard and mouse interaction. These trajectories span simulated games and embodied environments, allowing the model to learn environmental dynamics across both physical and virtual domains."
+          },
+          {
+            "text": "采用稀疏思维指令微调和多轮强化学习方法，在减少计算冗余的同时增强了长程决策的稳定性。",
+            "evidence": "Sparse-thinking instruction tuning then substantially reduces redundant computation while preserving the reasoning needed for complex decisions. We train the policy for long-horizon interaction with a stable multi-turn reinforcement learning method that addresses finite context windows, accumulated rollout errors, and sparse rewards."
+          }
+        ],
+        "tags": [
+          "视觉语言动作",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.18359",
+      "title": "Envisioning Agentic Robotics: A New Era of Robotic Systems",
+      "abstract": "The release of GPT-6 Astra marks the emergence of a new paradigm in robotics: agentic robotics. Within weeks, frontier models with agentic harnesses matched or exceeded task-specific policies on many embodied benchmarks. Instead of training a dedicated policy for each family of tasks, an agentic robotic system applies a foundation model to open-world embodied tasks. It operates in a closed loop: observing the environment, interpreting user intent, reasoning about the task, invoking skills and tools, verifying outcomes, and adapting its strategy. Despite these advances, the community has yet to converge on a shared definition, a reliable evaluation framework, or a research roadmap. We argue that Embodied System 2, realized by a foundation model together with an embodied harness, forms the decision-making core of agentic robotics. Its central challenge is to translate general-purpose reasoning into effective and verifiable actions under physical constraints such as limited reaction time, mechanical limits, unpredictable environment changes, and irreversible consequences. Motivated by this perspective, we propose an evaluation framework that measures both model capabilities and closed-loop system performance. Furthermore, we identify the principles that carry over from digital to physical agents and the challenges that must be addressed to achieve reliable physical autonomy. On top of the Embodied System 2 and the evaluation framework, we envision a research roadmap toward sustained autonomy: the ability to perform work safely and reliably with progressively broader responsibility, from executing individual primitives to fulfilling standing roles.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-11-13",
+      "age_days": 5.043309348773149,
+      "upvotes": 124,
+      "comments": 5,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.47515,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 17,
+        "comments": 1
+      },
+      "score": 5.721,
+      "rule_tags": [
+        "推理"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文探讨了代理式机器人的新兴范式，即利用基础模型结合具身架构处理开放世界任务。作者指出，代理式系统通过观察、意图解释、任务推理、工具调用及结果验证形成闭环决策核心。针对目前缺乏统一术语和评估体系的问题，本文提出了一套衡量闭环系统性能的评估框架，并剖析了从数字智能向物理自治转化时所面临的物理约束挑战，进而规划了旨在实现持续自主性的研究路线图。",
+        "highlights": [
+          {
+            "text": "提出代理式机器人核心架构“具身系统2”，该系统结合了基础模型与具身架构，以实现闭环决策与策略适应。",
+            "evidence": "We argue that Embodied System 2, realized by a foundation model together with an embodied harness, forms the decision-making core of agentic robotics."
+          },
+          {
+            "text": "针对当前缺乏共识的现状，设计了一套评估框架，旨在衡量具身智能模型的能力及整体闭环系统的执行性能。",
+            "evidence": "Motivated by this perspective, we propose an evaluation framework that measures both model capabilities and closed-loop system performance."
+          }
+        ],
+        "tags": [],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.12885",
+      "title": "World In-Context Learning for Agentic Robot Manipulation",
+      "abstract": "Trained action policies write manipulation skill into network weights, tying what is learned to the distribution it is learned from. In-context learning (ICL) avoids this coupling but has not matched trained policies, because a demonstration recorded in another scene carries no feedback from the world the robot currently faces. We observe that what an agent learns in context is semantic, recording task steps and object roles rather than visual appearance, so experience gathered in one world transfers to another. Based on this insight, we propose World In-Context Learning (WICL), a paradigm in which a frozen model starts from a demonstration, rehearses the task in a world such as a simulator, and writes the feedback into its context rather than its weights. We build RoboScript, a modular infrastructure that implements WICL for agentic manipulation. From a single demonstration, RoboScript learns each task through rehearsal in simulation, freezes the learned knowledge as a Task Memory, and deploys the frozen memory on new scenes with data isolation that ensures every deployment input is available on a real robot. On all 50 tasks of RoboTwin 2.0, RoboScript reaches 83.4% mean success across clean and randomized settings with one demonstration per task and no gradient updates, exceeding the strongest trained action policy by over 20 points. The method generalizes across visual distributions, improves through reflection, scales with the foundation model, and transfers to a physical dual-arm robot through cross-embodiment memory adaptation. With a world in the loop, a robot can learn a manipulation task in its context as well as it learns one in its weights. All code is available at https://github.com/ArcheOne-AI/RoboScript",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-11-09",
+      "age_days": 9.043309348773148,
+      "upvotes": 58,
+      "comments": 4,
+      "stars": 301,
+      "repo": "https://github.com/ArcheOne-AI/RoboScript",
+      "trending_rank": 34,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.45809,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 0,
+        "comments": 0,
+        "stars": 10
+      },
+      "score": 5.032,
+      "rule_tags": [],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对现有机器人操作策略训练难以跨场景泛化的问题，作者提出一种基于“世界上下文学习”（WICL）的范式。该方法利用冻结模型在模拟环境中对任务进行排演，将任务步骤与对象角色的语义反馈直接记录在上下文而非网络权重中。通过构建RoboScript基础设施，该方法在RoboTwin 2.0的50项任务中实现了83.4%的平均成功率，并在无梯度更新的情况下优于传统的训练策略，验证了在上下文学习中获取操作技能的有效性。",
+        "highlights": [
+          {
+            "text": "提出WICL范式，通过在模拟器中排演任务并将反馈写入上下文而非权重，使机器人能从单次演示中高效学习任务。",
+            "evidence": "Based on this insight, we propose World In-Context Learning (WICL), a paradigm in which a frozen model starts from a demonstration, rehearses the task in a world such as a simulator, and writes the feedback into its context rather than its weights."
+          },
+          {
+            "text": "RoboScript在RoboTwin 2.0的50项任务中表现优异，平均成功率达到83.4%，且在零梯度更新条件下显著超过了传统训练的动作策略。",
+            "evidence": "On all 50 tasks of RoboTwin 2.0, RoboScript reaches 83.4% mean success across clean and randomized settings with one demonstration per task and no gradient updates, exceeding the strongest trained action policy by over 20 points."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "Sim-to-Real",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.21607",
+      "title": "ScaleVLA: Scaling Vision-Language-Action Models to 552 Billion Parameters",
+      "abstract": "Frontier Vision-Language Models (VLMs) such as GPT-6 Astra have demonstrated remarkable capabilities in robot control, suggesting that broad pretraining provides knowledge valuable for physical action. Yet most Vision-Language-Action (VLA) policies still rely on much smaller VLM backbones, leaving this potential largely untapped. We ask whether frontier-scale representations can provide a stronger foundation for robot learning. We introduce ScaleVLA, which connects a 552B DeepSeek-V4.1-Flash backbone to a trainable action DiT, and systematically compare VLMs from 2B to 552B under a shared training setup. We evaluate three fundamental capabilities of robot foundation models. In sample efficiency, just 10 demonstrations outperform a 2B backbone trained with 50 (87.8% vs. 85.6%). In generalization, LIBERO-PRO success reaches 45.1%, compared with at most 31.3% for smaller backbones. In precise manipulation, real-world charger insertion improves from 4/10 to 9/10 successes, with gains concentrated in contact-sensitive alignment. Despite its scale, ScaleVLA achieves 216 ms median latency per action chunk. Our findings suggest that frontier VLMs can serve not only as reasoning agents, but also as powerful representational foundations for efficient and generalizable robot policies.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-11-16",
+      "age_days": 2.043309348773148,
+      "upvotes": 41,
+      "comments": 1,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face",
+        "arXiv"
+      ],
+      "date_label": "发表",
+      "relevance": 0.47954,
+      "growth": null,
+      "score": 5.032,
+      "rule_tags": [
+        "视觉语言动作",
+        "推理"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文探讨了将超大规模视觉语言模型（VLM）应用于机器人控制的潜力。作者提出了ScaleVLA，将552B参数的DeepSeek-V4.1-Flash作为基础模型，并连接可训练的动作扩散变换器（DiT）。实验表明，与较小的VLA模型相比，该方法在少样本学习、泛化能力及精密操作任务上表现更优，并能在保持较低推理延迟的同时，为机器人策略提供强大的表征基础。",
+        "highlights": [
+          {
+            "text": "ScaleVLA展示了极高的样本效率，仅使用10个演示样本即可超越使用50个样本训练的2B参数模型。",
+            "evidence": "In sample efficiency, just 10 demonstrations outperform a 2B backbone trained with 50 (87.8% vs. 85.6%)."
+          },
+          {
+            "text": "在复杂任务泛化与精密操作方面，ScaleVLA相比小型主干网络表现出显著的性能提升。",
+            "evidence": "In generalization, LIBERO-PRO success reaches 45.1%, compared with at most 31.3% for smaller backbones. In precise manipulation, real-world charger insertion improves from 4/10 to 9/10 successes, with gains concentrated in contact-sensitive alignment."
+          }
+        ],
+        "tags": [
+          "视觉语言动作",
+          "机器人操作",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.01560",
+      "title": "Democratizing Robot-Use Agents: A Unified Harness with Open Models",
+      "abstract": "Robot-use Agents (RUAs) have shown promising zero-shot manipulation capabilities, but reliance on frontier, proprietary models limits research into further training. To democratize RUA research, we introduce uni-robot-agent, a unified harness for competitive open-weight robot use that supports further training. Without privileged inputs, an out-of-the-box Qwen3.8-Flash-Next achieves a RoboDojo Score of 31.39, surpassing the published GPT-6 Astra-RoboProbe result of 28.97 and many VLA/WAM baselines, and performs competitively on 19 real-world tasks. Our analysis across model generations, families, and sizes links effective robot use to four general capabilities, suggesting that future RUA training should develop them jointly.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-11-01",
+      "age_days": 17.043309348773146,
+      "upvotes": 51,
+      "comments": 2,
+      "stars": 441,
+      "repo": "https://github.com/Open-RUA/uni-robot-agent",
+      "trending_rank": 66,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.45102,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 1,
+        "comments": 0,
+        "stars": 12
+      },
+      "score": 4.836,
+      "rule_tags": [
+        "视觉语言动作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对现有机器人使用智能体（RUA）依赖封闭私有模型导致研究受限的问题，作者提出了uni-robot-agent，这是一个支持进一步训练的开放权重机器人操作统一框架。实验表明，基于Qwen3.8-Flash-Next模型的方法在RoboDojo基准测试中优于GPT-6 Astra-RoboProbe及多种基线，并在19项真实世界任务中表现出竞争力。此外，作者分析了模型特性与机器人操作能力之间的联系，为未来RUA的协同训练提供了参考。",
+        "highlights": [
+          {
+            "text": "uni-robot-agent框架使开放权重模型在机器人操作任务中取得了具有竞争力的性能，且无需特权输入。",
+            "evidence": "Without privileged inputs, an out-of-the-box Qwen3.8-Flash-Next achieves a RoboDojo Score of 31.39, surpassing the published GPT-6 Astra-RoboProbe result of 28.97 and many VLA/WAM baselines, and performs competitively on 19 real-world tasks."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "视觉语言动作",
+          "大模型后训练"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.12806",
+      "title": "Learning Heterogeneous Tactile Representation for General Dexterous Manipulation",
+      "abstract": "Tactile sensing is an indispensable modality for contact-rich dexterous manipulation, a capability that hints at the ultimate frontiers of embodied intelligence. However, commercially available tactile sensors are still at a relatively early stage of development, with each type of sensor offering irreplaceable strengths alongside its own drawbacks. A key challenge is thus to free tactile understanding from sensor-specific physics, so that embodied models can effectively leverage heterogeneous tactile data. To this end, we develop LingBot-Touch, a tactile foundation model characterized by the following properties. (i) Our model yields a unified representation across different tactile sensors (i.e., piezoresistive, magnetic, and visuotactile sensors), and is easily extensible to new sensor types. (ii) The resulting tactile tokens are plug-and-play: they can be seamlessly integrated into policy models across paradigms, from diffusion policy to vision-language-action (VLA) models such as π_{0.5} and LingBot-VLA, consistently enhancing manipulation dexterity. (iii) Extensive experiments, spanning simulation and real-robot deployments across multiple hardware platforms, demonstrate that our tactile representation substantially benefits complex manipulation tasks while maintaining strong computational efficiency. We believe the findings in this work demonstrate the potential of leveraging cross-sensor data to scale tactile learning, and offer encouraging insights for the design of future hardware and embodied models.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-11-09",
+      "age_days": 9.043309348773148,
+      "upvotes": 105,
+      "comments": 2,
+      "stars": 759,
+      "repo": "https://github.com/Robbyant/lingbot-touch",
+      "trending_rank": 10,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.36367,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 0,
+        "comments": 0,
+        "stars": 67
+      },
+      "score": 4.586,
+      "rule_tags": [
+        "机器人操作",
+        "视觉语言动作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对触觉感知依赖特定传感器物理特性的挑战，作者开发了名为LingBot-Touch的触觉基础模型。该模型通过统一不同类型触觉传感器的数据表征，构建了一种可扩展的通用触觉编码方案。实验证明，该方法生成的触觉Token可无缝集成至多种策略模型中，显著提升了机器人在模拟及真实环境下的复杂操作能力，并表现出良好的计算效率。",
+        "highlights": [
+          {
+            "text": "LingBot-Touch提供了一种跨多种触觉传感器的统一表征，具备良好的传感器通用性与可扩展性。",
+            "evidence": "Our model yields a unified representation across different tactile sensors (i.e., piezoresistive, magnetic, and visuotactile sensors), and is easily extensible to new sensor types."
+          },
+          {
+            "text": "该触觉表征作为即插即用的模块，可集成于扩散策略及视觉语言动作模型中，有效增强操作灵活性。",
+            "evidence": "The resulting tactile tokens are plug-and-play: they can be seamlessly integrated into policy models across paradigms, from diffusion policy to vision-language-action (VLA) models such as π_{0.5} and LingBot-VLA, consistently enhancing manipulation dexterity."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "Sim-to-Real",
+          "视觉语言动作"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.16439",
+      "title": "HALO: Human-Aligned Data Collection for WhoLe-body MObile Manipulation",
+      "abstract": "Learning whole-body mobile manipulation requires demonstrations that coordinate bimanual actions with locomotion across extended workspaces. However, existing interfaces trade off direct robot control, perception and action alignment, and natural operator mobility, making such demonstrations difficult to collect. We introduce HALO, a human-aligned data collection system for whole-body mobile manipulation. The system aligns the operator's perception and action space with the robot while preserving direct physical feedback and natural locomotion. Operators guide the robot end-effectors through kinesthetic teaching and move a low-resistance platform without the deployed mobile base while performing bimanual manipulation. This interface enables more natural whole-body demonstrations, but the close human-robot coupling introduces discrepancies between the demonstration and deployment settings. We address these discrepancies with deployment-aligned demonstration processing, which calibrates and temporally aligns platform motion with the deployed base response and masks and inpaints demonstrator hands in recorded observations. Compared with Mobile ALOHA and VR teleoperation, HALO enables up to 2.9x faster demonstration collection while maintaining comparable or higher success rates. Policies trained with HALO perform precise manipulation tasks, including zip-tie fastening, and achieve a 73.3% success rate on a six-stage long-horizon mobile manipulation task involving repeated coordinated base and arm motion. Project page: https://robbyant-research.github.io/Lingbot-ALOHA/",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-11-12",
+      "age_days": 6.043309348773149,
+      "upvotes": 10,
+      "comments": 2,
+      "stars": 7,
+      "repo": "https://github.com/robbyant-research/Lingbot-ALOHA",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.45406,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 0,
+        "comments": 1,
+        "stars": 0
+      },
+      "score": 4.583,
+      "rule_tags": [
+        "足式运动"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对全身移动操作任务中演示数据收集困难的问题，本文提出了一种名为HALO的人体对齐数据收集系统。该系统通过保持操作者自然移动与物理反馈，实现机器人末端执行器引导与底盘运动的协同。作者提出部署对齐处理方法来修正人机耦合差异，实验结果表明该方法在收集效率和任务成功率方面优于现有的Mobile ALOHA和VR遥操作方案。",
+        "highlights": [
+          {
+            "text": "HALO系统通过保持操作者的自然移动和直接物理反馈，实现了全身移动操作演示的高效收集。",
+            "evidence": "The system aligns the operator's perception and action space with the robot while preserving direct physical feedback and natural locomotion."
+          },
+          {
+            "text": "提出的部署对齐处理技术有效解决了示范过程中的人机耦合差异问题。",
+            "evidence": "We address these discrepancies with deployment-aligned demonstration processing, which calibrates and temporally aligns platform motion with the deployed base response and masks and inpaints demonstrator hands in recorded observations."
+          },
+          {
+            "text": "实验表明HALO相较于Mobile ALOHA和VR遥操作提升了演示收集效率，并能完成复杂的长程移动操作任务。",
+            "evidence": "Compared with Mobile ALOHA and VR teleoperation, HALO enables up to 2.9x faster demonstration collection while maintaining comparable or higher success rates."
+          }
+        ],
+        "tags": [
+          "机器人操作"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.19937",
+      "title": "AllocFlow: End-to-End Portfolio Trading Action Generation from Raw Market Data",
+      "abstract": "Real-world portfolio management requires converting noisy market observations into coordinated, simultaneous allocations across multiple assets under shared capital constraints. Advances in forecasting models and alpha discovery help identify opportunities. However, traditional pipelines often decouple signal forecasting from portfolio construction, potentially misaligning learning with allocation and execution objectives. We present AllocFlow, an end-to-end flow-matching framework that directly generates joint portfolio allocations from raw multi-asset market histories. To capture dependencies among portfolio positions, AllocFlow employs a cross-asset flow Transformer conditioned on temporal market representations to generate continuous, signed position weights across all instruments jointly. To address the sample inefficiency and instability of learning continuous allocation policies from scratch, we establish a two-stage training scheme: strategy-supervised imitation shapes a structured distribution of candidate portfolios, followed by group-relative reinforcement learning (RL) that refines joint decisions using portfolio-level financial rewards and a frozen policy reference. On hourly cryptocurrency perpetual futures, RL refinement raises the annualized net return of the imitation policy from 27.79% to 51.38% and its Calmar ratio from 0.955 to 4.043, surpassing the teacher strategy on every metric, and AllocFlow reaches a Calmar ratio of 4.90 on six further months of unseen 2026 data without retraining.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-11-15",
+      "age_days": 3.0433093487731484,
+      "upvotes": 67,
+      "comments": 3,
+      "stars": 18,
+      "repo": "https://github.com/allocflow/AllocFlow",
+      "trending_rank": 32,
+      "sources": [
+        "Hugging Face",
+        "arXiv"
+      ],
+      "date_label": "发表",
+      "relevance": 0.34372,
+      "growth": null,
+      "score": 4.388,
+      "rule_tags": [
+        "强化学习"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对传统组合管理中信号预测与资产配置脱节的问题，本文提出了AllocFlow框架，实现从原始市场数据到投资组合分配的端到端生成。该框架利用跨资产流Transformer捕捉多资产依赖，并采用“监督模仿学习+组相对强化学习”的两阶段训练策略。作者声称该方法在加密货币永续合约测试中显著提升了年化净收益与Calmar比率，并展现出良好的泛化性能。",
+        "highlights": [
+          {
+            "text": "提出AllocFlow端到端框架，通过流匹配技术直接从原始市场数据生成多资产组合分配。",
+            "evidence": "We present AllocFlow, an end-to-end flow-matching framework that directly generates joint portfolio allocations from raw multi-asset market histories."
+          },
+          {
+            "text": "采用两阶段训练方案，通过模仿学习构建候选分布，并利用组相对强化学习进一步优化决策。",
+            "evidence": "To address the sample inefficiency and instability of learning continuous allocation policies from scratch, we establish a two-stage training scheme: strategy-supervised imitation shapes a structured distribution of candidate portfolios, followed by group-relative reinforcement learning (RL) that refines joint decisions using portfolio-level financial rewards and a frozen policy reference."
+          },
+          {
+            "text": "实验表明，强化学习优化显著提升了模仿学习策略的金融指标，且在未见数据上保持了优异表现。",
+            "evidence": "On hourly cryptocurrency perpetual futures, RL refinement raises the annualized net return of the imitation policy from 27.79% to 51.38% and its Calmar ratio from 0.955 to 4.043, surpassing the teacher strategy on every metric, and AllocFlow reaches a Calmar ratio of 4.90 on six further months of unseen 2026 data without retraining."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "模仿学习"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.18919",
+      "title": "Correcting Persistent Failures in Point-Cloud Grasping Policies using Human Demonstrations in Virtual Reality",
+      "abstract": "Robots in homes, warehouses and farms must pick up objects they have never seen, usually without a 3D model or a category label. A grasping policy that works directly on the point cloud from a depth sensor needs only the geometry the robot observes, so it applies to any new object. Offline grasp generators such as Contact-GraspNet work this way, but they rank grasps by learned plausibility rather than by whether the grasp actually lifts the object. Reinforcement learning (RL) can optimize for that directly and make a point-cloud grasping policy much better on average, yet it leaves specific grasps persistently unsolved. We present a human-in-the-loop failure loop that targets those grasps: situations an RL policy keeps failing are mined automatically, sent to a virtual-reality application where a person picks the object up with their own hands, and returned to training as two grasp points. The person contributes only where to grasp; the robot chooses its own approach. In simulation, RL raises success on unseen objects from 55% with Contact-GraspNet to 83%. Adding 58 human demonstrations nearly doubles success on the hard cases RL kept failing, from 24% to 45%, and recovers performance that RL alone loses on similar cases that were never demonstrated, without reducing success on unseen objects.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-11-13",
+      "age_days": 5.043309348773149,
+      "upvotes": 5,
+      "comments": 1,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face",
+        "arXiv"
+      ],
+      "date_label": "发表",
+      "relevance": 0.48199,
+      "growth": null,
+      "score": 4.362,
+      "rule_tags": [
+        "强化学习",
+        "机器人操作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对点云抓取策略在处理特定失败案例时的局限性，本文提出一种人机协同的故障修复流程。通过自动挖掘强化学习策略的失败场景，利用虚拟现实技术获取人类演示数据，并将其补充至训练集中。作者声称该方法在无需人类完全控制机器人路径的情况下，显著提升了模型在困难场景下的抓取成功率，同时保持了模型在未见物体上的泛化性能。",
+        "highlights": [
+          {
+            "text": "开发了一种人机协同的故障修复流程，通过人类在虚拟现实中的抓取演示来辅助改进强化学习策略。",
+            "evidence": "We present a human-in-the-loop failure loop that targets those grasps: situations an RL policy keeps failing are mined automatically, sent to a virtual-reality application where a person picks the object up with their own hands, and returned to training as two grasp points."
+          },
+          {
+            "text": "在仿真实验中，引入少量人类演示即可显著提升模型处理困难抓取场景的成功率。",
+            "evidence": "Adding 58 human demonstrations nearly doubles success on the hard cases RL kept failing, from 24% to 45%, and recovers performance that RL alone loses on similar cases that were never demonstrated, without reducing success on unseen objects."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "强化学习",
+          "模仿学习"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.17167",
+      "title": "Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents",
+      "abstract": "Decision models answer a question with a typed output, such as a choice among options with a probability for each, so one model can choose an agent's actions, evaluate actions already taken, or score every action to teach a policy with reinforcement learning. Prior work has studied them mainly as actors, judging their usefulness by how well they act. We ask whether a decision model that acts poorly can still teach well. We compare three decision models and three general LLMs as actors and judges on ALFWorld, and use JEV as a teacher on ALFWorld and WebShop. As actors, all six models are pulled away from a subgoal that must come first by an easier one. As judges that see the whole trajectory, the same models credit the steps toward that subgoal, and asking whether each action helped, rather than whether the task will succeed, separates useful from useless actions. As a teacher, JEV raises a Qwen2.5-1.5B policy over GRPO from 72.8% to 82.9% success on ALFWorld and from 56.8% to 71.4% on WebShop. These results suggest that a poor actor can still teach well, because judging an action after the episode ends reveals the consequences that acting must anticipate. Code is available at https://github.com/ZJU-REAL/decision-agents.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-11-12",
+      "age_days": 6.043309348773149,
+      "upvotes": 38,
+      "comments": 6,
+      "stars": 49,
+      "repo": "https://github.com/ZJU-REAL/decision-agents",
+      "trending_rank": 45,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.27204,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 2,
+        "comments": 0,
+        "stars": 1
+      },
+      "score": 4.055,
+      "rule_tags": [
+        "强化学习",
+        "大模型后训练"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "该论文探讨了决策模型在长程任务智能体中作为执行者、评判者及教师的不同角色。研究发现，即使决策模型在执行任务时表现不佳，其仍能有效评估动作并辅助其他策略的训练。作者通过在ALFWorld和WebShop任务上的实验表明，相比于单一的执行角色，利用模型评估轨迹并指导强化学习训练，能显著提升策略的性能。",
+        "highlights": [
+          {
+            "text": "研究指出，决策模型在评判角色中展现出优于执行角色的能力，能够识别出有助于任务成功的关键动作。",
+            "evidence": "As judges that see the whole trajectory, the same models credit the steps toward that subgoal, and asking whether each action helped, rather than whether the task will succeed, separates useful from useless actions."
+          },
+          {
+            "text": "作为教师模型，JEV在ALFWorld和WebShop任务上分别将Qwen2.5-1.5B策略的成功率提升至82.9%和71.4%。",
+            "evidence": "As a teacher, JEV raises a Qwen2.5-1.5B policy over GRPO from 72.8% to 82.9% success on ALFWorld and from 56.8% to 71.4% on WebShop."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    }
+  ],
+  "candidate_count": 1164,
+  "personalization_note": "已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。",
+  "html": "<h1>2026-11-18 热门论文 Top 10</h1>\n<p>机器人 · 强化学习 · 通用 AI</p>\n<p>生成时间：2026-11-18 09:02 CST。从 1164 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>\n<p>候选来源：<a href=\"https://huggingface.co/papers\">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>\n<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>\n<h2>1. Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent</h2>\n<p><strong>机器人 / 强化学习</strong> · 发表 2026-11-13 · 综合分 6.04</p>\n<p>Zotero 摘要相关性：0.491（相似度分数，不是概率）。</p>\n<p>HF 点赞 119 · 讨论 4 · 本次 HF 热榜第 4 位 · 仓库累计 Star 492（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +31 · 讨论 +1 · Star +316。</p>\n<p><strong>规则标签：</strong>强化学习 · 视觉语言动作 · 推理</p>\n<p><strong>中文概述：</strong>本文介绍了一种名为Gamer的通用智能体框架，旨在处理复杂交互环境下的长程任务。该框架结合了感知、记忆管理和多步推理的端到端架构，支持在2D图形界面和3D模拟世界中交互。作者通过大规模键盘和鼠标交互数据进行预训练，并利用稀疏思维指令微调和多轮强化学习方法，提升了模型的长程决策能力与运行效率。实验结果表明，Gamer在多个3D开放世界游戏和2D基准测试中展现出良好的泛化能力和操作水平。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>Gamer通过在大规模键盘与鼠标交互数据上进行预训练，有效学习了跨物理与虚拟域的环境动态。<br><small>摘要依据：We first continue pre-training on a dataset constructed from tens of thousands of hours of device-level keyboard and mouse interaction. These trajectories span simulated games and embodied environments, allowing the model to learn environmental dynamics across both physical and virtual domains.</small></li>\n<li>采用稀疏思维指令微调和多轮强化学习方法，在减少计算冗余的同时增强了长程决策的稳定性。<br><small>摘要依据：Sparse-thinking instruction tuning then substantially reduces redundant computation while preserving the reasoning needed for complex decisions. We train the policy for long-horizon interaction with a stable multi-turn reinforcement learning method that addresses finite context windows, accumulated rollout errors, and sparse rewards.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>视觉语言动作 · 推理</p>\n<p><strong>原文摘要节选：</strong>We introduce Gamer, a generalist agent framework built for long-horizon tasks in complex interactive environments. Its end-to-end architecture combines perception, memory management, and multi-step reasoning. A shared training and deployment pipeline supports interaction with both conventional 2D graphical interfaces and complex 3D simulated worlds. We first continue pre-training on a dataset constructed from tens of thousands of hours of device-level keyboard and mouse interaction. These trajectories span simulated games and embodied environments, allowing the model to learn environmental dynamics across both physical and virtual domains. Sparse-thinking instruction tuning then substantially reduces redundant computation while preserving the reasoning needed for complex decisions. We…</p>\n<p><a href=\"https://arxiv.org/abs/2611.18397\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.18397\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.18397\">讨论与热度</a> · <a href=\"https://github.com/RainBowLuoCS/Gamer\">代码</a></p><hr>\n<h2>2. Envisioning Agentic Robotics: A New Era of Robotic Systems</h2>\n<p><strong>机器人</strong> · 发表 2026-11-13 · 综合分 5.72</p>\n<p>Zotero 摘要相关性：0.475（相似度分数，不是概率）。</p>\n<p>HF 点赞 124 · 讨论 5</p>\n<p>较上次观测（1.0 天前）：点赞 +17 · 讨论 +1。</p>\n<p><strong>规则标签：</strong>推理</p>\n<p><strong>中文概述：</strong>本文探讨了代理式机器人的新兴范式，即利用基础模型结合具身架构处理开放世界任务。作者指出，代理式系统通过观察、意图解释、任务推理、工具调用及结果验证形成闭环决策核心。针对目前缺乏统一术语和评估体系的问题，本文提出了一套衡量闭环系统性能的评估框架，并剖析了从数字智能向物理自治转化时所面临的物理约束挑战，进而规划了旨在实现持续自主性的研究路线图。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出代理式机器人核心架构“具身系统2”，该系统结合了基础模型与具身架构，以实现闭环决策与策略适应。<br><small>摘要依据：We argue that Embodied System 2, realized by a foundation model together with an embodied harness, forms the decision-making core of agentic robotics.</small></li>\n<li>针对当前缺乏共识的现状，设计了一套评估框架，旨在衡量具身智能模型的能力及整体闭环系统的执行性能。<br><small>摘要依据：Motivated by this perspective, we propose an evaluation framework that measures both model capabilities and closed-loop system performance.</small></li>\n</ul>\n<p><strong>原文摘要节选：</strong>The release of GPT-6 Astra marks the emergence of a new paradigm in robotics: agentic robotics. Within weeks, frontier models with agentic harnesses matched or exceeded task-specific policies on many embodied benchmarks. Instead of training a dedicated policy for each family of tasks, an agentic robotic system applies a foundation model to open-world embodied tasks. It operates in a closed loop: observing the environment, interpreting user intent, reasoning about the task, invoking skills and tools, verifying outcomes, and adapting its strategy. Despite these advances, the community has yet to converge on a shared definition, a reliable evaluation framework, or a research roadmap. We argue that Embodied System 2, realized by a foundation model together with an embodied harness, forms the…</p>\n<p><a href=\"https://arxiv.org/abs/2611.18359\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.18359\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.18359\">讨论与热度</a></p><hr>\n<h2>3. World In-Context Learning for Agentic Robot Manipulation</h2>\n<p><strong>机器人</strong> · 发表 2026-11-09 · 综合分 5.03</p>\n<p>Zotero 摘要相关性：0.458（相似度分数，不是概率）。</p>\n<p>HF 点赞 58 · 讨论 4 · 本次 HF 热榜第 34 位 · 仓库累计 Star 301（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +0 · 讨论 +0 · Star +10。</p>\n<p><strong>中文概述：</strong>针对现有机器人操作策略训练难以跨场景泛化的问题，作者提出一种基于“世界上下文学习”（WICL）的范式。该方法利用冻结模型在模拟环境中对任务进行排演，将任务步骤与对象角色的语义反馈直接记录在上下文而非网络权重中。通过构建RoboScript基础设施，该方法在RoboTwin 2.0的50项任务中实现了83.4%的平均成功率，并在无梯度更新的情况下优于传统的训练策略，验证了在上下文学习中获取操作技能的有效性。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出WICL范式，通过在模拟器中排演任务并将反馈写入上下文而非权重，使机器人能从单次演示中高效学习任务。<br><small>摘要依据：Based on this insight, we propose World In-Context Learning (WICL), a paradigm in which a frozen model starts from a demonstration, rehearses the task in a world such as a simulator, and writes the feedback into its context rather than its weights.</small></li>\n<li>RoboScript在RoboTwin 2.0的50项任务中表现优异，平均成功率达到83.4%，且在零梯度更新条件下显著超过了传统训练的动作策略。<br><small>摘要依据：On all 50 tasks of RoboTwin 2.0, RoboScript reaches 83.4% mean success across clean and randomized settings with one demonstration per task and no gradient updates, exceeding the strongest trained action policy by over 20 points.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · Sim-to-Real · 推理</p>\n<p><strong>原文摘要节选：</strong>Trained action policies write manipulation skill into network weights, tying what is learned to the distribution it is learned from. In-context learning (ICL) avoids this coupling but has not matched trained policies, because a demonstration recorded in another scene carries no feedback from the world the robot currently faces. We observe that what an agent learns in context is semantic, recording task steps and object roles rather than visual appearance, so experience gathered in one world transfers to another. Based on this insight, we propose World In-Context Learning (WICL), a paradigm in which a frozen model starts from a demonstration, rehearses the task in a world such as a simulator, and writes the feedback into its context rather than its weights. We build RoboScript, a modular…</p>\n<p><a href=\"https://arxiv.org/abs/2611.12885\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.12885\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.12885\">讨论与热度</a> · <a href=\"https://github.com/ArcheOne-AI/RoboScript\">代码</a></p><hr>\n<h2>4. ScaleVLA: Scaling Vision-Language-Action Models to 552 Billion Parameters</h2>\n<p><strong>机器人</strong> · 发表 2026-11-16 · 综合分 5.03</p>\n<p>Zotero 摘要相关性：0.480（相似度分数，不是概率）。</p>\n<p>HF 点赞 41 · 讨论 1</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>视觉语言动作 · 推理</p>\n<p><strong>中文概述：</strong>本文探讨了将超大规模视觉语言模型（VLM）应用于机器人控制的潜力。作者提出了ScaleVLA，将552B参数的DeepSeek-V4.1-Flash作为基础模型，并连接可训练的动作扩散变换器（DiT）。实验表明，与较小的VLA模型相比，该方法在少样本学习、泛化能力及精密操作任务上表现更优，并能在保持较低推理延迟的同时，为机器人策略提供强大的表征基础。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>ScaleVLA展示了极高的样本效率，仅使用10个演示样本即可超越使用50个样本训练的2B参数模型。<br><small>摘要依据：In sample efficiency, just 10 demonstrations outperform a 2B backbone trained with 50 (87.8% vs. 85.6%).</small></li>\n<li>在复杂任务泛化与精密操作方面，ScaleVLA相比小型主干网络表现出显著的性能提升。<br><small>摘要依据：In generalization, LIBERO-PRO success reaches 45.1%, compared with at most 31.3% for smaller backbones. In precise manipulation, real-world charger insertion improves from 4/10 to 9/10 successes, with gains concentrated in contact-sensitive alignment.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>视觉语言动作 · 机器人操作 · 推理</p>\n<p><strong>原文摘要节选：</strong>Frontier Vision-Language Models (VLMs) such as GPT-6 Astra have demonstrated remarkable capabilities in robot control, suggesting that broad pretraining provides knowledge valuable for physical action. Yet most Vision-Language-Action (VLA) policies still rely on much smaller VLM backbones, leaving this potential largely untapped. We ask whether frontier-scale representations can provide a stronger foundation for robot learning. We introduce ScaleVLA, which connects a 552B DeepSeek-V4.1-Flash backbone to a trainable action DiT, and systematically compare VLMs from 2B to 552B under a shared training setup. We evaluate three fundamental capabilities of robot foundation models. In sample efficiency, just 10 demonstrations outperform a 2B backbone trained with 50 (87.8% vs. 85.6%). In…</p>\n<p><a href=\"https://arxiv.org/abs/2611.21607\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.21607\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.21607\">讨论与热度</a></p><hr>\n<h2>5. Democratizing Robot-Use Agents: A Unified Harness with Open Models</h2>\n<p><strong>机器人</strong> · 发表 2026-11-01 · 综合分 4.84</p>\n<p>Zotero 摘要相关性：0.451（相似度分数，不是概率）。</p>\n<p>HF 点赞 51 · 讨论 2 · 本次 HF 热榜第 66 位 · 仓库累计 Star 441（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +0 · Star +12。</p>\n<p><strong>规则标签：</strong>视觉语言动作</p>\n<p><strong>中文概述：</strong>针对现有机器人使用智能体（RUA）依赖封闭私有模型导致研究受限的问题，作者提出了uni-robot-agent，这是一个支持进一步训练的开放权重机器人操作统一框架。实验表明，基于Qwen3.8-Flash-Next模型的方法在RoboDojo基准测试中优于GPT-6 Astra-RoboProbe及多种基线，并在19项真实世界任务中表现出竞争力。此外，作者分析了模型特性与机器人操作能力之间的联系，为未来RUA的协同训练提供了参考。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>uni-robot-agent框架使开放权重模型在机器人操作任务中取得了具有竞争力的性能，且无需特权输入。<br><small>摘要依据：Without privileged inputs, an out-of-the-box Qwen3.8-Flash-Next achieves a RoboDojo Score of 31.39, surpassing the published GPT-6 Astra-RoboProbe result of 28.97 and many VLA/WAM baselines, and performs competitively on 19 real-world tasks.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 视觉语言动作 · 大模型后训练</p>\n<p><strong>原文摘要节选：</strong>Robot-use Agents (RUAs) have shown promising zero-shot manipulation capabilities, but reliance on frontier, proprietary models limits research into further training. To democratize RUA research, we introduce uni-robot-agent, a unified harness for competitive open-weight robot use that supports further training. Without privileged inputs, an out-of-the-box Qwen3.8-Flash-Next achieves a RoboDojo Score of 31.39, surpassing the published GPT-6 Astra-RoboProbe result of 28.97 and many VLA/WAM baselines, and performs competitively on 19 real-world tasks. Our analysis across model generations, families, and sizes links effective robot use to four general capabilities, suggesting that future RUA training should develop them jointly.</p>\n<p><a href=\"https://arxiv.org/abs/2611.01560\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.01560\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.01560\">讨论与热度</a> · <a href=\"https://github.com/Open-RUA/uni-robot-agent\">代码</a></p><hr>\n<h2>6. Learning Heterogeneous Tactile Representation for General Dexterous Manipulation</h2>\n<p><strong>机器人</strong> · 发表 2026-11-09 · 综合分 4.59</p>\n<p>Zotero 摘要相关性：0.364（相似度分数，不是概率）。</p>\n<p>HF 点赞 105 · 讨论 2 · 本次 HF 热榜第 10 位 · 仓库累计 Star 759（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +0 · 讨论 +0 · Star +67。</p>\n<p><strong>规则标签：</strong>机器人操作 · 视觉语言动作</p>\n<p><strong>中文概述：</strong>针对触觉感知依赖特定传感器物理特性的挑战，作者开发了名为LingBot-Touch的触觉基础模型。该模型通过统一不同类型触觉传感器的数据表征，构建了一种可扩展的通用触觉编码方案。实验证明，该方法生成的触觉Token可无缝集成至多种策略模型中，显著提升了机器人在模拟及真实环境下的复杂操作能力，并表现出良好的计算效率。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>LingBot-Touch提供了一种跨多种触觉传感器的统一表征，具备良好的传感器通用性与可扩展性。<br><small>摘要依据：Our model yields a unified representation across different tactile sensors (i.e., piezoresistive, magnetic, and visuotactile sensors), and is easily extensible to new sensor types.</small></li>\n<li>该触觉表征作为即插即用的模块，可集成于扩散策略及视觉语言动作模型中，有效增强操作灵活性。<br><small>摘要依据：The resulting tactile tokens are plug-and-play: they can be seamlessly integrated into policy models across paradigms, from diffusion policy to vision-language-action (VLA) models such as π_{0.5} and LingBot-VLA, consistently enhancing manipulation dexterity.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · Sim-to-Real · 视觉语言动作</p>\n<p><strong>原文摘要节选：</strong>Tactile sensing is an indispensable modality for contact-rich dexterous manipulation, a capability that hints at the ultimate frontiers of embodied intelligence. However, commercially available tactile sensors are still at a relatively early stage of development, with each type of sensor offering irreplaceable strengths alongside its own drawbacks. A key challenge is thus to free tactile understanding from sensor-specific physics, so that embodied models can effectively leverage heterogeneous tactile data. To this end, we develop LingBot-Touch, a tactile foundation model characterized by the following properties. (i) Our model yields a unified representation across different tactile sensors (i.e., piezoresistive, magnetic, and visuotactile sensors), and is easily extensible to new sensor…</p>\n<p><a href=\"https://arxiv.org/abs/2611.12806\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.12806\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.12806\">讨论与热度</a> · <a href=\"https://github.com/Robbyant/lingbot-touch\">代码</a></p><hr>\n<h2>7. HALO: Human-Aligned Data Collection for WhoLe-body MObile Manipulation</h2>\n<p><strong>机器人</strong> · 发表 2026-11-12 · 综合分 4.58</p>\n<p>Zotero 摘要相关性：0.454（相似度分数，不是概率）。</p>\n<p>HF 点赞 10 · 讨论 2 · 仓库累计 Star 7（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +0 · 讨论 +1 · Star +0。</p>\n<p><strong>规则标签：</strong>足式运动</p>\n<p><strong>中文概述：</strong>针对全身移动操作任务中演示数据收集困难的问题，本文提出了一种名为HALO的人体对齐数据收集系统。该系统通过保持操作者自然移动与物理反馈，实现机器人末端执行器引导与底盘运动的协同。作者提出部署对齐处理方法来修正人机耦合差异，实验结果表明该方法在收集效率和任务成功率方面优于现有的Mobile ALOHA和VR遥操作方案。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>HALO系统通过保持操作者的自然移动和直接物理反馈，实现了全身移动操作演示的高效收集。<br><small>摘要依据：The system aligns the operator&#x27;s perception and action space with the robot while preserving direct physical feedback and natural locomotion.</small></li>\n<li>提出的部署对齐处理技术有效解决了示范过程中的人机耦合差异问题。<br><small>摘要依据：We address these discrepancies with deployment-aligned demonstration processing, which calibrates and temporally aligns platform motion with the deployed base response and masks and inpaints demonstrator hands in recorded observations.</small></li>\n<li>实验表明HALO相较于Mobile ALOHA和VR遥操作提升了演示收集效率，并能完成复杂的长程移动操作任务。<br><small>摘要依据：Compared with Mobile ALOHA and VR teleoperation, HALO enables up to 2.9x faster demonstration collection while maintaining comparable or higher success rates.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作</p>\n<p><strong>原文摘要节选：</strong>Learning whole-body mobile manipulation requires demonstrations that coordinate bimanual actions with locomotion across extended workspaces. However, existing interfaces trade off direct robot control, perception and action alignment, and natural operator mobility, making such demonstrations difficult to collect. We introduce HALO, a human-aligned data collection system for whole-body mobile manipulation. The system aligns the operator&#x27;s perception and action space with the robot while preserving direct physical feedback and natural locomotion. Operators guide the robot end-effectors through kinesthetic teaching and move a low-resistance platform without the deployed mobile base while performing bimanual manipulation. This interface enables more natural whole-body demonstrations, but the…</p>\n<p><a href=\"https://arxiv.org/abs/2611.16439\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.16439\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.16439\">讨论与热度</a> · <a href=\"https://github.com/robbyant-research/Lingbot-ALOHA\">代码</a></p><hr>\n<h2>8. AllocFlow: End-to-End Portfolio Trading Action Generation from Raw Market Data</h2>\n<p><strong>强化学习</strong> · 发表 2026-11-15 · 综合分 4.39</p>\n<p>Zotero 摘要相关性：0.344（相似度分数，不是概率）。</p>\n<p>HF 点赞 67 · 讨论 3 · 本次 HF 热榜第 32 位 · 仓库累计 Star 18（仓库可能包含多篇论文）</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习</p>\n<p><strong>中文概述：</strong>针对传统组合管理中信号预测与资产配置脱节的问题，本文提出了AllocFlow框架，实现从原始市场数据到投资组合分配的端到端生成。该框架利用跨资产流Transformer捕捉多资产依赖，并采用“监督模仿学习+组相对强化学习”的两阶段训练策略。作者声称该方法在加密货币永续合约测试中显著提升了年化净收益与Calmar比率，并展现出良好的泛化性能。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出AllocFlow端到端框架，通过流匹配技术直接从原始市场数据生成多资产组合分配。<br><small>摘要依据：We present AllocFlow, an end-to-end flow-matching framework that directly generates joint portfolio allocations from raw multi-asset market histories.</small></li>\n<li>采用两阶段训练方案，通过模仿学习构建候选分布，并利用组相对强化学习进一步优化决策。<br><small>摘要依据：To address the sample inefficiency and instability of learning continuous allocation policies from scratch, we establish a two-stage training scheme: strategy-supervised imitation shapes a structured distribution of candidate portfolios, followed by group-relative reinforcement learning (RL) that refines joint decisions using portfolio-level financial rewards and a frozen policy reference.</small></li>\n<li>实验表明，强化学习优化显著提升了模仿学习策略的金融指标，且在未见数据上保持了优异表现。<br><small>摘要依据：On hourly cryptocurrency perpetual futures, RL refinement raises the annualized net return of the imitation policy from 27.79% to 51.38% and its Calmar ratio from 0.955 to 4.043, surpassing the teacher strategy on every metric, and AllocFlow reaches a Calmar ratio of 4.90 on six further months of unseen 2026 data without retraining.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · 模仿学习</p>\n<p><strong>原文摘要节选：</strong>Real-world portfolio management requires converting noisy market observations into coordinated, simultaneous allocations across multiple assets under shared capital constraints. Advances in forecasting models and alpha discovery help identify opportunities. However, traditional pipelines often decouple signal forecasting from portfolio construction, potentially misaligning learning with allocation and execution objectives. We present AllocFlow, an end-to-end flow-matching framework that directly generates joint portfolio allocations from raw multi-asset market histories. To capture dependencies among portfolio positions, AllocFlow employs a cross-asset flow Transformer conditioned on temporal market representations to generate continuous, signed position weights across all instruments…</p>\n<p><a href=\"https://arxiv.org/abs/2611.19937\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.19937\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.19937\">讨论与热度</a> · <a href=\"https://github.com/allocflow/AllocFlow\">代码</a></p><hr>\n<h2>9. Correcting Persistent Failures in Point-Cloud Grasping Policies using Human Demonstrations in Virtual Reality</h2>\n<p><strong>机器人 / 强化学习</strong> · 发表 2026-11-13 · 综合分 4.36</p>\n<p>Zotero 摘要相关性：0.482（相似度分数，不是概率）。</p>\n<p>HF 点赞 5 · 讨论 1</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习 · 机器人操作</p>\n<p><strong>中文概述：</strong>针对点云抓取策略在处理特定失败案例时的局限性，本文提出一种人机协同的故障修复流程。通过自动挖掘强化学习策略的失败场景，利用虚拟现实技术获取人类演示数据，并将其补充至训练集中。作者声称该方法在无需人类完全控制机器人路径的情况下，显著提升了模型在困难场景下的抓取成功率，同时保持了模型在未见物体上的泛化性能。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>开发了一种人机协同的故障修复流程，通过人类在虚拟现实中的抓取演示来辅助改进强化学习策略。<br><small>摘要依据：We present a human-in-the-loop failure loop that targets those grasps: situations an RL policy keeps failing are mined automatically, sent to a virtual-reality application where a person picks the object up with their own hands, and returned to training as two grasp points.</small></li>\n<li>在仿真实验中，引入少量人类演示即可显著提升模型处理困难抓取场景的成功率。<br><small>摘要依据：Adding 58 human demonstrations nearly doubles success on the hard cases RL kept failing, from 24% to 45%, and recovers performance that RL alone loses on similar cases that were never demonstrated, without reducing success on unseen objects.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 强化学习 · 模仿学习</p>\n<p><strong>原文摘要节选：</strong>Robots in homes, warehouses and farms must pick up objects they have never seen, usually without a 3D model or a category label. A grasping policy that works directly on the point cloud from a depth sensor needs only the geometry the robot observes, so it applies to any new object. Offline grasp generators such as Contact-GraspNet work this way, but they rank grasps by learned plausibility rather than by whether the grasp actually lifts the object. Reinforcement learning (RL) can optimize for that directly and make a point-cloud grasping policy much better on average, yet it leaves specific grasps persistently unsolved. We present a human-in-the-loop failure loop that targets those grasps: situations an RL policy keeps failing are mined automatically, sent to a virtual-reality application…</p>\n<p><a href=\"https://arxiv.org/abs/2611.18919\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.18919\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.18919\">讨论与热度</a></p><hr>\n<h2>10. Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents</h2>\n<p><strong>强化学习</strong> · 发表 2026-11-12 · 综合分 4.05</p>\n<p>Zotero 摘要相关性：0.272（相似度分数，不是概率）。</p>\n<p>HF 点赞 38 · 讨论 6 · 本次 HF 热榜第 45 位 · 仓库累计 Star 49（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +2 · 讨论 +0 · Star +1。</p>\n<p><strong>规则标签：</strong>强化学习 · 大模型后训练</p>\n<p><strong>中文概述：</strong>该论文探讨了决策模型在长程任务智能体中作为执行者、评判者及教师的不同角色。研究发现，即使决策模型在执行任务时表现不佳，其仍能有效评估动作并辅助其他策略的训练。作者通过在ALFWorld和WebShop任务上的实验表明，相比于单一的执行角色，利用模型评估轨迹并指导强化学习训练，能显著提升策略的性能。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>研究指出，决策模型在评判角色中展现出优于执行角色的能力，能够识别出有助于任务成功的关键动作。<br><small>摘要依据：As judges that see the whole trajectory, the same models credit the steps toward that subgoal, and asking whether each action helped, rather than whether the task will succeed, separates useful from useless actions.</small></li>\n<li>作为教师模型，JEV在ALFWorld和WebShop任务上分别将Qwen2.5-1.5B策略的成功率提升至82.9%和71.4%。<br><small>摘要依据：As a teacher, JEV raises a Qwen2.5-1.5B policy over GRPO from 72.8% to 82.9% success on ALFWorld and from 56.8% to 71.4% on WebShop.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · 推理</p>\n<p><strong>原文摘要节选：</strong>Decision models answer a question with a typed output, such as a choice among options with a probability for each, so one model can choose an agent&#x27;s actions, evaluate actions already taken, or score every action to teach a policy with reinforcement learning. Prior work has studied them mainly as actors, judging their usefulness by how well they act. We ask whether a decision model that acts poorly can still teach well. We compare three decision models and three general LLMs as actors and judges on ALFWorld, and use JEV as a teacher on ALFWorld and WebShop. As actors, all six models are pulled away from a subgoal that must come first by an easier one. As judges that see the whole trajectory, the same models credit the steps toward that subgoal, and asking whether each action helped,…</p>\n<p><a href=\"https://arxiv.org/abs/2611.17167\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.17167\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.17167\">讨论与热度</a> · <a href=\"https://github.com/ZJU-REAL/decision-agents\">代码</a></p><hr>"
+}

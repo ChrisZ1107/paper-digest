@@ -1,0 +1,68 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>2026-11-18 每日新论文 5</title><body><h1>2026-11-18 每日新论文 5</h1>
+<p>机器人 · 强化学习 · 通用 AI</p>
+<p>生成时间：2026-11-18 09:02 CST。从 1164 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>
+<p>本栏优先收录最近发布且未出现在近期日报的 arXiv 论文，不按热度排序；相关性分用于结合你的 Zotero 收藏偏好。</p>
+<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>
+<p>本次合格候选不足 10 篇，实际收录 5 篇。</p>
+<h2>1. Multi-CONDOR: Learning Multistable Motion Primitives from Demonstration</h2>
+<p><strong>机器人</strong> · 公告 2026-11-17 · 综合分 3.45</p>
+<p>Zotero 摘要相关性：0.531（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>机器人操作 · 模仿学习</p>
+<p><strong>中文概述：</strong>本文提出了multi-CONDOR框架，旨在解决基于动力系统的运动策略在处理多重离散目标或连续目标轮廓时的局限性。该方法结合模仿学习与特定损失函数，使学得的动力系统能编码多稳态吸引结构。实验结果显示，该方法在模拟基准测试中优于单目标运动基元，并成功应用于真实机械臂的多目标抓取任务，展现了其在运动复现与多结果收敛选择方面的灵活性。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>multi-CONDOR框架通过将模仿学习与编码吸引结构的潜空间参考系统相结合，实现了对多离散吸引子或连续吸引目标轮廓的运动基元学习。<br><small>摘要依据：The approach combines imitation learning with losses that encourage agreement between the learned task dynamics and latent reference systems encoding the desired attraction structure.</small></li>
+<li>在模拟任务中，该方法显著提升了收敛性能，相较于基线模型降低了未达到目标容差的轨迹比例。<br><small>摘要依据：For tasks with two and three goals, respectively, it reduces the fraction of evaluated initial states ending outside the goal tolerance from StableNODE&#x27;s 0.31% and 7.29% to 0% in both settings.</small></li>
+<li>通过Frank Emika机械臂的真实实验，验证了该模型能够通过演示学习实现多方案的目标抓取能力。<br><small>摘要依据：Experiments with a Franka Emika robot arm demonstrate successful grasping of a container by either of its two handles using motions learned from demonstrations.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 模仿学习</p>
+<p><strong>原文摘要节选：</strong>Dynamical-system-based motion policies provide a framework for learning reactive robot motions with stability and convergence properties. Many manipulation tasks, however, admit several distinct goals or a continuous set of acceptable outcomes, requiring motion primitives that preserve these alternatives. Accommodating both goal structures within a unified framework with continuous, autonomous dynamics remains an open challenge. We propose a CONDOR-based framework, multi-CONDOR, for learning motion primitives with either multiple discrete attractors or a continuous attracting goal contour. The approach combines imitation learning with losses that encourage agreement between the learned task dynamics and latent reference systems encoding the desired attraction structure. We provide a…</p>
+<p><a href="https://arxiv.org/abs/2611.21059">论文原文</a> · <a href="https://arxiv.org/pdf/2611.21059">PDF</a></p><hr>
+<h2>2. XMimic and XSoma: Learning Humanoid Motion Tracking and Locomotion in Under a Minute</h2>
+<p><strong>机器人</strong> · 公告 2026-11-17 · 综合分 3.31</p>
+<p>Zotero 摘要相关性：0.509（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>人形机器人 · 足式运动 · 世界模型</p>
+<p><strong>中文概述：</strong>论文提出了XMimic和XSoma两种方法，旨在实现人形机器人在一分钟内的运动追踪与足式运动学习。该研究基于SuperMimic框架，通过JAX编译完整的训练循环并利用多GPU并行计算优化训练流程。作者声称，通过这种方法，机器人能显著提升训练效率，在极短时间内完成复杂运动轨迹的追踪任务及在崎岖地形上的运动控制。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>通过JAX对完整训练循环进行编译并利用多GPU并行处理，显著提升了机器人运动学习的训练速度。<br><small>摘要依据：XMimic and XSoma therefore shorten this chain and run the steps of every iteration at the same time on up to four GPUs. We compile the complete training loop with JAX, including the MuJoCo Warp simulator.</small></li>
+<li>在四张H100 GPU上，XMimic仅需0.86分钟即可学习追踪LAFAN1数据集中的所有动作片段。<br><small>摘要依据：On four H100 GPUs, XMimic learns to track all 40 LAFAN1 clips with the Unitree G1 in 0.86 minutes, 3.7 times faster than BlinkMimic on one GPU.</small></li>
+<li>XSoma在进行足式运动学习时，仅需0.77分钟即可达到预设追踪目标，且所需环境交互步数大幅减少。<br><small>摘要依据：XSoma reaches the tracking target that Holosoma&#x27;s tests set for FastSAC in 0.77 minutes, 12.3 times faster than FastSAC on one GPU, while needing only an eighth of its environment steps.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>人形机器人 · 足式运动 · Sim-to-Real</p>
+<p><strong>原文摘要节选：</strong>We present XMimic and XSoma, which learn humanoid motion tracking and locomotion on rough terrain in under a minute of training. Both follow SuperMimic, which learns a world model of the robot and optimizes the policy with analytic gradients through short rollouts imagined in this model. Existing implementations of this method do not make use of larger GPUs, as every training iteration is a long chain of small GPU operations that run one after another. XMimic and XSoma therefore shorten this chain and run the steps of every iteration at the same time on up to four GPUs. We compile the complete training loop with JAX, including the MuJoCo Warp simulator. For locomotion, XSoma leaves only the dynamics of the robot to the world model and computes everything else exactly, including the…</p>
+<p><a href="https://arxiv.org/abs/2611.20452">论文原文</a> · <a href="https://arxiv.org/pdf/2611.20452">PDF</a></p><hr>
+<h2>3. Recovery-Guided Model-Based Diffusion for Safety-Critical Legged Locomotion</h2>
+<p><strong>机器人</strong> · 公告 2026-11-17 · 综合分 3.29</p>
+<p>Zotero 摘要相关性：0.506（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>足式运动</p>
+<p><strong>中文概述：</strong>针对足式机器人高危环境下的高速运动控制问题，该研究提出了一种基于恢复引导的基于模型的扩散规划框架。该方法通过引入终端恢复评价器，在短视界轨迹优化中整合了安全性预测，并结合可行性引导的细化策略，在保障安全性的同时提升了计算效率。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出了一种基于恢复引导的基于模型扩散框架，通过在短视界优化中集成终端恢复评价器，实现了对安全性的有效权衡。<br><small>摘要依据：We propose a recovery-guided model-based diffusion (MBD) framework for safety-critical legged locomotion. It incorporates a learned terminal recovery critic into short-horizon trajectory optimization.</small></li>
+<li>在Unitree Go2机器人避障实验中实现了零碰撞，并展现了比长视界基准方法更优的计算效率。<br><small>摘要依据：Across 50 paired randomized Unitree Go2 obstacle-avoidance trials, our approach achieves zero collisions and 98% strict-clearance success, while requiring substantially less computation than long-horizon MBD baselines.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>足式运动</p>
+<p><strong>原文摘要节选：</strong>Safety-critical high-speed legged locomotion requires motion planners to balance safety foresight with online computational efficiency. Although short prediction horizons reduce rollout costs, they provide limited safety foresight, and strict safety constraints severely restrict the feasible trajectory space. We propose a recovery-guided model-based diffusion (MBD) framework for safety-critical legged locomotion. It incorporates a learned terminal recovery critic into short-horizon trajectory optimization. Specifically, the critic approximates the worst-case future clearance margin along rollouts of a designated recovery policy. We introduce a feasibility-guided refinement strategy that combines within-horizon constraints and terminal recoverability at each sampling stage, while retaining…</p>
+<p><a href="https://arxiv.org/abs/2611.19775">论文原文</a> · <a href="https://arxiv.org/pdf/2611.19775">PDF</a></p><hr>
+<h2>4. Driving the Style: Velocity-Conditioned Whole-Body Control from Motion Demonstrations</h2>
+<p><strong>机器人 / 强化学习</strong> · 公告 2026-11-17 · 综合分 3.28</p>
+<p>Zotero 摘要相关性：0.504（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>强化学习 · 人形机器人 · 足式运动</p>
+<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>
+<p><strong>原文摘要节选：</strong>Achieving human-like behavior on humanoid robots has advanced rapidly by leveraging motion-capture demonstrations rather than hand-crafted cost functions. Adversarial imitation supplies a style signal that lets a policy fulfill a task while adhering to a desired style, but is difficult to transfer to hardware. Whole-body tracking through reinforcement learning instead deploys reliably and imitates demonstrations faithfully, but the resulting policies are conditioned on the future reference, so they require a reference trajectory at runtime and can fail when the motion differs from the training data. We train a humanoid policy directly with whole-body tracking rewards while restricting its actor to compact locomotion commands and robot observations. Reference motion supervises the reward…</p>
+<p><a href="https://arxiv.org/abs/2611.20888">论文原文</a> · <a href="https://arxiv.org/pdf/2611.20888">PDF</a></p><hr>
+<h2>5. Stochastic Self-Distillation for Flow-Based Vision-Language-Action Models</h2>
+<p><strong>机器人 / 强化学习</strong> · 公告 2026-11-17 · 综合分 3.24</p>
+<p>Zotero 摘要相关性：0.498（相似度分数，不是概率）。</p>
+<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>强化学习 · 模仿学习 · 视觉语言动作 · 大模型后训练</p>
+<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>
+<p><strong>原文摘要节选：</strong>Flow-based vision-language-action (VLA) models achieve strong performance in robotics through imitation learning, yet fine-tuning them with on-policy reinforcement learning (RL) is limited. In group-based RL methods like Group Relative Policy Optimization (GRPO), every rollout step requires multi-step ODE integration, and the sampler&#x27;s limited stochasticity leads to rollout groups with low variance. We propose VLA-SSD, which addresses both high inference latency and limited stochasticity. In particular, our method self-distills a pretrained flow-matching action head into a stochastic one-step policy by conditioning a single-jump generator on a Brownian path. We derive a conditional action density via our stochastic one-step policy, enabling efficient post-training via likelihood-ratio RL…</p>
+<p><a href="https://arxiv.org/abs/2611.20460">论文原文</a> · <a href="https://arxiv.org/pdf/2611.20460">PDF</a></p><hr></body></html>

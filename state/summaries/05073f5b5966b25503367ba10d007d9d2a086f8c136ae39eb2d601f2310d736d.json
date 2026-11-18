@@ -1,0 +1,21 @@
+{
+  "overview": "针对传统组合管理中信号预测与资产配置脱节的问题，本文提出了AllocFlow框架，实现从原始市场数据到投资组合分配的端到端生成。该框架利用跨资产流Transformer捕捉多资产依赖，并采用“监督模仿学习+组相对强化学习”的两阶段训练策略。作者声称该方法在加密货币永续合约测试中显著提升了年化净收益与Calmar比率，并展现出良好的泛化性能。",
+  "highlights": [
+    {
+      "text": "提出AllocFlow端到端框架，通过流匹配技术直接从原始市场数据生成多资产组合分配。",
+      "evidence": "We present AllocFlow, an end-to-end flow-matching framework that directly generates joint portfolio allocations from raw multi-asset market histories."
+    },
+    {
+      "text": "采用两阶段训练方案，通过模仿学习构建候选分布，并利用组相对强化学习进一步优化决策。",
+      "evidence": "To address the sample inefficiency and instability of learning continuous allocation policies from scratch, we establish a two-stage training scheme: strategy-supervised imitation shapes a structured distribution of candidate portfolios, followed by group-relative reinforcement learning (RL) that refines joint decisions using portfolio-level financial rewards and a frozen policy reference."
+    },
+    {
+      "text": "实验表明，强化学习优化显著提升了模仿学习策略的金融指标，且在未见数据上保持了优异表现。",
+      "evidence": "On hourly cryptocurrency perpetual futures, RL refinement raises the annualized net return of the imitation policy from 27.79% to 51.38% and its Calmar ratio from 0.955 to 4.043, surpassing the teacher strategy on every metric, and AllocFlow reaches a Calmar ratio of 4.90 on six further months of unseen 2026 data without retraining."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "模仿学习"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "overview": "针对足式机器人高危环境下的高速运动控制问题，该研究提出了一种基于恢复引导的基于模型的扩散规划框架。该方法通过引入终端恢复评价器，在短视界轨迹优化中整合了安全性预测，并结合可行性引导的细化策略，在保障安全性的同时提升了计算效率。",
+  "highlights": [
+    {
+      "text": "提出了一种基于恢复引导的基于模型扩散框架，通过在短视界优化中集成终端恢复评价器，实现了对安全性的有效权衡。",
+      "evidence": "We propose a recovery-guided model-based diffusion (MBD) framework for safety-critical legged locomotion. It incorporates a learned terminal recovery critic into short-horizon trajectory optimization."
+    },
+    {
+      "text": "在Unitree Go2机器人避障实验中实现了零碰撞，并展现了比长视界基准方法更优的计算效率。",
+      "evidence": "Across 50 paired randomized Unitree Go2 obstacle-avoidance trials, our approach achieves zero collisions and 98% strict-clearance success, while requiring substantially less computation than long-horizon MBD baselines."
+    }
+  ],
+  "tags": [
+    "足式运动"
+  ]
+}

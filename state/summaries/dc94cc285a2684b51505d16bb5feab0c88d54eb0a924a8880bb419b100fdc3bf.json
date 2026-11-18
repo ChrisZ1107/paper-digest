@@ -1,0 +1,20 @@
+{
+  "overview": "针对全身移动操作任务中演示数据收集困难的问题，本文提出了一种名为HALO的人体对齐数据收集系统。该系统通过保持操作者自然移动与物理反馈，实现机器人末端执行器引导与底盘运动的协同。作者提出部署对齐处理方法来修正人机耦合差异，实验结果表明该方法在收集效率和任务成功率方面优于现有的Mobile ALOHA和VR遥操作方案。",
+  "highlights": [
+    {
+      "text": "HALO系统通过保持操作者的自然移动和直接物理反馈，实现了全身移动操作演示的高效收集。",
+      "evidence": "The system aligns the operator's perception and action space with the robot while preserving direct physical feedback and natural locomotion."
+    },
+    {
+      "text": "提出的部署对齐处理技术有效解决了示范过程中的人机耦合差异问题。",
+      "evidence": "We address these discrepancies with deployment-aligned demonstration processing, which calibrates and temporally aligns platform motion with the deployed base response and masks and inpaints demonstrator hands in recorded observations."
+    },
+    {
+      "text": "实验表明HALO相较于Mobile ALOHA和VR遥操作提升了演示收集效率，并能完成复杂的长程移动操作任务。",
+      "evidence": "Compared with Mobile ALOHA and VR teleoperation, HALO enables up to 2.9x faster demonstration collection while maintaining comparable or higher success rates."
+    }
+  ],
+  "tags": [
+    "机器人操作"
+  ]
+}

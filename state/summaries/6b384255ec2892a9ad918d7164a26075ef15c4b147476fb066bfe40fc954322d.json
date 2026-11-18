@@ -1,0 +1,18 @@
+{
+  "overview": "针对点云抓取策略在处理特定失败案例时的局限性，本文提出一种人机协同的故障修复流程。通过自动挖掘强化学习策略的失败场景，利用虚拟现实技术获取人类演示数据，并将其补充至训练集中。作者声称该方法在无需人类完全控制机器人路径的情况下，显著提升了模型在困难场景下的抓取成功率，同时保持了模型在未见物体上的泛化性能。",
+  "highlights": [
+    {
+      "text": "开发了一种人机协同的故障修复流程，通过人类在虚拟现实中的抓取演示来辅助改进强化学习策略。",
+      "evidence": "We present a human-in-the-loop failure loop that targets those grasps: situations an RL policy keeps failing are mined automatically, sent to a virtual-reality application where a person picks the object up with their own hands, and returned to training as two grasp points."
+    },
+    {
+      "text": "在仿真实验中，引入少量人类演示即可显著提升模型处理困难抓取场景的成功率。",
+      "evidence": "Adding 58 human demonstrations nearly doubles success on the hard cases RL kept failing, from 24% to 45%, and recovers performance that RL alone loses on similar cases that were never demonstrated, without reducing success on unseen objects."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "强化学习",
+    "模仿学习"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "overview": "论文提出了XMimic和XSoma两种方法，旨在实现人形机器人在一分钟内的运动追踪与足式运动学习。该研究基于SuperMimic框架，通过JAX编译完整的训练循环并利用多GPU并行计算优化训练流程。作者声称，通过这种方法，机器人能显著提升训练效率，在极短时间内完成复杂运动轨迹的追踪任务及在崎岖地形上的运动控制。",
+  "highlights": [
+    {
+      "text": "通过JAX对完整训练循环进行编译并利用多GPU并行处理，显著提升了机器人运动学习的训练速度。",
+      "evidence": "XMimic and XSoma therefore shorten this chain and run the steps of every iteration at the same time on up to four GPUs. We compile the complete training loop with JAX, including the MuJoCo Warp simulator."
+    },
+    {
+      "text": "在四张H100 GPU上，XMimic仅需0.86分钟即可学习追踪LAFAN1数据集中的所有动作片段。",
+      "evidence": "On four H100 GPUs, XMimic learns to track all 40 LAFAN1 clips with the Unitree G1 in 0.86 minutes, 3.7 times faster than BlinkMimic on one GPU."
+    },
+    {
+      "text": "XSoma在进行足式运动学习时，仅需0.77分钟即可达到预设追踪目标，且所需环境交互步数大幅减少。",
+      "evidence": "XSoma reaches the tracking target that Holosoma's tests set for FastSAC in 0.77 minutes, 12.3 times faster than FastSAC on one GPU, while needing only an eighth of its environment steps."
+    }
+  ],
+  "tags": [
+    "人形机器人",
+    "足式运动",
+    "Sim-to-Real"
+  ]
+}

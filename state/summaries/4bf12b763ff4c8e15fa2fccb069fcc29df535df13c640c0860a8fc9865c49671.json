@@ -1,0 +1,21 @@
+{
+  "overview": "本文提出了multi-CONDOR框架，旨在解决基于动力系统的运动策略在处理多重离散目标或连续目标轮廓时的局限性。该方法结合模仿学习与特定损失函数，使学得的动力系统能编码多稳态吸引结构。实验结果显示，该方法在模拟基准测试中优于单目标运动基元，并成功应用于真实机械臂的多目标抓取任务，展现了其在运动复现与多结果收敛选择方面的灵活性。",
+  "highlights": [
+    {
+      "text": "multi-CONDOR框架通过将模仿学习与编码吸引结构的潜空间参考系统相结合，实现了对多离散吸引子或连续吸引目标轮廓的运动基元学习。",
+      "evidence": "The approach combines imitation learning with losses that encourage agreement between the learned task dynamics and latent reference systems encoding the desired attraction structure."
+    },
+    {
+      "text": "在模拟任务中，该方法显著提升了收敛性能，相较于基线模型降低了未达到目标容差的轨迹比例。",
+      "evidence": "For tasks with two and three goals, respectively, it reduces the fraction of evaluated initial states ending outside the goal tolerance from StableNODE's 0.31% and 7.29% to 0% in both settings."
+    },
+    {
+      "text": "通过Frank Emika机械臂的真实实验，验证了该模型能够通过演示学习实现多方案的目标抓取能力。",
+      "evidence": "Experiments with a Franka Emika robot arm demonstrate successful grasping of a container by either of its two handles using motions learned from demonstrations."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "模仿学习"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "overview": "该论文探讨了决策模型在长程任务智能体中作为执行者、评判者及教师的不同角色。研究发现，即使决策模型在执行任务时表现不佳，其仍能有效评估动作并辅助其他策略的训练。作者通过在ALFWorld和WebShop任务上的实验表明，相比于单一的执行角色，利用模型评估轨迹并指导强化学习训练，能显著提升策略的性能。",
+  "highlights": [
+    {
+      "text": "研究指出，决策模型在评判角色中展现出优于执行角色的能力，能够识别出有助于任务成功的关键动作。",
+      "evidence": "As judges that see the whole trajectory, the same models credit the steps toward that subgoal, and asking whether each action helped, rather than whether the task will succeed, separates useful from useless actions."
+    },
+    {
+      "text": "作为教师模型，JEV在ALFWorld和WebShop任务上分别将Qwen2.5-1.5B策略的成功率提升至82.9%和71.4%。",
+      "evidence": "As a teacher, JEV raises a Qwen2.5-1.5B policy over GRPO from 72.8% to 82.9% success on ALFWorld and from 56.8% to 71.4% on WebShop."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "推理"
+  ]
+}
