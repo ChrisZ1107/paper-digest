@@ -5978,7 +5978,9 @@
         {
           "id": "2610.35488",
           "title": "Benchmarking Coding Agents under Evolving Requirements (Oct 2026)",
-          "url": "https://arxiv.org/abs/2610.35488"
+          "url": "https://arxiv.org/abs/2610.35488",
+          "abstract": "Software development with coding agents often begins with a rough request that users refine after trying the implementation. Final correctness alone does not capture the repeated guidance this process requires. We introduce FeatureLoop, a benchmark of 61 human-reviewed tasks from 34 repositories across five primary programming languages and seven software forms. Each task follows one development goal in a persistent workspace through evolution feedback, which adds or clarifies requirements, and completion feedback, which reports failures of stated requirements. Cumulative executable checks track new behavior, repair, and preservation of earlier functionality. We evaluate 12 frontier models and find that the strongest completes 72.1% of tasks with both feedback types. Across models, however, only 15.4% of observed failed stages recover within two corrective revisions. Further analysis reveals incomplete repairs, regressions, and model-specific differences in feedback use and token efficiency, identifying obstacles to reliable, low-intervention development.",
+          "abstract_zh": "使用编码智能体进行软件开发通常始于一个模糊的需求，用户在尝试实现后会对其进行细化。仅关注最终的正确性无法体现这一过程所需的重复性指导。我们推出了FeatureLoop，这是一个包含61个人工审查任务的基准测试，涵盖了来自34个代码仓库、五种主要编程语言和七种软件形式的任务。每个任务都遵循一个持续工作空间内的开发目标，通过进化反馈（增加或澄清需求）和完成反馈（报告未满足的需求）进行迭代。累积的可执行检查用于追踪新行为、修复情况以及对先前功能的保留。我们评估了12个前沿模型，发现最强的模型在两种反馈类型下完成了72.1%的任务。然而，在所有模型中，只有15.4%观察到的失败阶段能在两次修正修订内恢复。进一步的分析揭示了修复不完整、回归问题以及模型在反馈使用和Token效率方面的差异，指出了实现可靠、低干预开发所面临的障碍。"
         }
       ]
     }
