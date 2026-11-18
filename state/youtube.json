@@ -5949,6 +5949,36 @@
           "abstract_zh": "世界动作模型（World action models）在语言条件的约束下联合预测视频和动作。现有研究主要集中在架构和训练机制上，通常将通过视频预训练获得的语言-视频对齐视为既定基础。然而，引入动作学习可能会损害这种对齐。目前关于如何在动作学习过程中保持语言-视频对齐的数据和监督设计原则尚缺乏指导。为了研究这一点，我们整理了一个包含约47000小时通用视频、第一人称视频、UMI演示和机器人演示的数据池。在此基础上，我们系统地研究了语言-视频监督、语言-视频-动作监督以及这两种形式的联合使用如何影响WAM性能。特别是，我们考察了语言标注质量如何影响预训练的语言-视频能力，以及来自UMI和机器人演示的动作监督如何将这些能力扩展到语言-视频-动作建模。为了更好地扩展模型，我们进一步对联合训练方案和模型架构进行了详细研究。在固定的训练预算下，混合第一人称视频和UMI演示可以提高控制的泛化能力。模型架构影响这些经验的有效利用方式，而在选定配置下扩展预训练则带来了进一步的提升。所得方案在仅对RoboTwin Clean演示进行后训练后，在简单（Clean-to-Clean）和困难（Clean-to-Random）条件下分别实现了88.10%和61.56%的成功率。我们的模型在三个真实世界任务中实现了40.00%的成功率，而最强基线仅为23.33%，这表明模型在未见条件下具有更好的泛化能力。我们已发布整理后的数据、训练代码和模型权重。"
         }
       ]
+    },
+    "wkA7OL6vTHU": {
+      "video_id": "wkA7OL6vTHU",
+      "video_title": "Anatomy of an Agent Harness: Decisions, Invariants and Corner Cases (Nov 2026)",
+      "published": "2026-11-18",
+      "video_url": "https://www.youtube.com/watch?v=wkA7OL6vTHU",
+      "papers": [
+        {
+          "id": "2611.19960",
+          "title": "Anatomy of an Agent Harness: Decisions, Invariants and Corner Cases (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.19960"
+        }
+      ]
+    },
+    "yxeXz9bUrFk": {
+      "video_id": "yxeXz9bUrFk",
+      "papers": []
+    },
+    "vzt1zVX1dFs": {
+      "video_id": "vzt1zVX1dFs",
+      "video_title": "Benchmarking Coding Agents under Evolving Requirements (Oct 2026)",
+      "published": "2026-11-18",
+      "video_url": "https://www.youtube.com/watch?v=vzt1zVX1dFs",
+      "papers": [
+        {
+          "id": "2610.35488",
+          "title": "Benchmarking Coding Agents under Evolving Requirements (Oct 2026)",
+          "url": "https://arxiv.org/abs/2610.35488"
+        }
+      ]
     }
   }
 }
