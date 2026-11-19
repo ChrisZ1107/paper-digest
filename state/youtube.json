@@ -5983,6 +5983,32 @@
           "abstract_zh": "使用编码智能体进行软件开发通常始于一个模糊的需求，用户在尝试实现后会对其进行细化。仅关注最终的正确性无法体现这一过程所需的重复性指导。我们推出了FeatureLoop，这是一个包含61个人工审查任务的基准测试，涵盖了来自34个代码仓库、五种主要编程语言和七种软件形式的任务。每个任务都遵循一个持续工作空间内的开发目标，通过进化反馈（增加或澄清需求）和完成反馈（报告未满足的需求）进行迭代。累积的可执行检查用于追踪新行为、修复情况以及对先前功能的保留。我们评估了12个前沿模型，发现最强的模型在两种反馈类型下完成了72.1%的任务。然而，在所有模型中，只有15.4%观察到的失败阶段能在两次修正修订内恢复。进一步的分析揭示了修复不完整、回归问题以及模型在反馈使用和Token效率方面的差异，指出了实现可靠、低干预开发所面临的障碍。"
         }
       ]
+    },
+    "FNkwmfQS5BA": {
+      "video_id": "FNkwmfQS5BA",
+      "video_title": "Classical Energies Learn to Reason 1,000x Faster than Looped Models (Nov 2026)",
+      "published": "2026-11-19",
+      "video_url": "https://www.youtube.com/watch?v=FNkwmfQS5BA",
+      "papers": [
+        {
+          "id": "2611.17309",
+          "title": "Classical Energies Learn to Reason 1,000x Faster than Looped Models (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.17309"
+        }
+      ]
+    },
+    "dtulOO3dfDk": {
+      "video_id": "dtulOO3dfDk",
+      "video_title": "Self-Improvement Memory Enables Continual Recursive Self-Improvement (Nov 2026)",
+      "published": "2026-11-19",
+      "video_url": "https://www.youtube.com/watch?v=dtulOO3dfDk",
+      "papers": [
+        {
+          "id": "2611.18856",
+          "title": "Self-Improvement Memory Enables Continual Recursive Self-Improvement (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.18856"
+        }
+      ]
     }
   }
 }
