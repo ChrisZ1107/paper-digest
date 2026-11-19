@@ -1,0 +1,18 @@
+{
+  "overview": "本文报告了一套应用于Unitree G1人形机器人的自动赛道跑步系统，旨在实现非干预下的比赛完赛。该系统结合了基于视觉的路径感知、路径跟踪以及基于人体运动先验训练的强化学习策略。作者通过图像稳定、腿部里程计和热管理策略应对硬件限制，并在2026年世界人形机器人大赛中完成了100米、400米和1500米比赛，验证了系统的实际部署能力。",
+  "highlights": [
+    {
+      "text": "提出了一种整合视觉路径感知、路径跟踪及强化学习策略的人形机器人自主跑步系统，并成功在真实比赛中部署。",
+      "evidence": "The system integrates vision-based lane perception, path tracking, and a running policy trained by reinforcement learning with a human motion prior."
+    },
+    {
+      "text": "针对硬件限制，通过训练时的力矩惩罚、物理散热改进及基于温度的速度限制机制，有效管理了电机的热风险。",
+      "evidence": "To manage motor heating, we penalize hip-pitch torque during training, add heat-dissipation plates, and apply temperature-based speed limiting with event-specific pacing."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "人形机器人",
+    "足式运动"
+  ]
+}

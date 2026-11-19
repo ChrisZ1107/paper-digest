@@ -1,0 +1,17 @@
+{
+  "overview": "针对冻结多模态大模型难以获取触觉反馈的问题，本文提出了ForceHarness框架。该系统通过引入自终止力原语以应对高频接触控制，并利用物理转换层将力数据转化为模型可理解的带不确定性的物理量，使冻结模型无需微调即可完成接触类操作任务。实验表明，该方法显著提升了模型在仿真和真实机器人环境下的零样本操作成功率。",
+  "highlights": [
+    {
+      "text": "ForceHarness使冻结模型能够在无需示范或微调的情况下利用力反馈信息。",
+      "evidence": "Therefore, we present ForceHarness, a harness that lets frozen models use force without demonstrations or finetuning."
+    },
+    {
+      "text": "该方法有效提升了多模态模型在真实机器人上的任务成功率。",
+      "evidence": "On a real arm without a wrist force sensor, ForceHarness raises the zero-shot success rate of GPT-6 Astra from 3.3% to 90.0%."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "Sim-to-Real"
+  ]
+}

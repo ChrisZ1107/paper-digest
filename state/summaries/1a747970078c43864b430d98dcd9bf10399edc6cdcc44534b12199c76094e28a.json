@@ -1,0 +1,16 @@
+{
+  "overview": "针对长视频理解中感知与推理负担重的问题，本文提出了VideoNexus框架。该框架实现了详细视频感知与证据驱动规划的解耦，通过规划器控制采样策略，利用感知子代理在独立上下文中处理音视频，并返回紧凑的时序证据。实验表明，该方法在保持高效性的同时，提升了模型在复杂视频任务中的推理准确率。",
+  "highlights": [
+    {
+      "text": "VideoNexus通过解耦感知与规划任务，实现了更高效的长视频分析，在降低推理成本的同时提升了任务准确率。",
+      "evidence": "Using Gemini 3.8 Flash for both planning and perception, VideoNexus achieves 88.6% accuracy on full LVBench, exceeding same-backbone static ingestion and built-in agentic processing by 3.6 and 1.1 points, respectively, at 44% of the latter's measured API cost."
+    },
+    {
+      "text": "通过引入感知子代理处理音视频信息，该框架能够有效减少规划器在推理过程中的上下文负担。",
+      "evidence": "Perception sub-agents process native audio-video in independent contexts and return compact, temporally grounded evidence for iterative search and verification."
+    }
+  ],
+  "tags": [
+    "推理"
+  ]
+}

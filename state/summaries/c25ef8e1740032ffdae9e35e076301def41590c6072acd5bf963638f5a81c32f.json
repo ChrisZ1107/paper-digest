@@ -1,0 +1,18 @@
+{
+  "overview": "针对四足机器人运动常因电机过热而非电池耗尽而终止的问题，本文提出了一种基于强化学习的感知热特性的运动策略。作者构建了一个包含13个节点的集总RC热网络模型来预测电机温度，并通过设计奖励函数引导策略降低和均衡电机发热。实验表明，该方法能显著延长四足机器人的续航距离，使其从受限受热转变为受限受电池电量。",
+  "highlights": [
+    {
+      "text": "提出一种预测电机温度的热模型，即使在不直接观察温度的情况下也能通过奖励函数引导训练出降低和分散热量的策略。",
+      "evidence": "Our core contribution is a reward that drives down the hottest predicted asymptotes: thermal time constants exceed the credit-assignment horizon of reinforcement learning by orders of magnitude, but predicted asymptotes respond to torque and joint speed within a single gait cycle, so the policy learns to lower and spread heat with no temperature input."
+    },
+    {
+      "text": "在Unitree Go2机器人上的实验验证了该策略能将运动从热限制转向电池限制，显著提升了机器人的持续运行时间和距离。",
+      "evidence": "On the robot, the policy turns sustained locomotion from temperature-limited to battery-limited: with a 5 kg payload at 1 m/s, a learned baseline reaches thermal shutdown after 19 minutes (1.1 km), whereas our policy runs the battery down after 174 minutes (10.0 km) with its hottest motor 14 $^\\circ$C below the shutdown threshold in a 26 $^\\circ$C room"
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "四足机器人",
+    "足式运动"
+  ]
+}

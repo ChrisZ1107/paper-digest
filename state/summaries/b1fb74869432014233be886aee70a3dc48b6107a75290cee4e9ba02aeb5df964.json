@@ -1,0 +1,19 @@
+{
+  "overview": "针对机器人全身运动控制任务，作者提出了身体模式策略（BSP）。该模仿学习策略将本体结构作为视觉-动作接口，通过构建潜空间身体模式并引入基于运动树的归纳偏置，使机器人能够高效获取视觉证据并优化动作生成。实验结果表明，在多种模拟及真实机器人平台上，该方法在参数量显著减少的情况下，能实现优于对比模型的任务成功率。",
+  "highlights": [
+    {
+      "text": "BSP引入身体模式作为视觉-动作接口，通过运动树结构与身体查询机制提升动作学习效率。",
+      "evidence": "Its latent body schema places joint and link tokens on the robot's kinematic tree, where learned screw motions carry features between links. Through body-queried vision, each body part retrieves its own visual evidence, which conditions the denoising of its actions."
+    },
+    {
+      "text": "在保持高性能的同时，BSP显著降低了模型参数量并提升了成功率。",
+      "evidence": "On nine simulated Unitree G1 whole-body tasks, BSP matches the $\\Psi_0$ humanoid foundation model with $75\\times$ fewer parameters and nearly doubles Diffusion Policy's success."
+    }
+  ],
+  "tags": [
+    "人形机器人",
+    "模仿学习",
+    "机器人操作",
+    "足式运动"
+  ]
+}

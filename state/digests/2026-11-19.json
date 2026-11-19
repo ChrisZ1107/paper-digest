@@ -1,0 +1,495 @@
+{
+  "date": "2026-11-19",
+  "timestamp": "2026-11-19T09:01:50.489236+08:00",
+  "title": "2026-11-19 热门论文 Top 10｜机器人·强化学习·AI",
+  "slug": "2026-11-19",
+  "papers": [
+    {
+      "id": "2611.18397",
+      "title": "Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent",
+      "abstract": "We introduce Gamer, a generalist agent framework built for long-horizon tasks in complex interactive environments. Its end-to-end architecture combines perception, memory management, and multi-step reasoning. A shared training and deployment pipeline supports interaction with both conventional 2D graphical interfaces and complex 3D simulated worlds. We first continue pre-training on a dataset constructed from tens of thousands of hours of device-level keyboard and mouse interaction. These trajectories span simulated games and embodied environments, allowing the model to learn environmental dynamics across both physical and virtual domains. Sparse-thinking instruction tuning then substantially reduces redundant computation while preserving the reasoning needed for complex decisions. We train the policy for long-horizon interaction with a stable multi-turn reinforcement learning method that addresses finite context windows, accumulated rollout errors, and sparse rewards. For real-time interaction, a cloud-edge inference engine serves numerous simulated game environments concurrently, supports unbounded-context execution, and keeps online inference latency low. Across multiple challenging 3D open-world games, Gamer demonstrates solid generalization and operational efficiency comparable to skilled players. It also achieves competitive results on a range of conventional 2D game benchmarks. These results suggest that even repetitive keyboard and mouse trajectories can support substantial gains from scaling data and learning algorithms. Training on these trajectories helps Gamer learn complex skills more steadily in environments with both physical and digital properties. This approach offers a path toward generalist agents that can interact across digital and physical worlds.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-11-13",
+      "age_days": 6.0429454772685185,
+      "upvotes": 130,
+      "comments": 4,
+      "stars": 701,
+      "repo": "https://github.com/RainBowLuoCS/Gamer",
+      "trending_rank": 5,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.4912,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 11,
+        "comments": 0,
+        "stars": 209
+      },
+      "score": 5.915,
+      "rule_tags": [
+        "强化学习",
+        "视觉语言动作",
+        "推理"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文介绍了一种名为Gamer的通用智能体框架，旨在处理复杂交互环境下的长程任务。该框架结合了感知、记忆管理和多步推理的端到端架构，支持在2D图形界面和3D模拟世界中交互。作者通过大规模键盘和鼠标交互数据进行预训练，并利用稀疏思维指令微调和多轮强化学习方法，提升了模型的长程决策能力与运行效率。实验结果表明，Gamer在多个3D开放世界游戏和2D基准测试中展现出良好的泛化能力和操作水平。",
+        "highlights": [
+          {
+            "text": "Gamer通过在大规模键盘与鼠标交互数据上进行预训练，有效学习了跨物理与虚拟域的环境动态。",
+            "evidence": "We first continue pre-training on a dataset constructed from tens of thousands of hours of device-level keyboard and mouse interaction. These trajectories span simulated games and embodied environments, allowing the model to learn environmental dynamics across both physical and virtual domains."
+          },
+          {
+            "text": "采用稀疏思维指令微调和多轮强化学习方法，在减少计算冗余的同时增强了长程决策的稳定性。",
+            "evidence": "Sparse-thinking instruction tuning then substantially reduces redundant computation while preserving the reasoning needed for complex decisions. We train the policy for long-horizon interaction with a stable multi-turn reinforcement learning method that addresses finite context windows, accumulated rollout errors, and sparse rewards."
+          }
+        ],
+        "tags": [
+          "视觉语言动作",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.21099",
+      "title": "ForceHarness: Turning Force into Action and Physics for Frozen Frontier Models",
+      "abstract": "Frontier multimodal models can now control robots zero-shot from images, yet many manipulation tasks depend on contact forces that images cannot show. Bringing force to an API-only frozen model raises two challenges. First, contact evolves much faster than an API model can decide, so the system must close the loop on force beneath the model. Second, a frozen model cannot interpret raw force streams, so force must be returned in a form the model can reason about. Therefore, we present ForceHarness, a harness that lets frozen models use force without demonstrations or finetuning. After calibrating hand force from a wrist sensor or joint torques alone, ForceHarness addresses the first challenge with self-terminating force primitives that regulate force on their own and return at a contact event. To address the second challenge, a physics translation layer turns each force trace into physical quantities with uncertainty as the tool result. To evaluate ForceHarness against expert force controllers and learned policies under identical conditions, we also build HiddenPhys, a seven-task MuJoCo benchmark with hidden physical variables. On a real arm without a wrist force sensor, ForceHarness raises the zero-shot success rate of GPT-6 Astra from 3.3% to 90.0%. In simulation, it adds 17.5 percentage points on the public ForceBench suite and 34.3 percentage points on HiddenPhys, surpassing force-aware policies trained on demonstrations on both benchmarks and matching hand-written expert controllers on HiddenPhys. Ablations further show that smaller models make significantly better decisions when given physical quantities rather than raw force values.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-11-16",
+      "age_days": 3.0429454772685185,
+      "upvotes": 38,
+      "comments": 2,
+      "stars": 32,
+      "repo": "https://github.com/showlab/ForceHarness",
+      "trending_rank": 25,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.39355,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 38,
+        "comments": 2
+      },
+      "score": 5.317,
+      "rule_tags": [],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对冻结多模态大模型难以获取触觉反馈的问题，本文提出了ForceHarness框架。该系统通过引入自终止力原语以应对高频接触控制，并利用物理转换层将力数据转化为模型可理解的带不确定性的物理量，使冻结模型无需微调即可完成接触类操作任务。实验表明，该方法显著提升了模型在仿真和真实机器人环境下的零样本操作成功率。",
+        "highlights": [
+          {
+            "text": "ForceHarness使冻结模型能够在无需示范或微调的情况下利用力反馈信息。",
+            "evidence": "Therefore, we present ForceHarness, a harness that lets frozen models use force without demonstrations or finetuning."
+          },
+          {
+            "text": "该方法有效提升了多模态模型在真实机器人上的任务成功率。",
+            "evidence": "On a real arm without a wrist force sensor, ForceHarness raises the zero-shot success rate of GPT-6 Astra from 3.3% to 90.0%."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "Sim-to-Real"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.18919",
+      "title": "Correcting Persistent Failures in Point-Cloud Grasping Policies using Human Demonstrations in Virtual Reality",
+      "abstract": "Robots in homes, warehouses and farms must pick up objects they have never seen, usually without a 3D model or a category label. A grasping policy that works directly on the point cloud from a depth sensor needs only the geometry the robot observes, so it applies to any new object. Offline grasp generators such as Contact-GraspNet work this way, but they rank grasps by learned plausibility rather than by whether the grasp actually lifts the object. Reinforcement learning (RL) can optimize for that directly and make a point-cloud grasping policy much better on average, yet it leaves specific grasps persistently unsolved. We present a human-in-the-loop failure loop that targets those grasps: situations an RL policy keeps failing are mined automatically, sent to a virtual-reality application where a person picks the object up with their own hands, and returned to training as two grasp points. The person contributes only where to grasp; the robot chooses its own approach. In simulation, RL raises success on unseen objects from 55% with Contact-GraspNet to 83%. Adding 58 human demonstrations nearly doubles success on the hard cases RL kept failing, from 24% to 45%, and recovers performance that RL alone loses on similar cases that were never demonstrated, without reducing success on unseen objects.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-11-13",
+      "age_days": 6.0429454772685185,
+      "upvotes": 7,
+      "comments": 2,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.48199,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 2,
+        "comments": 1
+      },
+      "score": 5.118,
+      "rule_tags": [
+        "强化学习",
+        "机器人操作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对点云抓取策略在处理特定失败案例时的局限性，本文提出一种人机协同的故障修复流程。通过自动挖掘强化学习策略的失败场景，利用虚拟现实技术获取人类演示数据，并将其补充至训练集中。作者声称该方法在无需人类完全控制机器人路径的情况下，显著提升了模型在困难场景下的抓取成功率，同时保持了模型在未见物体上的泛化性能。",
+        "highlights": [
+          {
+            "text": "开发了一种人机协同的故障修复流程，通过人类在虚拟现实中的抓取演示来辅助改进强化学习策略。",
+            "evidence": "We present a human-in-the-loop failure loop that targets those grasps: situations an RL policy keeps failing are mined automatically, sent to a virtual-reality application where a person picks the object up with their own hands, and returned to training as two grasp points."
+          },
+          {
+            "text": "在仿真实验中，引入少量人类演示即可显著提升模型处理困难抓取场景的成功率。",
+            "evidence": "Adding 58 human demonstrations nearly doubles success on the hard cases RL kept failing, from 24% to 45%, and recovers performance that RL alone loses on similar cases that were never demonstrated, without reducing success on unseen objects."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "强化学习",
+          "模仿学习"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.21392",
+      "title": "VideoNexus: Video Perception Beyond the Reasoning Context",
+      "abstract": "Understanding long videos requires locating evidence, resolving visual details, and integrating observations into an answer. Even when relevant evidence is present, performing these operations within long, dense visual sequences burdens both perception and reasoning. Video agents enable selective inspection, but returning frames to the planner still accumulates visual information in its reasoning context. Delegating perception reduces this burden, yet sparse sampling can miss decisive details, and per-frame descriptions can preserve context growth. We introduce VideoNexus, a training-free framework that separates detailed video perception from evidence-driven planning and reasoning. The planner controls where to inspect, what to resolve, and how densely to sample. Perception sub-agents process native audio-video in independent contexts and return compact, temporally grounded evidence for iterative search and verification. Using Gemini 3.8 Flash for both planning and perception, VideoNexus achieves 88.6% accuracy on full LVBench, exceeding same-backbone static ingestion and built-in agentic processing by 3.6 and 1.1 points, respectively, at 44% of the latter's measured API cost. A paired LVBench subset ablation shows lower planner input and higher accuracy. With Kimi K3 as the shared backbone, VideoNexus improves over the official Video-GAIA ReAct harness by 8.5 points in our evaluation. These results support compact evidence exchange for combining detailed observation with efficient planning and reasoning.",
+      "topics": [
+        "通用 AI"
+      ],
+      "published": "2026-11-16",
+      "age_days": 3.0429454772685185,
+      "upvotes": 19,
+      "comments": 1,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.37933,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 19,
+        "comments": 1
+      },
+      "score": 5.036,
+      "rule_tags": [
+        "推理"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对长视频理解中感知与推理负担重的问题，本文提出了VideoNexus框架。该框架实现了详细视频感知与证据驱动规划的解耦，通过规划器控制采样策略，利用感知子代理在独立上下文中处理音视频，并返回紧凑的时序证据。实验表明，该方法在保持高效性的同时，提升了模型在复杂视频任务中的推理准确率。",
+        "highlights": [
+          {
+            "text": "VideoNexus通过解耦感知与规划任务，实现了更高效的长视频分析，在降低推理成本的同时提升了任务准确率。",
+            "evidence": "Using Gemini 3.8 Flash for both planning and perception, VideoNexus achieves 88.6% accuracy on full LVBench, exceeding same-backbone static ingestion and built-in agentic processing by 3.6 and 1.1 points, respectively, at 44% of the latter's measured API cost."
+          },
+          {
+            "text": "通过引入感知子代理处理音视频信息，该框架能够有效减少规划器在推理过程中的上下文负担。",
+            "evidence": "Perception sub-agents process native audio-video in independent contexts and return compact, temporally grounded evidence for iterative search and verification."
+          }
+        ],
+        "tags": [
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.21607",
+      "title": "ScaleVLA: Scaling Vision-Language-Action Models to 552 Billion Parameters",
+      "abstract": "Frontier Vision-Language Models (VLMs) such as GPT-6 Astra have demonstrated remarkable capabilities in robot control, suggesting that broad pretraining provides knowledge valuable for physical action. Yet most Vision-Language-Action (VLA) policies still rely on much smaller VLM backbones, leaving this potential largely untapped. We ask whether frontier-scale representations can provide a stronger foundation for robot learning. We introduce ScaleVLA, which connects a 552B DeepSeek-V4.1-Flash backbone to a trainable action DiT, and systematically compare VLMs from 2B to 552B under a shared training setup. We evaluate three fundamental capabilities of robot foundation models. In sample efficiency, just 10 demonstrations outperform a 2B backbone trained with 50 (87.8% vs. 85.6%). In generalization, LIBERO-PRO success reaches 45.1%, compared with at most 31.3% for smaller backbones. In precise manipulation, real-world charger insertion improves from 4/10 to 9/10 successes, with gains concentrated in contact-sensitive alignment. Despite its scale, ScaleVLA achieves 216 ms median latency per action chunk. Our findings suggest that frontier VLMs can serve not only as reasoning agents, but also as powerful representational foundations for efficient and generalizable robot policies.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-11-16",
+      "age_days": 3.0429454772685185,
+      "upvotes": 36,
+      "comments": 1,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.47954,
+      "growth": {
+        "days": 1.0,
+        "upvotes": -5,
+        "comments": 0
+      },
+      "score": 4.952,
+      "rule_tags": [
+        "视觉语言动作",
+        "推理"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文探讨了将超大规模视觉语言模型（VLM）应用于机器人控制的潜力。作者提出了ScaleVLA，将552B参数的DeepSeek-V4.1-Flash作为基础模型，并连接可训练的动作扩散变换器（DiT）。实验表明，与较小的VLA模型相比，该方法在少样本学习、泛化能力及精密操作任务上表现更优，并能在保持较低推理延迟的同时，为机器人策略提供强大的表征基础。",
+        "highlights": [
+          {
+            "text": "ScaleVLA展示了极高的样本效率，仅使用10个演示样本即可超越使用50个样本训练的2B参数模型。",
+            "evidence": "In sample efficiency, just 10 demonstrations outperform a 2B backbone trained with 50 (87.8% vs. 85.6%)."
+          },
+          {
+            "text": "在复杂任务泛化与精密操作方面，ScaleVLA相比小型主干网络表现出显著的性能提升。",
+            "evidence": "In generalization, LIBERO-PRO success reaches 45.1%, compared with at most 31.3% for smaller backbones. In precise manipulation, real-world charger insertion improves from 4/10 to 9/10 successes, with gains concentrated in contact-sensitive alignment."
+          }
+        ],
+        "tags": [
+          "视觉语言动作",
+          "机器人操作",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.19559",
+      "title": "ResWAM: Learning What Changes, Not What Stays, for World-Action Models",
+      "abstract": "World-action models (WAMs) augment vision-language-action policies (VLAs) with future prediction so that the policy can anticipate how its actions will affect the physical world. Existing WAMs supervise complete future observations. However, observations typically change little over an action chunk, so the future loss is dominated by copying static background content rather than learning task-relevant robot and object motion, limiting policy learning. Moreover, existing WAMs rely on large video generation models or separate world models, incurring heavy training and inference compute that hinders closed-loop deployment. To improve policy performance, we propose visual residual learning, supervising only the feature change from the current frame to the future frame in a frozen DINOv3 space. Compared with complete future features, this residual learning target yields a higher feature rank with richer and more diverse representations of scene changes, and spatially concentrates on the robot arm and manipulated objects rather than the background. To further improve computational efficiency, we present ResWAM, a residual world-action model with 2.3B parameters in total, including a lightweight 0.5B dual-branch DiT that jointly trains an action branch and a residual branch via conditional flow matching. Without robot pretraining (i.e., pretraining on external robot action trajectories beyond the benchmark demonstrations), ResWAM achieves top average success rates on LIBERO-Plus (81.1%), RoboTwin 2.0 (93.8%), and RoboDojo (9.40% success, 13.41 score) at the lowest training (2.7-4.0 TFLOPs) and inference compute (1.0-1.4 TFLOPs), and leads real-robot Open, Put, and Stack (80.0% average, +10.0% over π_{0.5}) at 92.7 ms latency.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-11-14",
+      "age_days": 5.0429454772685185,
+      "upvotes": 4,
+      "comments": 1,
+      "stars": 2,
+      "repo": "https://github.com/OPTML-Group/ResWAM",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.44184,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 4,
+        "comments": 1
+      },
+      "score": 4.946,
+      "rule_tags": [
+        "世界模型",
+        "视觉语言动作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对现有世界动作模型监督全帧预测导致计算效率低且难以聚焦任务相关动态的问题，作者提出了视觉残差学习方法ResWAM。该方法通过在冻结的DINOv3特征空间中仅监督帧间特征变化，促使模型聚焦于机器人与物体的运动。ResWAM利用轻量级双分支DiT结构，显著降低了训练和推理的算力需求，并在多个机器人操作基准测试中表现出高效性，实现了较好的平均成功率。",
+        "highlights": [
+          {
+            "text": "提出视觉残差学习方法，通过监督特征变化而非全帧预测，使模型能更好地聚焦于机器人和操作对象的动态变化。",
+            "evidence": "we propose visual residual learning, supervising only the feature change from the current frame to the future frame in a frozen DINOv3 space."
+          },
+          {
+            "text": "ResWAM架构显著降低了计算成本，在保持较低训练和推理算力的前提下，实现了优秀的成功率指标。",
+            "evidence": "ResWAM achieves top average success rates on LIBERO-Plus (81.1%), RoboTwin 2.0 (93.8%), and RoboDojo (9.40% success, 13.41 score) at the lowest training (2.7-4.0 TFLOPs) and inference compute (1.0-1.4 TFLOPs)"
+          }
+        ],
+        "tags": [
+          "视觉语言动作",
+          "世界模型",
+          "机器人操作",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.12885",
+      "title": "World In-Context Learning for Agentic Robot Manipulation",
+      "abstract": "Trained action policies write manipulation skill into network weights, tying what is learned to the distribution it is learned from. In-context learning (ICL) avoids this coupling but has not matched trained policies, because a demonstration recorded in another scene carries no feedback from the world the robot currently faces. We observe that what an agent learns in context is semantic, recording task steps and object roles rather than visual appearance, so experience gathered in one world transfers to another. Based on this insight, we propose World In-Context Learning (WICL), a paradigm in which a frozen model starts from a demonstration, rehearses the task in a world such as a simulator, and writes the feedback into its context rather than its weights. We build RoboScript, a modular infrastructure that implements WICL for agentic manipulation. From a single demonstration, RoboScript learns each task through rehearsal in simulation, freezes the learned knowledge as a Task Memory, and deploys the frozen memory on new scenes with data isolation that ensures every deployment input is available on a real robot. On all 50 tasks of RoboTwin 2.0, RoboScript reaches 83.4% mean success across clean and randomized settings with one demonstration per task and no gradient updates, exceeding the strongest trained action policy by over 20 points. The method generalizes across visual distributions, improves through reflection, scales with the foundation model, and transfers to a physical dual-arm robot through cross-embodiment memory adaptation. With a world in the loop, a robot can learn a manipulation task in its context as well as it learns one in its weights. All code is available at https://github.com/ArcheOne-AI/RoboScript",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-11-09",
+      "age_days": 10.042945477268518,
+      "upvotes": 55,
+      "comments": 4,
+      "stars": 305,
+      "repo": "https://github.com/ArcheOne-AI/RoboScript",
+      "trending_rank": 54,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.45809,
+      "growth": {
+        "days": 1.0,
+        "upvotes": -3,
+        "comments": 0,
+        "stars": 4
+      },
+      "score": 4.928,
+      "rule_tags": [],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对现有机器人操作策略训练难以跨场景泛化的问题，作者提出一种基于“世界上下文学习”（WICL）的范式。该方法利用冻结模型在模拟环境中对任务进行排演，将任务步骤与对象角色的语义反馈直接记录在上下文而非网络权重中。通过构建RoboScript基础设施，该方法在RoboTwin 2.0的50项任务中实现了83.4%的平均成功率，并在无梯度更新的情况下优于传统的训练策略，验证了在上下文学习中获取操作技能的有效性。",
+        "highlights": [
+          {
+            "text": "提出WICL范式，通过在模拟器中排演任务并将反馈写入上下文而非权重，使机器人能从单次演示中高效学习任务。",
+            "evidence": "Based on this insight, we propose World In-Context Learning (WICL), a paradigm in which a frozen model starts from a demonstration, rehearses the task in a world such as a simulator, and writes the feedback into its context rather than its weights."
+          },
+          {
+            "text": "RoboScript在RoboTwin 2.0的50项任务中表现优异，平均成功率达到83.4%，且在零梯度更新条件下显著超过了传统训练的动作策略。",
+            "evidence": "On all 50 tasks of RoboTwin 2.0, RoboScript reaches 83.4% mean success across clean and randomized settings with one demonstration per task and no gradient updates, exceeding the strongest trained action policy by over 20 points."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "Sim-to-Real",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.19937",
+      "title": "AllocFlow: End-to-End Portfolio Trading Action Generation from Raw Market Data",
+      "abstract": "Real-world portfolio management requires converting noisy market observations into coordinated, simultaneous allocations across multiple assets under shared capital constraints. Advances in forecasting models and alpha discovery help identify opportunities. However, traditional pipelines often decouple signal forecasting from portfolio construction, potentially misaligning learning with allocation and execution objectives. We present AllocFlow, an end-to-end flow-matching framework that directly generates joint portfolio allocations from raw multi-asset market histories. To capture dependencies among portfolio positions, AllocFlow employs a cross-asset flow Transformer conditioned on temporal market representations to generate continuous, signed position weights across all instruments jointly. To address the sample inefficiency and instability of learning continuous allocation policies from scratch, we establish a two-stage training scheme: strategy-supervised imitation shapes a structured distribution of candidate portfolios, followed by group-relative reinforcement learning (RL) that refines joint decisions using portfolio-level financial rewards and a frozen policy reference. On hourly cryptocurrency perpetual futures, RL refinement raises the annualized net return of the imitation policy from 27.79% to 51.38% and its Calmar ratio from 0.955 to 4.043, surpassing the teacher strategy on every metric, and AllocFlow reaches a Calmar ratio of 4.90 on six further months of unseen 2026 data without retraining.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-11-15",
+      "age_days": 4.0429454772685185,
+      "upvotes": 72,
+      "comments": 4,
+      "stars": 26,
+      "repo": "https://github.com/allocflow/AllocFlow",
+      "trending_rank": 40,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.34372,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 5,
+        "comments": 1,
+        "stars": 8
+      },
+      "score": 4.847,
+      "rule_tags": [
+        "强化学习"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对传统组合管理中信号预测与资产配置脱节的问题，本文提出了AllocFlow框架，实现从原始市场数据到投资组合分配的端到端生成。该框架利用跨资产流Transformer捕捉多资产依赖，并采用“监督模仿学习+组相对强化学习”的两阶段训练策略。作者声称该方法在加密货币永续合约测试中显著提升了年化净收益与Calmar比率，并展现出良好的泛化性能。",
+        "highlights": [
+          {
+            "text": "提出AllocFlow端到端框架，通过流匹配技术直接从原始市场数据生成多资产组合分配。",
+            "evidence": "We present AllocFlow, an end-to-end flow-matching framework that directly generates joint portfolio allocations from raw multi-asset market histories."
+          },
+          {
+            "text": "采用两阶段训练方案，通过模仿学习构建候选分布，并利用组相对强化学习进一步优化决策。",
+            "evidence": "To address the sample inefficiency and instability of learning continuous allocation policies from scratch, we establish a two-stage training scheme: strategy-supervised imitation shapes a structured distribution of candidate portfolios, followed by group-relative reinforcement learning (RL) that refines joint decisions using portfolio-level financial rewards and a frozen policy reference."
+          },
+          {
+            "text": "实验表明，强化学习优化显著提升了模仿学习策略的金融指标，且在未见数据上保持了优异表现。",
+            "evidence": "On hourly cryptocurrency perpetual futures, RL refinement raises the annualized net return of the imitation policy from 27.79% to 51.38% and its Calmar ratio from 0.955 to 4.043, surpassing the teacher strategy on every metric, and AllocFlow reaches a Calmar ratio of 4.90 on six further months of unseen 2026 data without retraining."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "模仿学习"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.21605",
+      "title": "ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization",
+      "abstract": "Visual agents answer questions about ultra-high-resolution photos by zooming into the relevant regions. However, existing agents often answer from common sense instead of reading the evidence. Reinforcement learning (RL) on the final answer cannot correct this, because a guess earns the same reward as reading. We propose Cross-Input Relative Policy Optimization (CrossRPO), which trains agents on contrast sets. A contrast set asks one question about several versions of an image that differ only in a small region with the evidence and have different answers, so only reading the evidence solves the whole set. CrossRPO rewards solving the whole set, and we prove that it does not reinforce a set answered from common sense. We build contrast sets for training (ViRA-Train) and evaluation (ViRA-Bench) by editing one small object in images of 21 to 120 megapixels, and we photograph further sets with real changes (ViRA-Bench-Real) to exclude editing traces. We train two Visual Reasoning Agents, ViRA-9B and ViRA-27B, with CrossRPO on only about 3,500 items of ViRA-Train each. CrossRPO achieves 63.3% set accuracy on ViRA-Bench at the maximum resolution, against 59.3% for GRPO. ViRA-9B is the most accurate open model of its size on all benchmarks, and ViRA-27B outperforms Claude Haiku 5.5 and GPT-6-Luna, both at their highest thinking level, on most benchmarks.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-11-16",
+      "age_days": 3.0429454772685185,
+      "upvotes": 4,
+      "comments": 1,
+      "stars": 6,
+      "repo": "https://github.com/huawei-lin/ViRA",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.3967,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 2,
+        "comments": 0,
+        "stars": 4
+      },
+      "score": 4.606,
+      "rule_tags": [
+        "强化学习",
+        "大模型后训练",
+        "推理"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "为了解决视觉智能体在处理超高分辨率图像时往往基于常识而非读取证据进行回答的问题，作者提出了交叉输入相对策略优化（CrossRPO）方法。该方法通过在对比集上训练智能体，仅奖励能够准确读取证据并解决全套问题的行为。作者构建了高分辨率训练集和评估集，并训练了ViRA-9B和ViRA-27B模型。实验结果显示，该方法在多个基准测试中优于现有的对比模型，展现了更强的视觉推理能力。",
+        "highlights": [
+          {
+            "text": "提出交叉输入相对策略优化（CrossRPO），通过对比集训练解决基于常识猜测的问题。",
+            "evidence": "We propose Cross-Input Relative Policy Optimization (CrossRPO), which trains agents on contrast sets."
+          },
+          {
+            "text": "CrossRPO方法在ViRA-Bench评估集上实现了63.3%的准确率，优于GRPO基准。",
+            "evidence": "CrossRPO achieves 63.3% set accuracy on ViRA-Bench at the maximum resolution, against 59.3% for GRPO."
+          },
+          {
+            "text": "ViRA-27B模型在多数基准测试中表现优于Claude Haiku 5.5和GPT-6-Luna。",
+            "evidence": "ViRA-27B outperforms Claude Haiku 5.5 and GPT-6-Luna, both at their highest thinking level, on most benchmarks."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.21439",
+      "title": "A Reinforcement Learning Method to Navigate SMEFT Operator Space",
+      "abstract": "In particle physics, discrepancies between experimental measurements and Standard Model (SM) predictions are commonly interpreted within new theoretical models. In this context, the Standard Model Effective Field Theory (SMEFT) provides a general framework encompassing a broad class of models. However, exploring the enormous space of possible SMEFT operators rapidly becomes a challenging combinatorial problem: many operators can contribute simultaneously to different observables, their effects are correlated, and distinct operator combinations can provide comparably good descriptions of the data. In this work, we formulate the exploration of the SMEFT operator space as a sequential decision-making problem using reinforcement learning (RL). Our RL agent employs a lightweight actor-critic architecture with approximately 40K trainable parameters in total. Rather than searching for a single best-fit theory, our method is designed to discover a diverse set of high-quality theory hypotheses. We test the method in a complex phenomenological environment comprising 132 observables across several sectors of particle physics, including 24 measurements that deviate from their SM predictions by more than 1.5σ. We show that the learned RL policy efficiently constructs multi-operator theories that substantially improve the global fit. Comparisons with independent random-subset and random-sequential searches demonstrate the ability of the RL policy to navigate this large combinatorial space. Our results establish RL as a systematic framework for exploring diverse patterns of new physics (NP) interactions within SMEFT.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-11-16",
+      "age_days": 3.0429454772685185,
+      "upvotes": 1,
+      "comments": 2,
+      "stars": 2,
+      "repo": "https://github.com/ReinforcePhysics/ReinforceSMEFT",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.38339,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 1,
+        "comments": 1,
+        "stars": 0
+      },
+      "score": 4.188,
+      "rule_tags": [
+        "强化学习"
+      ],
+      "summary_status": "Gemini 暂不可用，显示规则标签与原文摘要。"
+    }
+  ],
+  "candidate_count": 676,
+  "personalization_note": "已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。",
+  "html": "<h1>2026-11-19 热门论文 Top 10</h1>\n<p>机器人 · 强化学习 · 通用 AI</p>\n<p>生成时间：2026-11-19 09:01 CST。从 676 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>\n<p>候选来源：<a href=\"https://huggingface.co/papers\">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>\n<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>\n<h2>1. Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent</h2>\n<p><strong>机器人 / 强化学习</strong> · 发表 2026-11-13 · 综合分 5.92</p>\n<p>Zotero 摘要相关性：0.491（相似度分数，不是概率）。</p>\n<p>HF 点赞 130 · 讨论 4 · 本次 HF 热榜第 5 位 · 仓库累计 Star 701（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +11 · 讨论 +0 · Star +209。</p>\n<p><strong>规则标签：</strong>强化学习 · 视觉语言动作 · 推理</p>\n<p><strong>中文概述：</strong>本文介绍了一种名为Gamer的通用智能体框架，旨在处理复杂交互环境下的长程任务。该框架结合了感知、记忆管理和多步推理的端到端架构，支持在2D图形界面和3D模拟世界中交互。作者通过大规模键盘和鼠标交互数据进行预训练，并利用稀疏思维指令微调和多轮强化学习方法，提升了模型的长程决策能力与运行效率。实验结果表明，Gamer在多个3D开放世界游戏和2D基准测试中展现出良好的泛化能力和操作水平。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>Gamer通过在大规模键盘与鼠标交互数据上进行预训练，有效学习了跨物理与虚拟域的环境动态。<br><small>摘要依据：We first continue pre-training on a dataset constructed from tens of thousands of hours of device-level keyboard and mouse interaction. These trajectories span simulated games and embodied environments, allowing the model to learn environmental dynamics across both physical and virtual domains.</small></li>\n<li>采用稀疏思维指令微调和多轮强化学习方法，在减少计算冗余的同时增强了长程决策的稳定性。<br><small>摘要依据：Sparse-thinking instruction tuning then substantially reduces redundant computation while preserving the reasoning needed for complex decisions. We train the policy for long-horizon interaction with a stable multi-turn reinforcement learning method that addresses finite context windows, accumulated rollout errors, and sparse rewards.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>视觉语言动作 · 推理</p>\n<p><strong>原文摘要节选：</strong>We introduce Gamer, a generalist agent framework built for long-horizon tasks in complex interactive environments. Its end-to-end architecture combines perception, memory management, and multi-step reasoning. A shared training and deployment pipeline supports interaction with both conventional 2D graphical interfaces and complex 3D simulated worlds. We first continue pre-training on a dataset constructed from tens of thousands of hours of device-level keyboard and mouse interaction. These trajectories span simulated games and embodied environments, allowing the model to learn environmental dynamics across both physical and virtual domains. Sparse-thinking instruction tuning then substantially reduces redundant computation while preserving the reasoning needed for complex decisions. We…</p>\n<p><a href=\"https://arxiv.org/abs/2611.18397\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.18397\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.18397\">讨论与热度</a> · <a href=\"https://github.com/RainBowLuoCS/Gamer\">代码</a></p><hr>\n<h2>2. ForceHarness: Turning Force into Action and Physics for Frozen Frontier Models</h2>\n<p><strong>机器人</strong> · 发表 2026-11-16 · 综合分 5.32</p>\n<p>Zotero 摘要相关性：0.394（相似度分数，不是概率）。</p>\n<p>HF 点赞 38 · 讨论 2 · 本次 HF 热榜第 25 位 · 仓库累计 Star 32（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +38 · 讨论 +2。</p>\n<p><strong>中文概述：</strong>针对冻结多模态大模型难以获取触觉反馈的问题，本文提出了ForceHarness框架。该系统通过引入自终止力原语以应对高频接触控制，并利用物理转换层将力数据转化为模型可理解的带不确定性的物理量，使冻结模型无需微调即可完成接触类操作任务。实验表明，该方法显著提升了模型在仿真和真实机器人环境下的零样本操作成功率。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>ForceHarness使冻结模型能够在无需示范或微调的情况下利用力反馈信息。<br><small>摘要依据：Therefore, we present ForceHarness, a harness that lets frozen models use force without demonstrations or finetuning.</small></li>\n<li>该方法有效提升了多模态模型在真实机器人上的任务成功率。<br><small>摘要依据：On a real arm without a wrist force sensor, ForceHarness raises the zero-shot success rate of GPT-6 Astra from 3.3% to 90.0%.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · Sim-to-Real</p>\n<p><strong>原文摘要节选：</strong>Frontier multimodal models can now control robots zero-shot from images, yet many manipulation tasks depend on contact forces that images cannot show. Bringing force to an API-only frozen model raises two challenges. First, contact evolves much faster than an API model can decide, so the system must close the loop on force beneath the model. Second, a frozen model cannot interpret raw force streams, so force must be returned in a form the model can reason about. Therefore, we present ForceHarness, a harness that lets frozen models use force without demonstrations or finetuning. After calibrating hand force from a wrist sensor or joint torques alone, ForceHarness addresses the first challenge with self-terminating force primitives that regulate force on their own and return at a contact…</p>\n<p><a href=\"https://arxiv.org/abs/2611.21099\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.21099\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.21099\">讨论与热度</a> · <a href=\"https://github.com/showlab/ForceHarness\">代码</a></p><hr>\n<h2>3. Correcting Persistent Failures in Point-Cloud Grasping Policies using Human Demonstrations in Virtual Reality</h2>\n<p><strong>机器人 / 强化学习</strong> · 发表 2026-11-13 · 综合分 5.12</p>\n<p>Zotero 摘要相关性：0.482（相似度分数，不是概率）。</p>\n<p>HF 点赞 7 · 讨论 2</p>\n<p>较上次观测（1.0 天前）：点赞 +2 · 讨论 +1。</p>\n<p><strong>规则标签：</strong>强化学习 · 机器人操作</p>\n<p><strong>中文概述：</strong>针对点云抓取策略在处理特定失败案例时的局限性，本文提出一种人机协同的故障修复流程。通过自动挖掘强化学习策略的失败场景，利用虚拟现实技术获取人类演示数据，并将其补充至训练集中。作者声称该方法在无需人类完全控制机器人路径的情况下，显著提升了模型在困难场景下的抓取成功率，同时保持了模型在未见物体上的泛化性能。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>开发了一种人机协同的故障修复流程，通过人类在虚拟现实中的抓取演示来辅助改进强化学习策略。<br><small>摘要依据：We present a human-in-the-loop failure loop that targets those grasps: situations an RL policy keeps failing are mined automatically, sent to a virtual-reality application where a person picks the object up with their own hands, and returned to training as two grasp points.</small></li>\n<li>在仿真实验中，引入少量人类演示即可显著提升模型处理困难抓取场景的成功率。<br><small>摘要依据：Adding 58 human demonstrations nearly doubles success on the hard cases RL kept failing, from 24% to 45%, and recovers performance that RL alone loses on similar cases that were never demonstrated, without reducing success on unseen objects.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 强化学习 · 模仿学习</p>\n<p><strong>原文摘要节选：</strong>Robots in homes, warehouses and farms must pick up objects they have never seen, usually without a 3D model or a category label. A grasping policy that works directly on the point cloud from a depth sensor needs only the geometry the robot observes, so it applies to any new object. Offline grasp generators such as Contact-GraspNet work this way, but they rank grasps by learned plausibility rather than by whether the grasp actually lifts the object. Reinforcement learning (RL) can optimize for that directly and make a point-cloud grasping policy much better on average, yet it leaves specific grasps persistently unsolved. We present a human-in-the-loop failure loop that targets those grasps: situations an RL policy keeps failing are mined automatically, sent to a virtual-reality application…</p>\n<p><a href=\"https://arxiv.org/abs/2611.18919\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.18919\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.18919\">讨论与热度</a></p><hr>\n<h2>4. VideoNexus: Video Perception Beyond the Reasoning Context</h2>\n<p><strong>通用 AI</strong> · 发表 2026-11-16 · 综合分 5.04</p>\n<p>Zotero 摘要相关性：0.379（相似度分数，不是概率）。</p>\n<p>HF 点赞 19 · 讨论 1</p>\n<p>较上次观测（1.0 天前）：点赞 +19 · 讨论 +1。</p>\n<p><strong>规则标签：</strong>推理</p>\n<p><strong>中文概述：</strong>针对长视频理解中感知与推理负担重的问题，本文提出了VideoNexus框架。该框架实现了详细视频感知与证据驱动规划的解耦，通过规划器控制采样策略，利用感知子代理在独立上下文中处理音视频，并返回紧凑的时序证据。实验表明，该方法在保持高效性的同时，提升了模型在复杂视频任务中的推理准确率。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>VideoNexus通过解耦感知与规划任务，实现了更高效的长视频分析，在降低推理成本的同时提升了任务准确率。<br><small>摘要依据：Using Gemini 3.8 Flash for both planning and perception, VideoNexus achieves 88.6% accuracy on full LVBench, exceeding same-backbone static ingestion and built-in agentic processing by 3.6 and 1.1 points, respectively, at 44% of the latter&#x27;s measured API cost.</small></li>\n<li>通过引入感知子代理处理音视频信息，该框架能够有效减少规划器在推理过程中的上下文负担。<br><small>摘要依据：Perception sub-agents process native audio-video in independent contexts and return compact, temporally grounded evidence for iterative search and verification.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>推理</p>\n<p><strong>原文摘要节选：</strong>Understanding long videos requires locating evidence, resolving visual details, and integrating observations into an answer. Even when relevant evidence is present, performing these operations within long, dense visual sequences burdens both perception and reasoning. Video agents enable selective inspection, but returning frames to the planner still accumulates visual information in its reasoning context. Delegating perception reduces this burden, yet sparse sampling can miss decisive details, and per-frame descriptions can preserve context growth. We introduce VideoNexus, a training-free framework that separates detailed video perception from evidence-driven planning and reasoning. The planner controls where to inspect, what to resolve, and how densely to sample. Perception sub-agents…</p>\n<p><a href=\"https://arxiv.org/abs/2611.21392\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.21392\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.21392\">讨论与热度</a></p><hr>\n<h2>5. ScaleVLA: Scaling Vision-Language-Action Models to 552 Billion Parameters</h2>\n<p><strong>机器人</strong> · 发表 2026-11-16 · 综合分 4.95</p>\n<p>Zotero 摘要相关性：0.480（相似度分数，不是概率）。</p>\n<p>HF 点赞 36 · 讨论 1</p>\n<p>较上次观测（1.0 天前）：点赞 -5 · 讨论 +0。</p>\n<p><strong>规则标签：</strong>视觉语言动作 · 推理</p>\n<p><strong>中文概述：</strong>本文探讨了将超大规模视觉语言模型（VLM）应用于机器人控制的潜力。作者提出了ScaleVLA，将552B参数的DeepSeek-V4.1-Flash作为基础模型，并连接可训练的动作扩散变换器（DiT）。实验表明，与较小的VLA模型相比，该方法在少样本学习、泛化能力及精密操作任务上表现更优，并能在保持较低推理延迟的同时，为机器人策略提供强大的表征基础。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>ScaleVLA展示了极高的样本效率，仅使用10个演示样本即可超越使用50个样本训练的2B参数模型。<br><small>摘要依据：In sample efficiency, just 10 demonstrations outperform a 2B backbone trained with 50 (87.8% vs. 85.6%).</small></li>\n<li>在复杂任务泛化与精密操作方面，ScaleVLA相比小型主干网络表现出显著的性能提升。<br><small>摘要依据：In generalization, LIBERO-PRO success reaches 45.1%, compared with at most 31.3% for smaller backbones. In precise manipulation, real-world charger insertion improves from 4/10 to 9/10 successes, with gains concentrated in contact-sensitive alignment.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>视觉语言动作 · 机器人操作 · 推理</p>\n<p><strong>原文摘要节选：</strong>Frontier Vision-Language Models (VLMs) such as GPT-6 Astra have demonstrated remarkable capabilities in robot control, suggesting that broad pretraining provides knowledge valuable for physical action. Yet most Vision-Language-Action (VLA) policies still rely on much smaller VLM backbones, leaving this potential largely untapped. We ask whether frontier-scale representations can provide a stronger foundation for robot learning. We introduce ScaleVLA, which connects a 552B DeepSeek-V4.1-Flash backbone to a trainable action DiT, and systematically compare VLMs from 2B to 552B under a shared training setup. We evaluate three fundamental capabilities of robot foundation models. In sample efficiency, just 10 demonstrations outperform a 2B backbone trained with 50 (87.8% vs. 85.6%). In…</p>\n<p><a href=\"https://arxiv.org/abs/2611.21607\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.21607\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.21607\">讨论与热度</a></p><hr>\n<h2>6. ResWAM: Learning What Changes, Not What Stays, for World-Action Models</h2>\n<p><strong>机器人</strong> · 发表 2026-11-14 · 综合分 4.95</p>\n<p>Zotero 摘要相关性：0.442（相似度分数，不是概率）。</p>\n<p>HF 点赞 4 · 讨论 1 · 仓库累计 Star 2（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +4 · 讨论 +1。</p>\n<p><strong>规则标签：</strong>世界模型 · 视觉语言动作</p>\n<p><strong>中文概述：</strong>针对现有世界动作模型监督全帧预测导致计算效率低且难以聚焦任务相关动态的问题，作者提出了视觉残差学习方法ResWAM。该方法通过在冻结的DINOv3特征空间中仅监督帧间特征变化，促使模型聚焦于机器人与物体的运动。ResWAM利用轻量级双分支DiT结构，显著降低了训练和推理的算力需求，并在多个机器人操作基准测试中表现出高效性，实现了较好的平均成功率。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出视觉残差学习方法，通过监督特征变化而非全帧预测，使模型能更好地聚焦于机器人和操作对象的动态变化。<br><small>摘要依据：we propose visual residual learning, supervising only the feature change from the current frame to the future frame in a frozen DINOv3 space.</small></li>\n<li>ResWAM架构显著降低了计算成本，在保持较低训练和推理算力的前提下，实现了优秀的成功率指标。<br><small>摘要依据：ResWAM achieves top average success rates on LIBERO-Plus (81.1%), RoboTwin 2.0 (93.8%), and RoboDojo (9.40% success, 13.41 score) at the lowest training (2.7-4.0 TFLOPs) and inference compute (1.0-1.4 TFLOPs)</small></li>\n</ul>\n<p><strong>AI 主题：</strong>视觉语言动作 · 世界模型 · 机器人操作 · 推理</p>\n<p><strong>原文摘要节选：</strong>World-action models (WAMs) augment vision-language-action policies (VLAs) with future prediction so that the policy can anticipate how its actions will affect the physical world. Existing WAMs supervise complete future observations. However, observations typically change little over an action chunk, so the future loss is dominated by copying static background content rather than learning task-relevant robot and object motion, limiting policy learning. Moreover, existing WAMs rely on large video generation models or separate world models, incurring heavy training and inference compute that hinders closed-loop deployment. To improve policy performance, we propose visual residual learning, supervising only the feature change from the current frame to the future frame in a frozen DINOv3…</p>\n<p><a href=\"https://arxiv.org/abs/2611.19559\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.19559\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.19559\">讨论与热度</a> · <a href=\"https://github.com/OPTML-Group/ResWAM\">代码</a></p><hr>\n<h2>7. World In-Context Learning for Agentic Robot Manipulation</h2>\n<p><strong>机器人</strong> · 发表 2026-11-09 · 综合分 4.93</p>\n<p>Zotero 摘要相关性：0.458（相似度分数，不是概率）。</p>\n<p>HF 点赞 55 · 讨论 4 · 本次 HF 热榜第 54 位 · 仓库累计 Star 305（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 -3 · 讨论 +0 · Star +4。</p>\n<p><strong>中文概述：</strong>针对现有机器人操作策略训练难以跨场景泛化的问题，作者提出一种基于“世界上下文学习”（WICL）的范式。该方法利用冻结模型在模拟环境中对任务进行排演，将任务步骤与对象角色的语义反馈直接记录在上下文而非网络权重中。通过构建RoboScript基础设施，该方法在RoboTwin 2.0的50项任务中实现了83.4%的平均成功率，并在无梯度更新的情况下优于传统的训练策略，验证了在上下文学习中获取操作技能的有效性。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出WICL范式，通过在模拟器中排演任务并将反馈写入上下文而非权重，使机器人能从单次演示中高效学习任务。<br><small>摘要依据：Based on this insight, we propose World In-Context Learning (WICL), a paradigm in which a frozen model starts from a demonstration, rehearses the task in a world such as a simulator, and writes the feedback into its context rather than its weights.</small></li>\n<li>RoboScript在RoboTwin 2.0的50项任务中表现优异，平均成功率达到83.4%，且在零梯度更新条件下显著超过了传统训练的动作策略。<br><small>摘要依据：On all 50 tasks of RoboTwin 2.0, RoboScript reaches 83.4% mean success across clean and randomized settings with one demonstration per task and no gradient updates, exceeding the strongest trained action policy by over 20 points.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · Sim-to-Real · 推理</p>\n<p><strong>原文摘要节选：</strong>Trained action policies write manipulation skill into network weights, tying what is learned to the distribution it is learned from. In-context learning (ICL) avoids this coupling but has not matched trained policies, because a demonstration recorded in another scene carries no feedback from the world the robot currently faces. We observe that what an agent learns in context is semantic, recording task steps and object roles rather than visual appearance, so experience gathered in one world transfers to another. Based on this insight, we propose World In-Context Learning (WICL), a paradigm in which a frozen model starts from a demonstration, rehearses the task in a world such as a simulator, and writes the feedback into its context rather than its weights. We build RoboScript, a modular…</p>\n<p><a href=\"https://arxiv.org/abs/2611.12885\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.12885\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.12885\">讨论与热度</a> · <a href=\"https://github.com/ArcheOne-AI/RoboScript\">代码</a></p><hr>\n<h2>8. AllocFlow: End-to-End Portfolio Trading Action Generation from Raw Market Data</h2>\n<p><strong>强化学习</strong> · 发表 2026-11-15 · 综合分 4.85</p>\n<p>Zotero 摘要相关性：0.344（相似度分数，不是概率）。</p>\n<p>HF 点赞 72 · 讨论 4 · 本次 HF 热榜第 40 位 · 仓库累计 Star 26（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +5 · 讨论 +1 · Star +8。</p>\n<p><strong>规则标签：</strong>强化学习</p>\n<p><strong>中文概述：</strong>针对传统组合管理中信号预测与资产配置脱节的问题，本文提出了AllocFlow框架，实现从原始市场数据到投资组合分配的端到端生成。该框架利用跨资产流Transformer捕捉多资产依赖，并采用“监督模仿学习+组相对强化学习”的两阶段训练策略。作者声称该方法在加密货币永续合约测试中显著提升了年化净收益与Calmar比率，并展现出良好的泛化性能。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出AllocFlow端到端框架，通过流匹配技术直接从原始市场数据生成多资产组合分配。<br><small>摘要依据：We present AllocFlow, an end-to-end flow-matching framework that directly generates joint portfolio allocations from raw multi-asset market histories.</small></li>\n<li>采用两阶段训练方案，通过模仿学习构建候选分布，并利用组相对强化学习进一步优化决策。<br><small>摘要依据：To address the sample inefficiency and instability of learning continuous allocation policies from scratch, we establish a two-stage training scheme: strategy-supervised imitation shapes a structured distribution of candidate portfolios, followed by group-relative reinforcement learning (RL) that refines joint decisions using portfolio-level financial rewards and a frozen policy reference.</small></li>\n<li>实验表明，强化学习优化显著提升了模仿学习策略的金融指标，且在未见数据上保持了优异表现。<br><small>摘要依据：On hourly cryptocurrency perpetual futures, RL refinement raises the annualized net return of the imitation policy from 27.79% to 51.38% and its Calmar ratio from 0.955 to 4.043, surpassing the teacher strategy on every metric, and AllocFlow reaches a Calmar ratio of 4.90 on six further months of unseen 2026 data without retraining.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · 模仿学习</p>\n<p><strong>原文摘要节选：</strong>Real-world portfolio management requires converting noisy market observations into coordinated, simultaneous allocations across multiple assets under shared capital constraints. Advances in forecasting models and alpha discovery help identify opportunities. However, traditional pipelines often decouple signal forecasting from portfolio construction, potentially misaligning learning with allocation and execution objectives. We present AllocFlow, an end-to-end flow-matching framework that directly generates joint portfolio allocations from raw multi-asset market histories. To capture dependencies among portfolio positions, AllocFlow employs a cross-asset flow Transformer conditioned on temporal market representations to generate continuous, signed position weights across all instruments…</p>\n<p><a href=\"https://arxiv.org/abs/2611.19937\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.19937\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.19937\">讨论与热度</a> · <a href=\"https://github.com/allocflow/AllocFlow\">代码</a></p><hr>\n<h2>9. ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization</h2>\n<p><strong>强化学习</strong> · 发表 2026-11-16 · 综合分 4.61</p>\n<p>Zotero 摘要相关性：0.397（相似度分数，不是概率）。</p>\n<p>HF 点赞 4 · 讨论 1 · 仓库累计 Star 6（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +2 · 讨论 +0 · Star +4。</p>\n<p><strong>规则标签：</strong>强化学习 · 大模型后训练 · 推理</p>\n<p><strong>中文概述：</strong>为了解决视觉智能体在处理超高分辨率图像时往往基于常识而非读取证据进行回答的问题，作者提出了交叉输入相对策略优化（CrossRPO）方法。该方法通过在对比集上训练智能体，仅奖励能够准确读取证据并解决全套问题的行为。作者构建了高分辨率训练集和评估集，并训练了ViRA-9B和ViRA-27B模型。实验结果显示，该方法在多个基准测试中优于现有的对比模型，展现了更强的视觉推理能力。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出交叉输入相对策略优化（CrossRPO），通过对比集训练解决基于常识猜测的问题。<br><small>摘要依据：We propose Cross-Input Relative Policy Optimization (CrossRPO), which trains agents on contrast sets.</small></li>\n<li>CrossRPO方法在ViRA-Bench评估集上实现了63.3%的准确率，优于GRPO基准。<br><small>摘要依据：CrossRPO achieves 63.3% set accuracy on ViRA-Bench at the maximum resolution, against 59.3% for GRPO.</small></li>\n<li>ViRA-27B模型在多数基准测试中表现优于Claude Haiku 5.5和GPT-6-Luna。<br><small>摘要依据：ViRA-27B outperforms Claude Haiku 5.5 and GPT-6-Luna, both at their highest thinking level, on most benchmarks.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · 推理</p>\n<p><strong>原文摘要节选：</strong>Visual agents answer questions about ultra-high-resolution photos by zooming into the relevant regions. However, existing agents often answer from common sense instead of reading the evidence. Reinforcement learning (RL) on the final answer cannot correct this, because a guess earns the same reward as reading. We propose Cross-Input Relative Policy Optimization (CrossRPO), which trains agents on contrast sets. A contrast set asks one question about several versions of an image that differ only in a small region with the evidence and have different answers, so only reading the evidence solves the whole set. CrossRPO rewards solving the whole set, and we prove that it does not reinforce a set answered from common sense. We build contrast sets for training (ViRA-Train) and evaluation…</p>\n<p><a href=\"https://arxiv.org/abs/2611.21605\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.21605\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.21605\">讨论与热度</a> · <a href=\"https://github.com/huawei-lin/ViRA\">代码</a></p><hr>\n<h2>10. A Reinforcement Learning Method to Navigate SMEFT Operator Space</h2>\n<p><strong>强化学习</strong> · 发表 2026-11-16 · 综合分 4.19</p>\n<p>Zotero 摘要相关性：0.383（相似度分数，不是概率）。</p>\n<p>HF 点赞 1 · 讨论 2 · 仓库累计 Star 2（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +1 · Star +0。</p>\n<p><strong>规则标签：</strong>强化学习</p>\n<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>\n<p><strong>原文摘要节选：</strong>In particle physics, discrepancies between experimental measurements and Standard Model (SM) predictions are commonly interpreted within new theoretical models. In this context, the Standard Model Effective Field Theory (SMEFT) provides a general framework encompassing a broad class of models. However, exploring the enormous space of possible SMEFT operators rapidly becomes a challenging combinatorial problem: many operators can contribute simultaneously to different observables, their effects are correlated, and distinct operator combinations can provide comparably good descriptions of the data. In this work, we formulate the exploration of the SMEFT operator space as a sequential decision-making problem using reinforcement learning (RL). Our RL agent employs a lightweight actor-critic…</p>\n<p><a href=\"https://arxiv.org/abs/2611.21439\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.21439\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.21439\">讨论与热度</a> · <a href=\"https://github.com/ReinforcePhysics/ReinforceSMEFT\">代码</a></p><hr>"
+}

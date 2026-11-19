@@ -5993,7 +5993,9 @@
         {
           "id": "2611.17309",
           "title": "Classical Energies Learn to Reason 1,000x Faster than Looped Models (Nov 2026)",
-          "url": "https://arxiv.org/abs/2611.17309"
+          "url": "https://arxiv.org/abs/2611.17309",
+          "abstract": "Looped models have emerged as a prominent paradigm for reasoning, with successes on simple reasoning puzzles such as Sudoku-Extreme and Maze-Unique. However, these models can be unstable, slow to train, and use many parameters and FLOPs to solve simple puzzles. Descent on an energy not only mitigates these issues but also offers advantages: built-in early stopping, compute that adapts to problem difficulty, fast training without differentiating through a solver, and interpretable weights that learn the constraints of the puzzle. Here we demonstrate this with a learned version of Hopfield & Tank's energy from the 80s, which we term CRAM, solves 99.996% of Sudoku-Extreme and 100% of Maze-Unique test puzzles after 42 ms and 132 ms of training on one GPU, at least 1,000x faster than looped models on these tasks. CRAM also matches baseline looped models at their highest accuracy on Sudoku-Extreme using at least 282x fewer inference FLOPs. Our work suggests two things. First, that energies are an extremely promising direction for training reasoning from data. Second, a caution against using trivially solvable benchmarks like Sudoku and Maze to test the scalability of looped reasoning techniques.",
+          "abstract_zh": "循环模型已成为推理领域的一种主流范式，并在Sudoku-Extreme和Maze-Unique等简单推理谜题上取得了成功。然而，这些模型可能存在不稳定性、训练缓慢以及在解决简单谜题时消耗过多参数和FLOPs的问题。基于能量下降的方法不仅缓解了这些问题，还具有以下优势：内置提前停止机制、计算量可随问题难度自适应、无需通过求解器进行微分即可实现快速训练，以及能够学习谜题约束的可解释权重。本文通过学习Hopfield & Tank在80年代提出的能量函数（我们称之为CRAM）展示了这一方法，在单GPU上经过42毫秒和132毫秒的训练后，CRAM分别解决了99.996%的Sudoku-Extreme和100%的Maze-Unique测试谜题，其训练速度在这些任务上比循环模型快至少1000倍。此外，CRAM在Sudoku-Extreme上的推理FLOPs比基准循环模型减少了至少282倍，且达到了相同的最高准确率。我们的工作表明：首先，能量函数是利用数据训练推理能力的极具前景的方向；其次，提醒研究者谨慎使用像Sudoku和Maze这样可以轻易解决的基准测试来评估循环推理技术的可扩展性。"
         }
       ]
     },
@@ -6006,7 +6008,9 @@
         {
           "id": "2611.18856",
           "title": "Self-Improvement Memory Enables Continual Recursive Self-Improvement (Nov 2026)",
-          "url": "https://arxiv.org/abs/2611.18856"
+          "url": "https://arxiv.org/abs/2611.18856",
+          "abstract": "Harness optimization is often studied with a fixed policy model and benchmark. When either changes, the optimizer must decide which parts of an evolved harness to reuse or revise, but the harness alone may not explain why earlier edits were made or how they performed. In this work, we study Continual Recursive Self-Improvement (CRSI), a setting for continuing existing harness-optimization methods across compatible benchmarks or policy models. We propose Self-Improvement Memory (SIM) for the harness optimizer, rather than the task-solving policy. SIM groups edits by recurring harness problem and records their rationale, predicted and observed outcomes, and evaluation context. New attempts extend this history as optimization continues. In our experiments across four domains, SIM achieves higher final scores than harness-only and root-cause-only continuation in cross-dataset and pairwise cross-model comparisons. Across ten independent source runs in coding, paired continuations with SIM improve final scores by an average of 2.36 points over harness-only continuation ($p=0.003$).",
+          "abstract_zh": "测试平台的优化通常在固定的策略模型和基准测试下进行研究。当两者中任意一个发生变化时，优化器必须决定重用或修改演化后的测试平台的哪些部分，但仅凭测试平台本身可能无法解释之前修改的原因及其执行效果。在这项工作中，我们研究了持续递归自我改进（CRSI），这是一种在兼容的基准测试或策略模型之间延续现有测试平台优化方法的设置。我们为测试平台优化器而非任务解决策略提出了自我改进记忆（SIM）。SIM 通过重复出现的测试平台问题对修改进行分组，并记录其基本原理、预测和观察到的结果以及评估环境。随着优化的继续，新的尝试将扩展此历史记录。在跨越四个领域的实验中，SIM 在跨数据集和成对跨模型的比较中实现了比仅保留测试平台和仅保留根本原因更高的最终得分。在编程任务的十次独立源运行中，使用 SIM 的成对延续比仅保留测试平台的延续在最终得分上平均提高了 2.36 分（p=0.003）。"
         }
       ]
     }

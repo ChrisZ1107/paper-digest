@@ -1,0 +1,18 @@
+{
+  "overview": "针对基于模型的四足机器人控制器在固定步态周期中难以灵活避障的问题，本文提出了CADENCE步态规划方法。该方法通过强化学习训练一个小型动作空间的策略，由离散选择决定落脚点及摆动时间，从而生成无固定周期或顺序的非循环步态。实验表明，CADENCE在多种复杂地形下的运动成功率优于传统的周期性步态控制基线。",
+  "highlights": [
+    {
+      "text": "CADENCE能够自主学习生成非循环步态，突破了传统步态周期和顺序的限制。",
+      "evidence": "The policy we analyzed developed an acyclic gait, with no fixed period or stepping order, yet it still paired diagonal legs."
+    },
+    {
+      "text": "在复杂地形和不同速度的模拟实验中，CADENCE的运动成功率显著高于基线方法。",
+      "evidence": "In simulated trials on a range of terrains (26% to 49% voids) and speeds (0.1 m/s and 0.2 m/s), it succeeded in 85.1% (mean of five seeds), against 67.8% for OCS2-Trot, 65.5% for OCS2-Single, and 39.6% in a static walk ablation of CADENCE."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "四足机器人",
+    "足式运动"
+  ]
+}

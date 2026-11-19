@@ -1,0 +1,19 @@
+{
+  "overview": "针对现有世界动作模型监督全帧预测导致计算效率低且难以聚焦任务相关动态的问题，作者提出了视觉残差学习方法ResWAM。该方法通过在冻结的DINOv3特征空间中仅监督帧间特征变化，促使模型聚焦于机器人与物体的运动。ResWAM利用轻量级双分支DiT结构，显著降低了训练和推理的算力需求，并在多个机器人操作基准测试中表现出高效性，实现了较好的平均成功率。",
+  "highlights": [
+    {
+      "text": "提出视觉残差学习方法，通过监督特征变化而非全帧预测，使模型能更好地聚焦于机器人和操作对象的动态变化。",
+      "evidence": "we propose visual residual learning, supervising only the feature change from the current frame to the future frame in a frozen DINOv3 space."
+    },
+    {
+      "text": "ResWAM架构显著降低了计算成本，在保持较低训练和推理算力的前提下，实现了优秀的成功率指标。",
+      "evidence": "ResWAM achieves top average success rates on LIBERO-Plus (81.1%), RoboTwin 2.0 (93.8%), and RoboDojo (9.40% success, 13.41 score) at the lowest training (2.7-4.0 TFLOPs) and inference compute (1.0-1.4 TFLOPs)"
+    }
+  ],
+  "tags": [
+    "视觉语言动作",
+    "世界模型",
+    "机器人操作",
+    "推理"
+  ]
+}

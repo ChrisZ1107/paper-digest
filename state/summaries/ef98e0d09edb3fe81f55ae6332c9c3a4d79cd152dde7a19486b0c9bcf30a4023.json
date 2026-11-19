@@ -1,0 +1,17 @@
+{
+  "overview": "本文通过对ANYmal D四足机器人的机器人世界模型（RWM）及其不确定性估计（RWM-U）进行系统审计，揭示了单步预测训练与多步策略应用之间的差异。研究发现，单步预测检查往往无法准确反映模型的实际性能，且模型预测精度与机器人行走策略的表现之间缺乏一致的映射关系，作者在文中对该评估方法的有效性进行了深入探讨。",
+  "highlights": [
+    {
+      "text": "研究指出单步预测误差不能有效评估模型的实际性能，模型权重剪枝测试显示单步评估与多步评估表现存在显著偏差。",
+      "evidence": "One-step checks therefore misjudge design choices: pruning 30% of the weights kept 90% of the model's skill one step ahead and 39% at 2 s."
+    },
+    {
+      "text": "实验证明即便模型预测精度有所提升，也不代表机器人行走策略表现更优，这表明目前的预测准确性指标难以预测机器人的实际运动效果。",
+      "evidence": "At the robot level, accuracy has not predicted walking: all 18 fine-tuned copies we tested predicted better than the released model one and eight steps ahead, yet 13 gave failing policies"
+    }
+  ],
+  "tags": [
+    "四足机器人",
+    "世界模型"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "overview": "为了解决视觉智能体在处理超高分辨率图像时往往基于常识而非读取证据进行回答的问题，作者提出了交叉输入相对策略优化（CrossRPO）方法。该方法通过在对比集上训练智能体，仅奖励能够准确读取证据并解决全套问题的行为。作者构建了高分辨率训练集和评估集，并训练了ViRA-9B和ViRA-27B模型。实验结果显示，该方法在多个基准测试中优于现有的对比模型，展现了更强的视觉推理能力。",
+  "highlights": [
+    {
+      "text": "提出交叉输入相对策略优化（CrossRPO），通过对比集训练解决基于常识猜测的问题。",
+      "evidence": "We propose Cross-Input Relative Policy Optimization (CrossRPO), which trains agents on contrast sets."
+    },
+    {
+      "text": "CrossRPO方法在ViRA-Bench评估集上实现了63.3%的准确率，优于GRPO基准。",
+      "evidence": "CrossRPO achieves 63.3% set accuracy on ViRA-Bench at the maximum resolution, against 59.3% for GRPO."
+    },
+    {
+      "text": "ViRA-27B模型在多数基准测试中表现优于Claude Haiku 5.5和GPT-6-Luna。",
+      "evidence": "ViRA-27B outperforms Claude Haiku 5.5 and GPT-6-Luna, both at their highest thinking level, on most benchmarks."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "推理"
+  ]
+}
