@@ -1,0 +1,18 @@
+{
+  "overview": "异步强化学习在提升训练吞吐量的同时，面临陈旧策略数据导致的训练不稳定问题。为解决该问题，作者提出了正则化分数中心化（RSC）方法。该方法在分数中心化的基础上增加了一个反向KL散度惩罚，用以限制学习者策略与行为策略的偏离，从而提升训练稳定性。实验表明，RSC在数学推理及多种智能体任务中均提升了样本效率和最终表现。",
+  "highlights": [
+    {
+      "text": "提出正则化分数中心化（RSC）方法，通过引入反向KL散度惩罚约束策略偏离，从而缓解离线学习中的策略不匹配问题。",
+      "evidence": "To limit this policy mismatch, we introduce Regularized Score Centering (RSC), which adds a reverse Kullback-Leibler (KL) penalty to encourage the learner's next-token distribution to stay close to the behavior policy's next-token distribution."
+    },
+    {
+      "text": "RSC显著提升了多类智能体基准测试的样本效率，并在六项任务中达到顶尖水平。",
+      "evidence": "RSC with TIS substantially improves sample efficiency across all agentic benchmarks, attaining higher training rewards with the same number of sampled responses. In final evaluations, it achieves top performance across all six agentic tasks"
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "离线强化学习",
+    "推理"
+  ]
+}

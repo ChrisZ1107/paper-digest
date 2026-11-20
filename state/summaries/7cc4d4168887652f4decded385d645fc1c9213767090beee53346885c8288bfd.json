@@ -1,0 +1,17 @@
+{
+  "overview": "针对视觉代理在视频生成中面临的交互细节差异及实时推理漂移挑战，作者提出了Invoker-Render模型。该模型结合了双向创建模型与因果四步流式模型，利用统一的结构代理、外观参考和语言作为条件接口。研究通过引入Progressive Forcing训练策略，有效桥接了离线创建与实时流式传输，实现了跨多种代理粒度及相机路径的可控视频生成。",
+  "highlights": [
+    {
+      "text": "提出Invoker-Render架构，通过共享的条件接口支持不同精细度的视觉代理输入，并利用Progressive Forcing技术优化了双向创建与四步流式推理的协同。",
+      "evidence": "We present Invoker-Render, pairing a bidirectional creation model with a causal four-step streaming model under a shared conditioning interface over structural proxies, an appearance reference, and language."
+    },
+    {
+      "text": "实验表明，该模型在不同代理系列及粒度下均表现出灵活的控制能力，并实现了长达30分钟的稳定滚动生成，同时保持了场景与主体外观的一致性。",
+      "evidence": "Experiments show versatile control across proxy families, granularities, and camera paths, consistent gains over recent streaming baselines, and stable 30-minute racing rollouts that preserve scene and subject appearance."
+    }
+  ],
+  "tags": [
+    "世界模型",
+    "推理"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "overview": "本文介绍了TAG（自主游戏测试台），一个用于研究物理耦合动力系统学习与控制的低成本机器人平台。该系统结合了迷宫滚球装置与旋转倒立摆，二者在动力学上相互干扰。作者提出利用基于模型和无模型强化学习的互补范式来分别控制这两个子系统。实验表明，尽管耦合会导致系统性能初期下降，但策略可通过在线学习快速适应并恢复性能。",
+  "highlights": [
+    {
+      "text": "提出TAG机器人平台，通过将迷宫滚球与倒立摆物理耦合，为研究复杂动力系统下的学习与控制问题提供了测试环境。",
+      "evidence": "We introduce TAG (Testbed for Autonomous Games), a compact, low-cost robotic platform for studying learning and control in physically coupled dynamical systems."
+    },
+    {
+      "text": "结合基于模型与无模型强化学习方法，成功实现了对两个相互干扰的子系统的独立控制。",
+      "evidence": "Experimental results show that both policies, trained independently, successfully control the maze board and the pendulum despite their physical coupling."
+    }
+  ],
+  "tags": [
+    "强化学习"
+  ]
+}

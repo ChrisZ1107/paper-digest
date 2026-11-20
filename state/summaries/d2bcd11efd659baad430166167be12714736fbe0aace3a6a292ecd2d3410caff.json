@@ -1,0 +1,17 @@
+{
+  "overview": "针对视觉语言动作（VLA）模型在长周期任务中表现不佳的问题，作者提出了一种名为RePlan-VLA的执行感知框架。该方法利用VLA的短周期操作能力，通过显式监控机器人动作以评估进度，并根据观察到的结果自适应修订未来规划。实验结果显示，该方法无需对基础VLA策略进行微调，即可在RoboCasa365和CALVIN基准测试中显著提升任务成功率，并已在真实环境中完成部署验证。",
+  "highlights": [
+    {
+      "text": "RePlan-VLA通过显式监控动作进度并根据执行反馈动态修订规划，在无需微调底层VLA策略的情况下增强了长周期任务的执行能力。",
+      "evidence": "RePlan-VLA explicitly monitors the robot's motion for progress evaluation, and adaptively revises the future plan based on observed outcomes. We preserve the underlying VLA policy entirely, requiring no additional fine-tuning."
+    },
+    {
+      "text": "在RoboCasa365和CALVIN基准测试中，该方法相比现有最优基准在任务成功率上分别提升了21.9%和10.4%。",
+      "evidence": "Experiments on RoboCasa365 and CALVIN benchmarks show an improvement of 21.9% and 10.4% in success rate over the next strongest baseline."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "视觉语言动作"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "overview": "Xing 4是一系列基于TeleChat架构扩展的大语言模型，旨在优化国产芯片（昇腾）上的模型架构与训练基础设施。研究探讨了模型结构设计及算力开销的平衡，并构建了基于MindSpore的分布式训练基础设施。此外，通过引入TeleGym代理执行平台，实现了从执行、评估到策略优化的端到端训练支持，为高性能推理与智能体应用提供了系统性解决方案。",
+  "highlights": [
+    {
+      "text": "提出基于MindSpore的高效分布式训练基础设施，支持285B参数模型在8,192张昇腾910C卡上的训练。",
+      "evidence": "Together, these mechanisms support the pretraining of a 285B-parameter model on 8,192 Ascend 910C cards, providing a concrete setting for the architectural and systems studies."
+    },
+    {
+      "text": "开发了TeleGym统一代理执行平台，通过异步执行与任务调度策略优化了智能体后训练流程。",
+      "evidence": "For post-training, we introduce TeleGym, a unified agent execution platform that connects execution, evaluation, and trajectory construction to policy optimization."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "推理"
+  ]
+}

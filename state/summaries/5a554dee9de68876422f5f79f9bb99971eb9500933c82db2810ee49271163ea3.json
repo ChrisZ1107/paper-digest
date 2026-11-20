@@ -1,0 +1,18 @@
+{
+  "overview": "为解决机器人操作学习中对动作标注数据依赖的问题，本文提出了DiWALI框架。该框架利用世界模型从人类和机器人的交互数据中学习，通过逆动力学模型推断隐空间动作，实现了无需动作标注的训练。实验表明，该方法在CALVIN基准和实体机器人上表现优异，证明了利用人类示范数据可有效促进操作技能获取并提升策略性能，降低了对标注数据的需求。",
+  "highlights": [
+    {
+      "text": "DiWALI通过逆动力学模型推断隐空间动作，使得世界模型无需依赖动作标签即可进行训练。",
+      "evidence": "DiWALI infers latent actions from consecutive frames using an inverse dynamics model, enabling world model training without action labels, and grounds them in robot commands through a decoder trained separately on robot play."
+    },
+    {
+      "text": "实验证明利用人类示范数据训练的策略在CALVIN基准上表现显著优于传统的机器人示范基准。",
+      "evidence": "On the CALVIN benchmark, DiWALI policies trained solely from human demonstrations substantially outperform baselines trained with robot demonstrations."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "Sim-to-Real",
+    "世界模型"
+  ]
+}

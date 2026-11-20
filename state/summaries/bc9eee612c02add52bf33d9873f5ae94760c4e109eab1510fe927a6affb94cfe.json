@@ -1,0 +1,24 @@
+{
+  "overview": "针对多人形机器人协作中的全身交互、长程规划及同步挑战，本文提出了Heave-Ho框架。该框架利用去中心化多智能体后训练方法处理物理耦合交互，并结合视觉语言规划器与基于语音的协作机制，实现无网络通信的同步执行。作者声称该系统支持从双机扩展至十机团队，并具备异构机器人泛化能力，在HH-Bench基准测试及真实环境实验中表现优于基准方法。",
+  "highlights": [
+    {
+      "text": "提出一种去中心化的多智能体后训练框架，使人形机器人能仅依靠局部观测实现物理耦合下的协调控制。",
+      "evidence": "At the low level, we develop a multi-agent post-training framework that adapts a humanoid foundation tracking model to physically coupled interactions between humanoids, enabling coordinated decentralized control from local observations alone."
+    },
+    {
+      "text": "设计了基于视觉语言规划器和语音的协调机制，无需网络通信即可实现多机器人的长程任务同步。",
+      "evidence": "At the high level, we train a vision-language planner and design a speech-based leader-follower coordination mechanism to synchronize decentralized execution without network communication."
+    },
+    {
+      "text": "通过HH-Bench基准测试证实，该系统支持多达十个机器人的协作，并能泛化至异构团队而无需重新训练。",
+      "evidence": "Trained with two identical humanoids, our system scales to teams of up to ten robots and generalizes to heterogeneous teams without retraining."
+    }
+  ],
+  "tags": [
+    "人形机器人",
+    "多智能体",
+    "机器人操作",
+    "大模型后训练",
+    "Sim-to-Real"
+  ]
+}

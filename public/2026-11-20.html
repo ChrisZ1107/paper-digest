@@ -1,0 +1,144 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>2026-11-20 热门论文 Top 10｜机器人·强化学习·AI</title><body><h1>2026-11-20 热门论文 Top 10</h1>
+<p>机器人 · 强化学习 · 通用 AI</p>
+<p>生成时间：2026-11-20 09:02 CST。从 699 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>
+<p>候选来源：<a href="https://huggingface.co/papers">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>
+<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>
+<h2>1. Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent</h2>
+<p><strong>机器人 / 强化学习</strong> · 发表 2026-11-13 · 综合分 5.84</p>
+<p>Zotero 摘要相关性：0.491（相似度分数，不是概率）。</p>
+<p>HF 点赞 136 · 讨论 4 · 本次 HF 热榜第 4 位 · 仓库累计 Star 845（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +6 · 讨论 +0 · Star +144。</p>
+<p><strong>规则标签：</strong>强化学习 · 视觉语言动作 · 推理</p>
+<p><strong>中文概述：</strong>本文介绍了一种名为Gamer的通用智能体框架，旨在处理复杂交互环境下的长程任务。该框架结合了感知、记忆管理和多步推理的端到端架构，支持在2D图形界面和3D模拟世界中交互。作者通过大规模键盘和鼠标交互数据进行预训练，并利用稀疏思维指令微调和多轮强化学习方法，提升了模型的长程决策能力与运行效率。实验结果表明，Gamer在多个3D开放世界游戏和2D基准测试中展现出良好的泛化能力和操作水平。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>Gamer通过在大规模键盘与鼠标交互数据上进行预训练，有效学习了跨物理与虚拟域的环境动态。<br><small>摘要依据：We first continue pre-training on a dataset constructed from tens of thousands of hours of device-level keyboard and mouse interaction. These trajectories span simulated games and embodied environments, allowing the model to learn environmental dynamics across both physical and virtual domains.</small></li>
+<li>采用稀疏思维指令微调和多轮强化学习方法，在减少计算冗余的同时增强了长程决策的稳定性。<br><small>摘要依据：Sparse-thinking instruction tuning then substantially reduces redundant computation while preserving the reasoning needed for complex decisions. We train the policy for long-horizon interaction with a stable multi-turn reinforcement learning method that addresses finite context windows, accumulated rollout errors, and sparse rewards.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>视觉语言动作 · 推理</p>
+<p><strong>原文摘要节选：</strong>We introduce Gamer, a generalist agent framework built for long-horizon tasks in complex interactive environments. Its end-to-end architecture combines perception, memory management, and multi-step reasoning. A shared training and deployment pipeline supports interaction with both conventional 2D graphical interfaces and complex 3D simulated worlds. We first continue pre-training on a dataset constructed from tens of thousands of hours of device-level keyboard and mouse interaction. These trajectories span simulated games and embodied environments, allowing the model to learn environmental dynamics across both physical and virtual domains. Sparse-thinking instruction tuning then substantially reduces redundant computation while preserving the reasoning needed for complex decisions. We…</p>
+<p><a href="https://arxiv.org/abs/2611.18397">论文原文</a> · <a href="https://arxiv.org/pdf/2611.18397">PDF</a> · <a href="https://huggingface.co/papers/2611.18397">讨论与热度</a> · <a href="https://github.com/RainBowLuoCS/Gamer">代码</a></p><hr>
+<h2>2. ForceHarness: Turning Force into Action and Physics for Frozen Frontier Models</h2>
+<p><strong>机器人</strong> · 发表 2026-11-16 · 综合分 5.09</p>
+<p>Zotero 摘要相关性：0.394（相似度分数，不是概率）。</p>
+<p>HF 点赞 41 · 讨论 3 · 本次 HF 热榜第 32 位 · 仓库累计 Star 46（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +3 · 讨论 +1 · Star +14。</p>
+<p><strong>中文概述：</strong>针对冻结多模态大模型难以获取触觉反馈的问题，本文提出了ForceHarness框架。该系统通过引入自终止力原语以应对高频接触控制，并利用物理转换层将力数据转化为模型可理解的带不确定性的物理量，使冻结模型无需微调即可完成接触类操作任务。实验表明，该方法显著提升了模型在仿真和真实机器人环境下的零样本操作成功率。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>ForceHarness使冻结模型能够在无需示范或微调的情况下利用力反馈信息。<br><small>摘要依据：Therefore, we present ForceHarness, a harness that lets frozen models use force without demonstrations or finetuning.</small></li>
+<li>该方法有效提升了多模态模型在真实机器人上的任务成功率。<br><small>摘要依据：On a real arm without a wrist force sensor, ForceHarness raises the zero-shot success rate of GPT-6 Astra from 3.3% to 90.0%.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · Sim-to-Real</p>
+<p><strong>原文摘要节选：</strong>Frontier multimodal models can now control robots zero-shot from images, yet many manipulation tasks depend on contact forces that images cannot show. Bringing force to an API-only frozen model raises two challenges. First, contact evolves much faster than an API model can decide, so the system must close the loop on force beneath the model. Second, a frozen model cannot interpret raw force streams, so force must be returned in a form the model can reason about. Therefore, we present ForceHarness, a harness that lets frozen models use force without demonstrations or finetuning. After calibrating hand force from a wrist sensor or joint torques alone, ForceHarness addresses the first challenge with self-terminating force primitives that regulate force on their own and return at a contact…</p>
+<p><a href="https://arxiv.org/abs/2611.21099">论文原文</a> · <a href="https://arxiv.org/pdf/2611.21099">PDF</a> · <a href="https://huggingface.co/papers/2611.21099">讨论与热度</a> · <a href="https://github.com/showlab/ForceHarness">代码</a></p><hr>
+<h2>3. Regularized Score Centering</h2>
+<p><strong>强化学习</strong> · 发表 2026-11-16 · 综合分 5.08</p>
+<p>Zotero 摘要相关性：0.404（相似度分数，不是概率）。</p>
+<p>HF 点赞 14 · 讨论 2</p>
+<p>较上次观测（1.0 天前）：点赞 +11 · 讨论 +1。</p>
+<p><strong>规则标签：</strong>强化学习 · 推理</p>
+<p><strong>中文概述：</strong>异步强化学习在提升训练吞吐量的同时，面临陈旧策略数据导致的训练不稳定问题。为解决该问题，作者提出了正则化分数中心化（RSC）方法。该方法在分数中心化的基础上增加了一个反向KL散度惩罚，用以限制学习者策略与行为策略的偏离，从而提升训练稳定性。实验表明，RSC在数学推理及多种智能体任务中均提升了样本效率和最终表现。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出正则化分数中心化（RSC）方法，通过引入反向KL散度惩罚约束策略偏离，从而缓解离线学习中的策略不匹配问题。<br><small>摘要依据：To limit this policy mismatch, we introduce Regularized Score Centering (RSC), which adds a reverse Kullback-Leibler (KL) penalty to encourage the learner&#x27;s next-token distribution to stay close to the behavior policy&#x27;s next-token distribution.</small></li>
+<li>RSC显著提升了多类智能体基准测试的样本效率，并在六项任务中达到顶尖水平。<br><small>摘要依据：RSC with TIS substantially improves sample efficiency across all agentic benchmarks, attaining higher training rewards with the same number of sampled responses. In final evaluations, it achieves top performance across all six agentic tasks</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习 · 离线强化学习 · 推理</p>
+<p><strong>原文摘要节选：</strong>Asynchronous reinforcement learning increases training throughput, but data from stale policies and numerical mismatch between training and inference can destabilize learning. To stabilize off-policy learning, score centering (SC) removes the effect of reward baselines on the expected update. Our gradient diagnostics show less extreme gradients with SC than with importance sampling (IS), but SC can still fail when the learner moves far from the behavior policy that generated the data. To limit this policy mismatch, we introduce Regularized Score Centering (RSC), which adds a reverse Kullback-Leibler (KL) penalty to encourage the learner&#x27;s next-token distribution to stay close to the behavior policy&#x27;s next-token distribution. RSC works with or without truncated importance sampling (TIS),…</p>
+<p><a href="https://arxiv.org/abs/2611.21791">论文原文</a> · <a href="https://arxiv.org/pdf/2611.21791">PDF</a> · <a href="https://huggingface.co/papers/2611.21791">讨论与热度</a></p><hr>
+<h2>4. Heave-Ho: Decentralized Long-Horizon Multi-Humanoid Collaboration</h2>
+<p><strong>机器人</strong> · 发表 2026-11-17 · 综合分 5.01</p>
+<p>Zotero 摘要相关性：0.435（相似度分数，不是概率）。</p>
+<p>HF 点赞 21 · 讨论 2 · 本次 HF 热榜第 72 位 · 仓库累计 Star 24（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +0 · 讨论 +1 · Star +6。</p>
+<p><strong>规则标签：</strong>人形机器人 · 多智能体 · 大模型后训练</p>
+<p><strong>中文概述：</strong>针对多人形机器人协作中的全身交互、长程规划及同步挑战，本文提出了Heave-Ho框架。该框架利用去中心化多智能体后训练方法处理物理耦合交互，并结合视觉语言规划器与基于语音的协作机制，实现无网络通信的同步执行。作者声称该系统支持从双机扩展至十机团队，并具备异构机器人泛化能力，在HH-Bench基准测试及真实环境实验中表现优于基准方法。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出一种去中心化的多智能体后训练框架，使人形机器人能仅依靠局部观测实现物理耦合下的协调控制。<br><small>摘要依据：At the low level, we develop a multi-agent post-training framework that adapts a humanoid foundation tracking model to physically coupled interactions between humanoids, enabling coordinated decentralized control from local observations alone.</small></li>
+<li>设计了基于视觉语言规划器和语音的协调机制，无需网络通信即可实现多机器人的长程任务同步。<br><small>摘要依据：At the high level, we train a vision-language planner and design a speech-based leader-follower coordination mechanism to synchronize decentralized execution without network communication.</small></li>
+<li>通过HH-Bench基准测试证实，该系统支持多达十个机器人的协作，并能泛化至异构团队而无需重新训练。<br><small>摘要依据：Trained with two identical humanoids, our system scales to teams of up to ten robots and generalizes to heterogeneous teams without retraining.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>人形机器人 · 多智能体 · 机器人操作 · 大模型后训练 · Sim-to-Real</p>
+<p><strong>原文摘要节选：</strong>Collaboration promises to extend humanoid capabilities beyond what individual robots can achieve. However, realizing this potential requires coordinated whole-body interactions, coherent long-horizon planning, and precise synchronization across robots. We introduce Heave-Ho, a decentralized framework for long-horizon collaborative multi-humanoid loco-manipulation. At the low level, we develop a multi-agent post-training framework that adapts a humanoid foundation tracking model to physically coupled interactions between humanoids, enabling coordinated decentralized control from local observations alone. At the high level, we train a vision-language planner and design a speech-based leader-follower coordination mechanism to synchronize decentralized execution without network communication.…</p>
+<p><a href="https://arxiv.org/abs/2611.22275">论文原文</a> · <a href="https://arxiv.org/pdf/2611.22275">PDF</a> · <a href="https://huggingface.co/papers/2611.22275">讨论与热度</a> · <a href="https://github.com/heaveho-humanoid/Heave-Ho">代码</a></p><hr>
+<h2>5. HINT-WAM: Hindsight-Informed Training for World Action Models</h2>
+<p><strong>机器人 / 强化学习</strong> · 发表 2026-11-18 · 综合分 5.00</p>
+<p>Zotero 摘要相关性：0.486（相似度分数，不是概率）。</p>
+<p>HF 点赞 22 · 讨论 2 · 仓库累计 Star 4（仓库可能包含多篇论文）</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>强化学习 · 大模型后训练</p>
+<p><strong>中文概述：</strong>本文针对世界动作模型（WAMs）在机器人操作任务中执行可靠性不足的问题，提出了一种名为HINT-WAM的在轨自我蒸馏框架。该方法利用演示序列的未来视频作为特权信息，通过后见之明（hindsight）构建条件动作分布，将教师模型蒸馏至学生模型，从而在无需环境奖励或模拟器交互的情况下，通过匹配动作分布实现对流匹配动作专家的监督。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>HINT-WAM是一种在轨自我蒸馏框架，通过使用后见之明（演示的未来视频）作为特权信息来监督自身的动作采样轨迹。<br><small>摘要依据：We introduce HINT-WAM, the first on-policy self-distillation framework that supervises the action expert on its own sampling trajectories using hindsight, the future video of the demonstration, as privileged information available to the WAM itself.</small></li>
+<li>该方法通过能量分数匹配教师的动作分布，而非回归速度场，从而有效地将监督信息传递给流匹配动作专家。<br><small>摘要依据：To transfer this supervision to a flow-matching action expert, HINT-WAM distills the teacher into the student with an energy score, a distribution-level objective that matches the teacher&#x27;s action distribution from the student&#x27;s own samples rather than regressing its velocity field.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 世界模型 · 模仿学习</p>
+<p><strong>原文摘要节选：</strong>World action models (WAMs) have shown promising generalization and data efficiency in robot manipulation by coupling action generation with predictions of future visual dynamics. Translating these capabilities into reliable task execution, however, remains a challenge for existing post-training methods. Offline supervised fine-tuning provides dense supervision on expert trajectories, but its flow-matching action expert is trained only on noised demonstration actions and never on the intermediate states produced by its own sampler; task-specific adaptation can also compromise pretrained capabilities. On-policy reinforcement learning trains on the policy&#x27;s own behavior, yet sparse task rewards make exploration and credit assignment difficult, while dense reward shaping still provides scalar…</p>
+<p><a href="https://arxiv.org/abs/2611.24789">论文原文</a> · <a href="https://arxiv.org/pdf/2611.24789">PDF</a> · <a href="https://huggingface.co/papers/2611.24789">讨论与热度</a> · <a href="https://github.com/tuandattt/hintwam_code">代码</a></p><hr>
+<h2>6. TeleChat to Xing4: Advancing Frontier Agentic Models on Domestic Chips and Frameworks</h2>
+<p><strong>通用 AI</strong> · 发表 2026-11-17 · 综合分 4.83</p>
+<p>Zotero 摘要相关性：0.336（相似度分数，不是概率）。</p>
+<p>HF 点赞 159 · 讨论 3</p>
+<p>较上次观测（1.0 天前）：点赞 +10 · 讨论 +1。</p>
+<p><strong>规则标签：</strong>大模型后训练 · 推理</p>
+<p><strong>中文概述：</strong>Xing 4是一系列基于TeleChat架构扩展的大语言模型，旨在优化国产芯片（昇腾）上的模型架构与训练基础设施。研究探讨了模型结构设计及算力开销的平衡，并构建了基于MindSpore的分布式训练基础设施。此外，通过引入TeleGym代理执行平台，实现了从执行、评估到策略优化的端到端训练支持，为高性能推理与智能体应用提供了系统性解决方案。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出基于MindSpore的高效分布式训练基础设施，支持285B参数模型在8,192张昇腾910C卡上的训练。<br><small>摘要依据：Together, these mechanisms support the pretraining of a 285B-parameter model on 8,192 Ascend 910C cards, providing a concrete setting for the architectural and systems studies.</small></li>
+<li>开发了TeleGym统一代理执行平台，通过异步执行与任务调度策略优化了智能体后训练流程。<br><small>摘要依据：For post-training, we introduce TeleGym, a unified agent execution platform that connects execution, evaluation, and trajectory construction to policy optimization.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>
+<p><strong>原文摘要节选：</strong>We present Xing 4, a series of large language models that extends the TeleChat lineage through coordinated advances in model architecture and training infrastructure on Ascend. This report describes the design principles and systems engineering behind the series, spanning architecture selection, large-scale pretraining, and reasoning and agentic post-training. We study how sparse activation, attention design, model depth and width, and speculative decoding balance model capacity with computation, memory access, and execution overhead. Our pretraining infrastructure builds on MindSpore HyperParallel, combining topology-aware hybrid sharding, efficient distributed optimizer execution, and coordinated management of long-sequence workloads and activation memory. CPU affinity and core…</p>
+<p><a href="https://arxiv.org/abs/2611.22115">论文原文</a> · <a href="https://arxiv.org/pdf/2611.22115">PDF</a> · <a href="https://huggingface.co/papers/2611.22115">讨论与热度</a></p><hr>
+<h2>7. World In-Context Learning for Agentic Robot Manipulation</h2>
+<p><strong>机器人</strong> · 发表 2026-11-09 · 综合分 4.82</p>
+<p>Zotero 摘要相关性：0.458（相似度分数，不是概率）。</p>
+<p>HF 点赞 55 · 讨论 4 · 本次 HF 热榜第 68 位 · 仓库累计 Star 306（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +0 · 讨论 +0 · Star +1。</p>
+<p><strong>中文概述：</strong>针对现有机器人操作策略训练难以跨场景泛化的问题，作者提出一种基于“世界上下文学习”（WICL）的范式。该方法利用冻结模型在模拟环境中对任务进行排演，将任务步骤与对象角色的语义反馈直接记录在上下文而非网络权重中。通过构建RoboScript基础设施，该方法在RoboTwin 2.0的50项任务中实现了83.4%的平均成功率，并在无梯度更新的情况下优于传统的训练策略，验证了在上下文学习中获取操作技能的有效性。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出WICL范式，通过在模拟器中排演任务并将反馈写入上下文而非权重，使机器人能从单次演示中高效学习任务。<br><small>摘要依据：Based on this insight, we propose World In-Context Learning (WICL), a paradigm in which a frozen model starts from a demonstration, rehearses the task in a world such as a simulator, and writes the feedback into its context rather than its weights.</small></li>
+<li>RoboScript在RoboTwin 2.0的50项任务中表现优异，平均成功率达到83.4%，且在零梯度更新条件下显著超过了传统训练的动作策略。<br><small>摘要依据：On all 50 tasks of RoboTwin 2.0, RoboScript reaches 83.4% mean success across clean and randomized settings with one demonstration per task and no gradient updates, exceeding the strongest trained action policy by over 20 points.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · Sim-to-Real · 推理</p>
+<p><strong>原文摘要节选：</strong>Trained action policies write manipulation skill into network weights, tying what is learned to the distribution it is learned from. In-context learning (ICL) avoids this coupling but has not matched trained policies, because a demonstration recorded in another scene carries no feedback from the world the robot currently faces. We observe that what an agent learns in context is semantic, recording task steps and object roles rather than visual appearance, so experience gathered in one world transfers to another. Based on this insight, we propose World In-Context Learning (WICL), a paradigm in which a frozen model starts from a demonstration, rehearses the task in a world such as a simulator, and writes the feedback into its context rather than its weights. We build RoboScript, a modular…</p>
+<p><a href="https://arxiv.org/abs/2611.12885">论文原文</a> · <a href="https://arxiv.org/pdf/2611.12885">PDF</a> · <a href="https://huggingface.co/papers/2611.12885">讨论与热度</a> · <a href="https://github.com/ArcheOne-AI/RoboScript">代码</a></p><hr>
+<h2>8. TCP4D: A Unified Tool-Center-Point Tracking and Generation Model for Robot Manipulation</h2>
+<p><strong>机器人</strong> · 发表 2026-11-17 · 综合分 4.78</p>
+<p>Zotero 摘要相关性：0.376（相似度分数，不是概率）。</p>
+<p>HF 点赞 24 · 讨论 4 · 本次 HF 热榜第 61 位 · 仓库累计 Star 20（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +2 · Star +0。</p>
+<p><strong>中文概述：</strong>针对从RGB视频中恢复机器人动作和末端状态的挑战，本文提出了TCP4D模型。该模型通过共享的4D场景表示，能够实现机器人工具中心点（TCP）运动的追踪与未来轨迹的生成。实验表明，该模型在轨迹误差方面表现优异，并通过跨具身增强流水线，实现了在不同机器人平台上的有效泛化与任务执行。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出了一种基于共享4D场景表示的统一模型TCP4D，能够同时实现对单目视频中TCP运动的追踪及未来轨迹的生成。<br><small>摘要依据：Using the embodiment-agnostic tool-center-point (TCP) pose as the action space, we present TCP4D, a unified model in which a shared 4D scene representation both tracks observed TCP motion and generates future TCP trajectories.</small></li>
+<li>设计了一种跨具身增强流水线，无需源机器人状态即可将已有视频转化为不同具身的机器人演示数据。<br><small>摘要依据：Our new cross-embodiment augmentation pipeline converts existing RGB videos into demonstrations for alternative embodiments by retargeting the recovered motion and synthesizing the corresponding observations, without recorded source-robot states.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · Sim-to-Real</p>
+<p><strong>原文摘要节选：</strong>Robot manipulation videos provide a rich visual experience, yet recovering robot action and gripper-state annotations from RGB observations still remains challenging. Using the embodiment-agnostic tool-center-point (TCP) pose as the action space, we present TCP4D, a unified model in which a shared 4D scene representation both tracks observed TCP motion and generates future TCP trajectories. Given a monocular video and initial 2D TCP queries, the tracker directly recovers metric TCP poses in SE(3) and gripper states alongside scene geometry and camera parameters. The generator samples local features from the same 4D representation along the recovered TCP tracks, then combines them with robot observations and language instructions to predict future TCP states. Our new cross-embodiment…</p>
+<p><a href="https://arxiv.org/abs/2611.23143">论文原文</a> · <a href="https://arxiv.org/pdf/2611.23143">PDF</a> · <a href="https://huggingface.co/papers/2611.23143">讨论与热度</a> · <a href="https://github.com/Livioni/TCP4D">代码</a></p><hr>
+<h2>9. Code World Model 2.0: Towards Infinite Controllable Video Generation</h2>
+<p><strong>通用 AI</strong> · 发表 2026-11-17 · 综合分 4.66</p>
+<p>Zotero 摘要相关性：0.318（相似度分数，不是概率）。</p>
+<p>HF 点赞 15 · 讨论 1 · 本次 HF 热榜第 20 位 · 仓库累计 Star 132（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +15 · 讨论 +1。</p>
+<p><strong>规则标签：</strong>世界模型</p>
+<p><strong>中文概述：</strong>针对视觉代理在视频生成中面临的交互细节差异及实时推理漂移挑战，作者提出了Invoker-Render模型。该模型结合了双向创建模型与因果四步流式模型，利用统一的结构代理、外观参考和语言作为条件接口。研究通过引入Progressive Forcing训练策略，有效桥接了离线创建与实时流式传输，实现了跨多种代理粒度及相机路径的可控视频生成。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出Invoker-Render架构，通过共享的条件接口支持不同精细度的视觉代理输入，并利用Progressive Forcing技术优化了双向创建与四步流式推理的协同。<br><small>摘要依据：We present Invoker-Render, pairing a bidirectional creation model with a causal four-step streaming model under a shared conditioning interface over structural proxies, an appearance reference, and language.</small></li>
+<li>实验表明，该模型在不同代理系列及粒度下均表现出灵活的控制能力，并实现了长达30分钟的稳定滚动生成，同时保持了场景与主体外观的一致性。<br><small>摘要依据：Experiments show versatile control across proxy families, granularities, and camera paths, consistent gains over recent streaming baselines, and stable 30-minute racing rollouts that preserve scene and subject appearance.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>世界模型 · 推理</p>
+<p><strong>原文摘要节选：</strong>Visual proxies decouple explicit world-state simulation from photorealistic video synthesis, offering a controllable interface for both offline clip creation and real-time interactive streaming. Yet a practical renderer must address two challenges. Upstream proxies vary from coarse layouts to fine articulated geometry depending on the interaction, and streaming inference must operate in a few causal steps without accumulating drift across self-generated history. We present Invoker-Render, pairing a bidirectional creation model with a causal four-step streaming model under a shared conditioning interface over structural proxies, an appearance reference, and language. Trained on an aligned approximately 200-hour multi-granularity corpus, Invoker-Render honors fine geometric constraints when…</p>
+<p><a href="https://arxiv.org/abs/2611.22925">论文原文</a> · <a href="https://arxiv.org/pdf/2611.22925">PDF</a> · <a href="https://huggingface.co/papers/2611.22925">讨论与热度</a> · <a href="https://github.com/inclusionAI/CodeWorldModel">代码</a></p><hr>
+<h2>10. AllocFlow: End-to-End Portfolio Trading Action Generation from Raw Market Data</h2>
+<p><strong>强化学习</strong> · 发表 2026-11-15 · 综合分 4.44</p>
+<p>Zotero 摘要相关性：0.344（相似度分数，不是概率）。</p>
+<p>HF 点赞 72 · 讨论 4 · 本次 HF 热榜第 54 位 · 仓库累计 Star 32（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +0 · 讨论 +0 · Star +6。</p>
+<p><strong>规则标签：</strong>强化学习</p>
+<p><strong>中文概述：</strong>针对传统组合管理中信号预测与资产配置脱节的问题，本文提出了AllocFlow框架，实现从原始市场数据到投资组合分配的端到端生成。该框架利用跨资产流Transformer捕捉多资产依赖，并采用“监督模仿学习+组相对强化学习”的两阶段训练策略。作者声称该方法在加密货币永续合约测试中显著提升了年化净收益与Calmar比率，并展现出良好的泛化性能。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出AllocFlow端到端框架，通过流匹配技术直接从原始市场数据生成多资产组合分配。<br><small>摘要依据：We present AllocFlow, an end-to-end flow-matching framework that directly generates joint portfolio allocations from raw multi-asset market histories.</small></li>
+<li>采用两阶段训练方案，通过模仿学习构建候选分布，并利用组相对强化学习进一步优化决策。<br><small>摘要依据：To address the sample inefficiency and instability of learning continuous allocation policies from scratch, we establish a two-stage training scheme: strategy-supervised imitation shapes a structured distribution of candidate portfolios, followed by group-relative reinforcement learning (RL) that refines joint decisions using portfolio-level financial rewards and a frozen policy reference.</small></li>
+<li>实验表明，强化学习优化显著提升了模仿学习策略的金融指标，且在未见数据上保持了优异表现。<br><small>摘要依据：On hourly cryptocurrency perpetual futures, RL refinement raises the annualized net return of the imitation policy from 27.79% to 51.38% and its Calmar ratio from 0.955 to 4.043, surpassing the teacher strategy on every metric, and AllocFlow reaches a Calmar ratio of 4.90 on six further months of unseen 2026 data without retraining.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>强化学习 · 模仿学习</p>
+<p><strong>原文摘要节选：</strong>Real-world portfolio management requires converting noisy market observations into coordinated, simultaneous allocations across multiple assets under shared capital constraints. Advances in forecasting models and alpha discovery help identify opportunities. However, traditional pipelines often decouple signal forecasting from portfolio construction, potentially misaligning learning with allocation and execution objectives. We present AllocFlow, an end-to-end flow-matching framework that directly generates joint portfolio allocations from raw multi-asset market histories. To capture dependencies among portfolio positions, AllocFlow employs a cross-asset flow Transformer conditioned on temporal market representations to generate continuous, signed position weights across all instruments…</p>
+<p><a href="https://arxiv.org/abs/2611.19937">论文原文</a> · <a href="https://arxiv.org/pdf/2611.19937">PDF</a> · <a href="https://huggingface.co/papers/2611.19937">讨论与热度</a> · <a href="https://github.com/allocflow/AllocFlow">代码</a></p><hr></body></html>

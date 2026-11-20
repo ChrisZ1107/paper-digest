@@ -1,0 +1,17 @@
+{
+  "overview": "ReLoco 是一种针对人形机器人的统一控制框架，旨在实现运动控制与跌倒恢复功能的整合。该方法利用行为条件下的对抗性运动先验，训练单一本体感知策略。作者声称，该策略能够使机器人执行从任意跌倒姿态站起、追踪运动指令及在跌倒后恢复行走，且无需切换控制器或进行现场微调，在仿真与现实部署中均表现出较高成功率。",
+  "highlights": [
+    {
+      "text": "ReLoco 框架通过行为条件下的对抗性运动先验，实现了单一策略内行走、从任意姿势站起及跌倒后恢复指令追踪的能力。",
+      "evidence": "We present ReLoco, a framework that uses behavior-conditioned adversarial motion priors to learn locomotion, get-up from arbitrary fallen postures, and command resumption within one proprioceptive policy."
+    },
+    {
+      "text": "在 Tiangong 3.0 人形机器人上的实机部署验证了该方法在无需控制器切换或现场微调的情况下，即可完成复杂的运动与恢复任务。",
+      "evidence": "Deployment on the 64.5-kg Tiangong~3.0 humanoid demonstrates walking, running, get-up, and locomotion resumption after falls using one proprioceptive actor, without controller switching or on-robot policy fine-tuning."
+    }
+  ],
+  "tags": [
+    "人形机器人",
+    "足式运动"
+  ]
+}

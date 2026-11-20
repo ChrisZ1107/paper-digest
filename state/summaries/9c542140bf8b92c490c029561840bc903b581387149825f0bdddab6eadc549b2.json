@@ -1,0 +1,18 @@
+{
+  "overview": "本文针对世界动作模型（WAMs）在机器人操作任务中执行可靠性不足的问题，提出了一种名为HINT-WAM的在轨自我蒸馏框架。该方法利用演示序列的未来视频作为特权信息，通过后见之明（hindsight）构建条件动作分布，将教师模型蒸馏至学生模型，从而在无需环境奖励或模拟器交互的情况下，通过匹配动作分布实现对流匹配动作专家的监督。",
+  "highlights": [
+    {
+      "text": "HINT-WAM是一种在轨自我蒸馏框架，通过使用后见之明（演示的未来视频）作为特权信息来监督自身的动作采样轨迹。",
+      "evidence": "We introduce HINT-WAM, the first on-policy self-distillation framework that supervises the action expert on its own sampling trajectories using hindsight, the future video of the demonstration, as privileged information available to the WAM itself."
+    },
+    {
+      "text": "该方法通过能量分数匹配教师的动作分布，而非回归速度场，从而有效地将监督信息传递给流匹配动作专家。",
+      "evidence": "To transfer this supervision to a flow-matching action expert, HINT-WAM distills the teacher into the student with an energy score, a distribution-level objective that matches the teacher's action distribution from the student's own samples rather than regressing its velocity field."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "世界模型",
+    "模仿学习"
+  ]
+}

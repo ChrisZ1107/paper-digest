@@ -1,0 +1,17 @@
+{
+  "overview": "针对从RGB视频中恢复机器人动作和末端状态的挑战，本文提出了TCP4D模型。该模型通过共享的4D场景表示，能够实现机器人工具中心点（TCP）运动的追踪与未来轨迹的生成。实验表明，该模型在轨迹误差方面表现优异，并通过跨具身增强流水线，实现了在不同机器人平台上的有效泛化与任务执行。",
+  "highlights": [
+    {
+      "text": "提出了一种基于共享4D场景表示的统一模型TCP4D，能够同时实现对单目视频中TCP运动的追踪及未来轨迹的生成。",
+      "evidence": "Using the embodiment-agnostic tool-center-point (TCP) pose as the action space, we present TCP4D, a unified model in which a shared 4D scene representation both tracks observed TCP motion and generates future TCP trajectories."
+    },
+    {
+      "text": "设计了一种跨具身增强流水线，无需源机器人状态即可将已有视频转化为不同具身的机器人演示数据。",
+      "evidence": "Our new cross-embodiment augmentation pipeline converts existing RGB videos into demonstrations for alternative embodiments by retargeting the recovered motion and synthesizing the corresponding observations, without recorded source-robot states."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "Sim-to-Real"
+  ]
+}
