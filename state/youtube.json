@@ -6013,6 +6013,36 @@
           "abstract_zh": "测试平台的优化通常在固定的策略模型和基准测试下进行研究。当两者中任意一个发生变化时，优化器必须决定重用或修改演化后的测试平台的哪些部分，但仅凭测试平台本身可能无法解释之前修改的原因及其执行效果。在这项工作中，我们研究了持续递归自我改进（CRSI），这是一种在兼容的基准测试或策略模型之间延续现有测试平台优化方法的设置。我们为测试平台优化器而非任务解决策略提出了自我改进记忆（SIM）。SIM 通过重复出现的测试平台问题对修改进行分组，并记录其基本原理、预测和观察到的结果以及评估环境。随着优化的继续，新的尝试将扩展此历史记录。在跨越四个领域的实验中，SIM 在跨数据集和成对跨模型的比较中实现了比仅保留测试平台和仅保留根本原因更高的最终得分。在编程任务的十次独立源运行中，使用 SIM 的成对延续比仅保留测试平台的延续在最终得分上平均提高了 2.36 分（p=0.003）。"
         }
       ]
+    },
+    "VqNAvOXQetM": {
+      "video_id": "VqNAvOXQetM",
+      "video_title": "Scalable Adaptive Computation for Iterative Generation (Dec 2022)",
+      "published": "2026-11-20",
+      "video_url": "https://www.youtube.com/watch?v=VqNAvOXQetM",
+      "papers": [
+        {
+          "id": "2212.11972",
+          "title": "Scalable Adaptive Computation for Iterative Generation (Dec 2022)",
+          "url": "https://arxiv.org/abs/2212.11972"
+        }
+      ]
+    },
+    "jTCrwpXbDec": {
+      "video_id": "jTCrwpXbDec",
+      "papers": []
+    },
+    "uAUZa8GAF-0": {
+      "video_id": "uAUZa8GAF-0",
+      "video_title": "PTP: Previous-Token Prediction based LLM Inversion for Near-Exact Prompt Reconstruction (Jul 2026)",
+      "published": "2026-11-20",
+      "video_url": "https://www.youtube.com/watch?v=uAUZa8GAF-0",
+      "papers": [
+        {
+          "id": "2607.29378",
+          "title": "PTP: Previous-Token Prediction based LLM Inversion for Near-Exact Prompt Reconstruction (Jul 2026)",
+          "url": "https://arxiv.org/abs/2607.29378"
+        }
+      ]
     }
   }
 }
