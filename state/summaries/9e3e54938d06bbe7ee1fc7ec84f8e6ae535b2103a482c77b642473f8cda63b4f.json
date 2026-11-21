@@ -1,0 +1,18 @@
+{
+  "overview": "针对人形机器人通过被动物体进行物体介导运动的挑战，本文提出了一种无需人类演示或系统辨识的深度强化学习框架。该方法结合任务奖励与规避利用的终止机制，通过在训练过程中动态限制如失去支撑足、双脚站立及板体分离等行为，引导人形机器人逐步习得滑板技能，实现了从基础站立控制向持续运动的演进。",
+  "highlights": [
+    {
+      "text": "提出了一种无需预设演示数据或系统辨识模型的人形机器人滑板学习框架。",
+      "evidence": "In this paper, we introduce a deep reinforcement learning framework that does not rely on prior data such as demonstrations and enables robots such as the K1 humanoid to learn to skateboard using model-free learning."
+    },
+    {
+      "text": "通过引入规避利用的终止机制及动态约束，实现了从站立控制到滑板运动的渐进式学习。",
+      "evidence": "Their changing prevalence during training produces an implicit progression from stance control towards sustained robot--board locomotion."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "人形机器人",
+    "足式运动"
+  ]
+}

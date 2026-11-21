@@ -1,0 +1,17 @@
+{
+  "overview": "针对现有流式视频大语言模型在交互能力上的不足，本文提出了ALIVE模型。该模型通过监督微调和基于行为对齐信用分配（BACA）的强化学习方法，实现了主动监控、流式任务协调及反馈导向的交互。作者声称，ALIVE在多个基准测试及自建的FSI-Bench上展现了更强的流式理解与交互性能。",
+  "highlights": [
+    {
+      "text": "提出了结合监督微调与行为对齐信用分配（BACA）的训练方法，用以优化模型在多轮交互中的决策与响应。",
+      "evidence": "Contrastive supervised fine-tuning teaches when and how to respond, while reinforcement learning with Behavior-Aligned Credit Assignment (BACA) combines trajectory-level and local advantages to refine decisions, responses, and silence across multi-turn interactions."
+    },
+    {
+      "text": "构建了FSI-Bench评估基准，专门用于测试模型的反馈寻求能力与后续的任务完成效果。",
+      "evidence": "We also introduce FSI-Bench to evaluate feedback seeking and subsequent task completion."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "推理"
+  ]
+}

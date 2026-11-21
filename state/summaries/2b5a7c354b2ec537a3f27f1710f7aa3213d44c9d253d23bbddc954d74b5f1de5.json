@@ -1,0 +1,20 @@
+{
+  "overview": "LocoMuJoCo是一个用于全身控制的开源基准库，旨在促进模仿学习和强化学习的研究。该库统一了MuJoCo及MJX和MjWarp后端，提供了多种人形、骨骼和四足机器人模型，并配套了动作捕捉数据集及重定向流程。通过模块化架构支持观测、奖励和领域随机化设置，并提供基于JAX的算法实现以支持端到端的即时编译训练，同时具备Sim-to-Real部署能力。",
+  "highlights": [
+    {
+      "text": "LocoMuJoCo提供了一个整合了CPU与GPU后端、包含多种机器人形态及其对应动作捕捉数据的统一基准平台。",
+      "evidence": "The library couples MuJoCo (CPU) with MJX and the MjWarp backend (GPU) under a single API, exposes 9 humanoid, 3 (musculo-)skeletal, and 4 quadruped embodiments, and ships a curated native motion-capture dataset for every humanoid, to which it can also retarget AMASS and LAFAN1."
+    },
+    {
+      "text": "该库利用模块化设计支持多种功能的可替换性，并结合JAX实现以提供高性能的端到端训练与Sim-to-Real部署支持。",
+      "evidence": "A modular plug-in architecture makes observations, rewards, control modes, terrains, and domain randomization fully interchangeable, while compact JAX implementations of many RL and IL algorithms provide JIT-compiled end-to-end training, and the companion loco-mujoco-real repository provides sim-to-real deployment."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "四足机器人",
+    "人形机器人",
+    "模仿学习",
+    "Sim-to-Real"
+  ]
+}

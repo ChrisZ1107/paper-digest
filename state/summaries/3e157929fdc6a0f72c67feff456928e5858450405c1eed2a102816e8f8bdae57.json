@@ -1,0 +1,20 @@
+{
+  "overview": "本文提出了一种名为WEVO的框架，旨在通过动作条件视频世界模型对人形机器人全身视觉语言动作（VLA）策略进行后训练，以解决传统仿真强化学习的Sim-to-Real差距和自主探索安全性问题。该方法结合了仿真环境的初始化能力与视频世界模型在部署对齐环境下的改进优势，在三个真实机器人任务上验证了该框架能显著提升策略成功率。",
+  "highlights": [
+    {
+      "text": "WEVO框架通过动作条件视频世界模型对人形机器人VLA进行后训练，利用仿真中的操作和运动数据预测接触动力学及视角变化。",
+      "evidence": "Simulated manipulation and locomotion play data improve contact-dynamics and viewpoint-change prediction."
+    },
+    {
+      "text": "研究表明，相比于纯真实环境强化学习，在视频世界模型中进行强化学习训练可大幅提高机器人的任务平均成功率。",
+      "evidence": "video WM RL raises mean success from 23.3% to 75.0%, compared with 48.3% for real robot RL."
+    }
+  ],
+  "tags": [
+    "人形机器人",
+    "视觉语言动作",
+    "世界模型",
+    "大模型后训练",
+    "Sim-to-Real"
+  ]
+}

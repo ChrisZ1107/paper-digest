@@ -1,0 +1,16 @@
+{
+  "overview": "针对视觉智能体在游戏领域中缺乏大规模、可验证训练数据的问题，本文提出了Game2Player框架。该框架通过构建“构建者-玩家”循环，自动适配网络游戏、定义任务并验证游戏状态，从而大规模生成带进度的游戏轨迹数据。实验表明，利用该框架采集的数据进行带权重监督微调，能有效提升视觉语言模型在基准测试中的任务执行表现。",
+  "highlights": [
+    {
+      "text": "提出Game2Player框架，通过环境与玩家协同开发，实现了网页游戏环境适配、任务定义及自动验证，从而大规模收集高质量游戏轨迹。",
+      "evidence": "In the Game2Player loop, a Builder agent adapts existing web games, exposes their internal state, and defines tasks with state-based progress measures and success checks."
+    },
+    {
+      "text": "利用采集的数据对视觉语言模型进行进度加权监督微调，显著提升了智能体在多个游戏基准测试中的任务完成进度。",
+      "evidence": "Game2Player-9B improves progress from 14.3% to 31.2% on PlayerBench and from 30.0% to 53.1% on the external GameWorld benchmark."
+    }
+  ],
+  "tags": [
+    "视觉语言动作"
+  ]
+}

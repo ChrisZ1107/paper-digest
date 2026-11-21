@@ -1,0 +1,19 @@
+{
+  "overview": "针对复杂户外环境下的足式机器人导航难题，作者提出了ROAM系统。该方法结合了大规模预训练视觉语言模型（VLM）的高级语义推理能力与强化学习训练的低级运动与局部规划策略。VLM负责识别环境风险与解释语义信息，进而生成风险地图以引导运动控制。实验表明，该系统能支持足式机器人在复杂地形中完成长距离自主导航，但研究也指出当前视觉语言模型在可靠性和空间推理方面仍存在局限。",
+  "highlights": [
+    {
+      "text": "提出ROAM系统，通过整合VLM语义推理与强化学习运动策略，实现了足式机器人在复杂户外环境中的长距离自主导航。",
+      "evidence": "We present ROAM (Robust Open-world Autonomous Mobility), a system that enables legged robots to perform kilometer-scale navigation in complex alpine and urban settings."
+    },
+    {
+      "text": "利用视觉语言模型生成风险图，实现了高层环境理解与底层机器人运动控制的有效耦合。",
+      "evidence": "An open-vocabulary segmentation module converts these labels into a dense, real-time risk map, which conditions two pre-trained RL policies responsible for agile locomotion and local navigation, effectively coupling high-level VLM reasoning with low-level physical control."
+    }
+  ],
+  "tags": [
+    "足式运动",
+    "导航",
+    "Sim-to-Real",
+    "视觉语言动作"
+  ]
+}

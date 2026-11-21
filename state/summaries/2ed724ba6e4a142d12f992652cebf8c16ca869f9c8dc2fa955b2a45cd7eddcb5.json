@@ -1,0 +1,17 @@
+{
+  "overview": "针对大模型智能体在执行任务时高成本和高延迟的问题，本文提出AnyS1框架。该框架将人类编写的程序化技能转化为通用的决策点，通过离线挖掘数据训练一个轻量级的System-1模型。在运行时，该系统处理常规决策并根据置信度回退至大模型，从而在保持任务可靠性的同时，显著降低了计算成本和处理延迟。",
+  "highlights": [
+    {
+      "text": "AnyS1通过将程序化技能转化为通用决策源，构建了Any-DP数据集并训练了一个4B参数的轻量化System-1模型，用于处理常规决策。",
+      "evidence": "Offline, AnyS1 mines grounded enumerable decisions across over 1,000 public skills, gathers execution-grounded trajectory states inside isolated containers to construct Any-DP, and trains a single calibrated 4B pointer System-1 with label smoothing."
+    },
+    {
+      "text": "实验结果显示，AnyS1框架在保持任务性能的同时，大幅度降低了智能体的运行成本与响应时间。",
+      "evidence": "Across three unseen benchmarks and distinct System-2 model families, AnyS1 preserves task reliability while cutting episode cost by 75-91% and model-call time by 63-92% relative to an uncompiled System-2 agent, and maintains performance under zero-shot threshold transfer."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "推理"
+  ]
+}
