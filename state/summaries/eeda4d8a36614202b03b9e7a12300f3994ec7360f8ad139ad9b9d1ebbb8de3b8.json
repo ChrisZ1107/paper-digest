@@ -1,0 +1,17 @@
+{
+  "overview": "针对现有世界模型难以捕捉微小动作变化对未来观测影响的问题，作者提出了AFFECT训练目标。该方法通过引入动作扰动并利用动作效应匹配机制，训练世界模型生成更符合真实动态演变的视频。在仿真与现实机器人实验中，该方法提升了模型预测结果与真实执行结果的一致性，增强了其在策略评估与模型预测控制中的表现。",
+  "highlights": [
+    {
+      "text": "提出AFFECT训练目标，通过学习动作扰动引发的视觉变化分布，提升了世界模型对动作后果预测的准确性。",
+      "evidence": "To address this, we propose AFFECT, an auxiliary training objective for learning the distribution of visual changes induced by action perturbations."
+    },
+    {
+      "text": "实验结果显示，AFFECT使世界模型的预测与真实机器人执行结果的一致性显著提高，并改善了规划任务的表现。",
+      "evidence": "On DROID, the Pearson correlation between policy success rates in the world model and on the real robot rises from 0.47 to 0.79, alongside up to 23% lower FVD. These gains carry over to planning, where selecting actions with AFFECT-trained world models improves task success by up to 8.3%."
+    }
+  ],
+  "tags": [
+    "世界模型",
+    "机器人操作"
+  ]
+}

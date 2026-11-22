@@ -1,0 +1,14 @@
+{
+  "overview": "本文针对Code2Video生成范式中的代理构建与提示策略展开研究，探讨了代理粒度、物理模拟及提示词对视频质量的影响。作者提出Coda-DaVinci框架，通过任务自适应选择生成模式、调整建模粒度并协调物理模拟与提示，旨在提升视频结构的明确控制力与生成质量。实验结果显示，该框架在指令遵循、场景一致性及物理真实性方面优于基准方法，但在转换稳定性和场景设置保持方面仍存在局限。",
+  "highlights": [
+    {
+      "text": "提出一种任务自适应代理框架Coda-DaVinci，通过自动选择生成模式与调整建模粒度，提升了视频生成质量。",
+      "evidence": "Guided by these findings, we introduce Coda-DaVinci, a task-adaptive agentic framework for Code2Video generation that selects between proxy-guided and direct generation, adapts modeling granularity to each entity, and coordinates simulation with proxy-grounded prompting."
+    },
+    {
+      "text": "实验表明Coda-DaVinci在指令遵循、场景一致性及物理合理性方面均表现出优于对比基准的性能。",
+      "evidence": "Experiments demonstrate leading instruction following on VTR and scene consistency on R2M, improved physical plausibility over direct generation, and higher visual realism than the compared Code2Video baselines."
+    }
+  ],
+  "tags": []
+}

@@ -1,0 +1,16 @@
+{
+  "overview": "该研究探讨了扩散模型强化学习（RL）后训练的机制。作者提出，RL后训练带来的性能提升主要源于一种输入无关的激活转向，而非学习复杂的输入依赖变换。通过在冻结模型中加入固定的转向向量，研究发现这些简单参数化方法能恢复大部分RL后训练的奖励增益，表明RL后训练主要是在引导预训练生成器向其既有能力方向偏移。",
+  "highlights": [
+    {
+      "text": "RL后训练的大部分增益可由输入无关的激活转向来解释，无需复杂的输入依赖变换。",
+      "evidence": "A constant shift thus suffices for most of the gain of policy-gradient RL post-training: without new input-dependent transformations, it steers the pretrained generator toward what it can already compute."
+    },
+    {
+      "text": "通过在SD3.5-M模型上添加固定的转向向量，该方法能恢复90.0%至96.3%的奖励增益，且参数量远少于RL微调的LoRA。",
+      "evidence": "Although the vectors are identical for every prompt, token, and sampling seed, they recover 90.0-96.3% of the reward gains of six RL-tuned image models, and 89.8% and 111.9% on two RL-tuned video models."
+    }
+  ],
+  "tags": [
+    "大模型后训练"
+  ]
+}

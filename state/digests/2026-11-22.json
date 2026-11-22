@@ -1,0 +1,472 @@
+{
+  "date": "2026-11-22",
+  "timestamp": "2026-11-22T09:01:51.297610+08:00",
+  "title": "2026-11-22 热门论文 Top 10｜机器人·强化学习·AI",
+  "slug": "2026-11-22",
+  "papers": [
+    {
+      "id": "2611.18397",
+      "title": "Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent",
+      "abstract": "We introduce Gamer, a generalist agent framework built for long-horizon tasks in complex interactive environments. Its end-to-end architecture combines perception, memory management, and multi-step reasoning. A shared training and deployment pipeline supports interaction with both conventional 2D graphical interfaces and complex 3D simulated worlds. We first continue pre-training on a dataset constructed from tens of thousands of hours of device-level keyboard and mouse interaction. These trajectories span simulated games and embodied environments, allowing the model to learn environmental dynamics across both physical and virtual domains. Sparse-thinking instruction tuning then substantially reduces redundant computation while preserving the reasoning needed for complex decisions. We train the policy for long-horizon interaction with a stable multi-turn reinforcement learning method that addresses finite context windows, accumulated rollout errors, and sparse rewards. For real-time interaction, a cloud-edge inference engine serves numerous simulated game environments concurrently, supports unbounded-context execution, and keeps online inference latency low. Across multiple challenging 3D open-world games, Gamer demonstrates solid generalization and operational efficiency comparable to skilled players. It also achieves competitive results on a range of conventional 2D game benchmarks. These results suggest that even repetitive keyboard and mouse trajectories can support substantial gains from scaling data and learning algorithms. Training on these trajectories helps Gamer learn complex skills more steadily in environments with both physical and digital properties. This approach offers a path toward generalist agents that can interact across digital and physical worlds.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-11-13",
+      "age_days": 9.042954833449075,
+      "upvotes": 147,
+      "comments": 4,
+      "stars": 1188,
+      "repo": "https://github.com/RainBowLuoCS/Gamer",
+      "trending_rank": 3,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.4912,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 3,
+        "comments": 0,
+        "stars": 138
+      },
+      "score": 5.74,
+      "rule_tags": [
+        "强化学习",
+        "视觉语言动作",
+        "推理"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文介绍了一种名为Gamer的通用智能体框架，旨在处理复杂交互环境下的长程任务。该框架结合了感知、记忆管理和多步推理的端到端架构，支持在2D图形界面和3D模拟世界中交互。作者通过大规模键盘和鼠标交互数据进行预训练，并利用稀疏思维指令微调和多轮强化学习方法，提升了模型的长程决策能力与运行效率。实验结果表明，Gamer在多个3D开放世界游戏和2D基准测试中展现出良好的泛化能力和操作水平。",
+        "highlights": [
+          {
+            "text": "Gamer通过在大规模键盘与鼠标交互数据上进行预训练，有效学习了跨物理与虚拟域的环境动态。",
+            "evidence": "We first continue pre-training on a dataset constructed from tens of thousands of hours of device-level keyboard and mouse interaction. These trajectories span simulated games and embodied environments, allowing the model to learn environmental dynamics across both physical and virtual domains."
+          },
+          {
+            "text": "采用稀疏思维指令微调和多轮强化学习方法，在减少计算冗余的同时增强了长程决策的稳定性。",
+            "evidence": "Sparse-thinking instruction tuning then substantially reduces redundant computation while preserving the reasoning needed for complex decisions. We train the policy for long-horizon interaction with a stable multi-turn reinforcement learning method that addresses finite context windows, accumulated rollout errors, and sparse rewards."
+          }
+        ],
+        "tags": [
+          "视觉语言动作",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.26414",
+      "title": "ZeroVLN: Learning to Navigate without Supervised Fine-Tuning of the VLM Brain",
+      "abstract": "Representative vision-language navigation (VLN) methods typically couple a vision-language model (VLM) brain with a learnable action head and fine-tune the VLM brain on navigation-domain data to predict geometric goals. However, such adaptation can substantially alter base VLM weights and degrade general visual capabilities. We introduce ZeroVLN, a slow-fast navigation framework that achieves effective navigation with zero navigation-domain SFT of the VLM brain. Rather than teaching the brain to predict geometric goals, we equip it with a semantic tool-calling interface for conveying movement decisions to an action expert in natural language. We first adapt the action expert to carry out these movement requests, then jointly improve the brain's movement decisions and the action expert's continuous execution through closed-loop reinforcement learning (RL). Trained on the same navigation episodes, ZeroVLN substantially outperforms representative SFT-based hierarchical VLN methods on standard VLN-CE (continuous environments) benchmarks, while inducing only minor changes to the brain's weights and largely preserving its general capabilities. To our knowledge, ZeroVLN is the first slow-fast VLN framework with zero navigation-domain SFT of the VLM brain, and the first to jointly optimize its slow and fast policies through closed-loop agentic RL in VLN-CE.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-11-19",
+      "age_days": 3.042954833449074,
+      "upvotes": 22,
+      "comments": 2,
+      "stars": 21,
+      "repo": "https://github.com/hzx122/ZeroVLN",
+      "trending_rank": 45,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.45891,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 1,
+        "comments": 1,
+        "stars": 1
+      },
+      "score": 5.277,
+      "rule_tags": [
+        "强化学习",
+        "导航"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对现有视觉语言导航方法需微调模型导致通用能力下降的问题，本文提出ZeroVLN框架。该框架不直接微调视觉语言模型，而是通过语义工具调用接口让模型向动作专家传递指令。通过闭环强化学习协同优化慢速决策与快速执行策略，在保持模型通用视觉能力的同时，在VLN-CE基准测试中实现了性能提升。",
+        "highlights": [
+          {
+            "text": "提出ZeroVLN框架，实现了无需针对导航领域进行有监督微调即可完成有效的导航任务。",
+            "evidence": "We introduce ZeroVLN, a slow-fast navigation framework that achieves effective navigation with zero navigation-domain SFT of the VLM brain."
+          },
+          {
+            "text": "通过闭环强化学习协同优化决策与执行策略，并在标准基准测试中优于典型的基于微调的方法。",
+            "evidence": "Trained on the same navigation episodes, ZeroVLN substantially outperforms representative SFT-based hierarchical VLN methods on standard VLN-CE (continuous environments) benchmarks, while inducing only minor changes to the brain's weights and largely preserving its general capabilities."
+          }
+        ],
+        "tags": [
+          "导航",
+          "强化学习"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.26239",
+      "title": "Teaching Vision-Language-Action Models to Stop Safely",
+      "abstract": "Vision-language-action (VLA) models enable robots to perform diverse tasks from visual observations and language instructions. While prior work has explored task suppression and refusal, stopping prohibited behavior once execution is underway and controlling the resulting physical response remain challenging. Our evaluation reveals that policies which suppress a task from its initial state can still complete it when taking over partway through execution. Even when the task remains unfinished, the robot may drop a held object, making non-completion an incomplete measure of safety. To address these challenges, we introduce State-Aware Fallback Imitation (SAFI) for tasks where holding provides an appropriate alternative response. SAFI comprises two stages, (1) fallback target construction, which assigns stationary arm commands and consistent gripper targets throughout prohibited-task demonstrations, and (2) joint policy adaptation, which learns these targets alongside the original actions of retained tasks. This supervision teaches an explicit alternative response at intermediate execution states while maintaining the robot's other skills. Extensive experiments with OpenVLA-OFT across LIBERO and BadLIBERO tasks evaluate prohibited completion, physical incidents, and retained-task performance. On the evaluated LIBERO tasks, SAFI reduces aggregate target success after takeover to 1.3\\%, with no recorded physical incidents or action saturation, while preserving high retained-task success.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-11-19",
+      "age_days": 3.042954833449074,
+      "upvotes": 7,
+      "comments": 2,
+      "stars": 0,
+      "repo": "https://github.com/franciscoliu/SAFI",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.43415,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 7,
+        "comments": 2
+      },
+      "score": 5.224,
+      "rule_tags": [
+        "视觉语言动作"
+      ],
+      "summary_status": "Gemini 暂不可用，显示规则标签与原文摘要。"
+    },
+    {
+      "id": "2611.25980",
+      "title": "Learning What Actions Change: Action Effect Matching for Dynamics-Faithful World Models",
+      "abstract": "World models aim to predict environment dynamics under actions, enabling the prediction of action consequences without executing them in the real world. Yet despite producing increasingly realistic videos, current world models often fail to capture how small action changes affect future observations. This limits their use in tasks such as robotic policy evaluation and model-based planning, where nearly identical actions can lead to qualitatively different outcomes. To address this, we propose AFFECT, an auxiliary training objective for learning the distribution of visual changes induced by action perturbations. Specifically, we inject temporally correlated noise into the actions of a policy trained on task-agnostic human teleoperation. We then train the world model so that its generated videos respond to this noise as the recorded videos do, without requiring repeated executions from the same initial state. Across OGBench simulation and real-world DROID and ALOHA-2 setups, AFFECT makes world-model rollouts more faithful to real outcomes. On DROID, the Pearson correlation between policy success rates in the world model and on the real robot rises from 0.47 to 0.79, alongside up to 23% lower FVD. These gains carry over to planning, where selecting actions with AFFECT-trained world models improves task success by up to 8.3%.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-11-19",
+      "age_days": 3.042954833449074,
+      "upvotes": 15,
+      "comments": 2,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.443,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 3,
+        "comments": 1
+      },
+      "score": 5.168,
+      "rule_tags": [
+        "世界模型"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对现有世界模型难以捕捉微小动作变化对未来观测影响的问题，作者提出了AFFECT训练目标。该方法通过引入动作扰动并利用动作效应匹配机制，训练世界模型生成更符合真实动态演变的视频。在仿真与现实机器人实验中，该方法提升了模型预测结果与真实执行结果的一致性，增强了其在策略评估与模型预测控制中的表现。",
+        "highlights": [
+          {
+            "text": "提出AFFECT训练目标，通过学习动作扰动引发的视觉变化分布，提升了世界模型对动作后果预测的准确性。",
+            "evidence": "To address this, we propose AFFECT, an auxiliary training objective for learning the distribution of visual changes induced by action perturbations."
+          },
+          {
+            "text": "实验结果显示，AFFECT使世界模型的预测与真实机器人执行结果的一致性显著提高，并改善了规划任务的表现。",
+            "evidence": "On DROID, the Pearson correlation between policy success rates in the world model and on the real robot rises from 0.47 to 0.79, alongside up to 23% lower FVD. These gains carry over to planning, where selecting actions with AFFECT-trained world models improves task success by up to 8.3%."
+          }
+        ],
+        "tags": [
+          "世界模型",
+          "机器人操作"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.26444",
+      "title": "Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation",
+      "abstract": "Embodied intelligence aims to let robots perform complex physical tasks with human-like adaptability and reliability, which requires three complementary capabilities: history-based cognitive reasoning, precise and timely physical execution, and the composition of reasoning and execution through environmental feedback. Yet existing benchmarks either evaluate reasoning and execution within the same tasks or assess them separately without their composition, so they reveal little about whether a failure comes from reasoning, execution, or their composition. We introduce Mind2Act World, a diagnostic benchmark of 30 simulated manipulation tasks from five real-world application domains. Each task has three difficulty levels and two scene settings (Clean and Random), yielding 180 configurations. The tasks form three views: Mind tests decisions based on past observations, Act tests precise and timely execution, and Mind2Act combines both in closed-loop tasks where action outcomes guide later decisions. Comparing the three views shows whether a system lacks a capability or fails to compose capabilities it already has. A diagnosis harness further attributes the failed episodes of three representative systems to Mind, Act, or their composition and summarizes each system in a profile card. Our evaluation of multimodal agents, vision-language-action models (VLAs), and world-action models (WAMs) shows that competence in a single view does not carry over to Mind2Act tasks. Even the strongest agent succeeds in 52.7% of Mind and 39.0% of Act episodes but in only 12.0% of Mind2Act episodes. The strongest agent retains task state but struggles with sustained contact, whereas end-to-end policies execute practiced motions but retain little task state. These findings point to composing reasoning and execution through environmental feedback as the main open problem.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-11-19",
+      "age_days": 3.042954833449074,
+      "upvotes": 51,
+      "comments": 4,
+      "stars": 30,
+      "repo": "https://github.com/Mind2Act/Mind2Act_World",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.36527,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 5,
+        "comments": 2,
+        "stars": 3
+      },
+      "score": 4.957,
+      "rule_tags": [
+        "机器人操作",
+        "视觉语言动作",
+        "推理"
+      ],
+      "summary_status": "Gemini 暂不可用，显示规则标签与原文摘要。"
+    },
+    {
+      "id": "2611.24011",
+      "title": "WAM-Policy: World Action Models with On-Policy Distillation for Quadrupedal Loco-Manipulation",
+      "abstract": "Arm-free quadrupeds can perform loco-manipulation, walking on three legs while manipulating with a front leg, yet no existing policy for it follows language instructions. World action models (WAMs) have emerged as effective language-conditioned manipulation policies, but are pretrained for robot arms and sample slowly. WAM-Policy turns one WAM into a quadrupedal loco-manipulation policy via two stages. The first, Cross-Morphology Policy Adaptation and Acceleration, adapts the arm-centric WAM to quadrupeds and distills the transferred policy into a student with one video and two action steps by on-policy self-distillation (OPSD). This student, however, is bounded by its teacher, which only imitates demonstrations. The second stage, Task-Specific Improvement and Merging, therefore tunes the teacher by reinforcement learning (RL) and merges the slow specialists into one few-step student by multi-teacher on-policy distillation (M-OPD). On QLM-Bench, ten simulated tasks with 1,000 demonstrations synthesized without teleoperation, the transferred policy reaches 77.0%, and the OPSD student keeps 76.7% while sampling 14 times faster. Task-specific RL and M-OPD lift it to 85.0%. We also deploy the OPSD student on a real Unitree Go2 Air. WAM-Policy thus achieves a stronger quadrupedal policy at a fraction of the inference cost.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-11-18",
+      "age_days": 4.042954833449074,
+      "upvotes": 16,
+      "comments": 2,
+      "stars": 7,
+      "repo": "https://github.com/AIGeeksGroup/WAM-Policy",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.48084,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 0,
+        "comments": 1,
+        "stars": 0
+      },
+      "score": 4.945,
+      "rule_tags": [
+        "强化学习",
+        "四足机器人"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对无机械臂四足机器人难以执行语言指令进行移动操作的问题，作者提出了WAM-Policy框架。该方法通过跨形态策略适配与加速，将预训练的机械臂世界动作模型转化为四足机器人策略，并利用在线策略蒸馏技术减少采样步数。随后，通过强化学习进行任务特定优化，并采用多教师在线策略蒸馏整合专家策略。实验结果显示，该方法在提升任务成功率的同时，大幅降低了推理成本并实现了实机部署。",
+        "highlights": [
+          {
+            "text": "提出了一种基于在线策略蒸馏的框架，在保持较高任务成功率的同时显著提升了策略采样速度。",
+            "evidence": "the transferred policy reaches 77.0%, and the OPSD student keeps 76.7% while sampling 14 times faster."
+          },
+          {
+            "text": "通过强化学习与多教师在线策略蒸馏相结合的方法，进一步优化了四足机器人的移动操作性能。",
+            "evidence": "Task-specific RL and M-OPD lift it to 85.0%."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "四足机器人",
+          "足式运动",
+          "机器人操作",
+          "Sim-to-Real"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.24789",
+      "title": "HINT-WAM: Hindsight-Informed Training for World Action Models",
+      "abstract": "World action models (WAMs) have shown promising generalization and data efficiency in robot manipulation by coupling action generation with predictions of future visual dynamics. Translating these capabilities into reliable task execution, however, remains a challenge for existing post-training methods. Offline supervised fine-tuning provides dense supervision on expert trajectories, but its flow-matching action expert is trained only on noised demonstration actions and never on the intermediate states produced by its own sampler; task-specific adaptation can also compromise pretrained capabilities. On-policy reinforcement learning trains on the policy's own behavior, yet sparse task rewards make exploration and credit assignment difficult, while dense reward shaping still provides scalar evaluations rather than direct action targets. We introduce HINT-WAM, the first on-policy self-distillation framework that supervises the action expert on its own sampling trajectories using hindsight, the future video of the demonstration, as privileged information available to the WAM itself. For each demonstration observation, the student generates its action through its own denoising trajectory, and at the states along this trajectory the same model acts as a teacher conditioned additionally on this hindsight, providing a conditional action distribution as a dense training target, while the student sees only deployment-time inputs and needs no environmental rewards or simulator interaction. To transfer this supervision to a flow-matching action expert, HINT-WAM distills the teacher into the student with an energy score, a distribution-level objective that matches the teacher's action distribution from the student's own samples rather than regressing its velocity field. The project web is available in https://tuandattt.github.io/hintwam/.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-11-18",
+      "age_days": 4.042954833449074,
+      "upvotes": 22,
+      "comments": 3,
+      "stars": 4,
+      "repo": "https://github.com/tuandattt/hintwam_code",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.48605,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 0,
+        "comments": 0,
+        "stars": 0
+      },
+      "score": 4.932,
+      "rule_tags": [
+        "强化学习",
+        "大模型后训练"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文针对世界动作模型（WAMs）在机器人操作任务中执行可靠性不足的问题，提出了一种名为HINT-WAM的在轨自我蒸馏框架。该方法利用演示序列的未来视频作为特权信息，通过后见之明（hindsight）构建条件动作分布，将教师模型蒸馏至学生模型，从而在无需环境奖励或模拟器交互的情况下，通过匹配动作分布实现对流匹配动作专家的监督。",
+        "highlights": [
+          {
+            "text": "HINT-WAM是一种在轨自我蒸馏框架，通过使用后见之明（演示的未来视频）作为特权信息来监督自身的动作采样轨迹。",
+            "evidence": "We introduce HINT-WAM, the first on-policy self-distillation framework that supervises the action expert on its own sampling trajectories using hindsight, the future video of the demonstration, as privileged information available to the WAM itself."
+          },
+          {
+            "text": "该方法通过能量分数匹配教师的动作分布，而非回归速度场，从而有效地将监督信息传递给流匹配动作专家。",
+            "evidence": "To transfer this supervision to a flow-matching action expert, HINT-WAM distills the teacher into the student with an energy score, a distribution-level objective that matches the teacher's action distribution from the student's own samples rather than regressing its velocity field."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "世界模型",
+          "模仿学习"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.26595",
+      "title": "Coda-DaVinci: Reimagining Video Generation with Code2Video",
+      "abstract": "Code2Video uses agent-authored 3D proxies to guide video generation, enabling explicit control over structure and dynamics. However, how to construct proxies and prompts for optimal downstream quality remains underexplored, as do the capabilities and limitations of this paradigm. Through controlled experiments and blinded human evaluation, we study proxy granularity, physics simulation, and prompting. The results reveal task-dependent trade-offs: coarse proxies favor natural motion, while medium-grained proxies favor consistency. Physics simulation and proxy-aligned prompting further improve average quality. Guided by these findings, we introduce Coda-DaVinci, a task-adaptive agentic framework for Code2Video generation that selects between proxy-guided and direct generation, adapts modeling granularity to each entity, and coordinates simulation with proxy-grounded prompting. Its multi-agent harness preserves scene assets and guides repairs through visual inspection and independent review. Experiments demonstrate leading instruction following on VTR and scene consistency on R2M, improved physical plausibility over direct generation, and higher visual realism than the compared Code2Video baselines. Long-video evaluations further show gains in event structure and consistency across successive interactions, while revealing limitations in transition stability and adherence to scene settings.",
+      "topics": [
+        "通用 AI"
+      ],
+      "published": "2026-11-19",
+      "age_days": 3.042954833449074,
+      "upvotes": 35,
+      "comments": 4,
+      "stars": 22,
+      "repo": "https://github.com/FrankYang-17/Coda",
+      "trending_rank": 80,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.36208,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 3,
+        "comments": 1,
+        "stars": 9
+      },
+      "score": 4.903,
+      "rule_tags": [
+        "多智能体"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文针对Code2Video生成范式中的代理构建与提示策略展开研究，探讨了代理粒度、物理模拟及提示词对视频质量的影响。作者提出Coda-DaVinci框架，通过任务自适应选择生成模式、调整建模粒度并协调物理模拟与提示，旨在提升视频结构的明确控制力与生成质量。实验结果显示，该框架在指令遵循、场景一致性及物理真实性方面优于基准方法，但在转换稳定性和场景设置保持方面仍存在局限。",
+        "highlights": [
+          {
+            "text": "提出一种任务自适应代理框架Coda-DaVinci，通过自动选择生成模式与调整建模粒度，提升了视频生成质量。",
+            "evidence": "Guided by these findings, we introduce Coda-DaVinci, a task-adaptive agentic framework for Code2Video generation that selects between proxy-guided and direct generation, adapts modeling granularity to each entity, and coordinates simulation with proxy-grounded prompting."
+          },
+          {
+            "text": "实验表明Coda-DaVinci在指令遵循、场景一致性及物理合理性方面均表现出优于对比基准的性能。",
+            "evidence": "Experiments demonstrate leading instruction following on VTR and scene consistency on R2M, improved physical plausibility over direct generation, and higher visual realism than the compared Code2Video baselines."
+          }
+        ],
+        "tags": [],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.26627",
+      "title": "RL Post-Training in Diffusion Transformers Is Activation Steering",
+      "abstract": "Reinforcement learning (RL) post-training substantially improves the visual quality, text rendering, and compositional accuracy of diffusion transformers. Because capabilities such as rendering requested text or composing multiple objects are inherently prompt-dependent, a natural hypothesis is that improving them requires learning complex, input-dependent transformations. To isolate how much of these gains an input-independent shift explains, we probe each RL-tuned model with a deliberately simple parameterization: a fixed set of steering vectors added to the block outputs of the frozen base model. On SD3.5-M, these vectors hold 65x fewer parameters than the RL-tuned LoRA (0.29M against 18.8M). We fit them to match the velocity predictions of public RL-tuned checkpoints, with no reward in the objective. Although the vectors are identical for every prompt, token, and sampling seed, they recover 90.0-96.3% of the reward gains of six RL-tuned image models, and 89.8% and 111.9% on two RL-tuned video models. Initialized at zero and trained with online RL, the vectors alone exceed the reward gains of weight-based RL on text rendering (OCR) and human preference (PickScore) on SD3.5-M. A constant shift thus suffices for most of the gain of policy-gradient RL post-training: without new input-dependent transformations, it steers the pretrained generator toward what it can already compute.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-11-19",
+      "age_days": 3.042954833449074,
+      "upvotes": 17,
+      "comments": 2,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.3973,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 3,
+        "comments": 1
+      },
+      "score": 4.884,
+      "rule_tags": [
+        "强化学习",
+        "大模型后训练"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "该研究探讨了扩散模型强化学习（RL）后训练的机制。作者提出，RL后训练带来的性能提升主要源于一种输入无关的激活转向，而非学习复杂的输入依赖变换。通过在冻结模型中加入固定的转向向量，研究发现这些简单参数化方法能恢复大部分RL后训练的奖励增益，表明RL后训练主要是在引导预训练生成器向其既有能力方向偏移。",
+        "highlights": [
+          {
+            "text": "RL后训练的大部分增益可由输入无关的激活转向来解释，无需复杂的输入依赖变换。",
+            "evidence": "A constant shift thus suffices for most of the gain of policy-gradient RL post-training: without new input-dependent transformations, it steers the pretrained generator toward what it can already compute."
+          },
+          {
+            "text": "通过在SD3.5-M模型上添加固定的转向向量，该方法能恢复90.0%至96.3%的奖励增益，且参数量远少于RL微调的LoRA。",
+            "evidence": "Although the vectors are identical for every prompt, token, and sampling seed, they recover 90.0-96.3% of the reward gains of six RL-tuned image models, and 89.8% and 111.9% on two RL-tuned video models."
+          }
+        ],
+        "tags": [
+          "大模型后训练"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.12885",
+      "title": "World In-Context Learning for Agentic Robot Manipulation",
+      "abstract": "Trained action policies write manipulation skill into network weights, tying what is learned to the distribution it is learned from. In-context learning (ICL) avoids this coupling but has not matched trained policies, because a demonstration recorded in another scene carries no feedback from the world the robot currently faces. We observe that what an agent learns in context is semantic, recording task steps and object roles rather than visual appearance, so experience gathered in one world transfers to another. Based on this insight, we propose World In-Context Learning (WICL), a paradigm in which a frozen model starts from a demonstration, rehearses the task in a world such as a simulator, and writes the feedback into its context rather than its weights. We build RoboScript, a modular infrastructure that implements WICL for agentic manipulation. From a single demonstration, RoboScript learns each task through rehearsal in simulation, freezes the learned knowledge as a Task Memory, and deploys the frozen memory on new scenes with data isolation that ensures every deployment input is available on a real robot. On all 50 tasks of RoboTwin 2.0, RoboScript reaches 83.4% mean success across clean and randomized settings with one demonstration per task and no gradient updates, exceeding the strongest trained action policy by over 20 points. The method generalizes across visual distributions, improves through reflection, scales with the foundation model, and transfers to a physical dual-arm robot through cross-embodiment memory adaptation. With a world in the loop, a robot can learn a manipulation task in its context as well as it learns one in its weights. All code is available at https://github.com/ArcheOne-AI/RoboScript",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-11-09",
+      "age_days": 13.042954833449075,
+      "upvotes": 55,
+      "comments": 4,
+      "stars": 328,
+      "repo": "https://github.com/ArcheOne-AI/RoboScript",
+      "trending_rank": 79,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.45809,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 0,
+        "comments": 0,
+        "stars": 10
+      },
+      "score": 4.87,
+      "rule_tags": [],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对现有机器人操作策略训练难以跨场景泛化的问题，作者提出一种基于“世界上下文学习”（WICL）的范式。该方法利用冻结模型在模拟环境中对任务进行排演，将任务步骤与对象角色的语义反馈直接记录在上下文而非网络权重中。通过构建RoboScript基础设施，该方法在RoboTwin 2.0的50项任务中实现了83.4%的平均成功率，并在无梯度更新的情况下优于传统的训练策略，验证了在上下文学习中获取操作技能的有效性。",
+        "highlights": [
+          {
+            "text": "提出WICL范式，通过在模拟器中排演任务并将反馈写入上下文而非权重，使机器人能从单次演示中高效学习任务。",
+            "evidence": "Based on this insight, we propose World In-Context Learning (WICL), a paradigm in which a frozen model starts from a demonstration, rehearses the task in a world such as a simulator, and writes the feedback into its context rather than its weights."
+          },
+          {
+            "text": "RoboScript在RoboTwin 2.0的50项任务中表现优异，平均成功率达到83.4%，且在零梯度更新条件下显著超过了传统训练的动作策略。",
+            "evidence": "On all 50 tasks of RoboTwin 2.0, RoboScript reaches 83.4% mean success across clean and randomized settings with one demonstration per task and no gradient updates, exceeding the strongest trained action policy by over 20 points."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "Sim-to-Real",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    }
+  ],
+  "candidate_count": 116,
+  "personalization_note": "已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。",
+  "html": "<h1>2026-11-22 热门论文 Top 10</h1>\n<p>机器人 · 强化学习 · 通用 AI</p>\n<p>生成时间：2026-11-22 09:01 CST。从 116 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>\n<p>候选来源：<a href=\"https://huggingface.co/papers\">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>\n<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>\n<h2>1. Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent</h2>\n<p><strong>机器人 / 强化学习</strong> · 发表 2026-11-13 · 综合分 5.74</p>\n<p>Zotero 摘要相关性：0.491（相似度分数，不是概率）。</p>\n<p>HF 点赞 147 · 讨论 4 · 本次 HF 热榜第 3 位 · 仓库累计 Star 1188（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +3 · 讨论 +0 · Star +138。</p>\n<p><strong>规则标签：</strong>强化学习 · 视觉语言动作 · 推理</p>\n<p><strong>中文概述：</strong>本文介绍了一种名为Gamer的通用智能体框架，旨在处理复杂交互环境下的长程任务。该框架结合了感知、记忆管理和多步推理的端到端架构，支持在2D图形界面和3D模拟世界中交互。作者通过大规模键盘和鼠标交互数据进行预训练，并利用稀疏思维指令微调和多轮强化学习方法，提升了模型的长程决策能力与运行效率。实验结果表明，Gamer在多个3D开放世界游戏和2D基准测试中展现出良好的泛化能力和操作水平。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>Gamer通过在大规模键盘与鼠标交互数据上进行预训练，有效学习了跨物理与虚拟域的环境动态。<br><small>摘要依据：We first continue pre-training on a dataset constructed from tens of thousands of hours of device-level keyboard and mouse interaction. These trajectories span simulated games and embodied environments, allowing the model to learn environmental dynamics across both physical and virtual domains.</small></li>\n<li>采用稀疏思维指令微调和多轮强化学习方法，在减少计算冗余的同时增强了长程决策的稳定性。<br><small>摘要依据：Sparse-thinking instruction tuning then substantially reduces redundant computation while preserving the reasoning needed for complex decisions. We train the policy for long-horizon interaction with a stable multi-turn reinforcement learning method that addresses finite context windows, accumulated rollout errors, and sparse rewards.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>视觉语言动作 · 推理</p>\n<p><strong>原文摘要节选：</strong>We introduce Gamer, a generalist agent framework built for long-horizon tasks in complex interactive environments. Its end-to-end architecture combines perception, memory management, and multi-step reasoning. A shared training and deployment pipeline supports interaction with both conventional 2D graphical interfaces and complex 3D simulated worlds. We first continue pre-training on a dataset constructed from tens of thousands of hours of device-level keyboard and mouse interaction. These trajectories span simulated games and embodied environments, allowing the model to learn environmental dynamics across both physical and virtual domains. Sparse-thinking instruction tuning then substantially reduces redundant computation while preserving the reasoning needed for complex decisions. We…</p>\n<p><a href=\"https://arxiv.org/abs/2611.18397\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.18397\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.18397\">讨论与热度</a> · <a href=\"https://github.com/RainBowLuoCS/Gamer\">代码</a></p><hr>\n<h2>2. ZeroVLN: Learning to Navigate without Supervised Fine-Tuning of the VLM Brain</h2>\n<p><strong>强化学习</strong> · 发表 2026-11-19 · 综合分 5.28</p>\n<p>Zotero 摘要相关性：0.459（相似度分数，不是概率）。</p>\n<p>HF 点赞 22 · 讨论 2 · 本次 HF 热榜第 45 位 · 仓库累计 Star 21（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +1 · Star +1。</p>\n<p><strong>规则标签：</strong>强化学习 · 导航</p>\n<p><strong>中文概述：</strong>针对现有视觉语言导航方法需微调模型导致通用能力下降的问题，本文提出ZeroVLN框架。该框架不直接微调视觉语言模型，而是通过语义工具调用接口让模型向动作专家传递指令。通过闭环强化学习协同优化慢速决策与快速执行策略，在保持模型通用视觉能力的同时，在VLN-CE基准测试中实现了性能提升。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出ZeroVLN框架，实现了无需针对导航领域进行有监督微调即可完成有效的导航任务。<br><small>摘要依据：We introduce ZeroVLN, a slow-fast navigation framework that achieves effective navigation with zero navigation-domain SFT of the VLM brain.</small></li>\n<li>通过闭环强化学习协同优化决策与执行策略，并在标准基准测试中优于典型的基于微调的方法。<br><small>摘要依据：Trained on the same navigation episodes, ZeroVLN substantially outperforms representative SFT-based hierarchical VLN methods on standard VLN-CE (continuous environments) benchmarks, while inducing only minor changes to the brain&#x27;s weights and largely preserving its general capabilities.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>导航 · 强化学习</p>\n<p><strong>原文摘要节选：</strong>Representative vision-language navigation (VLN) methods typically couple a vision-language model (VLM) brain with a learnable action head and fine-tune the VLM brain on navigation-domain data to predict geometric goals. However, such adaptation can substantially alter base VLM weights and degrade general visual capabilities. We introduce ZeroVLN, a slow-fast navigation framework that achieves effective navigation with zero navigation-domain SFT of the VLM brain. Rather than teaching the brain to predict geometric goals, we equip it with a semantic tool-calling interface for conveying movement decisions to an action expert in natural language. We first adapt the action expert to carry out these movement requests, then jointly improve the brain&#x27;s movement decisions and the action expert&#x27;s…</p>\n<p><a href=\"https://arxiv.org/abs/2611.26414\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.26414\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.26414\">讨论与热度</a> · <a href=\"https://github.com/hzx122/ZeroVLN\">代码</a></p><hr>\n<h2>3. Teaching Vision-Language-Action Models to Stop Safely</h2>\n<p><strong>机器人</strong> · 发表 2026-11-19 · 综合分 5.22</p>\n<p>Zotero 摘要相关性：0.434（相似度分数，不是概率）。</p>\n<p>HF 点赞 7 · 讨论 2 · 仓库累计 Star 0（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +7 · 讨论 +2。</p>\n<p><strong>规则标签：</strong>视觉语言动作</p>\n<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>\n<p><strong>原文摘要节选：</strong>Vision-language-action (VLA) models enable robots to perform diverse tasks from visual observations and language instructions. While prior work has explored task suppression and refusal, stopping prohibited behavior once execution is underway and controlling the resulting physical response remain challenging. Our evaluation reveals that policies which suppress a task from its initial state can still complete it when taking over partway through execution. Even when the task remains unfinished, the robot may drop a held object, making non-completion an incomplete measure of safety. To address these challenges, we introduce State-Aware Fallback Imitation (SAFI) for tasks where holding provides an appropriate alternative response. SAFI comprises two stages, (1) fallback target construction,…</p>\n<p><a href=\"https://arxiv.org/abs/2611.26239\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.26239\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.26239\">讨论与热度</a> · <a href=\"https://github.com/franciscoliu/SAFI\">代码</a></p><hr>\n<h2>4. Learning What Actions Change: Action Effect Matching for Dynamics-Faithful World Models</h2>\n<p><strong>机器人</strong> · 发表 2026-11-19 · 综合分 5.17</p>\n<p>Zotero 摘要相关性：0.443（相似度分数，不是概率）。</p>\n<p>HF 点赞 15 · 讨论 2</p>\n<p>较上次观测（1.0 天前）：点赞 +3 · 讨论 +1。</p>\n<p><strong>规则标签：</strong>世界模型</p>\n<p><strong>中文概述：</strong>针对现有世界模型难以捕捉微小动作变化对未来观测影响的问题，作者提出了AFFECT训练目标。该方法通过引入动作扰动并利用动作效应匹配机制，训练世界模型生成更符合真实动态演变的视频。在仿真与现实机器人实验中，该方法提升了模型预测结果与真实执行结果的一致性，增强了其在策略评估与模型预测控制中的表现。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出AFFECT训练目标，通过学习动作扰动引发的视觉变化分布，提升了世界模型对动作后果预测的准确性。<br><small>摘要依据：To address this, we propose AFFECT, an auxiliary training objective for learning the distribution of visual changes induced by action perturbations.</small></li>\n<li>实验结果显示，AFFECT使世界模型的预测与真实机器人执行结果的一致性显著提高，并改善了规划任务的表现。<br><small>摘要依据：On DROID, the Pearson correlation between policy success rates in the world model and on the real robot rises from 0.47 to 0.79, alongside up to 23% lower FVD. These gains carry over to planning, where selecting actions with AFFECT-trained world models improves task success by up to 8.3%.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>世界模型 · 机器人操作</p>\n<p><strong>原文摘要节选：</strong>World models aim to predict environment dynamics under actions, enabling the prediction of action consequences without executing them in the real world. Yet despite producing increasingly realistic videos, current world models often fail to capture how small action changes affect future observations. This limits their use in tasks such as robotic policy evaluation and model-based planning, where nearly identical actions can lead to qualitatively different outcomes. To address this, we propose AFFECT, an auxiliary training objective for learning the distribution of visual changes induced by action perturbations. Specifically, we inject temporally correlated noise into the actions of a policy trained on task-agnostic human teleoperation. We then train the world model so that its generated…</p>\n<p><a href=\"https://arxiv.org/abs/2611.25980\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.25980\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.25980\">讨论与热度</a></p><hr>\n<h2>5. Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation</h2>\n<p><strong>机器人</strong> · 发表 2026-11-19 · 综合分 4.96</p>\n<p>Zotero 摘要相关性：0.365（相似度分数，不是概率）。</p>\n<p>HF 点赞 51 · 讨论 4 · 仓库累计 Star 30（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +5 · 讨论 +2 · Star +3。</p>\n<p><strong>规则标签：</strong>机器人操作 · 视觉语言动作 · 推理</p>\n<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>\n<p><strong>原文摘要节选：</strong>Embodied intelligence aims to let robots perform complex physical tasks with human-like adaptability and reliability, which requires three complementary capabilities: history-based cognitive reasoning, precise and timely physical execution, and the composition of reasoning and execution through environmental feedback. Yet existing benchmarks either evaluate reasoning and execution within the same tasks or assess them separately without their composition, so they reveal little about whether a failure comes from reasoning, execution, or their composition. We introduce Mind2Act World, a diagnostic benchmark of 30 simulated manipulation tasks from five real-world application domains. Each task has three difficulty levels and two scene settings (Clean and Random), yielding 180 configurations.…</p>\n<p><a href=\"https://arxiv.org/abs/2611.26444\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.26444\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.26444\">讨论与热度</a> · <a href=\"https://github.com/Mind2Act/Mind2Act_World\">代码</a></p><hr>\n<h2>6. WAM-Policy: World Action Models with On-Policy Distillation for Quadrupedal Loco-Manipulation</h2>\n<p><strong>机器人 / 强化学习</strong> · 发表 2026-11-18 · 综合分 4.95</p>\n<p>Zotero 摘要相关性：0.481（相似度分数，不是概率）。</p>\n<p>HF 点赞 16 · 讨论 2 · 仓库累计 Star 7（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +0 · 讨论 +1 · Star +0。</p>\n<p><strong>规则标签：</strong>强化学习 · 四足机器人</p>\n<p><strong>中文概述：</strong>针对无机械臂四足机器人难以执行语言指令进行移动操作的问题，作者提出了WAM-Policy框架。该方法通过跨形态策略适配与加速，将预训练的机械臂世界动作模型转化为四足机器人策略，并利用在线策略蒸馏技术减少采样步数。随后，通过强化学习进行任务特定优化，并采用多教师在线策略蒸馏整合专家策略。实验结果显示，该方法在提升任务成功率的同时，大幅降低了推理成本并实现了实机部署。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出了一种基于在线策略蒸馏的框架，在保持较高任务成功率的同时显著提升了策略采样速度。<br><small>摘要依据：the transferred policy reaches 77.0%, and the OPSD student keeps 76.7% while sampling 14 times faster.</small></li>\n<li>通过强化学习与多教师在线策略蒸馏相结合的方法，进一步优化了四足机器人的移动操作性能。<br><small>摘要依据：Task-specific RL and M-OPD lift it to 85.0%.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · 四足机器人 · 足式运动 · 机器人操作 · Sim-to-Real</p>\n<p><strong>原文摘要节选：</strong>Arm-free quadrupeds can perform loco-manipulation, walking on three legs while manipulating with a front leg, yet no existing policy for it follows language instructions. World action models (WAMs) have emerged as effective language-conditioned manipulation policies, but are pretrained for robot arms and sample slowly. WAM-Policy turns one WAM into a quadrupedal loco-manipulation policy via two stages. The first, Cross-Morphology Policy Adaptation and Acceleration, adapts the arm-centric WAM to quadrupeds and distills the transferred policy into a student with one video and two action steps by on-policy self-distillation (OPSD). This student, however, is bounded by its teacher, which only imitates demonstrations. The second stage, Task-Specific Improvement and Merging, therefore tunes the…</p>\n<p><a href=\"https://arxiv.org/abs/2611.24011\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.24011\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.24011\">讨论与热度</a> · <a href=\"https://github.com/AIGeeksGroup/WAM-Policy\">代码</a></p><hr>\n<h2>7. HINT-WAM: Hindsight-Informed Training for World Action Models</h2>\n<p><strong>机器人 / 强化学习</strong> · 发表 2026-11-18 · 综合分 4.93</p>\n<p>Zotero 摘要相关性：0.486（相似度分数，不是概率）。</p>\n<p>HF 点赞 22 · 讨论 3 · 仓库累计 Star 4（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +0 · 讨论 +0 · Star +0。</p>\n<p><strong>规则标签：</strong>强化学习 · 大模型后训练</p>\n<p><strong>中文概述：</strong>本文针对世界动作模型（WAMs）在机器人操作任务中执行可靠性不足的问题，提出了一种名为HINT-WAM的在轨自我蒸馏框架。该方法利用演示序列的未来视频作为特权信息，通过后见之明（hindsight）构建条件动作分布，将教师模型蒸馏至学生模型，从而在无需环境奖励或模拟器交互的情况下，通过匹配动作分布实现对流匹配动作专家的监督。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>HINT-WAM是一种在轨自我蒸馏框架，通过使用后见之明（演示的未来视频）作为特权信息来监督自身的动作采样轨迹。<br><small>摘要依据：We introduce HINT-WAM, the first on-policy self-distillation framework that supervises the action expert on its own sampling trajectories using hindsight, the future video of the demonstration, as privileged information available to the WAM itself.</small></li>\n<li>该方法通过能量分数匹配教师的动作分布，而非回归速度场，从而有效地将监督信息传递给流匹配动作专家。<br><small>摘要依据：To transfer this supervision to a flow-matching action expert, HINT-WAM distills the teacher into the student with an energy score, a distribution-level objective that matches the teacher&#x27;s action distribution from the student&#x27;s own samples rather than regressing its velocity field.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 世界模型 · 模仿学习</p>\n<p><strong>原文摘要节选：</strong>World action models (WAMs) have shown promising generalization and data efficiency in robot manipulation by coupling action generation with predictions of future visual dynamics. Translating these capabilities into reliable task execution, however, remains a challenge for existing post-training methods. Offline supervised fine-tuning provides dense supervision on expert trajectories, but its flow-matching action expert is trained only on noised demonstration actions and never on the intermediate states produced by its own sampler; task-specific adaptation can also compromise pretrained capabilities. On-policy reinforcement learning trains on the policy&#x27;s own behavior, yet sparse task rewards make exploration and credit assignment difficult, while dense reward shaping still provides scalar…</p>\n<p><a href=\"https://arxiv.org/abs/2611.24789\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.24789\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.24789\">讨论与热度</a> · <a href=\"https://github.com/tuandattt/hintwam_code\">代码</a></p><hr>\n<h2>8. Coda-DaVinci: Reimagining Video Generation with Code2Video</h2>\n<p><strong>通用 AI</strong> · 发表 2026-11-19 · 综合分 4.90</p>\n<p>Zotero 摘要相关性：0.362（相似度分数，不是概率）。</p>\n<p>HF 点赞 35 · 讨论 4 · 本次 HF 热榜第 80 位 · 仓库累计 Star 22（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +3 · 讨论 +1 · Star +9。</p>\n<p><strong>规则标签：</strong>多智能体</p>\n<p><strong>中文概述：</strong>本文针对Code2Video生成范式中的代理构建与提示策略展开研究，探讨了代理粒度、物理模拟及提示词对视频质量的影响。作者提出Coda-DaVinci框架，通过任务自适应选择生成模式、调整建模粒度并协调物理模拟与提示，旨在提升视频结构的明确控制力与生成质量。实验结果显示，该框架在指令遵循、场景一致性及物理真实性方面优于基准方法，但在转换稳定性和场景设置保持方面仍存在局限。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出一种任务自适应代理框架Coda-DaVinci，通过自动选择生成模式与调整建模粒度，提升了视频生成质量。<br><small>摘要依据：Guided by these findings, we introduce Coda-DaVinci, a task-adaptive agentic framework for Code2Video generation that selects between proxy-guided and direct generation, adapts modeling granularity to each entity, and coordinates simulation with proxy-grounded prompting.</small></li>\n<li>实验表明Coda-DaVinci在指令遵循、场景一致性及物理合理性方面均表现出优于对比基准的性能。<br><small>摘要依据：Experiments demonstrate leading instruction following on VTR and scene consistency on R2M, improved physical plausibility over direct generation, and higher visual realism than the compared Code2Video baselines.</small></li>\n</ul>\n<p><strong>原文摘要节选：</strong>Code2Video uses agent-authored 3D proxies to guide video generation, enabling explicit control over structure and dynamics. However, how to construct proxies and prompts for optimal downstream quality remains underexplored, as do the capabilities and limitations of this paradigm. Through controlled experiments and blinded human evaluation, we study proxy granularity, physics simulation, and prompting. The results reveal task-dependent trade-offs: coarse proxies favor natural motion, while medium-grained proxies favor consistency. Physics simulation and proxy-aligned prompting further improve average quality. Guided by these findings, we introduce Coda-DaVinci, a task-adaptive agentic framework for Code2Video generation that selects between proxy-guided and direct generation, adapts…</p>\n<p><a href=\"https://arxiv.org/abs/2611.26595\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.26595\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.26595\">讨论与热度</a> · <a href=\"https://github.com/FrankYang-17/Coda\">代码</a></p><hr>\n<h2>9. RL Post-Training in Diffusion Transformers Is Activation Steering</h2>\n<p><strong>强化学习</strong> · 发表 2026-11-19 · 综合分 4.88</p>\n<p>Zotero 摘要相关性：0.397（相似度分数，不是概率）。</p>\n<p>HF 点赞 17 · 讨论 2</p>\n<p>较上次观测（1.0 天前）：点赞 +3 · 讨论 +1。</p>\n<p><strong>规则标签：</strong>强化学习 · 大模型后训练</p>\n<p><strong>中文概述：</strong>该研究探讨了扩散模型强化学习（RL）后训练的机制。作者提出，RL后训练带来的性能提升主要源于一种输入无关的激活转向，而非学习复杂的输入依赖变换。通过在冻结模型中加入固定的转向向量，研究发现这些简单参数化方法能恢复大部分RL后训练的奖励增益，表明RL后训练主要是在引导预训练生成器向其既有能力方向偏移。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>RL后训练的大部分增益可由输入无关的激活转向来解释，无需复杂的输入依赖变换。<br><small>摘要依据：A constant shift thus suffices for most of the gain of policy-gradient RL post-training: without new input-dependent transformations, it steers the pretrained generator toward what it can already compute.</small></li>\n<li>通过在SD3.5-M模型上添加固定的转向向量，该方法能恢复90.0%至96.3%的奖励增益，且参数量远少于RL微调的LoRA。<br><small>摘要依据：Although the vectors are identical for every prompt, token, and sampling seed, they recover 90.0-96.3% of the reward gains of six RL-tuned image models, and 89.8% and 111.9% on two RL-tuned video models.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>大模型后训练</p>\n<p><strong>原文摘要节选：</strong>Reinforcement learning (RL) post-training substantially improves the visual quality, text rendering, and compositional accuracy of diffusion transformers. Because capabilities such as rendering requested text or composing multiple objects are inherently prompt-dependent, a natural hypothesis is that improving them requires learning complex, input-dependent transformations. To isolate how much of these gains an input-independent shift explains, we probe each RL-tuned model with a deliberately simple parameterization: a fixed set of steering vectors added to the block outputs of the frozen base model. On SD3.5-M, these vectors hold 65x fewer parameters than the RL-tuned LoRA (0.29M against 18.8M). We fit them to match the velocity predictions of public RL-tuned checkpoints, with no reward…</p>\n<p><a href=\"https://arxiv.org/abs/2611.26627\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.26627\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.26627\">讨论与热度</a></p><hr>\n<h2>10. World In-Context Learning for Agentic Robot Manipulation</h2>\n<p><strong>机器人</strong> · 发表 2026-11-09 · 综合分 4.87</p>\n<p>Zotero 摘要相关性：0.458（相似度分数，不是概率）。</p>\n<p>HF 点赞 55 · 讨论 4 · 本次 HF 热榜第 79 位 · 仓库累计 Star 328（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +0 · 讨论 +0 · Star +10。</p>\n<p><strong>中文概述：</strong>针对现有机器人操作策略训练难以跨场景泛化的问题，作者提出一种基于“世界上下文学习”（WICL）的范式。该方法利用冻结模型在模拟环境中对任务进行排演，将任务步骤与对象角色的语义反馈直接记录在上下文而非网络权重中。通过构建RoboScript基础设施，该方法在RoboTwin 2.0的50项任务中实现了83.4%的平均成功率，并在无梯度更新的情况下优于传统的训练策略，验证了在上下文学习中获取操作技能的有效性。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出WICL范式，通过在模拟器中排演任务并将反馈写入上下文而非权重，使机器人能从单次演示中高效学习任务。<br><small>摘要依据：Based on this insight, we propose World In-Context Learning (WICL), a paradigm in which a frozen model starts from a demonstration, rehearses the task in a world such as a simulator, and writes the feedback into its context rather than its weights.</small></li>\n<li>RoboScript在RoboTwin 2.0的50项任务中表现优异，平均成功率达到83.4%，且在零梯度更新条件下显著超过了传统训练的动作策略。<br><small>摘要依据：On all 50 tasks of RoboTwin 2.0, RoboScript reaches 83.4% mean success across clean and randomized settings with one demonstration per task and no gradient updates, exceeding the strongest trained action policy by over 20 points.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · Sim-to-Real · 推理</p>\n<p><strong>原文摘要节选：</strong>Trained action policies write manipulation skill into network weights, tying what is learned to the distribution it is learned from. In-context learning (ICL) avoids this coupling but has not matched trained policies, because a demonstration recorded in another scene carries no feedback from the world the robot currently faces. We observe that what an agent learns in context is semantic, recording task steps and object roles rather than visual appearance, so experience gathered in one world transfers to another. Based on this insight, we propose World In-Context Learning (WICL), a paradigm in which a frozen model starts from a demonstration, rehearses the task in a world such as a simulator, and writes the feedback into its context rather than its weights. We build RoboScript, a modular…</p>\n<p><a href=\"https://arxiv.org/abs/2611.12885\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.12885\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.12885\">讨论与热度</a> · <a href=\"https://github.com/ArcheOne-AI/RoboScript\">代码</a></p><hr>"
+}
