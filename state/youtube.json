@@ -6059,6 +6059,45 @@
     "CcIwi0Pr64E": {
       "video_id": "CcIwi0Pr64E",
       "papers": []
+    },
+    "993zidGIra0": {
+      "video_id": "993zidGIra0",
+      "video_title": "LittleBit: Ultra Low-Bit Quantization via Latent Factorization (May 2025)",
+      "published": "2026-11-22",
+      "video_url": "https://www.youtube.com/watch?v=993zidGIra0",
+      "papers": [
+        {
+          "id": "2506.13771",
+          "title": "LittleBit: Ultra Low-Bit Quantization via Latent Factorization (May 2025)",
+          "url": "https://arxiv.org/abs/2506.13771"
+        }
+      ]
+    },
+    "dqCYpB43qvw": {
+      "video_id": "dqCYpB43qvw",
+      "video_title": "An AI Proof of the Riemann Hypothesis? What the Lean Check Does and Doesn't Show, Explained",
+      "published": "2026-11-22",
+      "video_url": "https://www.youtube.com/watch?v=dqCYpB43qvw",
+      "papers": [
+        {
+          "id": "2610.08144",
+          "title": "2610.08144",
+          "url": "https://arxiv.org/abs/2610.08144"
+        }
+      ]
+    },
+    "VUiK-KbL0CU": {
+      "video_id": "VUiK-KbL0CU",
+      "video_title": "Gateway-Free Kafka Streaming from FPGA-Based Detectors: A Bare-Metal Pipelined Producer on Zynq-7000",
+      "published": "2026-11-22",
+      "video_url": "https://www.youtube.com/watch?v=VUiK-KbL0CU",
+      "papers": [
+        {
+          "id": "2611.22674",
+          "title": "Gateway-Free Kafka Streaming from FPGA-Based Detectors: A Bare-Metal Pipelined Producer on Zynq-7000 (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.22674"
+        }
+      ]
     }
   }
 }
