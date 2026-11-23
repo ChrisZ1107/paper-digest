@@ -1,0 +1,21 @@
+{
+  "overview": "针对具身智能中认知推理、物理执行及其组合能力评估不足的问题，本文提出了Mind2Act World基准测试。该基准包含5个应用领域的30项操作任务及180种配置，通过将任务划分为“心智（Mind）”、“行动（Act）”和“心智行动组合（Mind2Act）”三个视图，系统地诊断机器人代理的失效源头。研究表明，现有的多模态代理及模型在单一任务上的能力难以迁移至组合任务，验证了通过环境反馈实现推理与执行的深度融合是当前的主要挑战。",
+  "highlights": [
+    {
+      "text": "提出了一种新的诊断基准Mind2Act World，通过解耦认知推理、物理执行及两者组合任务，有效定位机器人代理的性能瓶颈。",
+      "evidence": "We introduce Mind2Act World, a diagnostic benchmark of 30 simulated manipulation tasks from five real-world application domains."
+    },
+    {
+      "text": "实验发现单一能力的具备无法保证复杂组合任务的成功，即使是表现最强的代理在Mind2Act任务中的成功率也显著下降。",
+      "evidence": "Even the strongest agent succeeds in 52.7% of Mind and 39.0% of Act episodes but in only 12.0% of Mind2Act episodes."
+    },
+    {
+      "text": "分析指出，当前主流模型在状态保持与持续接触控制之间存在权衡，揭示了将推理与执行通过环境反馈进行组合仍是关键开放难题。",
+      "evidence": "These findings point to composing reasoning and execution through environmental feedback as the main open problem."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "视觉语言动作"
+  ]
+}
