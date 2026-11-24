@@ -1,0 +1,17 @@
+{
+  "overview": "针对移动具身智能体缺乏连接执行与物理后果的模拟环境问题，本文提出了一个以智能体为中心的模拟与基准测试平台γ-Scape。该平台支持智能体组合运动工具与习得技能，在持久化的物理世界中完成导航与操作任务。作者声称该框架能通过收集交互轨迹与辅助指导，支持程序改进与策略学习，为具身递归自我提升研究提供了基础设施。",
+  "highlights": [
+    {
+      "text": "提出以智能体为中心的模拟平台，支持在持久化物理世界中执行导航与操作任务。",
+      "evidence": "Agents compose motion tools and learned skills to carry out complete tasks that combine navigation and manipulation in a persistent physical world."
+    },
+    {
+      "text": "构建了包含指令、参考程序与评估器的任务基准，并支持记录交互数据以辅助程序优化。",
+      "evidence": "The resulting tool traces and aligned observation-action records support program refinement and policy learning, with common task-goal criteria for subsequent evaluation."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "导航"
+  ]
+}

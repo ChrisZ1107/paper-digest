@@ -1,0 +1,17 @@
+{
+  "overview": "针对无标签视频缺乏动作标注的问题，该研究提出了O2LaF框架，旨在利用预训练视频扩散Transformer作为统一先验，通过构建逆向动力学模型和前向动力学模型，从视觉转移中学习潜在动作。通过端到端的联合优化，该方法在机器人导航和操作任务中实现了少样本动作探查与零样本动作迁移，并验证了其在不同视觉上下文和实体间的通用性。",
+  "highlights": [
+    {
+      "text": "提出O2LaF框架，通过预训练视频生成模型作为先验，实现逆向和前向动力学的联合学习。",
+      "evidence": "We introduce O^{2}LaF, built on a simple principle: one prior, two dynamics. We initialize both models from the same pretrained video DiT and adapt them to their distinct roles"
+    },
+    {
+      "text": "在导航与机器人操作任务中，该方法在少样本动作探查方面达到业内领先水平，并支持跨视觉环境和实体的零样本动作迁移。",
+      "evidence": "Across navigation and robotic manipulation, O^{2}LaF sets a new state of the art in few-shot action probing and enables stronger zero-shot action transfer across visual contexts and embodiments."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "导航"
+  ]
+}

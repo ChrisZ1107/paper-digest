@@ -1,0 +1,23 @@
+{
+  "overview": "针对四足机器人运动中难以应对复杂动力学和外部干扰的问题，作者提出PACE框架。该方法通过非线性观测器在线估计包含负载、重心偏移及外部力在内的联合空间干扰，利用该估计值提供前馈转矩补偿，并增强策略观测以实现干扰感知动作生成。实验结果表明，该方法在仿真多动力学条件及真实场景下均表现出比现有基准更优的速度跟踪精度与环境适应性。",
+  "highlights": [
+    {
+      "text": "PACE通过非线性观测器在线估计动力学干扰，并将其应用于转矩补偿与策略观测，有效降低了复杂环境下的跟踪误差。",
+      "evidence": "The disturbance estimation provides feedforward torque compensation as the foundational control pathway and further augments the policy observation to enable disturbance-aware action generation."
+    },
+    {
+      "text": "在仿真中针对十一种动力学条件测试显示，PACE相较于现有基准显著降低了速度跟踪误差并增强了对分布外命令的适应性。",
+      "evidence": "Across eleven simulated dynamics conditions, PACE reduces velocity-tracking error by 18.1% to 57.0% against state-of-the-art baselines, and maintains improved tracking under out-of-distribution (OOD) commands."
+    },
+    {
+      "text": "真实机器人实验验证了该方法在仅经过平地模拟训练的情况下，能携带自身重量的负载并适应复杂户外地形。",
+      "evidence": "Notably, in real-world experiments, the deployed real robot carried an 11.5 kg payload, nearly equal to its own mass. It also negotiated unseen 16 cm step-downs and crossed five outdoor terrains."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "四足机器人",
+    "足式运动",
+    "Sim-to-Real"
+  ]
+}

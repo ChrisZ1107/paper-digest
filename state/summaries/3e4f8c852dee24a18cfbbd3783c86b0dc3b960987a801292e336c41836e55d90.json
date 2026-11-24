@@ -1,0 +1,14 @@
+{
+  "overview": "针对现有运动合成方法难以呈现人类与未知物体交互时试探、调整等表达性行为的问题，本文提出了一种名为ExpHOI的测试时潜在适应框架。该方法基于强化学习训练的物理控制器，在测试阶段通过优势加权回归（AWR）动态优化潜在编码以适应物体属性。结合高层规划器处理失败情况，该框架在保持任务成功率的同时，能够生成更具真实感和表现力的交互动画。",
+  "highlights": [
+    {
+      "text": "提出ExpHOI框架，通过在测试阶段对潜在代码进行迭代优化，实现了从初步试探到熟练操作的交互行为过程。",
+      "evidence": "At test time, Advantage-Weighted Regression (AWR) iteratively optimizes the latent code for an object with unknown physical properties. Temporary mismatches between this code and the true object dynamics produce an expressive progression from tentative, error-prone trials to proficient interaction."
+    },
+    {
+      "text": "该方法在大型物体搬运任务中表现出高成功率，并提升了动作的姿态多样性及视觉真实感。",
+      "evidence": "Across carrying and push-pull, our method pairs over 90% success with markedly higher posture diversity, and is rated the most lifelike in our user study on animation liveliness."
+    }
+  ],
+  "tags": []
+}

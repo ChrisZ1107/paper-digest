@@ -1,0 +1,19 @@
+{
+  "overview": "针对机器人受损后如何在不同风险约束下进行路径规划的问题，作者比较了四种决策接口：决策策略、带固定惩罚的策略、基于可行性和时间的后果模型，以及能够预测成功率和时间的“能力契约”模型。研究在Unitree Go2四足机器人和H1人形机器人仿真环境中进行。结果表明，相比决策策略，采用后果模型能显著降低因风险约束导致的弃权任务比例，提升任务成功率与适应性。",
+  "highlights": [
+    {
+      "text": "提出能力契约模型，通过预测不同地形下的成功概率与时间，实现了优异的风险感知规划能力。",
+      "evidence": "Two comparatively low-risk probes let the capability contract rank hazardous terrains about as well as four new trials on every hazard."
+    },
+    {
+      "text": "后果模型接口相较于简单的决策策略，显著降低了机器人受损后的任务拒绝率。",
+      "evidence": "At a calibrated 5% limit on selecting empirically infeasible routes, outcome models cut declined missions from about 32% to 7-8% on Go2 and from 57% to 35-36% on H1 compared with the plain policy."
+    }
+  ],
+  "tags": [
+    "四足机器人",
+    "人形机器人",
+    "足式运动",
+    "世界模型"
+  ]
+}
