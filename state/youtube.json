@@ -6150,6 +6150,32 @@
     "5sdqxjpcCkU": {
       "video_id": "5sdqxjpcCkU",
       "papers": []
+    },
+    "QEdyr00tum0": {
+      "video_id": "QEdyr00tum0",
+      "video_title": "The KL Divergence Is Never Negative, Except in PyTorch (Nov 2026)",
+      "published": "2026-11-25",
+      "video_url": "https://www.youtube.com/watch?v=QEdyr00tum0",
+      "papers": [
+        {
+          "id": "2611.30835",
+          "title": "The KL Divergence Is Never Negative, Except in PyTorch (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.30835"
+        }
+      ]
+    },
+    "XFH_Pphk4uU": {
+      "video_id": "XFH_Pphk4uU",
+      "video_title": "Latent Introspection: Models Can Detect Prior Concept Injections (Feb 2026)",
+      "published": "2026-11-25",
+      "video_url": "https://www.youtube.com/watch?v=XFH_Pphk4uU",
+      "papers": [
+        {
+          "id": "2602.20031",
+          "title": "Latent Introspection: Models Can Detect Prior Concept Injections (Feb 2026)",
+          "url": "https://arxiv.org/abs/2602.20031"
+        }
+      ]
     }
   }
 }
