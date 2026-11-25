@@ -1,0 +1,22 @@
+{
+  "overview": "针对通用机器人操作任务，本文提出了nanoAstra训练方法。该方法结合语义动作建模与能力保持的监督微调（CP-SFT），将机器人行为表示为可复用的参数化基元，并利用特定系统提示符约束输出空间。实验表明，nanoAstra在RoboTwin 2.0基准测试中展现出优于现有VLA及WAM基线的零样本泛化能力，并支持高效的流式推理，显著降低了机器人执行过程中的空闲时间。",
+  "highlights": [
+    {
+      "text": "nanoAstra通过结合语义动作建模与能力保持的监督微调（CP-SFT），在保持预训练能力的同时实现了特定机器人环境下的高效适配。",
+      "evidence": "nanoAstra, an approach to training vision-language models (VLMs) for generalizable manipulation that combines semantic action modeling with capability-preserving supervised fine-tuning (CP-SFT)."
+    },
+    {
+      "text": "在RoboTwin 2.0基准测试中，nanoAstra-9B表现优异，零样本成功率达到17.8%，大幅超越了先进的VLA和WAM基准模型。",
+      "evidence": "On RoboTwin 2.0's randomized benchmark, nanoAstra-9B achieves a 17.8% zero-shot success rate, substantially outperforming advanced VLA and WAM baselines as well as similarly sized VLMs."
+    },
+    {
+      "text": "该模型支持流式执行，通过将推理与运动重叠，成功将机器人操作中的空闲时间从35.0%降低至6.9%。",
+      "evidence": "With inference faster than the corresponding motion execution on a single H20 GPU, our model supports action-chunk-like streaming execution that overlaps inference with motion, reducing the robot's idle time from 35.0% to 6.9%."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "Sim-to-Real",
+    "大模型后训练"
+  ]
+}

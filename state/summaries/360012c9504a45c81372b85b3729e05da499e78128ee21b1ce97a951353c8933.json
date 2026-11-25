@@ -1,0 +1,17 @@
+{
+  "overview": "针对Sim-to-Real转移中模拟器参数校准困难及感知误差问题，本文提出了一种神经保真度校准（NFC）框架。该方法利用条件流匹配技术，在线校准物理参数并建模残差保真度，将模拟器与真实环境的差异映射到潜在空间。通过在检测到异常时进行策略微调，该方法提升了机器人在复杂地形下的适应能力与表现。",
+  "highlights": [
+    {
+      "text": "提出神经保真度校准（NFC）方法，通过条件流匹配在线校准物理参数并捕获Sim-to-Real的动力学差异与感知不确定性。",
+      "evidence": "We propose Neural Fidelity Calibration (NFC), which uses conditional flow matching to calibrate simulator physical parameters and residual fidelity domains online during deployment. Residual fidelity captures sim-to-real dynamics discrepancies and perception-induced environment uncertainty."
+    },
+    {
+      "text": "实验证明NFC在多种机器人平台上表现出优于现有方法的后验估计精度，并显著提升了受损机器人在复杂恶劣地形下的作业成功率。",
+      "evidence": "NFC attains the most accurate posteriors among established simulation-based inference methods on five robots with up to 39 physical parameters and a 128x128 residual terrain. On a wheeled robot with a broken wheel axle deployed on snow, mud, and wet grass, NFC raises success on rough terrain from 26% to 70% and reduces orientation jerk by 88%."
+    }
+  ],
+  "tags": [
+    "Sim-to-Real",
+    "强化学习"
+  ]
+}

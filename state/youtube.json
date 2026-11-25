@@ -6160,7 +6160,9 @@
         {
           "id": "2611.30835",
           "title": "The KL Divergence Is Never Negative, Except in PyTorch (Nov 2026)",
-          "url": "https://arxiv.org/abs/2611.30835"
+          "url": "https://arxiv.org/abs/2611.30835",
+          "abstract": "A Kullback--Leibler (KL) divergence is never negative, yet PyTorch users have reported negative values for years, and the standard advice is to clamp them at zero. The sign is only the visible part of a silent failure. Many machine-learning applications compare nearby distributions, where conventional KL formulas lose accuracy. On 8.5 million inputs with certified references across 18 closed-form KL families and F.kl_div, we find widespread errors in values and gradients on CPU and GPU. Among scalar families in ordinary parameter ranges, over 85% of FP32 values have at least 1% relative error near KL 10^(-7) (FP16: 10^(-3)), and about 30% become negative at smaller divergences. More precision is not the cure: evaluated one precision higher, the same formulas still leave 7--51% of FP32 values significantly wrong for 22 of 23 configurations. Stable closed-form decompositions, compensated arithmetic, and analytic gradients remove over 97% of significant errors in the working format. Strict repairs eliminate significant errors on 7.2 million scored closed-form samples and correctly round all 567 million scored F.kl_div components. The errors affect parameter fitting, Bayesian decisions, identical-start distillation (up to 97% top-1 disagreement), KL-based layer rankings in a quantized LLM, and 19--59% of GPT-2 circuit edge scores. With the repaired code they all but vanish. Code and data: https://github.com/xi-xiaoran/stablekl",
+          "abstract_zh": "Kullback--Leibler (KL) 散度从定义上绝不为负，然而 PyTorch 用户多年来一直报告该函数会产生负值，对此标准的建议是将其截断为零。这种符号异常只是隐性错误所引发的冰山一角。许多机器学习应用需要比较近似的分布，而传统的 KL 公式在此时会失去精度。通过对覆盖 18 个闭式 KL 族及 F.kl_div 的 850 万个带有经过验证参考值的输入进行测试，我们发现在 CPU 和 GPU 上其数值和梯度存在广泛的错误。在常规参数范围内的标量族中，超过 85% 的 FP32 数值在 KL 值为 10^(-7) 附近具有至少 1% 的相对误差（FP16 为 10^(-3)），且约 30% 的数值在较小的散度下变为负数。单纯提升精度并不能解决问题：在更高一级精度下评估时，在 23 种配置中有 22 种的相同公式仍会导致 7%--51% 的 FP32 数值出现显著错误。稳定的闭式分解、补偿算术和解析梯度消除了工作格式中超过 97% 的显著错误。严格的修复消除了 720 万个已打分的闭式样本中的显著错误，并正确舍入了全部 5.67 亿个已打分的 F.kl_div 分量。这些错误会影响参数拟合、贝叶斯决策、相同起点蒸馏（Top-1 不一致率高达 97%）、量化大语言模型中的基于 KL 的层排名，以及 GPT-2 电路边缘得分中 19%--59% 的结果。使用修复后的代码后，这些错误几乎消失。代码与数据：https://github.com/xi-xiaoran/stablekl"
         }
       ]
     },
@@ -6173,7 +6175,9 @@
         {
           "id": "2602.20031",
           "title": "Latent Introspection: Models Can Detect Prior Concept Injections (Feb 2026)",
-          "url": "https://arxiv.org/abs/2602.20031"
+          "url": "https://arxiv.org/abs/2602.20031",
+          "abstract": "We uncover a latent capacity for introspection in a Qwen 32B model, demonstrating that the model can detect when concepts have been injected into its earlier context and identify which concept was injected. While the model denies injection in sampled outputs, logit lens analysis reveals clear detection signals in the residual stream, which are attenuated in the final layers. Furthermore, prompting the model with accurate information about AI introspection mechanisms can dramatically strengthen this effect: the sensitivity to injection increases massively (0.3% -> 39.9%) with only a 0.6% increase in false positives. Also, mutual information between nine injected and recovered concepts rises from 0.61 bits to 1.05 bits, ruling out generic noise explanations. Our results demonstrate models can have a surprising capacity for introspection and steering awareness that is easy to overlook, with consequences for latent reasoning and safety.",
+          "abstract_zh": "我们揭示了Qwen 32B模型中一种潜在的内省能力，证明该模型能够检测到概念何时被注入其早期上下文中，并识别出注入了哪个概念。尽管模型在采样输出中否认了注入行为，但Logit Lens分析在残差流中揭示了明显的检测信号，这些信号在最后几层中会减弱。此外，通过向模型提示有关AI内省机制的准确信息，可以显著增强这种效应：对注入的敏感度大幅提升（从0.3%提升至39.9%），而误报率仅增加了0.6%。此外，九个注入概念与恢复概念之间的互信息从0.61比特增加到1.05比特，排除了通用噪声解释的可能性。我们的研究结果表明，模型可能具有令人惊讶的内省和引导意识能力，这些能力很容易被忽视，并对潜在推理和安全性产生影响。"
         }
       ]
     }

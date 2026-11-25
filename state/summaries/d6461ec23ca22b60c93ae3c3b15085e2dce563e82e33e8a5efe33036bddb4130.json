@@ -1,0 +1,17 @@
+{
+  "overview": "针对机器人领路任务，现有方法在理解追随者与执行路线之间存在耦合问题。作者提出了LeadVLA，这是一种结构化的多模态策略，通过将路线保留为显式参考路径，同时学习路线进展速度和针对追随者及场景的局部调整余量。此外，作者构建了LeadInfra仿真环境与LeadBench基准测试集。实验表明，LeadVLA在基准测试中展现出更高的任务成功率，并能实现零样本的现实世界迁移。",
+  "highlights": [
+    {
+      "text": "LeadVLA采用显式路径参考结合学习速度控制与局部适应余量的结构，实现了机器人对追随者的有效引导。",
+      "evidence": "We introduce LeadVLA, a structured multimodal policy that preserves the route as an explicit Path reference while learning a Pace for route progress and a Residual for local follower- and scene-conditioned adaptation."
+    },
+    {
+      "text": "该方法在LeadBench测试中表现优于其他策略，且无需微调即可成功迁移至现实环境。",
+      "evidence": "LeadVLA achieves the highest task success (39.6%) among evaluated robot policies on LeadBench while maintaining strong route fidelity and follower responsiveness, and transfers to unseen real-world environments without real-world policy fine-tuning."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "Sim-to-Real"
+  ]
+}

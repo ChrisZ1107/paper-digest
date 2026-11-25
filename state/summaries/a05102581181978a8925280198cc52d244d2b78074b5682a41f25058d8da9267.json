@@ -1,0 +1,17 @@
+{
+  "overview": "针对机器人策略在物理环境改变时执行失败的问题，作者提出了RoboAda。该方法无需训练或微调预训练策略，而是通过在线推理机器人动力学变化，利用逆动力学模型预测执行偏差，并动态修正动作指令。实验证明，该方法在多种视觉-语言-动作模型及物理环境变化下，显著提升了机器人的执行成功率，且在环境未变时保持了策略的鲁棒性。",
+  "highlights": [
+    {
+      "text": "RoboAda通过在线推理机器人动力学响应的变化来实时修正执行指令，无需额外训练、梯度更新或环境反馈。",
+      "evidence": "RoboAda needs no reward, no gradient step and no data from the changed robot."
+    },
+    {
+      "text": "该方法在多种物理扰动下显著提升了预训练策略的成功率，在LIBERO基准测试中平均成功率从27.8%提高至62.9%。",
+      "evidence": "Under eleven physical shifts, it more than doubles their average success, from 27.8% to 62.9%."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "视觉语言动作"
+  ]
+}

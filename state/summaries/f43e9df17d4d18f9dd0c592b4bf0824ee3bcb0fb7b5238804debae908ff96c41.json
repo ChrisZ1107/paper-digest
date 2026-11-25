@@ -1,0 +1,17 @@
+{
+  "overview": "针对基于视觉语言模型的机器人操作在记忆组织、故障归因及经验重用方面的局限，本文提出了Embodied-Harness双智能体框架。该框架包含Actor和Reflector，通过分层记忆架构存储上下文与长期经验，利用基于证据的经验反思进行故障诊断，并通过递归的自我改进机制优化操作指南，无需更新模型参数。实验表明该方法在多个仿真基准及真实世界场景中表现出良好的泛化与执行能力。",
+  "highlights": [
+    {
+      "text": "提出Embodied-Harness双智能体框架，通过无需更新模型参数的递归自我改进机制，优化机器人的操作指南。",
+      "evidence": "We propose Embodied-Harness, a dual-agent framework that improves manipulation by refining the execution harness without updating model parameters."
+    },
+    {
+      "text": "结合分层记忆架构与证据驱动的经验反思，有效提升了机器人在长视野规划与复杂环境中的操作成功率。",
+      "evidence": "Hierarchical Memory Architecture maintains short-term execution context and long-term experiential knowledge to support execution and reflection. Evidence-based Experience Reflection grounds failure diagnosis in observed interactions, while Recursive Harness Self-Improvement refines operational guidance across successive attempts."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "推理"
+  ]
+}

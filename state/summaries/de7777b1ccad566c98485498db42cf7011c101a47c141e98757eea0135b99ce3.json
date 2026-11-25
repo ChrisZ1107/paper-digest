@@ -1,0 +1,21 @@
+{
+  "overview": "该研究探讨了在大规模语言模型后训练中，直接采用以推理为中心的训练方法（如基于结果的强化学习）对知识型任务的影响。作者提出，这些方法可能导致模型在推理链中无意地记忆并强化自身产生的幻觉。通过对六种开源模型进行实验，研究证实了模型在训练中不仅会记住强化后的幻觉，甚至会记忆已撤回的错误事实。这一发现揭示了模型在后训练阶段习得幻觉的新途径。",
+  "highlights": [
+    {
+      "text": "实验证明，训练中受到强化的幻觉内容在模型记忆中的召回率明显增加。",
+      "evidence": "We find that models' recall of hallucinations reinforced during training increases by 4.83% on average, compared to just 0.17% for self-hallucinations that receive no training signal."
+    },
+    {
+      "text": "模型会记忆其推理过程中已经撤回的错误事实，且此类受推理训练惯性影响的机制对知识获取并无益处。",
+      "evidence": "In fact, models even memorize false facts that they immediately retract in their reasoning; a backtracking template inherited from reasoning-centric training that has no benefit for knowledge recall."
+    },
+    {
+      "text": "对幻觉进行奖励会显著降低模型后续对该错误信息采取拒绝回应的可能性。",
+      "evidence": "Furthermore, we find that memorization is strongest on the hardest training questions, and rewarding a hallucination makes the model less likely to abstain from it later (by 7.23% on average)."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "推理"
+  ]
+}

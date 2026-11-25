@@ -1,0 +1,18 @@
+{
+  "overview": "针对流式视觉-语言-动作（VLA）模型在机器人部署中获取新交互数据成本高昂的问题，本文提出了OVOGO框架。该方法将离线价值学习与生成过程的在策略优化分离，通过引入“基于回报锚定的排序评价器”（Return-Anchored Ranking Critic），在利用离线数据进行价值评估的同时，指导新采样动作的优化。在多个仿真平台及真实机器人任务上的实验表明，该方法能够有效提升初始VLA模型的性能，优于现有的离线适应与价值引导基线。",
+  "highlights": [
+    {
+      "text": "引入了基于回报锚定的排序评价器，在不分配人工回报目标的情况下改进了生成动作间的区分度。",
+      "evidence": "OVOGO introduces a Return-Anchored Ranking Critic that combines in-sample distributional value learning with guarded local ranking, improving discrimination among generated actions without assigning them artificial return targets."
+    },
+    {
+      "text": "在多个仿真环境和真实机器人操作任务中，该方法均提升了初始VLA模型的成功率。",
+      "evidence": "Experiments on RoboTwin 2.0, DexJoCo, and LIBERO, as well as a real-robot dexterous manipulation task, show that OVOGO improves the initial VLA across all four settings and achieves higher success rates than the evaluated offline adaptation and value-guided baselines."
+    }
+  ],
+  "tags": [
+    "离线强化学习",
+    "机器人操作",
+    "大模型后训练"
+  ]
+}

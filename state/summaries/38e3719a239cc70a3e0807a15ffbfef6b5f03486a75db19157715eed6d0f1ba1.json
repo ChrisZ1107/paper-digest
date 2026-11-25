@@ -1,0 +1,17 @@
+{
+  "overview": "针对机器人操作学习中真实世界数据采集成本高的问题，作者提出了Real2Worlds2Real框架。该框架结合了可扩展的仿真环境构建与策略开发，利用代理通过视觉观测和任务描述构建数字孪生及多样的物理场景。代理基于反馈迭代优化构建决策并指导策略训练，最终将验证的流程提炼为可重用技能。实验表明该方法提升了环境保真度，有效支持了策略的真实世界迁移，并增强了长程任务表现。",
+  "highlights": [
+    {
+      "text": "该框架利用代理技术自动构建高保真数字孪生环境，并根据反馈迭代改进几何与物理特性，从而支持策略的有效学习。",
+      "evidence": "The agent adaptively selects tools and revisits construction decisions, using visual and execution feedback to refine geometry and physical behavior."
+    },
+    {
+      "text": "通过引入技能重用机制，该框架能够有效提升环境构建效率并提高长程任务的执行成功率。",
+      "evidence": "Skill reuse further improves world-building efficiency and long-horizon task success."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "Sim-to-Real"
+  ]
+}

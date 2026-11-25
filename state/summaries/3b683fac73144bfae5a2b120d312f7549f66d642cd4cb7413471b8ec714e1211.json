@@ -1,0 +1,17 @@
+{
+  "overview": "针对长时程、实时可控的人体动作生成任务，作者提出了Motion Mamba 2.0架构。该方法通过结合局部注意力机制、可恢复递归状态及持久内容记忆（PCM），有效解决了现有自回归扩散模型在长时记忆获取和推理延迟方面的瓶颈。实验表明，该架构在实现长时程精确控制的同时，通过CUDA图重放与内核融合等优化手段显著提升了推理效率，并在Unitree G1人形机器人上验证了其文本引导动作组合与交互式运动能力。",
+  "highlights": [
+    {
+      "text": "提出持久内容记忆（PCM）架构，通过将压缩的运动历史与状态变化及文本特征整合，实现了长时程可控运动生成。",
+      "evidence": "We present Motion Mamba 2.0, a Mamba-based root-body diffusion architecture that integrates local attention, resumable recurrent states, and persistent content memory (PCM) for long-horizon controllable motion generation."
+    },
+    {
+      "text": "通过CUDA图重放与内核融合等优化手段，大幅降低了推理延迟，实现了6.138倍的推理加速。",
+      "evidence": "On an RTX 4090, the optimized execution reduces median complete-window latency from 1685.35 to 276.14 ms, achieving a median paired speedup of 6.138times while preserving identical outputs and committed states in the tested rollouts."
+    }
+  ],
+  "tags": [
+    "人形机器人",
+    "推理"
+  ]
+}

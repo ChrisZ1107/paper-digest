@@ -1,0 +1,17 @@
+{
+  "overview": "WeMM-Ecom是一系列多模态大语言模型，旨在提升电商领域的多模态理解能力。研究团队采用了两阶段持续预训练策略，逐步增加电商数据比例，并结合混合思维后训练（含策略蒸馏与强化学习）以支持非思维与思维模式。实验结果表明，该模型在电商任务及通用基准测试中均展现出优异性能，且目前已应用于微信电商的多种生产场景。",
+  "highlights": [
+    {
+      "text": "WeMM-Ecom通过两阶段持续预训练与混合思维后训练，在电商场景与通用任务中均达到了业内领先水平。",
+      "evidence": "Our training pipeline begins with two-stage continued pre-training that progressively raises the proportion of e-commerce data within a diverse multimodal data mixture, followed by hybrid-thinking post-training that combines on-policy distillation and reinforcement learning to support both non-thinking and thinking modes."
+    },
+    {
+      "text": "模型在电商基准测试中超越了多个同规模开源旗舰模型，且在通用领域表现优于同级别竞争模型。",
+      "evidence": "On the e-commerce suite, WeMM-Ecom-35B-A3B surpasses substantially larger open-source flagship models, including Qwen3.8-Flash-Next, HY4, and DeepSeek-V4.1-Flash. On the general-purpose suite, every WeMM-Ecom model surpasses its similarly sized Qwen3.5 counterpart"
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "推理"
+  ]
+}
