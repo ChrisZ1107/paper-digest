@@ -6180,6 +6180,36 @@
           "abstract_zh": "我们揭示了Qwen 32B模型中一种潜在的内省能力，证明该模型能够检测到概念何时被注入其早期上下文中，并识别出注入了哪个概念。尽管模型在采样输出中否认了注入行为，但Logit Lens分析在残差流中揭示了明显的检测信号，这些信号在最后几层中会减弱。此外，通过向模型提示有关AI内省机制的准确信息，可以显著增强这种效应：对注入的敏感度大幅提升（从0.3%提升至39.9%），而误报率仅增加了0.6%。此外，九个注入概念与恢复概念之间的互信息从0.61比特增加到1.05比特，排除了通用噪声解释的可能性。我们的研究结果表明，模型可能具有令人惊讶的内省和引导意识能力，这些能力很容易被忽视，并对潜在推理和安全性产生影响。"
         }
       ]
+    },
+    "jIAv7pV12b8": {
+      "video_id": "jIAv7pV12b8",
+      "video_title": "The Industrialization of Noise: Why Automated Proof-Solving is the Same Old Dead End (Nov 2026)",
+      "published": "2026-11-26",
+      "video_url": "https://www.youtube.com/watch?v=jIAv7pV12b8",
+      "papers": [
+        {
+          "id": "2611.31286",
+          "title": "The Industrialization of Noise: Why Automated Proof-Solving is the Same Old Dead End (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.31286"
+        }
+      ]
+    },
+    "qMJPUAXE8ps": {
+      "video_id": "qMJPUAXE8ps",
+      "papers": []
+    },
+    "Bl08FU4a_3M": {
+      "video_id": "Bl08FU4a_3M",
+      "video_title": "Counterfactual World Models: JEPAs That Reason About \"What If\" (Nov 2026)",
+      "published": "2026-11-26",
+      "video_url": "https://www.youtube.com/watch?v=Bl08FU4a_3M",
+      "papers": [
+        {
+          "id": "2611.24778",
+          "title": "Counterfactual World Models: JEPAs That Reason About \"What If\" (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.24778"
+        }
+      ]
     }
   }
 }
