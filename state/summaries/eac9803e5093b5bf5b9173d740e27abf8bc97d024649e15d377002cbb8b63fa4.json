@@ -1,0 +1,21 @@
+{
+  "overview": "针对现有具身智能模型在长程任务执行与物理控制一致性方面的挑战，本文提出了Innata-0具身世界系统。该系统通过联合设计具身世界-动作模型（Innata-0-WAM）与智能体（Innata-0-Agent），实现了理解、预测与动作生成的协同，并引入协同设计协议以对齐模型训练与执行。实验结果表明，该系统在理解、世界预测及机器人操作任务中展现了显著的具身能力。",
+  "highlights": [
+    {
+      "text": "Innata-0通过联合设计具身世界-动作模型与智能体，有效解决了长程任务执行中的一致性问题。",
+      "evidence": "Innata-0 jointly designs an embodied world-action model and an agent to combine their complementary strengths."
+    },
+    {
+      "text": "Innata-0-WAM模型采用三塔混合Transformer架构，集成了理解、预测与动作生成功能。",
+      "evidence": "The model, Innata-0-WAM, adopts a tri-tower Mixture-of-Transformers architecture that integrates understanding, prediction, and action generation."
+    },
+    {
+      "text": "通过协同设计协议，系统能够利用已验证的经验支持后续的自适应学习与模型优化。",
+      "evidence": "A co-design protocol is further proposed to align model training with agent execution and leverage validated experiences to support subsequent adaptation and model improvement."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "世界模型"
+  ]
+}

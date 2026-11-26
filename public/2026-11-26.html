@@ -1,0 +1,114 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>2026-11-26 热门论文 Top 10｜机器人·强化学习·AI</title><body><h1>2026-11-26 热门论文 Top 10</h1>
+<p>机器人 · 强化学习 · 通用 AI</p>
+<p>生成时间：2026-11-26 09:01 CST。从 840 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>
+<p>候选来源：<a href="https://huggingface.co/papers">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>
+<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>
+<h2>1. LeadVLA: Learning Follower-Aware Route Execution for Robot Leading</h2>
+<p><strong>机器人</strong> · 发表 2026-11-23 · 综合分 5.76</p>
+<p>Zotero 摘要相关性：0.506（相似度分数，不是概率）。</p>
+<p>HF 点赞 12 · 讨论 1</p>
+<p>较上次观测（1.0 天前）：点赞 +12 · 讨论 +1。</p>
+<p><strong>中文概述：</strong>针对机器人领路任务，现有方法在理解追随者与执行路线之间存在耦合问题。作者提出了LeadVLA，这是一种结构化的多模态策略，通过将路线保留为显式参考路径，同时学习路线进展速度和针对追随者及场景的局部调整余量。此外，作者构建了LeadInfra仿真环境与LeadBench基准测试集。实验表明，LeadVLA在基准测试中展现出更高的任务成功率，并能实现零样本的现实世界迁移。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>LeadVLA采用显式路径参考结合学习速度控制与局部适应余量的结构，实现了机器人对追随者的有效引导。<br><small>摘要依据：We introduce LeadVLA, a structured multimodal policy that preserves the route as an explicit Path reference while learning a Pace for route progress and a Residual for local follower- and scene-conditioned adaptation.</small></li>
+<li>该方法在LeadBench测试中表现优于其他策略，且无需微调即可成功迁移至现实环境。<br><small>摘要依据：LeadVLA achieves the highest task success (39.6%) among evaluated robot policies on LeadBench while maintaining strong route fidelity and follower responsiveness, and transfers to unseen real-world environments without real-world policy fine-tuning.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · Sim-to-Real</p>
+<p><strong>原文摘要节选：</strong>Robot leading requires executing a route while continuously adapting to a designated follower. Existing robot-leading systems often mediate follower understanding and physical route execution through explicit states, planners, or modular interfaces; directly learning this coupling through end-to-end trajectory prediction can instead entangle route execution with follower response. We introduce LeadVLA, a structured multimodal policy that preserves the route as an explicit Path reference while learning a Pace for route progress and a Residual for local follower- and scene-conditioned adaptation. To make this problem trainable and measurable, we develop LeadInfra, a configurable Unreal Engine-based closed-loop data-generation infrastructure from which we instantiate an approximately…</p>
+<p><a href="https://arxiv.org/abs/2611.30149">论文原文</a> · <a href="https://arxiv.org/pdf/2611.30149">PDF</a> · <a href="https://huggingface.co/papers/2611.30149">讨论与热度</a></p><hr>
+<h2>2. Embo-Harness: Towards Understanding Frontier-Model-as-Policy Harness</h2>
+<p><strong>机器人</strong> · 发表 2026-11-23 · 综合分 5.75</p>
+<p>Zotero 摘要相关性：0.461（相似度分数，不是概率）。</p>
+<p>HF 点赞 103 · 讨论 2 · 本次 HF 热榜第 11 位 · 仓库累计 Star 68（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +13 · 讨论 +1 · Star +9。</p>
+<p><strong>规则标签：</strong>推理</p>
+<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>
+<p><strong>原文摘要节选：</strong>Frontier multimodal models exhibit extraordinary generalization in generating robot actions from observations and instructions, enabling a new paradigm in which they serve directly as policies within closed-loop robotic harnesses. However, the design principles of such harnesses, and the capabilities underlying their strong performance, remain unclear. We present Embo-Harness, a framework for systematically studying frontier-model-as-policy harnesses. We investigate four components of the robotic agentic loop, namely, prompting, planning, action execution, and tool use, and distill six empirical findings into a practical recipe. This recipe prioritizes interfaces that exploit the model&#x27;s native visual reasoning and tool-use capabilities over handcrafted plans, skills, or action priors,…</p>
+<p><a href="https://arxiv.org/abs/2611.31201">论文原文</a> · <a href="https://arxiv.org/pdf/2611.31201">PDF</a> · <a href="https://huggingface.co/papers/2611.31201">讨论与热度</a> · <a href="https://github.com/DravenALG/Embo-Harness">代码</a></p><hr>
+<h2>3. Innata-0: A Native Embodied World System with Model-Agent Co-Design</h2>
+<p><strong>机器人</strong> · 发表 2026-11-23 · 综合分 5.71</p>
+<p>Zotero 摘要相关性：0.458（相似度分数，不是概率）。</p>
+<p>HF 点赞 42 · 讨论 3</p>
+<p>较上次观测（1.0 天前）：点赞 +39 · 讨论 +2。</p>
+<p><strong>规则标签：</strong>机器人操作</p>
+<p><strong>中文概述：</strong>针对现有具身智能模型在长程任务执行与物理控制一致性方面的挑战，本文提出了Innata-0具身世界系统。该系统通过联合设计具身世界-动作模型（Innata-0-WAM）与智能体（Innata-0-Agent），实现了理解、预测与动作生成的协同，并引入协同设计协议以对齐模型训练与执行。实验结果表明，该系统在理解、世界预测及机器人操作任务中展现了显著的具身能力。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>Innata-0通过联合设计具身世界-动作模型与智能体，有效解决了长程任务执行中的一致性问题。<br><small>摘要依据：Innata-0 jointly designs an embodied world-action model and an agent to combine their complementary strengths.</small></li>
+<li>Innata-0-WAM模型采用三塔混合Transformer架构，集成了理解、预测与动作生成功能。<br><small>摘要依据：The model, Innata-0-WAM, adopts a tri-tower Mixture-of-Transformers architecture that integrates understanding, prediction, and action generation.</small></li>
+<li>通过协同设计协议，系统能够利用已验证的经验支持后续的自适应学习与模型优化。<br><small>摘要依据：A co-design protocol is further proposed to align model training with agent execution and leverage validated experiences to support subsequent adaptation and model improvement.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>机器人操作 · 世界模型</p>
+<p><strong>原文摘要节选：</strong>The physical world is open-ended, dynamic, and partially observable. While foundation models have advanced embodied intelligence, standalone models struggle with long-horizon execution, and simply integrating models with agents may lead to inconsistencies between planning and physical control. To support reliable and adaptive behaviors in the physical world, we introduce Innata-0, a native embodied world system. Innata-0 jointly designs an embodied world-action model and an agent to combine their complementary strengths. The model, Innata-0-WAM, adopts a tri-tower Mixture-of-Transformers architecture that integrates understanding, prediction, and action generation. The agent, Innata-0-Agent, coordinates long-horizon execution through memory, verification, and recovery. A co-design…</p>
+<p><a href="https://arxiv.org/abs/2611.30254">论文原文</a> · <a href="https://arxiv.org/pdf/2611.30254">PDF</a> · <a href="https://huggingface.co/papers/2611.30254">讨论与热度</a></p><hr>
+<h2>4. WorldLeague: Benchmarking Physical Agency</h2>
+<p><strong>机器人</strong> · 发表 2026-11-23 · 综合分 5.67</p>
+<p>Zotero 摘要相关性：0.439（相似度分数，不是概率）。</p>
+<p>HF 点赞 137 · 讨论 2 · 本次 HF 热榜第 67 位 · 仓库累计 Star 19（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +45 · 讨论 +1 · Star +1。</p>
+<p><strong>规则标签：</strong>视觉语言动作</p>
+<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>
+<p><strong>原文摘要节选：</strong>AI systems can now operate Blender, follow instructions in complex video games, and manipulate objects with robot arms. What range of physical goals can today&#x27;s AI systems achieve autonomously? Answering this question requires testing systems on tasks that demand different combinations of perception, memory, planning, and action. We introduce WorldLeague, a benchmark that compares AI systems on a common set of 60 simulated robot tasks by measuring progress toward each task&#x27;s physical goal from the robot&#x27;s trajectory. Robots explore scenes to gather evidence in WorldSeek, rearrange objects in WorldShape, and adapt to changes in WorldShift. Tying these goals to a single control interface limits which AI systems can be compared. In WorldLeague, vision-language models (VLMs) choose targets…</p>
+<p><a href="https://arxiv.org/abs/2611.30989">论文原文</a> · <a href="https://arxiv.org/pdf/2611.30989">PDF</a> · <a href="https://huggingface.co/papers/2611.30989">讨论与热度</a> · <a href="https://github.com/xyangzhou/WorldLeague">代码</a></p><hr>
+<h2>5. Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent</h2>
+<p><strong>机器人 / 强化学习</strong> · 发表 2026-11-13 · 综合分 5.61</p>
+<p>Zotero 摘要相关性：0.491（相似度分数，不是概率）。</p>
+<p>HF 点赞 165 · 讨论 4 · 本次 HF 热榜第 5 位 · 仓库累计 Star 1541（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +4 · 讨论 +0 · Star +54。</p>
+<p><strong>规则标签：</strong>强化学习 · 视觉语言动作 · 推理</p>
+<p><strong>中文概述：</strong>本文介绍了一种名为Gamer的通用智能体框架，旨在处理复杂交互环境下的长程任务。该框架结合了感知、记忆管理和多步推理的端到端架构，支持在2D图形界面和3D模拟世界中交互。作者通过大规模键盘和鼠标交互数据进行预训练，并利用稀疏思维指令微调和多轮强化学习方法，提升了模型的长程决策能力与运行效率。实验结果表明，Gamer在多个3D开放世界游戏和2D基准测试中展现出良好的泛化能力和操作水平。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>Gamer通过在大规模键盘与鼠标交互数据上进行预训练，有效学习了跨物理与虚拟域的环境动态。<br><small>摘要依据：We first continue pre-training on a dataset constructed from tens of thousands of hours of device-level keyboard and mouse interaction. These trajectories span simulated games and embodied environments, allowing the model to learn environmental dynamics across both physical and virtual domains.</small></li>
+<li>采用稀疏思维指令微调和多轮强化学习方法，在减少计算冗余的同时增强了长程决策的稳定性。<br><small>摘要依据：Sparse-thinking instruction tuning then substantially reduces redundant computation while preserving the reasoning needed for complex decisions. We train the policy for long-horizon interaction with a stable multi-turn reinforcement learning method that addresses finite context windows, accumulated rollout errors, and sparse rewards.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>视觉语言动作 · 推理</p>
+<p><strong>原文摘要节选：</strong>We introduce Gamer, a generalist agent framework built for long-horizon tasks in complex interactive environments. Its end-to-end architecture combines perception, memory management, and multi-step reasoning. A shared training and deployment pipeline supports interaction with both conventional 2D graphical interfaces and complex 3D simulated worlds. We first continue pre-training on a dataset constructed from tens of thousands of hours of device-level keyboard and mouse interaction. These trajectories span simulated games and embodied environments, allowing the model to learn environmental dynamics across both physical and virtual domains. Sparse-thinking instruction tuning then substantially reduces redundant computation while preserving the reasoning needed for complex decisions. We…</p>
+<p><a href="https://arxiv.org/abs/2611.18397">论文原文</a> · <a href="https://arxiv.org/pdf/2611.18397">PDF</a> · <a href="https://huggingface.co/papers/2611.18397">讨论与热度</a> · <a href="https://github.com/RainBowLuoCS/Gamer">代码</a></p><hr>
+<h2>6. Motion Mamba 2.0: Autoregressive Diffusion Mamba for Long-Horizon Humanoid Control</h2>
+<p><strong>机器人</strong> · 发表 2026-11-23 · 综合分 5.54</p>
+<p>Zotero 摘要相关性：0.418（相似度分数，不是概率）。</p>
+<p>HF 点赞 196 · 讨论 3 · 本次 HF 热榜第 34 位 · 仓库累计 Star 34（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +25 · 讨论 +1 · Star +11。</p>
+<p><strong>规则标签：</strong>人形机器人 · 足式运动</p>
+<p><strong>中文概述：</strong>针对长时程、实时可控的人体动作生成任务，作者提出了Motion Mamba 2.0架构。该方法通过结合局部注意力机制、可恢复递归状态及持久内容记忆（PCM），有效解决了现有自回归扩散模型在长时记忆获取和推理延迟方面的瓶颈。实验表明，该架构在实现长时程精确控制的同时，通过CUDA图重放与内核融合等优化手段显著提升了推理效率，并在Unitree G1人形机器人上验证了其文本引导动作组合与交互式运动能力。</p>
+<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>
+<li>提出持久内容记忆（PCM）架构，通过将压缩的运动历史与状态变化及文本特征整合，实现了长时程可控运动生成。<br><small>摘要依据：We present Motion Mamba 2.0, a Mamba-based root-body diffusion architecture that integrates local attention, resumable recurrent states, and persistent content memory (PCM) for long-horizon controllable motion generation.</small></li>
+<li>通过CUDA图重放与内核融合等优化手段，大幅降低了推理延迟，实现了6.138倍的推理加速。<br><small>摘要依据：On an RTX 4090, the optimized execution reduces median complete-window latency from 1685.35 to 276.14 ms, achieving a median paired speedup of 6.138times while preserving identical outputs and committed states in the tested rollouts.</small></li>
+</ul>
+<p><strong>AI 主题：</strong>人形机器人 · 推理</p>
+<p><strong>原文摘要节选：</strong>Long-horizon, real-time controllable motion generation is essential for interactive animation and humanoid robotics, where an agent must respond to changing instructions and spatial goals while moving. Existing autoregressive diffusion methods generate motion incrementally, but bounded attention caches limit access to distant history, while repeated denoising introduces substantial inference overhead. We present Motion Mamba 2.0, a Mamba-based root-body diffusion architecture that integrates local attention, resumable recurrent states, and persistent content memory (PCM) for long-horizon controllable motion generation. PCM transforms compressed motion history from Mamba recurrent states, together with state changes and text-conditioned features, into dynamically updated content slots…</p>
+<p><a href="https://arxiv.org/abs/2611.29897">论文原文</a> · <a href="https://arxiv.org/pdf/2611.29897">PDF</a> · <a href="https://huggingface.co/papers/2611.29897">讨论与热度</a> · <a href="https://github.com/AIGeeksGroup/MotionMamba2.0">代码</a></p><hr>
+<h2>7. ACAP: Asynchronous Coding Agents for Efficient Robot Control</h2>
+<p><strong>机器人</strong> · 发表 2026-11-23 · 综合分 5.31</p>
+<p>Zotero 摘要相关性：0.389（相似度分数，不是概率）。</p>
+<p>HF 点赞 61 · 讨论 2</p>
+<p>较上次观测（1.0 天前）：点赞 +61 · 讨论 +2。</p>
+<p><strong>规则标签：</strong>推理</p>
+<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>
+<p><strong>原文摘要节选：</strong>Coding agents can construct and revise robot behavior during execution, but using one agent for the whole robot can delay otherwise independent work. We introduce Asynchronous Coding Agents as Policy (ACAP), an asynchronous framework that organizes one robot as a team of persistent agents. Each member reasons and acts for a configurable control group, such as an arm with its gripper or the torso and chassis, enabling asynchronous reasoning and execution. However, different robot components often have physical dependencies that require coordination. To address this challenge, ACAP introduces a hyper-agent that assigns tasks, coordinates dependencies, and dynamically allocates control between the lead and member agents. This allows independent work to progress concurrently while supporting…</p>
+<p><a href="https://arxiv.org/abs/2611.31205">论文原文</a> · <a href="https://arxiv.org/pdf/2611.31205">PDF</a> · <a href="https://huggingface.co/papers/2611.31205">讨论与热度</a></p><hr>
+<h2>8. 3AGameFactory-Motion: Agentic Rigging and Reliable Complex Motion Generation for Diverse 3D Assets</h2>
+<p><strong>通用 AI</strong> · 发表 2026-11-23 · 综合分 5.21</p>
+<p>Zotero 摘要相关性：0.405（相似度分数，不是概率）。</p>
+<p>HF 点赞 59 · 讨论 3 · 本次 HF 热榜第 25 位 · 仓库累计 Star 1397（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +2 · 讨论 +1 · Star +20。</p>
+<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>
+<p><strong>原文摘要节选：</strong>Animating arbitrary 3D assets from instructions requires both structural inference and motion control, yet existing motion benchmarks mostly cover conventional human or animal skeletons with simple instructions. We introduce DivDynBench, which evaluates rigging and motion generation across six morphology categories, with instructions requiring multi-phase part coordination and explicit timing, angle, repetition, and trajectory constraints. With large language models, we systematically compare three common paradigms: specialized motion generation, video generation followed by motion recovery, and direct agent-driven generation. We analyze their control capabilities, cross-morphology adaptability, and generation costs. Guided by this comparison, we propose an Agentic Motion Framework in…</p>
+<p><a href="https://arxiv.org/abs/2611.30013">论文原文</a> · <a href="https://arxiv.org/pdf/2611.30013">PDF</a> · <a href="https://huggingface.co/papers/2611.30013">讨论与热度</a> · <a href="https://github.com/OpenDCAI/GameFactory-3A">代码</a></p><hr>
+<h2>9. Reinforcing Diffusion Models by Instantaneous Trajectory Distribution Matching</h2>
+<p><strong>强化学习</strong> · 发表 2026-11-24 · 综合分 5.18</p>
+<p>Zotero 摘要相关性：0.407（相似度分数，不是概率）。</p>
+<p>HF 点赞 13 · 讨论 1 · 仓库累计 Star 12（仓库可能包含多篇论文）</p>
+<p>较上次观测（1.0 天前）：点赞 +13 · 讨论 +1。</p>
+<p><strong>规则标签：</strong>强化学习 · 离线强化学习</p>
+<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>
+<p><strong>原文摘要节选：</strong>Forward diffusion reinforcement learning (RL)---enabling deterministic ODE sampling without trajectory backpropagation---has grown increasingly popular for efficiently aligning diffusion models. However, we reveal that existing methods essentially rely on signed reward-weighted regression (RWR), regressing the trainable policy velocity onto rollouts from a behavior distribution. Unbiased baseline subtraction implicitly assumes that the policy velocity equals the behavior marginal velocity---an idealized assumption violated under classifier-free guidance (CFG) rollouts, offline/off-policy updates, and imperfect online self-consistency. This behavior--policy mismatch breaks baseline invariance and injects baseline-induced gradient drift, destabilizing training. To resolve this issue, we…</p>
+<p><a href="https://arxiv.org/abs/2611.30986">论文原文</a> · <a href="https://arxiv.org/pdf/2611.30986">PDF</a> · <a href="https://huggingface.co/papers/2611.30986">讨论与热度</a> · <a href="https://github.com/Luo-Yihong/iTDM">代码</a></p><hr>
+<h2>10. Lazy Agents Answer Against Their Own Beliefs: Reinforcement Learning with Verifiable Beliefs Teaches Them to Act on What They Believe</h2>
+<p><strong>强化学习</strong> · 发表 2026-11-24 · 综合分 4.86</p>
+<p>Zotero 摘要相关性：0.399（相似度分数，不是概率）。</p>
+<p>HF 点赞 92 · 讨论 5 · 本次 HF 热榜第 63 位 · 仓库累计 Star 26（仓库可能包含多篇论文）</p>
+<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>
+<p><strong>规则标签：</strong>强化学习 · PPO · 大模型后训练</p>
+<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>
+<p><strong>原文摘要节选：</strong>AI agents working on long tasks often commit to an answer before they have enough evidence, a behavior called laziness. In our evaluations, they frequently commit even while their stated belief still names several possible answers. An outcome reward at the end of the episode scores only the final answer, so it cannot teach the agent when to commit, because a lucky guess receives the same reward as an answer backed by evidence. During training, however, the simulator can compute the exact posterior over the answer at every step and tell whether the evidence is already enough. We propose Reinforcement Learning with Verifiable Beliefs (RLVB), which rewards the agent for taking further steps while this posterior still allows several answers and for committing once the evidence is sufficient.…</p>
+<p><a href="https://arxiv.org/abs/2611.32884">论文原文</a> · <a href="https://arxiv.org/pdf/2611.32884">PDF</a> · <a href="https://huggingface.co/papers/2611.32884">讨论与热度</a> · <a href="https://github.com/declare-lab/RLVB">代码</a></p><hr></body></html>
