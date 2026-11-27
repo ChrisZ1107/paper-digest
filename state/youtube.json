@@ -6214,6 +6214,32 @@
           "abstract_zh": "世界模型运行在无法完全观测的世界中。当隐藏的干扰（例如推动船只的水流）改变了动作的结果时，随之产生了一个反事实问题：在受到相同干扰的情况下，执行不同的动作会发生什么？这个问题的答案将糟糕的决策与坏运气区分开来。我们证明，无论数据量或容量如何，仅在事实转移上训练的世界模型无法独立回答这个问题。对于许多物理系统，观测到的结果和动力学的一个简单属性就足够了：自然界不做跳跃（natura non facit saltus）。当动作和干扰作为独立力起作用时，它们的相互作用在时间上是二阶的，因此反事实结果在第一阶近似下等于观测到的结果，加上世界模型在替代动作和事实动作下预测的差值。这产生了一个无需反事实数据、额外参数或重训练的反事实世界模型。对于持续时间为 $h$ 的转移，我们证明了相对于干扰方差的反事实误差存在 $O(h^2)$ 的界限，建立了来自非配对事实数据的匹配极小极大下界，并刻画了在不连续点、坐标折叠点以及随指令缩放的干扰下的失败情况。我们在固定 DINOv2 和掩码自编码器（MAE）编码器的基础上，使用 JEPA 世界模型验证了这些基于像素的预测。在四个渲染模拟器上，我们的方法在相同的世界模型下将反事实 $R^2$ 从 $38$--$46\\%$ 提高到 $86$--$96\\%$；在第五个水下航行器模拟器上，在增加 16 倍事实数据的情况下达到了 $90$--$94\\%$。此外，四个固定的编码器 DINOv3、SigLIP 2、CLIP 和 EVA-02 在相同的模拟器上达到了 $81$--$95\\%$。在事后规划中，它在 $35$--$69\\%$ 的事件中找到了能到达目标的动作，而知道模拟器但不知道结果的预言家规划器的成功率仅为 $14$--$23\\%$。"
         }
       ]
+    },
+    "sS3vFMia9hw": {
+      "video_id": "sS3vFMia9hw",
+      "video_title": "Training on Documents About Monitoring Leads to CoT Obfuscation (May 2026)",
+      "published": "2026-11-27",
+      "video_url": "https://www.youtube.com/watch?v=sS3vFMia9hw",
+      "papers": [
+        {
+          "id": "2605.15257",
+          "title": "Training on Documents About Monitoring Leads to CoT Obfuscation (May 2026)",
+          "url": "https://arxiv.org/abs/2605.15257"
+        }
+      ]
+    },
+    "VFoPrROVf90": {
+      "video_id": "VFoPrROVf90",
+      "video_title": "Verifiable On-Policy Distillation (Nov 2026)",
+      "published": "2026-11-27",
+      "video_url": "https://www.youtube.com/watch?v=VFoPrROVf90",
+      "papers": [
+        {
+          "id": "2611.30325",
+          "title": "Verifiable On-Policy Distillation (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.30325"
+        }
+      ]
     }
   }
 }
