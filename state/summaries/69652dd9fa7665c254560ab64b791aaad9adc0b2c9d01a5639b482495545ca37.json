@@ -1,0 +1,16 @@
+{
+  "overview": "针对灵巧双臂操作学习中高质量演示数据匮乏的问题，本文提出了PyRUA-Dex框架。该框架利用编码智能体通过编程化策略实现任务学习，无需人工演示。策略开发分为探索和精炼两个阶段：探索阶段通过多智能体并行学习并提炼任务库与程序；精炼阶段则通过随机布局提升鲁棒性与执行效率。实验结果表明，该方法在模拟环境中表现优异，并能有效支持现实世界中复杂的灵巧操作任务。",
+  "highlights": [
+    {
+      "text": "PyRUA-Dex提出了一种利用编码智能体开发灵巧操作策略的方法，无需依赖高质量的人工演示。",
+      "evidence": "We present PyRUA-Dex, a framework that enables coding agents to develop dexterous manipulation through programmatic policy, without the need of demonstrations."
+    },
+    {
+      "text": "该框架在模拟任务基准测试中达到SOTA水平，并在处理现实世界任务时具有高效率。",
+      "evidence": "In simulated environments, PyRUA-Dex achieves SOTA on Bench2Dex with a score of 72.9 and reaches 81.0% success on DexJoCo under full randomization, ahead of every trained policy on both benchmarks."
+    }
+  ],
+  "tags": [
+    "机器人操作"
+  ]
+}

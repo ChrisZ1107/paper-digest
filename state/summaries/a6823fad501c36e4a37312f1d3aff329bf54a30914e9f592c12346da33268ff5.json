@@ -1,0 +1,19 @@
+{
+  "overview": "针对人形机器人搬运重物时操作与行走割裂的问题，本研究提出了一种基于强化学习的全身轴转行走策略。通过联合协调步态、平衡控制和物体操作，该策略在仿真中实现了盒子的转动搬运。通过微调并转化为不依赖实时物体状态感知的时钟驱动版本，该方法在物理人形机器人实验中成功实现了超过1米的重物搬运，验证了学习协调步态并应用于真实场景的可行性。",
+  "highlights": [
+    {
+      "text": "提出了一种联合协调步态、平衡和物体操作的强化学习策略，实现了人形机器人的全身轴转行走。",
+      "evidence": "In this paper, we propose a single reinforcement-learning policy that jointly coordinates stepping, balance control, and object manipulation."
+    },
+    {
+      "text": "通过微调策略至不依赖物体状态感知版本，在真实机器人上成功实现了重物搬运任务。",
+      "evidence": "On the real robot, the deployed policy transported the box forward by more than 1 m in all five trials; each trial ended at a base-tilt safety stop."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "人形机器人",
+    "足式运动",
+    "Sim-to-Real"
+  ]
+}

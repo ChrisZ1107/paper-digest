@@ -1,0 +1,17 @@
+{
+  "overview": "针对具身智能体在探索和交互中空间智能评估不足的问题，本文提出了ROAM-Bench基准测试。该基准包含250项手动验证的任务，通过模拟器状态和记录对任务结果及执行要求（如几何覆盖与位置精度）进行独立评估。实验发现，现有前沿视觉语言模型在处理空间推理任务时存在结果正确但过程未达标，或通过验证但结果错误的局限性，并证实了观测完整性与反馈校准对提升空间判断的有效性。",
+  "highlights": [
+    {
+      "text": "提出ROAM-Bench基准测试，通过独立验证机制量化评估具身智能体在机器人运动和碰撞约束下的空间智能。",
+      "evidence": "We introduce ROAM-Bench to evaluate these abilities under robot motion and collision constraints. Independent checks use simulation state and episode records to assess outcomes and task requirements, with stronger checks of geometry, coverage, or placement."
+    },
+    {
+      "text": "通过对七种前沿视觉语言模型的评估，识别出模型在任务执行逻辑与最终结果正确性之间的两种典型失败模式。",
+      "evidence": "Across seven frontier vision-language models, we identify two complementary failure modes: correct outcomes with unmet task requirements, and incorrect outcomes despite passing stronger checks."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "推理"
+  ]
+}

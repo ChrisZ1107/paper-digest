@@ -1,0 +1,14 @@
+{
+  "overview": "针对现有3D资产动画化任务中结构推断与动作控制的需求，本文提出了包含六类形态的评估基准DivDynBench。作者比较了三种主流动作生成范式，并据此提出一种代理动作框架。该框架利用大模型编写参数化骨架与动作程序，并通过确定性执行器进行装配、运动学求解及几何校正，旨在提升生成效率、装配可靠性及动作控制精度。",
+  "highlights": [
+    {
+      "text": "提出了包含六种形态类别的DivDynBench基准，用以评估涉及多阶段协调、时序、角度及轨迹约束的复杂运动生成能力。",
+      "evidence": "We introduce DivDynBench, which evaluates rigging and motion generation across six morphology categories, with instructions requiring multi-phase part coordination and explicit timing, angle, repetition, and trajectory constraints."
+    },
+    {
+      "text": "设计了一种代理动作框架，通过执行器处理骨架装配与运动求解，实现了对参数化程序的确定性控制，降低了生成开销并提升了精度。",
+      "evidence": "Guided by this comparison, we propose an Agentic Motion Framework in which an agent writes compact parametric skeleton and motion programs, and a deterministic executor performs rigging, kinematic solving, and geometric correction."
+    }
+  ],
+  "tags": []
+}

@@ -1,0 +1,18 @@
+{
+  "overview": "针对四旋翼无人机在未知三维环境中的图像目标导航问题，本文提出了一种无需依赖地图、位姿估计或外部状态估计器的端到端策略。该方法通过结合几何与运动监督、特权教师蒸馏及强化学习微调的四阶段流程，训练循环视觉策略以直接输出推力和角速度控制指令。实验结果显示，该策略在模拟和真实环境中均表现出较高的导航成功率。",
+  "highlights": [
+    {
+      "text": "提出了首个直接为未知三维环境下的敏捷四旋翼飞行生成推力和角速度控制指令的图像目标导航策略。",
+      "evidence": "We present the first image-goal navigation policy that directly commands thrust and angular rates for agile quadrotor flight in unseen 3D environments, without relying on state estimation (e.g., SLAM, VO, or SfM) or a separate velocity controller."
+    },
+    {
+      "text": "该策略在模拟测试中达到82.3%的成功率，并在真实室内环境中通过零样本部署实现了84%的成功率。",
+      "evidence": "On 1000 held-out flights in unseen environments, the policy achieves an 82.3% success rate with a mean terminal position error of 0.10m across successful flights. Deployed zero-shot on a real quadrotor, the policy reaches an 84% success rate over 25 trials in an unseen indoor environment."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "Sim-to-Real",
+    "导航"
+  ]
+}

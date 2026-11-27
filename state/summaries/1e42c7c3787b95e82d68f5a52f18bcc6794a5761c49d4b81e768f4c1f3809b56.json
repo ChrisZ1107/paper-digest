@@ -1,0 +1,18 @@
+{
+  "overview": "针对人形机器人在弹性地形上平衡与运动面临的复杂力学耦合挑战，作者提出了RIPPLE框架。该方法通过在MJLab中集成基于预张紧质点-弹簧网格的ElasticMembrane模型来模拟地形形变，并利用分阶段训练策略，仅依赖本体感知即可将刚性地面技能迁移至弹性地形。实验结果显示，该方法在物理仿真和真实环境下的MagicBot Z1机器人上实现了成功的跳跃与平衡控制。",
+  "highlights": [
+    {
+      "text": "RIPPLE框架集成了ElasticMembrane模型，能够模拟弹性地形在足部交互中的时空耦合形变与能量反馈。",
+      "evidence": "RIPPLE integrates ElasticMembrane, a pretensioned mass-spring mesh that models spatially coupled deflection, energy storage, and rebound, together with deformable contact into MJLab for GPU-parallel policy learning."
+    },
+    {
+      "text": "通过仅依赖本体感知的分阶段训练，机器人实现了在弹性地形上的零样本跳跃与平衡，并能从刚性平台平滑过渡至蹦床。",
+      "evidence": "Deployed zero-shot, the policies enable a MagicBot Z1 humanoid to balance, jump consecutively, and enter a trampoline from a rigid platform."
+    }
+  ],
+  "tags": [
+    "人形机器人",
+    "足式运动",
+    "Sim-to-Real"
+  ]
+}

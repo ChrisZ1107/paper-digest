@@ -1,0 +1,18 @@
+{
+  "overview": "该论文针对人形机器人敏捷运动控制问题，提出了一种名为MJTag的多智能体追逐任务套件。作者利用竞争性自我博弈（Self-play）机制，通过稀疏反馈训练低层运动控制器，旨在脱离传统的人工奖励塑造或预设动作追踪方法，从而引导机器人自主学习如闪避、冲刺和擒拿等动态运动策略。",
+  "highlights": [
+    {
+      "text": "提出MJTag任务套件，通过基于博弈的自我训练引导机器人演化出复杂的运动能力。",
+      "evidence": "MJTag's league-based play with sparse feedback enables a locomotion controller to adopt new strategies, including dodging, sprinting, and tackling."
+    },
+    {
+      "text": "采用竞争性自我博弈范式，利用稀疏反馈替代传统的人工塑形奖励或动作追踪奖励。",
+      "evidence": "We train neural networks to play the game of multiagent tag in a physics simulator to study if new motion generation and control strategies can emerge through sparse feedback and competitive self-play."
+    }
+  ],
+  "tags": [
+    "人形机器人",
+    "足式运动",
+    "多智能体"
+  ]
+}

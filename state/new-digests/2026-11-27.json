@@ -1,0 +1,246 @@
+{
+  "date": "2026-11-27",
+  "timestamp": "2026-11-27T09:01:44.073550+08:00",
+  "title": "2026-11-27 每日新论文 5",
+  "slug": "2026-11-27-new",
+  "papers": [
+    {
+      "id": "2611.33407",
+      "title": "An Adversarial Multi-Agent Pursuit Game for Locomotor Agility Pretraining",
+      "abstract": "Agile humanoid locomotion requires controllers that can adapt to rapidly changing motion demands while remaining stable and robust. Recent locomotion controllers are typically designed with either a dense reward that is carefully shaped to encourage steps and penalize falling, or by using a reference tracking reward which teaches the controller to follow predetermined motions. Once a behavior that maximizes the reward is discovered, the controller ceases to learn. While generally stable, reference tracking methods focus on motor control separately from motion generation. Self-play has been proven as an effective technique for superhuman performance on several multiagent games like Go, Starcraft, hide-and-seek, and capture-the-flag. We train neural networks to play the game of multiagent tag in a physics simulator to study if new motion generation and control strategies can emerge through sparse feedback and competitive self-play. We present MJTag, a task suite for role-conditioned locomotion during competitive pursuit-evasion. Our model is a role-conditioned policy for a low-level locomotion controller and optional planar velocity commands. MJTag's league-based play with sparse feedback enables a locomotion controller to adopt new strategies, including dodging, sprinting, and tackling.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-11-26",
+      "date_label": "公告",
+      "age_days": 0.8345378883101852,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.52684,
+      "growth": null,
+      "score": 3.424,
+      "rule_tags": [
+        "人形机器人",
+        "足式运动",
+        "多智能体"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "该论文针对人形机器人敏捷运动控制问题，提出了一种名为MJTag的多智能体追逐任务套件。作者利用竞争性自我博弈（Self-play）机制，通过稀疏反馈训练低层运动控制器，旨在脱离传统的人工奖励塑造或预设动作追踪方法，从而引导机器人自主学习如闪避、冲刺和擒拿等动态运动策略。",
+        "highlights": [
+          {
+            "text": "提出MJTag任务套件，通过基于博弈的自我训练引导机器人演化出复杂的运动能力。",
+            "evidence": "MJTag's league-based play with sparse feedback enables a locomotion controller to adopt new strategies, including dodging, sprinting, and tackling."
+          },
+          {
+            "text": "采用竞争性自我博弈范式，利用稀疏反馈替代传统的人工塑形奖励或动作追踪奖励。",
+            "evidence": "We train neural networks to play the game of multiagent tag in a physics simulator to study if new motion generation and control strategies can emerge through sparse feedback and competitive self-play."
+          }
+        ],
+        "tags": [
+          "人形机器人",
+          "足式运动",
+          "多智能体"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.34569",
+      "title": "Riding the Wave: Sim-to-Real Humanoid Control on Elastic Terrain",
+      "abstract": "Humanoid robots on deformable elastic terrains face a surface whose position and motion are coupled in space and time: deflection and rebound persist between contacts, and load at one foothold alters the support at others, so training must capture how each contact changes the support that follows. We present RIPPLE (Robust Interaction via Proprioceptive Policies on Large-deformation Elastic terrain), a simulation-to-real learning framework for humanoid control on such terrains. RIPPLE integrates ElasticMembrane, a pretensioned mass-spring mesh that models spatially coupled deflection, energy storage, and rebound, together with deformable contact into MJLab for GPU-parallel policy learning. Staged training then transfers rigid-ground skills to balance and jumping on these terrains using only proprioception, without vision or force sensing. Deployed zero-shot, the policies enable a MagicBot Z1 humanoid to balance, jump consecutively, and enter a trampoline from a rigid platform. In simulation, ElasticMembrane training holds standing success of at least 98.7% (mean over three seeds) on ElasticMembrane, IndependentSprings, and BouncyPlate under 0.3 m/s perturbations, whereas rigid-ground or contact-compliance training transfers poorly to the first two. A fixed policy tolerates stiffness from 0.35 to 2.8 times the training value, beds up to 7 m wide, and seven further simulated support scenarios, so transfer needs no calibration to the trampoline's stiffness. We plan to release the code soon. The interactive browser demo, videos, and scene configurations are available on the project page: https://fly-pigTH.github.io/wave_rider/",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-11-26",
+      "date_label": "公告",
+      "age_days": 0.8345378883101852,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.51528,
+      "growth": null,
+      "score": 3.349,
+      "rule_tags": [
+        "人形机器人",
+        "Sim-to-Real"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对人形机器人在弹性地形上平衡与运动面临的复杂力学耦合挑战，作者提出了RIPPLE框架。该方法通过在MJLab中集成基于预张紧质点-弹簧网格的ElasticMembrane模型来模拟地形形变，并利用分阶段训练策略，仅依赖本体感知即可将刚性地面技能迁移至弹性地形。实验结果显示，该方法在物理仿真和真实环境下的MagicBot Z1机器人上实现了成功的跳跃与平衡控制。",
+        "highlights": [
+          {
+            "text": "RIPPLE框架集成了ElasticMembrane模型，能够模拟弹性地形在足部交互中的时空耦合形变与能量反馈。",
+            "evidence": "RIPPLE integrates ElasticMembrane, a pretensioned mass-spring mesh that models spatially coupled deflection, energy storage, and rebound, together with deformable contact into MJLab for GPU-parallel policy learning."
+          },
+          {
+            "text": "通过仅依赖本体感知的分阶段训练，机器人实现了在弹性地形上的零样本跳跃与平衡，并能从刚性平台平滑过渡至蹦床。",
+            "evidence": "Deployed zero-shot, the policies enable a MagicBot Z1 humanoid to balance, jump consecutively, and enter a trampoline from a rigid platform."
+          }
+        ],
+        "tags": [
+          "人形机器人",
+          "足式运动",
+          "Sim-to-Real"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.34435",
+      "title": "Most of the Way There: Turning a Strong Video Prior into an Action-Conditioned World Model",
+      "abstract": "Modern video generators excel at producing visually plausible futures guided by text and image prompts. Yet their emphasis on semantic plausibility does not guarantee fidelity to the physical consequences of specific actions. Action-conditioned world models (ACWMs), in contrast, aim to simulate how the world responds to robot actions, enabling scalable policy evaluation and improvement without costly real-world rollouts. The challenge is not merely to generate a plausible future, but to predict what follows from a specific physical action. As video priors grow stronger, we ask how little adaptation is truly needed to bridge this gap. We introduce Dianjing, a minimal recipe that preserves and unlocks the capabilities of strong video priors through unified physical action conditioning, training concentrated at the high noise levels where motion and layout, and thus the consequences of actions, are decided, and native history conditioning. Built upon MiniMax H3, a 33B video foundation model, Dianjing freezes the pretrained backbone and trains only 0.34% of its parameters using approximately 65 hours of robot video across two embodiments, without additional robot-specific pretraining or camera calibration. Controlled ablations show that where training is allocated across noise levels matters more than how actions enter the network. On WorldOracle, which evaluates predictions against paired real-world executions, Dianjing achieves the best scores on four of the five evaluation tracks and ranks second on AgiBot-Long. Our findings suggest that strong video priors already bring us most of the way to world modeling; lightweight physical action grounding can unlock their potential for real-world prediction.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-11-26",
+      "date_label": "公告",
+      "age_days": 0.8345378883101852,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.50134,
+      "growth": null,
+      "score": 3.259,
+      "rule_tags": [
+        "世界模型"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对现有视频生成模型在模拟物理行动结果方面的不足，本文提出了Dianjing方法，旨在将强视频先验转化为动作条件世界模型。通过对33B参数的MiniMax H3预训练模型进行仅0.34%参数的轻量化微调，重点在特定噪声水平下注入物理动作信息及历史状态，实现了无需额外机器人预训练或相机标定的高保真动作预测。实验表明，该方法在WorldOracle评估基准上展现了优异的物理动作预测性能。",
+        "highlights": [
+          {
+            "text": "Dianjing方法仅需微调预训练模型0.34%的参数即可实现高效的动作条件世界建模，无需额外的机器人特有预训练。",
+            "evidence": "Built upon MiniMax H3, a 33B video foundation model, Dianjing freezes the pretrained backbone and trains only 0.34% of its parameters using approximately 65 hours of robot video across two embodiments, without additional robot-specific pretraining or camera calibration."
+          },
+          {
+            "text": "研究发现，将训练集中在高噪声水平（决定运动与布局的阶段）比改变动作注入网络的方式更为关键。",
+            "evidence": "Controlled ablations show that where training is allocated across noise levels matters more than how actions enter the network."
+          },
+          {
+            "text": "在WorldOracle评估中，Dianjing在五个评价指标中的四个取得最高分，验证了其物理预测的有效性。",
+            "evidence": "On WorldOracle, which evaluates predictions against paired real-world executions, Dianjing achieves the best scores on four of the five evaluation tracks and ranks second on AgiBot-Long."
+          }
+        ],
+        "tags": [
+          "世界模型"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.34046",
+      "title": "End-to-End Image-Goal Navigation for Agile Quadrotors via Recurrent State Distillation",
+      "abstract": "Image-goal navigation asks a robot to reach the viewpoint of a target photograph without a map or goal pose. In three dimensions, this requires not only recognizing the goal but also estimating 3D displacement and generating continuous control actions to approach and settle at the target view. This is difficult because the same visual difference between current and goal image can require very different actions depending on the robot's velocity, yet monocular images alone reveal neither metric scale nor body motion. As a result, existing image-goal policies are limited to planar action spaces and rely on a state estimator for flight control. Policies that map directly from images to low-level control commands have been demonstrated for agile flight, but not toward goal images in unseen environments. We present the first image-goal navigation policy that directly commands thrust and angular rates for agile quadrotor flight in unseen 3D environments, without relying on state estimation (e.g., SLAM, VO, or SfM) or a separate velocity controller. We train a recurrent vision-based policy through a four-stage pipeline that combines geometric and motion supervision with privileged-teacher distillation and end-to-end reinforcement learning fine-tuning. On 1000 held-out flights in unseen environments, the policy achieves an 82.3% success rate with a mean terminal position error of 0.10m across successful flights. Deployed zero-shot on a real quadrotor, the policy reaches an 84% success rate over 25 trials in an unseen indoor environment.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-11-26",
+      "date_label": "公告",
+      "age_days": 0.8345378883101852,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.49726,
+      "growth": null,
+      "score": 3.232,
+      "rule_tags": [
+        "强化学习",
+        "导航"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对四旋翼无人机在未知三维环境中的图像目标导航问题，本文提出了一种无需依赖地图、位姿估计或外部状态估计器的端到端策略。该方法通过结合几何与运动监督、特权教师蒸馏及强化学习微调的四阶段流程，训练循环视觉策略以直接输出推力和角速度控制指令。实验结果显示，该策略在模拟和真实环境中均表现出较高的导航成功率。",
+        "highlights": [
+          {
+            "text": "提出了首个直接为未知三维环境下的敏捷四旋翼飞行生成推力和角速度控制指令的图像目标导航策略。",
+            "evidence": "We present the first image-goal navigation policy that directly commands thrust and angular rates for agile quadrotor flight in unseen 3D environments, without relying on state estimation (e.g., SLAM, VO, or SfM) or a separate velocity controller."
+          },
+          {
+            "text": "该策略在模拟测试中达到82.3%的成功率，并在真实室内环境中通过零样本部署实现了84%的成功率。",
+            "evidence": "On 1000 held-out flights in unseen environments, the policy achieves an 82.3% success rate with a mean terminal position error of 0.10m across successful flights. Deployed zero-shot on a real quadrotor, the policy reaches an 84% success rate over 25 trials in an unseen indoor environment."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "Sim-to-Real",
+          "导航"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.33828",
+      "title": "Learning a Whole-Body Pivot-Walking Gait for Heavy-Box Transport with a Humanoid",
+      "abstract": "Through pivot walking, humans can transport objects that are too heavy to lift. Previous humanoid studies have relied on planned sequences in which object manipulation and stepping are executed separately and the object is brought to rest between successive rotations. However, few studies have developed a single learned controller for humanoid pivot walking. In this paper, we propose a single reinforcement-learning policy that jointly coordinates stepping, balance control, and object manipulation. The policy is trained using rewards that promote alternating pivot motions and a phase reference that progresses according to the displacement of the object. In simulation, we confirmed that the humanoid can pivot a box. For deployment, we fine-tuned the policy into an object-blind version that follows a periodic clock instead of the progress reference. On the real robot, the deployed policy transported the box forward by more than 1 m in all five trials; each trial ended at a base-tilt safety stop. These results demonstrate that coordinated humanoid pivot walking can be learned with reinforcement learning and transferred to a physical humanoid robot without direct object-state sensing.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-11-26",
+      "date_label": "公告",
+      "age_days": 0.8345378883101852,
+      "upvotes": 0,
+      "comments": 0,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "arXiv"
+      ],
+      "relevance": 0.49655,
+      "growth": null,
+      "score": 3.228,
+      "rule_tags": [
+        "强化学习",
+        "人形机器人"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对人形机器人搬运重物时操作与行走割裂的问题，本研究提出了一种基于强化学习的全身轴转行走策略。通过联合协调步态、平衡控制和物体操作，该策略在仿真中实现了盒子的转动搬运。通过微调并转化为不依赖实时物体状态感知的时钟驱动版本，该方法在物理人形机器人实验中成功实现了超过1米的重物搬运，验证了学习协调步态并应用于真实场景的可行性。",
+        "highlights": [
+          {
+            "text": "提出了一种联合协调步态、平衡和物体操作的强化学习策略，实现了人形机器人的全身轴转行走。",
+            "evidence": "In this paper, we propose a single reinforcement-learning policy that jointly coordinates stepping, balance control, and object manipulation."
+          },
+          {
+            "text": "通过微调策略至不依赖物体状态感知版本，在真实机器人上成功实现了重物搬运任务。",
+            "evidence": "On the real robot, the deployed policy transported the box forward by more than 1 m in all five trials; each trial ended at a base-tilt safety stop."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "人形机器人",
+          "足式运动",
+          "Sim-to-Real"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    }
+  ],
+  "candidate_count": 787,
+  "personalization_note": "已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。",
+  "html": "<h1>2026-11-27 每日新论文 5</h1>\n<p>机器人 · 强化学习 · 通用 AI</p>\n<p>生成时间：2026-11-27 09:01 CST。从 787 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>\n<p>本栏优先收录最近发布且未出现在近期日报的 arXiv 论文，不按热度排序；相关性分用于结合你的 Zotero 收藏偏好。</p>\n<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>\n<p>本次合格候选不足 10 篇，实际收录 5 篇。</p>\n<h2>1. An Adversarial Multi-Agent Pursuit Game for Locomotor Agility Pretraining</h2>\n<p><strong>机器人</strong> · 公告 2026-11-26 · 综合分 3.42</p>\n<p>Zotero 摘要相关性：0.527（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>人形机器人 · 足式运动 · 多智能体</p>\n<p><strong>中文概述：</strong>该论文针对人形机器人敏捷运动控制问题，提出了一种名为MJTag的多智能体追逐任务套件。作者利用竞争性自我博弈（Self-play）机制，通过稀疏反馈训练低层运动控制器，旨在脱离传统的人工奖励塑造或预设动作追踪方法，从而引导机器人自主学习如闪避、冲刺和擒拿等动态运动策略。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出MJTag任务套件，通过基于博弈的自我训练引导机器人演化出复杂的运动能力。<br><small>摘要依据：MJTag&#x27;s league-based play with sparse feedback enables a locomotion controller to adopt new strategies, including dodging, sprinting, and tackling.</small></li>\n<li>采用竞争性自我博弈范式，利用稀疏反馈替代传统的人工塑形奖励或动作追踪奖励。<br><small>摘要依据：We train neural networks to play the game of multiagent tag in a physics simulator to study if new motion generation and control strategies can emerge through sparse feedback and competitive self-play.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>人形机器人 · 足式运动 · 多智能体</p>\n<p><strong>原文摘要节选：</strong>Agile humanoid locomotion requires controllers that can adapt to rapidly changing motion demands while remaining stable and robust. Recent locomotion controllers are typically designed with either a dense reward that is carefully shaped to encourage steps and penalize falling, or by using a reference tracking reward which teaches the controller to follow predetermined motions. Once a behavior that maximizes the reward is discovered, the controller ceases to learn. While generally stable, reference tracking methods focus on motor control separately from motion generation. Self-play has been proven as an effective technique for superhuman performance on several multiagent games like Go, Starcraft, hide-and-seek, and capture-the-flag. We train neural networks to play the game of multiagent…</p>\n<p><a href=\"https://arxiv.org/abs/2611.33407\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.33407\">PDF</a></p><hr>\n<h2>2. Riding the Wave: Sim-to-Real Humanoid Control on Elastic Terrain</h2>\n<p><strong>机器人</strong> · 公告 2026-11-26 · 综合分 3.35</p>\n<p>Zotero 摘要相关性：0.515（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>人形机器人 · Sim-to-Real</p>\n<p><strong>中文概述：</strong>针对人形机器人在弹性地形上平衡与运动面临的复杂力学耦合挑战，作者提出了RIPPLE框架。该方法通过在MJLab中集成基于预张紧质点-弹簧网格的ElasticMembrane模型来模拟地形形变，并利用分阶段训练策略，仅依赖本体感知即可将刚性地面技能迁移至弹性地形。实验结果显示，该方法在物理仿真和真实环境下的MagicBot Z1机器人上实现了成功的跳跃与平衡控制。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>RIPPLE框架集成了ElasticMembrane模型，能够模拟弹性地形在足部交互中的时空耦合形变与能量反馈。<br><small>摘要依据：RIPPLE integrates ElasticMembrane, a pretensioned mass-spring mesh that models spatially coupled deflection, energy storage, and rebound, together with deformable contact into MJLab for GPU-parallel policy learning.</small></li>\n<li>通过仅依赖本体感知的分阶段训练，机器人实现了在弹性地形上的零样本跳跃与平衡，并能从刚性平台平滑过渡至蹦床。<br><small>摘要依据：Deployed zero-shot, the policies enable a MagicBot Z1 humanoid to balance, jump consecutively, and enter a trampoline from a rigid platform.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>人形机器人 · 足式运动 · Sim-to-Real</p>\n<p><strong>原文摘要节选：</strong>Humanoid robots on deformable elastic terrains face a surface whose position and motion are coupled in space and time: deflection and rebound persist between contacts, and load at one foothold alters the support at others, so training must capture how each contact changes the support that follows. We present RIPPLE (Robust Interaction via Proprioceptive Policies on Large-deformation Elastic terrain), a simulation-to-real learning framework for humanoid control on such terrains. RIPPLE integrates ElasticMembrane, a pretensioned mass-spring mesh that models spatially coupled deflection, energy storage, and rebound, together with deformable contact into MJLab for GPU-parallel policy learning. Staged training then transfers rigid-ground skills to balance and jumping on these terrains using…</p>\n<p><a href=\"https://arxiv.org/abs/2611.34569\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.34569\">PDF</a></p><hr>\n<h2>3. Most of the Way There: Turning a Strong Video Prior into an Action-Conditioned World Model</h2>\n<p><strong>机器人</strong> · 公告 2026-11-26 · 综合分 3.26</p>\n<p>Zotero 摘要相关性：0.501（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>世界模型</p>\n<p><strong>中文概述：</strong>针对现有视频生成模型在模拟物理行动结果方面的不足，本文提出了Dianjing方法，旨在将强视频先验转化为动作条件世界模型。通过对33B参数的MiniMax H3预训练模型进行仅0.34%参数的轻量化微调，重点在特定噪声水平下注入物理动作信息及历史状态，实现了无需额外机器人预训练或相机标定的高保真动作预测。实验表明，该方法在WorldOracle评估基准上展现了优异的物理动作预测性能。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>Dianjing方法仅需微调预训练模型0.34%的参数即可实现高效的动作条件世界建模，无需额外的机器人特有预训练。<br><small>摘要依据：Built upon MiniMax H3, a 33B video foundation model, Dianjing freezes the pretrained backbone and trains only 0.34% of its parameters using approximately 65 hours of robot video across two embodiments, without additional robot-specific pretraining or camera calibration.</small></li>\n<li>研究发现，将训练集中在高噪声水平（决定运动与布局的阶段）比改变动作注入网络的方式更为关键。<br><small>摘要依据：Controlled ablations show that where training is allocated across noise levels matters more than how actions enter the network.</small></li>\n<li>在WorldOracle评估中，Dianjing在五个评价指标中的四个取得最高分，验证了其物理预测的有效性。<br><small>摘要依据：On WorldOracle, which evaluates predictions against paired real-world executions, Dianjing achieves the best scores on four of the five evaluation tracks and ranks second on AgiBot-Long.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>世界模型</p>\n<p><strong>原文摘要节选：</strong>Modern video generators excel at producing visually plausible futures guided by text and image prompts. Yet their emphasis on semantic plausibility does not guarantee fidelity to the physical consequences of specific actions. Action-conditioned world models (ACWMs), in contrast, aim to simulate how the world responds to robot actions, enabling scalable policy evaluation and improvement without costly real-world rollouts. The challenge is not merely to generate a plausible future, but to predict what follows from a specific physical action. As video priors grow stronger, we ask how little adaptation is truly needed to bridge this gap. We introduce Dianjing, a minimal recipe that preserves and unlocks the capabilities of strong video priors through unified physical action conditioning,…</p>\n<p><a href=\"https://arxiv.org/abs/2611.34435\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.34435\">PDF</a></p><hr>\n<h2>4. End-to-End Image-Goal Navigation for Agile Quadrotors via Recurrent State Distillation</h2>\n<p><strong>机器人 / 强化学习</strong> · 公告 2026-11-26 · 综合分 3.23</p>\n<p>Zotero 摘要相关性：0.497（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习 · 导航</p>\n<p><strong>中文概述：</strong>针对四旋翼无人机在未知三维环境中的图像目标导航问题，本文提出了一种无需依赖地图、位姿估计或外部状态估计器的端到端策略。该方法通过结合几何与运动监督、特权教师蒸馏及强化学习微调的四阶段流程，训练循环视觉策略以直接输出推力和角速度控制指令。实验结果显示，该策略在模拟和真实环境中均表现出较高的导航成功率。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出了首个直接为未知三维环境下的敏捷四旋翼飞行生成推力和角速度控制指令的图像目标导航策略。<br><small>摘要依据：We present the first image-goal navigation policy that directly commands thrust and angular rates for agile quadrotor flight in unseen 3D environments, without relying on state estimation (e.g., SLAM, VO, or SfM) or a separate velocity controller.</small></li>\n<li>该策略在模拟测试中达到82.3%的成功率，并在真实室内环境中通过零样本部署实现了84%的成功率。<br><small>摘要依据：On 1000 held-out flights in unseen environments, the policy achieves an 82.3% success rate with a mean terminal position error of 0.10m across successful flights. Deployed zero-shot on a real quadrotor, the policy reaches an 84% success rate over 25 trials in an unseen indoor environment.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · Sim-to-Real · 导航</p>\n<p><strong>原文摘要节选：</strong>Image-goal navigation asks a robot to reach the viewpoint of a target photograph without a map or goal pose. In three dimensions, this requires not only recognizing the goal but also estimating 3D displacement and generating continuous control actions to approach and settle at the target view. This is difficult because the same visual difference between current and goal image can require very different actions depending on the robot&#x27;s velocity, yet monocular images alone reveal neither metric scale nor body motion. As a result, existing image-goal policies are limited to planar action spaces and rely on a state estimator for flight control. Policies that map directly from images to low-level control commands have been demonstrated for agile flight, but not toward goal images in unseen…</p>\n<p><a href=\"https://arxiv.org/abs/2611.34046\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.34046\">PDF</a></p><hr>\n<h2>5. Learning a Whole-Body Pivot-Walking Gait for Heavy-Box Transport with a Humanoid</h2>\n<p><strong>机器人 / 强化学习</strong> · 公告 2026-11-26 · 综合分 3.23</p>\n<p>Zotero 摘要相关性：0.497（相似度分数，不是概率）。</p>\n<p>arXiv 新论文；暂无 HF 热度数据，主要根据 Zotero 相关性推荐。</p>\n<p>暂无可比较的历史快照；本次根据当前热度和新鲜度排序，未使用增长分。</p>\n<p><strong>规则标签：</strong>强化学习 · 人形机器人</p>\n<p><strong>中文概述：</strong>针对人形机器人搬运重物时操作与行走割裂的问题，本研究提出了一种基于强化学习的全身轴转行走策略。通过联合协调步态、平衡控制和物体操作，该策略在仿真中实现了盒子的转动搬运。通过微调并转化为不依赖实时物体状态感知的时钟驱动版本，该方法在物理人形机器人实验中成功实现了超过1米的重物搬运，验证了学习协调步态并应用于真实场景的可行性。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出了一种联合协调步态、平衡和物体操作的强化学习策略，实现了人形机器人的全身轴转行走。<br><small>摘要依据：In this paper, we propose a single reinforcement-learning policy that jointly coordinates stepping, balance control, and object manipulation.</small></li>\n<li>通过微调策略至不依赖物体状态感知版本，在真实机器人上成功实现了重物搬运任务。<br><small>摘要依据：On the real robot, the deployed policy transported the box forward by more than 1 m in all five trials; each trial ended at a base-tilt safety stop.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · 人形机器人 · 足式运动 · Sim-to-Real</p>\n<p><strong>原文摘要节选：</strong>Through pivot walking, humans can transport objects that are too heavy to lift. Previous humanoid studies have relied on planned sequences in which object manipulation and stepping are executed separately and the object is brought to rest between successive rotations. However, few studies have developed a single learned controller for humanoid pivot walking. In this paper, we propose a single reinforcement-learning policy that jointly coordinates stepping, balance control, and object manipulation. The policy is trained using rewards that promote alternating pivot motions and a phase reference that progresses according to the displacement of the object. In simulation, we confirmed that the humanoid can pivot a box. For deployment, we fine-tuned the policy into an object-blind version that…</p>\n<p><a href=\"https://arxiv.org/abs/2611.33828\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.33828\">PDF</a></p><hr>"
+}

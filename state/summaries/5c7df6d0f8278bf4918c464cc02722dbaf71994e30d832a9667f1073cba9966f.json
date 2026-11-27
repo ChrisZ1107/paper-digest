@@ -1,0 +1,20 @@
+{
+  "overview": "针对现有视频生成模型在模拟物理行动结果方面的不足，本文提出了Dianjing方法，旨在将强视频先验转化为动作条件世界模型。通过对33B参数的MiniMax H3预训练模型进行仅0.34%参数的轻量化微调，重点在特定噪声水平下注入物理动作信息及历史状态，实现了无需额外机器人预训练或相机标定的高保真动作预测。实验表明，该方法在WorldOracle评估基准上展现了优异的物理动作预测性能。",
+  "highlights": [
+    {
+      "text": "Dianjing方法仅需微调预训练模型0.34%的参数即可实现高效的动作条件世界建模，无需额外的机器人特有预训练。",
+      "evidence": "Built upon MiniMax H3, a 33B video foundation model, Dianjing freezes the pretrained backbone and trains only 0.34% of its parameters using approximately 65 hours of robot video across two embodiments, without additional robot-specific pretraining or camera calibration."
+    },
+    {
+      "text": "研究发现，将训练集中在高噪声水平（决定运动与布局的阶段）比改变动作注入网络的方式更为关键。",
+      "evidence": "Controlled ablations show that where training is allocated across noise levels matters more than how actions enter the network."
+    },
+    {
+      "text": "在WorldOracle评估中，Dianjing在五个评价指标中的四个取得最高分，验证了其物理预测的有效性。",
+      "evidence": "On WorldOracle, which evaluates predictions against paired real-world executions, Dianjing achieves the best scores on four of the five evaluation tracks and ranks second on AgiBot-Long."
+    }
+  ],
+  "tags": [
+    "世界模型"
+  ]
+}

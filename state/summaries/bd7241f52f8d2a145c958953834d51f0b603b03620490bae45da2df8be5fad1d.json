@@ -1,0 +1,17 @@
+{
+  "overview": "针对AI代理在长任务中因急于给出答案而导致的“懒惰”现象，作者提出了一种可验证信念的强化学习方法（RLVB）。该方法利用模拟器在训练期间计算准确的后验概率，奖励代理在证据不足时继续探索并在证据充分时提交答案。实验表明，RLVB在视觉谜题基准测试中显著提升了视觉语言模型的表现，并在证据充分的前提下提高了提交率和准确性，同时优于基于大模型判断的奖励方案。",
+  "highlights": [
+    {
+      "text": "RLVB通过在训练过程中动态奖励代理在证据不足时继续探索并在证据充足时提交，有效克服了AI代理的懒惰行为。",
+      "evidence": "We propose Reinforcement Learning with Verifiable Beliefs (RLVB), which rewards the agent for taking further steps while this posterior still allows several answers and for committing once the evidence is sufficient."
+    },
+    {
+      "text": "在九种实验设置中，RLVB平均性能提升17.1%，且在推理效率和准确性上优于传统的基于结局奖励的强化学习方法。",
+      "evidence": "RLVB improves the base model in all nine settings, by 17.1% on average. Under the outcome reward, GRPO and PPO fall below the base model on average."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "PPO"
+  ]
+}

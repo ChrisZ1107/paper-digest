@@ -1,0 +1,461 @@
+{
+  "date": "2026-11-27",
+  "timestamp": "2026-11-27T09:01:44.073550+08:00",
+  "title": "2026-11-27 热门论文 Top 10｜机器人·强化学习·AI",
+  "slug": "2026-11-27",
+  "papers": [
+    {
+      "id": "2611.33144",
+      "title": "PyRUA-Dex: Learning Programmatic Policies for Dexterous Bimanual Manipulation with Coding Agents",
+      "abstract": "Learning for dexterous manipulation is limited by the scarcity of high-quality demonstrations: retargeting from human video is imprecise, teleoperation gives no force feedback to the operator, and exoskeleton-based collection is hard to scale up. We present PyRUA-Dex, a framework that enables coding agents to develop dexterous manipulation through programmatic policy, without the need of demonstrations. The programmatic policy is developed in two stages: during exploration, multiple agents explore in parallel for task skills and ways to compose them, and a distilling agent condenses the successful attempts into a task library and one program. During refinement, this program is improved through randomized layouts for enhanced robustness and execution efficiency. In simulated environments, PyRUA-Dex achieves SOTA on Bench2Dex with a score of 72.9 and reaches 81.0% success on DexJoCo under full randomization, ahead of every trained policy on both benchmarks. In real world experiments on a bimanual platform with two 22-DoF hands, PyRUA-Dex learns to play piano, write calligraphy, and other tasks efficiently: learning a new piece from sheet music takes as little as 30 minutes. These results suggest that PyRUA-Dex is an effective framework for developing dexterous manipulation policies with coding agents in the absence of high quality dexterous manipulation demonstrations.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-11-24",
+      "age_days": 3.042871221643518,
+      "upvotes": 44,
+      "comments": 2,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.47998,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 44,
+        "comments": 2
+      },
+      "score": 5.86,
+      "rule_tags": [
+        "机器人操作"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对灵巧双臂操作学习中高质量演示数据匮乏的问题，本文提出了PyRUA-Dex框架。该框架利用编码智能体通过编程化策略实现任务学习，无需人工演示。策略开发分为探索和精炼两个阶段：探索阶段通过多智能体并行学习并提炼任务库与程序；精炼阶段则通过随机布局提升鲁棒性与执行效率。实验结果表明，该方法在模拟环境中表现优异，并能有效支持现实世界中复杂的灵巧操作任务。",
+        "highlights": [
+          {
+            "text": "PyRUA-Dex提出了一种利用编码智能体开发灵巧操作策略的方法，无需依赖高质量的人工演示。",
+            "evidence": "We present PyRUA-Dex, a framework that enables coding agents to develop dexterous manipulation through programmatic policy, without the need of demonstrations."
+          },
+          {
+            "text": "该框架在模拟任务基准测试中达到SOTA水平，并在处理现实世界任务时具有高效率。",
+            "evidence": "In simulated environments, PyRUA-Dex achieves SOTA on Bench2Dex with a score of 72.9 and reaches 81.0% success on DexJoCo under full randomization, ahead of every trained policy on both benchmarks."
+          }
+        ],
+        "tags": [
+          "机器人操作"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.31201",
+      "title": "Embo-Harness: Towards Understanding Frontier-Model-as-Policy Harness",
+      "abstract": "Frontier multimodal models exhibit extraordinary generalization in generating robot actions from observations and instructions, enabling a new paradigm in which they serve directly as policies within closed-loop robotic harnesses. However, the design principles of such harnesses, and the capabilities underlying their strong performance, remain unclear. We present Embo-Harness, a framework for systematically studying frontier-model-as-policy harnesses. We investigate four components of the robotic agentic loop, namely, prompting, planning, action execution, and tool use, and distill six empirical findings into a practical recipe. This recipe prioritizes interfaces that exploit the model's native visual reasoning and tool-use capabilities over handcrafted plans, skills, or action priors, and identifies effective choices for action representation, chunking, reasoning effort, visual observations, short multi-action sequences, and policy refinement. On RoboLab-120, Embo-Harness achieves an 83.3\\% success rate, outperforming the strongest reported baseline by 26.2 percentage points. It also succeeds in 15 of 20 zero-shot trials across four real-world manipulation tasks. Beyond performance, controlled interventions indicate that the studied model depends more strongly on accurate spatial target estimation than on explicit low-level joint or trajectory generation. These results provide both a practical recipe for building strong frontier-model-as-policy harnesses and a clearer account of the capabilities that drive their performance.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-11-23",
+      "age_days": 4.0428712216435185,
+      "upvotes": 106,
+      "comments": 2,
+      "stars": 70,
+      "repo": "https://github.com/DravenALG/Embo-Harness",
+      "trending_rank": 17,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.46132,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 3,
+        "comments": 0,
+        "stars": 2
+      },
+      "score": 5.495,
+      "rule_tags": [
+        "推理"
+      ],
+      "summary_status": "Gemini 暂不可用，显示规则标签与原文摘要。"
+    },
+    {
+      "id": "2611.29897",
+      "title": "Motion Mamba 2.0: Autoregressive Diffusion Mamba for Long-Horizon Humanoid Control",
+      "abstract": "Long-horizon, real-time controllable motion generation is essential for interactive animation and humanoid robotics, where an agent must respond to changing instructions and spatial goals while moving. Existing autoregressive diffusion methods generate motion incrementally, but bounded attention caches limit access to distant history, while repeated denoising introduces substantial inference overhead. We present Motion Mamba 2.0, a Mamba-based root-body diffusion architecture that integrates local attention, resumable recurrent states, and persistent content memory (PCM) for long-horizon controllable motion generation. PCM transforms compressed motion history from Mamba recurrent states, together with state changes and text-conditioned features, into dynamically updated content slots accessible to local attention. To enable efficient inference, we further develop an execution scheme tailored to this architecture, combining CUDA Graph replay, fused kernels, and execution-flow simplification while preserving the canonical history update. Evaluations on retargeted HiPHI demonstrate accurate terminal control over rollouts of up to 39.52 s, while short-horizon comparisons on BONES Seed and retargeted HumanML3D show that the model also retains strong spatial control and text-motion matching. On an RTX 4090, the optimized execution reduces median complete-window latency from 1685.35 to 276.14 ms, achieving a median paired speedup of 6.138times while preserving identical outputs and committed states in the tested rollouts. Moreover, we conduct extensive real-world evaluation on the Unitree G1, demonstrating sequential text-guided action composition, expressive motion, and interactive locomotion through keyboard and mouse control.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-11-23",
+      "age_days": 4.0428712216435185,
+      "upvotes": 222,
+      "comments": 3,
+      "stars": 39,
+      "repo": "https://github.com/AIGeeksGroup/MotionMamba2.0",
+      "trending_rank": 50,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.41753,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 26,
+        "comments": 0,
+        "stars": 5
+      },
+      "score": 5.474,
+      "rule_tags": [
+        "人形机器人",
+        "足式运动"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对长时程、实时可控的人体动作生成任务，作者提出了Motion Mamba 2.0架构。该方法通过结合局部注意力机制、可恢复递归状态及持久内容记忆（PCM），有效解决了现有自回归扩散模型在长时记忆获取和推理延迟方面的瓶颈。实验表明，该架构在实现长时程精确控制的同时，通过CUDA图重放与内核融合等优化手段显著提升了推理效率，并在Unitree G1人形机器人上验证了其文本引导动作组合与交互式运动能力。",
+        "highlights": [
+          {
+            "text": "提出持久内容记忆（PCM）架构，通过将压缩的运动历史与状态变化及文本特征整合，实现了长时程可控运动生成。",
+            "evidence": "We present Motion Mamba 2.0, a Mamba-based root-body diffusion architecture that integrates local attention, resumable recurrent states, and persistent content memory (PCM) for long-horizon controllable motion generation."
+          },
+          {
+            "text": "通过CUDA图重放与内核融合等优化手段，大幅降低了推理延迟，实现了6.138倍的推理加速。",
+            "evidence": "On an RTX 4090, the optimized execution reduces median complete-window latency from 1685.35 to 276.14 ms, achieving a median paired speedup of 6.138times while preserving identical outputs and committed states in the tested rollouts."
+          }
+        ],
+        "tags": [
+          "人形机器人",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.18397",
+      "title": "Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent",
+      "abstract": "We introduce Gamer, a generalist agent framework built for long-horizon tasks in complex interactive environments. Its end-to-end architecture combines perception, memory management, and multi-step reasoning. A shared training and deployment pipeline supports interaction with both conventional 2D graphical interfaces and complex 3D simulated worlds. We first continue pre-training on a dataset constructed from tens of thousands of hours of device-level keyboard and mouse interaction. These trajectories span simulated games and embodied environments, allowing the model to learn environmental dynamics across both physical and virtual domains. Sparse-thinking instruction tuning then substantially reduces redundant computation while preserving the reasoning needed for complex decisions. We train the policy for long-horizon interaction with a stable multi-turn reinforcement learning method that addresses finite context windows, accumulated rollout errors, and sparse rewards. For real-time interaction, a cloud-edge inference engine serves numerous simulated game environments concurrently, supports unbounded-context execution, and keeps online inference latency low. Across multiple challenging 3D open-world games, Gamer demonstrates solid generalization and operational efficiency comparable to skilled players. It also achieves competitive results on a range of conventional 2D game benchmarks. These results suggest that even repetitive keyboard and mouse trajectories can support substantial gains from scaling data and learning algorithms. Training on these trajectories helps Gamer learn complex skills more steadily in environments with both physical and digital properties. This approach offers a path toward generalist agents that can interact across digital and physical worlds.",
+      "topics": [
+        "机器人",
+        "强化学习"
+      ],
+      "published": "2026-11-13",
+      "age_days": 14.04287122164352,
+      "upvotes": 166,
+      "comments": 4,
+      "stars": 1584,
+      "repo": "https://github.com/RainBowLuoCS/Gamer",
+      "trending_rank": 8,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.4912,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 1,
+        "comments": 0,
+        "stars": 43
+      },
+      "score": 5.428,
+      "rule_tags": [
+        "强化学习",
+        "视觉语言动作",
+        "推理"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文介绍了一种名为Gamer的通用智能体框架，旨在处理复杂交互环境下的长程任务。该框架结合了感知、记忆管理和多步推理的端到端架构，支持在2D图形界面和3D模拟世界中交互。作者通过大规模键盘和鼠标交互数据进行预训练，并利用稀疏思维指令微调和多轮强化学习方法，提升了模型的长程决策能力与运行效率。实验结果表明，Gamer在多个3D开放世界游戏和2D基准测试中展现出良好的泛化能力和操作水平。",
+        "highlights": [
+          {
+            "text": "Gamer通过在大规模键盘与鼠标交互数据上进行预训练，有效学习了跨物理与虚拟域的环境动态。",
+            "evidence": "We first continue pre-training on a dataset constructed from tens of thousands of hours of device-level keyboard and mouse interaction. These trajectories span simulated games and embodied environments, allowing the model to learn environmental dynamics across both physical and virtual domains."
+          },
+          {
+            "text": "采用稀疏思维指令微调和多轮强化学习方法，在减少计算冗余的同时增强了长程决策的稳定性。",
+            "evidence": "Sparse-thinking instruction tuning then substantially reduces redundant computation while preserving the reasoning needed for complex decisions. We train the policy for long-horizon interaction with a stable multi-turn reinforcement learning method that addresses finite context windows, accumulated rollout errors, and sparse rewards."
+          }
+        ],
+        "tags": [
+          "视觉语言动作",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.32884",
+      "title": "Lazy Agents Answer Against Their Own Beliefs: Reinforcement Learning with Verifiable Beliefs Teaches Them to Act on What They Believe",
+      "abstract": "AI agents working on long tasks often commit to an answer before they have enough evidence, a behavior called laziness. In our evaluations, they frequently commit even while their stated belief still names several possible answers. An outcome reward at the end of the episode scores only the final answer, so it cannot teach the agent when to commit, because a lucky guess receives the same reward as an answer backed by evidence. During training, however, the simulator can compute the exact posterior over the answer at every step and tell whether the evidence is already enough. We propose Reinforcement Learning with Verifiable Beliefs (RLVB), which rewards the agent for taking further steps while this posterior still allows several answers and for committing once the evidence is sufficient. The reward needs no judge, critic or reward model, and it never reads the belief line the agent writes before each action. We also introduce Pro Worlds, a benchmark of visual puzzles where the agent views a large world through a small window. We evaluate three vision-language models on three benchmarks, two of which are never seen in training. RLVB improves the base model in all nine settings, by 17.1% on average. Under the outcome reward, GRPO and PPO fall below the base model on average. RLVB also outperforms PPO with a process reward from an LLM judge by 9.3% on average while using 1.6 times fewer GPU-hours. The trained agent answers with sufficient evidence in 51%, 12% and 74% of the episodes on the three benchmarks, against 8%, 0.4% and 36% for the base model. Its accuracy gain therefore comes from answering more often at high levels of evidence. The belief line shows how the agent reaches this evidence: it acts on its own belief. It commits at only 0.1 to 2.2% of the turns at which the evidence is insufficient and its line still names several answers, against 3 to 68% for the base model.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-11-24",
+      "age_days": 3.042871221643518,
+      "upvotes": 98,
+      "comments": 10,
+      "stars": 27,
+      "repo": "https://github.com/declare-lab/RLVB",
+      "trending_rank": 90,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.39916,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 6,
+        "comments": 5,
+        "stars": 1
+      },
+      "score": 5.312,
+      "rule_tags": [
+        "强化学习",
+        "PPO",
+        "大模型后训练"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对AI代理在长任务中因急于给出答案而导致的“懒惰”现象，作者提出了一种可验证信念的强化学习方法（RLVB）。该方法利用模拟器在训练期间计算准确的后验概率，奖励代理在证据不足时继续探索并在证据充分时提交答案。实验表明，RLVB在视觉谜题基准测试中显著提升了视觉语言模型的表现，并在证据充分的前提下提高了提交率和准确性，同时优于基于大模型判断的奖励方案。",
+        "highlights": [
+          {
+            "text": "RLVB通过在训练过程中动态奖励代理在证据不足时继续探索并在证据充足时提交，有效克服了AI代理的懒惰行为。",
+            "evidence": "We propose Reinforcement Learning with Verifiable Beliefs (RLVB), which rewards the agent for taking further steps while this posterior still allows several answers and for committing once the evidence is sufficient."
+          },
+          {
+            "text": "在九种实验设置中，RLVB平均性能提升17.1%，且在推理效率和准确性上优于传统的基于结局奖励的强化学习方法。",
+            "evidence": "RLVB improves the base model in all nine settings, by 17.1% on average. Under the outcome reward, GRPO and PPO fall below the base model on average."
+          }
+        ],
+        "tags": [
+          "强化学习",
+          "PPO"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.30989",
+      "title": "WorldLeague: Benchmarking Physical Agency",
+      "abstract": "AI systems can now operate Blender, follow instructions in complex video games, and manipulate objects with robot arms. What range of physical goals can today's AI systems achieve autonomously? Answering this question requires testing systems on tasks that demand different combinations of perception, memory, planning, and action. We introduce WorldLeague, a benchmark that compares AI systems on a common set of 60 simulated robot tasks by measuring progress toward each task's physical goal from the robot's trajectory. Robots explore scenes to gather evidence in WorldSeek, rearrange objects in WorldShape, and adapt to changes in WorldShift. Tying these goals to a single control interface limits which AI systems can be compared. In WorldLeague, vision-language models (VLMs) choose targets and motions, while vision-language-action models (VLAs) and world-action models (WAMs) use their native controls. For each of six capability dimensions, we measure how much progress a system makes toward its goals (Interactive Score) and how often it achieves them (physical success rate). Together, these measures form the system's Physical Agency Profile. Among 13 representative AI systems, Claude Fable 5.2 achieves 13 of the 60 goals and earns the highest mean Interactive Score (28.58/100). Fable leads in four dimensions, while GPT-6.1-Sol and GPT-6-Astra tie for first on rule-following tasks. Even when VLMs answer every final question correctly, they receive an Interactive Score of zero in 71.8\\% of those episodes. WorldLeague gives Embodied AI, Physical AI, and Agentic AI a shared basis for comparing what AI systems achieve autonomously, from partial progress toward a physical goal to full goal completion. Project Webpage: https://xyangzhou.github.io/WorldLeague",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-11-23",
+      "age_days": 4.0428712216435185,
+      "upvotes": 138,
+      "comments": 2,
+      "stars": 21,
+      "repo": "https://github.com/xyangzhou/WorldLeague",
+      "trending_rank": 95,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.43903,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 1,
+        "comments": 0,
+        "stars": 2
+      },
+      "score": 5.226,
+      "rule_tags": [
+        "视觉语言动作"
+      ],
+      "summary_status": "Gemini 暂不可用，显示规则标签与原文摘要。"
+    },
+    {
+      "id": "2611.32649",
+      "title": "ICLWorld: Benchmarking In-Context Learning of Agents from Digital to Physical Worlds",
+      "abstract": "In-context learning (ICL) lets agents acquire new rules from context and adapt to user-specific requirements at inference time. The same frontier agents now operate both computers and robots, yet their ICL remains insufficiently assessed: existing benchmarks are largely offline, rely on text or static images, and risk training-data contamination, while robot evaluations are limited to method-level ablations. We present ICLWorld, an online benchmark that evaluates the ICL of agents from digital to physical worlds, covering computer use and robot use, together with UIverse, a unified harness that turns every environment into a user interface. We build 30 environments, record 630 demonstration videos (10+ hours), and design 160 tasks with customized, often counter-intuitive rules that cannot be satisfied without learning from the context. Each task comes with three rule versions, given as text or video, and we test generalization at three levels, from replaying the demonstration to new instances and unseen environments. Across six frontier models, the strongest agents, Claude Opus 5.5 and GPT-6 Astra, succeed on 82% and 76% of computer-use runs but only 27% and 26% of robot-use runs, and a no-rule control reduces success to at most 8%. GPT-6 Astra succeeds under all three rule versions on only 38% of computer-use tasks, half its rate under a single rule, and answers 98% of robot rule questions correctly yet completes only 20% of these tasks. Frontier agents learn rules comparably well from video and from text and transfer them across environments, whereas weaker agents rely on text and lose most of their video-based success once the demonstrated situation is resampled. These findings reveal substantial gaps between the digital and the physical world and between identifying a rule and acting on it.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-11-24",
+      "age_days": 3.042871221643518,
+      "upvotes": 21,
+      "comments": 2,
+      "stars": 13,
+      "repo": "https://github.com/ICLWorld/ICLWorld",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.46122,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 1,
+        "comments": 1,
+        "stars": 1
+      },
+      "score": 5.197,
+      "rule_tags": [],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "本文提出了ICLWorld，这是一个涵盖数字界面和物理机器人场景的在线评估基准，旨在衡量智能体在推理时的上下文学习（ICL）能力。研究通过构建30个环境、设计160项具有自定义规则的任务，对比了六种前沿模型在不同场景下的表现。结果表明，当前智能体在数字任务与物理机器人任务之间表现存在显著差异，且在理解规则与将规则转化为实际行动之间存在执行瓶颈。",
+        "highlights": [
+          {
+            "text": "ICLWorld基准揭示了当前前沿智能体在数字界面使用与物理机器人操作任务之间的显著性能差距。",
+            "evidence": "These findings reveal substantial gaps between the digital and the physical world and between identifying a rule and acting on it."
+          },
+          {
+            "text": "研究发现前沿模型能够从文本和视频中以相当的水平学习规则，但在机器人任务中的执行率显著低于计算机使用任务。",
+            "evidence": "Frontier agents learn rules comparably well from video and from text and transfer them across environments, whereas weaker agents rely on text and lose most of their video-based success once the demonstrated situation is resampled."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.30013",
+      "title": "3AGameFactory-Motion: Agentic Rigging and Reliable Complex Motion Generation for Diverse 3D Assets",
+      "abstract": "Animating arbitrary 3D assets from instructions requires both structural inference and motion control, yet existing motion benchmarks mostly cover conventional human or animal skeletons with simple instructions. We introduce DivDynBench, which evaluates rigging and motion generation across six morphology categories, with instructions requiring multi-phase part coordination and explicit timing, angle, repetition, and trajectory constraints. With large language models, we systematically compare three common paradigms: specialized motion generation, video generation followed by motion recovery, and direct agent-driven generation. We analyze their control capabilities, cross-morphology adaptability, and generation costs. Guided by this comparison, we propose an Agentic Motion Framework in which an agent writes compact parametric skeleton and motion programs, and a deterministic executor performs rigging, kinematic solving, and geometric correction. Compact parameter control reduces generation overhead and improves rigging reliability and motion-control accuracy, providing practical guidance for deploying complex 3D motion generation.",
+      "topics": [
+        "通用 AI"
+      ],
+      "published": "2026-11-23",
+      "age_days": 4.0428712216435185,
+      "upvotes": 62,
+      "comments": 3,
+      "stars": 1417,
+      "repo": "https://github.com/OpenDCAI/GameFactory-3A",
+      "trending_rank": 31,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.40487,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 3,
+        "comments": 0,
+        "stars": 20
+      },
+      "score": 5.161,
+      "rule_tags": [],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对现有3D资产动画化任务中结构推断与动作控制的需求，本文提出了包含六类形态的评估基准DivDynBench。作者比较了三种主流动作生成范式，并据此提出一种代理动作框架。该框架利用大模型编写参数化骨架与动作程序，并通过确定性执行器进行装配、运动学求解及几何校正，旨在提升生成效率、装配可靠性及动作控制精度。",
+        "highlights": [
+          {
+            "text": "提出了包含六种形态类别的DivDynBench基准，用以评估涉及多阶段协调、时序、角度及轨迹约束的复杂运动生成能力。",
+            "evidence": "We introduce DivDynBench, which evaluates rigging and motion generation across six morphology categories, with instructions requiring multi-phase part coordination and explicit timing, angle, repetition, and trajectory constraints."
+          },
+          {
+            "text": "设计了一种代理动作框架，通过执行器处理骨架装配与运动求解，实现了对参数化程序的确定性控制，降低了生成开销并提升了精度。",
+            "evidence": "Guided by this comparison, we propose an Agentic Motion Framework in which an agent writes compact parametric skeleton and motion programs, and a deterministic executor performs rigging, kinematic solving, and geometric correction."
+          }
+        ],
+        "tags": [],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.33143",
+      "title": "ROAM-Bench: Evaluating Embodied Active Spatial Intelligence through Evidence Verification",
+      "abstract": "Embodied spatial intelligence requires agents to gather information through exploration and interaction, then use it to reason and act. Existing benchmarks insufficiently distinguish correct outcomes from completion of these task requirements. We introduce ROAM-Bench to evaluate these abilities under robot motion and collision constraints. Independent checks use simulation state and episode records to assess outcomes and task requirements, with stronger checks of geometry, coverage, or placement. It comprises 250 manually validated tasks across 11 types in five groups and 27 indoor environments, covering object and room search, counting, geometric judgments, direction reasoning, and relocation. Human evaluators achieve 84% strict task success on 100 sampled tasks, with every correct outcome satisfying the required checks. Across seven frontier vision-language models, we identify two complementary failure modes: correct outcomes with unmet task requirements, and incorrect outcomes despite passing stronger checks. Oracle-input diagnostics show that more complete target observations and calibrated feedback improve final spatial judgments.",
+      "topics": [
+        "机器人"
+      ],
+      "published": "2026-11-24",
+      "age_days": 3.042871221643518,
+      "upvotes": 13,
+      "comments": 1,
+      "stars": 13,
+      "repo": "https://github.com/rxjfighting/ROAM-Bench",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.39438,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 13,
+        "comments": 1
+      },
+      "score": 5.055,
+      "rule_tags": [
+        "推理"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "针对具身智能体在探索和交互中空间智能评估不足的问题，本文提出了ROAM-Bench基准测试。该基准包含250项手动验证的任务，通过模拟器状态和记录对任务结果及执行要求（如几何覆盖与位置精度）进行独立评估。实验发现，现有前沿视觉语言模型在处理空间推理任务时存在结果正确但过程未达标，或通过验证但结果错误的局限性，并证实了观测完整性与反馈校准对提升空间判断的有效性。",
+        "highlights": [
+          {
+            "text": "提出ROAM-Bench基准测试，通过独立验证机制量化评估具身智能体在机器人运动和碰撞约束下的空间智能。",
+            "evidence": "We introduce ROAM-Bench to evaluate these abilities under robot motion and collision constraints. Independent checks use simulation state and episode records to assess outcomes and task requirements, with stronger checks of geometry, coverage, or placement."
+          },
+          {
+            "text": "通过对七种前沿视觉语言模型的评估，识别出模型在任务执行逻辑与最终结果正确性之间的两种典型失败模式。",
+            "evidence": "Across seven frontier vision-language models, we identify two complementary failure modes: correct outcomes with unmet task requirements, and incorrect outcomes despite passing stronger checks."
+          }
+        ],
+        "tags": [
+          "机器人操作",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    },
+    {
+      "id": "2611.31895",
+      "title": "Loupe: Reinforcing Knowledge-Intensive Video Generation Agents",
+      "abstract": "Knowledge-intensive video generation remains challenging because prompts often omit the facts, appearances, and temporal relationships required for accurate generation. While search-based workflows can retrieve missing evidence, manually designed strategies limit adaptive planning, and conventional training suffers from costly video-level feedback and coarse trajectory-level credit assignment. In this paper, we present Loupe, a video generation agent that retrieves and verifies textual and visual evidence to construct evidence-grounded temporal video prompts with reference images. We further introduce Rubric-Based Credit (RBC), which leverages prompt-specific factual, visual, and temporal requirements to evaluate intermediate search and planning decisions before video rendering. Building on RBC, RBC-SFT reweights assistant-token learning by step quality, while RBC-GRPO incorporates step-level credits alongside a final planning reward, without rendering videos during RL. To address the lack of dedicated search-oriented evaluation, we construct Search-VBench, which contains 150 held-out prompts across seven categories. Experiments show that Loupe improves all four evaluation dimensions across three video generators, raising the overall score of MiniMax-H3 from 32.80 to 70.67 and outperforming an untrained search workflow. Ablation experiments show that full RBC training outperforms standard SFT followed by trajectory-level GRPO by 5.27 points. Human evaluations and results on Sci-VBench and KIVI-Bench further demonstrate improved generation quality, scientific grounding, factual precision, and helpfulness. Our project page is available at https://zengkaiya.github.io/Loupe/.",
+      "topics": [
+        "强化学习"
+      ],
+      "published": "2026-11-24",
+      "age_days": 3.042871221643518,
+      "upvotes": 8,
+      "comments": 1,
+      "stars": null,
+      "repo": "",
+      "trending_rank": null,
+      "sources": [
+        "Hugging Face"
+      ],
+      "date_label": "发表",
+      "relevance": 0.39874,
+      "growth": {
+        "days": 1.0,
+        "upvotes": 8,
+        "comments": 1
+      },
+      "score": 4.966,
+      "rule_tags": [
+        "强化学习",
+        "大模型后训练"
+      ],
+      "summary_status": "基于摘要 · Gemini 生成，未经全文核验。",
+      "ai_summary": {
+        "overview": "知识密集型视频生成面临提示词缺乏事实、外观及时间关系信息的问题。为解决现有检索策略自适应能力差及训练反馈成本高的问题，作者提出了Loupe智能体。该方法通过检索验证文本与视觉证据来构建视频提示，并引入基于准则的信用分配算法RBC，利用分步评估机制进行策略训练。实验表明，该方法显著提升了多款视频生成模型在事实性、视觉质量及时间一致性方面的表现。",
+        "highlights": [
+          {
+            "text": "提出Rubric-Based Credit (RBC)算法，在视频渲染前评估中间搜索与规划决策，并通过RBC-GRPO实现步级信用分配，提升训练效率。",
+            "evidence": "We further introduce Rubric-Based Credit (RBC), which leverages prompt-specific factual, visual, and temporal requirements to evaluate intermediate search and planning decisions before video rendering."
+          },
+          {
+            "text": "构建Search-VBench评测基准，实验证明Loupe在多个评价维度上优于未经训练的检索流程，并提升了多种主流视频生成模型的效果。",
+            "evidence": "To address the lack of dedicated search-oriented evaluation, we construct Search-VBench, which contains 150 held-out prompts across seven categories. Experiments show that Loupe improves all four evaluation dimensions across three video generators, raising the overall score of MiniMax-H3 from 32.80 to 70.67 and outperforming an untrained search workflow."
+          }
+        ],
+        "tags": [
+          "大模型后训练",
+          "推理"
+        ],
+        "model": "gemini-3.1-flash-lite"
+      }
+    }
+  ],
+  "candidate_count": 787,
+  "personalization_note": "已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。",
+  "html": "<h1>2026-11-27 热门论文 Top 10</h1>\n<p>机器人 · 强化学习 · 通用 AI</p>\n<p>生成时间：2026-11-27 09:01 CST。从 787 篇近 30 天的候选论文中筛选。优先保留机器人与强化学习各最多 3 篇，再按分数补齐；最终按分数排列。领域由标题、摘要和关键词自动识别，可能有误差。</p>\n<p>候选来源：<a href=\"https://huggingface.co/papers\">Hugging Face Papers</a> 和启用个性化时的 arXiv 新论文。热度分结合热榜位置、点赞、讨论、时间衰减及已观测到的增长；不代表学术质量，也不覆盖全部 arXiv 论文。</p>\n<p>已启用 Zotero-arXiv-Daily 加权摘要相似度：相关性 65%，热度与新鲜度 35%；近期收藏权重更高。</p>\n<h2>1. PyRUA-Dex: Learning Programmatic Policies for Dexterous Bimanual Manipulation with Coding Agents</h2>\n<p><strong>机器人</strong> · 发表 2026-11-24 · 综合分 5.86</p>\n<p>Zotero 摘要相关性：0.480（相似度分数，不是概率）。</p>\n<p>HF 点赞 44 · 讨论 2</p>\n<p>较上次观测（1.0 天前）：点赞 +44 · 讨论 +2。</p>\n<p><strong>规则标签：</strong>机器人操作</p>\n<p><strong>中文概述：</strong>针对灵巧双臂操作学习中高质量演示数据匮乏的问题，本文提出了PyRUA-Dex框架。该框架利用编码智能体通过编程化策略实现任务学习，无需人工演示。策略开发分为探索和精炼两个阶段：探索阶段通过多智能体并行学习并提炼任务库与程序；精炼阶段则通过随机布局提升鲁棒性与执行效率。实验结果表明，该方法在模拟环境中表现优异，并能有效支持现实世界中复杂的灵巧操作任务。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>PyRUA-Dex提出了一种利用编码智能体开发灵巧操作策略的方法，无需依赖高质量的人工演示。<br><small>摘要依据：We present PyRUA-Dex, a framework that enables coding agents to develop dexterous manipulation through programmatic policy, without the need of demonstrations.</small></li>\n<li>该框架在模拟任务基准测试中达到SOTA水平，并在处理现实世界任务时具有高效率。<br><small>摘要依据：In simulated environments, PyRUA-Dex achieves SOTA on Bench2Dex with a score of 72.9 and reaches 81.0% success on DexJoCo under full randomization, ahead of every trained policy on both benchmarks.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作</p>\n<p><strong>原文摘要节选：</strong>Learning for dexterous manipulation is limited by the scarcity of high-quality demonstrations: retargeting from human video is imprecise, teleoperation gives no force feedback to the operator, and exoskeleton-based collection is hard to scale up. We present PyRUA-Dex, a framework that enables coding agents to develop dexterous manipulation through programmatic policy, without the need of demonstrations. The programmatic policy is developed in two stages: during exploration, multiple agents explore in parallel for task skills and ways to compose them, and a distilling agent condenses the successful attempts into a task library and one program. During refinement, this program is improved through randomized layouts for enhanced robustness and execution efficiency. In simulated environments,…</p>\n<p><a href=\"https://arxiv.org/abs/2611.33144\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.33144\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.33144\">讨论与热度</a></p><hr>\n<h2>2. Embo-Harness: Towards Understanding Frontier-Model-as-Policy Harness</h2>\n<p><strong>机器人</strong> · 发表 2026-11-23 · 综合分 5.50</p>\n<p>Zotero 摘要相关性：0.461（相似度分数，不是概率）。</p>\n<p>HF 点赞 106 · 讨论 2 · 本次 HF 热榜第 17 位 · 仓库累计 Star 70（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +3 · 讨论 +0 · Star +2。</p>\n<p><strong>规则标签：</strong>推理</p>\n<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>\n<p><strong>原文摘要节选：</strong>Frontier multimodal models exhibit extraordinary generalization in generating robot actions from observations and instructions, enabling a new paradigm in which they serve directly as policies within closed-loop robotic harnesses. However, the design principles of such harnesses, and the capabilities underlying their strong performance, remain unclear. We present Embo-Harness, a framework for systematically studying frontier-model-as-policy harnesses. We investigate four components of the robotic agentic loop, namely, prompting, planning, action execution, and tool use, and distill six empirical findings into a practical recipe. This recipe prioritizes interfaces that exploit the model&#x27;s native visual reasoning and tool-use capabilities over handcrafted plans, skills, or action priors,…</p>\n<p><a href=\"https://arxiv.org/abs/2611.31201\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.31201\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.31201\">讨论与热度</a> · <a href=\"https://github.com/DravenALG/Embo-Harness\">代码</a></p><hr>\n<h2>3. Motion Mamba 2.0: Autoregressive Diffusion Mamba for Long-Horizon Humanoid Control</h2>\n<p><strong>机器人</strong> · 发表 2026-11-23 · 综合分 5.47</p>\n<p>Zotero 摘要相关性：0.418（相似度分数，不是概率）。</p>\n<p>HF 点赞 222 · 讨论 3 · 本次 HF 热榜第 50 位 · 仓库累计 Star 39（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +26 · 讨论 +0 · Star +5。</p>\n<p><strong>规则标签：</strong>人形机器人 · 足式运动</p>\n<p><strong>中文概述：</strong>针对长时程、实时可控的人体动作生成任务，作者提出了Motion Mamba 2.0架构。该方法通过结合局部注意力机制、可恢复递归状态及持久内容记忆（PCM），有效解决了现有自回归扩散模型在长时记忆获取和推理延迟方面的瓶颈。实验表明，该架构在实现长时程精确控制的同时，通过CUDA图重放与内核融合等优化手段显著提升了推理效率，并在Unitree G1人形机器人上验证了其文本引导动作组合与交互式运动能力。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出持久内容记忆（PCM）架构，通过将压缩的运动历史与状态变化及文本特征整合，实现了长时程可控运动生成。<br><small>摘要依据：We present Motion Mamba 2.0, a Mamba-based root-body diffusion architecture that integrates local attention, resumable recurrent states, and persistent content memory (PCM) for long-horizon controllable motion generation.</small></li>\n<li>通过CUDA图重放与内核融合等优化手段，大幅降低了推理延迟，实现了6.138倍的推理加速。<br><small>摘要依据：On an RTX 4090, the optimized execution reduces median complete-window latency from 1685.35 to 276.14 ms, achieving a median paired speedup of 6.138times while preserving identical outputs and committed states in the tested rollouts.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>人形机器人 · 推理</p>\n<p><strong>原文摘要节选：</strong>Long-horizon, real-time controllable motion generation is essential for interactive animation and humanoid robotics, where an agent must respond to changing instructions and spatial goals while moving. Existing autoregressive diffusion methods generate motion incrementally, but bounded attention caches limit access to distant history, while repeated denoising introduces substantial inference overhead. We present Motion Mamba 2.0, a Mamba-based root-body diffusion architecture that integrates local attention, resumable recurrent states, and persistent content memory (PCM) for long-horizon controllable motion generation. PCM transforms compressed motion history from Mamba recurrent states, together with state changes and text-conditioned features, into dynamically updated content slots…</p>\n<p><a href=\"https://arxiv.org/abs/2611.29897\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.29897\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.29897\">讨论与热度</a> · <a href=\"https://github.com/AIGeeksGroup/MotionMamba2.0\">代码</a></p><hr>\n<h2>4. Gamer: A Generalist Vision-Language-Action Foundation Model for Long-Horizon Real-Time Game Agent</h2>\n<p><strong>机器人 / 强化学习</strong> · 发表 2026-11-13 · 综合分 5.43</p>\n<p>Zotero 摘要相关性：0.491（相似度分数，不是概率）。</p>\n<p>HF 点赞 166 · 讨论 4 · 本次 HF 热榜第 8 位 · 仓库累计 Star 1584（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +0 · Star +43。</p>\n<p><strong>规则标签：</strong>强化学习 · 视觉语言动作 · 推理</p>\n<p><strong>中文概述：</strong>本文介绍了一种名为Gamer的通用智能体框架，旨在处理复杂交互环境下的长程任务。该框架结合了感知、记忆管理和多步推理的端到端架构，支持在2D图形界面和3D模拟世界中交互。作者通过大规模键盘和鼠标交互数据进行预训练，并利用稀疏思维指令微调和多轮强化学习方法，提升了模型的长程决策能力与运行效率。实验结果表明，Gamer在多个3D开放世界游戏和2D基准测试中展现出良好的泛化能力和操作水平。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>Gamer通过在大规模键盘与鼠标交互数据上进行预训练，有效学习了跨物理与虚拟域的环境动态。<br><small>摘要依据：We first continue pre-training on a dataset constructed from tens of thousands of hours of device-level keyboard and mouse interaction. These trajectories span simulated games and embodied environments, allowing the model to learn environmental dynamics across both physical and virtual domains.</small></li>\n<li>采用稀疏思维指令微调和多轮强化学习方法，在减少计算冗余的同时增强了长程决策的稳定性。<br><small>摘要依据：Sparse-thinking instruction tuning then substantially reduces redundant computation while preserving the reasoning needed for complex decisions. We train the policy for long-horizon interaction with a stable multi-turn reinforcement learning method that addresses finite context windows, accumulated rollout errors, and sparse rewards.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>视觉语言动作 · 推理</p>\n<p><strong>原文摘要节选：</strong>We introduce Gamer, a generalist agent framework built for long-horizon tasks in complex interactive environments. Its end-to-end architecture combines perception, memory management, and multi-step reasoning. A shared training and deployment pipeline supports interaction with both conventional 2D graphical interfaces and complex 3D simulated worlds. We first continue pre-training on a dataset constructed from tens of thousands of hours of device-level keyboard and mouse interaction. These trajectories span simulated games and embodied environments, allowing the model to learn environmental dynamics across both physical and virtual domains. Sparse-thinking instruction tuning then substantially reduces redundant computation while preserving the reasoning needed for complex decisions. We…</p>\n<p><a href=\"https://arxiv.org/abs/2611.18397\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.18397\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.18397\">讨论与热度</a> · <a href=\"https://github.com/RainBowLuoCS/Gamer\">代码</a></p><hr>\n<h2>5. Lazy Agents Answer Against Their Own Beliefs: Reinforcement Learning with Verifiable Beliefs Teaches Them to Act on What They Believe</h2>\n<p><strong>强化学习</strong> · 发表 2026-11-24 · 综合分 5.31</p>\n<p>Zotero 摘要相关性：0.399（相似度分数，不是概率）。</p>\n<p>HF 点赞 98 · 讨论 10 · 本次 HF 热榜第 90 位 · 仓库累计 Star 27（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +6 · 讨论 +5 · Star +1。</p>\n<p><strong>规则标签：</strong>强化学习 · PPO · 大模型后训练</p>\n<p><strong>中文概述：</strong>针对AI代理在长任务中因急于给出答案而导致的“懒惰”现象，作者提出了一种可验证信念的强化学习方法（RLVB）。该方法利用模拟器在训练期间计算准确的后验概率，奖励代理在证据不足时继续探索并在证据充分时提交答案。实验表明，RLVB在视觉谜题基准测试中显著提升了视觉语言模型的表现，并在证据充分的前提下提高了提交率和准确性，同时优于基于大模型判断的奖励方案。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>RLVB通过在训练过程中动态奖励代理在证据不足时继续探索并在证据充足时提交，有效克服了AI代理的懒惰行为。<br><small>摘要依据：We propose Reinforcement Learning with Verifiable Beliefs (RLVB), which rewards the agent for taking further steps while this posterior still allows several answers and for committing once the evidence is sufficient.</small></li>\n<li>在九种实验设置中，RLVB平均性能提升17.1%，且在推理效率和准确性上优于传统的基于结局奖励的强化学习方法。<br><small>摘要依据：RLVB improves the base model in all nine settings, by 17.1% on average. Under the outcome reward, GRPO and PPO fall below the base model on average.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>强化学习 · PPO</p>\n<p><strong>原文摘要节选：</strong>AI agents working on long tasks often commit to an answer before they have enough evidence, a behavior called laziness. In our evaluations, they frequently commit even while their stated belief still names several possible answers. An outcome reward at the end of the episode scores only the final answer, so it cannot teach the agent when to commit, because a lucky guess receives the same reward as an answer backed by evidence. During training, however, the simulator can compute the exact posterior over the answer at every step and tell whether the evidence is already enough. We propose Reinforcement Learning with Verifiable Beliefs (RLVB), which rewards the agent for taking further steps while this posterior still allows several answers and for committing once the evidence is sufficient.…</p>\n<p><a href=\"https://arxiv.org/abs/2611.32884\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.32884\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.32884\">讨论与热度</a> · <a href=\"https://github.com/declare-lab/RLVB\">代码</a></p><hr>\n<h2>6. WorldLeague: Benchmarking Physical Agency</h2>\n<p><strong>机器人</strong> · 发表 2026-11-23 · 综合分 5.23</p>\n<p>Zotero 摘要相关性：0.439（相似度分数，不是概率）。</p>\n<p>HF 点赞 138 · 讨论 2 · 本次 HF 热榜第 95 位 · 仓库累计 Star 21（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +0 · Star +2。</p>\n<p><strong>规则标签：</strong>视觉语言动作</p>\n<p>Gemini 暂不可用，显示规则标签与原文摘要。</p>\n<p><strong>原文摘要节选：</strong>AI systems can now operate Blender, follow instructions in complex video games, and manipulate objects with robot arms. What range of physical goals can today&#x27;s AI systems achieve autonomously? Answering this question requires testing systems on tasks that demand different combinations of perception, memory, planning, and action. We introduce WorldLeague, a benchmark that compares AI systems on a common set of 60 simulated robot tasks by measuring progress toward each task&#x27;s physical goal from the robot&#x27;s trajectory. Robots explore scenes to gather evidence in WorldSeek, rearrange objects in WorldShape, and adapt to changes in WorldShift. Tying these goals to a single control interface limits which AI systems can be compared. In WorldLeague, vision-language models (VLMs) choose targets…</p>\n<p><a href=\"https://arxiv.org/abs/2611.30989\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.30989\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.30989\">讨论与热度</a> · <a href=\"https://github.com/xyangzhou/WorldLeague\">代码</a></p><hr>\n<h2>7. ICLWorld: Benchmarking In-Context Learning of Agents from Digital to Physical Worlds</h2>\n<p><strong>机器人</strong> · 发表 2026-11-24 · 综合分 5.20</p>\n<p>Zotero 摘要相关性：0.461（相似度分数，不是概率）。</p>\n<p>HF 点赞 21 · 讨论 2 · 仓库累计 Star 13（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +1 · 讨论 +1 · Star +1。</p>\n<p><strong>中文概述：</strong>本文提出了ICLWorld，这是一个涵盖数字界面和物理机器人场景的在线评估基准，旨在衡量智能体在推理时的上下文学习（ICL）能力。研究通过构建30个环境、设计160项具有自定义规则的任务，对比了六种前沿模型在不同场景下的表现。结果表明，当前智能体在数字任务与物理机器人任务之间表现存在显著差异，且在理解规则与将规则转化为实际行动之间存在执行瓶颈。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>ICLWorld基准揭示了当前前沿智能体在数字界面使用与物理机器人操作任务之间的显著性能差距。<br><small>摘要依据：These findings reveal substantial gaps between the digital and the physical world and between identifying a rule and acting on it.</small></li>\n<li>研究发现前沿模型能够从文本和视频中以相当的水平学习规则，但在机器人任务中的执行率显著低于计算机使用任务。<br><small>摘要依据：Frontier agents learn rules comparably well from video and from text and transfer them across environments, whereas weaker agents rely on text and lose most of their video-based success once the demonstrated situation is resampled.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 推理</p>\n<p><strong>原文摘要节选：</strong>In-context learning (ICL) lets agents acquire new rules from context and adapt to user-specific requirements at inference time. The same frontier agents now operate both computers and robots, yet their ICL remains insufficiently assessed: existing benchmarks are largely offline, rely on text or static images, and risk training-data contamination, while robot evaluations are limited to method-level ablations. We present ICLWorld, an online benchmark that evaluates the ICL of agents from digital to physical worlds, covering computer use and robot use, together with UIverse, a unified harness that turns every environment into a user interface. We build 30 environments, record 630 demonstration videos (10+ hours), and design 160 tasks with customized, often counter-intuitive rules that cannot…</p>\n<p><a href=\"https://arxiv.org/abs/2611.32649\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.32649\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.32649\">讨论与热度</a> · <a href=\"https://github.com/ICLWorld/ICLWorld\">代码</a></p><hr>\n<h2>8. 3AGameFactory-Motion: Agentic Rigging and Reliable Complex Motion Generation for Diverse 3D Assets</h2>\n<p><strong>通用 AI</strong> · 发表 2026-11-23 · 综合分 5.16</p>\n<p>Zotero 摘要相关性：0.405（相似度分数，不是概率）。</p>\n<p>HF 点赞 62 · 讨论 3 · 本次 HF 热榜第 31 位 · 仓库累计 Star 1417（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +3 · 讨论 +0 · Star +20。</p>\n<p><strong>中文概述：</strong>针对现有3D资产动画化任务中结构推断与动作控制的需求，本文提出了包含六类形态的评估基准DivDynBench。作者比较了三种主流动作生成范式，并据此提出一种代理动作框架。该框架利用大模型编写参数化骨架与动作程序，并通过确定性执行器进行装配、运动学求解及几何校正，旨在提升生成效率、装配可靠性及动作控制精度。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出了包含六种形态类别的DivDynBench基准，用以评估涉及多阶段协调、时序、角度及轨迹约束的复杂运动生成能力。<br><small>摘要依据：We introduce DivDynBench, which evaluates rigging and motion generation across six morphology categories, with instructions requiring multi-phase part coordination and explicit timing, angle, repetition, and trajectory constraints.</small></li>\n<li>设计了一种代理动作框架，通过执行器处理骨架装配与运动求解，实现了对参数化程序的确定性控制，降低了生成开销并提升了精度。<br><small>摘要依据：Guided by this comparison, we propose an Agentic Motion Framework in which an agent writes compact parametric skeleton and motion programs, and a deterministic executor performs rigging, kinematic solving, and geometric correction.</small></li>\n</ul>\n<p><strong>原文摘要节选：</strong>Animating arbitrary 3D assets from instructions requires both structural inference and motion control, yet existing motion benchmarks mostly cover conventional human or animal skeletons with simple instructions. We introduce DivDynBench, which evaluates rigging and motion generation across six morphology categories, with instructions requiring multi-phase part coordination and explicit timing, angle, repetition, and trajectory constraints. With large language models, we systematically compare three common paradigms: specialized motion generation, video generation followed by motion recovery, and direct agent-driven generation. We analyze their control capabilities, cross-morphology adaptability, and generation costs. Guided by this comparison, we propose an Agentic Motion Framework in…</p>\n<p><a href=\"https://arxiv.org/abs/2611.30013\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.30013\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.30013\">讨论与热度</a> · <a href=\"https://github.com/OpenDCAI/GameFactory-3A\">代码</a></p><hr>\n<h2>9. ROAM-Bench: Evaluating Embodied Active Spatial Intelligence through Evidence Verification</h2>\n<p><strong>机器人</strong> · 发表 2026-11-24 · 综合分 5.05</p>\n<p>Zotero 摘要相关性：0.394（相似度分数，不是概率）。</p>\n<p>HF 点赞 13 · 讨论 1 · 仓库累计 Star 13（仓库可能包含多篇论文）</p>\n<p>较上次观测（1.0 天前）：点赞 +13 · 讨论 +1。</p>\n<p><strong>规则标签：</strong>推理</p>\n<p><strong>中文概述：</strong>针对具身智能体在探索和交互中空间智能评估不足的问题，本文提出了ROAM-Bench基准测试。该基准包含250项手动验证的任务，通过模拟器状态和记录对任务结果及执行要求（如几何覆盖与位置精度）进行独立评估。实验发现，现有前沿视觉语言模型在处理空间推理任务时存在结果正确但过程未达标，或通过验证但结果错误的局限性，并证实了观测完整性与反馈校准对提升空间判断的有效性。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出ROAM-Bench基准测试，通过独立验证机制量化评估具身智能体在机器人运动和碰撞约束下的空间智能。<br><small>摘要依据：We introduce ROAM-Bench to evaluate these abilities under robot motion and collision constraints. Independent checks use simulation state and episode records to assess outcomes and task requirements, with stronger checks of geometry, coverage, or placement.</small></li>\n<li>通过对七种前沿视觉语言模型的评估，识别出模型在任务执行逻辑与最终结果正确性之间的两种典型失败模式。<br><small>摘要依据：Across seven frontier vision-language models, we identify two complementary failure modes: correct outcomes with unmet task requirements, and incorrect outcomes despite passing stronger checks.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>机器人操作 · 推理</p>\n<p><strong>原文摘要节选：</strong>Embodied spatial intelligence requires agents to gather information through exploration and interaction, then use it to reason and act. Existing benchmarks insufficiently distinguish correct outcomes from completion of these task requirements. We introduce ROAM-Bench to evaluate these abilities under robot motion and collision constraints. Independent checks use simulation state and episode records to assess outcomes and task requirements, with stronger checks of geometry, coverage, or placement. It comprises 250 manually validated tasks across 11 types in five groups and 27 indoor environments, covering object and room search, counting, geometric judgments, direction reasoning, and relocation. Human evaluators achieve 84% strict task success on 100 sampled tasks, with every correct…</p>\n<p><a href=\"https://arxiv.org/abs/2611.33143\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.33143\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.33143\">讨论与热度</a> · <a href=\"https://github.com/rxjfighting/ROAM-Bench\">代码</a></p><hr>\n<h2>10. Loupe: Reinforcing Knowledge-Intensive Video Generation Agents</h2>\n<p><strong>强化学习</strong> · 发表 2026-11-24 · 综合分 4.97</p>\n<p>Zotero 摘要相关性：0.399（相似度分数，不是概率）。</p>\n<p>HF 点赞 8 · 讨论 1</p>\n<p>较上次观测（1.0 天前）：点赞 +8 · 讨论 +1。</p>\n<p><strong>规则标签：</strong>强化学习 · 大模型后训练</p>\n<p><strong>中文概述：</strong>知识密集型视频生成面临提示词缺乏事实、外观及时间关系信息的问题。为解决现有检索策略自适应能力差及训练反馈成本高的问题，作者提出了Loupe智能体。该方法通过检索验证文本与视觉证据来构建视频提示，并引入基于准则的信用分配算法RBC，利用分步评估机制进行策略训练。实验表明，该方法显著提升了多款视频生成模型在事实性、视觉质量及时间一致性方面的表现。</p>\n<p>基于摘要 · Gemini 生成，未经全文核验。</p><ul>\n<li>提出Rubric-Based Credit (RBC)算法，在视频渲染前评估中间搜索与规划决策，并通过RBC-GRPO实现步级信用分配，提升训练效率。<br><small>摘要依据：We further introduce Rubric-Based Credit (RBC), which leverages prompt-specific factual, visual, and temporal requirements to evaluate intermediate search and planning decisions before video rendering.</small></li>\n<li>构建Search-VBench评测基准，实验证明Loupe在多个评价维度上优于未经训练的检索流程，并提升了多种主流视频生成模型的效果。<br><small>摘要依据：To address the lack of dedicated search-oriented evaluation, we construct Search-VBench, which contains 150 held-out prompts across seven categories. Experiments show that Loupe improves all four evaluation dimensions across three video generators, raising the overall score of MiniMax-H3 from 32.80 to 70.67 and outperforming an untrained search workflow.</small></li>\n</ul>\n<p><strong>AI 主题：</strong>大模型后训练 · 推理</p>\n<p><strong>原文摘要节选：</strong>Knowledge-intensive video generation remains challenging because prompts often omit the facts, appearances, and temporal relationships required for accurate generation. While search-based workflows can retrieve missing evidence, manually designed strategies limit adaptive planning, and conventional training suffers from costly video-level feedback and coarse trajectory-level credit assignment. In this paper, we present Loupe, a video generation agent that retrieves and verifies textual and visual evidence to construct evidence-grounded temporal video prompts with reference images. We further introduce Rubric-Based Credit (RBC), which leverages prompt-specific factual, visual, and temporal requirements to evaluate intermediate search and planning decisions before video rendering. Building…</p>\n<p><a href=\"https://arxiv.org/abs/2611.31895\">论文原文</a> · <a href=\"https://arxiv.org/pdf/2611.31895\">PDF</a> · <a href=\"https://huggingface.co/papers/2611.31895\">讨论与热度</a></p><hr>"
+}

@@ -1,0 +1,17 @@
+{
+  "overview": "知识密集型视频生成面临提示词缺乏事实、外观及时间关系信息的问题。为解决现有检索策略自适应能力差及训练反馈成本高的问题，作者提出了Loupe智能体。该方法通过检索验证文本与视觉证据来构建视频提示，并引入基于准则的信用分配算法RBC，利用分步评估机制进行策略训练。实验表明，该方法显著提升了多款视频生成模型在事实性、视觉质量及时间一致性方面的表现。",
+  "highlights": [
+    {
+      "text": "提出Rubric-Based Credit (RBC)算法，在视频渲染前评估中间搜索与规划决策，并通过RBC-GRPO实现步级信用分配，提升训练效率。",
+      "evidence": "We further introduce Rubric-Based Credit (RBC), which leverages prompt-specific factual, visual, and temporal requirements to evaluate intermediate search and planning decisions before video rendering."
+    },
+    {
+      "text": "构建Search-VBench评测基准，实验证明Loupe在多个评价维度上优于未经训练的检索流程，并提升了多种主流视频生成模型的效果。",
+      "evidence": "To address the lack of dedicated search-oriented evaluation, we construct Search-VBench, which contains 150 held-out prompts across seven categories. Experiments show that Loupe improves all four evaluation dimensions across three video generators, raising the overall score of MiniMax-H3 from 32.80 to 70.67 and outperforming an untrained search workflow."
+    }
+  ],
+  "tags": [
+    "大模型后训练",
+    "推理"
+  ]
+}

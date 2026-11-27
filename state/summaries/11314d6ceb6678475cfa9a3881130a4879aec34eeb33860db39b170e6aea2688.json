@@ -1,0 +1,17 @@
+{
+  "overview": "本文提出了ICLWorld，这是一个涵盖数字界面和物理机器人场景的在线评估基准，旨在衡量智能体在推理时的上下文学习（ICL）能力。研究通过构建30个环境、设计160项具有自定义规则的任务，对比了六种前沿模型在不同场景下的表现。结果表明，当前智能体在数字任务与物理机器人任务之间表现存在显著差异，且在理解规则与将规则转化为实际行动之间存在执行瓶颈。",
+  "highlights": [
+    {
+      "text": "ICLWorld基准揭示了当前前沿智能体在数字界面使用与物理机器人操作任务之间的显著性能差距。",
+      "evidence": "These findings reveal substantial gaps between the digital and the physical world and between identifying a rule and acting on it."
+    },
+    {
+      "text": "研究发现前沿模型能够从文本和视频中以相当的水平学习规则，但在机器人任务中的执行率显著低于计算机使用任务。",
+      "evidence": "Frontier agents learn rules comparably well from video and from text and transfer them across environments, whereas weaker agents rely on text and lose most of their video-based success once the demonstrated situation is resampled."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "推理"
+  ]
+}
