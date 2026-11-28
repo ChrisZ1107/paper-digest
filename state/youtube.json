@@ -6244,6 +6244,32 @@
           "abstract_zh": "带可验证奖励的强化学习（RLVR）已成为提升语言模型推理能力的有力方法，但其监督信号本质上是稀疏的：序列级的验证器奖励仅通过采样的轨迹进行传播，无法为替代动作提供直接信号。策略内蒸馏（OPD）通过在完整的下一个词元分布上提供密集的教师反馈，提供了一种补充性的监督形式，但这种信号并未建立在已验证的任务结果基础上。简单地协同优化这两个目标并不能将这些信号耦合起来：验证器反馈依然保持稀疏，且不能为密集的教师监督提供参考。我们引入了可验证策略内蒸馏（VOPD），将稀疏的验证器反馈转化为密集的、基于验证器基础的监督信号。我们的关键观察是，OPD的隐式奖励视角将教师监督和验证器反馈置于一个共同的奖励空间中，同时保留了可用于每一个下一个词元动作的奖励信号。在这种视角下，VOPD将验证器的偏好投影到教师的隐式奖励方向上，并对整个词表上的所得信号进行Rao--Blackwell化处理，从而将基于验证器的监督传播到从未被采样的动作中。所得的目标函数也可以解释为根据教师与验证器之间的一致性对蒸馏目标进行自适应推断。在两种教师--学生配置和八个数学推理基准测试中，VOPD在最终性能和学习效率上均持续优于普通的OPD和其他策略内蒸馏基线方法。我们的代码可在 https://github.com/juntongshi48/VOPD 获取。"
         }
       ]
+    },
+    "YDoXFdyAvsI": {
+      "video_id": "YDoXFdyAvsI",
+      "video_title": "ETH is Dead, Long Live SH (Nov 2026)",
+      "published": "2026-11-28",
+      "video_url": "https://www.youtube.com/watch?v=YDoXFdyAvsI",
+      "papers": [
+        {
+          "id": "2611.02650",
+          "title": "ETH is Dead, Long Live SH (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.02650"
+        }
+      ]
+    },
+    "-3xxYt3PAjw": {
+      "video_id": "-3xxYt3PAjw",
+      "video_title": "Looped Models are Fast Multi-Token Predictors (Nov 2026)",
+      "published": "2026-11-28",
+      "video_url": "https://www.youtube.com/watch?v=-3xxYt3PAjw",
+      "papers": [
+        {
+          "id": "2611.33896",
+          "title": "Looped Models are Fast Multi-Token Predictors (Nov 2026)",
+          "url": "https://arxiv.org/abs/2611.33896"
+        }
+      ]
     }
   }
 }
