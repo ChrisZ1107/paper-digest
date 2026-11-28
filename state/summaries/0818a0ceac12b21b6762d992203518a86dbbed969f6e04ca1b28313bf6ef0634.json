@@ -1,0 +1,22 @@
+{
+  "overview": "针对机器人操作中上下文学习面临的数据对齐及策略依赖任务标签问题，该研究提出了Entangle模型。该模型通过视频转视频生成技术扩增时序对齐数据，并引入任务内对比学习目标，强制策略关注人类视频上下文而非任务身份。实验表明，该模型在Astribot S1及RoboTwin平台的未见任务中表现优于Zero-WAM，并具备在不同布局和工具下的跨上下文泛化能力。",
+  "highlights": [
+    {
+      "text": "提出一种基于视频转换的训练数据扩展方案，解决了机器人动作与人类视频上下文在时序上的对齐挑战。",
+      "evidence": "To scale temporally aligned training data, we convert recorded robot videos into matched human contexts via video-to-video generation, supplemented by real paired recordings."
+    },
+    {
+      "text": "设计了任务内对比目标，有效防止模型在推理时依赖任务标识符等快捷方式，增强了上下文遵循能力。",
+      "evidence": "For model training, we combine variable-length video windows with an intra-task contrastive objective that distinguishes the paired action trajectory from other executions of the same task, preventing task-identity shortcuts."
+    },
+    {
+      "text": "无需针对特定任务微调，Entangle在多项未见任务中表现出良好的泛化性能，并在多个基准测试中优于对比模型。",
+      "evidence": "Without task-specific fine-tuning, Entangle improves steadily as aligned training data scales, reaching an average score of 83.5/100 across six unseen tasks on an Astribot S1 robot, and achieves a 69.5% average success rate on seven unseen RoboTwin tasks, outperforming Zero-WAM by 22.6 percentage points."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "世界模型",
+    "视觉语言动作"
+  ]
+}

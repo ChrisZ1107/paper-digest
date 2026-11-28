@@ -1,0 +1,17 @@
+{
+  "overview": "针对机器人无法在多次执行任务中保留经验以提升效率的问题，本文提出SEEK框架。该框架利用自演化程序策略将操作编码为可执行程序，并通过持久化动作-效果库记录执行结果。在保持底层基础模型不变的前提下，SEEK能根据当前场景调整经验，修正失败行为，从而在多次尝试中实现性能提升并减少模型推理需求。",
+  "highlights": [
+    {
+      "text": "SEEK框架通过记录并复用执行经验，在多次尝试中显著提升了机器人操作任务的成功率和平均得分。",
+      "evidence": "On RoboDojo, knowledge retained over ten attempts raises SEEK's average task score from 27.0 to 54.4 and its success rate from 19.7% to 48.0% across all 42 tasks."
+    },
+    {
+      "text": "该框架有效减少了机器人操作任务对多模态基础模型的调用频率，优化了执行效率。",
+      "evidence": "On 34 of these tasks with GPT-6.2 Astra, SEEK reaches 80.1 after five attempts, against 49.6 for the same model acting directly, and uses 77.6% fewer model requests."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "推理"
+  ]
+}

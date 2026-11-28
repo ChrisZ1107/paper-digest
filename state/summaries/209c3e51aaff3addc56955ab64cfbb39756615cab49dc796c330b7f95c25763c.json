@@ -1,0 +1,19 @@
+{
+  "overview": "本文针对基于流的生成式策略在具身控制中难以高效执行单步生成的问题，提出了iMFPO框架。该方法通过解耦速度学习与引入漂移感知速度对齐机制，实现了单步控制。作者声称该框架在Go2、G1、H1和Spot机器人平台上表现出高效的动作生成能力，显著降低了推理延迟并保持了良好的控制性能。",
+  "highlights": [
+    {
+      "text": "iMFPO通过解耦速度学习和漂移感知速度对齐，实现了无需迭代流积分的单步生成策略。",
+      "evidence": "To address this challenge, we propose iMFPO, a one-step generative policy optimization framework with decoupled velocity learning and drift-aware velocity alignment."
+    },
+    {
+      "text": "在Go2机器人实验中，该方法将动作生成延迟从64步RFPO的15.57毫秒降低至0.41毫秒。",
+      "evidence": "On Go2, action-generation latency drops from 15.57 ms to 0.41 ms relative to 64-step RFPO."
+    }
+  ],
+  "tags": [
+    "强化学习",
+    "PPO",
+    "四足机器人",
+    "人形机器人"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "overview": "RoboEvo^2是一个旨在实现递归机器人自我进化的框架，通过策略与辅助工具（Harness）的协同进化来提升机器人性能。该方法在策略失败时引导编码智能体进行搜索并巩固经验，同时利用监督训练和反事实偏好蒸馏优化策略，通过在无需额外人类演示的情况下闭环迭代，显著提升了机器人在多项任务中的成功率及自主学习能力。",
+  "highlights": [
+    {
+      "text": "RoboEvo^2通过策略与辅助工具的协同进化，在无需额外人类演示的情况下实现了任务成功率的显著提升。",
+      "evidence": "Through recursive co-evolution without additional human demonstrations, RoboEvo^2 improves standalone success from 11.0% to 84.1% and hybrid success from 30.4% to 90.5% on LIBERO-PRO, with similar gains and reduced agentic costs on RoboTwin C2R."
+    },
+    {
+      "text": "该模型在Unitree G1-D人形机器人上展现了跨具身任务的适应能力。",
+      "evidence": "Further experiments demonstrate autonomous task acquisition, cross-embodiment harness transfer, and 95.0% hybrid success on the Unitree G1-D."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "推理",
+    "人形机器人"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "overview": "本文提出了DexEngine，一套旨在将人类手部操作数据转化为机器人可行轨迹的模拟流水线。该系统通过定位手部动作空间、生成跟随人类轨迹的臂部动作，并结合残差强化学习在物理模拟中进行修正，从而解决复杂运动执行的可行性问题。作者称该方法生成了大规模训练数据集，在仿真与真实机器人实验中验证了其能有效提升机器人操作策略的性能。",
+  "highlights": [
+    {
+      "text": "DexEngine通过残差强化学习在物理模拟中修正动作，生成的轨迹在保持物理可行性的同时，显著优于未修正数据。",
+      "evidence": "DexEngine first places each clip's hand-object motion where the arms can reach it, finds an arm motion that follows the human hands, and then corrects the motion in physics simulation with residual reinforcement learning."
+    },
+    {
+      "text": "该方法实现了大规模数据生成，相比以往方法，其处理速度更快且轨迹追踪更精准。",
+      "evidence": "Even with arms attached, DexEngine tracks objects more accurately than prior floating-hand methods and runs over 10x faster than RL-based ones."
+    }
+  ],
+  "tags": [
+    "机器人操作",
+    "Sim-to-Real",
+    "强化学习"
+  ]
+}

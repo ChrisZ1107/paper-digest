@@ -1,0 +1,16 @@
+{
+  "overview": "针对实时自回归视频生成在长交互故事中难以保持对象一致性的问题，作者提出了Agentic LongLive系统。该系统利用异步智能体记忆机制，在独立GPU上处理提示信息并构建实体记忆，通过将全局和分镜头记忆预填充至生成器注意力池，实现了低延迟的长视频一致性维护。实验表明，该系统在保持实时生成能力的同时，显著提升了人物身份及场景的持续性精度。",
+  "highlights": [
+    {
+      "text": "Agentic LongLive通过异步智能体记忆机制，在无需等待内存处理的情况下，实现了长视频生成中的人物、物体和场景一致性。",
+      "evidence": "From this entity memory it composes a global image and a per-shot memory image, which an auxiliary GPU prefills into the generator's attention sink before the next shot starts, and writes entity cards for the prompts that name them, so the video never waits for memory and video errors are not written back."
+    },
+    {
+      "text": "该系统在实时生成环境下，显著改善了视频的持久状态准确性、主角身份一致性及场景重现一致性。",
+      "evidence": "On LongStory-Online, a new benchmark of 25 stories (857 shots) revealed one shot at a time, Agentic LongLive improves persistent-state accuracy of LongLive-2.0, its base generator, by 26.3 points, protagonist identity by 44.9, and revisited-place consistency by 40.4, at about 1% extra generation time on H100."
+    }
+  ],
+  "tags": [
+    "推理"
+  ]
+}
